@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "file_handle",
+            "type": "string"
+        },
+        {
+            "name": "report_status",
+            "type": "string"
+        }
+    ]
+}

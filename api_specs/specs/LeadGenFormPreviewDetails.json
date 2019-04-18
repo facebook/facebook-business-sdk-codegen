@@ -1,0 +1,49 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "call_to_action_title",
+            "type": "string"
+        },
+        {
+            "name": "default_appointment_scheduling_inline_context",
+            "type": "string"
+        },
+        {
+            "name": "default_thank_you_page",
+            "type": "Object"
+        },
+        {
+            "name": "edit_text",
+            "type": "string"
+        },
+        {
+            "name": "email_inline_context_text",
+            "type": "string"
+        },
+        {
+            "name": "next_button_text",
+            "type": "string"
+        },
+        {
+            "name": "personal_info_text",
+            "type": "string"
+        },
+        {
+            "name": "phone_number_inline_context_text",
+            "type": "string"
+        },
+        {
+            "name": "review_your_info_text",
+            "type": "string"
+        },
+        {
+            "name": "slide_to_submit_text",
+            "type": "string"
+        },
+        {
+            "name": "submit_button_text",
+            "type": "string"
+        }
+    ]
+}

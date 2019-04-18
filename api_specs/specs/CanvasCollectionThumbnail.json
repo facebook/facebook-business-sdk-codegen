@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "element_child_index",
+            "type": "int"
+        },
+        {
+            "name": "element_id",
+            "type": "string"
+        },
+        {
+            "name": "photo",
+            "type": "Photo"
+        }
+    ]
+}

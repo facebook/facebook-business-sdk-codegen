@@ -1,0 +1,93 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "audience_size",
+            "type": "unsigned int"
+        },
+        {
+            "name": "conversion_lift",
+            "type": "float"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "img",
+            "type": "string"
+        },
+        {
+            "name": "info",
+            "type": "string"
+        },
+        {
+            "name": "info_title",
+            "type": "string"
+        },
+        {
+            "name": "is_recommendation",
+            "type": "bool"
+        },
+        {
+            "name": "key",
+            "type": "string"
+        },
+        {
+            "name": "link",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "parent",
+            "type": "string"
+        },
+        {
+            "name": "partner",
+            "type": "string"
+        },
+        {
+            "name": "path",
+            "type": "list<string>"
+        },
+        {
+            "name": "performance_rating",
+            "type": "unsigned int"
+        },
+        {
+            "name": "raw_name",
+            "type": "string"
+        },
+        {
+            "name": "recommendation_model",
+            "type": "string"
+        },
+        {
+            "name": "search_interest_id",
+            "type": "string"
+        },
+        {
+            "name": "source",
+            "type": "string"
+        },
+        {
+            "name": "spend",
+            "type": "float"
+        },
+        {
+            "name": "type",
+            "type": "string"
+        },
+        {
+            "name": "valid",
+            "type": "bool"
+        }
+    ]
+}

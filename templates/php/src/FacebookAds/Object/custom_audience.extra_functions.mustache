@@ -1,0 +1,70 @@
+  public function addUsers(
+    array $users,
+    $type,
+    array $app_ids = array(),
+    $is_hashed = false,
+    $pending = false) {
+
+    $params = $this->formatParams($users, $type, $app_ids, $is_hashed);
+    return $this->createUser(array(), $params, $pending);
+  }
+
+  public function removeUsers(
+    array $users,
+    $type,
+    array $app_ids = array(),
+    $is_hashed = false,
+    $pending = false) {
+
+    $params = $this->formatParams($users, $type, $app_ids, $is_hashed);
+    return $this->deleteUsers(array(), $params, $pending);
+  }
+
+
+  /**
+   * Take users and format them correctly for the request
+   *
+   * @param array $users
+   * @param string $type
+   * @param array $app_ids
+   * @param bool $is_hashed
+   * @return array
+   */
+  protected function formatParams(
+    array $users,
+    $type,
+    array $app_ids = array(),
+    $is_hashed = false) {
+
+    if ($type == CustomAudienceTypes::EMAIL
+      || $type == CustomAudienceTypes::PHONE) {
+      $normalizer = new EmailNormalizer();
+      $hash_normalizer = new HashNormalizer();
+      foreach ($users as &$user) {
+        if ($type == CustomAudienceTypes::EMAIL) {
+          $user = $normalizer->normalize(CustomAudienceTypes::EMAIL, $user);
+        }
+        if (!$is_hashed) {
+          $user = $hash_normalizer->normalize(
+            CustomAudienceTypes::EMAIL, $user);
+        }
+      }
+    }
+
+    $payload = array(
+      'schema' => $type,
+      'data' => $users,
+    );
+
+    if ($type === CustomAudienceTypes::ID) {
+      if (empty($app_ids)) {
+        throw new \InvalidArgumentException(
+          "Custom audiences with type ".CustomAudienceTypes::ID." require"
+          ."at least one app_id");
+      }
+
+      $payload['app_ids'] = $app_ids;
+    }
+
+    return array('payload' => $payload);
+  }

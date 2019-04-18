@@ -1,0 +1,99 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "insights",
+            "return": "AdsInsights",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "retry",
+            "return": "AdReportRun",
+            "params": []
+        },
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdReportRun",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "AdReportRun",
+            "params": [
+                {
+                    "name": "emails",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "is_bookmarked",
+                    "required": false,
+                    "type": "bool"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "account_id",
+            "type": "string"
+        },
+        {
+            "name": "async_percent_completion",
+            "type": "unsigned int"
+        },
+        {
+            "name": "async_status",
+            "type": "string"
+        },
+        {
+            "name": "date_start",
+            "type": "string"
+        },
+        {
+            "name": "date_stop",
+            "type": "string"
+        },
+        {
+            "name": "emails",
+            "type": "list<string>"
+        },
+        {
+            "name": "friendly_name",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_bookmarked",
+            "type": "bool"
+        },
+        {
+            "name": "is_running",
+            "type": "bool"
+        },
+        {
+            "name": "schedule_id",
+            "type": "string"
+        },
+        {
+            "name": "time_completed",
+            "type": "unsigned int"
+        },
+        {
+            "name": "time_ref",
+            "type": "unsigned int"
+        }
+    ]
+}

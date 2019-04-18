@@ -1,0 +1,68 @@
+{
+    "apis": [
+        {
+            "method": "DELETE",
+            "endpoint": "users",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "user_ids",
+                    "required": true,
+                    "type": "list<int>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "users",
+            "return": "User",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "users",
+            "return": "PageLabel",
+            "params": [
+                {
+                    "name": "user_ids",
+                    "required": true,
+                    "type": "list<int>"
+                }
+            ]
+        },
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "PageLabel",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "creator_id",
+            "type": "Profile"
+        },
+        {
+            "name": "from",
+            "type": "Page"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        }
+    ]
+}

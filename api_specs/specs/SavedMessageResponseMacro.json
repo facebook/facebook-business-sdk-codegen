@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "length",
+            "type": "unsigned int"
+        },
+        {
+            "name": "macro",
+            "type": "string"
+        },
+        {
+            "name": "offset",
+            "type": "unsigned int"
+        }
+    ]
+}

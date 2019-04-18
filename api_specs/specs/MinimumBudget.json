@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "min_daily_budget_high_freq",
+            "type": "int"
+        },
+        {
+            "name": "min_daily_budget_imp",
+            "type": "int"
+        },
+        {
+            "name": "min_daily_budget_low_freq",
+            "type": "int"
+        },
+        {
+            "name": "min_daily_budget_video_views",
+            "type": "int"
+        }
+    ]
+}

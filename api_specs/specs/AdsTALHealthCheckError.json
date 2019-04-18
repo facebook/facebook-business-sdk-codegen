@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "error_code",
+            "type": "unsigned int"
+        },
+        {
+            "name": "target_id",
+            "type": "string"
+        }
+    ]
+}

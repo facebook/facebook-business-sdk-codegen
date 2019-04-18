@@ -1,0 +1,715 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "adcreatives",
+            "return": "AdCreative",
+            "params": []
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "adlabels",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "adlabels",
+                    "required": true,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "execution_options",
+                    "required": false,
+                    "type": "list<adgroupadlabels_execution_options_enum_param>"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "adlabels",
+            "return": "Ad",
+            "params": [
+                {
+                    "name": "adlabels",
+                    "required": true,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "execution_options",
+                    "required": false,
+                    "type": "list<adgroupadlabels_execution_options_enum_param>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "adrules_governed",
+            "return": "AdRule",
+            "params": [
+                {
+                    "name": "pass_evaluation",
+                    "required": false,
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "copies",
+            "return": "Ad",
+            "params": [
+                {
+                    "name": "date_preset",
+                    "required": false,
+                    "type": "adgroupcopies_date_preset_enum_param"
+                },
+                {
+                    "name": "effective_status",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "include_deleted",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "time_range",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "updated_since",
+                    "required": false,
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "copies",
+            "return": "Ad",
+            "params": [
+                {
+                    "name": "adset_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "rename_options",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "status_option",
+                    "required": false,
+                    "type": "adgroupcopies_status_option_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "insights",
+            "return": "AdsInsights",
+            "params": [
+                {
+                    "name": "action_attribution_windows",
+                    "required": false,
+                    "type": "list<adgroupinsights_action_attribution_windows_enum_param>"
+                },
+                {
+                    "name": "action_breakdowns",
+                    "required": false,
+                    "type": "list<adgroupinsights_action_breakdowns_enum_param>"
+                },
+                {
+                    "name": "action_report_time",
+                    "required": false,
+                    "type": "adgroupinsights_action_report_time_enum_param"
+                },
+                {
+                    "name": "breakdowns",
+                    "required": false,
+                    "type": "list<adgroupinsights_breakdowns_enum_param>"
+                },
+                {
+                    "name": "date_preset",
+                    "required": false,
+                    "type": "adgroupinsights_date_preset_enum_param"
+                },
+                {
+                    "name": "default_summary",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "export_columns",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "export_format",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "export_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "fields",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "filtering",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "level",
+                    "required": false,
+                    "type": "adgroupinsights_level_enum_param"
+                },
+                {
+                    "name": "product_id_limit",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "sort",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "summary",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "summary_action_breakdowns",
+                    "required": false,
+                    "type": "list<adgroupinsights_summary_action_breakdowns_enum_param>"
+                },
+                {
+                    "name": "time_increment",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "time_range",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "time_ranges",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "use_account_attribution_setting",
+                    "required": false,
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "insights",
+            "return": "AdReportRun",
+            "params": [
+                {
+                    "name": "action_attribution_windows",
+                    "required": false,
+                    "type": "list<adgroupinsights_action_attribution_windows_enum_param>"
+                },
+                {
+                    "name": "action_breakdowns",
+                    "required": false,
+                    "type": "list<adgroupinsights_action_breakdowns_enum_param>"
+                },
+                {
+                    "name": "action_report_time",
+                    "required": false,
+                    "type": "adgroupinsights_action_report_time_enum_param"
+                },
+                {
+                    "name": "breakdowns",
+                    "required": false,
+                    "type": "list<adgroupinsights_breakdowns_enum_param>"
+                },
+                {
+                    "name": "date_preset",
+                    "required": false,
+                    "type": "adgroupinsights_date_preset_enum_param"
+                },
+                {
+                    "name": "default_summary",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "export_columns",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "export_format",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "export_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "fields",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "filtering",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "level",
+                    "required": false,
+                    "type": "adgroupinsights_level_enum_param"
+                },
+                {
+                    "name": "product_id_limit",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "sort",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "summary",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "summary_action_breakdowns",
+                    "required": false,
+                    "type": "list<adgroupinsights_summary_action_breakdowns_enum_param>"
+                },
+                {
+                    "name": "time_increment",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "time_range",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "time_ranges",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "use_account_attribution_setting",
+                    "required": false,
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "keywordstats",
+            "return": "AdKeywordStats",
+            "params": [
+                {
+                    "name": "date",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "leads",
+            "return": "Lead",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "leads",
+            "return": "Lead",
+            "params": [
+                {
+                    "name": "end_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "session_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "start_time",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "previews",
+            "return": "AdPreview",
+            "params": [
+                {
+                    "name": "ad_format",
+                    "required": true,
+                    "type": "adgrouppreviews_ad_format_enum_param"
+                },
+                {
+                    "name": "dynamic_asset_label",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "dynamic_creative_spec",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "dynamic_customization",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "end_date",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "height",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "interactive",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "locale",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "place_page_id",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "post",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "product_item_ids",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "render_type",
+                    "required": false,
+                    "type": "adgrouppreviews_render_type_enum_param"
+                },
+                {
+                    "name": "start_date",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "width",
+                    "required": false,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "targetingsentencelines",
+            "return": "TargetingSentenceLine",
+            "params": []
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "trackingtag",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "trackingtag",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "add_template_param",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "url",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "Ad",
+            "params": [
+                {
+                    "name": "am_call_tags",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "date_preset",
+                    "required": false,
+                    "type": "adgroup_date_preset"
+                },
+                {
+                    "name": "from_adtable",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "review_feedback_breakdown",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "time_range",
+                    "required": false,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "Ad",
+            "params": [
+                {
+                    "name": "adlabels",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "adset_spec",
+                    "required": false,
+                    "type": "AdSet"
+                },
+                {
+                    "name": "audience_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "bid_amount",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "creative",
+                    "required": false,
+                    "type": "AdCreative"
+                },
+                {
+                    "name": "display_sequence",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "draft_adgroup_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "engagement_audience",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "execution_options",
+                    "required": false,
+                    "type": "list<adgroup_execution_options>"
+                },
+                {
+                    "name": "include_demolink_hashes",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "priority",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "status",
+                    "required": false,
+                    "type": "adgroup_status"
+                },
+                {
+                    "name": "tracking_specs",
+                    "required": false,
+                    "type": "Object"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "account_id",
+            "type": "string"
+        },
+        {
+            "name": "ad_review_feedback",
+            "type": "AdgroupReviewFeedback"
+        },
+        {
+            "name": "adlabels",
+            "type": "list<AdLabel>"
+        },
+        {
+            "name": "adset",
+            "type": "AdSet"
+        },
+        {
+            "name": "adset_id",
+            "type": "string"
+        },
+        {
+            "name": "bid_amount",
+            "type": "int"
+        },
+        {
+            "name": "bid_info",
+            "type": "map<string, unsigned int>"
+        },
+        {
+            "name": "bid_type",
+            "type": "Ad_bid_type"
+        },
+        {
+            "name": "campaign",
+            "type": "Campaign"
+        },
+        {
+            "name": "campaign_id",
+            "type": "string"
+        },
+        {
+            "name": "configured_status",
+            "type": "Ad_configured_status"
+        },
+        {
+            "name": "conversion_specs",
+            "type": "list<ConversionActionQuery>"
+        },
+        {
+            "name": "created_time",
+            "type": "datetime"
+        },
+        {
+            "name": "creative",
+            "type": "AdCreative"
+        },
+        {
+            "name": "demolink_hash",
+            "type": "string"
+        },
+        {
+            "name": "display_sequence",
+            "type": "int"
+        },
+        {
+            "name": "effective_status",
+            "type": "Ad_effective_status"
+        },
+        {
+            "name": "engagement_audience",
+            "type": "bool"
+        },
+        {
+            "name": "failed_delivery_checks",
+            "type": "list<DeliveryCheck>"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "issues_info",
+            "type": "list<AdgroupIssuesInfo>"
+        },
+        {
+            "name": "last_updated_by_app_id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "priority",
+            "type": "unsigned int"
+        },
+        {
+            "name": "recommendations",
+            "type": "list<AdRecommendation>"
+        },
+        {
+            "name": "source_ad",
+            "type": "Ad"
+        },
+        {
+            "name": "source_ad_id",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "Ad_status"
+        },
+        {
+            "name": "targeting",
+            "type": "Targeting"
+        },
+        {
+            "name": "tracking_and_conversion_with_defaults",
+            "type": "TrackingAndConversionWithDefaults"
+        },
+        {
+            "name": "tracking_specs",
+            "type": "list<ConversionActionQuery>"
+        },
+        {
+            "name": "updated_time",
+            "type": "datetime"
+        }
+    ]
+}

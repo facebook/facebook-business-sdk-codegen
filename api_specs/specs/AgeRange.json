@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "max",
+            "type": "unsigned int"
+        },
+        {
+            "name": "min",
+            "type": "unsigned int"
+        }
+    ]
+}

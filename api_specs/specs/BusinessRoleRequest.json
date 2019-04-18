@@ -1,0 +1,86 @@
+{
+    "apis": [
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "BusinessRoleRequest",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "BusinessRoleRequest",
+            "params": [
+                {
+                    "name": "role",
+                    "required": false,
+                    "type": "businessrolerequest_role"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "created_by",
+            "type": "Object"
+        },
+        {
+            "name": "created_time",
+            "type": "datetime"
+        },
+        {
+            "name": "email",
+            "type": "string"
+        },
+        {
+            "name": "expiration_time",
+            "type": "datetime"
+        },
+        {
+            "name": "expiry_time",
+            "type": "datetime"
+        },
+        {
+            "name": "finance_role",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "invite_link",
+            "type": "string"
+        },
+        {
+            "name": "ip_role",
+            "type": "string"
+        },
+        {
+            "name": "owner",
+            "type": "Business"
+        },
+        {
+            "name": "role",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "updated_by",
+            "type": "Object"
+        },
+        {
+            "name": "updated_time",
+            "type": "datetime"
+        }
+    ]
+}

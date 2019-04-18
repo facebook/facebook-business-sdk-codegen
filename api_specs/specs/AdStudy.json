@@ -1,0 +1,303 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "cells",
+            "return": "AdStudyCell",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "customaudiences",
+            "return": "AdStudy",
+            "params": [
+                {
+                    "name": "account_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "audience_name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "audience_type",
+                    "required": true,
+                    "type": "adstudycustomaudiences_audience_type_enum_param"
+                },
+                {
+                    "name": "cell_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "objective_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "health_check_errors",
+            "return": "AdsTALHealthCheckError",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "objectives",
+            "return": "AdStudyObjective",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "objectives",
+            "return": "AdStudyObjective",
+            "params": [
+                {
+                    "name": "adspixels",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "applications",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "customconversions",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "is_primary",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "offline_conversion_data_sets",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "offsitepixels",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "product_sets",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "type",
+                    "required": false,
+                    "type": "adstudyobjectives_type_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "userpermissions",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "business",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "email",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "user",
+                    "required": false,
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "userpermissions",
+            "return": "AdStudyAdsAssetUserPermissions",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "userpermissions",
+            "return": "AdStudy",
+            "params": [
+                {
+                    "name": "business",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "email",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "role",
+                    "required": true,
+                    "type": "adstudyuserpermissions_role_enum_param"
+                },
+                {
+                    "name": "user",
+                    "required": false,
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "viewers",
+            "return": "User",
+            "params": []
+        },
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdStudy",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "AdStudy",
+            "params": [
+                {
+                    "name": "cells",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "client_business",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "confidence_level",
+                    "required": false,
+                    "type": "float"
+                },
+                {
+                    "name": "cooldown_start_time",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "end_time",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "objectives",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "observation_end_time",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "start_time",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "viewers",
+                    "required": false,
+                    "type": "list<int>"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "business",
+            "type": "Business"
+        },
+        {
+            "name": "canceled_time",
+            "type": "datetime"
+        },
+        {
+            "name": "cooldown_start_time",
+            "type": "datetime"
+        },
+        {
+            "name": "created_by",
+            "type": "User"
+        },
+        {
+            "name": "created_time",
+            "type": "datetime"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "end_time",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "observation_end_time",
+            "type": "datetime"
+        },
+        {
+            "name": "results_first_available_date",
+            "type": "string"
+        },
+        {
+            "name": "start_time",
+            "type": "datetime"
+        },
+        {
+            "name": "type",
+            "type": "string"
+        },
+        {
+            "name": "updated_by",
+            "type": "User"
+        },
+        {
+            "name": "updated_time",
+            "type": "datetime"
+        }
+    ]
+}

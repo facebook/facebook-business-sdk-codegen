@@ -1,0 +1,85 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "cities",
+            "type": "list<TargetingGeoLocationCity>"
+        },
+        {
+            "name": "countries",
+            "type": "list<string>"
+        },
+        {
+            "name": "country_groups",
+            "type": "list<string>"
+        },
+        {
+            "name": "custom_locations",
+            "type": "list<TargetingGeoLocationCustomLocation>"
+        },
+        {
+            "name": "electoral_districts",
+            "type": "list<TargetingGeoLocationElectoralDistrict>"
+        },
+        {
+            "name": "geo_markets",
+            "type": "list<TargetingGeoLocationMarket>"
+        },
+        {
+            "name": "large_geo_areas",
+            "type": "list<TargetingGeoLocationGeoEntities>"
+        },
+        {
+            "name": "location_cluster_ids",
+            "type": "list<TargetingGeoLocationLocationCluster>"
+        },
+        {
+            "name": "location_set_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "location_types",
+            "type": "list<string>"
+        },
+        {
+            "name": "medium_geo_areas",
+            "type": "list<TargetingGeoLocationGeoEntities>"
+        },
+        {
+            "name": "metro_areas",
+            "type": "list<TargetingGeoLocationGeoEntities>"
+        },
+        {
+            "name": "neighborhoods",
+            "type": "list<TargetingGeoLocationGeoEntities>"
+        },
+        {
+            "name": "places",
+            "type": "list<TargetingGeoLocationPlace>"
+        },
+        {
+            "name": "political_districts",
+            "type": "list<TargetingGeoLocationPoliticalDistrict>"
+        },
+        {
+            "name": "regions",
+            "type": "list<TargetingGeoLocationRegion>"
+        },
+        {
+            "name": "small_geo_areas",
+            "type": "list<TargetingGeoLocationGeoEntities>"
+        },
+        {
+            "name": "subcities",
+            "type": "list<TargetingGeoLocationGeoEntities>"
+        },
+        {
+            "name": "subneighborhoods",
+            "type": "list<TargetingGeoLocationGeoEntities>"
+        },
+        {
+            "name": "zips",
+            "type": "list<TargetingGeoLocationZip>"
+        }
+    ]
+}

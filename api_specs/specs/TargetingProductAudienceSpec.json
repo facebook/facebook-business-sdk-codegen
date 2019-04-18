@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "exclusions",
+            "type": "list<TargetingProductAudienceSubSpec>"
+        },
+        {
+            "name": "inclusions",
+            "type": "list<TargetingProductAudienceSubSpec>"
+        },
+        {
+            "name": "product_set_id",
+            "type": "string"
+        }
+    ]
+}

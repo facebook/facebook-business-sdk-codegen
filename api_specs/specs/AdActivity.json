@@ -1,0 +1,53 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "actor_id",
+            "type": "string"
+        },
+        {
+            "name": "actor_name",
+            "type": "string"
+        },
+        {
+            "name": "application_id",
+            "type": "string"
+        },
+        {
+            "name": "application_name",
+            "type": "string"
+        },
+        {
+            "name": "date_time_in_timezone",
+            "type": "string"
+        },
+        {
+            "name": "event_time",
+            "type": "datetime"
+        },
+        {
+            "name": "event_type",
+            "type": "AdActivity_event_type"
+        },
+        {
+            "name": "extra_data",
+            "type": "string"
+        },
+        {
+            "name": "object_id",
+            "type": "string"
+        },
+        {
+            "name": "object_name",
+            "type": "string"
+        },
+        {
+            "name": "object_type",
+            "type": "string"
+        },
+        {
+            "name": "translated_event_type",
+            "type": "string"
+        }
+    ]
+}

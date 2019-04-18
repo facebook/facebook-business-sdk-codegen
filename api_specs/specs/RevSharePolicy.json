@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "policy_id",
+            "type": "string"
+        },
+        {
+            "name": "policy_name",
+            "type": "string"
+        }
+    ]
+}

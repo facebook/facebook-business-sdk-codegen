@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "grace_period_expiration_date",
+            "type": "datetime"
+        },
+        {
+            "name": "has_owning_business",
+            "type": "bool"
+        },
+        {
+            "name": "is_satisfied",
+            "type": "bool"
+        },
+        {
+            "name": "owning_business_requirements",
+            "type": "Object"
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "apis": [
+        {
+            "method": "POST",
+            "endpoint": "duplicate_canvas",
+            "return": "Canvas",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "preview_notifications",
+            "return": "Canvas",
+            "params": [
+                {
+                    "name": "user_ids",
+                    "required": false,
+                    "type": "list<int>"
+                }
+            ]
+        },
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "Canvas",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "Canvas",
+            "params": [
+                {
+                    "name": "background_color",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "body_element_ids",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "enable_swipe_to_open",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_hidden",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_published",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "background_color",
+            "type": "string"
+        },
+        {
+            "name": "body_elements",
+            "type": "list<Object>"
+        },
+        {
+            "name": "canvas_link",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_hidden",
+            "type": "bool"
+        },
+        {
+            "name": "is_published",
+            "type": "bool"
+        },
+        {
+            "name": "last_editor",
+            "type": "User"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "owner",
+            "type": "Page"
+        },
+        {
+            "name": "update_time",
+            "type": "int"
+        }
+    ]
+}

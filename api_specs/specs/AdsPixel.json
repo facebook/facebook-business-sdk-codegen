@@ -1,0 +1,305 @@
+{
+    "apis": [
+        {
+            "method": "DELETE",
+            "endpoint": "assigned_users",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "user",
+                    "required": true,
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "assigned_users",
+            "return": "AssignedUser",
+            "params": [
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "assigned_users",
+            "return": "AdsPixel",
+            "params": [
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "tasks",
+                    "required": false,
+                    "type": "list<adspixelassigned_users_tasks_enum_param>"
+                },
+                {
+                    "name": "user",
+                    "required": true,
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "audiences",
+            "return": "CustomAudience",
+            "params": [
+                {
+                    "name": "ad_account",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "create_server_to_server_keys",
+            "return": "AdsPixel",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "da_checks",
+            "return": "DACheck",
+            "params": [
+                {
+                    "name": "checks",
+                    "required": false,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "pending_shared_agencies",
+            "return": "Business",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "reset_server_to_server_key",
+            "return": "AdsPixel",
+            "params": [
+                {
+                    "name": "type",
+                    "required": true,
+                    "type": "adspixelreset_server_to_server_key_type_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "shared_accounts",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "account_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "shared_accounts",
+            "return": "AdAccount",
+            "params": [
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "shared_accounts",
+            "return": "AdsPixel",
+            "params": [
+                {
+                    "name": "account_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "shared_agencies",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "agency_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "shared_agencies",
+            "return": "Business",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "stats",
+            "return": "AdsPixelStatsResult",
+            "params": [
+                {
+                    "name": "aggregation",
+                    "required": false,
+                    "type": "adspixelstats_aggregation_enum_param"
+                },
+                {
+                    "name": "end_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "event",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "event_source",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "start_time",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdsPixel",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "AdsPixel",
+            "params": [
+                {
+                    "name": "automatic_matching_fields",
+                    "required": false,
+                    "type": "list<adspixel_automatic_matching_fields>"
+                },
+                {
+                    "name": "data_use_setting",
+                    "required": false,
+                    "type": "adspixel_data_use_setting"
+                },
+                {
+                    "name": "enable_automatic_matching",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "first_party_cookie_status",
+                    "required": false,
+                    "type": "adspixel_first_party_cookie_status"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "server_events_business_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "automatic_matching_fields",
+            "type": "list<string>"
+        },
+        {
+            "name": "can_proxy",
+            "type": "bool"
+        },
+        {
+            "name": "code",
+            "type": "string"
+        },
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "creator",
+            "type": "User"
+        },
+        {
+            "name": "data_use_setting",
+            "type": "string"
+        },
+        {
+            "name": "enable_automatic_matching",
+            "type": "bool"
+        },
+        {
+            "name": "first_party_cookie_status",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_created_by_business",
+            "type": "bool"
+        },
+        {
+            "name": "last_fired_time",
+            "type": "datetime"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "owner_ad_account",
+            "type": "AdAccount"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
+        }
+    ]
+}

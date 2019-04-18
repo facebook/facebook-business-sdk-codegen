@@ -1,0 +1,117 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "behaviors",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "college_years",
+            "type": "list<unsigned int>"
+        },
+        {
+            "name": "connections",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "custom_audiences",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "education_majors",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "education_schools",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "education_statuses",
+            "type": "list<unsigned int>"
+        },
+        {
+            "name": "ethnic_affinity",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "family_statuses",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "friends_of_connections",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "generation",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "home_ownership",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "home_type",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "home_value",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "household_composition",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "income",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "industries",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "interested_in",
+            "type": "list<unsigned int>"
+        },
+        {
+            "name": "interests",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "life_events",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "moms",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "net_worth",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "office_type",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "politics",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "relationship_statuses",
+            "type": "list<unsigned int>"
+        },
+        {
+            "name": "user_adclusters",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "work_employers",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "work_positions",
+            "type": "list<IDName>"
+        }
+    ]
+}

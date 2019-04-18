@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "aggregation",
+            "type": "string"
+        },
+        {
+            "name": "data",
+            "type": "list<AdsPixelStats>"
+        },
+        {
+            "name": "start_time",
+            "type": "datetime"
+        }
+    ]
+}

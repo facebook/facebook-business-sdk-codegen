@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "actions",
+            "type": "list<AdRuleHistoryResultAction>"
+        },
+        {
+            "name": "object_id",
+            "type": "string"
+        },
+        {
+            "name": "object_type",
+            "type": "AdRuleHistoryResult_object_type"
+        }
+    ]
+}

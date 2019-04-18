@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "errors",
+            "type": "list<Object>"
+        },
+        {
+            "name": "errors_total_count",
+            "type": "int"
+        },
+        {
+            "name": "handle",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        }
+    ]
+}

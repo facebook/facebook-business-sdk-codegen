@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "breakfast",
+            "type": "unsigned int"
+        },
+        {
+            "name": "coffee",
+            "type": "unsigned int"
+        },
+        {
+            "name": "dinner",
+            "type": "unsigned int"
+        },
+        {
+            "name": "drinks",
+            "type": "unsigned int"
+        },
+        {
+            "name": "lunch",
+            "type": "unsigned int"
+        }
+    ]
+}

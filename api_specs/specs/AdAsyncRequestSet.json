@@ -1,0 +1,116 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "requests",
+            "return": "AdAsyncRequest",
+            "params": [
+                {
+                    "name": "statuses",
+                    "required": false,
+                    "type": "list<adasyncrequestsetrequests_statuses_enum_param>"
+                }
+            ]
+        },
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdAsyncRequestSet",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "AdAsyncRequestSet",
+            "params": [
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "notification_mode",
+                    "required": false,
+                    "type": "adasyncrequestset_notification_mode"
+                },
+                {
+                    "name": "notification_uri",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "canceled_count",
+            "type": "int"
+        },
+        {
+            "name": "created_time",
+            "type": "datetime"
+        },
+        {
+            "name": "error_count",
+            "type": "int"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "in_progress_count",
+            "type": "int"
+        },
+        {
+            "name": "initial_count",
+            "type": "unsigned int"
+        },
+        {
+            "name": "is_completed",
+            "type": "bool"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "notification_mode",
+            "type": "AdAsyncRequestSet_notification_mode"
+        },
+        {
+            "name": "notification_result",
+            "type": "AdAsyncRequestSetNotificationResult"
+        },
+        {
+            "name": "notification_status",
+            "type": "AdAsyncRequestSet_notification_status"
+        },
+        {
+            "name": "notification_uri",
+            "type": "string"
+        },
+        {
+            "name": "owner_id",
+            "type": "string"
+        },
+        {
+            "name": "success_count",
+            "type": "int"
+        },
+        {
+            "name": "total_count",
+            "type": "unsigned int"
+        },
+        {
+            "name": "updated_time",
+            "type": "datetime"
+        }
+    ]
+}

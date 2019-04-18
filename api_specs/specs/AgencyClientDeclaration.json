@@ -1,0 +1,53 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "agency_representing_client",
+            "type": "unsigned int"
+        },
+        {
+            "name": "client_based_in_france",
+            "type": "unsigned int"
+        },
+        {
+            "name": "client_city",
+            "type": "string"
+        },
+        {
+            "name": "client_country_code",
+            "type": "string"
+        },
+        {
+            "name": "client_email_address",
+            "type": "string"
+        },
+        {
+            "name": "client_name",
+            "type": "string"
+        },
+        {
+            "name": "client_postal_code",
+            "type": "string"
+        },
+        {
+            "name": "client_province",
+            "type": "string"
+        },
+        {
+            "name": "client_street",
+            "type": "string"
+        },
+        {
+            "name": "client_street2",
+            "type": "string"
+        },
+        {
+            "name": "has_written_mandate_from_advertiser",
+            "type": "unsigned int"
+        },
+        {
+            "name": "is_client_paying_invoices",
+            "type": "unsigned int"
+        }
+    ]
+}

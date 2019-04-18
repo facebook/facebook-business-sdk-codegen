@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "end_time",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "start_time",
+            "type": "string"
+        },
+        {
+            "name": "ticket_uri",
+            "type": "string"
+        }
+    ]
+}

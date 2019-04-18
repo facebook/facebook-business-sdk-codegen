@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "amount",
+            "type": "string"
+        },
+        {
+            "name": "has_error",
+            "type": "bool"
+        },
+        {
+            "name": "is_accurate",
+            "type": "bool"
+        },
+        {
+            "name": "is_prorated",
+            "type": "bool"
+        },
+        {
+            "name": "is_updating",
+            "type": "bool"
+        }
+    ]
+}

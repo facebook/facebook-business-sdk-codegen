@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "customized_token",
+            "type": "string"
+        },
+        {
+            "name": "next_question_choices",
+            "type": "list<LeadGenConditionalQuestionsGroupChoices>"
+        },
+        {
+            "name": "value",
+            "type": "string"
+        }
+    ]
+}

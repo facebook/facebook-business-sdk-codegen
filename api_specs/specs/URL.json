@@ -1,0 +1,62 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "URL",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "URL",
+            "params": [
+                {
+                    "name": "hmac",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "locale",
+                    "required": false,
+                    "type": "list"
+                },
+                {
+                    "name": "ts",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "app_links",
+            "type": "AppLinks"
+        },
+        {
+            "name": "development_instant_article",
+            "type": "InstantArticle"
+        },
+        {
+            "name": "engagement",
+            "type": "Object"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "instant_article",
+            "type": "InstantArticle"
+        },
+        {
+            "name": "og_object",
+            "type": "Object"
+        },
+        {
+            "name": "ownership_permissions",
+            "type": "Object"
+        }
+    ]
+}

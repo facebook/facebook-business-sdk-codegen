@@ -1,0 +1,66 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "assigned_ad_accounts",
+            "return": "AdAccount",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "assigned_monetization_properties",
+            "return": "AdMonetizationProperty",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "assigned_pages",
+            "return": "Page",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "assigned_product_catalogs",
+            "return": "ProductCatalog",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "updated_by",
+            "return": "User",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "SystemUser",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "created_by",
+            "type": "User"
+        },
+        {
+            "name": "created_time",
+            "type": "datetime"
+        },
+        {
+            "name": "finance_permission",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "ip_permission",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        }
+    ]
+}

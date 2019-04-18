@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "schedule",
+            "type": "list<AdRuleSchedule>"
+        },
+        {
+            "name": "schedule_type",
+            "type": "string"
+        }
+    ]
+}

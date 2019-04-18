@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "estimate_ready",
+            "type": "bool"
+        },
+        {
+            "name": "unsupported",
+            "type": "bool"
+        },
+        {
+            "name": "users",
+            "type": "int"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "code",
+            "type": "unsigned int"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        }
+    ]
+}

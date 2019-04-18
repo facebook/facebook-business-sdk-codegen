@@ -1,0 +1,49 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "address",
+            "type": "Object"
+        },
+        {
+            "name": "business_id",
+            "type": "string"
+        },
+        {
+            "name": "credit_card_suffix",
+            "type": "string"
+        },
+        {
+            "name": "credit_card_type",
+            "type": "string"
+        },
+        {
+            "name": "expiration_month",
+            "type": "int"
+        },
+        {
+            "name": "expiration_year",
+            "type": "int"
+        },
+        {
+            "name": "first_name",
+            "type": "string"
+        },
+        {
+            "name": "fraud_status",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "last_name",
+            "type": "string"
+        },
+        {
+            "name": "middle_name",
+            "type": "string"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "reason_data",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "reason_type",
+            "type": "string"
+        }
+    ]
+}

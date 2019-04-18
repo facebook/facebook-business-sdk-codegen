@@ -1,0 +1,33 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "errors",
+            "type": "list<Object>"
+        },
+        {
+            "name": "errors_total_count",
+            "type": "int"
+        },
+        {
+            "name": "handle",
+            "type": "string"
+        },
+        {
+            "name": "invalid_item_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "warnings",
+            "type": "list<Object>"
+        },
+        {
+            "name": "warnings_total_count",
+            "type": "int"
+        }
+    ]
+}

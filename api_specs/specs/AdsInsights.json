@@ -1,0 +1,541 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "account_currency",
+            "type": "string"
+        },
+        {
+            "name": "account_id",
+            "type": "string"
+        },
+        {
+            "name": "account_name",
+            "type": "string"
+        },
+        {
+            "name": "action_values",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "activity_recency",
+            "type": "string"
+        },
+        {
+            "name": "ad_click_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "ad_format_asset",
+            "type": "string"
+        },
+        {
+            "name": "ad_id",
+            "type": "string"
+        },
+        {
+            "name": "ad_impression_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "ad_name",
+            "type": "string"
+        },
+        {
+            "name": "adset_id",
+            "type": "string"
+        },
+        {
+            "name": "adset_name",
+            "type": "string"
+        },
+        {
+            "name": "age",
+            "type": "string"
+        },
+        {
+            "name": "age_targeting",
+            "type": "string"
+        },
+        {
+            "name": "auction_bid",
+            "type": "string"
+        },
+        {
+            "name": "auction_competitiveness",
+            "type": "string"
+        },
+        {
+            "name": "auction_max_competitor_bid",
+            "type": "string"
+        },
+        {
+            "name": "body_asset",
+            "type": "Object"
+        },
+        {
+            "name": "buying_type",
+            "type": "string"
+        },
+        {
+            "name": "call_to_action_asset",
+            "type": "Object"
+        },
+        {
+            "name": "campaign_id",
+            "type": "string"
+        },
+        {
+            "name": "campaign_name",
+            "type": "string"
+        },
+        {
+            "name": "canvas_avg_view_percent",
+            "type": "string"
+        },
+        {
+            "name": "canvas_avg_view_time",
+            "type": "string"
+        },
+        {
+            "name": "clicks",
+            "type": "string"
+        },
+        {
+            "name": "conversion_values",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "conversions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "cost_per_10_sec_video_view",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "cost_per_15_sec_video_view",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "cost_per_2_sec_continuous_video_view",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "cost_per_action_type",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "cost_per_ad_click",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "cost_per_conversion",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "cost_per_dda_countby_convs",
+            "type": "string"
+        },
+        {
+            "name": "cost_per_estimated_ad_recallers",
+            "type": "string"
+        },
+        {
+            "name": "cost_per_inline_link_click",
+            "type": "string"
+        },
+        {
+            "name": "cost_per_inline_post_engagement",
+            "type": "string"
+        },
+        {
+            "name": "cost_per_one_thousand_ad_impression",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "cost_per_outbound_click",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "cost_per_thruplay",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "cost_per_unique_action_type",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "cost_per_unique_click",
+            "type": "string"
+        },
+        {
+            "name": "cost_per_unique_conversion",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "cost_per_unique_inline_link_click",
+            "type": "string"
+        },
+        {
+            "name": "cost_per_unique_outbound_click",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "country",
+            "type": "string"
+        },
+        {
+            "name": "cpc",
+            "type": "string"
+        },
+        {
+            "name": "cpm",
+            "type": "string"
+        },
+        {
+            "name": "cpp",
+            "type": "string"
+        },
+        {
+            "name": "created_time",
+            "type": "string"
+        },
+        {
+            "name": "creative_fingerprint",
+            "type": "string"
+        },
+        {
+            "name": "ctr",
+            "type": "string"
+        },
+        {
+            "name": "date_start",
+            "type": "string"
+        },
+        {
+            "name": "date_stop",
+            "type": "string"
+        },
+        {
+            "name": "dda_countby_convs",
+            "type": "string"
+        },
+        {
+            "name": "description_asset",
+            "type": "Object"
+        },
+        {
+            "name": "device_platform",
+            "type": "string"
+        },
+        {
+            "name": "dma",
+            "type": "string"
+        },
+        {
+            "name": "estimated_ad_recall_rate",
+            "type": "string"
+        },
+        {
+            "name": "estimated_ad_recall_rate_lower_bound",
+            "type": "string"
+        },
+        {
+            "name": "estimated_ad_recall_rate_upper_bound",
+            "type": "string"
+        },
+        {
+            "name": "estimated_ad_recallers",
+            "type": "string"
+        },
+        {
+            "name": "estimated_ad_recallers_lower_bound",
+            "type": "string"
+        },
+        {
+            "name": "estimated_ad_recallers_upper_bound",
+            "type": "string"
+        },
+        {
+            "name": "frequency",
+            "type": "string"
+        },
+        {
+            "name": "frequency_value",
+            "type": "string"
+        },
+        {
+            "name": "gender",
+            "type": "string"
+        },
+        {
+            "name": "gender_targeting",
+            "type": "string"
+        },
+        {
+            "name": "hourly_stats_aggregated_by_advertiser_time_zone",
+            "type": "string"
+        },
+        {
+            "name": "hourly_stats_aggregated_by_audience_time_zone",
+            "type": "string"
+        },
+        {
+            "name": "image_asset",
+            "type": "Object"
+        },
+        {
+            "name": "impression_device",
+            "type": "string"
+        },
+        {
+            "name": "impressions",
+            "type": "string"
+        },
+        {
+            "name": "impressions_dummy",
+            "type": "string"
+        },
+        {
+            "name": "inline_link_click_ctr",
+            "type": "string"
+        },
+        {
+            "name": "inline_link_clicks",
+            "type": "string"
+        },
+        {
+            "name": "inline_post_engagement",
+            "type": "string"
+        },
+        {
+            "name": "labels",
+            "type": "string"
+        },
+        {
+            "name": "link_url_asset",
+            "type": "Object"
+        },
+        {
+            "name": "location",
+            "type": "string"
+        },
+        {
+            "name": "media_asset",
+            "type": "Object"
+        },
+        {
+            "name": "mobile_app_purchase_roas",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "objective",
+            "type": "string"
+        },
+        {
+            "name": "outbound_clicks",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "outbound_clicks_ctr",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "place_page_id",
+            "type": "string"
+        },
+        {
+            "name": "place_page_name",
+            "type": "string"
+        },
+        {
+            "name": "placement",
+            "type": "string"
+        },
+        {
+            "name": "platform_position",
+            "type": "string"
+        },
+        {
+            "name": "product_id",
+            "type": "string"
+        },
+        {
+            "name": "publisher_platform",
+            "type": "string"
+        },
+        {
+            "name": "purchase_roas",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "reach",
+            "type": "string"
+        },
+        {
+            "name": "region",
+            "type": "string"
+        },
+        {
+            "name": "relevance_score",
+            "type": "AdgroupRelevanceScore"
+        },
+        {
+            "name": "rule_asset",
+            "type": "Object"
+        },
+        {
+            "name": "social_spend",
+            "type": "string"
+        },
+        {
+            "name": "spend",
+            "type": "string"
+        },
+        {
+            "name": "title_asset",
+            "type": "Object"
+        },
+        {
+            "name": "unique_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "unique_clicks",
+            "type": "string"
+        },
+        {
+            "name": "unique_conversions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "unique_ctr",
+            "type": "string"
+        },
+        {
+            "name": "unique_inline_link_click_ctr",
+            "type": "string"
+        },
+        {
+            "name": "unique_inline_link_clicks",
+            "type": "string"
+        },
+        {
+            "name": "unique_link_clicks_ctr",
+            "type": "string"
+        },
+        {
+            "name": "unique_outbound_clicks",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "unique_outbound_clicks_ctr",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "unique_video_continuous_2_sec_watched_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "unique_video_view_10_sec",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "unique_video_view_15_sec",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "updated_time",
+            "type": "string"
+        },
+        {
+            "name": "video_10_sec_watched_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "video_15_sec_watched_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "video_30_sec_watched_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "video_asset",
+            "type": "Object"
+        },
+        {
+            "name": "video_avg_percent_watched_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "video_avg_time_watched_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "video_continuous_2_sec_watched_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "video_p100_watched_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "video_p25_watched_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "video_p50_watched_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "video_p75_watched_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "video_p95_watched_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "video_play_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "video_play_retention_0_to_15s_actions",
+            "type": "list<Object>"
+        },
+        {
+            "name": "video_play_retention_20_to_60s_actions",
+            "type": "list<Object>"
+        },
+        {
+            "name": "video_play_retention_graph_actions",
+            "type": "list<Object>"
+        },
+        {
+            "name": "video_thruplay_watched_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "video_time_watched_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "website_ctr",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "website_purchase_roas",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "wish_bid",
+            "type": "string"
+        }
+    ]
+}

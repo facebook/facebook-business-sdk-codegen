@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "field",
+            "type": "string"
+        },
+        {
+            "name": "operator",
+            "type": "AdRuleTrigger_operator"
+        },
+        {
+            "name": "type",
+            "type": "AdRuleTrigger_type"
+        },
+        {
+            "name": "value",
+            "type": "Object"
+        }
+    ]
+}

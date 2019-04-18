@@ -1,0 +1,48 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "LeadGenQuestion",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "conditional_questions_choices",
+            "type": "list<LeadGenConditionalQuestionsGroupChoices>"
+        },
+        {
+            "name": "conditional_questions_group_id",
+            "type": "string"
+        },
+        {
+            "name": "dependent_conditional_questions",
+            "type": "list<LeadGenConditionalQuestionsGroupQuestions>"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "inline_context",
+            "type": "string"
+        },
+        {
+            "name": "key",
+            "type": "string"
+        },
+        {
+            "name": "label",
+            "type": "string"
+        },
+        {
+            "name": "options",
+            "type": "list<LeadGenQuestionOption>"
+        },
+        {
+            "name": "type",
+            "type": "string"
+        }
+    ]
+}

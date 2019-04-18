@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "current_usage",
+            "type": "int"
+        },
+        {
+            "name": "new_usage",
+            "type": "int"
+        },
+        {
+            "name": "platform",
+            "type": "string"
+        },
+        {
+            "name": "position",
+            "type": "string"
+        },
+        {
+            "name": "threshold",
+            "type": "int"
+        }
+    ]
+}

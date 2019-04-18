@@ -1,0 +1,57 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "blending_mode",
+            "type": "AdCreativeLinkDataImageLayerSpec_blending_mode"
+        },
+        {
+            "name": "content",
+            "type": "Object"
+        },
+        {
+            "name": "frame_image_hash",
+            "type": "string"
+        },
+        {
+            "name": "frame_source",
+            "type": "AdCreativeLinkDataImageLayerSpec_frame_source"
+        },
+        {
+            "name": "image_source",
+            "type": "AdCreativeLinkDataImageLayerSpec_image_source"
+        },
+        {
+            "name": "layer_type",
+            "type": "AdCreativeLinkDataImageLayerSpec_layer_type"
+        },
+        {
+            "name": "opacity",
+            "type": "int"
+        },
+        {
+            "name": "overlay_position",
+            "type": "AdCreativeLinkDataImageLayerSpec_overlay_position"
+        },
+        {
+            "name": "overlay_shape",
+            "type": "AdCreativeLinkDataImageLayerSpec_overlay_shape"
+        },
+        {
+            "name": "scale",
+            "type": "int"
+        },
+        {
+            "name": "shape_color",
+            "type": "string"
+        },
+        {
+            "name": "text_color",
+            "type": "string"
+        },
+        {
+            "name": "text_font",
+            "type": "AdCreativeLinkDataImageLayerSpec_text_font"
+        }
+    ]
+}

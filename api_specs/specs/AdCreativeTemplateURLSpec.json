@@ -1,0 +1,33 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "android",
+            "type": "Object"
+        },
+        {
+            "name": "config",
+            "type": "Object"
+        },
+        {
+            "name": "ios",
+            "type": "Object"
+        },
+        {
+            "name": "ipad",
+            "type": "Object"
+        },
+        {
+            "name": "iphone",
+            "type": "Object"
+        },
+        {
+            "name": "web",
+            "type": "Object"
+        },
+        {
+            "name": "windows_phone",
+            "type": "Object"
+        }
+    ]
+}

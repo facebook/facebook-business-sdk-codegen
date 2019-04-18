@@ -1,0 +1,22 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "mutual_likes",
+            "return": "Page",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "UserContext",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        }
+    ]
+}

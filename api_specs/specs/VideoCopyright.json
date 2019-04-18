@@ -1,0 +1,140 @@
+{
+    "apis": [
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "VideoCopyright",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "VideoCopyright",
+            "params": [
+                {
+                    "name": "append_excluded_ownership_segments",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "attribution_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "content_category",
+                    "required": false,
+                    "type": "videocopyright_content_category"
+                },
+                {
+                    "name": "excluded_ownership_countries",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "excluded_ownership_segments",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "is_reference_disabled",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "monitoring_type",
+                    "required": false,
+                    "type": "videocopyright_monitoring_type"
+                },
+                {
+                    "name": "ownership_countries",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "rule_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "whitelisted_ids",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "whitelisted_ig_user_ids",
+                    "required": false,
+                    "type": "list<string>"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "content_category",
+            "type": "string"
+        },
+        {
+            "name": "copyright_content_id",
+            "type": "string"
+        },
+        {
+            "name": "creator",
+            "type": "User"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "in_conflict",
+            "type": "bool"
+        },
+        {
+            "name": "monitoring_status",
+            "type": "string"
+        },
+        {
+            "name": "monitoring_type",
+            "type": "string"
+        },
+        {
+            "name": "ownership_countries",
+            "type": "VideoCopyrightGeoGate"
+        },
+        {
+            "name": "reference_file",
+            "type": "CopyrightReferenceContainer"
+        },
+        {
+            "name": "reference_file_disabled",
+            "type": "bool"
+        },
+        {
+            "name": "reference_file_disabled_by_ops",
+            "type": "bool"
+        },
+        {
+            "name": "reference_file_expired",
+            "type": "bool"
+        },
+        {
+            "name": "reference_owner_id",
+            "type": "string"
+        },
+        {
+            "name": "rule_ids",
+            "type": "list<VideoCopyrightRule>"
+        },
+        {
+            "name": "whitelisted_ids",
+            "type": "list<string>"
+        }
+    ]
+}

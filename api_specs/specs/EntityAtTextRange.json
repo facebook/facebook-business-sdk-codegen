@@ -1,0 +1,29 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "length",
+            "type": "unsigned int"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "object",
+            "type": "Profile"
+        },
+        {
+            "name": "offset",
+            "type": "unsigned int"
+        },
+        {
+            "name": "type",
+            "type": "EntityAtTextRange_type"
+        }
+    ]
+}

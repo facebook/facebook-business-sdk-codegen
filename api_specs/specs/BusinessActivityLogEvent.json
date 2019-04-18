@@ -1,0 +1,81 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "acted_upon_business_id",
+            "type": "string"
+        },
+        {
+            "name": "acted_upon_business_name",
+            "type": "string"
+        },
+        {
+            "name": "acted_upon_business_object_id",
+            "type": "string"
+        },
+        {
+            "name": "acted_upon_business_object_name",
+            "type": "string"
+        },
+        {
+            "name": "acted_upon_business_object_type",
+            "type": "string"
+        },
+        {
+            "name": "acted_upon_user_id",
+            "type": "string"
+        },
+        {
+            "name": "acted_upon_user_name",
+            "type": "string"
+        },
+        {
+            "name": "acting_business_id",
+            "type": "string"
+        },
+        {
+            "name": "acting_business_name",
+            "type": "string"
+        },
+        {
+            "name": "acting_user_id",
+            "type": "string"
+        },
+        {
+            "name": "acting_user_name",
+            "type": "string"
+        },
+        {
+            "name": "event_time",
+            "type": "unsigned int"
+        },
+        {
+            "name": "event_type",
+            "type": "string"
+        },
+        {
+            "name": "extra_data",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "target_business_id",
+            "type": "string"
+        },
+        {
+            "name": "target_business_name",
+            "type": "string"
+        },
+        {
+            "name": "target_business_object_id",
+            "type": "string"
+        },
+        {
+            "name": "target_business_object_name",
+            "type": "string"
+        },
+        {
+            "name": "target_business_object_type",
+            "type": "string"
+        }
+    ]
+}

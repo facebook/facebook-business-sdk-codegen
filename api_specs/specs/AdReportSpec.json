@@ -1,0 +1,202 @@
+{
+    "apis": [
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdReportSpec",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "AdReportSpec",
+            "params": [
+                {
+                    "name": "actions_group_by",
+                    "required": false,
+                    "type": "list<adreportspec_actions_group_by>"
+                },
+                {
+                    "name": "business_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "bypass_async",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "creation_source",
+                    "required": false,
+                    "type": "adreportspec_creation_source"
+                },
+                {
+                    "name": "data_columns",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "date_preset",
+                    "required": false,
+                    "type": "adreportspec_date_preset"
+                },
+                {
+                    "name": "export_columns",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "filters",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "format",
+                    "required": false,
+                    "type": "adreportspec_format"
+                },
+                {
+                    "name": "format_version",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "insights_section",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "limit",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "report_run_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "report_schedule_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "sort_by",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "sort_dir",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "time_increment",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "time_interval",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "time_ranges",
+                    "required": false,
+                    "type": "list"
+                },
+                {
+                    "name": "user_report",
+                    "required": false,
+                    "type": "bool"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "account_id",
+            "type": "string"
+        },
+        {
+            "name": "actions_group_by",
+            "type": "list<string>"
+        },
+        {
+            "name": "creation_source",
+            "type": "string"
+        },
+        {
+            "name": "data_columns",
+            "type": "list<string>"
+        },
+        {
+            "name": "date_preset",
+            "type": "string"
+        },
+        {
+            "name": "export_columns",
+            "type": "list<string>"
+        },
+        {
+            "name": "filters",
+            "type": "list<Object>"
+        },
+        {
+            "name": "format_version",
+            "type": "int"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "insights_section",
+            "type": "Object"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "report_schedule",
+            "type": "Object"
+        },
+        {
+            "name": "report_schedule_id",
+            "type": "string"
+        },
+        {
+            "name": "sort_by",
+            "type": "string"
+        },
+        {
+            "name": "sort_dir",
+            "type": "string"
+        },
+        {
+            "name": "time_increment",
+            "type": "string"
+        },
+        {
+            "name": "time_interval",
+            "type": "Object"
+        },
+        {
+            "name": "time_ranges",
+            "type": "list<Object>"
+        }
+    ]
+}

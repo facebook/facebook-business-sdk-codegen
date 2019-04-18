@@ -1,0 +1,72 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AsyncSession",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "app",
+            "type": "Application"
+        },
+        {
+            "name": "complete_time",
+            "type": "datetime"
+        },
+        {
+            "name": "error_code",
+            "type": "int"
+        },
+        {
+            "name": "exception",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "method",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "page",
+            "type": "Page"
+        },
+        {
+            "name": "percent_completed",
+            "type": "int"
+        },
+        {
+            "name": "platform_version",
+            "type": "string"
+        },
+        {
+            "name": "result",
+            "type": "string"
+        },
+        {
+            "name": "start_time",
+            "type": "datetime"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "uri",
+            "type": "string"
+        },
+        {
+            "name": "user",
+            "type": "User"
+        }
+    ]
+}

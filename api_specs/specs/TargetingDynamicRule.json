@@ -1,0 +1,37 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "action.type",
+            "type": "string"
+        },
+        {
+            "name": "ad_group_id",
+            "type": "string"
+        },
+        {
+            "name": "campaign_group_id",
+            "type": "string"
+        },
+        {
+            "name": "campaign_id",
+            "type": "string"
+        },
+        {
+            "name": "impression_count",
+            "type": "string"
+        },
+        {
+            "name": "page_id",
+            "type": "string"
+        },
+        {
+            "name": "post",
+            "type": "string"
+        },
+        {
+            "name": "retention_seconds",
+            "type": "string"
+        }
+    ]
+}

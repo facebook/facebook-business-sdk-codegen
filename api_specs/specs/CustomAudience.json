@@ -1,0 +1,610 @@
+{
+    "apis": [
+        {
+            "method": "DELETE",
+            "endpoint": "adaccounts",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "adaccounts",
+                    "required": false,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "adaccounts",
+            "return": "CustomAudienceAdAccount",
+            "params": [
+                {
+                    "name": "permissions",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "adaccounts",
+            "return": "CustomAudience",
+            "params": [
+                {
+                    "name": "adaccounts",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "permissions",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "relationship_type",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "replace",
+                    "required": false,
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "ads",
+            "return": "Ad",
+            "params": [
+                {
+                    "name": "effective_status",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "status",
+                    "required": false,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "capabilities",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "adaccounts",
+                    "required": false,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "capabilities",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "accounts_capabilities",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "relationship_type",
+                    "required": false,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "data",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "action_type",
+                    "required": false,
+                    "type": "customaudiencedata_action_type_enum_param"
+                },
+                {
+                    "name": "batch_seq",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "encoding",
+                    "required": false,
+                    "type": "customaudiencedata_encoding_enum_param"
+                },
+                {
+                    "name": "entries",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "entry_type",
+                    "required": false,
+                    "type": "customaudiencedata_entry_type_enum_param"
+                },
+                {
+                    "name": "last_batch_flag",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "session_id",
+                    "required": false,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "prefills",
+            "return": "CustomAudiencePrefillState",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "sessions",
+            "return": "CustomAudienceSession",
+            "params": [
+                {
+                    "name": "session_id",
+                    "required": false,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "shared_account_info",
+            "return": "CustomAudiencesharedAccountInfo",
+            "params": []
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "upload",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "namespace",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "payload",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "session",
+                    "required": false,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "upload",
+            "return": "CustomAudience",
+            "params": [
+                {
+                    "name": "namespace",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "payload",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "session",
+                    "required": false,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "users",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "namespace",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "payload",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "session",
+                    "required": false,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "users",
+            "return": "CustomAudience",
+            "params": [
+                {
+                    "name": "namespace",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "payload",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "session",
+                    "required": false,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "CustomAudience",
+            "params": [
+                {
+                    "name": "ad_account_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "CustomAudience",
+            "params": [
+                {
+                    "name": "accountID",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "additionalMetadata",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "allowed_domains",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "claim_objective",
+                    "required": false,
+                    "type": "customaudience_claim_objective"
+                },
+                {
+                    "name": "content_type",
+                    "required": false,
+                    "type": "customaudience_content_type"
+                },
+                {
+                    "name": "countries",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "customer_file_source",
+                    "required": false,
+                    "type": "customaudience_customer_file_source"
+                },
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "details",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "enable_fetch_or_create",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "event_source_group",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "event_sources",
+                    "required": false,
+                    "type": "list<map>"
+                },
+                {
+                    "name": "exclusions",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "expectedSize",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "gender",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "inclusions",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "isPrivate",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_household",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_household_exclusion",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "lookalike_spec",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "maxAge",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "minAge",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "opt_out_link",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "parent_audience_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "partnerID",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "partner_reference_key",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "product_set_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "retention_days",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "rev_share_policy_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "rule",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "rule_aggregation",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "seed_audience",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "source",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "study_spec",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "tags",
+                    "required": false,
+                    "type": "list<string>"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "account_id",
+            "type": "string"
+        },
+        {
+            "name": "approximate_count",
+            "type": "int"
+        },
+        {
+            "name": "customer_file_source",
+            "type": "string"
+        },
+        {
+            "name": "data_source",
+            "type": "CustomAudienceDataSource"
+        },
+        {
+            "name": "data_source_types",
+            "type": "string"
+        },
+        {
+            "name": "datafile_custom_audience_uploading_status",
+            "type": "string"
+        },
+        {
+            "name": "delivery_status",
+            "type": "CustomAudienceStatus"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "excluded_custom_audiences",
+            "type": "list<CustomAudience>"
+        },
+        {
+            "name": "expiry_time",
+            "type": "unsigned int"
+        },
+        {
+            "name": "external_event_source",
+            "type": "AdsPixel"
+        },
+        {
+            "name": "household_audience",
+            "type": "int"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "included_custom_audiences",
+            "type": "list<CustomAudience>"
+        },
+        {
+            "name": "is_household",
+            "type": "bool"
+        },
+        {
+            "name": "is_snapshot",
+            "type": "bool"
+        },
+        {
+            "name": "is_value_based",
+            "type": "bool"
+        },
+        {
+            "name": "list_of_accounts",
+            "type": "list<string>"
+        },
+        {
+            "name": "lookalike_audience_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "lookalike_spec",
+            "type": "LookalikeSpec"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "operation_status",
+            "type": "CustomAudienceStatus"
+        },
+        {
+            "name": "opt_out_link",
+            "type": "string"
+        },
+        {
+            "name": "permission_for_actions",
+            "type": "AudiencePermissionForActions"
+        },
+        {
+            "name": "pixel_id",
+            "type": "string"
+        },
+        {
+            "name": "retention_days",
+            "type": "int"
+        },
+        {
+            "name": "rev_share_policy_id",
+            "type": "unsigned int"
+        },
+        {
+            "name": "rule",
+            "type": "string"
+        },
+        {
+            "name": "rule_aggregation",
+            "type": "string"
+        },
+        {
+            "name": "rule_v2",
+            "type": "string"
+        },
+        {
+            "name": "seed_audience",
+            "type": "int"
+        },
+        {
+            "name": "sharing_status",
+            "type": "CustomAudienceSharingStatus"
+        },
+        {
+            "name": "study_spec",
+            "type": "AudienceInsightsStudySpec"
+        },
+        {
+            "name": "subtype",
+            "type": "string"
+        },
+        {
+            "name": "time_content_updated",
+            "type": "unsigned int"
+        },
+        {
+            "name": "time_created",
+            "type": "unsigned int"
+        },
+        {
+            "name": "time_updated",
+            "type": "unsigned int"
+        }
+    ]
+}

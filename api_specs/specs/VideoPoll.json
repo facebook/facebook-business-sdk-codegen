@@ -1,0 +1,78 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "poll_options",
+            "return": "VideoPollOption",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "VideoPoll",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "VideoPoll",
+            "params": [
+                {
+                    "name": "action",
+                    "required": true,
+                    "type": "videopoll_action"
+                },
+                {
+                    "name": "close_after_voting",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "default_open",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "show_gradient",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "show_results",
+                    "required": false,
+                    "type": "bool"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "close_after_voting",
+            "type": "bool"
+        },
+        {
+            "name": "default_open",
+            "type": "bool"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "question",
+            "type": "string"
+        },
+        {
+            "name": "show_gradient",
+            "type": "bool"
+        },
+        {
+            "name": "show_results",
+            "type": "bool"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        }
+    ]
+}

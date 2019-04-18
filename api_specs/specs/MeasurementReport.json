@@ -1,0 +1,64 @@
+{
+    "apis": [
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "MeasurementReport",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "MeasurementReport",
+            "params": [
+                {
+                    "name": "is_last_batch",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "payload",
+                    "required": false,
+                    "type": "file"
+                },
+                {
+                    "name": "url",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "download_urls",
+            "type": "list<string>"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "metadata",
+            "type": "map"
+        },
+        {
+            "name": "report_type",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "upload_urls",
+            "type": "list<string>"
+        }
+    ]
+}

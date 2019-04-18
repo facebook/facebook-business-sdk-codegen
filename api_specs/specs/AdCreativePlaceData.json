@@ -1,0 +1,29 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "address_string",
+            "type": "string"
+        },
+        {
+            "name": "label",
+            "type": "string"
+        },
+        {
+            "name": "latitude",
+            "type": "float"
+        },
+        {
+            "name": "location_source_id",
+            "type": "string"
+        },
+        {
+            "name": "longitude",
+            "type": "float"
+        },
+        {
+            "name": "type",
+            "type": "string"
+        }
+    ]
+}

@@ -1,0 +1,381 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "messages",
+            "return": "UnifiedMessage",
+            "params": [
+                {
+                    "name": "user",
+                    "required": false,
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "messages",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "aloha_action",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "android_key_hash",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "applied_art_data",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "associated_object_id",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "attribution_app_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "attribution_app_metadata",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "audio_duration",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "audio_type",
+                    "required": false,
+                    "type": "unifiedthreadmessages_audio_type_enum_param"
+                },
+                {
+                    "name": "body",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "broadcast_recipients",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "client_tags",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "coordinates",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "copy_attachment",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "copy_message",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "customizations",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "entry_point",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "external_attachment_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "image_type",
+                    "required": false,
+                    "type": "unifiedthreadmessages_image_type_enum_param"
+                },
+                {
+                    "name": "ios_bundle_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "is_admin_model_v2_enabled",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_broadcast",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_montage",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_voicemail",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "lightweight_action_attachment",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "link",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "live_location_attachment",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "location_attachment",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "log_info",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "mark_read_watermark_timestamp",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "media",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "message_attempt_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "message_source_data",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "montage_business_platform_data",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "montage_frame_style",
+                    "required": false,
+                    "type": "unifiedthreadmessages_montage_frame_style_enum_param"
+                },
+                {
+                    "name": "montage_mentions",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "montage_overlays",
+                    "required": false,
+                    "type": "list<map>"
+                },
+                {
+                    "name": "montage_reply_data",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "montage_supported_features",
+                    "required": false,
+                    "type": "list<unifiedthreadmessages_montage_supported_features_enum_param>"
+                },
+                {
+                    "name": "montage_targets",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "object_attachment",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "offline_threading_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "platform_xmd",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "prng",
+                    "required": false,
+                    "type": "list"
+                },
+                {
+                    "name": "proxied_app_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "recipients",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "replied_to_message_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "selected_cta_token",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "shareable_attachment",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "shown_cta_tokens",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "skip_android_hash_check",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "story_id",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "tags",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "tid",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "tracking",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "ttl",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "use_existing_group",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "video_thumbnail",
+                    "required": false,
+                    "type": "file"
+                },
+                {
+                    "name": "video_type",
+                    "required": false,
+                    "type": "unifiedthreadmessages_video_type_enum_param"
+                }
+            ]
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "UnifiedThread",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "can_reply",
+            "type": "bool"
+        },
+        {
+            "name": "former_participants",
+            "type": "Object"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_subscribed",
+            "type": "bool"
+        },
+        {
+            "name": "link",
+            "type": "string"
+        },
+        {
+            "name": "message_count",
+            "type": "int"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "participants",
+            "type": "Object"
+        },
+        {
+            "name": "scoped_thread_key",
+            "type": "string"
+        },
+        {
+            "name": "senders",
+            "type": "Object"
+        },
+        {
+            "name": "snippet",
+            "type": "string"
+        },
+        {
+            "name": "subject",
+            "type": "string"
+        },
+        {
+            "name": "unread_count",
+            "type": "int"
+        },
+        {
+            "name": "updated_time",
+            "type": "datetime"
+        },
+        {
+            "name": "wallpaper",
+            "type": "string"
+        }
+    ]
+}

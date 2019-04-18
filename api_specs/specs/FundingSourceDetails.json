@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "coupon",
+            "type": "FundingSourceDetailsCoupon"
+        },
+        {
+            "name": "display_string",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "type",
+            "type": "int"
+        }
+    ]
+}

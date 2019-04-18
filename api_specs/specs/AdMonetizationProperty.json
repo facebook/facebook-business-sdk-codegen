@@ -1,0 +1,127 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "adnetworkanalytics",
+            "return": "AdNetworkAnalyticsSyncQueryResult",
+            "params": [
+                {
+                    "name": "aggregation_period",
+                    "required": false,
+                    "type": "admonetizationpropertyadnetworkanalytics_aggregation_period_enum_param"
+                },
+                {
+                    "name": "breakdowns",
+                    "required": false,
+                    "type": "list<admonetizationpropertyadnetworkanalytics_breakdowns_enum_param>"
+                },
+                {
+                    "name": "filters",
+                    "required": false,
+                    "type": "list<map>"
+                },
+                {
+                    "name": "limit",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "metrics",
+                    "required": true,
+                    "type": "list<admonetizationpropertyadnetworkanalytics_metrics_enum_param>"
+                },
+                {
+                    "name": "ordering_column",
+                    "required": false,
+                    "type": "admonetizationpropertyadnetworkanalytics_ordering_column_enum_param"
+                },
+                {
+                    "name": "ordering_type",
+                    "required": false,
+                    "type": "admonetizationpropertyadnetworkanalytics_ordering_type_enum_param"
+                },
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "until",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "adnetworkanalytics",
+            "return": "AdMonetizationProperty",
+            "params": [
+                {
+                    "name": "aggregation_period",
+                    "required": false,
+                    "type": "admonetizationpropertyadnetworkanalytics_aggregation_period_enum_param"
+                },
+                {
+                    "name": "breakdowns",
+                    "required": false,
+                    "type": "list<admonetizationpropertyadnetworkanalytics_breakdowns_enum_param>"
+                },
+                {
+                    "name": "filters",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "limit",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "metrics",
+                    "required": true,
+                    "type": "list<admonetizationpropertyadnetworkanalytics_metrics_enum_param>"
+                },
+                {
+                    "name": "ordering_column",
+                    "required": false,
+                    "type": "admonetizationpropertyadnetworkanalytics_ordering_column_enum_param"
+                },
+                {
+                    "name": "ordering_type",
+                    "required": false,
+                    "type": "admonetizationpropertyadnetworkanalytics_ordering_type_enum_param"
+                },
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "until",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "adnetworkanalytics_results",
+            "return": "AdNetworkAnalyticsAsyncQueryResult",
+            "params": [
+                {
+                    "name": "query_ids",
+                    "required": false,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdMonetizationProperty",
+            "params": []
+        }
+    ],
+    "fields": []
+}

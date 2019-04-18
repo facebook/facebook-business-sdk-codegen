@@ -1,0 +1,110 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "paged_app_publishers",
+            "return": "AppPublisher",
+            "params": [
+                {
+                    "name": "draft_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "paged_web_publishers",
+            "return": "WebPublisher",
+            "params": [
+                {
+                    "name": "draft_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "PublisherBlockList",
+            "params": [
+                {
+                    "name": "account_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "business_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "draft_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "PublisherBlockList",
+            "params": [
+                {
+                    "name": "spec",
+                    "required": true,
+                    "type": "Object"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "app_publishers",
+            "type": "list<Object>"
+        },
+        {
+            "name": "business_owner_id",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_auto_blocking_on",
+            "type": "bool"
+        },
+        {
+            "name": "is_eligible_at_campaign_level",
+            "type": "bool"
+        },
+        {
+            "name": "last_update_time",
+            "type": "datetime"
+        },
+        {
+            "name": "last_update_user",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "owner_ad_account_id",
+            "type": "string"
+        },
+        {
+            "name": "web_publishers",
+            "type": "list<Object>"
+        }
+    ]
+}

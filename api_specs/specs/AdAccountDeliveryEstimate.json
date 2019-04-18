@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "daily_outcomes_curve",
+            "type": "list<OutcomePredictionPoint>"
+        },
+        {
+            "name": "estimate_dau",
+            "type": "int"
+        },
+        {
+            "name": "estimate_mau",
+            "type": "int"
+        },
+        {
+            "name": "estimate_ready",
+            "type": "bool"
+        }
+    ]
+}

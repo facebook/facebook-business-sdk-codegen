@@ -1,0 +1,53 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "account_id",
+            "type": "string"
+        },
+        {
+            "name": "campaign_active",
+            "type": "bool"
+        },
+        {
+            "name": "campaign_started",
+            "type": "bool"
+        },
+        {
+            "name": "creative_uploaded",
+            "type": "bool"
+        },
+        {
+            "name": "delivered_budget",
+            "type": "int"
+        },
+        {
+            "name": "delivered_daily_grp",
+            "type": "list<float>"
+        },
+        {
+            "name": "delivered_daily_impression",
+            "type": "list<float>"
+        },
+        {
+            "name": "delivered_impression",
+            "type": "unsigned int"
+        },
+        {
+            "name": "delivered_reach",
+            "type": "unsigned int"
+        },
+        {
+            "name": "delivered_total_impression",
+            "type": "unsigned int"
+        },
+        {
+            "name": "io_approved",
+            "type": "bool"
+        },
+        {
+            "name": "sf_link",
+            "type": "string"
+        }
+    ]
+}

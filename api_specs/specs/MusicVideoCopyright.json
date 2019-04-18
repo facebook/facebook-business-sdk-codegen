@@ -1,0 +1,64 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "MusicVideoCopyright",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "displayed_matches_count",
+            "type": "int"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "in_conflict",
+            "type": "bool"
+        },
+        {
+            "name": "isrc",
+            "type": "string"
+        },
+        {
+            "name": "match_rule",
+            "type": "VideoCopyrightRule"
+        },
+        {
+            "name": "ownership_countries",
+            "type": "list<string>"
+        },
+        {
+            "name": "reference_file_status",
+            "type": "string"
+        },
+        {
+            "name": "ridge_monitoring_status",
+            "type": "string"
+        },
+        {
+            "name": "update_time",
+            "type": "datetime"
+        },
+        {
+            "name": "video_asset",
+            "type": "CopyrightReferenceContainer"
+        },
+        {
+            "name": "whitelisted_fb_users",
+            "type": "list<Object>"
+        },
+        {
+            "name": "whitelisted_ig_users",
+            "type": "list<string>"
+        }
+    ]
+}

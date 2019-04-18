@@ -1,0 +1,52 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "samples",
+            "return": "ProductFeedUploadErrorSample",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "suggested_rules",
+            "return": "ProductFeedRuleSuggestion",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ProductFeedUploadError",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "affected_surfaces",
+            "type": "list<ProductFeedUploadError_affected_surfaces>"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "error_type",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "severity",
+            "type": "ProductFeedUploadError_severity"
+        },
+        {
+            "name": "summary",
+            "type": "string"
+        },
+        {
+            "name": "total_count",
+            "type": "unsigned int"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "ad_account",
+            "type": "AdAccount"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        }
+    ]
+}

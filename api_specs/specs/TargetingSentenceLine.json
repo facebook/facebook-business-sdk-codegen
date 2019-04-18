@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "params",
+            "type": "Targeting"
+        },
+        {
+            "name": "targetingsentencelines",
+            "type": "list"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "retention_seconds",
+            "type": "string"
+        },
+        {
+            "name": "rule",
+            "type": "string"
+        }
+    ]
+}

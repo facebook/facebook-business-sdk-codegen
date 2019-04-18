@@ -1,0 +1,114 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "applications",
+            "return": "Application",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "DirectDeal",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "adbreaks_enabled",
+            "type": "bool"
+        },
+        {
+            "name": "adset",
+            "type": "AdSet"
+        },
+        {
+            "name": "advertiser",
+            "type": "Object"
+        },
+        {
+            "name": "advertiser_lead_email",
+            "type": "string"
+        },
+        {
+            "name": "advertiser_page",
+            "type": "string"
+        },
+        {
+            "name": "cpe_amount",
+            "type": "int"
+        },
+        {
+            "name": "cpe_currency",
+            "type": "string"
+        },
+        {
+            "name": "end_time",
+            "type": "int"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "lifetime_budget_amount",
+            "type": "int"
+        },
+        {
+            "name": "lifetime_budget_currency",
+            "type": "string"
+        },
+        {
+            "name": "lifetime_impressions",
+            "type": "int"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "pages",
+            "type": "list<string>"
+        },
+        {
+            "name": "placements",
+            "type": "list<string>"
+        },
+        {
+            "name": "priced_by",
+            "type": "string"
+        },
+        {
+            "name": "publisher_name",
+            "type": "string"
+        },
+        {
+            "name": "review_requirement",
+            "type": "string"
+        },
+        {
+            "name": "sales_lead_email",
+            "type": "string"
+        },
+        {
+            "name": "start_time",
+            "type": "int"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "targeting",
+            "type": "Targeting"
+        },
+        {
+            "name": "third_party_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "third_party_integrated_deal",
+            "type": "bool"
+        }
+    ]
+}

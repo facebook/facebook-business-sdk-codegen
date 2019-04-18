@@ -1,0 +1,61 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "address_string",
+            "type": "string"
+        },
+        {
+            "name": "country",
+            "type": "string"
+        },
+        {
+            "name": "country_group",
+            "type": "string"
+        },
+        {
+            "name": "custom_type",
+            "type": "string"
+        },
+        {
+            "name": "distance_unit",
+            "type": "string"
+        },
+        {
+            "name": "key",
+            "type": "string"
+        },
+        {
+            "name": "latitude",
+            "type": "float"
+        },
+        {
+            "name": "longitude",
+            "type": "float"
+        },
+        {
+            "name": "max_population",
+            "type": "int"
+        },
+        {
+            "name": "min_population",
+            "type": "int"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "primary_city_id",
+            "type": "int"
+        },
+        {
+            "name": "radius",
+            "type": "float"
+        },
+        {
+            "name": "region_id",
+            "type": "int"
+        }
+    ]
+}

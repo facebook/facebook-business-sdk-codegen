@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "api_enum",
+            "type": "string"
+        },
+        {
+            "name": "fb_page_categories",
+            "type": "list<PageCategory>"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        }
+    ]
+}

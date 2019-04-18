@@ -1,0 +1,33 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "body_label",
+            "type": "AdAssetFeedSpecAssetLabel"
+        },
+        {
+            "name": "caption_label",
+            "type": "AdAssetFeedSpecAssetLabel"
+        },
+        {
+            "name": "description_label",
+            "type": "AdAssetFeedSpecAssetLabel"
+        },
+        {
+            "name": "image_label",
+            "type": "AdAssetFeedSpecAssetLabel"
+        },
+        {
+            "name": "link_url_label",
+            "type": "AdAssetFeedSpecAssetLabel"
+        },
+        {
+            "name": "title_label",
+            "type": "AdAssetFeedSpecAssetLabel"
+        },
+        {
+            "name": "video_label",
+            "type": "AdAssetFeedSpecAssetLabel"
+        }
+    ]
+}

@@ -1,0 +1,82 @@
+{
+    "apis": [
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "Lead",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "ad_id",
+            "type": "string"
+        },
+        {
+            "name": "ad_name",
+            "type": "string"
+        },
+        {
+            "name": "adset_id",
+            "type": "string"
+        },
+        {
+            "name": "adset_name",
+            "type": "string"
+        },
+        {
+            "name": "campaign_id",
+            "type": "string"
+        },
+        {
+            "name": "campaign_name",
+            "type": "string"
+        },
+        {
+            "name": "created_time",
+            "type": "datetime"
+        },
+        {
+            "name": "custom_disclaimer_responses",
+            "type": "list<UserLeadGenDisclaimerResponse>"
+        },
+        {
+            "name": "field_data",
+            "type": "list<UserLeadGenFieldData>"
+        },
+        {
+            "name": "form_id",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_organic",
+            "type": "bool"
+        },
+        {
+            "name": "partner_name",
+            "type": "string"
+        },
+        {
+            "name": "platform",
+            "type": "string"
+        },
+        {
+            "name": "post",
+            "type": "Link"
+        },
+        {
+            "name": "retailer_item_id",
+            "type": "string"
+        }
+    ]
+}

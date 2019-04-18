@@ -1,0 +1,37 @@
+{
+    "apis": [
+        {
+            "method": "POST",
+            "endpoint": "agencies",
+            "return": "OwnedDomain",
+            "params": [
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "permitted_roles",
+                    "required": false,
+                    "type": "list<owneddomainagencies_permitted_roles_enum_param>"
+                }
+            ]
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "OwnedDomain",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "domain_name",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "branded_content_shared_to_sponsor_status",
+            "type": "string"
+        },
+        {
+            "name": "branded_content_sponsor_page_id",
+            "type": "string"
+        },
+        {
+            "name": "branded_content_sponsor_relationship",
+            "type": "string"
+        },
+        {
+            "name": "caption",
+            "type": "string"
+        },
+        {
+            "name": "image_hash",
+            "type": "string"
+        },
+        {
+            "name": "page_welcome_message",
+            "type": "string"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        }
+    ]
+}

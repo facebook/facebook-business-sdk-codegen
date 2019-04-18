@@ -1,0 +1,89 @@
+{
+    "apis": [
+        {
+            "method": "DELETE",
+            "endpoint": "bundles",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "bundle",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "bundles",
+            "return": "DynamicItemDisplayBundle",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "bundles",
+            "return": "DynamicItemDisplayBundleFolder",
+            "params": [
+                {
+                    "name": "bundle",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "DynamicItemDisplayBundleFolder",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "DynamicItemDisplayBundleFolder",
+            "params": [
+                {
+                    "name": "bundles",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "categorization_criteria",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "product_catalog",
+            "type": "ProductCatalog"
+        },
+        {
+            "name": "product_set",
+            "type": "ProductSet"
+        },
+        {
+            "name": "valid_labels",
+            "type": "map<string, list<string>>"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "action",
+            "type": "string"
+        },
+        {
+            "name": "conditions",
+            "type": "list<Object>"
+        },
+        {
+            "name": "validity_status",
+            "type": "string"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "carousel_ad",
+            "type": "ProductCatalogImageSettingsOperation"
+        },
+        {
+            "name": "single_ad",
+            "type": "ProductCatalogImageSettingsOperation"
+        }
+    ]
+}

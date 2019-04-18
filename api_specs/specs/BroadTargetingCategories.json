@@ -1,0 +1,49 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "category_description",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "parent_category",
+            "type": "string"
+        },
+        {
+            "name": "path",
+            "type": "list<string>"
+        },
+        {
+            "name": "size",
+            "type": "int"
+        },
+        {
+            "name": "source",
+            "type": "string"
+        },
+        {
+            "name": "type",
+            "type": "int"
+        },
+        {
+            "name": "type_name",
+            "type": "string"
+        },
+        {
+            "name": "untranslated_name",
+            "type": "string"
+        },
+        {
+            "name": "untranslated_parent_name",
+            "type": "string"
+        }
+    ]
+}

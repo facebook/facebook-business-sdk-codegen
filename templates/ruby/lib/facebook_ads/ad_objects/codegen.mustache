@@ -1,0 +1,76 @@
+# Copyright (c) 2017-present, Facebook, Inc. All rights reserved.
+#
+# You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+# copy, modify, and distribute this software in source code or binary form for use
+# in connection with the web services and APIs provided by Facebook.
+#
+# As with any software that integrates with the Facebook platform, your use of
+# this software is subject to the Facebook Platform Policy
+# [http://developers.facebook.com/policy/]. This copyright notice shall be
+# included in all copies or substantial portions of the software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+# FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+# COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+# IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+# CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+# FB:AUTOGEN
+
+module FacebookAds
+  # This class is auto-generated.
+
+  # For any issues or feature requests related to this class, please let us know
+  # on github and we'll fix in our codegen framework. We'll not be able to accept
+  # pull request for this class.
+
+  class {{name:strict_pascal_case}} < AdObject
+    {{#ruby_have_helpers}}
+    include {{name:pascal_case}}Helpers
+    {{/ruby_have_helpers}}
+    {{#api_spec_based_enum_reference}}
+    {{field_or_param:upper_case}} = [
+      {{#values}}
+      "{{.}}",
+      {{/values}}
+    ]
+
+    {{/api_spec_based_enum_reference}}
+
+    {{#fields}}
+    field :{{#is_irregular_name}}_{{/is_irregular_name}}{{name:underscore}}, {{{type:ruby}}}
+    {{/fields}}
+    {{! we assume everything has a get, unless otherwise specified, this allows
+        generic AdOjbect to has get}}
+    {{^has_id}}
+    has_no_id
+    {{/has_id}}
+    {{! we assume everything has a id, unless otherwise specified too}}
+    {{^has_get}}
+    has_no_get
+    {{/has_get}}
+    {{^has_update}}
+    has_no_post
+    {{/has_update}}
+    {{^has_delete}}
+    has_no_delete
+    {{/has_delete}}
+
+    {{#edges}}
+    has_edge :{{edge_name}} do |edge|
+      {{#end_points}}
+      edge.{{method:lower_case}}{{#return:strict_pascal_case}} {{^return_a_list}}'{{{.}}}'{{/return_a_list}}{{#return_a_list}}list: '{{{.}}}'{{/return_a_list}}{{/return:strict_pascal_case}}{{#params.length}} do |api|
+      {{#params}}
+        api.has_param :{{name:underscore}}, {{{type:ruby}}}
+      {{/params}}
+      {{#allow_file_upload}}
+        api.accepts_files!
+      {{/allow_file_upload}}
+      end{{/params.length}}
+      {{/end_points}}
+    end
+
+    {{/edges}}
+  end
+end

@@ -1,0 +1,37 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "caption",
+            "type": "string"
+        },
+        {
+            "name": "customization_spec",
+            "type": "Object"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "link",
+            "type": "string"
+        },
+        {
+            "name": "message",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "priority",
+            "type": "int"
+        },
+        {
+            "name": "template_url_spec",
+            "type": "AdCreativeTemplateURLSpec"
+        }
+    ]
+}

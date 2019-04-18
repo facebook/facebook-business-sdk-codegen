@@ -1,0 +1,28 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "Place",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "location",
+            "type": "Location"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "overall_rating",
+            "type": "float"
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "height",
+            "type": "unsigned int"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_preferred",
+            "type": "bool"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "scale",
+            "type": "float"
+        },
+        {
+            "name": "uri",
+            "type": "string"
+        },
+        {
+            "name": "width",
+            "type": "unsigned int"
+        }
+    ]
+}

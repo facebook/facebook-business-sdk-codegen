@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "message_sends",
+            "type": "unsigned int"
+        },
+        {
+            "name": "organic_impressions",
+            "type": "unsigned int"
+        },
+        {
+            "name": "paid_impressions",
+            "type": "unsigned int"
+        }
+    ]
+}

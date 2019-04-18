@@ -1,0 +1,36 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "MessengerDestinationPageWelcomeMessage",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "page_welcome_message_body",
+            "type": "string"
+        },
+        {
+            "name": "page_welcome_message_type",
+            "type": "string"
+        },
+        {
+            "name": "template_name",
+            "type": "string"
+        },
+        {
+            "name": "time_created",
+            "type": "datetime"
+        },
+        {
+            "name": "time_last_used",
+            "type": "datetime"
+        }
+    ]
+}

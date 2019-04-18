@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "transformation_type",
+            "type": "string"
+        }
+    ]
+}

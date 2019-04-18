@@ -1,0 +1,33 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "api_version",
+            "type": "string"
+        },
+        {
+            "name": "created_time",
+            "type": "datetime"
+        },
+        {
+            "name": "error_code",
+            "type": "unsigned int"
+        },
+        {
+            "name": "graph_path",
+            "type": "string"
+        },
+        {
+            "name": "http_method",
+            "type": "RequestHistory_http_method"
+        },
+        {
+            "name": "post_params",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "query_params",
+            "type": "map<string, string>"
+        }
+    ]
+}

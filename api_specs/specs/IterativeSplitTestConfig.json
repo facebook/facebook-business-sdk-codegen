@@ -1,0 +1,48 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "IterativeSplitTestConfig",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "budget",
+            "type": "int"
+        },
+        {
+            "name": "end_time",
+            "type": "datetime"
+        },
+        {
+            "name": "guidance",
+            "type": "Object"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "iterative_split_test_original_variant_id",
+            "type": "string"
+        },
+        {
+            "name": "iterative_split_test_variant_to_split_mapping",
+            "type": "map<string, int>"
+        },
+        {
+            "name": "results_window",
+            "type": "Object"
+        },
+        {
+            "name": "splits",
+            "type": "list<int>"
+        },
+        {
+            "name": "start_time",
+            "type": "datetime"
+        }
+    ]
+}

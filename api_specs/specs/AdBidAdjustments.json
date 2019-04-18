@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "age_range",
+            "type": "map<string, float>"
+        },
+        {
+            "name": "page_types",
+            "type": "Object"
+        },
+        {
+            "name": "user_groups",
+            "type": "string"
+        }
+    ]
+}

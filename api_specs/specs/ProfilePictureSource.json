@@ -1,0 +1,41 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "bottom",
+            "type": "unsigned int"
+        },
+        {
+            "name": "cache_key",
+            "type": "string"
+        },
+        {
+            "name": "height",
+            "type": "unsigned int"
+        },
+        {
+            "name": "is_silhouette",
+            "type": "bool"
+        },
+        {
+            "name": "left",
+            "type": "unsigned int"
+        },
+        {
+            "name": "right",
+            "type": "unsigned int"
+        },
+        {
+            "name": "top",
+            "type": "unsigned int"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        },
+        {
+            "name": "width",
+            "type": "unsigned int"
+        }
+    ]
+}

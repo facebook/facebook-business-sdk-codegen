@@ -1,0 +1,472 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "blocked_users",
+            "return": "User",
+            "params": [
+                {
+                    "name": "uid",
+                    "required": false,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "comments",
+            "return": "Comment",
+            "params": [
+                {
+                    "name": "filter",
+                    "required": false,
+                    "type": "livevideocomments_filter_enum_param"
+                },
+                {
+                    "name": "live_filter",
+                    "required": false,
+                    "type": "livevideocomments_live_filter_enum_param"
+                },
+                {
+                    "name": "order",
+                    "required": false,
+                    "type": "livevideocomments_order_enum_param"
+                },
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "crosspost_shared_pages",
+            "return": "Page",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "crossposted_broadcasts",
+            "return": "LiveVideo",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "errors",
+            "return": "LiveVideoError",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "game_shows",
+            "return": "VideoGameShow",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "guest_sessions",
+            "return": "LiveWithGuestSession",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "guest_sessions",
+            "return": "LiveWithGuestSession",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "input_streams",
+            "return": "LiveVideo",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "likes",
+            "return": "Profile",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "polls",
+            "return": "VideoPoll",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "polls",
+            "return": "VideoPoll",
+            "params": [
+                {
+                    "name": "close_after_voting",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "correct_option",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "default_open",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "options",
+                    "required": true,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "question",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "show_gradient",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "show_results",
+                    "required": false,
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "reactions",
+            "return": "Profile",
+            "params": [
+                {
+                    "name": "type",
+                    "required": false,
+                    "type": "livevideoreactions_type_enum_param"
+                }
+            ]
+        },
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "LiveVideo",
+            "params": [
+                {
+                    "name": "target_token",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "LiveVideo",
+            "params": [
+                {
+                    "name": "ad_break_drop_live_stream",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "ad_break_duration",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "ad_break_encoder_drops_live_stream",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "ad_break_intent",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "ad_break_start_now",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "ad_break_time_offset",
+                    "required": false,
+                    "type": "float"
+                },
+                {
+                    "name": "allow_bm_crossposting",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "attribution_app_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "attribution_app_metadata",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "commercial_break_durations",
+                    "required": false,
+                    "type": "list<unsigned int>"
+                },
+                {
+                    "name": "content_tags",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "crossposting_actions",
+                    "required": false,
+                    "type": "list<map>"
+                },
+                {
+                    "name": "custom_labels",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "direct_share_status",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "disturbing",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "embeddable",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "end_live_video",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_audio_only",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_manual_mode",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "live_comment_moderation_setting",
+                    "required": false,
+                    "type": "list<livevideo_live_comment_moderation_setting>"
+                },
+                {
+                    "name": "live_encoders",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "og_icon_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "og_phrase",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "place",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "planned_start_time",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "privacy",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "product_items",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "published",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "schedule_custom_profile_image",
+                    "required": false,
+                    "type": "file"
+                },
+                {
+                    "name": "schedule_feed_background_image",
+                    "required": false,
+                    "type": "file"
+                },
+                {
+                    "name": "sponsor_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "sponsor_relationship",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "status",
+                    "required": false,
+                    "type": "livevideo_status"
+                },
+                {
+                    "name": "stream_type",
+                    "required": false,
+                    "type": "livevideo_stream_type"
+                },
+                {
+                    "name": "tags",
+                    "required": false,
+                    "type": "list<int>"
+                },
+                {
+                    "name": "targeting",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "title",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "ad_break_config",
+            "type": "LiveVideoAdBreakConfig"
+        },
+        {
+            "name": "ad_break_failure_reason",
+            "type": "string"
+        },
+        {
+            "name": "broadcast_start_time",
+            "type": "datetime"
+        },
+        {
+            "name": "copyright",
+            "type": "VideoCopyright"
+        },
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "dash_ingest_url",
+            "type": "string"
+        },
+        {
+            "name": "dash_preview_url",
+            "type": "string"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "embed_html",
+            "type": "string"
+        },
+        {
+            "name": "from",
+            "type": "Object"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "ingest_streams",
+            "type": "list<LiveVideoInputStream>"
+        },
+        {
+            "name": "is_manual_mode",
+            "type": "bool"
+        },
+        {
+            "name": "is_reference_only",
+            "type": "bool"
+        },
+        {
+            "name": "live_encoders",
+            "type": "list<LiveEncoder>"
+        },
+        {
+            "name": "live_views",
+            "type": "unsigned int"
+        },
+        {
+            "name": "permalink_url",
+            "type": "string"
+        },
+        {
+            "name": "planned_start_time",
+            "type": "datetime"
+        },
+        {
+            "name": "seconds_left",
+            "type": "int"
+        },
+        {
+            "name": "secure_stream_url",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "stream_url",
+            "type": "string"
+        },
+        {
+            "name": "targeting",
+            "type": "LiveVideoTargeting"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "total_views",
+            "type": "string"
+        },
+        {
+            "name": "video",
+            "type": "AdVideo"
+        }
+    ]
+}

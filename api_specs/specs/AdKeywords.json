@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "brands",
+            "type": "list<string>"
+        },
+        {
+            "name": "product_categories",
+            "type": "list<string>"
+        },
+        {
+            "name": "product_names",
+            "type": "list<string>"
+        },
+        {
+            "name": "search_terms",
+            "type": "list<string>"
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "OffsitePixel",
+            "params": [
+                {
+                    "name": "value",
+                    "required": false,
+                    "type": "unsigned int"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "creator",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "js_pixel",
+            "type": "string"
+        },
+        {
+            "name": "last_firing_time",
+            "type": "datetime"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "tag",
+            "type": "string"
+        }
+    ]
+}

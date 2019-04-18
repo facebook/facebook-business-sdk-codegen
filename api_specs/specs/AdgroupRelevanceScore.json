@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "negative_feedback",
+            "type": "string"
+        },
+        {
+            "name": "positive_feedback",
+            "type": "string"
+        },
+        {
+            "name": "score",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        }
+    ]
+}

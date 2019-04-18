@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "cover_id",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "offset_x",
+            "type": "float"
+        },
+        {
+            "name": "offset_y",
+            "type": "float"
+        },
+        {
+            "name": "source",
+            "type": "string"
+        }
+    ]
+}

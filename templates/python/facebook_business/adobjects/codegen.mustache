@@ -1,0 +1,240 @@
+# Copyright 2014 Facebook, Inc.
+
+# You are hereby granted a non-exclusive, worldwide, royalty-free license to
+# use, copy, modify, and distribute this software in source code or binary
+# form for use in connection with the web services and APIs provided by
+# Facebook.
+
+# As with any software that integrates with the Facebook platform, your use
+# of this software is subject to the Facebook Developer Principles and
+# Policies [http://developers.facebook.com/policy/]. This copyright notice
+# shall be included in all copies or substantial portions of the software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+# THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+# DEALINGS IN THE SOFTWARE.
+
+from facebook_business.adobjects.abstractobject import AbstractObject
+{{#is_crud}}
+from facebook_business.adobjects.abstractcrudobject import AbstractCrudObject
+from facebook_business.adobjects.objectparser import ObjectParser
+from facebook_business.api import FacebookRequest
+from facebook_business.typechecker import TypeChecker
+{{/is_crud}}
+{{#python_use_mixin}}
+from facebook_business.adobjects.helpers.{{name:all_lower_case}}mixin import {{name:pascal_case}}Mixin
+{{/python_use_mixin}}
+{{#has_ad_label}}
+from facebook_business.mixins import HasAdLabels
+{{/has_ad_label}}
+{{#validate_only}}
+from facebook_business.mixins import CanValidate
+{{/validate_only}}
+
+"""
+This class is auto-generated.
+
+For any issues or feature requests related to this class, please let us know on
+github and we'll fix in our codegen framework. We'll not be able to accept
+pull request for this class.
+"""
+
+class {{name:pascal_case}}(
+    {{#python_use_mixin}}{{name:pascal_case}}Mixin,
+    {{/python_use_mixin}}{{#is_crud}}AbstractCrudObject{{/is_crud}}{{^is_crud}}AbstractObject{{/is_crud}},{{#has_ad_label}}
+    HasAdLabels,{{/has_ad_label}}{{#validate_only}}
+    CanValidate,{{/validate_only}}
+):
+
+    {{#is_crud}}
+    def __init__(self, fbid=None, parent_id=None, api=None):
+        self._is{{name:pascal_case}} = True
+        super({{name:pascal_case}}, self).__init__(fbid, parent_id, api)
+
+    {{/is_crud}}
+    {{^is_crud}}
+    def __init__(self, api=None):
+        super({{name:pascal_case}}, self).__init__()
+        self._is{{name:pascal_case}} = True
+        self._api = api
+
+    {{/is_crud}}
+    class Field(AbstractObject.Field):
+        {{#fields}}
+        {{#is_irregular_name}}field_{{/is_irregular_name}}{{name:underscore}} = '{{api_name}}'
+        {{/fields}}
+        {{#creation_allow_file_upload}}
+        filename = 'filename'
+        {{/creation_allow_file_upload}}
+        {{#cls_is_AdVideo}}
+        filepath = 'filepath'
+        {{/cls_is_AdVideo}}
+        {{^fields}}
+        {{^creation_allow_file_upload}}
+        pass
+        {{/creation_allow_file_upload}}
+        {{/fields}}
+
+    {{#api_spec_based_enum_reference}}
+    class {{field_or_param:pascal_case}}:
+        {{#values_with_naming_convention}}
+        {{#is_irregular_name}}value_{{/is_irregular_name}}{{{value:underscore}}} = '{{{value}}}'
+        {{/values_with_naming_convention}}
+
+    {{/api_spec_based_enum_reference}}
+    {{#creation_endpoint}}
+    {{#version}}
+    {{#has_deprecate_implicit_creation_new}}
+    # @deprecated get_endpoint function is deprecated
+    {{/has_deprecate_implicit_creation_new}}
+    {{/version}}
+    @classmethod
+    def get_endpoint(cls):
+        return '{{creation_endpoint}}'
+
+    def api_create(self, parent_id, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
+        from facebook_business.adobjects.{{creation_parent_class:all_lower_case}} import {{creation_parent_class:pascal_case}}
+        return {{creation_parent_class:pascal_case}}(api=self._api, fbid=parent_id).{{creation_method}}(fields, params, batch, success, failure, pending)
+
+    {{/creation_endpoint}}
+    {{^creation_endpoint}}
+    {{#read_endpoint}}
+    {{#version}}
+    {{#has_deprecate_implicit_creation_new}}
+    # @deprecated get_endpoint function is deprecated
+    {{/has_deprecate_implicit_creation_new}}
+    {{/version}}
+    @classmethod
+    def get_endpoint(cls):
+        return '{{read_endpoint}}'
+
+    {{/read_endpoint}}
+    {{/creation_endpoint}}
+    {{#node}}
+    def {{#is_node_api}}api_{{/is_node_api}}{{name}}(self, fields=None, params=None,{{#is_insights_sync}} is_async=False,{{/is_insights_sync}} batch=None, success=None, failure=None, pending=False):
+        from facebook_business.utils import api_utils
+        if batch is None and (success is not None or failure is not None):
+          api_utils.warning('`success` and `failure` callback only work for batch call.')
+        {{#referred_classes}}
+        from facebook_business.adobjects.{{name:all_lower_case}} import {{name:pascal_case}}
+        {{/referred_classes}}
+        {{#is_insights_sync}}
+        if is_async:
+          return self.get_insights_async(fields, params, batch, success, failure, pending)
+        {{/is_insights_sync}}
+        param_types = {
+            {{#params}}
+            '{{name}}': '{{{type:short}}}',
+            {{/params}}
+        }
+        enums = {
+            {{#referred_enums}}
+            '{{name}}': {{#metadata}}{{#node}}{{node}}.{{field_or_param:pascal_case}}.__dict__.values(),{{/node}}{{^node}}[
+                {{#values}}
+                '{{{.}}}',
+                {{/values}}
+            ],{{/node}}{{/metadata}}
+            {{/referred_enums}}
+        }
+        request = FacebookRequest(
+            node_id=self['id'],
+            method='{{method}}',
+            endpoint='{{{endpoint}}}',
+            api=self._api,
+            param_checker=TypeChecker(param_types, enums),
+            target_class={{#return:pascal_case}}{{return:pascal_case}}{{/return:pascal_case}}{{^return:pascal_case}}AbstractCrudObject{{/return:pascal_case}},
+            api_type={{#is_node_api}}'NODE'{{/is_node_api}}{{^is_node_api}}'EDGE'{{/is_node_api}},{{#allow_file_upload}}
+            allow_file_upload=True,{{/allow_file_upload}}
+            response_parser=ObjectParser({{#is_node_api}}reuse_object=self{{/is_node_api}}{{^is_node_api}}target_class={{#return:pascal_case}}{{return:pascal_case}}{{/return:pascal_case}}{{^return:pascal_case}}AbstractCrudObject{{/return:pascal_case}}{{/is_node_api}}),
+            {{#is_insights}}
+            include_summary=False,
+            {{/is_insights}}
+        )
+        request.add_params(params)
+        request.add_fields(fields)
+
+        if batch is not None:
+            request.add_to_batch(batch, success=success, failure=failure)
+            return request
+        elif pending:
+            return request
+        else:
+            self.assure_call()
+            return request.execute()
+
+    {{/node}}
+    {{#edges}}
+    def {{#is_node_api}}api_{{/is_node_api}}{{name}}(self, fields=None, params=None,{{#is_insights_sync}} is_async=False,{{/is_insights_sync}} batch=None, success=None, failure=None, pending=False):
+        from facebook_business.utils import api_utils
+        if batch is None and (success is not None or failure is not None):
+          api_utils.warning('`success` and `failure` callback only work for batch call.')
+        {{#referred_classes}}
+        from facebook_business.adobjects.{{name:all_lower_case}} import {{name:pascal_case}}
+        {{/referred_classes}}
+        {{#is_insights_sync}}
+        if is_async:
+          return self.get_insights_async(fields, params, batch, success, failure, pending)
+        {{/is_insights_sync}}
+        param_types = {
+            {{#params}}
+            '{{name}}': '{{{type:short}}}',
+            {{/params}}
+        }
+        enums = {
+            {{#referred_enums}}
+            '{{name}}': {{#metadata}}{{#node}}{{node}}.{{field_or_param:pascal_case}}.__dict__.values(),{{/node}}{{^node}}[
+                {{#values}}
+                '{{{.}}}',
+                {{/values}}
+            ],{{/node}}{{/metadata}}
+            {{/referred_enums}}
+        }
+        request = FacebookRequest(
+            node_id=self['id'],
+            method='{{method}}',
+            endpoint='{{{endpoint}}}',
+            api=self._api,
+            param_checker=TypeChecker(param_types, enums),
+            target_class={{#return:pascal_case}}{{return:pascal_case}}{{/return:pascal_case}}{{^return:pascal_case}}AbstractCrudObject{{/return:pascal_case}},
+            api_type={{#is_node_api}}'NODE'{{/is_node_api}}{{^is_node_api}}'EDGE'{{/is_node_api}},{{#allow_file_upload}}
+            allow_file_upload=True,{{/allow_file_upload}}
+            response_parser=ObjectParser({{#is_node_api}}reuse_object=self{{/is_node_api}}{{^is_node_api}}target_class={{#return:pascal_case}}{{return:pascal_case}}{{/return:pascal_case}}{{^return:pascal_case}}AbstractCrudObject{{/return:pascal_case}}{{/is_node_api}}, api=self._api),
+            {{#is_insights}}
+            include_summary=False,
+            {{/is_insights}}
+        )
+        request.add_params(params)
+        request.add_fields(fields)
+
+        if batch is not None:
+            request.add_to_batch(batch, success=success, failure=failure)
+            return request
+        elif pending:
+            return request
+        else:
+            self.assure_call()
+            return request.execute()
+
+    {{/edges}}
+    _field_types = {
+        {{#fields}}
+        '{{api_name}}': '{{{type:short}}}',
+        {{/fields}}
+        {{#creation_allow_file_upload}}
+        'filename': 'file'
+        {{/creation_allow_file_upload}}
+    }
+    @classmethod
+    def _get_field_enum_info(cls):
+        field_enum_info = {}
+        {{#api_spec_based_enum_reference}}
+        field_enum_info['{{field_or_param:pascal_case}}'] = {{cls:name:pascal_case}}.{{field_or_param:pascal_case}}.__dict__.values()
+        {{/api_spec_based_enum_reference}}
+        return field_enum_info
+
+
+    {{> /facebook_business/adobjects/%name:underscore%.extra_functions}}

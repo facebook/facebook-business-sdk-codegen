@@ -1,0 +1,45 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "default_ad_break_duration",
+            "type": "unsigned int"
+        },
+        {
+            "name": "failure_reason_polling_interval",
+            "type": "unsigned int"
+        },
+        {
+            "name": "first_break_eligible_secs",
+            "type": "unsigned int"
+        },
+        {
+            "name": "guide_url",
+            "type": "string"
+        },
+        {
+            "name": "is_eligible_to_onboard",
+            "type": "bool"
+        },
+        {
+            "name": "is_enabled",
+            "type": "bool"
+        },
+        {
+            "name": "onboarding_url",
+            "type": "string"
+        },
+        {
+            "name": "preparing_duration",
+            "type": "unsigned int"
+        },
+        {
+            "name": "time_between_ad_breaks_secs",
+            "type": "unsigned int"
+        },
+        {
+            "name": "viewer_count_threshold",
+            "type": "unsigned int"
+        }
+    ]
+}

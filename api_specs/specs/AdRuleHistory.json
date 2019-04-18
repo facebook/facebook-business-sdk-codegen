@@ -1,0 +1,37 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "evaluation_spec",
+            "type": "AdRuleEvaluationSpec"
+        },
+        {
+            "name": "exception_code",
+            "type": "int"
+        },
+        {
+            "name": "exception_message",
+            "type": "string"
+        },
+        {
+            "name": "execution_spec",
+            "type": "AdRuleExecutionSpec"
+        },
+        {
+            "name": "is_manual",
+            "type": "bool"
+        },
+        {
+            "name": "results",
+            "type": "list<AdRuleHistoryResult>"
+        },
+        {
+            "name": "schedule_spec",
+            "type": "AdRuleScheduleSpec"
+        },
+        {
+            "name": "timestamp",
+            "type": "datetime"
+        }
+    ]
+}

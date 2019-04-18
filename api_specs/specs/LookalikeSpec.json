@@ -1,0 +1,53 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "country",
+            "type": "string"
+        },
+        {
+            "name": "is_financial_service",
+            "type": "bool"
+        },
+        {
+            "name": "origin",
+            "type": "list<Object>"
+        },
+        {
+            "name": "origin_event_name",
+            "type": "string"
+        },
+        {
+            "name": "origin_event_source_name",
+            "type": "string"
+        },
+        {
+            "name": "origin_event_source_type",
+            "type": "string"
+        },
+        {
+            "name": "product_set_name",
+            "type": "string"
+        },
+        {
+            "name": "ratio",
+            "type": "float"
+        },
+        {
+            "name": "starting_ratio",
+            "type": "float"
+        },
+        {
+            "name": "target_countries",
+            "type": "list<string>"
+        },
+        {
+            "name": "target_country_names",
+            "type": "list"
+        },
+        {
+            "name": "type",
+            "type": "string"
+        }
+    ]
+}

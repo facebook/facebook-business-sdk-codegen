@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "excluded_countries",
+            "type": "list<string>"
+        },
+        {
+            "name": "included_countries",
+            "type": "list<string>"
+        }
+    ]
+}

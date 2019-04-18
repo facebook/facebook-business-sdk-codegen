@@ -1,0 +1,29 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "call_to_action",
+            "type": "AdCreativeLinkDataCallToAction"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "image_hash",
+            "type": "string"
+        },
+        {
+            "name": "link",
+            "type": "string"
+        },
+        {
+            "name": "message",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        }
+    ]
+}

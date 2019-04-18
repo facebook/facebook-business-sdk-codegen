@@ -1,0 +1,50 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "PlaceTopic",
+            "params": [
+                {
+                    "name": "icon_size",
+                    "required": false,
+                    "type": "placetopic_icon_size"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "count",
+            "type": "unsigned int"
+        },
+        {
+            "name": "has_children",
+            "type": "bool"
+        },
+        {
+            "name": "icon_url",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "parent_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "plural_name",
+            "type": "string"
+        },
+        {
+            "name": "top_subtopic_names",
+            "type": "list<string>"
+        }
+    ]
+}

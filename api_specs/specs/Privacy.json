@@ -1,0 +1,29 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "allow",
+            "type": "string"
+        },
+        {
+            "name": "deny",
+            "type": "string"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "friends",
+            "type": "string"
+        },
+        {
+            "name": "networks",
+            "type": "string"
+        },
+        {
+            "name": "value",
+            "type": "string"
+        }
+    ]
+}

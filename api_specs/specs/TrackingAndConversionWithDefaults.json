@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "custom_conversion",
+            "type": "list<Object>"
+        },
+        {
+            "name": "custom_tracking",
+            "type": "list<Object>"
+        },
+        {
+            "name": "default_conversion",
+            "type": "list<Object>"
+        },
+        {
+            "name": "default_tracking",
+            "type": "list<Object>"
+        }
+    ]
+}

@@ -1,0 +1,173 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "account_id",
+            "type": "string"
+        },
+        {
+            "name": "account_mgr_fbid",
+            "type": "string"
+        },
+        {
+            "name": "account_mgr_name",
+            "type": "string"
+        },
+        {
+            "name": "adops_person_name",
+            "type": "string"
+        },
+        {
+            "name": "advertiser_address_fbid",
+            "type": "string"
+        },
+        {
+            "name": "advertiser_fbid",
+            "type": "string"
+        },
+        {
+            "name": "advertiser_name",
+            "type": "string"
+        },
+        {
+            "name": "agency_discount",
+            "type": "float"
+        },
+        {
+            "name": "agency_name",
+            "type": "string"
+        },
+        {
+            "name": "bill_to_address_fbid",
+            "type": "string"
+        },
+        {
+            "name": "bill_to_fbid",
+            "type": "string"
+        },
+        {
+            "name": "campaign_name",
+            "type": "string"
+        },
+        {
+            "name": "created_by",
+            "type": "string"
+        },
+        {
+            "name": "created_date",
+            "type": "unsigned int"
+        },
+        {
+            "name": "customer_io",
+            "type": "string"
+        },
+        {
+            "name": "io_number",
+            "type": "unsigned int"
+        },
+        {
+            "name": "io_terms",
+            "type": "string"
+        },
+        {
+            "name": "io_type",
+            "type": "string"
+        },
+        {
+            "name": "last_updated_by",
+            "type": "string"
+        },
+        {
+            "name": "last_updated_date",
+            "type": "unsigned int"
+        },
+        {
+            "name": "max_end_date",
+            "type": "unsigned int"
+        },
+        {
+            "name": "mdc_fbid",
+            "type": "string"
+        },
+        {
+            "name": "media_plan_number",
+            "type": "string"
+        },
+        {
+            "name": "min_start_date",
+            "type": "unsigned int"
+        },
+        {
+            "name": "msa_contract",
+            "type": "string"
+        },
+        {
+            "name": "payment_terms",
+            "type": "string"
+        },
+        {
+            "name": "rev_hold_flag",
+            "type": "bool"
+        },
+        {
+            "name": "rev_hold_released_by",
+            "type": "int"
+        },
+        {
+            "name": "rev_hold_released_on",
+            "type": "unsigned int"
+        },
+        {
+            "name": "salesrep_fbid",
+            "type": "string"
+        },
+        {
+            "name": "salesrep_name",
+            "type": "string"
+        },
+        {
+            "name": "sold_to_address_fbid",
+            "type": "string"
+        },
+        {
+            "name": "sold_to_fbid",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "subvertical",
+            "type": "string"
+        },
+        {
+            "name": "thirdparty_billed",
+            "type": "unsigned int"
+        },
+        {
+            "name": "thirdparty_password",
+            "type": "string"
+        },
+        {
+            "name": "thirdparty_uid",
+            "type": "string"
+        },
+        {
+            "name": "thirdparty_url",
+            "type": "string"
+        },
+        {
+            "name": "vat_country",
+            "type": "string"
+        },
+        {
+            "name": "version",
+            "type": "unsigned int"
+        },
+        {
+            "name": "vertical",
+            "type": "string"
+        }
+    ]
+}

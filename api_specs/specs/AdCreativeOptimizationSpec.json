@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "bodies",
+            "type": "list<string>"
+        },
+        {
+            "name": "descriptions",
+            "type": "list<string>"
+        },
+        {
+            "name": "titles",
+            "type": "list<string>"
+        }
+    ]
+}

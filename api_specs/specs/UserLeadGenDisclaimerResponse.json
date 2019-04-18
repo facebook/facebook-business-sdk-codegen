@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "checkbox_key",
+            "type": "string"
+        },
+        {
+            "name": "is_checked",
+            "type": "string"
+        }
+    ]
+}

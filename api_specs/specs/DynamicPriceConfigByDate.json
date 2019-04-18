@@ -1,0 +1,24 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "DynamicPriceConfigByDate",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "checkin_date",
+            "type": "string"
+        },
+        {
+            "name": "prices",
+            "type": "string"
+        },
+        {
+            "name": "prices_pretty",
+            "type": "list<Object>"
+        }
+    ]
+}

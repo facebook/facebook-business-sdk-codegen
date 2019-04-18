@@ -1,0 +1,33 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "100x100",
+            "type": "list<list>"
+        },
+        {
+            "name": "100x72",
+            "type": "list<list>"
+        },
+        {
+            "name": "191x100",
+            "type": "list<list>"
+        },
+        {
+            "name": "400x150",
+            "type": "list<list>"
+        },
+        {
+            "name": "400x500",
+            "type": "list<list>"
+        },
+        {
+            "name": "600x360",
+            "type": "list<list>"
+        },
+        {
+            "name": "90x160",
+            "type": "list<list>"
+        }
+    ]
+}

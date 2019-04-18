@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "android",
+            "type": "list<AndroidAppLink>"
+        },
+        {
+            "name": "ios",
+            "type": "list<IosAppLink>"
+        },
+        {
+            "name": "ipad",
+            "type": "list<IosAppLink>"
+        },
+        {
+            "name": "iphone",
+            "type": "list<IosAppLink>"
+        }
+    ]
+}

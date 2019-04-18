@@ -1,0 +1,140 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "ad_place_page_sets",
+            "return": "AdPlacePageSet",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "adspixels",
+            "return": "AdsPixel",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "applications",
+            "return": "Application",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "customconversions",
+            "return": "CustomConversion",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "offline_conversion_data_sets",
+            "return": "OfflineConversionDataSet",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "offsitepixels",
+            "return": "OffsitePixel",
+            "params": []
+        },
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdStudyObjective",
+            "params": [
+                {
+                    "name": "breakdowns",
+                    "required": false,
+                    "type": "list<adstudyobjective_breakdowns>"
+                }
+            ]
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "AdStudyObjective",
+            "params": [
+                {
+                    "name": "adspixels",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "applications",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "customconversions",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "is_primary",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "offline_conversion_data_sets",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "offsitepixels",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "product_sets",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "type",
+                    "required": false,
+                    "type": "adstudyobjective_type"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "custom_attributes",
+            "type": "list<string>"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_primary",
+            "type": "bool"
+        },
+        {
+            "name": "last_updated_results",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "results",
+            "type": "list<string>"
+        },
+        {
+            "name": "type",
+            "type": "string"
+        }
+    ]
+}

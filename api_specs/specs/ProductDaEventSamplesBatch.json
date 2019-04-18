@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "samples",
+            "type": "list<Object>"
+        },
+        {
+            "name": "time_start",
+            "type": "unsigned int"
+        },
+        {
+            "name": "time_stop",
+            "type": "unsigned int"
+        }
+    ]
+}

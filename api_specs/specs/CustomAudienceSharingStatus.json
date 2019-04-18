@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "sharing_relationship_id",
+            "type": "unsigned int"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        }
+    ]
+}

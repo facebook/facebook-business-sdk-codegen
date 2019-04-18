@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "query_id",
+            "type": "string"
+        },
+        {
+            "name": "results",
+            "type": "list<Object>"
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "Flight",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "Flight",
+            "params": [
+                {
+                    "name": "currency",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "destination_airport",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "images",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "origin_airport",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "price",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "url",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "applinks",
+            "type": "AppLinks"
+        },
+        {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "destination_airport",
+            "type": "string"
+        },
+        {
+            "name": "destination_city",
+            "type": "string"
+        },
+        {
+            "name": "flight_id",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "images",
+            "type": "list<string>"
+        },
+        {
+            "name": "oneway_currency",
+            "type": "string"
+        },
+        {
+            "name": "oneway_price",
+            "type": "string"
+        },
+        {
+            "name": "origin_airport",
+            "type": "string"
+        },
+        {
+            "name": "origin_city",
+            "type": "string"
+        },
+        {
+            "name": "price",
+            "type": "string"
+        },
+        {
+            "name": "sanitized_images",
+            "type": "list<string>"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "execution_options",
+            "type": "list<AdRuleExecutionOptions>"
+        },
+        {
+            "name": "execution_type",
+            "type": "AdRuleExecutionSpec_execution_type"
+        }
+    ]
+}

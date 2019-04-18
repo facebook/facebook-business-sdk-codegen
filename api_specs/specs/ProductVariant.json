@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "label",
+            "type": "string"
+        },
+        {
+            "name": "options",
+            "type": "list<string>"
+        },
+        {
+            "name": "product_field",
+            "type": "string"
+        }
+    ]
+}

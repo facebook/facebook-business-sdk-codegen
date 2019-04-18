@@ -1,0 +1,116 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AutomotiveModel",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "applinks",
+            "type": "AppLinks"
+        },
+        {
+            "name": "automotive_model_id",
+            "type": "string"
+        },
+        {
+            "name": "availability",
+            "type": "string"
+        },
+        {
+            "name": "body_style",
+            "type": "string"
+        },
+        {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_0",
+            "type": "string"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "drivetrain",
+            "type": "string"
+        },
+        {
+            "name": "exterior_color",
+            "type": "string"
+        },
+        {
+            "name": "finance_description",
+            "type": "string"
+        },
+        {
+            "name": "finance_type",
+            "type": "string"
+        },
+        {
+            "name": "fuel_type",
+            "type": "string"
+        },
+        {
+            "name": "generation",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "images",
+            "type": "list<string>"
+        },
+        {
+            "name": "interior_color",
+            "type": "string"
+        },
+        {
+            "name": "interior_upholstery",
+            "type": "string"
+        },
+        {
+            "name": "make",
+            "type": "string"
+        },
+        {
+            "name": "model",
+            "type": "string"
+        },
+        {
+            "name": "price",
+            "type": "string"
+        },
+        {
+            "name": "sanitized_images",
+            "type": "list<string>"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "transmission",
+            "type": "string"
+        },
+        {
+            "name": "trim",
+            "type": "string"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        },
+        {
+            "name": "year",
+            "type": "unsigned int"
+        }
+    ]
+}

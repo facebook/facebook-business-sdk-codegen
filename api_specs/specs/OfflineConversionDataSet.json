@@ -1,0 +1,495 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "activities",
+            "return": "OfflineConversionDataSetActivities",
+            "params": [
+                {
+                    "name": "business_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "end_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "event_type",
+                    "required": false,
+                    "type": "offlineconversiondatasetactivities_event_type_enum_param"
+                },
+                {
+                    "name": "start_time",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "adaccounts",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "account_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "adaccounts",
+            "return": "AdAccount",
+            "params": [
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "adaccounts",
+            "return": "OfflineConversionDataSet",
+            "params": [
+                {
+                    "name": "account_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "auto_track_for_ads",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "agencies",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "agencies",
+            "return": "Business",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "agencies",
+            "return": "OfflineConversionDataSet",
+            "params": [
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "other_relationship",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "permitted_roles",
+                    "required": false,
+                    "type": "list<offlineconversiondatasetagencies_permitted_roles_enum_param>"
+                },
+                {
+                    "name": "relationship_type",
+                    "required": false,
+                    "type": "list<offlineconversiondatasetagencies_relationship_type_enum_param>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "audiences",
+            "return": "CustomAudience",
+            "params": [
+                {
+                    "name": "ad_account",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "customconversions",
+            "return": "CustomConversion",
+            "params": [
+                {
+                    "name": "ad_account",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "da_checks",
+            "return": "DACheck",
+            "params": [
+                {
+                    "name": "checks",
+                    "required": false,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "events",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "data",
+                    "required": true,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "namespace_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "progress",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "upload_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "upload_source",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "upload_tag",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "stats",
+            "return": "OfflineConversionDataSetStats",
+            "params": [
+                {
+                    "name": "aggr_time",
+                    "required": false,
+                    "type": "offlineconversiondatasetstats_aggr_time_enum_param"
+                },
+                {
+                    "name": "end",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "granularity",
+                    "required": false,
+                    "type": "offlineconversiondatasetstats_granularity_enum_param"
+                },
+                {
+                    "name": "skip_empty_values",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "start",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "user_timezone_id",
+                    "required": false,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "uploads",
+            "return": "OfflineConversionDataSetUpload",
+            "params": [
+                {
+                    "name": "end_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "order",
+                    "required": false,
+                    "type": "offlineconversiondatasetuploads_order_enum_param"
+                },
+                {
+                    "name": "sort_by",
+                    "required": false,
+                    "type": "offlineconversiondatasetuploads_sort_by_enum_param"
+                },
+                {
+                    "name": "start_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "upload_tag",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "uploads",
+            "return": "OfflineConversionDataSetUpload",
+            "params": [
+                {
+                    "name": "upload_tag",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "userpermissions",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "business",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "email",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "user",
+                    "required": false,
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "userpermissions",
+            "return": "AdsAssetUserPermissions",
+            "params": [
+                {
+                    "name": "business",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "userpermissions",
+            "return": "OfflineConversionDataSet",
+            "params": [
+                {
+                    "name": "business",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "role",
+                    "required": true,
+                    "type": "offlineconversiondatasetuserpermissions_role_enum_param"
+                },
+                {
+                    "name": "user",
+                    "required": true,
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "users",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "data",
+                    "required": true,
+                    "type": "list<Object>"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "users",
+            "return": "OfflineConversionDataSet",
+            "params": [
+                {
+                    "name": "data",
+                    "required": true,
+                    "type": "list<Object>"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "validate",
+            "return": "OfflineConversionDataSet",
+            "params": [
+                {
+                    "name": "data",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "namespace_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "OfflineConversionDataSet",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "OfflineConversionDataSet",
+            "params": [
+                {
+                    "name": "auto_assign_to_new_accounts_only",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "enable_auto_assign_to_accounts",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "business",
+            "type": "Business"
+        },
+        {
+            "name": "config",
+            "type": "string"
+        },
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "duplicate_entries",
+            "type": "int"
+        },
+        {
+            "name": "enable_auto_assign_to_accounts",
+            "type": "bool"
+        },
+        {
+            "name": "event_stats",
+            "type": "string"
+        },
+        {
+            "name": "event_time_max",
+            "type": "int"
+        },
+        {
+            "name": "event_time_min",
+            "type": "int"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_mta_use",
+            "type": "bool"
+        },
+        {
+            "name": "is_restricted_use",
+            "type": "bool"
+        },
+        {
+            "name": "last_upload_app",
+            "type": "string"
+        },
+        {
+            "name": "last_upload_app_changed_time",
+            "type": "int"
+        },
+        {
+            "name": "match_rate_approx",
+            "type": "int"
+        },
+        {
+            "name": "matched_entries",
+            "type": "int"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "usage",
+            "type": "Object"
+        },
+        {
+            "name": "valid_entries",
+            "type": "int"
+        }
+    ]
+}

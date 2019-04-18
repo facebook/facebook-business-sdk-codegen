@@ -1,0 +1,45 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "catering",
+            "type": "bool"
+        },
+        {
+            "name": "delivery",
+            "type": "bool"
+        },
+        {
+            "name": "groups",
+            "type": "bool"
+        },
+        {
+            "name": "kids",
+            "type": "bool"
+        },
+        {
+            "name": "outdoor",
+            "type": "bool"
+        },
+        {
+            "name": "pickup",
+            "type": "bool"
+        },
+        {
+            "name": "reserve",
+            "type": "bool"
+        },
+        {
+            "name": "takeout",
+            "type": "bool"
+        },
+        {
+            "name": "waiter",
+            "type": "bool"
+        },
+        {
+            "name": "walkins",
+            "type": "bool"
+        }
+    ]
+}

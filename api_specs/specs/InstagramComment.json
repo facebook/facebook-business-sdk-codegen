@@ -1,0 +1,69 @@
+{
+    "apis": [
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "ad_id",
+                    "required": true,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "InstagramComment",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "InstagramComment",
+            "params": [
+                {
+                    "name": "ad_id",
+                    "required": true,
+                    "type": "Object"
+                },
+                {
+                    "name": "hide",
+                    "required": true,
+                    "type": "bool"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "comment_type",
+            "type": "string"
+        },
+        {
+            "name": "created_at",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "instagram_comment_id",
+            "type": "string"
+        },
+        {
+            "name": "instagram_user",
+            "type": "InstagramUser"
+        },
+        {
+            "name": "mentioned_instagram_users",
+            "type": "list<InstagramUser>"
+        },
+        {
+            "name": "message",
+            "type": "string"
+        }
+    ]
+}

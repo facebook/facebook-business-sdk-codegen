@@ -1,0 +1,124 @@
+{
+    "apis": [
+        {
+            "method": "POST",
+            "endpoint": "execute",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "history",
+            "return": "AdRuleHistory",
+            "params": [
+                {
+                    "name": "action",
+                    "required": false,
+                    "type": "adrulehistory_action_enum_param"
+                },
+                {
+                    "name": "hide_no_changes",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "object_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "preview",
+            "return": "AdRule",
+            "params": []
+        },
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdRule",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "AdRule",
+            "params": [
+                {
+                    "name": "evaluation_spec",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "execution_spec",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "schedule_spec",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "status",
+                    "required": false,
+                    "type": "adrule_status"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "account_id",
+            "type": "string"
+        },
+        {
+            "name": "created_by",
+            "type": "User"
+        },
+        {
+            "name": "created_time",
+            "type": "datetime"
+        },
+        {
+            "name": "evaluation_spec",
+            "type": "AdRuleEvaluationSpec"
+        },
+        {
+            "name": "execution_spec",
+            "type": "AdRuleExecutionSpec"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "schedule_spec",
+            "type": "AdRuleScheduleSpec"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "updated_time",
+            "type": "datetime"
+        }
+    ]
+}

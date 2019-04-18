@@ -1,0 +1,33 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "blame_field",
+            "type": "string"
+        },
+        {
+            "name": "code",
+            "type": "int"
+        },
+        {
+            "name": "confidence",
+            "type": "AdRecommendation_confidence"
+        },
+        {
+            "name": "importance",
+            "type": "AdRecommendation_importance"
+        },
+        {
+            "name": "message",
+            "type": "string"
+        },
+        {
+            "name": "recommendation_data",
+            "type": "AdRecommendationData"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        }
+    ]
+}

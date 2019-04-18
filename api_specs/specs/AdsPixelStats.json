@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "count",
+            "type": "int"
+        },
+        {
+            "name": "diagnostics_hourly_last_timestamp",
+            "type": "datetime"
+        },
+        {
+            "name": "event",
+            "type": "string"
+        },
+        {
+            "name": "value",
+            "type": "string"
+        }
+    ]
+}

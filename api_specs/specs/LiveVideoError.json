@@ -1,0 +1,28 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "LiveVideoError",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "error_code",
+            "type": "int"
+        },
+        {
+            "name": "error_message",
+            "type": "string"
+        },
+        {
+            "name": "error_type",
+            "type": "string"
+        }
+    ]
+}

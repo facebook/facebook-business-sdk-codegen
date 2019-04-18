@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "amount",
+            "type": "int"
+        },
+        {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "display_amount",
+            "type": "string"
+        },
+        {
+            "name": "expiration",
+            "type": "datetime"
+        }
+    ]
+}

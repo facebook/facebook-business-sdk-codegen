@@ -1,0 +1,57 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "city",
+            "type": "string"
+        },
+        {
+            "name": "city_id",
+            "type": "unsigned int"
+        },
+        {
+            "name": "country",
+            "type": "string"
+        },
+        {
+            "name": "country_code",
+            "type": "string"
+        },
+        {
+            "name": "latitude",
+            "type": "float"
+        },
+        {
+            "name": "located_in",
+            "type": "string"
+        },
+        {
+            "name": "longitude",
+            "type": "float"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "region",
+            "type": "string"
+        },
+        {
+            "name": "region_id",
+            "type": "unsigned int"
+        },
+        {
+            "name": "state",
+            "type": "string"
+        },
+        {
+            "name": "street",
+            "type": "string"
+        },
+        {
+            "name": "zip",
+            "type": "string"
+        }
+    ]
+}

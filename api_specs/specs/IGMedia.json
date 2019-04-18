@@ -1,0 +1,121 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "children",
+            "return": "IGMedia",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "comments",
+            "return": "IGComment",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "comments",
+            "return": "IGComment",
+            "params": [
+                {
+                    "name": "message",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "insights",
+            "return": "InstagramInsightsResult",
+            "params": [
+                {
+                    "name": "metric",
+                    "required": true,
+                    "type": "list<shadowigmediainsights_metric_enum_param>"
+                },
+                {
+                    "name": "period",
+                    "required": false,
+                    "type": "list<shadowigmediainsights_period_enum_param>"
+                }
+            ]
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "IGMedia",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "IGMedia",
+            "params": [
+                {
+                    "name": "comment_enabled",
+                    "required": true,
+                    "type": "bool"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "caption",
+            "type": "string"
+        },
+        {
+            "name": "comments_count",
+            "type": "int"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "ig_id",
+            "type": "string"
+        },
+        {
+            "name": "is_comment_enabled",
+            "type": "bool"
+        },
+        {
+            "name": "like_count",
+            "type": "int"
+        },
+        {
+            "name": "media_type",
+            "type": "string"
+        },
+        {
+            "name": "media_url",
+            "type": "string"
+        },
+        {
+            "name": "owner",
+            "type": "IGUser"
+        },
+        {
+            "name": "permalink",
+            "type": "string"
+        },
+        {
+            "name": "shortcode",
+            "type": "string"
+        },
+        {
+            "name": "thumbnail_url",
+            "type": "string"
+        },
+        {
+            "name": "timestamp",
+            "type": "datetime"
+        },
+        {
+            "name": "username",
+            "type": "string"
+        }
+    ]
+}

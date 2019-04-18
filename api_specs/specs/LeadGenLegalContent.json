@@ -1,0 +1,24 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "LeadGenLegalContent",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "custom_disclaimer",
+            "type": "Object"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "privacy_policy",
+            "type": "Object"
+        }
+    ]
+}

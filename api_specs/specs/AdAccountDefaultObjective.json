@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "default_objective_for_user",
+            "type": "AdAccountDefaultObjective_default_objective_for_user"
+        },
+        {
+            "name": "objective_for_level",
+            "type": "AdAccountDefaultObjective_objective_for_level"
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "account_linking_url",
+            "type": "string"
+        },
+        {
+            "name": "get_started",
+            "type": "Object"
+        },
+        {
+            "name": "greeting",
+            "type": "list<Object>"
+        },
+        {
+            "name": "home_url",
+            "type": "Object"
+        },
+        {
+            "name": "payment_settings",
+            "type": "Object"
+        },
+        {
+            "name": "persistent_menu",
+            "type": "list<Object>"
+        },
+        {
+            "name": "target_audience",
+            "type": "Object"
+        },
+        {
+            "name": "whitelisted_domains",
+            "type": "list<string>"
+        }
+    ]
+}

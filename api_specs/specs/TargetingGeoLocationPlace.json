@@ -1,0 +1,41 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "country",
+            "type": "string"
+        },
+        {
+            "name": "distance_unit",
+            "type": "string"
+        },
+        {
+            "name": "key",
+            "type": "string"
+        },
+        {
+            "name": "latitude",
+            "type": "float"
+        },
+        {
+            "name": "longitude",
+            "type": "float"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "primary_city_id",
+            "type": "int"
+        },
+        {
+            "name": "radius",
+            "type": "float"
+        },
+        {
+            "name": "region_id",
+            "type": "int"
+        }
+    ]
+}

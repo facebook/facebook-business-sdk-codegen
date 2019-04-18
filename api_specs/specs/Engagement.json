@@ -1,0 +1,33 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "count",
+            "type": "unsigned int"
+        },
+        {
+            "name": "count_string",
+            "type": "string"
+        },
+        {
+            "name": "count_string_with_like",
+            "type": "string"
+        },
+        {
+            "name": "count_string_without_like",
+            "type": "string"
+        },
+        {
+            "name": "social_sentence",
+            "type": "string"
+        },
+        {
+            "name": "social_sentence_with_like",
+            "type": "string"
+        },
+        {
+            "name": "social_sentence_without_like",
+            "type": "string"
+        }
+    ]
+}

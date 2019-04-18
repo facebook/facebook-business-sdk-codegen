@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "global",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "placement_specific",
+            "type": "AdgroupPlacementSpecificReviewFeedback"
+        }
+    ]
+}

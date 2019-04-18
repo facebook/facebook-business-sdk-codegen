@@ -1,0 +1,55 @@
+  /**
+   * @param int $business_id
+   * @param string $account_id
+   */
+  public function sharePixelWithAdAccount($business_id, $account_id) {
+    $this->getApi()->call(
+      '/'.$this->assureId().'/shared_accounts',
+      RequestInterface::METHOD_POST,
+      array(
+        'business' => $business_id,
+        'account_id' => $account_id,
+      ));
+  }
+
+  /**
+   * @param $business_id
+   * @param $account_id
+   */
+  public function unsharePixelWithAdAccount($business_id, $account_id) {
+    $this->getApi()->call(
+      '/'.$this->assureId().'/shared_accounts',
+      RequestInterface::METHOD_DELETE,
+      array(
+        'business' => $business_id,
+        'account_id' => $account_id,
+      ));
+  }
+
+  /**
+   * @param int $business_id
+   * @param int $agency_id
+   */
+  public function sharePixelWithAgency($business_id, $agency_id) {
+    $this->getApi()->call(
+      '/'.$this->assureId().'/shared_agencies',
+      'POST',
+      array(
+        'business' => $business_id,
+        'agency_id' => $agency_id,
+      ));
+  }
+
+  /**
+   * @param int $business_id
+   * @param int $agency_id
+   */
+  public function unsharePixelWithAgency($business_id, $agency_id) {
+    $this->getApi()->call(
+      '/'.$this->assureId().'/shared_agencies',
+      'DELETE',
+      array(
+        'business' => $business_id,
+        'agency_id' => $agency_id,
+      ));
+  }

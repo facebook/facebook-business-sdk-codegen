@@ -1,0 +1,10 @@
+  public function setDataTrigger(array $data) {
+    if (array_key_exists('report_run_id', $data)) {
+      $this->data['id'] = $data['report_run_id'];
+    }
+  }
+
+  public function isComplete() {
+    return $this->{AdReportRunFields::ASYNC_PERCENT_COMPLETION} === 100 &&
+      $this->{AdReportRunFields::ASYNC_STATUS} ===  'Job Completed';
+  }

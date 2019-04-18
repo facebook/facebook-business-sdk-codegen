@@ -1,0 +1,32 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "VaultDeletedImage",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "client_image_hash",
+            "type": "string"
+        },
+        {
+            "name": "date_taken",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "owner",
+            "type": "User"
+        },
+        {
+            "name": "remote_id",
+            "type": "string"
+        }
+    ]
+}

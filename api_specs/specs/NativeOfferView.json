@@ -1,0 +1,101 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "photos",
+            "return": "Photo",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "photos",
+            "return": "NativeOfferView",
+            "params": [
+                {
+                    "name": "ad_account",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "ad_image_hashes",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "file",
+                    "required": false,
+                    "type": "file"
+                },
+                {
+                    "name": "image_crops",
+                    "required": false,
+                    "type": "list<map>"
+                },
+                {
+                    "name": "photos",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "urls",
+                    "required": false,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "videos",
+            "return": "NativeOfferView",
+            "params": [
+                {
+                    "name": "videos",
+                    "required": false,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "NativeOfferView",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "NativeOfferView",
+            "params": [
+                {
+                    "name": "message",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "published",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "published_ads",
+                    "required": false,
+                    "type": "bool"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "offer",
+            "type": "NativeOffer"
+        },
+        {
+            "name": "save_count",
+            "type": "unsigned int"
+        }
+    ]
+}

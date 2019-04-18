@@ -1,0 +1,34 @@
+{
+    "apis": [
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "PageAdminNote",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "body",
+            "type": "string"
+        },
+        {
+            "name": "from",
+            "type": "Page"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "user",
+            "type": "User"
+        }
+    ]
+}

@@ -1,0 +1,365 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "adgroup_id",
+            "type": "string"
+        },
+        {
+            "name": "age_max",
+            "type": "unsigned int"
+        },
+        {
+            "name": "age_min",
+            "type": "unsigned int"
+        },
+        {
+            "name": "alternate_auto_targeting_option",
+            "type": "string"
+        },
+        {
+            "name": "app_install_state",
+            "type": "string"
+        },
+        {
+            "name": "audience_network_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "behaviors",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "brand_safety_content_filter_levels",
+            "type": "list<string>"
+        },
+        {
+            "name": "brand_safety_content_severity_levels",
+            "type": "list<string>"
+        },
+        {
+            "name": "catalog_based_targeting",
+            "type": "CatalogBasedTargeting"
+        },
+        {
+            "name": "cities",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "college_years",
+            "type": "list<unsigned int>"
+        },
+        {
+            "name": "connections",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "contextual_targeting_categories",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "countries",
+            "type": "list<string>"
+        },
+        {
+            "name": "country",
+            "type": "list<string>"
+        },
+        {
+            "name": "country_groups",
+            "type": "list<string>"
+        },
+        {
+            "name": "custom_audiences",
+            "type": "list<RawCustomAudience>"
+        },
+        {
+            "name": "device_platforms",
+            "type": "list<Targeting_device_platforms>"
+        },
+        {
+            "name": "direct_install_devices",
+            "type": "bool"
+        },
+        {
+            "name": "dynamic_audience_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "education_majors",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "education_schools",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "education_statuses",
+            "type": "list<unsigned int>"
+        },
+        {
+            "name": "effective_audience_network_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "effective_device_platforms",
+            "type": "list<Targeting_effective_device_platforms>"
+        },
+        {
+            "name": "effective_facebook_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "effective_instagram_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "effective_messenger_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "effective_publisher_platforms",
+            "type": "list<string>"
+        },
+        {
+            "name": "engagement_specs",
+            "type": "list<TargetingDynamicRule>"
+        },
+        {
+            "name": "ethnic_affinity",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "exclude_reached_since",
+            "type": "list<string>"
+        },
+        {
+            "name": "excluded_connections",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "excluded_custom_audiences",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "excluded_dynamic_audience_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "excluded_engagement_specs",
+            "type": "list<TargetingDynamicRule>"
+        },
+        {
+            "name": "excluded_geo_locations",
+            "type": "TargetingGeoLocation"
+        },
+        {
+            "name": "excluded_mobile_device_model",
+            "type": "list<string>"
+        },
+        {
+            "name": "excluded_product_audience_specs",
+            "type": "list<TargetingProductAudienceSpec>"
+        },
+        {
+            "name": "excluded_publisher_categories",
+            "type": "list<string>"
+        },
+        {
+            "name": "excluded_publisher_list_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "excluded_user_device",
+            "type": "list<string>"
+        },
+        {
+            "name": "exclusions",
+            "type": "FlexibleTargeting"
+        },
+        {
+            "name": "facebook_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "family_statuses",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "fb_deal_id",
+            "type": "string"
+        },
+        {
+            "name": "flexible_spec",
+            "type": "list<FlexibleTargeting>"
+        },
+        {
+            "name": "friends_of_connections",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "genders",
+            "type": "list<unsigned int>"
+        },
+        {
+            "name": "generation",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "geo_locations",
+            "type": "TargetingGeoLocation"
+        },
+        {
+            "name": "home_ownership",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "home_type",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "home_value",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "household_composition",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "income",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "industries",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "instagram_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "instream_video_sponsorship_placements",
+            "type": "list<string>"
+        },
+        {
+            "name": "interested_in",
+            "type": "list<unsigned int>"
+        },
+        {
+            "name": "interests",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "is_whatsapp_destination_ad",
+            "type": "bool"
+        },
+        {
+            "name": "keywords",
+            "type": "list<string>"
+        },
+        {
+            "name": "life_events",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "locales",
+            "type": "list<unsigned int>"
+        },
+        {
+            "name": "messenger_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "moms",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "net_worth",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "office_type",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "place_page_set_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "political_views",
+            "type": "list<unsigned int>"
+        },
+        {
+            "name": "politics",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "product_audience_specs",
+            "type": "list<TargetingProductAudienceSpec>"
+        },
+        {
+            "name": "prospecting_audience",
+            "type": "TargetingProspectingAudience"
+        },
+        {
+            "name": "publisher_platforms",
+            "type": "list<string>"
+        },
+        {
+            "name": "publisher_visibility_categories",
+            "type": "list<string>"
+        },
+        {
+            "name": "radius",
+            "type": "string"
+        },
+        {
+            "name": "regions",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "relationship_statuses",
+            "type": "list<unsigned int>"
+        },
+        {
+            "name": "site_category",
+            "type": "list<string>"
+        },
+        {
+            "name": "targeting_optimization",
+            "type": "string"
+        },
+        {
+            "name": "user_adclusters",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "user_device",
+            "type": "list<string>"
+        },
+        {
+            "name": "user_event",
+            "type": "list<unsigned int>"
+        },
+        {
+            "name": "user_os",
+            "type": "list<string>"
+        },
+        {
+            "name": "wireless_carrier",
+            "type": "list<string>"
+        },
+        {
+            "name": "work_employers",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "work_positions",
+            "type": "list<IDName>"
+        },
+        {
+            "name": "zips",
+            "type": "list<string>"
+        }
+    ]
+}

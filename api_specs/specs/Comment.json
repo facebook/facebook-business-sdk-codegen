@@ -1,0 +1,223 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "comments",
+            "return": "Comment",
+            "params": [
+                {
+                    "name": "filter",
+                    "required": false,
+                    "type": "commentcomments_filter_enum_param"
+                },
+                {
+                    "name": "live_filter",
+                    "required": false,
+                    "type": "commentcomments_live_filter_enum_param"
+                },
+                {
+                    "name": "order",
+                    "required": false,
+                    "type": "commentcomments_order_enum_param"
+                },
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "likes",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "feedback_source",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "nectar_module",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "tracking",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "likes",
+            "return": "Profile",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "likes",
+            "return": "Comment",
+            "params": [
+                {
+                    "name": "feedback_source",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "nectar_module",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "tracking",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "reactions",
+            "return": "Profile",
+            "params": [
+                {
+                    "name": "type",
+                    "required": false,
+                    "type": "commentreactions_type_enum_param"
+                }
+            ]
+        },
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "Comment",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "Comment",
+            "params": [
+                {
+                    "name": "attachment_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "attachment_share_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "attachment_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "is_hidden",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "message",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "admin_creator",
+            "type": "User"
+        },
+        {
+            "name": "application",
+            "type": "Application"
+        },
+        {
+            "name": "attachment",
+            "type": "Object"
+        },
+        {
+            "name": "can_comment",
+            "type": "bool"
+        },
+        {
+            "name": "can_hide",
+            "type": "bool"
+        },
+        {
+            "name": "can_like",
+            "type": "bool"
+        },
+        {
+            "name": "can_remove",
+            "type": "bool"
+        },
+        {
+            "name": "comment_count",
+            "type": "unsigned int"
+        },
+        {
+            "name": "created_time",
+            "type": "datetime"
+        },
+        {
+            "name": "from",
+            "type": "Object"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_hidden",
+            "type": "bool"
+        },
+        {
+            "name": "is_private",
+            "type": "bool"
+        },
+        {
+            "name": "like_count",
+            "type": "unsigned int"
+        },
+        {
+            "name": "live_broadcast_timestamp",
+            "type": "unsigned int"
+        },
+        {
+            "name": "message",
+            "type": "string"
+        },
+        {
+            "name": "message_tags",
+            "type": "list<EntityAtTextRange>"
+        },
+        {
+            "name": "object",
+            "type": "Object"
+        },
+        {
+            "name": "parent",
+            "type": "Comment"
+        },
+        {
+            "name": "permalink_url",
+            "type": "string"
+        },
+        {
+            "name": "user_likes",
+            "type": "bool"
+        }
+    ]
+}

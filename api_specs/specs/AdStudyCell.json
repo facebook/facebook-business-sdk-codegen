@@ -1,0 +1,93 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "adaccounts",
+            "return": "AdAccount",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "adsets",
+            "return": "AdSet",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "campaigns",
+            "return": "Campaign",
+            "params": []
+        },
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdStudyCell",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "AdStudyCell",
+            "params": [
+                {
+                    "name": "adaccounts",
+                    "required": false,
+                    "type": "list<unsigned int>"
+                },
+                {
+                    "name": "adsets",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "campaigns",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "creation_template",
+                    "required": false,
+                    "type": "adstudycell_creation_template"
+                },
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "ad_entities_count",
+            "type": "unsigned int"
+        },
+        {
+            "name": "control_percentage",
+            "type": "float"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "treatment_percentage",
+            "type": "float"
+        }
+    ]
+}

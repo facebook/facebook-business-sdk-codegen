@@ -1,0 +1,33 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "country",
+            "type": "string"
+        },
+        {
+            "name": "distance_unit",
+            "type": "string"
+        },
+        {
+            "name": "key",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "radius",
+            "type": "unsigned int"
+        },
+        {
+            "name": "region",
+            "type": "string"
+        },
+        {
+            "name": "region_id",
+            "type": "string"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "female",
+            "type": "list<float>"
+        },
+        {
+            "name": "male",
+            "type": "list<float>"
+        }
+    ]
+}

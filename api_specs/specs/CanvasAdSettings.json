@@ -1,0 +1,33 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "is_canvas_collection_eligible",
+            "type": "bool"
+        },
+        {
+            "name": "lead_form_created_time",
+            "type": "unsigned int"
+        },
+        {
+            "name": "lead_form_name",
+            "type": "string"
+        },
+        {
+            "name": "lead_gen_form_id",
+            "type": "string"
+        },
+        {
+            "name": "leads_count",
+            "type": "int"
+        },
+        {
+            "name": "product_set_id",
+            "type": "string"
+        },
+        {
+            "name": "use_retailer_item_ids",
+            "type": "bool"
+        }
+    ]
+}

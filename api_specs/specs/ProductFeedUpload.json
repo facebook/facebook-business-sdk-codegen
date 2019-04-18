@@ -1,0 +1,76 @@
+{
+    "apis": [
+        {
+            "method": "POST",
+            "endpoint": "error_report",
+            "return": "ProductFeedUpload",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "errors",
+            "return": "ProductFeedUploadError",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ProductFeedUpload",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "end_time",
+            "type": "datetime"
+        },
+        {
+            "name": "error_count",
+            "type": "int"
+        },
+        {
+            "name": "error_report",
+            "type": "ProductFeedUploadErrorReport"
+        },
+        {
+            "name": "filename",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "input_method",
+            "type": "ProductFeedUpload_input_method"
+        },
+        {
+            "name": "num_deleted_items",
+            "type": "int"
+        },
+        {
+            "name": "num_detected_items",
+            "type": "int"
+        },
+        {
+            "name": "num_invalid_items",
+            "type": "int"
+        },
+        {
+            "name": "num_persisted_items",
+            "type": "int"
+        },
+        {
+            "name": "start_time",
+            "type": "datetime"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        },
+        {
+            "name": "warning_count",
+            "type": "int"
+        }
+    ]
+}

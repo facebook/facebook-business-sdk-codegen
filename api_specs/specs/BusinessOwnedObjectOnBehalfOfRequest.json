@@ -1,0 +1,38 @@
+{
+    "apis": [
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "BusinessOwnedObjectOnBehalfOfRequest",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "business_owned_object",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "receiving_business",
+            "type": "Business"
+        },
+        {
+            "name": "requesting_business",
+            "type": "Business"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        }
+    ]
+}

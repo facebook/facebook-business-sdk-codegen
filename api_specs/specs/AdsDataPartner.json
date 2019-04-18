@@ -1,0 +1,36 @@
+{
+    "apis": [
+        {
+            "method": "DELETE",
+            "endpoint": "usersofanyaudience",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "external_ids",
+                    "required": true,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdsDataPartner",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "rev_share_policies",
+            "type": "list<RevSharePolicy>"
+        }
+    ]
+}

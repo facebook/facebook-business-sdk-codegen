@@ -1,0 +1,83 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "picture",
+            "return": "ProfilePictureSource",
+            "params": [
+                {
+                    "name": "height",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "redirect",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "type",
+                    "required": false,
+                    "type": "profilepicture_type_enum_param"
+                },
+                {
+                    "name": "width",
+                    "required": false,
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "Profile",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "can_post",
+            "type": "bool"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "link",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "pic",
+            "type": "string"
+        },
+        {
+            "name": "pic_crop",
+            "type": "ProfilePictureSource"
+        },
+        {
+            "name": "pic_large",
+            "type": "string"
+        },
+        {
+            "name": "pic_small",
+            "type": "string"
+        },
+        {
+            "name": "pic_square",
+            "type": "string"
+        },
+        {
+            "name": "profile_type",
+            "type": "Profile_profile_type"
+        },
+        {
+            "name": "username",
+            "type": "string"
+        }
+    ]
+}

@@ -1,0 +1,160 @@
+<?php
+/**
+ * Copyright (c) 2015-present, Facebook, Inc. All rights reserved.
+ *
+ * You are hereby granted a non-exclusive, worldwide, royalty-free license to
+ * use, copy, modify, and distribute this software in source code or binary
+ * form for use in connection with the web services and APIs provided by
+ * Facebook.
+ *
+ * As with any software that integrates with the Facebook platform, your use
+ * of this software is subject to the Facebook Developer Principles and
+ * Policies [http://developers.facebook.com/policy/]. This copyright notice
+ * shall be included in all copies or substantial portions of the software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+ * THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+
+namespace FacebookAds\Object;
+
+use FacebookAds\ApiRequest;
+use FacebookAds\Cursor;
+use FacebookAds\Http\RequestInterface;
+use FacebookAds\TypeChecker;
+use FacebookAds\Object\Fields\{{name:pascal_case}}Fields;
+{{#php:all_referred_enum_names}}
+use FacebookAds\Object\Values\{{.}};
+{{/php:all_referred_enum_names}}
+{{#has_ad_label:php}}
+use FacebookAds\Object\Traits\AdLabelAwareCrudObjectTrait;
+{{/has_ad_label:php}}
+{{#validate_only}}
+use FacebookAds\Object\Traits\ObjectValidation;
+{{/validate_only}}
+{{> /src/FacebookAds/Object/%name:underscore%.extra_use}}
+
+/**
+ * This class is auto-generated.
+ *
+ * For any issues or feature requests related to this class, please let us know
+ * on github and we'll fix in our codegen framework. We'll not be able to accept
+ * pull request for this class.
+ *
+ */
+
+class {{name:pascal_case}} extends Abstract{{#has_id}}{{#archivable}}Archivable{{/archivable}}Crud{{/has_id}}Object{{#can_redownload}}
+  implements CanRedownloadInterface{{/can_redownload}} {
+  {{#has_ad_label:php}}
+
+  use AdLabelAwareCrudObjectTrait;
+  {{/has_ad_label:php}}
+  {{#validate_only}}
+  use ObjectValidation;
+  {{/validate_only}}
+  {{#cls_is_AdAccountGroup}}
+
+  public function __construct($id = null, $parent_id = 'me', Api $api = null) {
+    parent::__construct($id, $parent_id, $api);
+  }
+  {{/cls_is_AdAccountGroup}}
+  {{#creation_endpoint}}
+
+  {{#version}}
+  {{#has_deprecate_implicit_creation_new}}
+  /**
+   * @deprecated getEndpoint function is deprecated
+   */
+  {{/has_deprecate_implicit_creation_new}}
+  {{/version}}
+  protected function getEndpoint() {
+    return '{{creation_endpoint}}';
+  }
+  {{/creation_endpoint}}
+  {{^creation_endpoint}}
+  {{#read_endpoint}}
+
+  {{#version}}
+  {{#has_deprecate_implicit_creation_new}}
+  /**
+   * @deprecated getEndpoint function is deprecated
+   */
+  {{/has_deprecate_implicit_creation_new}}
+  {{/version}}
+  protected function getEndpoint() {
+    return '{{read_endpoint}}';
+  }
+  {{/read_endpoint}}
+  {{/creation_endpoint}}
+
+  /**
+   * @return {{name:pascal_case}}Fields
+   */
+  public static function getFieldsEnum() {
+    return {{name:pascal_case}}Fields::getInstance();
+  }
+
+  protected static function getReferencedEnums() {
+    $ref_enums = array();
+    {{#api_spec_based_enum_reference}}
+    $ref_enums['{{field_or_param:pascal_case}}'] = {{cls:name:pascal_case}}{{field_or_param:pascal_case}}Values::getInstance()->getValues();
+    {{/api_spec_based_enum_reference}}
+    return $ref_enums;
+  }
+
+  {{#cls_is_AdCreative}}
+  protected function setDataTrigger($data) {
+    if (array_key_exists('id', $data)) {
+      $this->data['creative_id'] = $data['id'];
+    }
+  }
+  {{/cls_is_AdCreative}}
+
+  {{#apis}}
+  public function {{name:camel_case}}{{#is_node_api}}Self{{/is_node_api}}(array $fields = array(), array $params = array(), $pending = false) {
+    $this->assureId();
+
+    $param_types = array(
+      {{#params}}
+      '{{name}}' => '{{{type:short}}}',
+      {{/params}}
+      {{#allow_file_param}}
+      'filename' => 'file'
+      {{/allow_file_param}}
+    );
+    $enums = array(
+      {{#referred_enums}}
+      '{{name}}' => {{#metadata}}{{#node}}{{node:pascal_case}}{{field_or_param:pascal_case}}Values::getInstance()->getValues(),{{/node}}{{^node}}array(
+        {{#values}}
+        '{{.}}',
+        {{/values}}
+      ),{{/node}}{{/metadata}}
+      {{/referred_enums}}
+    );
+
+    $request = new ApiRequest(
+      $this->api,
+      $this->data['id'],
+      RequestInterface::METHOD_{{method}},
+      '{{{endpoint}}}',
+      new {{#return:pascal_case}}{{return:pascal_case}}{{/return:pascal_case}}{{^return:pascal_case}}AbstractCrudObject{{/return:pascal_case}}(),
+      {{#is_node_api}}'NODE'{{/is_node_api}}{{^is_node_api}}'EDGE'{{/is_node_api}},
+      {{#return:pascal_case}}{{return:pascal_case}}::getFieldsEnum()->getValues(){{/return:pascal_case}}{{^return:pascal_case}}array(){{/return:pascal_case}},
+      new TypeChecker($param_types, $enums){{#allow_file_upload}},
+      {{allow_file_upload}}{{/allow_file_upload}}{{#use_graph_video_endpoint}},
+      true{{/use_graph_video_endpoint}}
+    );
+    $request->addParams($params);
+    $request->addFields($fields);
+    return $pending ? $request : $request->execute();
+  }
+
+  {{/apis}}
+  {{> /src/FacebookAds/Object/%name:underscore%.extra_functions}}
+}

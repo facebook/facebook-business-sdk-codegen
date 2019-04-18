@@ -1,0 +1,53 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "android",
+            "type": "list<float>"
+        },
+        {
+            "name": "audience_network",
+            "type": "list<float>"
+        },
+        {
+            "name": "desktop",
+            "type": "list<float>"
+        },
+        {
+            "name": "ig_android",
+            "type": "list<float>"
+        },
+        {
+            "name": "ig_ios",
+            "type": "list<float>"
+        },
+        {
+            "name": "ig_other",
+            "type": "list<float>"
+        },
+        {
+            "name": "ig_story",
+            "type": "list<float>"
+        },
+        {
+            "name": "instant_articles",
+            "type": "list<float>"
+        },
+        {
+            "name": "instream_videos",
+            "type": "list<float>"
+        },
+        {
+            "name": "ios",
+            "type": "list<float>"
+        },
+        {
+            "name": "msite",
+            "type": "list<float>"
+        },
+        {
+            "name": "suggested_videos",
+            "type": "list<float>"
+        }
+    ]
+}

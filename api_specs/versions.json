@@ -1,0 +1,7 @@
+{
+  "v2.8": [
+    "deprecate_implicit_creation_new",
+    "kill_compatibility_manual_functions",
+    "deprecate_product_audience_php"
+  ]
+}

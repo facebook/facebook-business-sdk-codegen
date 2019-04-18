@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "element_child_index",
+            "type": "int"
+        },
+        {
+            "name": "element_crops",
+            "type": "AdsImageCrops"
+        },
+        {
+            "name": "element_id",
+            "type": "string"
+        }
+    ]
+}

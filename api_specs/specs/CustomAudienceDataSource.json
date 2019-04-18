@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "creation_params",
+            "type": "string"
+        },
+        {
+            "name": "sub_type",
+            "type": "CustomAudienceDataSource_sub_type"
+        },
+        {
+            "name": "type",
+            "type": "CustomAudienceDataSource_type"
+        }
+    ]
+}

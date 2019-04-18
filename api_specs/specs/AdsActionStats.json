@@ -1,0 +1,109 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "1d_click",
+            "type": "string"
+        },
+        {
+            "name": "1d_view",
+            "type": "string"
+        },
+        {
+            "name": "28d_click",
+            "type": "string"
+        },
+        {
+            "name": "28d_view",
+            "type": "string"
+        },
+        {
+            "name": "7d_click",
+            "type": "string"
+        },
+        {
+            "name": "7d_view",
+            "type": "string"
+        },
+        {
+            "name": "action_canvas_component_id",
+            "type": "string"
+        },
+        {
+            "name": "action_canvas_component_name",
+            "type": "string"
+        },
+        {
+            "name": "action_carousel_card_id",
+            "type": "string"
+        },
+        {
+            "name": "action_carousel_card_name",
+            "type": "string"
+        },
+        {
+            "name": "action_converted_product_id",
+            "type": "string"
+        },
+        {
+            "name": "action_destination",
+            "type": "string"
+        },
+        {
+            "name": "action_device",
+            "type": "string"
+        },
+        {
+            "name": "action_event_channel",
+            "type": "string"
+        },
+        {
+            "name": "action_link_click_destination",
+            "type": "string"
+        },
+        {
+            "name": "action_location_code",
+            "type": "string"
+        },
+        {
+            "name": "action_reaction",
+            "type": "string"
+        },
+        {
+            "name": "action_target_id",
+            "type": "string"
+        },
+        {
+            "name": "action_type",
+            "type": "string"
+        },
+        {
+            "name": "action_video_asset_id",
+            "type": "string"
+        },
+        {
+            "name": "action_video_sound",
+            "type": "string"
+        },
+        {
+            "name": "action_video_type",
+            "type": "string"
+        },
+        {
+            "name": "inline",
+            "type": "string"
+        },
+        {
+            "name": "interactive_component_sticker_id",
+            "type": "string"
+        },
+        {
+            "name": "interactive_component_sticker_response",
+            "type": "string"
+        },
+        {
+            "name": "value",
+            "type": "string"
+        }
+    ]
+}

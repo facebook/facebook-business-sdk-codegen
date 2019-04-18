@@ -1,0 +1,46 @@
+{
+    "apis": [
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ProductFeedRule",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "ProductFeedRule",
+            "params": [
+                {
+                    "name": "params",
+                    "required": true,
+                    "type": "map"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "attribute",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "params",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "rule_type",
+            "type": "string"
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdImage",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "account_id",
+            "type": "string"
+        },
+        {
+            "name": "created_time",
+            "type": "datetime"
+        },
+        {
+            "name": "creatives",
+            "type": "list<string>"
+        },
+        {
+            "name": "hash",
+            "type": "string"
+        },
+        {
+            "name": "height",
+            "type": "unsigned int"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_associated_creatives_in_adgroups",
+            "type": "bool"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "original_height",
+            "type": "unsigned int"
+        },
+        {
+            "name": "original_width",
+            "type": "unsigned int"
+        },
+        {
+            "name": "permalink_url",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "AdImage_status"
+        },
+        {
+            "name": "updated_time",
+            "type": "datetime"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        },
+        {
+            "name": "url_128",
+            "type": "string"
+        },
+        {
+            "name": "width",
+            "type": "unsigned int"
+        }
+    ]
+}

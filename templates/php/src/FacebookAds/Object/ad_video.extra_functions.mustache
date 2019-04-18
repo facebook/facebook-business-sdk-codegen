@@ -1,0 +1,40 @@
+  use FieldValidation;
+
+  public function create(array $params = array()) {
+    $data = $this->exportData();
+    $source = null;
+    if (array_key_exists(AdVideoFields::SOURCE, $data)) {
+      $source = $data[AdVideoFields::SOURCE];
+      unset($data[AdVideoFields::SOURCE]);
+    }
+    $params = array_merge($data, $params);
+
+    $request = $this->getApi()->prepareRequest(
+      '/'.$this->assureParentId().'/'.$this->getEndpoint(),
+      RequestInterface::METHOD_POST,
+      $params
+    );
+
+    $request->setLastLevelDomain('graph-video');
+    if ($source) {
+      $request->getFileParams()->offsetSet(AdVideoFields::SOURCE, $source);
+    }
+    $response = $this->getApi()->executeRequest($request);
+
+    $data = $response->getContent();
+    $this->data[static::FIELD_ID]
+      = is_string($data) ? $data : (string) $data[static::FIELD_ID];
+
+    return $this;
+  }
+
+  /**
+   * @param array $fields
+   * @param array $params
+   * @return Cursor
+   */
+  public function getVideoThumbnails(
+    array $fields = array(), array $params = array()) {
+    return $this->getManyByConnection(
+      VideoThumbnail::className(), $fields, $params, 'thumbnails');
+  }

@@ -1,0 +1,76 @@
+{
+    "apis": [
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "MediaFingerprint",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "MediaFingerprint",
+            "params": [
+                {
+                    "name": "metadata",
+                    "required": false,
+                    "type": "list"
+                },
+                {
+                    "name": "title",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "universal_content_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "duration_in_sec",
+            "type": "float"
+        },
+        {
+            "name": "expiration_time",
+            "type": "datetime"
+        },
+        {
+            "name": "fingerprint_content_type",
+            "type": "string"
+        },
+        {
+            "name": "fingerprint_type",
+            "type": "string"
+        },
+        {
+            "name": "fingerprint_validity",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "metadata",
+            "type": "Object"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "universal_content_id",
+            "type": "string"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "post_click_item_description",
+            "type": "string"
+        },
+        {
+            "name": "post_click_item_headline",
+            "type": "string"
+        }
+    ]
+}

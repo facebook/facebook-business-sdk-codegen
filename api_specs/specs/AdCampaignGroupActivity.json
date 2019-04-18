@@ -1,0 +1,104 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdCampaignGroupActivity",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "budget_limit_new",
+            "type": "Object"
+        },
+        {
+            "name": "budget_limit_old",
+            "type": "Object"
+        },
+        {
+            "name": "buying_type_new",
+            "type": "string"
+        },
+        {
+            "name": "buying_type_old",
+            "type": "string"
+        },
+        {
+            "name": "event_time",
+            "type": "datetime"
+        },
+        {
+            "name": "event_type",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_autobid_new",
+            "type": "bool"
+        },
+        {
+            "name": "is_autobid_old",
+            "type": "bool"
+        },
+        {
+            "name": "is_average_price_pacing_new",
+            "type": "bool"
+        },
+        {
+            "name": "is_average_price_pacing_old",
+            "type": "bool"
+        },
+        {
+            "name": "name_new",
+            "type": "string"
+        },
+        {
+            "name": "name_old",
+            "type": "string"
+        },
+        {
+            "name": "objective_new",
+            "type": "AdCampaignGroupActivity_objective_new"
+        },
+        {
+            "name": "objective_old",
+            "type": "AdCampaignGroupActivity_objective_old"
+        },
+        {
+            "name": "pacing_type",
+            "type": "int"
+        },
+        {
+            "name": "run_status_new",
+            "type": "string"
+        },
+        {
+            "name": "run_status_old",
+            "type": "string"
+        },
+        {
+            "name": "spend_cap_new",
+            "type": "int"
+        },
+        {
+            "name": "spend_cap_old",
+            "type": "int"
+        },
+        {
+            "name": "time_created",
+            "type": "datetime"
+        },
+        {
+            "name": "time_updated_new",
+            "type": "datetime"
+        },
+        {
+            "name": "time_updated_old",
+            "type": "datetime"
+        }
+    ]
+}

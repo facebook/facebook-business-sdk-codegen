@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "ad_object_level",
+            "type": "string"
+        },
+        {
+            "name": "confidences",
+            "type": "map<string, float>"
+        },
+        {
+            "name": "winner_ad_object_id",
+            "type": "string"
+        }
+    ]
+}

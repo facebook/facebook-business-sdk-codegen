@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "audience",
+            "type": "Object"
+        },
+        {
+            "name": "extra_data",
+            "type": "string"
+        },
+        {
+            "name": "fixed_radius",
+            "type": "Object"
+        }
+    ]
+}

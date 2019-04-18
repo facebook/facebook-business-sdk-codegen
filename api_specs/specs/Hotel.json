@@ -1,0 +1,225 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "hotel_rooms",
+            "return": "HotelRoom",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "hotel_rooms",
+            "return": "HotelRoom",
+            "params": [
+                {
+                    "name": "applinks",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "base_price",
+                    "required": true,
+                    "type": "float"
+                },
+                {
+                    "name": "currency",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "description",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "images",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "margin_level",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "pricing_variables",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "room_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "sale_price",
+                    "required": false,
+                    "type": "float"
+                },
+                {
+                    "name": "url",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "Hotel",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "Hotel",
+            "params": [
+                {
+                    "name": "address",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "applinks",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "base_price",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "brand",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "currency",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "guest_ratings",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "images",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "phone",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "star_rating",
+                    "required": false,
+                    "type": "float"
+                },
+                {
+                    "name": "url",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "address",
+            "type": "string"
+        },
+        {
+            "name": "applinks",
+            "type": "AppLinks"
+        },
+        {
+            "name": "brand",
+            "type": "string"
+        },
+        {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "guest_ratings",
+            "type": "string"
+        },
+        {
+            "name": "hotel_id",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "images",
+            "type": "list<string>"
+        },
+        {
+            "name": "lowest_base_price",
+            "type": "string"
+        },
+        {
+            "name": "loyalty_program",
+            "type": "string"
+        },
+        {
+            "name": "margin_level",
+            "type": "unsigned int"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "phone",
+            "type": "string"
+        },
+        {
+            "name": "sale_price",
+            "type": "string"
+        },
+        {
+            "name": "sanitized_images",
+            "type": "list<string>"
+        },
+        {
+            "name": "star_rating",
+            "type": "float"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        }
+    ]
+}

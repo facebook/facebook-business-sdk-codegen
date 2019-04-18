@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "amex",
+            "type": "unsigned int"
+        },
+        {
+            "name": "cash_only",
+            "type": "unsigned int"
+        },
+        {
+            "name": "discover",
+            "type": "unsigned int"
+        },
+        {
+            "name": "mastercard",
+            "type": "unsigned int"
+        },
+        {
+            "name": "visa",
+            "type": "unsigned int"
+        }
+    ]
+}

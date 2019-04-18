@@ -1,0 +1,356 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ReachFrequencyPrediction",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "account_id",
+            "type": "int"
+        },
+        {
+            "name": "activity_status",
+            "type": "ReachFrequencyActivity"
+        },
+        {
+            "name": "ad_formats",
+            "type": "list<ReachFrequencyAdFormat>"
+        },
+        {
+            "name": "auction_entry_option_index",
+            "type": "int"
+        },
+        {
+            "name": "business_id",
+            "type": "int"
+        },
+        {
+            "name": "buying_type",
+            "type": "string"
+        },
+        {
+            "name": "campaign_group_id",
+            "type": "int"
+        },
+        {
+            "name": "campaign_id",
+            "type": "string"
+        },
+        {
+            "name": "campaign_time_start",
+            "type": "datetime"
+        },
+        {
+            "name": "campaign_time_stop",
+            "type": "datetime"
+        },
+        {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "curve_budget_reach",
+            "type": "ReachFrequencyEstimatesCurve"
+        },
+        {
+            "name": "curve_reach",
+            "type": "list<unsigned int>"
+        },
+        {
+            "name": "daily_grp_curve",
+            "type": "list<float>"
+        },
+        {
+            "name": "daily_impression_curve",
+            "type": "list<float>"
+        },
+        {
+            "name": "daily_impression_curve_map",
+            "type": "map<unsigned int, list<float>>"
+        },
+        {
+            "name": "day_parting_schedule",
+            "type": "list<ReachFrequencyDayPart>"
+        },
+        {
+            "name": "demo_breakdown",
+            "type": "ReachFrequencyEstimatesDemoBreakdown"
+        },
+        {
+            "name": "destination_id",
+            "type": "string"
+        },
+        {
+            "name": "end_time",
+            "type": "datetime"
+        },
+        {
+            "name": "expiration_time",
+            "type": "datetime"
+        },
+        {
+            "name": "external_budget",
+            "type": "int"
+        },
+        {
+            "name": "external_impression",
+            "type": "unsigned int"
+        },
+        {
+            "name": "external_maximum_budget",
+            "type": "int"
+        },
+        {
+            "name": "external_maximum_impression",
+            "type": "string"
+        },
+        {
+            "name": "external_maximum_reach",
+            "type": "unsigned int"
+        },
+        {
+            "name": "external_minimum_budget",
+            "type": "int"
+        },
+        {
+            "name": "external_minimum_impression",
+            "type": "unsigned int"
+        },
+        {
+            "name": "external_minimum_reach",
+            "type": "unsigned int"
+        },
+        {
+            "name": "external_reach",
+            "type": "unsigned int"
+        },
+        {
+            "name": "external_values_breakdown",
+            "type": "string"
+        },
+        {
+            "name": "feed_ratio_0000",
+            "type": "unsigned int"
+        },
+        {
+            "name": "frequency_cap",
+            "type": "unsigned int"
+        },
+        {
+            "name": "frequency_distribution",
+            "type": "list<float>"
+        },
+        {
+            "name": "frequency_distribution_map",
+            "type": "map<unsigned int, list<float>>"
+        },
+        {
+            "name": "frequency_distribution_map_agg",
+            "type": "map<unsigned int, list<unsigned int>>"
+        },
+        {
+            "name": "grp_audience_size",
+            "type": "float"
+        },
+        {
+            "name": "grp_avg_probability_map",
+            "type": "string"
+        },
+        {
+            "name": "grp_country_audience_size",
+            "type": "float"
+        },
+        {
+            "name": "grp_curve",
+            "type": "list<float>"
+        },
+        {
+            "name": "grp_dmas_audience_size",
+            "type": "float"
+        },
+        {
+            "name": "grp_filtering_threshold_00",
+            "type": "unsigned int"
+        },
+        {
+            "name": "grp_points",
+            "type": "float"
+        },
+        {
+            "name": "grp_ratio",
+            "type": "float"
+        },
+        {
+            "name": "grp_reach_ratio",
+            "type": "float"
+        },
+        {
+            "name": "grp_status",
+            "type": "string"
+        },
+        {
+            "name": "holdout_percentage",
+            "type": "unsigned int"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "impression_curve",
+            "type": "list<unsigned int>"
+        },
+        {
+            "name": "instagram_destination_id",
+            "type": "string"
+        },
+        {
+            "name": "instream_packages",
+            "type": "list<string>"
+        },
+        {
+            "name": "interval_frequency_cap",
+            "type": "unsigned int"
+        },
+        {
+            "name": "interval_frequency_cap_reset_period",
+            "type": "unsigned int"
+        },
+        {
+            "name": "is_bonus_media",
+            "type": "unsigned int"
+        },
+        {
+            "name": "is_conversion_goal",
+            "type": "unsigned int"
+        },
+        {
+            "name": "is_higher_average_frequency",
+            "type": "bool"
+        },
+        {
+            "name": "is_io",
+            "type": "bool"
+        },
+        {
+            "name": "is_reserved_buying",
+            "type": "unsigned int"
+        },
+        {
+            "name": "is_trp",
+            "type": "bool"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "objective",
+            "type": "unsigned int"
+        },
+        {
+            "name": "objective_name",
+            "type": "string"
+        },
+        {
+            "name": "pause_periods",
+            "type": "list<Object>"
+        },
+        {
+            "name": "placement_breakdown",
+            "type": "ReachFrequencyEstimatesPlacementBreakdown"
+        },
+        {
+            "name": "placement_breakdown_map",
+            "type": "map<unsigned int, ReachFrequencyEstimatesPlacementBreakdown>"
+        },
+        {
+            "name": "plan_name",
+            "type": "string"
+        },
+        {
+            "name": "plan_type",
+            "type": "string"
+        },
+        {
+            "name": "prediction_mode",
+            "type": "unsigned int"
+        },
+        {
+            "name": "prediction_progress",
+            "type": "unsigned int"
+        },
+        {
+            "name": "reference_id",
+            "type": "string"
+        },
+        {
+            "name": "reservation_status",
+            "type": "unsigned int"
+        },
+        {
+            "name": "start_time",
+            "type": "datetime"
+        },
+        {
+            "name": "status",
+            "type": "unsigned int"
+        },
+        {
+            "name": "story_event_type",
+            "type": "unsigned int"
+        },
+        {
+            "name": "target_audience_size",
+            "type": "unsigned int"
+        },
+        {
+            "name": "target_cpm",
+            "type": "unsigned int"
+        },
+        {
+            "name": "target_spec",
+            "type": "Targeting"
+        },
+        {
+            "name": "time_created",
+            "type": "datetime"
+        },
+        {
+            "name": "time_updated",
+            "type": "datetime"
+        },
+        {
+            "name": "timezone_id",
+            "type": "unsigned int"
+        },
+        {
+            "name": "timezone_name",
+            "type": "string"
+        },
+        {
+            "name": "topline_id",
+            "type": "unsigned int"
+        },
+        {
+            "name": "tv_viewer_cluster_map",
+            "type": "map<unsigned int, Object>"
+        },
+        {
+            "name": "video_view_benchmark_map",
+            "type": "map<string, ReachFrequencyEstimatesCurve>"
+        },
+        {
+            "name": "video_view_length_constraint",
+            "type": "unsigned int"
+        },
+        {
+            "name": "viewtag",
+            "type": "string"
+        }
+    ]
+}

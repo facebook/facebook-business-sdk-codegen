@@ -1,0 +1,41 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "budget",
+            "type": "list<int>"
+        },
+        {
+            "name": "click",
+            "type": "list<int>"
+        },
+        {
+            "name": "conversion",
+            "type": "list<int>"
+        },
+        {
+            "name": "impression",
+            "type": "list<int>"
+        },
+        {
+            "name": "interpolated_reach",
+            "type": "float"
+        },
+        {
+            "name": "num_points",
+            "type": "unsigned int"
+        },
+        {
+            "name": "raw_impression",
+            "type": "list<int>"
+        },
+        {
+            "name": "raw_reach",
+            "type": "list<int>"
+        },
+        {
+            "name": "reach",
+            "type": "list<int>"
+        }
+    ]
+}

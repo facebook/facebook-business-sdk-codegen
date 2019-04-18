@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "adlabels",
+            "type": "list<AdAssetFeedSpecAssetLabel>"
+        },
+        {
+            "name": "hash",
+            "type": "string"
+        },
+        {
+            "name": "image_crops",
+            "type": "AdsImageCrops"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        },
+        {
+            "name": "url_tags",
+            "type": "string"
+        }
+    ]
+}

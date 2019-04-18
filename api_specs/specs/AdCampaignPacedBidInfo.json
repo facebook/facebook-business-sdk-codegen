@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "bidding_status",
+            "type": "string"
+        }
+    ]
+}

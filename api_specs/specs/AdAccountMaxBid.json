@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "max_bid",
+            "type": "int"
+        }
+    ]
+}

@@ -1,0 +1,92 @@
+/**
+ * Copyright (c) 2017-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ * @flow
+ */
+import {AbstractCrudObject} from './../abstract-crud-object';
+{{#has_generic_reference}}
+import AbstractObject from './../abstract-object';
+{{/has_generic_reference}}
+{{#references}}
+import {{{name:pascal_case}}} from './{{name:hyphen}}';
+{{/references}}
+
+/**
+ * {{name:pascal_case}}
+ * @extends AbstractCrudObject
+ * @see {@link https://developers.facebook.com/docs/marketing-api/}
+ */
+export default class {{name:pascal_case}} extends AbstractCrudObject {
+  static get Fields () {
+    return Object.freeze({
+      {{#fields}}
+      {{^is_creation_field}}
+      {{api_name:underscore_excluding_digit_suffix}}: '{{api_name}}',
+      {{/is_creation_field}}
+      {{/fields}}
+    });
+  }
+
+  {{#api_spec_based_enum_reference}}
+  static get {{field_or_param:pascal_case}} (): Object {
+    return Object.freeze({
+      {{#values_with_naming_convention}}
+      {{{value:all_lower_case_excluding_digit_suffix}}}: '{{{value}}}',
+      {{/values_with_naming_convention}}
+    });
+  }
+  {{/api_spec_based_enum_reference}}
+{{#apis}}
+
+{{^is_node_api}}
+  {{name:camel_case}} ({{^is_method_delete}}fields, {{/is_method_delete}}params{{#is_method_get}}, fetchFirstPage = true{{/is_method_get}}): {{#return}}{{return}}{{/return}}{{^return}}AbstractObject{{/return}} {
+{{#is_method_get}}
+    return this.getEdge(
+      {{#return}}{{return}}{{/return}}{{^return}}AbstractObject{{/return}},
+      fields,
+      params,
+      fetchFirstPage,
+      '{{{endpoint}}}'
+    );
+{{/is_method_get}}
+{{#is_method_post}}
+    return this.createEdge(
+      '{{{endpoint}}}',
+      fields,
+      params,
+      {{#return}}{{return}}{{/return}}
+    );
+{{/is_method_post}}
+{{#is_method_delete}}
+    return super.deleteEdge(
+      '{{{endpoint}}}',
+      params
+    );
+{{/is_method_delete}}
+  }
+{{/is_node_api}}
+{{#is_node_api}}
+  {{name:camel_case}} (fields, params): {{#return}}{{return}}{{/return}}{{^return}}AbstractObject{{/return}} {
+{{#is_method_get}}
+    return this.read(
+      fields,
+      params
+    );
+{{/is_method_get}}
+{{#is_method_post}}
+    return super.update(
+      params
+    );
+{{/is_method_post}}
+{{#is_method_delete}}
+    return super.delete(
+      params
+    );
+{{/is_method_delete}}
+  }
+{{/is_node_api}}
+{{/apis}}
+}

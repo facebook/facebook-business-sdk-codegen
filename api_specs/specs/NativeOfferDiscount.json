@@ -1,0 +1,29 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "override",
+            "type": "string"
+        },
+        {
+            "name": "text",
+            "type": "string"
+        },
+        {
+            "name": "type",
+            "type": "string"
+        },
+        {
+            "name": "value1",
+            "type": "float"
+        },
+        {
+            "name": "value2",
+            "type": "float"
+        }
+    ]
+}

@@ -1,0 +1,669 @@
+/**
+ * Copyright (c) 2015-present, Facebook, Inc. All rights reserved.
+ *
+ * You are hereby granted a non-exclusive, worldwide, royalty-free license to
+ * use, copy, modify, and distribute this software in source code or binary
+ * form for use in connection with the web services and APIs provided by
+ * Facebook.
+ *
+ * As with any software that integrates with the Facebook platform, your use
+ * of this software is subject to the Facebook Developer Principles and
+ * Policies [http://developers.facebook.com/policy/]. This copyright notice
+ * shall be included in all copies or substantial portions of the software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+ * THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+
+package com.facebook.ads.sdk;
+
+import java.io.File;
+import java.lang.reflect.Modifier;
+import java.lang.reflect.Type;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.google.common.base.Function;
+import com.google.common.util.concurrent.Futures;
+import com.google.common.util.concurrent.ListenableFuture;
+import com.google.common.util.concurrent.SettableFuture;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonArray;
+import com.google.gson.annotations.SerializedName;
+import com.google.gson.reflect.TypeToken;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
+
+import com.facebook.ads.sdk.APIException.MalformedResponseException;
+
+/**
+ * This class is auto-generated.
+ *
+ * For any issues or feature requests related to this class, please let us know
+ * on github and we'll fix in our codegen framework. We'll not be able to accept
+ * pull request for this class.
+ *
+ */
+public class {{name:pascal_case}} extends APINode {
+  {{#fields}}
+  {{^is_creation_field}}
+  @SerializedName("{{api_name}}")
+  private {{{type:java}}}{{^type:java}}JsonElement{{/type:java}} m{{name:pascal_case}} = null;
+  {{/is_creation_field}}
+  {{/fields}}
+  {{#cls_is_AdCreative}}
+  @SerializedName("creative_id")
+  private String mCreativeId = null;
+  {{/cls_is_AdCreative}}
+  protected static Gson gson = null;
+
+  {{^has_get}}public {{/has_get}}{{#has_get}}{{#can_be_data_type}}public {{/can_be_data_type}}{{/has_get}}{{name:pascal_case}}() {
+  }
+  {{#has_get}}
+
+  public {{name:pascal_case}}(Long id, APIContext context) {
+    this(id.toString(), context);
+  }
+
+  public {{name:pascal_case}}(String id, APIContext context) {
+    {{^cls_is_AdAccount}}
+    {{^cls_is_AsyncRequest}}
+    this.mId = id;
+    {{/cls_is_AsyncRequest}}
+    {{/cls_is_AdAccount}}
+    {{#cls_is_AdAccount}}
+    this.mId = id.replaceAll("act_", "");
+    {{/cls_is_AdAccount}}
+    {{#cls_is_AdCreative}}
+    mCreativeId = mId.toString();
+    {{/cls_is_AdCreative}}
+    {{#cls_is_AsyncRequest}}
+    this.mId = Long.valueOf(id);;
+    {{/cls_is_AsyncRequest}}
+
+    this.context = context;
+  }
+
+  public {{name:pascal_case}} fetch() throws APIException{
+    {{name:pascal_case}} newInstance = fetchById(this.getPrefixedId().toString(), this.context);
+    this.copyFrom(newInstance);
+    {{#cls_is_AdAccount}}
+    mId = mId.replaceAll("act_", "");
+    {{/cls_is_AdAccount}}
+    {{#cls_is_AdCreative}}
+    mCreativeId = mId.toString();
+    {{/cls_is_AdCreative}}
+    return this;
+  }
+
+  public static {{name:pascal_case}} fetchById(Long id, APIContext context) throws APIException {
+    return fetchById(id.toString(), context);
+  }
+
+  public static ListenableFuture<{{{return}}}{{^return}}{{name:pascal_case}}{{/return}}> fetchByIdAsync(Long id, APIContext context) throws APIException {
+    return fetchByIdAsync(id.toString(), context);
+  }
+
+  public static {{name:pascal_case}} fetchById(String id, APIContext context) throws APIException {
+    return
+      new APIRequestGet(id, context)
+      .requestAllFields()
+      .execute();
+  }
+
+  public static ListenableFuture<{{name:pascal_case}}> fetchByIdAsync(String id, APIContext context) throws APIException {
+    return
+      new APIRequestGet(id, context)
+      .requestAllFields()
+      .executeAsync();
+  }
+
+  public static APINodeList<{{name:pascal_case}}> fetchByIds(List<String> ids, List<String> fields, APIContext context) throws APIException {
+    return (APINodeList<{{name:pascal_case}}>)(
+      new APIRequest<{{name:pascal_case}}>(context, "", "/", "GET", {{name:pascal_case}}.getParser())
+        .setParam("ids", APIRequest.joinStringList(ids))
+        .requestFields(fields)
+        .execute()
+    );
+  }
+
+  public static ListenableFuture<APINodeList<{{name:pascal_case}}>> fetchByIdsAsync(List<String> ids, List<String> fields, APIContext context) throws APIException {
+    return
+      new APIRequest(context, "", "/", "GET", {{name:pascal_case}}.getParser())
+        .setParam("ids", APIRequest.joinStringList(ids))
+        .requestFields(fields)
+        .executeAsyncBase();
+  }
+
+  private String getPrefixedId() {
+    {{#cls_is_AdAccount}}
+    return "act_" + getId();
+    {{/cls_is_AdAccount}}
+    {{^cls_is_AdAccount}}
+    return getId();
+    {{/cls_is_AdAccount}}
+  }
+  {{/has_get}}
+
+  {{#has_id}}
+  public String getId() {
+    return getFieldId().toString();
+  }
+  {{/has_id}}
+  {{^has_id}}
+  public String getId() {
+    return null;
+  }
+  {{/has_id}}
+  public static {{name:pascal_case}} loadJSON(String json, APIContext context, String header) {
+    {{name:pascal_case}} {{name:camel_case}} = getGson().fromJson(json, {{name:pascal_case}}.class);
+    if (context.isDebug()) {
+      JsonParser parser = new JsonParser();
+      JsonElement o1 = parser.parse(json);
+      JsonElement o2 = parser.parse({{name:camel_case}}.toString());
+      if (o1.getAsJsonObject().get("__fb_trace_id__") != null) {
+        o2.getAsJsonObject().add("__fb_trace_id__", o1.getAsJsonObject().get("__fb_trace_id__"));
+      }
+      if (!o1.equals(o2)) {
+        context.log("[Warning] When parsing response, object is not consistent with JSON:");
+        context.log("[JSON]" + o1);
+        context.log("[Object]" + o2);
+      };
+    }
+    {{name:camel_case}}.context = context;
+    {{name:camel_case}}.rawValue = json;
+    {{name:camel_case}}.header = header;
+    {{#cls_is_AdAccount}}
+    JsonParser parser = new JsonParser();
+    JsonObject o = parser.parse(json).getAsJsonObject();
+    if (o.has("account_id")) {
+      String accountId = o.get("account_id").getAsString();
+      if (accountId != null) {
+        {{name:camel_case}}.mId = accountId;
+      }
+    }
+    if ({{name:camel_case}}.mId != null) {
+      {{name:camel_case}}.mId = {{name:camel_case}}.mId.replaceAll("act_", "");
+    }
+    {{/cls_is_AdAccount}}
+    {{#cls_is_AdCreative}}
+    {{name:camel_case}}.mCreativeId = {{name:camel_case}}.mId;
+    {{/cls_is_AdCreative}}
+    {{#cls_is_AdReportRun}}
+    JsonParser parser = new JsonParser();
+    JsonObject o = parser.parse(json).getAsJsonObject();
+    String reportRunId = null;
+    if (o.has("report_run_id")) {
+      reportRunId = o.get("report_run_id").getAsString();
+      if (reportRunId != null) {
+        {{name:camel_case}}.mId = reportRunId;
+      }
+    }
+    {{/cls_is_AdReportRun}}
+    return {{name:camel_case}};
+  }
+
+  public static APINodeList<{{name:pascal_case}}> parseResponse(String json, APIContext context, APIRequest request, String header) throws MalformedResponseException {
+    APINodeList<{{name:pascal_case}}> {{name:camel_case}}s = new APINodeList<{{name:pascal_case}}>(request, json, header);
+    JsonArray arr;
+    JsonObject obj;
+    JsonParser parser = new JsonParser();
+    Exception exception = null;
+    try{
+      JsonElement result = parser.parse(json);
+      if (result.isJsonArray()) {
+        // First, check if it's a pure JSON Array
+        arr = result.getAsJsonArray();
+        for (int i = 0; i < arr.size(); i++) {
+          {{name:camel_case}}s.add(loadJSON(arr.get(i).getAsJsonObject().toString(), context, header));
+        };
+        return {{name:camel_case}}s;
+      } else if (result.isJsonObject()) {
+        obj = result.getAsJsonObject();
+        if (obj.has("data")) {
+          if (obj.has("paging")) {
+            JsonObject paging = obj.get("paging").getAsJsonObject();
+            if (paging.has("cursors")) {
+                JsonObject cursors = paging.get("cursors").getAsJsonObject();
+                String before = cursors.has("before") ? cursors.get("before").getAsString() : null;
+                String after = cursors.has("after") ? cursors.get("after").getAsString() : null;
+                {{name:camel_case}}s.setCursors(before, after);
+            }
+            String previous = paging.has("previous") ? paging.get("previous").getAsString() : null;
+            String next = paging.has("next") ? paging.get("next").getAsString() : null;
+            {{name:camel_case}}s.setPaging(previous, next);
+            if (context.hasAppSecret()) {
+              {{name:camel_case}}s.setAppSecret(context.getAppSecretProof());
+            }
+          }
+          if (obj.get("data").isJsonArray()) {
+            // Second, check if it's a JSON array with "data"
+            arr = obj.get("data").getAsJsonArray();
+            for (int i = 0; i < arr.size(); i++) {
+              {{name:camel_case}}s.add(loadJSON(arr.get(i).getAsJsonObject().toString(), context, header));
+            };
+          } else if (obj.get("data").isJsonObject()) {
+            // Third, check if it's a JSON object with "data"
+            obj = obj.get("data").getAsJsonObject();
+            boolean isRedownload = false;
+            for (String s : new String[]{"campaigns", "adsets", "ads"}) {
+              if (obj.has(s)) {
+                isRedownload = true;
+                obj = obj.getAsJsonObject(s);
+                for (Map.Entry<String, JsonElement> entry : obj.entrySet()) {
+                  {{name:camel_case}}s.add(loadJSON(entry.getValue().toString(), context, header));
+                }
+                break;
+              }
+            }
+            if (!isRedownload) {
+              {{name:camel_case}}s.add(loadJSON(obj.toString(), context, header));
+            }
+          }
+          return {{name:camel_case}}s;
+        } else if (obj.has("images")) {
+          // Fourth, check if it's a map of image objects
+          obj = obj.get("images").getAsJsonObject();
+          for (Map.Entry<String, JsonElement> entry : obj.entrySet()) {
+              {{name:camel_case}}s.add(loadJSON(entry.getValue().toString(), context, header));
+          }
+          return {{name:camel_case}}s;
+        } else {
+          // Fifth, check if it's an array of objects indexed by id
+          boolean isIdIndexedArray = true;
+          for (Map.Entry entry : obj.entrySet()) {
+            String key = (String) entry.getKey();
+            if (key.equals("__fb_trace_id__")) {
+              continue;
+            }
+            JsonElement value = (JsonElement) entry.getValue();
+            if (
+              value != null &&
+              value.isJsonObject() &&
+              value.getAsJsonObject().has("id") &&
+              value.getAsJsonObject().get("id") != null &&
+              value.getAsJsonObject().get("id").getAsString().equals(key)
+            ) {
+              {{name:camel_case}}s.add(loadJSON(value.toString(), context, header));
+            } else {
+              isIdIndexedArray = false;
+              break;
+            }
+          }
+          if (isIdIndexedArray) {
+            return {{name:camel_case}}s;
+          }
+
+          // Sixth, check if it's pure JsonObject
+          {{name:camel_case}}s.clear();
+          {{name:camel_case}}s.add(loadJSON(json, context, header));
+          return {{name:camel_case}}s;
+        }
+      }
+    } catch (Exception e) {
+      exception = e;
+    }
+    throw new MalformedResponseException(
+      "Invalid response string: " + json,
+      exception
+    );
+  }
+
+  @Override
+  public APIContext getContext() {
+    return context;
+  }
+
+  @Override
+  public void setContext(APIContext context) {
+    this.context = context;
+  }
+
+  @Override
+  public String toString() {
+    return getGson().toJson(this);
+  }
+
+  {{#apis}}
+  public APIRequest{{name:pascal_case}} {{name:camel_case}}() {
+    return new APIRequest{{name:pascal_case}}(this.{{^has_get}}getId(){{/has_get}}{{#has_get}}getPrefixedId().toString(){{/has_get}}, context);
+  }
+
+  {{/apis}}
+
+  {{#fields}}
+  {{^is_creation_field}}
+  public {{{type:java}}}{{^type:java}}JsonElement{{/type:java}} getField{{name:pascal_case}}() {
+    {{#is_root_node}}
+    if (m{{name:pascal_case}} != null) {
+      m{{name:pascal_case}}.context = getContext();
+    }
+    {{/is_root_node}}
+    return m{{name:pascal_case}};
+  }
+
+  {{^has_get}}
+  public {{cls:name:pascal_case}} setField{{name:pascal_case}}({{{type:java}}}{{^type:java}}JsonElement{{/type:java}} value) {
+    this.m{{name:pascal_case}} = value;
+    return this;
+  }
+
+  {{#is_node}}
+  public {{cls:name:pascal_case}} setField{{name:pascal_case}}(String value) {
+    Type type = new TypeToken<{{{type:java}}}>(){}.getType();
+    this.m{{name:pascal_case}} = {{{java:node_base_type}}}.getGson().fromJson(value, type);
+    {{#cls_is_AdCreative}}
+    {{#is_id_field}}
+    this.mCreativeId = this.mId;
+    {{/is_id_field}}
+    {{/cls_is_AdCreative}}
+    return this;
+  }
+  {{/is_node}}
+  {{/has_get}}
+  {{#has_get}}
+  {{#can_be_data_type}}
+  public {{cls:name:pascal_case}} setField{{name:pascal_case}}({{{type:java}}}{{^type:java}}JsonElement{{/type:java}} value) {
+    this.m{{name:pascal_case}} = value;
+    {{#cls_is_AdCreative}}
+    {{#is_id_field}}
+    this.mCreativeId = this.mId;
+    {{/is_id_field}}
+    {{/cls_is_AdCreative}}
+    return this;
+  }
+
+  {{#is_node}}
+  public {{cls:name:pascal_case}} setField{{name:pascal_case}}(String value) {
+    Type type = new TypeToken<{{{type:java}}}>(){}.getType();
+    this.m{{name:pascal_case}} = {{{java:node_base_type}}}.getGson().fromJson(value, type);
+    return this;
+  }
+  {{/is_node}}
+  {{/can_be_data_type}}
+  {{/has_get}}
+  {{/is_creation_field}}
+  {{/fields}}
+
+
+  {{#apis}}
+  public static class APIRequest{{name:pascal_case}} extends APIRequest<{{{return}}}{{^return}}APINode{{/return}}> {
+
+    {{#return_single_node}}
+    {{{return}}}{{^return}}APINode{{/return}} lastResponse = null;
+    @Override
+    public {{{return}}}{{^return}}APINode{{/return}} getLastResponse() {
+      return lastResponse;
+    }
+    {{/return_single_node}}
+    {{^return_single_node}}
+    APINodeList<{{{return}}}{{^return}}APINode{{/return}}> lastResponse = null;
+    @Override
+    public APINodeList<{{{return}}}{{^return}}APINode{{/return}}> getLastResponse() {
+      return lastResponse;
+    }
+    {{/return_single_node}}
+    public static final String[] PARAMS = {
+      {{#params}}
+      "{{api_name}}",
+      {{/params}}
+      {{#allow_file_upload}}
+      "file",
+      {{/allow_file_upload}}
+    };
+
+    public static final String[] FIELDS = {
+      {{#param_fields}}
+      {{^not_visible}}
+      "{{api_name}}",
+      {{/not_visible}}
+      {{/param_fields}}
+    };
+
+    {{#return_single_node}}
+    @Override
+    public {{{return}}}{{^return}}APINode{{/return}} parseResponse(String response, String header) throws APIException {
+      return {{{return}}}{{^return}}APINode{{/return}}.parseResponse(response, getContext(), this, header).head();
+    }
+
+    @Override
+    public {{{return}}}{{^return}}APINode{{/return}} execute() throws APIException {
+      return execute(new HashMap<String, Object>());
+    }
+
+    @Override
+    public {{{return}}}{{^return}}APINode{{/return}} execute(Map<String, Object> extraParams) throws APIException {
+      ResponseWrapper rw = executeInternal(extraParams);
+      lastResponse = parseResponse(rw.getBody(), rw.getHeader());
+      return lastResponse;
+    }
+
+    public ListenableFuture<{{{return}}}{{^return}}APINode{{/return}}> executeAsync() throws APIException {
+      return executeAsync(new HashMap<String, Object>());
+    };
+
+    public ListenableFuture<{{{return}}}{{^return}}APINode{{/return}}> executeAsync(Map<String, Object> extraParams) throws APIException {
+      return Futures.transform(
+        executeAsyncInternal(extraParams),
+        new Function<ResponseWrapper, {{{return}}}{{^return}}APINode{{/return}}>() {
+           public {{{return}}}{{^return}}APINode{{/return}} apply(ResponseWrapper result) {
+             try {
+               return APIRequest{{name:pascal_case}}.this.parseResponse(result.getBody(), result.getHeader());
+             } catch (Exception e) {
+               throw new RuntimeException(e);
+             }
+           }
+         }
+      );
+    };
+    {{/return_single_node}}
+    {{^return_single_node}}
+    @Override
+    public APINodeList<{{{return}}}{{^return}}APINode{{/return}}> parseResponse(String response, String header) throws APIException {
+      return {{{return}}}{{^return}}APINode{{/return}}.parseResponse(response, getContext(), this, header);
+    }
+
+    @Override
+    public APINodeList<{{{return}}}{{^return}}APINode{{/return}}> execute() throws APIException {
+      return execute(new HashMap<String, Object>());
+    }
+
+    @Override
+    public APINodeList<{{{return}}}{{^return}}APINode{{/return}}> execute(Map<String, Object> extraParams) throws APIException {
+      ResponseWrapper rw = executeInternal(extraParams);
+      lastResponse = parseResponse(rw.getBody(),rw.getHeader());
+      return lastResponse;
+    }
+
+    public ListenableFuture<APINodeList<{{{return}}}{{^return}}APINode{{/return}}>> executeAsync() throws APIException {
+      return executeAsync(new HashMap<String, Object>());
+    };
+
+    public ListenableFuture<APINodeList<{{{return}}}{{^return}}APINode{{/return}}>> executeAsync(Map<String, Object> extraParams) throws APIException {
+      return Futures.transform(
+        executeAsyncInternal(extraParams),
+        new Function<ResponseWrapper, APINodeList<{{{return}}}{{^return}}APINode{{/return}}>>() {
+           public APINodeList<{{{return}}}{{^return}}APINode{{/return}}> apply(ResponseWrapper result) {
+             try {
+               return APIRequest{{name:pascal_case}}.this.parseResponse(result.getBody(), result.getHeader());
+             } catch (Exception e) {
+               throw new RuntimeException(e);
+             }
+           }
+         }
+      );
+    };
+    {{/return_single_node}}
+
+    public APIRequest{{name:pascal_case}}(String nodeId, APIContext context) {
+      super(context, nodeId, "{{{endpoint}}}", "{{{method}}}", Arrays.asList(PARAMS));
+      {{#use_graph_video_endpoint}}
+      this.setUseVideoEndpoint(true);
+      {{/use_graph_video_endpoint}}
+    }
+
+    @Override
+    public APIRequest{{api:name:pascal_case}} setParam(String param, Object value) {
+      setParamInternal(param, value);
+      return this;
+    }
+
+    @Override
+    public APIRequest{{api:name:pascal_case}} setParams(Map<String, Object> params) {
+      setParamsInternal(params);
+      return this;
+    }
+
+    {{#allow_file_upload}}
+    public APIRequest{{api:name:pascal_case}} addUploadFile (String uploadName, File file) {
+      this.setParam(uploadName, file);
+      return this;
+    }
+
+    public APIRequest{{api:name:pascal_case}} setUseVideoEndpoint(boolean useVideoEndpoint) {
+      this.useVideoEndpoint = useVideoEndpoint;
+      return this;
+    }
+    {{/allow_file_upload}}
+
+    {{#params}}
+    public APIRequest{{api:name:pascal_case}} set{{#param_name_params}}param{{/param_name_params}}{{name:pascal_case}} ({{{type:java}}}{{^type:java}}JsonElement{{/type:java}} {{#is_keyword}}_{{/is_keyword}}{{name:camel_case}}) {
+      this.setParam("{{api_name}}", {{#is_keyword}}_{{/is_keyword}}{{name:camel_case}});
+      return this;
+    }
+    {{#is_file_param}}
+    public APIRequest{{api:name:pascal_case}} set{{name:pascal_case}} (File {{#is_keyword}}_{{/is_keyword}}{{name:camel_case}}) {
+      this.setParam("{{api_name}}", {{#is_keyword}}_{{/is_keyword}}{{name:camel_case}});
+      return this;
+    }
+
+    public APIRequest{{api:name:pascal_case}} set{{name:pascal_case}} (byte[] {{#is_keyword}}_{{/is_keyword}}{{name:camel_case}}) {
+      this.setParam("{{api_name}}", {{#is_keyword}}_{{/is_keyword}}{{name:camel_case}});
+      return this;
+    }
+    {{/is_file_param}}
+    {{^is_string}}
+    public APIRequest{{api:name:pascal_case}} set{{name:pascal_case}} (String {{#is_keyword}}_{{/is_keyword}}{{name:camel_case}}) {
+      this.setParam("{{api_name}}", {{#is_keyword}}_{{/is_keyword}}{{name:camel_case}});
+      return this;
+    }
+    {{/is_string}}
+
+    {{/params}}
+    public APIRequest{{api:name:pascal_case}} requestAllFields () {
+      return this.requestAllFields(true);
+    }
+
+    public APIRequest{{api:name:pascal_case}} requestAllFields (boolean value) {
+      for (String field : FIELDS) {
+        this.requestField(field, value);
+      }
+      return this;
+    }
+
+    @Override
+    public APIRequest{{api:name:pascal_case}} requestFields (List<String> fields) {
+      return this.requestFields(fields, true);
+    }
+
+    @Override
+    public APIRequest{{api:name:pascal_case}} requestFields (List<String> fields, boolean value) {
+      for (String field : fields) {
+        this.requestField(field, value);
+      }
+      return this;
+    }
+
+    @Override
+    public APIRequest{{api:name:pascal_case}} requestField (String field) {
+      this.requestField(field, true);
+      return this;
+    }
+
+    @Override
+    public APIRequest{{api:name:pascal_case}} requestField (String field, boolean value) {
+      this.requestFieldInternal(field, value);
+      return this;
+    }
+
+    {{#param_fields}}
+    {{^not_visible}}
+    public APIRequest{{api:name:pascal_case}} request{{name:pascal_case}}Field () {
+      return this.request{{name:pascal_case}}Field(true);
+    }
+    public APIRequest{{api:name:pascal_case}} request{{name:pascal_case}}Field (boolean value) {
+      this.requestField("{{api_name}}", value);
+      return this;
+    }
+    {{/not_visible}}
+    {{/param_fields}}
+  }
+
+  {{/apis}}
+  {{#api_spec_based_enum_reference}}
+  public static enum Enum{{field_or_param:pascal_case}} {
+      {{#values_with_naming_convention}}
+      @SerializedName("{{{value}}}")
+      VALUE_{{{value:upper_case}}}("{{{value}}}"),
+      {{/values_with_naming_convention}}
+      NULL(null);
+
+      private String value;
+
+      private Enum{{field_or_param:pascal_case}}(String value) {
+        this.value = value;
+      }
+
+      @Override
+      public String toString() {
+        return value;
+      }
+  }
+
+  {{/api_spec_based_enum_reference}}
+
+  synchronized /*package*/ static Gson getGson() {
+    if (gson != null) {
+      return gson;
+    } else {
+      gson = new GsonBuilder()
+        .excludeFieldsWithModifiers(Modifier.STATIC)
+        .excludeFieldsWithModifiers(Modifier.PROTECTED)
+        .disableHtmlEscaping()
+        .create();
+    }
+    return gson;
+  }
+
+  public {{name:pascal_case}} copyFrom({{name:pascal_case}} instance) {
+    {{#fields}}
+    {{^is_creation_field}}
+    this.m{{name:pascal_case}} = instance.m{{name:pascal_case}};
+    {{/is_creation_field}}
+    {{/fields}}
+    {{#cls_is_AdCreative}}
+    this.mCreativeId = this.mId;
+    {{/cls_is_AdCreative}}
+    this.context = instance.context;
+    this.rawValue = instance.rawValue;
+    return this;
+  }
+
+  public static APIRequest.ResponseParser<{{name:pascal_case}}> getParser() {
+    return new APIRequest.ResponseParser<{{name:pascal_case}}>() {
+      public APINodeList<{{name:pascal_case}}> parseResponse(String response, APIContext context, APIRequest<{{name:pascal_case}}> request, String header) throws MalformedResponseException {
+        return {{name:pascal_case}}.parseResponse(response, context, request, header);
+      }
+    };
+  }
+}

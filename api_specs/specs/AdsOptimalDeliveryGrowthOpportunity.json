@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "child_metadata",
+            "type": "map<string, Object>"
+        },
+        {
+            "name": "metadata",
+            "type": "Object"
+        },
+        {
+            "name": "optimization_type",
+            "type": "string"
+        }
+    ]
+}

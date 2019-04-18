@@ -1,0 +1,33 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "instagram_actor_id",
+            "type": "string"
+        },
+        {
+            "name": "link_data",
+            "type": "AdCreativeLinkData"
+        },
+        {
+            "name": "page_id",
+            "type": "string"
+        },
+        {
+            "name": "photo_data",
+            "type": "AdCreativePhotoData"
+        },
+        {
+            "name": "template_data",
+            "type": "AdCreativeLinkData"
+        },
+        {
+            "name": "text_data",
+            "type": "AdCreativeTextData"
+        },
+        {
+            "name": "video_data",
+            "type": "AdCreativeVideoData"
+        }
+    ]
+}

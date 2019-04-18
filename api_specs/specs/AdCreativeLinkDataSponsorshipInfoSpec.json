@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "sponsor_image_url",
+            "type": "string"
+        },
+        {
+            "name": "sponsor_name",
+            "type": "string"
+        }
+    ]
+}

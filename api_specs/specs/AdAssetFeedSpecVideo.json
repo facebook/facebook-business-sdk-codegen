@@ -1,0 +1,29 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "adlabels",
+            "type": "list<AdAssetFeedSpecAssetLabel>"
+        },
+        {
+            "name": "caption_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "thumbnail_hash",
+            "type": "string"
+        },
+        {
+            "name": "thumbnail_url",
+            "type": "string"
+        },
+        {
+            "name": "url_tags",
+            "type": "string"
+        },
+        {
+            "name": "video_id",
+            "type": "string"
+        }
+    ]
+}

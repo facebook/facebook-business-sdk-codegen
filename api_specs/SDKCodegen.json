@@ -1,0 +1,163 @@
+{
+  "spec_overriding": {
+    "Business": {
+      "$.apis[?(@.method=='POST' && @.endpoint=='adaccount')]": {
+        "return": "AdAccount"
+      },
+      "$.fields[?(@.name=='payment_account_id')]": {
+        "not_visible": true
+      }
+    },
+    "AdAccount": {
+      "$.apis[?(@.method=='POST' && @.endpoint=='insights')]": {
+        "return": "AdReportRun"
+      },
+      "$.apis[?(@.method=='POST' && @.endpoint=='asyncadrequestsets')]": {
+        "return": "AdAsyncRequestSet"
+      },
+      "$.apis[?(@.method=='POST' && @.endpoint=='advideos')].params[?(@.name=='video_file_chunk')]": {
+        "is_file_param": true
+      },
+      "$.apis[?(@.method=='POST' && @.endpoint=='customconversions')]": {
+        "return": "CustomConversion"
+      },
+      "$.apis[?(@.method=='POST' && @.endpoint=='product_audiences')]": {
+        "return": "CustomAudience"
+      },
+      "$.apis[?(@.method=='POST' && @.endpoint=='customaudiences')]": {
+        "preferred_creation_endpoint": true
+      },
+      "$.apis[?(@.method=='POST' && @.endpoint=='adspixels')]": {
+        "preferred_creation_endpoint": true
+      },
+      "$.apis[?(@.method=='POST' && @.endpoint=='campaigns')]": {
+        "preferred_creation_endpoint": true
+      },
+      "$": {
+        "exclude_creation_endpoint": true
+      },
+      "$.apis[?(@.method=='POST' && @.endpoint=='ads')]": {
+        "allow_file_upload": true
+      },
+      "$.fields[?(@.name=='account_id')]": {
+        "context": "true_ad_account_id"
+      },
+      "$.fields[?(@.name=='can_create_brand_lift_study')]": {
+        "not_visible": true
+      },
+      "$.apis[?(@.method=='POST' && @.endpoint=='advideos')]['params'][?(@.name=='source')]": null,
+      "$.apis[?(@.method=='POST' && @.endpoint=='adimages')]": {
+        "return": "AdImage",
+        "allow_file_upload": true,
+        "allow_file_param": true
+      },
+      "$.apis[?(@.method=='POST' && @.endpoint=='advideos')]": {
+        "allow_file_upload": true,
+        "use_graph_video_endpoint": true
+      }
+    },
+    "AdSet": {
+      "$.apis[?(@.method=='POST' && @.endpoint=='insights')]": {
+        "return": "AdReportRun"
+      }
+    },
+    "Campaign": {
+      "$.apis[?(@.method=='POST' && @.endpoint=='insights')]": {
+        "return": "AdReportRun"
+      }
+    },
+    "Ad": {
+      "$.apis[?(@.method=='POST' && @.endpoint=='insights')]": {
+        "return": "AdReportRun"
+      }
+    },
+    "AdCreative": {
+      "$.apis[?(@.method=='GET' && @.endpoint=='previews')].params[?(@.name=='product_item_ids')]": {
+        "type": "list<string>"
+      }
+    },
+    "ProductFeed": {
+      "$.apis[?(@.method=='POST' && @.endpoint=='uploads')]": {
+        "return": "ProductFeedUpload"
+      }
+    },
+    "AdImage": {
+      "$.fields[?(@.name=='id')]": {
+        "type": "string"
+      }
+    },
+    "CustomAudience": {
+      "$.apis[?(@.method=='GET' && @.endpoint=='adaccounts')]": {
+        "return": "AdAccount"
+      }
+    },
+    "ProductCatalog": {
+      "$.apis[?(@.method=='POST' && @.endpoint=='products')]": {
+        "preferred_creation_endpoint": true
+      }
+    },
+    "Targeting": {
+      "$.fields[?(@.name=='alternate_auto_targeting_option')]": {
+        "not_visible": true
+      }
+    }
+  },
+  "flags": {
+    "AdAccount": ["python_use_mixin", "has_ad_label"],
+    "AdImage": ["python_use_mixin"],
+    "CustomAudience": ["python_use_mixin", "ruby_have_helpers"],
+    "ReachFrequencyPrediction": ["python_use_mixin"],
+    "ProductCatalog": ["python_use_mixin"],
+    "AdsInsights": ["python_use_mixin"],
+    "Campaign": ["has_ad_label", "has_ad_label:php", "archivable", "validate_only"],
+    "AdSet": ["has_ad_label", "has_ad_label:php", "archivable", "can_redownload", "validate_only"],
+    "Ad": ["has_ad_label", "has_ad_label:php", "archivable", "can_redownload"],
+    "AdCreative": ["has_ad_label", "has_ad_label:php"],
+    "Business": ["python_use_mixin"],
+    "AdAccountUser": ["python_use_mixin"],
+    "AdReportRun": ["python_use_mixin"],
+    "AdPreview": ["python_use_mixin"]
+  },
+  "read_endpoints": {
+    "Ad": "ads",
+    "AdAccount": "adaccounts",
+    "OffsitePixel": "offsitepixels",
+    "AdCreative": "adcreatives",
+    "AdImage": "adimages",
+    "AdLabel": "adlabels",
+    "AdPlacePageSet": "ad_place_page_sets",
+    "AdPreview": "previews",
+    "AdSet": "adsets",
+    "AdsPixelStatsResult": "stats",
+    "BroadTargetingCategories": "broadtargetingcategories",
+    "Campaign": "campaigns",
+    "ClickTrackingTag": "trackingtag",
+    "ConnectionObject": "connectionobjects",
+    "CustomAudience": "customaudiences",
+    "CustomConversion": "customconversions",
+    "AdsInsights": "insights",
+    "AdKeywordStats": "keywordstats",
+    "LeadgenForm": "leadgen_forms",
+    "Lead": "leads",
+    "LookalikeAudience": "customaudiences",
+    "MinimumBudget": "minimum_budgets",
+    "Page": "accounts",
+    "PartnerCategory": "partnercategories",
+    "ProductItem": "products",
+    "ProductAudience": "product_audiences",
+    "ProductCatalog": "product_catalogs",
+    "ExternalEventSource": "external_event_sources",
+    "ProductFeed": "product_feeds",
+    "ProductFeedUpload": "uploads",
+    "ProductFeedUploadError": "errors",
+    "ProductGroup": "product_groups",
+    "ProductSet": "product_sets",
+    "RateCard": "ratecard",
+    "ReachEstimate": "reachestimate",
+    "ReachFrequencyPrediction": "reachfrequencypredictions",
+    "TargetingSentenceLine": "targetingsentencelines",
+    "Transaction": "transactions",
+    "VideoThumbnail": "thumbnails",
+    "AdAccountUser": "users"
+  }
+}

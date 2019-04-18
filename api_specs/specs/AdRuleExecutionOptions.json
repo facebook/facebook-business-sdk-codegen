@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "field",
+            "type": "string"
+        },
+        {
+            "name": "operator",
+            "type": "AdRuleExecutionOptions_operator"
+        },
+        {
+            "name": "value",
+            "type": "Object"
+        }
+    ]
+}

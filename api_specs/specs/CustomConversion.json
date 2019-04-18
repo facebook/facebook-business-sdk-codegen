@@ -1,0 +1,206 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "activities",
+            "return": "CustomConversionActivities",
+            "params": [
+                {
+                    "name": "end_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "event_type",
+                    "required": false,
+                    "type": "customconversionactivities_event_type_enum_param"
+                },
+                {
+                    "name": "start_time",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "adaccounts",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "account_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "adaccounts",
+            "return": "AdAccount",
+            "params": [
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "adaccounts",
+            "return": "CustomConversion",
+            "params": [
+                {
+                    "name": "account_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "stats",
+            "return": "CustomConversionStatsResult",
+            "params": [
+                {
+                    "name": "aggregation",
+                    "required": false,
+                    "type": "customconversionstats_aggregation_enum_param"
+                },
+                {
+                    "name": "end_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "start_time",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "CustomConversion",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "CustomConversion",
+            "params": [
+                {
+                    "name": "default_conversion_value",
+                    "required": false,
+                    "type": "float"
+                },
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "account_id",
+            "type": "string"
+        },
+        {
+            "name": "aggregation_rule",
+            "type": "string"
+        },
+        {
+            "name": "business",
+            "type": "Business"
+        },
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "custom_event_type",
+            "type": "CustomConversion_custom_event_type"
+        },
+        {
+            "name": "data_sources",
+            "type": "list<ExternalEventSource>"
+        },
+        {
+            "name": "default_conversion_value",
+            "type": "int"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "event_source_type",
+            "type": "string"
+        },
+        {
+            "name": "first_fired_time",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_archived",
+            "type": "bool"
+        },
+        {
+            "name": "is_unavailable",
+            "type": "bool"
+        },
+        {
+            "name": "last_fired_time",
+            "type": "datetime"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "offline_conversion_data_set",
+            "type": "OfflineConversionDataSet"
+        },
+        {
+            "name": "pixel",
+            "type": "AdsPixel"
+        },
+        {
+            "name": "retention_days",
+            "type": "unsigned int"
+        },
+        {
+            "name": "rule",
+            "type": "string"
+        }
+    ]
+}

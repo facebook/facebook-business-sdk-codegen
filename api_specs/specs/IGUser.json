@@ -1,0 +1,176 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "insights",
+            "return": "InstagramInsightsResult",
+            "params": [
+                {
+                    "name": "metric",
+                    "required": true,
+                    "type": "list<shadowiguserinsights_metric_enum_param>"
+                },
+                {
+                    "name": "period",
+                    "required": true,
+                    "type": "list<shadowiguserinsights_period_enum_param>"
+                },
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "until",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "media",
+            "return": "IGMedia",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "media",
+            "return": "IGMedia",
+            "params": [
+                {
+                    "name": "caption",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "children",
+                    "required": false,
+                    "type": "list<unsigned int>"
+                },
+                {
+                    "name": "image_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "media_type",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "media_publish",
+            "return": "IGMedia",
+            "params": [
+                {
+                    "name": "creation_id",
+                    "required": true,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "mentions",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "comment_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "media_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "message",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "recently_searched_hashtags",
+            "return": "ShadowIGHashtag",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "stories",
+            "return": "IGMedia",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "tags",
+            "return": "IGMedia",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "IGUser",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "biography",
+            "type": "string"
+        },
+        {
+            "name": "business_discovery",
+            "type": "IGUser"
+        },
+        {
+            "name": "followers_count",
+            "type": "int"
+        },
+        {
+            "name": "follows_count",
+            "type": "int"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "ig_id",
+            "type": "int"
+        },
+        {
+            "name": "media_count",
+            "type": "int"
+        },
+        {
+            "name": "mentioned_comment",
+            "type": "IGComment"
+        },
+        {
+            "name": "mentioned_media",
+            "type": "IGMedia"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "profile_picture_url",
+            "type": "string"
+        },
+        {
+            "name": "username",
+            "type": "string"
+        },
+        {
+            "name": "website",
+            "type": "string"
+        }
+    ]
+}

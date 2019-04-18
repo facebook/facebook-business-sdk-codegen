@@ -1,0 +1,335 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "Vehicle",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "Vehicle",
+            "params": [
+                {
+                    "name": "address",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "applinks",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "availability",
+                    "required": false,
+                    "type": "vehicle_availability"
+                },
+                {
+                    "name": "body_style",
+                    "required": false,
+                    "type": "vehicle_body_style"
+                },
+                {
+                    "name": "condition",
+                    "required": false,
+                    "type": "vehicle_condition"
+                },
+                {
+                    "name": "currency",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "date_first_on_lot",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "dealer_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "dealer_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "dealer_phone",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "drivetrain",
+                    "required": false,
+                    "type": "vehicle_drivetrain"
+                },
+                {
+                    "name": "exterior_color",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "fuel_type",
+                    "required": false,
+                    "type": "vehicle_fuel_type"
+                },
+                {
+                    "name": "images",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "interior_color",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "make",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "mileage",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "model",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "price",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "state_of_vehicle",
+                    "required": false,
+                    "type": "vehicle_state_of_vehicle"
+                },
+                {
+                    "name": "title",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "transmission",
+                    "required": false,
+                    "type": "vehicle_transmission"
+                },
+                {
+                    "name": "trim",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "vehicle_type",
+                    "required": false,
+                    "type": "vehicle_vehicle_type"
+                },
+                {
+                    "name": "vin",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "year",
+                    "required": false,
+                    "type": "unsigned int"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "address",
+            "type": "Object"
+        },
+        {
+            "name": "applinks",
+            "type": "AppLinks"
+        },
+        {
+            "name": "availability",
+            "type": "string"
+        },
+        {
+            "name": "body_style",
+            "type": "string"
+        },
+        {
+            "name": "condition",
+            "type": "string"
+        },
+        {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_0",
+            "type": "string"
+        },
+        {
+            "name": "date_first_on_lot",
+            "type": "string"
+        },
+        {
+            "name": "dealer_communication_channel",
+            "type": "string"
+        },
+        {
+            "name": "dealer_email",
+            "type": "string"
+        },
+        {
+            "name": "dealer_id",
+            "type": "string"
+        },
+        {
+            "name": "dealer_name",
+            "type": "string"
+        },
+        {
+            "name": "dealer_phone",
+            "type": "string"
+        },
+        {
+            "name": "dealer_privacy_policy_url",
+            "type": "string"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "drivetrain",
+            "type": "string"
+        },
+        {
+            "name": "exterior_color",
+            "type": "string"
+        },
+        {
+            "name": "fb_page_id",
+            "type": "Page"
+        },
+        {
+            "name": "features",
+            "type": "list<Object>"
+        },
+        {
+            "name": "fuel_type",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "images",
+            "type": "list<string>"
+        },
+        {
+            "name": "interior_color",
+            "type": "string"
+        },
+        {
+            "name": "legal_disclosure_impressum_url",
+            "type": "string"
+        },
+        {
+            "name": "make",
+            "type": "string"
+        },
+        {
+            "name": "mileage",
+            "type": "Object"
+        },
+        {
+            "name": "model",
+            "type": "string"
+        },
+        {
+            "name": "previous_currency",
+            "type": "string"
+        },
+        {
+            "name": "previous_price",
+            "type": "string"
+        },
+        {
+            "name": "price",
+            "type": "string"
+        },
+        {
+            "name": "sale_currency",
+            "type": "string"
+        },
+        {
+            "name": "sale_price",
+            "type": "string"
+        },
+        {
+            "name": "sanitized_images",
+            "type": "list<string>"
+        },
+        {
+            "name": "state_of_vehicle",
+            "type": "string"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "transmission",
+            "type": "string"
+        },
+        {
+            "name": "trim",
+            "type": "string"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        },
+        {
+            "name": "vehicle_id",
+            "type": "string"
+        },
+        {
+            "name": "vehicle_registration_plate",
+            "type": "string"
+        },
+        {
+            "name": "vehicle_specifications",
+            "type": "list<Object>"
+        },
+        {
+            "name": "vehicle_type",
+            "type": "string"
+        },
+        {
+            "name": "vin",
+            "type": "string"
+        },
+        {
+            "name": "year",
+            "type": "unsigned int"
+        }
+    ]
+}

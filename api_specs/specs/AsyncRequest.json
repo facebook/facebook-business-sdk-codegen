@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "id",
+            "type": "int"
+        },
+        {
+            "name": "result",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "int"
+        },
+        {
+            "name": "type",
+            "type": "int"
+        }
+    ]
+}

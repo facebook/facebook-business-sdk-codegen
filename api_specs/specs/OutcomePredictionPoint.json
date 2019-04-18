@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "actions",
+            "type": "float"
+        },
+        {
+            "name": "impressions",
+            "type": "float"
+        },
+        {
+            "name": "reach",
+            "type": "float"
+        },
+        {
+            "name": "spend",
+            "type": "int"
+        }
+    ]
+}

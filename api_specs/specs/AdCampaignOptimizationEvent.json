@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "custom_conversion_id",
+            "type": "string"
+        },
+        {
+            "name": "event_sequence",
+            "type": "unsigned int"
+        },
+        {
+            "name": "event_type",
+            "type": "string"
+        }
+    ]
+}

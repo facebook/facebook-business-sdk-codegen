@@ -1,0 +1,142 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "assigned_ad_accounts",
+            "return": "AdAccount",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "assigned_monetization_properties",
+            "return": "AdMonetizationProperty",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "assigned_pages",
+            "return": "Page",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "assigned_product_catalogs",
+            "return": "ProductCatalog",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "businesssettinglogs",
+            "return": "BusinessSettingLogsData",
+            "params": []
+        },
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "BusinessUser",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "BusinessUser",
+            "params": [
+                {
+                    "name": "clear_pending_email",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "email",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "first_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "last_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "pending_email",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "role",
+                    "required": false,
+                    "type": "businessuser_role"
+                },
+                {
+                    "name": "title",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "business",
+            "type": "Business"
+        },
+        {
+            "name": "email",
+            "type": "string"
+        },
+        {
+            "name": "finance_permission",
+            "type": "string"
+        },
+        {
+            "name": "first_name",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "ip_permission",
+            "type": "string"
+        },
+        {
+            "name": "last_name",
+            "type": "string"
+        },
+        {
+            "name": "marked_for_removal",
+            "type": "bool"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "pending_email",
+            "type": "string"
+        },
+        {
+            "name": "role",
+            "type": "string"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "two_fac_status",
+            "type": "string"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "categorization_criteria",
+            "type": "string"
+        },
+        {
+            "name": "customization",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "template_id",
+            "type": "string"
+        }
+    ]
+}

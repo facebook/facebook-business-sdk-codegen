@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "can_edit",
+            "type": "bool"
+        },
+        {
+            "name": "can_see_insight",
+            "type": "bool"
+        },
+        {
+            "name": "can_share",
+            "type": "bool"
+        },
+        {
+            "name": "subtype_supports_lookalike",
+            "type": "bool"
+        },
+        {
+            "name": "supports_recipient_lookalike",
+            "type": "bool"
+        }
+    ]
+}

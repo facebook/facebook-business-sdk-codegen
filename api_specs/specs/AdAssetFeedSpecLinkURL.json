@@ -1,0 +1,29 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "adlabels",
+            "type": "list<AdAssetFeedSpecAssetLabel>"
+        },
+        {
+            "name": "carousel_see_more_url",
+            "type": "string"
+        },
+        {
+            "name": "deeplink_url",
+            "type": "string"
+        },
+        {
+            "name": "display_url",
+            "type": "string"
+        },
+        {
+            "name": "url_tags",
+            "type": "string"
+        },
+        {
+            "name": "website_url",
+            "type": "string"
+        }
+    ]
+}

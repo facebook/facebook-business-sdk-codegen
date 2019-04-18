@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "preferred_events",
+            "type": "list<string>"
+        },
+        {
+            "name": "product_sales_channel",
+            "type": "string"
+        }
+    ]
+}

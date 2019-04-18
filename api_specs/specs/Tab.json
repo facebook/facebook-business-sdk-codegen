@@ -1,0 +1,45 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "application",
+            "type": "Application"
+        },
+        {
+            "name": "custom_image_url",
+            "type": "string"
+        },
+        {
+            "name": "custom_name",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "image_url",
+            "type": "string"
+        },
+        {
+            "name": "is_non_connection_landing_tab",
+            "type": "bool"
+        },
+        {
+            "name": "is_permanent",
+            "type": "bool"
+        },
+        {
+            "name": "link",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "position",
+            "type": "unsigned int"
+        }
+    ]
+}

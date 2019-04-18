@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "trust",
+            "type": "string"
+        },
+        {
+            "name": "trust_code",
+            "type": "int"
+        },
+        {
+            "name": "version",
+            "type": "int"
+        }
+    ]
+}

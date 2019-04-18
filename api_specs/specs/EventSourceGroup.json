@@ -1,0 +1,104 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "shared_accounts",
+            "return": "AdAccount",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "shared_accounts",
+            "return": "EventSourceGroup",
+            "params": [
+                {
+                    "name": "accounts",
+                    "required": true,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "userpermissions",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "user",
+                    "required": true,
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "userpermissions",
+            "return": "EventSourceGroupUserPermissionObject",
+            "params": [
+                {
+                    "name": "user",
+                    "required": false,
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "userpermissions",
+            "return": "EventSourceGroup",
+            "params": [
+                {
+                    "name": "role",
+                    "required": true,
+                    "type": "eventsourcegroupuserpermissions_role_enum_param"
+                },
+                {
+                    "name": "user",
+                    "required": true,
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "EventSourceGroup",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "EventSourceGroup",
+            "params": [
+                {
+                    "name": "event_sources",
+                    "required": true,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "business",
+            "type": "Business"
+        },
+        {
+            "name": "event_sources",
+            "type": "list<ExternalEventSource>"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        }
+    ]
+}

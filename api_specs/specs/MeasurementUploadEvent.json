@@ -1,0 +1,104 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "MeasurementUploadEvent",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "MeasurementUploadEvent",
+            "params": [
+                {
+                    "name": "aggregation_level",
+                    "required": false,
+                    "type": "measurementuploadevent_aggregation_level"
+                },
+                {
+                    "name": "conversion_end_date",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "conversion_start_date",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "event_status",
+                    "required": false,
+                    "type": "measurementuploadevent_event_status"
+                },
+                {
+                    "name": "lookback_window",
+                    "required": false,
+                    "type": "measurementuploadevent_lookback_window"
+                },
+                {
+                    "name": "match_universe",
+                    "required": false,
+                    "type": "measurementuploadevent_match_universe"
+                },
+                {
+                    "name": "partner",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "timezone",
+                    "required": false,
+                    "type": "measurementuploadevent_timezone"
+                },
+                {
+                    "name": "upload_tag",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "aggregation_level",
+            "type": "string"
+        },
+        {
+            "name": "conversion_end_date",
+            "type": "string"
+        },
+        {
+            "name": "conversion_start_date",
+            "type": "string"
+        },
+        {
+            "name": "event_status",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "lookback_window",
+            "type": "string"
+        },
+        {
+            "name": "match_universe",
+            "type": "string"
+        },
+        {
+            "name": "partner",
+            "type": "Business"
+        },
+        {
+            "name": "timezone",
+            "type": "string"
+        },
+        {
+            "name": "upload_tag",
+            "type": "string"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "tracking_specs",
+            "type": "ConversionActionQuery"
+        }
+    ]
+}

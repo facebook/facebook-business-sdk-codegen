@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "brand_product_name",
+            "type": "string"
+        },
+        {
+            "name": "locale",
+            "type": "string"
+        },
+        {
+            "name": "vertical",
+            "type": "string"
+        }
+    ]
+}

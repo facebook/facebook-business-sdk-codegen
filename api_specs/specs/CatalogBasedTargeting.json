@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "geo_targeting_type",
+            "type": "string"
+        }
+    ]
+}

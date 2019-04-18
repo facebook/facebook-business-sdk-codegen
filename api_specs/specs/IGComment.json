@@ -1,0 +1,80 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "replies",
+            "return": "IGComment",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "replies",
+            "return": "IGComment",
+            "params": [
+                {
+                    "name": "message",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "IGComment",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "IGComment",
+            "params": [
+                {
+                    "name": "hide",
+                    "required": true,
+                    "type": "bool"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "hidden",
+            "type": "bool"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "like_count",
+            "type": "int"
+        },
+        {
+            "name": "media",
+            "type": "IGMedia"
+        },
+        {
+            "name": "text",
+            "type": "string"
+        },
+        {
+            "name": "timestamp",
+            "type": "datetime"
+        },
+        {
+            "name": "user",
+            "type": "IGUser"
+        },
+        {
+            "name": "username",
+            "type": "string"
+        }
+    ]
+}

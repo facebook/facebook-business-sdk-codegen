@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "secure_browsing",
+            "type": "Object"
+        }
+    ]
+}

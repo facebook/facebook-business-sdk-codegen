@@ -1,0 +1,109 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "action.type",
+            "type": "list<Object>"
+        },
+        {
+            "name": "application",
+            "type": "list<Object>"
+        },
+        {
+            "name": "conversion_id",
+            "type": "list<string>"
+        },
+        {
+            "name": "creative",
+            "type": "list<Object>"
+        },
+        {
+            "name": "dataset",
+            "type": "list<string>"
+        },
+        {
+            "name": "event",
+            "type": "list<string>"
+        },
+        {
+            "name": "event.creator",
+            "type": "list<string>"
+        },
+        {
+            "name": "event_type",
+            "type": "list<string>"
+        },
+        {
+            "name": "fb_pixel",
+            "type": "list<string>"
+        },
+        {
+            "name": "fb_pixel_event",
+            "type": "list<string>"
+        },
+        {
+            "name": "leadgen",
+            "type": "list<string>"
+        },
+        {
+            "name": "object",
+            "type": "list<string>"
+        },
+        {
+            "name": "object.domain",
+            "type": "list<string>"
+        },
+        {
+            "name": "offer",
+            "type": "list<string>"
+        },
+        {
+            "name": "offer.creator",
+            "type": "list<string>"
+        },
+        {
+            "name": "offsite_pixel",
+            "type": "list<string>"
+        },
+        {
+            "name": "page",
+            "type": "list<string>"
+        },
+        {
+            "name": "page.parent",
+            "type": "list<string>"
+        },
+        {
+            "name": "post",
+            "type": "list<string>"
+        },
+        {
+            "name": "post.object",
+            "type": "list<string>"
+        },
+        {
+            "name": "post.object.wall",
+            "type": "list<string>"
+        },
+        {
+            "name": "post.wall",
+            "type": "list<string>"
+        },
+        {
+            "name": "question",
+            "type": "list<string>"
+        },
+        {
+            "name": "question.creator",
+            "type": "list<string>"
+        },
+        {
+            "name": "response",
+            "type": "list<string>"
+        },
+        {
+            "name": "subtype",
+            "type": "list<string>"
+        }
+    ]
+}

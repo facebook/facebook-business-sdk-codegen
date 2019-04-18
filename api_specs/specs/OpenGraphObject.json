@@ -1,0 +1,545 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "comments",
+            "return": "Comment",
+            "params": [
+                {
+                    "name": "filter",
+                    "required": false,
+                    "type": "opengraphobjectcomments_filter_enum_param"
+                },
+                {
+                    "name": "live_filter",
+                    "required": false,
+                    "type": "opengraphobjectcomments_live_filter_enum_param"
+                },
+                {
+                    "name": "order",
+                    "required": false,
+                    "type": "opengraphobjectcomments_order_enum_param"
+                },
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "comments",
+            "return": "Comment",
+            "params": [
+                {
+                    "name": "attachment_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "attachment_share_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "attachment_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "comment_privacy_value",
+                    "required": false,
+                    "type": "opengraphobjectcomments_comment_privacy_value_enum_param"
+                },
+                {
+                    "name": "facepile_mentioned_ids",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "feedback_source",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "is_offline",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "message",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "nectar_module",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "object_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "parent_comment_id",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "text",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "tracking",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "likes",
+            "return": "Profile",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "likes",
+            "return": "OpenGraphObject",
+            "params": [
+                {
+                    "name": "action",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "message",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "ref",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "url",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "photos",
+            "return": "Photo",
+            "params": [
+                {
+                    "name": "aid",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "allow_spherical_photo",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "alt_text_custom",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "android_key_hash",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "application_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "attempt",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "audience_exp",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "backdated_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "backdated_time_granularity",
+                    "required": false,
+                    "type": "opengraphobjectphotos_backdated_time_granularity_enum_param"
+                },
+                {
+                    "name": "caption",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "composer_session_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "direct_share_status",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "feed_targeting",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "filter_type",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "full_res_is_coming_later",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "initial_view_heading_override_degrees",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "initial_view_pitch_override_degrees",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "initial_view_vertical_fov_override_degrees",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "ios_bundle_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "is_explicit_location",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_explicit_place",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "manual_privacy",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "message",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "no_story",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "offline_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "og_action_type_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "og_icon_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "og_object_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "og_phrase",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "og_set_profile_badge",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "og_suggestion_mechanism",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "place",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "privacy",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "profile_id",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "proxied_app_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "published",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "qn",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "scheduled_publish_time",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "spherical_metadata",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "sponsor_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "sponsor_relationship",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "tags",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "target_id",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "targeting",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "time_since_original_post",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "uid",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "unpublished_content_type",
+                    "required": false,
+                    "type": "opengraphobjectphotos_unpublished_content_type_enum_param"
+                },
+                {
+                    "name": "url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "user_selected_tags",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "vault_image_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "picture",
+            "return": "ProfilePictureSource",
+            "params": [
+                {
+                    "name": "redirect",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "type",
+                    "required": false,
+                    "type": "opengraphobjectpicture_type_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "reactions",
+            "return": "Profile",
+            "params": [
+                {
+                    "name": "type",
+                    "required": false,
+                    "type": "opengraphobjectreactions_type_enum_param"
+                }
+            ]
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "OpenGraphObject",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "OpenGraphObject",
+            "params": [
+                {
+                    "name": "action_properties",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "locale",
+                    "required": false,
+                    "type": "list"
+                },
+                {
+                    "name": "object",
+                    "required": false,
+                    "type": "Object"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "admins",
+            "type": "list<Object>"
+        },
+        {
+            "name": "application",
+            "type": "Object"
+        },
+        {
+            "name": "audio",
+            "type": "list<Object>"
+        },
+        {
+            "name": "context",
+            "type": "OpenGraphContext"
+        },
+        {
+            "name": "created_time",
+            "type": "datetime"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "determiner",
+            "type": "string"
+        },
+        {
+            "name": "engagement",
+            "type": "Engagement"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "image",
+            "type": "list<Object>"
+        },
+        {
+            "name": "is_scraped",
+            "type": "bool"
+        },
+        {
+            "name": "locale",
+            "type": "Object"
+        },
+        {
+            "name": "location",
+            "type": "Location"
+        },
+        {
+            "name": "post_action_id",
+            "type": "string"
+        },
+        {
+            "name": "profile_id",
+            "type": "Object"
+        },
+        {
+            "name": "restrictions",
+            "type": "Object"
+        },
+        {
+            "name": "see_also",
+            "type": "list<string>"
+        },
+        {
+            "name": "site_name",
+            "type": "string"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "type",
+            "type": "string"
+        },
+        {
+            "name": "updated_time",
+            "type": "datetime"
+        },
+        {
+            "name": "video",
+            "type": "list<Object>"
+        }
+    ]
+}

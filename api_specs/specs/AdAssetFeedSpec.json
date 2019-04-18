@@ -1,0 +1,61 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "ad_formats",
+            "type": "list<string>"
+        },
+        {
+            "name": "additional_data",
+            "type": "Object"
+        },
+        {
+            "name": "asset_customization_rules",
+            "type": "list<Object>"
+        },
+        {
+            "name": "autotranslate",
+            "type": "list<string>"
+        },
+        {
+            "name": "bodies",
+            "type": "list<AdAssetFeedSpecBody>"
+        },
+        {
+            "name": "call_to_action_types",
+            "type": "list<AdAssetFeedSpec_call_to_action_types>"
+        },
+        {
+            "name": "captions",
+            "type": "list<AdAssetFeedSpecCaption>"
+        },
+        {
+            "name": "descriptions",
+            "type": "list<AdAssetFeedSpecDescription>"
+        },
+        {
+            "name": "groups",
+            "type": "list<AdAssetFeedSpecGroupRule>"
+        },
+        {
+            "name": "images",
+            "type": "list<AdAssetFeedSpecImage>"
+        },
+        {
+            "name": "link_urls",
+            "type": "list<AdAssetFeedSpecLinkURL>"
+        },
+        {
+            "name": "optimization_type",
+            "type": "string"
+        },
+        {
+            "name": "titles",
+            "type": "list<AdAssetFeedSpecTitle>"
+        },
+        {
+            "name": "videos",
+            "type": "list<AdAssetFeedSpecVideo>"
+        }
+    ]
+}

@@ -1,0 +1,607 @@
+{
+    "apis": [
+        {
+            "method": "POST",
+            "endpoint": "comments",
+            "return": "Comment",
+            "params": [
+                {
+                    "name": "attachment_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "attachment_share_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "attachment_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "comment_privacy_value",
+                    "required": false,
+                    "type": "productitemcomments_comment_privacy_value_enum_param"
+                },
+                {
+                    "name": "facepile_mentioned_ids",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "feedback_source",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "is_offline",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "message",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "nectar_module",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "object_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "parent_comment_id",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "text",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "tracking",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "product_sets",
+            "return": "ProductSet",
+            "params": []
+        },
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ProductItem",
+            "params": [
+                {
+                    "name": "image_height",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "image_width",
+                    "required": false,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "ProductItem",
+            "params": [
+                {
+                    "name": "additional_image_urls",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "additional_variant_attributes",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "android_app_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "android_class",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "android_package",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "android_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "availability",
+                    "required": false,
+                    "type": "productitem_availability"
+                },
+                {
+                    "name": "brand",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "category",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "checkout_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "color",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "condition",
+                    "required": false,
+                    "type": "productitem_condition"
+                },
+                {
+                    "name": "currency",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "custom_data",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "custom_label_0",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "custom_label_1",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "custom_label_2",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "custom_label_3",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "custom_label_4",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "expiration_date",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "gender",
+                    "required": false,
+                    "type": "productitem_gender"
+                },
+                {
+                    "name": "gtin",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "image_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "inventory",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "ios_app_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "ios_app_store_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "ios_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "ipad_app_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "ipad_app_store_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "ipad_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "iphone_app_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "iphone_app_store_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "iphone_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "manufacturer_part_number",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "material",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "mobile_link",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "offer_price_amount",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "offer_price_end_date",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "offer_price_start_date",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "ordering_index",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "pattern",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "price",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "product_type",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "retailer_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "sale_price",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "sale_price_end_date",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "sale_price_start_date",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "short_description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "size",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "start_date",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "visibility",
+                    "required": false,
+                    "type": "productitem_visibility"
+                },
+                {
+                    "name": "windows_phone_app_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "windows_phone_app_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "windows_phone_url",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "additional_image_cdn_urls",
+            "type": "list<map<string, string>>"
+        },
+        {
+            "name": "additional_image_urls",
+            "type": "list<string>"
+        },
+        {
+            "name": "additional_variant_attributes",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "age_group",
+            "type": "ProductItem_age_group"
+        },
+        {
+            "name": "applinks",
+            "type": "AppLinks"
+        },
+        {
+            "name": "availability",
+            "type": "ProductItem_availability"
+        },
+        {
+            "name": "brand",
+            "type": "string"
+        },
+        {
+            "name": "capability_to_review_status",
+            "type": "map<Object, Object>"
+        },
+        {
+            "name": "category",
+            "type": "string"
+        },
+        {
+            "name": "color",
+            "type": "string"
+        },
+        {
+            "name": "commerce_insights",
+            "type": "ProductItemCommerceInsights"
+        },
+        {
+            "name": "condition",
+            "type": "ProductItem_condition"
+        },
+        {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "custom_data",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "custom_label_0",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_1",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_2",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_3",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_4",
+            "type": "string"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "expiration_date",
+            "type": "string"
+        },
+        {
+            "name": "gender",
+            "type": "ProductItem_gender"
+        },
+        {
+            "name": "gtin",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "image_cdn_urls",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "image_url",
+            "type": "string"
+        },
+        {
+            "name": "inventory",
+            "type": "int"
+        },
+        {
+            "name": "manufacturer_part_number",
+            "type": "string"
+        },
+        {
+            "name": "material",
+            "type": "string"
+        },
+        {
+            "name": "mobile_link",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "ordering_index",
+            "type": "int"
+        },
+        {
+            "name": "pattern",
+            "type": "string"
+        },
+        {
+            "name": "price",
+            "type": "string"
+        },
+        {
+            "name": "product_catalog",
+            "type": "ProductCatalog"
+        },
+        {
+            "name": "product_feed",
+            "type": "ProductFeed"
+        },
+        {
+            "name": "product_group",
+            "type": "ProductGroup"
+        },
+        {
+            "name": "product_type",
+            "type": "string"
+        },
+        {
+            "name": "retailer_id",
+            "type": "string"
+        },
+        {
+            "name": "retailer_product_group_id",
+            "type": "string"
+        },
+        {
+            "name": "review_rejection_reasons",
+            "type": "list<string>"
+        },
+        {
+            "name": "review_status",
+            "type": "ProductItem_review_status"
+        },
+        {
+            "name": "sale_price",
+            "type": "string"
+        },
+        {
+            "name": "sale_price_end_date",
+            "type": "string"
+        },
+        {
+            "name": "sale_price_start_date",
+            "type": "string"
+        },
+        {
+            "name": "shipping_weight_unit",
+            "type": "ProductItem_shipping_weight_unit"
+        },
+        {
+            "name": "shipping_weight_value",
+            "type": "float"
+        },
+        {
+            "name": "short_description",
+            "type": "string"
+        },
+        {
+            "name": "size",
+            "type": "string"
+        },
+        {
+            "name": "start_date",
+            "type": "string"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        },
+        {
+            "name": "visibility",
+            "type": "ProductItem_visibility"
+        }
+    ]
+}

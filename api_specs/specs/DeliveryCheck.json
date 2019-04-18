@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "check_name",
+            "type": "string"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "extra_info",
+            "type": "DeliveryCheckExtraInfo"
+        },
+        {
+            "name": "summary",
+            "type": "string"
+        }
+    ]
+}

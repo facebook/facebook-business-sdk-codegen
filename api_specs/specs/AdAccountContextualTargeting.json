@@ -1,0 +1,37 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "enabled_in_ui",
+            "type": "bool"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "key",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "parent",
+            "type": "string"
+        },
+        {
+            "name": "path",
+            "type": "list<string>"
+        },
+        {
+            "name": "type",
+            "type": "string"
+        }
+    ]
+}

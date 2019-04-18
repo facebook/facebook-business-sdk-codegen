@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "attribute",
+            "type": "string"
+        },
+        {
+            "name": "params",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "type",
+            "type": "string"
+        }
+    ]
+}

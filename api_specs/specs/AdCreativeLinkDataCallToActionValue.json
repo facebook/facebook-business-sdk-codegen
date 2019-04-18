@@ -1,0 +1,49 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "app_destination",
+            "type": "string"
+        },
+        {
+            "name": "app_link",
+            "type": "string"
+        },
+        {
+            "name": "application",
+            "type": "string"
+        },
+        {
+            "name": "event_id",
+            "type": "string"
+        },
+        {
+            "name": "lead_gen_form_id",
+            "type": "string"
+        },
+        {
+            "name": "link",
+            "type": "string"
+        },
+        {
+            "name": "link_caption",
+            "type": "string"
+        },
+        {
+            "name": "link_format",
+            "type": "string"
+        },
+        {
+            "name": "page",
+            "type": "string"
+        },
+        {
+            "name": "product_link",
+            "type": "string"
+        },
+        {
+            "name": "whatsapp_number",
+            "type": "string"
+        }
+    ]
+}

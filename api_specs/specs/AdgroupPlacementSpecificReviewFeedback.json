@@ -1,0 +1,97 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "account_admin",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "ad",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "b2c",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "bsg",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "city_community",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "daily_deals",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "daily_deals_legacy",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "dpa",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "facebook",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "instagram",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "instagram_shop",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "marketplace",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "marketplace_home_rentals",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "marketplace_home_sales",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "marketplace_motors",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "max_review_placements",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "page_admin",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "product",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "product_service",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "profile",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "seller",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "shops",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "whatsapp",
+            "type": "map<string, string>"
+        }
+    ]
+}

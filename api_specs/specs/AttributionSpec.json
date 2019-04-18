@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "event_type",
+            "type": "string"
+        },
+        {
+            "name": "window_days",
+            "type": "int"
+        }
+    ]
+}

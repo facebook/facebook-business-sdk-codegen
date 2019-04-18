@@ -1,0 +1,72 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "questions",
+            "return": "VideoGameShowQuestion",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "questions",
+            "return": "VideoGameShowQuestion",
+            "params": [
+                {
+                    "name": "correct_option",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "options",
+                    "required": true,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "question",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "VideoGameShow",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "VideoGameShow",
+            "params": [
+                {
+                    "name": "action",
+                    "required": true,
+                    "type": "videogameshow_action"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "end_time",
+            "type": "datetime"
+        },
+        {
+            "name": "game_status",
+            "type": "string"
+        },
+        {
+            "name": "game_type",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "start_time",
+            "type": "datetime"
+        }
+    ]
+}

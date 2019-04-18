@@ -1,0 +1,57 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "content_type",
+            "type": "string"
+        },
+        {
+            "name": "copyright_creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "download_hd_url",
+            "type": "string"
+        },
+        {
+            "name": "duration_in_sec",
+            "type": "float"
+        },
+        {
+            "name": "fingerprint_validity",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "iswc",
+            "type": "string"
+        },
+        {
+            "name": "metadata",
+            "type": "Object"
+        },
+        {
+            "name": "published_time",
+            "type": "datetime"
+        },
+        {
+            "name": "thumbnail_url",
+            "type": "string"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "universal_content_id",
+            "type": "string"
+        },
+        {
+            "name": "writer_names",
+            "type": "list<string>"
+        }
+    ]
+}

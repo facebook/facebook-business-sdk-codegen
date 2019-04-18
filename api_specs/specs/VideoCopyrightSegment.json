@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "duration_in_sec",
+            "type": "float"
+        },
+        {
+            "name": "media_type",
+            "type": "string"
+        },
+        {
+            "name": "start_time_in_sec",
+            "type": "float"
+        }
+    ]
+}

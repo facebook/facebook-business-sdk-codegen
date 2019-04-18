@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "adlabels",
+            "type": "list<AdAssetFeedSpecAssetLabel>"
+        },
+        {
+            "name": "text",
+            "type": "string"
+        },
+        {
+            "name": "url_tags",
+            "type": "string"
+        }
+    ]
+}

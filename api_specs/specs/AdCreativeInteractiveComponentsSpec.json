@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "components",
+            "type": "list<Object>"
+        }
+    ]
+}

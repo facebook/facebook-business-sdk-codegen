@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "hardware",
+            "type": "string"
+        },
+        {
+            "name": "os",
+            "type": "string"
+        }
+    ]
+}

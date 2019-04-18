@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "app_name",
+            "type": "string"
+        },
+        {
+            "name": "class",
+            "type": "string"
+        },
+        {
+            "name": "package",
+            "type": "string"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        }
+    ]
+}

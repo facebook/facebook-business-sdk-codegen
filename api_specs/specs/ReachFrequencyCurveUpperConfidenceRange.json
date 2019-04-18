@@ -1,0 +1,29 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "impression_upper",
+            "type": "list<int>"
+        },
+        {
+            "name": "num_points",
+            "type": "unsigned int"
+        },
+        {
+            "name": "reach",
+            "type": "list<int>"
+        },
+        {
+            "name": "reach_upper",
+            "type": "list<int>"
+        },
+        {
+            "name": "uniq_video_views_2s_upper",
+            "type": "list<int>"
+        },
+        {
+            "name": "video_views_2s_upper",
+            "type": "list<int>"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "should_fallback",
+            "type": "bool"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        }
+    ]
+}

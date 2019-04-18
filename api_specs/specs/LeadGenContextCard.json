@@ -1,0 +1,48 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "LeadGenContextCard",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "button_text",
+            "type": "string"
+        },
+        {
+            "name": "canvas",
+            "type": "Canvas"
+        },
+        {
+            "name": "canvas_jump_to_form_button_text",
+            "type": "string"
+        },
+        {
+            "name": "content",
+            "type": "list<string>"
+        },
+        {
+            "name": "cover_photo",
+            "type": "Photo"
+        },
+        {
+            "name": "format",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "style",
+            "type": "string"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        }
+    ]
+}

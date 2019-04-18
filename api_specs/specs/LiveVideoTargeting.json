@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "age_max",
+            "type": "unsigned int"
+        },
+        {
+            "name": "age_min",
+            "type": "unsigned int"
+        },
+        {
+            "name": "excluded_countries",
+            "type": "list<string>"
+        },
+        {
+            "name": "geo_locations",
+            "type": "TargetingGeoLocation"
+        }
+    ]
+}

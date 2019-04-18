@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "liability_type",
+            "type": "Object"
+        },
+        {
+            "name": "partition_type",
+            "type": "Object"
+        },
+        {
+            "name": "send_bill_to",
+            "type": "Object"
+        }
+    ]
+}

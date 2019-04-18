@@ -1,0 +1,121 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "adgroup_id",
+            "type": "string"
+        },
+        {
+            "name": "arpu_180d",
+            "type": "float"
+        },
+        {
+            "name": "arpu_1d",
+            "type": "float"
+        },
+        {
+            "name": "arpu_30d",
+            "type": "float"
+        },
+        {
+            "name": "arpu_365d",
+            "type": "float"
+        },
+        {
+            "name": "arpu_3d",
+            "type": "float"
+        },
+        {
+            "name": "arpu_7d",
+            "type": "float"
+        },
+        {
+            "name": "arpu_90d",
+            "type": "float"
+        },
+        {
+            "name": "campaign_group_id",
+            "type": "string"
+        },
+        {
+            "name": "campaign_id",
+            "type": "string"
+        },
+        {
+            "name": "date_start",
+            "type": "string"
+        },
+        {
+            "name": "date_stop",
+            "type": "string"
+        },
+        {
+            "name": "installs",
+            "type": "unsigned int"
+        },
+        {
+            "name": "revenue",
+            "type": "float"
+        },
+        {
+            "name": "revenue_180d",
+            "type": "float"
+        },
+        {
+            "name": "revenue_1d",
+            "type": "float"
+        },
+        {
+            "name": "revenue_30d",
+            "type": "float"
+        },
+        {
+            "name": "revenue_365d",
+            "type": "float"
+        },
+        {
+            "name": "revenue_3d",
+            "type": "float"
+        },
+        {
+            "name": "revenue_7d",
+            "type": "float"
+        },
+        {
+            "name": "revenue_90d",
+            "type": "float"
+        },
+        {
+            "name": "spend",
+            "type": "float"
+        },
+        {
+            "name": "yield_180d",
+            "type": "float"
+        },
+        {
+            "name": "yield_1d",
+            "type": "float"
+        },
+        {
+            "name": "yield_30d",
+            "type": "float"
+        },
+        {
+            "name": "yield_365d",
+            "type": "float"
+        },
+        {
+            "name": "yield_3d",
+            "type": "float"
+        },
+        {
+            "name": "yield_7d",
+            "type": "float"
+        },
+        {
+            "name": "yield_90d",
+            "type": "float"
+        }
+    ]
+}

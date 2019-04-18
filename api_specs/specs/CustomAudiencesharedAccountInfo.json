@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "account_id",
+            "type": "string"
+        },
+        {
+            "name": "account_name",
+            "type": "string"
+        },
+        {
+            "name": "business_id",
+            "type": "string"
+        },
+        {
+            "name": "business_name",
+            "type": "string"
+        },
+        {
+            "name": "sharing_status",
+            "type": "string"
+        }
+    ]
+}

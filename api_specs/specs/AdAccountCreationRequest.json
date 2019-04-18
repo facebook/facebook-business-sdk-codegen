@@ -1,0 +1,379 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "adaccounts",
+            "return": "AdAccount",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "vietnam",
+            "return": "AdAccountCreationRequest",
+            "params": [
+                {
+                    "name": "ad_accounts_info",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "additional_comment",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "address_in_english",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "address_in_local_language",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "advertiser_business_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "business_registration",
+                    "required": false,
+                    "type": "file"
+                },
+                {
+                    "name": "business_registration_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "contact",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "english_legal_entity_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "legal_entity_name_in_local_language",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "official_website_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "planning_agency_business_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "promotable_app_ids",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "promotable_page_ids",
+                    "required": false,
+                    "type": "list<int>"
+                },
+                {
+                    "name": "promotable_page_urls",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "promotable_urls",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "subvertical",
+                    "required": false,
+                    "type": "adaccountcreationrequestvietnam_subvertical_enum_param"
+                },
+                {
+                    "name": "vertical",
+                    "required": false,
+                    "type": "adaccountcreationrequestvietnam_vertical_enum_param"
+                }
+            ]
+        },
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdAccountCreationRequest",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "AdAccountCreationRequest",
+            "params": [
+                {
+                    "name": "ad_accounts_info",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "additional_comment",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "address_in_chinese",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "address_in_english",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "address_in_local_language",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "advertiser_business_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "business_registration",
+                    "required": false,
+                    "type": "file"
+                },
+                {
+                    "name": "business_registration_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "chinese_legal_entity_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "contact",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "disapprove_appeal_comment",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "english_legal_entity_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "extended_credit_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "is_smb",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "legal_entity_name_in_local_language",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "official_website_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "planning_agency_business_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "promotable_app_ids",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "promotable_page_ids",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "promotable_page_urls",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "promotable_urls",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "subvertical",
+                    "required": false,
+                    "type": "adaccountcreationrequest_subvertical"
+                },
+                {
+                    "name": "vertical",
+                    "required": false,
+                    "type": "adaccountcreationrequest_vertical"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "ad_accounts_currency",
+            "type": "string"
+        },
+        {
+            "name": "ad_accounts_info",
+            "type": "list<Object>"
+        },
+        {
+            "name": "additional_comment",
+            "type": "string"
+        },
+        {
+            "name": "address_in_chinese",
+            "type": "string"
+        },
+        {
+            "name": "address_in_english",
+            "type": "Object"
+        },
+        {
+            "name": "address_in_local_language",
+            "type": "string"
+        },
+        {
+            "name": "advertiser_business",
+            "type": "Business"
+        },
+        {
+            "name": "appeal_reason",
+            "type": "Object"
+        },
+        {
+            "name": "business",
+            "type": "Business"
+        },
+        {
+            "name": "business_registration_id",
+            "type": "string"
+        },
+        {
+            "name": "chinese_legal_entity_name",
+            "type": "string"
+        },
+        {
+            "name": "contact",
+            "type": "Object"
+        },
+        {
+            "name": "creator",
+            "type": "User"
+        },
+        {
+            "name": "credit_card_id",
+            "type": "string"
+        },
+        {
+            "name": "disapproval_reasons",
+            "type": "list<Object>"
+        },
+        {
+            "name": "english_legal_entity_name",
+            "type": "string"
+        },
+        {
+            "name": "extended_credit_id",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_smb",
+            "type": "bool"
+        },
+        {
+            "name": "is_test",
+            "type": "bool"
+        },
+        {
+            "name": "is_under_authorization",
+            "type": "bool"
+        },
+        {
+            "name": "legal_entity_name_in_local_language",
+            "type": "string"
+        },
+        {
+            "name": "oe_request_id",
+            "type": "string"
+        },
+        {
+            "name": "official_website_url",
+            "type": "string"
+        },
+        {
+            "name": "planning_agency_business",
+            "type": "Business"
+        },
+        {
+            "name": "planning_agency_business_id",
+            "type": "string"
+        },
+        {
+            "name": "promotable_app_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "promotable_page_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "promotable_urls",
+            "type": "list<string>"
+        },
+        {
+            "name": "request_change_reasons",
+            "type": "list<Object>"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "subvertical",
+            "type": "string"
+        },
+        {
+            "name": "time_created",
+            "type": "datetime"
+        },
+        {
+            "name": "vertical",
+            "type": "string"
+        }
+    ]
+}

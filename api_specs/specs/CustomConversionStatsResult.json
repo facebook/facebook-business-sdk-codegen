@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "aggregation",
+            "type": "CustomConversionStatsResult_aggregation"
+        },
+        {
+            "name": "data",
+            "type": "list<Object>"
+        },
+        {
+            "name": "timestamp",
+            "type": "datetime"
+        }
+    ]
+}

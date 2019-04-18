@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "amount",
+            "type": "string"
+        },
+        {
+            "name": "amount_in_hundredths",
+            "type": "string"
+        },
+        {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "offsetted_amount",
+            "type": "string"
+        }
+    ]
+}

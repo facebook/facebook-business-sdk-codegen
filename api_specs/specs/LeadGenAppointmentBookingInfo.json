@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "advertiser_timezone_offset",
+            "type": "string"
+        },
+        {
+            "name": "appointment_durations",
+            "type": "list<string>"
+        },
+        {
+            "name": "appointment_slots_by_day",
+            "type": "list<Object>"
+        }
+    ]
+}

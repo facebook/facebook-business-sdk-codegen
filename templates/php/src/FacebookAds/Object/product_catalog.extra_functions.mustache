@@ -1,0 +1,27 @@
+  /**
+   * @param int $user_id
+   * @param string $role
+   */
+  public function addUserPermission($user_id, $role) {
+    $params = array(
+      'user' => $user_id,
+      'role' => $role,
+    );
+    $this->getApi()->call(
+      '/'.$this->assureId().'/userpermissions',
+      RequestInterface::METHOD_POST,
+      $params);
+  }
+
+  /**
+   * @param int $user_id
+   */
+  public function deleteUserPermission($user_id) {
+    $params = array(
+      'user' => $user_id,
+    );
+    $this->getApi()->call(
+      '/'.$this->assureId().'/userpermissions',
+      RequestInterface::METHOD_DELETE,
+      $params);
+  }

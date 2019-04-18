@@ -1,0 +1,41 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "countries",
+            "type": "list<string>"
+        },
+        {
+            "name": "default_creation_data",
+            "type": "Object"
+        },
+        {
+            "name": "global_io_max_campaign_duration",
+            "type": "unsigned int"
+        },
+        {
+            "name": "max_campaign_duration",
+            "type": "Object"
+        },
+        {
+            "name": "max_days_to_finish",
+            "type": "Object"
+        },
+        {
+            "name": "max_pause_without_prediction_rerun",
+            "type": "Object"
+        },
+        {
+            "name": "min_campaign_duration",
+            "type": "Object"
+        },
+        {
+            "name": "min_reach_limits",
+            "type": "Object"
+        },
+        {
+            "name": "supports_video_view_benchmark_per_country",
+            "type": "Object"
+        }
+    ]
+}

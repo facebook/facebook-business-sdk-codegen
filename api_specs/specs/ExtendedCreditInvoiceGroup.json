@@ -1,0 +1,77 @@
+{
+    "apis": [
+        {
+            "method": "DELETE",
+            "endpoint": "ad_accounts",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "ad_account_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "ad_accounts",
+            "return": "AdAccount",
+            "params": []
+        },
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ExtendedCreditInvoiceGroup",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "ExtendedCreditInvoiceGroup",
+            "params": [
+                {
+                    "name": "emails",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "auto_enroll",
+            "type": "bool"
+        },
+        {
+            "name": "customer_po_number",
+            "type": "string"
+        },
+        {
+            "name": "email",
+            "type": "Object"
+        },
+        {
+            "name": "emails",
+            "type": "list<string>"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        }
+    ]
+}

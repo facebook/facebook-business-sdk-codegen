@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "inventory",
+            "type": "int"
+        },
+        {
+            "name": "total_inventory",
+            "type": "int"
+        }
+    ]
+}

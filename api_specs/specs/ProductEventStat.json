@@ -1,0 +1,49 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "date_start",
+            "type": "string"
+        },
+        {
+            "name": "date_stop",
+            "type": "string"
+        },
+        {
+            "name": "device_type",
+            "type": "ProductEventStat_device_type"
+        },
+        {
+            "name": "event",
+            "type": "ProductEventStat_event"
+        },
+        {
+            "name": "event_source",
+            "type": "ExternalEventSource"
+        },
+        {
+            "name": "total_content_ids_matched_other_catalogs",
+            "type": "int"
+        },
+        {
+            "name": "total_matched_content_ids",
+            "type": "int"
+        },
+        {
+            "name": "total_unmatched_content_ids",
+            "type": "int"
+        },
+        {
+            "name": "unique_content_ids_matched_other_catalogs",
+            "type": "int"
+        },
+        {
+            "name": "unique_matched_content_ids",
+            "type": "int"
+        },
+        {
+            "name": "unique_unmatched_content_ids",
+            "type": "int"
+        }
+    ]
+}

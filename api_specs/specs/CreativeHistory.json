@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "creative_fingerprint",
+            "type": "int"
+        },
+        {
+            "name": "time_ranges",
+            "type": "list<Object>"
+        }
+    ]
+}

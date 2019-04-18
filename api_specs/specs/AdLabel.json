@@ -1,0 +1,74 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "adcreatives",
+            "return": "AdCreative",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "ads",
+            "return": "Ad",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "adsets",
+            "return": "AdSet",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "campaigns",
+            "return": "Campaign",
+            "params": []
+        },
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdLabel",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "AdLabel",
+            "params": [
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "account",
+            "type": "AdAccount"
+        },
+        {
+            "name": "created_time",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "updated_time",
+            "type": "datetime"
+        }
+    ]
+}

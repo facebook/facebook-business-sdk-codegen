@@ -1,0 +1,72 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdToplineDetail",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "active_status",
+            "type": "int"
+        },
+        {
+            "name": "ad_account_id",
+            "type": "string"
+        },
+        {
+            "name": "flight_end_date",
+            "type": "datetime"
+        },
+        {
+            "name": "flight_start_date",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "io_number",
+            "type": "int"
+        },
+        {
+            "name": "line_number",
+            "type": "int"
+        },
+        {
+            "name": "price",
+            "type": "float"
+        },
+        {
+            "name": "quantity",
+            "type": "float"
+        },
+        {
+            "name": "sf_detail_line_id",
+            "type": "string"
+        },
+        {
+            "name": "subline_id",
+            "type": "string"
+        },
+        {
+            "name": "targets",
+            "type": "string"
+        },
+        {
+            "name": "time_created",
+            "type": "datetime"
+        },
+        {
+            "name": "time_updated",
+            "type": "datetime"
+        },
+        {
+            "name": "topline_id",
+            "type": "AdTopline"
+        }
+    ]
+}

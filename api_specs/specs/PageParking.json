@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "lot",
+            "type": "unsigned int"
+        },
+        {
+            "name": "street",
+            "type": "unsigned int"
+        },
+        {
+            "name": "valet",
+            "type": "unsigned int"
+        }
+    ]
+}

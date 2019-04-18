@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "height",
+            "type": "unsigned int"
+        },
+        {
+            "name": "source",
+            "type": "string"
+        },
+        {
+            "name": "width",
+            "type": "unsigned int"
+        }
+    ]
+}

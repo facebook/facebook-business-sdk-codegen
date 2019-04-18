@@ -1,0 +1,60 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "FoodDrinkOrder",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "FoodDrinkOrder",
+            "params": [
+                {
+                    "name": "state",
+                    "required": true,
+                    "type": "fooddrinkorder_state"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "admin_note",
+            "type": "string"
+        },
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "customer_name",
+            "type": "string"
+        },
+        {
+            "name": "customer_phone_number",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "note",
+            "type": "string"
+        },
+        {
+            "name": "order_details",
+            "type": "list<Object>"
+        },
+        {
+            "name": "state",
+            "type": "string"
+        },
+        {
+            "name": "update_time",
+            "type": "datetime"
+        }
+    ]
+}

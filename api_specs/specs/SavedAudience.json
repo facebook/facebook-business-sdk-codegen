@@ -1,0 +1,72 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "adsets",
+            "return": "AdSet",
+            "params": []
+        },
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "SavedAudience",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "account",
+            "type": "AdAccount"
+        },
+        {
+            "name": "approximate_count",
+            "type": "int"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "expiry_time",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "permission_for_actions",
+            "type": "AudiencePermissionForActions"
+        },
+        {
+            "name": "run_status",
+            "type": "string"
+        },
+        {
+            "name": "sentence_lines",
+            "type": "list"
+        },
+        {
+            "name": "targeting",
+            "type": "Targeting"
+        },
+        {
+            "name": "time_created",
+            "type": "datetime"
+        },
+        {
+            "name": "time_updated",
+            "type": "datetime"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "currency_offset",
+            "type": "unsigned int"
+        },
+        {
+            "name": "usd_exchange",
+            "type": "float"
+        },
+        {
+            "name": "usd_exchange_inverse",
+            "type": "float"
+        },
+        {
+            "name": "user_currency",
+            "type": "string"
+        }
+    ]
+}

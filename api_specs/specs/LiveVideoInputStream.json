@@ -1,0 +1,54 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "LiveVideoInputStream",
+            "params": [
+                {
+                    "name": "target_token",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "dash_ingest_url",
+            "type": "string"
+        },
+        {
+            "name": "dash_preview_url",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_master",
+            "type": "bool"
+        },
+        {
+            "name": "live_encoder",
+            "type": "LiveEncoder"
+        },
+        {
+            "name": "secure_stream_url",
+            "type": "string"
+        },
+        {
+            "name": "stream_health",
+            "type": "Object"
+        },
+        {
+            "name": "stream_id",
+            "type": "string"
+        },
+        {
+            "name": "stream_url",
+            "type": "string"
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "end_time",
+            "type": "string"
+        },
+        {
+            "name": "num_invalid_entries",
+            "type": "string"
+        },
+        {
+            "name": "num_matched",
+            "type": "string"
+        },
+        {
+            "name": "num_received",
+            "type": "string"
+        },
+        {
+            "name": "progress",
+            "type": "string"
+        },
+        {
+            "name": "session_id",
+            "type": "string"
+        },
+        {
+            "name": "stage",
+            "type": "string"
+        },
+        {
+            "name": "start_time",
+            "type": "string"
+        }
+    ]
+}

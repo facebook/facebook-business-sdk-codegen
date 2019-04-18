@@ -1,0 +1,145 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "additional_image_index",
+            "type": "int"
+        },
+        {
+            "name": "app_link_spec",
+            "type": "AdCreativeLinkDataAppLinkSpec"
+        },
+        {
+            "name": "attachment_style",
+            "type": "AdCreativeLinkData_attachment_style"
+        },
+        {
+            "name": "branded_content_shared_to_sponsor_status",
+            "type": "string"
+        },
+        {
+            "name": "branded_content_sponsor_page_id",
+            "type": "string"
+        },
+        {
+            "name": "branded_content_sponsor_relationship",
+            "type": "string"
+        },
+        {
+            "name": "call_to_action",
+            "type": "AdCreativeLinkDataCallToAction"
+        },
+        {
+            "name": "caption",
+            "type": "string"
+        },
+        {
+            "name": "child_attachments",
+            "type": "list<AdCreativeLinkDataChildAttachment>"
+        },
+        {
+            "name": "collection_thumbnails",
+            "type": "list<AdCreativeCollectionThumbnailInfo>"
+        },
+        {
+            "name": "custom_overlay_spec",
+            "type": "AdCreativeLinkDataCustomOverlaySpec"
+        },
+        {
+            "name": "customization_rules_spec",
+            "type": "list<AdCustomizationRuleSpec>"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "event_id",
+            "type": "string"
+        },
+        {
+            "name": "force_single_link",
+            "type": "bool"
+        },
+        {
+            "name": "format_option",
+            "type": "AdCreativeLinkData_format_option"
+        },
+        {
+            "name": "image_crops",
+            "type": "AdsImageCrops"
+        },
+        {
+            "name": "image_hash",
+            "type": "string"
+        },
+        {
+            "name": "image_layer_specs",
+            "type": "list<AdCreativeLinkDataImageLayerSpec>"
+        },
+        {
+            "name": "image_overlay_spec",
+            "type": "AdCreativeLinkDataImageOverlaySpec"
+        },
+        {
+            "name": "link",
+            "type": "string"
+        },
+        {
+            "name": "message",
+            "type": "string"
+        },
+        {
+            "name": "multi_share_end_card",
+            "type": "bool"
+        },
+        {
+            "name": "multi_share_optimized",
+            "type": "bool"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "offer_id",
+            "type": "string"
+        },
+        {
+            "name": "page_welcome_message",
+            "type": "string"
+        },
+        {
+            "name": "picture",
+            "type": "string"
+        },
+        {
+            "name": "post_click_configuration",
+            "type": "AdCreativePostClickConfiguration"
+        },
+        {
+            "name": "preferred_image_tags",
+            "type": "list<string>"
+        },
+        {
+            "name": "retailer_item_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "show_multiple_images",
+            "type": "bool"
+        },
+        {
+            "name": "sponsorship_info",
+            "type": "AdCreativeLinkDataSponsorshipInfoSpec"
+        },
+        {
+            "name": "static_fallback_spec",
+            "type": "AdCreativeStaticFallbackSpec"
+        },
+        {
+            "name": "use_flexible_image_aspect_ratio",
+            "type": "bool"
+        }
+    ]
+}

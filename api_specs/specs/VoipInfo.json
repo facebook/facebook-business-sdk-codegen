@@ -1,0 +1,33 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "has_mobile_app",
+            "type": "bool"
+        },
+        {
+            "name": "has_permission",
+            "type": "bool"
+        },
+        {
+            "name": "is_callable",
+            "type": "bool"
+        },
+        {
+            "name": "is_callable_webrtc",
+            "type": "bool"
+        },
+        {
+            "name": "is_pushable",
+            "type": "bool"
+        },
+        {
+            "name": "reason_code",
+            "type": "unsigned int"
+        },
+        {
+            "name": "reason_description",
+            "type": "string"
+        }
+    ]
+}

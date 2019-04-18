@@ -1,0 +1,263 @@
+{
+    "apis": [
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "HomeListing",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "HomeListing",
+            "params": [
+                {
+                    "name": "address",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "availability",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "currency",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "images",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "listing_type",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "num_baths",
+                    "required": false,
+                    "type": "float"
+                },
+                {
+                    "name": "num_beds",
+                    "required": false,
+                    "type": "float"
+                },
+                {
+                    "name": "num_units",
+                    "required": false,
+                    "type": "float"
+                },
+                {
+                    "name": "price",
+                    "required": false,
+                    "type": "float"
+                },
+                {
+                    "name": "property_type",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "year_built",
+                    "required": false,
+                    "type": "unsigned int"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "ac_type",
+            "type": "string"
+        },
+        {
+            "name": "additional_fees_description",
+            "type": "string"
+        },
+        {
+            "name": "address",
+            "type": "Object"
+        },
+        {
+            "name": "agent_company",
+            "type": "string"
+        },
+        {
+            "name": "agent_email",
+            "type": "string"
+        },
+        {
+            "name": "agent_fb_page_id",
+            "type": "Page"
+        },
+        {
+            "name": "agent_name",
+            "type": "string"
+        },
+        {
+            "name": "agent_phone",
+            "type": "string"
+        },
+        {
+            "name": "applinks",
+            "type": "AppLinks"
+        },
+        {
+            "name": "area_size",
+            "type": "unsigned int"
+        },
+        {
+            "name": "area_unit",
+            "type": "string"
+        },
+        {
+            "name": "availability",
+            "type": "string"
+        },
+        {
+            "name": "co_2_emission_rating_eu",
+            "type": "Object"
+        },
+        {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "days_on_market",
+            "type": "unsigned int"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "energy_rating_eu",
+            "type": "Object"
+        },
+        {
+            "name": "furnish_type",
+            "type": "string"
+        },
+        {
+            "name": "group_id",
+            "type": "string"
+        },
+        {
+            "name": "heating_type",
+            "type": "string"
+        },
+        {
+            "name": "home_listing_id",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "images",
+            "type": "list<string>"
+        },
+        {
+            "name": "laundry_type",
+            "type": "string"
+        },
+        {
+            "name": "listing_type",
+            "type": "string"
+        },
+        {
+            "name": "max_currency",
+            "type": "string"
+        },
+        {
+            "name": "max_price",
+            "type": "string"
+        },
+        {
+            "name": "min_currency",
+            "type": "string"
+        },
+        {
+            "name": "min_price",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "num_baths",
+            "type": "float"
+        },
+        {
+            "name": "num_beds",
+            "type": "float"
+        },
+        {
+            "name": "num_rooms",
+            "type": "float"
+        },
+        {
+            "name": "num_units",
+            "type": "unsigned int"
+        },
+        {
+            "name": "parking_type",
+            "type": "string"
+        },
+        {
+            "name": "partner_verification",
+            "type": "string"
+        },
+        {
+            "name": "pet_policy",
+            "type": "string"
+        },
+        {
+            "name": "price",
+            "type": "string"
+        },
+        {
+            "name": "property_type",
+            "type": "string"
+        },
+        {
+            "name": "sanitized_images",
+            "type": "list<string>"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        },
+        {
+            "name": "year_built",
+            "type": "int"
+        }
+    ]
+}

@@ -1,0 +1,102 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AudioCopyright",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "AudioCopyright",
+            "params": [
+                {
+                    "name": "append_excluded_ownership_segments",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "excluded_ownership_segments",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "match_rule",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "ownership_countries",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "update_source",
+                    "required": false,
+                    "type": "audiocopyright_update_source"
+                },
+                {
+                    "name": "whitelisted_fb_users",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "whitelisted_ig_users",
+                    "required": false,
+                    "type": "list<string>"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "displayed_matches_count",
+            "type": "int"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "in_conflict",
+            "type": "bool"
+        },
+        {
+            "name": "isrc",
+            "type": "string"
+        },
+        {
+            "name": "match_rule",
+            "type": "VideoCopyrightRule"
+        },
+        {
+            "name": "ownership_countries",
+            "type": "list<string>"
+        },
+        {
+            "name": "reference_file_status",
+            "type": "string"
+        },
+        {
+            "name": "ridge_monitoring_status",
+            "type": "string"
+        },
+        {
+            "name": "update_time",
+            "type": "datetime"
+        },
+        {
+            "name": "whitelisted_fb_users",
+            "type": "list<Object>"
+        },
+        {
+            "name": "whitelisted_ig_users",
+            "type": "list<string>"
+        }
+    ]
+}

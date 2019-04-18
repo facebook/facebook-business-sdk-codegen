@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "daily",
+            "type": "string"
+        },
+        {
+            "name": "lifetime",
+            "type": "string"
+        },
+        {
+            "name": "objective",
+            "type": "string"
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "application_id",
+            "type": "string"
+        },
+        {
+            "name": "custom_conversion_id",
+            "type": "string"
+        },
+        {
+            "name": "custom_event_type",
+            "type": "AdPromotedObject_custom_event_type"
+        },
+        {
+            "name": "event_id",
+            "type": "string"
+        },
+        {
+            "name": "fundraiser_campaign_id",
+            "type": "string"
+        },
+        {
+            "name": "object_store_url",
+            "type": "string"
+        },
+        {
+            "name": "offer_id",
+            "type": "string"
+        },
+        {
+            "name": "offline_conversion_data_set_id",
+            "type": "string"
+        },
+        {
+            "name": "page_id",
+            "type": "string"
+        },
+        {
+            "name": "pixel_aggregation_rule",
+            "type": "string"
+        },
+        {
+            "name": "pixel_id",
+            "type": "string"
+        },
+        {
+            "name": "pixel_rule",
+            "type": "string"
+        },
+        {
+            "name": "place_page_set_id",
+            "type": "string"
+        },
+        {
+            "name": "product_catalog_id",
+            "type": "string"
+        },
+        {
+            "name": "product_item_id",
+            "type": "string"
+        },
+        {
+            "name": "product_set_id",
+            "type": "string"
+        },
+        {
+            "name": "retention_days",
+            "type": "string"
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "apis": [
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "VideoCopyrightRule",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "condition_groups",
+            "type": "list<VideoCopyrightConditionGroup>"
+        },
+        {
+            "name": "copyrights",
+            "type": "list<string>"
+        },
+        {
+            "name": "created_date",
+            "type": "datetime"
+        },
+        {
+            "name": "creator",
+            "type": "User"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_in_migration",
+            "type": "bool"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        }
+    ]
+}

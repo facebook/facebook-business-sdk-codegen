@@ -1,0 +1,390 @@
+{
+    "apis": [
+        {
+            "method": "DELETE",
+            "endpoint": "adlabels",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "adlabels",
+                    "required": true,
+                    "type": "list<Object>"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "adlabels",
+            "return": "AdCreative",
+            "params": [
+                {
+                    "name": "adlabels",
+                    "required": true,
+                    "type": "list<Object>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "previews",
+            "return": "AdPreview",
+            "params": [
+                {
+                    "name": "ad_format",
+                    "required": true,
+                    "type": "adcreativepreviews_ad_format_enum_param"
+                },
+                {
+                    "name": "dynamic_asset_label",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "dynamic_creative_spec",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "dynamic_customization",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "end_date",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "height",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "interactive",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "locale",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "place_page_id",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "post",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "product_item_ids",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "render_type",
+                    "required": false,
+                    "type": "adcreativepreviews_render_type_enum_param"
+                },
+                {
+                    "name": "start_date",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "width",
+                    "required": false,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "account_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "adlabels",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "status",
+                    "required": false,
+                    "type": "adcreative_status"
+                }
+            ]
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdCreative",
+            "params": [
+                {
+                    "name": "thumbnail_height",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "thumbnail_width",
+                    "required": false,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "AdCreative",
+            "params": [
+                {
+                    "name": "account_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "adlabels",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "status",
+                    "required": false,
+                    "type": "adcreative_status"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "account_id",
+            "type": "string"
+        },
+        {
+            "name": "actor_id",
+            "type": "string"
+        },
+        {
+            "name": "adlabels",
+            "type": "list<AdLabel>"
+        },
+        {
+            "name": "applink_treatment",
+            "type": "AdCreative_applink_treatment"
+        },
+        {
+            "name": "asset_feed_spec",
+            "type": "AdAssetFeedSpec"
+        },
+        {
+            "name": "authorization_category",
+            "type": "string"
+        },
+        {
+            "name": "auto_update",
+            "type": "bool"
+        },
+        {
+            "name": "body",
+            "type": "string"
+        },
+        {
+            "name": "branded_content_sponsor_page_id",
+            "type": "string"
+        },
+        {
+            "name": "bundle_folder_id",
+            "type": "string"
+        },
+        {
+            "name": "call_to_action_type",
+            "type": "AdCreative_call_to_action_type"
+        },
+        {
+            "name": "categorization_criteria",
+            "type": "string"
+        },
+        {
+            "name": "category_media_source",
+            "type": "string"
+        },
+        {
+            "name": "destination_set_id",
+            "type": "string"
+        },
+        {
+            "name": "dynamic_ad_voice",
+            "type": "string"
+        },
+        {
+            "name": "effective_authorization_category",
+            "type": "string"
+        },
+        {
+            "name": "effective_instagram_story_id",
+            "type": "string"
+        },
+        {
+            "name": "effective_object_story_id",
+            "type": "string"
+        },
+        {
+            "name": "enable_direct_install",
+            "type": "bool"
+        },
+        {
+            "name": "enable_launch_instant_app",
+            "type": "bool"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "image_crops",
+            "type": "AdsImageCrops"
+        },
+        {
+            "name": "image_hash",
+            "type": "string"
+        },
+        {
+            "name": "image_url",
+            "type": "string"
+        },
+        {
+            "name": "instagram_actor_id",
+            "type": "string"
+        },
+        {
+            "name": "instagram_permalink_url",
+            "type": "string"
+        },
+        {
+            "name": "instagram_story_id",
+            "type": "string"
+        },
+        {
+            "name": "interactive_components_spec",
+            "type": "AdCreativeInteractiveComponentsSpec"
+        },
+        {
+            "name": "link_deep_link_url",
+            "type": "string"
+        },
+        {
+            "name": "link_og_id",
+            "type": "string"
+        },
+        {
+            "name": "link_url",
+            "type": "string"
+        },
+        {
+            "name": "messenger_sponsored_message",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "object_id",
+            "type": "string"
+        },
+        {
+            "name": "object_store_url",
+            "type": "string"
+        },
+        {
+            "name": "object_story_id",
+            "type": "string"
+        },
+        {
+            "name": "object_story_spec",
+            "type": "AdCreativeObjectStorySpec"
+        },
+        {
+            "name": "object_type",
+            "type": "AdCreative_object_type"
+        },
+        {
+            "name": "object_url",
+            "type": "string"
+        },
+        {
+            "name": "place_page_set_id",
+            "type": "string"
+        },
+        {
+            "name": "platform_customizations",
+            "type": "AdCreativePlatformCustomization"
+        },
+        {
+            "name": "playable_asset_id",
+            "type": "string"
+        },
+        {
+            "name": "portrait_customizations",
+            "type": "AdCreativePortraitCustomizations"
+        },
+        {
+            "name": "product_set_id",
+            "type": "string"
+        },
+        {
+            "name": "recommender_settings",
+            "type": "AdCreativeRecommenderSettings"
+        },
+        {
+            "name": "status",
+            "type": "AdCreative_status"
+        },
+        {
+            "name": "template_url",
+            "type": "string"
+        },
+        {
+            "name": "template_url_spec",
+            "type": "AdCreativeTemplateURLSpec"
+        },
+        {
+            "name": "thumbnail_url",
+            "type": "string"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "url_tags",
+            "type": "string"
+        },
+        {
+            "name": "use_page_actor_override",
+            "type": "bool"
+        },
+        {
+            "name": "video_id",
+            "type": "string"
+        }
+    ]
+}

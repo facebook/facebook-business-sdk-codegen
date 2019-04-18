@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "count",
+            "type": "unsigned int"
+        },
+        {
+            "name": "reaction_type",
+            "type": "StreamingReaction_reaction_type"
+        }
+    ]
+}

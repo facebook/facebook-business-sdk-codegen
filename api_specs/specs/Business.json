@@ -1,0 +1,2002 @@
+{
+    "apis": [
+        {
+            "method": "POST",
+            "endpoint": "access_token",
+            "return": "Business",
+            "params": [
+                {
+                    "name": "app_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "scope",
+                    "required": true,
+                    "type": "list<Permission>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "ad_studies",
+            "return": "AdStudy",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "ad_studies",
+            "return": "AdStudy",
+            "params": [
+                {
+                    "name": "cells",
+                    "required": true,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "client_business",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "confidence_level",
+                    "required": false,
+                    "type": "float"
+                },
+                {
+                    "name": "cooldown_start_time",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "end_time",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "objectives",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "observation_end_time",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "start_time",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "type",
+                    "required": false,
+                    "type": "businessad_studies_type_enum_param"
+                },
+                {
+                    "name": "viewers",
+                    "required": false,
+                    "type": "list<int>"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "adaccount",
+            "return": "AdAccount",
+            "params": [
+                {
+                    "name": "billing_address_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "currency",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "end_advertiser",
+                    "required": true,
+                    "type": "Object"
+                },
+                {
+                    "name": "funding_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "invoice",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "invoice_group_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "invoicing_emails",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "io",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "liable_address_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "media_agency",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "partner",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "po_number",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "sold_to_address_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "timezone_id",
+                    "required": true,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "adaccountcreationrequests",
+            "return": "AdAccountCreationRequest",
+            "params": [
+                {
+                    "name": "ad_account_creation_request_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "status",
+                    "required": false,
+                    "type": "list<businessadaccountcreationrequests_status_enum_param>"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "adaccountcreationrequests",
+            "return": "AdAccountCreationRequest",
+            "params": [
+                {
+                    "name": "ad_accounts_info",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "additional_comment",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "address_in_chinese",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "address_in_english",
+                    "required": true,
+                    "type": "Object"
+                },
+                {
+                    "name": "address_in_local_language",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "advertiser_business_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "business_registration",
+                    "required": false,
+                    "type": "file"
+                },
+                {
+                    "name": "business_registration_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "chinese_legal_entity_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "contact",
+                    "required": true,
+                    "type": "Object"
+                },
+                {
+                    "name": "english_legal_entity_name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "extended_credit_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "is_smb",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_test",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "legal_entity_name_in_local_language",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "official_website_url",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "planning_agency_business_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "promotable_app_ids",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "promotable_page_ids",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "promotable_page_urls",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "promotable_urls",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "subvertical",
+                    "required": true,
+                    "type": "businessadaccountcreationrequests_subvertical_enum_param"
+                },
+                {
+                    "name": "vertical",
+                    "required": true,
+                    "type": "businessadaccountcreationrequests_vertical_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "adaccounts",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "adaccount_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "adnetworkanalytics",
+            "return": "AdNetworkAnalyticsSyncQueryResult",
+            "params": [
+                {
+                    "name": "aggregation_period",
+                    "required": false,
+                    "type": "businessadnetworkanalytics_aggregation_period_enum_param"
+                },
+                {
+                    "name": "breakdowns",
+                    "required": false,
+                    "type": "list<businessadnetworkanalytics_breakdowns_enum_param>"
+                },
+                {
+                    "name": "filters",
+                    "required": false,
+                    "type": "list<map>"
+                },
+                {
+                    "name": "limit",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "metrics",
+                    "required": true,
+                    "type": "list<businessadnetworkanalytics_metrics_enum_param>"
+                },
+                {
+                    "name": "ordering_column",
+                    "required": false,
+                    "type": "businessadnetworkanalytics_ordering_column_enum_param"
+                },
+                {
+                    "name": "ordering_type",
+                    "required": false,
+                    "type": "businessadnetworkanalytics_ordering_type_enum_param"
+                },
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "until",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "adnetworkanalytics",
+            "return": "Business",
+            "params": [
+                {
+                    "name": "aggregation_period",
+                    "required": false,
+                    "type": "businessadnetworkanalytics_aggregation_period_enum_param"
+                },
+                {
+                    "name": "breakdowns",
+                    "required": false,
+                    "type": "list<businessadnetworkanalytics_breakdowns_enum_param>"
+                },
+                {
+                    "name": "filters",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "limit",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "metrics",
+                    "required": true,
+                    "type": "list<businessadnetworkanalytics_metrics_enum_param>"
+                },
+                {
+                    "name": "ordering_column",
+                    "required": false,
+                    "type": "businessadnetworkanalytics_ordering_column_enum_param"
+                },
+                {
+                    "name": "ordering_type",
+                    "required": false,
+                    "type": "businessadnetworkanalytics_ordering_type_enum_param"
+                },
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "until",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "adnetworkanalytics_results",
+            "return": "AdNetworkAnalyticsAsyncQueryResult",
+            "params": [
+                {
+                    "name": "query_ids",
+                    "required": false,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "adspixels",
+            "return": "AdsPixel",
+            "params": [
+                {
+                    "name": "id_filter",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "name_filter",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "sort_by",
+                    "required": false,
+                    "type": "businessadspixels_sort_by_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "adspixels",
+            "return": "AdsPixel",
+            "params": [
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "advertisable_applications",
+            "return": "BusinessAdvertisableApplicationsResult",
+            "params": [
+                {
+                    "name": "adaccount_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "offset",
+                    "required": false,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "agencies",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "agencies",
+            "return": "Business",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "agency_pages",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "agency_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "apps",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "app_id",
+                    "required": true,
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "apps",
+            "return": "Business",
+            "params": [
+                {
+                    "name": "access_type",
+                    "required": true,
+                    "type": "businessapps_access_type_enum_param"
+                },
+                {
+                    "name": "app_id",
+                    "required": true,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "block_list_drafts",
+            "return": "Business",
+            "params": [
+                {
+                    "name": "publisher_urls_file",
+                    "required": true,
+                    "type": "file"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "business_invoices",
+            "return": "OracleTransaction",
+            "params": [
+                {
+                    "name": "end_date",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "start_date",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "business_users",
+            "return": "BusinessUser",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "business_users",
+            "return": "BusinessUser",
+            "params": [
+                {
+                    "name": "email",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "role",
+                    "required": false,
+                    "type": "businessbusiness_users_role_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "businessprojects",
+            "return": "BusinessProject",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "businessprojects",
+            "return": "BusinessProject",
+            "params": [
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "businesssettinglogs",
+            "return": "BusinessSettingLogsData",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "catalog_segment_producer_tos",
+            "return": "BusinessProductCatalogTOS",
+            "params": [
+                {
+                    "name": "catalog_segment_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "catalog_segment_producer_tos",
+            "return": "Business",
+            "params": [
+                {
+                    "name": "catalog_segment_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "claim_custom_conversions",
+            "return": "CustomConversion",
+            "params": [
+                {
+                    "name": "custom_conversion_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "client_ad_accounts",
+            "return": "AdAccount",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "client_ad_accounts",
+            "return": "Business",
+            "params": [
+                {
+                    "name": "adaccount_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "permitted_tasks",
+                    "required": false,
+                    "type": "list<businessclient_ad_accounts_permitted_tasks_enum_param>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "client_apps",
+            "return": "Application",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "client_apps",
+            "return": "Business",
+            "params": [
+                {
+                    "name": "app_id",
+                    "required": true,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "client_pages",
+            "return": "Page",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "client_pages",
+            "return": "Business",
+            "params": [
+                {
+                    "name": "page_id",
+                    "required": true,
+                    "type": "int"
+                },
+                {
+                    "name": "permitted_tasks",
+                    "required": false,
+                    "type": "list<businessclient_pages_permitted_tasks_enum_param>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "client_pixels",
+            "return": "AdsPixel",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "client_product_catalogs",
+            "return": "ProductCatalog",
+            "params": []
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "clients",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "clients",
+            "return": "Business",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "creditcards",
+            "return": "BusinessCreditCardLegacy",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "customconversions",
+            "return": "CustomConversion",
+            "params": [
+                {
+                    "name": "include_archived",
+                    "required": false,
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "customconversions",
+            "return": "CustomConversion",
+            "params": [
+                {
+                    "name": "advanced_rule",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "custom_event_type",
+                    "required": true,
+                    "type": "businesscustomconversions_custom_event_type_enum_param"
+                },
+                {
+                    "name": "default_conversion_value",
+                    "required": false,
+                    "type": "float"
+                },
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "event_source_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "rule",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "deal_shows_pages",
+            "return": "Page",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "direct_deals",
+            "return": "DirectDeal",
+            "params": [
+                {
+                    "name": "status",
+                    "required": false,
+                    "type": "businessdirect_deals_status_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "event_source_groups",
+            "return": "EventSourceGroup",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "event_source_groups",
+            "return": "EventSourceGroup",
+            "params": [
+                {
+                    "name": "event_sources",
+                    "required": true,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "extendedcredits",
+            "return": "ExtendedCredit",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "grp_plans",
+            "return": "ReachFrequencyPrediction",
+            "params": [
+                {
+                    "name": "status",
+                    "required": false,
+                    "type": "businessgrp_plans_status_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "initiated_audience_sharing_requests",
+            "return": "BusinessAssetSharingAgreement",
+            "params": [
+                {
+                    "name": "recipient_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "request_status",
+                    "required": false,
+                    "type": "businessinitiated_audience_sharing_requests_request_status_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "initiated_sharing_agreements",
+            "return": "BusinessAgreement",
+            "params": [
+                {
+                    "name": "receiving_business_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "request_status",
+                    "required": false,
+                    "type": "businessinitiated_sharing_agreements_request_status_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "instagram_accounts",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "instagram_account",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "instagram_accounts",
+            "return": "InstagramUser",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "managed_businesses",
+            "return": "Business",
+            "params": [
+                {
+                    "name": "existing_client_business_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "sales_rep_email",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "survey_business_type",
+                    "required": false,
+                    "type": "businessmanaged_businesses_survey_business_type_enum_param"
+                },
+                {
+                    "name": "survey_num_assets",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "survey_num_people",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "timezone_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "vertical",
+                    "required": false,
+                    "type": "businessmanaged_businesses_vertical_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "measurement_reports",
+            "return": "MeasurementReport",
+            "params": [
+                {
+                    "name": "filters",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "report_type",
+                    "required": true,
+                    "type": "businessmeasurement_reports_report_type_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "measurement_reports",
+            "return": "MeasurementReport",
+            "params": [
+                {
+                    "name": "metadata",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "report_type",
+                    "required": true,
+                    "type": "businessmeasurement_reports_report_type_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "offline_conversion_data_sets",
+            "return": "OfflineConversionDataSet",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "offline_conversion_data_sets",
+            "return": "OfflineConversionDataSet",
+            "params": [
+                {
+                    "name": "auto_assign_to_new_accounts_only",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "enable_auto_assign_to_accounts",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_mta_use",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "offline_terms_of_service",
+            "return": "OfflineTermsOfService",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "owned_ad_accounts",
+            "return": "AdAccount",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "owned_ad_accounts",
+            "return": "Business",
+            "params": [
+                {
+                    "name": "adaccount_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "owned_apps",
+            "return": "Application",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "owned_apps",
+            "return": "Business",
+            "params": [
+                {
+                    "name": "app_id",
+                    "required": true,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "owned_businesses",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "client_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "owned_businesses",
+            "return": "Business",
+            "params": [
+                {
+                    "name": "client_user_id",
+                    "required": false,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "owned_businesses",
+            "return": "Business",
+            "params": [
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "page_permitted_roles",
+                    "required": false,
+                    "type": "list<businessowned_businesses_page_permitted_roles_enum_param>"
+                },
+                {
+                    "name": "page_permitted_tasks",
+                    "required": false,
+                    "type": "list<businessowned_businesses_page_permitted_tasks_enum_param>"
+                },
+                {
+                    "name": "sales_rep_email",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "shared_page_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "survey_business_type",
+                    "required": false,
+                    "type": "businessowned_businesses_survey_business_type_enum_param"
+                },
+                {
+                    "name": "survey_num_assets",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "survey_num_people",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "timezone_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "vertical",
+                    "required": true,
+                    "type": "businessowned_businesses_vertical_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "owned_custom_conversions",
+            "return": "CustomConversion",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "owned_domains",
+            "return": "OwnedDomain",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "owned_domains",
+            "return": "OwnedDomain",
+            "params": [
+                {
+                    "name": "domain_name",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "owned_instagram_accounts",
+            "return": "InstagramUser",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "owned_pages",
+            "return": "Page",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "owned_pages",
+            "return": "Business",
+            "params": [
+                {
+                    "name": "ig_password",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "page_id",
+                    "required": true,
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "owned_pixels",
+            "return": "AdsPixel",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "owned_product_catalogs",
+            "return": "ProductCatalog",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "owned_product_catalogs",
+            "return": "ProductCatalog",
+            "params": [
+                {
+                    "name": "da_display_settings",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "destination_catalog_settings",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "flight_catalog_settings",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "vertical",
+                    "required": false,
+                    "type": "businessowned_product_catalogs_vertical_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "pages",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "page_id",
+                    "required": true,
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "partner_integrations",
+            "return": "PartnerIntegrationLinked",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "partner_integrations",
+            "return": "PartnerIntegrationLinked",
+            "params": [
+                {
+                    "name": "external_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "gtm_account_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "gtm_container_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "partner",
+                    "required": true,
+                    "type": "businesspartner_integrations_partner_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "partneradaccount",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "billing_address_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "currency",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "end_advertiser",
+                    "required": true,
+                    "type": "Object"
+                },
+                {
+                    "name": "funding_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "invoice",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "invoice_group_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "invoicing_emails",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "io",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "liable_address_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "media_agency",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "partner",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "po_number",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "sold_to_address_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "timezone_id",
+                    "required": true,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "partners",
+            "return": "Business",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "pending_client_ad_accounts",
+            "return": "BusinessAdAccountRequest",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "pending_client_apps",
+            "return": "BusinessApplicationRequest",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "pending_client_pages",
+            "return": "BusinessPageRequest",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "pending_offline_conversion_data_sets",
+            "return": "OfflineConversionDataSet",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "pending_owned_ad_accounts",
+            "return": "BusinessAdAccountRequest",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "pending_owned_pages",
+            "return": "BusinessPageRequest",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "pending_shared_pixels",
+            "return": "AdsPixel",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "pending_users",
+            "return": "BusinessRoleRequest",
+            "params": [
+                {
+                    "name": "email",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "picture",
+            "return": "ProfilePictureSource",
+            "params": [
+                {
+                    "name": "height",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "redirect",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "type",
+                    "required": false,
+                    "type": "businesspicture_type_enum_param"
+                },
+                {
+                    "name": "width",
+                    "required": false,
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "received_audience_permissions",
+            "return": "AudiencePermission",
+            "params": [
+                {
+                    "name": "partner_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "received_audience_sharing_requests",
+            "return": "BusinessAssetSharingAgreement",
+            "params": [
+                {
+                    "name": "initiator_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "request_status",
+                    "required": false,
+                    "type": "businessreceived_audience_sharing_requests_request_status_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "received_inprogress_onbehalf_requests",
+            "return": "BusinessOwnedObjectOnBehalfOfRequest",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "received_sharing_agreements",
+            "return": "BusinessAgreement",
+            "params": [
+                {
+                    "name": "request_status",
+                    "required": false,
+                    "type": "businessreceived_sharing_agreements_request_status_enum_param"
+                },
+                {
+                    "name": "requesting_business_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "sent_inprogress_onbehalf_requests",
+            "return": "BusinessOwnedObjectOnBehalfOfRequest",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "sent_inprogress_onbehalf_requests",
+            "return": "BusinessOwnedObjectOnBehalfOfRequest",
+            "params": [
+                {
+                    "name": "business_owned_object",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "receiving_business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "shared_audience_permissions",
+            "return": "AudiencePermission",
+            "params": [
+                {
+                    "name": "partner_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "spaco_dataset_collections",
+            "return": "SpacoDsDataCollection",
+            "params": [
+                {
+                    "name": "spaco_data_collections",
+                    "required": true,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "system_users",
+            "return": "SystemUser",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "system_users",
+            "return": "SystemUser",
+            "params": [
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "role",
+                    "required": false,
+                    "type": "businesssystem_users_role_enum_param"
+                },
+                {
+                    "name": "system_user_id",
+                    "required": false,
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "third_party_measurement_report_dataset",
+            "return": "ThirdPartyMeasurementReportDataset",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "third_party_measurement_report_dataset",
+            "return": "ThirdPartyMeasurementReportDataset",
+            "params": [
+                {
+                    "name": "category",
+                    "required": true,
+                    "type": "businessthird_party_measurement_report_dataset_category_enum_param"
+                },
+                {
+                    "name": "product",
+                    "required": true,
+                    "type": "businessthird_party_measurement_report_dataset_product_enum_param"
+                },
+                {
+                    "name": "schema",
+                    "required": true,
+                    "type": "list<map>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "upload_event",
+            "return": "MeasurementUploadEvent",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "upload_event",
+            "return": "MeasurementUploadEvent",
+            "params": [
+                {
+                    "name": "aggregation_level",
+                    "required": false,
+                    "type": "businessupload_event_aggregation_level_enum_param"
+                },
+                {
+                    "name": "conversion_end_date",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "conversion_start_date",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "event_status",
+                    "required": false,
+                    "type": "businessupload_event_event_status_enum_param"
+                },
+                {
+                    "name": "lookback_window",
+                    "required": false,
+                    "type": "businessupload_event_lookback_window_enum_param"
+                },
+                {
+                    "name": "match_universe",
+                    "required": false,
+                    "type": "businessupload_event_match_universe_enum_param"
+                },
+                {
+                    "name": "timezone",
+                    "required": false,
+                    "type": "businessupload_event_timezone_enum_param"
+                },
+                {
+                    "name": "upload_tag",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "user_invitations",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "email",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "user_invitations",
+            "return": "BusinessRoleRequest",
+            "params": [
+                {
+                    "name": "email",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "status",
+                    "required": false,
+                    "type": "businessuser_invitations_status_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "userpermissions",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "email",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "user",
+                    "required": false,
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "userpermissions",
+            "return": "Business",
+            "params": [
+                {
+                    "name": "email",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "role",
+                    "required": false,
+                    "type": "businessuserpermissions_role_enum_param"
+                },
+                {
+                    "name": "user",
+                    "required": false,
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "vietnamadaccountcreationrequests",
+            "return": "AdAccountCreationRequest",
+            "params": [
+                {
+                    "name": "ad_accounts_currency",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "ad_accounts_info",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "additional_comment",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "address_in_english",
+                    "required": true,
+                    "type": "Object"
+                },
+                {
+                    "name": "address_in_local_language",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "advertiser_business_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "business_registration",
+                    "required": false,
+                    "type": "file"
+                },
+                {
+                    "name": "business_registration_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "contact",
+                    "required": true,
+                    "type": "Object"
+                },
+                {
+                    "name": "credit_card_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "english_legal_entity_name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "extended_credit_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "is_smb",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_test",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "legal_entity_name_in_local_language",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "official_website_url",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "planning_agency_business_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "promotable_app_ids",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "promotable_page_ids",
+                    "required": false,
+                    "type": "list<int>"
+                },
+                {
+                    "name": "promotable_page_urls",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "promotable_urls",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "subvertical",
+                    "required": true,
+                    "type": "businessvietnamadaccountcreationrequests_subvertical_enum_param"
+                },
+                {
+                    "name": "vertical",
+                    "required": true,
+                    "type": "businessvietnamadaccountcreationrequests_vertical_enum_param"
+                }
+            ]
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "Business",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "Business",
+            "params": [
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "primary_page",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "timezone_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "two_factor_type",
+                    "required": false,
+                    "type": "business_two_factor_type"
+                },
+                {
+                    "name": "vertical",
+                    "required": false,
+                    "type": "business_vertical"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "block_offline_analytics",
+            "type": "bool"
+        },
+        {
+            "name": "created_by",
+            "type": "Object"
+        },
+        {
+            "name": "created_time",
+            "type": "datetime"
+        },
+        {
+            "name": "extended_updated_time",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_hidden",
+            "type": "bool"
+        },
+        {
+            "name": "is_instagram_enabled_in_fb_analytics",
+            "type": "bool"
+        },
+        {
+            "name": "link",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "payment_account_id",
+            "type": "string"
+        },
+        {
+            "name": "primary_page",
+            "type": "Page"
+        },
+        {
+            "name": "profile_picture_uri",
+            "type": "string"
+        },
+        {
+            "name": "timezone_id",
+            "type": "unsigned int"
+        },
+        {
+            "name": "two_factor_type",
+            "type": "string"
+        },
+        {
+            "name": "updated_by",
+            "type": "Object"
+        },
+        {
+            "name": "updated_time",
+            "type": "datetime"
+        },
+        {
+            "name": "verification_status",
+            "type": "string"
+        },
+        {
+            "name": "vertical",
+            "type": "string"
+        },
+        {
+            "name": "vertical_id",
+            "type": "unsigned int"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "mobile_country",
+            "type": "string"
+        },
+        {
+            "name": "phone_number_last4",
+            "type": "string"
+        },
+        {
+            "name": "pricepoints",
+            "type": "list<Object>"
+        },
+        {
+            "name": "user_currency",
+            "type": "string"
+        }
+    ]
+}

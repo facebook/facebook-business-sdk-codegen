@@ -1,0 +1,54 @@
+{
+    "apis": [
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdAsyncRequest",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "async_request_set",
+            "type": "AdAsyncRequestSet"
+        },
+        {
+            "name": "created_time",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "input",
+            "type": "map"
+        },
+        {
+            "name": "result",
+            "type": "map"
+        },
+        {
+            "name": "scope_object_id",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "type",
+            "type": "string"
+        },
+        {
+            "name": "updated_time",
+            "type": "datetime"
+        }
+    ]
+}

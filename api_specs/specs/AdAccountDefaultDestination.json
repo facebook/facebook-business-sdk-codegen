@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "destination_id",
+            "type": "string"
+        },
+        {
+            "name": "destination_url",
+            "type": "string"
+        }
+    ]
+}
