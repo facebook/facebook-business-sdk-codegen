@@ -167,5 +167,16 @@
     $params
       = array_merge($params, array('hash' => $this->data[AdImageFields::HASH]));
 
+    {{#version}}
+    {{#has_deprecate_implicit_creation_new_v2}}
+    $this->getApi()->call(
+      $this->getNodePath(),
+      RequestInterface::METHOD_DELETE,
+      $params
+    );
+    {{/has_deprecate_implicit_creation_new_v2}}
+    {{^has_deprecate_implicit_creation_new_v2}}
     parent::deleteSelf($params);
+    {{/has_deprecate_implicit_creation_new_v2}}
+    {{/version}}
   }

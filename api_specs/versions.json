@@ -3,5 +3,8 @@
     "deprecate_implicit_creation_new",
     "kill_compatibility_manual_functions",
     "deprecate_product_audience_php"
+  ],
+  "v3.3": [
+    "deprecate_implicit_creation_new_v2"
   ]
 }

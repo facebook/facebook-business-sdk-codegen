@@ -106,9 +106,21 @@ class AbstractCrudObject extends AbstractObject {
     return $this;
   }
   /**
+  {{#version}}
+  {{#has_deprecate_implicit_creation_new_v2}}
+   * @deprecated deprecate parent_id in AbstractCrudObject
+  {{/has_deprecate_implicit_creation_new_v2}}
+  {{/version}}
    * @param string $parent_id
    */
   public function setParentId($parent_id) {
+    {{#version}}
+    {{#has_deprecate_implicit_creation_new_v2}}
+    $warning_message = sprintf('%s is being deprecated, please try not to use'.
+      ' this in new code.',__FUNCTION__);
+    trigger_error($warning_message, E_USER_DEPRECATED);
+    {{/has_deprecate_implicit_creation_new_v2}}
+    {{/version}}
     $this->parentId = $parent_id;
     return $this;
   }
@@ -141,16 +153,40 @@ class AbstractCrudObject extends AbstractObject {
     return $instance;
   }
   /**
+  {{#version}}
+  {{#has_deprecate_implicit_creation_new_v2}}
+   * @deprecated deprecate parent_id in AbstractCrudObject
+  {{/has_deprecate_implicit_creation_new_v2}}
+  {{/version}}
    * @return string|null
    */
   public function getParentId() {
+    {{#version}}
+    {{#has_deprecate_implicit_creation_new_v2}}
+    $warning_message = sprintf('%s is being deprecated, please try not to use'.
+      ' this in new code.',__FUNCTION__);
+    trigger_error($warning_message, E_USER_DEPRECATED);
+    {{/has_deprecate_implicit_creation_new_v2}}
+    {{/version}}
     return $this->parentId;
   }
   /**
+  {{#version}}
+  {{#has_deprecate_implicit_creation_new_v2}}
+   * @deprecated deprecate parent_id in AbstractCrudObject
+  {{/has_deprecate_implicit_creation_new_v2}}
+  {{/version}}
    * @return string
    * @throws \Exception
    */
   protected function assureParentId() {
+    {{#version}}
+    {{#has_deprecate_implicit_creation_new_v2}}
+    $warning_message = sprintf('%s is being deprecated, please try not to use'.
+      ' this in new code.',__FUNCTION__);
+    trigger_error($warning_message, E_USER_DEPRECATED);
+    {{/has_deprecate_implicit_creation_new_v2}}
+    {{/version}}
     if (!$this->parentId) {
       throw new \Exception("A parent ID is required.");
     }
@@ -234,6 +270,12 @@ class AbstractCrudObject extends AbstractObject {
     return '/'.$this->assureId();
   }
   /**
+  {{#version}}
+  {{#has_deprecate_implicit_creation_new_v2}}
+   * @deprecated
+   * use (ParentObject)->creatXXX() instead
+  {{/has_deprecate_implicit_creation_new_v2}}
+  {{/version}}
    * Create function for the object.
    *
    * @param array $params Additional parameters to include in the request
@@ -241,6 +283,13 @@ class AbstractCrudObject extends AbstractObject {
    * @throws \Exception
    */
   public function create(array $params = array()) {
+    {{#version}}
+    {{#has_deprecate_implicit_creation_new_v2}}
+    $warning_message = sprintf('%s is being deprecated, please try not to use'.
+      ' this in new code.',__FUNCTION__);
+    trigger_error($warning_message, E_USER_DEPRECATED);
+    {{/has_deprecate_implicit_creation_new_v2}}
+    {{/version}}
     if ($this->data[static::FIELD_ID]) {
       throw new \Exception("Object has already an ID");
     }
@@ -266,6 +315,12 @@ class AbstractCrudObject extends AbstractObject {
     return $this;
   }
   /**
+  {{#version}}
+  {{#has_deprecate_implicit_creation_new_v2}}
+   * @deprecated
+   * use getSelf() instead
+  {{/has_deprecate_implicit_creation_new_v2}}
+  {{/version}}
    * Read object data from the graph
    *
    * @param string[] $fields Fields to request
@@ -273,6 +328,13 @@ class AbstractCrudObject extends AbstractObject {
    * @return $this
    */
   public function read(array $fields = array(), array $params = array()) {
+    {{#version}}
+    {{#has_deprecate_implicit_creation_new_v2}}
+    $warning_message = sprintf('%s is being deprecated, please try not to use'.
+      ' this in new code.',__FUNCTION__);
+    trigger_error($warning_message, E_USER_DEPRECATED);
+    {{/has_deprecate_implicit_creation_new_v2}}
+    {{/version}}
     $fields = implode(',', $fields ?: static::getDefaultReadFields());
     if ($fields) {
       $params['fields'] = $fields;
@@ -286,12 +348,25 @@ class AbstractCrudObject extends AbstractObject {
     return $this;
   }
   /**
+  {{#version}}
+  {{#has_deprecate_implicit_creation_new_v2}}
+   * @deprecated
+   * use updateSelf() instead
+  {{/has_deprecate_implicit_creation_new_v2}}
+  {{/version}}
    * Update the object. Function parameters are similar with the create function
    *
    * @param array $params Update parameters in assoc
    * @return $this
    */
   public function update(array $params = array()) {
+    {{#version}}
+    {{#has_deprecate_implicit_creation_new_v2}}
+    $warning_message = sprintf('%s is being deprecated, please try not to use'.
+      ' this in new code.',__FUNCTION__);
+    trigger_error($warning_message, E_USER_DEPRECATED);
+    {{/has_deprecate_implicit_creation_new_v2}}
+    {{/version}}
     $this->getApi()->call(
       $this->getNodePath(),
       RequestInterface::METHOD_POST,
@@ -300,18 +375,37 @@ class AbstractCrudObject extends AbstractObject {
     return $this;
   }
   /**
+  {{#version}}
+  {{#has_deprecate_implicit_creation_new_v2}}
+   * @deprecated
+   * use deleteSelf() in each subclass
+  {{/has_deprecate_implicit_creation_new_v2}}
+  {{/version}}
    * Delete this object from the graph
    *
    * @param array $params
    * @return void
    */
   public function deleteSelf(array $params = array()) {
+    {{#version}}
+    {{#has_deprecate_implicit_creation_new_v2}}
+    $warning_message = sprintf('%s is being deprecated, please try not to use'.
+      ' this in new code.',__FUNCTION__);
+    trigger_error($warning_message, E_USER_DEPRECATED);
+    {{/has_deprecate_implicit_creation_new_v2}}
+    {{/version}}
     $this->getApi()->call(
       $this->getNodePath(),
       RequestInterface::METHOD_DELETE,
       $params);
   }
   /**
+  {{#version}}
+  {{#has_deprecate_implicit_creation_new_v2}}
+   * @deprecated
+   * deprecate with ObjectValidation
+  {{/has_deprecate_implicit_creation_new_v2}}
+  {{/version}}
    * Perform object upsert
    *
    * Helper function which determines whether an object should be created or
@@ -321,6 +415,13 @@ class AbstractCrudObject extends AbstractObject {
    * @return $this
    */
   public function save(array $params = array()) {
+    {{#version}}
+    {{#has_deprecate_implicit_creation_new_v2}}
+    $warning_message = sprintf('%s is being deprecated, please try not to use'.
+      ' this in new code.',__FUNCTION__);
+    trigger_error($warning_message, E_USER_DEPRECATED);
+    {{/has_deprecate_implicit_creation_new_v2}}
+    {{/version}}
     if ($this->data[static::FIELD_ID]) {
       return $this->update($params);
     } else {
@@ -328,12 +429,25 @@ class AbstractCrudObject extends AbstractObject {
     }
   }
   /**
+  {{#version}}
+  {{#has_deprecate_implicit_creation_new_v2}}
+   * @deprecated
+   * deprecate with getEndpoint
+  {{/has_deprecate_implicit_creation_new_v2}}
+  {{/version}}
    * @param string $prototype_class
    * @param string $endpoint
    * @return string
    * @throws \InvalidArgumentException
    */
   protected function assureEndpoint($prototype_class, $endpoint) {
+    {{#version}}
+    {{#has_deprecate_implicit_creation_new_v2}}
+    $warning_message = sprintf('%s is being deprecated, please try not to use'.
+      ' this in new code.',__FUNCTION__);
+    trigger_error($warning_message, E_USER_DEPRECATED);
+    {{/has_deprecate_implicit_creation_new_v2}}
+    {{/version}}
     if (!$endpoint) {
       $prototype = new $prototype_class(null, null, $this->getApi());
       if (!$prototype instanceof AbstractCrudObject) {
