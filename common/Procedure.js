@@ -28,32 +28,34 @@ Procedure.prototype.render = function(specs, metadata) {
       },
       metadata.language,
       metadata.version,
-      metadata.outputDir
+      metadata.outputDir,
+      metadata.cleandir,
     );
   }
 }
 
 Procedure.prototype.processAndRender = function(
-  version, language, outputDir, inputs
+  version, language, outputDir, inputs, cleandir
 ) {
   var specs = inputs.specs;
   var metadata = inputs.metadata;
   metadata.language = language;
   metadata.version = version;
   metadata.outputDir = outputDir;
+  metadata.cleandir = cleandir;
   specs = this.process(specs, metadata);
   this.render(specs, metadata);
 }
 
-Procedure.prototype.run = function(version, language, outputDir) {
+Procedure.prototype.run = function(version, language, outputDir, cleandir) {
   var self = this;
   if (self.loader.isAsync) {
     var inputs = self.loader.load(version, function(inputs){
-      self.processAndRender(version, language, outputDir, inputs);
+      self.processAndRender(version, language, outputDir, inputs, cleandir);
     });
   } else {
     var inputs = self.loader.load(version);
-    self.processAndRender(version, language, outputDir, inputs);
+    self.processAndRender(version, language, outputDir, inputs, cleandir);
   }
 }
 

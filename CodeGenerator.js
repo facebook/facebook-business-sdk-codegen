@@ -2,7 +2,9 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  */
 
+const minimist = require('minimist')
 const fs = require('fs');
+var path = require('path');
 const Utils = require('./common/Utils');
 const Procedure = require('./common/Procedure');
 
@@ -21,11 +23,13 @@ const FlaggingProcessor = require('./processors/FlaggingProcessor');
 
 const MustacheRenderer = require('./renderers/MustacheRenderer');
 const DebugJsonRenderer = require('./renderers/DebugJsonRenderer');
+const args = minimist(process.argv.slice(2));
 
-const language = process.argv[2];
+const language = args._[0];
 Utils.validateLanguage(language);
-const version = process.argv[3] || Utils.loadDefaultVersion();
-const outputDir = process.argv[4] || "sdk/servers/"+language;
+const version = args.v || Utils.loadDefaultVersion();
+const outputDir = args.o || "sdk/servers/"+language+"/"+version;
+const cleandir = args.c ? args.c.split(',') : [];
 
 var procedure = new Procedure({
   loader: SpecFileLoader,
@@ -46,4 +50,4 @@ var procedure = new Procedure({
   ]
 });
 
-procedure.run(version, language, outputDir);
+procedure.run(version, language, outputDir, cleandir);

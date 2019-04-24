@@ -15,7 +15,7 @@ var Utils = {
     return codeGenFileDepreciationSign;
   },
   usage: function(message) {
-    console.log('Usage: codegen <language> <api_version>');
+    console.log('Usage: codegen <language> [-v api_version] [-o output_path] [-c folder_to_cleanup]');
     throw message;
   },
   validateLanguage: function(language) {

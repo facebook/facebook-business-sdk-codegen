@@ -16,5 +16,11 @@ Install all dependencies by [npm](https://www.npmjs.com/) : `npm install`
 node CodeGenerator.js <language>
 ```
 
+## Debug
+During debug, if you want to compare with the generated SDK to our current SDK code, you can specific the output folder by using `-o` : `node CodeGenerator.js <language> -o outputDir`
+
+If you want to keep git config in `outputDir`, you can specific only cleanup source code by using `-c` , for example `node CodeGenerator.js php -o ../facebook-php-business-sdk/ -c src/`
+
+
 ## License
 Facebook Codegen for Business SDKs is licensed under the LICENSE file in the root directory of this source tree.

@@ -16,16 +16,15 @@ MustacheRenderer.render = function(
   specs,
   language,
   version,
-  outputDir
+  outputDir,
+  cleandir
 ) {
   const APISpecs = specs['APISpecs'];
   const SDKConfig = specs['SDKConfig'];
 
   var codegenRootDir = path.resolve(__dirname, '..');
   var templateDir = path.resolve(codegenRootDir, 'templates', language);
-  var outputDir = outputDir
-    || path.resolve(__dirname, '..', 'adssdk', language);
-  var sdkRootPath = path.resolve(outputDir, version);
+  var sdkRootPath = path.resolve(outputDir);
 
   // load the mustache templates
   var loadedTemplates = utils.loadTemplates(templateDir);
@@ -35,8 +34,18 @@ MustacheRenderer.render = function(
   var filesNeedCopy = loadedTemplates.filesNeedCopy;
 
   // clean up the folder
-  utils.removeRecursiveSync(sdkRootPath);
-  utils.mkdirsSync(sdkRootPath);
+  if (cleandir === undefined || cleandir.length == 0 || !fs.existsSync(sdkRootPath)) {
+    utils.removeRecursiveSync(sdkRootPath);
+    utils.mkdirsSync(sdkRootPath);
+  } else {
+    for(var d of cleandir) {
+      let tmp = path.resolve(sdkRootPath, d);
+      console.log(tmp);
+      utils.removeRecursiveSync(tmp);
+      utils.mkdirsSync(tmp);
+    }
+  }
+
 
   // Copy the common folder
   console.log('Generating ' + language + ' SDK in ' + outputDir + '...');

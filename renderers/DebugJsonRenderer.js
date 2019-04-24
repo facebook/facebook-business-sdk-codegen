@@ -7,8 +7,8 @@ const path = require('path');
 
 var DebugJsonRenderer = {};
 
-DebugJsonRenderer.render = function(specs, language, version, outputDir, outputFile) {
-  if (!outputFile) outputFile = path.join(outputDir, 'compiled.json');
+DebugJsonRenderer.render = function(specs, language, version, outputDir, keepgit) {
+  outputFile = path.join(outputDir, 'compiled.json');
   fs.writeFileSync(outputFile, JSON.stringify(specs['APISpecs'], null, 2));
 };
 
