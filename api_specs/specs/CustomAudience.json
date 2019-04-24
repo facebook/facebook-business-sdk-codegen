@@ -559,6 +559,10 @@
             "type": "string"
         },
         {
+            "name": "regulated_audience_spec",
+            "type": "LookalikeSpec"
+        },
+        {
             "name": "retention_days",
             "type": "int"
         },

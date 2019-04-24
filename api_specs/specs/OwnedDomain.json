@@ -11,9 +11,9 @@
                     "type": "string"
                 },
                 {
-                    "name": "permitted_roles",
+                    "name": "permitted_tasks",
                     "required": false,
-                    "type": "list<owneddomainagencies_permitted_roles_enum_param>"
+                    "type": "list<owneddomainagencies_permitted_tasks_enum_param>"
                 }
             ]
         },

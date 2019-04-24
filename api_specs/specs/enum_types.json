@@ -172,6 +172,7 @@
             "SHARE",
             "SHOP_NOW",
             "SIGN_UP",
+            "SOTTO_SUBSCRIBE",
             "SUBSCRIBE",
             "UPDATE_APP",
             "USE_APP",
@@ -417,6 +418,7 @@
             "SHARE",
             "SHOP_NOW",
             "SIGN_UP",
+            "SOTTO_SUBSCRIBE",
             "SUBSCRIBE",
             "UPDATE_APP",
             "USE_APP",
@@ -797,6 +799,7 @@
             "SHARE",
             "SHOP_NOW",
             "SIGN_UP",
+            "SOTTO_SUBSCRIBE",
             "SUBSCRIBE",
             "UPDATE_APP",
             "USE_APP",
@@ -2969,6 +2972,7 @@
             "MEASUREMENT",
             "OFFLINE_CONVERSION",
             "PARTNER",
+            "REGULATED_CATEGORIES_AUDIENCE",
             "STUDY_RULE_AUDIENCE",
             "VIDEO",
             "WEBSITE"
@@ -3368,6 +3372,7 @@
             "MEASUREMENT",
             "OFFLINE_CONVERSION",
             "PARTNER",
+            "REGULATED_CATEGORIES_AUDIENCE",
             "STUDY_RULE_AUDIENCE",
             "VIDEO",
             "WEBSITE"
@@ -8766,11 +8771,11 @@
         ]
     },
     {
-        "name": "owneddomainagencies_permitted_roles_enum_param",
+        "name": "owneddomainagencies_permitted_tasks_enum_param",
         "node": "OwnedDomain",
-        "field_or_param": "permitted_roles",
+        "field_or_param": "permitted_tasks",
         "values": [
-            "ADMIN"
+            "MANAGE"
         ]
     },
     {
@@ -9885,6 +9890,7 @@
             "SHARE",
             "SHOP_NOW",
             "SIGN_UP",
+            "SOTTO_SUBSCRIBE",
             "SUBSCRIBE",
             "UPDATE_APP",
             "USE_APP",
@@ -10810,6 +10816,7 @@
             "SHARE",
             "SHOP_NOW",
             "SIGN_UP",
+            "SOTTO_SUBSCRIBE",
             "SUBSCRIBE",
             "UPDATE_APP",
             "USE_APP",

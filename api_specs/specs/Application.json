@@ -1031,6 +1031,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "extinfo",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
                     "name": "platform",
                     "required": true,
                     "type": "applicationmobile_sdk_gk_platform_enum_param"
@@ -1159,36 +1164,6 @@
                     "name": "currency_url",
                     "required": true,
                     "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "DELETE",
-            "endpoint": "payments_test_users",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "uids",
-                    "required": false,
-                    "type": "list<int>"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "payments_test_users",
-            "return": "User",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "payments_test_users",
-            "return": "Application",
-            "params": [
-                {
-                    "name": "uids",
-                    "required": false,
-                    "type": "list<int>"
                 }
             ]
         },

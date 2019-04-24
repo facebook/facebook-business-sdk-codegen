@@ -2255,18 +2255,6 @@
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "coupons",
-            "return": "AdAccount",
-            "params": [
-                {
-                    "name": "coupon_code",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "customaudiences",
             "return": "CustomAudience",
@@ -2484,6 +2472,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "regulated_audience_spec",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "retention_days",
                     "required": false,
                     "type": "unsigned int"
@@ -2540,6 +2533,23 @@
             "endpoint": "customaudiencestos",
             "return": "CustomAudiencesTOS",
             "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "customaudiencestos",
+            "return": "AdAccount",
+            "params": [
+                {
+                    "name": "business_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "tos_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
         },
         {
             "method": "GET",
