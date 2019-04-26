@@ -96,6 +96,11 @@ class {{name:pascal_case}}(
     def get_endpoint(cls):
         return '{{creation_endpoint}}'
 
+    {{#version}}
+    {{#has_deprecate_implicit_creation_new_v2}}
+    # @deprecated api_create is being deprecated
+    {{/has_deprecate_implicit_creation_new_v2}}
+    {{/version}}
     def api_create(self, parent_id, fields=None, params=None, batch=None, success=None, failure=None, pending=False):
         from facebook_business.adobjects.{{creation_parent_class:all_lower_case}} import {{creation_parent_class:pascal_case}}
         return {{creation_parent_class:pascal_case}}(api=self._api, fbid=parent_id).{{creation_method}}(fields, params, batch, success, failure, pending)

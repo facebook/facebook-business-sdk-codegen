@@ -125,7 +125,18 @@ class AbstractCrudObject(AbstractObject):
         """Returns the object's fbid if set. Else, it returns None."""
         return self[self.Field.id] if hasattr(self, 'Field') and hasattr(self.Field, 'Field') else self['id']
 
+    {{#version}}
+    {{#has_deprecate_implicit_creation_new_v2}}
+    # @deprecated deprecate parent_id in AbstractCrudObject
+    {{/has_deprecate_implicit_creation_new_v2}}
+    {{/version}}
     def get_parent_id(self):
+        {{#version}}
+        {{#has_deprecate_implicit_creation_new_v2}}
+        warning_message = "parent_id is being deprecated."
+        logging.warning(warning_message)
+        {{/has_deprecate_implicit_creation_new_v2}}
+        {{/version}}
         """Returns the object's parent's id."""
         return self._parent_id or FacebookAdsApi.get_default_account_id()
 
@@ -148,11 +159,22 @@ class AbstractCrudObject(AbstractObject):
 
         return self.get_id()
 
+    {{#version}}
+    {{#has_deprecate_implicit_creation_new_v2}}
+    # @deprecated deprecate parent_id in AbstractCrudObject
+    {{/has_deprecate_implicit_creation_new_v2}}
+    {{/version}}
     def get_parent_id_assured(self):
         """Returns the object's parent's fbid.
         Raises:
             FacebookBadObjectError if the object does not have a parent id.
         """
+        {{#version}}
+        {{#has_deprecate_implicit_creation_new_v2}}
+        warning_message = "parent_id is being deprecated."
+        logging.warning(warning_message)
+        {{/has_deprecate_implicit_creation_new_v2}}
+        {{/version}}
         if not self.get_parent_id():
             raise FacebookBadObjectError(
                 "%s object needs a parent_id for this operation."
@@ -227,7 +249,12 @@ class AbstractCrudObject(AbstractObject):
         return '/'.join(self.get_node_path())
 
     # CRUD
-
+    {{#version}}
+    {{#has_deprecate_implicit_creation_new_v2}}
+    # @deprecated
+    # use Object(parent_id).create_xxx() instead
+    {{/has_deprecate_implicit_creation_new_v2}}
+    {{/version}}
     def remote_create(
         self,
         batch=None,
@@ -254,6 +281,12 @@ class AbstractCrudObject(AbstractObject):
             self if not a batch call.
             the return value of batch.add if a batch call.
         """
+        {{#version}}
+        {{#has_deprecate_implicit_creation_new_v2}}
+        warning_message = "`remote_create` is being deprecated, please update your code with new function."
+        logging.warning(warning_message)
+        {{/has_deprecate_implicit_creation_new_v2}}
+        {{/version}}
         if self.get_id():
             raise FacebookBadObjectError(
                 "This %s object was already created."
@@ -307,6 +340,12 @@ class AbstractCrudObject(AbstractObject):
 
             return self
 
+    {{#version}}
+    {{#has_deprecate_implicit_creation_new_v2}}
+    # @deprecated
+    # use Object(id).api_get() instead
+    {{/has_deprecate_implicit_creation_new_v2}}
+    {{/version}}
     def remote_read(
         self,
         batch=None,
@@ -334,6 +373,12 @@ class AbstractCrudObject(AbstractObject):
             self if not a batch call.
             the return value of batch.add if a batch call.
         """
+        {{#version}}
+        {{#has_deprecate_implicit_creation_new_v2}}
+        warning_message = "`remote_read` is being deprecated, please update your code with new function."
+        logging.warning(warning_message)
+        {{/has_deprecate_implicit_creation_new_v2}}
+        {{/version}}
         params = dict(params or {})
         if hasattr(self, 'api_get'):
             request = self.api_get(pending=True)
@@ -372,6 +417,12 @@ class AbstractCrudObject(AbstractObject):
             self = request.execute()
             return self
 
+    {{#version}}
+    {{#has_deprecate_implicit_creation_new_v2}}
+    # @deprecated
+    # use Object(id).api_update() instead
+    {{/has_deprecate_implicit_creation_new_v2}}
+    {{/version}}
     def remote_update(
         self,
         batch=None,
@@ -398,6 +449,12 @@ class AbstractCrudObject(AbstractObject):
             self if not a batch call.
             the return value of batch.add if a batch call.
         """
+        {{#version}}
+        {{#has_deprecate_implicit_creation_new_v2}}
+        warning_message = "`remote_update` is being deprecated, please update your code with new function."
+        logging.warning(warning_message)
+        {{/has_deprecate_implicit_creation_new_v2}}
+        {{/version}}
         params = {} if not params else params.copy()
         params.update(self.export_changed_data())
         self._set_data(params)
@@ -440,6 +497,12 @@ class AbstractCrudObject(AbstractObject):
 
             return self
 
+    {{#version}}
+    {{#has_deprecate_implicit_creation_new_v2}}
+    # @deprecated
+    # use Object(id).api_delete() instead
+    {{/has_deprecate_implicit_creation_new_v2}}
+    {{/version}}
     def remote_delete(
         self,
         batch=None,
@@ -463,6 +526,12 @@ class AbstractCrudObject(AbstractObject):
             self if not a batch call.
             the return value of batch.add if a batch call.
         """
+        {{#version}}
+        {{#has_deprecate_implicit_creation_new_v2}}
+        warning_message = "`remote_delete` is being deprecated, please update your code with new function."
+        logging.warning(warning_message)
+        {{/has_deprecate_implicit_creation_new_v2}}
+        {{/version}}
         if hasattr(self, 'api_delete'):
             request = self.api_delete(pending=True)
         else:
@@ -498,11 +567,22 @@ class AbstractCrudObject(AbstractObject):
 
     # Helpers
 
+    {{#version}}
+    {{#has_deprecate_implicit_creation_new_v2}}
+    # @deprecated
+    {{/has_deprecate_implicit_creation_new_v2}}
+    {{/version}}
     def remote_save(self, *args, **kwargs):
         """
         Calls remote_create method if object has not been created. Else, calls
         the remote_update method.
         """
+        {{#version}}
+        {{#has_deprecate_implicit_creation_new_v2}}
+        warning_message = "`remote_save` is being deprecated, please update your code with new function."
+        logging.warning(warning_message)
+        {{/has_deprecate_implicit_creation_new_v2}}
+        {{/version}}
         if self.get_id():
             return self.remote_update(*args, **kwargs)
         else:
@@ -517,7 +597,20 @@ class AbstractCrudObject(AbstractObject):
         if 'Status' not in dir(self) or 'archived' not in dir(self.Status):
             raise TypeError('Cannot archive object of type %s.'
                             % self.__class__.__name__)
-
+        {{#version}}
+        {{#has_deprecate_implicit_creation_new_v2}}
+        return self.api_create(
+            params={
+                'status': self.Status.archived,
+            },
+            batch=batch,
+            failure=failure,
+            success=success,
+        )
+        {{/has_deprecate_implicit_creation_new_v2}}
+        {{/version}}
+        {{#version}}
+        {{^has_deprecate_implicit_creation_new_v2}}
         return self.remote_update(
             params={
                 'status': self.Status.archived,
@@ -526,7 +619,14 @@ class AbstractCrudObject(AbstractObject):
             failure=failure,
             success=success,
         )
-    # To avoid breaking change. Will be deprecated
+        {{/has_deprecate_implicit_creation_new_v2}}
+        {{/version}}
+
+    {{#version}}
+    {{#has_deprecate_implicit_creation_new_v2}}
+    # @deprecated
+    {{/has_deprecate_implicit_creation_new_v2}}
+    {{/version}}
     save = remote_save
 
     def iterate_edge(
