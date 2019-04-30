@@ -5,6 +5,7 @@
     "deprecate_product_audience_php"
   ],
   "v3.3": [
-    "deprecate_implicit_creation_new_v2"
+    "deprecate_implicit_creation_new_v2",
+    "deprecated_custom_audience_multikey"
   ]
 }

@@ -11,3 +11,4 @@ All notable changes to this project will be documented in this file.
 ### Deprecated
 - `parentID` in `AbstractCrudObject`.
 - Function `create`, `read`, `update` for `AbstractCrudObject`. Check out our [recommended way](https://github.com/facebook/facebook-php-business-sdk#object-classes) to make API call.
+- Deprecated `CustomAudienceMultiKey`, use class `CustomAudience` instead.
