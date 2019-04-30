@@ -42,10 +42,6 @@
             "type": "list<AdCreativeCollectionThumbnailInfo>"
         },
         {
-            "name": "custom_overlay_spec",
-            "type": "AdCreativeLinkDataCustomOverlaySpec"
-        },
-        {
             "name": "customization_rules_spec",
             "type": "list<AdCustomizationRuleSpec>"
         },
@@ -128,10 +124,6 @@
         {
             "name": "show_multiple_images",
             "type": "bool"
-        },
-        {
-            "name": "sponsorship_info",
-            "type": "AdCreativeLinkDataSponsorshipInfoSpec"
         },
         {
             "name": "static_fallback_spec",

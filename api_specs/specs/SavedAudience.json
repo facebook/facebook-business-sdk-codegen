@@ -33,10 +33,6 @@
             "type": "string"
         },
         {
-            "name": "expiry_time",
-            "type": "datetime"
-        },
-        {
             "name": "id",
             "type": "string"
         },

@@ -89,6 +89,10 @@
             "type": "User"
         },
         {
+            "name": "excluded_ownership_segments",
+            "type": "list<VideoCopyrightSegment>"
+        },
+        {
             "name": "id",
             "type": "string"
         },

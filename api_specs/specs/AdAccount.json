@@ -179,11 +179,6 @@
                     "type": "adaccountadcreatives_dynamic_ad_voice_enum_param"
                 },
                 {
-                    "name": "enable_direct_install",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "enable_launch_instant_app",
                     "required": false,
                     "type": "bool"
@@ -1231,6 +1226,11 @@
                     "type": "adaccountadsets_optimization_goal_enum_param"
                 },
                 {
+                    "name": "optimization_sub_event",
+                    "required": false,
+                    "type": "adaccountadsets_optimization_sub_event_enum_param"
+                },
+                {
                     "name": "pacing_type",
                     "required": false,
                     "type": "list<string>"
@@ -2250,12 +2250,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "contextual_targeting_browse",
-            "return": "AdAccountContextualTargeting",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "customaudiences",
             "return": "CustomAudience",
             "params": [
@@ -2640,24 +2634,6 @@
             ]
         },
         {
-            "method": "GET",
-            "endpoint": "direct_deals",
-            "return": "DirectDeal",
-            "params": [
-                {
-                    "name": "status",
-                    "required": false,
-                    "type": "adaccountdirect_deals_status_enum_param"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "direct_deals_tos",
-            "return": "AdAccount",
-            "params": []
-        },
-        {
             "method": "POST",
             "endpoint": "emailimport",
             "return": "EmailImport",
@@ -2991,18 +2967,6 @@
                     "name": "query",
                     "required": false,
                     "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "locationclusters",
-            "return": "AdAccount",
-            "params": [
-                {
-                    "name": "locations",
-                    "required": true,
-                    "type": "list<string>"
                 }
             ]
         },
@@ -4006,60 +3970,6 @@
         },
         {
             "method": "DELETE",
-            "endpoint": "usermatch",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "bidirectional",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "namespace",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "payload",
-                    "required": true,
-                    "type": "Object"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "usermatch",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "action",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "bidirectional",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "namespace",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "payload",
-                    "required": true,
-                    "type": "Object"
-                },
-                {
-                    "name": "retention",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "DELETE",
             "endpoint": "users",
             "return": "Object",
             "params": [
@@ -4283,10 +4193,6 @@
         {
             "name": "currency",
             "type": "string"
-        },
-        {
-            "name": "direct_deals_tos_accepted",
-            "type": "bool"
         },
         {
             "name": "disable_reason",

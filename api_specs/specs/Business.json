@@ -521,6 +521,12 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "an_placements",
+            "return": "AdPlacement",
+            "params": []
+        },
+        {
             "method": "DELETE",
             "endpoint": "apps",
             "return": "Object",
@@ -572,9 +578,24 @@
                     "type": "string"
                 },
                 {
+                    "name": "issue_end_date",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "issue_start_date",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "start_date",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "type",
+                    "required": false,
+                    "type": "businessbusiness_invoices_type_enum_param"
                 }
             ]
         },
@@ -753,12 +774,6 @@
             "method": "GET",
             "endpoint": "clients",
             "return": "Business",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "creditcards",
-            "return": "BusinessCreditCardLegacy",
             "params": []
         },
         {
@@ -1120,11 +1135,6 @@
                     "name": "name",
                     "required": true,
                     "type": "string"
-                },
-                {
-                    "name": "page_permitted_roles",
-                    "required": false,
-                    "type": "list<businessowned_businesses_page_permitted_roles_enum_param>"
                 },
                 {
                     "name": "page_permitted_tasks",

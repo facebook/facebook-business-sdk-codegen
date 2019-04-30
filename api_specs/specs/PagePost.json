@@ -498,10 +498,6 @@
             "type": "bool"
         },
         {
-            "name": "caption",
-            "type": "string"
-        },
-        {
             "name": "child_attachments",
             "type": "list"
         },
@@ -516,10 +512,6 @@
         {
             "name": "created_time",
             "type": "datetime"
-        },
-        {
-            "name": "description",
-            "type": "string"
         },
         {
             "name": "event",
@@ -594,10 +586,6 @@
             "type": "bool"
         },
         {
-            "name": "link",
-            "type": "string"
-        },
-        {
             "name": "message",
             "type": "string"
         },
@@ -612,14 +600,6 @@
         {
             "name": "multi_share_optimized",
             "type": "bool"
-        },
-        {
-            "name": "name",
-            "type": "string"
-        },
-        {
-            "name": "object_id",
-            "type": "string"
         },
         {
             "name": "parent_id",
@@ -662,10 +642,6 @@
             "type": "Object"
         },
         {
-            "name": "source",
-            "type": "string"
-        },
-        {
             "name": "status_type",
             "type": "string"
         },
@@ -691,10 +667,6 @@
         },
         {
             "name": "timeline_visibility",
-            "type": "string"
-        },
-        {
-            "name": "type",
             "type": "string"
         },
         {

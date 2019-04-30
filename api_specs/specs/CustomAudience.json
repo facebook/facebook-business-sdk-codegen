@@ -495,10 +495,6 @@
             "type": "list<CustomAudience>"
         },
         {
-            "name": "expiry_time",
-            "type": "unsigned int"
-        },
-        {
             "name": "external_event_source",
             "type": "AdsPixel"
         },
@@ -525,10 +521,6 @@
         {
             "name": "is_value_based",
             "type": "bool"
-        },
-        {
-            "name": "list_of_accounts",
-            "type": "list<string>"
         },
         {
             "name": "lookalike_audience_ids",
@@ -589,10 +581,6 @@
         {
             "name": "sharing_status",
             "type": "CustomAudienceSharingStatus"
-        },
-        {
-            "name": "study_spec",
-            "type": "AudienceInsightsStudySpec"
         },
         {
             "name": "subtype",

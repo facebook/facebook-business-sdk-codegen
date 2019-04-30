@@ -1144,6 +1144,48 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "page_activities",
+            "return": "Application",
+            "params": [
+                {
+                    "name": "advertiser_tracking_enabled",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "application_tracking_enabled",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "custom_events",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "logging_source",
+                    "required": false,
+                    "type": "applicationpage_activities_logging_source_enum_param"
+                },
+                {
+                    "name": "logging_target",
+                    "required": false,
+                    "type": "applicationpage_activities_logging_target_enum_param"
+                },
+                {
+                    "name": "page_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "page_scoped_user_id",
+                    "required": true,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
             "method": "DELETE",
             "endpoint": "payment_currencies",
             "return": "Object",

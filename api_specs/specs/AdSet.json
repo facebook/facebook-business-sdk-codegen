@@ -639,6 +639,11 @@
                     "type": "adcampaign_optimization_goal"
                 },
                 {
+                    "name": "optimization_sub_event",
+                    "required": false,
+                    "type": "adcampaign_optimization_sub_event"
+                },
+                {
                     "name": "pacing_type",
                     "required": false,
                     "type": "list<string>"
@@ -849,6 +854,10 @@
         {
             "name": "optimization_goal",
             "type": "AdSet_optimization_goal"
+        },
+        {
+            "name": "optimization_sub_event",
+            "type": "string"
         },
         {
             "name": "pacing_type",

@@ -1,0 +1,44 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdPlacement",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "bundle_id",
+            "type": "string"
+        },
+        {
+            "name": "display_format",
+            "type": "string"
+        },
+        {
+            "name": "external_placement_id",
+            "type": "string"
+        },
+        {
+            "name": "google_display_format",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "platform",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        }
+    ]
+}

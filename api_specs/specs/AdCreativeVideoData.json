@@ -26,10 +26,6 @@
             "type": "list<AdCreativeCollectionThumbnailInfo>"
         },
         {
-            "name": "custom_overlay_spec",
-            "type": "list<AdCreativeVideoDataCustomOverlaySpec>"
-        },
-        {
             "name": "image_hash",
             "type": "string"
         },

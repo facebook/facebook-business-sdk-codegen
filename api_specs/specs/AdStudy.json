@@ -103,61 +103,6 @@
             ]
         },
         {
-            "method": "DELETE",
-            "endpoint": "userpermissions",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "business",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "email",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "user",
-                    "required": false,
-                    "type": "int"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "userpermissions",
-            "return": "AdStudyAdsAssetUserPermissions",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "userpermissions",
-            "return": "AdStudy",
-            "params": [
-                {
-                    "name": "business",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "email",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "role",
-                    "required": true,
-                    "type": "adstudyuserpermissions_role_enum_param"
-                },
-                {
-                    "name": "user",
-                    "required": false,
-                    "type": "int"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "viewers",
             "return": "User",

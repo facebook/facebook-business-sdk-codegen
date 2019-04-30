@@ -34,10 +34,6 @@
             "type": "list<string>"
         },
         {
-            "name": "brand_safety_content_severity_levels",
-            "type": "list<string>"
-        },
-        {
             "name": "catalog_based_targeting",
             "type": "CatalogBasedTargeting"
         },

@@ -1879,11 +1879,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "group_type",
-                    "required": false,
-                    "type": "group_group_type"
-                },
-                {
                     "name": "join_setting",
                     "required": false,
                     "type": "group_join_setting"

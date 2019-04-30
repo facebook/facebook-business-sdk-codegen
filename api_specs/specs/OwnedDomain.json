@@ -9,11 +9,6 @@
                     "name": "business",
                     "required": true,
                     "type": "string"
-                },
-                {
-                    "name": "permitted_tasks",
-                    "required": false,
-                    "type": "list<owneddomainagencies_permitted_tasks_enum_param>"
                 }
             ]
         },

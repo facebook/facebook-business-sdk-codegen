@@ -146,6 +146,7 @@
             "DOWNLOAD",
             "EVENT_RSVP",
             "FIND_A_GROUP",
+            "FIND_YOUR_GROUPS",
             "FOLLOW_NEWS_STORYLINE",
             "GET_DIRECTIONS",
             "GET_OFFER",
@@ -392,6 +393,7 @@
             "DOWNLOAD",
             "EVENT_RSVP",
             "FIND_A_GROUP",
+            "FIND_YOUR_GROUPS",
             "FOLLOW_NEWS_STORYLINE",
             "GET_DIRECTIONS",
             "GET_OFFER",
@@ -429,89 +431,6 @@
             "WATCH_VIDEO",
             "WHATSAPP_MESSAGE",
             "WOODHENGE_SUPPORT"
-        ]
-    },
-    {
-        "name": "AdCreativeLinkDataCustomOverlaySpec_background_color",
-        "node": "AdCreativeLinkDataCustomOverlaySpec",
-        "field_or_param": "background_color",
-        "values": [
-            "background_000000",
-            "background_0090ff",
-            "background_00af4c",
-            "background_595959",
-            "background_755dde",
-            "background_e50900",
-            "background_f23474",
-            "background_f78400",
-            "background_ffffff"
-        ]
-    },
-    {
-        "name": "AdCreativeLinkDataCustomOverlaySpec_font",
-        "node": "AdCreativeLinkDataCustomOverlaySpec",
-        "field_or_param": "font",
-        "values": [
-            "droid_serif_regular",
-            "lato_regular",
-            "noto_sans_regular",
-            "nunito_sans_bold",
-            "open_sans_bold",
-            "pt_serif_bold",
-            "roboto_condensed_regular",
-            "roboto_medium"
-        ]
-    },
-    {
-        "name": "AdCreativeLinkDataCustomOverlaySpec_option",
-        "node": "AdCreativeLinkDataCustomOverlaySpec",
-        "field_or_param": "option",
-        "values": [
-            "bank_transfer",
-            "boleto",
-            "cash_on_delivery",
-            "discount_with_boleto",
-            "fast_delivery",
-            "free_shipping",
-            "home_delivery",
-            "inventory",
-            "pay_at_hotel",
-            "pay_on_arrival"
-        ]
-    },
-    {
-        "name": "AdCreativeLinkDataCustomOverlaySpec_position",
-        "node": "AdCreativeLinkDataCustomOverlaySpec",
-        "field_or_param": "position",
-        "values": [
-            "bottom_left",
-            "bottom_right",
-            "top_left",
-            "top_right"
-        ]
-    },
-    {
-        "name": "AdCreativeLinkDataCustomOverlaySpec_template",
-        "node": "AdCreativeLinkDataCustomOverlaySpec",
-        "field_or_param": "template",
-        "values": [
-            "pill_with_text"
-        ]
-    },
-    {
-        "name": "AdCreativeLinkDataCustomOverlaySpec_text_color",
-        "node": "AdCreativeLinkDataCustomOverlaySpec",
-        "field_or_param": "text_color",
-        "values": [
-            "text_000000",
-            "text_007ad0",
-            "text_009c2a",
-            "text_646464",
-            "text_755dde",
-            "text_c91b00",
-            "text_f23474",
-            "text_f78400",
-            "text_ffffff"
         ]
     },
     {
@@ -697,53 +616,6 @@
         ]
     },
     {
-        "name": "AdCreativeVideoDataCustomOverlaySpec_background_opacity",
-        "node": "AdCreativeVideoDataCustomOverlaySpec",
-        "field_or_param": "background_opacity",
-        "values": [
-            "half",
-            "solid"
-        ]
-    },
-    {
-        "name": "AdCreativeVideoDataCustomOverlaySpec_option",
-        "node": "AdCreativeVideoDataCustomOverlaySpec",
-        "field_or_param": "option",
-        "values": [
-            "bank_transfer",
-            "boleto",
-            "cash_on_delivery",
-            "discount_with_boleto",
-            "fast_delivery",
-            "free_shipping",
-            "home_delivery",
-            "inventory",
-            "pay_at_hotel",
-            "pay_on_arrival"
-        ]
-    },
-    {
-        "name": "AdCreativeVideoDataCustomOverlaySpec_position",
-        "node": "AdCreativeVideoDataCustomOverlaySpec",
-        "field_or_param": "position",
-        "values": [
-            "middle_center",
-            "middle_left",
-            "middle_right",
-            "top_center",
-            "top_left",
-            "top_right"
-        ]
-    },
-    {
-        "name": "AdCreativeVideoDataCustomOverlaySpec_template",
-        "node": "AdCreativeVideoDataCustomOverlaySpec",
-        "field_or_param": "template",
-        "values": [
-            "rectangle_with_text"
-        ]
-    },
-    {
         "name": "AdCreative_applink_treatment",
         "node": "AdCreative",
         "field_or_param": "applink_treatment",
@@ -773,6 +645,7 @@
             "DOWNLOAD",
             "EVENT_RSVP",
             "FIND_A_GROUP",
+            "FIND_YOUR_GROUPS",
             "FOLLOW_NEWS_STORYLINE",
             "GET_DIRECTIONS",
             "GET_OFFER",
@@ -2239,6 +2112,23 @@
         ]
     },
     {
+        "name": "adaccountadsets_optimization_sub_event_enum_param",
+        "node": "AdSet",
+        "field_or_param": "optimization_sub_event",
+        "values": [
+            "NONE",
+            "TRAVEL_INTENT",
+            "TRAVEL_INTENT_BUCKET_01",
+            "TRAVEL_INTENT_BUCKET_02",
+            "TRAVEL_INTENT_BUCKET_03",
+            "TRAVEL_INTENT_BUCKET_04",
+            "TRAVEL_INTENT_BUCKET_05",
+            "TRAVEL_INTENT_NO_DESTINATION_INTENT",
+            "TRIP_CONSIDERATION",
+            "VIDEO_SOUND_ON"
+        ]
+    },
+    {
         "name": "adaccountadsets_status_enum_param",
         "node": "AdSet",
         "field_or_param": "status",
@@ -2296,6 +2186,7 @@
             "CULTURAL_MOMENT_DEPRECATED",
             "DCO_AD_ASSET_FEED",
             "DCO_AUTOGEN_VIDEO",
+            "DCO_TRIMMED_VIDEO",
             "DIRECTED_POST_ATTACHMENT",
             "DIRECT_INBOX",
             "DIRECT_INBOX_REACTION",
@@ -3034,20 +2925,6 @@
             "TWO_SECOND_CONTINUOUS_VIDEO_VIEWS",
             "VALUE",
             "VIDEO_VIEWS"
-        ]
-    },
-    {
-        "name": "adaccountdirect_deals_status_enum_param",
-        "node": "DirectDeal",
-        "field_or_param": "status",
-        "values": [
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6"
         ]
     },
     {
@@ -4059,6 +3936,23 @@
             "TWO_SECOND_CONTINUOUS_VIDEO_VIEWS",
             "VALUE",
             "VIDEO_VIEWS"
+        ]
+    },
+    {
+        "name": "adcampaign_optimization_sub_event",
+        "node": "AdSet",
+        "field_or_param": "optimization_sub_event",
+        "values": [
+            "NONE",
+            "TRAVEL_INTENT",
+            "TRAVEL_INTENT_BUCKET_01",
+            "TRAVEL_INTENT_BUCKET_02",
+            "TRAVEL_INTENT_BUCKET_03",
+            "TRAVEL_INTENT_BUCKET_04",
+            "TRAVEL_INTENT_BUCKET_05",
+            "TRAVEL_INTENT_NO_DESTINATION_INTENT",
+            "TRIP_CONSIDERATION",
+            "VIDEO_SOUND_ON"
         ]
     },
     {
@@ -5310,15 +5204,6 @@
         ]
     },
     {
-        "name": "adstudyuserpermissions_role_enum_param",
-        "node": "AdStudy",
-        "field_or_param": "role",
-        "values": [
-            "ADMIN",
-            "ANALYST"
-        ]
-    },
-    {
         "name": "albumcomments_comment_privacy_value_enum_param",
         "node": "Comment",
         "field_or_param": "comment_privacy_value",
@@ -5705,6 +5590,24 @@
         "values": [
             "ANDROID",
             "IOS"
+        ]
+    },
+    {
+        "name": "applicationpage_activities_logging_source_enum_param",
+        "node": "Application",
+        "field_or_param": "logging_source",
+        "values": [
+            "MESSENGER_BOT"
+        ]
+    },
+    {
+        "name": "applicationpage_activities_logging_target_enum_param",
+        "node": "Application",
+        "field_or_param": "logging_target",
+        "values": [
+            "APP",
+            "APP_AND_PAGE",
+            "PAGE"
         ]
     },
     {
@@ -6108,6 +6011,15 @@
         ]
     },
     {
+        "name": "businessbusiness_invoices_type_enum_param",
+        "node": "OracleTransaction",
+        "field_or_param": "type",
+        "values": [
+            "CM",
+            "INV"
+        ]
+    },
+    {
         "name": "businessbusiness_users_role_enum_param",
         "node": "BusinessUser",
         "field_or_param": "role",
@@ -6272,18 +6184,6 @@
             "partner_lift_study_report",
             "third_party_mta_report",
             "video_metrics_report"
-        ]
-    },
-    {
-        "name": "businessowned_businesses_page_permitted_roles_enum_param",
-        "node": "Business",
-        "field_or_param": "page_permitted_roles",
-        "values": [
-            "ADVERTISER",
-            "CONTENT_CREATOR",
-            "INSIGHTS_ANALYST",
-            "MANAGER",
-            "MODERATOR"
         ]
     },
     {
@@ -7263,6 +7163,7 @@
             "CULTURAL_MOMENT_DEPRECATED",
             "DCO_AD_ASSET_FEED",
             "DCO_AUTOGEN_VIDEO",
+            "DCO_TRIMMED_VIDEO",
             "DIRECTED_POST_ATTACHMENT",
             "DIRECT_INBOX",
             "DIRECT_INBOX_REACTION",
@@ -7453,57 +7354,6 @@
             "PENDING",
             "READY_FOR_PICKUP",
             "SERVING"
-        ]
-    },
-    {
-        "name": "group_group_type",
-        "node": "Group",
-        "field_or_param": "group_type",
-        "values": [
-            "CASUAL",
-            "CLOSE_FRIENDS",
-            "CLUB",
-            "COUPLE",
-            "COWORKERS",
-            "CUSTOM",
-            "EPHEMERAL",
-            "EVENT_PLANNING",
-            "FAMILY",
-            "FITNESS",
-            "FOR_SALE",
-            "FOR_WORK",
-            "FRATERNITY",
-            "GAME",
-            "HEALTH_SUPPORT",
-            "HIGH_SCHOOL_FORUM",
-            "JOBS",
-            "LEARNING",
-            "MEME",
-            "MENTORSHIP",
-            "NEIGHBORS",
-            "NONE",
-            "PARENTS",
-            "PROJECT",
-            "REAL_WORLD",
-            "REAL_WORLD_AT_WORK",
-            "SCHOOL_CLASS",
-            "SORORITY",
-            "STUDY_GROUP",
-            "SUPPORT",
-            "TEAMMATES",
-            "TRAVEL_PLANNING",
-            "WORK_ANNOUNCEMENT",
-            "WORK_DEMO_GROUP",
-            "WORK_DISCUSSION",
-            "WORK_EPHEMERAL",
-            "WORK_FEEDBACK",
-            "WORK_FOR_SALE",
-            "WORK_LEARNING",
-            "WORK_MENTORSHIP",
-            "WORK_MULTI_COMPANY",
-            "WORK_SOCIAL",
-            "WORK_TEAM",
-            "WORK_TEAMWORK"
         ]
     },
     {
@@ -7910,6 +7760,7 @@
             "CULTURAL_MOMENT_DEPRECATED",
             "DCO_AD_ASSET_FEED",
             "DCO_AUTOGEN_VIDEO",
+            "DCO_TRIMMED_VIDEO",
             "DIRECTED_POST_ATTACHMENT",
             "DIRECT_INBOX",
             "DIRECT_INBOX_REACTION",
@@ -8768,14 +8619,6 @@
             "SAD",
             "THANKFUL",
             "WOW"
-        ]
-    },
-    {
-        "name": "owneddomainagencies_permitted_tasks_enum_param",
-        "node": "OwnedDomain",
-        "field_or_param": "permitted_tasks",
-        "values": [
-            "MANAGE"
         ]
     },
     {
@@ -9864,6 +9707,7 @@
             "DOWNLOAD",
             "EVENT_RSVP",
             "FIND_A_GROUP",
+            "FIND_YOUR_GROUPS",
             "FOLLOW_NEWS_STORYLINE",
             "GET_DIRECTIONS",
             "GET_OFFER",
@@ -9921,14 +9765,6 @@
     },
     {
         "name": "pageposts_with_enum_param",
-        "node": "PagePost",
-        "field_or_param": "with",
-        "values": [
-            "LOCATION"
-        ]
-    },
-    {
-        "name": "pagepromotable_posts_with_enum_param",
         "node": "PagePost",
         "field_or_param": "with",
         "values": [
@@ -10247,6 +10083,7 @@
             "CULTURAL_MOMENT_DEPRECATED",
             "DCO_AD_ASSET_FEED",
             "DCO_AUTOGEN_VIDEO",
+            "DCO_TRIMMED_VIDEO",
             "DIRECTED_POST_ATTACHMENT",
             "DIRECT_INBOX",
             "DIRECT_INBOX_REACTION",
@@ -10790,6 +10627,7 @@
             "DOWNLOAD",
             "EVENT_RSVP",
             "FIND_A_GROUP",
+            "FIND_YOUR_GROUPS",
             "FOLLOW_NEWS_STORYLINE",
             "GET_DIRECTIONS",
             "GET_OFFER",
@@ -11038,15 +10876,6 @@
         ]
     },
     {
-        "name": "productcataloguserpermissions_role_enum_param",
-        "node": "ProductCatalog",
-        "field_or_param": "role",
-        "values": [
-            "ADMIN",
-            "ADVERTISER"
-        ]
-    },
-    {
         "name": "productcatalogvehicles_availability_enum_param",
         "node": "Vehicle",
         "field_or_param": "availability",
@@ -11184,6 +11013,7 @@
             "CULTURAL_MOMENT_DEPRECATED",
             "DCO_AD_ASSET_FEED",
             "DCO_AUTOGEN_VIDEO",
+            "DCO_TRIMMED_VIDEO",
             "DIRECTED_POST_ATTACHMENT",
             "DIRECT_INBOX",
             "DIRECT_INBOX_REACTION",
@@ -12187,6 +12017,7 @@
             "CULTURAL_MOMENT_DEPRECATED",
             "DCO_AD_ASSET_FEED",
             "DCO_AUTOGEN_VIDEO",
+            "DCO_TRIMMED_VIDEO",
             "DIRECTED_POST_ATTACHMENT",
             "DIRECT_INBOX",
             "DIRECT_INBOX_REACTION",

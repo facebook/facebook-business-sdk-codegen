@@ -3329,43 +3329,6 @@
             "params": []
         },
         {
-            "method": "GET",
-            "endpoint": "promotable_posts",
-            "return": "PagePost",
-            "params": [
-                {
-                    "name": "include_hidden",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "include_inline",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "is_published",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "q",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "show_expired",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "with",
-                    "required": false,
-                    "type": "pagepromotable_posts_with_enum_param"
-                }
-            ]
-        },
-        {
             "method": "POST",
             "endpoint": "promotions",
             "return": "Object",
