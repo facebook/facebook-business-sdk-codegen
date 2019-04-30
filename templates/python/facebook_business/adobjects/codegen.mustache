@@ -120,7 +120,7 @@ class {{name:pascal_case}}(
     {{/read_endpoint}}
     {{/creation_endpoint}}
     {{#node}}
-    def {{#is_node_api}}api_{{/is_node_api}}{{name}}(self, fields=None, params=None,{{#is_insights_sync}} is_async=False,{{/is_insights_sync}} batch=None, success=None, failure=None, pending=False):
+    def {{#is_node_api}}api_{{/is_node_api}}{{name:underscore}}(self, fields=None, params=None,{{#is_insights_sync}} is_async=False,{{/is_insights_sync}} batch=None, success=None, failure=None, pending=False):
         from facebook_business.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
@@ -173,7 +173,7 @@ class {{name:pascal_case}}(
 
     {{/node}}
     {{#edges}}
-    def {{#is_node_api}}api_{{/is_node_api}}{{name}}(self, fields=None, params=None,{{#is_insights_sync}} is_async=False,{{/is_insights_sync}} batch=None, success=None, failure=None, pending=False):
+    def {{#is_node_api}}api_{{/is_node_api}}{{name:underscore}}(self, fields=None, params=None,{{#is_insights_sync}} is_async=False,{{/is_insights_sync}} batch=None, success=None, failure=None, pending=False):
         from facebook_business.utils import api_utils
         if batch is None and (success is not None or failure is not None):
           api_utils.warning('`success` and `failure` callback only work for batch call.')
