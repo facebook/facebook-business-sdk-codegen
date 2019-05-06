@@ -69,18 +69,6 @@
             ]
         },
         {
-            "method": "DELETE",
-            "endpoint": "capabilities",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "adaccounts",
-                    "required": false,
-                    "type": "list<string>"
-                }
-            ]
-        },
-        {
             "method": "POST",
             "endpoint": "capabilities",
             "return": "Object",

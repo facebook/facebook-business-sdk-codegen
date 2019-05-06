@@ -8,12 +8,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "assigned_monetization_properties",
-            "return": "AdMonetizationProperty",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "assigned_pages",
             "return": "Page",
             "params": []
@@ -22,12 +16,6 @@
             "method": "GET",
             "endpoint": "assigned_product_catalogs",
             "return": "ProductCatalog",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "businesssettinglogs",
-            "return": "BusinessSettingLogsData",
             "params": []
         },
         {

@@ -2,47 +2,8 @@
     "apis": [
         {
             "method": "GET",
-            "endpoint": "comments",
-            "return": "Comment",
-            "params": [
-                {
-                    "name": "filter",
-                    "required": false,
-                    "type": "rtbdynamicpostcomments_filter_enum_param"
-                },
-                {
-                    "name": "live_filter",
-                    "required": false,
-                    "type": "rtbdynamicpostcomments_live_filter_enum_param"
-                },
-                {
-                    "name": "order",
-                    "required": false,
-                    "type": "rtbdynamicpostcomments_order_enum_param"
-                },
-                {
-                    "name": "since",
-                    "required": false,
-                    "type": "datetime"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "instagram_comments",
             "return": "InstagramComment",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "likes",
-            "return": "Profile",
-            "params": []
-        },
-        {
-            "name": "#delete",
-            "method": "DELETE",
-            "return": "Object",
             "params": []
         },
         {

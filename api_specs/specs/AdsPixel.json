@@ -64,12 +64,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "create_server_to_server_keys",
-            "return": "AdsPixel",
-            "params": []
-        },
-        {
             "method": "GET",
             "endpoint": "da_checks",
             "return": "DACheck",
@@ -78,24 +72,6 @@
                     "name": "checks",
                     "required": false,
                     "type": "list<string>"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "pending_shared_agencies",
-            "return": "Business",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "reset_server_to_server_key",
-            "return": "AdsPixel",
-            "params": [
-                {
-                    "name": "type",
-                    "required": true,
-                    "type": "adspixelreset_server_to_server_key_type_enum_param"
                 }
             ]
         },
@@ -135,23 +111,6 @@
             "params": [
                 {
                     "name": "account_id",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "business",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "DELETE",
-            "endpoint": "shared_agencies",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "agency_id",
                     "required": true,
                     "type": "string"
                 },

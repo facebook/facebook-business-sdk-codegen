@@ -7,68 +7,6 @@
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "hotel_rooms",
-            "return": "HotelRoom",
-            "params": [
-                {
-                    "name": "applinks",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "base_price",
-                    "required": true,
-                    "type": "float"
-                },
-                {
-                    "name": "currency",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "description",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "images",
-                    "required": false,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "margin_level",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "name",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "pricing_variables",
-                    "required": false,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "room_id",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "sale_price",
-                    "required": false,
-                    "type": "float"
-                },
-                {
-                    "name": "url",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "name": "#delete",
             "method": "DELETE",
             "return": "Object",

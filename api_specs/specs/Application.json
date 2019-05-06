@@ -72,18 +72,6 @@
             ]
         },
         {
-            "method": "GET",
-            "endpoint": "achievements",
-            "return": "OpenGraphObject",
-            "params": [
-                {
-                    "name": "achievement",
-                    "required": false,
-                    "type": "Object"
-                }
-            ]
-        },
-        {
             "method": "POST",
             "endpoint": "activities",
             "return": "Object",
@@ -177,6 +165,11 @@
                     "name": "include_video_data",
                     "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "install_referrer",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "installer_package",
@@ -354,12 +347,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "android_dialog_configs",
-            "return": "ApplicationDialogConfig",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "app_event_types",
             "return": "ApplicationAppEventTypes",
             "params": []
@@ -415,58 +402,6 @@
                     "name": "extinfo",
                     "required": false,
                     "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "app_insights",
-            "return": "InsightsQueryResult",
-            "params": [
-                {
-                    "name": "aggregateBy",
-                    "required": false,
-                    "type": "applicationapp_insights_aggregateBy_enum_param"
-                },
-                {
-                    "name": "breakdowns",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "ecosystem",
-                    "required": false,
-                    "type": "applicationapp_insights_ecosystem_enum_param"
-                },
-                {
-                    "name": "event_name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "intervals_to_aggregate",
-                    "required": false,
-                    "type": "int"
-                },
-                {
-                    "name": "metric_key",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "period",
-                    "required": false,
-                    "type": "applicationapp_insights_period_enum_param"
-                },
-                {
-                    "name": "since",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "until",
-                    "required": false,
-                    "type": "datetime"
                 }
             ]
         },
@@ -533,18 +468,6 @@
             ]
         },
         {
-            "method": "GET",
-            "endpoint": "audiences",
-            "return": "CustomAudience",
-            "params": [
-                {
-                    "name": "ad_account",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "DELETE",
             "endpoint": "authorized_adaccounts",
             "return": "Object",
@@ -591,18 +514,6 @@
             ]
         },
         {
-            "method": "DELETE",
-            "endpoint": "banned",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "uids",
-                    "required": true,
-                    "type": "list<int>"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "banned",
             "return": "User",
@@ -611,18 +522,6 @@
                     "name": "uid",
                     "required": false,
                     "type": "int"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "banned",
-            "return": "User",
-            "params": [
-                {
-                    "name": "uids",
-                    "required": true,
-                    "type": "list<int>"
                 }
             ]
         },
@@ -716,12 +615,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "connections",
-            "return": "OpenGraphActionType",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "custom_audience_third_party_id",
             "return": "ApplicationCustomAudienceThirdPartyId",
             "params": [
@@ -748,12 +641,6 @@
                     "type": "list<string>"
                 }
             ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "direct_deals",
-            "return": "DirectDeal",
-            "params": []
         },
         {
             "method": "GET",
@@ -798,38 +685,6 @@
                     "name": "full_app_indexing_info_classes",
                     "required": true,
                     "type": "list<map>"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "insights_event_labels",
-            "return": "InsightsEventLabel",
-            "params": [
-                {
-                    "name": "add",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "delete",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "ecosystem",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "since",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "until",
-                    "required": false,
-                    "type": "datetime"
                 }
             ]
         },
@@ -936,12 +791,6 @@
                     "type": "unsigned int"
                 }
             ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "machines",
-            "return": "Object",
-            "params": []
         },
         {
             "method": "POST",
@@ -1055,12 +904,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "object_types",
-            "return": "OpenGraphObjectType",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "objects",
             "return": "OpenGraphObject",
             "params": [
@@ -1104,12 +947,6 @@
                     "type": "bool"
                 }
             ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "ozone_release",
-            "return": "OzoneRelease",
-            "params": []
         },
         {
             "method": "POST",
@@ -1242,285 +1079,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "photos",
-            "return": "Photo",
-            "params": [
-                {
-                    "name": "aid",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "allow_spherical_photo",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "alt_text_custom",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "android_key_hash",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "application_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "attempt",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "audience_exp",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "backdated_time",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "backdated_time_granularity",
-                    "required": false,
-                    "type": "applicationphotos_backdated_time_granularity_enum_param"
-                },
-                {
-                    "name": "caption",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "composer_session_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "direct_share_status",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "feed_targeting",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "filter_type",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "full_res_is_coming_later",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "initial_view_heading_override_degrees",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "initial_view_pitch_override_degrees",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "initial_view_vertical_fov_override_degrees",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "ios_bundle_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "is_explicit_location",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "is_explicit_place",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "manual_privacy",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "message",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "no_story",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "offline_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "og_action_type_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "og_icon_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "og_object_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "og_phrase",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "og_set_profile_badge",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "og_suggestion_mechanism",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "place",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "privacy",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "profile_id",
-                    "required": false,
-                    "type": "int"
-                },
-                {
-                    "name": "proxied_app_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "published",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "qn",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "scheduled_publish_time",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "spherical_metadata",
-                    "required": false,
-                    "type": "map"
-                },
-                {
-                    "name": "sponsor_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "sponsor_relationship",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "tags",
-                    "required": false,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "target_id",
-                    "required": false,
-                    "type": "int"
-                },
-                {
-                    "name": "targeting",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "time_since_original_post",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "uid",
-                    "required": false,
-                    "type": "int"
-                },
-                {
-                    "name": "unpublished_content_type",
-                    "required": false,
-                    "type": "applicationphotos_unpublished_content_type_enum_param"
-                },
-                {
-                    "name": "url",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "user_selected_tags",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "vault_image_id",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "picture",
-            "return": "ProfilePictureSource",
-            "params": [
-                {
-                    "name": "redirect",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "type",
-                    "required": false,
-                    "type": "applicationpicture_type_enum_param"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "products",
             "return": "GamesIAPProduct",
@@ -1545,39 +1103,10 @@
             ]
         },
         {
-            "method": "DELETE",
-            "endpoint": "roles",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "user",
-                    "required": false,
-                    "type": "int"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "roles",
             "return": "ApplicationRoles",
             "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "roles",
-            "return": "Application",
-            "params": [
-                {
-                    "name": "role",
-                    "required": true,
-                    "type": "applicationroles_role_enum_param"
-                },
-                {
-                    "name": "user",
-                    "required": true,
-                    "type": "int"
-                }
-            ]
         },
         {
             "method": "POST",
@@ -1715,33 +1244,6 @@
                     "name": "stress_run",
                     "required": false,
                     "type": "unsigned int"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "uploads",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "file_length",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "file_name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "file_type",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "session_type",
-                    "required": false,
-                    "type": "applicationuploads_session_type_enum_param"
                 }
             ]
         },
@@ -2141,10 +1643,6 @@
         {
             "name": "contact_email",
             "type": "string"
-        },
-        {
-            "name": "context",
-            "type": "Object"
         },
         {
             "name": "created_time",

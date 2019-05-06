@@ -143,45 +143,6 @@
             ]
         },
         {
-            "method": "GET",
-            "endpoint": "asyncadrequests",
-            "return": "AdAsyncRequest",
-            "params": [
-                {
-                    "name": "statuses",
-                    "required": false,
-                    "type": "list<adcampaignasyncadrequests_statuses_enum_param>"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "copies",
-            "return": "AdSet",
-            "params": [
-                {
-                    "name": "date_preset",
-                    "required": false,
-                    "type": "adcampaigncopies_date_preset_enum_param"
-                },
-                {
-                    "name": "effective_status",
-                    "required": false,
-                    "type": "list<adcampaigncopies_effective_status_enum_param>"
-                },
-                {
-                    "name": "is_completed",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "time_range",
-                    "required": false,
-                    "type": "Object"
-                }
-            ]
-        },
-        {
             "method": "POST",
             "endpoint": "copies",
             "return": "AdSet",

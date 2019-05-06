@@ -19,69 +19,6 @@
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "agencies",
-            "return": "InstagramUser",
-            "params": [
-                {
-                    "name": "business",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "DELETE",
-            "endpoint": "assigned_users",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "business",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "user",
-                    "required": true,
-                    "type": "Object"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "assigned_users",
-            "return": "AssignedUser",
-            "params": [
-                {
-                    "name": "business",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "assigned_users",
-            "return": "InstagramUser",
-            "params": [
-                {
-                    "name": "business",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "role",
-                    "required": false,
-                    "type": "instagramuserassigned_users_role_enum_param"
-                },
-                {
-                    "name": "user",
-                    "required": true,
-                    "type": "Object"
-                }
-            ]
-        },
-        {
             "method": "DELETE",
             "endpoint": "authorized_adaccounts",
             "return": "Object",
@@ -124,28 +61,6 @@
                     "name": "business",
                     "required": true,
                     "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "userpermissions",
-            "return": "InstagramUser",
-            "params": [
-                {
-                    "name": "business",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "role",
-                    "required": false,
-                    "type": "instagramuseruserpermissions_role_enum_param"
-                },
-                {
-                    "name": "user",
-                    "required": true,
-                    "type": "Object"
                 }
             ]
         },

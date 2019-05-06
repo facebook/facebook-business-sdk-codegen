@@ -173,23 +173,6 @@
             ]
         },
         {
-            "method": "GET",
-            "endpoint": "adaccountcreationrequests",
-            "return": "AdAccountCreationRequest",
-            "params": [
-                {
-                    "name": "ad_account_creation_request_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "status",
-                    "required": false,
-                    "type": "list<businessadaccountcreationrequests_status_enum_param>"
-                }
-            ]
-        },
-        {
             "method": "POST",
             "endpoint": "adaccountcreationrequests",
             "return": "AdAccountCreationRequest",
@@ -578,6 +561,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "invoice_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
                     "name": "issue_end_date",
                     "required": false,
                     "type": "string"
@@ -586,6 +574,11 @@
                     "name": "issue_start_date",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "root_id",
+                    "required": false,
+                    "type": "unsigned int"
                 },
                 {
                     "name": "start_date",
@@ -636,24 +629,6 @@
                 {
                     "name": "name",
                     "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "businesssettinglogs",
-            "return": "BusinessSettingLogsData",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "catalog_segment_producer_tos",
-            "return": "BusinessProductCatalogTOS",
-            "params": [
-                {
-                    "name": "catalog_segment_id",
-                    "required": false,
                     "type": "string"
                 }
             ]
@@ -879,18 +854,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "grp_plans",
-            "return": "ReachFrequencyPrediction",
-            "params": [
-                {
-                    "name": "status",
-                    "required": false,
-                    "type": "businessgrp_plans_status_enum_param"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "initiated_audience_sharing_requests",
             "return": "BusinessAssetSharingAgreement",
             "params": [
@@ -997,23 +960,6 @@
                     "name": "filters",
                     "required": false,
                     "type": "list<Object>"
-                },
-                {
-                    "name": "report_type",
-                    "required": true,
-                    "type": "businessmeasurement_reports_report_type_enum_param"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "measurement_reports",
-            "return": "MeasurementReport",
-            "params": [
-                {
-                    "name": "metadata",
-                    "required": true,
-                    "type": "string"
                 },
                 {
                     "name": "report_type",
@@ -1180,12 +1126,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "owned_custom_conversions",
-            "return": "CustomConversion",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "owned_domains",
             "return": "OwnedDomain",
             "params": []
@@ -1284,126 +1224,6 @@
                     "name": "page_id",
                     "required": true,
                     "type": "int"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "partner_integrations",
-            "return": "PartnerIntegrationLinked",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "partner_integrations",
-            "return": "PartnerIntegrationLinked",
-            "params": [
-                {
-                    "name": "external_id",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "gtm_account_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "gtm_container_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "partner",
-                    "required": true,
-                    "type": "businesspartner_integrations_partner_enum_param"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "partneradaccount",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "billing_address_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "currency",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "end_advertiser",
-                    "required": true,
-                    "type": "Object"
-                },
-                {
-                    "name": "funding_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "invoice",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "invoice_group_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "invoicing_emails",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "io",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "liable_address_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "media_agency",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "name",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "partner",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "po_number",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "sold_to_address_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "timezone_id",
-                    "required": true,
-                    "type": "unsigned int"
                 }
             ]
         },
@@ -1582,18 +1402,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "spaco_dataset_collections",
-            "return": "SpacoDsDataCollection",
-            "params": [
-                {
-                    "name": "spaco_data_collections",
-                    "required": true,
-                    "type": "list<string>"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "system_users",
             "return": "SystemUser",
@@ -1648,12 +1456,6 @@
                     "type": "list<map>"
                 }
             ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "upload_event",
-            "return": "MeasurementUploadEvent",
-            "params": []
         },
         {
             "method": "POST",
@@ -1715,23 +1517,6 @@
             ]
         },
         {
-            "method": "GET",
-            "endpoint": "user_invitations",
-            "return": "BusinessRoleRequest",
-            "params": [
-                {
-                    "name": "email",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "status",
-                    "required": false,
-                    "type": "businessuser_invitations_status_enum_param"
-                }
-            ]
-        },
-        {
             "method": "DELETE",
             "endpoint": "userpermissions",
             "return": "Object",
@@ -1767,128 +1552,6 @@
                     "name": "user",
                     "required": false,
                     "type": "int"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "vietnamadaccountcreationrequests",
-            "return": "AdAccountCreationRequest",
-            "params": [
-                {
-                    "name": "ad_accounts_currency",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "ad_accounts_info",
-                    "required": false,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "additional_comment",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "address_in_english",
-                    "required": true,
-                    "type": "Object"
-                },
-                {
-                    "name": "address_in_local_language",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "advertiser_business_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "business_registration",
-                    "required": false,
-                    "type": "file"
-                },
-                {
-                    "name": "business_registration_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "contact",
-                    "required": true,
-                    "type": "Object"
-                },
-                {
-                    "name": "credit_card_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "english_legal_entity_name",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "extended_credit_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "is_smb",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "is_test",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "legal_entity_name_in_local_language",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "official_website_url",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "planning_agency_business_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "promotable_app_ids",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "promotable_page_ids",
-                    "required": false,
-                    "type": "list<int>"
-                },
-                {
-                    "name": "promotable_page_urls",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "promotable_urls",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "subvertical",
-                    "required": true,
-                    "type": "businessvietnamadaccountcreationrequests_subvertical_enum_param"
-                },
-                {
-                    "name": "vertical",
-                    "required": true,
-                    "type": "businessvietnamadaccountcreationrequests_vertical_enum_param"
                 }
             ]
         },

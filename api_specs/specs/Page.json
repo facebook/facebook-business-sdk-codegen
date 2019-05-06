@@ -1,59 +1,10 @@
 {
     "apis": [
         {
-            "method": "POST",
-            "endpoint": "activities",
-            "return": "Page",
-            "params": [
-                {
-                    "name": "advertiser_tracking_enabled",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "app_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "custom_events",
-                    "required": false,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "page_scoped_user_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "user_ref",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "admin_notes",
             "return": "PageAdminNote",
             "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "admin_notes",
-            "return": "PageAdminNote",
-            "params": [
-                {
-                    "name": "body",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "user_id",
-                    "required": true,
-                    "type": "int"
-                }
-            ]
         },
         {
             "method": "POST",
@@ -69,43 +20,6 @@
                     "name": "value",
                     "required": true,
                     "type": "bool"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "admin_sticky_settings",
-            "return": "Page",
-            "params": [
-                {
-                    "name": "ad_account_id",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "audience",
-                    "required": true,
-                    "type": "pageadmin_sticky_settings_audience_enum_param"
-                },
-                {
-                    "name": "budget",
-                    "required": true,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "campaign_length",
-                    "required": true,
-                    "type": "datetime"
-                },
-                {
-                    "name": "currency",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "targeting",
-                    "required": false,
-                    "type": "Targeting"
                 }
             ]
         },
@@ -153,6 +67,11 @@
             "endpoint": "ads_posts",
             "return": "PagePost",
             "params": [
+                {
+                    "name": "exclude_dynamic_ads",
+                    "required": false,
+                    "type": "bool"
+                },
                 {
                     "name": "include_inline_create",
                     "required": false,
@@ -274,12 +193,6 @@
             ]
         },
         {
-            "method": "GET",
-            "endpoint": "asset3ds",
-            "return": "WithAsset3D",
-            "params": []
-        },
-        {
             "method": "DELETE",
             "endpoint": "assigned_users",
             "return": "Object",
@@ -388,12 +301,6 @@
             ]
         },
         {
-            "method": "GET",
-            "endpoint": "broadcast_messages",
-            "return": "PageBroadcast",
-            "params": []
-        },
-        {
             "method": "POST",
             "endpoint": "broadcast_messages",
             "return": "Page",
@@ -459,30 +366,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "business_activities",
-            "return": "BusinessActivityLogEvent",
-            "params": [
-                {
-                    "name": "business",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "businesses",
-            "return": "Business",
-            "params": [
-                {
-                    "name": "business",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "businessprojects",
             "return": "BusinessProject",
             "params": [
@@ -492,18 +375,6 @@
                     "type": "string"
                 }
             ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "businesssettinglogs",
-            "return": "BusinessSettingLogsData",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "call_to_actions",
-            "return": "PageCallToAction",
-            "params": []
         },
         {
             "method": "POST",
@@ -581,12 +452,6 @@
                     "type": "string"
                 }
             ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "canvas_elements",
-            "return": "CanvasBodyElement",
-            "params": []
         },
         {
             "method": "POST",
@@ -813,61 +678,9 @@
             ]
         },
         {
-            "method": "DELETE",
-            "endpoint": "copyright_whitelisted_partners",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "partner_ids",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "urls",
-                    "required": false,
-                    "type": "list<string>"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "copyright_whitelisted_partners",
             "return": "Profile",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "copyright_whitelisted_partners",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "partner_ids",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "urls",
-                    "required": false,
-                    "type": "list<string>"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "crosspost_pending_approval_pages",
-            "return": "Page",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "crosspost_whitelisted_pages",
-            "return": "Page",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "custom_labels",
-            "return": "PageUserMessageThreadLabel",
             "params": []
         },
         {
@@ -908,24 +721,6 @@
                     "type": "pageevents_type_enum_param"
                 }
             ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "expired_posts",
-            "return": "ExpirablePost",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "expiring_posts",
-            "return": "ExpirablePost",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "featured_videos_collection",
-            "return": "AdVideo",
-            "params": []
         },
         {
             "method": "GET",
@@ -1522,52 +1317,9 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "flags",
-            "return": "Page",
-            "params": [
-                {
-                    "name": "endpoint",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "entry_point",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "flag",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "page_id",
-                    "required": false,
-                    "type": "int"
-                },
-                {
-                    "name": "page_ids",
-                    "required": false,
-                    "type": "list<int>"
-                },
-                {
-                    "name": "value",
-                    "required": true,
-                    "type": "bool"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "global_brand_children",
             "return": "Page",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "indexed_video_copyrights",
-            "return": "VideoCopyright",
             "params": []
         },
         {
@@ -1726,131 +1478,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "labels",
-            "return": "PageLabel",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "labels",
-            "return": "PageLabel",
-            "params": [
-                {
-                    "name": "name",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "leadgen_conditional_questions_group",
-            "return": "LeadGenConditionalQuestionsGroup",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "leadgen_conditional_questions_group",
-            "return": "LeadGenConditionalQuestionsGroup",
-            "params": [
-                {
-                    "name": "conditional_questions_group_csv",
-                    "required": true,
-                    "type": "file"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "leadgen_context_cards",
-            "return": "LeadGenContextCard",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "leadgen_draft_forms",
-            "return": "LeadGenDataDraft",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "leadgen_draft_forms",
-            "return": "LeadGenDataDraft",
-            "params": [
-                {
-                    "name": "block_display_for_non_targeted_viewer",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "context_card",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "context_card_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "custom_disclaimer",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "follow_up_action_url",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "is_optimized_for_quality",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "legal_content_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "locale",
-                    "required": false,
-                    "type": "pageleadgen_draft_forms_locale_enum_param"
-                },
-                {
-                    "name": "name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "privacy_policy",
-                    "required": false,
-                    "type": "map"
-                },
-                {
-                    "name": "question_page_custom_headline",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "questions",
-                    "required": false,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "thank_you_page",
-                    "required": false,
-                    "type": "map"
-                },
-                {
-                    "name": "tracking_parameters",
-                    "required": false,
-                    "type": "map"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "leadgen_forms",
             "return": "LeadgenForm",
             "params": []
@@ -1876,11 +1503,6 @@
                     "type": "Object"
                 },
                 {
-                    "name": "context_card_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "cover_photo",
                     "required": false,
                     "type": "file"
@@ -1904,11 +1526,6 @@
                     "name": "is_optimized_for_quality",
                     "required": false,
                     "type": "bool"
-                },
-                {
-                    "name": "legal_content_id",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "locale",
@@ -1941,50 +1558,9 @@
                     "type": "Object"
                 },
                 {
-                    "name": "thank_you_page_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "tracking_parameters",
                     "required": false,
                     "type": "map"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "leadgen_legal_content",
-            "return": "LeadGenLegalContent",
-            "params": []
-        },
-        {
-            "method": "DELETE",
-            "endpoint": "leadgen_whitelisted_users",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "user_id",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "leadgen_whitelisted_users",
-            "return": "User",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "leadgen_whitelisted_users",
-            "return": "Page",
-            "params": [
-                {
-                    "name": "user_id",
-                    "required": true,
-                    "type": "int"
                 }
             ]
         },
@@ -2222,110 +1798,6 @@
         },
         {
             "method": "POST",
-            "endpoint": "locations",
-            "return": "Page",
-            "params": [
-                {
-                    "name": "always_open",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "hours",
-                    "required": false,
-                    "type": "map"
-                },
-                {
-                    "name": "ignore_warnings",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "location",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "location_page_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "old_store_number",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "page_username",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "permanently_closed",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "phone",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "place_topics",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "price_range",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "store_code",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "store_location_descriptor",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "store_name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "store_number",
-                    "required": true,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "website",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "media_fingerprints",
-            "return": "MediaFingerprint",
-            "params": [
-                {
-                    "name": "fingerprint_validity",
-                    "required": false,
-                    "type": "pagemedia_fingerprints_fingerprint_validity_enum_param"
-                },
-                {
-                    "name": "universal_content_id",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "POST",
             "endpoint": "media_fingerprints",
             "return": "MediaFingerprint",
             "params": [
@@ -2523,40 +1995,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "milestones",
-            "return": "LifeEvent",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "milestones",
-            "return": "LifeEvent",
-            "params": [
-                {
-                    "name": "description",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "start_time",
-                    "required": true,
-                    "type": "datetime"
-                },
-                {
-                    "name": "title",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "music_video_media_copyrights",
-            "return": "MusicVideoCopyright",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "nativeoffers",
             "return": "NativeOffer",
             "params": []
@@ -2699,56 +2137,14 @@
                     "type": "bool"
                 },
                 {
+                    "name": "other_language_support",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "verbose",
                     "required": false,
                     "type": "bool"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "notifications",
-            "return": "Page",
-            "params": [
-                {
-                    "name": "filtering",
-                    "required": false,
-                    "type": "list<pagenotifications_filtering_enum_param>"
-                },
-                {
-                    "name": "href",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "notif_ids",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "read",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "ref",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "seen",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "template",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "type",
-                    "required": false,
-                    "type": "pagenotifications_type_enum_param"
                 }
             ]
         },
@@ -3291,12 +2687,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "place_topics",
-            "return": "PlaceTopic",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "posts",
             "return": "PagePost",
             "params": [
@@ -3321,12 +2711,6 @@
                     "type": "pageposts_with_enum_param"
                 }
             ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "product_catalogs",
-            "return": "ProductCatalog",
-            "params": []
         },
         {
             "method": "POST",
@@ -3412,121 +2796,14 @@
         },
         {
             "method": "GET",
-            "endpoint": "restaurant_orders",
-            "return": "FoodDrinkOrder",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "roles",
-            "return": "User",
-            "params": [
-                {
-                    "name": "include_deactivated",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "uid",
-                    "required": false,
-                    "type": "Object"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "rtb_dynamic_posts",
             "return": "RTBDynamicPost",
             "params": []
         },
         {
             "method": "GET",
-            "endpoint": "saved_filters",
-            "return": "PageSavedFilter",
-            "params": [
-                {
-                    "name": "section",
-                    "required": true,
-                    "type": "pagesaved_filters_section_enum_param"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "saved_filters",
-            "return": "PageSavedFilter",
-            "params": [
-                {
-                    "name": "display_name",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "filters",
-                    "required": true,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "section",
-                    "required": true,
-                    "type": "pagesaved_filters_section_enum_param"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "saved_message_responses",
-            "return": "SavedMessageResponse",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "saved_message_responses",
-            "return": "SavedMessageResponse",
-            "params": [
-                {
-                    "name": "category",
-                    "required": true,
-                    "type": "pagesaved_message_responses_category_enum_param"
-                },
-                {
-                    "name": "image",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "is_enabled",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "message",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "title",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "scheduled_posts",
             "return": "PagePost",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "screennames",
-            "return": "ScreenName",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "seasons",
-            "return": "VideoList",
             "params": []
         },
         {
@@ -3554,12 +2831,6 @@
             ]
         },
         {
-            "method": "GET",
-            "endpoint": "show_playlists",
-            "return": "VideoList",
-            "params": []
-        },
-        {
             "method": "DELETE",
             "endpoint": "subscribed_apps",
             "return": "Object",
@@ -3584,38 +2855,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "subscriptions",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "callback_url",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "fields",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "include_values",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "object",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "verify_token",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "DELETE",
             "endpoint": "tabs",
             "return": "Object",
@@ -3636,43 +2875,6 @@
                     "name": "tab",
                     "required": false,
                     "type": "list<string>"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "tabs",
-            "return": "Page",
-            "params": [
-                {
-                    "name": "app_id",
-                    "required": false,
-                    "type": "int"
-                },
-                {
-                    "name": "custom_image_url",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "custom_name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "is_non_connection_landing_tab",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "position",
-                    "required": false,
-                    "type": "int"
-                },
-                {
-                    "name": "tab",
-                    "required": false,
-                    "type": "string"
                 }
             ]
         },
@@ -3838,12 +3040,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "video_broadcasts",
-            "return": "LiveVideo",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "video_copyright_rules",
             "return": "VideoCopyrightRule",
             "params": [
@@ -3858,29 +3054,6 @@
                     "type": "pagevideo_copyright_rules_source_enum_param"
                 }
             ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "video_copyright_rules",
-            "return": "VideoCopyrightRule",
-            "params": [
-                {
-                    "name": "condition_groups",
-                    "required": true,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "name",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "video_copyrights",
-            "return": "VideoCopyright",
-            "params": []
         },
         {
             "method": "POST",
@@ -3955,44 +3128,9 @@
             ]
         },
         {
-            "method": "DELETE",
-            "endpoint": "video_lists",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "video_list_id",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "video_lists",
             "return": "VideoList",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "video_lists",
-            "return": "Page",
-            "params": [
-                {
-                    "name": "description",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "title",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "video_media_copyrights",
-            "return": "VideoCopyright",
             "params": []
         },
         {
@@ -4481,12 +3619,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "videos_you_can_use",
-            "return": "PageVideosYouCanUse",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "visitor_posts",
             "return": "PagePost",
             "params": [
@@ -4877,10 +4009,6 @@
         {
             "name": "contact_address",
             "type": "MailingAddress"
-        },
-        {
-            "name": "context",
-            "type": "OpenGraphContext"
         },
         {
             "name": "copyright_attribution_insights",

@@ -1,12 +1,6 @@
 {
     "apis": [
         {
-            "method": "DELETE",
-            "endpoint": "insights_exports",
-            "return": "Object",
-            "params": []
-        },
-        {
             "name": "#get",
             "method": "GET",
             "return": "PageInsightsAsyncExportRun",

@@ -5,48 +5,6 @@
             "method": "GET",
             "return": "Flight",
             "params": []
-        },
-        {
-            "name": "#update",
-            "method": "POST",
-            "return": "Flight",
-            "params": [
-                {
-                    "name": "currency",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "description",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "destination_airport",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "images",
-                    "required": false,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "origin_airport",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "price",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "url",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
         }
     ],
     "fields": [

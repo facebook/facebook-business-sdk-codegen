@@ -506,6 +506,10 @@
             "type": "list<AdsActionStats>"
         },
         {
+            "name": "video_play_curve_actions",
+            "type": "list<Object>"
+        },
+        {
             "name": "video_play_retention_0_to_15s_actions",
             "type": "list<Object>"
         },

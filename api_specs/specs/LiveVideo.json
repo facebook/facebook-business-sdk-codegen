@@ -59,30 +59,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "game_shows",
-            "return": "VideoGameShow",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "guest_sessions",
-            "return": "LiveWithGuestSession",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "guest_sessions",
-            "return": "LiveWithGuestSession",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "input_streams",
-            "return": "LiveVideo",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "likes",
             "return": "Profile",
             "params": []

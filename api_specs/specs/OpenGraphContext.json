@@ -8,12 +8,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "friends_who_like",
-            "return": "User",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "music_listen_friends",
             "return": "User",
             "params": []

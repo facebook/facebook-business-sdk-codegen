@@ -7,28 +7,6 @@
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "leads",
-            "return": "Lead",
-            "params": [
-                {
-                    "name": "end_time",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "session_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "start_time",
-                    "required": false,
-                    "type": "datetime"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "test_leads",
             "return": "Lead",
@@ -86,10 +64,6 @@
             "type": "bool"
         },
         {
-            "name": "context_card",
-            "type": "LeadGenContextCard"
-        },
-        {
             "name": "created_time",
             "type": "datetime"
         },
@@ -138,10 +112,6 @@
             "type": "unsigned int"
         },
         {
-            "name": "legal_content",
-            "type": "LeadGenLegalContent"
-        },
-        {
             "name": "locale",
             "type": "string"
         },
@@ -188,10 +158,6 @@
         {
             "name": "tcpa_compliance",
             "type": "bool"
-        },
-        {
-            "name": "thank_you_page",
-            "type": "Object"
         },
         {
             "name": "tracking_parameters",

@@ -48,9 +48,9 @@
             "return": "EventSourceGroup",
             "params": [
                 {
-                    "name": "role",
+                    "name": "tasks",
                     "required": true,
-                    "type": "eventsourcegroupuserpermissions_role_enum_param"
+                    "type": "list<eventsourcegroupuserpermissions_tasks_enum_param>"
                 },
                 {
                     "name": "user",

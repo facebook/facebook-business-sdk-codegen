@@ -99,23 +99,6 @@
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "docs",
-            "return": "Doc",
-            "params": [
-                {
-                    "name": "body",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "title",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "events",
             "return": "Event",
@@ -689,23 +672,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "group_threads",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "joinable",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "thread_id",
-                    "required": true,
-                    "type": "Object"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "groups",
             "return": "Group",
@@ -963,30 +929,6 @@
                     "name": "source",
                     "required": false,
                     "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "DELETE",
-            "endpoint": "moderators",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "uid",
-                    "required": true,
-                    "type": "int"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "moderators",
-            "return": "Group",
-            "params": [
-                {
-                    "name": "uid",
-                    "required": true,
-                    "type": "int"
                 }
             ]
         },

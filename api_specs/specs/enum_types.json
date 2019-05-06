@@ -1306,6 +1306,7 @@
             "Lead",
             "Purchase",
             "Search",
+            "Subscribe",
             "ViewContent"
         ]
     },
@@ -2653,160 +2654,6 @@
         ]
     },
     {
-        "name": "adaccountcreationrequestvietnam_subvertical_enum_param",
-        "node": "AdAccountCreationRequest",
-        "field_or_param": "subvertical",
-        "values": [
-            "ACCOUNTING_AND_TAXES_AND_LEGAL",
-            "AGRICULTURE_AND_FARMING",
-            "AIR",
-            "AIR_FREIGHT_OR_PACKAGE",
-            "APPAREL_AND_ACCESSORIES",
-            "ARTS",
-            "AUCTIONS",
-            "AUTOMOTIVE_MANUFACTURER",
-            "AUTO_AGENCY",
-            "AUTO_RENTAL",
-            "B2B",
-            "B2B_MANUFACTURING",
-            "BEAUTY_AND_PERSONAL_CARE",
-            "BEER_AND_WINE_AND_LIQUOR",
-            "BOOKSTORES",
-            "BUSINESS_SUPPORT_SERVICES",
-            "BUS_AND_TAXI_AND_AUTO_RETAL",
-            "CABLE_AND_SATELLITE",
-            "CAREER",
-            "COMPUTING_AND_PERIPHERALS",
-            "CONSOLE_DEVELOPER",
-            "CONSOLE_DEVICE",
-            "CONSTRUCTION_AND_MINING",
-            "CONSULTING",
-            "CONSUMER_ELECTRONICS",
-            "CONSUMER_TECH",
-            "CREDIT_AND_FINANCING_AND_MORTAGES",
-            "CRUISES_AND_MARINE",
-            "CVB_CONVENTION_AND_VISITORS_BUREAU",
-            "DAILYDEALS",
-            "DATING",
-            "DEALERSHIP",
-            "DEPARTMENT_STORE",
-            "DESKTOP_SOFTWARE",
-            "DIGITAL_ADVERTISING_AND_MARKETING_OR_UNTAGGED_AGENCIES",
-            "ECATALOG",
-            "ECOMMERCE_AGRICULTURE_AND_FARMING",
-            "EDUCATION_RESOURCES",
-            "ED_TECH",
-            "ELEARNING_AND_MASSIVE_ONLINE_OPEN_COURSES",
-            "ENGINEERING_AND_DESIGN",
-            "EVENTS",
-            "FAMILY_AND_HEALTH",
-            "FITNESS",
-            "FOOD",
-            "FOOTWEAR",
-            "FOR_PROFIT_COLLEGES_AND_UNIVERSITIES",
-            "GAMBLING",
-            "GOVERNMENT",
-            "GROCERY_AND_DRUG_AND_CONVENIENCE",
-            "HIGHWAYS",
-            "HOME_AND_OFFICE",
-            "HOME_IMPROVEMENT",
-            "HOME_SERVICE",
-            "HOTEL_AND_ACCOMODATION",
-            "HOUSEHOLD_GOODS",
-            "INDUSTRIAL_AND_FARM_VEHICLE",
-            "INSURANCE",
-            "INVESTMENT_BANK_AND_BROKERAGE",
-            "MEDIA",
-            "MOBILE_AND_SOCIAL",
-            "MOBILE_APPS",
-            "MOTORCYCLES",
-            "MOVIES",
-            "MUSEUMS_AND_PARKS_AND_LIBRARIES",
-            "MUSIC_AND_RADIO",
-            "NON_PROFIT",
-            "NOT_FOR_PROFIT_COLLEGES_AND_UNIVERSITIES",
-            "OFFICE",
-            "OIL_AND_GAS_AND_CONSUMABLE_FUEL",
-            "ONLINE_OR_SOFTWARE",
-            "OTHER_WIRELINE_SERVICES",
-            "PARTS_AND_SERVICE",
-            "PET",
-            "PET_RETAIL",
-            "PHARMACEUTICAL_OR_HEALTH",
-            "PHOTOGRAPHY_AND_FILMING_SERVICES",
-            "POLITICAL",
-            "PR",
-            "PUBLISHING_INTERNET",
-            "RAILROADS",
-            "REAL_ESTATE",
-            "REAL_MONEY_OR_SKILLED_GAMING",
-            "RECREATIONAL",
-            "RELIGIOUS",
-            "RESTAURANT",
-            "RETAIL_AND_CREDIT_UNION_AND_COMMERCIAL_BANK",
-            "SCHOOL_AND_EARLY_CHILDREN_EDCATION",
-            "SEASONAL_POLITICAL_SPENDERS",
-            "SMB_AGENTS_AND_PROMOTERS",
-            "SMB_ARTISTS_AND_PERFORMERS",
-            "SMB_CANVAS",
-            "SMB_CATALOG",
-            "SMB_CONSUMER_MOBILE_DEVICE",
-            "SMB_CROSS_PLATFORM",
-            "SMB_ELECTRONICS_AND_APPLIANCES",
-            "SMB_ENERGY",
-            "SMB_GAME_AND_TOY",
-            "SMB_INFORMATION",
-            "SMB_NAVIGATION_AND_MEASUREMENT",
-            "SMB_OPERATIONS_AND_OTHER",
-            "SMB_OTHER",
-            "SMB_PERSONAL_CARE",
-            "SMB_RELIGIOUS",
-            "SMB_RENTALS",
-            "SMB_REPAIR_AND_MAINTENANCE",
-            "SOFTWARE",
-            "SPORTING",
-            "SPORTS",
-            "STREAMING",
-            "TELEVISION",
-            "TOBACCO",
-            "TOY_AND_HOBBY",
-            "TRADE_SCHOOL",
-            "TRANSPORTATION_EQUIPMENT",
-            "TRAVAL_AGENCY",
-            "TRUCK_AND_MOVING",
-            "UTILITIES_AND_ENERGY_EQUIPMENT_AND_SERVICES",
-            "WATER_AND_SOFT_DRINK_AND_BAVERAGE",
-            "WIRELESS_SERVICES"
-        ]
-    },
-    {
-        "name": "adaccountcreationrequestvietnam_vertical_enum_param",
-        "node": "AdAccountCreationRequest",
-        "field_or_param": "vertical",
-        "values": [
-            "ADVERTISING_AND_MARKETING",
-            "AUTOMOTIVE",
-            "AUTO_AGENCY",
-            "CONSUMER_PACKAGED_GOODS",
-            "CPG_AND_BEVERAGE",
-            "ECOMMERCE",
-            "EDUCATION",
-            "ENERGY_AND_UTILITIES",
-            "ENTERTAINMENT_AND_MEDIA",
-            "FINANCIAL_SERVICES",
-            "GAMING",
-            "GOVERMENT_AND_POLITICS",
-            "MOTORCYCLES",
-            "ORGANIZATIONS_AND_ASSOCIATIONS",
-            "OTHER",
-            "PROFESSIONAL_SERVICES",
-            "RETAIL",
-            "TECHNOLOGY",
-            "TELECOM",
-            "TRAVEL"
-        ]
-    },
-    {
         "name": "adaccountcustomaudiences_claim_objective_enum_param",
         "node": "CustomAudience",
         "field_or_param": "claim_objective",
@@ -3117,81 +2964,6 @@
             "DECLINE",
             "EXPIRED",
             "IN_PROGRESS"
-        ]
-    },
-    {
-        "name": "adaccountpartner_integrations_partner_enum_param",
-        "node": "PartnerIntegrationLinked",
-        "field_or_param": "partner",
-        "values": [
-            "adjust",
-            "appsflyer",
-            "avana",
-            "backer_founder",
-            "bandzoogle",
-            "big_commerce",
-            "branch",
-            "cart_3d",
-            "default",
-            "drupal",
-            "ec_cube3",
-            "ecwid",
-            "eventbrite",
-            "feedonomics",
-            "foodkit",
-            "google_tag_manager",
-            "haravan",
-            "hubspot",
-            "infusionsoft_zap",
-            "intern",
-            "invoca",
-            "jimdo",
-            "joomla",
-            "jumpseller",
-            "kajabi",
-            "kochava",
-            "kraftly",
-            "m_particle",
-            "magento",
-            "magento_2",
-            "marketo",
-            "meesho",
-            "now_floats",
-            "opencart",
-            "prestashop",
-            "productsup",
-            "riversoft",
-            "ruby_on_rails",
-            "salesforce",
-            "salesforce_zap",
-            "segment",
-            "shop_up",
-            "shopify",
-            "shopify_online",
-            "shopline",
-            "singular",
-            "sirclo",
-            "squarespace",
-            "storeden",
-            "test",
-            "ticketmaster",
-            "verifone",
-            "waca",
-            "webflow",
-            "weebly",
-            "wix",
-            "woocommerce",
-            "wordpress",
-            "zoho_zap"
-        ]
-    },
-    {
-        "name": "adaccountpartnercategories_private_or_public_enum_param",
-        "node": "PartnerCategory",
-        "field_or_param": "private_or_public",
-        "values": [
-            "PRIVATE",
-            "PUBLIC"
         ]
     },
     {
@@ -4016,66 +3788,6 @@
             "this_year",
             "today",
             "yesterday"
-        ]
-    },
-    {
-        "name": "adcampaignasyncadrequests_statuses_enum_param",
-        "node": "AdAsyncRequest",
-        "field_or_param": "statuses",
-        "values": [
-            "CANCELED",
-            "CANCELED_DEPENDENCY",
-            "ERROR",
-            "ERROR_CONFLICTS",
-            "ERROR_DEPENDENCY",
-            "INITIAL",
-            "IN_PROGRESS",
-            "PENDING_DEPENDENCY",
-            "SUCCESS"
-        ]
-    },
-    {
-        "name": "adcampaigncopies_date_preset_enum_param",
-        "node": "AdSet",
-        "field_or_param": "date_preset",
-        "values": [
-            "last_14d",
-            "last_28d",
-            "last_30d",
-            "last_3d",
-            "last_7d",
-            "last_90d",
-            "last_month",
-            "last_quarter",
-            "last_week_mon_sun",
-            "last_week_sun_sat",
-            "last_year",
-            "lifetime",
-            "this_month",
-            "this_quarter",
-            "this_week_mon_today",
-            "this_week_sun_today",
-            "this_year",
-            "today",
-            "yesterday"
-        ]
-    },
-    {
-        "name": "adcampaigncopies_effective_status_enum_param",
-        "node": "AdSet",
-        "field_or_param": "effective_status",
-        "values": [
-            "ACTIVE",
-            "ADSET_PAUSED",
-            "ARCHIVED",
-            "CAMPAIGN_PAUSED",
-            "DELETED",
-            "DISAPPROVED",
-            "PAUSED",
-            "PENDING_BILLING_INFO",
-            "PENDING_REVIEW",
-            "PREAPPROVED",
-            "WITH_ISSUES"
         ]
     },
     {
@@ -5094,15 +4806,6 @@
         ]
     },
     {
-        "name": "adspixelreset_server_to_server_key_type_enum_param",
-        "node": "AdsPixel",
-        "field_or_param": "type",
-        "values": [
-            "PRIMARY",
-            "SECONDARY"
-        ]
-    },
-    {
         "name": "adspixelstats_aggregation_enum_param",
         "node": "AdsPixelStatsResult",
         "field_or_param": "aggregation",
@@ -5431,71 +5134,6 @@
         ]
     },
     {
-        "name": "applicationapp_insights_aggregateBy_enum_param",
-        "node": "InsightsQueryResult",
-        "field_or_param": "aggregateBy",
-        "values": [
-            "AVERAGE_JOURNEY_LENGTH",
-            "CONVERTED_JOURNEY_PERCENT",
-            "COUNT",
-            "COUNT_IDENTIFIED_USERS",
-            "COUNT_PER_USER",
-            "DAU",
-            "EVENT_SOURCE_IDS",
-            "JOURNEY_CHANNEL_INCLUSION",
-            "JOURNEY_INCLUSION",
-            "MAU",
-            "MEDIAN_JOURNEY_LENGTH",
-            "MEDIAN_VALUE",
-            "MEDIAN_VALUE_PER_USER",
-            "OVERLAP",
-            "PERCENTILES_COUNT",
-            "PERCENTILES_USD_VALUE",
-            "PERCENTILES_VALUE",
-            "SCORE",
-            "SESSIONS_PER_JOURNEY",
-            "SESSION_BOUNCE_RATE",
-            "SUM",
-            "SUM_IDENTIFIED_USERS",
-            "SUM_PER_EVENT",
-            "TOPK",
-            "UNKNOWN_USERS",
-            "USD_SUM",
-            "USD_SUM_IDENTIFIED_USERS",
-            "USD_SUM_PER_EVENT",
-            "USD_SUM_PER_USER",
-            "USD_VALUE_PER_USER",
-            "USERS",
-            "USER_PROPERTY_USER_COUNT",
-            "VALUE_PER_USER",
-            "WAU"
-        ]
-    },
-    {
-        "name": "applicationapp_insights_ecosystem_enum_param",
-        "node": "InsightsQueryResult",
-        "field_or_param": "ecosystem",
-        "values": [
-            "GAME",
-            "NON_GAME"
-        ]
-    },
-    {
-        "name": "applicationapp_insights_period_enum_param",
-        "node": "InsightsQueryResult",
-        "field_or_param": "period",
-        "values": [
-            "daily",
-            "days_28",
-            "hourly",
-            "lifetime",
-            "mins_15",
-            "monthly",
-            "range",
-            "weekly"
-        ]
-    },
-    {
         "name": "applicationapp_push_device_token_platform_enum_param",
         "node": "Application",
         "field_or_param": "platform",
@@ -5620,69 +5258,6 @@
         ]
     },
     {
-        "name": "applicationphotos_backdated_time_granularity_enum_param",
-        "node": "Photo",
-        "field_or_param": "backdated_time_granularity",
-        "values": [
-            "day",
-            "hour",
-            "min",
-            "month",
-            "none",
-            "year"
-        ]
-    },
-    {
-        "name": "applicationphotos_unpublished_content_type_enum_param",
-        "node": "Photo",
-        "field_or_param": "unpublished_content_type",
-        "values": [
-            "ADS_POST",
-            "DRAFT",
-            "INLINE_CREATED",
-            "PUBLISHED",
-            "SCHEDULED"
-        ]
-    },
-    {
-        "name": "applicationpicture_type_enum_param",
-        "node": "ProfilePictureSource",
-        "field_or_param": "type",
-        "values": [
-            "large",
-            "small"
-        ]
-    },
-    {
-        "name": "applicationroles_role_enum_param",
-        "node": "Application",
-        "field_or_param": "role",
-        "values": [
-            "administrators",
-            "developers",
-            "insights users",
-            "testers"
-        ]
-    },
-    {
-        "name": "applicationuploads_session_type_enum_param",
-        "node": "Object",
-        "field_or_param": "session_type",
-        "values": [
-            "attachment"
-        ]
-    },
-    {
-        "name": "audiocopyright_update_source",
-        "node": "AudioCopyright",
-        "field_or_param": "update_source",
-        "values": [
-            "ddex",
-            "edit_reference_dialog",
-            "reference_conflict_dialog"
-        ]
-    },
-    {
         "name": "business_two_factor_type",
         "node": "Business",
         "field_or_param": "two_factor_type",
@@ -5729,25 +5304,6 @@
             "CONTINUOUS_LIFT_CONFIG",
             "LIFT",
             "SPLIT_TEST"
-        ]
-    },
-    {
-        "name": "businessadaccountcreationrequests_status_enum_param",
-        "node": "AdAccountCreationRequest",
-        "field_or_param": "status",
-        "values": [
-            "APPEAL_APPROVED",
-            "APPEAL_DISAPPROVED",
-            "APPEAL_PENDING",
-            "APPEAL_UNDER_REVIEW",
-            "APPROVED",
-            "AUTO_APPROVED",
-            "AUTO_DISAPPROVED",
-            "CANCELLED",
-            "DISAPPROVED",
-            "PENDING",
-            "REQUESTED_CHANGE",
-            "UNDER_REVIEW"
         ]
     },
     {
@@ -6100,18 +5656,6 @@
         ]
     },
     {
-        "name": "businessgrp_plans_status_enum_param",
-        "node": "ReachFrequencyPrediction",
-        "field_or_param": "status",
-        "values": [
-            "ACTIVE",
-            "COMPLETED",
-            "DRAFT",
-            "EXPIRED",
-            "PENDING"
-        ]
-    },
-    {
         "name": "businessinitiated_audience_sharing_requests_request_status_enum_param",
         "node": "BusinessAssetSharingAgreement",
         "field_or_param": "request_status",
@@ -6255,72 +5799,6 @@
             "home_listings",
             "hotels",
             "vehicles"
-        ]
-    },
-    {
-        "name": "businesspartner_integrations_partner_enum_param",
-        "node": "PartnerIntegrationLinked",
-        "field_or_param": "partner",
-        "values": [
-            "adjust",
-            "appsflyer",
-            "avana",
-            "backer_founder",
-            "bandzoogle",
-            "big_commerce",
-            "branch",
-            "cart_3d",
-            "default",
-            "drupal",
-            "ec_cube3",
-            "ecwid",
-            "eventbrite",
-            "feedonomics",
-            "foodkit",
-            "google_tag_manager",
-            "haravan",
-            "hubspot",
-            "infusionsoft_zap",
-            "intern",
-            "invoca",
-            "jimdo",
-            "joomla",
-            "jumpseller",
-            "kajabi",
-            "kochava",
-            "kraftly",
-            "m_particle",
-            "magento",
-            "magento_2",
-            "marketo",
-            "meesho",
-            "now_floats",
-            "opencart",
-            "prestashop",
-            "productsup",
-            "riversoft",
-            "ruby_on_rails",
-            "salesforce",
-            "salesforce_zap",
-            "segment",
-            "shop_up",
-            "shopify",
-            "shopify_online",
-            "shopline",
-            "singular",
-            "sirclo",
-            "squarespace",
-            "storeden",
-            "test",
-            "ticketmaster",
-            "verifone",
-            "waca",
-            "webflow",
-            "weebly",
-            "wix",
-            "woocommerce",
-            "wordpress",
-            "zoho_zap"
         ]
     },
     {
@@ -6597,17 +6075,6 @@
         ]
     },
     {
-        "name": "businessuser_invitations_status_enum_param",
-        "node": "BusinessRoleRequest",
-        "field_or_param": "status",
-        "values": [
-            "ACCEPTED",
-            "DECLINED",
-            "EXPIRED",
-            "PENDING"
-        ]
-    },
-    {
         "name": "businessuser_role",
         "node": "BusinessUser",
         "field_or_param": "role",
@@ -6629,170 +6096,6 @@
             "EMPLOYEE",
             "FINANCE_ANALYST",
             "FINANCE_EDITOR"
-        ]
-    },
-    {
-        "name": "businessvietnamadaccountcreationrequests_subvertical_enum_param",
-        "node": "AdAccountCreationRequest",
-        "field_or_param": "subvertical",
-        "values": [
-            "ACCOUNTING_AND_TAXES_AND_LEGAL",
-            "AGRICULTURE_AND_FARMING",
-            "AIR",
-            "AIR_FREIGHT_OR_PACKAGE",
-            "APPAREL_AND_ACCESSORIES",
-            "ARTS",
-            "AUCTIONS",
-            "AUTOMOTIVE_MANUFACTURER",
-            "AUTO_AGENCY",
-            "AUTO_RENTAL",
-            "B2B",
-            "B2B_MANUFACTURING",
-            "BEAUTY_AND_PERSONAL_CARE",
-            "BEER_AND_WINE_AND_LIQUOR",
-            "BOOKSTORES",
-            "BUSINESS_SUPPORT_SERVICES",
-            "BUS_AND_TAXI_AND_AUTO_RETAL",
-            "CABLE_AND_SATELLITE",
-            "CAREER",
-            "COMPUTING_AND_PERIPHERALS",
-            "CONSOLE_DEVELOPER",
-            "CONSOLE_DEVICE",
-            "CONSTRUCTION_AND_MINING",
-            "CONSULTING",
-            "CONSUMER_ELECTRONICS",
-            "CONSUMER_TECH",
-            "CREDIT_AND_FINANCING_AND_MORTAGES",
-            "CRUISES_AND_MARINE",
-            "CVB_CONVENTION_AND_VISITORS_BUREAU",
-            "DAILYDEALS",
-            "DATING",
-            "DEALERSHIP",
-            "DEPARTMENT_STORE",
-            "DESKTOP_SOFTWARE",
-            "DIGITAL_ADVERTISING_AND_MARKETING_OR_UNTAGGED_AGENCIES",
-            "ECATALOG",
-            "ECOMMERCE_AGRICULTURE_AND_FARMING",
-            "EDUCATION_RESOURCES",
-            "ED_TECH",
-            "ELEARNING_AND_MASSIVE_ONLINE_OPEN_COURSES",
-            "ENGINEERING_AND_DESIGN",
-            "EVENTS",
-            "FAMILY_AND_HEALTH",
-            "FITNESS",
-            "FOOD",
-            "FOOTWEAR",
-            "FOR_PROFIT_COLLEGES_AND_UNIVERSITIES",
-            "GAMBLING",
-            "GOVERNMENT",
-            "GROCERY_AND_DRUG_AND_CONVENIENCE",
-            "HIGHWAYS",
-            "HOME_AND_OFFICE",
-            "HOME_IMPROVEMENT",
-            "HOME_SERVICE",
-            "HOTEL_AND_ACCOMODATION",
-            "HOUSEHOLD_GOODS",
-            "INDUSTRIAL_AND_FARM_VEHICLE",
-            "INSURANCE",
-            "INVESTMENT_BANK_AND_BROKERAGE",
-            "MEDIA",
-            "MOBILE_AND_SOCIAL",
-            "MOBILE_APPS",
-            "MOTORCYCLES",
-            "MOVIES",
-            "MUSEUMS_AND_PARKS_AND_LIBRARIES",
-            "MUSIC_AND_RADIO",
-            "NON_PROFIT",
-            "NOT_FOR_PROFIT_COLLEGES_AND_UNIVERSITIES",
-            "OFFICE",
-            "OIL_AND_GAS_AND_CONSUMABLE_FUEL",
-            "ONLINE_OR_SOFTWARE",
-            "OTHER_WIRELINE_SERVICES",
-            "PARTS_AND_SERVICE",
-            "PET",
-            "PET_RETAIL",
-            "PHARMACEUTICAL_OR_HEALTH",
-            "PHOTOGRAPHY_AND_FILMING_SERVICES",
-            "POLITICAL",
-            "PR",
-            "PUBLISHING_INTERNET",
-            "RAILROADS",
-            "REAL_ESTATE",
-            "REAL_MONEY_OR_SKILLED_GAMING",
-            "RECREATIONAL",
-            "RELIGIOUS",
-            "RESTAURANT",
-            "RETAIL_AND_CREDIT_UNION_AND_COMMERCIAL_BANK",
-            "SCHOOL_AND_EARLY_CHILDREN_EDCATION",
-            "SEASONAL_POLITICAL_SPENDERS",
-            "SMB_AGENTS_AND_PROMOTERS",
-            "SMB_ARTISTS_AND_PERFORMERS",
-            "SMB_CANVAS",
-            "SMB_CATALOG",
-            "SMB_CONSUMER_MOBILE_DEVICE",
-            "SMB_CROSS_PLATFORM",
-            "SMB_ELECTRONICS_AND_APPLIANCES",
-            "SMB_ENERGY",
-            "SMB_GAME_AND_TOY",
-            "SMB_INFORMATION",
-            "SMB_NAVIGATION_AND_MEASUREMENT",
-            "SMB_OPERATIONS_AND_OTHER",
-            "SMB_OTHER",
-            "SMB_PERSONAL_CARE",
-            "SMB_RELIGIOUS",
-            "SMB_RENTALS",
-            "SMB_REPAIR_AND_MAINTENANCE",
-            "SOFTWARE",
-            "SPORTING",
-            "SPORTS",
-            "STREAMING",
-            "TELEVISION",
-            "TOBACCO",
-            "TOY_AND_HOBBY",
-            "TRADE_SCHOOL",
-            "TRANSPORTATION_EQUIPMENT",
-            "TRAVAL_AGENCY",
-            "TRUCK_AND_MOVING",
-            "UTILITIES_AND_ENERGY_EQUIPMENT_AND_SERVICES",
-            "WATER_AND_SOFT_DRINK_AND_BAVERAGE",
-            "WIRELESS_SERVICES"
-        ]
-    },
-    {
-        "name": "businessvietnamadaccountcreationrequests_vertical_enum_param",
-        "node": "AdAccountCreationRequest",
-        "field_or_param": "vertical",
-        "values": [
-            "ADVERTISING_AND_MARKETING",
-            "AUTOMOTIVE",
-            "AUTO_AGENCY",
-            "CONSUMER_PACKAGED_GOODS",
-            "CPG_AND_BEVERAGE",
-            "ECOMMERCE",
-            "EDUCATION",
-            "ENERGY_AND_UTILITIES",
-            "ENTERTAINMENT_AND_MEDIA",
-            "FINANCIAL_SERVICES",
-            "GAMING",
-            "GOVERMENT_AND_POLITICS",
-            "MOTORCYCLES",
-            "ORGANIZATIONS_AND_ASSOCIATIONS",
-            "OTHER",
-            "PROFESSIONAL_SERVICES",
-            "RETAIL",
-            "TECHNOLOGY",
-            "TELECOM",
-            "TRAVEL"
-        ]
-    },
-    {
-        "name": "calibratorexistingruleactivities_event_type_enum_param",
-        "node": "CalibratorExistingRuleActivities",
-        "field_or_param": "event_type",
-        "values": [
-            "RULE_CREATE",
-            "RULE_EVENT_REMAPPING",
-            "RULE_STATUS_UPDATE"
         ]
     },
     {
@@ -6929,16 +6232,6 @@
         ]
     },
     {
-        "name": "customconversionactivities_event_type_enum_param",
-        "node": "CustomConversionActivities",
-        "field_or_param": "event_type",
-        "values": [
-            "conversion_create",
-            "conversion_delete",
-            "conversion_update"
-        ]
-    },
-    {
         "name": "customconversionstats_aggregation_enum_param",
         "node": "CustomConversionStatsResult",
         "field_or_param": "aggregation",
@@ -6951,20 +6244,6 @@
             "unmatched_usd_amount",
             "url",
             "usd_amount"
-        ]
-    },
-    {
-        "name": "eventcomments_comment_privacy_value_enum_param",
-        "node": "Comment",
-        "field_or_param": "comment_privacy_value",
-        "values": [
-            "DEFAULT_PRIVACY",
-            "FRIENDS_AND_POST_OWNER",
-            "FRIENDS_ONLY",
-            "GRAPHQL_MULTIPLE_VALUE_HACK_DO_NOT_USE",
-            "OWNER_OR_COMMENTER",
-            "SIDE_CONVERSATION",
-            "SIDE_CONVERSATION_AND_POST_OWNER"
         ]
     },
     {
@@ -7126,189 +6405,12 @@
         ]
     },
     {
-        "name": "eventsourcegroupuserpermissions_role_enum_param",
+        "name": "eventsourcegroupuserpermissions_tasks_enum_param",
         "node": "EventSourceGroup",
-        "field_or_param": "role",
+        "field_or_param": "tasks",
         "values": [
-            "ANALYST",
-            "LIMITED_ANALYST"
-        ]
-    },
-    {
-        "name": "eventvideos_container_type_enum_param",
-        "node": "AdVideo",
-        "field_or_param": "container_type",
-        "values": [
-            "AD_BREAK_PREVIEW",
-            "AD_DERIVATIVE",
-            "AGE_UP",
-            "ALBUM_MULTIMEDIA_POST",
-            "ALOHA_CALL_VIDEO",
-            "ALOHA_SUPERFRAME",
-            "APP_REVIEW_SCREENCAST",
-            "ATLAS_VIDEO",
-            "AUDIO_BROADCAST",
-            "BELL_POLL",
-            "BRAND_EQUITY_POLL_VIDEO",
-            "BROADCAST",
-            "CANDIDATE_VIDEOS",
-            "CANVAS",
-            "CFC_VIDEO",
-            "CIVIC_PROPOSAL_COVER_VIDEO",
-            "CONTAINED_POST_ATTACHMENT",
-            "CONTAINED_POST_AUDIO_BROADCAST",
-            "CONTAINED_POST_BROADCAST",
-            "COPYRIGHT_REFERENCE_BROADCAST",
-            "COPYRIGHT_REFERENCE_VIDEO",
-            "CULTURAL_MOMENT_DEPRECATED",
-            "DCO_AD_ASSET_FEED",
-            "DCO_AUTOGEN_VIDEO",
-            "DCO_TRIMMED_VIDEO",
-            "DIRECTED_POST_ATTACHMENT",
-            "DIRECT_INBOX",
-            "DIRECT_INBOX_REACTION",
-            "DYNAMIC_ITEM_DISPLAY_BUNDLE",
-            "DYNAMIC_ITEM_VIDEO",
-            "DYNAMIC_TEMPLATE_VIDEO",
-            "EVENT_COVER_VIDEO",
-            "EVENT_TOUR",
-            "FACECAST_DVR",
-            "FUNDRAISER_COVER_VIDEO",
-            "GAME_CLIP",
-            "GOODWILL_ANNIVERSARY_DEPRECATED",
-            "GOODWILL_ANNIVERSARY_PROMOTION_DEPRECATED",
-            "GOODWILL_VIDEO_CONTAINED_SHARE",
-            "GOODWILL_VIDEO_PROMOTION",
-            "GOODWILL_VIDEO_SHARE",
-            "GOODWILL_VIDEO_TOKEN_REQUIRED",
-            "GROUP_POST",
-            "HEURISTIC_CLUSTER_VIDEO",
-            "HEURISTIC_PREVIEW",
-            "INSPIRATION_VIDEO",
-            "INSTAGRAM_VIDEO_COPY",
-            "INSTANT_APPLICATION_PREVIEW",
-            "INSTANT_ARTICLE",
-            "INSTANT_GAME_CLIP",
-            "ISSUE_MODULE",
-            "JOB_APPLICATION_VIDEO",
-            "JOB_OPENING_VIDEO",
-            "KOTOTORO",
-            "LEARN",
-            "LEGACY",
-            "LIVE_CREATIVE_KIT_VIDEO",
-            "LIVE_LINEAR_VIDEO_CHANNEL_INTERNAL_BROADCAST",
-            "LIVE_PHOTO",
-            "LOOK_NOW_DEPRECATED",
-            "MOMENTS_VIDEO",
-            "NO_STORY",
-            "OCULUS_CREATOR_PORTAL",
-            "OCULUS_VENUES_BROADCAST",
-            "OFFERS_VIDEO",
-            "PAGES_COVER_VIDEO",
-            "PAGE_REVIEW_SCREENCAST",
-            "PAGE_SLIDESHOW_VIDEO",
-            "PIXELCLOUD",
-            "PREMIERE_SOURCE",
-            "PRIVATE_GALLERY_VIDEO",
-            "PRODUCT_VIDEO",
-            "PROFILE_COVER_VIDEO",
-            "PROFILE_INTRO_CARD",
-            "PROFILE_TO_PAGE_UPLOADED_VIDEO",
-            "PROFILE_VIDEO",
-            "PROTON",
-            "QUICK_PROMOTION",
-            "REPLACE_VIDEO",
-            "SALES_CLIENT_INTERACTION",
-            "SAY_THANKS_DEPRECATED",
-            "SLIDESHOW_ANIMOTO",
-            "SLIDESHOW_SHAKR",
-            "SOTTO_CONTENT",
-            "STORYLINE",
-            "STORYLINE_WITH_EXTERNAL_MUSIC",
-            "STORY_ARCHIVE_VIDEO",
-            "STORY_CARD_TEMPLATE",
-            "TAROT_DIGEST",
-            "TEMP_MULTIMEDIA_POST",
-            "UNLISTED",
-            "VIDEO_COMMENT",
-            "WOODHENGE",
-            "YOUR_DAY"
-        ]
-    },
-    {
-        "name": "eventvideos_content_category_enum_param",
-        "node": "AdVideo",
-        "field_or_param": "content_category",
-        "values": [
-            "BEAUTY_FASHION",
-            "BUSINESS",
-            "CARS_TRUCKS",
-            "COMEDY",
-            "CUTE_ANIMALS",
-            "ENTERTAINMENT",
-            "FAMILY",
-            "FOOD_HEALTH",
-            "HOME",
-            "LIFESTYLE",
-            "MUSIC",
-            "NEWS",
-            "OTHER",
-            "POLITICS",
-            "SCIENCE",
-            "SPORTS",
-            "TECHNOLOGY",
-            "VIDEO_GAMING"
-        ]
-    },
-    {
-        "name": "eventvideos_formatting_enum_param",
-        "node": "AdVideo",
-        "field_or_param": "formatting",
-        "values": [
-            "MARKDOWN",
-            "PLAINTEXT"
-        ]
-    },
-    {
-        "name": "eventvideos_original_projection_type_enum_param",
-        "node": "AdVideo",
-        "field_or_param": "original_projection_type",
-        "values": [
-            "cubemap",
-            "equiangular_cubemap",
-            "equirectangular",
-            "half_equirectangular"
-        ]
-    },
-    {
-        "name": "eventvideos_swap_mode_enum_param",
-        "node": "AdVideo",
-        "field_or_param": "swap_mode",
-        "values": [
-            "replace"
-        ]
-    },
-    {
-        "name": "eventvideos_unpublished_content_type_enum_param",
-        "node": "AdVideo",
-        "field_or_param": "unpublished_content_type",
-        "values": [
-            "ADS_POST",
-            "DRAFT",
-            "INLINE_CREATED",
-            "PUBLISHED",
-            "SCHEDULED"
-        ]
-    },
-    {
-        "name": "eventvideos_upload_phase_enum_param",
-        "node": "AdVideo",
-        "field_or_param": "upload_phase",
-        "values": [
-            "cancel",
-            "finish",
-            "start",
-            "transfer"
+            "ANALYZE",
+            "ANALYZE_WITH_LIMITATIONS"
         ]
     },
     {
@@ -7918,22 +7020,6 @@
         ]
     },
     {
-        "name": "instagramuserassigned_users_role_enum_param",
-        "node": "InstagramUser",
-        "field_or_param": "role",
-        "values": [
-            "ANALYST"
-        ]
-    },
-    {
-        "name": "instagramuseruserpermissions_role_enum_param",
-        "node": "InstagramUser",
-        "field_or_param": "role",
-        "values": [
-            "ANALYST"
-        ]
-    },
-    {
         "name": "instantarticleinsights_breakdown_enum_param",
         "node": "InstantArticleInsightsQueryResult",
         "field_or_param": "breakdown",
@@ -7970,69 +7056,6 @@
             "ARCHIVED",
             "DELETED",
             "DRAFT"
-        ]
-    },
-    {
-        "name": "leadgendatadraft_locale",
-        "node": "LeadGenDataDraft",
-        "field_or_param": "locale",
-        "values": [
-            "AR_AR",
-            "CS_CZ",
-            "DA_DK",
-            "DE_DE",
-            "EN_GB",
-            "EN_US",
-            "ES_ES",
-            "ES_LA",
-            "FI_FI",
-            "FR_FR",
-            "HE_IL",
-            "HI_IN",
-            "HU_HU",
-            "ID_ID",
-            "IT_IT",
-            "JA_JP",
-            "KO_KR",
-            "NB_NO",
-            "NL_NL",
-            "PL_PL",
-            "PT_BR",
-            "PT_PT",
-            "RO_RO",
-            "RU_RU",
-            "SV_SE",
-            "TH_TH",
-            "TR_TR",
-            "VI_VN",
-            "ZH_CN",
-            "ZH_HK",
-            "ZH_TW"
-        ]
-    },
-    {
-        "name": "leadgendatadraft_status",
-        "node": "LeadGenDataDraft",
-        "field_or_param": "status",
-        "values": [
-            "ACTIVE",
-            "ARCHIVED",
-            "DELETED",
-            "DRAFT"
-        ]
-    },
-    {
-        "name": "lifeeventcomments_comment_privacy_value_enum_param",
-        "node": "Comment",
-        "field_or_param": "comment_privacy_value",
-        "values": [
-            "DEFAULT_PRIVACY",
-            "FRIENDS_AND_POST_OWNER",
-            "FRIENDS_ONLY",
-            "GRAPHQL_MULTIPLE_VALUE_HACK_DO_NOT_USE",
-            "OWNER_OR_COMMENTER",
-            "SIDE_CONVERSATION",
-            "SIDE_CONVERSATION_AND_POST_OWNER"
         ]
     },
     {
@@ -8074,49 +7097,6 @@
             "OWNER_OR_COMMENTER",
             "SIDE_CONVERSATION",
             "SIDE_CONVERSATION_AND_POST_OWNER"
-        ]
-    },
-    {
-        "name": "linkcomments_filter_enum_param",
-        "node": "Comment",
-        "field_or_param": "filter",
-        "values": [
-            "stream",
-            "toplevel"
-        ]
-    },
-    {
-        "name": "linkcomments_live_filter_enum_param",
-        "node": "Comment",
-        "field_or_param": "live_filter",
-        "values": [
-            "filter_low_quality",
-            "no_filter"
-        ]
-    },
-    {
-        "name": "linkcomments_order_enum_param",
-        "node": "Comment",
-        "field_or_param": "order",
-        "values": [
-            "chronological",
-            "reverse_chronological"
-        ]
-    },
-    {
-        "name": "linkreactions_type_enum_param",
-        "node": "Profile",
-        "field_or_param": "type",
-        "values": [
-            "ANGRY",
-            "HAHA",
-            "LIKE",
-            "LOVE",
-            "NONE",
-            "PRIDE",
-            "SAD",
-            "THANKFUL",
-            "WOW"
         ]
     },
     {
@@ -8420,40 +7400,6 @@
         ]
     },
     {
-        "name": "nativeoffercodes_unique_codes_file_code_type_enum_param",
-        "node": "NativeOffer",
-        "field_or_param": "unique_codes_file_code_type",
-        "values": [
-            "barcodes",
-            "discount_and_barcodes",
-            "discount_and_discount",
-            "discount_codes",
-            "instore_barcodes",
-            "instore_discount_codes",
-            "online_discount_codes"
-        ]
-    },
-    {
-        "name": "offlineconversiondatasetactivities_event_type_enum_param",
-        "node": "OfflineConversionDataSetActivities",
-        "field_or_param": "event_type",
-        "values": [
-            "add_dataset_to_business",
-            "add_user_to_dataset",
-            "create_custom_audience",
-            "create_custom_conversion",
-            "dataset_assign_to_adacct",
-            "dataset_autotrack_on_adacct",
-            "dataset_disable_autotrack_on_adacct",
-            "dataset_unassign_from_adacct",
-            "remove_user_from_dataset",
-            "share_custom_audience",
-            "unshare_custom_audience",
-            "update_custom_conversion",
-            "update_user_role_on_dataset"
-        ]
-    },
-    {
         "name": "offlineconversiondatasetagencies_permitted_roles_enum_param",
         "node": "OfflineConversionDataSet",
         "field_or_param": "permitted_roles",
@@ -8517,82 +7463,6 @@
         ]
     },
     {
-        "name": "offlineconversiondatasetuserpermissions_role_enum_param",
-        "node": "OfflineConversionDataSet",
-        "field_or_param": "role",
-        "values": [
-            "ADMIN",
-            "ADVERTISER",
-            "UPLOADER"
-        ]
-    },
-    {
-        "name": "opengraphobjectcomments_comment_privacy_value_enum_param",
-        "node": "Comment",
-        "field_or_param": "comment_privacy_value",
-        "values": [
-            "DEFAULT_PRIVACY",
-            "FRIENDS_AND_POST_OWNER",
-            "FRIENDS_ONLY",
-            "GRAPHQL_MULTIPLE_VALUE_HACK_DO_NOT_USE",
-            "OWNER_OR_COMMENTER",
-            "SIDE_CONVERSATION",
-            "SIDE_CONVERSATION_AND_POST_OWNER"
-        ]
-    },
-    {
-        "name": "opengraphobjectcomments_filter_enum_param",
-        "node": "Comment",
-        "field_or_param": "filter",
-        "values": [
-            "stream",
-            "toplevel"
-        ]
-    },
-    {
-        "name": "opengraphobjectcomments_live_filter_enum_param",
-        "node": "Comment",
-        "field_or_param": "live_filter",
-        "values": [
-            "filter_low_quality",
-            "no_filter"
-        ]
-    },
-    {
-        "name": "opengraphobjectcomments_order_enum_param",
-        "node": "Comment",
-        "field_or_param": "order",
-        "values": [
-            "chronological",
-            "reverse_chronological"
-        ]
-    },
-    {
-        "name": "opengraphobjectphotos_backdated_time_granularity_enum_param",
-        "node": "Photo",
-        "field_or_param": "backdated_time_granularity",
-        "values": [
-            "day",
-            "hour",
-            "min",
-            "month",
-            "none",
-            "year"
-        ]
-    },
-    {
-        "name": "opengraphobjectphotos_unpublished_content_type_enum_param",
-        "node": "Photo",
-        "field_or_param": "unpublished_content_type",
-        "values": [
-            "ADS_POST",
-            "DRAFT",
-            "INLINE_CREATED",
-            "PUBLISHED",
-            "SCHEDULED"
-        ]
-    },
-    {
         "name": "opengraphobjectpicture_type_enum_param",
         "node": "ProfilePictureSource",
         "field_or_param": "type",
@@ -8603,22 +7473,6 @@
             "small",
             "square",
             "thumbnail"
-        ]
-    },
-    {
-        "name": "opengraphobjectreactions_type_enum_param",
-        "node": "Profile",
-        "field_or_param": "type",
-        "values": [
-            "ANGRY",
-            "HAHA",
-            "LIKE",
-            "LOVE",
-            "NONE",
-            "PRIDE",
-            "SAD",
-            "THANKFUL",
-            "WOW"
         ]
     },
     {
@@ -8703,30 +7557,6 @@
             "EMAIL_NOTIF",
             "MOBILE_NOTIF",
             "POST_AS_SELF"
-        ]
-    },
-    {
-        "name": "pageadmin_sticky_settings_audience_enum_param",
-        "node": "Page",
-        "field_or_param": "audience",
-        "values": [
-            "AUTO_LOOKALIKE",
-            "AUTO_PAGE_LOOKALIKE",
-            "AUTO_TARGETING",
-            "CREATE_NEW",
-            "CUSTOM_AUDIENCE",
-            "DISTRICT",
-            "EVENT_CUSTOM_AUDIENCES",
-            "EVENT_ENGAGEMENT",
-            "FANS",
-            "GROUPER",
-            "IG_PROMOTED_POST_AUTO",
-            "LOCAL",
-            "LOOKALIKE",
-            "MULT_CUSTOM_AUDIENCES",
-            "NCPP",
-            "SAVED_AUDIENCE",
-            "SMART_AUDIENCE"
         ]
     },
     {
@@ -8877,83 +7707,6 @@
     },
     {
         "name": "pagecall_to_actions_web_destination_type_enum_param",
-        "node": "PageCallToAction",
-        "field_or_param": "web_destination_type",
-        "values": [
-            "BECOME_SUPPORTER",
-            "EMAIL",
-            "MESSENGER",
-            "NONE",
-            "SHOP_ON_FACEBOOK",
-            "WEBSITE"
-        ]
-    },
-    {
-        "name": "pagecalltoaction_android_destination_type",
-        "node": "PageCallToAction",
-        "field_or_param": "android_destination_type",
-        "values": [
-            "APP_DEEPLINK",
-            "EMAIL",
-            "FACEBOOK_APP",
-            "MESSENGER",
-            "NONE",
-            "PHONE_CALL",
-            "SHOP_ON_FACEBOOK",
-            "WEBSITE"
-        ]
-    },
-    {
-        "name": "pagecalltoaction_iphone_destination_type",
-        "node": "PageCallToAction",
-        "field_or_param": "iphone_destination_type",
-        "values": [
-            "APP_DEEPLINK",
-            "EMAIL",
-            "FACEBOOK_APP",
-            "MESSENGER",
-            "NONE",
-            "PHONE_CALL",
-            "SHOP_ON_FACEBOOK",
-            "WEBSITE"
-        ]
-    },
-    {
-        "name": "pagecalltoaction_type",
-        "node": "PageCallToAction",
-        "field_or_param": "type",
-        "values": [
-            "BOOK_APPOINTMENT",
-            "BOOK_NOW",
-            "BUY_TICKETS",
-            "CALL_NOW",
-            "CHARITY_DONATE",
-            "CONTACT_US",
-            "DONATE_NOW",
-            "EMAIL",
-            "GET_DIRECTIONS",
-            "GET_OFFER",
-            "GET_OFFER_VIEW",
-            "INTERESTED",
-            "LEARN_MORE",
-            "LISTEN",
-            "LOCAL_DEV_PLATFORM",
-            "MESSAGE",
-            "OPEN_APP",
-            "PLAY_MUSIC",
-            "PLAY_NOW",
-            "REQUEST_APPOINTMENT",
-            "REQUEST_QUOTE",
-            "SHOP_NOW",
-            "SHOP_ON_FACEBOOK",
-            "SIGN_UP",
-            "VISIT_GROUP",
-            "WATCH_NOW",
-            "WOODHENGE_SUPPORT"
-        ]
-    },
-    {
-        "name": "pagecalltoaction_web_destination_type",
         "node": "PageCallToAction",
         "field_or_param": "web_destination_type",
         "values": [
@@ -9201,44 +7954,6 @@
         ]
     },
     {
-        "name": "pageleadgen_draft_forms_locale_enum_param",
-        "node": "LeadGenDataDraft",
-        "field_or_param": "locale",
-        "values": [
-            "AR_AR",
-            "CS_CZ",
-            "DA_DK",
-            "DE_DE",
-            "EN_GB",
-            "EN_US",
-            "ES_ES",
-            "ES_LA",
-            "FI_FI",
-            "FR_FR",
-            "HE_IL",
-            "HI_IN",
-            "HU_HU",
-            "ID_ID",
-            "IT_IT",
-            "JA_JP",
-            "KO_KR",
-            "NB_NO",
-            "NL_NL",
-            "PL_PL",
-            "PT_BR",
-            "PT_PT",
-            "RO_RO",
-            "RU_RU",
-            "SV_SE",
-            "TH_TH",
-            "TR_TR",
-            "VI_VN",
-            "ZH_CN",
-            "ZH_HK",
-            "ZH_TW"
-        ]
-    },
-    {
         "name": "pageleadgen_forms_locale_enum_param",
         "node": "LeadgenForm",
         "field_or_param": "locale",
@@ -9363,16 +8078,6 @@
         ]
     },
     {
-        "name": "pagemedia_fingerprints_fingerprint_validity_enum_param",
-        "node": "MediaFingerprint",
-        "field_or_param": "fingerprint_validity",
-        "values": [
-            "EXPIRED",
-            "EXPIRING",
-            "VALID"
-        ]
-    },
-    {
         "name": "pagemessages_messaging_type_enum_param",
         "node": "Page",
         "field_or_param": "messaging_type",
@@ -9484,25 +8189,6 @@
             "SPANISH",
             "SWEDISH",
             "VIETNAMESE"
-        ]
-    },
-    {
-        "name": "pagenotifications_filtering_enum_param",
-        "node": "Page",
-        "field_or_param": "filtering",
-        "values": [
-            "ema",
-            "groups",
-            "groups_social"
-        ]
-    },
-    {
-        "name": "pagenotifications_type_enum_param",
-        "node": "Page",
-        "field_or_param": "type",
-        "values": [
-            "content_update",
-            "generic"
         ]
     },
     {
@@ -9664,90 +8350,6 @@
         ]
     },
     {
-        "name": "pagepostpromotions_audience_enum_param",
-        "node": "Object",
-        "field_or_param": "audience",
-        "values": [
-            "AUTO_LOOKALIKE",
-            "AUTO_PAGE_LOOKALIKE",
-            "AUTO_TARGETING",
-            "CREATE_NEW",
-            "CUSTOM_AUDIENCE",
-            "DISTRICT",
-            "EVENT_CUSTOM_AUDIENCES",
-            "EVENT_ENGAGEMENT",
-            "FANS",
-            "GROUPER",
-            "IG_PROMOTED_POST_AUTO",
-            "LOCAL",
-            "LOOKALIKE",
-            "MULT_CUSTOM_AUDIENCES",
-            "NCPP",
-            "SAVED_AUDIENCE",
-            "SMART_AUDIENCE"
-        ]
-    },
-    {
-        "name": "pagepostpromotions_cta_type_enum_param",
-        "node": "Object",
-        "field_or_param": "cta_type",
-        "values": [
-            "ADD_TO_CART",
-            "APPLY_NOW",
-            "BOOK_TRAVEL",
-            "BUY",
-            "BUY_NOW",
-            "BUY_TICKETS",
-            "CALL",
-            "CALL_ME",
-            "CONTACT",
-            "CONTACT_US",
-            "DONATE",
-            "DONATE_NOW",
-            "DOWNLOAD",
-            "EVENT_RSVP",
-            "FIND_A_GROUP",
-            "FIND_YOUR_GROUPS",
-            "FOLLOW_NEWS_STORYLINE",
-            "GET_DIRECTIONS",
-            "GET_OFFER",
-            "GET_OFFER_VIEW",
-            "GET_QUOTE",
-            "GET_SHOWTIMES",
-            "INSTALL_APP",
-            "INSTALL_MOBILE_APP",
-            "LEARN_MORE",
-            "LIKE_PAGE",
-            "LISTEN_MUSIC",
-            "LISTEN_NOW",
-            "MESSAGE_PAGE",
-            "MOBILE_DOWNLOAD",
-            "MOMENTS",
-            "NO_BUTTON",
-            "OPEN_LINK",
-            "ORDER_NOW",
-            "PLAY_GAME",
-            "RECORD_NOW",
-            "SAY_THANKS",
-            "SEE_MORE",
-            "SELL_NOW",
-            "SHARE",
-            "SHOP_NOW",
-            "SIGN_UP",
-            "SOTTO_SUBSCRIBE",
-            "SUBSCRIBE",
-            "UPDATE_APP",
-            "USE_APP",
-            "USE_MOBILE_APP",
-            "VIDEO_ANNOTATION",
-            "VISIT_PAGES_FEED",
-            "WATCH_MORE",
-            "WATCH_VIDEO",
-            "WHATSAPP_MESSAGE",
-            "WOODHENGE_SUPPORT"
-        ]
-    },
-    {
         "name": "pagepostreactions_type_enum_param",
         "node": "Profile",
         "field_or_param": "type",
@@ -9769,146 +8371,6 @@
         "field_or_param": "with",
         "values": [
             "LOCATION"
-        ]
-    },
-    {
-        "name": "pagesaved_filters_section_enum_param",
-        "node": "PageSavedFilter",
-        "field_or_param": "section",
-        "values": [
-            "ACTIVE_FUNDRAISERS",
-            "ADS_CANVAS",
-            "ADS_POSTS",
-            "ALLOWED",
-            "ALL_REFERENCE_FILES",
-            "ARCHIVED_EVENTS",
-            "ATTRIBUTIONS",
-            "AUDIO_RELEASES",
-            "BLOCKED",
-            "BRANDED_CONTENT",
-            "BRANDED_CONTENT_CREATOR",
-            "BROADCASTED_MESSAGES",
-            "CANDIDATE_VIDEOS",
-            "CHEX_COMPLETED_ORDERS",
-            "CHEX_PENDING_ORDERS",
-            "CLAIMED",
-            "COMMERCE_COLLECTIONS",
-            "COMMERCE_MERCHANT_SETTINGS",
-            "COMMERCE_PAST_ORDERS",
-            "COMMERCE_PENDING_ORDERS",
-            "COMMERCE_PLATFORM_SETTINGS",
-            "COMMERCE_PRODUCTS",
-            "COMMERCE_SHOP_LINK",
-            "CONTENT_TESTS",
-            "CREATOR_STUDIO",
-            "CREATOR_STUDIO_ALL_REFERENCE_FILES",
-            "CREATOR_STUDIO_BLOCKED",
-            "CREATOR_STUDIO_DISPUTES",
-            "CREATOR_STUDIO_PUBLISHED_ALL_REFERENCE_FILES",
-            "CREATOR_STUDIO_PUBLISHED_BLOCKED",
-            "CREATOR_STUDIO_PUBLISHED_DISPUTES",
-            "CREATOR_STUDIO_PUBLISHED_MANUAL_REVIEW",
-            "CREATOR_STUDIO_PUBLISHED_TRACKED",
-            "CREATOR_STUDIO_REFERENCE_CONFLICTS",
-            "CREATOR_STUDIO_REFERENCE_POSSIBLE_CONFLICTS",
-            "CREATOR_STUDIO_REFERENCE_RESOLUTIONS",
-            "CREATOR_STUDIO_TAKEDOWNS",
-            "CREATOR_STUDIO_TRACKED",
-            "CROSSPOSTED_VIDEOS",
-            "DISPUTES",
-            "DONATIONS_SETTINGS",
-            "DRAFTS",
-            "DRAFT_EVENTS",
-            "DRAFT_FUNDRAISERS",
-            "ENDED_FUNDRAISERS",
-            "EXPIRED_POSTS",
-            "EXPIRING_POSTS",
-            "GEM_PRODUCER_DASHBOARD",
-            "IA_REGIWALL_SETTINGS",
-            "INSTANT_ARTICLES",
-            "INSTANT_ARTICLES_CTA_MANAGEMENT",
-            "INSTANT_ARTICLES_DEVELOPMENT",
-            "INSTANT_ARTICLES_MONETIZATION",
-            "INSTANT_ARTICLES_SAMPLE",
-            "INSTANT_ARTICLES_SETTINGS",
-            "INSTANT_ARTICLES_SIGN_UP",
-            "INSTANT_ARTICLES_TRAFFIC_LIFT",
-            "INVOICES_ACTIVE",
-            "INVOICES_HISTORY",
-            "JOB_APPLICATIONS",
-            "JOB_POSTS",
-            "LEAD_ADS_CRM_SETUP",
-            "LEAD_ADS_CUSTOM_CRM_SETUP",
-            "LEAD_ADS_DRAFT_FORMS",
-            "LEAD_ADS_FORMS",
-            "LIVE_BROADCASTS",
-            "MANUAL_CLAIMS",
-            "MANUAL_CLAIM_FACEBOOK_VIDEOS",
-            "MANUAL_CLAIM_INSTAGRAM_VIDEOS",
-            "MANUAL_REVIEW",
-            "MATCH_RULES",
-            "MONETIZED_VIDEOS",
-            "NEWS_SUBSCRIPTIONS",
-            "NEWS_SUBSCRIPTIONS_PUBLISHER_ASSET_MANAGEMENT",
-            "NEWS_SUBSCRIPTIONS_PUBLISHER_DEVELOPER_TOOLS",
-            "NEWS_SUBSCRIPTIONS_PUBLISHER_INSIGHTS",
-            "NEWS_SUBSCRIPTIONS_PUBLISHER_OFFER_MANAGEMENT",
-            "NEWS_SUBSCRIPTIONS_PUBLISHER_TEST_USERS",
-            "NEWS_SUBSCRIPTIONS_PUBLISHER_TOOLS",
-            "NEW_MATCHES",
-            "PENDING_PROFILE_PICTURE_FRAMES",
-            "PLAYLISTS",
-            "PLAYLIST_DETAILS",
-            "POLLS_COMPOSER",
-            "POSTS_CONFIG",
-            "POST_IDEAS",
-            "PREMIUM_MUSIC_VIDEOS",
-            "PUBLISHED_EVENTS",
-            "PUBLISHED_POSTS",
-            "PUBLISHED_PROFILE_PICTURE_FRAMES",
-            "QR_CODE",
-            "READY_FUNDRAISERS",
-            "REFERENCE_CONFLICTS",
-            "REFERENCE_FILES",
-            "REFERENCE_POSSIBLE_CONFLICTS",
-            "REFERENCE_RESOLUTIONS",
-            "REGISTRATIONS",
-            "REPORTED",
-            "REWARD_PROGRAM",
-            "SCHEDULED_EVENTS",
-            "SCHEDULED_POSTS",
-            "SEASONS",
-            "SEASON_DETAILS",
-            "SOUNDS_COLLECTION",
-            "SOUND_RECORDINGS",
-            "STORY_ARCHIVE",
-            "TAKEDOWNS",
-            "TOURS",
-            "TRACKED",
-            "UNSENT_REPORTS",
-            "VIDEOS",
-            "VIDEOS_COPYRIGHT"
-        ]
-    },
-    {
-        "name": "pagesaved_message_responses_category_enum_param",
-        "node": "SavedMessageResponse",
-        "field_or_param": "category",
-        "values": [
-            "APPOINTMENT_REMINDER",
-            "AWAY_MESSAGE",
-            "FOLLOW_UP",
-            "INSTANT_REPLY",
-            "JOB_APPLICATION",
-            "MESSENGER_CODE",
-            "REFERRAL",
-            "SMART_REPLY_CONTACT",
-            "SMART_REPLY_HOURS",
-            "SMART_REPLY_LOCATION",
-            "SMART_REPLY_NEGATIVE_FEEDBACK",
-            "SMART_REPLY_POSITIVE_FEEDBACK",
-            "STANDARD",
-            "WELCOME_MESSAGE"
         ]
     },
     {
@@ -10241,82 +8703,6 @@
         ]
     },
     {
-        "name": "partnerintegrationlinked_asset_type",
-        "node": "Object",
-        "field_or_param": "asset_type",
-        "values": [
-            "0",
-            "1",
-            "2",
-            "3"
-        ]
-    },
-    {
-        "name": "partnerintegrationlinked_completed_integration_types",
-        "node": "PartnerIntegrationLinked",
-        "field_or_param": "completed_integration_types",
-        "values": [
-            "0",
-            "1",
-            "2",
-            "3"
-        ]
-    },
-    {
-        "name": "partnerintegrationlinked_setup_status",
-        "node": "PartnerIntegrationLinked",
-        "field_or_param": "setup_status",
-        "values": [
-            "COMPLETE",
-            "START"
-        ]
-    },
-    {
-        "name": "photo_backdated_time_granularity",
-        "node": "Photo",
-        "field_or_param": "backdated_time_granularity",
-        "values": [
-            "day",
-            "hour",
-            "min",
-            "month",
-            "none",
-            "year"
-        ]
-    },
-    {
-        "name": "photo_checkin_entry_point",
-        "node": "Photo",
-        "field_or_param": "checkin_entry_point",
-        "values": [
-            "BRANDING_CHECKIN",
-            "BRANDING_OTHER",
-            "BRANDING_PHOTO",
-            "BRANDING_STATUS"
-        ]
-    },
-    {
-        "name": "photo_formatting",
-        "node": "Photo",
-        "field_or_param": "formatting",
-        "values": [
-            "MARKDOWN",
-            "PLAINTEXT"
-        ]
-    },
-    {
-        "name": "photo_post_surfaces_blacklist",
-        "node": "Photo",
-        "field_or_param": "post_surfaces_blacklist",
-        "values": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"
-        ]
-    },
-    {
         "name": "photocomments_comment_privacy_value_enum_param",
         "node": "Comment",
         "field_or_param": "comment_privacy_value",
@@ -10393,31 +8779,6 @@
             "lifetime",
             "month",
             "week"
-        ]
-    },
-    {
-        "name": "photophotos_backdated_time_granularity_enum_param",
-        "node": "Photo",
-        "field_or_param": "backdated_time_granularity",
-        "values": [
-            "day",
-            "hour",
-            "min",
-            "month",
-            "none",
-            "year"
-        ]
-    },
-    {
-        "name": "photophotos_unpublished_content_type_enum_param",
-        "node": "Photo",
-        "field_or_param": "unpublished_content_type",
-        "values": [
-            "ADS_POST",
-            "DRAFT",
-            "INLINE_CREATED",
-            "PUBLISHED",
-            "SCHEDULED"
         ]
     },
     {
@@ -10559,31 +8920,6 @@
         ]
     },
     {
-        "name": "postphotos_backdated_time_granularity_enum_param",
-        "node": "Photo",
-        "field_or_param": "backdated_time_granularity",
-        "values": [
-            "day",
-            "hour",
-            "min",
-            "month",
-            "none",
-            "year"
-        ]
-    },
-    {
-        "name": "postphotos_unpublished_content_type_enum_param",
-        "node": "Photo",
-        "field_or_param": "unpublished_content_type",
-        "values": [
-            "ADS_POST",
-            "DRAFT",
-            "INLINE_CREATED",
-            "PUBLISHED",
-            "SCHEDULED"
-        ]
-    },
-    {
         "name": "postpromotions_audience_enum_param",
         "node": "Object",
         "field_or_param": "audience",
@@ -10718,29 +9054,6 @@
             "BRAND",
             "CATEGORY",
             "PRODUCT_TYPE"
-        ]
-    },
-    {
-        "name": "productcatalogda_event_samples_aggregation_type_enum_param",
-        "node": "ProductDaEventSamplesBatch",
-        "field_or_param": "aggregation_type",
-        "values": [
-            "CONTENT_ID",
-            "CONTENT_URL"
-        ]
-    },
-    {
-        "name": "productcatalogda_event_samples_event_enum_param",
-        "node": "ProductDaEventSamplesBatch",
-        "field_or_param": "event",
-        "values": [
-            "AddToCart",
-            "AddToWishlist",
-            "InitiateCheckout",
-            "Lead",
-            "Purchase",
-            "Search",
-            "ViewContent"
         ]
     },
     {
@@ -10985,183 +9298,6 @@
         ]
     },
     {
-        "name": "productcatalogvideos_container_type_enum_param",
-        "node": "AdVideo",
-        "field_or_param": "container_type",
-        "values": [
-            "AD_BREAK_PREVIEW",
-            "AD_DERIVATIVE",
-            "AGE_UP",
-            "ALBUM_MULTIMEDIA_POST",
-            "ALOHA_CALL_VIDEO",
-            "ALOHA_SUPERFRAME",
-            "APP_REVIEW_SCREENCAST",
-            "ATLAS_VIDEO",
-            "AUDIO_BROADCAST",
-            "BELL_POLL",
-            "BRAND_EQUITY_POLL_VIDEO",
-            "BROADCAST",
-            "CANDIDATE_VIDEOS",
-            "CANVAS",
-            "CFC_VIDEO",
-            "CIVIC_PROPOSAL_COVER_VIDEO",
-            "CONTAINED_POST_ATTACHMENT",
-            "CONTAINED_POST_AUDIO_BROADCAST",
-            "CONTAINED_POST_BROADCAST",
-            "COPYRIGHT_REFERENCE_BROADCAST",
-            "COPYRIGHT_REFERENCE_VIDEO",
-            "CULTURAL_MOMENT_DEPRECATED",
-            "DCO_AD_ASSET_FEED",
-            "DCO_AUTOGEN_VIDEO",
-            "DCO_TRIMMED_VIDEO",
-            "DIRECTED_POST_ATTACHMENT",
-            "DIRECT_INBOX",
-            "DIRECT_INBOX_REACTION",
-            "DYNAMIC_ITEM_DISPLAY_BUNDLE",
-            "DYNAMIC_ITEM_VIDEO",
-            "DYNAMIC_TEMPLATE_VIDEO",
-            "EVENT_COVER_VIDEO",
-            "EVENT_TOUR",
-            "FACECAST_DVR",
-            "FUNDRAISER_COVER_VIDEO",
-            "GAME_CLIP",
-            "GOODWILL_ANNIVERSARY_DEPRECATED",
-            "GOODWILL_ANNIVERSARY_PROMOTION_DEPRECATED",
-            "GOODWILL_VIDEO_CONTAINED_SHARE",
-            "GOODWILL_VIDEO_PROMOTION",
-            "GOODWILL_VIDEO_SHARE",
-            "GOODWILL_VIDEO_TOKEN_REQUIRED",
-            "GROUP_POST",
-            "HEURISTIC_CLUSTER_VIDEO",
-            "HEURISTIC_PREVIEW",
-            "INSPIRATION_VIDEO",
-            "INSTAGRAM_VIDEO_COPY",
-            "INSTANT_APPLICATION_PREVIEW",
-            "INSTANT_ARTICLE",
-            "INSTANT_GAME_CLIP",
-            "ISSUE_MODULE",
-            "JOB_APPLICATION_VIDEO",
-            "JOB_OPENING_VIDEO",
-            "KOTOTORO",
-            "LEARN",
-            "LEGACY",
-            "LIVE_CREATIVE_KIT_VIDEO",
-            "LIVE_LINEAR_VIDEO_CHANNEL_INTERNAL_BROADCAST",
-            "LIVE_PHOTO",
-            "LOOK_NOW_DEPRECATED",
-            "MOMENTS_VIDEO",
-            "NO_STORY",
-            "OCULUS_CREATOR_PORTAL",
-            "OCULUS_VENUES_BROADCAST",
-            "OFFERS_VIDEO",
-            "PAGES_COVER_VIDEO",
-            "PAGE_REVIEW_SCREENCAST",
-            "PAGE_SLIDESHOW_VIDEO",
-            "PIXELCLOUD",
-            "PREMIERE_SOURCE",
-            "PRIVATE_GALLERY_VIDEO",
-            "PRODUCT_VIDEO",
-            "PROFILE_COVER_VIDEO",
-            "PROFILE_INTRO_CARD",
-            "PROFILE_TO_PAGE_UPLOADED_VIDEO",
-            "PROFILE_VIDEO",
-            "PROTON",
-            "QUICK_PROMOTION",
-            "REPLACE_VIDEO",
-            "SALES_CLIENT_INTERACTION",
-            "SAY_THANKS_DEPRECATED",
-            "SLIDESHOW_ANIMOTO",
-            "SLIDESHOW_SHAKR",
-            "SOTTO_CONTENT",
-            "STORYLINE",
-            "STORYLINE_WITH_EXTERNAL_MUSIC",
-            "STORY_ARCHIVE_VIDEO",
-            "STORY_CARD_TEMPLATE",
-            "TAROT_DIGEST",
-            "TEMP_MULTIMEDIA_POST",
-            "UNLISTED",
-            "VIDEO_COMMENT",
-            "WOODHENGE",
-            "YOUR_DAY"
-        ]
-    },
-    {
-        "name": "productcatalogvideos_content_category_enum_param",
-        "node": "AdVideo",
-        "field_or_param": "content_category",
-        "values": [
-            "BEAUTY_FASHION",
-            "BUSINESS",
-            "CARS_TRUCKS",
-            "COMEDY",
-            "CUTE_ANIMALS",
-            "ENTERTAINMENT",
-            "FAMILY",
-            "FOOD_HEALTH",
-            "HOME",
-            "LIFESTYLE",
-            "MUSIC",
-            "NEWS",
-            "OTHER",
-            "POLITICS",
-            "SCIENCE",
-            "SPORTS",
-            "TECHNOLOGY",
-            "VIDEO_GAMING"
-        ]
-    },
-    {
-        "name": "productcatalogvideos_formatting_enum_param",
-        "node": "AdVideo",
-        "field_or_param": "formatting",
-        "values": [
-            "MARKDOWN",
-            "PLAINTEXT"
-        ]
-    },
-    {
-        "name": "productcatalogvideos_original_projection_type_enum_param",
-        "node": "AdVideo",
-        "field_or_param": "original_projection_type",
-        "values": [
-            "cubemap",
-            "equiangular_cubemap",
-            "equirectangular",
-            "half_equirectangular"
-        ]
-    },
-    {
-        "name": "productcatalogvideos_swap_mode_enum_param",
-        "node": "AdVideo",
-        "field_or_param": "swap_mode",
-        "values": [
-            "replace"
-        ]
-    },
-    {
-        "name": "productcatalogvideos_unpublished_content_type_enum_param",
-        "node": "AdVideo",
-        "field_or_param": "unpublished_content_type",
-        "values": [
-            "ADS_POST",
-            "DRAFT",
-            "INLINE_CREATED",
-            "PUBLISHED",
-            "SCHEDULED"
-        ]
-    },
-    {
-        "name": "productcatalogvideos_upload_phase_enum_param",
-        "node": "AdVideo",
-        "field_or_param": "upload_phase",
-        "values": [
-            "cancel",
-            "finish",
-            "start",
-            "transfer"
-        ]
-    },
-    {
         "name": "productfeed_delimiter",
         "node": "ProductFeed",
         "field_or_param": "delimiter",
@@ -11208,20 +9344,6 @@
             "mapping_rule",
             "regex_replace_rule",
             "value_mapping_rule"
-        ]
-    },
-    {
-        "name": "productgroupcomments_comment_privacy_value_enum_param",
-        "node": "Comment",
-        "field_or_param": "comment_privacy_value",
-        "values": [
-            "DEFAULT_PRIVACY",
-            "FRIENDS_AND_POST_OWNER",
-            "FRIENDS_ONLY",
-            "GRAPHQL_MULTIPLE_VALUE_HACK_DO_NOT_USE",
-            "OWNER_OR_COMMENTER",
-            "SIDE_CONVERSATION",
-            "SIDE_CONVERSATION_AND_POST_OWNER"
         ]
     },
     {
@@ -11313,20 +9435,6 @@
         ]
     },
     {
-        "name": "productitemcomments_comment_privacy_value_enum_param",
-        "node": "Comment",
-        "field_or_param": "comment_privacy_value",
-        "values": [
-            "DEFAULT_PRIVACY",
-            "FRIENDS_AND_POST_OWNER",
-            "FRIENDS_ONLY",
-            "GRAPHQL_MULTIPLE_VALUE_HACK_DO_NOT_USE",
-            "OWNER_OR_COMMENTER",
-            "SIDE_CONVERSATION",
-            "SIDE_CONVERSATION_AND_POST_OWNER"
-        ]
-    },
-    {
         "name": "profilepicture_type_enum_param",
         "node": "ProfilePictureSource",
         "field_or_param": "type",
@@ -11336,33 +9444,6 @@
             "normal",
             "small",
             "square"
-        ]
-    },
-    {
-        "name": "rtbdynamicpostcomments_filter_enum_param",
-        "node": "Comment",
-        "field_or_param": "filter",
-        "values": [
-            "stream",
-            "toplevel"
-        ]
-    },
-    {
-        "name": "rtbdynamicpostcomments_live_filter_enum_param",
-        "node": "Comment",
-        "field_or_param": "live_filter",
-        "values": [
-            "filter_low_quality",
-            "no_filter"
-        ]
-    },
-    {
-        "name": "rtbdynamicpostcomments_order_enum_param",
-        "node": "Comment",
-        "field_or_param": "order",
-        "values": [
-            "chronological",
-            "reverse_chronological"
         ]
     },
     {
@@ -11429,63 +9510,6 @@
             "lifetime",
             "month",
             "week"
-        ]
-    },
-    {
-        "name": "statuscomments_comment_privacy_value_enum_param",
-        "node": "Comment",
-        "field_or_param": "comment_privacy_value",
-        "values": [
-            "DEFAULT_PRIVACY",
-            "FRIENDS_AND_POST_OWNER",
-            "FRIENDS_ONLY",
-            "GRAPHQL_MULTIPLE_VALUE_HACK_DO_NOT_USE",
-            "OWNER_OR_COMMENTER",
-            "SIDE_CONVERSATION",
-            "SIDE_CONVERSATION_AND_POST_OWNER"
-        ]
-    },
-    {
-        "name": "statuscomments_filter_enum_param",
-        "node": "Comment",
-        "field_or_param": "filter",
-        "values": [
-            "stream",
-            "toplevel"
-        ]
-    },
-    {
-        "name": "statuscomments_live_filter_enum_param",
-        "node": "Comment",
-        "field_or_param": "live_filter",
-        "values": [
-            "filter_low_quality",
-            "no_filter"
-        ]
-    },
-    {
-        "name": "statuscomments_order_enum_param",
-        "node": "Comment",
-        "field_or_param": "order",
-        "values": [
-            "chronological",
-            "reverse_chronological"
-        ]
-    },
-    {
-        "name": "statusreactions_type_enum_param",
-        "node": "Profile",
-        "field_or_param": "type",
-        "values": [
-            "ANGRY",
-            "HAHA",
-            "LIKE",
-            "LOVE",
-            "NONE",
-            "PRIDE",
-            "SAD",
-            "THANKFUL",
-            "WOW"
         ]
     },
     {
@@ -11556,28 +9580,6 @@
         ]
     },
     {
-        "name": "userad_studies_type_enum_param",
-        "node": "AdStudy",
-        "field_or_param": "type",
-        "values": [
-            "CONTINUOUS_LIFT_CONFIG",
-            "LIFT",
-            "SPLIT_TEST"
-        ]
-    },
-    {
-        "name": "userbulkcontacts_contact_surface_enum_param",
-        "node": "Object",
-        "field_or_param": "contact_surface",
-        "values": [
-            "CONNECTIONS",
-            "CONTACTSAPP",
-            "GROWTH_CONTACT_IMPORTER",
-            "MESSENGER",
-            "ORIGINAL"
-        ]
-    },
-    {
         "name": "userevents_type_enum_param",
         "node": "Event",
         "field_or_param": "type",
@@ -11587,42 +9589,6 @@
             "declined",
             "maybe",
             "not_replied"
-        ]
-    },
-    {
-        "name": "userfavorite_requests_api_version_enum_param",
-        "node": "FavoriteRequest",
-        "field_or_param": "api_version",
-        "values": [
-            "unversioned",
-            "v1.0",
-            "v2.0",
-            "v2.1",
-            "v2.10",
-            "v2.11",
-            "v2.12",
-            "v2.2",
-            "v2.3",
-            "v2.4",
-            "v2.5",
-            "v2.6",
-            "v2.7",
-            "v2.8",
-            "v2.9",
-            "v3.0",
-            "v3.1",
-            "v3.2",
-            "v3.3"
-        ]
-    },
-    {
-        "name": "userfavorite_requests_http_method_enum_param",
-        "node": "FavoriteRequest",
-        "field_or_param": "http_method",
-        "values": [
-            "DELETE",
-            "GET",
-            "POST"
         ]
     },
     {
@@ -11727,18 +9693,6 @@
             "END",
             "HEARTBEAT",
             "START"
-        ]
-    },
-    {
-        "name": "userinvitablefriendpicture_type_enum_param",
-        "node": "ProfilePictureSource",
-        "field_or_param": "type",
-        "values": [
-            "album",
-            "large",
-            "normal",
-            "small",
-            "square"
         ]
     },
     {
@@ -12389,20 +10343,6 @@
         "values": [
             "END_GAME",
             "START_GAME"
-        ]
-    },
-    {
-        "name": "videolistcomments_comment_privacy_value_enum_param",
-        "node": "Comment",
-        "field_or_param": "comment_privacy_value",
-        "values": [
-            "DEFAULT_PRIVACY",
-            "FRIENDS_AND_POST_OWNER",
-            "FRIENDS_ONLY",
-            "GRAPHQL_MULTIPLE_VALUE_HACK_DO_NOT_USE",
-            "OWNER_OR_COMMENTER",
-            "SIDE_CONVERSATION",
-            "SIDE_CONVERSATION_AND_POST_OWNER"
         ]
     },
     {

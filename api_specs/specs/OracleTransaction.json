@@ -2,12 +2,6 @@
     "apis": [
         {
             "method": "GET",
-            "endpoint": "campaigns",
-            "return": "InvoiceCampaign",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "data",
             "return": "AtlasURL",
             "params": [
