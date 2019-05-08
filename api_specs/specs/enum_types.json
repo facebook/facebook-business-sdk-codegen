@@ -915,16 +915,9 @@
         "field_or_param": "effective_status",
         "values": [
             "ACTIVE",
-            "ADSET_PAUSED",
             "ARCHIVED",
-            "CAMPAIGN_PAUSED",
             "DELETED",
-            "DISAPPROVED",
-            "PAUSED",
-            "PENDING_BILLING_INFO",
-            "PENDING_REVIEW",
-            "PREAPPROVED",
-            "WITH_ISSUES"
+            "PAUSED"
         ]
     },
     {
@@ -1117,16 +1110,9 @@
         "field_or_param": "effective_status",
         "values": [
             "ACTIVE",
-            "ADSET_PAUSED",
             "ARCHIVED",
-            "CAMPAIGN_PAUSED",
             "DELETED",
-            "DISAPPROVED",
-            "PAUSED",
-            "PENDING_BILLING_INFO",
-            "PENDING_REVIEW",
-            "PREAPPROVED",
-            "WITH_ISSUES"
+            "PAUSED"
         ]
     },
     {
@@ -10355,6 +10341,17 @@
             "DELETE_POLL",
             "SHOW_RESULTS",
             "SHOW_VOTING"
+        ]
+    },
+    {
+        "name": "videopoll_settings_video_poll_www_placement_enum_param",
+        "node": "AdVideo",
+        "field_or_param": "video_poll_www_placement",
+        "values": [
+            "BOTTOM_LEFT",
+            "BOTTOM_RIGHT",
+            "TOP_LEFT",
+            "TOP_RIGHT"
         ]
     },
     {

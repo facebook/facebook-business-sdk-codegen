@@ -55,12 +55,12 @@
                 },
                 {
                     "name": "end_time",
-                    "required": false,
+                    "required": true,
                     "type": "int"
                 },
                 {
                     "name": "name",
-                    "required": false,
+                    "required": true,
                     "type": "string"
                 },
                 {
@@ -75,7 +75,7 @@
                 },
                 {
                     "name": "start_time",
-                    "required": false,
+                    "required": true,
                     "type": "int"
                 },
                 {
@@ -179,8 +179,8 @@
             "params": [
                 {
                     "name": "ad_accounts_info",
-                    "required": false,
-                    "type": "list<Object>"
+                    "required": true,
+                    "type": "list<map>"
                 },
                 {
                     "name": "additional_comment",
@@ -195,7 +195,7 @@
                 {
                     "name": "address_in_english",
                     "required": true,
-                    "type": "Object"
+                    "type": "map"
                 },
                 {
                     "name": "address_in_local_language",
@@ -225,7 +225,7 @@
                 {
                     "name": "contact",
                     "required": true,
-                    "type": "Object"
+                    "type": "map"
                 },
                 {
                     "name": "english_legal_entity_name",
@@ -270,7 +270,7 @@
                 {
                     "name": "promotable_page_ids",
                     "required": false,
-                    "type": "list<string>"
+                    "type": "list<int>"
                 },
                 {
                     "name": "promotable_page_urls",

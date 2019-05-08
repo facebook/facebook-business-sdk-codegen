@@ -177,17 +177,17 @@
                 {
                     "name": "cap_audio_codecs",
                     "required": false,
-                    "type": "Object"
+                    "type": "list<string>"
                 },
                 {
                     "name": "cap_streaming_protocols",
                     "required": false,
-                    "type": "Object"
+                    "type": "list<string>"
                 },
                 {
                     "name": "cap_video_codecs",
                     "required": false,
-                    "type": "Object"
+                    "type": "list<string>"
                 },
                 {
                     "name": "error_code",
