@@ -6521,6 +6521,7 @@
             "WORK_LEARNING",
             "WORK_MENTORSHIP",
             "WORK_MULTI_COMPANY",
+            "WORK_RECRUITING",
             "WORK_SOCIAL",
             "WORK_TEAM",
             "WORK_TEAMWORK"
@@ -6656,6 +6657,7 @@
             "WORK_LEARNING",
             "WORK_MENTORSHIP",
             "WORK_MULTI_COMPANY",
+            "WORK_RECRUITING",
             "WORK_SOCIAL",
             "WORK_TEAM",
             "WORK_TEAMWORK"
@@ -7617,6 +7619,14 @@
             "NO_PUSH",
             "REGULAR",
             "SILENT_PUSH"
+        ]
+    },
+    {
+        "name": "pagebroadcast_operation",
+        "node": "PageBroadcast",
+        "field_or_param": "operation",
+        "values": [
+            "CANCEL"
         ]
     },
     {

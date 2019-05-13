@@ -1356,6 +1356,18 @@
             ]
         },
         {
+            "method": "DELETE",
+            "endpoint": "advideos",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "video_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "advideos",
             "return": "AdVideo",

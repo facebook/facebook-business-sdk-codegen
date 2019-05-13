@@ -38,6 +38,10 @@
             "type": "string"
         },
         {
+            "name": "secure_sharing_text",
+            "type": "string"
+        },
+        {
             "name": "slide_to_submit_text",
             "type": "string"
         },

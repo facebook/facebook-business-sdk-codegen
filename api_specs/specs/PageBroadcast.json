@@ -17,6 +17,18 @@
             "method": "GET",
             "return": "PageBroadcast",
             "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "PageBroadcast",
+            "params": [
+                {
+                    "name": "operation",
+                    "required": false,
+                    "type": "pagebroadcast_operation"
+                }
+            ]
         }
     ],
     "fields": [
