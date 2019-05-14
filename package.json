@@ -1,6 +1,19 @@
 {
-  "name": "bizsdk-codegen",
-  "version": "0.1.0",
+  "name": "facebook-business-sdk-codegen",
+  "version": "0.2.0",
+  "description": "Codegen project for our business SDKs",
+  "homepage": "https://github.com/facebook/facebook-business-sdk-codegen#readme",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/facebook/facebook-business-sdk-codegen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/facebook/facebook-business-sdk-codegen/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "fs-extra": "^2.1.2",
     "js-beautify": "^1.5.10",
@@ -10,7 +23,5 @@
     "pluralize": "^2.0.0",
     "promise": "^7.0.3",
     "invariant": "^2.2.2"
-  },
-  "preferGlobal": false,
-  "private": true
+  }
 }
