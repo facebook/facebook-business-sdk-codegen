@@ -3,6 +3,7 @@
   "version": "0.2.0",
   "description": "Codegen project for our business SDKs",
   "homepage": "https://github.com/facebook/facebook-business-sdk-codegen#readme",
+  "license": "MIT",
   "private": true,
   "repository": {
     "type": "git",
