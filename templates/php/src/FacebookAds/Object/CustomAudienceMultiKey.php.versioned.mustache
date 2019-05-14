@@ -112,7 +112,7 @@ class CustomAudienceMultiKey extends AbstractCrudObject {
     $is_normalized = false) {
     {{#version}}
     {{#has_deprecated_custom_audience_multikey}}
-    $warning_message = 'CustomAudienceMultiKey is being deprecated, please use'.
+    $warning_message = 'CustomAudienceMultiKey is being deprecated, please use'
       .'`new CustomAudience(...)->addUsers(..)` instead';
     trigger_error($warning_message, E_USER_DEPRECATED);
     {{/has_deprecated_custom_audience_multikey}}
