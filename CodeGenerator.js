@@ -28,7 +28,7 @@ const args = minimist(process.argv.slice(2));
 const language = args._[0];
 Utils.validateLanguage(language);
 const version = args.v || Utils.loadDefaultVersion();
-const outputDir = args.o || "sdk/servers/"+language+"/"+version;
+const outputDir = args.o || "sdk/servers/"+language+"/release";
 const cleandir = args.c ? args.c.split(',') : [];
 
 var procedure = new Procedure({
