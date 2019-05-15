@@ -1,5 +1,7 @@
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * @format
  */
 
 const merge = require('merge');
@@ -14,14 +16,13 @@ var SpecFileLoader = {
     var APISpecDir = path.resolve(__dirname, '..', 'api_specs');
     var overriddenAPISpecName = 'SDKCodegen';
     var overriddenAPISpecs = utils.loadJSONFile(
-      path.join(APISpecDir, overriddenAPISpecName + '.json')
+      path.join(APISpecDir, overriddenAPISpecName + '.json'),
     );
 
     // Compute version features
     var versionedFeatures = {};
     var versionedFeaturesWithDepreciation = {};
-    const codeGenFileDepreciationSign =
-      commonUtils.getCodeGenFileDepreciationSign();
+    const codeGenFileDepreciationSign = commonUtils.getCodeGenFileDepreciationSign();
     for (var currentVersion in codeGenVersions) {
       if (utils.versionCompare(currentVersion, version) <= 0) {
         if (codeGenVersions[currentVersion]) {
@@ -46,11 +47,11 @@ var SpecFileLoader = {
         version: version,
         mergedOverriding: overriddenAPISpecs,
         versionedFeatures: versionedFeatures,
-        versionedFeaturesWithDepreciation: versionedFeaturesWithDepreciation
-      }
+        versionedFeaturesWithDepreciation: versionedFeaturesWithDepreciation,
+      },
     };
   },
-  isAsync: false
-}
+  isAsync: false,
+};
 
 module.exports = SpecFileLoader;

@@ -1,5 +1,7 @@
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * @format
  */
 
 var fs = require('fs');
@@ -9,11 +11,11 @@ var mustache = require('mustache');
 var Utils = {
   loadJSONFile: function(fileName, keepComments) {
     var content = fs.readFileSync(fileName, 'utf8');
-    if (!keepComments) content = content.replace(/^\/\/.*\n/mg, '');
+    if (!keepComments) content = content.replace(/^\/\/.*\n/gm, '');
     try {
       return JSON.parse(content);
     } catch (e) {
-      console.error("Failed ot parse json ", fileName);
+      console.error('Failed ot parse json ', fileName);
       throw e;
     }
   },
@@ -45,7 +47,7 @@ var Utils = {
     });
     return {
       api_specs: specs,
-      enumMetadataMap: enumMetadataMap
+      enumMetadataMap: enumMetadataMap,
     };
   },
   versionCompare: function(verA, verB) {
@@ -64,7 +66,7 @@ var Utils = {
       }
     }
     return 0;
-  }
+  },
 };
 
 module.exports = Utils;

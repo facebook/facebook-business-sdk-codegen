@@ -10,8 +10,8 @@
 import fs from 'fs';
 
 /**
-  * Represents an API request
-  */
+ * Represents an API request
+ */
 class APIRequest {
   _nodeId: string;
   _method: string;

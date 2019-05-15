@@ -1,5 +1,7 @@
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * @format
  */
 
 /*
@@ -29,7 +31,12 @@ var processor = {
   process: function(specs, metadata) {
     var APISpecs = specs.api_specs;
     // Handling object creation endpoints
-    var clsWithCreationApi = ['AdAccount', 'Business', 'ProductCatalog', 'Hotel'];
+    var clsWithCreationApi = [
+      'AdAccount',
+      'Business',
+      'ProductCatalog',
+      'Hotel',
+    ];
     for (var clsIndex = 0; clsIndex < clsWithCreationApi.length; clsIndex++) {
       var parentClsName = clsWithCreationApi[clsIndex];
       var parentClsSpec = APISpecs[parentClsName];
@@ -44,7 +51,11 @@ var processor = {
           if (createdCls && createdCls !== parentClsName) {
             var createdClsSpec = APISpecs[createdCls];
             var creationEndpoint = APISpec['endpoint'];
-            if (createdClsSpec && !createdClsSpec['exclude_creation_endpoint'] && creationEndpoint) {
+            if (
+              createdClsSpec &&
+              !createdClsSpec['exclude_creation_endpoint'] &&
+              creationEndpoint
+            ) {
               if (createdClsSpec['creation_endpoint']) {
                 createdClsSpec['multi_creation_endpoints'] = true;
               }
@@ -93,7 +104,7 @@ var processor = {
     } // End of creation handling
 
     return specs;
-  }
-}
+  },
+};
 
 module.exports = processor;

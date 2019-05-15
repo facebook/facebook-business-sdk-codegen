@@ -1,5 +1,7 @@
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * @format
  */
 
 const merge = require('merge');
@@ -15,10 +17,7 @@ const codeGenUtil = require('./CodeGenUtil');
  * means it is a root node. This processor need to run earlier in the pipeline
  */
 const AutoAddIdFieldForRootNodeProcessor = {};
-AutoAddIdFieldForRootNodeProcessor.process = function(
-  specs,
-  metadata
-) {
+AutoAddIdFieldForRootNodeProcessor.process = function(specs, metadata) {
   var APISpecs = specs.api_specs;
   for (var clsName in APISpecs) {
     var APIClsSpec = APISpecs[clsName];
@@ -32,8 +31,8 @@ AutoAddIdFieldForRootNodeProcessor.process = function(
     }
     if (!hasIdField && APIClsSpec['apis'] && APIClsSpec['apis'].length > 0) {
       APIClsSpec['fields'].push({
-        'name': 'id',
-        'type': 'string',
+        name: 'id',
+        type: 'string',
       });
     }
   }

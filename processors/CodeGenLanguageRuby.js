@@ -1,5 +1,7 @@
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * @format
  */
 
 const fs = require('fs');
@@ -9,11 +11,7 @@ var CodeGenLanguageRuby = {
   formatFileName: function(clsName) {
     return clsName['name:underscore'] + '.rb';
   },
-  preMustacheProcess: function (
-    APISpecs,
-    enumTypes,
-    codeGenNameConventions
-  ) {
+  preMustacheProcess: function(APISpecs, enumTypes, codeGenNameConventions) {
     for (var clsName in APISpecs) {
       var APIClsSpec = APISpecs[clsName];
 
@@ -27,11 +25,7 @@ var CodeGenLanguageRuby = {
           enumList[enumSpec['name']] = enumSpec['field_or_param:upper_case'];
         }
 
-        var rubyType = getTypeForRuby(
-          fieldSpec['type'],
-          enumList,
-          APISpecs
-        );
+        var rubyType = getTypeForRuby(fieldSpec['type'], enumList, APISpecs);
 
         fieldSpec['type:ruby'] = rubyType;
       }
@@ -44,7 +38,8 @@ var CodeGenLanguageRuby = {
           var enumSpec = APISpec['referred_enums'][index2];
           if (enumSpec['metadata']['node']) {
             enumList[enumSpec['metadata']['name']] =
-              enumSpec['metadata']['node'] + '::' +
+              enumSpec['metadata']['node'] +
+              '::' +
               enumSpec['metadata']['field_or_param:upper_case'];
           } else {
             enumList[enumSpec['metadata']['name']] =
@@ -54,21 +49,15 @@ var CodeGenLanguageRuby = {
 
         for (var index2 in APISpec['params']) {
           var paramSpec = APISpec['params'][index2];
-          var rubyType = getTypeForRuby(
-            paramSpec['type'],
-            enumList,
-            APISpecs
-          )
+          var rubyType = getTypeForRuby(paramSpec['type'], enumList, APISpecs);
           paramSpec['type:ruby'] = rubyType;
         }
 
-        if (APISpec['name'] == 'update' &&
-            APISpec['endpoint'] == '/') {
+        if (APISpec['name'] == 'update' && APISpec['endpoint'] == '/') {
           APIClsSpec['has_update'] = true;
         }
 
-        if (APISpec['name'] == 'delete' &&
-            APISpec['endpoint'] == '/') {
+        if (APISpec['name'] == 'delete' && APISpec['endpoint'] == '/') {
           APIClsSpec['has_delete'] = true;
         }
       }
@@ -79,7 +68,7 @@ var CodeGenLanguageRuby = {
 
       for (var index in APIClsSpec['edges']) {
         var edgeSpec = APIClsSpec['edges'][index];
-        var edgeName = edgeSpec['endpoint'].replace(/^\//,"");
+        var edgeName = edgeSpec['endpoint'].replace(/^\//, '');
 
         if (!edgeObject[edgeName]) {
           edgeObject[edgeName] = [];
@@ -90,7 +79,7 @@ var CodeGenLanguageRuby = {
           edgeSpec['return_a_list'] = true;
         }
 
-        edgeObject[edgeName].push(edgeSpec)
+        edgeObject[edgeName].push(edgeSpec);
       }
 
       edgeArray = [];
@@ -98,8 +87,8 @@ var CodeGenLanguageRuby = {
         edgeEndPoints = edgeObject[edgeName];
         edgeArray.push({
           edge_name: edgeName,
-          end_points: edgeEndPoints
-        })
+          end_points: edgeEndPoints,
+        });
       }
 
       APIClsSpec['edges'] = edgeArray;
@@ -108,8 +97,8 @@ var CodeGenLanguageRuby = {
     return APISpecs;
   },
   getTypeForRuby: getTypeForRuby,
-  keywords: ['class', 'begin', 'end', 'rescue', 'when', 'case', 'def', 'until']
-}
+  keywords: ['class', 'begin', 'end', 'rescue', 'when', 'case', 'def', 'until'],
+};
 
 function typeStackToHash(typeStack) {
   var t = typeStack.shift();
@@ -121,7 +110,7 @@ function typeStackToHash(typeStack) {
       } else {
         // handle list<list>, seems only AdImageCrop use this
         // we assume it's string
-        return '{ list: \'string\' }';
+        return "{ list: 'string' }";
       }
     case 'enum':
       var enum_values = typeStack.shift();
@@ -142,7 +131,7 @@ function getTypeForRuby(type, enumList, references) {
 
   while (listRegex.test(type)) {
     typeStack.push('list');
-    type = type.replace(listRegex, '$1')
+    type = type.replace(listRegex, '$1');
   }
 
   // This is not perfect. But it's working for all types we have so far.
@@ -153,7 +142,9 @@ function getTypeForRuby(type, enumList, references) {
   typeMapping['int'] = /^(((unsigned\s*)?(int|long)))(?![a-zA-Z0-9_])$/i;
   typeMapping['double'] = /^(float|double)$/i;
   typeMapping['object'] = /^Object$/i;
-  typeMapping['hash'] = /^map(?:\s*<\s*(?:[a-zA-Z0-9_]*)\s*,\s*(?:[a-zA-Z0-9_]*)\s*>)?$/i;
+  typeMapping[
+    'hash'
+  ] = /^map(?:\s*<\s*(?:[a-zA-Z0-9_]*)\s*,\s*(?:[a-zA-Z0-9_]*)\s*>)?$/i;
 
   for (var replace in typeMapping) {
     if (typeMapping[replace].test(type)) {
@@ -164,14 +155,14 @@ function getTypeForRuby(type, enumList, references) {
 
   if (enumList[type]) {
     typeStack.push('enum');
-    typeStack.push(enumList[type])
+    typeStack.push(enumList[type]);
     type = '';
   }
 
   //non native, non enum type - should be other AdObject subclass
   if (type.length > 0) {
     if (references[type]) {
-      typeStack.push(references[type]["names:strict_pascal_case"]);
+      typeStack.push(references[type]['names:strict_pascal_case']);
     } else {
       typeStack.push(type);
     }

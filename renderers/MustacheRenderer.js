@@ -1,5 +1,7 @@
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * @format
  */
 
 const fs = require('fs-extra');
@@ -17,7 +19,7 @@ MustacheRenderer.render = function(
   language,
   version,
   outputDir,
-  cleandir
+  cleandir,
 ) {
   const APISpecs = specs['APISpecs'];
   const SDKConfig = specs['SDKConfig'];
@@ -34,18 +36,21 @@ MustacheRenderer.render = function(
   var filesNeedCopy = loadedTemplates.filesNeedCopy;
 
   // clean up the folder
-  if (cleandir === undefined || cleandir.length == 0 || !fs.existsSync(sdkRootPath)) {
+  if (
+    cleandir === undefined ||
+    cleandir.length == 0 ||
+    !fs.existsSync(sdkRootPath)
+  ) {
     utils.removeRecursiveSync(sdkRootPath);
     utils.mkdirsSync(sdkRootPath);
   } else {
-    for(var d of cleandir) {
+    for (var d of cleandir) {
       let tmp = path.resolve(sdkRootPath, d);
       console.log(tmp);
       utils.removeRecursiveSync(tmp);
       utils.mkdirsSync(tmp);
     }
   }
-
 
   // Copy the common folder
   console.log('Generating ' + language + ' SDK in ' + outputDir + '...');
@@ -56,12 +61,17 @@ MustacheRenderer.render = function(
   // Generate code with mustache templates
   for (var nodeName in APISpecs) {
     var APIClsSpec = APISpecs[nodeName];
-    utils.fillMainTemplates(mainTemplates, partialTemplates, APIClsSpec,
-      language, codeGenLanguages, sdkRootPath);
+    utils.fillMainTemplates(
+      mainTemplates,
+      partialTemplates,
+      APIClsSpec,
+      language,
+      codeGenLanguages,
+      sdkRootPath,
+    );
   }
 
-  const codeGenFileDepreciationSign =
-    commonUtils.getCodeGenFileDepreciationSign();
+  const codeGenFileDepreciationSign = commonUtils.getCodeGenFileDepreciationSign();
   const apiSpecArray = [];
   for (var nodeName in APISpecs) {
     var APIClsSpec = APISpecs[nodeName];
@@ -70,7 +80,7 @@ MustacheRenderer.render = function(
   SDKConfig.api_specs = apiSpecArray;
   versionedTemplates.forEach(function(value) {
     var fileContent = mustache.render(value.content, SDKConfig, {});
-    if (fileContent.trim().indexOf(codeGenFileDepreciationSign + "\n")) {
+    if (fileContent.trim().indexOf(codeGenFileDepreciationSign + '\n')) {
       var destDir = sdkRootPath + value.dir;
       utils.mkdirsSync(destDir);
       fs.writeFileSync(destDir + value.file, fileContent);

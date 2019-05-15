@@ -1,5 +1,7 @@
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * @format
  */
 
 var fs = require('fs');
@@ -46,8 +48,10 @@ var Utils = {
                 });
               } else {
                 // Partial templates
-                partialTemplates[relativeDir + name]
-                  = fs.readFileSync(fullPath, 'utf8');
+                partialTemplates[relativeDir + name] = fs.readFileSync(
+                  fullPath,
+                  'utf8',
+                );
               }
             }
           } else {
@@ -64,7 +68,7 @@ var Utils = {
       mainTemplates: mainTemplates,
       partialTemplates: partialTemplates,
       versionedTemplates: versionedTemplates,
-      filesNeedCopy: filesNeedCopy
+      filesNeedCopy: filesNeedCopy,
     };
   },
   mkdirsSync: function(dir) {
@@ -77,21 +81,34 @@ var Utils = {
       }
     }
   },
-  fillMainTemplates: function(mainTemplates, partialTemplates, clsSpec,
-    language, codeGenLanguages, rootPath) {
+  fillMainTemplates: function(
+    mainTemplates,
+    partialTemplates,
+    clsSpec,
+    language,
+    codeGenLanguages,
+    rootPath,
+  ) {
     var self = this;
 
     mainTemplates = self.preProcessMainTemplates(mainTemplates, clsSpec);
     mainTemplates.forEach(function(template) {
       var languageDef = codeGenLanguages[language];
-      var filenameToCodeMap = {}
+      var filenameToCodeMap = {};
 
       if (languageDef.generateFilenameToCodeMap) {
         filenameToCodeMap = languageDef.generateFilenameToCodeMap(
-          clsSpec, template, partialTemplates);
+          clsSpec,
+          template,
+          partialTemplates,
+        );
       } else {
         filenameToCodeMap = self.generateSimpleFilenameToCodeMap(
-          clsSpec, template, partialTemplates, languageDef);
+          clsSpec,
+          template,
+          partialTemplates,
+          languageDef,
+        );
       }
 
       for (var filename in filenameToCodeMap) {
@@ -102,9 +119,13 @@ var Utils = {
       }
     });
   },
-  generateSimpleFilenameToCodeMap: function(clsSpec, template, partialTemplates,
-    languageDef) {
-    var filenameToCodeMap = {}
+  generateSimpleFilenameToCodeMap: function(
+    clsSpec,
+    template,
+    partialTemplates,
+    languageDef,
+  ) {
+    var filenameToCodeMap = {};
     var filename = languageDef.formatFileName(clsSpec, template);
     var code = mustache.render(template.content, clsSpec, partialTemplates);
 
@@ -122,11 +143,11 @@ var Utils = {
     var self = this;
     return mainTemplates.map(function(template) {
       var newTemplate = JSON.parse(JSON.stringify(template));
-        newTemplate.content = newTemplate.content.replace(
-        /{{\s*>.*(%([a-zA-Z:_]+)%).*}}/ig,
+      newTemplate.content = newTemplate.content.replace(
+        /{{\s*>.*(%([a-zA-Z:_]+)%).*}}/gi,
         function(m, p1, p2) {
           return m.replace(p1, clsSpec[p2]);
-        }
+        },
       );
       return newTemplate;
     });
@@ -135,7 +156,7 @@ var Utils = {
     var stats;
     try {
       stats = fs.lstatSync(dir);
-    } catch(e) {
+    } catch (e) {
       if (e.code !== 'ENOENT') throw e;
       return;
     }
@@ -154,23 +175,23 @@ var Utils = {
     if (srcDirStats.isDirectory()) {
       try {
         fs.mkdirSync(destDir);
-      } catch(e) {
+      } catch (e) {
         if (e.code !== 'EEXIST') throw e;
       }
       fs.readdirSync(srcDir).forEach(function(file) {
         Utils.copyRecursiveSync(
           path.join(srcDir, file),
-          path.join(destDir, file)
+          path.join(destDir, file),
         );
       });
     } else {
       try {
         fs_extra.copySync(srcDir, destDir);
-      } catch(e) {
+      } catch (e) {
         if (e.code !== 'EEXIST') throw e;
       }
     }
-  }
-}
+  },
+};
 
 module.exports = Utils;

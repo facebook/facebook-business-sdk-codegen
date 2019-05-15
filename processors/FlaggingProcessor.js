@@ -1,5 +1,7 @@
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * @format
  */
 
 const codeGenNameConventions = require('./CodeGenNameConventions');
@@ -30,11 +32,11 @@ var processor = {
       // add versioned features for SDK
       APIClsSpec['version'] = versionedFeatures;
       for (var index in APIClsSpec['apis']) {
-        var APISpec = APIClsSpec['apis'][index]
+        var APISpec = APIClsSpec['apis'][index];
         var method = APISpec['method'];
-        APISpec['is_method_get'] = (method === 'GET');
-        APISpec['is_method_post'] = (method === 'POST');
-        APISpec['is_method_delete'] = (method === 'DELETE');
+        APISpec['is_method_get'] = method === 'GET';
+        APISpec['is_method_post'] = method === 'POST';
+        APISpec['is_method_delete'] = method === 'DELETE';
         if (
           APISpec['name'] === 'get' ||
           APISpec['name'] === 'update' ||
@@ -62,7 +64,8 @@ var processor = {
       for (var index in APIClsSpec['fields']) {
         var fieldSpec = APIClsSpec['fields'][index];
         if (fieldSpec['name'] === 'id') {
-          var parts = codeGenNameConventions.parsePascalName(clsName)
+          var parts = codeGenNameConventions
+            .parsePascalName(clsName)
             .concat(['id']);
           fieldSpec['context'] = parts.join('_');
           APIClsSpec['has_id'] = true;
@@ -72,7 +75,7 @@ var processor = {
     }
 
     return specs;
-  }
-}
+  },
+};
 
 module.exports = processor;

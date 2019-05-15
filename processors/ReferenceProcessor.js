@@ -1,5 +1,7 @@
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * @format
  */
 
 const merge = require('merge');
@@ -14,10 +16,7 @@ const codeGenUtil = require('./CodeGenUtil');
  * This processor handles the references between nodes and enums.
  */
 const ReferenceProcessor = {};
-ReferenceProcessor.process = function(
-  specs,
-  metadata
-) {
+ReferenceProcessor.process = function(specs, metadata) {
   var APISpecs = specs.api_specs;
   var enumMetadataMap = specs.enumMetadataMap;
 
@@ -29,7 +28,7 @@ ReferenceProcessor.process = function(
       var clsSpec = APISpecs[nodeName];
       if (!clsSpec['api_spec_based_enum_reference']) {
         clsSpec['api_spec_based_enum_reference'] = [];
-        clsSpec['api_spec_based_enum_list'] = {}
+        clsSpec['api_spec_based_enum_list'] = {};
       }
       if (clsSpec['api_spec_based_enum_list'][enumType['field_or_param']]) {
         // already exists. do nothing
@@ -45,7 +44,7 @@ ReferenceProcessor.process = function(
     codeGenNameConventions.populateNameConventions(
       APISpecs[clsName],
       'names',
-      codeGenNameConventions.parsePascalName(clsName)
+      codeGenNameConventions.parsePascalName(clsName),
     );
 
     // Initialize references based on API return types
@@ -82,19 +81,21 @@ ReferenceProcessor.process = function(
             APISpecs[baseType]['can_be_data_type'] = true;
           }
           if (enumMetadataMap[baseType]) {
-            var enumParamName = paramSpec['name'] + "_enum";
+            var enumParamName = paramSpec['name'] + '_enum';
             var metadata = enumMetadataMap[baseType];
             var enumType = {
               name: enumParamName,
-              metadata: metadata
+              metadata: metadata,
             };
             codeGenNameConventions.populateNameConventions(
               enumType,
               'name',
-              codeGenNameConventions.parseUnderscoreName(enumType['name'])
+              codeGenNameConventions.parseUnderscoreName(enumType['name']),
             );
-            paramSpec['type:short'] =
-              paramSpec['type'].replace(baseType, enumParamName);
+            paramSpec['type:short'] = paramSpec['type'].replace(
+              baseType,
+              enumParamName,
+            );
             apiReferencedEnumTypes[baseType] = enumType;
           }
         }
@@ -110,11 +111,11 @@ ReferenceProcessor.process = function(
       if (returnClsSpec) {
         // Add "fields" field
         if (APISpec['method'] === 'GET' && !hasParamFields) {
-          APISpec['param_fields'] = returnClsSpec['fields'].filter(
-            function(field) {
-              return !field['is_creation_field'];
-            }
-          );
+          APISpec['param_fields'] = returnClsSpec['fields'].filter(function(
+            field,
+          ) {
+            return !field['is_creation_field'];
+          });
         } else {
           APISpec['param_fields'] = false;
         }
@@ -129,13 +130,13 @@ ReferenceProcessor.process = function(
         codeGenNameConventions.populateNameConventions(
           APISpec,
           'return',
-          codeGenNameConventions.parsePascalName(APISpec['return'])
+          codeGenNameConventions.parsePascalName(APISpec['return']),
         );
       }
 
       if (Object.keys(apiReferencedEnumTypes).length) {
         var apiReferencedEnumList = [];
-        for(var key in apiReferencedEnumTypes) {
+        for (var key in apiReferencedEnumTypes) {
           apiReferencedEnumList.push(apiReferencedEnumTypes[key]);
           var cls = apiReferencedEnumTypes[key]['metadata']['node'];
           if (cls) {
@@ -153,7 +154,7 @@ ReferenceProcessor.process = function(
             refObj,
             'name',
             codeGenNameConventions.parsePascalName(refName),
-            'api-ref:'
+            'api-ref:',
           );
           APISpec['referred_classes'].push(refObj);
         }
@@ -177,7 +178,7 @@ ReferenceProcessor.process = function(
           refObj,
           'name',
           codeGenNameConventions.parsePascalName(refName),
-          'ref:'
+          'ref:',
         );
         APIClsSpec['references'].push(refObj);
       }
@@ -212,7 +213,7 @@ ReferenceProcessor.process = function(
           refObj,
           'name',
           codeGenNameConventions.parsePascalName(refName),
-          'ref:'
+          'ref:',
         );
         APIClsSpec['field_references'].push(refObj);
       }

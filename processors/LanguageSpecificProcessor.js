@@ -1,5 +1,7 @@
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * @format
  */
 
 const codeGenLanguages = require('./CodeGenLanguages');
@@ -11,7 +13,6 @@ const codeGenNameConventions = require('./CodeGenNameConventions');
  */
 var processor = {
   process: function(specs, metadata) {
-
     var language = metadata.language;
     var languageDef = codeGenLanguages[language];
     var APISpecs = specs.api_specs;
@@ -21,12 +22,12 @@ var processor = {
       languageDef.preMustacheProcess(
         APISpecs,
         codeGenNameConventions,
-        enumMetadataMap
+        enumMetadataMap,
       );
     }
 
     return specs;
-  }
-}
+  },
+};
 
 module.exports = processor;
