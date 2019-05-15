@@ -93,7 +93,9 @@ export default class Cursor extends Array {
           })
           .catch(reject);
       });
-      if (params) params = undefined;
+      if (params) {
+        params = undefined;
+      }
       return promise;
     };
 

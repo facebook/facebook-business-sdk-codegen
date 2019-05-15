@@ -1,13 +1,15 @@
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * @format
  */
 
 var fs = require('fs');
 var path = require('path');
 var mustache = require('mustache');
 
-const codeGenFileDepreciationSign = '@remove_depreciated_file@' +
-  new Date().getTime().toString();
+const codeGenFileDepreciationSign =
+  '@remove_depreciated_file@' + new Date().getTime().toString();
 
 var Utils = {
   getCodeGenFileDepreciationSign: function() {
@@ -15,7 +17,9 @@ var Utils = {
     return codeGenFileDepreciationSign;
   },
   usage: function(message) {
-    console.log('Usage: codegen <language> [-v api_version] [-o output_path] [-c folder_to_cleanup]');
+    console.log(
+      'Usage: codegen <language> [-v api_version] [-o output_path] [-c folder_to_cleanup]',
+    );
     throw message;
   },
   validateLanguage: function(language) {
@@ -25,19 +29,21 @@ var Utils = {
       'nodejs',
       'php',
       'python',
-      'ruby'
+      'ruby',
     ];
     if (!language) {
       this.usage(
         'language is not specified! available languages: ' +
-        supportedLanguages.join(', ')
+          supportedLanguages.join(', '),
       );
     }
 
     if (supportedLanguages.indexOf(language) < 0) {
       this.usage(
-        'unsupported language: ' + language + '! available languages: ' +
-        supportedLanguages.join(', ')
+        'unsupported language: ' +
+          language +
+          '! available languages: ' +
+          supportedLanguages.join(', '),
       );
     }
   },

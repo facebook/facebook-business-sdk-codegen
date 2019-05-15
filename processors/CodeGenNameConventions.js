@@ -1,5 +1,7 @@
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * @format
  */
 
 var fs = require('fs');
@@ -23,13 +25,15 @@ function _startsWith(str, searchStr, startIdx) {
 }
 
 function _isCharUpper(ch) {
-  return (ch >= 'A' && ch <= 'Z');
+  return ch >= 'A' && ch <= 'Z';
 }
 
 var _decodeDictFile = path.resolve(__dirname, 'EndpointDecodeDict.txt');
 var _decodeDictBase = {};
 if (fs.existsSync(_decodeDictFile)) {
-  _decodeDictBase = fs.readFileSync(_decodeDictFile, 'utf8').split('\n')
+  _decodeDictBase = fs
+    .readFileSync(_decodeDictFile, 'utf8')
+    .split('\n')
     .reduce(function(dict, line) {
       var columns = line.split('=');
       var value = parseFloat(columns[1]);
@@ -67,7 +71,9 @@ var codeGenNameConventions = {
   },
 
   parseEndpointName: function(endpoint, boostWords, clsName) {
-    if (endpoint === 'leadgen_forms') return ['lead', 'gen', 'forms'];
+    if (endpoint === 'leadgen_forms') {
+      return ['lead', 'gen', 'forms'];
+    }
     if (endpoint === 'leadgen_context_cards') {
       return ['lead', 'gen', 'context', 'cards'];
     }
@@ -75,20 +81,30 @@ var codeGenNameConventions = {
       return ['lead', 'gen', 'whitelisted', 'users'];
     }
     if (endpoint === 'ExtendedCreditOwningCreditAllocationConfigs') {
-      return ['extended', 'credit', 'owning', 'credit', 'allocation', 'configs'];
+      return [
+        'extended',
+        'credit',
+        'owning',
+        'credit',
+        'allocation',
+        'configs',
+      ];
     }
 
     var mergedDict = _decodeDict;
     if (boostWords) {
-      mergedDict = merge(true, _decodeDict, boostWords.reduce(
-        function(prev, curr) {
+      mergedDict = merge(
+        true,
+        _decodeDict,
+        boostWords.reduce(function(prev, curr) {
           prev[curr] = 10;
           var pluralWord = pluralize(curr);
           if (pluralWord !== curr) {
             prev[pluralWord] = 1;
           }
           return prev;
-        }, {}));
+        }, {}),
+      );
     }
 
     var lattice = {0: [0]};
@@ -123,7 +139,9 @@ var codeGenNameConventions = {
     var parts = [];
     var endPost = endpoint.length;
     if (!lattice[endPost]) {
-      throw Error('cannot decode endpoint ' + endpoint + ' in class ' + clsName);
+      throw Error(
+        'cannot decode endpoint ' + endpoint + ' in class ' + clsName,
+      );
     }
     while (endPost) {
       if (lattice[endPost][1] !== '#') {
@@ -170,13 +188,13 @@ var codeGenNameConventions = {
       SEEN_WORD_START: 0, // seen an upper-case char after lower-case chars
       EXPECT_PASCAL_WORD: 1, // second char is lower-case in a word
       EXPECT_ALL_UPPER_WORD: 2, // second char is also upper case in a word
-    }
+    };
     var parts = [];
     var indexStart = 0;
     var parseStatus = STATUS.SEEN_WORD_START; // assert charAt(0) is upper case
     for (var i = 1; i < name.length; ++i) {
       var isUpper = _isCharUpper(name.charAt(i));
-      switch(parseStatus) {
+      switch (parseStatus) {
         case STATUS.SEEN_WORD_START:
           parseStatus = isUpper
             ? STATUS.EXPECT_ALL_UPPER_WORD
@@ -212,7 +230,7 @@ var codeGenNameConventions = {
 
   // Replace non (alphanumerical + _) to _
   removeIlligalChars: function(name) {
-    return name.replace(/(_\W+)|(\W+_)|(\W+)/g, "_");
+    return name.replace(/(_\W+)|(\W+_)|(\W+)/g, '_');
   },
 
   // strict_pascal means strictly first char upper and following lower.
@@ -228,8 +246,7 @@ var codeGenNameConventions = {
       lowerCaseParts.push(parts[i].toLowerCase());
       capitalized.push(parts[i].charAt(0).toUpperCase() + parts[i].slice(1));
       strictCapitalized.push(
-        parts[i].charAt(0).toUpperCase() +
-        parts[i].slice(1).toLowerCase()
+        parts[i].charAt(0).toUpperCase() + parts[i].slice(1).toLowerCase(),
       );
     }
 
@@ -254,10 +271,11 @@ var codeGenNameConventions = {
     obj[prop + ':camel_case'] = camelCaseName;
     obj[prop + ':upper_case'] = upperCaseName;
     obj[prop + ':all_lower_case'] = allLowerCaseName;
-    obj[prop + ':all_lower_case_excluding_digit_suffix'] =
-      isNaN(underscoreName.charAt(0))
-        ? underscoreName
-        : 'value_' + underscoreName;;
+    obj[prop + ':all_lower_case_excluding_digit_suffix'] = isNaN(
+      underscoreName.charAt(0),
+    )
+      ? underscoreName
+      : 'value_' + underscoreName;
 
     if (prefix) {
       obj[prefix + prop + ':hyphen'] = hyphenName;
@@ -267,13 +285,14 @@ var codeGenNameConventions = {
       obj[prefix + prop + ':camel_case'] = camelCaseName;
       obj[prefix + prop + ':upper_case'] = upperCaseName;
       obj[prefix + prop + ':all_lower_case'] = allLowerCaseName;
-      obj[prefix + prop + ':all_lower_case_excluding_digit_suffix'] =
-        isNaN(allLowerCaseName.charAt(0))
-          ? allLowerCaseName
-          : 'value_' + allLowerCaseName;
+      obj[prefix + prop + ':all_lower_case_excluding_digit_suffix'] = isNaN(
+        allLowerCaseName.charAt(0),
+      )
+        ? allLowerCaseName
+        : 'value_' + allLowerCaseName;
     }
   },
-  getAllCaseNames : function(parts) {
+  getAllCaseNames: function(parts) {
     var lowerCaseParts = [];
     var capitalized = [];
     for (var i in parts) {
@@ -294,13 +313,13 @@ var codeGenNameConventions = {
     }
 
     return {
-      hyphen : hyphenName,
-      underscore : underscoreName,
-      pascal_case : pascalCaseName,
-      camel_case : camelCaseName,
-      upper_case : upperCaseName,
-      all_lower_case : allLowerCaseName
-    }
+      hyphen: hyphenName,
+      underscore: underscoreName,
+      pascal_case: pascalCaseName,
+      camel_case: camelCaseName,
+      upper_case: upperCaseName,
+      all_lower_case: allLowerCaseName,
+    };
   },
   populateNameConventionForUnderscoreProp: function(obj, prop) {
     var parts = this.parseUnderscoreName(obj[prop]);
@@ -309,7 +328,7 @@ var codeGenNameConventions = {
   populateNameConventionForPascalProp: function(obj, prop) {
     var parts = this.parsePascalName(obj[prop]);
     this.populateNameConventions(obj, prop, parts);
-  }
+  },
 };
 
 module.exports = codeGenNameConventions;

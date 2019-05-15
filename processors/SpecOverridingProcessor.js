@@ -1,5 +1,7 @@
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * @format
  */
 
 const codeGenLanguages = require('./CodeGenLanguages');
@@ -25,12 +27,16 @@ var SpecOverridingProcessor = {
       for (var jsonPath in specOverriding[clsName]) {
         var value = specOverriding[clsName][jsonPath];
         var $ = APISpecs[clsName] || {};
-        var evalPathes = (jsonPath === '$')
-          ? ['$'] : JSONPath.eval($, jsonPath, {resultType: 'path'});
+        var evalPathes =
+          jsonPath === '$'
+            ? ['$']
+            : JSONPath.eval($, jsonPath, {resultType: 'path'});
         if (evalPathes.length === 0) {
           throw new Error(
             'MUST_FIX: cannot find JSON path need to be patched.\n' +
-            clsName + '::' + jsonPath
+              clsName +
+              '::' +
+              jsonPath,
           );
         }
 
@@ -46,11 +52,16 @@ var SpecOverridingProcessor = {
               var evalParentValue = eval(parentPath);
               if (evalParentValue instanceof Array) {
                 // since evalParentValue is an array, accessor must be a number
-                var accessor = path.substring(lastBracketPos + 1,
-                  path.length - 1);
+                var accessor = path.substring(
+                  lastBracketPos + 1,
+                  path.length - 1,
+                );
                 if (isNaN(accessor)) {
-                  throw new Error('Accessor for last element in array must ' +
-                    'be integer but instead ' + accessor);
+                  throw new Error(
+                    'Accessor for last element in array must ' +
+                      'be integer but instead ' +
+                      accessor,
+                  );
                 }
                 evalParentValue.splice(accessor, 1);
               } else {
@@ -68,7 +79,9 @@ var SpecOverridingProcessor = {
               } else {
                 throw new Error(
                   'MUST_FIX: value must be array while path is array.\n' +
-                  clsName + '::' + jsonPath
+                    clsName +
+                    '::' +
+                    jsonPath,
                 );
               }
             } else if (evalValue instanceof Object) {
@@ -78,7 +91,9 @@ var SpecOverridingProcessor = {
               } else {
                 throw new Error(
                   'MUST_FIX: value must be object while path is object.\n' +
-                  clsName + '::' + jsonPath
+                    clsName +
+                    '::' +
+                    jsonPath,
                 );
               }
             } else {
@@ -103,7 +118,7 @@ var SpecOverridingProcessor = {
       APISpecs = languageDef.specOverrideProcessing(APISpecs);
     }
     return specs;
-  }
-}
+  },
+};
 
 module.exports = SpecOverridingProcessor;

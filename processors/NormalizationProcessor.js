@@ -1,5 +1,7 @@
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * @format
  */
 
 const pluralize = require('pluralize');
@@ -13,14 +15,14 @@ var processor = {
     var seenWords = [];
     for (var clsName in APISpecs) {
       seenWords = seenWords.concat(
-        codeGenNameConventions.parsePascalName(clsName)
+        codeGenNameConventions.parsePascalName(clsName),
       );
       var APIClsSpec = APISpecs[clsName];
       for (var index in APIClsSpec['apis']) {
         var APISpec = APIClsSpec['apis'][index];
         if (APISpec['return']) {
           seenWords = seenWords.concat(
-            codeGenNameConventions.parsePascalName(APISpec['return'])
+            codeGenNameConventions.parsePascalName(APISpec['return']),
           );
         }
       }
@@ -30,14 +32,14 @@ var processor = {
     for (var clsName in APISpecs) {
       var APIClsSpec = APISpecs[clsName];
       for (var index in APIClsSpec['apis']) {
-        var APISpec = APIClsSpec['apis'][index]
+        var APISpec = APIClsSpec['apis'][index];
         var name = APISpec['name'];
         if (!name) {
           var method = APISpec['method'];
           var parts = codeGenNameConventions.parseEndpointName(
             APISpec['endpoint'],
             codeGenNameConventions.parsePascalName(APISpec['return']),
-            clsName
+            clsName,
           );
 
           if (APISpec['endpoint'] === 'insights') {
@@ -52,7 +54,10 @@ var processor = {
             } else if (method === 'POST') {
               parts.unshift('create');
               // Hack for Business node because it has /adaccount and /adaccounts
-              if (clsName != 'Business' || APISpec['endpoint'] != 'adaccounts') {
+              if (
+                clsName != 'Business' ||
+                APISpec['endpoint'] != 'adaccounts'
+              ) {
                 parts[parts.length - 1] = pluralize(parts[parts.length - 1], 1);
               }
             } else if (method === 'DELETE') {
@@ -77,7 +82,8 @@ var processor = {
         // Add field that is normalized and has an underscore.
         var fieldName = fieldSpec['name'].split('.').join('_');
         fieldSpec['api_name:underscore_excluding_digit_suffix'] = isNaN(
-          fieldName.charAt(0))
+          fieldName.charAt(0),
+        )
           ? fieldName
           : 'value_' + fieldName;
       }
@@ -92,7 +98,7 @@ var processor = {
     }
 
     return specs;
-  }
-}
+  },
+};
 
 module.exports = processor;
