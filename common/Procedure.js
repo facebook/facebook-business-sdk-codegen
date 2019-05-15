@@ -5,9 +5,9 @@
  */
 
 /**
- * @typedef { import("../common/typedefs").Loader } Loader
- * @typedef { import("../common/typedefs").Processor } Processor
  * @typedef { import("../common/typedefs").Renderer } Renderer
+ * @typedef { import("../common/typedefs").Processor } Processor
+ * @typedef { import("../common/typedefs").Loader } Loader
  *
  * @typedef {Object} ProcedureProps
  * @property {Loader} loader
