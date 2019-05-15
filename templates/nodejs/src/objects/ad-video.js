@@ -4,8 +4,11 @@
  *
  * This source code is licensed under the license found in the
  * LICENSE file in the root directory of this source tree.
+ *
+ * @format
  * @flow
  */
+
 import {AbstractCrudObject} from '../abstract-crud-object';
 import Cursor from '../cursor';
 import FacebookAdsBatchApi from '../api-batch';
@@ -24,9 +27,9 @@ import {
 export default class AdVideo extends AbstractCrudObject {
   static get Fields() {
     return Object.freeze({
-     filepath: 'filepath',
-     id: 'id',
-     slideshow_spec: 'slideshow_spec',
+      filepath: 'filepath',
+      id: 'id',
+      slideshow_spec: 'slideshow_spec',
     });
   }
 
@@ -45,12 +48,15 @@ export default class AdVideo extends AbstractCrudObject {
       const request = new VideoUploadRequest(this.getApi());
 
       request.setParams({
-        'slideshow_spec[images_urls]':
-          JSON.stringify(this[AdVideo.Fields.slideshow_spec]['images_urls']),
-        'slideshow_spec[duration_ms]':
-          this[AdVideo.Fields.slideshow_spec]['duration_ms'],
-        'slideshow_spec[transition_ms]':
-          this[AdVideo.Fields.slideshow_spec]['transition_ms'],
+        'slideshow_spec[images_urls]': JSON.stringify(
+          this[AdVideo.Fields.slideshow_spec]['images_urls'],
+        ),
+        'slideshow_spec[duration_ms]': this[AdVideo.Fields.slideshow_spec][
+          'duration_ms'
+        ],
+        'slideshow_spec[transition_ms]': this[AdVideo.Fields.slideshow_spec][
+          'transition_ms'
+        ],
       });
       response = request.send([this.getParentId(), 'advideos']);
     } else if (this[AdVideo.Fields.filepath]) {
@@ -59,7 +65,7 @@ export default class AdVideo extends AbstractCrudObject {
       response = videoUploader.upload(this);
     } else {
       throw Error(
-        'AdVideo requires a filepath or slideshow_spec to be defined.'
+        'AdVideo requires a filepath or slideshow_spec to be defined.',
       );
     }
 
@@ -78,7 +84,7 @@ export default class AdVideo extends AbstractCrudObject {
       this['id'],
       interval,
       timeout,
-    )
+    );
   }
 
   /**
@@ -87,5 +93,4 @@ export default class AdVideo extends AbstractCrudObject {
   getThumbnails(fields: Object, params: Object): Cursor {
     return this.getEdge(VideoThumbnail, fields, params, 'thumbnails');
   }
-
 }

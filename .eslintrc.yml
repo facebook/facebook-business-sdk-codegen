@@ -1,0 +1,8 @@
+---
+extends: fbjs
+env:
+  node: true
+rules:
+  no-eval: warn
+  no-undef: warn
+  no-unreachable: warn

@@ -1,5 +1,7 @@
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * @format
  */
 
 /*
@@ -21,21 +23,21 @@ var processor = {
       for (var index in APIClsSpec['apis']) {
         var APISpec = APIClsSpec['apis'][index];
         var name = APISpec['name'];
-          if (name === '#get') {
-            APISpec['endpoint'] = '';
-            APISpec['method'] = 'GET';
-            APISpec['name'] = 'get';
-            APISpec['return'] = clsName;
-            APIClsSpec['has_get'] = true;
-          } else if (name === '#update') {
-            APISpec['endpoint'] = '';
-            APISpec['method'] = 'POST';
-            APISpec['name'] = 'update';
-          } else if (name === '#delete') {
-            APISpec['endpoint'] = '';
-            APISpec['method'] = 'DELETE';
-            APISpec['name'] = 'delete';
-          }
+        if (name === '#get') {
+          APISpec['endpoint'] = '';
+          APISpec['method'] = 'GET';
+          APISpec['name'] = 'get';
+          APISpec['return'] = clsName;
+          APIClsSpec['has_get'] = true;
+        } else if (name === '#update') {
+          APISpec['endpoint'] = '';
+          APISpec['method'] = 'POST';
+          APISpec['name'] = 'update';
+        } else if (name === '#delete') {
+          APISpec['endpoint'] = '';
+          APISpec['method'] = 'DELETE';
+          APISpec['name'] = 'delete';
+        }
       }
     }
 
@@ -47,7 +49,7 @@ var processor = {
       }
     }
     return specs;
-  }
-}
+  },
+};
 
 module.exports = processor;

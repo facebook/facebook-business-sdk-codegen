@@ -1,5 +1,7 @@
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * @format
  */
 
 var fs = require('fs');
@@ -14,11 +16,11 @@ var CodeGenUtil = {
     var self = this;
     return mainTemplates.map(function(template) {
       var newTemplate = JSON.parse(JSON.stringify(template));
-        newTemplate.content = newTemplate.content.replace(
-        /{{\s*>.*(%([a-zA-Z:_]+)%).*}}/ig,
+      newTemplate.content = newTemplate.content.replace(
+        /{{\s*>.*(%([a-zA-Z:_]+)%).*}}/gi,
         function(m, p1, p2) {
           return m.replace(p1, clsSpec[p2]);
-        }
+        },
       );
       return newTemplate;
     });
@@ -39,7 +41,7 @@ var CodeGenUtil = {
       }
     }
     return 0;
-  }
+  },
 };
 
 module.exports = CodeGenUtil;

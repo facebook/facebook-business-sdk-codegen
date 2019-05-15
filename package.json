@@ -1,6 +1,21 @@
 {
-  "name": "bizsdk-codegen",
-  "version": "0.1.0",
+  "name": "facebook-business-sdk-codegen",
+  "version": "0.2.0",
+  "description": "Codegen project for our business SDKs",
+  "homepage": "https://github.com/facebook/facebook-business-sdk-codegen#readme",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/facebook/facebook-business-sdk-codegen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/facebook/facebook-business-sdk-codegen/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "./node_modules/.bin/eslint --fix \"**/*.js\" && prettier --write \"**/*.js\""
+  },
   "dependencies": {
     "fs-extra": "^2.1.2",
     "js-beautify": "^1.5.10",
@@ -11,6 +26,14 @@
     "promise": "^7.0.3",
     "invariant": "^2.2.2"
   },
-  "preferGlobal": false,
-  "private": true
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-fbjs": "^3.1.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-flowtype": "^3.8.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
+    "prettier": "^1.17.1"
+  }
 }

@@ -1,5 +1,7 @@
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * @format
  */
 
 const pluralize = require('pluralize');
@@ -36,8 +38,8 @@ var processor = {
           APIClsSpec,
           'creation_parent_class',
           codeGenNameConventions.parsePascalName(
-            APIClsSpec['creation_parent_class']
-          )
+            APIClsSpec['creation_parent_class'],
+          ),
         );
       }
       if (APIClsSpec['creation_method']) {
@@ -45,8 +47,8 @@ var processor = {
           APIClsSpec,
           'creation_method',
           codeGenNameConventions.parseUnderscoreName(
-            APIClsSpec['creation_method']
-          )
+            APIClsSpec['creation_method'],
+          ),
         );
       }
     }
@@ -63,9 +65,12 @@ var processor = {
       var valuesWithNamingConvention = [];
       for (var i in enumType['values']) {
         var value = enumType['values'][i];
-        if (!value || value === '') continue;
+        if (!value || value === '') {
+          continue;
+        }
         var entry = {value: value};
-        if (languageDef.keywords.indexOf(value.toLowerCase()) > -1 ||
+        if (
+          languageDef.keywords.indexOf(value.toLowerCase()) > -1 ||
           !value.match ||
           !value.match(/^[a-zA-Z][a-zA-z0-9_]/)
         ) {
@@ -75,8 +80,8 @@ var processor = {
           entry,
           'value',
           codeGenNameConventions.parseUnderscoreName(
-            codeGenNameConventions.removeIlligalChars(entry['value'])
-          )
+            codeGenNameConventions.removeIlligalChars(entry['value']),
+          ),
         );
         if (!dedupchecker[entry['value'].toUpperCase()]) {
           dedupchecker[entry['value'].toUpperCase()] = true;
@@ -86,13 +91,13 @@ var processor = {
       codeGenNameConventions.populateNameConventions(
         enumType,
         'field_or_param',
-        codeGenNameConventions.parseUnderscoreName(enumType['field_or_param'])
+        codeGenNameConventions.parseUnderscoreName(enumType['field_or_param']),
       );
       if (enumType['node']) {
         codeGenNameConventions.populateNameConventions(
           enumType,
           'node',
-          codeGenNameConventions.parsePascalName(enumType['node'])
+          codeGenNameConventions.parsePascalName(enumType['node']),
         );
       }
       enumType['values_with_naming_convention'] = valuesWithNamingConvention;
@@ -104,7 +109,7 @@ var processor = {
         APIClsSpec,
         'name',
         codeGenNameConventions.parsePascalName(APIClsSpec['name']),
-        'cls:'
+        'cls:',
       );
 
       for (var index in APIClsSpec['apis']) {
@@ -113,7 +118,7 @@ var processor = {
           APISpec,
           'name',
           codeGenNameConventions.parseUnderscoreName(APISpec['name']),
-          'api:'
+          'api:',
         );
 
         var params = APISpec['params'] || [];
@@ -123,17 +128,19 @@ var processor = {
             paramSpec,
             'name',
             codeGenNameConventions.parseUnderscoreName(paramSpec['name']),
-            'param:'
-          )
+            'param:',
+          );
           if (paramSpec['context']) {
             codeGenNameConventions.populateNameConventions(
               paramSpec,
               'context',
-              codeGenNameConventions.parseUnderscoreName(paramSpec['context'])
+              codeGenNameConventions.parseUnderscoreName(paramSpec['context']),
             );
           }
 
-          if (languageDef.keywords.indexOf(paramSpec['name'].toLowerCase()) > -1) {
+          if (
+            languageDef.keywords.indexOf(paramSpec['name'].toLowerCase()) > -1
+          ) {
             paramSpec['is_keyword'] = true;
           }
         }
@@ -141,7 +148,7 @@ var processor = {
           codeGenNameConventions.populateNameConventions(
             APISpec,
             'return',
-            codeGenNameConventions.parsePascalName(APISpec['return'])
+            codeGenNameConventions.parsePascalName(APISpec['return']),
           );
         }
       }
@@ -152,17 +159,18 @@ var processor = {
           fieldSpec,
           'name',
           codeGenNameConventions.parseUnderscoreName(fieldSpec['name']),
-          'field:'
+          'field:',
         );
         if (fieldSpec['context']) {
           codeGenNameConventions.populateNameConventions(
             fieldSpec,
             'context',
-            codeGenNameConventions.parseUnderscoreName(fieldSpec['context'])
+            codeGenNameConventions.parseUnderscoreName(fieldSpec['context']),
           );
         }
-        if (languageDef.keywords.indexOf(fieldSpec['name'].toLowerCase()) > -1
-          || !/^[$A-Z_][0-9A-Z_$]*$/i.test(fieldSpec['name'])
+        if (
+          languageDef.keywords.indexOf(fieldSpec['name'].toLowerCase()) > -1 ||
+          !/^[$A-Z_][0-9A-Z_$]*$/i.test(fieldSpec['name'])
         ) {
           // This is to mark field names that are either keywords or
           // is not a valid identifier. We need special treatment to use
@@ -172,7 +180,7 @@ var processor = {
       }
     }
     return specs;
-  }
-}
+  },
+};
 
 module.exports = processor;

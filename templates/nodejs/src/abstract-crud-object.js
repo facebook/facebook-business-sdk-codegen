@@ -157,7 +157,9 @@ export class AbstractCrudObject extends AbstractObject {
   read(fields: Array<string>, params: Object = {}): Promise<*> {
     const api = this.getApi();
     const path: Array<string> = [this.getNodePath()];
-    if (fields) params['fields'] = fields.join(',');
+    if (fields) {
+      params['fields'] = fields.join(',');
+    }
     return new Promise((resolve, reject) => {
       api
         .call('GET', path, params)
@@ -301,7 +303,9 @@ export class AbstractCrudObject extends AbstractObject {
     api: FacebookAdsApi,
   ): Promise<*> {
     api = api || FacebookAdsApi.getDefaultApi();
-    if (fields) params['fields'] = fields.join(',');
+    if (fields) {
+      params['fields'] = fields.join(',');
+    }
     params['ids'] = ids.join(',');
     return new Promise((resolve, reject) => {
       return api

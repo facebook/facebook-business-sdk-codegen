@@ -12,8 +12,8 @@ import APIRequest from './api-request';
 import APIResponse from './api-response';
 
 /**
-  * Facebook Ads API Batch
-  */
+ * Facebook Ads API Batch
+ */
 class FacebookAdsApiBatch {
   _api: FacebookAdsApi;
   _files: Array<string>;

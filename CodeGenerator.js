@@ -1,8 +1,10 @@
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * @format
  */
 
-const minimist = require('minimist')
+const minimist = require('minimist');
 const fs = require('fs');
 var path = require('path');
 const Utils = require('./common/Utils');
@@ -10,8 +12,7 @@ const Procedure = require('./common/Procedure');
 
 const SpecFileLoader = require('./loaders/SpecFileLoader');
 
-const AutoAddIdFieldForRootNodeProcessor =
-  require('./processors/AutoAddIdFieldForRootNodeProcessor');
+const AutoAddIdFieldForRootNodeProcessor = require('./processors/AutoAddIdFieldForRootNodeProcessor');
 const ReferenceProcessor = require('./processors/ReferenceProcessor');
 const NormalizationProcessor = require('./processors/NormalizationProcessor');
 const SpecOverridingProcessor = require('./processors/SpecOverridingProcessor');
@@ -28,7 +29,7 @@ const args = minimist(process.argv.slice(2));
 const language = args._[0];
 Utils.validateLanguage(language);
 const version = args.v || Utils.loadDefaultVersion();
-const outputDir = args.o || "sdk/servers/"+language+"/release";
+const outputDir = args.o || 'sdk/servers/' + language + '/release';
 const cleandir = args.c ? args.c.split(',') : [];
 
 var procedure = new Procedure({
@@ -42,12 +43,9 @@ var procedure = new Procedure({
     CreationEndpointHackProcessor,
     NamingConventionProcessor,
     ReferenceProcessor,
-    LanguageSpecificProcessor
+    LanguageSpecificProcessor,
   ],
-  renderers: [
-    MustacheRenderer,
-    DebugJsonRenderer
-  ]
+  renderers: [MustacheRenderer, DebugJsonRenderer],
 });
 
 procedure.run(version, language, outputDir, cleandir);

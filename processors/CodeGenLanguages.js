@@ -1,5 +1,7 @@
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * @format
  */
 
 var mustache = require('mustache');
@@ -23,30 +25,38 @@ var CodeGenLanguages = {
     preMustacheProcess: function(
       APISpecs,
       codeGenNameConventions,
-      enumMetadataMap
+      enumMetadataMap,
     ) {
       generateFieldEnumReferences(
         APISpecs,
         codeGenNameConventions,
-        enumMetadataMap
+        enumMetadataMap,
       );
       for (var clsName in APISpecs) {
         var allEnumRefs = {};
         var ClsSpec = APISpecs[clsName];
         for (var index in ClsSpec['api_spec_based_enum_reference']) {
           var enumMetadata = ClsSpec['api_spec_based_enum_reference'][index];
-          if (!enumMetadata['node']) continue;
-          var enumPHPClassName = enumMetadata['node:pascal_case'] +
-            enumMetadata['field_or_param:pascal_case'] + 'Values';
+          if (!enumMetadata['node']) {
+            continue;
+          }
+          var enumPHPClassName =
+            enumMetadata['node:pascal_case'] +
+            enumMetadata['field_or_param:pascal_case'] +
+            'Values';
           allEnumRefs[enumPHPClassName] = true;
         }
         for (var apiName in ClsSpec['apis']) {
           var APISpec = ClsSpec['apis'][apiName];
           for (var index in APISpec['referred_enums']) {
             var enumMetadata = APISpec['referred_enums'][index]['metadata'];
-            if (!enumMetadata['node']) continue;
-            var enumPHPClassName = enumMetadata['node:pascal_case'] +
-              enumMetadata['field_or_param:pascal_case'] + 'Values';
+            if (!enumMetadata['node']) {
+              continue;
+            }
+            var enumPHPClassName =
+              enumMetadata['node:pascal_case'] +
+              enumMetadata['field_or_param:pascal_case'] +
+              'Values';
             allEnumRefs[enumPHPClassName] = true;
           }
         }
@@ -67,11 +77,16 @@ var CodeGenLanguages = {
         }
         var enumReferences = clsSpec['api_spec_based_enum_reference'];
         enumReferences.forEach(function(enumReference) {
-          var filename = enumReference['node:pascal_case']
-            + enumReference['field_or_param:pascal_case'] + 'Values.php';
+          var filename =
+            enumReference['node:pascal_case'] +
+            enumReference['field_or_param:pascal_case'] +
+            'Values.php';
 
-          var code = mustache.render(template.content, enumReference,
-            partialTemplates);
+          var code = mustache.render(
+            template.content,
+            enumReference,
+            partialTemplates,
+          );
           if (code && code.length > 0) {
             filenameToCodeMap[filename] = code;
           }
@@ -87,33 +102,33 @@ var CodeGenLanguages = {
 
       return filenameToCodeMap;
     },
-    keywords: ['try', 'private', 'public', 'new', 'default', 'class', 'global']
+    keywords: ['try', 'private', 'public', 'new', 'default', 'class', 'global'],
   },
   python: {
     formatFileName: function(clsName) {
       return clsName['name:all_lower_case'] + '.py';
     },
-    preMustacheProcess: function (
+    preMustacheProcess: function(
       APISpecs,
       codeGenNameConventions,
-      enumMetadataMap
+      enumMetadataMap,
     ) {
       for (var clsName in APISpecs) {
         var APIClsSpec = APISpecs[clsName];
-          for (var index in APIClsSpec['fields']) {
-            var fieldSpec = APIClsSpec['fields'][index];
-            fieldSpec['index'] = index;
+        for (var index in APIClsSpec['fields']) {
+          var fieldSpec = APIClsSpec['fields'][index];
+          fieldSpec['index'] = index;
         }
       }
 
       generateFieldEnumReferences(
         APISpecs,
         codeGenNameConventions,
-        enumMetadataMap
+        enumMetadataMap,
       );
       return APISpecs;
     },
-    keywords: ['try', 'default', 'class', 'global', 'in', 'from', 'with']
+    keywords: ['try', 'default', 'class', 'global', 'in', 'from', 'with'],
   },
   java: codegenLanguageJava,
   ruby: codegenLanguageRuby,
@@ -122,7 +137,7 @@ var CodeGenLanguages = {
 function generateFieldEnumReferences(
   APISpecs,
   codeGenNameConventions,
-  enumMetadataMap
+  enumMetadataMap,
 ) {
   for (var clsName in APISpecs) {
     var APIClsSpec = APISpecs[clsName];
