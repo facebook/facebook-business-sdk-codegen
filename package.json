@@ -24,5 +24,8 @@
     "pluralize": "^2.0.0",
     "promise": "^7.0.3",
     "invariant": "^2.2.2"
+  },
+  "devDependencies": {
+    "prettier": "^1.17.1"
   }
 }
