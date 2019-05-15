@@ -6,3 +6,8 @@ rules:
   no-eval: warn
   no-undef: warn
   no-unreachable: warn
+  max-len:
+    - warn
+    - ignoreComments: true
+      ignorePattern: ^import\s.+\sfrom\s.+;$
+      ignoreStrings: true
