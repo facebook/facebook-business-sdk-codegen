@@ -4,25 +4,29 @@
  * @format
  */
 
-var fs = require('fs');
-var path = require('path');
-var mustache = require('mustache');
+'use strict';
 
-const codeGenFileDepreciationSign =
-  '@remove_depreciated_file@' + new Date().getTime().toString();
+const fs = require('fs');
+const path = require('path');
 
-var Utils = {
-  getCodeGenFileDepreciationSign: function() {
-    // special signature that can mark a codegen file should be removed.
-    return codeGenFileDepreciationSign;
-  },
-  usage: function(message) {
+const Utils = {
+  // special signature that can mark a codegen file should be removed.
+  codeGenFileDepreciationSign:
+    '@remove_depreciated_file@' + new Date().getTime().toString(),
+  /**
+   * @private
+   * @param {any} message
+   */
+  throwUsageError(message) {
     console.log(
       'Usage: codegen <language> [-v api_version] [-o output_path] [-c folder_to_cleanup]',
     );
     throw message;
   },
-  validateLanguage: function(language) {
+  /**
+   * @param {string} language
+   */
+  validateLanguage(language) {
     const supportedLanguages = [
       // @fb-only
       'java',
@@ -32,14 +36,14 @@ var Utils = {
       'ruby',
     ];
     if (!language) {
-      this.usage(
+      this.throwUsageError(
         'language is not specified! available languages: ' +
           supportedLanguages.join(', '),
       );
     }
 
     if (supportedLanguages.indexOf(language) < 0) {
-      this.usage(
+      this.throwUsageError(
         'unsupported language: ' +
           language +
           '! available languages: ' +
@@ -47,9 +51,10 @@ var Utils = {
       );
     }
   },
-  loadDefaultVersion: function() {
-    var fileName = path.resolve(__dirname, '..', 'api_specs/specs/version.txt');
-    return fs.readFileSync(fileName, 'utf8').trim();
+  loadDefaultVersion() {
+    const fileName = 'api_specs/specs/version.txt';
+    const filePath = path.resolve(__dirname, '..', fileName);
+    return fs.readFileSync(filePath, 'utf8').trim();
   },
 };
 

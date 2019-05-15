@@ -22,7 +22,7 @@ var SpecFileLoader = {
     // Compute version features
     var versionedFeatures = {};
     var versionedFeaturesWithDepreciation = {};
-    const codeGenFileDepreciationSign = commonUtils.getCodeGenFileDepreciationSign();
+    const codeGenFileDepreciationSign = commonUtils.codeGenFileDepreciationSign;
     for (var currentVersion in codeGenVersions) {
       if (utils.versionCompare(currentVersion, version) <= 0) {
         if (codeGenVersions[currentVersion]) {

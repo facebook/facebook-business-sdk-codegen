@@ -71,7 +71,7 @@ MustacheRenderer.render = function(
     );
   }
 
-  const codeGenFileDepreciationSign = commonUtils.getCodeGenFileDepreciationSign();
+  const codeGenFileDepreciationSign = commonUtils.codeGenFileDepreciationSign;
   const apiSpecArray = [];
   for (var nodeName in APISpecs) {
     var APIClsSpec = APISpecs[nodeName];
