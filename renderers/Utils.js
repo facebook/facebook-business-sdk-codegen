@@ -157,7 +157,9 @@ var Utils = {
     try {
       stats = fs.lstatSync(dir);
     } catch (e) {
-      if (e.code !== 'ENOENT') throw e;
+      if (e.code !== 'ENOENT') {
+        throw e;
+      }
       return;
     }
 
@@ -176,7 +178,9 @@ var Utils = {
       try {
         fs.mkdirSync(destDir);
       } catch (e) {
-        if (e.code !== 'EEXIST') throw e;
+        if (e.code !== 'EEXIST') {
+          throw e;
+        }
       }
       fs.readdirSync(srcDir).forEach(function(file) {
         Utils.copyRecursiveSync(
@@ -188,7 +192,9 @@ var Utils = {
       try {
         fs_extra.copySync(srcDir, destDir);
       } catch (e) {
-        if (e.code !== 'EEXIST') throw e;
+        if (e.code !== 'EEXIST') {
+          throw e;
+        }
       }
     }
   },

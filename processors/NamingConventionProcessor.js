@@ -65,7 +65,9 @@ var processor = {
       var valuesWithNamingConvention = [];
       for (var i in enumType['values']) {
         var value = enumType['values'][i];
-        if (!value || value === '') continue;
+        if (!value || value === '') {
+          continue;
+        }
         var entry = {value: value};
         if (
           languageDef.keywords.indexOf(value.toLowerCase()) > -1 ||

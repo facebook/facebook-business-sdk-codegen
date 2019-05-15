@@ -37,7 +37,9 @@ var CodeGenLanguages = {
         var ClsSpec = APISpecs[clsName];
         for (var index in ClsSpec['api_spec_based_enum_reference']) {
           var enumMetadata = ClsSpec['api_spec_based_enum_reference'][index];
-          if (!enumMetadata['node']) continue;
+          if (!enumMetadata['node']) {
+            continue;
+          }
           var enumPHPClassName =
             enumMetadata['node:pascal_case'] +
             enumMetadata['field_or_param:pascal_case'] +
@@ -48,7 +50,9 @@ var CodeGenLanguages = {
           var APISpec = ClsSpec['apis'][apiName];
           for (var index in APISpec['referred_enums']) {
             var enumMetadata = APISpec['referred_enums'][index]['metadata'];
-            if (!enumMetadata['node']) continue;
+            if (!enumMetadata['node']) {
+              continue;
+            }
             var enumPHPClassName =
               enumMetadata['node:pascal_case'] +
               enumMetadata['field_or_param:pascal_case'] +

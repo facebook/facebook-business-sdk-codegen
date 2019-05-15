@@ -11,7 +11,9 @@ var mustache = require('mustache');
 var Utils = {
   loadJSONFile: function(fileName, keepComments) {
     var content = fs.readFileSync(fileName, 'utf8');
-    if (!keepComments) content = content.replace(/^\/\/.*\n/gm, '');
+    if (!keepComments) {
+      content = content.replace(/^\/\/.*\n/gm, '');
+    }
     try {
       return JSON.parse(content);
     } catch (e) {

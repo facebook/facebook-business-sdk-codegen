@@ -71,7 +71,9 @@ var codeGenNameConventions = {
   },
 
   parseEndpointName: function(endpoint, boostWords, clsName) {
-    if (endpoint === 'leadgen_forms') return ['lead', 'gen', 'forms'];
+    if (endpoint === 'leadgen_forms') {
+      return ['lead', 'gen', 'forms'];
+    }
     if (endpoint === 'leadgen_context_cards') {
       return ['lead', 'gen', 'context', 'cards'];
     }

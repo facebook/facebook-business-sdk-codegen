@@ -96,10 +96,11 @@ var CodeGenLanguageJava = {
             }
           }
         }
-        if (APISpec['params'])
+        if (APISpec['params']) {
           APISpec['params'] = APISpec['params'].filter(function(element) {
             return element != null;
           });
+        }
       }
 
       for (var index in APIClsSpec['fields']) {
@@ -146,7 +147,9 @@ var CodeGenLanguageJava = {
     return APISpecs;
   },
   getTypeForJava: function(type) {
-    if (!type) return;
+    if (!type) {
+      return;
+    }
     var typeMapping = {};
     // This is not perfect. But it's working for all types we have so far.
     typeMapping['String'] = /string|datetime/gi;
