@@ -341,12 +341,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "agencies",
-            "return": "Business",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "app_event_types",
             "return": "ApplicationAppEventTypes",
             "params": []
@@ -468,44 +462,10 @@
             ]
         },
         {
-            "method": "DELETE",
-            "endpoint": "authorized_adaccounts",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "account_id",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "business",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "authorized_adaccounts",
             "return": "AdAccount",
             "params": [
-                {
-                    "name": "business",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "authorized_adaccounts",
-            "return": "Application",
-            "params": [
-                {
-                    "name": "account_id",
-                    "required": true,
-                    "type": "string"
-                },
                 {
                     "name": "business",
                     "required": false,
@@ -1827,6 +1787,10 @@
         {
             "name": "restrictions",
             "type": "Object"
+        },
+        {
+            "name": "restrictive_data_filter_rules",
+            "type": "string"
         },
         {
             "name": "sdk_update_message",

@@ -656,6 +656,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "override_type",
+                    "required": false,
+                    "type": "productcatalogproduct_feeds_override_type_enum_param"
+                },
+                {
                     "name": "quoted_fields_mode",
                     "required": false,
                     "type": "productcatalogproduct_feeds_quoted_fields_mode_enum_param"

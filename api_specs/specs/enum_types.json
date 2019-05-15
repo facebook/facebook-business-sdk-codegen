@@ -5544,15 +5544,6 @@
         ]
     },
     {
-        "name": "businessapps_access_type_enum_param",
-        "node": "Business",
-        "field_or_param": "access_type",
-        "values": [
-            "AGENCY",
-            "OWNER"
-        ]
-    },
-    {
         "name": "businessbusiness_invoices_type_enum_param",
         "node": "OracleTransaction",
         "field_or_param": "type",
@@ -6063,18 +6054,6 @@
     {
         "name": "businessuser_role",
         "node": "BusinessUser",
-        "field_or_param": "role",
-        "values": [
-            "ADMIN",
-            "ADS_RIGHTS_REVIEWER",
-            "EMPLOYEE",
-            "FINANCE_ANALYST",
-            "FINANCE_EDITOR"
-        ]
-    },
-    {
-        "name": "businessuserpermissions_role_enum_param",
-        "node": "Business",
         "field_or_param": "role",
         "values": [
             "ADMIN",
@@ -9120,6 +9099,15 @@
             "PRODUCTS",
             "VEHICLES",
             "VEHICLE_OFFER"
+        ]
+    },
+    {
+        "name": "productcatalogproduct_feeds_override_type_enum_param",
+        "node": "ProductFeed",
+        "field_or_param": "override_type",
+        "values": [
+            "COUNTRY",
+            "LANGUAGE"
         ]
     },
     {

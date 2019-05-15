@@ -493,50 +493,9 @@
         },
         {
             "method": "GET",
-            "endpoint": "agency_pages",
-            "return": "Page",
-            "params": [
-                {
-                    "name": "agency_id",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "an_placements",
             "return": "AdPlacement",
             "params": []
-        },
-        {
-            "method": "DELETE",
-            "endpoint": "apps",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "app_id",
-                    "required": true,
-                    "type": "int"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "apps",
-            "return": "Business",
-            "params": [
-                {
-                    "name": "access_type",
-                    "required": true,
-                    "type": "businessapps_access_type_enum_param"
-                },
-                {
-                    "name": "app_id",
-                    "required": true,
-                    "type": "Object"
-                }
-            ]
         },
         {
             "method": "POST",
@@ -1501,57 +1460,6 @@
                     "name": "upload_tag",
                     "required": true,
                     "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "DELETE",
-            "endpoint": "user_invitations",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "email",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "DELETE",
-            "endpoint": "userpermissions",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "email",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "user",
-                    "required": false,
-                    "type": "int"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "userpermissions",
-            "return": "Business",
-            "params": [
-                {
-                    "name": "email",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "role",
-                    "required": false,
-                    "type": "businessuserpermissions_role_enum_param"
-                },
-                {
-                    "name": "user",
-                    "required": false,
-                    "type": "int"
                 }
             ]
         },
