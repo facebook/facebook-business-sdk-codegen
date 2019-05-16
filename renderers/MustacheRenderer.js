@@ -73,19 +73,11 @@ const MustacheRenderer = {
       );
     }
 
-  const codeGenFileDepreciationSign = commonUtils.codeGenFileDepreciationSign;
-  const apiSpecArray = [];
-  for (var nodeName in APISpecs) {
-    var APIClsSpec = APISpecs[nodeName];
-    apiSpecArray.push(APIClsSpec);
-  }
-  SDKConfig.api_specs = apiSpecArray;
-  versionedTemplates.forEach(function(value) {
-    var fileContent = mustache.render(value.content, SDKConfig, {});
-    if (fileContent.trim().indexOf(codeGenFileDepreciationSign + '\n')) {
-      var destDir = sdkRootPath + value.dir;
-      utils.mkdirsSync(destDir);
-      fs.writeFileSync(destDir + value.file, fileContent);
+    const depreciationSign = commonUtils.codeGenFileDepreciationSign;
+    const apiSpecArray = [];
+    for (const nodeName in APISpecs) {
+      const APIClsSpec = APISpecs[nodeName];
+      apiSpecArray.push(APIClsSpec);
     }
     SDKConfig.api_specs = apiSpecArray;
     versionedTemplates.forEach(value => {
