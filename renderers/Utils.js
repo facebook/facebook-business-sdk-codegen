@@ -4,33 +4,40 @@
  * @format
  */
 
-var fs = require('fs');
-var fs_extra = require('fs-extra');
-var path = require('path');
-var mustache = require('mustache');
+'use strict';
 
-var Utils = {
-  loadTemplates: function(templateDir) {
+const fs = require('fs');
+const fs_extra = require('fs-extra');
+const path = require('path');
+const mustache = require('mustache');
+
+const Utils = {
+  /**
+   * @param { string } templateDir
+   */
+  loadTemplates(templateDir) {
     // 1. load codegen main templates
     // 2. load codegen partial templates
     // 3. discover files need to copy to the sdk folder
-    var mainTemplates = [];
-    var partialTemplates = {};
-    var versionedTemplates = [];
-    var filesNeedCopy = [];
-    function walkTemplateDir(dir) {
-      var relativeDir = dir.substring(templateDir.length) + path.sep;
-      fs.readdirSync(dir).forEach(function(file) {
-        var fullPath = path.join(dir, file);
-        var relativePath = path.join(relativeDir, file);
+    const mainTemplates = [];
+    const partialTemplates = {};
+    const versionedTemplates = [];
+    const filesNeedCopy = [];
+    /**
+     * @param {string} dir
+     */
+    const walkTemplateDir = dir => {
+      const relativeDir = dir.substring(templateDir.length) + path.sep;
+      fs.readdirSync(dir).forEach(file => {
+        const fullPath = path.join(dir, file);
 
-        var stat = fs.statSync(fullPath);
+        const stat = fs.statSync(fullPath);
         if (stat.isDirectory()) {
           walkTemplateDir(fullPath);
         } else if (stat.isFile()) {
-          var match = file.match(/^(.*)\.mustache$/);
+          let match = file.match(/^(.*)\.mustache$/);
           if (match) {
-            var name = match[1];
+            const name = match[1];
             if (name === 'codegen') {
               // Main templates
               mainTemplates.push({
@@ -62,7 +69,7 @@ var Utils = {
           }
         }
       });
-    }
+    };
     walkTemplateDir(templateDir);
     return {
       mainTemplates: mainTemplates,
@@ -71,9 +78,12 @@ var Utils = {
       filesNeedCopy: filesNeedCopy,
     };
   },
-  mkdirsSync: function(dir) {
-    var dirPath = '';
-    var dirs = dir.split(path.sep);
+  /**
+   * @param {string} dir
+   */
+  mkdirsSync(dir) {
+    let dirPath = '';
+    const dirs = dir.split(path.sep);
     while (dirs.length > 0) {
       dirPath = dirPath + path.sep + dirs.shift();
       if (!fs.existsSync(dirPath)) {
@@ -81,7 +91,15 @@ var Utils = {
       }
     }
   },
-  fillMainTemplates: function(
+  /**
+   * @param {any} mainTemplates
+   * @param {any} partialTemplates
+   * @param {any} clsSpec
+   * @param {string} language
+   * @param {{ [x: string]: any; }} codeGenLanguages
+   * @param {string} rootPath
+   */
+  fillMainTemplates(
     mainTemplates,
     partialTemplates,
     clsSpec,
@@ -89,45 +107,54 @@ var Utils = {
     codeGenLanguages,
     rootPath,
   ) {
-    var self = this;
+    mainTemplates = this.preProcessMainTemplates(mainTemplates, clsSpec);
+    mainTemplates.forEach(
+      /**
+       * @param {{ content: string; dir?: any; }} template
+       */
+      template => {
+        const languageDef = codeGenLanguages[language];
+        let filenameToCodeMap = {};
 
-    mainTemplates = self.preProcessMainTemplates(mainTemplates, clsSpec);
-    mainTemplates.forEach(function(template) {
-      var languageDef = codeGenLanguages[language];
-      var filenameToCodeMap = {};
+        if (languageDef.generateFilenameToCodeMap) {
+          filenameToCodeMap = languageDef.generateFilenameToCodeMap(
+            clsSpec,
+            template,
+            partialTemplates,
+          );
+        } else {
+          filenameToCodeMap = this.generateSimpleFilenameToCodeMap(
+            clsSpec,
+            template,
+            partialTemplates,
+            languageDef,
+          );
+        }
 
-      if (languageDef.generateFilenameToCodeMap) {
-        filenameToCodeMap = languageDef.generateFilenameToCodeMap(
-          clsSpec,
-          template,
-          partialTemplates,
-        );
-      } else {
-        filenameToCodeMap = self.generateSimpleFilenameToCodeMap(
-          clsSpec,
-          template,
-          partialTemplates,
-          languageDef,
-        );
-      }
-
-      for (var filename in filenameToCodeMap) {
-        var code = filenameToCodeMap[filename];
-        var outputPath = path.join(rootPath, template.dir);
-        self.mkdirsSync(outputPath);
-        fs.writeFileSync(path.join(outputPath, filename), code);
-      }
-    });
+        for (const filename in filenameToCodeMap) {
+          const code = filenameToCodeMap[filename];
+          const outputPath = path.join(rootPath, template.dir);
+          this.mkdirsSync(outputPath);
+          fs.writeFileSync(path.join(outputPath, filename), code);
+        }
+      },
+    );
   },
-  generateSimpleFilenameToCodeMap: function(
+  /**
+   * @param {any} clsSpec
+   * @param {{ content: string; }} template
+   * @param {any} partialTemplates
+   * @param {{ formatFileName: (arg0: any, arg1: any) => void; postProcess: (arg0: string) => string; }} languageDef
+   */
+  generateSimpleFilenameToCodeMap(
     clsSpec,
     template,
     partialTemplates,
     languageDef,
   ) {
-    var filenameToCodeMap = {};
-    var filename = languageDef.formatFileName(clsSpec, template);
-    var code = mustache.render(template.content, clsSpec, partialTemplates);
+    const filenameToCodeMap = {};
+    const filename = languageDef.formatFileName(clsSpec, template);
+    let code = mustache.render(template.content, clsSpec, partialTemplates);
 
     if (languageDef.postProcess) {
       code = languageDef.postProcess(code);
@@ -139,21 +166,30 @@ var Utils = {
 
     return filenameToCodeMap;
   },
-  preProcessMainTemplates: function(mainTemplates, clsSpec) {
-    var self = this;
-    return mainTemplates.map(function(template) {
-      var newTemplate = JSON.parse(JSON.stringify(template));
+  /**
+   * @param {{ map: (arg0: (template: any) => any) => void; }} mainTemplates
+   * @param {{ [x: string]: any; }} clsSpec
+   */
+  preProcessMainTemplates(mainTemplates, clsSpec) {
+    return mainTemplates.map(template => {
+      const newTemplate = JSON.parse(JSON.stringify(template));
       newTemplate.content = newTemplate.content.replace(
         /{{\s*>.*(%([a-zA-Z:_]+)%).*}}/gi,
-        function(m, p1, p2) {
-          return m.replace(p1, clsSpec[p2]);
-        },
+        /**
+         * @param {string} m
+         * @param {string} p1
+         * @param {string} p2
+         */
+        (m, p1, p2) => m.replace(p1, clsSpec[p2]),
       );
       return newTemplate;
     });
   },
-  removeRecursiveSync: function(dir) {
-    var stats;
+  /**
+   * @param {string} dir
+   */
+  removeRecursiveSync(dir) {
+    let stats;
     try {
       stats = fs.lstatSync(dir);
     } catch (e) {
@@ -164,16 +200,20 @@ var Utils = {
     }
 
     if (stats.isDirectory()) {
-      fs.readdirSync(dir).forEach(function(file) {
-        Utils.removeRecursiveSync(path.join(dir, file));
-      });
+      fs.readdirSync(dir).forEach(file =>
+        Utils.removeRecursiveSync(path.join(dir, file)),
+      );
       fs.rmdirSync(dir);
     } else {
       fs.unlinkSync(dir);
     }
   },
-  copyRecursiveSync: function(srcDir, destDir) {
-    var srcDirStats = fs.statSync(srcDir);
+  /**
+   * @param {string} srcDir
+   * @param {string} destDir
+   */
+  copyRecursiveSync(srcDir, destDir) {
+    const srcDirStats = fs.statSync(srcDir);
     if (srcDirStats.isDirectory()) {
       try {
         fs.mkdirSync(destDir);
@@ -182,12 +222,12 @@ var Utils = {
           throw e;
         }
       }
-      fs.readdirSync(srcDir).forEach(function(file) {
+      fs.readdirSync(srcDir).forEach(file =>
         Utils.copyRecursiveSync(
           path.join(srcDir, file),
           path.join(destDir, file),
-        );
-      });
+        ),
+      );
     } else {
       try {
         fs_extra.copySync(srcDir, destDir);
