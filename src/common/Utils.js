@@ -53,7 +53,7 @@ const Utils = {
   },
   loadDefaultVersion() {
     const fileName = 'api_specs/specs/version.txt';
-    const filePath = path.resolve(__dirname, '..', fileName);
+    const filePath = path.resolve(__dirname, '..', '..', fileName);
     return fs.readFileSync(filePath, 'utf8').trim();
   },
 };

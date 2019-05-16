@@ -28,7 +28,13 @@ function _isCharUpper(ch) {
   return ch >= 'A' && ch <= 'Z';
 }
 
-var _decodeDictFile = path.resolve(__dirname, 'EndpointDecodeDict.txt');
+var _decodeDictFile = path.resolve(
+  __dirname,
+  '..',
+  '..',
+  'api_specs',
+  'EndpointDecodeDict.txt',
+);
 var _decodeDictBase = {};
 if (fs.existsSync(_decodeDictFile)) {
   _decodeDictBase = fs

@@ -13,4 +13,4 @@ rules:
       ignoreStrings: true
   radix:
     - warn
-    - as-needed: true
+    - as-needed

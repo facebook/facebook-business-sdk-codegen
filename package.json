@@ -14,7 +14,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "./node_modules/.bin/eslint --fix \"**/*.js\" && prettier --write \"**/*.js\""
+    "format": "./node_modules/.bin/eslint --fix \"src/**/*.js\" && prettier --write \"src/**/*.js\""
   },
   "dependencies": {
     "fs-extra": "^2.1.2",
