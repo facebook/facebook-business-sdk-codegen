@@ -11,3 +11,6 @@ rules:
     - ignoreComments: true
       ignorePattern: ^import\s.+\sfrom\s.+;$
       ignoreStrings: true
+  radix:
+    - warn
+    - as-needed: true
