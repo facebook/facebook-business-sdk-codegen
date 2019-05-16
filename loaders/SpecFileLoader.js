@@ -4,30 +4,39 @@
  * @format
  */
 
-const merge = require('merge');
+/**
+ * @typedef { import("../common/typedefs").Loader } Loader
+ */
+
+'use strict';
+
 const path = require('path');
-
-const utils = require('./Utils');
-const commonUtils = require('../common/Utils');
+const Utils = require('./Utils');
 const codeGenVersions = require('../api_specs/versions.json');
+const CommonUtils = require('../common/Utils');
 
-var SpecFileLoader = {
-  load: function(version) {
-    var APISpecDir = path.resolve(__dirname, '..', 'api_specs');
-    var overriddenAPISpecName = 'SDKCodegen';
-    var overriddenAPISpecs = utils.loadJSONFile(
+/**
+ * @type {Loader}
+ */
+const SpecFileLoader = {
+  load(version) {
+    const APISpecDir = path.resolve(__dirname, '..', 'api_specs');
+    const overriddenAPISpecName = 'SDKCodegen';
+    const overriddenAPISpecs = Utils.loadJSONFile(
       path.join(APISpecDir, overriddenAPISpecName + '.json'),
     );
 
     // Compute version features
-    var versionedFeatures = {};
-    var versionedFeaturesWithDepreciation = {};
-    const codeGenFileDepreciationSign = commonUtils.getCodeGenFileDepreciationSign();
-    for (var currentVersion in codeGenVersions) {
-      if (utils.versionCompare(currentVersion, version) <= 0) {
+    const versionedFeatures = {};
+    const versionedFeaturesWithDepreciation = {};
+    const codeGenFileDepreciationSign = CommonUtils.codeGenFileDepreciationSign;
+    for (const currentVersion in codeGenVersions) {
+      if (Utils.versionCompare(currentVersion, version) <= 0) {
         if (codeGenVersions[currentVersion]) {
-          codeGenVersions[currentVersion].forEach(function(feature) {
-            var hasFeatureName = 'has_' + feature;
+          /** @type {string[]} */
+          const currentVersions = codeGenVersions[currentVersion];
+          currentVersions.forEach(feature => {
+            const hasFeatureName = 'has_' + feature;
             versionedFeatures[hasFeatureName] = true;
             versionedFeaturesWithDepreciation[hasFeatureName] = {
               '@remove_file': codeGenFileDepreciationSign,
@@ -38,7 +47,7 @@ var SpecFileLoader = {
     }
 
     // Load API specs
-    var loadedAPISpecs = utils.loadSpecsFromFile(APISpecDir);
+    const loadedAPISpecs = Utils.loadSpecsFromFile(APISpecDir);
 
     // merge versioned overridden API specs
     return {
@@ -51,7 +60,6 @@ var SpecFileLoader = {
       },
     };
   },
-  isAsync: false,
 };
 
 module.exports = SpecFileLoader;

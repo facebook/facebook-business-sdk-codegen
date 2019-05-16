@@ -4,13 +4,22 @@
  * @format
  */
 
-var fs = require('fs');
-var path = require('path');
-var mustache = require('mustache');
+/**
+ * @typedef { import("../common/typedefs").APIInputSpecs } APIInputSpecs
+ */
 
-var Utils = {
-  loadJSONFile: function(fileName, keepComments) {
-    var content = fs.readFileSync(fileName, 'utf8');
+'use strict';
+
+const fs = require('fs');
+const path = require('path');
+
+const Utils = {
+  /**
+   * @param {string} fileName
+   * @param {boolean} keepComments
+   */
+  loadJSONFile(fileName, keepComments = false) {
+    let content = fs.readFileSync(fileName, 'utf8');
     if (!keepComments) {
       content = content.replace(/^\/\/.*\n/gm, '');
     }
@@ -21,20 +30,24 @@ var Utils = {
       throw e;
     }
   },
-  loadSpecsFromFile: function(specDir) {
+  /**
+   * @param {string} specDir
+   * @returns {APIInputSpecs}
+   */
+  loadSpecsFromFile(specDir) {
     // Load API specs
-    var self = this;
-    var specs = {};
-    var enumMetadataMap = {};
-    var versionedSpecDir = path.join(specDir, 'specs');
-    fs.readdirSync(versionedSpecDir).forEach(function(file) {
-      var match = file.match(/^([a-z0-9_\-\.]+)\.json$/i);
+    const specs = {};
+    const enumMetadataMap = {};
+    const versionedSpecDir = path.join(specDir, 'specs');
+    fs.readdirSync(versionedSpecDir).forEach(file => {
+      const match = file.match(/^([a-z0-9_\-\.]+)\.json$/i);
       if (match) {
-        var name = match[1];
-        var json = self.loadJSONFile(path.join(versionedSpecDir, file));
-        if (name === 'enum_types') {
-          json.forEach(function(enumType) {
-            for (var i in enumType.values) {
+        const name = match[1];
+        /** @type {Array<{ values: { [x: string]: any }; name: string; }>} */
+        const json = this.loadJSONFile(path.join(versionedSpecDir, file));
+        if ('enum_types' === name) {
+          json.forEach(enumType => {
+            for (const i in enumType.values) {
               if (enumType.values[i].trim) {
                 enumType.values[i] = enumType.values[i].trim();
               }
@@ -52,15 +65,19 @@ var Utils = {
       enumMetadataMap: enumMetadataMap,
     };
   },
-  versionCompare: function(verA, verB) {
+  /**
+   * @param { string } verA
+   * @param { string } verB
+   */
+  versionCompare(verA, verB) {
     if (verA.charAt(0) != 'v' || verB.charAt(0) != 'v') {
       throw new Error('invalid version number');
     }
-    var partsA = verA.substring(1).split('.');
-    var partsB = verB.substring(1).split('.');
-    for (var i = 0; i < Math.max(partsA.length, partsB.length); ++i) {
-      var numA = parseInt(partsA[i] || '-1');
-      var numB = parseInt(partsB[i] || '-1');
+    const partsA = verA.substring(1).split('.');
+    const partsB = verB.substring(1).split('.');
+    for (let i = 0; i < Math.max(partsA.length, partsB.length); ++i) {
+      const numA = parseInt(partsA[i] || '-1');
+      const numB = parseInt(partsB[i] || '-1');
       if (numA > numB) {
         return 1;
       } else if (numA < numB) {

@@ -4,20 +4,23 @@
  * @format
  */
 
+/**
+ * @typedef { import("../common/typedefs").Renderer } Renderer
+ */
+
+'use strict';
+
 const fs = require('fs');
 const path = require('path');
 
-var DebugJsonRenderer = {};
-
-DebugJsonRenderer.render = function(
-  specs,
-  language,
-  version,
-  outputDir,
-  keepgit,
-) {
-  outputFile = path.join(outputDir, 'compiled.json');
-  fs.writeFileSync(outputFile, JSON.stringify(specs['APISpecs'], null, 2));
+/**
+ * @type {Renderer}
+ */
+const DebugJsonRenderer = {
+  render(specs, language, version, outputDir, cleandir) {
+    const outputFile = path.join(outputDir, 'compiled.json');
+    fs.writeFileSync(outputFile, JSON.stringify(specs['APISpecs'], null, 2));
+  },
 };
 
 module.exports = DebugJsonRenderer;
