@@ -23,7 +23,7 @@ Install all dependencies by [npm](https://www.npmjs.com/) : `npm install`
 ## Codegen SDK
 
 ```bash
-node src/CodeGenerator.js <language>
+npm run build && node lib/CodeGenerator.js <language>
 ```
 
 ## Debug
@@ -32,14 +32,14 @@ During debug, if you want to compare with the generated SDK to our current SDK
 code, you can specific the output folder by using `-o` :
 
 ```bash
-node src/CodeGenerator.js <language> -o outputDir
+npm run build && node lib/CodeGenerator.js <language> -o outputDir
 ```
 
 If you want to keep git config in `outputDir`, you can specific only cleanup
 source code by using `-c` , for example:
 
 ```bash
-node src/CodeGenerator.js php -o ../facebook-php-business-sdk/ -c src/
+npm run build && node lib/CodeGenerator.js php -o ../facebook-php-business-sdk/ -c src/
 ```
 
 ## License

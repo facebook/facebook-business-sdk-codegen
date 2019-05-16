@@ -3,6 +3,8 @@ extends: fbjs
 env:
   node: true
 rules:
+  flowtype/object-type-delimiter: off
+  no-console: 0
   no-eval: warn
   no-undef: warn
   no-unreachable: warn

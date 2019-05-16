@@ -2,25 +2,21 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * @format
- */
-
-/**
- * @typedef { import("../common/typedefs").Renderer } Renderer
+ * @flow strict-local
  */
 
 'use strict';
 
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
-/**
- * @type {Renderer}
- */
-const DebugJsonRenderer = {
+import type {Renderer} from '../common/types';
+
+const DebugJsonRenderer: Renderer = {
   render(specs, language, version, outputDir, cleandir) {
     const outputFile = path.join(outputDir, 'compiled.json');
-    fs.writeFileSync(outputFile, JSON.stringify(specs['APISpecs'], null, 2));
+    fs.writeFileSync(outputFile, JSON.stringify(specs.APISpecs, null, 2));
   },
 };
 
-module.exports = DebugJsonRenderer;
+export default DebugJsonRenderer;

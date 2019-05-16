@@ -2,37 +2,36 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * @format
- */
-
-/**
- * @typedef { import("../common/typedefs").Loader } Loader
- * @typedef { import("../common/typedefs").Processor } Processor
- * @typedef { import("../common/typedefs").Renderer } Renderer
- *
- * @typedef {Object} ProcedureProps
- * @property {Loader} loader
- * @property {Array<Processor>} processors
- * @property {Array<Renderer>} renderers
+ * @flow strict-local
  */
 
 'use strict';
 
+import {Loader, Processor, Renderer} from './types';
+
+type ProcedureProps = {|
+  loader: Loader,
+  processors: Processor[],
+  renderers: Renderer[],
+|};
+
 class Procedure {
-  /**
-   * @param {ProcedureProps} props
-   */
-  constructor(props) {
+  loader: Loader;
+  processors: Processor[];
+  renderers: Renderer[];
+
+  constructor(props: ProcedureProps) {
     this.loader = props.loader;
     this.processors = props.processors;
     this.renderers = props.renderers;
   }
-  /**
-   * @param {string} version
-   * @param {string} language
-   * @param {string} outputDir
-   * @param {string[]} cleandir
-   */
-  run(version, language, outputDir, cleandir) {
+
+  run(
+    version: string,
+    language: string,
+    outputDir: string,
+    cleandir: string[],
+  ) {
     const inputs = this.loader.load(version);
 
     const metadata = inputs.metadata;
@@ -42,12 +41,12 @@ class Procedure {
     metadata.cleandir = cleandir;
 
     let specs = inputs.specs;
-    for (const i in this.processors) {
-      specs = this.processors[i].process(specs, metadata);
-    }
+    this.processors.forEach(processor => {
+      specs = processor.process(specs, metadata);
+    });
 
-    for (const i in this.renderers) {
-      this.renderers[i].render(
+    this.renderers.forEach(renderer => {
+      renderer.render(
         {
           APISpecs: specs.api_specs,
           SDKConfig: {
@@ -56,13 +55,13 @@ class Procedure {
             version: metadata.versionedFeaturesWithDepreciation,
           },
         },
-        metadata.language,
+        metadata.language || '',
         metadata.version,
-        metadata.outputDir,
-        metadata.cleandir,
+        metadata.outputDir || '',
+        metadata.cleandir || [],
       );
-    }
+    });
   }
 }
 
-module.exports = Procedure;
+export default Procedure;

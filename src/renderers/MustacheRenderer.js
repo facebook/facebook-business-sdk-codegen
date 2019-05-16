@@ -4,27 +4,22 @@
  * @format
  */
 
-/**
- * @typedef { import("../common/typedefs").Renderer } Renderer
- */
-
 'use strict';
 
-const fs_extra = require('fs-extra');
-const mustache = require('mustache');
-const path = require('path');
+import fs_extra from 'fs-extra';
+import mustache from 'mustache';
+import path from 'path';
 
-const codeGenLanguages = require('../processors/CodeGenLanguages');
-const utils = require('./Utils');
-const commonUtils = require('../common/Utils');
+import codeGenLanguages from '../processors/CodeGenLanguages';
+import utils from './Utils';
+import commonUtils from '../common/Utils';
 
-/**
- * @type {Renderer}
- */
-const MustacheRenderer = {
+import type {Renderer} from '../common/types';
+
+const MustacheRenderer: Renderer = {
   render(specs, language, version, outputDir, cleandir) {
-    const APISpecs = specs['APISpecs'];
-    const SDKConfig = specs['SDKConfig'];
+    const APISpecs = specs.APISpecs;
+    const SDKConfig = specs.SDKConfig;
 
     const codegenRootDir = path.resolve(__dirname, '..', '..');
     const templateDir = path.resolve(codegenRootDir, 'templates', language);
@@ -100,4 +95,4 @@ const MustacheRenderer = {
   },
 };
 
-module.exports = MustacheRenderer;
+export default MustacheRenderer;

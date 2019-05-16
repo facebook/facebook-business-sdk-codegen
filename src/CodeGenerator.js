@@ -2,26 +2,27 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * @format
+ * @flow
  */
 
 'use strict';
 
-const minimist = require('minimist');
+import minimist from 'minimist';
 
-const Procedure = require('./common/Procedure');
-const Utils = require('./common/Utils');
-const SpecFileLoader = require('./loaders/SpecFileLoader');
-const AutoAddIdFieldForRootNodeProcessor = require('./processors/AutoAddIdFieldForRootNodeProcessor');
-const CreationEndpointHackProcessor = require('./processors/CreationEndpointHackProcessor');
-const FlaggingProcessor = require('./processors/FlaggingProcessor');
-const LanguageSpecificProcessor = require('./processors/LanguageSpecificProcessor');
-const NamingConventionProcessor = require('./processors/NamingConventionProcessor');
-const NodeEndpointHackProcessor = require('./processors/NodeEndpointHackProcessor');
-const NormalizationProcessor = require('./processors/NormalizationProcessor');
-const ReferenceProcessor = require('./processors/ReferenceProcessor');
-const SpecOverridingProcessor = require('./processors/SpecOverridingProcessor');
-const DebugJsonRenderer = require('./renderers/DebugJsonRenderer');
-const MustacheRenderer = require('./renderers/MustacheRenderer');
+import Procedure from './common/Procedure';
+import Utils from './common/Utils';
+import SpecFileLoader from './loaders/SpecFileLoader';
+import AutoAddIdFieldForRootNodeProcessor from './processors/AutoAddIdFieldForRootNodeProcessor';
+import CreationEndpointHackProcessor from './processors/CreationEndpointHackProcessor';
+import FlaggingProcessor from './processors/FlaggingProcessor';
+import LanguageSpecificProcessor from './processors/LanguageSpecificProcessor';
+import NamingConventionProcessor from './processors/NamingConventionProcessor';
+import NodeEndpointHackProcessor from './processors/NodeEndpointHackProcessor';
+import NormalizationProcessor from './processors/NormalizationProcessor';
+import ReferenceProcessor from './processors/ReferenceProcessor';
+import SpecOverridingProcessor from './processors/SpecOverridingProcessor';
+import DebugJsonRenderer from './renderers/DebugJsonRenderer';
+import MustacheRenderer from './renderers/MustacheRenderer';
 
 const procedure = new Procedure({
   loader: SpecFileLoader,
@@ -41,16 +42,11 @@ const procedure = new Procedure({
 
 const args = minimist(process.argv.slice(2));
 
-const language = args._[0];
+const language: string = args._[0];
 Utils.validateLanguage(language);
 
-/** @type {string} */
-const version = args.v || Utils.loadDefaultVersion();
-
-/** @type {string} */
-const outputDir = args.o || 'sdk/servers/' + language + '/release';
-
-/** @type {string[]} */
-const cleandir = args.c ? args.c.split(',') : [];
+const version: string = args.v || Utils.loadDefaultVersion();
+const outputDir: string = args.o || 'sdk/servers/' + language + '/release';
+const cleandir: string[] = args.c ? args.c.split(',') : [];
 
 procedure.run(version, language, outputDir, cleandir);
