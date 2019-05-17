@@ -2,7 +2,10 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * @format
+ * @flow strict-local
  */
+
+'use strict';
 
 /*
  * This processor is a hack for so-called 'creation endpoints'.
@@ -27,30 +30,32 @@
  * unless the preferred one is specified in codegen/api_specs/SDKCodegen.json
  */
 
-var processor = {
-  process: function(specs, metadata) {
-    var APISpecs = specs.api_specs;
+import type {Processor} from '../common/types';
+
+const processor: Processor = {
+  process(specs, metadata) {
+    const APISpecs = specs.api_specs;
     // Handling object creation endpoints
-    var clsWithCreationApi = [
+    const clsWithCreationApi = [
       'AdAccount',
       'Business',
       'ProductCatalog',
       'Hotel',
     ];
-    for (var clsIndex = 0; clsIndex < clsWithCreationApi.length; clsIndex++) {
-      var parentClsName = clsWithCreationApi[clsIndex];
-      var parentClsSpec = APISpecs[parentClsName];
+    for (let clsIndex = 0; clsIndex < clsWithCreationApi.length; clsIndex++) {
+      const parentClsName = clsWithCreationApi[clsIndex];
+      const parentClsSpec = APISpecs[parentClsName];
       if (!parentClsSpec) {
         continue;
       }
-      for (var index in parentClsSpec['apis']) {
-        var APISpec = parentClsSpec['apis'][index];
+      for (const index in parentClsSpec['apis']) {
+        const APISpec = parentClsSpec['apis'][index];
         // We check for POST method with return type
         if (APISpec['method'] === 'POST') {
-          var createdCls = APISpec['return'];
+          const createdCls = APISpec['return'];
           if (createdCls && createdCls !== parentClsName) {
-            var createdClsSpec = APISpecs[createdCls];
-            var creationEndpoint = APISpec['endpoint'];
+            const createdClsSpec = APISpecs[createdCls];
+            const creationEndpoint = APISpec['endpoint'];
             if (
               createdClsSpec &&
               !createdClsSpec['exclude_creation_endpoint'] &&
@@ -79,10 +84,10 @@ var processor = {
                 createdClsSpec['creation_allow_file_upload'] = true;
               }
               // add creation params to fields
-              for (var i in APISpec['params']) {
-                var param = APISpec['params'][i];
-                var fieldExists = false;
-                for (var j in createdClsSpec['fields']) {
+              for (const i in APISpec['params']) {
+                const param = APISpec['params'][i];
+                let fieldExists = false;
+                for (const j in createdClsSpec['fields']) {
                   if (param['name'] === createdClsSpec['fields'][j]['name']) {
                     fieldExists = true;
                     break;
@@ -107,4 +112,4 @@ var processor = {
   },
 };
 
-module.exports = processor;
+export default processor;

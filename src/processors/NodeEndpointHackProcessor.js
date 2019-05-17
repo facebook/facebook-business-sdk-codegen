@@ -2,9 +2,14 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * @format
+ * @flow strict-local
  */
 
-/*
+'use strict';
+
+import type {Processor} from '../common/types';
+
+/**
  * We have special treatment for node APIs (i.e. GET/POST/DELETE on node)
  * Ideally these should be generated from API Specgen, but the current
  * status is that we use '#get' '#update' and '#delete' as name to indicate
@@ -14,15 +19,14 @@
  * In addition, this processor also adds 'read_endpoint' to these nodes as
  * specified in codegen/api_specs/{version}/SDKCodegen.json
  */
-
-var processor = {
-  process: function(specs, metadata) {
-    var APISpecs = specs.api_specs;
-    for (var clsName in APISpecs) {
-      var APIClsSpec = APISpecs[clsName];
-      for (var index in APIClsSpec['apis']) {
-        var APISpec = APIClsSpec['apis'][index];
-        var name = APISpec['name'];
+const processor: Processor = {
+  process(specs, metadata) {
+    const APISpecs = specs.api_specs;
+    for (const clsName in APISpecs) {
+      const APIClsSpec = APISpecs[clsName];
+      for (const index in APIClsSpec['apis']) {
+        const APISpec = APIClsSpec['apis'][index];
+        const name = APISpec['name'];
         if (name === '#get') {
           APISpec['endpoint'] = '';
           APISpec['method'] = 'GET';
@@ -42,8 +46,8 @@ var processor = {
     }
 
     // handling read_endpoints
-    var readEndpoints = metadata.mergedOverriding.read_endpoints;
-    for (var clsName in readEndpoints) {
+    const readEndpoints = metadata.mergedOverriding.read_endpoints;
+    for (const clsName in readEndpoints) {
       if (APISpecs[clsName]) {
         APISpecs[clsName]['read_endpoint'] = readEndpoints[clsName];
       }
@@ -52,4 +56,4 @@ var processor = {
   },
 };
 
-module.exports = processor;
+export default processor;

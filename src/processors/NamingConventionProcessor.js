@@ -2,20 +2,26 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * @format
+ * @flow strict-local
  */
 
-const pluralize = require('pluralize');
-const codeGenNameConventions = require('./CodeGenNameConventions');
-const codeGenLanguages = require('./CodeGenLanguages');
+'use strict';
 
-/*
+import codeGenNameConventions from './CodeGenNameConventions';
+import codeGenLanguages from './CodeGenLanguages';
+
+import type {Processor} from '../common/types';
+
+/**
  * This processor populates naming convention for the APISpecs.
  * It parses the current value and adds different naming styles.
  *
- * For example, if originally the spec is
- * {"name": "HelloWorld"}
- * It will now become:
- *{
+ * The spec is translated like so
+ * @example
+ *
+ * {"name": "HelloWorld"} =>
+ *
+ * {
  *   "name": "HelloWorld",
  *   "name:hyphen": "hello-world",
  *   "name:underscore": "hello_world",
@@ -25,14 +31,14 @@ const codeGenLanguages = require('./CodeGenLanguages');
  *   "name:all_lower_case": "helloworld"
  * }
  */
-var processor = {
-  process: function(specs, metadata) {
-    var APISpecs = specs.api_specs;
-    var language = metadata.language;
-    var languageDef = codeGenLanguages[language];
+const processor: Processor = {
+  process(specs, metadata) {
+    const APISpecs = specs.api_specs;
+    const language: string = metadata.language || '';
+    const languageDef = codeGenLanguages[language];
 
-    for (var clsName in APISpecs) {
-      var APIClsSpec = APISpecs[clsName];
+    for (const clsName in APISpecs) {
+      const APIClsSpec = APISpecs[clsName];
       if (APIClsSpec['creation_parent_class']) {
         codeGenNameConventions.populateNameConventions(
           APIClsSpec,
@@ -54,27 +60,27 @@ var processor = {
     }
 
     // add naming convention for enums
-    var enumMetadataMap = specs.enumMetadataMap;
-    for (var index in enumMetadataMap) {
-      var enumType = enumMetadataMap[index];
-      var dedupchecker = {};
+    const enumMetadataMap = specs.enumMetadataMap;
+    for (const index in enumMetadataMap) {
+      const enumType = enumMetadataMap[index];
+      const dedupchecker = {};
       if (enumType['node'] === 'AdReportRun') {
         // We want all insights enums to be in AdsInsights, not AdReportRun
         enumType['node'] = 'AdsInsights';
       }
-      var valuesWithNamingConvention = [];
-      for (var i in enumType['values']) {
-        var value = enumType['values'][i];
+      const valuesWithNamingConvention = [];
+      for (const i in enumType['values']) {
+        const value = enumType['values'][i];
         if (!value || value === '') {
           continue;
         }
-        var entry = {value: value};
+        const entry = {value: value, is_irregular_name: false};
         if (
           languageDef.keywords.indexOf(value.toLowerCase()) > -1 ||
           !value.match ||
           !value.match(/^[a-zA-Z][a-zA-z0-9_]/)
         ) {
-          entry['is_irregular_name'] = true;
+          entry.is_irregular_name = true;
         }
         codeGenNameConventions.populateNameConventions(
           entry,
@@ -103,8 +109,8 @@ var processor = {
       enumType['values_with_naming_convention'] = valuesWithNamingConvention;
     }
 
-    for (var clsName in APISpecs) {
-      var APIClsSpec = APISpecs[clsName];
+    for (const clsName in APISpecs) {
+      const APIClsSpec = APISpecs[clsName];
       codeGenNameConventions.populateNameConventions(
         APIClsSpec,
         'name',
@@ -112,8 +118,8 @@ var processor = {
         'cls:',
       );
 
-      for (var index in APIClsSpec['apis']) {
-        var APISpec = APIClsSpec['apis'][index];
+      for (const index in APIClsSpec['apis']) {
+        const APISpec = APIClsSpec['apis'][index];
         codeGenNameConventions.populateNameConventions(
           APISpec,
           'name',
@@ -121,9 +127,9 @@ var processor = {
           'api:',
         );
 
-        var params = APISpec['params'] || [];
-        for (var index in params) {
-          var paramSpec = params[index];
+        const params = APISpec['params'] || [];
+        for (const index in params) {
+          const paramSpec = params[index];
           codeGenNameConventions.populateNameConventions(
             paramSpec,
             'name',
@@ -153,8 +159,8 @@ var processor = {
         }
       }
 
-      for (var index in APIClsSpec['fields']) {
-        var fieldSpec = APIClsSpec['fields'][index];
+      for (const index in APIClsSpec['fields']) {
+        const fieldSpec = APIClsSpec['fields'][index];
         codeGenNameConventions.populateNameConventions(
           fieldSpec,
           'name',
@@ -183,4 +189,4 @@ var processor = {
   },
 };
 
-module.exports = processor;
+export default processor;

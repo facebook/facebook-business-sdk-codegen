@@ -2,19 +2,22 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * @format
+ * @flow
  */
 
-var fs = require('fs');
-var merge = require('merge');
-var path = require('path');
-var pluralize = require('pluralize');
+'use strict';
 
-function _startsWith(str, searchStr, startIdx) {
+import {existsSync, readFileSync} from 'fs';
+import merge from 'merge';
+import {resolve} from 'path';
+import pluralize from 'pluralize';
+
+const _startsWith = (str: string, searchStr: string, startIdx: number) => {
   if (str.length < startIdx + searchStr.length) {
     return false;
   }
 
-  var index = 0;
+  let index = 0;
   while (index < searchStr.length) {
     if (str.charAt(index + startIdx) !== searchStr.charAt(index)) {
       return false;
@@ -22,27 +25,26 @@ function _startsWith(str, searchStr, startIdx) {
     ++index;
   }
   return true;
-}
+};
 
-function _isCharUpper(ch) {
+const _isCharUpper = (ch: string) => {
   return ch >= 'A' && ch <= 'Z';
-}
+};
 
-var _decodeDictFile = path.resolve(
+const _decodeDictFile = resolve(
   __dirname,
   '..',
   '..',
   'api_specs',
   'EndpointDecodeDict.txt',
 );
-var _decodeDictBase = {};
-if (fs.existsSync(_decodeDictFile)) {
-  _decodeDictBase = fs
-    .readFileSync(_decodeDictFile, 'utf8')
+let _decodeDictBase = {};
+if (existsSync(_decodeDictFile)) {
+  _decodeDictBase = readFileSync(_decodeDictFile, 'utf8')
     .split('\n')
-    .reduce(function(dict, line) {
-      var columns = line.split('=');
-      var value = parseFloat(columns[1]);
+    .reduce((dict, line) => {
+      const columns = line.split('=');
+      const value = parseFloat(columns[1]);
       if (value) {
         dict[columns[0].trim()] = value;
       }
@@ -50,33 +52,33 @@ if (fs.existsSync(_decodeDictFile)) {
     }, {});
 }
 
-var _decodeDict = _decodeDictBase;
-var codeGenNameConventions = {
-  initDecodeDictionary: function(words) {
-    var counter = {};
-    words.forEach(function(w) {
-      w = w.toLowerCase();
+let _decodeDict = _decodeDictBase;
+const codeGenNameConventions = {
+  initDecodeDictionary(words: string[]) {
+    const counter = {};
+    words.forEach(val => {
+      const w = val.toLowerCase();
       counter[w] = (counter[w] || 0) + 1;
-      var pw = pluralize(w);
+      const pw = pluralize(w);
       if (pw !== w) {
         counter[pw] = (counter[pw] || 0) + 0.5;
       }
     });
 
-    var maxCnt = 1;
-    for (var w in counter) {
+    let maxCnt = 1;
+    for (const w in counter) {
       if (counter[w] > maxCnt) {
         maxCnt = counter[w];
       }
     }
 
     _decodeDict = merge(true, _decodeDictBase);
-    for (var w in counter) {
+    for (const w in counter) {
       _decodeDict[w] = counter[w] / maxCnt;
     }
   },
 
-  parseEndpointName: function(endpoint, boostWords, clsName) {
+  parseEndpointName(endpoint: string, boostWords: string[], clsName: string) {
     if (endpoint === 'leadgen_forms') {
       return ['lead', 'gen', 'forms'];
     }
@@ -97,14 +99,14 @@ var codeGenNameConventions = {
       ];
     }
 
-    var mergedDict = _decodeDict;
+    let mergedDict = _decodeDict;
     if (boostWords) {
       mergedDict = merge(
         true,
         _decodeDict,
-        boostWords.reduce(function(prev, curr) {
+        boostWords.reduce((prev, curr) => {
           prev[curr] = 10;
-          var pluralWord = pluralize(curr);
+          const pluralWord = pluralize(curr);
           if (pluralWord !== curr) {
             prev[pluralWord] = 1;
           }
@@ -113,27 +115,29 @@ var codeGenNameConventions = {
       );
     }
 
-    var lattice = {0: [0]};
-    var candidates = [1];
-    for (var index = 0; index < endpoint.length; ++index) {
+    // $FlowFixMe
+    const lattice = {0: [0]};
+    const candidates = [1];
+    for (let index = 0; index < endpoint.length; ++index) {
       if (!candidates[index]) {
         continue;
       }
 
-      var weight = lattice[index][0];
+      const weight = lattice[index][0];
+      let newWeight = 0;
       // deal with the underscores in endpoints
       if (endpoint.charAt(index) === '_') {
-        var newIndex = index + 1;
+        const newIndex = index + 1;
         if (!lattice[newIndex]) {
           lattice[newIndex] = [newWeight, '#'];
           candidates[newIndex] = 1;
         }
       }
 
-      for (var word in mergedDict) {
+      for (const word in mergedDict) {
         if (_startsWith(endpoint, word, index)) {
-          var newIndex = index + word.length;
-          var newWeight = weight + mergedDict[word];
+          const newIndex = index + word.length;
+          newWeight = weight + mergedDict[word];
           if (!lattice[newIndex] || lattice[newIndex][0] < newWeight) {
             lattice[newIndex] = [newWeight, word];
             candidates[newIndex] = 1;
@@ -142,8 +146,8 @@ var codeGenNameConventions = {
       }
     }
 
-    var parts = [];
-    var endPost = endpoint.length;
+    const parts = [];
+    let endPost = endpoint.length;
     if (!lattice[endPost]) {
       throw Error(
         'cannot decode endpoint ' + endpoint + ' in class ' + clsName,
@@ -160,16 +164,14 @@ var codeGenNameConventions = {
     return parts;
   },
 
-  parseUnderscoreName: function(name) {
+  parseUnderscoreName(name: string): string[] {
     if (!name) {
       return [];
     }
     if (!name.split) {
       return [String(name)];
     }
-    return name.split(/[._:\s]/).map(function(part) {
-      return part.toLowerCase();
-    });
+    return name.split(/[._:\s]/).map(part => part.toLowerCase());
   },
 
   // The parsing of pascal name has a weird pitfall
@@ -180,7 +182,7 @@ var codeGenNameConventions = {
   // The one big issue is for ruby. Ruby assume the name are all capitalized
   // when autoload classes. Will just fix it for ruby case and keep this
   // behavior this time. Will fix after f8.
-  parsePascalName: function(name) {
+  parsePascalName(name: string) {
     if (!name) {
       return [];
     }
@@ -195,11 +197,11 @@ var codeGenNameConventions = {
       EXPECT_PASCAL_WORD: 1, // second char is lower-case in a word
       EXPECT_ALL_UPPER_WORD: 2, // second char is also upper case in a word
     };
-    var parts = [];
-    var indexStart = 0;
-    var parseStatus = STATUS.SEEN_WORD_START; // assert charAt(0) is upper case
-    for (var i = 1; i < name.length; ++i) {
-      var isUpper = _isCharUpper(name.charAt(i));
+    const parts = [];
+    let indexStart = 0;
+    let parseStatus = STATUS.SEEN_WORD_START; // assert charAt(0) is upper case
+    for (let i = 1; i < name.length; ++i) {
+      const isUpper = _isCharUpper(name.charAt(i));
       switch (parseStatus) {
         case STATUS.SEEN_WORD_START:
           parseStatus = isUpper
@@ -225,7 +227,7 @@ var codeGenNameConventions = {
       }
     }
 
-    var lastPart = name.substring(indexStart, name.length);
+    const lastPart = name.substring(indexStart, name.length);
     if (parseStatus === STATUS.EXPECT_ALL_UPPER_WORD) {
       parts.push(lastPart);
     } else {
@@ -234,36 +236,44 @@ var codeGenNameConventions = {
     return parts;
   },
 
-  // Replace non (alphanumerical + _) to _
-  removeIlligalChars: function(name) {
+  /**
+   * Replace non (alphanumerical + _) to _
+   */
+  removeIlligalChars(name: string) {
     return name.replace(/(_\W+)|(\W+_)|(\W+)/g, '_');
   },
 
   // strict_pascal means strictly first char upper and following lower.
   // See comments in parsePascalName
-  populateNameConventions: function(obj, prop, parts, prefix, strict_pascal) {
+  populateNameConventions(
+    obj: {[x: string]: any},
+    prop: string,
+    parts: string[],
+    prefix: ?string,
+  ) {
     if (!parts || parts.length == 0) {
       return;
     }
-    var lowerCaseParts = [];
-    var capitalized = [];
-    var strictCapitalized = [];
-    for (var i in parts) {
-      lowerCaseParts.push(parts[i].toLowerCase());
-      capitalized.push(parts[i].charAt(0).toUpperCase() + parts[i].slice(1));
-      strictCapitalized.push(
-        parts[i].charAt(0).toUpperCase() + parts[i].slice(1).toLowerCase(),
-      );
-    }
+    const lowerCaseParts = [];
+    const capitalized = [];
+    const strictCapitalized = [];
 
-    var hyphenName = lowerCaseParts.join('-');
-    var underscoreName = lowerCaseParts.join('_');
-    var upperCaseName = underscoreName.toUpperCase();
-    var camelCaseName = lowerCaseParts[0];
-    var pascalCaseName = capitalized[0];
-    var strictPascalCaseName = strictCapitalized[0];
-    var allLowerCaseName = lowerCaseParts[0];
-    for (var i = 1; i < parts.length; ++i) {
+    parts.forEach(val => {
+      lowerCaseParts.push(val.toLowerCase());
+      capitalized.push(val.charAt(0).toUpperCase() + val.slice(1));
+      strictCapitalized.push(
+        val.charAt(0).toUpperCase() + val.slice(1).toLowerCase(),
+      );
+    });
+
+    const hyphenName = lowerCaseParts.join('-');
+    const underscoreName = lowerCaseParts.join('_');
+    const upperCaseName = underscoreName.toUpperCase();
+    let camelCaseName = lowerCaseParts[0];
+    let pascalCaseName = capitalized[0];
+    let strictPascalCaseName = strictCapitalized[0];
+    let allLowerCaseName = lowerCaseParts[0];
+    for (let i = 1; i < parts.length; ++i) {
       camelCaseName += capitalized[i];
       pascalCaseName += capitalized[i];
       strictPascalCaseName += strictCapitalized[i];
@@ -278,7 +288,7 @@ var codeGenNameConventions = {
     obj[prop + ':upper_case'] = upperCaseName;
     obj[prop + ':all_lower_case'] = allLowerCaseName;
     obj[prop + ':all_lower_case_excluding_digit_suffix'] = isNaN(
-      underscoreName.charAt(0),
+      Number(underscoreName.charAt(0)),
     )
       ? underscoreName
       : 'value_' + underscoreName;
@@ -292,27 +302,29 @@ var codeGenNameConventions = {
       obj[prefix + prop + ':upper_case'] = upperCaseName;
       obj[prefix + prop + ':all_lower_case'] = allLowerCaseName;
       obj[prefix + prop + ':all_lower_case_excluding_digit_suffix'] = isNaN(
-        allLowerCaseName.charAt(0),
+        Number(allLowerCaseName.charAt(0)),
       )
         ? allLowerCaseName
         : 'value_' + allLowerCaseName;
     }
   },
-  getAllCaseNames: function(parts) {
-    var lowerCaseParts = [];
-    var capitalized = [];
-    for (var i in parts) {
-      lowerCaseParts.push(parts[i].toLowerCase());
-      capitalized.push(parts[i].charAt(0).toUpperCase() + parts[i].slice(1));
-    }
 
-    var hyphenName = lowerCaseParts.join('-');
-    var underscoreName = lowerCaseParts.join('_');
-    var upperCaseName = underscoreName.toUpperCase();
-    var camelCaseName = lowerCaseParts[0];
-    var pascalCaseName = capitalized[0];
-    var allLowerCaseName = lowerCaseParts[0];
-    for (var i = 1; i < parts.length; ++i) {
+  getAllCaseNames(parts: string[]) {
+    const lowerCaseParts = [];
+    const capitalized = [];
+
+    parts.forEach(val => {
+      lowerCaseParts.push(val.toLowerCase());
+      capitalized.push(val.charAt(0).toUpperCase() + val.slice(1));
+    });
+
+    const hyphenName = lowerCaseParts.join('-');
+    const underscoreName = lowerCaseParts.join('_');
+    const upperCaseName = underscoreName.toUpperCase();
+    let camelCaseName = lowerCaseParts[0];
+    let pascalCaseName = capitalized[0];
+    let allLowerCaseName = lowerCaseParts[0];
+    for (let i = 1; i < parts.length; ++i) {
       camelCaseName += capitalized[i];
       pascalCaseName += capitalized[i];
       allLowerCaseName += lowerCaseParts[i];
@@ -327,14 +339,19 @@ var codeGenNameConventions = {
       all_lower_case: allLowerCaseName,
     };
   },
-  populateNameConventionForUnderscoreProp: function(obj, prop) {
-    var parts = this.parseUnderscoreName(obj[prop]);
+
+  populateNameConventionForUnderscoreProp(
+    obj: {[x: string]: any},
+    prop: string,
+  ) {
+    const parts = this.parseUnderscoreName(obj[prop]);
     this.populateNameConventions(obj, prop, parts);
   },
-  populateNameConventionForPascalProp: function(obj, prop) {
-    var parts = this.parsePascalName(obj[prop]);
+
+  populateNameConventionForPascalProp(obj: {[x: string]: any}, prop: string) {
+    const parts = this.parsePascalName(obj[prop]);
     this.populateNameConventions(obj, prop, parts);
   },
 };
 
-module.exports = codeGenNameConventions;
+export default codeGenNameConventions;

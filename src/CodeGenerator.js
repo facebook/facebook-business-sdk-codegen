@@ -2,11 +2,12 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * @format
- * @flow
+ * @flow strict-local
  */
 
 'use strict';
 
+// $FlowFixMe
 import minimist from 'minimist';
 
 import Procedure from './common/Procedure';

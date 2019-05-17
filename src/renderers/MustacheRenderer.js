@@ -2,10 +2,12 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * @format
+ * @flow
  */
 
 'use strict';
 
+// $FlowFixMe
 import fs_extra from 'fs-extra';
 import mustache from 'mustache';
 import path from 'path';
