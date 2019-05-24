@@ -290,12 +290,6 @@
             ]
         },
         {
-            "method": "GET",
-            "endpoint": "tags",
-            "return": "TaggableSubject",
-            "params": []
-        },
-        {
             "method": "POST",
             "endpoint": "tags",
             "return": "AdVideo",

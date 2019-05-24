@@ -38,10 +38,6 @@
             "type": "list<Object>"
         },
         {
-            "name": "context",
-            "type": "OpenGraphContext"
-        },
-        {
             "name": "created_time",
             "type": "datetime"
         },

@@ -1612,6 +1612,124 @@
         ]
     },
     {
+        "name": "adaccountad_sets_bid_strategy_enum_param",
+        "node": "AdSet",
+        "field_or_param": "bid_strategy",
+        "values": [
+            "LOWEST_COST_WITHOUT_CAP",
+            "LOWEST_COST_WITH_BID_CAP",
+            "TARGET_COST"
+        ]
+    },
+    {
+        "name": "adaccountad_sets_billing_event_enum_param",
+        "node": "AdSet",
+        "field_or_param": "billing_event",
+        "values": [
+            "APP_INSTALLS",
+            "CLICKS",
+            "IMPRESSIONS",
+            "LINK_CLICKS",
+            "NONE",
+            "OFFER_CLAIMS",
+            "PAGE_LIKES",
+            "POST_ENGAGEMENT",
+            "THRUPLAY",
+            "VIDEO_VIEWS"
+        ]
+    },
+    {
+        "name": "adaccountad_sets_destination_type_enum_param",
+        "node": "AdSet",
+        "field_or_param": "destination_type",
+        "values": [
+            "APP",
+            "APPLINKS_AUTOMATIC",
+            "MESSENGER",
+            "UNDEFINED",
+            "WEBSITE"
+        ]
+    },
+    {
+        "name": "adaccountad_sets_execution_options_enum_param",
+        "node": "AdSet",
+        "field_or_param": "execution_options",
+        "values": [
+            "include_recommendations",
+            "validate_only"
+        ]
+    },
+    {
+        "name": "adaccountad_sets_full_funnel_exploration_mode_enum_param",
+        "node": "AdSet",
+        "field_or_param": "full_funnel_exploration_mode",
+        "values": [
+            "EXTENDED_EXPLORATION",
+            "LIMITED_EXPLORATION",
+            "NONE_EXPLORATION"
+        ]
+    },
+    {
+        "name": "adaccountad_sets_optimization_goal_enum_param",
+        "node": "AdSet",
+        "field_or_param": "optimization_goal",
+        "values": [
+            "AD_RECALL_LIFT",
+            "APP_DOWNLOADS",
+            "APP_INSTALLS",
+            "BRAND_AWARENESS",
+            "CLICKS",
+            "DERIVED_EVENTS",
+            "ENGAGED_USERS",
+            "EVENT_RESPONSES",
+            "IMPRESSIONS",
+            "LANDING_PAGE_VIEWS",
+            "LEAD_GENERATION",
+            "LINK_CLICKS",
+            "NONE",
+            "OFFER_CLAIMS",
+            "OFFSITE_CONVERSIONS",
+            "PAGE_ENGAGEMENT",
+            "PAGE_LIKES",
+            "POST_ENGAGEMENT",
+            "REACH",
+            "REPLIES",
+            "SOCIAL_IMPRESSIONS",
+            "THRUPLAY",
+            "TWO_SECOND_CONTINUOUS_VIDEO_VIEWS",
+            "VALUE",
+            "VIDEO_VIEWS"
+        ]
+    },
+    {
+        "name": "adaccountad_sets_optimization_sub_event_enum_param",
+        "node": "AdSet",
+        "field_or_param": "optimization_sub_event",
+        "values": [
+            "NONE",
+            "TRAVEL_INTENT",
+            "TRAVEL_INTENT_BUCKET_01",
+            "TRAVEL_INTENT_BUCKET_02",
+            "TRAVEL_INTENT_BUCKET_03",
+            "TRAVEL_INTENT_BUCKET_04",
+            "TRAVEL_INTENT_BUCKET_05",
+            "TRAVEL_INTENT_NO_DESTINATION_INTENT",
+            "TRIP_CONSIDERATION",
+            "VIDEO_SOUND_ON"
+        ]
+    },
+    {
+        "name": "adaccountad_sets_status_enum_param",
+        "node": "AdSet",
+        "field_or_param": "status",
+        "values": [
+            "ACTIVE",
+            "ARCHIVED",
+            "DELETED",
+            "PAUSED"
+        ]
+    },
+    {
         "name": "adaccountadcreatives_applink_treatment_enum_param",
         "node": "AdCreative",
         "field_or_param": "applink_treatment",
@@ -1955,56 +2073,29 @@
         ]
     },
     {
-        "name": "adaccountadsets_bid_strategy_enum_param",
-        "node": "AdSet",
-        "field_or_param": "bid_strategy",
-        "values": [
-            "LOWEST_COST_WITHOUT_CAP",
-            "LOWEST_COST_WITH_BID_CAP",
-            "TARGET_COST"
-        ]
-    },
-    {
-        "name": "adaccountadsets_billing_event_enum_param",
-        "node": "AdSet",
-        "field_or_param": "billing_event",
-        "values": [
-            "APP_INSTALLS",
-            "CLICKS",
-            "IMPRESSIONS",
-            "LINK_CLICKS",
-            "NONE",
-            "OFFER_CLAIMS",
-            "PAGE_LIKES",
-            "POST_ENGAGEMENT",
-            "THRUPLAY",
-            "VIDEO_VIEWS"
-        ]
-    },
-    {
         "name": "adaccountadsets_date_preset_enum_param",
         "node": "AdSet",
         "field_or_param": "date_preset",
         "values": [
-            "last_14d",
-            "last_28d",
-            "last_30d",
-            "last_3d",
-            "last_7d",
-            "last_90d",
-            "last_month",
-            "last_quarter",
-            "last_week_mon_sun",
-            "last_week_sun_sat",
-            "last_year",
-            "lifetime",
-            "this_month",
-            "this_quarter",
-            "this_week_mon_today",
-            "this_week_sun_today",
-            "this_year",
-            "today",
-            "yesterday"
+            "LAST_14D",
+            "LAST_28D",
+            "LAST_30D",
+            "LAST_3D",
+            "LAST_7D",
+            "LAST_90D",
+            "LAST_MONTH",
+            "LAST_QUARTER",
+            "LAST_WEEK_MON_SUN",
+            "LAST_WEEK_SUN_SAT",
+            "LAST_YEAR",
+            "LIFETIME",
+            "THIS_MONTH",
+            "THIS_QUARTER",
+            "THIS_WEEK_MON_TODAY",
+            "THIS_WEEK_SUN_TODAY",
+            "THIS_YEAR",
+            "TODAY",
+            "YESTERDAY"
         ]
     },
     {
@@ -2015,18 +2106,6 @@
             "DELETE_ANY",
             "DELETE_ARCHIVED_BEFORE",
             "DELETE_OLDEST"
-        ]
-    },
-    {
-        "name": "adaccountadsets_destination_type_enum_param",
-        "node": "AdSet",
-        "field_or_param": "destination_type",
-        "values": [
-            "APP",
-            "APPLINKS_AUTOMATIC",
-            "MESSENGER",
-            "UNDEFINED",
-            "WEBSITE"
         ]
     },
     {
@@ -2045,85 +2124,6 @@
             "PENDING_REVIEW",
             "PREAPPROVED",
             "WITH_ISSUES"
-        ]
-    },
-    {
-        "name": "adaccountadsets_execution_options_enum_param",
-        "node": "AdSet",
-        "field_or_param": "execution_options",
-        "values": [
-            "include_recommendations",
-            "validate_only"
-        ]
-    },
-    {
-        "name": "adaccountadsets_full_funnel_exploration_mode_enum_param",
-        "node": "AdSet",
-        "field_or_param": "full_funnel_exploration_mode",
-        "values": [
-            "EXTENDED_EXPLORATION",
-            "LIMITED_EXPLORATION",
-            "NONE_EXPLORATION"
-        ]
-    },
-    {
-        "name": "adaccountadsets_optimization_goal_enum_param",
-        "node": "AdSet",
-        "field_or_param": "optimization_goal",
-        "values": [
-            "AD_RECALL_LIFT",
-            "APP_DOWNLOADS",
-            "APP_INSTALLS",
-            "BRAND_AWARENESS",
-            "CLICKS",
-            "DERIVED_EVENTS",
-            "ENGAGED_USERS",
-            "EVENT_RESPONSES",
-            "IMPRESSIONS",
-            "LANDING_PAGE_VIEWS",
-            "LEAD_GENERATION",
-            "LINK_CLICKS",
-            "NONE",
-            "OFFER_CLAIMS",
-            "OFFSITE_CONVERSIONS",
-            "PAGE_ENGAGEMENT",
-            "PAGE_LIKES",
-            "POST_ENGAGEMENT",
-            "REACH",
-            "REPLIES",
-            "SOCIAL_IMPRESSIONS",
-            "THRUPLAY",
-            "TWO_SECOND_CONTINUOUS_VIDEO_VIEWS",
-            "VALUE",
-            "VIDEO_VIEWS"
-        ]
-    },
-    {
-        "name": "adaccountadsets_optimization_sub_event_enum_param",
-        "node": "AdSet",
-        "field_or_param": "optimization_sub_event",
-        "values": [
-            "NONE",
-            "TRAVEL_INTENT",
-            "TRAVEL_INTENT_BUCKET_01",
-            "TRAVEL_INTENT_BUCKET_02",
-            "TRAVEL_INTENT_BUCKET_03",
-            "TRAVEL_INTENT_BUCKET_04",
-            "TRAVEL_INTENT_BUCKET_05",
-            "TRAVEL_INTENT_NO_DESTINATION_INTENT",
-            "TRIP_CONSIDERATION",
-            "VIDEO_SOUND_ON"
-        ]
-    },
-    {
-        "name": "adaccountadsets_status_enum_param",
-        "node": "AdSet",
-        "field_or_param": "status",
-        "values": [
-            "ACTIVE",
-            "ARCHIVED",
-            "DELETED",
-            "PAUSED"
         ]
     },
     {
@@ -3091,6 +3091,17 @@
         ]
     },
     {
+        "name": "adaccounttargetingbrowse_regulated_categories_enum_param",
+        "node": "AdAccountTargetingUnified",
+        "field_or_param": "regulated_categories",
+        "values": [
+            "EMPLOYMENT",
+            "FINANCING",
+            "HOUSING",
+            "NONE"
+        ]
+    },
+    {
         "name": "adaccounttargetingbrowse_whitelisted_types_enum_param",
         "node": "AdAccountTargetingUnified",
         "field_or_param": "whitelisted_types",
@@ -3329,6 +3340,17 @@
         ]
     },
     {
+        "name": "adaccounttargetingsearch_regulated_categories_enum_param",
+        "node": "AdAccountTargetingUnified",
+        "field_or_param": "regulated_categories",
+        "values": [
+            "EMPLOYMENT",
+            "FINANCING",
+            "HOUSING",
+            "NONE"
+        ]
+    },
+    {
         "name": "adaccounttargetingsearch_whitelisted_types_enum_param",
         "node": "AdAccountTargetingUnified",
         "field_or_param": "whitelisted_types",
@@ -3510,6 +3532,17 @@
             "PRODUCT_CATALOG_SALES",
             "REACH",
             "VIDEO_VIEWS"
+        ]
+    },
+    {
+        "name": "adaccounttargetingsuggestions_regulated_categories_enum_param",
+        "node": "AdAccountTargetingUnified",
+        "field_or_param": "regulated_categories",
+        "values": [
+            "EMPLOYMENT",
+            "FINANCING",
+            "HOUSING",
+            "NONE"
         ]
     },
     {
@@ -4622,6 +4655,7 @@
             "FB_AD_NETWORK_FILLED_REQUEST",
             "FB_AD_NETWORK_FILL_RATE",
             "FB_AD_NETWORK_IMP",
+            "FB_AD_NETWORK_IMPRESSION_RATE",
             "FB_AD_NETWORK_REQUEST",
             "FB_AD_NETWORK_REVENUE",
             "FB_AD_NETWORK_SHOW_RATE",
@@ -4813,6 +4847,16 @@
             "pixel_fire",
             "url",
             "url_by_rule"
+        ]
+    },
+    {
+        "name": "adstudy_type",
+        "node": "AdStudy",
+        "field_or_param": "type",
+        "values": [
+            "CONTINUOUS_LIFT_CONFIG",
+            "LIFT",
+            "SPLIT_TEST"
         ]
     },
     {
@@ -5071,6 +5115,7 @@
             "FB_AD_NETWORK_FILLED_REQUEST",
             "FB_AD_NETWORK_FILL_RATE",
             "FB_AD_NETWORK_IMP",
+            "FB_AD_NETWORK_IMPRESSION_RATE",
             "FB_AD_NETWORK_REQUEST",
             "FB_AD_NETWORK_REVENUE",
             "FB_AD_NETWORK_SHOW_RATE",
@@ -5241,6 +5286,14 @@
         "values": [
             "live",
             "unapproved"
+        ]
+    },
+    {
+        "name": "applicationuploads_session_type_enum_param",
+        "node": "Object",
+        "field_or_param": "session_type",
+        "values": [
+            "attachment"
         ]
     },
     {
@@ -5494,6 +5547,7 @@
             "FB_AD_NETWORK_FILLED_REQUEST",
             "FB_AD_NETWORK_FILL_RATE",
             "FB_AD_NETWORK_IMP",
+            "FB_AD_NETWORK_IMPRESSION_RATE",
             "FB_AD_NETWORK_REQUEST",
             "FB_AD_NETWORK_REVENUE",
             "FB_AD_NETWORK_SHOW_RATE",
@@ -5544,15 +5598,6 @@
         ]
     },
     {
-        "name": "businessbusiness_invoices_type_enum_param",
-        "node": "OracleTransaction",
-        "field_or_param": "type",
-        "values": [
-            "CM",
-            "INV"
-        ]
-    },
-    {
         "name": "businessbusiness_users_role_enum_param",
         "node": "BusinessUser",
         "field_or_param": "role",
@@ -5584,6 +5629,7 @@
             "CREATE_CONTENT",
             "MANAGE",
             "MANAGE_JOBS",
+            "MANAGE_LEADS",
             "MODERATE",
             "MODERATE_COMMUNITY",
             "PAGES_MESSAGING",
@@ -5630,17 +5676,6 @@
             "4",
             "5",
             "6"
-        ]
-    },
-    {
-        "name": "businessinitiated_audience_sharing_requests_request_status_enum_param",
-        "node": "BusinessAssetSharingAgreement",
-        "field_or_param": "request_status",
-        "values": [
-            "APPROVE",
-            "DECLINE",
-            "EXPIRED",
-            "IN_PROGRESS"
         ]
     },
     {
@@ -5695,19 +5730,6 @@
         ]
     },
     {
-        "name": "businessmeasurement_reports_report_type_enum_param",
-        "node": "MeasurementReport",
-        "field_or_param": "report_type",
-        "values": [
-            "fruit_rollup_report",
-            "mmm_report",
-            "multi_channel_report",
-            "partner_lift_study_report",
-            "third_party_mta_report",
-            "video_metrics_report"
-        ]
-    },
-    {
         "name": "businessowned_businesses_page_permitted_tasks_enum_param",
         "node": "Business",
         "field_or_param": "page_permitted_tasks",
@@ -5717,6 +5739,7 @@
             "CREATE_CONTENT",
             "MANAGE",
             "MANAGE_JOBS",
+            "MANAGE_LEADS",
             "MODERATE",
             "MODERATE_COMMUNITY",
             "PAGES_MESSAGING",
@@ -5788,17 +5811,6 @@
             "normal",
             "small",
             "square"
-        ]
-    },
-    {
-        "name": "businessreceived_audience_sharing_requests_request_status_enum_param",
-        "node": "BusinessAssetSharingAgreement",
-        "field_or_param": "request_status",
-        "values": [
-            "APPROVE",
-            "DECLINE",
-            "EXPIRED",
-            "IN_PROGRESS"
         ]
     },
     {
@@ -7536,6 +7548,7 @@
             "CREATE_CONTENT",
             "MANAGE",
             "MANAGE_JOBS",
+            "MANAGE_LEADS",
             "MODERATE",
             "MODERATE_COMMUNITY",
             "PAGES_MESSAGING",
@@ -7554,6 +7567,7 @@
             "CREATE_CONTENT",
             "MANAGE",
             "MANAGE_JOBS",
+            "MANAGE_LEADS",
             "MODERATE",
             "MODERATE_COMMUNITY",
             "PAGES_MESSAGING",
@@ -7572,6 +7586,7 @@
             "CREATE_CONTENT",
             "MANAGE",
             "MANAGE_JOBS",
+            "MANAGE_LEADS",
             "MODERATE",
             "MODERATE_COMMUNITY",
             "PAGES_MESSAGING",
@@ -8459,16 +8474,6 @@
         "values": [
             "EXISTING_THREAD",
             "NEW_THREAD"
-        ]
-    },
-    {
-        "name": "pagevideo_copyright_rules_source_enum_param",
-        "node": "VideoCopyrightRule",
-        "field_or_param": "source",
-        "values": [
-            "MATCH_SETTINGS_DIALOG",
-            "RULES_SELECTOR",
-            "RULES_TAB"
         ]
     },
     {
@@ -9787,6 +9792,7 @@
         "field_or_param": "status",
         "values": [
             "declined",
+            "expired",
             "granted"
         ]
     },
@@ -10378,6 +10384,35 @@
             "lifetime",
             "month",
             "week"
+        ]
+    },
+    {
+        "name": "whatsappbusinessaccountmessage_templates_category_enum_param",
+        "node": "WhatsAppBusinessAccount",
+        "field_or_param": "category",
+        "values": [
+            "ACCOUNT_UPDATE",
+            "ALERT_UPDATE",
+            "APPOINTMENT_UPDATE",
+            "ISSUE_RESOLUTION",
+            "PAYMENT_UPDATE",
+            "PERSONAL_FINANCE_UPDATE",
+            "RESERVATION_UPDATE",
+            "SHIPPING_UPDATE",
+            "TICKET_UPDATE",
+            "TRANSPORTATION_UPDATE"
+        ]
+    },
+    {
+        "name": "whatsappbusinessaccountmessage_templates_status_enum_param",
+        "node": "WhatsAppBusinessHSM",
+        "field_or_param": "status",
+        "values": [
+            "APPROVED",
+            "DELETED",
+            "PENDING",
+            "PENDING_DELETION",
+            "REJECTED"
         ]
     }
 ]

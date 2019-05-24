@@ -1,0 +1,140 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "assigned_users",
+            "return": "AssignedUser",
+            "params": []
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "message_templates",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "message_templates",
+            "return": "WhatsAppBusinessHSM",
+            "params": [
+                {
+                    "name": "category",
+                    "required": false,
+                    "type": "list<whatsappbusinessaccountmessage_templates_category_enum_param>"
+                },
+                {
+                    "name": "content",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "language",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "name_or_content",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "status",
+                    "required": false,
+                    "type": "list<whatsappbusinessaccountmessage_templates_status_enum_param>"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "message_templates",
+            "return": "WhatsAppBusinessAccount",
+            "params": [
+                {
+                    "name": "category",
+                    "required": true,
+                    "type": "whatsappbusinessaccountmessage_templates_category_enum_param"
+                },
+                {
+                    "name": "components",
+                    "required": false,
+                    "type": "list<map>"
+                },
+                {
+                    "name": "language",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "phone_numbers",
+            "return": "WhatsAppBusinessAccountToNumberCurrentStatus",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "WhatsAppBusinessAccount",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "analytics",
+            "type": "Object"
+        },
+        {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "eligible_for_sending_notifications",
+            "type": "bool"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "ineligible_for_sending_notifications_reason",
+            "type": "string"
+        },
+        {
+            "name": "message_template_namespace",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "on_behalf_of_business_info",
+            "type": "Object"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "timezone_id",
+            "type": "string"
+        }
+    ]
+}

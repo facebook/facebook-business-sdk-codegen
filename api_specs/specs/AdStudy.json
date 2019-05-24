@@ -176,6 +176,11 @@
                     "type": "int"
                 },
                 {
+                    "name": "type",
+                    "required": false,
+                    "type": "adstudy_type"
+                },
+                {
                     "name": "viewers",
                     "required": false,
                     "type": "list<int>"

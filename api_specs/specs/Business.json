@@ -18,6 +18,18 @@
             ]
         },
         {
+            "method": "DELETE",
+            "endpoint": "ad_accounts",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "adaccount_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "ad_studies",
             "return": "AdStudy",
@@ -295,18 +307,6 @@
             ]
         },
         {
-            "method": "DELETE",
-            "endpoint": "adaccounts",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "adaccount_id",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "adnetworkanalytics",
             "return": "AdNetworkAnalyticsSyncQueryResult",
@@ -506,48 +506,6 @@
                     "name": "publisher_urls_file",
                     "required": true,
                     "type": "file"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "business_invoices",
-            "return": "OracleTransaction",
-            "params": [
-                {
-                    "name": "end_date",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "invoice_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "issue_end_date",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "issue_start_date",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "root_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "start_date",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "type",
-                    "required": false,
-                    "type": "businessbusiness_invoices_type_enum_param"
                 }
             ]
         },
@@ -813,23 +771,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "initiated_audience_sharing_requests",
-            "return": "BusinessAssetSharingAgreement",
-            "params": [
-                {
-                    "name": "recipient_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "request_status",
-                    "required": false,
-                    "type": "businessinitiated_audience_sharing_requests_request_status_enum_param"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "initiated_sharing_agreements",
             "return": "BusinessAgreement",
             "params": [
@@ -907,23 +848,6 @@
                     "name": "vertical",
                     "required": false,
                     "type": "businessmanaged_businesses_vertical_enum_param"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "measurement_reports",
-            "return": "MeasurementReport",
-            "params": [
-                {
-                    "name": "filters",
-                    "required": false,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "report_type",
-                    "required": true,
-                    "type": "businessmeasurement_reports_report_type_enum_param"
                 }
             ]
         },
@@ -1082,12 +1006,6 @@
                     "type": "businessowned_businesses_vertical_enum_param"
                 }
             ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "owned_domains",
-            "return": "OwnedDomain",
-            "params": []
         },
         {
             "method": "POST",
@@ -1282,23 +1200,6 @@
                     "name": "partner_id",
                     "required": false,
                     "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "received_audience_sharing_requests",
-            "return": "BusinessAssetSharingAgreement",
-            "params": [
-                {
-                    "name": "initiator_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "request_status",
-                    "required": false,
-                    "type": "businessreceived_audience_sharing_requests_request_status_enum_param"
                 }
             ]
         },

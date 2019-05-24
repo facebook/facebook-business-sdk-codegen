@@ -1,12 +1,6 @@
 {
     "apis": [
         {
-            "method": "GET",
-            "endpoint": "admin_notes",
-            "return": "PageAdminNote",
-            "params": []
-        },
-        {
             "method": "POST",
             "endpoint": "admin_settings",
             "return": "Page",
@@ -521,6 +515,11 @@
             "return": "Canvas",
             "params": [
                 {
+                    "name": "is_hidden",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "is_published",
                     "required": false,
                     "type": "bool"
@@ -681,6 +680,12 @@
             "method": "GET",
             "endpoint": "copyright_whitelisted_partners",
             "return": "Profile",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "custom_labels",
+            "return": "PageUserMessageThreadLabel",
             "params": []
         },
         {
@@ -1798,93 +1803,6 @@
         },
         {
             "method": "POST",
-            "endpoint": "locations",
-            "return": "Page",
-            "params": [
-                {
-                    "name": "always_open",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "hours",
-                    "required": false,
-                    "type": "map"
-                },
-                {
-                    "name": "ignore_warnings",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "location",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "location_page_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "old_store_number",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "page_username",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "permanently_closed",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "phone",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "place_topics",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "price_range",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "store_code",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "store_location_descriptor",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "store_name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "store_number",
-                    "required": true,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "website",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "POST",
             "endpoint": "media_fingerprints",
             "return": "MediaFingerprint",
             "params": [
@@ -2859,12 +2777,6 @@
             ]
         },
         {
-            "method": "GET",
-            "endpoint": "ratings",
-            "return": "Recommendation",
-            "params": []
-        },
-        {
             "method": "POST",
             "endpoint": "request_thread_control",
             "return": "Page",
@@ -3018,12 +2930,6 @@
             ]
         },
         {
-            "method": "GET",
-            "endpoint": "thread_settings",
-            "return": "ThreadSetting",
-            "params": []
-        },
-        {
             "method": "POST",
             "endpoint": "thread_settings",
             "return": "Page",
@@ -3122,23 +3028,6 @@
                     "name": "psid",
                     "required": true,
                     "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "video_copyright_rules",
-            "return": "VideoCopyrightRule",
-            "params": [
-                {
-                    "name": "selected_rule_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "source",
-                    "required": false,
-                    "type": "pagevideo_copyright_rules_source_enum_param"
                 }
             ]
         },

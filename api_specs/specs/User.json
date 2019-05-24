@@ -402,28 +402,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "conversations",
-            "return": "UnifiedThread",
-            "params": [
-                {
-                    "name": "folder",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "tags",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "user_id",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "events",
             "return": "Event",
             "params": [
@@ -443,12 +421,6 @@
             "method": "GET",
             "endpoint": "family",
             "return": "User",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "favorite_requests",
-            "return": "FavoriteRequest",
             "params": []
         },
         {
@@ -2785,11 +2757,6 @@
                     "name": "firstname",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "label_cohort",
-                    "required": false,
-                    "type": "Object"
                 },
                 {
                     "name": "lastname",

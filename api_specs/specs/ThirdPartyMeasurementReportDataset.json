@@ -5,6 +5,18 @@
             "method": "GET",
             "return": "ThirdPartyMeasurementReportDataset",
             "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "ThirdPartyMeasurementReportDataset",
+            "params": [
+                {
+                    "name": "data",
+                    "required": true,
+                    "type": "list<map>"
+                }
+            ]
         }
     ],
     "fields": [

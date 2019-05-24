@@ -2,18 +2,6 @@
     "apis": [
         {
             "method": "GET",
-            "endpoint": "blocked_users",
-            "return": "User",
-            "params": [
-                {
-                    "name": "uid",
-                    "required": false,
-                    "type": "Object"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "comments",
             "return": "Comment",
             "params": [

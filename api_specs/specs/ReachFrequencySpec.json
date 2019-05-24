@@ -32,10 +32,6 @@
         {
             "name": "min_reach_limits",
             "type": "Object"
-        },
-        {
-            "name": "supports_video_view_benchmark_per_country",
-            "type": "Object"
         }
     ]
 }

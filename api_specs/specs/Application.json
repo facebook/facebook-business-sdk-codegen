@@ -863,18 +863,6 @@
             "params": []
         },
         {
-            "method": "GET",
-            "endpoint": "objects",
-            "return": "OpenGraphObject",
-            "params": [
-                {
-                    "name": "type",
-                    "required": true,
-                    "type": "Object"
-                }
-            ]
-        },
-        {
             "method": "POST",
             "endpoint": "objects",
             "return": "OpenGraphObject",
@@ -1204,6 +1192,33 @@
                     "name": "stress_run",
                     "required": false,
                     "type": "unsigned int"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "uploads",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "file_length",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "file_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "file_type",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "session_type",
+                    "required": false,
+                    "type": "applicationuploads_session_type_enum_param"
                 }
             ]
         },
