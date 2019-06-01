@@ -13,9 +13,9 @@
     "url": "https://github.com/facebook/facebook-business-sdk-codegen/issues"
   },
   "scripts": {
-    "format": "./node_modules/.bin/eslint --fix \"src/**/*.js\" && prettier --write \"src/**/*.js\"",
+    "format": "./node_modules/.bin/eslint --fix \"{common,loaders,processors,renderers}/**/*.js\" CodeGenerator.js && prettier --write \"{common,loaders,processors,renderers}/**/*.js\" CodeGenerator.js",
     "flow": "flow",
-    "build": "babel src/ -d lib/",
+    "build": "babel common/ loaders/ processors/ renderers/ CodeGenerator.js -d lib/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
