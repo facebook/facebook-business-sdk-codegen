@@ -2,32 +2,37 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * @format
+ * @flow strict-local
  */
 
-const codeGenLanguages = require('./CodeGenLanguages');
+'use strict';
 
-const JSONPath = require('jsonpath-plus');
-const merge = require('merge');
+// $FlowFixMe
+import JSONPath from 'jsonpath-plus';
 
-/*
+// $FlowFixMe
+import {recursive} from 'merge';
+
+import codeGenLanguages from './CodeGenLanguages';
+
+import type {Processor} from '../common/types';
+
+/**
  * Apply manual spec overriding from
  * codegen/api_specs/SDKCodegen.json
  */
-var SpecOverridingProcessor = {
-  process: function(specs, metadata) {
-    const language = metadata.language;
-    var flags = metadata.mergedOverriding.flags;
-    var languageDef = codeGenLanguages[language];
-    var APISpecs = specs.api_specs;
-    var enumTypes = specs.enumTypes;
-    var enumMetadata = specs.enumMetadata;
-    var languageDef = codeGenLanguages[language];
-    var specOverriding = metadata.mergedOverriding.spec_overriding;
-    for (var clsName in specOverriding) {
-      for (var jsonPath in specOverriding[clsName]) {
-        var value = specOverriding[clsName][jsonPath];
-        var $ = APISpecs[clsName] || {};
-        var evalPathes =
+const SpecOverridingProcessor: Processor = {
+  process(specs, metadata) {
+    const language: string = metadata.language || '';
+    const flags = metadata.mergedOverriding.flags;
+    let APISpecs = specs.api_specs;
+    const languageDef = codeGenLanguages[language];
+    const specOverriding = metadata.mergedOverriding.spec_overriding;
+    for (const clsName in specOverriding) {
+      for (const jsonPath in specOverriding[clsName]) {
+        const value = specOverriding[clsName][jsonPath];
+        const $ = APISpecs[clsName] || {};
+        const evalPathes =
           jsonPath === '$'
             ? ['$']
             : JSONPath.eval($, jsonPath, {resultType: 'path'});
@@ -42,36 +47,36 @@ var SpecOverridingProcessor = {
 
         if (value === null) {
           // Delete
-          evalPathes.forEach(function(path) {
+          evalPathes.forEach((path: string) => {
             // Find the parent path before it
             // Since all paths are of the form $[..][..][..] we only need
             // to remove the last [..]
-            var lastBracketPos = path.lastIndexOf('[');
+            const lastBracketPos = path.lastIndexOf('[');
             if (lastBracketPos != -1) {
-              var parentPath = path.substring(0, lastBracketPos);
-              var evalParentValue = eval(parentPath);
+              const parentPath = path.substring(0, lastBracketPos);
+              const evalParentValue = eval(parentPath);
               if (evalParentValue instanceof Array) {
                 // since evalParentValue is an array, accessor must be a number
-                var accessor = path.substring(
+                const accessor = path.substring(
                   lastBracketPos + 1,
                   path.length - 1,
                 );
-                if (isNaN(accessor)) {
+                if (isNaN(Number(accessor))) {
                   throw new Error(
                     'Accessor for last element in array must ' +
                       'be integer but instead ' +
                       accessor,
                   );
                 }
-                evalParentValue.splice(accessor, 1);
+                evalParentValue.splice(Number(accessor), 1);
               } else {
                 eval('delete ' + path);
               }
             }
           });
         } else {
-          evalPathes.forEach(function(path) {
-            var evalValue = eval(path);
+          evalPathes.forEach((path: string) => {
+            const evalValue = eval(path);
             if (evalValue instanceof Array) {
               if (value instanceof Array) {
                 // Merge array
@@ -87,7 +92,7 @@ var SpecOverridingProcessor = {
             } else if (evalValue instanceof Object) {
               if (value instanceof Object) {
                 // Merge object
-                merge.recursive(evalValue, value);
+                recursive(evalValue, value);
               } else {
                 throw new Error(
                   'MUST_FIX: value must be object while path is object.\n' +
@@ -105,10 +110,10 @@ var SpecOverridingProcessor = {
       }
     }
     if (flags) {
-      for (var clsName in APISpecs) {
-        var cls_flags = flags[clsName];
+      for (const clsName in APISpecs) {
+        const cls_flags = flags[clsName];
         if (cls_flags) {
-          for (var i in cls_flags) {
+          for (const i in cls_flags) {
             APISpecs[clsName][cls_flags[i]] = true;
           }
         }
@@ -121,4 +126,4 @@ var SpecOverridingProcessor = {
   },
 };
 
-module.exports = SpecOverridingProcessor;
+export default SpecOverridingProcessor;

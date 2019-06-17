@@ -2,38 +2,39 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * @format
+ * @flow
  */
 
-var fs = require('fs');
-var path = require('path');
-var mustache = require('mustache');
+'use strict';
 
-var CodeGenUtil = {
-  getBaseType: function(type) {
+const CodeGenUtil = {
+  getBaseType(type: string) {
     return type.replace(/(^|^list\s*<\s*)([a-zA-Z0-9_\s]*)($|\s*>\s*$)/i, '$2');
   },
-  preProcessMainTemplates: function(mainTemplates, clsSpec) {
-    var self = this;
-    return mainTemplates.map(function(template) {
-      var newTemplate = JSON.parse(JSON.stringify(template));
+
+  preProcessMainTemplates(
+    mainTemplates: {[x: string]: any},
+    clsSpec: {[x: string]: string},
+  ) {
+    return mainTemplates.map((template: any) => {
+      const newTemplate = JSON.parse(JSON.stringify(template));
       newTemplate.content = newTemplate.content.replace(
         /{{\s*>.*(%([a-zA-Z:_]+)%).*}}/gi,
-        function(m, p1, p2) {
-          return m.replace(p1, clsSpec[p2]);
-        },
+        (m: string, p1: string, p2: string) => m.replace(p1, clsSpec[p2]),
       );
       return newTemplate;
     });
   },
-  versionCompare: function(verA, verB) {
+
+  versionCompare(verA: string, verB: string): -1 | 0 | 1 {
     if (verA.charAt(0) != 'v' || verB.charAt(0) != 'v') {
       throw new Error('invalid version number');
     }
-    var partsA = verA.substring(1).split('.');
-    var partsB = verB.substring(1).split('.');
-    for (var i = 0; i < Math.max(partsA.length, partsB.length); ++i) {
-      var numA = parseInt(partsA[i] || '-1');
-      var numB = parseInt(partsB[i] || '-1');
+    const partsA = verA.substring(1).split('.');
+    const partsB = verB.substring(1).split('.');
+    for (let i = 0; i < Math.max(partsA.length, partsB.length); ++i) {
+      const numA = parseInt(partsA[i] || '-1');
+      const numB = parseInt(partsB[i] || '-1');
       if (numA > numB) {
         return 1;
       } else if (numA < numB) {
@@ -44,4 +45,4 @@ var CodeGenUtil = {
   },
 };
 
-module.exports = CodeGenUtil;
+export default CodeGenUtil;

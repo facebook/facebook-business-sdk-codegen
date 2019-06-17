@@ -2,23 +2,27 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * @format
+ * @flow
  */
 
-var CodeGenLanguageNodeJs = {
-  formatFileName: function(clsName) {
+'use strict';
+
+const CodeGenLanguageNodeJs = {
+  formatFileName(clsName: {[x: string]: string}) {
     return clsName['name:hyphen'] + '.js';
   },
-  preMustacheProcess: function(
-    APISpecs,
-    codeGenNameConventions,
-    enumMetadataMap,
+
+  preMustacheProcess(
+    APISpecs: {[x: string]: any},
+    codeGenNameConventions: {},
+    enumMetadataMap: {},
   ) {
-    for (var clsName in APISpecs) {
-      var APIClsSpec = APISpecs[clsName];
-      var containsGenericReferece = false;
-      var containsReadEdges = false;
-      for (var index in APIClsSpec['apis']) {
-        var apiSpec = APIClsSpec['apis'][index];
+    for (const clsName in APISpecs) {
+      const APIClsSpec = APISpecs[clsName];
+      let containsGenericReferece = false;
+      let containsReadEdges = false;
+      for (const index in APIClsSpec.apis) {
+        const apiSpec = APIClsSpec.apis[index];
         if (!apiSpec.return) {
           containsGenericReferece = true;
         }
@@ -27,26 +31,25 @@ var CodeGenLanguageNodeJs = {
         }
       }
       if (containsGenericReferece) {
-        APIClsSpec['has_generic_reference'] = true;
+        APIClsSpec.has_generic_reference = true;
       }
       if (containsReadEdges) {
-        APIClsSpec['has_read_edges'] = true;
+        APIClsSpec.has_read_edges = true;
       }
 
-      for (var index in APIClsSpec['fields']) {
-        var fieldSpec = APIClsSpec['fields'][index];
+      for (const index in APIClsSpec.fields) {
+        const fieldSpec = APIClsSpec.fields[index];
 
-        var enumList = {};
-        var newEnumSpecList = [];
-        for (var index2 in APIClsSpec['api_spec_based_enum_reference']) {
-          var enumSpec = APIClsSpec['api_spec_based_enum_reference'][index2];
+        const enumList = {};
+        const newEnumSpecList = [];
+        for (const index2 in APIClsSpec.api_spec_based_enum_reference) {
+          const enumSpec = APIClsSpec.api_spec_based_enum_reference[index2];
           if (enumSpec['field_or_param:all_lower_case'] != 'fields') {
-            enumList[enumSpec['name']] =
-              enumSpec['field_or_param:all_lower_case'];
+            enumList[enumSpec.name] = enumSpec['field_or_param:all_lower_case'];
             newEnumSpecList.push(enumSpec);
           }
         }
-        APIClsSpec['api_spec_based_enum_reference'] = newEnumSpecList;
+        APIClsSpec.api_spec_based_enum_reference = newEnumSpecList;
       }
     }
     return APISpecs;
@@ -55,4 +58,4 @@ var CodeGenLanguageNodeJs = {
   keywords: ['try', 'private', 'public', 'new', 'default', 'class'],
 };
 
-module.exports = CodeGenLanguageNodeJs;
+export default CodeGenLanguageNodeJs;

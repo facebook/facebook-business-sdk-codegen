@@ -6,16 +6,13 @@
 
 'use strict';
 
-const fs = require('fs');
-const fs_extra = require('fs-extra');
-const path = require('path');
-const mustache = require('mustache');
+import fs from 'fs';
+import fs_extra from 'fs-extra';
+import path from 'path';
+import mustache from 'mustache';
 
 const Utils = {
-  /**
-   * @param { string } templateDir
-   */
-  loadTemplates(templateDir) {
+  loadTemplates(templateDir: string) {
     // 1. load codegen main templates
     // 2. load codegen partial templates
     // 3. discover files need to copy to the sdk folder
@@ -23,10 +20,8 @@ const Utils = {
     const partialTemplates = {};
     const versionedTemplates = [];
     const filesNeedCopy = [];
-    /**
-     * @param {string} dir
-     */
-    const walkTemplateDir = dir => {
+
+    const walkTemplateDir = (dir: string) => {
       const relativeDir = dir.substring(templateDir.length) + path.sep;
       fs.readdirSync(dir).forEach(file => {
         const fullPath = path.join(dir, file);
@@ -78,10 +73,8 @@ const Utils = {
       filesNeedCopy: filesNeedCopy,
     };
   },
-  /**
-   * @param {string} dir
-   */
-  mkdirsSync(dir) {
+
+  mkdirsSync(dir: string) {
     let dirPath = '';
     const dirs = dir.split(path.sep);
     while (dirs.length > 0) {
@@ -91,66 +84,52 @@ const Utils = {
       }
     }
   },
-  /**
-   * @param {any} mainTemplates
-   * @param {any} partialTemplates
-   * @param {any} clsSpec
-   * @param {string} language
-   * @param {{ [x: string]: any; }} codeGenLanguages
-   * @param {string} rootPath
-   */
+
   fillMainTemplates(
-    mainTemplates,
-    partialTemplates,
-    clsSpec,
-    language,
-    codeGenLanguages,
-    rootPath,
+    mainTemplates: any,
+    partialTemplates: any,
+    clsSpec: any,
+    language: string,
+    codeGenLanguages: {[key: string]: any},
+    rootPath: string,
   ) {
     mainTemplates = this.preProcessMainTemplates(mainTemplates, clsSpec);
-    mainTemplates.forEach(
-      /**
-       * @param {{ content: string; dir?: any; }} template
-       */
-      template => {
-        const languageDef = codeGenLanguages[language];
-        let filenameToCodeMap = {};
+    mainTemplates.forEach((template: {content: string, dir: string}) => {
+      const languageDef = codeGenLanguages[language];
+      let filenameToCodeMap = {};
 
-        if (languageDef.generateFilenameToCodeMap) {
-          filenameToCodeMap = languageDef.generateFilenameToCodeMap(
-            clsSpec,
-            template,
-            partialTemplates,
-          );
-        } else {
-          filenameToCodeMap = this.generateSimpleFilenameToCodeMap(
-            clsSpec,
-            template,
-            partialTemplates,
-            languageDef,
-          );
-        }
+      if (languageDef.generateFilenameToCodeMap) {
+        filenameToCodeMap = languageDef.generateFilenameToCodeMap(
+          clsSpec,
+          template,
+          partialTemplates,
+        );
+      } else {
+        filenameToCodeMap = this.generateSimpleFilenameToCodeMap(
+          clsSpec,
+          template,
+          partialTemplates,
+          languageDef,
+        );
+      }
 
-        for (const filename in filenameToCodeMap) {
-          const code = filenameToCodeMap[filename];
-          const outputPath = path.join(rootPath, template.dir);
-          this.mkdirsSync(outputPath);
-          fs.writeFileSync(path.join(outputPath, filename), code);
-        }
-      },
-    );
+      for (const filename in filenameToCodeMap) {
+        const code = filenameToCodeMap[filename];
+        const outputPath = path.join(rootPath, template.dir);
+        this.mkdirsSync(outputPath);
+        fs.writeFileSync(path.join(outputPath, filename), code);
+      }
+    });
   },
-  /**
-   * @param {any} clsSpec
-   * @param {{ content: string; }} template
-   * @param {any} partialTemplates
-   * @param {{ formatFileName: (arg0: any, arg1: any) => void; postProcess: (arg0: string) => string; }} languageDef
-   */
+
   generateSimpleFilenameToCodeMap(
-    clsSpec,
-    template,
-    partialTemplates,
-    languageDef,
+    clsSpec: string,
+    template: {content: string},
+    partialTemplates: any,
+    languageDef: {
+      formatFileName: (arg0: any, arg1: any) => string,
+      postProcess: (arg0: string) => string,
+    },
   ) {
     const filenameToCodeMap = {};
     const filename = languageDef.formatFileName(clsSpec, template);
@@ -166,11 +145,11 @@ const Utils = {
 
     return filenameToCodeMap;
   },
-  /**
-   * @param {{ map: (arg0: (template: any) => any) => void; }} mainTemplates
-   * @param {{ [x: string]: any; }} clsSpec
-   */
-  preProcessMainTemplates(mainTemplates, clsSpec) {
+
+  preProcessMainTemplates(
+    mainTemplates: {map: (arg0: (template: any) => any) => any},
+    clsSpec: {[string]: any},
+  ) {
     return mainTemplates.map(template => {
       const newTemplate = JSON.parse(JSON.stringify(template));
       newTemplate.content = newTemplate.content.replace(
@@ -185,10 +164,8 @@ const Utils = {
       return newTemplate;
     });
   },
-  /**
-   * @param {string} dir
-   */
-  removeRecursiveSync(dir) {
+
+  removeRecursiveSync(dir: string) {
     let stats;
     try {
       stats = fs.lstatSync(dir);
@@ -208,11 +185,8 @@ const Utils = {
       fs.unlinkSync(dir);
     }
   },
-  /**
-   * @param {string} srcDir
-   * @param {string} destDir
-   */
-  copyRecursiveSync(srcDir, destDir) {
+
+  copyRecursiveSync(srcDir: string, destDir: string) {
     const srcDirStats = fs.statSync(srcDir);
     if (srcDirStats.isDirectory()) {
       try {

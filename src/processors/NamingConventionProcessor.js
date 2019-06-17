@@ -2,20 +2,26 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * @format
+ * @flow strict-local
  */
 
-const pluralize = require('pluralize');
-const codeGenNameConventions = require('./CodeGenNameConventions');
-const codeGenLanguages = require('./CodeGenLanguages');
+'use strict';
 
-/*
+import codeGenNameConventions from './CodeGenNameConventions';
+import codeGenLanguages from './CodeGenLanguages';
+
+import type {Processor} from '../common/types';
+
+/**
  * This processor populates naming convention for the APISpecs.
  * It parses the current value and adds different naming styles.
  *
- * For example, if originally the spec is
- * {"name": "HelloWorld"}
- * It will now become:
- *{
+ * The spec is translated like so
+ * @example
+ *
+ * {"name": "HelloWorld"} =>
+ *
+ * {
  *   "name": "HelloWorld",
  *   "name:hyphen": "hello-world",
  *   "name:underscore": "hello_world",
@@ -25,157 +31,155 @@ const codeGenLanguages = require('./CodeGenLanguages');
  *   "name:all_lower_case": "helloworld"
  * }
  */
-var processor = {
-  process: function(specs, metadata) {
-    var APISpecs = specs.api_specs;
-    var language = metadata.language;
-    var languageDef = codeGenLanguages[language];
+const processor: Processor = {
+  process(specs, metadata) {
+    const APISpecs = specs.api_specs;
+    const language: string = metadata.language || '';
+    const languageDef = codeGenLanguages[language];
 
-    for (var clsName in APISpecs) {
-      var APIClsSpec = APISpecs[clsName];
-      if (APIClsSpec['creation_parent_class']) {
+    for (const clsName in APISpecs) {
+      const APIClsSpec = APISpecs[clsName];
+      if (APIClsSpec.creation_parent_class) {
         codeGenNameConventions.populateNameConventions(
           APIClsSpec,
           'creation_parent_class',
           codeGenNameConventions.parsePascalName(
-            APIClsSpec['creation_parent_class'],
+            APIClsSpec.creation_parent_class,
           ),
         );
       }
-      if (APIClsSpec['creation_method']) {
+      if (APIClsSpec.creation_method) {
         codeGenNameConventions.populateNameConventions(
           APIClsSpec,
           'creation_method',
           codeGenNameConventions.parseUnderscoreName(
-            APIClsSpec['creation_method'],
+            APIClsSpec.creation_method,
           ),
         );
       }
     }
 
     // add naming convention for enums
-    var enumMetadataMap = specs.enumMetadataMap;
-    for (var index in enumMetadataMap) {
-      var enumType = enumMetadataMap[index];
-      var dedupchecker = {};
-      if (enumType['node'] === 'AdReportRun') {
+    const enumMetadataMap = specs.enumMetadataMap;
+    for (const index in enumMetadataMap) {
+      const enumType = enumMetadataMap[index];
+      const dedupchecker = {};
+      if (enumType.node === 'AdReportRun') {
         // We want all insights enums to be in AdsInsights, not AdReportRun
-        enumType['node'] = 'AdsInsights';
+        enumType.node = 'AdsInsights';
       }
-      var valuesWithNamingConvention = [];
-      for (var i in enumType['values']) {
-        var value = enumType['values'][i];
+      const valuesWithNamingConvention = [];
+      for (const i in enumType.values) {
+        const value = enumType.values[i];
         if (!value || value === '') {
           continue;
         }
-        var entry = {value: value};
+        const entry = {value: value, is_irregular_name: false};
         if (
           languageDef.keywords.indexOf(value.toLowerCase()) > -1 ||
           !value.match ||
           !value.match(/^[a-zA-Z][a-zA-z0-9_]/)
         ) {
-          entry['is_irregular_name'] = true;
+          entry.is_irregular_name = true;
         }
         codeGenNameConventions.populateNameConventions(
           entry,
           'value',
           codeGenNameConventions.parseUnderscoreName(
-            codeGenNameConventions.removeIlligalChars(entry['value']),
+            codeGenNameConventions.removeIlligalChars(entry.value),
           ),
         );
-        if (!dedupchecker[entry['value'].toUpperCase()]) {
-          dedupchecker[entry['value'].toUpperCase()] = true;
+        if (!dedupchecker[entry.value.toUpperCase()]) {
+          dedupchecker[entry.value.toUpperCase()] = true;
           valuesWithNamingConvention.push(entry);
         }
       }
       codeGenNameConventions.populateNameConventions(
         enumType,
         'field_or_param',
-        codeGenNameConventions.parseUnderscoreName(enumType['field_or_param']),
+        codeGenNameConventions.parseUnderscoreName(enumType.field_or_param),
       );
-      if (enumType['node']) {
+      if (enumType.node) {
         codeGenNameConventions.populateNameConventions(
           enumType,
           'node',
-          codeGenNameConventions.parsePascalName(enumType['node']),
+          codeGenNameConventions.parsePascalName(enumType.node),
         );
       }
-      enumType['values_with_naming_convention'] = valuesWithNamingConvention;
+      enumType.values_with_naming_convention = valuesWithNamingConvention;
     }
 
-    for (var clsName in APISpecs) {
-      var APIClsSpec = APISpecs[clsName];
+    for (const clsName in APISpecs) {
+      const APIClsSpec = APISpecs[clsName];
       codeGenNameConventions.populateNameConventions(
         APIClsSpec,
         'name',
-        codeGenNameConventions.parsePascalName(APIClsSpec['name']),
+        codeGenNameConventions.parsePascalName(APIClsSpec.name),
         'cls:',
       );
 
-      for (var index in APIClsSpec['apis']) {
-        var APISpec = APIClsSpec['apis'][index];
+      for (const index in APIClsSpec.apis) {
+        const APISpec = APIClsSpec.apis[index];
         codeGenNameConventions.populateNameConventions(
           APISpec,
           'name',
-          codeGenNameConventions.parseUnderscoreName(APISpec['name']),
+          codeGenNameConventions.parseUnderscoreName(APISpec.name),
           'api:',
         );
 
-        var params = APISpec['params'] || [];
-        for (var index in params) {
-          var paramSpec = params[index];
+        const params = APISpec.params || [];
+        for (const index in params) {
+          const paramSpec = params[index];
           codeGenNameConventions.populateNameConventions(
             paramSpec,
             'name',
-            codeGenNameConventions.parseUnderscoreName(paramSpec['name']),
+            codeGenNameConventions.parseUnderscoreName(paramSpec.name),
             'param:',
           );
-          if (paramSpec['context']) {
+          if (paramSpec.context) {
             codeGenNameConventions.populateNameConventions(
               paramSpec,
               'context',
-              codeGenNameConventions.parseUnderscoreName(paramSpec['context']),
+              codeGenNameConventions.parseUnderscoreName(paramSpec.context),
             );
           }
 
-          if (
-            languageDef.keywords.indexOf(paramSpec['name'].toLowerCase()) > -1
-          ) {
-            paramSpec['is_keyword'] = true;
+          if (languageDef.keywords.indexOf(paramSpec.name.toLowerCase()) > -1) {
+            paramSpec.is_keyword = true;
           }
         }
-        if (APISpecs[APISpec['return']]) {
+        if (APISpecs[APISpec.return]) {
           codeGenNameConventions.populateNameConventions(
             APISpec,
             'return',
-            codeGenNameConventions.parsePascalName(APISpec['return']),
+            codeGenNameConventions.parsePascalName(APISpec.return),
           );
         }
       }
 
-      for (var index in APIClsSpec['fields']) {
-        var fieldSpec = APIClsSpec['fields'][index];
+      for (const index in APIClsSpec.fields) {
+        const fieldSpec = APIClsSpec.fields[index];
         codeGenNameConventions.populateNameConventions(
           fieldSpec,
           'name',
-          codeGenNameConventions.parseUnderscoreName(fieldSpec['name']),
+          codeGenNameConventions.parseUnderscoreName(fieldSpec.name),
           'field:',
         );
-        if (fieldSpec['context']) {
+        if (fieldSpec.context) {
           codeGenNameConventions.populateNameConventions(
             fieldSpec,
             'context',
-            codeGenNameConventions.parseUnderscoreName(fieldSpec['context']),
+            codeGenNameConventions.parseUnderscoreName(fieldSpec.context),
           );
         }
         if (
-          languageDef.keywords.indexOf(fieldSpec['name'].toLowerCase()) > -1 ||
-          !/^[$A-Z_][0-9A-Z_$]*$/i.test(fieldSpec['name'])
+          languageDef.keywords.indexOf(fieldSpec.name.toLowerCase()) > -1 ||
+          !/^[$A-Z_][0-9A-Z_$]*$/i.test(fieldSpec.name)
         ) {
           // This is to mark field names that are either keywords or
           // is not a valid identifier. We need special treatment to use
           // them in codegen.
-          fieldSpec['is_irregular_name'] = true;
+          fieldSpec.is_irregular_name = true;
         }
       }
     }
@@ -183,4 +187,4 @@ var processor = {
   },
 };
 
-module.exports = processor;
+export default processor;

@@ -2,23 +2,19 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * @format
- */
-
-/**
- * @typedef { import("../common/typedefs").Loader } Loader
+ * @flow strict-local
  */
 
 'use strict';
 
-const path = require('path');
-const Utils = require('./Utils');
-const codeGenVersions = require('../../api_specs/versions.json');
-const CommonUtils = require('../common/Utils');
+import path from 'path';
+import Utils from './Utils';
+import codeGenVersions from '../../api_specs/versions.json';
+import CommonUtils from '../common/Utils';
 
-/**
- * @type {Loader}
- */
-const SpecFileLoader = {
+import type {Loader} from '../common/types';
+
+const SpecFileLoader: Loader = {
   load(version) {
     const APISpecDir = path.resolve(__dirname, '..', '..', 'api_specs');
     const overriddenAPISpecName = 'SDKCodegen';
@@ -33,7 +29,6 @@ const SpecFileLoader = {
     for (const currentVersion in codeGenVersions) {
       if (Utils.versionCompare(currentVersion, version) <= 0) {
         if (codeGenVersions[currentVersion]) {
-          /** @type {string[]} */
           const currentVersions = codeGenVersions[currentVersion];
           currentVersions.forEach(feature => {
             const hasFeatureName = 'has_' + feature;
@@ -62,4 +57,4 @@ const SpecFileLoader = {
   },
 };
 
-module.exports = SpecFileLoader;
+export default SpecFileLoader;

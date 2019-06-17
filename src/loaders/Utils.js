@@ -2,23 +2,18 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * @format
- */
-
-/**
- * @typedef { import("../common/typedefs").APIInputSpecs } APIInputSpecs
+ * @flow strict-local
  */
 
 'use strict';
 
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+
+import type {APIInputSpecs} from '../common/types';
 
 const Utils = {
-  /**
-   * @param {string} fileName
-   * @param {boolean} keepComments
-   */
-  loadJSONFile(fileName, keepComments = false) {
+  loadJSONFile(fileName: string, keepComments: boolean = false) {
     let content = fs.readFileSync(fileName, 'utf8');
     if (!keepComments) {
       content = content.replace(/^\/\/.*\n/gm, '');
@@ -30,11 +25,8 @@ const Utils = {
       throw e;
     }
   },
-  /**
-   * @param {string} specDir
-   * @returns {APIInputSpecs}
-   */
-  loadSpecsFromFile(specDir) {
+
+  loadSpecsFromFile(specDir: string): APIInputSpecs {
     // Load API specs
     const specs = {};
     const enumMetadataMap = {};
@@ -65,11 +57,7 @@ const Utils = {
       enumMetadataMap: enumMetadataMap,
     };
   },
-  /**
-   * @param { string } verA
-   * @param { string } verB
-   */
-  versionCompare(verA, verB) {
+  versionCompare(verA: string, verB: string) {
     if (verA.charAt(0) != 'v' || verB.charAt(0) != 'v') {
       throw new Error('invalid version number');
     }
@@ -88,4 +76,4 @@ const Utils = {
   },
 };
 
-module.exports = Utils;
+export default Utils;

@@ -2,21 +2,26 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * @format
+ * @flow strict-local
  */
 
-const codeGenLanguages = require('./CodeGenLanguages');
-const codeGenNameConventions = require('./CodeGenNameConventions');
+'use strict';
+
+import codeGenLanguages from './CodeGenLanguages';
+import codeGenNameConventions from './CodeGenNameConventions';
+
+import type {Processor} from '../common/types';
 
 /*
  * This processor performs language specific transformations for the specs, as
  * defined in codeGenLanguages.
  */
-var processor = {
-  process: function(specs, metadata) {
-    var language = metadata.language;
-    var languageDef = codeGenLanguages[language];
-    var APISpecs = specs.api_specs;
-    var enumMetadataMap = specs.enumMetadataMap;
+const processor: Processor = {
+  process(specs, metadata) {
+    const language: string = metadata.language || '';
+    const languageDef = codeGenLanguages[language];
+    const APISpecs = specs.api_specs;
+    const enumMetadataMap = specs.enumMetadataMap;
 
     if (languageDef.preMustacheProcess) {
       languageDef.preMustacheProcess(
@@ -30,4 +35,4 @@ var processor = {
   },
 };
 
-module.exports = processor;
+export default processor;

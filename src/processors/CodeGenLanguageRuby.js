@@ -2,106 +2,13 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * @format
+ * @flow
  */
 
-const fs = require('fs');
-const path = require('path');
+'use strict';
 
-var CodeGenLanguageRuby = {
-  formatFileName: function(clsName) {
-    return clsName['name:underscore'] + '.rb';
-  },
-  preMustacheProcess: function(APISpecs, enumTypes, codeGenNameConventions) {
-    for (var clsName in APISpecs) {
-      var APIClsSpec = APISpecs[clsName];
-
-      // Fields
-      for (var index in APIClsSpec['fields']) {
-        var fieldSpec = APIClsSpec['fields'][index];
-
-        var enumList = {};
-        for (var index2 in APIClsSpec['api_spec_based_enum_reference']) {
-          var enumSpec = APIClsSpec['api_spec_based_enum_reference'][index2];
-          enumList[enumSpec['name']] = enumSpec['field_or_param:upper_case'];
-        }
-
-        var rubyType = getTypeForRuby(fieldSpec['type'], enumList, APISpecs);
-
-        fieldSpec['type:ruby'] = rubyType;
-      }
-
-      for (var index in APIClsSpec['apis']) {
-        var APISpec = APIClsSpec['apis'][index];
-
-        var enumList = {};
-        for (var index2 in APISpec['referred_enums']) {
-          var enumSpec = APISpec['referred_enums'][index2];
-          if (enumSpec['metadata']['node']) {
-            enumList[enumSpec['metadata']['name']] =
-              enumSpec['metadata']['node'] +
-              '::' +
-              enumSpec['metadata']['field_or_param:upper_case'];
-          } else {
-            enumList[enumSpec['metadata']['name']] =
-              enumSpec['metadata']['values'];
-          }
-        }
-
-        for (var index2 in APISpec['params']) {
-          var paramSpec = APISpec['params'][index2];
-          var rubyType = getTypeForRuby(paramSpec['type'], enumList, APISpecs);
-          paramSpec['type:ruby'] = rubyType;
-        }
-
-        if (APISpec['name'] == 'update' && APISpec['endpoint'] == '/') {
-          APIClsSpec['has_update'] = true;
-        }
-
-        if (APISpec['name'] == 'delete' && APISpec['endpoint'] == '/') {
-          APIClsSpec['has_delete'] = true;
-        }
-      }
-
-      // Restructure Edges arrays
-      var edgeArray = APIClsSpec['edges'];
-      var edgeObject = {};
-
-      for (var index in APIClsSpec['edges']) {
-        var edgeSpec = APIClsSpec['edges'][index];
-        var edgeName = edgeSpec['endpoint'].replace(/^\//, '');
-
-        if (!edgeObject[edgeName]) {
-          edgeObject[edgeName] = [];
-        }
-        edgeSpec['method:lower_case'] = edgeSpec['method'].toLowerCase();
-
-        if (edgeSpec['name'] == 'create_ad_image') {
-          edgeSpec['return_a_list'] = true;
-        }
-
-        edgeObject[edgeName].push(edgeSpec);
-      }
-
-      edgeArray = [];
-      for (var edgeName in edgeObject) {
-        edgeEndPoints = edgeObject[edgeName];
-        edgeArray.push({
-          edge_name: edgeName,
-          end_points: edgeEndPoints,
-        });
-      }
-
-      APIClsSpec['edges'] = edgeArray;
-    }
-
-    return APISpecs;
-  },
-  getTypeForRuby: getTypeForRuby,
-  keywords: ['class', 'begin', 'end', 'rescue', 'when', 'case', 'def', 'until'],
-};
-
-function typeStackToHash(typeStack) {
-  var t = typeStack.shift();
+const typeStackToHash = (typeStack: any[]) => {
+  const t = typeStack.shift();
 
   switch (t) {
     case 'list':
@@ -113,21 +20,24 @@ function typeStackToHash(typeStack) {
         return "{ list: 'string' }";
       }
     case 'enum':
-      var enum_values = typeStack.shift();
+      const enum_values = typeStack.shift();
       if (enum_values instanceof Array) {
         return '{ enum: %w{' + enum_values.join(' ') + ' }}';
       } else {
         return '{ enum: -> { ' + enum_values + ' }}';
       }
-      break;
     default:
       return "'" + t + "'";
   }
-}
+};
 
-function getTypeForRuby(type, enumList, references) {
-  var typeStack = [];
-  var listRegex = /^list(?:<(.*)>)?$/i;
+const getTypeForRuby = (
+  type: string,
+  enumList: {[x: string]: any},
+  references: {[x: string]: {[x: string]: any}},
+) => {
+  const typeStack = [];
+  const listRegex = /^list(?:<(.*)>)?$/i;
 
   while (listRegex.test(type)) {
     typeStack.push('list');
@@ -135,18 +45,17 @@ function getTypeForRuby(type, enumList, references) {
   }
 
   // This is not perfect. But it's working for all types we have so far.
-  var typeMapping = {};
-  typeMapping['string'] = /^string$/i;
-  typeMapping['datetime'] = /^datetime$/i;
-  typeMapping['bool'] = /^bool(ean)?$/i;
-  typeMapping['int'] = /^(((unsigned\s*)?(int|long)))(?![a-zA-Z0-9_])$/i;
-  typeMapping['double'] = /^(float|double)$/i;
-  typeMapping['object'] = /^Object$/i;
-  typeMapping[
-    'hash'
-  ] = /^map(?:\s*<\s*(?:[a-zA-Z0-9_]*)\s*,\s*(?:[a-zA-Z0-9_]*)\s*>)?$/i;
+  const typeMapping = {
+    string: /^string$/i,
+    datetime: /^datetime$/i,
+    bool: /^bool(ean)?$/i,
+    int: /^(((unsigned\s*)?(int|long)))(?![a-zA-Z0-9_])$/i,
+    double: /^(float|double)$/i,
+    object: /^Object$/i,
+    hash: /^map(?:\s*<\s*(?:[a-zA-Z0-9_]*)\s*,\s*(?:[a-zA-Z0-9_]*)\s*>)?$/i,
+  };
 
-  for (var replace in typeMapping) {
+  for (const replace in typeMapping) {
     if (typeMapping[replace].test(type)) {
       typeStack.push(replace);
       type = type.replace(typeMapping[replace], '');
@@ -169,6 +78,99 @@ function getTypeForRuby(type, enumList, references) {
   }
 
   return typeStackToHash(typeStack);
-}
+};
 
-module.exports = CodeGenLanguageRuby;
+const CodeGenLanguageRuby = {
+  formatFileName(clsName: {[x: string]: string}) {
+    return clsName['name:underscore'] + '.rb';
+  },
+
+  preMustacheProcess(APISpecs: {[x: string]: any}) {
+    for (const clsName in APISpecs) {
+      const APIClsSpec = APISpecs[clsName];
+
+      // Fields
+      for (const index in APIClsSpec.fields) {
+        const fieldSpec = APIClsSpec.fields[index];
+
+        const enumList = {};
+        for (const index2 in APIClsSpec.api_spec_based_enum_reference) {
+          const enumSpec = APIClsSpec.api_spec_based_enum_reference[index2];
+          enumList[enumSpec.name] = enumSpec['field_or_param:upper_case'];
+        }
+
+        const rubyType = getTypeForRuby(fieldSpec.type, enumList, APISpecs);
+
+        fieldSpec['type:ruby'] = rubyType;
+      }
+
+      for (const index in APIClsSpec.apis) {
+        const APISpec = APIClsSpec.apis[index];
+
+        const enumList = {};
+        for (const index2 in APISpec.referred_enums) {
+          const enumSpec = APISpec.referred_enums[index2];
+          if (enumSpec.metadata.node) {
+            enumList[enumSpec.metadata.name] =
+              enumSpec.metadata.node +
+              '::' +
+              enumSpec.metadata['field_or_param:upper_case'];
+          } else {
+            enumList[enumSpec.metadata.name] = enumSpec.metadata.values;
+          }
+        }
+
+        for (const index2 in APISpec.params) {
+          const paramSpec = APISpec.params[index2];
+          const rubyType = getTypeForRuby(paramSpec.type, enumList, APISpecs);
+          paramSpec['type:ruby'] = rubyType;
+        }
+
+        if (APISpec.name == 'update' && APISpec.endpoint == '/') {
+          APIClsSpec.has_update = true;
+        }
+
+        if (APISpec.name == 'delete' && APISpec.endpoint == '/') {
+          APIClsSpec.has_delete = true;
+        }
+      }
+
+      // Restructure Edges arrays
+      let edgeArray = APIClsSpec.edges;
+      const edgeObject = {};
+
+      for (const index in APIClsSpec.edges) {
+        const edgeSpec = APIClsSpec.edges[index];
+        const edgeName = edgeSpec.endpoint.replace(/^\//, '');
+
+        if (!edgeObject[edgeName]) {
+          edgeObject[edgeName] = [];
+        }
+        edgeSpec['method:lower_case'] = edgeSpec.method.toLowerCase();
+
+        if (edgeSpec.name == 'create_ad_image') {
+          edgeSpec.return_a_list = true;
+        }
+
+        edgeObject[edgeName].push(edgeSpec);
+      }
+
+      edgeArray = [];
+      for (const edgeName in edgeObject) {
+        const edgeEndPoints = edgeObject[edgeName];
+        edgeArray.push({
+          edge_name: edgeName,
+          end_points: edgeEndPoints,
+        });
+      }
+
+      APIClsSpec.edges = edgeArray;
+    }
+
+    return APISpecs;
+  },
+  getTypeForRuby: getTypeForRuby,
+  keywords: ['class', 'begin', 'end', 'rescue', 'when', 'case', 'def', 'until'],
+};
+
+export default CodeGenLanguageRuby;

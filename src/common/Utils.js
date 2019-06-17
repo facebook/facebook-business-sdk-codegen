@@ -2,31 +2,27 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * @format
+ * @flow strict
  */
 
-('use strict');
+'use strict';
 
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
 const Utils = {
   // special signature that can mark a codegen file should be removed.
   codeGenFileDepreciationSign:
     '@remove_depreciated_file@' + new Date().getTime().toString(),
-  /**
-   * @private
-   * @param {any} message
-   */
-  throwUsageError(message) {
+
+  throwUsageError(message: mixed) {
     console.log(
       'Usage: codegen <language> [-v api_version] [-o output_path] [-c folder_to_cleanup]',
     );
     throw message;
   },
-  /**
-   * @param {string} language
-   */
-  validateLanguage(language) {
+
+  validateLanguage(language: string) {
     const supportedLanguages = [
       // @fb-only
       'java',
@@ -51,6 +47,7 @@ const Utils = {
       );
     }
   },
+
   loadDefaultVersion() {
     const fileName = 'api_specs/specs/version.txt';
     const filePath = path.resolve(__dirname, '..', '..', fileName);
