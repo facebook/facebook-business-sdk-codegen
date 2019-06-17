@@ -13,8 +13,10 @@
     "url": "https://github.com/facebook/facebook-business-sdk-codegen/issues"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "./node_modules/.bin/eslint --fix \"**/*.js\" && prettier --write \"**/*.js\""
+    "format": "./node_modules/.bin/eslint --fix \"src/**/*.js\" && prettier --write \"src/**/*.js\"",
+    "flow": "flow",
+    "build": "babel src/ -d lib/",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "fs-extra": "^2.1.2",
@@ -27,13 +29,17 @@
     "invariant": "^2.2.2"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-eslint": "^10.0.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-preset-flow": "^6.23.0",
     "eslint": "^5.16.0",
     "eslint-config-fbjs": "^3.1.0",
     "eslint-plugin-babel": "^5.3.0",
-    "eslint-plugin-flowtype": "^3.8.2",
+    "eslint-plugin-flowtype": "^2.43.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.13.0",
+    "flow-bin": "^0.98.1",
     "prettier": "^1.17.1"
   }
 }

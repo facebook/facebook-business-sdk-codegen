@@ -28,7 +28,13 @@ function _isCharUpper(ch) {
   return ch >= 'A' && ch <= 'Z';
 }
 
-var _decodeDictFile = path.resolve(__dirname, 'EndpointDecodeDict.txt');
+var _decodeDictFile = path.resolve(
+  __dirname,
+  '..',
+  '..',
+  'api_specs',
+  'EndpointDecodeDict.txt',
+);
 var _decodeDictBase = {};
 if (fs.existsSync(_decodeDictFile)) {
   _decodeDictBase = fs
@@ -45,7 +51,7 @@ if (fs.existsSync(_decodeDictFile)) {
 }
 
 var _decodeDict = _decodeDictBase;
-var codeGenNameConventions = {
+var CodeGenNameConventions = {
   initDecodeDictionary: function(words) {
     var counter = {};
     words.forEach(function(w) {
@@ -331,4 +337,4 @@ var codeGenNameConventions = {
   },
 };
 
-module.exports = codeGenNameConventions;
+module.exports = CodeGenNameConventions;

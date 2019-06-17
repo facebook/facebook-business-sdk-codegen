@@ -229,7 +229,7 @@ ReferenceProcessor.process = function(specs, metadata) {
 
 const getReferenceType = function(type, APISpecs) {
   if (type) {
-    referenceType = codeGenUtil.getBaseType(type);
+    let referenceType = codeGenUtil.getBaseType(type);
     if (referenceType in APISpecs) {
       return referenceType;
     }

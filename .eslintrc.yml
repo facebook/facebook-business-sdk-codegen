@@ -3,6 +3,9 @@ extends: fbjs
 env:
   node: true
 rules:
+  flowtype/object-type-delimiter: off
+  no-bitwise: 0
+  no-console: 0
   no-eval: warn
   no-undef: warn
   no-unreachable: warn
@@ -13,4 +16,4 @@ rules:
       ignoreStrings: true
   radix:
     - warn
-    - as-needed: true
+    - as-needed

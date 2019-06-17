@@ -12,7 +12,7 @@
 
 const path = require('path');
 const Utils = require('./Utils');
-const codeGenVersions = require('../api_specs/versions.json');
+const codeGenVersions = require('../../api_specs/versions.json');
 const CommonUtils = require('../common/Utils');
 
 /**
@@ -20,7 +20,7 @@ const CommonUtils = require('../common/Utils');
  */
 const SpecFileLoader = {
   load(version) {
-    const APISpecDir = path.resolve(__dirname, '..', 'api_specs');
+    const APISpecDir = path.resolve(__dirname, '..', '..', 'api_specs');
     const overriddenAPISpecName = 'SDKCodegen';
     const overriddenAPISpecs = Utils.loadJSONFile(
       path.join(APISpecDir, overriddenAPISpecName + '.json'),

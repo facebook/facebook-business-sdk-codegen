@@ -26,7 +26,7 @@ const MustacheRenderer = {
     const APISpecs = specs['APISpecs'];
     const SDKConfig = specs['SDKConfig'];
 
-    const codegenRootDir = path.resolve(__dirname, '..');
+    const codegenRootDir = path.resolve(__dirname, '..', '..');
     const templateDir = path.resolve(codegenRootDir, 'templates', language);
     const sdkRootPath = path.resolve(outputDir);
 
