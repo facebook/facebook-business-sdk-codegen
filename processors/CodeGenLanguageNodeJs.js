@@ -16,14 +16,21 @@ var CodeGenLanguageNodeJs = {
     for (var clsName in APISpecs) {
       var APIClsSpec = APISpecs[clsName];
       var containsGenericReferece = false;
+      var containsReadEdges = false;
       for (var index in APIClsSpec['apis']) {
         var apiSpec = APIClsSpec['apis'][index];
         if (!apiSpec.return) {
           containsGenericReferece = true;
         }
+        if (apiSpec.method == 'GET' && apiSpec.endpoint != '/') {
+          containsReadEdges = true;
+        }
       }
       if (containsGenericReferece) {
         APIClsSpec['has_generic_reference'] = true;
+      }
+      if (containsReadEdges) {
+        APIClsSpec['has_read_edges'] = true;
       }
 
       for (var index in APIClsSpec['fields']) {

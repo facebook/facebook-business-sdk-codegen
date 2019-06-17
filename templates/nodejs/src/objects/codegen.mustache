@@ -10,6 +10,9 @@ import {AbstractCrudObject} from './../abstract-crud-object';
 {{#has_generic_reference}}
 import AbstractObject from './../abstract-object';
 {{/has_generic_reference}}
+{{#has_read_edges}}
+import Cursor from './../cursor';
+{{/has_read_edges}}
 {{#references}}
 import {{{name:pascal_case}}} from './{{name:hyphen}}';
 {{/references}}
@@ -42,8 +45,10 @@ export default class {{name:pascal_case}} extends AbstractCrudObject {
 {{#apis}}
 
 {{^is_node_api}}
-  {{name:camel_case}} ({{^is_method_delete}}fields: Array<string>, {{/is_method_delete}}params: Object = {}{{#is_method_get}}, fetchFirstPage: boolean = true{{/is_method_get}}): {{#return}}{{return}}{{/return}}{{^return}}AbstractObject{{/return}} {
+  {{name:camel_case}} ({{^is_method_delete}}fields: Array<string>, {{/is_method_delete}}params: Object = {}{{#is_method_get}}, fetchFirstPage: boolean = true{{/is_method_get}}): {{#is_method_get}}Cursor | Promise<*>{{/is_method_get}}{{^is_method_get}}{{#return}}{{return}}{{/return}}{{^return}}AbstractObject{{/return}}{{/is_method_get}} {
+    {{^is_method_get}}
     // $FlowFixMe : Support Generic Types
+    {{/is_method_get}}
 {{#is_method_get}}
     return this.getEdge(
       {{#return}}{{return}}{{/return}}{{^return}}AbstractObject{{/return}},
