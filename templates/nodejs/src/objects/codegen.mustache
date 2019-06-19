@@ -45,7 +45,7 @@ export default class {{name:pascal_case}} extends AbstractCrudObject {
 {{#apis}}
 
 {{^is_node_api}}
-  {{name:camel_case}} ({{^is_method_delete}}fields: Array<string>, {{/is_method_delete}}params: Object = {}{{#is_method_get}}, fetchFirstPage: boolean = true{{/is_method_get}}): {{#is_method_get}}Cursor | Promise<*>{{/is_method_get}}{{#is_method_delete}}Promise<*>{{/is_method_delete}}{{#is_method_post}}{{#return}}{{return}}{{/return}}{{^return}}AbstractObject{{/return}}{{/is_method_post}} {
+  {{name:camel_case}} ({{^is_method_delete}}fields: Array<string>, {{/is_method_delete}}params: Object = {}{{#is_method_get}}, fetchFirstPage: boolean = true{{/is_method_get}}): {{#is_method_get}}Cursor | Promise<*>{{/is_method_get}}{{#is_method_delete}}Promise<*>{{/is_method_delete}}{{#is_method_post}}Promise<{{#return}}{{return}}{{/return}}{{^return}}AbstractObject{{/return}}>{{/is_method_post}} {
 {{#is_method_get}}
     return this.getEdge(
       {{#return}}{{return}}{{/return}}{{^return}}AbstractObject{{/return}},
@@ -56,7 +56,6 @@ export default class {{name:pascal_case}} extends AbstractCrudObject {
     );
 {{/is_method_get}}
 {{#is_method_post}}
-    // $FlowFixMe : Support Generic Types
     return this.createEdge(
       '{{{endpoint}}}',
       fields,
