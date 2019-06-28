@@ -10,6 +10,8 @@
 // $FlowFixMe
 import minimist from 'minimist';
 
+import path from 'path';
+
 import Procedure from './common/Procedure';
 import Utils from './common/Utils';
 import SpecFileLoader from './loaders/SpecFileLoader';
@@ -47,7 +49,8 @@ const language: string = args._[0];
 Utils.validateLanguage(language);
 
 const version: string = args.v || Utils.loadDefaultVersion();
-const outputDir: string = args.o || 'sdk/servers/' + language + '/release';
+const outputDir: string = args.o ||
+  path.resolve(__dirname,  '../../','./sdk/servers/' + language + '/release');
 const cleandir: string[] = args.c ? args.c.split(',') : [];
 
 procedure.run(version, language, outputDir, cleandir);
