@@ -72,7 +72,7 @@
         },
         {
             "name": "status",
-            "type": "string"
+            "type": "VideoPoll_status"
         }
     ]
 }

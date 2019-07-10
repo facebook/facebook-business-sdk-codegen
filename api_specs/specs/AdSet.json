@@ -55,40 +55,6 @@
             "params": []
         },
         {
-            "method": "DELETE",
-            "endpoint": "adlabels",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "adlabels",
-                    "required": true,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "execution_options",
-                    "required": false,
-                    "type": "list<adcampaignadlabels_execution_options_enum_param>"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "adlabels",
-            "return": "AdSet",
-            "params": [
-                {
-                    "name": "adlabels",
-                    "required": true,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "execution_options",
-                    "required": false,
-                    "type": "list<adcampaignadlabels_execution_options_enum_param>"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "adrules_governed",
             "return": "AdRule",
@@ -139,6 +105,33 @@
                     "name": "updated_since",
                     "required": false,
                     "type": "int"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "copies",
+            "return": "AdSet",
+            "params": [
+                {
+                    "name": "date_preset",
+                    "required": false,
+                    "type": "adcampaigncopies_date_preset_enum_param"
+                },
+                {
+                    "name": "effective_status",
+                    "required": false,
+                    "type": "list<adcampaigncopies_effective_status_enum_param>"
+                },
+                {
+                    "name": "is_completed",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "time_range",
+                    "required": false,
+                    "type": "Object"
                 }
             ]
         },
@@ -421,6 +414,40 @@
             ]
         },
         {
+            "method": "DELETE",
+            "endpoint": "labels",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "adlabels",
+                    "required": true,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "execution_options",
+                    "required": false,
+                    "type": "list<adcampaignlabels_execution_options_enum_param>"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "labels",
+            "return": "AdSet",
+            "params": [
+                {
+                    "name": "adlabels",
+                    "required": true,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "execution_options",
+                    "required": false,
+                    "type": "list<adcampaignlabels_execution_options_enum_param>"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "targetingsentencelines",
             "return": "TargetingSentenceLine",
@@ -468,11 +495,6 @@
                     "name": "account_id",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "ad_keywords",
-                    "required": false,
-                    "type": "Object"
                 },
                 {
                     "name": "adlabels",
@@ -671,10 +693,6 @@
         {
             "name": "account_id",
             "type": "string"
-        },
-        {
-            "name": "ad_keywords",
-            "type": "AdKeywords"
         },
         {
             "name": "adlabels",

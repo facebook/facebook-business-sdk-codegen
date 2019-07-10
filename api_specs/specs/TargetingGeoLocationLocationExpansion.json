@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "allowed",
+            "type": "bool"
+        }
+    ]
+}

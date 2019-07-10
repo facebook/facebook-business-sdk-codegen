@@ -75,6 +75,7 @@
             "billing_event",
             "campaign_ended",
             "campaign_spending_limit_reached",
+            "conversion_event_updated",
             "create_ad",
             "create_ad_set",
             "create_audience",
@@ -1514,6 +1515,16 @@
         ]
     },
     {
+        "name": "VideoPoll_status",
+        "node": "VideoPoll",
+        "field_or_param": "status",
+        "values": [
+            "closed",
+            "results_open",
+            "voting_open"
+        ]
+    },
+    {
         "name": "adaccount_currency",
         "node": "AdAccount",
         "field_or_param": "currency",
@@ -1636,6 +1647,16 @@
             "POST_ENGAGEMENT",
             "THRUPLAY",
             "VIDEO_VIEWS"
+        ]
+    },
+    {
+        "name": "adaccountad_sets_delete_strategy_enum_param",
+        "node": "Object",
+        "field_or_param": "delete_strategy",
+        "values": [
+            "DELETE_ANY",
+            "DELETE_ARCHIVED_BEFORE",
+            "DELETE_OLDEST"
         ]
     },
     {
@@ -2099,16 +2120,6 @@
         ]
     },
     {
-        "name": "adaccountadsets_delete_strategy_enum_param",
-        "node": "Object",
-        "field_or_param": "delete_strategy",
-        "values": [
-            "DELETE_ANY",
-            "DELETE_ARCHIVED_BEFORE",
-            "DELETE_OLDEST"
-        ]
-    },
-    {
         "name": "adaccountadsets_effective_status_enum_param",
         "node": "AdSet",
         "field_or_param": "effective_status",
@@ -2194,6 +2205,7 @@
             "GROUP_POST",
             "HEURISTIC_CLUSTER_VIDEO",
             "HEURISTIC_PREVIEW",
+            "HIGHLIGHT_CLIP_VIDEO",
             "INSPIRATION_VIDEO",
             "INSTAGRAM_VIDEO_COPY",
             "INSTANT_APPLICATION_PREVIEW",
@@ -2328,6 +2340,8 @@
         "values": [
             "ADVERTISE",
             "ANALYZE",
+            "CREATIVE",
+            "FB_EMPLOYEE_DSO_ADVERTISE",
             "MANAGE"
         ]
     },
@@ -2338,6 +2352,8 @@
         "values": [
             "ADVERTISE",
             "ANALYZE",
+            "CREATIVE",
+            "FB_EMPLOYEE_DSO_ADVERTISE",
             "MANAGE"
         ]
     },
@@ -2773,6 +2789,7 @@
             "FACEBOOK_STORY_MOBILE",
             "INSTAGRAM_STANDARD",
             "INSTAGRAM_STORY",
+            "INSTANT_ARTICLE_RECIRCULATION_AD",
             "INSTANT_ARTICLE_STANDARD",
             "INSTREAM_VIDEO_DESKTOP",
             "INSTREAM_VIDEO_MOBILE",
@@ -2821,6 +2838,7 @@
             "action_canvas_component_name",
             "action_carousel_card_id",
             "action_carousel_card_name",
+            "action_converted_product_id",
             "action_destination",
             "action_device",
             "action_reaction",
@@ -2913,6 +2931,7 @@
             "action_canvas_component_name",
             "action_carousel_card_id",
             "action_carousel_card_name",
+            "action_converted_product_id",
             "action_destination",
             "action_device",
             "action_reaction",
@@ -2950,14 +2969,6 @@
             "DECLINE",
             "EXPIRED",
             "IN_PROGRESS"
-        ]
-    },
-    {
-        "name": "adaccountpartnerrequests_type_enum_param",
-        "node": "PartnerRequest",
-        "field_or_param": "type",
-        "values": [
-            "SHARE_PC"
         ]
     },
     {
@@ -3142,6 +3153,7 @@
             "ethnic_affinity",
             "exclude_previous_days",
             "exclude_reached_since",
+            "excluded_brand_safety_content_types",
             "excluded_connections",
             "excluded_custom_audiences",
             "excluded_dynamic_audience_ids",
@@ -3261,6 +3273,7 @@
             "ethnic_affinity",
             "exclude_previous_days",
             "exclude_reached_since",
+            "excluded_brand_safety_content_types",
             "excluded_connections",
             "excluded_custom_audiences",
             "excluded_dynamic_audience_ids",
@@ -3391,6 +3404,7 @@
             "ethnic_affinity",
             "exclude_previous_days",
             "exclude_reached_since",
+            "excluded_brand_safety_content_types",
             "excluded_connections",
             "excluded_custom_audiences",
             "excluded_dynamic_audience_ids",
@@ -3576,16 +3590,6 @@
             "user_adclusters",
             "work_employers",
             "work_positions"
-        ]
-    },
-    {
-        "name": "adaccountusers_tasks_enum_param",
-        "node": "AdAccount",
-        "field_or_param": "tasks",
-        "values": [
-            "ADVERTISE",
-            "ANALYZE",
-            "MANAGE"
         ]
     },
     {
@@ -3776,14 +3780,6 @@
         ]
     },
     {
-        "name": "adcampaignadlabels_execution_options_enum_param",
-        "node": "AdSet",
-        "field_or_param": "execution_options",
-        "values": [
-            "validate_only"
-        ]
-    },
-    {
         "name": "adcampaignads_date_preset_enum_param",
         "node": "Ad",
         "field_or_param": "date_preset",
@@ -3807,6 +3803,50 @@
             "this_year",
             "today",
             "yesterday"
+        ]
+    },
+    {
+        "name": "adcampaigncopies_date_preset_enum_param",
+        "node": "AdSet",
+        "field_or_param": "date_preset",
+        "values": [
+            "last_14d",
+            "last_28d",
+            "last_30d",
+            "last_3d",
+            "last_7d",
+            "last_90d",
+            "last_month",
+            "last_quarter",
+            "last_week_mon_sun",
+            "last_week_sun_sat",
+            "last_year",
+            "lifetime",
+            "this_month",
+            "this_quarter",
+            "this_week_mon_today",
+            "this_week_sun_today",
+            "this_year",
+            "today",
+            "yesterday"
+        ]
+    },
+    {
+        "name": "adcampaigncopies_effective_status_enum_param",
+        "node": "AdSet",
+        "field_or_param": "effective_status",
+        "values": [
+            "ACTIVE",
+            "ADSET_PAUSED",
+            "ARCHIVED",
+            "CAMPAIGN_PAUSED",
+            "DELETED",
+            "DISAPPROVED",
+            "PAUSED",
+            "PENDING_BILLING_INFO",
+            "PENDING_REVIEW",
+            "PREAPPROVED",
+            "WITH_ISSUES"
         ]
     },
     {
@@ -4082,6 +4122,7 @@
             "action_canvas_component_name",
             "action_carousel_card_id",
             "action_carousel_card_name",
+            "action_converted_product_id",
             "action_destination",
             "action_device",
             "action_reaction",
@@ -4174,6 +4215,7 @@
             "action_canvas_component_name",
             "action_carousel_card_id",
             "action_carousel_card_name",
+            "action_converted_product_id",
             "action_destination",
             "action_device",
             "action_reaction",
@@ -4205,6 +4247,7 @@
             "action_canvas_component_name",
             "action_carousel_card_id",
             "action_carousel_card_name",
+            "action_converted_product_id",
             "action_destination",
             "action_device",
             "action_reaction",
@@ -4297,6 +4340,7 @@
             "action_canvas_component_name",
             "action_carousel_card_id",
             "action_carousel_card_name",
+            "action_converted_product_id",
             "action_destination",
             "action_device",
             "action_reaction",
@@ -4304,6 +4348,14 @@
             "action_type",
             "action_video_sound",
             "action_video_type"
+        ]
+    },
+    {
+        "name": "adcampaignlabels_execution_options_enum_param",
+        "node": "AdSet",
+        "field_or_param": "execution_options",
+        "values": [
+            "validate_only"
         ]
     },
     {
@@ -4328,6 +4380,7 @@
             "FACEBOOK_STORY_MOBILE",
             "INSTAGRAM_STANDARD",
             "INSTAGRAM_STORY",
+            "INSTANT_ARTICLE_RECIRCULATION_AD",
             "INSTANT_ARTICLE_STANDARD",
             "INSTREAM_VIDEO_DESKTOP",
             "INSTREAM_VIDEO_MOBILE",
@@ -4467,6 +4520,7 @@
             "action_canvas_component_name",
             "action_carousel_card_id",
             "action_carousel_card_name",
+            "action_converted_product_id",
             "action_destination",
             "action_device",
             "action_reaction",
@@ -4559,6 +4613,7 @@
             "action_canvas_component_name",
             "action_carousel_card_id",
             "action_carousel_card_name",
+            "action_converted_product_id",
             "action_destination",
             "action_device",
             "action_reaction",
@@ -4581,6 +4636,7 @@
             "FACEBOOK_STORY_MOBILE",
             "INSTAGRAM_STANDARD",
             "INSTAGRAM_STORY",
+            "INSTANT_ARTICLE_RECIRCULATION_AD",
             "INSTANT_ARTICLE_STANDARD",
             "INSTREAM_VIDEO_DESKTOP",
             "INSTREAM_VIDEO_MOBILE",
@@ -5616,6 +5672,8 @@
         "values": [
             "ADVERTISE",
             "ANALYZE",
+            "CREATIVE",
+            "FB_EMPLOYEE_DSO_ADVERTISE",
             "MANAGE"
         ]
     },
@@ -5636,6 +5694,30 @@
             "PAGES_MESSAGING_SUBSCRIPTIONS",
             "READ_PAGE_MAILBOXES",
             "VIEW_MONETIZATION_INSIGHTS"
+        ]
+    },
+    {
+        "name": "businesscreativefolderagencies_permitted_tasks_enum_param",
+        "node": "BusinessCreativeFolder",
+        "field_or_param": "permitted_tasks",
+        "values": [
+            "CREATE_CONTENT",
+            "MANAGE_CONTENT",
+            "MANAGE_PERMISSIONS",
+            "VIEW_CONTENT",
+            "VIEW_INSIGHTS"
+        ]
+    },
+    {
+        "name": "businesscreativefolderassigned_users_tasks_enum_param",
+        "node": "BusinessCreativeFolder",
+        "field_or_param": "tasks",
+        "values": [
+            "CREATE_CONTENT",
+            "MANAGE_CONTENT",
+            "MANAGE_PERMISSIONS",
+            "VIEW_CONTENT",
+            "VIEW_INSIGHTS"
         ]
     },
     {
@@ -5793,11 +5875,14 @@
         "node": "ProductCatalog",
         "field_or_param": "vertical",
         "values": [
+            "bookable",
             "commerce",
             "destinations",
             "flights",
             "home_listings",
             "hotels",
+            "ticketed_experiences",
+            "transactable_items",
             "vehicles"
         ]
     },
@@ -6073,6 +6158,184 @@
             "EMPLOYEE",
             "FINANCE_ANALYST",
             "FINANCE_EDITOR"
+        ]
+    },
+    {
+        "name": "businessvideos_container_type_enum_param",
+        "node": "AdVideo",
+        "field_or_param": "container_type",
+        "values": [
+            "AD_BREAK_PREVIEW",
+            "AD_DERIVATIVE",
+            "AGE_UP",
+            "ALBUM_MULTIMEDIA_POST",
+            "ALOHA_CALL_VIDEO",
+            "ALOHA_SUPERFRAME",
+            "APP_REVIEW_SCREENCAST",
+            "ATLAS_VIDEO",
+            "AUDIO_BROADCAST",
+            "BELL_POLL",
+            "BRAND_EQUITY_POLL_VIDEO",
+            "BROADCAST",
+            "CANDIDATE_VIDEOS",
+            "CANVAS",
+            "CFC_VIDEO",
+            "CIVIC_PROPOSAL_COVER_VIDEO",
+            "CONTAINED_POST_ATTACHMENT",
+            "CONTAINED_POST_AUDIO_BROADCAST",
+            "CONTAINED_POST_BROADCAST",
+            "COPYRIGHT_REFERENCE_BROADCAST",
+            "COPYRIGHT_REFERENCE_VIDEO",
+            "CULTURAL_MOMENT_DEPRECATED",
+            "DCO_AD_ASSET_FEED",
+            "DCO_AUTOGEN_VIDEO",
+            "DCO_TRIMMED_VIDEO",
+            "DIRECTED_POST_ATTACHMENT",
+            "DIRECT_INBOX",
+            "DIRECT_INBOX_REACTION",
+            "DYNAMIC_ITEM_DISPLAY_BUNDLE",
+            "DYNAMIC_ITEM_VIDEO",
+            "DYNAMIC_TEMPLATE_VIDEO",
+            "EVENT_COVER_VIDEO",
+            "EVENT_TOUR",
+            "FACECAST_DVR",
+            "FUNDRAISER_COVER_VIDEO",
+            "GAME_CLIP",
+            "GOODWILL_ANNIVERSARY_DEPRECATED",
+            "GOODWILL_ANNIVERSARY_PROMOTION_DEPRECATED",
+            "GOODWILL_VIDEO_CONTAINED_SHARE",
+            "GOODWILL_VIDEO_PROMOTION",
+            "GOODWILL_VIDEO_SHARE",
+            "GOODWILL_VIDEO_TOKEN_REQUIRED",
+            "GROUP_POST",
+            "HEURISTIC_CLUSTER_VIDEO",
+            "HEURISTIC_PREVIEW",
+            "HIGHLIGHT_CLIP_VIDEO",
+            "INSPIRATION_VIDEO",
+            "INSTAGRAM_VIDEO_COPY",
+            "INSTANT_APPLICATION_PREVIEW",
+            "INSTANT_ARTICLE",
+            "INSTANT_GAME_CLIP",
+            "ISSUE_MODULE",
+            "JOB_APPLICATION_VIDEO",
+            "JOB_OPENING_VIDEO",
+            "KOTOTORO",
+            "LEARN",
+            "LEGACY",
+            "LIVE_CREATIVE_KIT_VIDEO",
+            "LIVE_LINEAR_VIDEO_CHANNEL_INTERNAL_BROADCAST",
+            "LIVE_PHOTO",
+            "LOOK_NOW_DEPRECATED",
+            "MOMENTS_VIDEO",
+            "NO_STORY",
+            "OCULUS_CREATOR_PORTAL",
+            "OCULUS_VENUES_BROADCAST",
+            "OFFERS_VIDEO",
+            "PAGES_COVER_VIDEO",
+            "PAGE_REVIEW_SCREENCAST",
+            "PAGE_SLIDESHOW_VIDEO",
+            "PIXELCLOUD",
+            "PREMIERE_SOURCE",
+            "PRIVATE_GALLERY_VIDEO",
+            "PRODUCT_VIDEO",
+            "PROFILE_COVER_VIDEO",
+            "PROFILE_INTRO_CARD",
+            "PROFILE_TO_PAGE_UPLOADED_VIDEO",
+            "PROFILE_VIDEO",
+            "PROTON",
+            "QUICK_PROMOTION",
+            "REPLACE_VIDEO",
+            "SALES_CLIENT_INTERACTION",
+            "SAY_THANKS_DEPRECATED",
+            "SLIDESHOW_ANIMOTO",
+            "SLIDESHOW_SHAKR",
+            "SOTTO_CONTENT",
+            "STORYLINE",
+            "STORYLINE_WITH_EXTERNAL_MUSIC",
+            "STORY_ARCHIVE_VIDEO",
+            "STORY_CARD_TEMPLATE",
+            "TAROT_DIGEST",
+            "TEMP_MULTIMEDIA_POST",
+            "UNLISTED",
+            "VIDEO_COMMENT",
+            "WOODHENGE",
+            "YOUR_DAY"
+        ]
+    },
+    {
+        "name": "businessvideos_content_category_enum_param",
+        "node": "AdVideo",
+        "field_or_param": "content_category",
+        "values": [
+            "BEAUTY_FASHION",
+            "BUSINESS",
+            "CARS_TRUCKS",
+            "COMEDY",
+            "CUTE_ANIMALS",
+            "ENTERTAINMENT",
+            "FAMILY",
+            "FOOD_HEALTH",
+            "HOME",
+            "LIFESTYLE",
+            "MUSIC",
+            "NEWS",
+            "OTHER",
+            "POLITICS",
+            "SCIENCE",
+            "SPORTS",
+            "TECHNOLOGY",
+            "VIDEO_GAMING"
+        ]
+    },
+    {
+        "name": "businessvideos_formatting_enum_param",
+        "node": "AdVideo",
+        "field_or_param": "formatting",
+        "values": [
+            "MARKDOWN",
+            "PLAINTEXT"
+        ]
+    },
+    {
+        "name": "businessvideos_original_projection_type_enum_param",
+        "node": "AdVideo",
+        "field_or_param": "original_projection_type",
+        "values": [
+            "cubemap",
+            "equiangular_cubemap",
+            "equirectangular",
+            "half_equirectangular"
+        ]
+    },
+    {
+        "name": "businessvideos_swap_mode_enum_param",
+        "node": "AdVideo",
+        "field_or_param": "swap_mode",
+        "values": [
+            "replace"
+        ]
+    },
+    {
+        "name": "businessvideos_unpublished_content_type_enum_param",
+        "node": "AdVideo",
+        "field_or_param": "unpublished_content_type",
+        "values": [
+            "ADS_POST",
+            "DRAFT",
+            "INLINE_CREATED",
+            "PUBLISHED",
+            "SCHEDULED"
+        ]
+    },
+    {
+        "name": "businessvideos_upload_phase_enum_param",
+        "node": "AdVideo",
+        "field_or_param": "upload_phase",
+        "values": [
+            "cancel",
+            "finish",
+            "start",
+            "transfer"
         ]
     },
     {
@@ -6382,12 +6645,15 @@
         ]
     },
     {
-        "name": "eventsourcegroupuserpermissions_tasks_enum_param",
-        "node": "EventSourceGroup",
-        "field_or_param": "tasks",
+        "name": "eventpicture_type_enum_param",
+        "node": "ProfilePictureSource",
+        "field_or_param": "type",
         "values": [
-            "ANALYZE",
-            "ANALYZE_WITH_LIMITATIONS"
+            "album",
+            "large",
+            "normal",
+            "small",
+            "square"
         ]
     },
     {
@@ -6862,6 +7128,7 @@
             "GROUP_POST",
             "HEURISTIC_CLUSTER_VIDEO",
             "HEURISTIC_PREVIEW",
+            "HIGHLIGHT_CLIP_VIDEO",
             "INSPIRATION_VIDEO",
             "INSTAGRAM_VIDEO_COPY",
             "INSTANT_APPLICATION_PREVIEW",
@@ -7076,6 +7343,32 @@
             "OWNER_OR_COMMENTER",
             "SIDE_CONVERSATION",
             "SIDE_CONVERSATION_AND_POST_OWNER"
+        ]
+    },
+    {
+        "name": "liveencoder_cap_audio_codecs",
+        "node": "LiveEncoder",
+        "field_or_param": "cap_audio_codecs",
+        "values": [
+            "AAC"
+        ]
+    },
+    {
+        "name": "liveencoder_cap_streaming_protocols",
+        "node": "LiveEncoder",
+        "field_or_param": "cap_streaming_protocols",
+        "values": [
+            "HTTPS_DASH",
+            "RTMPS",
+            "WEBRTC"
+        ]
+    },
+    {
+        "name": "liveencoder_cap_video_codecs",
+        "node": "LiveEncoder",
+        "field_or_param": "cap_video_codecs",
+        "values": [
+            "H264"
         ]
     },
     {
@@ -7536,25 +7829,6 @@
             "EMAIL_NOTIF",
             "MOBILE_NOTIF",
             "POST_AS_SELF"
-        ]
-    },
-    {
-        "name": "pageadmins_tasks_enum_param",
-        "node": "User",
-        "field_or_param": "tasks",
-        "values": [
-            "ADVERTISE",
-            "ANALYZE",
-            "CREATE_CONTENT",
-            "MANAGE",
-            "MANAGE_JOBS",
-            "MANAGE_LEADS",
-            "MODERATE",
-            "MODERATE_COMMUNITY",
-            "PAGES_MESSAGING",
-            "PAGES_MESSAGING_SUBSCRIPTIONS",
-            "READ_PAGE_MAILBOXES",
-            "VIEW_MONETIZATION_INSIGHTS"
         ]
     },
     {
@@ -8376,6 +8650,7 @@
             "branded_camera",
             "category",
             "checkins",
+            "commerce_order",
             "company_overview",
             "conversations",
             "culinary_team",
@@ -8546,6 +8821,7 @@
             "GROUP_POST",
             "HEURISTIC_CLUSTER_VIDEO",
             "HEURISTIC_PREVIEW",
+            "HIGHLIGHT_CLIP_VIDEO",
             "INSPIRATION_VIDEO",
             "INSTAGRAM_VIDEO_COPY",
             "INSTANT_APPLICATION_PREVIEW",
@@ -8914,6 +9190,7 @@
             "EVENT_ENGAGEMENT",
             "FANS",
             "GROUPER",
+            "HEC_AUDIENCE",
             "IG_PROMOTED_POST_AUTO",
             "LOCAL",
             "LOOKALIKE",
@@ -9685,6 +9962,44 @@
         ]
     },
     {
+        "name": "userinsights_date_preset_enum_param",
+        "node": "InsightsResult",
+        "field_or_param": "date_preset",
+        "values": [
+            "last_14d",
+            "last_28d",
+            "last_30d",
+            "last_3d",
+            "last_7d",
+            "last_90d",
+            "last_month",
+            "last_quarter",
+            "last_week_mon_sun",
+            "last_week_sun_sat",
+            "last_year",
+            "lifetime",
+            "this_month",
+            "this_quarter",
+            "this_week_mon_today",
+            "this_week_sun_today",
+            "this_year",
+            "today",
+            "yesterday"
+        ]
+    },
+    {
+        "name": "userinsights_period_enum_param",
+        "node": "InsightsResult",
+        "field_or_param": "period",
+        "values": [
+            "day",
+            "days_28",
+            "lifetime",
+            "month",
+            "week"
+        ]
+    },
+    {
         "name": "userlive_videos_broadcast_status_enum_param",
         "node": "LiveVideo",
         "field_or_param": "broadcast_status",
@@ -9857,6 +10172,14 @@
         ]
     },
     {
+        "name": "userposts_with_enum_param",
+        "node": "Post",
+        "field_or_param": "with",
+        "values": [
+            "LOCATION"
+        ]
+    },
+    {
         "name": "userpromotable_events_promotable_event_types_enum_param",
         "node": "Event",
         "field_or_param": "promotable_event_types",
@@ -9982,6 +10305,7 @@
             "GROUP_POST",
             "HEURISTIC_CLUSTER_VIDEO",
             "HEURISTIC_PREVIEW",
+            "HIGHLIGHT_CLIP_VIDEO",
             "INSPIRATION_VIDEO",
             "INSTAGRAM_VIDEO_COPY",
             "INSTANT_APPLICATION_PREVIEW",

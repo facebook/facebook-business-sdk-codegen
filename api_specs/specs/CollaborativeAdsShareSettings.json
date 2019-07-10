@@ -1,0 +1,58 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "CollaborativeAdsShareSettings",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "CollaborativeAdsShareSettings",
+            "params": [
+                {
+                    "name": "utm_campaign",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "utm_medium",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "utm_source",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "agency_business",
+            "type": "Business"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "product_catalog_proxy_id",
+            "type": "string"
+        },
+        {
+            "name": "utm_campaign",
+            "type": "string"
+        },
+        {
+            "name": "utm_medium",
+            "type": "string"
+        },
+        {
+            "name": "utm_source",
+            "type": "string"
+        }
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "submitters",
+            "return": "User",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "PartnerStudy",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "additional_info",
+            "type": "string"
+        },
+        {
+            "name": "brand",
+            "type": "string"
+        },
+        {
+            "name": "client_name",
+            "type": "string"
+        },
+        {
+            "name": "emails",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "input_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "is_export",
+            "type": "bool"
+        },
+        {
+            "name": "lift_study",
+            "type": "AdStudy"
+        },
+        {
+            "name": "location",
+            "type": "string"
+        },
+        {
+            "name": "match_file_ds",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "partner_defined_id",
+            "type": "string"
+        },
+        {
+            "name": "partner_household_graph_dataset_id",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "study_end_date",
+            "type": "datetime"
+        },
+        {
+            "name": "study_start_date",
+            "type": "datetime"
+        },
+        {
+            "name": "study_type",
+            "type": "string"
+        },
+        {
+            "name": "submit_date",
+            "type": "datetime"
+        }
+    ]
+}

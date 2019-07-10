@@ -7,18 +7,6 @@
             "params": []
         },
         {
-            "method": "GET",
-            "endpoint": "comments",
-            "return": "NullNode",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "feed",
-            "return": "NullNode",
-            "params": []
-        },
-        {
             "method": "POST",
             "endpoint": "feed",
             "return": "Object",
@@ -586,12 +574,6 @@
             ]
         },
         {
-            "method": "GET",
-            "endpoint": "live_videos",
-            "return": "NullNode",
-            "params": []
-        },
-        {
             "method": "POST",
             "endpoint": "live_videos",
             "return": "LiveVideo",
@@ -707,12 +689,6 @@
                     "type": "string"
                 }
             ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "photos",
-            "return": "NullNode",
-            "params": []
         },
         {
             "method": "POST",
@@ -979,25 +955,34 @@
         {
             "method": "GET",
             "endpoint": "picture",
-            "return": "NullNode",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "posts",
-            "return": "NullNode",
-            "params": []
+            "return": "ProfilePictureSource",
+            "params": [
+                {
+                    "name": "height",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "redirect",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "type",
+                    "required": false,
+                    "type": "eventpicture_type_enum_param"
+                },
+                {
+                    "name": "width",
+                    "required": false,
+                    "type": "int"
+                }
+            ]
         },
         {
             "method": "GET",
             "endpoint": "roles",
             "return": "Profile",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "videos",
-            "return": "NullNode",
             "params": []
         },
         {

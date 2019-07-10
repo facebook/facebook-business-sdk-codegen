@@ -19,6 +19,18 @@
             "params": []
         },
         {
+            "method": "POST",
+            "endpoint": "ad_accounts",
+            "return": "AdAccount",
+            "params": [
+                {
+                    "name": "ad_account_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "name": "#delete",
             "method": "DELETE",
             "return": "Object",

@@ -177,17 +177,17 @@
                 {
                     "name": "cap_audio_codecs",
                     "required": false,
-                    "type": "list<string>"
+                    "type": "list<liveencoder_cap_audio_codecs>"
                 },
                 {
                     "name": "cap_streaming_protocols",
                     "required": false,
-                    "type": "list<string>"
+                    "type": "list<liveencoder_cap_streaming_protocols>"
                 },
                 {
                     "name": "cap_video_codecs",
                     "required": false,
-                    "type": "list<string>"
+                    "type": "list<liveencoder_cap_video_codecs>"
                 },
                 {
                     "name": "error_code",

@@ -49,6 +49,10 @@
             "type": "string"
         },
         {
+            "name": "home_listing",
+            "type": "HomeListing"
+        },
+        {
             "name": "id",
             "type": "string"
         },
@@ -71,6 +75,10 @@
         {
             "name": "retailer_item_id",
             "type": "string"
+        },
+        {
+            "name": "vehicle",
+            "type": "Vehicle"
         }
     ]
 }

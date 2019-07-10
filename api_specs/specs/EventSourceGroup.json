@@ -19,47 +19,6 @@
             ]
         },
         {
-            "method": "DELETE",
-            "endpoint": "userpermissions",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "user",
-                    "required": true,
-                    "type": "int"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "userpermissions",
-            "return": "EventSourceGroupUserPermissionObject",
-            "params": [
-                {
-                    "name": "user",
-                    "required": false,
-                    "type": "int"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "userpermissions",
-            "return": "EventSourceGroup",
-            "params": [
-                {
-                    "name": "tasks",
-                    "required": true,
-                    "type": "list<eventsourcegroupuserpermissions_tasks_enum_param>"
-                },
-                {
-                    "name": "user",
-                    "required": true,
-                    "type": "int"
-                }
-            ]
-        },
-        {
             "name": "#get",
             "method": "GET",
             "return": "EventSourceGroup",

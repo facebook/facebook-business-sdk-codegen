@@ -90,6 +90,10 @@
             "type": "map<string, string>"
         },
         {
+            "name": "traffic_quality",
+            "type": "map<string, string>"
+        },
+        {
             "name": "whatsapp",
             "type": "map<string, string>"
         }

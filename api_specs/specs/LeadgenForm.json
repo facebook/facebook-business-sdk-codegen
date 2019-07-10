@@ -112,6 +112,10 @@
             "type": "unsigned int"
         },
         {
+            "name": "legal_content",
+            "type": "Object"
+        },
+        {
             "name": "locale",
             "type": "string"
         },

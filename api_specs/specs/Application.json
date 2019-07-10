@@ -341,6 +341,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "agencies",
+            "return": "Business",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "app_event_types",
             "return": "ApplicationAppEventTypes",
             "params": []
@@ -1802,6 +1808,10 @@
         {
             "name": "restrictions",
             "type": "Object"
+        },
+        {
+            "name": "restrictive_data_filter_params",
+            "type": "string"
         },
         {
             "name": "restrictive_data_filter_rules",

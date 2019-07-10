@@ -341,10 +341,6 @@
             "type": "map<unsigned int, Object>"
         },
         {
-            "name": "video_view_benchmark_map",
-            "type": "map<string, ReachFrequencyEstimatesCurve>"
-        },
-        {
             "name": "video_view_length_constraint",
             "type": "unsigned int"
         },

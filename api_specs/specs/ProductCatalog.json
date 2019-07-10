@@ -46,13 +46,8 @@
             "return": "Object",
             "params": [
                 {
-                    "name": "business",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "user",
-                    "required": false,
+                    "required": true,
                     "type": "int"
                 }
             ]
@@ -75,18 +70,13 @@
             "return": "ProductCatalog",
             "params": [
                 {
-                    "name": "business",
-                    "required": true,
-                    "type": "string"
-                },
-                {
                     "name": "tasks",
                     "required": true,
                     "type": "list<productcatalogassigned_users_tasks_enum_param>"
                 },
                 {
                     "name": "user",
-                    "required": false,
+                    "required": true,
                     "type": "int"
                 }
             ]
@@ -219,6 +209,12 @@
                     "type": "bool"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "collaborative_ads_share_settings",
+            "return": "CollaborativeAdsShareSettings",
+            "params": []
         },
         {
             "method": "GET",
@@ -695,7 +691,7 @@
             "params": [
                 {
                     "name": "retailer_id",
-                    "required": true,
+                    "required": false,
                     "type": "string"
                 },
                 {

@@ -7,12 +7,6 @@
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "retry",
-            "return": "AdReportRun",
-            "params": []
-        },
-        {
             "name": "#delete",
             "method": "DELETE",
             "return": "Object",

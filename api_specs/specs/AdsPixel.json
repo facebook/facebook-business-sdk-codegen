@@ -6,11 +6,6 @@
             "return": "Object",
             "params": [
                 {
-                    "name": "business",
-                    "required": true,
-                    "type": "string"
-                },
-                {
                     "name": "user",
                     "required": true,
                     "type": "int"
@@ -35,13 +30,8 @@
             "return": "AdsPixel",
             "params": [
                 {
-                    "name": "business",
-                    "required": true,
-                    "type": "string"
-                },
-                {
                     "name": "tasks",
-                    "required": false,
+                    "required": true,
                     "type": "list<adspixelassigned_users_tasks_enum_param>"
                 },
                 {
@@ -242,6 +232,10 @@
         },
         {
             "name": "is_created_by_business",
+            "type": "bool"
+        },
+        {
+            "name": "is_unavailable",
             "type": "bool"
         },
         {

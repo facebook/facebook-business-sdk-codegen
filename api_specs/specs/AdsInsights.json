@@ -22,12 +22,32 @@
             "type": "list<AdsActionStats>"
         },
         {
+            "name": "actions_per_impression",
+            "type": "string"
+        },
+        {
+            "name": "actions_results",
+            "type": "AdsActionStats"
+        },
+        {
             "name": "activity_recency",
+            "type": "string"
+        },
+        {
+            "name": "ad_bid_type",
+            "type": "string"
+        },
+        {
+            "name": "ad_bid_value",
             "type": "string"
         },
         {
             "name": "ad_click_actions",
             "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "ad_delivery",
+            "type": "string"
         },
         {
             "name": "ad_format_asset",
@@ -46,6 +66,30 @@
             "type": "string"
         },
         {
+            "name": "adset_bid_type",
+            "type": "string"
+        },
+        {
+            "name": "adset_bid_value",
+            "type": "string"
+        },
+        {
+            "name": "adset_budget_type",
+            "type": "string"
+        },
+        {
+            "name": "adset_budget_value",
+            "type": "string"
+        },
+        {
+            "name": "adset_delivery",
+            "type": "string"
+        },
+        {
+            "name": "adset_end",
+            "type": "string"
+        },
+        {
             "name": "adset_id",
             "type": "string"
         },
@@ -54,11 +98,31 @@
             "type": "string"
         },
         {
+            "name": "adset_start",
+            "type": "string"
+        },
+        {
             "name": "age",
             "type": "string"
         },
         {
             "name": "age_targeting",
+            "type": "string"
+        },
+        {
+            "name": "amount_in_catalog_currency",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "app_store_clicks",
+            "type": "string"
+        },
+        {
+            "name": "attention_events_per_impression",
+            "type": "string"
+        },
+        {
+            "name": "attention_events_unq_per_reach",
             "type": "string"
         },
         {
@@ -86,12 +150,32 @@
             "type": "Object"
         },
         {
+            "name": "call_to_action_clicks",
+            "type": "string"
+        },
+        {
+            "name": "campaign_delivery",
+            "type": "string"
+        },
+        {
+            "name": "campaign_end",
+            "type": "string"
+        },
+        {
             "name": "campaign_id",
             "type": "string"
         },
         {
             "name": "campaign_name",
             "type": "string"
+        },
+        {
+            "name": "campaign_start",
+            "type": "string"
+        },
+        {
+            "name": "cancel_subscription_actions",
+            "type": "list<AdsActionStats>"
         },
         {
             "name": "canvas_avg_view_percent",
@@ -102,8 +186,56 @@
             "type": "string"
         },
         {
+            "name": "card_views",
+            "type": "string"
+        },
+        {
+            "name": "catalog_segment_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "catalog_segment_value_in_catalog_currency",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "catalog_segment_value_mobile_purchase_roas",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "catalog_segment_value_website_purchase_roas",
+            "type": "list<AdsActionStats>"
+        },
+        {
             "name": "clicks",
             "type": "string"
+        },
+        {
+            "name": "conditional_time_spent_ms_over_10s_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "conditional_time_spent_ms_over_15s_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "conditional_time_spent_ms_over_2s_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "conditional_time_spent_ms_over_3s_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "conditional_time_spent_ms_over_6s_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "contact_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "contact_value",
+            "type": "list<AdsActionStats>"
         },
         {
             "name": "conversion_values",
@@ -126,6 +258,10 @@
             "type": "list<AdsActionStats>"
         },
         {
+            "name": "cost_per_action_result",
+            "type": "AdsActionStats"
+        },
+        {
             "name": "cost_per_action_type",
             "type": "list<AdsActionStats>"
         },
@@ -134,7 +270,19 @@
             "type": "list<AdsActionStats>"
         },
         {
+            "name": "cost_per_completed_video_view",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "cost_per_contact",
+            "type": "list<AdsActionStats>"
+        },
+        {
             "name": "cost_per_conversion",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "cost_per_customize_product",
             "type": "list<AdsActionStats>"
         },
         {
@@ -142,8 +290,32 @@
             "type": "string"
         },
         {
+            "name": "cost_per_donate",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "cost_per_dwell",
+            "type": "string"
+        },
+        {
+            "name": "cost_per_dwell_3_sec",
+            "type": "string"
+        },
+        {
+            "name": "cost_per_dwell_5_sec",
+            "type": "string"
+        },
+        {
+            "name": "cost_per_dwell_7_sec",
+            "type": "string"
+        },
+        {
             "name": "cost_per_estimated_ad_recallers",
             "type": "string"
+        },
+        {
+            "name": "cost_per_find_location",
+            "type": "list<AdsActionStats>"
         },
         {
             "name": "cost_per_inline_link_click",
@@ -162,8 +334,28 @@
             "type": "list<AdsActionStats>"
         },
         {
+            "name": "cost_per_schedule",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "cost_per_start_trial",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "cost_per_submit_application",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "cost_per_subscribe",
+            "type": "list<AdsActionStats>"
+        },
+        {
             "name": "cost_per_thruplay",
             "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "cost_per_total_action",
+            "type": "string"
         },
         {
             "name": "cost_per_unique_action_type",
@@ -214,6 +406,14 @@
             "type": "string"
         },
         {
+            "name": "customize_product_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "customize_product_value",
+            "type": "list<AdsActionStats>"
+        },
+        {
             "name": "date_start",
             "type": "string"
         },
@@ -226,6 +426,26 @@
             "type": "string"
         },
         {
+            "name": "deduping_1st_source_ratio",
+            "type": "string"
+        },
+        {
+            "name": "deduping_2nd_source_ratio",
+            "type": "string"
+        },
+        {
+            "name": "deduping_3rd_source_ratio",
+            "type": "string"
+        },
+        {
+            "name": "deduping_ratio",
+            "type": "string"
+        },
+        {
+            "name": "deeplink_clicks",
+            "type": "string"
+        },
+        {
             "name": "description_asset",
             "type": "Object"
         },
@@ -235,6 +455,30 @@
         },
         {
             "name": "dma",
+            "type": "string"
+        },
+        {
+            "name": "donate_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "donate_value",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "dwell_3_sec",
+            "type": "string"
+        },
+        {
+            "name": "dwell_5_sec",
+            "type": "string"
+        },
+        {
+            "name": "dwell_7_sec",
+            "type": "string"
+        },
+        {
+            "name": "dwell_rate",
             "type": "string"
         },
         {
@@ -262,11 +506,27 @@
             "type": "string"
         },
         {
+            "name": "find_location_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "find_location_value",
+            "type": "list<AdsActionStats>"
+        },
+        {
             "name": "frequency",
             "type": "string"
         },
         {
             "name": "frequency_value",
+            "type": "string"
+        },
+        {
+            "name": "full_view_impressions",
+            "type": "string"
+        },
+        {
+            "name": "full_view_reach",
             "type": "string"
         },
         {
@@ -298,7 +558,15 @@
             "type": "string"
         },
         {
+            "name": "impressions_auto_refresh",
+            "type": "string"
+        },
+        {
             "name": "impressions_dummy",
+            "type": "string"
+        },
+        {
+            "name": "impressions_gross",
             "type": "string"
         },
         {
@@ -312,6 +580,22 @@
         {
             "name": "inline_post_engagement",
             "type": "string"
+        },
+        {
+            "name": "instant_experience_clicks_to_open",
+            "type": "string"
+        },
+        {
+            "name": "instant_experience_clicks_to_start",
+            "type": "string"
+        },
+        {
+            "name": "instant_experience_outbound_clicks",
+            "type": "string"
+        },
+        {
+            "name": "interactive_component_tap",
+            "type": "list<AdsActionStats>"
         },
         {
             "name": "labels",
@@ -334,7 +618,23 @@
             "type": "list<AdsActionStats>"
         },
         {
+            "name": "newsfeed_avg_position",
+            "type": "string"
+        },
+        {
+            "name": "newsfeed_clicks",
+            "type": "string"
+        },
+        {
+            "name": "newsfeed_impressions",
+            "type": "string"
+        },
+        {
             "name": "objective",
+            "type": "string"
+        },
+        {
+            "name": "optimization_goal",
             "type": "string"
         },
         {
@@ -344,6 +644,10 @@
         {
             "name": "outbound_clicks_ctr",
             "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "performance_indicator",
+            "type": "string"
         },
         {
             "name": "place_page_id",
@@ -374,8 +678,28 @@
             "type": "list<AdsActionStats>"
         },
         {
+            "name": "quality_score_ectr",
+            "type": "string"
+        },
+        {
+            "name": "quality_score_ecvr",
+            "type": "string"
+        },
+        {
+            "name": "quality_score_enfbr",
+            "type": "string"
+        },
+        {
+            "name": "quality_score_organic",
+            "type": "string"
+        },
+        {
             "name": "reach",
             "type": "string"
+        },
+        {
+            "name": "recurring_subscription_payment_actions",
+            "type": "list<AdsActionStats>"
         },
         {
             "name": "region",
@@ -390,6 +714,14 @@
             "type": "Object"
         },
         {
+            "name": "schedule_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "schedule_value",
+            "type": "list<AdsActionStats>"
+        },
+        {
             "name": "social_spend",
             "type": "string"
         },
@@ -398,8 +730,52 @@
             "type": "string"
         },
         {
+            "name": "start_trial_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "start_trial_value",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "submit_application_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "submit_application_value",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "subscribe_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "subscribe_value",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "thumb_stops",
+            "type": "string"
+        },
+        {
             "name": "title_asset",
             "type": "Object"
+        },
+        {
+            "name": "today_spend",
+            "type": "string"
+        },
+        {
+            "name": "total_action_value",
+            "type": "string"
+        },
+        {
+            "name": "total_actions",
+            "type": "string"
+        },
+        {
+            "name": "total_unique_actions",
+            "type": "string"
         },
         {
             "name": "unique_actions",
@@ -415,6 +791,10 @@
         },
         {
             "name": "unique_ctr",
+            "type": "string"
+        },
+        {
+            "name": "unique_impressions",
             "type": "string"
         },
         {
@@ -478,6 +858,14 @@
             "type": "list<AdsActionStats>"
         },
         {
+            "name": "video_complete_watched_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "video_completed_view_or_15s_passed_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
             "name": "video_continuous_2_sec_watched_actions",
             "type": "list<AdsActionStats>"
         },
@@ -528,6 +916,10 @@
         {
             "name": "video_time_watched_actions",
             "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "website_clicks",
+            "type": "string"
         },
         {
             "name": "website_ctr",

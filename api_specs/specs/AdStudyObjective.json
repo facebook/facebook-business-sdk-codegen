@@ -37,6 +37,12 @@
             "params": []
         },
         {
+            "method": "GET",
+            "endpoint": "partnerstudies",
+            "return": "PartnerStudy",
+            "params": []
+        },
+        {
             "name": "#delete",
             "method": "DELETE",
             "return": "Object",

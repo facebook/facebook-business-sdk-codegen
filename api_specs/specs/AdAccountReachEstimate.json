@@ -6,10 +6,6 @@
             "type": "bool"
         },
         {
-            "name": "unsupported",
-            "type": "bool"
-        },
-        {
             "name": "users",
             "type": "int"
         }

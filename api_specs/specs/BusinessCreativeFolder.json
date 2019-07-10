@@ -1,0 +1,122 @@
+{
+    "apis": [
+        {
+            "method": "DELETE",
+            "endpoint": "agencies",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "agencies",
+            "return": "Business",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "agencies",
+            "return": "BusinessCreativeFolder",
+            "params": [
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "permitted_tasks",
+                    "required": true,
+                    "type": "list<businesscreativefolderagencies_permitted_tasks_enum_param>"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "assigned_users",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "user",
+                    "required": true,
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "assigned_users",
+            "return": "AssignedUser",
+            "params": [
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "assigned_users",
+            "return": "BusinessCreativeFolder",
+            "params": [
+                {
+                    "name": "tasks",
+                    "required": true,
+                    "type": "list<businesscreativefolderassigned_users_tasks_enum_param>"
+                },
+                {
+                    "name": "user",
+                    "required": true,
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "BusinessCreativeFolder",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "BusinessCreativeFolder",
+            "params": [
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "business",
+            "type": "Business"
+        },
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        }
+    ]
+}

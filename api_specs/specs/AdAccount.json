@@ -91,15 +91,37 @@
             ]
         },
         {
+            "method": "DELETE",
+            "endpoint": "ad_sets",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "before_date",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "delete_offset",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "delete_strategy",
+                    "required": true,
+                    "type": "adaccountad_sets_delete_strategy_enum_param"
+                },
+                {
+                    "name": "object_count",
+                    "required": false,
+                    "type": "int"
+                }
+            ]
+        },
+        {
             "method": "POST",
             "endpoint": "ad_sets",
             "return": "AdSet",
             "params": [
-                {
-                    "name": "ad_keywords",
-                    "required": false,
-                    "type": "Object"
-                },
                 {
                     "name": "adlabels",
                     "required": false,
@@ -1216,33 +1238,6 @@
             ]
         },
         {
-            "method": "DELETE",
-            "endpoint": "adsets",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "before_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "delete_offset",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "delete_strategy",
-                    "required": true,
-                    "type": "adaccountadsets_delete_strategy_enum_param"
-                },
-                {
-                    "name": "object_count",
-                    "required": false,
-                    "type": "int"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "adsets",
             "return": "AdSet",
@@ -1990,33 +1985,6 @@
                     "name": "publisher_urls_file",
                     "required": true,
                     "type": "file"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "brand_audiences",
-            "return": "BrandAudience",
-            "params": [
-                {
-                    "name": "description",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "name",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "target_size",
-                    "required": true,
-                    "type": "int"
-                },
-                {
-                    "name": "targeting",
-                    "required": true,
-                    "type": "Object"
                 }
             ]
         },
@@ -2992,28 +2960,6 @@
         },
         {
             "method": "POST",
-            "endpoint": "partnerrequests",
-            "return": "PartnerRequest",
-            "params": [
-                {
-                    "name": "account_ids",
-                    "required": true,
-                    "type": "list<int>"
-                },
-                {
-                    "name": "category_ids",
-                    "required": true,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "type",
-                    "required": false,
-                    "type": "adaccountpartnerrequests_type_enum_param"
-                }
-            ]
-        },
-        {
-            "method": "POST",
             "endpoint": "product_audiences",
             "return": "AdAccount",
             "params": [
@@ -3161,7 +3107,7 @@
         {
             "method": "GET",
             "endpoint": "reachestimate",
-            "return": "ReachEstimate",
+            "return": "AdAccountReachEstimate",
             "params": [
                 {
                     "name": "adgroup_ids",
@@ -3705,44 +3651,10 @@
             ]
         },
         {
-            "method": "DELETE",
-            "endpoint": "users",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "uid",
-                    "required": false,
-                    "type": "int"
-                },
-                {
-                    "name": "uids",
-                    "required": false,
-                    "type": "list<string>"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "users",
             "return": "AdAccountUser",
             "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "users",
-            "return": "AdAccount",
-            "params": [
-                {
-                    "name": "tasks",
-                    "required": false,
-                    "type": "list<adaccountusers_tasks_enum_param>"
-                },
-                {
-                    "name": "uid",
-                    "required": false,
-                    "type": "int"
-                }
-            ]
         },
         {
             "method": "DELETE",
@@ -3941,6 +3853,10 @@
         {
             "name": "end_advertiser_name",
             "type": "string"
+        },
+        {
+            "name": "extended_credit_invoice_group",
+            "type": "ExtendedCreditInvoiceGroup"
         },
         {
             "name": "failed_delivery_checks",

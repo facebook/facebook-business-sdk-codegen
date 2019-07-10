@@ -934,7 +934,7 @@
         },
         {
             "method": "POST",
-            "endpoint": "opengraphactionfeed",
+            "endpoint": "open_graph_action_feed",
             "return": "Object",
             "params": [
                 {

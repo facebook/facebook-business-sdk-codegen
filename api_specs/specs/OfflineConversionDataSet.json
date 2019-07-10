@@ -35,18 +35,6 @@
             ]
         },
         {
-            "method": "DELETE",
-            "endpoint": "agencies",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "business",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "agencies",
             "return": "Business",
@@ -337,6 +325,10 @@
         },
         {
             "name": "is_restricted_use",
+            "type": "bool"
+        },
+        {
+            "name": "is_unavailable",
             "type": "bool"
         },
         {

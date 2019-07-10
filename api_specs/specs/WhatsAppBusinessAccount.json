@@ -4,7 +4,13 @@
             "method": "GET",
             "endpoint": "assigned_users",
             "return": "AssignedUser",
-            "params": []
+            "params": [
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
         },
         {
             "method": "DELETE",

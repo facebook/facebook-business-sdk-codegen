@@ -18,45 +18,6 @@
             ]
         },
         {
-            "method": "DELETE",
-            "endpoint": "admins",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "admin_id",
-                    "required": true,
-                    "type": "int"
-                },
-                {
-                    "name": "trusted",
-                    "required": false,
-                    "type": "bool"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "admins",
-            "return": "User",
-            "params": [
-                {
-                    "name": "admin_id",
-                    "required": false,
-                    "type": "int"
-                },
-                {
-                    "name": "tasks",
-                    "required": false,
-                    "type": "list<pageadmins_tasks_enum_param>"
-                },
-                {
-                    "name": "trusted",
-                    "required": false,
-                    "type": "bool"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "ads_posts",
             "return": "PagePost",
@@ -241,17 +202,22 @@
                 {
                     "name": "asid",
                     "required": false,
-                    "type": "int"
+                    "type": "Object"
+                },
+                {
+                    "name": "psid",
+                    "required": false,
+                    "type": "Object"
                 },
                 {
                     "name": "uid",
                     "required": false,
-                    "type": "int"
+                    "type": "Object"
                 },
                 {
                     "name": "user",
                     "required": false,
-                    "type": "int"
+                    "type": "Object"
                 }
             ]
         },
@@ -281,6 +247,11 @@
                     "name": "asid",
                     "required": false,
                     "type": "list"
+                },
+                {
+                    "name": "psid",
+                    "required": false,
+                    "type": "list<Object>"
                 },
                 {
                     "name": "uid",

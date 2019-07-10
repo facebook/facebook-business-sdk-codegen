@@ -47,6 +47,10 @@
             "type": "string"
         },
         {
+            "name": "cdn_download_uri",
+            "type": "string"
+        },
+        {
             "name": "currency",
             "type": "string"
         },

@@ -130,6 +130,10 @@
             "type": "list<string>"
         },
         {
+            "name": "excluded_brand_safety_content_types",
+            "type": "list<string>"
+        },
+        {
             "name": "excluded_connections",
             "type": "list<IDName>"
         },

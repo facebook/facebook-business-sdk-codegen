@@ -1,12 +1,5 @@
 {
-    "apis": [
-        {
-            "name": "#get",
-            "method": "GET",
-            "return": "LeadGenQuestion",
-            "params": []
-        }
-    ],
+    "apis": [],
     "fields": [
         {
             "name": "conditional_questions_choices",
