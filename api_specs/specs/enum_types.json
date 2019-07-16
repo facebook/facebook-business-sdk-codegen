@@ -918,7 +918,8 @@
             "ACTIVE",
             "ARCHIVED",
             "DELETED",
-            "PAUSED"
+            "PAUSED",
+            "WITH_ISSUES"
         ]
     },
     {
@@ -1113,7 +1114,8 @@
             "ACTIVE",
             "ARCHIVED",
             "DELETED",
-            "PAUSED"
+            "PAUSED",
+            "WITH_ISSUES"
         ]
     },
     {
@@ -1817,6 +1819,8 @@
             "action_canvas_component_name",
             "action_carousel_card_id",
             "action_carousel_card_name",
+            "action_converted_brand_tag_id",
+            "action_converted_category_tag_id",
             "action_converted_product_id",
             "action_destination",
             "action_device",
@@ -1825,6 +1829,8 @@
             "action_type",
             "action_video_sound",
             "action_video_type",
+            "brand",
+            "category",
             "interactive_component_sticker_id",
             "interactive_component_sticker_response"
         ]
@@ -1931,6 +1937,8 @@
             "action_canvas_component_name",
             "action_carousel_card_id",
             "action_carousel_card_name",
+            "action_converted_brand_tag_id",
+            "action_converted_category_tag_id",
             "action_converted_product_id",
             "action_destination",
             "action_device",
@@ -1939,6 +1947,8 @@
             "action_type",
             "action_video_sound",
             "action_video_type",
+            "brand",
+            "category",
             "interactive_component_sticker_id",
             "interactive_component_sticker_response"
         ]
@@ -2179,6 +2189,7 @@
             "CONTAINED_POST_ATTACHMENT",
             "CONTAINED_POST_AUDIO_BROADCAST",
             "CONTAINED_POST_BROADCAST",
+            "CONTAINED_YOUR_DAY",
             "COPYRIGHT_REFERENCE_BROADCAST",
             "COPYRIGHT_REFERENCE_VIDEO",
             "CULTURAL_MOMENT_DEPRECATED",
@@ -3065,6 +3076,7 @@
             "REGULAR_SPORTS",
             "REGULAR_STYLE",
             "REGULAR_TV_MOVIES",
+            "SPANISH",
             "SPORTS"
         ]
     },
@@ -3106,8 +3118,8 @@
         "node": "AdAccountTargetingUnified",
         "field_or_param": "regulated_categories",
         "values": [
+            "CREDIT",
             "EMPLOYMENT",
-            "FINANCING",
             "HOUSING",
             "NONE"
         ]
@@ -3357,8 +3369,8 @@
         "node": "AdAccountTargetingUnified",
         "field_or_param": "regulated_categories",
         "values": [
+            "CREDIT",
             "EMPLOYMENT",
-            "FINANCING",
             "HOUSING",
             "NONE"
         ]
@@ -3553,8 +3565,8 @@
         "node": "AdAccountTargetingUnified",
         "field_or_param": "regulated_categories",
         "values": [
+            "CREDIT",
             "EMPLOYMENT",
-            "FINANCING",
             "HOUSING",
             "NONE"
         ]
@@ -4750,6 +4762,8 @@
             "action_canvas_component_name",
             "action_carousel_card_id",
             "action_carousel_card_name",
+            "action_converted_brand_tag_id",
+            "action_converted_category_tag_id",
             "action_converted_product_id",
             "action_destination",
             "action_device",
@@ -4758,6 +4772,8 @@
             "action_type",
             "action_video_sound",
             "action_video_type",
+            "brand",
+            "category",
             "interactive_component_sticker_id",
             "interactive_component_sticker_response"
         ]
@@ -6184,6 +6200,7 @@
             "CONTAINED_POST_ATTACHMENT",
             "CONTAINED_POST_AUDIO_BROADCAST",
             "CONTAINED_POST_BROADCAST",
+            "CONTAINED_YOUR_DAY",
             "COPYRIGHT_REFERENCE_BROADCAST",
             "COPYRIGHT_REFERENCE_VIDEO",
             "CULTURAL_MOMENT_DEPRECATED",
@@ -7102,6 +7119,7 @@
             "CONTAINED_POST_ATTACHMENT",
             "CONTAINED_POST_AUDIO_BROADCAST",
             "CONTAINED_POST_BROADCAST",
+            "CONTAINED_YOUR_DAY",
             "COPYRIGHT_REFERENCE_BROADCAST",
             "COPYRIGHT_REFERENCE_VIDEO",
             "CULTURAL_MOMENT_DEPRECATED",
@@ -8708,6 +8726,7 @@
             "ratings",
             "registration",
             "standby",
+            "video_text_question_responses",
             "videos",
             "website"
         ]
@@ -8795,6 +8814,7 @@
             "CONTAINED_POST_ATTACHMENT",
             "CONTAINED_POST_AUDIO_BROADCAST",
             "CONTAINED_POST_BROADCAST",
+            "CONTAINED_YOUR_DAY",
             "COPYRIGHT_REFERENCE_BROADCAST",
             "COPYRIGHT_REFERENCE_VIDEO",
             "CULTURAL_MOMENT_DEPRECATED",
@@ -10279,6 +10299,7 @@
             "CONTAINED_POST_ATTACHMENT",
             "CONTAINED_POST_AUDIO_BROADCAST",
             "CONTAINED_POST_BROADCAST",
+            "CONTAINED_YOUR_DAY",
             "COPYRIGHT_REFERENCE_BROADCAST",
             "COPYRIGHT_REFERENCE_VIDEO",
             "CULTURAL_MOMENT_DEPRECATED",

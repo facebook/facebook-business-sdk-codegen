@@ -1722,10 +1722,6 @@
             "type": "string"
         },
         {
-            "name": "is_viewer_admin",
-            "type": "bool"
-        },
-        {
             "name": "latest_sdk_version",
             "type": "Object"
         },

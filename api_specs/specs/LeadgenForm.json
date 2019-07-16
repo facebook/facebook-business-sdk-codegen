@@ -64,6 +64,10 @@
             "type": "bool"
         },
         {
+            "name": "context_card",
+            "type": "Object"
+        },
+        {
             "name": "created_time",
             "type": "datetime"
         },
@@ -162,6 +166,10 @@
         {
             "name": "tcpa_compliance",
             "type": "bool"
+        },
+        {
+            "name": "thank_you_page",
+            "type": "Object"
         },
         {
             "name": "tracking_parameters",

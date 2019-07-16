@@ -482,6 +482,10 @@
             "type": "string"
         },
         {
+            "name": "earned_impression",
+            "type": "string"
+        },
+        {
             "name": "estimated_ad_recall_rate",
             "type": "string"
         },

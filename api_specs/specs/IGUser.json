@@ -54,9 +54,19 @@
                     "type": "string"
                 },
                 {
+                    "name": "location_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "media_type",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "user_tags",
+                    "required": false,
+                    "type": "list<map>"
                 }
             ]
         },

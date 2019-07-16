@@ -135,6 +135,10 @@
             "type": "Object"
         },
         {
+            "name": "purchase_order_number",
+            "type": "string"
+        },
+        {
             "name": "status",
             "type": "string"
         },
