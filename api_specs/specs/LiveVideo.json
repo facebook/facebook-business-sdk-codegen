@@ -2,6 +2,18 @@
     "apis": [
         {
             "method": "GET",
+            "endpoint": "blocked_users",
+            "return": "User",
+            "params": [
+                {
+                    "name": "uid",
+                    "required": false,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "comments",
             "return": "Comment",
             "params": [
@@ -175,11 +187,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "attribution_app_metadata",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "commercial_break_durations",
                     "required": false,
                     "type": "list<unsigned int>"
@@ -208,11 +215,6 @@
                     "name": "direct_share_status",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "disturbing",
-                    "required": false,
-                    "type": "bool"
                 },
                 {
                     "name": "embeddable",
@@ -268,11 +270,6 @@
                     "name": "privacy",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "product_items",
-                    "required": false,
-                    "type": "list<string>"
                 },
                 {
                     "name": "published",

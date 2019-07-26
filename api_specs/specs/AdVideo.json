@@ -290,6 +290,12 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "tags",
+            "return": "TaggableSubject",
+            "params": []
+        },
+        {
             "method": "POST",
             "endpoint": "tags",
             "return": "AdVideo",
@@ -543,6 +549,14 @@
             "type": "list<string>"
         },
         {
+            "name": "copyright",
+            "type": "VideoCopyright"
+        },
+        {
+            "name": "copyright_monitoring_status",
+            "type": "string"
+        },
+        {
             "name": "created_time",
             "type": "datetime"
         },
@@ -603,6 +617,10 @@
             "type": "bool"
         },
         {
+            "name": "is_reference_only",
+            "type": "bool"
+        },
+        {
             "name": "length",
             "type": "float"
         },
@@ -613,6 +631,10 @@
         {
             "name": "live_status",
             "type": "string"
+        },
+        {
+            "name": "music_video_copyright",
+            "type": "MusicVideoCopyright"
         },
         {
             "name": "permalink_url",

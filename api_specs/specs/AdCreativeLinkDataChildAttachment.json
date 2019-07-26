@@ -38,10 +38,6 @@
             "type": "AdCreativePlaceData"
         },
         {
-            "name": "referral_id",
-            "type": "string"
-        },
-        {
             "name": "static_card",
             "type": "bool"
         },

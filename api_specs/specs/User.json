@@ -392,6 +392,28 @@
         },
         {
             "method": "GET",
+            "endpoint": "conversations",
+            "return": "UnifiedThread",
+            "params": [
+                {
+                    "name": "folder",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "tags",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "user_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "custom_labels",
             "return": "PageUserMessageThreadLabel",
             "params": []
@@ -417,6 +439,12 @@
             "method": "GET",
             "endpoint": "family",
             "return": "User",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "favorite_requests",
+            "return": "FavoriteRequest",
             "params": []
         },
         {
@@ -1573,11 +1601,6 @@
             "endpoint": "live_videos",
             "return": "LiveVideo",
             "params": [
-                {
-                    "name": "attribution_app_id",
-                    "required": false,
-                    "type": "string"
-                },
                 {
                     "name": "content_tags",
                     "required": false,

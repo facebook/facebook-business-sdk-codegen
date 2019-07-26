@@ -1257,6 +1257,38 @@
         ]
     },
     {
+        "name": "Event_category",
+        "node": "Event",
+        "field_or_param": "category",
+        "values": [
+            "ART_EVENT",
+            "BOOK_EVENT",
+            "CLASS_EVENT",
+            "COMEDY_EVENT",
+            "CONFERENCE_EVENT",
+            "DANCE_EVENT",
+            "DINING_EVENT",
+            "FAMILY_EVENT",
+            "FESTIVAL_EVENT",
+            "FITNESS",
+            "FOOD_TASTING",
+            "FUNDRAISER",
+            "LECTURE",
+            "MEETUP",
+            "MOVIE_EVENT",
+            "MUSIC_EVENT",
+            "NEIGHBORHOOD",
+            "NIGHTLIFE",
+            "OTHER",
+            "RELIGIOUS_EVENT",
+            "SHOPPING",
+            "SPORTS_EVENT",
+            "THEATER_EVENT",
+            "VOLUNTEERING",
+            "WORKSHOP"
+        ]
+    },
+    {
         "name": "Event_type",
         "node": "Event",
         "field_or_param": "type",
@@ -1606,6 +1638,25 @@
         ]
     },
     {
+        "name": "adaccountad_place_page_sets_async_location_types_enum_param",
+        "node": "AdPlacePageSet",
+        "field_or_param": "location_types",
+        "values": [
+            "home",
+            "recent"
+        ]
+    },
+    {
+        "name": "adaccountad_place_page_sets_async_targeted_area_type_enum_param",
+        "node": "AdPlacePageSet",
+        "field_or_param": "targeted_area_type",
+        "values": [
+            "CUSTOM_RADIUS",
+            "MARKETING_AREA",
+            "NONE"
+        ]
+    },
+    {
         "name": "adaccountad_place_page_sets_location_types_enum_param",
         "node": "AdPlacePageSet",
         "field_or_param": "location_types",
@@ -1815,10 +1866,12 @@
         "node": "AdReportSchedule",
         "field_or_param": "actions_group_by",
         "values": [
+            "action_brand",
             "action_canvas_component_id",
             "action_canvas_component_name",
             "action_carousel_card_id",
             "action_carousel_card_name",
+            "action_category",
             "action_converted_brand_tag_id",
             "action_converted_category_tag_id",
             "action_converted_product_id",
@@ -1829,8 +1882,6 @@
             "action_type",
             "action_video_sound",
             "action_video_type",
-            "brand",
-            "category",
             "interactive_component_sticker_id",
             "interactive_component_sticker_response"
         ]
@@ -1926,78 +1977,6 @@
             "Active",
             "Deleted",
             "Paused"
-        ]
-    },
-    {
-        "name": "adaccountadreportspecs_actions_group_by_enum_param",
-        "node": "AdReportSpec",
-        "field_or_param": "actions_group_by",
-        "values": [
-            "action_canvas_component_id",
-            "action_canvas_component_name",
-            "action_carousel_card_id",
-            "action_carousel_card_name",
-            "action_converted_brand_tag_id",
-            "action_converted_category_tag_id",
-            "action_converted_product_id",
-            "action_destination",
-            "action_device",
-            "action_event_channel",
-            "action_target_id",
-            "action_type",
-            "action_video_sound",
-            "action_video_type",
-            "brand",
-            "category",
-            "interactive_component_sticker_id",
-            "interactive_component_sticker_response"
-        ]
-    },
-    {
-        "name": "adaccountadreportspecs_creation_source_enum_param",
-        "node": "AdReportSpec",
-        "field_or_param": "creation_source",
-        "values": [
-            "adsExcelAddin",
-            "adsManagerReporting",
-            "newAdsManager"
-        ]
-    },
-    {
-        "name": "adaccountadreportspecs_date_preset_enum_param",
-        "node": "AdReportSpec",
-        "field_or_param": "date_preset",
-        "values": [
-            "last_14d",
-            "last_28d",
-            "last_30d",
-            "last_3d",
-            "last_7d",
-            "last_90d",
-            "last_month",
-            "last_quarter",
-            "last_week_mon_sun",
-            "last_week_sun_sat",
-            "last_year",
-            "lifetime",
-            "this_month",
-            "this_quarter",
-            "this_week_mon_today",
-            "this_week_sun_today",
-            "this_year",
-            "today",
-            "yesterday"
-        ]
-    },
-    {
-        "name": "adaccountadreportspecs_format_enum_param",
-        "node": "AdReportSpec",
-        "field_or_param": "format",
-        "values": [
-            "CSV",
-            "JSON",
-            "XLS",
-            "XLSX"
         ]
     },
     {
@@ -2189,7 +2168,6 @@
             "CONTAINED_POST_ATTACHMENT",
             "CONTAINED_POST_AUDIO_BROADCAST",
             "CONTAINED_POST_BROADCAST",
-            "CONTAINED_YOUR_DAY",
             "COPYRIGHT_REFERENCE_BROADCAST",
             "COPYRIGHT_REFERENCE_VIDEO",
             "CULTURAL_MOMENT_DEPRECATED",
@@ -2256,6 +2234,7 @@
             "SLIDESHOW_ANIMOTO",
             "SLIDESHOW_SHAKR",
             "SOTTO_CONTENT",
+            "STORIES_VIDEO",
             "STORYLINE",
             "STORYLINE_WITH_EXTERNAL_MUSIC",
             "STORY_ARCHIVE_VIDEO",
@@ -2264,6 +2243,7 @@
             "TEMP_MULTIMEDIA_POST",
             "UNLISTED",
             "VIDEO_COMMENT",
+            "VIDEO_CREATIVE_EDITOR_AUTOGEN_AD_VIDEO",
             "WOODHENGE",
             "YOUR_DAY"
         ]
@@ -2352,6 +2332,7 @@
             "ADVERTISE",
             "ANALYZE",
             "CREATIVE",
+            "DRAFT",
             "FB_EMPLOYEE_DSO_ADVERTISE",
             "MANAGE"
         ]
@@ -2364,6 +2345,7 @@
             "ADVERTISE",
             "ANALYZE",
             "CREATIVE",
+            "DRAFT",
             "FB_EMPLOYEE_DSO_ADVERTISE",
             "MANAGE"
         ]
@@ -3605,6 +3587,19 @@
         ]
     },
     {
+        "name": "adaccountusers_tasks_enum_param",
+        "node": "AdAccount",
+        "field_or_param": "tasks",
+        "values": [
+            "ADVERTISE",
+            "ANALYZE",
+            "CREATIVE",
+            "DRAFT",
+            "FB_EMPLOYEE_DSO_ADVERTISE",
+            "MANAGE"
+        ]
+    },
+    {
         "name": "adasyncrequestset_notification_mode",
         "node": "AdAsyncRequestSet",
         "field_or_param": "notification_mode",
@@ -4758,10 +4753,12 @@
         "node": "AdReportSpec",
         "field_or_param": "actions_group_by",
         "values": [
+            "action_brand",
             "action_canvas_component_id",
             "action_canvas_component_name",
             "action_carousel_card_id",
             "action_carousel_card_name",
+            "action_category",
             "action_converted_brand_tag_id",
             "action_converted_category_tag_id",
             "action_converted_product_id",
@@ -4772,8 +4769,6 @@
             "action_type",
             "action_video_sound",
             "action_video_type",
-            "brand",
-            "category",
             "interactive_component_sticker_id",
             "interactive_component_sticker_response"
         ]
@@ -4913,9 +4908,6 @@
             "event_total_counts",
             "event_value_count",
             "host",
-            "people_reached",
-            "pii_keys",
-            "pii_lift",
             "pixel_fire",
             "url",
             "url_by_rule"
@@ -4954,15 +4946,6 @@
             "TV_COMMERCIAL",
             "TV_FACEBOOK",
             "VIDEO_VIEW_OPTIMIZATION"
-        ]
-    },
-    {
-        "name": "adstudycustomaudiences_audience_type_enum_param",
-        "node": "AdStudy",
-        "field_or_param": "audience_type",
-        "values": [
-            "MOST_RESPONSIVE",
-            "NOT_MOST_RESPONSIVE"
         ]
     },
     {
@@ -5670,6 +5653,15 @@
         ]
     },
     {
+        "name": "businessbusiness_invoices_type_enum_param",
+        "node": "OracleTransaction",
+        "field_or_param": "type",
+        "values": [
+            "CM",
+            "INV"
+        ]
+    },
+    {
         "name": "businessbusiness_users_role_enum_param",
         "node": "BusinessUser",
         "field_or_param": "role",
@@ -5689,6 +5681,7 @@
             "ADVERTISE",
             "ANALYZE",
             "CREATIVE",
+            "DRAFT",
             "FB_EMPLOYEE_DSO_ADVERTISE",
             "MANAGE"
         ]
@@ -5708,6 +5701,7 @@
             "MODERATE_COMMUNITY",
             "PAGES_MESSAGING",
             "PAGES_MESSAGING_SUBSCRIPTIONS",
+            "PLATFORM_MANAGE_PAGES",
             "READ_PAGE_MAILBOXES",
             "VIEW_MONETIZATION_INSIGHTS"
         ]
@@ -5842,6 +5836,7 @@
             "MODERATE_COMMUNITY",
             "PAGES_MESSAGING",
             "PAGES_MESSAGING_SUBSCRIPTIONS",
+            "PLATFORM_MANAGE_PAGES",
             "READ_PAGE_MAILBOXES",
             "VIEW_MONETIZATION_INSIGHTS"
         ]
@@ -5947,24 +5942,6 @@
             "EMPLOYEE",
             "FINANCE_ANALYST",
             "FINANCE_EDITOR"
-        ]
-    },
-    {
-        "name": "businessthird_party_measurement_report_dataset_category_enum_param",
-        "node": "ThirdPartyMeasurementReportDataset",
-        "field_or_param": "category",
-        "values": [
-            "MTA"
-        ]
-    },
-    {
-        "name": "businessthird_party_measurement_report_dataset_product_enum_param",
-        "node": "ThirdPartyMeasurementReportDataset",
-        "field_or_param": "product",
-        "values": [
-            "CUSTOM",
-            "MTA",
-            "VIEWABILITY"
         ]
     },
     {
@@ -6200,7 +6177,6 @@
             "CONTAINED_POST_ATTACHMENT",
             "CONTAINED_POST_AUDIO_BROADCAST",
             "CONTAINED_POST_BROADCAST",
-            "CONTAINED_YOUR_DAY",
             "COPYRIGHT_REFERENCE_BROADCAST",
             "COPYRIGHT_REFERENCE_VIDEO",
             "CULTURAL_MOMENT_DEPRECATED",
@@ -6267,6 +6243,7 @@
             "SLIDESHOW_ANIMOTO",
             "SLIDESHOW_SHAKR",
             "SOTTO_CONTENT",
+            "STORIES_VIDEO",
             "STORYLINE",
             "STORYLINE_WITH_EXTERNAL_MUSIC",
             "STORY_ARCHIVE_VIDEO",
@@ -6275,6 +6252,7 @@
             "TEMP_MULTIMEDIA_POST",
             "UNLISTED",
             "VIDEO_COMMENT",
+            "VIDEO_CREATIVE_EDITOR_AUTOGEN_AD_VIDEO",
             "WOODHENGE",
             "YOUR_DAY"
         ]
@@ -6353,6 +6331,20 @@
             "finish",
             "start",
             "transfer"
+        ]
+    },
+    {
+        "name": "commentcomments_comment_privacy_value_enum_param",
+        "node": "Comment",
+        "field_or_param": "comment_privacy_value",
+        "values": [
+            "DEFAULT_PRIVACY",
+            "FRIENDS_AND_POST_OWNER",
+            "FRIENDS_ONLY",
+            "GRAPHQL_MULTIPLE_VALUE_HACK_DO_NOT_USE",
+            "OWNER_OR_COMMENTER",
+            "SIDE_CONVERSATION",
+            "SIDE_CONVERSATION_AND_POST_OWNER"
         ]
     },
     {
@@ -6451,41 +6443,6 @@
             "BOTH_USER_AND_PARTNER_PROVIDED",
             "PARTNER_PROVIDED_ONLY",
             "USER_PROVIDED_ONLY"
-        ]
-    },
-    {
-        "name": "customaudiencedata_action_type_enum_param",
-        "node": "Object",
-        "field_or_param": "action_type",
-        "values": [
-            "add",
-            "match",
-            "optout",
-            "remove"
-        ]
-    },
-    {
-        "name": "customaudiencedata_encoding_enum_param",
-        "node": "Object",
-        "field_or_param": "encoding",
-        "values": [
-            "md5",
-            "plain",
-            "sha256"
-        ]
-    },
-    {
-        "name": "customaudiencedata_entry_type_enum_param",
-        "node": "Object",
-        "field_or_param": "entry_type",
-        "values": [
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6"
         ]
     },
     {
@@ -7119,7 +7076,6 @@
             "CONTAINED_POST_ATTACHMENT",
             "CONTAINED_POST_AUDIO_BROADCAST",
             "CONTAINED_POST_BROADCAST",
-            "CONTAINED_YOUR_DAY",
             "COPYRIGHT_REFERENCE_BROADCAST",
             "COPYRIGHT_REFERENCE_VIDEO",
             "CULTURAL_MOMENT_DEPRECATED",
@@ -7186,6 +7142,7 @@
             "SLIDESHOW_ANIMOTO",
             "SLIDESHOW_SHAKR",
             "SOTTO_CONTENT",
+            "STORIES_VIDEO",
             "STORYLINE",
             "STORYLINE_WITH_EXTERNAL_MUSIC",
             "STORY_ARCHIVE_VIDEO",
@@ -7194,6 +7151,7 @@
             "TEMP_MULTIMEDIA_POST",
             "UNLISTED",
             "VIDEO_COMMENT",
+            "VIDEO_CREATIVE_EDITOR_AUTOGEN_AD_VIDEO",
             "WOODHENGE",
             "YOUR_DAY"
         ]
@@ -7840,13 +7798,23 @@
         ]
     },
     {
-        "name": "pageadmin_settings_setting_enum_param",
-        "node": "Page",
-        "field_or_param": "setting",
+        "name": "pageadmins_tasks_enum_param",
+        "node": "User",
+        "field_or_param": "tasks",
         "values": [
-            "EMAIL_NOTIF",
-            "MOBILE_NOTIF",
-            "POST_AS_SELF"
+            "ADVERTISE",
+            "ANALYZE",
+            "CREATE_CONTENT",
+            "MANAGE",
+            "MANAGE_JOBS",
+            "MANAGE_LEADS",
+            "MODERATE",
+            "MODERATE_COMMUNITY",
+            "PAGES_MESSAGING",
+            "PAGES_MESSAGING_SUBSCRIPTIONS",
+            "PLATFORM_MANAGE_PAGES",
+            "READ_PAGE_MAILBOXES",
+            "VIEW_MONETIZATION_INSIGHTS"
         ]
     },
     {
@@ -7864,6 +7832,7 @@
             "MODERATE_COMMUNITY",
             "PAGES_MESSAGING",
             "PAGES_MESSAGING_SUBSCRIPTIONS",
+            "PLATFORM_MANAGE_PAGES",
             "READ_PAGE_MAILBOXES",
             "VIEW_MONETIZATION_INSIGHTS"
         ]
@@ -7883,6 +7852,7 @@
             "MODERATE_COMMUNITY",
             "PAGES_MESSAGING",
             "PAGES_MESSAGING_SUBSCRIPTIONS",
+            "PLATFORM_MANAGE_PAGES",
             "READ_PAGE_MAILBOXES",
             "VIEW_MONETIZATION_INSIGHTS"
         ]
@@ -8814,7 +8784,6 @@
             "CONTAINED_POST_ATTACHMENT",
             "CONTAINED_POST_AUDIO_BROADCAST",
             "CONTAINED_POST_BROADCAST",
-            "CONTAINED_YOUR_DAY",
             "COPYRIGHT_REFERENCE_BROADCAST",
             "COPYRIGHT_REFERENCE_VIDEO",
             "CULTURAL_MOMENT_DEPRECATED",
@@ -8881,6 +8850,7 @@
             "SLIDESHOW_ANIMOTO",
             "SLIDESHOW_SHAKR",
             "SOTTO_CONTENT",
+            "STORIES_VIDEO",
             "STORYLINE",
             "STORYLINE_WITH_EXTERNAL_MUSIC",
             "STORY_ARCHIVE_VIDEO",
@@ -8889,6 +8859,7 @@
             "TEMP_MULTIMEDIA_POST",
             "UNLISTED",
             "VIDEO_COMMENT",
+            "VIDEO_CREATIVE_EDITOR_AUTOGEN_AD_VIDEO",
             "WOODHENGE",
             "YOUR_DAY"
         ]
@@ -10299,7 +10270,6 @@
             "CONTAINED_POST_ATTACHMENT",
             "CONTAINED_POST_AUDIO_BROADCAST",
             "CONTAINED_POST_BROADCAST",
-            "CONTAINED_YOUR_DAY",
             "COPYRIGHT_REFERENCE_BROADCAST",
             "COPYRIGHT_REFERENCE_VIDEO",
             "CULTURAL_MOMENT_DEPRECATED",
@@ -10366,6 +10336,7 @@
             "SLIDESHOW_ANIMOTO",
             "SLIDESHOW_SHAKR",
             "SOTTO_CONTENT",
+            "STORIES_VIDEO",
             "STORYLINE",
             "STORYLINE_WITH_EXTERNAL_MUSIC",
             "STORY_ARCHIVE_VIDEO",
@@ -10374,6 +10345,7 @@
             "TEMP_MULTIMEDIA_POST",
             "UNLISTED",
             "VIDEO_COMMENT",
+            "VIDEO_CREATIVE_EDITOR_AUTOGEN_AD_VIDEO",
             "WOODHENGE",
             "YOUR_DAY"
         ]

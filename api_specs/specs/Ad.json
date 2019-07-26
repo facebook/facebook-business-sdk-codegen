@@ -374,11 +374,6 @@
                     "type": "unsigned int"
                 },
                 {
-                    "name": "interactive",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "locale",
                     "required": false,
                     "type": "string"

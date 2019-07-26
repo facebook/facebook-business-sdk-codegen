@@ -35,19 +35,11 @@
             "type": "float"
         },
         {
-            "name": "expiration_time",
-            "type": "datetime"
-        },
-        {
             "name": "fingerprint_content_type",
             "type": "string"
         },
         {
             "name": "fingerprint_type",
-            "type": "string"
-        },
-        {
-            "name": "fingerprint_validity",
             "type": "string"
         },
         {

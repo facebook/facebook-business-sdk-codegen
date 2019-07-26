@@ -86,48 +86,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "data",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "action_type",
-                    "required": false,
-                    "type": "customaudiencedata_action_type_enum_param"
-                },
-                {
-                    "name": "batch_seq",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "encoding",
-                    "required": false,
-                    "type": "customaudiencedata_encoding_enum_param"
-                },
-                {
-                    "name": "entries",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "entry_type",
-                    "required": false,
-                    "type": "customaudiencedata_entry_type_enum_param"
-                },
-                {
-                    "name": "last_batch_flag",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "session_id",
-                    "required": false,
-                    "type": "unsigned int"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "prefills",
             "return": "CustomAudiencePrefillState",

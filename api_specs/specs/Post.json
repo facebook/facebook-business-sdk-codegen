@@ -476,6 +476,10 @@
             "type": "Object"
         },
         {
+            "name": "can_reply_privately",
+            "type": "bool"
+        },
+        {
             "name": "caption",
             "type": "string"
         },

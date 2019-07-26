@@ -566,10 +566,6 @@
             "type": "string"
         },
         {
-            "name": "impressions_dummy",
-            "type": "string"
-        },
-        {
             "name": "impressions_gross",
             "type": "string"
         },

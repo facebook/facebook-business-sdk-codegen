@@ -10,10 +10,6 @@
             "type": "string"
         },
         {
-            "name": "branded_content_sponsor_relationship",
-            "type": "string"
-        },
-        {
             "name": "caption",
             "type": "string"
         },

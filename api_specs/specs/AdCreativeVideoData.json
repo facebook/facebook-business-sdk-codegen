@@ -14,10 +14,6 @@
             "type": "string"
         },
         {
-            "name": "branded_content_sponsor_relationship",
-            "type": "string"
-        },
-        {
             "name": "call_to_action",
             "type": "AdCreativeLinkDataCallToAction"
         },

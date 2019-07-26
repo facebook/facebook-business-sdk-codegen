@@ -1,18 +1,40 @@
 {
     "apis": [
         {
-            "method": "POST",
-            "endpoint": "admin_settings",
-            "return": "Page",
+            "method": "DELETE",
+            "endpoint": "admins",
+            "return": "Object",
             "params": [
                 {
-                    "name": "setting",
+                    "name": "admin_id",
                     "required": true,
-                    "type": "pageadmin_settings_setting_enum_param"
+                    "type": "int"
                 },
                 {
-                    "name": "value",
-                    "required": true,
+                    "name": "trusted",
+                    "required": false,
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "admins",
+            "return": "User",
+            "params": [
+                {
+                    "name": "admin_id",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "tasks",
+                    "required": false,
+                    "type": "list<pageadmins_tasks_enum_param>"
+                },
+                {
+                    "name": "trusted",
+                    "required": false,
                     "type": "bool"
                 }
             ]
@@ -189,12 +211,6 @@
             ]
         },
         {
-            "method": "GET",
-            "endpoint": "audio_media_copyrights",
-            "return": "AudioCopyright",
-            "params": []
-        },
-        {
             "method": "DELETE",
             "endpoint": "blocked",
             "return": "Object",
@@ -289,11 +305,6 @@
                     "name": "notification_type",
                     "required": false,
                     "type": "pagebroadcast_messages_notification_type_enum_param"
-                },
-                {
-                    "name": "schedule_local_time",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "schedule_time",
@@ -1613,11 +1624,6 @@
             "return": "LiveVideo",
             "params": [
                 {
-                    "name": "attribution_app_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "content_tags",
                     "required": false,
                     "type": "list<string>"
@@ -1686,11 +1692,6 @@
                     "name": "privacy",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "product_items",
-                    "required": false,
-                    "type": "list<string>"
                 },
                 {
                     "name": "projection",
@@ -1771,6 +1772,93 @@
             "endpoint": "locations",
             "return": "Page",
             "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "locations",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "always_open",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "hours",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "ignore_warnings",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "location",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "location_page_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "old_store_number",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "page_username",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "permanently_closed",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "phone",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "place_topics",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "price_range",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "store_code",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "store_location_descriptor",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "store_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "store_number",
+                    "required": true,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "website",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
         },
         {
             "method": "POST",
@@ -2746,6 +2834,12 @@
                     "type": "datetime"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "ratings",
+            "return": "Recommendation",
+            "params": []
         },
         {
             "method": "POST",
@@ -3956,10 +4050,6 @@
         {
             "name": "contact_address",
             "type": "MailingAddress"
-        },
-        {
-            "name": "copyright_attribution_insights",
-            "type": "CopyrightAttributionInsights"
         },
         {
             "name": "copyright_whitelisted_ig_partners",

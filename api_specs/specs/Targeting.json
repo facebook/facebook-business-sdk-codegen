@@ -238,10 +238,6 @@
             "type": "list<string>"
         },
         {
-            "name": "instream_video_sponsorship_placements",
-            "type": "list<string>"
-        },
-        {
             "name": "interested_in",
             "type": "list<unsigned int>"
         },

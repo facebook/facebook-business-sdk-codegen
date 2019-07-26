@@ -772,11 +772,6 @@
             "return": "LiveVideo",
             "params": [
                 {
-                    "name": "attribution_app_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "content_tags",
                     "required": false,
                     "type": "list<string>"

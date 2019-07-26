@@ -136,10 +136,6 @@
             "type": "string"
         },
         {
-            "name": "receiving_credit_allocation_config",
-            "type": "ExtendedCreditAllocationConfig"
-        },
-        {
             "name": "send_bill_to_biz_name",
             "type": "string"
         }

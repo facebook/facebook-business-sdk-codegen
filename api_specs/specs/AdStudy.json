@@ -7,38 +7,6 @@
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "customaudiences",
-            "return": "AdStudy",
-            "params": [
-                {
-                    "name": "account_id",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "audience_name",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "audience_type",
-                    "required": true,
-                    "type": "adstudycustomaudiences_audience_type_enum_param"
-                },
-                {
-                    "name": "cell_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "objective_id",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "health_check_errors",
             "return": "AdsTALHealthCheckError",

@@ -28,6 +28,78 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "comments",
+            "return": "Comment",
+            "params": [
+                {
+                    "name": "attachment_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "attachment_share_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "attachment_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "comment_privacy_value",
+                    "required": false,
+                    "type": "commentcomments_comment_privacy_value_enum_param"
+                },
+                {
+                    "name": "facepile_mentioned_ids",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "feedback_source",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "is_offline",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "message",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "nectar_module",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "object_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "parent_comment_id",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "text",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "tracking",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "DELETE",
             "endpoint": "likes",
             "return": "Object",
@@ -73,6 +145,18 @@
                 {
                     "name": "tracking",
                     "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "private_replies",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "message",
+                    "required": true,
                     "type": "string"
                 }
             ]
@@ -164,6 +248,10 @@
             "type": "bool"
         },
         {
+            "name": "can_reply_privately",
+            "type": "bool"
+        },
+        {
             "name": "comment_count",
             "type": "unsigned int"
         },
@@ -214,6 +302,10 @@
         {
             "name": "permalink_url",
             "type": "string"
+        },
+        {
+            "name": "private_reply_conversation",
+            "type": "Object"
         },
         {
             "name": "user_likes",

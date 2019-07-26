@@ -511,6 +511,48 @@
         },
         {
             "method": "GET",
+            "endpoint": "business_invoices",
+            "return": "OracleTransaction",
+            "params": [
+                {
+                    "name": "end_date",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "invoice_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "issue_end_date",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "issue_start_date",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "root_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "start_date",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "type",
+                    "required": false,
+                    "type": "businessbusiness_invoices_type_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "business_users",
             "return": "BusinessUser",
             "params": []
@@ -679,6 +721,11 @@
             "endpoint": "creative_folders",
             "return": "BusinessCreativeFolder",
             "params": [
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
                 {
                     "name": "name",
                     "required": true,
@@ -1346,28 +1393,6 @@
             "endpoint": "third_party_measurement_report_dataset",
             "return": "ThirdPartyMeasurementReportDataset",
             "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "third_party_measurement_report_dataset",
-            "return": "ThirdPartyMeasurementReportDataset",
-            "params": [
-                {
-                    "name": "category",
-                    "required": true,
-                    "type": "businessthird_party_measurement_report_dataset_category_enum_param"
-                },
-                {
-                    "name": "product",
-                    "required": true,
-                    "type": "businessthird_party_measurement_report_dataset_product_enum_param"
-                },
-                {
-                    "name": "schema",
-                    "required": true,
-                    "type": "list<map>"
-                }
-            ]
         },
         {
             "method": "POST",

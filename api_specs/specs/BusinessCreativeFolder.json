@@ -94,6 +94,11 @@
             "return": "BusinessCreativeFolder",
             "params": [
                 {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "name",
                     "required": true,
                     "type": "string"

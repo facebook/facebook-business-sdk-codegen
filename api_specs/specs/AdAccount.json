@@ -91,6 +91,33 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "ad_place_page_sets_async",
+            "return": "AdPlacePageSet",
+            "params": [
+                {
+                    "name": "location_types",
+                    "required": false,
+                    "type": "list<adaccountad_place_page_sets_async_location_types_enum_param>"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "parent_page",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "targeted_area_type",
+                    "required": false,
+                    "type": "adaccountad_place_page_sets_async_targeted_area_type_enum_param"
+                }
+            ]
+        },
+        {
             "method": "DELETE",
             "endpoint": "ad_sets",
             "return": "Object",
@@ -869,118 +896,6 @@
                     "name": "user_filter",
                     "required": false,
                     "type": "list<Object>"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "adreportspecs",
-            "return": "AdReportSpec",
-            "params": [
-                {
-                    "name": "actions_group_by",
-                    "required": false,
-                    "type": "list<adaccountadreportspecs_actions_group_by_enum_param>"
-                },
-                {
-                    "name": "business_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "bypass_async",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "creation_source",
-                    "required": false,
-                    "type": "adaccountadreportspecs_creation_source_enum_param"
-                },
-                {
-                    "name": "data_columns",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "date_preset",
-                    "required": false,
-                    "type": "adaccountadreportspecs_date_preset_enum_param"
-                },
-                {
-                    "name": "export_columns",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "filters",
-                    "required": false,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "format",
-                    "required": false,
-                    "type": "adaccountadreportspecs_format_enum_param"
-                },
-                {
-                    "name": "format_version",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "insights_section",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "limit",
-                    "required": false,
-                    "type": "int"
-                },
-                {
-                    "name": "name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "report_run_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "report_schedule_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "sort_by",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "sort_dir",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "time_increment",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "time_interval",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "time_ranges",
-                    "required": false,
-                    "type": "list"
-                },
-                {
-                    "name": "user_report",
-                    "required": false,
-                    "type": "bool"
                 }
             ]
         },
@@ -2611,11 +2526,6 @@
                     "type": "unsigned int"
                 },
                 {
-                    "name": "interactive",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "locale",
                     "required": false,
                     "type": "string"
@@ -3651,10 +3561,44 @@
             ]
         },
         {
+            "method": "DELETE",
+            "endpoint": "users",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "uid",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "uids",
+                    "required": false,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "users",
             "return": "AdAccountUser",
             "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "users",
+            "return": "AdAccount",
+            "params": [
+                {
+                    "name": "tasks",
+                    "required": false,
+                    "type": "list<adaccountusers_tasks_enum_param>"
+                },
+                {
+                    "name": "uid",
+                    "required": false,
+                    "type": "int"
+                }
+            ]
         },
         {
             "method": "DELETE",

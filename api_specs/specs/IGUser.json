@@ -44,11 +44,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "children",
-                    "required": false,
-                    "type": "list<unsigned int>"
-                },
-                {
                     "name": "image_url",
                     "required": false,
                     "type": "string"
@@ -64,9 +59,19 @@
                     "type": "string"
                 },
                 {
+                    "name": "thumb_offset",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "user_tags",
                     "required": false,
                     "type": "list<map>"
+                },
+                {
+                    "name": "video_url",
+                    "required": false,
+                    "type": "string"
                 }
             ]
         },

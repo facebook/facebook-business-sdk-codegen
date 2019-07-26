@@ -1370,10 +1370,6 @@
             "type": "int"
         },
         {
-            "name": "qualified_product_count",
-            "type": "unsigned int"
-        },
-        {
             "name": "vertical",
             "type": "string"
         }

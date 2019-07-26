@@ -115,10 +115,6 @@
     ],
     "fields": [
         {
-            "name": "custom_attributes",
-            "type": "list<string>"
-        },
-        {
             "name": "id",
             "type": "string"
         },
