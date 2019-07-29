@@ -113,6 +113,7 @@ expired=1
 expiring=1
 extended=1
 family=1
+featured=1
 feed=1
 flags=1
 food=1
