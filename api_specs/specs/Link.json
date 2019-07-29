@@ -1,6 +1,33 @@
 {
     "apis": [
         {
+            "method": "GET",
+            "endpoint": "comments",
+            "return": "Comment",
+            "params": [
+                {
+                    "name": "filter",
+                    "required": false,
+                    "type": "linkcomments_filter_enum_param"
+                },
+                {
+                    "name": "live_filter",
+                    "required": false,
+                    "type": "linkcomments_live_filter_enum_param"
+                },
+                {
+                    "name": "order",
+                    "required": false,
+                    "type": "linkcomments_order_enum_param"
+                },
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
             "method": "POST",
             "endpoint": "comments",
             "return": "Comment",
@@ -69,6 +96,24 @@
                     "name": "tracking",
                     "required": false,
                     "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "likes",
+            "return": "Profile",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "reactions",
+            "return": "Profile",
+            "params": [
+                {
+                    "name": "type",
+                    "required": false,
+                    "type": "linkreactions_type_enum_param"
                 }
             ]
         },

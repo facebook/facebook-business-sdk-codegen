@@ -184,6 +184,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "sponsor_tags",
+            "return": "Page",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "tags",
             "return": "TaggableSubject",
             "params": []

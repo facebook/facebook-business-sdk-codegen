@@ -407,6 +407,58 @@
         },
         {
             "method": "GET",
+            "endpoint": "app_insights",
+            "return": "InsightsQueryResult",
+            "params": [
+                {
+                    "name": "aggregateBy",
+                    "required": false,
+                    "type": "applicationapp_insights_aggregateBy_enum_param"
+                },
+                {
+                    "name": "breakdowns",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "ecosystem",
+                    "required": false,
+                    "type": "applicationapp_insights_ecosystem_enum_param"
+                },
+                {
+                    "name": "event_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "intervals_to_aggregate",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "metric_key",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "period",
+                    "required": false,
+                    "type": "applicationapp_insights_period_enum_param"
+                },
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "until",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "app_installed_groups",
             "return": "Group",
             "params": [

@@ -103,6 +103,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "edit_actions",
+            "return": "EditAction",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "insights",
             "return": "InsightsResult",
             "params": [
@@ -216,7 +222,19 @@
         },
         {
             "method": "GET",
+            "endpoint": "sponsor_tags",
+            "return": "Page",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "to",
+            "return": "Profile",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "with_tags",
             "return": "Profile",
             "params": []
         },

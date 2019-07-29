@@ -1,45 +1,6 @@
 {
     "apis": [
         {
-            "method": "DELETE",
-            "endpoint": "admins",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "admin_id",
-                    "required": true,
-                    "type": "int"
-                },
-                {
-                    "name": "trusted",
-                    "required": false,
-                    "type": "bool"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "admins",
-            "return": "User",
-            "params": [
-                {
-                    "name": "admin_id",
-                    "required": false,
-                    "type": "int"
-                },
-                {
-                    "name": "tasks",
-                    "required": false,
-                    "type": "list<pageadmins_tasks_enum_param>"
-                },
-                {
-                    "name": "trusted",
-                    "required": false,
-                    "type": "bool"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "ads_posts",
             "return": "PagePost",
@@ -282,65 +243,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "broadcast_messages",
-            "return": "Page",
-            "params": [
-                {
-                    "name": "custom_label_id",
-                    "required": false,
-                    "type": "int"
-                },
-                {
-                    "name": "message_creative_id",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "messaging_type",
-                    "required": false,
-                    "type": "pagebroadcast_messages_messaging_type_enum_param"
-                },
-                {
-                    "name": "notification_type",
-                    "required": false,
-                    "type": "pagebroadcast_messages_notification_type_enum_param"
-                },
-                {
-                    "name": "schedule_time",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "tag",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "targeting",
-                    "required": false,
-                    "type": "Object"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "broadcast_reach_estimations",
-            "return": "Page",
-            "params": [
-                {
-                    "name": "custom_label_id",
-                    "required": false,
-                    "type": "int"
-                },
-                {
-                    "name": "targeting",
-                    "required": false,
-                    "type": "Object"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "businessprojects",
             "return": "BusinessProject",
@@ -428,6 +330,12 @@
                     "type": "string"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "canvas_elements",
+            "return": "CanvasBodyElement",
+            "params": []
         },
         {
             "method": "POST",
@@ -666,6 +574,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "crosspost_whitelisted_pages",
+            "return": "Page",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "custom_labels",
             "return": "PageUserMessageThreadLabel",
             "params": []
@@ -708,6 +622,12 @@
                     "type": "pageevents_type_enum_param"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "featured_videos_collection",
+            "return": "AdVideo",
+            "params": []
         },
         {
             "method": "GET",
@@ -2777,6 +2697,12 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "product_catalogs",
+            "return": "ProductCatalog",
+            "params": []
+        },
+        {
             "method": "POST",
             "endpoint": "promotions",
             "return": "Object",
@@ -2860,6 +2786,23 @@
         },
         {
             "method": "GET",
+            "endpoint": "roles",
+            "return": "User",
+            "params": [
+                {
+                    "name": "include_deactivated",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "uid",
+                    "required": false,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "rtb_dynamic_posts",
             "return": "RTBDynamicPost",
             "params": []
@@ -2868,6 +2811,12 @@
             "method": "GET",
             "endpoint": "scheduled_posts",
             "return": "PagePost",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "screennames",
+            "return": "ScreenName",
             "params": []
         },
         {
@@ -2893,6 +2842,12 @@
                     "type": "Object"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "show_playlists",
+            "return": "VideoList",
+            "params": []
         },
         {
             "method": "DELETE",

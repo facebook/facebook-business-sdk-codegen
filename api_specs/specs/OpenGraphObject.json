@@ -2,6 +2,39 @@
     "apis": [
         {
             "method": "GET",
+            "endpoint": "comments",
+            "return": "Comment",
+            "params": [
+                {
+                    "name": "filter",
+                    "required": false,
+                    "type": "opengraphobjectcomments_filter_enum_param"
+                },
+                {
+                    "name": "live_filter",
+                    "required": false,
+                    "type": "opengraphobjectcomments_live_filter_enum_param"
+                },
+                {
+                    "name": "order",
+                    "required": false,
+                    "type": "opengraphobjectcomments_order_enum_param"
+                },
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "likes",
+            "return": "Profile",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "picture",
             "return": "ProfilePictureSource",
             "params": [
@@ -14,6 +47,18 @@
                     "name": "type",
                     "required": false,
                     "type": "opengraphobjectpicture_type_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "reactions",
+            "return": "Profile",
+            "params": [
+                {
+                    "name": "type",
+                    "required": false,
+                    "type": "opengraphobjectreactions_type_enum_param"
                 }
             ]
         },

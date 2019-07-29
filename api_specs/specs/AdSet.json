@@ -110,6 +110,18 @@
         },
         {
             "method": "GET",
+            "endpoint": "asyncadrequests",
+            "return": "AdAsyncRequest",
+            "params": [
+                {
+                    "name": "statuses",
+                    "required": false,
+                    "type": "list<adcampaignasyncadrequests_statuses_enum_param>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "copies",
             "return": "AdSet",
             "params": [
@@ -709,10 +721,6 @@
         {
             "name": "attribution_spec",
             "type": "list<AttributionSpec>"
-        },
-        {
-            "name": "best_creative",
-            "type": "AdDynamicCreative"
         },
         {
             "name": "bid_adjustments",

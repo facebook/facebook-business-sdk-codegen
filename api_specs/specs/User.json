@@ -420,6 +420,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "domains",
+            "return": "Domain",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "events",
             "return": "Event",
             "params": [
@@ -2296,6 +2302,18 @@
             "params": []
         },
         {
+            "method": "GET",
+            "endpoint": "rich_media_documents",
+            "return": "Canvas",
+            "params": [
+                {
+                    "name": "query",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "POST",
             "endpoint": "screennames",
             "return": "User",
@@ -2311,6 +2329,12 @@
                     "type": "string"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "session_keys",
+            "return": "PlatformSessionKey",
+            "params": []
         },
         {
             "method": "POST",

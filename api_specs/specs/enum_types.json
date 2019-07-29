@@ -2164,7 +2164,6 @@
             "CANDIDATE_VIDEOS",
             "CANVAS",
             "CFC_VIDEO",
-            "CIVIC_PROPOSAL_COVER_VIDEO",
             "CONTAINED_POST_ATTACHMENT",
             "CONTAINED_POST_AUDIO_BROADCAST",
             "CONTAINED_POST_BROADCAST",
@@ -3587,19 +3586,6 @@
         ]
     },
     {
-        "name": "adaccountusers_tasks_enum_param",
-        "node": "AdAccount",
-        "field_or_param": "tasks",
-        "values": [
-            "ADVERTISE",
-            "ANALYZE",
-            "CREATIVE",
-            "DRAFT",
-            "FB_EMPLOYEE_DSO_ADVERTISE",
-            "MANAGE"
-        ]
-    },
-    {
         "name": "adasyncrequestset_notification_mode",
         "node": "AdAsyncRequestSet",
         "field_or_param": "notification_mode",
@@ -3621,7 +3607,9 @@
             "INITIAL",
             "IN_PROGRESS",
             "PENDING_DEPENDENCY",
-            "SUCCESS"
+            "SUCCESS",
+            "USER_CANCELED",
+            "USER_CANCELED_DEPENDENCY"
         ]
     },
     {
@@ -3810,6 +3798,24 @@
             "this_year",
             "today",
             "yesterday"
+        ]
+    },
+    {
+        "name": "adcampaignasyncadrequests_statuses_enum_param",
+        "node": "AdAsyncRequest",
+        "field_or_param": "statuses",
+        "values": [
+            "CANCELED",
+            "CANCELED_DEPENDENCY",
+            "ERROR",
+            "ERROR_CONFLICTS",
+            "ERROR_DEPENDENCY",
+            "INITIAL",
+            "IN_PROGRESS",
+            "PENDING_DEPENDENCY",
+            "SUCCESS",
+            "USER_CANCELED",
+            "USER_CANCELED_DEPENDENCY"
         ]
     },
     {
@@ -4907,7 +4913,9 @@
             "event_source",
             "event_total_counts",
             "event_value_count",
+            "had_pii",
             "host",
+            "match_keys",
             "pixel_fire",
             "url",
             "url_by_rule"
@@ -5217,6 +5225,73 @@
             "APP_INDEXING",
             "BUTTON_SAMPLING",
             "PLUGIN"
+        ]
+    },
+    {
+        "name": "applicationapp_insights_aggregateBy_enum_param",
+        "node": "InsightsQueryResult",
+        "field_or_param": "aggregateBy",
+        "values": [
+            "AVERAGE_JOURNEY_LENGTH",
+            "CONVERTED_JOURNEY_PERCENT",
+            "COUNT",
+            "COUNT_IDENTIFIED_USERS",
+            "COUNT_PER_USER",
+            "DAU",
+            "EVENT_SOURCE_IDS",
+            "JOURNEY_CHANNEL_INCLUSION",
+            "JOURNEY_INCLUSION",
+            "MAU",
+            "MEDIAN_JOURNEY_LENGTH",
+            "MEDIAN_VALUE",
+            "MEDIAN_VALUE_PER_USER",
+            "OVERLAP",
+            "PERCENTILES_COUNT",
+            "PERCENTILES_USD_VALUE",
+            "PERCENTILES_VALUE",
+            "SCORE",
+            "SESSIONS_PER_JOURNEY",
+            "SESSION_BOUNCE_RATE",
+            "SUM",
+            "SUM_IDENTIFIED_USERS",
+            "SUM_PER_EVENT",
+            "TOPK",
+            "UNKNOWN_USERS",
+            "USD_SUM",
+            "USD_SUM_IDENTIFIED_USERS",
+            "USD_SUM_PER_EVENT",
+            "USD_SUM_PER_USER",
+            "USD_VALUE_PER_USER",
+            "USERS",
+            "USER_PROPERTY_USER_COUNT",
+            "VALUE_PER_USER",
+            "WAU"
+        ]
+    },
+    {
+        "name": "applicationapp_insights_ecosystem_enum_param",
+        "node": "InsightsQueryResult",
+        "field_or_param": "ecosystem",
+        "values": [
+            "GAME",
+            "NON_GAME"
+        ]
+    },
+    {
+        "name": "applicationapp_insights_period_enum_param",
+        "node": "InsightsQueryResult",
+        "field_or_param": "period",
+        "values": [
+            "daily",
+            "days_28",
+            "days_60",
+            "days_90",
+            "hourly",
+            "lifetime",
+            "mins_15",
+            "monthly",
+            "range",
+            "weekly"
         ]
     },
     {
@@ -6173,7 +6248,6 @@
             "CANDIDATE_VIDEOS",
             "CANVAS",
             "CFC_VIDEO",
-            "CIVIC_PROPOSAL_COVER_VIDEO",
             "CONTAINED_POST_ATTACHMENT",
             "CONTAINED_POST_AUDIO_BROADCAST",
             "CONTAINED_POST_BROADCAST",
@@ -7072,7 +7146,6 @@
             "CANDIDATE_VIDEOS",
             "CANVAS",
             "CFC_VIDEO",
-            "CIVIC_PROPOSAL_COVER_VIDEO",
             "CONTAINED_POST_ATTACHMENT",
             "CONTAINED_POST_AUDIO_BROADCAST",
             "CONTAINED_POST_BROADCAST",
@@ -7319,6 +7392,49 @@
             "OWNER_OR_COMMENTER",
             "SIDE_CONVERSATION",
             "SIDE_CONVERSATION_AND_POST_OWNER"
+        ]
+    },
+    {
+        "name": "linkcomments_filter_enum_param",
+        "node": "Comment",
+        "field_or_param": "filter",
+        "values": [
+            "stream",
+            "toplevel"
+        ]
+    },
+    {
+        "name": "linkcomments_live_filter_enum_param",
+        "node": "Comment",
+        "field_or_param": "live_filter",
+        "values": [
+            "filter_low_quality",
+            "no_filter"
+        ]
+    },
+    {
+        "name": "linkcomments_order_enum_param",
+        "node": "Comment",
+        "field_or_param": "order",
+        "values": [
+            "chronological",
+            "reverse_chronological"
+        ]
+    },
+    {
+        "name": "linkreactions_type_enum_param",
+        "node": "Profile",
+        "field_or_param": "type",
+        "values": [
+            "ANGRY",
+            "HAHA",
+            "LIKE",
+            "LOVE",
+            "NONE",
+            "PRIDE",
+            "SAD",
+            "THANKFUL",
+            "WOW"
         ]
     },
     {
@@ -7711,6 +7827,33 @@
         ]
     },
     {
+        "name": "opengraphobjectcomments_filter_enum_param",
+        "node": "Comment",
+        "field_or_param": "filter",
+        "values": [
+            "stream",
+            "toplevel"
+        ]
+    },
+    {
+        "name": "opengraphobjectcomments_live_filter_enum_param",
+        "node": "Comment",
+        "field_or_param": "live_filter",
+        "values": [
+            "filter_low_quality",
+            "no_filter"
+        ]
+    },
+    {
+        "name": "opengraphobjectcomments_order_enum_param",
+        "node": "Comment",
+        "field_or_param": "order",
+        "values": [
+            "chronological",
+            "reverse_chronological"
+        ]
+    },
+    {
         "name": "opengraphobjectpicture_type_enum_param",
         "node": "ProfilePictureSource",
         "field_or_param": "type",
@@ -7721,6 +7864,22 @@
             "small",
             "square",
             "thumbnail"
+        ]
+    },
+    {
+        "name": "opengraphobjectreactions_type_enum_param",
+        "node": "Profile",
+        "field_or_param": "type",
+        "values": [
+            "ANGRY",
+            "HAHA",
+            "LIKE",
+            "LOVE",
+            "NONE",
+            "PRIDE",
+            "SAD",
+            "THANKFUL",
+            "WOW"
         ]
     },
     {
@@ -7798,26 +7957,6 @@
         ]
     },
     {
-        "name": "pageadmins_tasks_enum_param",
-        "node": "User",
-        "field_or_param": "tasks",
-        "values": [
-            "ADVERTISE",
-            "ANALYZE",
-            "CREATE_CONTENT",
-            "MANAGE",
-            "MANAGE_JOBS",
-            "MANAGE_LEADS",
-            "MODERATE",
-            "MODERATE_COMMUNITY",
-            "PAGES_MESSAGING",
-            "PAGES_MESSAGING_SUBSCRIPTIONS",
-            "PLATFORM_MANAGE_PAGES",
-            "READ_PAGE_MAILBOXES",
-            "VIEW_MONETIZATION_INSIGHTS"
-        ]
-    },
-    {
         "name": "pageagencies_permitted_tasks_enum_param",
         "node": "Page",
         "field_or_param": "permitted_tasks",
@@ -7855,26 +7994,6 @@
             "PLATFORM_MANAGE_PAGES",
             "READ_PAGE_MAILBOXES",
             "VIEW_MONETIZATION_INSIGHTS"
-        ]
-    },
-    {
-        "name": "pagebroadcast_messages_messaging_type_enum_param",
-        "node": "Page",
-        "field_or_param": "messaging_type",
-        "values": [
-            "MESSAGE_TAG",
-            "RESPONSE",
-            "UPDATE"
-        ]
-    },
-    {
-        "name": "pagebroadcast_messages_notification_type_enum_param",
-        "node": "Page",
-        "field_or_param": "notification_type",
-        "values": [
-            "NO_PUSH",
-            "REGULAR",
-            "SILENT_PUSH"
         ]
     },
     {
@@ -8780,7 +8899,6 @@
             "CANDIDATE_VIDEOS",
             "CANVAS",
             "CFC_VIDEO",
-            "CIVIC_PROPOSAL_COVER_VIDEO",
             "CONTAINED_POST_ATTACHMENT",
             "CONTAINED_POST_AUDIO_BROADCAST",
             "CONTAINED_POST_BROADCAST",
@@ -9704,6 +9822,33 @@
         ]
     },
     {
+        "name": "rtbdynamicpostcomments_filter_enum_param",
+        "node": "Comment",
+        "field_or_param": "filter",
+        "values": [
+            "stream",
+            "toplevel"
+        ]
+    },
+    {
+        "name": "rtbdynamicpostcomments_live_filter_enum_param",
+        "node": "Comment",
+        "field_or_param": "live_filter",
+        "values": [
+            "filter_low_quality",
+            "no_filter"
+        ]
+    },
+    {
+        "name": "rtbdynamicpostcomments_order_enum_param",
+        "node": "Comment",
+        "field_or_param": "order",
+        "values": [
+            "chronological",
+            "reverse_chronological"
+        ]
+    },
+    {
         "name": "shadowigmediainsights_metric_enum_param",
         "node": "InstagramInsightsResult",
         "field_or_param": "metric",
@@ -10266,7 +10411,6 @@
             "CANDIDATE_VIDEOS",
             "CANVAS",
             "CFC_VIDEO",
-            "CIVIC_PROPOSAL_COVER_VIDEO",
             "CONTAINED_POST_ATTACHMENT",
             "CONTAINED_POST_AUDIO_BROADCAST",
             "CONTAINED_POST_BROADCAST",

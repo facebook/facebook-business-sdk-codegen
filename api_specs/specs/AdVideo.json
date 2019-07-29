@@ -273,6 +273,12 @@
             "params": []
         },
         {
+            "method": "GET",
+            "endpoint": "sponsor_tags",
+            "return": "Page",
+            "params": []
+        },
+        {
             "method": "POST",
             "endpoint": "summarizations",
             "return": "AdVideo",

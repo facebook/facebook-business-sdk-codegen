@@ -78,6 +78,12 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "views",
+            "return": "NativeOfferView",
+            "params": []
+        },
+        {
             "name": "#get",
             "method": "GET",
             "return": "NativeOffer",

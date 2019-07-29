@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "service_name",
+            "type": "string"
+        },
+        {
+            "name": "service_type",
+            "type": "string"
+        },
+        {
+            "name": "value",
+            "type": "string"
+        }
+    ]
+}

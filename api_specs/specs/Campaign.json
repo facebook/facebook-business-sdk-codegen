@@ -1,6 +1,12 @@
 {
     "apis": [
         {
+            "method": "GET",
+            "endpoint": "ad_studies",
+            "return": "AdStudy",
+            "params": []
+        },
+        {
             "method": "DELETE",
             "endpoint": "adlabels",
             "return": "Object",
