@@ -1696,6 +1696,12 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "affectedadsets",
+            "return": "AdSet",
+            "params": []
+        },
+        {
             "method": "DELETE",
             "endpoint": "agencies",
             "return": "Object",
@@ -1902,6 +1908,12 @@
                     "type": "file"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "brand_audiences",
+            "return": "BrandAudience",
+            "params": []
         },
         {
             "method": "GET",
@@ -2481,6 +2493,23 @@
                 {
                     "name": "type",
                     "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "emailimport",
+            "return": "EmailImport",
+            "params": [
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "third_party_data",
+                    "required": true,
                     "type": "string"
                 }
             ]

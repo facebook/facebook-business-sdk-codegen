@@ -2,6 +2,14 @@
     "apis": [],
     "fields": [
         {
+            "name": "are_app_events_unavailable",
+            "type": "bool"
+        },
+        {
+            "name": "business",
+            "type": "Business"
+        },
+        {
             "name": "has_insight_permission",
             "type": "bool"
         },

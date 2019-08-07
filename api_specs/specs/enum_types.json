@@ -710,7 +710,9 @@
         "field_or_param": "status",
         "values": [
             "ACTIVE",
-            "DELETED"
+            "DELETED",
+            "IN_PROCESS",
+            "WITH_ISSUES"
         ]
     },
     {
@@ -802,6 +804,7 @@
         "values": [
             "CHANGE_BID",
             "CHANGE_BUDGET",
+            "CHANGE_CAMPAIGN_BUDGET",
             "NOTIFICATION",
             "PAUSE",
             "PING_ENDPOINT",
@@ -918,6 +921,7 @@
             "ACTIVE",
             "ARCHIVED",
             "DELETED",
+            "IN_PROCESS",
             "PAUSED",
             "WITH_ISSUES"
         ]
@@ -999,6 +1003,7 @@
             "CAMPAIGN_PAUSED",
             "DELETED",
             "DISAPPROVED",
+            "IN_PROCESS",
             "PAUSED",
             "PENDING_BILLING_INFO",
             "PENDING_REVIEW",
@@ -1114,6 +1119,7 @@
             "ACTIVE",
             "ARCHIVED",
             "DELETED",
+            "IN_PROCESS",
             "PAUSED",
             "WITH_ISSUES"
         ]
@@ -1719,6 +1725,7 @@
         "values": [
             "APP",
             "APPLINKS_AUTOMATIC",
+            "FACEBOOK",
             "MESSENGER",
             "UNDEFINED",
             "WEBSITE"
@@ -2119,6 +2126,7 @@
             "CAMPAIGN_PAUSED",
             "DELETED",
             "DISAPPROVED",
+            "IN_PROCESS",
             "PAUSED",
             "PENDING_BILLING_INFO",
             "PENDING_REVIEW",
@@ -2309,7 +2317,8 @@
             "DRAFT",
             "INLINE_CREATED",
             "PUBLISHED",
-            "SCHEDULED"
+            "SCHEDULED",
+            "SCHEDULED_RECURRING"
         ]
     },
     {
@@ -2436,6 +2445,7 @@
             "CAMPAIGN_PAUSED",
             "DELETED",
             "DISAPPROVED",
+            "IN_PROCESS",
             "PAUSED",
             "PENDING_BILLING_INFO",
             "PENDING_REVIEW",
@@ -3672,6 +3682,7 @@
         "values": [
             "APP",
             "APPLINKS_AUTOMATIC",
+            "FACEBOOK",
             "MESSENGER",
             "UNDEFINED",
             "WEBSITE"
@@ -3855,6 +3866,7 @@
             "CAMPAIGN_PAUSED",
             "DELETED",
             "DISAPPROVED",
+            "IN_PROCESS",
             "PAUSED",
             "PENDING_BILLING_INFO",
             "PENDING_REVIEW",
@@ -4052,6 +4064,7 @@
             "CAMPAIGN_PAUSED",
             "DELETED",
             "DISAPPROVED",
+            "IN_PROCESS",
             "PAUSED",
             "PENDING_BILLING_INFO",
             "PENDING_REVIEW",
@@ -4096,6 +4109,7 @@
             "CAMPAIGN_PAUSED",
             "DELETED",
             "DISAPPROVED",
+            "IN_PROCESS",
             "PAUSED",
             "PENDING_BILLING_INFO",
             "PENDING_REVIEW",
@@ -4377,7 +4391,9 @@
         "field_or_param": "status",
         "values": [
             "ACTIVE",
-            "DELETED"
+            "DELETED",
+            "IN_PROCESS",
+            "WITH_ISSUES"
         ]
     },
     {
@@ -5062,7 +5078,8 @@
             "DRAFT",
             "INLINE_CREATED",
             "PUBLISHED",
-            "SCHEDULED"
+            "SCHEDULED",
+            "SCHEDULED_RECURRING"
         ]
     },
     {
@@ -5846,6 +5863,17 @@
         ]
     },
     {
+        "name": "businessinitiated_audience_sharing_requests_request_status_enum_param",
+        "node": "BusinessAssetSharingAgreement",
+        "field_or_param": "request_status",
+        "values": [
+            "APPROVE",
+            "DECLINE",
+            "EXPIRED",
+            "IN_PROGRESS"
+        ]
+    },
+    {
         "name": "businessinitiated_sharing_agreements_request_status_enum_param",
         "node": "BusinessAgreement",
         "field_or_param": "request_status",
@@ -5982,6 +6010,17 @@
             "normal",
             "small",
             "square"
+        ]
+    },
+    {
+        "name": "businessreceived_audience_sharing_requests_request_status_enum_param",
+        "node": "BusinessAssetSharingAgreement",
+        "field_or_param": "request_status",
+        "values": [
+            "APPROVE",
+            "DECLINE",
+            "EXPIRED",
+            "IN_PROGRESS"
         ]
     },
     {
@@ -6393,7 +6432,8 @@
             "DRAFT",
             "INLINE_CREATED",
             "PUBLISHED",
-            "SCHEDULED"
+            "SCHEDULED",
+            "SCHEDULED_RECURRING"
         ]
     },
     {
@@ -6615,7 +6655,8 @@
             "DRAFT",
             "INLINE_CREATED",
             "PUBLISHED",
-            "SCHEDULED"
+            "SCHEDULED",
+            "SCHEDULED_RECURRING"
         ]
     },
     {
@@ -6689,7 +6730,8 @@
             "DRAFT",
             "INLINE_CREATED",
             "PUBLISHED",
-            "SCHEDULED"
+            "SCHEDULED",
+            "SCHEDULED_RECURRING"
         ]
     },
     {
@@ -6913,7 +6955,8 @@
             "DRAFT",
             "INLINE_CREATED",
             "PUBLISHED",
-            "SCHEDULED"
+            "SCHEDULED",
+            "SCHEDULED_RECURRING"
         ]
     },
     {
@@ -7111,7 +7154,8 @@
             "DRAFT",
             "INLINE_CREATED",
             "PUBLISHED",
-            "SCHEDULED"
+            "SCHEDULED",
+            "SCHEDULED_RECURRING"
         ]
     },
     {
@@ -7300,7 +7344,8 @@
             "DRAFT",
             "INLINE_CREATED",
             "PUBLISHED",
-            "SCHEDULED"
+            "SCHEDULED",
+            "SCHEDULED_RECURRING"
         ]
     },
     {
@@ -8090,6 +8135,83 @@
         ]
     },
     {
+        "name": "pagecalltoaction_android_destination_type",
+        "node": "PageCallToAction",
+        "field_or_param": "android_destination_type",
+        "values": [
+            "APP_DEEPLINK",
+            "EMAIL",
+            "FACEBOOK_APP",
+            "MESSENGER",
+            "NONE",
+            "PHONE_CALL",
+            "SHOP_ON_FACEBOOK",
+            "WEBSITE"
+        ]
+    },
+    {
+        "name": "pagecalltoaction_iphone_destination_type",
+        "node": "PageCallToAction",
+        "field_or_param": "iphone_destination_type",
+        "values": [
+            "APP_DEEPLINK",
+            "EMAIL",
+            "FACEBOOK_APP",
+            "MESSENGER",
+            "NONE",
+            "PHONE_CALL",
+            "SHOP_ON_FACEBOOK",
+            "WEBSITE"
+        ]
+    },
+    {
+        "name": "pagecalltoaction_type",
+        "node": "PageCallToAction",
+        "field_or_param": "type",
+        "values": [
+            "BOOK_APPOINTMENT",
+            "BOOK_NOW",
+            "BUY_TICKETS",
+            "CALL_NOW",
+            "CHARITY_DONATE",
+            "CONTACT_US",
+            "DONATE_NOW",
+            "EMAIL",
+            "GET_DIRECTIONS",
+            "GET_OFFER",
+            "GET_OFFER_VIEW",
+            "INTERESTED",
+            "LEARN_MORE",
+            "LISTEN",
+            "LOCAL_DEV_PLATFORM",
+            "MESSAGE",
+            "OPEN_APP",
+            "PLAY_MUSIC",
+            "PLAY_NOW",
+            "REQUEST_APPOINTMENT",
+            "REQUEST_QUOTE",
+            "SHOP_NOW",
+            "SHOP_ON_FACEBOOK",
+            "SIGN_UP",
+            "VISIT_GROUP",
+            "WATCH_NOW",
+            "WOODHENGE_SUPPORT"
+        ]
+    },
+    {
+        "name": "pagecalltoaction_web_destination_type",
+        "node": "PageCallToAction",
+        "field_or_param": "web_destination_type",
+        "values": [
+            "BECOME_SUPPORTER",
+            "EMAIL",
+            "MESSENGER",
+            "NONE",
+            "SHOP_ON_FACEBOOK",
+            "WEBSITE"
+        ]
+    },
+    {
         "name": "pagecopyright_manual_claims_action_enum_param",
         "node": "VideoCopyrightMatch",
         "field_or_param": "action",
@@ -8238,7 +8360,8 @@
             "DRAFT",
             "INLINE_CREATED",
             "PUBLISHED",
-            "SCHEDULED"
+            "SCHEDULED",
+            "SCHEDULED_RECURRING"
         ]
     },
     {
@@ -8594,7 +8717,8 @@
             "DRAFT",
             "INLINE_CREATED",
             "PUBLISHED",
-            "SCHEDULED"
+            "SCHEDULED",
+            "SCHEDULED_RECURRING"
         ]
     },
     {
@@ -9053,7 +9177,8 @@
             "DRAFT",
             "INLINE_CREATED",
             "PUBLISHED",
-            "SCHEDULED"
+            "SCHEDULED",
+            "SCHEDULED_RECURRING"
         ]
     },
     {
@@ -9497,6 +9622,7 @@
         "node": "ProductFeed",
         "field_or_param": "override_type",
         "values": [
+            "CATALOG_SEGMENT_CUSTOMIZE_DEFAULT",
             "COUNTRY",
             "LANGUAGE"
         ]
@@ -10074,7 +10200,8 @@
             "DRAFT",
             "INLINE_CREATED",
             "PUBLISHED",
-            "SCHEDULED"
+            "SCHEDULED",
+            "SCHEDULED_RECURRING"
         ]
     },
     {
@@ -10278,7 +10405,8 @@
             "DRAFT",
             "INLINE_CREATED",
             "PUBLISHED",
-            "SCHEDULED"
+            "SCHEDULED",
+            "SCHEDULED_RECURRING"
         ]
     },
     {
@@ -10565,7 +10693,8 @@
             "DRAFT",
             "INLINE_CREATED",
             "PUBLISHED",
-            "SCHEDULED"
+            "SCHEDULED",
+            "SCHEDULED_RECURRING"
         ]
     },
     {

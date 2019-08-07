@@ -870,6 +870,23 @@
         },
         {
             "method": "GET",
+            "endpoint": "initiated_audience_sharing_requests",
+            "return": "BusinessAssetSharingAgreement",
+            "params": [
+                {
+                    "name": "recipient_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "request_status",
+                    "required": false,
+                    "type": "businessinitiated_audience_sharing_requests_request_status_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "initiated_sharing_agreements",
             "return": "BusinessAgreement",
             "params": [
@@ -1299,6 +1316,23 @@
                     "name": "partner_id",
                     "required": false,
                     "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "received_audience_sharing_requests",
+            "return": "BusinessAssetSharingAgreement",
+            "params": [
+                {
+                    "name": "initiator_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "request_status",
+                    "required": false,
+                    "type": "businessreceived_audience_sharing_requests_request_status_enum_param"
                 }
             ]
         },

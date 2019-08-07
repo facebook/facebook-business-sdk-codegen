@@ -1,0 +1,24 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "WhatsAppBusinessProfile",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name_verification",
+            "type": "Object"
+        },
+        {
+            "name": "verified_name",
+            "type": "string"
+        }
+    ]
+}

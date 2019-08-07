@@ -1,0 +1,48 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "BusinessAssetSharingAgreement",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "BusinessAssetSharingAgreement",
+            "params": [
+                {
+                    "name": "request_response",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "initiator",
+            "type": "Business"
+        },
+        {
+            "name": "recipient",
+            "type": "Business"
+        },
+        {
+            "name": "relationship_type",
+            "type": "list<string>"
+        },
+        {
+            "name": "request_status",
+            "type": "string"
+        },
+        {
+            "name": "request_type",
+            "type": "string"
+        }
+    ]
+}

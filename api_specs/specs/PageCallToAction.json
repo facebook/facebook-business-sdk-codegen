@@ -1,10 +1,93 @@
 {
     "apis": [
         {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
             "name": "#get",
             "method": "GET",
             "return": "PageCallToAction",
             "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "PageCallToAction",
+            "params": [
+                {
+                    "name": "android_app_id",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "android_deeplink",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "android_destination_type",
+                    "required": false,
+                    "type": "pagecalltoaction_android_destination_type"
+                },
+                {
+                    "name": "android_package_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "android_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "email_address",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "intl_number_with_plus",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "iphone_app_id",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "iphone_deeplink",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "iphone_destination_type",
+                    "required": false,
+                    "type": "pagecalltoaction_iphone_destination_type"
+                },
+                {
+                    "name": "iphone_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "type",
+                    "required": false,
+                    "type": "pagecalltoaction_type"
+                },
+                {
+                    "name": "web_destination_type",
+                    "required": false,
+                    "type": "pagecalltoaction_web_destination_type"
+                },
+                {
+                    "name": "web_url",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
         }
     ],
     "fields": [

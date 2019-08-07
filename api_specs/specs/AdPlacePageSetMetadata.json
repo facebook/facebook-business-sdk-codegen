@@ -6,6 +6,10 @@
             "type": "Object"
         },
         {
+            "name": "custom",
+            "type": "Object"
+        },
+        {
             "name": "extra_data",
             "type": "string"
         },

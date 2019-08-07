@@ -255,6 +255,12 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "call_to_actions",
+            "return": "PageCallToAction",
+            "params": []
+        },
+        {
             "method": "POST",
             "endpoint": "call_to_actions",
             "return": "PageCallToAction",
@@ -2653,6 +2659,11 @@
                     "type": "int"
                 },
                 {
+                    "name": "suppress_stories",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "width",
                     "required": false,
                     "type": "unsigned int"
@@ -2668,6 +2679,12 @@
                     "type": "unsigned int"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "place_topics",
+            "return": "PlaceTopic",
+            "params": []
         },
         {
             "method": "GET",
@@ -3048,6 +3065,18 @@
                     "name": "psid",
                     "required": true,
                     "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "upcoming_changes",
+            "return": "PageUpcomingChange",
+            "params": [
+                {
+                    "name": "include_inactive",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         },

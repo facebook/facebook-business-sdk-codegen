@@ -39,6 +39,10 @@
         {
             "name": "proposed_value",
             "type": "string"
+        },
+        {
+            "name": "upcoming_change_info",
+            "type": "PageUpcomingChange"
         }
     ]
 }

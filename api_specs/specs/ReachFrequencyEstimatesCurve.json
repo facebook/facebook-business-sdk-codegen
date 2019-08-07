@@ -6,10 +6,6 @@
             "type": "list<int>"
         },
         {
-            "name": "click",
-            "type": "list<int>"
-        },
-        {
             "name": "conversion",
             "type": "list<int>"
         },
