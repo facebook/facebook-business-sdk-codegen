@@ -57,7 +57,17 @@ import com.facebook.ads.sdk.APIException.MalformedResponseException;
 public class {{name:pascal_case}} extends APINode {
   {{#fields}}
   {{^is_creation_field}}
+  {{#cls_is_Campaign}}
+  {{#is_id_field}}
+  @SerializedName(value="id", alternate={"copied_campaign_id"})
+  {{/is_id_field}}
+  {{^is_id_field}}
   @SerializedName("{{api_name}}")
+  {{/is_id_field}}
+  {{/cls_is_Campaign}}
+  {{^cls_is_Campaign}}
+  @SerializedName("{{api_name}}")
+  {{/cls_is_Campaign}}
   private {{{type:java}}}{{^type:java}}JsonElement{{/type:java}} m{{name:pascal_case}} = null;
   {{/is_creation_field}}
   {{/fields}}
