@@ -2427,7 +2427,7 @@
                 },
                 {
                     "name": "custom_event_type",
-                    "required": true,
+                    "required": false,
                     "type": "adaccountcustomconversions_custom_event_type_enum_param"
                 },
                 {

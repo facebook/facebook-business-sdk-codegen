@@ -29,6 +29,10 @@
             "type": "string"
         },
         {
+            "name": "match_rule",
+            "type": "VideoCopyrightRule"
+        },
+        {
             "name": "ownership_countries",
             "type": "list<string>"
         },

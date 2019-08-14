@@ -1787,6 +1787,23 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "media_fingerprints",
+            "return": "MediaFingerprint",
+            "params": [
+                {
+                    "name": "fingerprint_validity",
+                    "required": false,
+                    "type": "pagemedia_fingerprints_fingerprint_validity_enum_param"
+                },
+                {
+                    "name": "universal_content_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "POST",
             "endpoint": "media_fingerprints",
             "return": "MediaFingerprint",
@@ -2915,6 +2932,43 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "tabs",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "app_id",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "custom_image_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "custom_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "is_non_connection_landing_tab",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "position",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "tab",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "tagged",
             "return": "PagePost",
@@ -3077,6 +3131,23 @@
                     "name": "include_inactive",
                     "required": false,
                     "type": "bool"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "video_copyright_rules",
+            "return": "VideoCopyrightRule",
+            "params": [
+                {
+                    "name": "selected_rule_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "source",
+                    "required": false,
+                    "type": "pagevideo_copyright_rules_source_enum_param"
                 }
             ]
         },

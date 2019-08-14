@@ -139,7 +139,7 @@
         },
         {
             "name": "excluded_custom_audiences",
-            "type": "list<IDName>"
+            "type": "list<RawCustomAudience>"
         },
         {
             "name": "excluded_dynamic_audience_ids",

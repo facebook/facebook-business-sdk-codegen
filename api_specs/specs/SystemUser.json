@@ -8,6 +8,18 @@
         },
         {
             "method": "GET",
+            "endpoint": "assigned_business_asset_groups",
+            "return": "BusinessAssetGroup",
+            "params": [
+                {
+                    "name": "contained_asset_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "assigned_pages",
             "return": "Page",
             "params": []

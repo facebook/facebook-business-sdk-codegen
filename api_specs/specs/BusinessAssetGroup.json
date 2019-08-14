@@ -1,0 +1,334 @@
+{
+    "apis": [
+        {
+            "method": "DELETE",
+            "endpoint": "assigned_users",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "user",
+                    "required": true,
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "assigned_users",
+            "return": "AssignedUser",
+            "params": [
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "assigned_users",
+            "return": "BusinessAssetGroup",
+            "params": [
+                {
+                    "name": "adaccount_tasks",
+                    "required": false,
+                    "type": "list<businessassetgroupassigned_users_adaccount_tasks_enum_param>"
+                },
+                {
+                    "name": "offline_conversion_data_set_tasks",
+                    "required": false,
+                    "type": "list<businessassetgroupassigned_users_offline_conversion_data_set_tasks_enum_param>"
+                },
+                {
+                    "name": "page_tasks",
+                    "required": false,
+                    "type": "list<businessassetgroupassigned_users_page_tasks_enum_param>"
+                },
+                {
+                    "name": "pixel_tasks",
+                    "required": false,
+                    "type": "list<businessassetgroupassigned_users_pixel_tasks_enum_param>"
+                },
+                {
+                    "name": "user",
+                    "required": true,
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "contained_adaccounts",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "asset_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "contained_adaccounts",
+            "return": "AdAccount",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "contained_adaccounts",
+            "return": "BusinessAssetGroup",
+            "params": [
+                {
+                    "name": "asset_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "contained_applications",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "asset_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "contained_applications",
+            "return": "Application",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "contained_applications",
+            "return": "BusinessAssetGroup",
+            "params": [
+                {
+                    "name": "asset_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "contained_custom_conversions",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "asset_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "contained_custom_conversions",
+            "return": "CustomConversion",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "contained_custom_conversions",
+            "return": "BusinessAssetGroup",
+            "params": [
+                {
+                    "name": "asset_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "contained_instagram_accounts",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "asset_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "contained_instagram_accounts",
+            "return": "InstagramUser",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "contained_instagram_accounts",
+            "return": "BusinessAssetGroup",
+            "params": [
+                {
+                    "name": "asset_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "contained_offline_conversion_data_sets",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "asset_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "contained_offline_conversion_data_sets",
+            "return": "OfflineConversionDataSet",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "contained_offline_conversion_data_sets",
+            "return": "BusinessAssetGroup",
+            "params": [
+                {
+                    "name": "asset_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "contained_pages",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "asset_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "contained_pages",
+            "return": "Page",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "contained_pages",
+            "return": "BusinessAssetGroup",
+            "params": [
+                {
+                    "name": "asset_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "contained_pixels",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "asset_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "contained_pixels",
+            "return": "AdsPixel",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "contained_pixels",
+            "return": "BusinessAssetGroup",
+            "params": [
+                {
+                    "name": "asset_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "contained_product_catalogs",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "asset_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "contained_product_catalogs",
+            "return": "ProductCatalog",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "contained_product_catalogs",
+            "return": "BusinessAssetGroup",
+            "params": [
+                {
+                    "name": "asset_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "BusinessAssetGroup",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "BusinessAssetGroup",
+            "params": [
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        }
+    ]
+}

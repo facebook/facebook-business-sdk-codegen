@@ -66,6 +66,38 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "events",
+            "return": "AdsPixel",
+            "params": [
+                {
+                    "name": "agent",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "data",
+                    "required": true,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "test_event_code",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "trace",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "upload_tag",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "DELETE",
             "endpoint": "shared_accounts",
             "return": "Object",

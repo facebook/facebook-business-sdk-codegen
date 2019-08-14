@@ -511,6 +511,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "business_asset_groups",
+            "return": "BusinessAssetGroup",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "business_invoices",
             "return": "OracleTransaction",
             "params": [

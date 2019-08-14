@@ -2192,6 +2192,7 @@
             "FACECAST_DVR",
             "FUNDRAISER_COVER_VIDEO",
             "GAME_CLIP",
+            "GEMSTONE",
             "GOODWILL_ANNIVERSARY_DEPRECATED",
             "GOODWILL_ANNIVERSARY_PROMOTION_DEPRECATED",
             "GOODWILL_VIDEO_CONTAINED_SHARE",
@@ -5745,6 +5746,58 @@
         ]
     },
     {
+        "name": "businessassetgroupassigned_users_adaccount_tasks_enum_param",
+        "node": "BusinessAssetGroup",
+        "field_or_param": "adaccount_tasks",
+        "values": [
+            "ADVERTISE",
+            "ANALYZE",
+            "CREATIVE",
+            "DRAFT",
+            "FB_EMPLOYEE_DSO_ADVERTISE",
+            "MANAGE"
+        ]
+    },
+    {
+        "name": "businessassetgroupassigned_users_offline_conversion_data_set_tasks_enum_param",
+        "node": "BusinessAssetGroup",
+        "field_or_param": "offline_conversion_data_set_tasks",
+        "values": [
+            "ADVERTISE",
+            "MANAGE",
+            "UPLOAD"
+        ]
+    },
+    {
+        "name": "businessassetgroupassigned_users_page_tasks_enum_param",
+        "node": "BusinessAssetGroup",
+        "field_or_param": "page_tasks",
+        "values": [
+            "ADVERTISE",
+            "ANALYZE",
+            "CREATE_CONTENT",
+            "MANAGE",
+            "MANAGE_JOBS",
+            "MANAGE_LEADS",
+            "MODERATE",
+            "MODERATE_COMMUNITY",
+            "PAGES_MESSAGING",
+            "PAGES_MESSAGING_SUBSCRIPTIONS",
+            "PLATFORM_MANAGE_PAGES",
+            "READ_PAGE_MAILBOXES",
+            "VIEW_MONETIZATION_INSIGHTS"
+        ]
+    },
+    {
+        "name": "businessassetgroupassigned_users_pixel_tasks_enum_param",
+        "node": "BusinessAssetGroup",
+        "field_or_param": "pixel_tasks",
+        "values": [
+            "ANALYZE",
+            "EDIT"
+        ]
+    },
+    {
         "name": "businessbusiness_invoices_type_enum_param",
         "node": "OracleTransaction",
         "field_or_param": "type",
@@ -6307,6 +6360,7 @@
             "FACECAST_DVR",
             "FUNDRAISER_COVER_VIDEO",
             "GAME_CLIP",
+            "GEMSTONE",
             "GOODWILL_ANNIVERSARY_DEPRECATED",
             "GOODWILL_ANNIVERSARY_PROMOTION_DEPRECATED",
             "GOODWILL_VIDEO_CONTAINED_SHARE",
@@ -7210,6 +7264,7 @@
             "FACECAST_DVR",
             "FUNDRAISER_COVER_VIDEO",
             "GAME_CLIP",
+            "GEMSTONE",
             "GOODWILL_ANNIVERSARY_DEPRECATED",
             "GOODWILL_ANNIVERSARY_PROMOTION_DEPRECATED",
             "GOODWILL_VIDEO_CONTAINED_SHARE",
@@ -8572,6 +8627,16 @@
         ]
     },
     {
+        "name": "pagemedia_fingerprints_fingerprint_validity_enum_param",
+        "node": "MediaFingerprint",
+        "field_or_param": "fingerprint_validity",
+        "values": [
+            "EXPIRED",
+            "EXPIRING",
+            "VALID"
+        ]
+    },
+    {
         "name": "pagemessages_messaging_type_enum_param",
         "node": "Page",
         "field_or_param": "messaging_type",
@@ -8984,6 +9049,16 @@
         ]
     },
     {
+        "name": "pagevideo_copyright_rules_source_enum_param",
+        "node": "VideoCopyrightRule",
+        "field_or_param": "source",
+        "values": [
+            "MATCH_SETTINGS_DIALOG",
+            "RULES_SELECTOR",
+            "RULES_TAB"
+        ]
+    },
+    {
         "name": "pagevideo_copyrights_content_category_enum_param",
         "node": "VideoCopyright",
         "field_or_param": "content_category",
@@ -9043,6 +9118,7 @@
             "FACECAST_DVR",
             "FUNDRAISER_COVER_VIDEO",
             "GAME_CLIP",
+            "GEMSTONE",
             "GOODWILL_ANNIVERSARY_DEPRECATED",
             "GOODWILL_ANNIVERSARY_PROMOTION_DEPRECATED",
             "GOODWILL_VIDEO_CONTAINED_SHARE",
@@ -10559,6 +10635,7 @@
             "FACECAST_DVR",
             "FUNDRAISER_COVER_VIDEO",
             "GAME_CLIP",
+            "GEMSTONE",
             "GOODWILL_ANNIVERSARY_DEPRECATED",
             "GOODWILL_ANNIVERSARY_PROMOTION_DEPRECATED",
             "GOODWILL_VIDEO_CONTAINED_SHARE",

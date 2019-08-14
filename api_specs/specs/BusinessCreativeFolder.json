@@ -116,6 +116,10 @@
             "type": "datetime"
         },
         {
+            "name": "description",
+            "type": "string"
+        },
+        {
             "name": "id",
             "type": "string"
         },
