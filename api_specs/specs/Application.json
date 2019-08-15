@@ -707,23 +707,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "instruments",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "crash_reports",
-                    "required": false,
-                    "type": "list<map>"
-                },
-                {
-                    "name": "error_reports",
-                    "required": false,
-                    "type": "list<map>"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "ios_dialog_configs",
             "return": "ApplicationDialogConfig",
