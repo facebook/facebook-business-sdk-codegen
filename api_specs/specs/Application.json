@@ -532,6 +532,18 @@
             ]
         },
         {
+            "method": "DELETE",
+            "endpoint": "banned",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "uids",
+                    "required": true,
+                    "type": "list<int>"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "banned",
             "return": "User",
@@ -703,6 +715,98 @@
                     "name": "full_app_indexing_info_classes",
                     "required": true,
                     "type": "list<map>"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "insights_push_schedule",
+            "return": "AdsInsightsPushSchedule",
+            "params": [
+                {
+                    "name": "ad_account_ids",
+                    "required": true,
+                    "type": "list"
+                },
+                {
+                    "name": "breakdowns",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "date_preset",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "level",
+                    "required": false,
+                    "type": "applicationinsights_push_schedule_level_enum_param"
+                },
+                {
+                    "name": "metrics",
+                    "required": true,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "object_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "owner_id",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "schedule",
+                    "required": true,
+                    "type": "applicationinsights_push_schedule_schedule_enum_param"
+                },
+                {
+                    "name": "status",
+                    "required": false,
+                    "type": "applicationinsights_push_schedule_status_enum_param"
+                },
+                {
+                    "name": "time_created",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "time_increment",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "time_last_fail",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "time_last_run",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "time_last_success",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "time_start",
+                    "required": true,
+                    "type": "datetime"
+                },
+                {
+                    "name": "time_stop",
+                    "required": true,
+                    "type": "datetime"
+                },
+                {
+                    "name": "time_updated",
+                    "required": false,
+                    "type": "datetime"
                 }
             ]
         },

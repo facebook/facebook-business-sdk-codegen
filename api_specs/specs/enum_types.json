@@ -920,6 +920,7 @@
         "values": [
             "ACTIVE",
             "ARCHIVED",
+            "CAMPAIGN_PAUSED",
             "DELETED",
             "IN_PROCESS",
             "PAUSED",
@@ -5379,6 +5380,39 @@
             "declined",
             "maybe",
             "not_replied"
+        ]
+    },
+    {
+        "name": "applicationinsights_push_schedule_level_enum_param",
+        "node": "AdsInsightsPushSchedule",
+        "field_or_param": "level",
+        "values": [
+            "ACCOUNT",
+            "AD",
+            "ADSET",
+            "CAMPAIGN"
+        ]
+    },
+    {
+        "name": "applicationinsights_push_schedule_schedule_enum_param",
+        "node": "AdsInsightsPushSchedule",
+        "field_or_param": "schedule",
+        "values": [
+            "DAILY",
+            "FINE_15_MIN",
+            "FINE_5_MIN",
+            "MONTHLY",
+            "WEEKLY"
+        ]
+    },
+    {
+        "name": "applicationinsights_push_schedule_status_enum_param",
+        "node": "AdsInsightsPushSchedule",
+        "field_or_param": "status",
+        "values": [
+            "ACTIVE",
+            "DISABLED",
+            "ERROR"
         ]
     },
     {
@@ -10163,6 +10197,14 @@
             "RECORDED_VIDEO",
             "SPEAKING_STICKER",
             "VIDEO_MAIL"
+        ]
+    },
+    {
+        "name": "url_scopes",
+        "node": "URL",
+        "field_or_param": "scopes",
+        "values": [
+            "NEWS_TAB"
         ]
     },
     {

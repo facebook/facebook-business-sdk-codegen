@@ -12,6 +12,11 @@
             "return": "URL",
             "params": [
                 {
+                    "name": "blacklist",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "hmac",
                     "required": false,
                     "type": "string"
@@ -20,6 +25,11 @@
                     "name": "locale",
                     "required": false,
                     "type": "list"
+                },
+                {
+                    "name": "scopes",
+                    "required": false,
+                    "type": "list<url_scopes>"
                 },
                 {
                     "name": "ts",
@@ -56,6 +66,10 @@
         },
         {
             "name": "ownership_permissions",
+            "type": "Object"
+        },
+        {
+            "name": "scopes",
             "type": "Object"
         }
     ]

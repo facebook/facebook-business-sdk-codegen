@@ -108,11 +108,6 @@
             "return": "AdAccount",
             "params": [
                 {
-                    "name": "billing_address_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "currency",
                     "required": true,
                     "type": "string"
@@ -148,11 +143,6 @@
                     "type": "bool"
                 },
                 {
-                    "name": "liable_address_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "media_agency",
                     "required": true,
                     "type": "string"
@@ -169,11 +159,6 @@
                 },
                 {
                     "name": "po_number",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "sold_to_address_id",
                     "required": false,
                     "type": "string"
                 },
