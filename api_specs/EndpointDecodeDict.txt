@@ -186,6 +186,7 @@ mmp=1
 mockups=1
 moderators=1
 moments=1
+move=1
 movies=1
 music=1
 mutual=1
