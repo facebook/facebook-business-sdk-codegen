@@ -1072,38 +1072,6 @@
         },
         {
             "method": "POST",
-            "endpoint": "ozone_release",
-            "return": "OzoneRelease",
-            "params": [
-                {
-                    "name": "auto_push_to_prod",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "changelog",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "channel_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "release_name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "rollout_percentage",
-                    "required": false,
-                    "type": "float"
-                }
-            ]
-        },
-        {
-            "method": "POST",
             "endpoint": "page_activities",
             "return": "Application",
             "params": [
@@ -1334,38 +1302,6 @@
                     "name": "verify_token",
                     "required": false,
                     "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "subscriptions_sample",
-            "return": "Application",
-            "params": [
-                {
-                    "name": "custom_fields",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "field",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "object",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "object_id",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "stress_run",
-                    "required": false,
-                    "type": "unsigned int"
                 }
             ]
         },

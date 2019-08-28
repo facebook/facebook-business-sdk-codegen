@@ -205,6 +205,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "launch_date",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "manufacturer_part_number",
                     "required": false,
                     "type": "string"

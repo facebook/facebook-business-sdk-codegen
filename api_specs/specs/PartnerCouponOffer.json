@@ -1,0 +1,36 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "PartnerCouponOffer",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "claim_by",
+            "type": "datetime"
+        },
+        {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "expiration_days",
+            "type": "int"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "minimum_spend",
+            "type": "int"
+        },
+        {
+            "name": "offer_amount",
+            "type": "int"
+        }
+    ]
+}

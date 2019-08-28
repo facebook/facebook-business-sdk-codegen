@@ -840,7 +840,7 @@
         {
             "method": "POST",
             "endpoint": "images",
-            "return": "Object",
+            "return": "BusinessImage",
             "params": [
                 {
                     "name": "bytes",
@@ -856,6 +856,11 @@
                     "name": "name",
                     "required": true,
                     "type": "string"
+                },
+                {
+                    "name": "validation_ad_placements",
+                    "required": false,
+                    "type": "list<businessimages_validation_ad_placements_enum_param>"
                 }
             ]
         },
@@ -955,6 +960,23 @@
                     "name": "vertical",
                     "required": false,
                     "type": "businessmanaged_businesses_vertical_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "move_asset",
+            "return": "Business",
+            "params": [
+                {
+                    "name": "asset_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "client_id",
+                    "required": true,
+                    "type": "string"
                 }
             ]
         },
@@ -1810,6 +1832,11 @@
                     "name": "upload_setting_properties",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "validation_ad_placement",
+                    "required": false,
+                    "type": "businessvideos_validation_ad_placement_enum_param"
                 },
                 {
                     "name": "video_file_chunk",

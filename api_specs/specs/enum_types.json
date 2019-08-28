@@ -2193,6 +2193,7 @@
             "FACECAST_DVR",
             "FUNDRAISER_COVER_VIDEO",
             "GAME_CLIP",
+            "GAMING_UPDATE_VIDEO",
             "GEMSTONE",
             "GOODWILL_ANNIVERSARY_DEPRECATED",
             "GOODWILL_ANNIVERSARY_PROMOTION_DEPRECATED",
@@ -2799,6 +2800,7 @@
             "INSTREAM_VIDEO_MOBILE",
             "MARKETPLACE_MOBILE",
             "MESSENGER_MOBILE_INBOX_MEDIA",
+            "MESSENGER_MOBILE_STORY_MEDIA",
             "MOBILE_BANNER",
             "MOBILE_FEED_BASIC",
             "MOBILE_FEED_STANDARD",
@@ -4417,6 +4419,7 @@
             "INSTREAM_VIDEO_MOBILE",
             "MARKETPLACE_MOBILE",
             "MESSENGER_MOBILE_INBOX_MEDIA",
+            "MESSENGER_MOBILE_STORY_MEDIA",
             "MOBILE_BANNER",
             "MOBILE_FEED_BASIC",
             "MOBILE_FEED_STANDARD",
@@ -4673,6 +4676,7 @@
             "INSTREAM_VIDEO_MOBILE",
             "MARKETPLACE_MOBILE",
             "MESSENGER_MOBILE_INBOX_MEDIA",
+            "MESSENGER_MOBILE_STORY_MEDIA",
             "MOBILE_BANNER",
             "MOBILE_FEED_BASIC",
             "MOBILE_FEED_STANDARD",
@@ -5818,6 +5822,7 @@
             "PAGES_MESSAGING",
             "PAGES_MESSAGING_SUBSCRIPTIONS",
             "PLATFORM_MANAGE_PAGES",
+            "PLATFORM_READ_INSIGHTS",
             "READ_PAGE_MAILBOXES",
             "VIEW_MONETIZATION_INSIGHTS"
         ]
@@ -5881,6 +5886,7 @@
             "PAGES_MESSAGING",
             "PAGES_MESSAGING_SUBSCRIPTIONS",
             "PLATFORM_MANAGE_PAGES",
+            "PLATFORM_READ_INSIGHTS",
             "READ_PAGE_MAILBOXES",
             "VIEW_MONETIZATION_INSIGHTS"
         ]
@@ -5947,6 +5953,32 @@
             "4",
             "5",
             "6"
+        ]
+    },
+    {
+        "name": "businessimages_validation_ad_placements_enum_param",
+        "node": "BusinessImage",
+        "field_or_param": "validation_ad_placements",
+        "values": [
+            "AUDIENCE_NETWORK_INSTREAM_VIDEO",
+            "AUDIENCE_NETWORK_INSTREAM_VIDEO_MOBILE",
+            "AUDIENCE_NETWORK_REWARDED_VIDEO",
+            "DESKTOP_FEED_STANDARD",
+            "FACEBOOK_STORY_MOBILE",
+            "INSTAGRAM_STANDARD",
+            "INSTAGRAM_STORY",
+            "INSTANT_ARTICLE_STANDARD",
+            "INSTREAM_VIDEO_DESKTOP",
+            "INSTREAM_VIDEO_MOBILE",
+            "MESSENGER_MOBILE_INBOX_MEDIA",
+            "MESSENGER_MOBILE_STORY_MEDIA",
+            "MOBILE_FEED_STANDARD",
+            "MOBILE_FULLWIDTH",
+            "MOBILE_INTERSTITIAL",
+            "MOBILE_MEDIUM_RECTANGLE",
+            "MOBILE_NATIVE",
+            "RIGHT_COLUMN_STANDARD",
+            "SUGGESTED_VIDEO_MOBILE"
         ]
     },
     {
@@ -6027,6 +6059,7 @@
             "PAGES_MESSAGING",
             "PAGES_MESSAGING_SUBSCRIPTIONS",
             "PLATFORM_MANAGE_PAGES",
+            "PLATFORM_READ_INSIGHTS",
             "READ_PAGE_MAILBOXES",
             "VIEW_MONETIZATION_INSIGHTS"
         ]
@@ -6394,6 +6427,7 @@
             "FACECAST_DVR",
             "FUNDRAISER_COVER_VIDEO",
             "GAME_CLIP",
+            "GAMING_UPDATE_VIDEO",
             "GEMSTONE",
             "GOODWILL_ANNIVERSARY_DEPRECATED",
             "GOODWILL_ANNIVERSARY_PROMOTION_DEPRECATED",
@@ -6533,6 +6567,39 @@
             "finish",
             "start",
             "transfer"
+        ]
+    },
+    {
+        "name": "businessvideos_validation_ad_placement_enum_param",
+        "node": "AdVideo",
+        "field_or_param": "validation_ad_placement",
+        "values": [
+            "AUDIENCE_NETWORK_INSTREAM_VIDEO",
+            "AUDIENCE_NETWORK_INSTREAM_VIDEO_MOBILE",
+            "AUDIENCE_NETWORK_OUTSTREAM_VIDEO",
+            "AUDIENCE_NETWORK_REWARDED_VIDEO",
+            "DESKTOP_FEED_STANDARD",
+            "FACEBOOK_STORY_MOBILE",
+            "INSTAGRAM_STANDARD",
+            "INSTAGRAM_STORY",
+            "INSTANT_ARTICLE_RECIRCULATION_AD",
+            "INSTANT_ARTICLE_STANDARD",
+            "INSTREAM_VIDEO_DESKTOP",
+            "INSTREAM_VIDEO_MOBILE",
+            "MARKETPLACE_MOBILE",
+            "MESSENGER_MOBILE_INBOX_MEDIA",
+            "MESSENGER_MOBILE_STORY_MEDIA",
+            "MOBILE_BANNER",
+            "MOBILE_FEED_BASIC",
+            "MOBILE_FEED_STANDARD",
+            "MOBILE_FULLWIDTH",
+            "MOBILE_INTERSTITIAL",
+            "MOBILE_MEDIUM_RECTANGLE",
+            "MOBILE_NATIVE",
+            "RIGHT_COLUMN_STANDARD",
+            "SUGGESTED_VIDEO_DESKTOP",
+            "SUGGESTED_VIDEO_MOBILE",
+            "WATCH_FEED_MOBILE"
         ]
     },
     {
@@ -7298,6 +7365,7 @@
             "FACECAST_DVR",
             "FUNDRAISER_COVER_VIDEO",
             "GAME_CLIP",
+            "GAMING_UPDATE_VIDEO",
             "GEMSTONE",
             "GOODWILL_ANNIVERSARY_DEPRECATED",
             "GOODWILL_ANNIVERSARY_PROMOTION_DEPRECATED",
@@ -8106,6 +8174,7 @@
             "PAGES_MESSAGING",
             "PAGES_MESSAGING_SUBSCRIPTIONS",
             "PLATFORM_MANAGE_PAGES",
+            "PLATFORM_READ_INSIGHTS",
             "READ_PAGE_MAILBOXES",
             "VIEW_MONETIZATION_INSIGHTS"
         ]
@@ -8126,6 +8195,7 @@
             "PAGES_MESSAGING",
             "PAGES_MESSAGING_SUBSCRIPTIONS",
             "PLATFORM_MANAGE_PAGES",
+            "PLATFORM_READ_INSIGHTS",
             "READ_PAGE_MAILBOXES",
             "VIEW_MONETIZATION_INSIGHTS"
         ]
@@ -9152,6 +9222,7 @@
             "FACECAST_DVR",
             "FUNDRAISER_COVER_VIDEO",
             "GAME_CLIP",
+            "GAMING_UPDATE_VIDEO",
             "GEMSTONE",
             "GOODWILL_ANNIVERSARY_DEPRECATED",
             "GOODWILL_ANNIVERSARY_PROMOTION_DEPRECATED",
@@ -10677,6 +10748,7 @@
             "FACECAST_DVR",
             "FUNDRAISER_COVER_VIDEO",
             "GAME_CLIP",
+            "GAMING_UPDATE_VIDEO",
             "GEMSTONE",
             "GOODWILL_ANNIVERSARY_DEPRECATED",
             "GOODWILL_ANNIVERSARY_PROMOTION_DEPRECATED",

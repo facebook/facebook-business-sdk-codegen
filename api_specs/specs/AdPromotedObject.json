@@ -10,6 +10,10 @@
             "type": "string"
         },
         {
+            "name": "custom_event_str",
+            "type": "string"
+        },
+        {
             "name": "custom_event_type",
             "type": "AdPromotedObject_custom_event_type"
         },
