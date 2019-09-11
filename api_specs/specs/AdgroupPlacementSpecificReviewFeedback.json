@@ -62,6 +62,10 @@
             "type": "map<string, string>"
         },
         {
+            "name": "marketplace_shops",
+            "type": "map<string, string>"
+        },
+        {
             "name": "max_review_placements",
             "type": "map<string, string>"
         },

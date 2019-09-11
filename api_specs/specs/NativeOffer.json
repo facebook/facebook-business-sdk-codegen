@@ -2,6 +2,23 @@
     "apis": [
         {
             "method": "POST",
+            "endpoint": "codes",
+            "return": "NativeOffer",
+            "params": [
+                {
+                    "name": "file",
+                    "required": false,
+                    "type": "file"
+                },
+                {
+                    "name": "unique_codes_file_code_type",
+                    "required": false,
+                    "type": "nativeoffercodes_unique_codes_file_code_type_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "POST",
             "endpoint": "nativeofferviews",
             "return": "NativeOffer",
             "params": [

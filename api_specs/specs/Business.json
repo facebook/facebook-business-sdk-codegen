@@ -843,6 +843,11 @@
             "return": "BusinessImage",
             "params": [
                 {
+                    "name": "ad_placements_validation_only",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "bytes",
                     "required": true,
                     "type": "Object"
@@ -1215,6 +1220,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "store_catalog_settings",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "vertical",
                     "required": false,
                     "type": "businessowned_product_catalogs_vertical_enum_param"
@@ -1493,6 +1503,11 @@
             "endpoint": "videos",
             "return": "AdVideo",
             "params": [
+                {
+                    "name": "ad_placements_validation_only",
+                    "required": false,
+                    "type": "bool"
+                },
                 {
                     "name": "adaptive_type",
                     "required": false,
@@ -1834,9 +1849,9 @@
                     "type": "string"
                 },
                 {
-                    "name": "validation_ad_placement",
+                    "name": "validation_ad_placements",
                     "required": false,
-                    "type": "businessvideos_validation_ad_placement_enum_param"
+                    "type": "list<businessvideos_validation_ad_placements_enum_param>"
                 },
                 {
                     "name": "video_file_chunk",

@@ -2241,6 +2241,7 @@
             "REPLACE_VIDEO",
             "SALES_CLIENT_INTERACTION",
             "SAY_THANKS_DEPRECATED",
+            "SHOWREEL_NATIVE_DUMMY_VIDEO",
             "SLIDESHOW_ANIMOTO",
             "SLIDESHOW_SHAKR",
             "SOTTO_CONTENT",
@@ -5822,6 +5823,7 @@
             "PAGES_MESSAGING",
             "PAGES_MESSAGING_SUBSCRIPTIONS",
             "PLATFORM_MANAGE_PAGES",
+            "PLATFORM_PAGES_MANAGE_INSTANT_ARTICLES",
             "PLATFORM_READ_INSIGHTS",
             "READ_PAGE_MAILBOXES",
             "VIEW_MONETIZATION_INSIGHTS"
@@ -5886,6 +5888,7 @@
             "PAGES_MESSAGING",
             "PAGES_MESSAGING_SUBSCRIPTIONS",
             "PLATFORM_MANAGE_PAGES",
+            "PLATFORM_PAGES_MANAGE_INSTANT_ARTICLES",
             "PLATFORM_READ_INSIGHTS",
             "READ_PAGE_MAILBOXES",
             "VIEW_MONETIZATION_INSIGHTS"
@@ -6059,6 +6062,7 @@
             "PAGES_MESSAGING",
             "PAGES_MESSAGING_SUBSCRIPTIONS",
             "PLATFORM_MANAGE_PAGES",
+            "PLATFORM_PAGES_MANAGE_INSTANT_ARTICLES",
             "PLATFORM_READ_INSIGHTS",
             "READ_PAGE_MAILBOXES",
             "VIEW_MONETIZATION_INSIGHTS"
@@ -6115,6 +6119,7 @@
             "flights",
             "home_listings",
             "hotels",
+            "offline_commerce",
             "ticketed_experiences",
             "transactable_items",
             "vehicles"
@@ -6475,6 +6480,7 @@
             "REPLACE_VIDEO",
             "SALES_CLIENT_INTERACTION",
             "SAY_THANKS_DEPRECATED",
+            "SHOWREEL_NATIVE_DUMMY_VIDEO",
             "SLIDESHOW_ANIMOTO",
             "SLIDESHOW_SHAKR",
             "SOTTO_CONTENT",
@@ -6570,36 +6576,29 @@
         ]
     },
     {
-        "name": "businessvideos_validation_ad_placement_enum_param",
+        "name": "businessvideos_validation_ad_placements_enum_param",
         "node": "AdVideo",
-        "field_or_param": "validation_ad_placement",
+        "field_or_param": "validation_ad_placements",
         "values": [
             "AUDIENCE_NETWORK_INSTREAM_VIDEO",
             "AUDIENCE_NETWORK_INSTREAM_VIDEO_MOBILE",
-            "AUDIENCE_NETWORK_OUTSTREAM_VIDEO",
             "AUDIENCE_NETWORK_REWARDED_VIDEO",
             "DESKTOP_FEED_STANDARD",
             "FACEBOOK_STORY_MOBILE",
             "INSTAGRAM_STANDARD",
             "INSTAGRAM_STORY",
-            "INSTANT_ARTICLE_RECIRCULATION_AD",
             "INSTANT_ARTICLE_STANDARD",
             "INSTREAM_VIDEO_DESKTOP",
             "INSTREAM_VIDEO_MOBILE",
-            "MARKETPLACE_MOBILE",
             "MESSENGER_MOBILE_INBOX_MEDIA",
             "MESSENGER_MOBILE_STORY_MEDIA",
-            "MOBILE_BANNER",
-            "MOBILE_FEED_BASIC",
             "MOBILE_FEED_STANDARD",
             "MOBILE_FULLWIDTH",
             "MOBILE_INTERSTITIAL",
             "MOBILE_MEDIUM_RECTANGLE",
             "MOBILE_NATIVE",
             "RIGHT_COLUMN_STANDARD",
-            "SUGGESTED_VIDEO_DESKTOP",
-            "SUGGESTED_VIDEO_MOBILE",
-            "WATCH_FEED_MOBILE"
+            "SUGGESTED_VIDEO_MOBILE"
         ]
     },
     {
@@ -7000,10 +6999,10 @@
             "HIGH_SCHOOL_FORUM",
             "JOBS",
             "LEARNING",
-            "MEME",
             "MENTORSHIP",
             "NEIGHBORS",
             "NONE",
+            "PARENTING",
             "PARENTS",
             "PROJECT",
             "REAL_WORLD",
@@ -7137,10 +7136,10 @@
             "HIGH_SCHOOL_FORUM",
             "JOBS",
             "LEARNING",
-            "MEME",
             "MENTORSHIP",
             "NEIGHBORS",
             "NONE",
+            "PARENTING",
             "PARENTS",
             "PROJECT",
             "REAL_WORLD",
@@ -7413,6 +7412,7 @@
             "REPLACE_VIDEO",
             "SALES_CLIENT_INTERACTION",
             "SAY_THANKS_DEPRECATED",
+            "SHOWREEL_NATIVE_DUMMY_VIDEO",
             "SLIDESHOW_ANIMOTO",
             "SLIDESHOW_SHAKR",
             "SOTTO_CONTENT",
@@ -7966,6 +7966,20 @@
         ]
     },
     {
+        "name": "nativeoffercodes_unique_codes_file_code_type_enum_param",
+        "node": "NativeOffer",
+        "field_or_param": "unique_codes_file_code_type",
+        "values": [
+            "barcodes",
+            "discount_and_barcodes",
+            "discount_and_discount",
+            "discount_codes",
+            "instore_barcodes",
+            "instore_discount_codes",
+            "online_discount_codes"
+        ]
+    },
+    {
         "name": "offlineconversiondatasetagencies_permitted_roles_enum_param",
         "node": "OfflineConversionDataSet",
         "field_or_param": "permitted_roles",
@@ -8174,6 +8188,7 @@
             "PAGES_MESSAGING",
             "PAGES_MESSAGING_SUBSCRIPTIONS",
             "PLATFORM_MANAGE_PAGES",
+            "PLATFORM_PAGES_MANAGE_INSTANT_ARTICLES",
             "PLATFORM_READ_INSIGHTS",
             "READ_PAGE_MAILBOXES",
             "VIEW_MONETIZATION_INSIGHTS"
@@ -8195,6 +8210,7 @@
             "PAGES_MESSAGING",
             "PAGES_MESSAGING_SUBSCRIPTIONS",
             "PLATFORM_MANAGE_PAGES",
+            "PLATFORM_PAGES_MANAGE_INSTANT_ARTICLES",
             "PLATFORM_READ_INSIGHTS",
             "READ_PAGE_MAILBOXES",
             "VIEW_MONETIZATION_INSIGHTS"
@@ -9270,6 +9286,7 @@
             "REPLACE_VIDEO",
             "SALES_CLIENT_INTERACTION",
             "SAY_THANKS_DEPRECATED",
+            "SHOWREEL_NATIVE_DUMMY_VIDEO",
             "SLIDESHOW_ANIMOTO",
             "SLIDESHOW_SHAKR",
             "SOTTO_CONTENT",
@@ -10796,6 +10813,7 @@
             "REPLACE_VIDEO",
             "SALES_CLIENT_INTERACTION",
             "SAY_THANKS_DEPRECATED",
+            "SHOWREEL_NATIVE_DUMMY_VIDEO",
             "SLIDESHOW_ANIMOTO",
             "SLIDESHOW_SHAKR",
             "SOTTO_CONTENT",

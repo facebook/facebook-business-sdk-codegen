@@ -1119,6 +1119,23 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "store_product_items_batch",
+            "return": "ProductCatalog",
+            "params": [
+                {
+                    "name": "allow_upsert",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "requests",
+                    "required": true,
+                    "type": "list<map>"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "vehicles",
             "return": "Vehicle",
@@ -1333,6 +1350,11 @@
                     "name": "name",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "store_catalog_settings",
+                    "required": false,
+                    "type": "map"
                 }
             ]
         }
@@ -1373,6 +1395,10 @@
         {
             "name": "product_count",
             "type": "int"
+        },
+        {
+            "name": "store_catalog_settings",
+            "type": "StoreCatalogSettings"
         },
         {
             "name": "vertical",

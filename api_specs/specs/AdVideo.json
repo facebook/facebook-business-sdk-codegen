@@ -687,10 +687,6 @@
             "type": "string"
         },
         {
-            "name": "tv_banner_ad",
-            "type": "Object"
-        },
-        {
             "name": "universal_video_id",
             "type": "string"
         },

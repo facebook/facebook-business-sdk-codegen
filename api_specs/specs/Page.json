@@ -179,7 +179,7 @@
                 {
                     "name": "asid",
                     "required": false,
-                    "type": "Object"
+                    "type": "string"
                 },
                 {
                     "name": "psid",
