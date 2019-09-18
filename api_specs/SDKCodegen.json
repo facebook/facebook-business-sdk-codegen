@@ -45,7 +45,6 @@
       "$.fields[?(@.name=='can_create_brand_lift_study')]": {
         "not_visible": true
       },
-      "$.apis[?(@.method=='POST' && @.endpoint=='advideos')]['params'][?(@.name=='source')]": null,
       "$.apis[?(@.method=='POST' && @.endpoint=='adimages')]": {
         "return": "AdImage",
         "allow_file_upload": true,
@@ -54,6 +53,9 @@
       "$.apis[?(@.method=='POST' && @.endpoint=='advideos')]": {
         "allow_file_upload": true,
         "use_graph_video_endpoint": true
+      },
+      "$.apis[?(@.method=='POST' && @.endpoint=='advideos')]['params'][?(@.name=='source')]": {
+        "is_file_param": true
       }
     },
     "AdSet": {

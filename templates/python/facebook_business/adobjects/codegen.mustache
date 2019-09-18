@@ -133,7 +133,7 @@ class {{name:pascal_case}}(
         {{/is_insights_sync}}
         param_types = {
             {{#params}}
-            '{{name}}': '{{{type:short}}}',
+            '{{name}}': {{#is_file_param}}'file'{{/is_file_param}}{{^is_file_param}}'{{{type:short}}}'{{/is_file_param}},
             {{/params}}
         }
         enums = {
@@ -186,7 +186,7 @@ class {{name:pascal_case}}(
         {{/is_insights_sync}}
         param_types = {
             {{#params}}
-            '{{name}}': '{{{type:short}}}',
+            '{{name}}': {{#is_file_param}}'file'{{/is_file_param}}{{^is_file_param}}'{{{type:short}}}'{{/is_file_param}},
             {{/params}}
         }
         enums = {

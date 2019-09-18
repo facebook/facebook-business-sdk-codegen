@@ -122,7 +122,7 @@ class {{name:pascal_case}} extends Abstract{{#has_id}}{{#archivable}}Archivable{
 
     $param_types = array(
       {{#params}}
-      '{{name}}' => '{{{type:short}}}',
+      '{{name}}' => {{#is_file_param}}'file'{{/is_file_param}}{{^is_file_param}}'{{{type:short}}}'{{/is_file_param}},
       {{/params}}
       {{#allow_file_param}}
       'filename' => 'file'

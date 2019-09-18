@@ -62,7 +62,7 @@ module FacebookAds
       {{#end_points}}
       edge.{{method:lower_case}}{{#return:strict_pascal_case}} {{^return_a_list}}'{{{.}}}'{{/return_a_list}}{{#return_a_list}}list: '{{{.}}}'{{/return_a_list}}{{/return:strict_pascal_case}}{{#params.length}} do |api|
       {{#params}}
-        api.has_param :{{name:underscore}}, {{{type:ruby}}}
+        api.has_param :{{name:underscore}}, {{#is_file_param}}file{{/is_file_param}}{{^is_file_param}}{{{type:ruby}}}{{/is_file_param}}
       {{/params}}
       {{#allow_file_upload}}
         api.accepts_files!
