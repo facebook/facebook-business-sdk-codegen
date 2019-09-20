@@ -67,6 +67,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "commerce_tax_category",
+                    "required": false,
+                    "type": "productgroupproducts_commerce_tax_category_enum_param"
+                },
+                {
                     "name": "condition",
                     "required": false,
                     "type": "productgroupproducts_condition_enum_param"
@@ -245,6 +250,11 @@
                     "name": "retailer_id",
                     "required": true,
                     "type": "string"
+                },
+                {
+                    "name": "return_policy_days",
+                    "required": false,
+                    "type": "unsigned int"
                 },
                 {
                     "name": "sale_price",

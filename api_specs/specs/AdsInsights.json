@@ -894,6 +894,10 @@
             "type": "list<AdsActionStats>"
         },
         {
+            "name": "video_p95_watched_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
             "name": "video_play_actions",
             "type": "list<AdsActionStats>"
         },

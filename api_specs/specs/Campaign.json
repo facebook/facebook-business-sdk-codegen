@@ -508,6 +508,11 @@
                     "type": "Object"
                 },
                 {
+                    "name": "special_ad_category",
+                    "required": false,
+                    "type": "adcampaigngroup_special_ad_category"
+                },
+                {
                     "name": "spend_cap",
                     "required": false,
                     "type": "unsigned int"
@@ -624,6 +629,10 @@
         },
         {
             "name": "source_campaign_id",
+            "type": "string"
+        },
+        {
+            "name": "special_ad_category",
             "type": "string"
         },
         {

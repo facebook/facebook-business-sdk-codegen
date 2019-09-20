@@ -302,10 +302,6 @@
             "type": "list<string>"
         },
         {
-            "name": "publisher_visibility_categories",
-            "type": "list<string>"
-        },
-        {
             "name": "radius",
             "type": "string"
         },

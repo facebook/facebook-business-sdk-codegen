@@ -6,6 +6,11 @@
             "return": "BusinessCreativeInsights",
             "params": [
                 {
+                    "name": "breakdowns",
+                    "required": false,
+                    "type": "list<businessimageinsights_breakdowns_enum_param>"
+                },
+                {
                     "name": "time_range",
                     "required": false,
                     "type": "Object"

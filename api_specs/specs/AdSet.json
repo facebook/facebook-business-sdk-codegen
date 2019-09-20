@@ -694,6 +694,11 @@
                     "type": "datetime"
                 },
                 {
+                    "name": "tune_for_category",
+                    "required": false,
+                    "type": "adcampaign_tune_for_category"
+                },
+                {
                     "name": "upstream_events",
                     "required": false,
                     "type": "map"

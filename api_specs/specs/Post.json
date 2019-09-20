@@ -270,12 +270,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "seen",
-            "return": "User",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "sharedposts",
             "return": "Post",
             "params": []

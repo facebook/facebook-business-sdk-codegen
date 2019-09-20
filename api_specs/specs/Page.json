@@ -2200,12 +2200,6 @@
             "params": []
         },
         {
-            "method": "GET",
-            "endpoint": "partner_coupon_offer",
-            "return": "PartnerCouponOffer",
-            "params": []
-        },
-        {
             "method": "POST",
             "endpoint": "pass_thread_control",
             "return": "Page",

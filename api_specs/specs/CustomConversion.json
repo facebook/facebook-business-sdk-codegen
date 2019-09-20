@@ -1,23 +1,6 @@
 {
     "apis": [
         {
-            "method": "DELETE",
-            "endpoint": "adaccounts",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "account_id",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "business",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "stats",
             "return": "CustomConversionStatsResult",

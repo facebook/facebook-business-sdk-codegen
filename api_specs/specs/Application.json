@@ -719,6 +719,12 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "insights_push_schedule",
+            "return": "AdsInsightsPushSchedule",
+            "params": []
+        },
+        {
             "method": "POST",
             "endpoint": "insights_push_schedule",
             "return": "AdsInsightsPushSchedule",
@@ -769,43 +775,18 @@
                     "type": "applicationinsights_push_schedule_status_enum_param"
                 },
                 {
-                    "name": "time_created",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
                     "name": "time_increment",
                     "required": false,
                     "type": "unsigned int"
                 },
                 {
-                    "name": "time_last_fail",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "time_last_run",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "time_last_success",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
                     "name": "time_start",
-                    "required": true,
+                    "required": false,
                     "type": "datetime"
                 },
                 {
                     "name": "time_stop",
                     "required": true,
-                    "type": "datetime"
-                },
-                {
-                    "name": "time_updated",
-                    "required": false,
                     "type": "datetime"
                 }
             ]
@@ -1197,18 +1178,6 @@
             "endpoint": "roles",
             "return": "ApplicationRoles",
             "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "staging_resources",
-            "return": "Application",
-            "params": [
-                {
-                    "name": "file",
-                    "required": false,
-                    "type": "file"
-                }
-            ]
         },
         {
             "method": "GET",
@@ -1605,6 +1574,10 @@
         }
     ],
     "fields": [
+        {
+            "name": "aam_rules",
+            "type": "string"
+        },
         {
             "name": "an_ad_space_limit",
             "type": "unsigned int"

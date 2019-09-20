@@ -35,6 +35,11 @@
             "return": "ProductItem",
             "params": [
                 {
+                    "name": "additional_image_files",
+                    "required": false,
+                    "type": "list<file>"
+                },
+                {
                     "name": "additional_image_urls",
                     "required": false,
                     "type": "list<string>"
@@ -88,6 +93,11 @@
                     "name": "color",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "commerce_tax_category",
+                    "required": false,
+                    "type": "productitem_commerce_tax_category"
                 },
                 {
                     "name": "condition",
@@ -268,6 +278,11 @@
                     "name": "retailer_id",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "return_policy_days",
+                    "required": false,
+                    "type": "unsigned int"
                 },
                 {
                     "name": "sale_price",

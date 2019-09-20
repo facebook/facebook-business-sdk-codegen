@@ -460,12 +460,6 @@
             "params": []
         },
         {
-            "method": "GET",
-            "endpoint": "favorite_requests",
-            "return": "FavoriteRequest",
-            "params": []
-        },
-        {
             "method": "POST",
             "endpoint": "feed",
             "return": "Object",
@@ -1830,12 +1824,6 @@
             ]
         },
         {
-            "method": "GET",
-            "endpoint": "partner_coupon_offer",
-            "return": "PartnerCouponOffer",
-            "params": []
-        },
-        {
             "method": "DELETE",
             "endpoint": "permissions",
             "return": "Object",
@@ -2168,93 +2156,6 @@
                     "name": "width",
                     "required": false,
                     "type": "int"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "places",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "address",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "city_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "coords",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "custom_provider",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "description",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "geometry",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "name",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "neighborhood_name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "override_ids",
-                    "required": false,
-                    "type": "list<int>"
-                },
-                {
-                    "name": "phone",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "pin_source",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "privacy",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "topics",
-                    "required": true,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "type",
-                    "required": false,
-                    "type": "userplaces_type_enum_param"
-                },
-                {
-                    "name": "uid",
-                    "required": false,
-                    "type": "int"
-                },
-                {
-                    "name": "website",
-                    "required": false,
-                    "type": "string"
                 }
             ]
         },

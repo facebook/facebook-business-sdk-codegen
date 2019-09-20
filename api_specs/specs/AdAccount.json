@@ -365,6 +365,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "tune_for_category",
+                    "required": false,
+                    "type": "adaccountad_sets_tune_for_category_enum_param"
+                },
+                {
                     "name": "upstream_events",
                     "required": false,
                     "type": "map"
@@ -744,12 +749,6 @@
                     "type": "file"
                 }
             ]
-        },
-        {
-            "method": "DELETE",
-            "endpoint": "adreportruns",
-            "return": "Object",
-            "params": []
         },
         {
             "method": "GET",
@@ -2074,6 +2073,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "special_ad_category",
+                    "required": false,
+                    "type": "adaccountcampaigns_special_ad_category_enum_param"
+                },
+                {
                     "name": "spend_cap",
                     "required": false,
                     "type": "unsigned int"
@@ -3379,7 +3383,7 @@
         {
             "method": "POST",
             "endpoint": "subscribed_apps",
-            "return": "Application",
+            "return": "AdAccountSubscribedApps",
             "params": [
                 {
                     "name": "app_id",
