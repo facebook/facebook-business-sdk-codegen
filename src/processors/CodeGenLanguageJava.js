@@ -174,6 +174,8 @@ const CodeGenLanguageJava = {
     // which might be 'blacklist', and should not be replaced
     newType = newType.replace(/(?<!\w)list(?!<)/g, 'JsonArray');
     newType = newType.replace(/^file$/i, 'File');
+    // List<file> => List<File>
+    newType = newType.replace(/<file>/i, '<File>');
     return newType;
   },
   keywords: ['try', 'private', 'public', 'new', 'default', 'class'],
