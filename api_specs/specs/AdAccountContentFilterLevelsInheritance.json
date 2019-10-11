@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "an_business_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "an_level",
+            "type": "string"
+        },
+        {
+            "name": "facebook_business_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "facebook_level",
+            "type": "string"
+        }
+    ]
+}

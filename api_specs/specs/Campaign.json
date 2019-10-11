@@ -133,6 +133,38 @@
         },
         {
             "method": "GET",
+            "endpoint": "content_delivery_report",
+            "return": "ContentDeliveryReport",
+            "params": [
+                {
+                    "name": "end_date",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "platform",
+                    "required": true,
+                    "type": "adcampaigngroupcontent_delivery_report_platform_enum_param"
+                },
+                {
+                    "name": "position",
+                    "required": true,
+                    "type": "adcampaigngroupcontent_delivery_report_position_enum_param"
+                },
+                {
+                    "name": "start_date",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "summary",
+                    "required": false,
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "copies",
             "return": "Campaign",
             "params": [

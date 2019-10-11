@@ -14,6 +14,10 @@
             "type": "list<Object>"
         },
         {
+            "name": "autotranslate",
+            "type": "list<string>"
+        },
+        {
             "name": "bodies",
             "type": "list<AdAssetFeedSpecBody>"
         },

@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "api_call_result",
+            "type": "string"
+        },
+        {
+            "name": "api_error_message",
+            "type": "string"
+        },
+        {
+            "name": "shown_thank_you_page",
+            "type": "string"
+        }
+    ]
+}

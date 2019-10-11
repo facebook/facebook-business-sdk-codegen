@@ -1,5 +1,12 @@
 {
-    "apis": [],
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ProductFeedSchedule",
+            "params": []
+        }
+    ],
     "fields": [
         {
             "name": "day_of_month",

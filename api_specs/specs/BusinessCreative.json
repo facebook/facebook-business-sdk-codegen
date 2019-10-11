@@ -1,5 +1,12 @@
 {
-    "apis": [],
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "ad_placement_validation_results",
+            "return": "BusinessMediaAdPlacementValidationResult",
+            "params": []
+        }
+    ],
     "fields": [
         {
             "name": "creation_time",

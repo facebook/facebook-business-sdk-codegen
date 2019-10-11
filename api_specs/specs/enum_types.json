@@ -1452,7 +1452,10 @@
             "new",
             "open_box_new",
             "refurbished",
-            "used"
+            "used",
+            "used_fair",
+            "used_good",
+            "used_like_new"
         ]
     },
     {
@@ -1683,33 +1686,6 @@
         ]
     },
     {
-        "name": "adaccountad_sets_bid_strategy_enum_param",
-        "node": "AdSet",
-        "field_or_param": "bid_strategy",
-        "values": [
-            "LOWEST_COST_WITHOUT_CAP",
-            "LOWEST_COST_WITH_BID_CAP",
-            "TARGET_COST"
-        ]
-    },
-    {
-        "name": "adaccountad_sets_billing_event_enum_param",
-        "node": "AdSet",
-        "field_or_param": "billing_event",
-        "values": [
-            "APP_INSTALLS",
-            "CLICKS",
-            "IMPRESSIONS",
-            "LINK_CLICKS",
-            "NONE",
-            "OFFER_CLAIMS",
-            "PAGE_LIKES",
-            "POST_ENGAGEMENT",
-            "THRUPLAY",
-            "VIDEO_VIEWS"
-        ]
-    },
-    {
         "name": "adaccountad_sets_delete_strategy_enum_param",
         "node": "Object",
         "field_or_param": "delete_strategy",
@@ -1717,109 +1693,6 @@
             "DELETE_ANY",
             "DELETE_ARCHIVED_BEFORE",
             "DELETE_OLDEST"
-        ]
-    },
-    {
-        "name": "adaccountad_sets_destination_type_enum_param",
-        "node": "AdSet",
-        "field_or_param": "destination_type",
-        "values": [
-            "APP",
-            "APPLINKS_AUTOMATIC",
-            "FACEBOOK",
-            "MESSENGER",
-            "UNDEFINED",
-            "WEBSITE"
-        ]
-    },
-    {
-        "name": "adaccountad_sets_execution_options_enum_param",
-        "node": "AdSet",
-        "field_or_param": "execution_options",
-        "values": [
-            "include_recommendations",
-            "validate_only"
-        ]
-    },
-    {
-        "name": "adaccountad_sets_full_funnel_exploration_mode_enum_param",
-        "node": "AdSet",
-        "field_or_param": "full_funnel_exploration_mode",
-        "values": [
-            "EXTENDED_EXPLORATION",
-            "LIMITED_EXPLORATION",
-            "NONE_EXPLORATION"
-        ]
-    },
-    {
-        "name": "adaccountad_sets_optimization_goal_enum_param",
-        "node": "AdSet",
-        "field_or_param": "optimization_goal",
-        "values": [
-            "AD_RECALL_LIFT",
-            "APP_DOWNLOADS",
-            "APP_INSTALLS",
-            "BRAND_AWARENESS",
-            "CLICKS",
-            "DERIVED_EVENTS",
-            "ENGAGED_USERS",
-            "EVENT_RESPONSES",
-            "IMPRESSIONS",
-            "LANDING_PAGE_VIEWS",
-            "LEAD_GENERATION",
-            "LINK_CLICKS",
-            "NONE",
-            "OFFER_CLAIMS",
-            "OFFSITE_CONVERSIONS",
-            "PAGE_ENGAGEMENT",
-            "PAGE_LIKES",
-            "POST_ENGAGEMENT",
-            "REACH",
-            "REPLIES",
-            "SOCIAL_IMPRESSIONS",
-            "THRUPLAY",
-            "TWO_SECOND_CONTINUOUS_VIDEO_VIEWS",
-            "VALUE",
-            "VIDEO_VIEWS"
-        ]
-    },
-    {
-        "name": "adaccountad_sets_optimization_sub_event_enum_param",
-        "node": "AdSet",
-        "field_or_param": "optimization_sub_event",
-        "values": [
-            "NONE",
-            "TRAVEL_INTENT",
-            "TRAVEL_INTENT_BUCKET_01",
-            "TRAVEL_INTENT_BUCKET_02",
-            "TRAVEL_INTENT_BUCKET_03",
-            "TRAVEL_INTENT_BUCKET_04",
-            "TRAVEL_INTENT_BUCKET_05",
-            "TRAVEL_INTENT_NO_DESTINATION_INTENT",
-            "TRIP_CONSIDERATION",
-            "VIDEO_SOUND_ON"
-        ]
-    },
-    {
-        "name": "adaccountad_sets_status_enum_param",
-        "node": "AdSet",
-        "field_or_param": "status",
-        "values": [
-            "ACTIVE",
-            "ARCHIVED",
-            "DELETED",
-            "PAUSED"
-        ]
-    },
-    {
-        "name": "adaccountad_sets_tune_for_category_enum_param",
-        "node": "AdSet",
-        "field_or_param": "tune_for_category",
-        "values": [
-            "CREDIT",
-            "EMPLOYMENT",
-            "HOUSING",
-            "NONE"
         ]
     },
     {
@@ -1901,6 +1774,7 @@
             "action_type",
             "action_video_sound",
             "action_video_type",
+            "attribution_model_type",
             "interactive_component_sticker_id",
             "interactive_component_sticker_response"
         ]
@@ -2102,6 +1976,33 @@
         ]
     },
     {
+        "name": "adaccountadsets_bid_strategy_enum_param",
+        "node": "AdSet",
+        "field_or_param": "bid_strategy",
+        "values": [
+            "LOWEST_COST_WITHOUT_CAP",
+            "LOWEST_COST_WITH_BID_CAP",
+            "TARGET_COST"
+        ]
+    },
+    {
+        "name": "adaccountadsets_billing_event_enum_param",
+        "node": "AdSet",
+        "field_or_param": "billing_event",
+        "values": [
+            "APP_INSTALLS",
+            "CLICKS",
+            "IMPRESSIONS",
+            "LINK_CLICKS",
+            "NONE",
+            "OFFER_CLAIMS",
+            "PAGE_LIKES",
+            "POST_ENGAGEMENT",
+            "THRUPLAY",
+            "VIDEO_VIEWS"
+        ]
+    },
+    {
         "name": "adaccountadsets_date_preset_enum_param",
         "node": "AdSet",
         "field_or_param": "date_preset",
@@ -2128,6 +2029,19 @@
         ]
     },
     {
+        "name": "adaccountadsets_destination_type_enum_param",
+        "node": "AdSet",
+        "field_or_param": "destination_type",
+        "values": [
+            "APP",
+            "APPLINKS_AUTOMATIC",
+            "FACEBOOK",
+            "MESSENGER",
+            "UNDEFINED",
+            "WEBSITE"
+        ]
+    },
+    {
         "name": "adaccountadsets_effective_status_enum_param",
         "node": "AdSet",
         "field_or_param": "effective_status",
@@ -2144,6 +2058,96 @@
             "PENDING_REVIEW",
             "PREAPPROVED",
             "WITH_ISSUES"
+        ]
+    },
+    {
+        "name": "adaccountadsets_execution_options_enum_param",
+        "node": "AdSet",
+        "field_or_param": "execution_options",
+        "values": [
+            "include_recommendations",
+            "validate_only"
+        ]
+    },
+    {
+        "name": "adaccountadsets_full_funnel_exploration_mode_enum_param",
+        "node": "AdSet",
+        "field_or_param": "full_funnel_exploration_mode",
+        "values": [
+            "EXTENDED_EXPLORATION",
+            "LIMITED_EXPLORATION",
+            "NONE_EXPLORATION"
+        ]
+    },
+    {
+        "name": "adaccountadsets_optimization_goal_enum_param",
+        "node": "AdSet",
+        "field_or_param": "optimization_goal",
+        "values": [
+            "AD_RECALL_LIFT",
+            "APP_DOWNLOADS",
+            "APP_INSTALLS",
+            "BRAND_AWARENESS",
+            "CLICKS",
+            "DERIVED_EVENTS",
+            "ENGAGED_USERS",
+            "EVENT_RESPONSES",
+            "IMPRESSIONS",
+            "LANDING_PAGE_VIEWS",
+            "LEAD_GENERATION",
+            "LINK_CLICKS",
+            "NONE",
+            "OFFER_CLAIMS",
+            "OFFSITE_CONVERSIONS",
+            "PAGE_ENGAGEMENT",
+            "PAGE_LIKES",
+            "POST_ENGAGEMENT",
+            "REACH",
+            "REPLIES",
+            "SOCIAL_IMPRESSIONS",
+            "THRUPLAY",
+            "TWO_SECOND_CONTINUOUS_VIDEO_VIEWS",
+            "VALUE",
+            "VIDEO_VIEWS"
+        ]
+    },
+    {
+        "name": "adaccountadsets_optimization_sub_event_enum_param",
+        "node": "AdSet",
+        "field_or_param": "optimization_sub_event",
+        "values": [
+            "NONE",
+            "TRAVEL_INTENT",
+            "TRAVEL_INTENT_BUCKET_01",
+            "TRAVEL_INTENT_BUCKET_02",
+            "TRAVEL_INTENT_BUCKET_03",
+            "TRAVEL_INTENT_BUCKET_04",
+            "TRAVEL_INTENT_BUCKET_05",
+            "TRAVEL_INTENT_NO_DESTINATION_INTENT",
+            "TRIP_CONSIDERATION",
+            "VIDEO_SOUND_ON"
+        ]
+    },
+    {
+        "name": "adaccountadsets_status_enum_param",
+        "node": "AdSet",
+        "field_or_param": "status",
+        "values": [
+            "ACTIVE",
+            "ARCHIVED",
+            "DELETED",
+            "PAUSED"
+        ]
+    },
+    {
+        "name": "adaccountadsets_tune_for_category_enum_param",
+        "node": "AdSet",
+        "field_or_param": "tune_for_category",
+        "values": [
+            "CREDIT",
+            "EMPLOYMENT",
+            "HOUSING",
+            "NONE"
         ]
     },
     {
@@ -2193,6 +2197,7 @@
             "DCO_AD_ASSET_FEED",
             "DCO_AUTOGEN_VIDEO",
             "DCO_TRIMMED_VIDEO",
+            "DIM_SUM",
             "DIRECTED_POST_ATTACHMENT",
             "DIRECT_INBOX",
             "DIRECT_INBOX_REACTION",
@@ -2532,157 +2537,45 @@
         ]
     },
     {
-        "name": "adaccountcreationrequest_subvertical",
-        "node": "AdAccountCreationRequest",
-        "field_or_param": "subvertical",
+        "name": "adaccountcontent_delivery_report_platform_enum_param",
+        "node": "ContentDeliveryReport",
+        "field_or_param": "platform",
         "values": [
-            "ACCOUNTING_AND_TAXES_AND_LEGAL",
-            "AGRICULTURE_AND_FARMING",
-            "AIR",
-            "AIR_FREIGHT_OR_PACKAGE",
-            "APPAREL_AND_ACCESSORIES",
-            "ARTS",
-            "AUCTIONS",
-            "AUTOMOTIVE_MANUFACTURER",
-            "AUTO_AGENCY",
-            "AUTO_RENTAL",
-            "B2B",
-            "B2B_MANUFACTURING",
-            "BEAUTY_AND_PERSONAL_CARE",
-            "BEER_AND_WINE_AND_LIQUOR",
-            "BOOKSTORES",
-            "BUSINESS_SUPPORT_SERVICES",
-            "BUS_AND_TAXI_AND_AUTO_RETAL",
-            "CABLE_AND_SATELLITE",
-            "CAREER",
-            "COMPUTING_AND_PERIPHERALS",
-            "CONSOLE_DEVELOPER",
-            "CONSOLE_DEVICE",
-            "CONSTRUCTION_AND_MINING",
-            "CONSULTING",
-            "CONSUMER_ELECTRONICS",
-            "CONSUMER_TECH",
-            "CREDIT_AND_FINANCING_AND_MORTAGES",
-            "CRUISES_AND_MARINE",
-            "CVB_CONVENTION_AND_VISITORS_BUREAU",
-            "DAILYDEALS",
-            "DATING",
-            "DEALERSHIP",
-            "DEPARTMENT_STORE",
-            "DESKTOP_SOFTWARE",
-            "DIGITAL_ADVERTISING_AND_MARKETING_OR_UNTAGGED_AGENCIES",
-            "ECATALOG",
-            "ECOMMERCE_AGRICULTURE_AND_FARMING",
-            "EDUCATION_RESOURCES",
-            "ED_TECH",
-            "ELEARNING_AND_MASSIVE_ONLINE_OPEN_COURSES",
-            "ENGINEERING_AND_DESIGN",
-            "EVENTS",
-            "FAMILY_AND_HEALTH",
-            "FITNESS",
-            "FOOD",
-            "FOOTWEAR",
-            "FOR_PROFIT_COLLEGES_AND_UNIVERSITIES",
-            "GAMBLING",
-            "GOVERNMENT",
-            "GROCERY_AND_DRUG_AND_CONVENIENCE",
-            "HIGHWAYS",
-            "HOME_AND_OFFICE",
-            "HOME_IMPROVEMENT",
-            "HOME_SERVICE",
-            "HOTEL_AND_ACCOMODATION",
-            "HOUSEHOLD_GOODS",
-            "INDUSTRIAL_AND_FARM_VEHICLE",
-            "INSURANCE",
-            "INVESTMENT_BANK_AND_BROKERAGE",
-            "MEDIA",
-            "MOBILE_AND_SOCIAL",
-            "MOBILE_APPS",
-            "MOTORCYCLES",
-            "MOVIES",
-            "MUSEUMS_AND_PARKS_AND_LIBRARIES",
-            "MUSIC_AND_RADIO",
-            "NON_PROFIT",
-            "NOT_FOR_PROFIT_COLLEGES_AND_UNIVERSITIES",
-            "OFFICE",
-            "OIL_AND_GAS_AND_CONSUMABLE_FUEL",
-            "ONLINE_OR_SOFTWARE",
-            "OTHER_WIRELINE_SERVICES",
-            "PARTS_AND_SERVICE",
-            "PET",
-            "PET_RETAIL",
-            "PHARMACEUTICAL_OR_HEALTH",
-            "PHOTOGRAPHY_AND_FILMING_SERVICES",
-            "POLITICAL",
-            "PR",
-            "PUBLISHING_INTERNET",
-            "RAILROADS",
-            "REAL_ESTATE",
-            "REAL_MONEY_OR_SKILLED_GAMING",
-            "RECREATIONAL",
-            "RELIGIOUS",
-            "RESTAURANT",
-            "RETAIL_AND_CREDIT_UNION_AND_COMMERCIAL_BANK",
-            "SCHOOL_AND_EARLY_CHILDREN_EDCATION",
-            "SEASONAL_POLITICAL_SPENDERS",
-            "SMB_AGENTS_AND_PROMOTERS",
-            "SMB_ARTISTS_AND_PERFORMERS",
-            "SMB_CANVAS",
-            "SMB_CATALOG",
-            "SMB_CONSUMER_MOBILE_DEVICE",
-            "SMB_CROSS_PLATFORM",
-            "SMB_ELECTRONICS_AND_APPLIANCES",
-            "SMB_ENERGY",
-            "SMB_GAME_AND_TOY",
-            "SMB_INFORMATION",
-            "SMB_NAVIGATION_AND_MEASUREMENT",
-            "SMB_OPERATIONS_AND_OTHER",
-            "SMB_OTHER",
-            "SMB_PERSONAL_CARE",
-            "SMB_RELIGIOUS",
-            "SMB_RENTALS",
-            "SMB_REPAIR_AND_MAINTENANCE",
-            "SOFTWARE",
-            "SPORTING",
-            "SPORTS",
-            "STREAMING",
-            "TELEVISION",
-            "TOBACCO",
-            "TOY_AND_HOBBY",
-            "TRADE_SCHOOL",
-            "TRANSPORTATION_EQUIPMENT",
-            "TRAVAL_AGENCY",
-            "TRUCK_AND_MOVING",
-            "UTILITIES_AND_ENERGY_EQUIPMENT_AND_SERVICES",
-            "WATER_AND_SOFT_DRINK_AND_BAVERAGE",
-            "WIRELESS_SERVICES"
+            "AUDIENCE_NETWORK",
+            "FACEBOOK",
+            "INSTAGRAM",
+            "MESSENGER",
+            "UNKNOWN",
+            "WHATSAPP"
         ]
     },
     {
-        "name": "adaccountcreationrequest_vertical",
-        "node": "AdAccountCreationRequest",
-        "field_or_param": "vertical",
+        "name": "adaccountcontent_delivery_report_position_enum_param",
+        "node": "ContentDeliveryReport",
+        "field_or_param": "position",
         "values": [
-            "ADVERTISING_AND_MARKETING",
-            "AUTOMOTIVE",
-            "AUTO_AGENCY",
-            "CONSUMER_PACKAGED_GOODS",
-            "CPG_AND_BEVERAGE",
-            "ECOMMERCE",
-            "EDUCATION",
-            "ENERGY_AND_UTILITIES",
-            "ENTERTAINMENT_AND_MEDIA",
-            "FINANCIAL_SERVICES",
-            "GAMING",
-            "GOVERMENT_AND_POLITICS",
-            "MOTORCYCLES",
-            "ORGANIZATIONS_AND_ASSOCIATIONS",
-            "OTHER",
-            "PROFESSIONAL_SERVICES",
-            "RETAIL",
-            "TECHNOLOGY",
-            "TELECOM",
-            "TRAVEL"
+            "ALL_PLACEMENTS",
+            "AN_CLASSIC",
+            "FACEBOOK_GROUPS",
+            "FACEBOOK_STORIES",
+            "FEED",
+            "GROUPS",
+            "INSTAGRAM_EXPLORE",
+            "INSTAGRAM_STORIES",
+            "INSTANT_ARTICLE",
+            "INSTREAM_VIDEO",
+            "MARKETPLACE",
+            "MESSENGER_INBOX",
+            "MESSENGER_STORIES",
+            "OTHERS",
+            "REWARDED_VIDEO",
+            "RIGHT_HAND_COLUMN",
+            "SEARCH",
+            "SEARCH_SERP",
+            "STATUS",
+            "SUGGESTED_VIDEO",
+            "UNKNOWN",
+            "VIDEO_FEEDS"
         ]
     },
     {
@@ -3849,6 +3742,48 @@
         ]
     },
     {
+        "name": "adcampaigncontent_delivery_report_platform_enum_param",
+        "node": "ContentDeliveryReport",
+        "field_or_param": "platform",
+        "values": [
+            "AUDIENCE_NETWORK",
+            "FACEBOOK",
+            "INSTAGRAM",
+            "MESSENGER",
+            "UNKNOWN",
+            "WHATSAPP"
+        ]
+    },
+    {
+        "name": "adcampaigncontent_delivery_report_position_enum_param",
+        "node": "ContentDeliveryReport",
+        "field_or_param": "position",
+        "values": [
+            "ALL_PLACEMENTS",
+            "AN_CLASSIC",
+            "FACEBOOK_GROUPS",
+            "FACEBOOK_STORIES",
+            "FEED",
+            "GROUPS",
+            "INSTAGRAM_EXPLORE",
+            "INSTAGRAM_STORIES",
+            "INSTANT_ARTICLE",
+            "INSTREAM_VIDEO",
+            "MARKETPLACE",
+            "MESSENGER_INBOX",
+            "MESSENGER_STORIES",
+            "OTHERS",
+            "REWARDED_VIDEO",
+            "RIGHT_HAND_COLUMN",
+            "SEARCH",
+            "SEARCH_SERP",
+            "STATUS",
+            "SUGGESTED_VIDEO",
+            "UNKNOWN",
+            "VIDEO_FEEDS"
+        ]
+    },
+    {
         "name": "adcampaigncopies_date_preset_enum_param",
         "node": "AdSet",
         "field_or_param": "date_preset",
@@ -4100,6 +4035,48 @@
             "PENDING_REVIEW",
             "PREAPPROVED",
             "WITH_ISSUES"
+        ]
+    },
+    {
+        "name": "adcampaigngroupcontent_delivery_report_platform_enum_param",
+        "node": "ContentDeliveryReport",
+        "field_or_param": "platform",
+        "values": [
+            "AUDIENCE_NETWORK",
+            "FACEBOOK",
+            "INSTAGRAM",
+            "MESSENGER",
+            "UNKNOWN",
+            "WHATSAPP"
+        ]
+    },
+    {
+        "name": "adcampaigngroupcontent_delivery_report_position_enum_param",
+        "node": "ContentDeliveryReport",
+        "field_or_param": "position",
+        "values": [
+            "ALL_PLACEMENTS",
+            "AN_CLASSIC",
+            "FACEBOOK_GROUPS",
+            "FACEBOOK_STORIES",
+            "FEED",
+            "GROUPS",
+            "INSTAGRAM_EXPLORE",
+            "INSTAGRAM_STORIES",
+            "INSTANT_ARTICLE",
+            "INSTREAM_VIDEO",
+            "MARKETPLACE",
+            "MESSENGER_INBOX",
+            "MESSENGER_STORIES",
+            "OTHERS",
+            "REWARDED_VIDEO",
+            "RIGHT_HAND_COLUMN",
+            "SEARCH",
+            "SEARCH_SERP",
+            "STATUS",
+            "SUGGESTED_VIDEO",
+            "UNKNOWN",
+            "VIDEO_FEEDS"
         ]
     },
     {
@@ -4823,6 +4800,7 @@
             "action_type",
             "action_video_sound",
             "action_video_type",
+            "attribution_model_type",
             "interactive_component_sticker_id",
             "interactive_component_sticker_response"
         ]
@@ -5559,160 +5537,6 @@
         ]
     },
     {
-        "name": "businessadaccountcreationrequests_subvertical_enum_param",
-        "node": "AdAccountCreationRequest",
-        "field_or_param": "subvertical",
-        "values": [
-            "ACCOUNTING_AND_TAXES_AND_LEGAL",
-            "AGRICULTURE_AND_FARMING",
-            "AIR",
-            "AIR_FREIGHT_OR_PACKAGE",
-            "APPAREL_AND_ACCESSORIES",
-            "ARTS",
-            "AUCTIONS",
-            "AUTOMOTIVE_MANUFACTURER",
-            "AUTO_AGENCY",
-            "AUTO_RENTAL",
-            "B2B",
-            "B2B_MANUFACTURING",
-            "BEAUTY_AND_PERSONAL_CARE",
-            "BEER_AND_WINE_AND_LIQUOR",
-            "BOOKSTORES",
-            "BUSINESS_SUPPORT_SERVICES",
-            "BUS_AND_TAXI_AND_AUTO_RETAL",
-            "CABLE_AND_SATELLITE",
-            "CAREER",
-            "COMPUTING_AND_PERIPHERALS",
-            "CONSOLE_DEVELOPER",
-            "CONSOLE_DEVICE",
-            "CONSTRUCTION_AND_MINING",
-            "CONSULTING",
-            "CONSUMER_ELECTRONICS",
-            "CONSUMER_TECH",
-            "CREDIT_AND_FINANCING_AND_MORTAGES",
-            "CRUISES_AND_MARINE",
-            "CVB_CONVENTION_AND_VISITORS_BUREAU",
-            "DAILYDEALS",
-            "DATING",
-            "DEALERSHIP",
-            "DEPARTMENT_STORE",
-            "DESKTOP_SOFTWARE",
-            "DIGITAL_ADVERTISING_AND_MARKETING_OR_UNTAGGED_AGENCIES",
-            "ECATALOG",
-            "ECOMMERCE_AGRICULTURE_AND_FARMING",
-            "EDUCATION_RESOURCES",
-            "ED_TECH",
-            "ELEARNING_AND_MASSIVE_ONLINE_OPEN_COURSES",
-            "ENGINEERING_AND_DESIGN",
-            "EVENTS",
-            "FAMILY_AND_HEALTH",
-            "FITNESS",
-            "FOOD",
-            "FOOTWEAR",
-            "FOR_PROFIT_COLLEGES_AND_UNIVERSITIES",
-            "GAMBLING",
-            "GOVERNMENT",
-            "GROCERY_AND_DRUG_AND_CONVENIENCE",
-            "HIGHWAYS",
-            "HOME_AND_OFFICE",
-            "HOME_IMPROVEMENT",
-            "HOME_SERVICE",
-            "HOTEL_AND_ACCOMODATION",
-            "HOUSEHOLD_GOODS",
-            "INDUSTRIAL_AND_FARM_VEHICLE",
-            "INSURANCE",
-            "INVESTMENT_BANK_AND_BROKERAGE",
-            "MEDIA",
-            "MOBILE_AND_SOCIAL",
-            "MOBILE_APPS",
-            "MOTORCYCLES",
-            "MOVIES",
-            "MUSEUMS_AND_PARKS_AND_LIBRARIES",
-            "MUSIC_AND_RADIO",
-            "NON_PROFIT",
-            "NOT_FOR_PROFIT_COLLEGES_AND_UNIVERSITIES",
-            "OFFICE",
-            "OIL_AND_GAS_AND_CONSUMABLE_FUEL",
-            "ONLINE_OR_SOFTWARE",
-            "OTHER_WIRELINE_SERVICES",
-            "PARTS_AND_SERVICE",
-            "PET",
-            "PET_RETAIL",
-            "PHARMACEUTICAL_OR_HEALTH",
-            "PHOTOGRAPHY_AND_FILMING_SERVICES",
-            "POLITICAL",
-            "PR",
-            "PUBLISHING_INTERNET",
-            "RAILROADS",
-            "REAL_ESTATE",
-            "REAL_MONEY_OR_SKILLED_GAMING",
-            "RECREATIONAL",
-            "RELIGIOUS",
-            "RESTAURANT",
-            "RETAIL_AND_CREDIT_UNION_AND_COMMERCIAL_BANK",
-            "SCHOOL_AND_EARLY_CHILDREN_EDCATION",
-            "SEASONAL_POLITICAL_SPENDERS",
-            "SMB_AGENTS_AND_PROMOTERS",
-            "SMB_ARTISTS_AND_PERFORMERS",
-            "SMB_CANVAS",
-            "SMB_CATALOG",
-            "SMB_CONSUMER_MOBILE_DEVICE",
-            "SMB_CROSS_PLATFORM",
-            "SMB_ELECTRONICS_AND_APPLIANCES",
-            "SMB_ENERGY",
-            "SMB_GAME_AND_TOY",
-            "SMB_INFORMATION",
-            "SMB_NAVIGATION_AND_MEASUREMENT",
-            "SMB_OPERATIONS_AND_OTHER",
-            "SMB_OTHER",
-            "SMB_PERSONAL_CARE",
-            "SMB_RELIGIOUS",
-            "SMB_RENTALS",
-            "SMB_REPAIR_AND_MAINTENANCE",
-            "SOFTWARE",
-            "SPORTING",
-            "SPORTS",
-            "STREAMING",
-            "TELEVISION",
-            "TOBACCO",
-            "TOY_AND_HOBBY",
-            "TRADE_SCHOOL",
-            "TRANSPORTATION_EQUIPMENT",
-            "TRAVAL_AGENCY",
-            "TRUCK_AND_MOVING",
-            "UTILITIES_AND_ENERGY_EQUIPMENT_AND_SERVICES",
-            "WATER_AND_SOFT_DRINK_AND_BAVERAGE",
-            "WIRELESS_SERVICES"
-        ]
-    },
-    {
-        "name": "businessadaccountcreationrequests_vertical_enum_param",
-        "node": "AdAccountCreationRequest",
-        "field_or_param": "vertical",
-        "values": [
-            "ADVERTISING_AND_MARKETING",
-            "AUTOMOTIVE",
-            "AUTO_AGENCY",
-            "CONSUMER_PACKAGED_GOODS",
-            "CPG_AND_BEVERAGE",
-            "ECOMMERCE",
-            "EDUCATION",
-            "ENERGY_AND_UTILITIES",
-            "ENTERTAINMENT_AND_MEDIA",
-            "FINANCIAL_SERVICES",
-            "GAMING",
-            "GOVERMENT_AND_POLITICS",
-            "MOTORCYCLES",
-            "ORGANIZATIONS_AND_ASSOCIATIONS",
-            "OTHER",
-            "PROFESSIONAL_SERVICES",
-            "RETAIL",
-            "TECHNOLOGY",
-            "TELECOM",
-            "TRAVEL"
-        ]
-    },
-    {
         "name": "businessadnetworkanalytics_aggregation_period_enum_param",
         "node": "AdNetworkAnalyticsSyncQueryResult",
         "field_or_param": "aggregation_period",
@@ -5830,7 +5654,8 @@
         "values": [
             "ADVERTISE",
             "MANAGE",
-            "UPLOAD"
+            "UPLOAD",
+            "VIEW"
         ]
     },
     {
@@ -5918,6 +5743,48 @@
             "PLATFORM_READ_INSIGHTS",
             "READ_PAGE_MAILBOXES",
             "VIEW_MONETIZATION_INSIGHTS"
+        ]
+    },
+    {
+        "name": "businesscontent_delivery_report_platform_enum_param",
+        "node": "ContentDeliveryReport",
+        "field_or_param": "platform",
+        "values": [
+            "AUDIENCE_NETWORK",
+            "FACEBOOK",
+            "INSTAGRAM",
+            "MESSENGER",
+            "UNKNOWN",
+            "WHATSAPP"
+        ]
+    },
+    {
+        "name": "businesscontent_delivery_report_position_enum_param",
+        "node": "ContentDeliveryReport",
+        "field_or_param": "position",
+        "values": [
+            "ALL_PLACEMENTS",
+            "AN_CLASSIC",
+            "FACEBOOK_GROUPS",
+            "FACEBOOK_STORIES",
+            "FEED",
+            "GROUPS",
+            "INSTAGRAM_EXPLORE",
+            "INSTAGRAM_STORIES",
+            "INSTANT_ARTICLE",
+            "INSTREAM_VIDEO",
+            "MARKETPLACE",
+            "MESSENGER_INBOX",
+            "MESSENGER_STORIES",
+            "OTHERS",
+            "REWARDED_VIDEO",
+            "RIGHT_HAND_COLUMN",
+            "SEARCH",
+            "SEARCH_SERP",
+            "STATUS",
+            "SUGGESTED_VIDEO",
+            "UNKNOWN",
+            "VIDEO_FEEDS"
         ]
     },
     {
@@ -6457,6 +6324,7 @@
             "DCO_AD_ASSET_FEED",
             "DCO_AUTOGEN_VIDEO",
             "DCO_TRIMMED_VIDEO",
+            "DIM_SUM",
             "DIRECTED_POST_ATTACHMENT",
             "DIRECT_INBOX",
             "DIRECT_INBOX_REACTION",
@@ -7027,6 +6895,7 @@
             "MENTORSHIP",
             "NEIGHBORS",
             "NONE",
+            "OCULUS",
             "PARENTING",
             "PARENTS",
             "PROJECT",
@@ -7166,6 +7035,7 @@
             "MENTORSHIP",
             "NEIGHBORS",
             "NONE",
+            "OCULUS",
             "PARENTING",
             "PARENTS",
             "PROJECT",
@@ -7382,6 +7252,7 @@
             "DCO_AD_ASSET_FEED",
             "DCO_AUTOGEN_VIDEO",
             "DCO_TRIMMED_VIDEO",
+            "DIM_SUM",
             "DIRECTED_POST_ATTACHMENT",
             "DIRECT_INBOX",
             "DIRECT_INBOX_REACTION",
@@ -9261,6 +9132,7 @@
             "DCO_AD_ASSET_FEED",
             "DCO_AUTOGEN_VIDEO",
             "DCO_TRIMMED_VIDEO",
+            "DIM_SUM",
             "DIRECTED_POST_ATTACHMENT",
             "DIRECT_INBOX",
             "DIRECT_INBOX_REACTION",
@@ -10110,7 +9982,10 @@
             "new",
             "open_box_new",
             "refurbished",
-            "used"
+            "used",
+            "used_fair",
+            "used_good",
+            "used_like_new"
         ]
     },
     {
@@ -10521,7 +10396,10 @@
             "new",
             "open_box_new",
             "refurbished",
-            "used"
+            "used",
+            "used_fair",
+            "used_good",
+            "used_like_new"
         ]
     },
     {
@@ -10774,7 +10652,10 @@
             "new",
             "open_box_new",
             "refurbished",
-            "used"
+            "used",
+            "used_fair",
+            "used_good",
+            "used_like_new"
         ]
     },
     {
@@ -10934,6 +10815,7 @@
         "node": "Object",
         "field_or_param": "montage_supported_features",
         "values": [
+            "AUTHOR_IN_PRODUCER_QE_FOR_SMART_REPLIES",
             "LIGHTWEIGHT_REPLY",
             "SHOW_STORY_IN_MESSENGER_THREAD"
         ]
@@ -10955,7 +10837,8 @@
         "node": "URL",
         "field_or_param": "scopes",
         "values": [
-            "NEWS_TAB"
+            "NEWS_TAB",
+            "NEWS_TAB_DEV_ENV"
         ]
     },
     {
@@ -10974,6 +10857,16 @@
         "values": [
             "STATUS_OFF",
             "STATUS_ON"
+        ]
+    },
+    {
+        "name": "userad_studies_type_enum_param",
+        "node": "AdStudy",
+        "field_or_param": "type",
+        "values": [
+            "CONTINUOUS_LIFT_CONFIG",
+            "LIFT",
+            "SPLIT_TEST"
         ]
     },
     {
@@ -11405,6 +11298,7 @@
             "DCO_AD_ASSET_FEED",
             "DCO_AUTOGEN_VIDEO",
             "DCO_TRIMMED_VIDEO",
+            "DIM_SUM",
             "DIRECTED_POST_ATTACHMENT",
             "DIRECT_INBOX",
             "DIRECT_INBOX_REACTION",

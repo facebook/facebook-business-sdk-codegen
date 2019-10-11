@@ -1,6 +1,29 @@
 {
     "apis": [
         {
+            "method": "GET",
+            "endpoint": "atlas_sales_accesses",
+            "return": "AtlasSalesAccess",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "atlas_sales_accesses",
+            "return": "AtlasSalesAccess",
+            "params": [
+                {
+                    "name": "access_request_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "status",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "name": "#get",
             "method": "GET",
             "return": "BusinessUnit",

@@ -2,6 +2,12 @@
     "apis": [
         {
             "method": "GET",
+            "endpoint": "ad_placement_validation_results",
+            "return": "BusinessMediaAdPlacementValidationResult",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "insights",
             "return": "BusinessCreativeInsights",
             "params": [

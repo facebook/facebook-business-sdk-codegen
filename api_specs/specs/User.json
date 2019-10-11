@@ -301,6 +301,73 @@
             "params": []
         },
         {
+            "method": "POST",
+            "endpoint": "ad_studies",
+            "return": "AdStudy",
+            "params": [
+                {
+                    "name": "cells",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "client_business",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "confidence_level",
+                    "required": false,
+                    "type": "float"
+                },
+                {
+                    "name": "cooldown_start_time",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "end_time",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "objectives",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "observation_end_time",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "start_time",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "type",
+                    "required": false,
+                    "type": "userad_studies_type_enum_param"
+                },
+                {
+                    "name": "viewers",
+                    "required": false,
+                    "type": "list<int>"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "adaccounts",
             "return": "AdAccount",

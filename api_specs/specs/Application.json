@@ -1001,12 +1001,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "moods_for_application",
-            "return": "StorylineMood",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "objects",
             "return": "OpenGraphObject",
             "params": [

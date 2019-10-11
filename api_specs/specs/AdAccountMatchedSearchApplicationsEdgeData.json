@@ -6,6 +6,10 @@
             "type": "string"
         },
         {
+            "name": "are_app_events_unavailable",
+            "type": "bool"
+        },
+        {
             "name": "icon_url",
             "type": "string"
         },

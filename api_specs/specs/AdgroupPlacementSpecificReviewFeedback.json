@@ -46,6 +46,10 @@
             "type": "map<string, string>"
         },
         {
+            "name": "lead_gen_honeypot",
+            "type": "map<string, string>"
+        },
+        {
             "name": "marketplace",
             "type": "map<string, string>"
         },

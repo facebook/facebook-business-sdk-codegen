@@ -90,6 +90,10 @@
             "type": "string"
         },
         {
+            "name": "dda",
+            "type": "string"
+        },
+        {
             "name": "inline",
             "type": "string"
         },
