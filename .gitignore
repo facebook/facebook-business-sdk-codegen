@@ -61,4 +61,4 @@ typings/
 .next
 
 # Babel
-lib
+/lib
