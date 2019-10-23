@@ -19,23 +19,6 @@
             "params": []
         },
         {
-            "method": "DELETE",
-            "endpoint": "authorized_adaccounts",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "account_id",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "business",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "authorized_adaccounts",
             "return": "AdAccount",

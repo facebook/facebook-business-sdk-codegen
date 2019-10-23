@@ -108,6 +108,11 @@
             "return": "AdAccount",
             "params": [
                 {
+                    "name": "ad_account_created_from_bm_flag",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "currency",
                     "required": true,
                     "type": "string"

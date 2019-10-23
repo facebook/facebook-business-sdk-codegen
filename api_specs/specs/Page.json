@@ -549,30 +549,6 @@
             ]
         },
         {
-            "method": "DELETE",
-            "endpoint": "copyright_whitelisted_ig_partners",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "usernames",
-                    "required": true,
-                    "type": "list<string>"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "copyright_whitelisted_ig_partners",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "usernames",
-                    "required": true,
-                    "type": "list<string>"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "copyright_whitelisted_partners",
             "return": "Profile",
@@ -1979,6 +1955,11 @@
                     "type": "Object"
                 },
                 {
+                    "name": "ice_breakers",
+                    "required": false,
+                    "type": "list<map>"
+                },
+                {
                     "name": "payment_settings",
                     "required": false,
                     "type": "Object"
@@ -2198,6 +2179,23 @@
             "endpoint": "page_backed_instagram_accounts",
             "return": "InstagramUser",
             "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "page_whatsapp_number_verification",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "verification_code",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "whatsapp_number",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
         },
         {
             "method": "POST",

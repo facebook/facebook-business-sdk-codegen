@@ -40,12 +40,32 @@
             "type": "datetime"
         },
         {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "excluded_sources",
+            "type": "Object"
+        },
+        {
             "name": "id",
             "type": "string"
         },
         {
+            "name": "is_enabled_for_measurement",
+            "type": "bool"
+        },
+        {
             "name": "name",
             "type": "string"
+        },
+        {
+            "name": "time_zone",
+            "type": "string"
+        },
+        {
+            "name": "visits_available_date",
+            "type": "int"
         }
     ]
 }

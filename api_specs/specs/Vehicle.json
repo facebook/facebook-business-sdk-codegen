@@ -77,6 +77,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "fb_page_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "fuel_type",
                     "required": false,
                     "type": "vehicle_fuel_type"

@@ -1,23 +1,6 @@
 {
     "apis": [
         {
-            "method": "POST",
-            "endpoint": "auto_trims",
-            "return": "AdVideo",
-            "params": [
-                {
-                    "name": "auto_trim_type",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "target_id",
-                    "required": true,
-                    "type": "unsigned int"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "captions",
             "return": "VideoCaption",
@@ -277,23 +260,6 @@
             "endpoint": "sponsor_tags",
             "return": "Page",
             "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "summarizations",
-            "return": "AdVideo",
-            "params": [
-                {
-                    "name": "summarization_type",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "target_id",
-                    "required": true,
-                    "type": "unsigned int"
-                }
-            ]
         },
         {
             "method": "GET",

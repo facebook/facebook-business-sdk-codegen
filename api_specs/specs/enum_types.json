@@ -124,7 +124,8 @@
             "update_campaign_group_delivery_type",
             "update_campaign_group_spend_cap",
             "update_campaign_name",
-            "update_campaign_run_status"
+            "update_campaign_run_status",
+            "update_campaign_schedule"
         ]
     },
     {
@@ -2762,7 +2763,6 @@
             "action_canvas_component_name",
             "action_carousel_card_id",
             "action_carousel_card_name",
-            "action_converted_product_id",
             "action_destination",
             "action_device",
             "action_reaction",
@@ -2855,7 +2855,6 @@
             "action_canvas_component_name",
             "action_carousel_card_id",
             "action_carousel_card_name",
-            "action_converted_product_id",
             "action_destination",
             "action_device",
             "action_reaction",
@@ -3107,6 +3106,7 @@
             "home_type",
             "home_value",
             "household_composition",
+            "id",
             "income",
             "industries",
             "instagram_positions",
@@ -3114,6 +3114,7 @@
             "interest_defaults_source",
             "interested_in",
             "interests",
+            "is_instagram_destination_ad",
             "is_whatsapp_destination_ad",
             "keywords",
             "life_events",
@@ -3226,6 +3227,7 @@
             "home_type",
             "home_value",
             "household_composition",
+            "id",
             "income",
             "industries",
             "instagram_positions",
@@ -3233,6 +3235,7 @@
             "interest_defaults_source",
             "interested_in",
             "interests",
+            "is_instagram_destination_ad",
             "is_whatsapp_destination_ad",
             "keywords",
             "life_events",
@@ -3356,6 +3359,7 @@
             "home_type",
             "home_value",
             "household_composition",
+            "id",
             "income",
             "industries",
             "instagram_positions",
@@ -3363,6 +3367,7 @@
             "interest_defaults_source",
             "interested_in",
             "interests",
+            "is_instagram_destination_ad",
             "is_whatsapp_destination_ad",
             "keywords",
             "life_events",
@@ -4156,7 +4161,6 @@
             "action_canvas_component_name",
             "action_carousel_card_id",
             "action_carousel_card_name",
-            "action_converted_product_id",
             "action_destination",
             "action_device",
             "action_reaction",
@@ -4249,7 +4253,6 @@
             "action_canvas_component_name",
             "action_carousel_card_id",
             "action_carousel_card_name",
-            "action_converted_product_id",
             "action_destination",
             "action_device",
             "action_reaction",
@@ -4281,7 +4284,6 @@
             "action_canvas_component_name",
             "action_carousel_card_id",
             "action_carousel_card_name",
-            "action_converted_product_id",
             "action_destination",
             "action_device",
             "action_reaction",
@@ -4374,7 +4376,6 @@
             "action_canvas_component_name",
             "action_carousel_card_id",
             "action_carousel_card_name",
-            "action_converted_product_id",
             "action_destination",
             "action_device",
             "action_reaction",
@@ -4557,7 +4558,6 @@
             "action_canvas_component_name",
             "action_carousel_card_id",
             "action_carousel_card_name",
-            "action_converted_product_id",
             "action_destination",
             "action_device",
             "action_reaction",
@@ -4650,7 +4650,6 @@
             "action_canvas_component_name",
             "action_carousel_card_id",
             "action_carousel_card_name",
-            "action_converted_product_id",
             "action_destination",
             "action_device",
             "action_reaction",
@@ -4777,79 +4776,6 @@
         "values": [
             "ASCENDING",
             "DESCENDING"
-        ]
-    },
-    {
-        "name": "adreportspec_actions_group_by",
-        "node": "AdReportSpec",
-        "field_or_param": "actions_group_by",
-        "values": [
-            "action_brand",
-            "action_canvas_component_id",
-            "action_canvas_component_name",
-            "action_carousel_card_id",
-            "action_carousel_card_name",
-            "action_category",
-            "action_converted_brand_tag_id",
-            "action_converted_category_tag_id",
-            "action_converted_product_id",
-            "action_destination",
-            "action_device",
-            "action_event_channel",
-            "action_target_id",
-            "action_type",
-            "action_video_sound",
-            "action_video_type",
-            "attribution_model_type",
-            "interactive_component_sticker_id",
-            "interactive_component_sticker_response"
-        ]
-    },
-    {
-        "name": "adreportspec_creation_source",
-        "node": "AdReportSpec",
-        "field_or_param": "creation_source",
-        "values": [
-            "adsExcelAddin",
-            "adsManagerReporting",
-            "newAdsManager"
-        ]
-    },
-    {
-        "name": "adreportspec_date_preset",
-        "node": "AdReportSpec",
-        "field_or_param": "date_preset",
-        "values": [
-            "last_14d",
-            "last_28d",
-            "last_30d",
-            "last_3d",
-            "last_7d",
-            "last_90d",
-            "last_month",
-            "last_quarter",
-            "last_week_mon_sun",
-            "last_week_sun_sat",
-            "last_year",
-            "lifetime",
-            "this_month",
-            "this_quarter",
-            "this_week_mon_today",
-            "this_week_sun_today",
-            "this_year",
-            "today",
-            "yesterday"
-        ]
-    },
-    {
-        "name": "adreportspec_format",
-        "node": "AdReportSpec",
-        "field_or_param": "format",
-        "values": [
-            "CSV",
-            "JSON",
-            "XLS",
-            "XLSX"
         ]
     },
     {
@@ -5266,6 +5192,7 @@
             "COUNT_IDENTIFIED_USERS",
             "COUNT_PER_USER",
             "DAU",
+            "EVENT_LATEST_FIRE_TIME",
             "EVENT_SOURCE_IDS",
             "JOURNEY_CHANNEL_INCLUSION",
             "JOURNEY_INCLUSION",
@@ -8708,6 +8635,7 @@
             "GET_STARTED",
             "GREETING",
             "HOME_URL",
+            "ICE_BREAKERS",
             "PAYMENT_SETTINGS",
             "PERSISTENT_MENU",
             "TARGET_AUDIENCE",
@@ -8994,6 +8922,7 @@
             "merchant_review",
             "message_deliveries",
             "message_echoes",
+            "message_mention",
             "message_reads",
             "messages",
             "messaging_account_linking",
@@ -9730,7 +9659,9 @@
         "values": [
             "CATALOG_SEGMENT_CUSTOMIZE_DEFAULT",
             "COUNTRY",
-            "LANGUAGE"
+            "LANGUAGE",
+            "LANGUAGE_AND_COUNTRY",
+            "LOCAL"
         ]
     },
     {
@@ -10821,6 +10752,15 @@
         ]
     },
     {
+        "name": "unifiedthreadmessages_source_enum_param",
+        "node": "UnifiedMessage",
+        "field_or_param": "source",
+        "values": [
+            "ALL",
+            "USER"
+        ]
+    },
+    {
         "name": "unifiedthreadmessages_video_type_enum_param",
         "node": "Object",
         "field_or_param": "video_type",
@@ -11740,6 +11680,7 @@
             "ACCOUNT_UPDATE",
             "ALERT_UPDATE",
             "APPOINTMENT_UPDATE",
+            "AUTO_REPLY",
             "ISSUE_RESOLUTION",
             "PAYMENT_UPDATE",
             "PERSONAL_FINANCE_UPDATE",
@@ -11756,6 +11697,7 @@
         "values": [
             "APPROVED",
             "DELETED",
+            "DISABLED",
             "PENDING",
             "PENDING_DELETION",
             "REJECTED"

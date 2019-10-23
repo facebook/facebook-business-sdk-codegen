@@ -152,12 +152,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "adcontracts",
-            "return": "AdContract",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "adcreatives",
             "return": "AdCreative",
             "params": []
@@ -1244,18 +1238,6 @@
                     "type": "string"
                 }
             ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "adtoplinedetails",
-            "return": "AdToplineDetail",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "adtoplines",
-            "return": "AdTopline",
-            "params": []
         },
         {
             "method": "GET",
@@ -3417,6 +3399,12 @@
                     "type": "string"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "subscribed_apps",
+            "return": "AdAccountSubscribedApps",
+            "params": []
         },
         {
             "method": "POST",

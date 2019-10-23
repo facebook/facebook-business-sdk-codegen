@@ -26,6 +26,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "creative_insights",
+            "return": "AdCreativeInsights",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "previews",
             "return": "AdPreview",
             "params": [
@@ -231,6 +237,10 @@
         },
         {
             "name": "effective_authorization_category",
+            "type": "string"
+        },
+        {
+            "name": "effective_instagram_media_id",
             "type": "string"
         },
         {

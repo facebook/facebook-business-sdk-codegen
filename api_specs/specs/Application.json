@@ -1281,12 +1281,12 @@
                 {
                     "name": "file_name",
                     "required": false,
-                    "type": "string"
+                    "type": "Object"
                 },
                 {
                     "name": "file_type",
                     "required": false,
-                    "type": "string"
+                    "type": "Object"
                 },
                 {
                     "name": "session_type",

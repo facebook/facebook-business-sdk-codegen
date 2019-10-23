@@ -1157,6 +1157,23 @@
         },
         {
             "method": "GET",
+            "endpoint": "vehicle_offers",
+            "return": "VehicleOffer",
+            "params": [
+                {
+                    "name": "bulk_pagination",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "filter",
+                    "required": false,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "vehicles",
             "return": "Vehicle",
             "params": [
@@ -1240,6 +1257,11 @@
                 {
                     "name": "exterior_color",
                     "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "fb_page_id",
+                    "required": false,
                     "type": "string"
                 },
                 {

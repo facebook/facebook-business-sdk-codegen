@@ -1,0 +1,136 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "VehicleOffer",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "amount_currency",
+            "type": "string"
+        },
+        {
+            "name": "amount_percentage",
+            "type": "float"
+        },
+        {
+            "name": "amount_price",
+            "type": "string"
+        },
+        {
+            "name": "amount_qualifier",
+            "type": "string"
+        },
+        {
+            "name": "applinks",
+            "type": "AppLinks"
+        },
+        {
+            "name": "body_style",
+            "type": "string"
+        },
+        {
+            "name": "cashback_currency",
+            "type": "string"
+        },
+        {
+            "name": "cashback_price",
+            "type": "string"
+        },
+        {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "dma_codes",
+            "type": "list<string>"
+        },
+        {
+            "name": "downpayment_currency",
+            "type": "string"
+        },
+        {
+            "name": "downpayment_price",
+            "type": "string"
+        },
+        {
+            "name": "downpayment_qualifier",
+            "type": "string"
+        },
+        {
+            "name": "end_date",
+            "type": "string"
+        },
+        {
+            "name": "end_time",
+            "type": "int"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "images",
+            "type": "list<string>"
+        },
+        {
+            "name": "offer_description",
+            "type": "string"
+        },
+        {
+            "name": "offer_disclaimer",
+            "type": "string"
+        },
+        {
+            "name": "offer_type",
+            "type": "string"
+        },
+        {
+            "name": "price",
+            "type": "string"
+        },
+        {
+            "name": "sanitized_images",
+            "type": "list<string>"
+        },
+        {
+            "name": "start_date",
+            "type": "string"
+        },
+        {
+            "name": "start_time",
+            "type": "int"
+        },
+        {
+            "name": "term_length",
+            "type": "unsigned int"
+        },
+        {
+            "name": "term_qualifier",
+            "type": "string"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "trim",
+            "type": "string"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        },
+        {
+            "name": "vehicle_offer_id",
+            "type": "string"
+        },
+        {
+            "name": "year",
+            "type": "int"
+        }
+    ]
+}

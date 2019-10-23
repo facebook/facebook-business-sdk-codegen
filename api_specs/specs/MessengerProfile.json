@@ -18,6 +18,10 @@
             "type": "Object"
         },
         {
+            "name": "ice_breakers",
+            "type": "list<Object>"
+        },
+        {
             "name": "payment_settings",
             "type": "Object"
         },

@@ -14,7 +14,7 @@
         },
         {
             "name": "creator_id",
-            "type": "Profile"
+            "type": "string"
         },
         {
             "name": "from",
