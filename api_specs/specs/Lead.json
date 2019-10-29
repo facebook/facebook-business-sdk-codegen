@@ -75,10 +75,6 @@
             "type": "string"
         },
         {
-            "name": "post",
-            "type": "Link"
-        },
-        {
             "name": "retailer_item_id",
             "type": "string"
         },

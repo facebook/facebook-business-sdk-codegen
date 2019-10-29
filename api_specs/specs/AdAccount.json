@@ -2062,7 +2062,7 @@
                 },
                 {
                     "name": "special_ad_category",
-                    "required": false,
+                    "required": true,
                     "type": "adaccountcampaigns_special_ad_category_enum_param"
                 },
                 {
@@ -2840,18 +2840,6 @@
             "endpoint": "instagram_accounts",
             "return": "InstagramUser",
             "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "leadgen_forms",
-            "return": "LeadgenForm",
-            "params": [
-                {
-                    "name": "query",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
         },
         {
             "method": "GET",
@@ -3986,10 +3974,6 @@
         {
             "name": "tos_accepted",
             "type": "map<string, int>"
-        },
-        {
-            "name": "user_role",
-            "type": "string"
         },
         {
             "name": "user_tasks",

@@ -250,10 +250,6 @@
             "type": "list<AdsActionStats>"
         },
         {
-            "name": "cost_per_10_sec_video_view",
-            "type": "list<AdsActionStats>"
-        },
-        {
             "name": "cost_per_15_sec_video_view",
             "type": "list<AdsActionStats>"
         },
@@ -718,10 +714,6 @@
             "type": "string"
         },
         {
-            "name": "relevance_score",
-            "type": "AdgroupRelevanceScore"
-        },
-        {
             "name": "rule_asset",
             "type": "Object"
         },
@@ -834,20 +826,12 @@
             "type": "list<AdsActionStats>"
         },
         {
-            "name": "unique_video_view_10_sec",
-            "type": "list<AdsActionStats>"
-        },
-        {
             "name": "unique_video_view_15_sec",
             "type": "list<AdsActionStats>"
         },
         {
             "name": "updated_time",
             "type": "string"
-        },
-        {
-            "name": "video_10_sec_watched_actions",
-            "type": "list<AdsActionStats>"
         },
         {
             "name": "video_15_sec_watched_actions",

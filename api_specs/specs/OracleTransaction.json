@@ -47,6 +47,10 @@
             "type": "string"
         },
         {
+            "name": "campaign",
+            "type": "AtlasCampaign"
+        },
+        {
             "name": "cdn_download_uri",
             "type": "string"
         },

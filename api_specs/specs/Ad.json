@@ -322,18 +322,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "keywordstats",
-            "return": "AdKeywordStats",
-            "params": [
-                {
-                    "name": "date",
-                    "required": false,
-                    "type": "datetime"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "leads",
             "return": "Lead",
             "params": []

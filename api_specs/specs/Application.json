@@ -1000,35 +1000,6 @@
             ]
         },
         {
-            "method": "GET",
-            "endpoint": "objects",
-            "return": "OpenGraphObject",
-            "params": [
-                {
-                    "name": "type",
-                    "required": true,
-                    "type": "Object"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "objects",
-            "return": "OpenGraphObject",
-            "params": [
-                {
-                    "name": "object",
-                    "required": true,
-                    "type": "Object"
-                },
-                {
-                    "name": "type",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "POST",
             "endpoint": "occludespopups",
             "return": "Object",

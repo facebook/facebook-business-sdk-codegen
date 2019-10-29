@@ -1825,18 +1825,6 @@
         },
         {
             "method": "POST",
-            "endpoint": "message_creatives",
-            "return": "Page",
-            "params": [
-                {
-                    "name": "messages",
-                    "required": false,
-                    "type": "list<Object>"
-                }
-            ]
-        },
-        {
-            "method": "POST",
             "endpoint": "messages",
             "return": "Page",
             "params": [
@@ -4287,14 +4275,6 @@
         {
             "name": "leadgen_form_preview_details",
             "type": "LeadGenFormPreviewDetails"
-        },
-        {
-            "name": "leadgen_has_crm_integration",
-            "type": "bool"
-        },
-        {
-            "name": "leadgen_has_fat_ping_crm_integration",
-            "type": "bool"
         },
         {
             "name": "leadgen_tos_acceptance_time",

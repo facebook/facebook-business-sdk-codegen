@@ -66,24 +66,8 @@
             "type": "datetime"
         },
         {
-            "name": "creator",
-            "type": "User"
-        },
-        {
-            "name": "creator_id",
-            "type": "int"
-        },
-        {
-            "name": "cusomized_tcpa_content",
-            "type": "string"
-        },
-        {
             "name": "expired_leads_count",
             "type": "unsigned int"
-        },
-        {
-            "name": "extra_details",
-            "type": "list<string>"
         },
         {
             "name": "follow_up_action_text",
@@ -102,10 +86,6 @@
             "type": "bool"
         },
         {
-            "name": "leadgen_export_csv_url",
-            "type": "string"
-        },
-        {
             "name": "leads_count",
             "type": "unsigned int"
         },
@@ -115,10 +95,6 @@
         },
         {
             "name": "locale",
-            "type": "string"
-        },
-        {
-            "name": "messenger_welcome_message",
             "type": "string"
         },
         {
@@ -142,10 +118,6 @@
             "type": "string"
         },
         {
-            "name": "qualifiers",
-            "type": "list<Object>"
-        },
-        {
             "name": "question_page_custom_headline",
             "type": "string"
         },
@@ -156,10 +128,6 @@
         {
             "name": "status",
             "type": "string"
-        },
-        {
-            "name": "tcpa_compliance",
-            "type": "bool"
         },
         {
             "name": "thank_you_page",

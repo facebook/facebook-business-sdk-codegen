@@ -2,6 +2,28 @@
     "apis": [
         {
             "method": "GET",
+            "endpoint": "ad_platforms",
+            "return": "AtlasTrackingConnection",
+            "params": [
+                {
+                    "name": "filter_by",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "metric_scope",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "order_by",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "atlas_sales_accesses",
             "return": "AtlasSalesAccess",
             "params": []
@@ -19,6 +41,57 @@
                 {
                     "name": "status",
                     "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "custom_breakdowns",
+            "return": "AtlasDimensionGroup",
+            "params": [
+                {
+                    "name": "filter_by",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "order_by",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "diagnostics",
+            "return": "AtlasDiagnostic",
+            "params": [
+                {
+                    "name": "filter_by",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "order_by",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "external_import_file",
+            "return": "AtlasExternalAdserverImportFile",
+            "params": [
+                {
+                    "name": "filter_by",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "order_by",
+                    "required": false,
                     "type": "string"
                 }
             ]

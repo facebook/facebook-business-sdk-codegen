@@ -1040,18 +1040,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "owned_domains",
-            "return": "OwnedDomain",
-            "params": [
-                {
-                    "name": "domain_name",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "owned_instagram_accounts",
             "return": "InstagramUser",
@@ -1227,6 +1215,12 @@
                     "type": "int"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "pixel_tos",
+            "return": "BusinessPixelTOS",
+            "params": []
         },
         {
             "method": "GET",

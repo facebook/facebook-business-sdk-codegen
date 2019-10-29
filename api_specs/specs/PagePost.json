@@ -185,18 +185,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "private_replies",
-            "return": "PagePost",
-            "params": [
-                {
-                    "name": "message",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "reactions",
             "return": "Profile",
