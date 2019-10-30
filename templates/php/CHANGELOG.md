@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 
 ## Unreleased
+  - Added strongly typed Server-Side API for Web (https://developers.facebook.com/docs/marketing-api/facebook-pixel/server-side-api/using-the-api)
+
 ### Fixed
  - Introduce `addUsersMultiKey` and `removeUsersMultiKey` in `CustomAudience` to still allow add users to `CustomAudience` with multiple keys after `CustomAudienceMultiKey` been deprecated.
 
@@ -13,7 +15,7 @@ All notable changes to this project will be documented in this file.
 
 ## v3.3.1
 ### Changed
-- Remove list of API call from Business SDK, any [these APIs](https://developers.facebook.com/docs/graph-api/changelog/4-30-2019-endpoint-deprecations) included in Business SDK will be deprecated.   
+- Remove list of API call from Business SDK, any [these APIs](https://developers.facebook.com/docs/graph-api/changelog/4-30-2019-endpoint-deprecations) included in Business SDK will be deprecated.
 
 ## v3.3.0
 ### Changed
