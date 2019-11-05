@@ -250,6 +250,11 @@
                     "type": "liveencoder_status"
                 },
                 {
+                    "name": "target_token",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "version",
                     "required": false,
                     "type": "string"

@@ -451,18 +451,6 @@
         },
         {
             "method": "POST",
-            "endpoint": "catalog_segment_producer_tos",
-            "return": "Business",
-            "params": [
-                {
-                    "name": "catalog_segment_id",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "POST",
             "endpoint": "claim_custom_conversions",
             "return": "CustomConversion",
             "params": [
@@ -983,7 +971,7 @@
                 {
                     "name": "client_user_id",
                     "required": false,
-                    "type": "Object"
+                    "type": "int"
                 }
             ]
         },
@@ -1218,6 +1206,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "pixel_tos",
+            "return": "BusinessPixelTOS",
+            "params": []
+        },
+        {
+            "method": "POST",
             "endpoint": "pixel_tos",
             "return": "BusinessPixelTOS",
             "params": []

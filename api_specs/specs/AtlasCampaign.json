@@ -83,6 +83,28 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "sources",
+            "return": "AtlasPublisher",
+            "params": [
+                {
+                    "name": "filter_by",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "metric_scope",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "order_by",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "name": "#get",
             "method": "GET",
             "return": "AtlasCampaign",
@@ -103,10 +125,6 @@
         {
             "name": "alias",
             "type": "string"
-        },
-        {
-            "name": "clicks",
-            "type": "int"
         },
         {
             "name": "cost_per_1k_impressions",
@@ -133,10 +151,6 @@
             "type": "float"
         },
         {
-            "name": "data_driven_convs_per_100_clicks",
-            "type": "float"
-        },
-        {
             "name": "data_driven_convs_per_1k_impress",
             "type": "float"
         },
@@ -157,10 +171,6 @@
             "type": "float"
         },
         {
-            "name": "data_driven_nullable_unattributed",
-            "type": "float"
-        },
-        {
             "name": "data_driven_revenue",
             "type": "float"
         },
@@ -169,15 +179,7 @@
             "type": "float"
         },
         {
-            "name": "data_driven_unattributed",
-            "type": "float"
-        },
-        {
             "name": "even_credit_convs",
-            "type": "float"
-        },
-        {
-            "name": "even_credit_convs_per_100_clicks",
             "type": "float"
         },
         {
@@ -205,15 +207,7 @@
             "type": "float"
         },
         {
-            "name": "even_credit_unattributed",
-            "type": "float"
-        },
-        {
             "name": "first_click_convs",
-            "type": "float"
-        },
-        {
-            "name": "first_click_convs_per_100_clicks",
             "type": "float"
         },
         {
@@ -241,15 +235,7 @@
             "type": "float"
         },
         {
-            "name": "first_click_unattributed",
-            "type": "float"
-        },
-        {
             "name": "first_touch_convs",
-            "type": "float"
-        },
-        {
-            "name": "first_touch_convs_per_100_clicks",
             "type": "float"
         },
         {
@@ -277,10 +263,6 @@
             "type": "float"
         },
         {
-            "name": "first_touch_unattributed",
-            "type": "float"
-        },
-        {
             "name": "id",
             "type": "string"
         },
@@ -290,10 +272,6 @@
         },
         {
             "name": "last_click_convs",
-            "type": "float"
-        },
-        {
-            "name": "last_click_convs_per_100_clicks",
             "type": "float"
         },
         {
@@ -318,10 +296,6 @@
         },
         {
             "name": "last_click_roas",
-            "type": "float"
-        },
-        {
-            "name": "last_click_unattributed",
             "type": "float"
         },
         {
@@ -373,10 +347,6 @@
             "type": "float"
         },
         {
-            "name": "last_touch_convs_per_100_clicks",
-            "type": "float"
-        },
-        {
             "name": "last_touch_convs_per_1k_impress",
             "type": "float"
         },
@@ -401,10 +371,6 @@
             "type": "float"
         },
         {
-            "name": "last_touch_unattributed",
-            "type": "float"
-        },
-        {
             "name": "name",
             "type": "string"
         },
@@ -414,10 +380,6 @@
         },
         {
             "name": "positional_30fl_convs",
-            "type": "float"
-        },
-        {
-            "name": "positional_30fl_convs_per_100_clicks",
             "type": "float"
         },
         {
@@ -445,15 +407,7 @@
             "type": "float"
         },
         {
-            "name": "positional_30fl_unattributed",
-            "type": "float"
-        },
-        {
             "name": "positional_40fl_convs",
-            "type": "float"
-        },
-        {
-            "name": "positional_40fl_convs_per_100_clicks",
             "type": "float"
         },
         {
@@ -481,10 +435,6 @@
             "type": "float"
         },
         {
-            "name": "positional_40fl_unattributed",
-            "type": "float"
-        },
-        {
             "name": "report_click_through_rate",
             "type": "float"
         },
@@ -501,15 +451,7 @@
             "type": "int"
         },
         {
-            "name": "search_clicks",
-            "type": "int"
-        },
-        {
             "name": "time_decay_1day_convs",
-            "type": "float"
-        },
-        {
-            "name": "time_decay_1day_convs_per_100_clicks",
             "type": "float"
         },
         {
@@ -537,15 +479,7 @@
             "type": "float"
         },
         {
-            "name": "time_decay_1day_unattributed",
-            "type": "float"
-        },
-        {
             "name": "time_decay_7day_convs",
-            "type": "float"
-        },
-        {
-            "name": "time_decay_7day_convs_per_100_clicks",
             "type": "float"
         },
         {
@@ -570,10 +504,6 @@
         },
         {
             "name": "time_decay_7day_roas",
-            "type": "float"
-        },
-        {
-            "name": "time_decay_7day_unattributed",
             "type": "float"
         },
         {

@@ -54,10 +54,6 @@
     ],
     "fields": [
         {
-            "name": "created_time",
-            "type": "datetime"
-        },
-        {
             "name": "description",
             "type": "string"
         },

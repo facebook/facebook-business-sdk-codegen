@@ -2925,10 +2925,6 @@
             "type": "bool"
         },
         {
-            "name": "labels",
-            "type": "list<PageLabel>"
-        },
-        {
             "name": "languages",
             "type": "list<Experience>"
         },

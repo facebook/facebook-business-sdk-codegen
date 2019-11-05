@@ -55,6 +55,40 @@
             "params": []
         },
         {
+            "method": "DELETE",
+            "endpoint": "adlabels",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "adlabels",
+                    "required": true,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "execution_options",
+                    "required": false,
+                    "type": "list<adcampaignadlabels_execution_options_enum_param>"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "adlabels",
+            "return": "AdSet",
+            "params": [
+                {
+                    "name": "adlabels",
+                    "required": true,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "execution_options",
+                    "required": false,
+                    "type": "list<adcampaignadlabels_execution_options_enum_param>"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "adrules_governed",
             "return": "AdRule",
@@ -454,40 +488,6 @@
                     "name": "use_account_attribution_setting",
                     "required": false,
                     "type": "bool"
-                }
-            ]
-        },
-        {
-            "method": "DELETE",
-            "endpoint": "labels",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "adlabels",
-                    "required": true,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "execution_options",
-                    "required": false,
-                    "type": "list<adcampaignlabels_execution_options_enum_param>"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "labels",
-            "return": "AdSet",
-            "params": [
-                {
-                    "name": "adlabels",
-                    "required": true,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "execution_options",
-                    "required": false,
-                    "type": "list<adcampaignlabels_execution_options_enum_param>"
                 }
             ]
         },

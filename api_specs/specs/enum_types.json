@@ -699,6 +699,7 @@
             "OFFER",
             "PAGE",
             "PHOTO",
+            "POST_DELETED",
             "SHARE",
             "STATUS",
             "STORE_ITEM",
@@ -2148,6 +2149,7 @@
             "CREDIT",
             "EMPLOYMENT",
             "HOUSING",
+            "ISSUES_ELECTIONS_POLITICS",
             "NONE"
         ]
     },
@@ -2238,6 +2240,7 @@
             "LIVE_PHOTO",
             "LOOK_NOW_DEPRECATED",
             "MOMENTS_VIDEO",
+            "NEO_ASYNC_GAME_VIDEO",
             "NO_STORY",
             "OCULUS_CREATOR_PORTAL",
             "OCULUS_VENUES_BROADCAST",
@@ -2273,6 +2276,7 @@
             "UNLISTED",
             "VIDEO_COMMENT",
             "VIDEO_CREATIVE_EDITOR_AUTOGEN_AD_VIDEO",
+            "VIDEO_SUPERRES",
             "WOODHENGE",
             "YOUR_DAY"
         ]
@@ -2514,6 +2518,7 @@
             "CREDIT",
             "EMPLOYMENT",
             "HOUSING",
+            "ISSUES_ELECTIONS_POLITICS",
             "NONE"
         ]
     },
@@ -2605,6 +2610,7 @@
             "HOME_LISTING",
             "HOTEL",
             "MEDIA_TITLE",
+            "OFFLINE_PRODUCT",
             "PRODUCT",
             "VEHICLE",
             "VEHICLE_OFFER"
@@ -2711,6 +2717,8 @@
             "AUDIENCE_NETWORK_REWARDED_VIDEO",
             "DESKTOP_FEED_STANDARD",
             "FACEBOOK_STORY_MOBILE",
+            "INSTAGRAM_EXPLORE_CONTEXTUAL",
+            "INSTAGRAM_EXPLORE_IMMERSIVE",
             "INSTAGRAM_STANDARD",
             "INSTAGRAM_STORY",
             "INSTANT_ARTICLE_RECIRCULATION_AD",
@@ -2920,6 +2928,7 @@
             "HOME_LISTING",
             "HOTEL",
             "MEDIA_TITLE",
+            "OFFLINE_PRODUCT",
             "PRODUCT",
             "VEHICLE",
             "VEHICLE_OFFER"
@@ -3033,6 +3042,7 @@
             "CREDIT",
             "EMPLOYMENT",
             "HOUSING",
+            "ISSUES_ELECTIONS_POLITICS",
             "NONE"
         ]
     },
@@ -3286,6 +3296,7 @@
             "CREDIT",
             "EMPLOYMENT",
             "HOUSING",
+            "ISSUES_ELECTIONS_POLITICS",
             "NONE"
         ]
     },
@@ -3474,6 +3485,7 @@
             "CREDIT",
             "EMPLOYMENT",
             "HOUSING",
+            "ISSUES_ELECTIONS_POLITICS",
             "NONE"
         ]
     },
@@ -3681,6 +3693,7 @@
             "CREDIT",
             "EMPLOYMENT",
             "HOUSING",
+            "ISSUES_ELECTIONS_POLITICS",
             "NONE"
         ]
     },
@@ -3700,6 +3713,14 @@
             "DATE",
             "STATUS",
             "TARGETING"
+        ]
+    },
+    {
+        "name": "adcampaignadlabels_execution_options_enum_param",
+        "node": "AdSet",
+        "field_or_param": "execution_options",
+        "values": [
+            "validate_only"
         ]
     },
     {
@@ -3949,6 +3970,7 @@
             "CREDIT",
             "EMPLOYMENT",
             "HOUSING",
+            "ISSUES_ELECTIONS_POLITICS",
             "NONE"
         ]
     },
@@ -4386,14 +4408,6 @@
         ]
     },
     {
-        "name": "adcampaignlabels_execution_options_enum_param",
-        "node": "AdSet",
-        "field_or_param": "execution_options",
-        "values": [
-            "validate_only"
-        ]
-    },
-    {
         "name": "adcreative_status",
         "node": "AdCreative",
         "field_or_param": "status",
@@ -4415,6 +4429,8 @@
             "AUDIENCE_NETWORK_REWARDED_VIDEO",
             "DESKTOP_FEED_STANDARD",
             "FACEBOOK_STORY_MOBILE",
+            "INSTAGRAM_EXPLORE_CONTEXTUAL",
+            "INSTAGRAM_EXPLORE_IMMERSIVE",
             "INSTAGRAM_STANDARD",
             "INSTAGRAM_STORY",
             "INSTANT_ARTICLE_RECIRCULATION_AD",
@@ -4670,6 +4686,8 @@
             "AUDIENCE_NETWORK_REWARDED_VIDEO",
             "DESKTOP_FEED_STANDARD",
             "FACEBOOK_STORY_MOBILE",
+            "INSTAGRAM_EXPLORE_CONTEXTUAL",
+            "INSTAGRAM_EXPLORE_IMMERSIVE",
             "INSTAGRAM_STANDARD",
             "INSTAGRAM_STORY",
             "INSTANT_ARTICLE_RECIRCULATION_AD",
@@ -5806,7 +5824,10 @@
         "values": [
             "age",
             "country",
-            "gender"
+            "device_platform",
+            "gender",
+            "platform_position",
+            "publisher_platform"
         ]
     },
     {
@@ -6312,6 +6333,7 @@
             "LIVE_PHOTO",
             "LOOK_NOW_DEPRECATED",
             "MOMENTS_VIDEO",
+            "NEO_ASYNC_GAME_VIDEO",
             "NO_STORY",
             "OCULUS_CREATOR_PORTAL",
             "OCULUS_VENUES_BROADCAST",
@@ -6347,6 +6369,7 @@
             "UNLISTED",
             "VIDEO_COMMENT",
             "VIDEO_CREATIVE_EDITOR_AUTOGEN_AD_VIDEO",
+            "VIDEO_SUPERRES",
             "WOODHENGE",
             "YOUR_DAY"
         ]
@@ -6552,6 +6575,7 @@
             "HOME_LISTING",
             "HOTEL",
             "MEDIA_TITLE",
+            "OFFLINE_PRODUCT",
             "PRODUCT",
             "VEHICLE",
             "VEHICLE_OFFER"
@@ -7240,6 +7264,7 @@
             "LIVE_PHOTO",
             "LOOK_NOW_DEPRECATED",
             "MOMENTS_VIDEO",
+            "NEO_ASYNC_GAME_VIDEO",
             "NO_STORY",
             "OCULUS_CREATOR_PORTAL",
             "OCULUS_VENUES_BROADCAST",
@@ -7275,6 +7300,7 @@
             "UNLISTED",
             "VIDEO_COMMENT",
             "VIDEO_CREATIVE_EDITOR_AUTOGEN_AD_VIDEO",
+            "VIDEO_SUPERRES",
             "WOODHENGE",
             "YOUR_DAY"
         ]
@@ -8938,6 +8964,7 @@
             "leadgen_fat",
             "live_videos",
             "location",
+            "mcom_invoice_change",
             "members",
             "mention",
             "merchant_review",
@@ -9123,6 +9150,7 @@
             "LIVE_PHOTO",
             "LOOK_NOW_DEPRECATED",
             "MOMENTS_VIDEO",
+            "NEO_ASYNC_GAME_VIDEO",
             "NO_STORY",
             "OCULUS_CREATOR_PORTAL",
             "OCULUS_VENUES_BROADCAST",
@@ -9158,6 +9186,7 @@
             "UNLISTED",
             "VIDEO_COMMENT",
             "VIDEO_CREATIVE_EDITOR_AUTOGEN_AD_VIDEO",
+            "VIDEO_SUPERRES",
             "WOODHENGE",
             "YOUR_DAY"
         ]
@@ -9356,6 +9385,52 @@
         ]
     },
     {
+        "name": "post_backdated_time_granularity",
+        "node": "Post",
+        "field_or_param": "backdated_time_granularity",
+        "values": [
+            "day",
+            "hour",
+            "min",
+            "month",
+            "none",
+            "year"
+        ]
+    },
+    {
+        "name": "post_feed_story_visibility",
+        "node": "Post",
+        "field_or_param": "feed_story_visibility",
+        "values": [
+            "hidden",
+            "visible"
+        ]
+    },
+    {
+        "name": "post_timeline_visibility",
+        "node": "Post",
+        "field_or_param": "timeline_visibility",
+        "values": [
+            "forced_allow",
+            "hidden",
+            "normal"
+        ]
+    },
+    {
+        "name": "postcomments_comment_privacy_value_enum_param",
+        "node": "Comment",
+        "field_or_param": "comment_privacy_value",
+        "values": [
+            "DEFAULT_PRIVACY",
+            "FRIENDS_AND_POST_OWNER",
+            "FRIENDS_ONLY",
+            "GRAPHQL_MULTIPLE_VALUE_HACK_DO_NOT_USE",
+            "OWNER_OR_COMMENTER",
+            "SIDE_CONVERSATION",
+            "SIDE_CONVERSATION_AND_POST_OWNER"
+        ]
+    },
+    {
         "name": "postcomments_filter_enum_param",
         "node": "Comment",
         "field_or_param": "filter",
@@ -9418,6 +9493,91 @@
             "lifetime",
             "month",
             "week"
+        ]
+    },
+    {
+        "name": "postpromotions_audience_enum_param",
+        "node": "Object",
+        "field_or_param": "audience",
+        "values": [
+            "AUTO_LOOKALIKE",
+            "AUTO_PAGE_LOOKALIKE",
+            "AUTO_TARGETING",
+            "CREATE_NEW",
+            "CUSTOM_AUDIENCE",
+            "DISTRICT",
+            "EVENT_CUSTOM_AUDIENCES",
+            "EVENT_ENGAGEMENT",
+            "FANS",
+            "GROUPER",
+            "HEC_AUDIENCE",
+            "IG_PROMOTED_POST_AUTO",
+            "LOCAL",
+            "LOOKALIKE",
+            "MULT_CUSTOM_AUDIENCES",
+            "NCPP",
+            "SAVED_AUDIENCE",
+            "SMART_AUDIENCE"
+        ]
+    },
+    {
+        "name": "postpromotions_cta_type_enum_param",
+        "node": "Object",
+        "field_or_param": "cta_type",
+        "values": [
+            "ADD_TO_CART",
+            "APPLY_NOW",
+            "BOOK_TRAVEL",
+            "BUY",
+            "BUY_NOW",
+            "BUY_TICKETS",
+            "CALL",
+            "CALL_ME",
+            "CONTACT",
+            "CONTACT_US",
+            "DONATE",
+            "DONATE_NOW",
+            "DOWNLOAD",
+            "EVENT_RSVP",
+            "FIND_A_GROUP",
+            "FIND_YOUR_GROUPS",
+            "FOLLOW_NEWS_STORYLINE",
+            "GET_DIRECTIONS",
+            "GET_OFFER",
+            "GET_OFFER_VIEW",
+            "GET_QUOTE",
+            "GET_SHOWTIMES",
+            "INSTALL_APP",
+            "INSTALL_MOBILE_APP",
+            "LEARN_MORE",
+            "LIKE_PAGE",
+            "LISTEN_MUSIC",
+            "LISTEN_NOW",
+            "MESSAGE_PAGE",
+            "MOBILE_DOWNLOAD",
+            "MOMENTS",
+            "NO_BUTTON",
+            "OPEN_LINK",
+            "ORDER_NOW",
+            "PLAY_GAME",
+            "RECORD_NOW",
+            "SAY_THANKS",
+            "SEE_MORE",
+            "SELL_NOW",
+            "SHARE",
+            "SHOP_NOW",
+            "SIGN_UP",
+            "SOTTO_SUBSCRIBE",
+            "SUBSCRIBE",
+            "UPDATE_APP",
+            "USE_APP",
+            "USE_MOBILE_APP",
+            "VIDEO_ANNOTATION",
+            "VISIT_PAGES_FEED",
+            "WATCH_MORE",
+            "WATCH_VIDEO",
+            "WHATSAPP_MESSAGE",
+            "WOODHENGE_SUPPORT"
         ]
     },
     {
@@ -11169,6 +11329,7 @@
             "LIVE_PHOTO",
             "LOOK_NOW_DEPRECATED",
             "MOMENTS_VIDEO",
+            "NEO_ASYNC_GAME_VIDEO",
             "NO_STORY",
             "OCULUS_CREATOR_PORTAL",
             "OCULUS_VENUES_BROADCAST",
@@ -11204,6 +11365,7 @@
             "UNLISTED",
             "VIDEO_COMMENT",
             "VIDEO_CREATIVE_EDITOR_AUTOGEN_AD_VIDEO",
+            "VIDEO_SUPERRES",
             "WOODHENGE",
             "YOUR_DAY"
         ]

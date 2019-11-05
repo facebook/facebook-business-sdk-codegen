@@ -1,4 +1,467 @@
 {
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "attachments",
+            "return": "StoryAttachment",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "comments",
+            "return": "Comment",
+            "params": [
+                {
+                    "name": "filter",
+                    "required": false,
+                    "type": "postcomments_filter_enum_param"
+                },
+                {
+                    "name": "live_filter",
+                    "required": false,
+                    "type": "postcomments_live_filter_enum_param"
+                },
+                {
+                    "name": "order",
+                    "required": false,
+                    "type": "postcomments_order_enum_param"
+                },
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "comments",
+            "return": "Comment",
+            "params": [
+                {
+                    "name": "attachment_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "attachment_share_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "attachment_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "comment",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "comment_privacy_value",
+                    "required": false,
+                    "type": "postcomments_comment_privacy_value_enum_param"
+                },
+                {
+                    "name": "feedback_source",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "message",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "nectar_module",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "parent_comment_id",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "post_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "tracking",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "dynamic_posts",
+            "return": "RTBDynamicPost",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "edit_actions",
+            "return": "EditAction",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "insights",
+            "return": "InsightsResult",
+            "params": [
+                {
+                    "name": "date_preset",
+                    "required": false,
+                    "type": "postinsights_date_preset_enum_param"
+                },
+                {
+                    "name": "metric",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "period",
+                    "required": false,
+                    "type": "postinsights_period_enum_param"
+                },
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "until",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "likes",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "nectar_module",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "tracking",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "likes",
+            "return": "Profile",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "likes",
+            "return": "Post",
+            "params": [
+                {
+                    "name": "feedback_source",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "nectar_module",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "tracking",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "promotions",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "ad_account_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "ad_conversion_pixel_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "audience",
+                    "required": false,
+                    "type": "postpromotions_audience_enum_param"
+                },
+                {
+                    "name": "audience_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "bid_amount",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "budget",
+                    "required": true,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "cta_type",
+                    "required": false,
+                    "type": "postpromotions_cta_type_enum_param"
+                },
+                {
+                    "name": "currency",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "flow_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "placement",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "start_time",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "stop_time",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "targeting",
+                    "required": false,
+                    "type": "Targeting"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "reactions",
+            "return": "Profile",
+            "params": [
+                {
+                    "name": "type",
+                    "required": false,
+                    "type": "postreactions_type_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "sharedposts",
+            "return": "Post",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "sponsor_tags",
+            "return": "Page",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "to",
+            "return": "Profile",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "with_tags",
+            "return": "Profile",
+            "params": []
+        },
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "Post",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "Post",
+            "params": [
+                {
+                    "name": "attached_media",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "backdated_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "backdated_time_granularity",
+                    "required": false,
+                    "type": "post_backdated_time_granularity"
+                },
+                {
+                    "name": "composer_session_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "direct_share_status",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "feed_story_visibility",
+                    "required": false,
+                    "type": "post_feed_story_visibility"
+                },
+                {
+                    "name": "is_explicit_location",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_hidden",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_pinned",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_published",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "message",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "og_action_type_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "og_hide_object_attachment",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "og_icon_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "og_object_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "og_phrase",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "og_set_profile_badge",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "og_suggestion_mechanism",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "place",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "privacy",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "product_item",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "scheduled_publish_time",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "should_sync_product_edit",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "source_type",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "sponsor_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "sponsor_relationship",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "tags",
+                    "required": false,
+                    "type": "list<int>"
+                },
+                {
+                    "name": "text_format_preset_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "timeline_visibility",
+                    "required": false,
+                    "type": "post_timeline_visibility"
+                },
+                {
+                    "name": "tracking",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
     "fields": [
         {
             "name": "actions",

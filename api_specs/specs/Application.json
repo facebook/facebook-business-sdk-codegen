@@ -762,7 +762,7 @@
                 {
                     "name": "owner_id",
                     "required": false,
-                    "type": "Object"
+                    "type": "int"
                 },
                 {
                     "name": "schedule",

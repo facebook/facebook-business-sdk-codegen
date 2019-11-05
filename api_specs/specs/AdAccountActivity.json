@@ -33,14 +33,6 @@
             "type": "Object"
         },
         {
-            "name": "credit_status_new",
-            "type": "string"
-        },
-        {
-            "name": "credit_status_old",
-            "type": "string"
-        },
-        {
             "name": "currency_new",
             "type": "string"
         },

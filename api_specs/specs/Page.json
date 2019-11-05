@@ -184,17 +184,17 @@
                 {
                     "name": "psid",
                     "required": false,
-                    "type": "Object"
+                    "type": "int"
                 },
                 {
                     "name": "uid",
                     "required": false,
-                    "type": "Object"
+                    "type": "int"
                 },
                 {
                     "name": "user",
                     "required": false,
-                    "type": "Object"
+                    "type": "int"
                 }
             ]
         },
@@ -228,7 +228,7 @@
                 {
                     "name": "psid",
                     "required": false,
-                    "type": "list<Object>"
+                    "type": "list<int>"
                 },
                 {
                     "name": "uid",
@@ -2817,7 +2817,7 @@
                 {
                     "name": "uid",
                     "required": false,
-                    "type": "Object"
+                    "type": "int"
                 }
             ]
         },
@@ -2831,12 +2831,6 @@
             "method": "GET",
             "endpoint": "scheduled_posts",
             "return": "PagePost",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "screennames",
-            "return": "ScreenName",
             "params": []
         },
         {
