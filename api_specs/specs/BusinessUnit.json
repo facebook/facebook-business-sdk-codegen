@@ -91,6 +91,48 @@
         },
         {
             "method": "GET",
+            "endpoint": "conversion_paths",
+            "return": "AtlasConversionPath",
+            "params": [
+                {
+                    "name": "click_lookback_window",
+                    "required": true,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "date_range",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "fb_conversion_event_id",
+                    "required": true,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "limit",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "metric_context",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "time_period",
+                    "required": true,
+                    "type": "businessunitconversion_paths_time_period_enum_param"
+                },
+                {
+                    "name": "view_lookback_window",
+                    "required": true,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "custom_breakdowns",
             "return": "AtlasDimensionGroup",
             "params": [

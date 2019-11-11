@@ -5,6 +5,18 @@
             "method": "GET",
             "return": "WhatsAppBusinessProfile",
             "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "WhatsAppBusinessProfile",
+            "params": [
+                {
+                    "name": "verified_name",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
         }
     ],
     "fields": [

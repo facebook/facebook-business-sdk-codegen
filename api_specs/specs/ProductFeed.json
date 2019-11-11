@@ -258,11 +258,6 @@
                     "name": "update_schedule",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "upload_schedule",
-                    "required": false,
-                    "type": "string"
                 }
             ]
         }

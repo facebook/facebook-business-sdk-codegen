@@ -38,10 +38,6 @@
             "type": "TargetingGeoLocationLocationExpansion"
         },
         {
-            "name": "location_set_ids",
-            "type": "list<string>"
-        },
-        {
             "name": "location_types",
             "type": "list<string>"
         },

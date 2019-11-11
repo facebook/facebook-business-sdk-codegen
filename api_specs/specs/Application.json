@@ -1892,6 +1892,10 @@
             "type": "string"
         },
         {
+            "name": "suggested_events_setting",
+            "type": "string"
+        },
+        {
             "name": "supported_platforms",
             "type": "list<Application_supported_platforms>"
         },

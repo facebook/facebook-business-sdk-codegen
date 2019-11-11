@@ -410,6 +410,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "business_units",
+            "return": "BusinessUnit",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "business_users",
             "return": "BusinessUser",
             "params": []

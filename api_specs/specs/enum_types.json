@@ -2149,7 +2149,6 @@
             "CREDIT",
             "EMPLOYMENT",
             "HOUSING",
-            "ISSUES_ELECTIONS_POLITICS",
             "NONE"
         ]
     },
@@ -2176,6 +2175,7 @@
         "node": "AdVideo",
         "field_or_param": "container_type",
         "values": [
+            "ACO_VIDEO_VARIATION",
             "AD_BREAK_PREVIEW",
             "AD_DERIVATIVE",
             "AGE_UP",
@@ -2518,7 +2518,6 @@
             "CREDIT",
             "EMPLOYMENT",
             "HOUSING",
-            "ISSUES_ELECTIONS_POLITICS",
             "NONE"
         ]
     },
@@ -3042,7 +3041,6 @@
             "CREDIT",
             "EMPLOYMENT",
             "HOUSING",
-            "ISSUES_ELECTIONS_POLITICS",
             "NONE"
         ]
     },
@@ -3296,7 +3294,6 @@
             "CREDIT",
             "EMPLOYMENT",
             "HOUSING",
-            "ISSUES_ELECTIONS_POLITICS",
             "NONE"
         ]
     },
@@ -3485,7 +3482,6 @@
             "CREDIT",
             "EMPLOYMENT",
             "HOUSING",
-            "ISSUES_ELECTIONS_POLITICS",
             "NONE"
         ]
     },
@@ -3693,7 +3689,6 @@
             "CREDIT",
             "EMPLOYMENT",
             "HOUSING",
-            "ISSUES_ELECTIONS_POLITICS",
             "NONE"
         ]
     },
@@ -3970,7 +3965,6 @@
             "CREDIT",
             "EMPLOYMENT",
             "HOUSING",
-            "ISSUES_ELECTIONS_POLITICS",
             "NONE"
         ]
     },
@@ -6056,6 +6050,37 @@
         ]
     },
     {
+        "name": "businessunitconversion_paths_time_period_enum_param",
+        "node": "AtlasConversionPath",
+        "field_or_param": "time_period",
+        "values": [
+            "all_available",
+            "all_dates",
+            "custom",
+            "date_range",
+            "fifteen_days",
+            "last_fourteen_days",
+            "last_hundred_fourty_four_hours",
+            "last_month",
+            "last_ninety_days",
+            "last_quarter",
+            "last_seven_days",
+            "last_sixty_days",
+            "last_thirty_days",
+            "last_twenty_four_hours",
+            "last_year",
+            "month_to_date",
+            "quarter_to_date",
+            "seven_days",
+            "thirty_days",
+            "this_month_whole_days",
+            "today",
+            "week_to_date",
+            "year_to_date",
+            "yesterday"
+        ]
+    },
+    {
         "name": "businessupload_event_aggregation_level_enum_param",
         "node": "MeasurementUploadEvent",
         "field_or_param": "aggregation_level",
@@ -6269,6 +6294,7 @@
         "node": "AdVideo",
         "field_or_param": "container_type",
         "values": [
+            "ACO_VIDEO_VARIATION",
             "AD_BREAK_PREVIEW",
             "AD_DERIVATIVE",
             "AGE_UP",
@@ -7200,6 +7226,7 @@
         "node": "AdVideo",
         "field_or_param": "container_type",
         "values": [
+            "ACO_VIDEO_VARIATION",
             "AD_BREAK_PREVIEW",
             "AD_DERIVATIVE",
             "AGE_UP",
@@ -8960,11 +8987,11 @@
             "general_manager",
             "hometown",
             "hours",
+            "invoice_access_invoice_change",
             "leadgen",
             "leadgen_fat",
             "live_videos",
             "location",
-            "mcom_invoice_change",
             "members",
             "mention",
             "merchant_review",
@@ -9086,6 +9113,7 @@
         "node": "AdVideo",
         "field_or_param": "container_type",
         "values": [
+            "ACO_VIDEO_VARIATION",
             "AD_BREAK_PREVIEW",
             "AD_DERIVATIVE",
             "AGE_UP",
@@ -11265,6 +11293,7 @@
         "node": "AdVideo",
         "field_or_param": "container_type",
         "values": [
+            "ACO_VIDEO_VARIATION",
             "AD_BREAK_PREVIEW",
             "AD_DERIVATIVE",
             "AGE_UP",

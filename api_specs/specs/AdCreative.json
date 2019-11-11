@@ -296,6 +296,10 @@
             "type": "string"
         },
         {
+            "name": "link_destination_display_url",
+            "type": "string"
+        },
+        {
             "name": "link_og_id",
             "type": "string"
         },
