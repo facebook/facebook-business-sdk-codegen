@@ -109,6 +109,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "fbe_external_business_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "requests",
                     "required": true,
                     "type": "list<map>"

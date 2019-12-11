@@ -129,10 +129,6 @@
             "type": "unsigned int"
         },
         {
-            "name": "external_values_breakdown",
-            "type": "string"
-        },
-        {
             "name": "feed_ratio_0000",
             "type": "unsigned int"
         },

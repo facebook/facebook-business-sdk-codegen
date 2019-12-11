@@ -569,8 +569,10 @@
             "custom",
             "disclaimer",
             "from_price",
+            "guest_rating",
             "percentage_off",
             "price",
+            "star_rating",
             "strikethrough_price"
         ]
     },
@@ -700,6 +702,7 @@
             "PAGE",
             "PHOTO",
             "POST_DELETED",
+            "PRIVACY_CHECK_FAIL",
             "SHARE",
             "STATUS",
             "STORE_ITEM",
@@ -2009,25 +2012,25 @@
         "node": "AdSet",
         "field_or_param": "date_preset",
         "values": [
-            "LAST_14D",
-            "LAST_28D",
-            "LAST_30D",
-            "LAST_3D",
-            "LAST_7D",
-            "LAST_90D",
-            "LAST_MONTH",
-            "LAST_QUARTER",
-            "LAST_WEEK_MON_SUN",
-            "LAST_WEEK_SUN_SAT",
-            "LAST_YEAR",
-            "LIFETIME",
-            "THIS_MONTH",
-            "THIS_QUARTER",
-            "THIS_WEEK_MON_TODAY",
-            "THIS_WEEK_SUN_TODAY",
-            "THIS_YEAR",
-            "TODAY",
-            "YESTERDAY"
+            "last_14d",
+            "last_28d",
+            "last_30d",
+            "last_3d",
+            "last_7d",
+            "last_90d",
+            "last_month",
+            "last_quarter",
+            "last_week_mon_sun",
+            "last_week_sun_sat",
+            "last_year",
+            "lifetime",
+            "this_month",
+            "this_quarter",
+            "this_week_mon_today",
+            "this_week_sun_today",
+            "this_year",
+            "today",
+            "yesterday"
         ]
     },
     {
@@ -2724,6 +2727,8 @@
             "INSTANT_ARTICLE_STANDARD",
             "INSTREAM_VIDEO_DESKTOP",
             "INSTREAM_VIDEO_MOBILE",
+            "JOB_BROWSER_DESKTOP",
+            "JOB_BROWSER_MOBILE",
             "MARKETPLACE_MOBILE",
             "MESSENGER_MOBILE_INBOX_MEDIA",
             "MESSENGER_MOBILE_STORY_MEDIA",
@@ -4431,6 +4436,8 @@
             "INSTANT_ARTICLE_STANDARD",
             "INSTREAM_VIDEO_DESKTOP",
             "INSTREAM_VIDEO_MOBILE",
+            "JOB_BROWSER_DESKTOP",
+            "JOB_BROWSER_MOBILE",
             "MARKETPLACE_MOBILE",
             "MESSENGER_MOBILE_INBOX_MEDIA",
             "MESSENGER_MOBILE_STORY_MEDIA",
@@ -4688,6 +4695,8 @@
             "INSTANT_ARTICLE_STANDARD",
             "INSTREAM_VIDEO_DESKTOP",
             "INSTREAM_VIDEO_MOBILE",
+            "JOB_BROWSER_DESKTOP",
+            "JOB_BROWSER_MOBILE",
             "MARKETPLACE_MOBILE",
             "MESSENGER_MOBILE_INBOX_MEDIA",
             "MESSENGER_MOBILE_STORY_MEDIA",
@@ -5816,6 +5825,7 @@
         "node": "BusinessCreativeInsights",
         "field_or_param": "breakdowns",
         "values": [
+            "ad_id",
             "age",
             "country",
             "device_platform",
@@ -6795,18 +6805,6 @@
         ]
     },
     {
-        "name": "eventpicture_type_enum_param",
-        "node": "ProfilePictureSource",
-        "field_or_param": "type",
-        "values": [
-            "album",
-            "large",
-            "normal",
-            "small",
-            "square"
-        ]
-    },
-    {
         "name": "extendedcreditowning_credit_allocation_configs_liability_type_enum_param",
         "node": "ExtendedCreditAllocationConfig",
         "field_or_param": "liability_type",
@@ -6862,9 +6860,9 @@
         "node": "Group",
         "field_or_param": "post_permissions",
         "values": [
-            "ADMIN_ONLY",
-            "ANYONE",
-            "NONE"
+            "0",
+            "1",
+            "2"
         ]
     },
     {
@@ -7076,9 +7074,9 @@
         "node": "Group",
         "field_or_param": "post_permissions",
         "values": [
-            "ADMIN_ONLY",
-            "ANYONE",
-            "NONE"
+            "0",
+            "1",
+            "2"
         ]
     },
     {
@@ -8327,6 +8325,14 @@
         ]
     },
     {
+        "name": "pagecustom_user_settings_params_enum_param",
+        "node": "Object",
+        "field_or_param": "params",
+        "values": [
+            "PERSISTENT_MENU"
+        ]
+    },
+    {
         "name": "pageevents_event_state_filter_enum_param",
         "node": "Event",
         "field_or_param": "event_state_filter",
@@ -8992,6 +8998,7 @@
             "leadgen_fat",
             "live_videos",
             "location",
+            "mcom_invoice_change",
             "members",
             "mention",
             "merchant_review",
@@ -10889,6 +10896,46 @@
         ]
     },
     {
+        "name": "userbusinesses_survey_business_type_enum_param",
+        "node": "Business",
+        "field_or_param": "survey_business_type",
+        "values": [
+            "ADVERTISER",
+            "AGENCY",
+            "APP_DEVELOPER",
+            "PUBLISHER"
+        ]
+    },
+    {
+        "name": "userbusinesses_vertical_enum_param",
+        "node": "Business",
+        "field_or_param": "vertical",
+        "values": [
+            "ADVERTISING",
+            "AUTOMOTIVE",
+            "CONSUMER_PACKAGED_GOODS",
+            "ECOMMERCE",
+            "EDUCATION",
+            "ENERGY_AND_UTILITIES",
+            "ENTERTAINMENT_AND_MEDIA",
+            "FINANCIAL_SERVICES",
+            "GAMING",
+            "GOVERNMENT_AND_POLITICS",
+            "HEALTH",
+            "LUXURY",
+            "MARKETING",
+            "NON_PROFIT",
+            "ORGANIZATIONS_AND_ASSOCIATIONS",
+            "OTHER",
+            "PROFESSIONAL_SERVICES",
+            "RESTAURANT",
+            "RETAIL",
+            "TECHNOLOGY",
+            "TELECOM",
+            "TRAVEL"
+        ]
+    },
+    {
         "name": "userevents_type_enum_param",
         "node": "Event",
         "field_or_param": "type",
@@ -11253,6 +11300,7 @@
             "MSN",
             "MYSPACE",
             "NATEON",
+            "OCULUS",
             "OK",
             "ORKUT",
             "OTHERS",

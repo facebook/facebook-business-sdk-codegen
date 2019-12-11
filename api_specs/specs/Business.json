@@ -415,6 +415,18 @@
             "params": []
         },
         {
+            "method": "POST",
+            "endpoint": "business_units",
+            "return": "BusinessUnit",
+            "params": [
+                {
+                    "name": "business_units",
+                    "required": false,
+                    "type": "list<Object>"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "business_users",
             "return": "BusinessUser",
@@ -434,24 +446,6 @@
                     "name": "role",
                     "required": false,
                     "type": "businessbusiness_users_role_enum_param"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "businessprojects",
-            "return": "BusinessProject",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "businessprojects",
-            "return": "BusinessProject",
-            "params": [
-                {
-                    "name": "name",
-                    "required": true,
-                    "type": "string"
                 }
             ]
         },

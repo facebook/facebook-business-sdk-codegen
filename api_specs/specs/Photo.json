@@ -198,13 +198,7 @@
             "name": "#delete",
             "method": "DELETE",
             "return": "Object",
-            "params": [
-                {
-                    "name": "pid",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
+            "params": []
         },
         {
             "name": "#get",

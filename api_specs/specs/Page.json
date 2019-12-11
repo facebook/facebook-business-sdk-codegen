@@ -244,18 +244,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "businessprojects",
-            "return": "BusinessProject",
-            "params": [
-                {
-                    "name": "business",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "call_to_actions",
             "return": "PageCallToAction",
             "params": []
@@ -573,6 +561,40 @@
             "params": [
                 {
                     "name": "name",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "custom_user_settings",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "params",
+                    "required": true,
+                    "type": "list<pagecustom_user_settings_params_enum_param>"
+                },
+                {
+                    "name": "psid",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "custom_user_settings",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "persistent_menu",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "psid",
                     "required": true,
                     "type": "string"
                 }
@@ -2359,6 +2381,11 @@
                 },
                 {
                     "name": "is_explicit_place",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_visual_search",
                     "required": false,
                     "type": "bool"
                 },

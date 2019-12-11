@@ -2,6 +2,12 @@
     "apis": [
         {
             "method": "GET",
+            "endpoint": "ad_accounts",
+            "return": "AdAccount",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "ad_platforms",
             "return": "AtlasTrackingConnection",
             "params": [
@@ -184,8 +190,8 @@
         },
         {
             "method": "GET",
-            "endpoint": "fb_conversion_events",
-            "return": "AtlasFBConversionEvent",
+            "endpoint": "reports",
+            "return": "AtlasReport",
             "params": [
                 {
                     "name": "filter_by",
@@ -225,6 +231,12 @@
                     "type": "string"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "users",
+            "return": "BusinessUser",
+            "params": []
         },
         {
             "name": "#get",

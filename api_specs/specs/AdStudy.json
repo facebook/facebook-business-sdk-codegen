@@ -71,12 +71,6 @@
             ]
         },
         {
-            "method": "GET",
-            "endpoint": "viewers",
-            "return": "User",
-            "params": []
-        },
-        {
             "name": "#delete",
             "method": "DELETE",
             "return": "Object",

@@ -470,6 +470,58 @@
             "params": []
         },
         {
+            "method": "POST",
+            "endpoint": "businesses",
+            "return": "Business",
+            "params": [
+                {
+                    "name": "email",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "primary_page",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "sales_rep_email",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "survey_business_type",
+                    "required": false,
+                    "type": "userbusinesses_survey_business_type_enum_param"
+                },
+                {
+                    "name": "survey_num_assets",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "survey_num_people",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "timezone_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "vertical",
+                    "required": true,
+                    "type": "userbusinesses_vertical_enum_param"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "conversations",
             "return": "UnifiedThread",
@@ -2048,6 +2100,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "is_visual_search",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "manual_privacy",
                     "required": false,
                     "type": "bool"
@@ -2914,6 +2971,10 @@
         },
         {
             "name": "is_famedeeplinkinguser",
+            "type": "bool"
+        },
+        {
+            "name": "is_guest_user",
             "type": "bool"
         },
         {

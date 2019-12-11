@@ -249,6 +249,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "is_visual_search",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "manual_privacy",
                     "required": false,
                     "type": "bool"

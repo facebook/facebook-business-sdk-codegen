@@ -694,10 +694,6 @@
             "type": "string"
         },
         {
-            "name": "quality_score_enfbr",
-            "type": "string"
-        },
-        {
             "name": "quality_score_organic",
             "type": "string"
         },

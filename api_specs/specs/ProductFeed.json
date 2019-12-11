@@ -132,6 +132,24 @@
         },
         {
             "method": "GET",
+            "endpoint": "upload_schedules",
+            "return": "ProductFeedSchedule",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "upload_schedules",
+            "return": "ProductFeed",
+            "params": [
+                {
+                    "name": "upload_schedule",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "uploads",
             "return": "ProductFeedUpload",
             "params": []
@@ -141,6 +159,11 @@
             "endpoint": "uploads",
             "return": "ProductFeedUpload",
             "params": [
+                {
+                    "name": "fbe_external_business_id",
+                    "required": false,
+                    "type": "string"
+                },
                 {
                     "name": "file",
                     "required": false,
