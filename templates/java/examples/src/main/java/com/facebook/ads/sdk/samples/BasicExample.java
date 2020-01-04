@@ -20,36 +20,36 @@
  * DEALINGS IN THE SOFTWARE.
  *
  */
-
-import java.io.File;
-import java.util.Arrays;
+package com.facebook.ads.sdk.samples;
 
 import com.facebook.ads.sdk.APIContext;
+import com.facebook.ads.sdk.APIException;
 import com.facebook.ads.sdk.Ad;
 import com.facebook.ads.sdk.AdAccount;
 import com.facebook.ads.sdk.AdCreative;
 import com.facebook.ads.sdk.AdCreativeLinkData;
 import com.facebook.ads.sdk.AdCreativeObjectStorySpec;
 import com.facebook.ads.sdk.AdImage;
-import com.facebook.ads.sdk.Campaign;
 import com.facebook.ads.sdk.AdSet;
+import com.facebook.ads.sdk.Campaign;
 import com.facebook.ads.sdk.Targeting;
 import com.facebook.ads.sdk.TargetingGeoLocation;
-import com.facebook.ads.sdk.APIException;
+
+import java.util.Arrays;
+
+import static com.facebook.ads.sdk.samples.ExampleConfig.ACCESS_TOKEN;
+import static com.facebook.ads.sdk.samples.ExampleConfig.ACCOUNT_ID;
+import static com.facebook.ads.sdk.samples.ExampleConfig.APP_SECRET;
+import static com.facebook.ads.sdk.samples.ExampleConfig.IMAGE_FILE;
+import static com.facebook.ads.sdk.samples.ExampleConfig.PAGE_ID;
 
 public class BasicExample {
 
-  public static final String ACCESS_TOKEN = ExampleConfig.ACCESS_TOKEN;
-  public static final Long ACCOUNT_ID = ExampleConfig.ACCOUNT_ID;
-  public static final String APP_SECRET = ExampleConfig.APP_SECRET;
-  public static final String PAGE_ID = ExampleConfig.PAGE_ID;
-  public static final File imageFile = new File(ExampleConfig.IMAGE_FILE);
-
-  public static final APIContext context = new APIContext(ACCESS_TOKEN, APP_SECRET).enableDebug(true);
+  public static final APIContext CONTEXT = new APIContext(ACCESS_TOKEN, APP_SECRET).enableDebug(true);
   public static void main(String[] args) {
     try {
       Targeting targeting = new Targeting().setFieldGeoLocations(new TargetingGeoLocation().setFieldCountries(Arrays.asList("US")));
-      AdAccount account = new AdAccount(ACCOUNT_ID, context);
+      AdAccount account = new AdAccount(ACCOUNT_ID, CONTEXT);
 
       // Creation
       Campaign campaign = account.createCampaign()
@@ -68,11 +68,10 @@ public class BasicExample {
         .setBidAmount(100L)
         .setOptimizationGoal(AdSet.EnumOptimizationGoal.VALUE_IMPRESSIONS)
         .setTargeting(targeting)
-        .setRedownload(true)
         .execute();
       System.out.println(adset);
       AdImage image = account.createAdImage()
-        .addUploadFile("file", imageFile)
+        .addUploadFile("file", IMAGE_FILE)
         .execute();
       AdCreativeLinkData link = (new AdCreativeLinkData())
         .setFieldMessage("AdCreativeLinkData MSG")
@@ -92,7 +91,6 @@ public class BasicExample {
         .setCreative(creative)
         .setStatus("PAUSED")
         .setBidAmount(100L)
-        .setRedownload(true)
         .execute();
       System.out.println("Creation done!");
 
@@ -115,8 +113,8 @@ public class BasicExample {
       System.out.println("Get from edge done!");
 
       // Get with static methods
-      System.out.println(Campaign.fetchById(campaign.getFieldId(), context));
-      System.out.println(AdSet.fetchById(adset.getFieldId(), context));
+      System.out.println(Campaign.fetchById(campaign.getFieldId(), CONTEXT));
+      System.out.println(AdSet.fetchById(adset.getFieldId(), CONTEXT));
       System.out.println("Get with static methods done!");
 
       // Update
