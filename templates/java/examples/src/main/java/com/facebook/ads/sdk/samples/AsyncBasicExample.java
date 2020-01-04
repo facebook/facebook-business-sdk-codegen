@@ -60,6 +60,7 @@ public class AsyncBasicExample {
                     .setObjective(Campaign.EnumObjective.VALUE_LINK_CLICKS)
                     .setSpendCap(10000L)
                     .setStatus(Campaign.EnumStatus.VALUE_PAUSED)
+                    .setSpecialAdCategory(Campaign.EnumSpecialAdCategory.VALUE_NONE)
                     .executeAsync();
             final ListenableFuture<AdSet> adsetFuture = Futures.transformAsync(
                     campaignFuture,

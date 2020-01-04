@@ -38,11 +38,10 @@ import java.util.List;
 import static com.facebook.ads.sdk.samples.ExampleConfig.ACCESS_TOKEN;
 import static com.facebook.ads.sdk.samples.ExampleConfig.ACCOUNT_ID;
 import static com.facebook.ads.sdk.samples.ExampleConfig.APP_SECRET;
+import static com.facebook.ads.sdk.samples.ExampleConfig.CONTEXT;
 import static com.facebook.ads.sdk.samples.ExampleConfig.IMAGE_FILE;
 
 public class BatchModeExample {
-
-    public static final APIContext CONTEXT = new APIContext(ACCESS_TOKEN, APP_SECRET).enableDebug(true);
 
     public static void main(String[] args) {
         try {
@@ -58,6 +57,7 @@ public class BatchModeExample {
                     .setObjective(Campaign.EnumObjective.VALUE_LINK_CLICKS)
                     .setSpendCap(10000L)
                     .setStatus(Campaign.EnumStatus.VALUE_PAUSED)
+                    .setSpecialAdCategory(Campaign.EnumSpecialAdCategory.VALUE_NONE)
                     .addToBatch(batch, "campaignRequest");
             account.createAdSet()
                     .setName("Java SDK Batch Test AdSet")

@@ -45,6 +45,7 @@ public class FetchByIdsExample {
                     .setObjective(Campaign.EnumObjective.VALUE_LINK_CLICKS)
                     .setSpendCap(10000L)
                     .setStatus(Campaign.EnumStatus.VALUE_PAUSED)
+                    .setSpecialAdCategory(Campaign.EnumSpecialAdCategory.VALUE_NONE)
                     .execute();
             AdSet adset1 = account.createAdSet()
                     .setName("Java SDK Test AdSet")

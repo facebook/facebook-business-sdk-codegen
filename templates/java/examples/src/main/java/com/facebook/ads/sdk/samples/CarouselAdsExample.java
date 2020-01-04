@@ -58,6 +58,7 @@ public class CarouselAdsExample {
                     .setObjective(Campaign.EnumObjective.VALUE_LINK_CLICKS)
                     .setSpendCap(10000L)
                     .setStatus(Campaign.EnumStatus.VALUE_PAUSED)
+                    .setSpecialAdCategory(Campaign.EnumSpecialAdCategory.VALUE_NONE)
                     .execute();
 
             AdSet adset = account.createAdSet()
