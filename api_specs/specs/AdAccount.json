@@ -118,6 +118,65 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "ad_saved_locations",
+            "return": "AdSavedLocation",
+            "params": [
+                {
+                    "name": "fields",
+                    "required": false,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "ad_saved_locations",
+            "return": "AdSavedLocation",
+            "params": [
+                {
+                    "name": "cities",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "countries",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "country_groups",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "custom_locations",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "geo_markets",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "regions",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "zips",
+                    "required": false,
+                    "type": "list<Object>"
+                }
+            ]
+        },
+        {
             "method": "DELETE",
             "endpoint": "ad_sets",
             "return": "Object",
@@ -374,6 +433,23 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "adcreatives_from_mockups",
+            "return": "AdCreative",
+            "params": [
+                {
+                    "name": "mockup_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "page_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "adcreativesbylabels",
             "return": "AdCreative",
@@ -511,6 +587,12 @@
                     "type": "file"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "adreportruns",
+            "return": "AdReportRun",
+            "params": []
         },
         {
             "method": "GET",
@@ -1915,6 +1997,12 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "businesssettinglogs",
+            "return": "BusinessSettingLogsData",
+            "params": []
+        },
+        {
             "method": "DELETE",
             "endpoint": "campaigns",
             "return": "Object",
@@ -2375,11 +2463,6 @@
                     "name": "source",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "study_spec",
-                    "required": false,
-                    "type": "map"
                 },
                 {
                     "name": "subtype",
@@ -2880,9 +2963,37 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "mockups",
+            "return": "AdCreativeMockup",
+            "params": [
+                {
+                    "name": "mockup_access_token",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "page_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "source_mockup_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "offline_conversion_data_sets",
             "return": "OfflineConversionDataSet",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "offsitepixels",
+            "return": "OffsitePixel",
             "params": []
         },
         {
@@ -2896,6 +3007,87 @@
                     "type": "adaccountonbehalf_requests_status_enum_param"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "partner_integrations",
+            "return": "PartnerIntegrationLinked",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "partner_integrations",
+            "return": "PartnerIntegrationLinked",
+            "params": [
+                {
+                    "name": "external_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "gtm_account_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "gtm_container_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "page_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "partner",
+                    "required": true,
+                    "type": "adaccountpartner_integrations_partner_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "partnercategories",
+            "return": "PartnerCategory",
+            "params": [
+                {
+                    "name": "hide_pc",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_exclusion",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "limit",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "private_or_public",
+                    "required": false,
+                    "type": "adaccountpartnercategories_private_or_public_enum_param"
+                },
+                {
+                    "name": "targeting_type",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "partners",
+            "return": "AdsDataPartner",
+            "params": []
         },
         {
             "method": "POST",
@@ -3290,6 +3482,69 @@
         },
         {
             "method": "GET",
+            "endpoint": "referral",
+            "return": "Referral",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "referral",
+            "return": "Referral",
+            "params": [
+                {
+                    "name": "invite_limit",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "messenger_cta",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "messenger_promotion_text",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "namespace",
+                    "required": true,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "need_promo_code",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "offer_origin",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "promotion_text",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "receiver_benefits_text",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "referral_link_uri",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "sender_benefits_text",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "roas",
             "return": "AdAccountRoas",
             "params": [
@@ -3586,6 +3841,18 @@
                     "name": "targeting_list",
                     "required": false,
                     "type": "list<Object>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "timezoneoffsets",
+            "return": "TimezoneOffset",
+            "params": [
+                {
+                    "name": "start_year",
+                    "required": false,
+                    "type": "unsigned int"
                 }
             ]
         },

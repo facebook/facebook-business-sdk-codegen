@@ -37,6 +37,10 @@
             "type": "Page"
         },
         {
+            "name": "proposal",
+            "type": "PageChangeProposal"
+        },
+        {
             "name": "timer_status",
             "type": "string"
         }

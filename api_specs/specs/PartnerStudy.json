@@ -2,6 +2,12 @@
     "apis": [
         {
             "method": "GET",
+            "endpoint": "partners",
+            "return": "AdsDataPartner",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "submitters",
             "return": "User",
             "params": []

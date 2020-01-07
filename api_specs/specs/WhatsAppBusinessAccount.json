@@ -111,15 +111,7 @@
             "type": "string"
         },
         {
-            "name": "eligible_for_sending_notifications",
-            "type": "bool"
-        },
-        {
             "name": "id",
-            "type": "string"
-        },
-        {
-            "name": "ineligible_for_sending_notifications_reason",
             "type": "string"
         },
         {

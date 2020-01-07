@@ -2,6 +2,50 @@
     "apis": [
         {
             "method": "GET",
+            "endpoint": "activities",
+            "return": "OfflineConversionDataSetActivities",
+            "params": [
+                {
+                    "name": "business_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "end_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "event_type",
+                    "required": false,
+                    "type": "offlineconversiondatasetactivities_event_type_enum_param"
+                },
+                {
+                    "name": "start_time",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "adaccounts",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "account_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "adaccounts",
             "return": "AdAccount",
             "params": [
@@ -88,6 +132,18 @@
                     "name": "ad_account",
                     "required": false,
                     "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "da_checks",
+            "return": "DACheck",
+            "params": [
+                {
+                    "name": "checks",
+                    "required": false,
+                    "type": "list<string>"
                 }
             ]
         },
@@ -206,6 +262,18 @@
                     "name": "upload_tag",
                     "required": true,
                     "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "users",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "data",
+                    "required": true,
+                    "type": "list<Object>"
                 }
             ]
         },

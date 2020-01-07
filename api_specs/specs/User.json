@@ -133,6 +133,28 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "achievements",
+            "return": "OpenGraphAction",
+            "params": [
+                {
+                    "name": "app_id_filter",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "object",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "type",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "POST",
             "endpoint": "achievements",
             "return": "OpenGraphAction",
@@ -381,6 +403,68 @@
         },
         {
             "method": "POST",
+            "endpoint": "albums",
+            "return": "Album",
+            "params": [
+                {
+                    "name": "contributors",
+                    "required": false,
+                    "type": "list<int>"
+                },
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "is_default",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "location",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "make_shared_album",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "message",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "place",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "privacy",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "tags",
+                    "required": false,
+                    "type": "list<int>"
+                },
+                {
+                    "name": "visible",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
             "endpoint": "applications",
             "return": "User",
             "params": [
@@ -405,6 +489,54 @@
         },
         {
             "method": "GET",
+            "endpoint": "asset3ds",
+            "return": "WithAsset3D",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "asset3ds",
+            "return": "WithAsset3D",
+            "params": [
+                {
+                    "name": "depth_image",
+                    "required": false,
+                    "type": "file"
+                },
+                {
+                    "name": "depth_image_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "depth_map_generation_metadata",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "fallback_image",
+                    "required": false,
+                    "type": "file"
+                },
+                {
+                    "name": "fallback_image_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "file",
+                    "required": false,
+                    "type": "file"
+                },
+                {
+                    "name": "file_url",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "assigned_ad_accounts",
             "return": "AdAccount",
             "params": []
@@ -420,6 +552,12 @@
                     "type": "string"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "assigned_monetization_properties",
+            "return": "AdMonetizationProperty",
+            "params": []
         },
         {
             "method": "GET",
@@ -442,6 +580,18 @@
                     "name": "target_id",
                     "required": false,
                     "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "bulkcontacts",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "contact_surface",
+                    "required": false,
+                    "type": "userbulkcontacts_contact_surface_enum_param"
                 }
             ]
         },
@@ -1226,168 +1376,6 @@
         },
         {
             "method": "POST",
-            "endpoint": "games_achieves",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "added",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "alias",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "android_key_hash",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "client_secret",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "created_time",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "end_time",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "expires_in",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "fb:channel",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "fb:explicitly_shared",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "image:height",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "image:secure_url",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "image:type",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "image:url",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "image:user_generated",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "image:width",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "ios_bundle_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "message",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "no_action_link",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "no_feed_story",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "notify",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "place",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "preview",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "privacy",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "proxied_app_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "ref",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "scrape",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "start_time",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "tags",
-                    "required": false,
-                    "type": "list<int>"
-                },
-                {
-                    "name": "to",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "user_selected_place",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "user_selected_tags",
-                    "required": false,
-                    "type": "bool"
-                }
-            ]
-        },
-        {
-            "method": "POST",
             "endpoint": "games_plays",
             "return": "Object",
             "params": [
@@ -1661,6 +1649,23 @@
             ]
         },
         {
+            "method": "DELETE",
+            "endpoint": "likes",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "uid",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "url",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "likes",
             "return": "Page",
@@ -1668,6 +1673,33 @@
                 {
                     "name": "target_id",
                     "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "likes",
+            "return": "User",
+            "params": [
+                {
+                    "name": "action",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "message",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "ref",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "url",
+                    "required": true,
                     "type": "string"
                 }
             ]
@@ -1841,6 +1873,45 @@
         },
         {
             "method": "POST",
+            "endpoint": "loggedoutpushsetnonces",
+            "return": "User",
+            "params": [
+                {
+                    "name": "device_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "existing_nonce",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "loginapprovalskeys",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "check_code",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "client_time",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "machine_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
             "endpoint": "mfs_account_pin_reset",
             "return": "User",
             "params": [
@@ -1939,6 +2010,217 @@
                     "name": "type",
                     "required": false,
                     "type": "usernotifications_type_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "objects",
+            "return": "OpenGraphObject",
+            "params": [
+                {
+                    "name": "type",
+                    "required": true,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "objects",
+            "return": "OpenGraphObject",
+            "params": [
+                {
+                    "name": "android_key_hash",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "ios_bundle_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "object",
+                    "required": true,
+                    "type": "Object"
+                },
+                {
+                    "name": "privacy",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "proxied_app_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "type",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "open_graph_action_feed",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "added",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "alias",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "android_key_hash",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "client_secret",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "created_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "end_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "expires_in",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "fb:channel",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "fb:explicitly_shared",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "image:height",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "image:secure_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "image:type",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "image:url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "image:user_generated",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "image:width",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "ios_bundle_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "message",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "no_action_link",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "no_feed_story",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "notify",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "place",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "preview",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "privacy",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "proxied_app_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "ref",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "scrape",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "start_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "tags",
+                    "required": false,
+                    "type": "list<int>"
+                },
+                {
+                    "name": "to",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "user_selected_place",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "user_selected_tags",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         },
@@ -2357,6 +2639,23 @@
             ]
         },
         {
+            "method": "DELETE",
+            "endpoint": "screennames",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "service_type",
+                    "required": true,
+                    "type": "userscreennames_service_type_enum_param"
+                },
+                {
+                    "name": "value",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "POST",
             "endpoint": "screennames",
             "return": "User",
@@ -2393,8 +2692,20 @@
         },
         {
             "method": "GET",
+            "endpoint": "stream_filters",
+            "return": "StreamFilter",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "taggable_friends",
             "return": "UserTaggableFriend",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "tagged_places",
+            "return": "PlaceTag",
             "params": []
         },
         {
@@ -2430,6 +2741,12 @@
                     "type": "string"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "video_broadcasts",
+            "return": "LiveVideo",
+            "params": []
         },
         {
             "method": "GET",
@@ -2910,6 +3227,10 @@
             "type": "bool"
         },
         {
+            "name": "context",
+            "type": "UserContext"
+        },
+        {
             "name": "cover",
             "type": "UserCoverPhoto"
         },
@@ -2923,7 +3244,7 @@
         },
         {
             "name": "education",
-            "type": "list<Object>"
+            "type": "list<EducationExperience>"
         },
         {
             "name": "email",
@@ -3115,7 +3436,7 @@
         },
         {
             "name": "work",
-            "type": "list<Object>"
+            "type": "list<WorkExperience>"
         }
     ]
 }

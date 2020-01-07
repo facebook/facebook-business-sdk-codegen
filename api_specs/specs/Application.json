@@ -347,6 +347,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "android_dialog_configs",
+            "return": "ApplicationDialogConfig",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "app_event_types",
             "return": "ApplicationAppEventTypes",
             "params": []
@@ -521,6 +527,18 @@
         },
         {
             "method": "GET",
+            "endpoint": "audiences",
+            "return": "CustomAudience",
+            "params": [
+                {
+                    "name": "ad_account",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "authorized_adaccounts",
             "return": "AdAccount",
             "params": [
@@ -552,6 +570,18 @@
                     "name": "uid",
                     "required": false,
                     "type": "int"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "banned",
+            "return": "User",
+            "params": [
+                {
+                    "name": "uids",
+                    "required": true,
+                    "type": "list<int>"
                 }
             ]
         },
@@ -645,6 +675,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "connections",
+            "return": "OpenGraphActionType",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "custom_audience_third_party_id",
             "return": "ApplicationCustomAudienceThirdPartyId",
             "params": [
@@ -671,6 +707,12 @@
                     "type": "list<string>"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "direct_deals",
+            "return": "DirectDeal",
+            "params": []
         },
         {
             "method": "GET",
@@ -715,6 +757,38 @@
                     "name": "full_app_indexing_info_classes",
                     "required": true,
                     "type": "list<map>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "insights_event_labels",
+            "return": "InsightsEventLabel",
+            "params": [
+                {
+                    "name": "add",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "delete",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "ecosystem",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "until",
+                    "required": false,
+                    "type": "datetime"
                 }
             ]
         },
@@ -1001,6 +1075,54 @@
         },
         {
             "method": "POST",
+            "endpoint": "monetization",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "breakdowns",
+                    "required": false,
+                    "type": "list<applicationmonetization_breakdowns_enum_param>"
+                },
+                {
+                    "name": "campaign_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "device_list",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "query_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "request_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "until",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "object_types",
+            "return": "OpenGraphObjectType",
+            "params": []
+        },
+        {
+            "method": "POST",
             "endpoint": "occludespopups",
             "return": "Object",
             "params": [
@@ -1015,6 +1137,12 @@
                     "type": "bool"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "ozone_release",
+            "return": "OzoneRelease",
+            "params": []
         },
         {
             "method": "POST",
@@ -1139,10 +1267,39 @@
             ]
         },
         {
+            "method": "DELETE",
+            "endpoint": "roles",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "user",
+                    "required": false,
+                    "type": "int"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "roles",
             "return": "ApplicationRoles",
             "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "roles",
+            "return": "Application",
+            "params": [
+                {
+                    "name": "role",
+                    "required": true,
+                    "type": "applicationroles_role_enum_param"
+                },
+                {
+                    "name": "user",
+                    "required": true,
+                    "type": "int"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -1666,6 +1823,10 @@
         {
             "name": "contact_email",
             "type": "string"
+        },
+        {
+            "name": "context",
+            "type": "Object"
         },
         {
             "name": "created_time",

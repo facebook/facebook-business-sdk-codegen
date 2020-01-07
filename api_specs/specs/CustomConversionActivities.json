@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "app_id",
+            "type": "unsigned int"
+        },
+        {
+            "name": "data",
+            "type": "string"
+        },
+        {
+            "name": "event_type",
+            "type": "string"
+        },
+        {
+            "name": "timestamp",
+            "type": "datetime"
+        }
+    ]
+}

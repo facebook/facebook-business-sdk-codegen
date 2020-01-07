@@ -58,6 +58,12 @@
             "params": []
         },
         {
+            "method": "GET",
+            "endpoint": "game_shows",
+            "return": "VideoGameShow",
+            "params": []
+        },
+        {
             "method": "POST",
             "endpoint": "input_streams",
             "return": "LiveVideoInputStream",

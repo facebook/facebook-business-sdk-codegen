@@ -82,6 +82,11 @@
             "return": "BusinessCreativeFolder",
             "params": [
                 {
+                    "name": "creative_insight_permissions",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "description",
                     "required": false,
                     "type": "string"

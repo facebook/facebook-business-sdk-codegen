@@ -1,0 +1,89 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "admin_creator",
+            "type": "User"
+        },
+        {
+            "name": "can_republish",
+            "type": "bool"
+        },
+        {
+            "name": "content_type",
+            "type": "string"
+        },
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "expiration",
+            "type": "Object"
+        },
+        {
+            "name": "feed_audience_description",
+            "type": "string"
+        },
+        {
+            "name": "feed_targeting",
+            "type": "Targeting"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_post_in_good_state",
+            "type": "bool"
+        },
+        {
+            "name": "message",
+            "type": "string"
+        },
+        {
+            "name": "modified_time",
+            "type": "datetime"
+        },
+        {
+            "name": "og_action_summary",
+            "type": "string"
+        },
+        {
+            "name": "permalink_url",
+            "type": "string"
+        },
+        {
+            "name": "place",
+            "type": "Place"
+        },
+        {
+            "name": "privacy_description",
+            "type": "string"
+        },
+        {
+            "name": "promotion_info",
+            "type": "Object"
+        },
+        {
+            "name": "scheduled_failure_notice",
+            "type": "string"
+        },
+        {
+            "name": "scheduled_publish_time",
+            "type": "datetime"
+        },
+        {
+            "name": "story_token",
+            "type": "string"
+        },
+        {
+            "name": "thumbnail",
+            "type": "string"
+        },
+        {
+            "name": "video_id",
+            "type": "string"
+        }
+    ]
+}

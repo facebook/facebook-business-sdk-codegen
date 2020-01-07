@@ -1,6 +1,81 @@
 {
     "apis": [
         {
+            "method": "POST",
+            "endpoint": "activities",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "advertiser_tracking_enabled",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "app_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "custom_events",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "page_scoped_user_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "user_ref",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "admin_notes",
+            "return": "PageAdminNote",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "admin_sticky_settings",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "ad_account_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "audience",
+                    "required": true,
+                    "type": "pageadmin_sticky_settings_audience_enum_param"
+                },
+                {
+                    "name": "budget",
+                    "required": true,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "campaign_length",
+                    "required": true,
+                    "type": "datetime"
+                },
+                {
+                    "name": "currency",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "targeting",
+                    "required": false,
+                    "type": "Targeting"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "ads_posts",
             "return": "PagePost",
@@ -131,6 +206,12 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "asset3ds",
+            "return": "WithAsset3D",
+            "params": []
+        },
+        {
             "method": "DELETE",
             "endpoint": "assigned_users",
             "return": "Object",
@@ -241,6 +322,12 @@
                     "type": "list<string>"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "broadcast_messages",
+            "return": "PageBroadcast",
+            "params": []
         },
         {
             "method": "GET",
@@ -448,6 +535,12 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "change_proposals",
+            "return": "PageChangeProposal",
+            "params": []
+        },
+        {
             "method": "DELETE",
             "endpoint": "claimed_urls",
             "return": "Object",
@@ -537,9 +630,49 @@
             ]
         },
         {
+            "method": "DELETE",
+            "endpoint": "copyright_whitelisted_partners",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "partner_ids",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "urls",
+                    "required": false,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "copyright_whitelisted_partners",
             "return": "Profile",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "copyright_whitelisted_partners",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "partner_ids",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "urls",
+                    "required": false,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "crosspost_pending_approval_pages",
+            "return": "Page",
             "params": []
         },
         {
@@ -576,6 +709,18 @@
                     "required": true,
                     "type": "list<pagecustom_user_settings_params_enum_param>"
                 },
+                {
+                    "name": "psid",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "custom_user_settings",
+            "return": "CustomUserSettings",
+            "params": [
                 {
                     "name": "psid",
                     "required": true,
@@ -626,6 +771,18 @@
                     "type": "pageevents_type_enum_param"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "expired_posts",
+            "return": "ExpirablePost",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "expiring_posts",
+            "return": "ExpirablePost",
+            "params": []
         },
         {
             "method": "GET",
@@ -1228,9 +1385,52 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "flags",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "endpoint",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "entry_point",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "flag",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "page_id",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "page_ids",
+                    "required": false,
+                    "type": "list<int>"
+                },
+                {
+                    "name": "value",
+                    "required": true,
+                    "type": "bool"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "global_brand_children",
             "return": "Page",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "indexed_video_copyrights",
+            "return": "VideoCopyright",
             "params": []
         },
         {
@@ -1384,6 +1584,107 @@
                     "name": "publish_status",
                     "required": true,
                     "type": "pageinstant_articles_publish_publish_status_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "labels",
+            "return": "PageLabel",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "leadgen_conditional_questions_group",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "conditional_questions_group_csv",
+                    "required": true,
+                    "type": "file"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "leadgen_draft_forms",
+            "return": "LeadGenDataDraft",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "leadgen_draft_forms",
+            "return": "LeadGenDataDraft",
+            "params": [
+                {
+                    "name": "block_display_for_non_targeted_viewer",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "context_card",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "context_card_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "custom_disclaimer",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "follow_up_action_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "is_optimized_for_quality",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "legal_content_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "locale",
+                    "required": false,
+                    "type": "pageleadgen_draft_forms_locale_enum_param"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "privacy_policy",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "question_page_custom_headline",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "questions",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "thank_you_page",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "tracking_parameters",
+                    "required": false,
+                    "type": "map"
                 }
             ]
         },
@@ -1993,6 +2294,34 @@
         },
         {
             "method": "GET",
+            "endpoint": "milestones",
+            "return": "LifeEvent",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "milestones",
+            "return": "LifeEvent",
+            "params": [
+                {
+                    "name": "description",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "start_time",
+                    "required": true,
+                    "type": "datetime"
+                },
+                {
+                    "name": "title",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "nativeoffers",
             "return": "NativeOffer",
             "params": []
@@ -2143,6 +2472,53 @@
                     "name": "verbose",
                     "required": false,
                     "type": "bool"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "notifications",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "filtering",
+                    "required": false,
+                    "type": "list<pagenotifications_filtering_enum_param>"
+                },
+                {
+                    "name": "href",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "notif_ids",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "read",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "ref",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "seen",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "template",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "type",
+                    "required": false,
+                    "type": "pagenotifications_type_enum_param"
                 }
             ]
         },
@@ -2856,8 +3232,86 @@
         },
         {
             "method": "GET",
+            "endpoint": "saved_filters",
+            "return": "PageSavedFilter",
+            "params": [
+                {
+                    "name": "section",
+                    "required": true,
+                    "type": "pagesaved_filters_section_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "saved_filters",
+            "return": "PageSavedFilter",
+            "params": [
+                {
+                    "name": "display_name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "filters",
+                    "required": true,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "section",
+                    "required": true,
+                    "type": "pagesaved_filters_section_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "saved_message_responses",
+            "return": "SavedMessageResponse",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "saved_message_responses",
+            "return": "SavedMessageResponse",
+            "params": [
+                {
+                    "name": "category",
+                    "required": true,
+                    "type": "pagesaved_message_responses_category_enum_param"
+                },
+                {
+                    "name": "image",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "is_enabled",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "message",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "title",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "scheduled_posts",
             "return": "PagePost",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "seasons",
+            "return": "VideoList",
             "params": []
         },
         {
@@ -2911,6 +3365,38 @@
                     "name": "subscribed_fields",
                     "required": true,
                     "type": "list<pagesubscribed_apps_subscribed_fields_enum_param>"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "subscriptions",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "callback_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "fields",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "include_values",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "object",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "verify_token",
+                    "required": false,
+                    "type": "string"
                 }
             ]
         },
@@ -3028,6 +3514,12 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "thread_settings",
+            "return": "ThreadSetting",
+            "params": []
+        },
+        {
             "method": "POST",
             "endpoint": "thread_settings",
             "return": "Page",
@@ -3143,6 +3635,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "video_broadcasts",
+            "return": "LiveVideo",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "video_copyright_rules",
             "return": "VideoCopyrightRule",
             "params": [
@@ -3155,6 +3653,23 @@
                     "name": "source",
                     "required": false,
                     "type": "pagevideo_copyright_rules_source_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "video_copyright_rules",
+            "return": "VideoCopyrightRule",
+            "params": [
+                {
+                    "name": "condition_groups",
+                    "required": true,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
                 }
             ]
         },
@@ -3231,10 +3746,39 @@
             ]
         },
         {
+            "method": "DELETE",
+            "endpoint": "video_lists",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "video_list_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "video_lists",
             "return": "VideoList",
             "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "video_lists",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "title",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -3722,6 +4266,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "videos_you_can_use",
+            "return": "PageVideosYouCanUse",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "visitor_posts",
             "return": "PagePost",
             "params": [
@@ -4112,6 +4662,10 @@
         {
             "name": "contact_address",
             "type": "MailingAddress"
+        },
+        {
+            "name": "context",
+            "type": "OpenGraphContext"
         },
         {
             "name": "copyright_whitelisted_ig_partners",

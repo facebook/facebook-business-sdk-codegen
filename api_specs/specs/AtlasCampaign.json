@@ -29,33 +29,6 @@
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "importtemplate",
-            "return": "AtlasCampaign",
-            "params": [
-                {
-                    "name": "export",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "filename",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "format",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "template",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "metrics_breakdown",
             "return": "AtlasCampaignMetricBreakdown",

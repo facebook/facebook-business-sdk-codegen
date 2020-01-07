@@ -10,19 +10,7 @@
             "type": "unsigned int"
         },
         {
-            "name": "has_hit_total_live_ads_limit",
-            "type": "bool"
-        },
-        {
-            "name": "live_ads_quota_left",
-            "type": "int"
-        },
-        {
-            "name": "total_live_ads_in_current_account",
-            "type": "unsigned int"
-        },
-        {
-            "name": "total_live_ads_limit",
+            "name": "current_account_ads_running_or_in_review_count",
             "type": "unsigned int"
         }
     ]

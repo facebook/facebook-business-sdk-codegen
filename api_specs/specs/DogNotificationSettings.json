@@ -1,0 +1,36 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "DogNotificationSettings",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "DogNotificationSettings",
+            "params": [
+                {
+                    "name": "subscription_status_per_channel",
+                    "required": false,
+                    "type": "map"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "dog_check_key",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "subscription_status_per_channel",
+            "type": "map<string, string>"
+        }
+    ]
+}

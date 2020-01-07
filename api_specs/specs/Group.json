@@ -929,6 +929,18 @@
         },
         {
             "method": "POST",
+            "endpoint": "moderators",
+            "return": "Group",
+            "params": [
+                {
+                    "name": "uid",
+                    "required": true,
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "method": "POST",
             "endpoint": "open_graph_action_feed",
             "return": "Object",
             "params": [

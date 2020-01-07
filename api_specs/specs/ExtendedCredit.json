@@ -2,6 +2,12 @@
     "apis": [
         {
             "method": "GET",
+            "endpoint": "extended_credit_emails",
+            "return": "ExtendedCreditEmail",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "extended_credit_invoice_groups",
             "return": "ExtendedCreditInvoiceGroup",
             "params": []

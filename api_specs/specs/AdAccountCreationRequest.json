@@ -7,6 +7,103 @@
             "params": []
         },
         {
+            "method": "POST",
+            "endpoint": "vietnam",
+            "return": "AdAccountCreationRequest",
+            "params": [
+                {
+                    "name": "ad_accounts_info",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "additional_comment",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "address_in_english",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "address_in_local_language",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "advertiser_business_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "business_registration",
+                    "required": false,
+                    "type": "file"
+                },
+                {
+                    "name": "business_registration_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "contact",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "english_legal_entity_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "legal_entity_name_in_local_language",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "official_website_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "planning_agency_business_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "promotable_app_ids",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "promotable_page_ids",
+                    "required": false,
+                    "type": "list<int>"
+                },
+                {
+                    "name": "promotable_page_urls",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "promotable_urls",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "subvertical",
+                    "required": false,
+                    "type": "adaccountcreationrequestvietnam_subvertical_enum_param"
+                },
+                {
+                    "name": "vertical",
+                    "required": false,
+                    "type": "adaccountcreationrequestvietnam_vertical_enum_param"
+                }
+            ]
+        },
+        {
             "name": "#get",
             "method": "GET",
             "return": "AdAccountCreationRequest",

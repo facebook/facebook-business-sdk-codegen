@@ -379,11 +379,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "study_spec",
-                    "required": false,
-                    "type": "map"
-                },
-                {
                     "name": "tags",
                     "required": false,
                     "type": "list<string>"

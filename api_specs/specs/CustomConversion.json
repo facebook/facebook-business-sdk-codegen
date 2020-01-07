@@ -2,6 +2,40 @@
     "apis": [
         {
             "method": "GET",
+            "endpoint": "activities",
+            "return": "CustomConversionActivities",
+            "params": [
+                {
+                    "name": "end_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "event_type",
+                    "required": false,
+                    "type": "customconversionactivities_event_type_enum_param"
+                },
+                {
+                    "name": "start_time",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "adaccounts",
+            "return": "AdAccount",
+            "params": [
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "stats",
             "return": "CustomConversionStatsResult",
             "params": [

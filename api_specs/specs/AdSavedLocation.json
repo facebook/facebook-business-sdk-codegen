@@ -1,0 +1,105 @@
+{
+    "apis": [
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdSavedLocation",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "AdSavedLocation",
+            "params": [
+                {
+                    "name": "cities",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "countries",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "country_groups",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "custom_locations",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "geo_markets",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "regions",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "zips",
+                    "required": false,
+                    "type": "list<Object>"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "cities",
+            "type": "list<TargetingGeoLocationCity>"
+        },
+        {
+            "name": "countries",
+            "type": "list<string>"
+        },
+        {
+            "name": "country_groups",
+            "type": "list<string>"
+        },
+        {
+            "name": "custom_locations",
+            "type": "list<TargetingGeoLocationCustomLocation>"
+        },
+        {
+            "name": "geo_markets",
+            "type": "list<TargetingGeoLocationMarket>"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "location_sentences",
+            "type": "list<string>"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "regions",
+            "type": "list<TargetingGeoLocationRegion>"
+        },
+        {
+            "name": "zips",
+            "type": "list<TargetingGeoLocationZip>"
+        }
+    ]
+}

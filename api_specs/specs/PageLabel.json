@@ -1,6 +1,12 @@
 {
     "apis": [
         {
+            "method": "GET",
+            "endpoint": "users",
+            "return": "User",
+            "params": []
+        },
+        {
             "name": "#get",
             "method": "GET",
             "return": "PageLabel",

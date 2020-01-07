@@ -1,0 +1,143 @@
+{
+    "apis": [
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "asset_type",
+                    "required": false,
+                    "type": "partnerintegrationlinked_asset_type"
+                }
+            ]
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "PartnerIntegrationLinked",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "PartnerIntegrationLinked",
+            "params": [
+                {
+                    "name": "ads_pixel_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "application_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "completed_integration_types",
+                    "required": false,
+                    "type": "list<partnerintegrationlinked_completed_integration_types>"
+                },
+                {
+                    "name": "install_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "oauth_partner_integration_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "offline_conversion_data_set_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "product_catalog_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "salesforce_instance_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "salesforce_setup_config",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "setup_status",
+                    "required": false,
+                    "type": "partnerintegrationlinked_setup_status"
+                },
+                {
+                    "name": "workspace_name",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "ads_pixel",
+            "type": "AdsPixel"
+        },
+        {
+            "name": "application",
+            "type": "Application"
+        },
+        {
+            "name": "completed_integration_types",
+            "type": "list<string>"
+        },
+        {
+            "name": "external_id",
+            "type": "string"
+        },
+        {
+            "name": "has_oauth_token",
+            "type": "bool"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "offline_conversion_data_set",
+            "type": "OfflineConversionDataSet"
+        },
+        {
+            "name": "page",
+            "type": "Page"
+        },
+        {
+            "name": "partner",
+            "type": "string"
+        },
+        {
+            "name": "partner_profile",
+            "type": "Object"
+        },
+        {
+            "name": "product_catalog",
+            "type": "ProductCatalog"
+        },
+        {
+            "name": "setup_status",
+            "type": "string"
+        }
+    ]
+}

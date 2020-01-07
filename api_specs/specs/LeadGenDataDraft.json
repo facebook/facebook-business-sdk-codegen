@@ -1,0 +1,159 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "LeadGenDataDraft",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "LeadGenDataDraft",
+            "params": [
+                {
+                    "name": "block_display_for_non_targeted_viewer",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "context_card",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "context_card_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "custom_disclaimer",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "delete_missing_parameters",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "follow_up_action_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "is_optimized_for_quality",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "legal_content_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "locale",
+                    "required": false,
+                    "type": "leadgendatadraft_locale"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "privacy_policy",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "question_page_custom_headline",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "questions",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "status",
+                    "required": false,
+                    "type": "leadgendatadraft_status"
+                },
+                {
+                    "name": "thank_you_page",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "tracking_parameters",
+                    "required": false,
+                    "type": "map"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "block_display_for_non_targeted_viewer",
+            "type": "bool"
+        },
+        {
+            "name": "context_card",
+            "type": "Object"
+        },
+        {
+            "name": "created_time",
+            "type": "datetime"
+        },
+        {
+            "name": "follow_up_action_url",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_optimized_for_quality",
+            "type": "bool"
+        },
+        {
+            "name": "legal_content",
+            "type": "Object"
+        },
+        {
+            "name": "locale",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "page",
+            "type": "Page"
+        },
+        {
+            "name": "question_page_custom_headline",
+            "type": "string"
+        },
+        {
+            "name": "questions",
+            "type": "list<LeadGenDraftQuestion>"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "thank_you_page",
+            "type": "Object"
+        },
+        {
+            "name": "tracking_parameters",
+            "type": "map<string, string>"
+        }
+    ]
+}

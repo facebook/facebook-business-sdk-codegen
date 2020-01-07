@@ -1,0 +1,24 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ThreadSetting",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "payment_privacy_url",
+            "type": "string"
+        },
+        {
+            "name": "whitelisted_domains",
+            "type": "list<string>"
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "partnerstudies",
+            "return": "PartnerStudy",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdsDataPartner",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "rev_share_policies",
+            "type": "list<RevSharePolicy>"
+        }
+    ]
+}
