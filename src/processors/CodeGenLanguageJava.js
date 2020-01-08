@@ -137,7 +137,11 @@ const CodeGenLanguageJava = {
               ] = true;
             }
           } else {
-            fieldSpec['type:java'] = this.getTypeForJava(fieldSpec.type);
+            if (fieldSpec.keyvalue) {
+              fieldSpec['type:java'] = 'List<KeyValue>';
+            } else {
+              fieldSpec['type:java'] = this.getTypeForJava(fieldSpec.type);
+            }
           }
         }
       }

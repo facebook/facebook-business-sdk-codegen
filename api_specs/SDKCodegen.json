@@ -8,6 +8,11 @@
         "not_visible": true
       }
     },
+    "LeadgenForm": {
+      "$.fields[?(@.name=='tracking_parameters')]": {
+        "keyvalue": true
+      }
+    },
     "AdAccount": {
       "$.apis[?(@.method=='POST' && @.endpoint=='insights')]": {
         "return": "AdReportRun"
