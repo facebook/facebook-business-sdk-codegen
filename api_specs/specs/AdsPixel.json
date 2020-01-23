@@ -82,6 +82,11 @@
                     "type": "list<string>"
                 },
                 {
+                    "name": "partner_agent",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "test_event_code",
                     "required": false,
                     "type": "string"
