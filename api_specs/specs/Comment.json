@@ -122,12 +122,6 @@
             ]
         },
         {
-            "method": "GET",
-            "endpoint": "likes",
-            "return": "Profile",
-            "params": []
-        },
-        {
             "method": "POST",
             "endpoint": "likes",
             "return": "Comment",

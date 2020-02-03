@@ -121,11 +121,6 @@
                     "type": "list<string>"
                 },
                 {
-                    "name": "include_deleted",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "include_drafts",
                     "required": false,
                     "type": "bool"

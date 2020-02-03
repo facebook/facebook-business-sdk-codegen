@@ -1,12 +1,6 @@
 {
     "apis": [
         {
-            "method": "GET",
-            "endpoint": "adsets",
-            "return": "AdSet",
-            "params": []
-        },
-        {
             "name": "#delete",
             "method": "DELETE",
             "return": "Object",

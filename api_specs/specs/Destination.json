@@ -5,68 +5,12 @@
             "method": "GET",
             "return": "Destination",
             "params": []
-        },
-        {
-            "name": "#update",
-            "method": "POST",
-            "return": "Destination",
-            "params": [
-                {
-                    "name": "address",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "currency",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "description",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "images",
-                    "required": false,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "price",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "target_radius_in_km",
-                    "required": false,
-                    "type": "float"
-                },
-                {
-                    "name": "types",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "url",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
         }
     ],
     "fields": [
         {
             "name": "address",
             "type": "string"
-        },
-        {
-            "name": "applinks",
-            "type": "AppLinks"
         },
         {
             "name": "currency",

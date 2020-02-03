@@ -347,12 +347,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "android_dialog_configs",
-            "return": "ApplicationDialogConfig",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "app_event_types",
             "return": "ApplicationAppEventTypes",
             "params": []
@@ -527,18 +521,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "audiences",
-            "return": "CustomAudience",
-            "params": [
-                {
-                    "name": "ad_account",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "authorized_adaccounts",
             "return": "AdAccount",
             "params": [
@@ -553,30 +535,6 @@
             "method": "DELETE",
             "endpoint": "banned",
             "return": "Object",
-            "params": [
-                {
-                    "name": "uids",
-                    "required": true,
-                    "type": "list<int>"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "banned",
-            "return": "User",
-            "params": [
-                {
-                    "name": "uid",
-                    "required": false,
-                    "type": "int"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "banned",
-            "return": "User",
             "params": [
                 {
                     "name": "uids",
@@ -626,28 +584,6 @@
         },
         {
             "method": "POST",
-            "endpoint": "codeless_event_bindings",
-            "return": "Application",
-            "params": [
-                {
-                    "name": "bindings",
-                    "required": true,
-                    "type": "list<map>"
-                },
-                {
-                    "name": "mutation_method",
-                    "required": true,
-                    "type": "applicationcodeless_event_bindings_mutation_method_enum_param"
-                },
-                {
-                    "name": "platform",
-                    "required": true,
-                    "type": "applicationcodeless_event_bindings_platform_enum_param"
-                }
-            ]
-        },
-        {
-            "method": "POST",
             "endpoint": "codeless_event_mappings",
             "return": "Application",
             "params": [
@@ -675,29 +611,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "connections",
-            "return": "OpenGraphActionType",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "custom_audience_third_party_id",
-            "return": "ApplicationCustomAudienceThirdPartyId",
-            "params": [
-                {
-                    "name": "limit_event_usage",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "udid",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "da_checks",
             "return": "DACheck",
             "params": [
@@ -707,12 +620,6 @@
                     "type": "list<string>"
                 }
             ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "direct_deals",
-            "return": "DirectDeal",
-            "params": []
         },
         {
             "method": "GET",
@@ -757,38 +664,6 @@
                     "name": "full_app_indexing_info_classes",
                     "required": true,
                     "type": "list<map>"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "insights_event_labels",
-            "return": "InsightsEventLabel",
-            "params": [
-                {
-                    "name": "add",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "delete",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "ecosystem",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "since",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "until",
-                    "required": false,
-                    "type": "datetime"
                 }
             ]
         },
@@ -1116,12 +991,6 @@
             ]
         },
         {
-            "method": "GET",
-            "endpoint": "object_types",
-            "return": "OpenGraphObjectType",
-            "params": []
-        },
-        {
             "method": "POST",
             "endpoint": "occludespopups",
             "return": "Object",
@@ -1267,39 +1136,10 @@
             ]
         },
         {
-            "method": "DELETE",
-            "endpoint": "roles",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "user",
-                    "required": false,
-                    "type": "int"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "roles",
             "return": "ApplicationRoles",
             "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "roles",
-            "return": "Application",
-            "params": [
-                {
-                    "name": "role",
-                    "required": true,
-                    "type": "applicationroles_role_enum_param"
-                },
-                {
-                    "name": "user",
-                    "required": true,
-                    "type": "int"
-                }
-            ]
         },
         {
             "method": "GET",
@@ -1823,10 +1663,6 @@
         {
             "name": "contact_email",
             "type": "string"
-        },
-        {
-            "name": "context",
-            "type": "Object"
         },
         {
             "name": "created_time",

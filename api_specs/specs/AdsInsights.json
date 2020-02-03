@@ -342,6 +342,10 @@
             "type": "list<AdsActionStats>"
         },
         {
+            "name": "cost_per_store_visit_action",
+            "type": "list<AdsActionStats>"
+        },
+        {
             "name": "cost_per_submit_application",
             "type": "list<AdsActionStats>"
         },
@@ -735,6 +739,10 @@
         },
         {
             "name": "start_trial_value",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "store_visit_actions",
             "type": "list<AdsActionStats>"
         },
         {

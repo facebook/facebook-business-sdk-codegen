@@ -9,11 +9,6 @@
                     "name": "source",
                     "required": false,
                     "type": "unifiedthreadmessages_source_enum_param"
-                },
-                {
-                    "name": "user",
-                    "required": false,
-                    "type": "int"
                 }
             ]
         },

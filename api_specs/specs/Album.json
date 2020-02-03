@@ -100,39 +100,6 @@
             ]
         },
         {
-            "method": "DELETE",
-            "endpoint": "likes",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "feedback_source",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "nectar_module",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "notify",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "tracking",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "likes",
-            "return": "Profile",
-            "params": []
-        },
-        {
             "method": "POST",
             "endpoint": "likes",
             "return": "Album",
@@ -446,18 +413,6 @@
                     "name": "type",
                     "required": false,
                     "type": "albumpicture_type_enum_param"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "reactions",
-            "return": "Profile",
-            "params": [
-                {
-                    "name": "type",
-                    "required": false,
-                    "type": "albumreactions_type_enum_param"
                 }
             ]
         },

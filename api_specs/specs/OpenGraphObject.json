@@ -2,155 +2,6 @@
     "apis": [
         {
             "method": "GET",
-            "endpoint": "comments",
-            "return": "Comment",
-            "params": [
-                {
-                    "name": "filter",
-                    "required": false,
-                    "type": "opengraphobjectcomments_filter_enum_param"
-                },
-                {
-                    "name": "live_filter",
-                    "required": false,
-                    "type": "opengraphobjectcomments_live_filter_enum_param"
-                },
-                {
-                    "name": "order",
-                    "required": false,
-                    "type": "opengraphobjectcomments_order_enum_param"
-                },
-                {
-                    "name": "since",
-                    "required": false,
-                    "type": "datetime"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "comments",
-            "return": "Comment",
-            "params": [
-                {
-                    "name": "attachment_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "attachment_share_url",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "attachment_url",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "comment_privacy_value",
-                    "required": false,
-                    "type": "opengraphobjectcomments_comment_privacy_value_enum_param"
-                },
-                {
-                    "name": "facepile_mentioned_ids",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "feedback_source",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "is_offline",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "message",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "nectar_module",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "object_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "parent_comment_id",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "text",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "tracking",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "likes",
-            "return": "Profile",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "likes",
-            "return": "OpenGraphObject",
-            "params": [
-                {
-                    "name": "action",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "message",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "ref",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "url",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "picture",
-            "return": "ProfilePictureSource",
-            "params": [
-                {
-                    "name": "redirect",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "type",
-                    "required": false,
-                    "type": "opengraphobjectpicture_type_enum_param"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "reactions",
             "return": "Profile",
             "params": [
@@ -166,23 +17,6 @@
             "method": "GET",
             "return": "OpenGraphObject",
             "params": []
-        },
-        {
-            "name": "#update",
-            "method": "POST",
-            "return": "OpenGraphObject",
-            "params": [
-                {
-                    "name": "locale",
-                    "required": false,
-                    "type": "list"
-                },
-                {
-                    "name": "object",
-                    "required": false,
-                    "type": "Object"
-                }
-            ]
         }
     ],
     "fields": [
@@ -197,10 +31,6 @@
         {
             "name": "audio",
             "type": "list<Object>"
-        },
-        {
-            "name": "context",
-            "type": "OpenGraphContext"
         },
         {
             "name": "created_time",

@@ -7,23 +7,6 @@
             "params": []
         },
         {
-            "method": "DELETE",
-            "endpoint": "adlabels",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "adlabels",
-                    "required": true,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "execution_options",
-                    "required": false,
-                    "type": "list<adgroupadlabels_execution_options_enum_param>"
-                }
-            ]
-        },
-        {
             "method": "POST",
             "endpoint": "adlabels",
             "return": "Ad",
@@ -66,11 +49,6 @@
                     "name": "effective_status",
                     "required": false,
                     "type": "list<string>"
-                },
-                {
-                    "name": "include_deleted",
-                    "required": false,
-                    "type": "bool"
                 },
                 {
                     "name": "time_range",
@@ -327,28 +305,6 @@
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "leads",
-            "return": "Lead",
-            "params": [
-                {
-                    "name": "end_time",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "session_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "start_time",
-                    "required": false,
-                    "type": "datetime"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "previews",
             "return": "AdPreview",
@@ -425,29 +381,6 @@
             "endpoint": "targetingsentencelines",
             "return": "TargetingSentenceLine",
             "params": []
-        },
-        {
-            "method": "DELETE",
-            "endpoint": "trackingtag",
-            "return": "Object",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "trackingtag",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "add_template_param",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "url",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
         },
         {
             "name": "#delete",

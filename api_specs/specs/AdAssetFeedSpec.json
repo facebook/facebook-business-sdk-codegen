@@ -30,6 +30,10 @@
             "type": "list<AdAssetFeedSpecCaption>"
         },
         {
+            "name": "carousels",
+            "type": "list<Object>"
+        },
+        {
             "name": "descriptions",
             "type": "list<AdAssetFeedSpecDescription>"
         },

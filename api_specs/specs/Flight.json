@@ -51,10 +51,6 @@
     ],
     "fields": [
         {
-            "name": "applinks",
-            "type": "AppLinks"
-        },
-        {
             "name": "currency",
             "type": "string"
         },

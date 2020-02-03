@@ -11,6 +11,18 @@
             "method": "GET",
             "return": "ExtendedCreditAllocationConfig",
             "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "ExtendedCreditAllocationConfig",
+            "params": [
+                {
+                    "name": "amount",
+                    "required": false,
+                    "type": "Object"
+                }
+            ]
         }
     ],
     "fields": [

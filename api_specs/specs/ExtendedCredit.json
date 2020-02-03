@@ -2,12 +2,6 @@
     "apis": [
         {
             "method": "GET",
-            "endpoint": "extended_credit_emails",
-            "return": "ExtendedCreditEmail",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "extended_credit_invoice_groups",
             "return": "ExtendedCreditInvoiceGroup",
             "params": []
@@ -140,6 +134,10 @@
         {
             "name": "partition_from",
             "type": "string"
+        },
+        {
+            "name": "receiving_credit_allocation_config",
+            "type": "ExtendedCreditAllocationConfig"
         },
         {
             "name": "send_bill_to_biz_name",

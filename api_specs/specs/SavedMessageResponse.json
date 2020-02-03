@@ -1,49 +1,10 @@
 {
     "apis": [
         {
-            "method": "GET",
-            "endpoint": "macros",
-            "return": "SavedMessageResponseMacro",
-            "params": []
-        },
-        {
-            "name": "#delete",
-            "method": "DELETE",
-            "return": "Object",
-            "params": []
-        },
-        {
             "name": "#get",
             "method": "GET",
             "return": "SavedMessageResponse",
             "params": []
-        },
-        {
-            "name": "#update",
-            "method": "POST",
-            "return": "SavedMessageResponse",
-            "params": [
-                {
-                    "name": "image",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "message",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "remove_image",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "title",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
         }
     ],
     "fields": [

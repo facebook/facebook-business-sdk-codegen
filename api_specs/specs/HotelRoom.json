@@ -78,10 +78,6 @@
     ],
     "fields": [
         {
-            "name": "applinks",
-            "type": "AppLinks"
-        },
-        {
             "name": "base_price",
             "type": "string"
         },

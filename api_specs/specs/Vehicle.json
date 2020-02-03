@@ -165,10 +165,6 @@
             "type": "Object"
         },
         {
-            "name": "applinks",
-            "type": "AppLinks"
-        },
-        {
             "name": "availability",
             "type": "string"
         },

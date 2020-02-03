@@ -245,6 +245,16 @@
                     "type": "string"
                 },
                 {
+                    "name": "needs_transcoder_restart",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "needs_transcoder_restart_reason",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
                     "name": "status",
                     "required": true,
                     "type": "liveencoder_status"

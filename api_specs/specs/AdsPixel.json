@@ -43,24 +43,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "audiences",
-            "return": "CustomAudience",
-            "params": [
-                {
-                    "name": "ad_account",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "create_server_to_server_keys",
-            "return": "AdsPixel",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "da_checks",
             "return": "DACheck",
             "params": [
@@ -82,6 +64,11 @@
                     "type": "list<string>"
                 },
                 {
+                    "name": "partner_agent",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "test_event_code",
                     "required": false,
                     "type": "string"
@@ -90,18 +77,6 @@
                     "name": "trace",
                     "required": false,
                     "type": "unsigned int"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "reset_server_to_server_key",
-            "return": "AdsPixel",
-            "params": [
-                {
-                    "name": "type",
-                    "required": true,
-                    "type": "adspixelreset_server_to_server_key_type_enum_param"
                 }
             ]
         },

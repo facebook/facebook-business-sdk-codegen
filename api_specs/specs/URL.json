@@ -41,10 +41,6 @@
     ],
     "fields": [
         {
-            "name": "app_links",
-            "type": "AppLinks"
-        },
-        {
             "name": "development_instant_article",
             "type": "InstantArticle"
         },

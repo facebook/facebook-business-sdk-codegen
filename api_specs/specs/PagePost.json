@@ -103,12 +103,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "edit_actions",
-            "return": "EditAction",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "insights",
             "return": "InsightsResult",
             "params": [
@@ -185,78 +179,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "promotions",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "ad_account_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "ad_conversion_pixel_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "audience",
-                    "required": false,
-                    "type": "pagepostpromotions_audience_enum_param"
-                },
-                {
-                    "name": "audience_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "bid_amount",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "budget",
-                    "required": true,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "cta_type",
-                    "required": false,
-                    "type": "pagepostpromotions_cta_type_enum_param"
-                },
-                {
-                    "name": "currency",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "flow_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "placement",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "start_time",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "stop_time",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "targeting",
-                    "required": false,
-                    "type": "Targeting"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "reactions",
             "return": "Profile",
@@ -281,26 +203,8 @@
             "params": []
         },
         {
-            "method": "DELETE",
-            "endpoint": "subscribed",
-            "return": "Object",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "subscribed",
-            "return": "PagePost",
-            "params": []
-        },
-        {
             "method": "GET",
             "endpoint": "to",
-            "return": "Profile",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "with_tags",
             "return": "Profile",
             "params": []
         },

@@ -19,30 +19,6 @@
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "agencies",
-            "return": "InstagramUser",
-            "params": [
-                {
-                    "name": "business",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "assigned_users",
-            "return": "AssignedUser",
-            "params": [
-                {
-                    "name": "business",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "authorized_adaccounts",
             "return": "AdAccount",

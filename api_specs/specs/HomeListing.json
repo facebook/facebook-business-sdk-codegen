@@ -124,10 +124,6 @@
             "type": "string"
         },
         {
-            "name": "applinks",
-            "type": "AppLinks"
-        },
-        {
             "name": "area_size",
             "type": "unsigned int"
         },

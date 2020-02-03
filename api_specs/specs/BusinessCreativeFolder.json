@@ -65,6 +65,12 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "subfolders",
+            "return": "BusinessCreativeFolder",
+            "params": []
+        },
+        {
             "name": "#delete",
             "method": "DELETE",
             "return": "Object",
@@ -109,6 +115,10 @@
             "type": "datetime"
         },
         {
+            "name": "creative_insight_permissions",
+            "type": "map<string, string>"
+        },
+        {
             "name": "description",
             "type": "string"
         },
@@ -119,6 +129,10 @@
         {
             "name": "name",
             "type": "string"
+        },
+        {
+            "name": "parent_folder",
+            "type": "BusinessCreativeFolder"
         }
     ]
 }

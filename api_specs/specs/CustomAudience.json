@@ -94,50 +94,6 @@
         },
         {
             "method": "DELETE",
-            "endpoint": "upload",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "namespace",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "payload",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "session",
-                    "required": false,
-                    "type": "Object"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "upload",
-            "return": "CustomAudience",
-            "params": [
-                {
-                    "name": "namespace",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "payload",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "session",
-                    "required": false,
-                    "type": "Object"
-                }
-            ]
-        },
-        {
-            "method": "DELETE",
             "endpoint": "users",
             "return": "Object",
             "params": [

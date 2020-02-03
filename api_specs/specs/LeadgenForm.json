@@ -7,28 +7,6 @@
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "leads",
-            "return": "Lead",
-            "params": [
-                {
-                    "name": "end_time",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "session_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "start_time",
-                    "required": false,
-                    "type": "datetime"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "test_leads",
             "return": "Lead",

@@ -9,10 +9,6 @@
     ],
     "fields": [
         {
-            "name": "applinks",
-            "type": "AppLinks"
-        },
-        {
             "name": "automotive_model_id",
             "type": "string"
         },

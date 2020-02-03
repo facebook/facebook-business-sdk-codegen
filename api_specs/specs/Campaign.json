@@ -7,23 +7,6 @@
             "params": []
         },
         {
-            "method": "DELETE",
-            "endpoint": "adlabels",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "adlabels",
-                    "required": true,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "execution_options",
-                    "required": false,
-                    "type": "list<adcampaigngroupadlabels_execution_options_enum_param>"
-                }
-            ]
-        },
-        {
             "method": "POST",
             "endpoint": "adlabels",
             "return": "Campaign",
@@ -71,11 +54,6 @@
                     "name": "effective_status",
                     "required": false,
                     "type": "list<string>"
-                },
-                {
-                    "name": "include_deleted",
-                    "required": false,
-                    "type": "bool"
                 },
                 {
                     "name": "include_drafts",

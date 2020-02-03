@@ -5,48 +5,6 @@
             "method": "GET",
             "return": "AudioCopyright",
             "params": []
-        },
-        {
-            "name": "#update",
-            "method": "POST",
-            "return": "AudioCopyright",
-            "params": [
-                {
-                    "name": "append_excluded_ownership_segments",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "excluded_ownership_segments",
-                    "required": false,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "match_rule",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "ownership_countries",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "update_source",
-                    "required": false,
-                    "type": "audiocopyright_update_source"
-                },
-                {
-                    "name": "whitelisted_fb_users",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "whitelisted_ig_users",
-                    "required": false,
-                    "type": "list<string>"
-                }
-            ]
         }
     ],
     "fields": [
