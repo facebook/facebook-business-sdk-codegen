@@ -16,6 +16,7 @@ import Cursor from './../cursor';
 {{#references}}
 import {{{name:pascal_case}}} from './{{name:hyphen}}';
 {{/references}}
+{{> /src/objects/%name:hyphen%.extra_use}}
 
 /**
  * {{name:pascal_case}}
@@ -94,4 +95,5 @@ export default class {{name:pascal_case}} extends AbstractCrudObject {
   }
 {{/is_node_api}}
 {{/apis}}
+{{> /src/objects/%name:hyphen%.extra_functions}}
 }
