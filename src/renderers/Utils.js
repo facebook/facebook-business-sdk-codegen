@@ -11,6 +11,7 @@ import fs_extra from 'fs-extra';
 import path from 'path';
 import mustache from 'mustache';
 
+const MANUAL_PATH= [/^(.*)\/serverside\/(.*)$/];
 const Utils = {
   loadTemplates(templateDir: string) {
     // 1. load codegen main templates
@@ -166,6 +167,12 @@ const Utils = {
   },
 
   removeRecursiveSync(dir: string) {
+    for (var i = 0, len = MANUAL_PATH.length; i < len; i++) {
+      let match = dir.match(MANUAL_PATH[i]);
+      if (match) {
+        return false;
+      }
+    }
     let stats;
     try {
       stats = fs.lstatSync(dir);
@@ -173,17 +180,24 @@ const Utils = {
       if (e.code !== 'ENOENT') {
         throw e;
       }
-      return;
+      return false;
     }
 
     if (stats.isDirectory()) {
+      let delete_all = true;
       fs.readdirSync(dir).forEach(file =>
-        Utils.removeRecursiveSync(path.join(dir, file)),
+        delete_all &= Utils.removeRecursiveSync(path.join(dir, file)),
       );
-      fs.rmdirSync(dir);
+      if (delete_all) {
+        fs.rmdirSync(dir);
+      } else {
+        return false;
+      }
+
     } else {
       fs.unlinkSync(dir);
     }
+    return true;
   },
 
   copyRecursiveSync(srcDir: string, destDir: string) {
