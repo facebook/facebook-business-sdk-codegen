@@ -11,7 +11,7 @@ import fs_extra from 'fs-extra';
 import path from 'path';
 import mustache from 'mustache';
 
-const MANUAL_PATH= [/^(.*)\/serverside\/(.*)$/];
+const MANUAL_PATH= [/^(.*)\/[sS]erver[_]?[sS]ide\/(.*)$/];
 const Utils = {
   loadTemplates(templateDir: string) {
     // 1. load codegen main templates
