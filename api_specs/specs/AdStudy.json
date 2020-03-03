@@ -8,12 +8,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "health_check_errors",
-            "return": "AdsTALHealthCheckError",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "objectives",
             "return": "AdStudyObjective",
             "params": []

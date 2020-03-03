@@ -133,10 +133,6 @@
             "type": "unsigned int"
         },
         {
-            "name": "frequency_distribution",
-            "type": "list<float>"
-        },
-        {
             "name": "frequency_distribution_map",
             "type": "map<unsigned int, list<float>>"
         },

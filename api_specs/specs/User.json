@@ -23,7 +23,7 @@
                 },
                 {
                     "name": "scope",
-                    "required": true,
+                    "required": false,
                     "type": "list<Permission>"
                 }
             ]
@@ -1451,43 +1451,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "insights",
-            "return": "InsightsResult",
-            "params": [
-                {
-                    "name": "date_preset",
-                    "required": false,
-                    "type": "userinsights_date_preset_enum_param"
-                },
-                {
-                    "name": "metric",
-                    "required": false,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "period",
-                    "required": false,
-                    "type": "userinsights_period_enum_param"
-                },
-                {
-                    "name": "show_description_from_api_doc",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "since",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "until",
-                    "required": false,
-                    "type": "datetime"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "likes",
             "return": "Page",
             "params": [
@@ -1662,38 +1625,6 @@
                     "name": "title",
                     "required": false,
                     "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "mfs_account_pin_reset",
-            "return": "User",
-            "params": [
-                {
-                    "name": "password_token",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "provider_id",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "resume_payload",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "resume_type",
-                    "required": false,
-                    "type": "usermfs_account_pin_reset_resume_type_enum_param"
-                },
-                {
-                    "name": "should_bypass_token_proxy",
-                    "required": false,
-                    "type": "bool"
                 }
             ]
         },
@@ -2111,28 +2042,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "posts",
-            "return": "Post",
-            "params": [
-                {
-                    "name": "include_hidden",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "show_expired",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "with",
-                    "required": false,
-                    "type": "userposts_with_enum_param"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "request_history",
             "return": "RequestHistory",
             "params": []
@@ -2145,23 +2054,6 @@
                 {
                     "name": "query",
                     "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "screennames",
-            "return": "User",
-            "params": [
-                {
-                    "name": "service_type",
-                    "required": true,
-                    "type": "userscreennames_service_type_enum_param"
-                },
-                {
-                    "name": "value",
-                    "required": true,
                     "type": "string"
                 }
             ]
@@ -2841,6 +2733,10 @@
         {
             "name": "sports",
             "type": "list<Experience>"
+        },
+        {
+            "name": "supports_donate_button_in_live_video",
+            "type": "bool"
         },
         {
             "name": "test_group",

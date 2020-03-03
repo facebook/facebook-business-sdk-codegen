@@ -662,6 +662,11 @@
                     "type": "productcatalogproduct_feeds_override_type_enum_param"
                 },
                 {
+                    "name": "override_value",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "quoted_fields_mode",
                     "required": false,
                     "type": "productcatalogproduct_feeds_quoted_fields_mode_enum_param"
@@ -680,6 +685,11 @@
                     "name": "update_schedule",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "whitelisted_properties",
+                    "required": false,
+                    "type": "list<string>"
                 }
             ]
         },

@@ -131,6 +131,10 @@
             "type": "list<VideoCopyrightRule>"
         },
         {
+            "name": "tags",
+            "type": "list<string>"
+        },
+        {
             "name": "whitelisted_ids",
             "type": "list<string>"
         }

@@ -851,6 +851,10 @@
             "type": "list<AdCampaignIssuesInfo>"
         },
         {
+            "name": "learning_stage_info",
+            "type": "AdCampaignLearningStageInfo"
+        },
+        {
             "name": "lifetime_budget",
             "type": "string"
         },

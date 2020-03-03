@@ -10,20 +10,12 @@
             "type": "unsigned int"
         },
         {
-            "name": "exit_reason",
-            "type": "string"
-        },
-        {
             "name": "last_sig_edit_ts",
             "type": "int"
         },
         {
             "name": "status",
             "type": "string"
-        },
-        {
-            "name": "types",
-            "type": "list<string>"
         }
     ]
 }

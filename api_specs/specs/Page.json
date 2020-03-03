@@ -3119,6 +3119,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "tags",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
                     "name": "whitelisted_ids",
                     "required": false,
                     "type": "list<string>"
@@ -4190,10 +4195,6 @@
             "type": "Object"
         },
         {
-            "name": "leadgen_form_preview_details",
-            "type": "LeadGenFormPreviewDetails"
-        },
-        {
             "name": "leadgen_tos_acceptance_time",
             "type": "datetime"
         },
@@ -4416,6 +4417,10 @@
         {
             "name": "studio",
             "type": "string"
+        },
+        {
+            "name": "supports_donate_button_in_live_video",
+            "type": "bool"
         },
         {
             "name": "supports_instant_articles",

@@ -1002,6 +1002,11 @@
             "return": "Business",
             "params": [
                 {
+                    "name": "code",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "ig_password",
                     "required": false,
                     "type": "string"

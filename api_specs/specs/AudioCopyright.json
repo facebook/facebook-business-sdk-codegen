@@ -45,6 +45,10 @@
             "type": "string"
         },
         {
+            "name": "tags",
+            "type": "list<string>"
+        },
+        {
             "name": "update_time",
             "type": "datetime"
         },

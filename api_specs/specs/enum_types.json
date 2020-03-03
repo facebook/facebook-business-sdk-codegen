@@ -2195,6 +2195,7 @@
             "EVENT_COVER_VIDEO",
             "EVENT_TOUR",
             "FACECAST_DVR",
+            "FB_SHORTS",
             "FUNDRAISER_COVER_VIDEO",
             "GAME_CLIP",
             "GAMING_UPDATE_VIDEO",
@@ -2552,6 +2553,7 @@
             "FEED",
             "GROUPS",
             "INSTAGRAM_EXPLORE",
+            "INSTAGRAM_IGTV",
             "INSTAGRAM_STORIES",
             "INSTANT_ARTICLE",
             "INSTREAM_VIDEO",
@@ -2562,7 +2564,6 @@
             "REWARDED_VIDEO",
             "RIGHT_HAND_COLUMN",
             "SEARCH",
-            "SEARCH_SERP",
             "STATUS",
             "SUGGESTED_VIDEO",
             "UNKNOWN",
@@ -2885,7 +2886,8 @@
             "APPROVE",
             "DECLINE",
             "EXPIRED",
-            "IN_PROGRESS"
+            "IN_PROGRESS",
+            "PENDING"
         ]
     },
     {
@@ -3778,6 +3780,7 @@
             "FEED",
             "GROUPS",
             "INSTAGRAM_EXPLORE",
+            "INSTAGRAM_IGTV",
             "INSTAGRAM_STORIES",
             "INSTANT_ARTICLE",
             "INSTREAM_VIDEO",
@@ -3788,7 +3791,6 @@
             "REWARDED_VIDEO",
             "RIGHT_HAND_COLUMN",
             "SEARCH",
-            "SEARCH_SERP",
             "STATUS",
             "SUGGESTED_VIDEO",
             "UNKNOWN",
@@ -4073,6 +4075,7 @@
             "FEED",
             "GROUPS",
             "INSTAGRAM_EXPLORE",
+            "INSTAGRAM_IGTV",
             "INSTAGRAM_STORIES",
             "INSTANT_ARTICLE",
             "INSTREAM_VIDEO",
@@ -4083,7 +4086,6 @@
             "REWARDED_VIDEO",
             "RIGHT_HAND_COLUMN",
             "SEARCH",
-            "SEARCH_SERP",
             "STATUS",
             "SUGGESTED_VIDEO",
             "UNKNOWN",
@@ -4886,6 +4888,7 @@
         "field_or_param": "type",
         "values": [
             "CONTINUOUS_LIFT_CONFIG",
+            "GEO_LIFT",
             "LIFT",
             "SPLIT_TEST"
         ]
@@ -5461,6 +5464,7 @@
         "field_or_param": "type",
         "values": [
             "CONTINUOUS_LIFT_CONFIG",
+            "GEO_LIFT",
             "LIFT",
             "SPLIT_TEST"
         ]
@@ -5595,6 +5599,12 @@
             "PLATFORM_MANAGE_PAGES",
             "PLATFORM_PAGES_MANAGE_INSTANT_ARTICLES",
             "PLATFORM_READ_INSIGHTS",
+            "PROFILE_PLUS_ADVERTISE",
+            "PROFILE_PLUS_ANALYZE",
+            "PROFILE_PLUS_CREATE_CONTENT",
+            "PROFILE_PLUS_MANAGE",
+            "PROFILE_PLUS_MESSAGING",
+            "PROFILE_PLUS_MODERATE",
             "READ_PAGE_MAILBOXES",
             "VIEW_MONETIZATION_INSIGHTS"
         ]
@@ -5660,6 +5670,12 @@
             "PLATFORM_MANAGE_PAGES",
             "PLATFORM_PAGES_MANAGE_INSTANT_ARTICLES",
             "PLATFORM_READ_INSIGHTS",
+            "PROFILE_PLUS_ADVERTISE",
+            "PROFILE_PLUS_ANALYZE",
+            "PROFILE_PLUS_CREATE_CONTENT",
+            "PROFILE_PLUS_MANAGE",
+            "PROFILE_PLUS_MESSAGING",
+            "PROFILE_PLUS_MODERATE",
             "READ_PAGE_MAILBOXES",
             "VIEW_MONETIZATION_INSIGHTS"
         ]
@@ -5689,6 +5705,7 @@
             "FEED",
             "GROUPS",
             "INSTAGRAM_EXPLORE",
+            "INSTAGRAM_IGTV",
             "INSTAGRAM_STORIES",
             "INSTANT_ARTICLE",
             "INSTREAM_VIDEO",
@@ -5699,7 +5716,6 @@
             "REWARDED_VIDEO",
             "RIGHT_HAND_COLUMN",
             "SEARCH",
-            "SEARCH_SERP",
             "STATUS",
             "SUGGESTED_VIDEO",
             "UNKNOWN",
@@ -5806,7 +5822,8 @@
             "APPROVE",
             "DECLINE",
             "EXPIRED",
-            "IN_PROGRESS"
+            "IN_PROGRESS",
+            "PENDING"
         ]
     },
     {
@@ -5867,6 +5884,12 @@
             "PLATFORM_MANAGE_PAGES",
             "PLATFORM_PAGES_MANAGE_INSTANT_ARTICLES",
             "PLATFORM_READ_INSIGHTS",
+            "PROFILE_PLUS_ADVERTISE",
+            "PROFILE_PLUS_ANALYZE",
+            "PROFILE_PLUS_CREATE_CONTENT",
+            "PROFILE_PLUS_MANAGE",
+            "PROFILE_PLUS_MESSAGING",
+            "PROFILE_PLUS_MODERATE",
             "READ_PAGE_MAILBOXES",
             "VIEW_MONETIZATION_INSIGHTS"
         ]
@@ -5922,6 +5945,7 @@
             "flights",
             "home_listings",
             "hotels",
+            "offer_items",
             "offline_commerce",
             "ticketed_experiences",
             "transactable_items",
@@ -5948,7 +5972,8 @@
             "APPROVE",
             "DECLINE",
             "EXPIRED",
-            "IN_PROGRESS"
+            "IN_PROGRESS",
+            "PENDING"
         ]
     },
     {
@@ -6255,6 +6280,7 @@
             "EVENT_COVER_VIDEO",
             "EVENT_TOUR",
             "FACECAST_DVR",
+            "FB_SHORTS",
             "FUNDRAISER_COVER_VIDEO",
             "GAME_CLIP",
             "GAMING_UPDATE_VIDEO",
@@ -6680,6 +6706,7 @@
             "COUPLE",
             "COWORKERS",
             "CUSTOM",
+            "DEALS",
             "EPHEMERAL",
             "EVENT_PLANNING",
             "FAMILY",
@@ -6820,6 +6847,7 @@
             "COUPLE",
             "COWORKERS",
             "CUSTOM",
+            "DEALS",
             "EPHEMERAL",
             "EVENT_PLANNING",
             "FAMILY",
@@ -6888,21 +6916,11 @@
         "node": "Group",
         "field_or_param": "suggestion_category",
         "values": [
-            "CLOSE_FRIENDS",
             "CLOSE_FRIENDS_GENERIC",
-            "CURRENT_CITY",
             "EVENT",
             "FAMILY",
-            "FRIEND_LIST",
-            "GAMES",
             "LIFE_EVENT",
             "MESSENGER",
-            "MESSENGER_THREAD",
-            "NEARBY_FRIENDS",
-            "PAGE_ADMIN",
-            "SCHOOL",
-            "SCHOOL_GENERIC",
-            "TOP_PAGE",
             "WORK",
             "WORKPLACE",
             "WORKPLACE_1_1",
@@ -7063,6 +7081,7 @@
             "EVENT_COVER_VIDEO",
             "EVENT_TOUR",
             "FACECAST_DVR",
+            "FB_SHORTS",
             "FUNDRAISER_COVER_VIDEO",
             "GAME_CLIP",
             "GAMING_UPDATE_VIDEO",
@@ -7723,6 +7742,33 @@
         ]
     },
     {
+        "name": "opengraphobjectcomments_filter_enum_param",
+        "node": "Comment",
+        "field_or_param": "filter",
+        "values": [
+            "stream",
+            "toplevel"
+        ]
+    },
+    {
+        "name": "opengraphobjectcomments_live_filter_enum_param",
+        "node": "Comment",
+        "field_or_param": "live_filter",
+        "values": [
+            "filter_low_quality",
+            "no_filter"
+        ]
+    },
+    {
+        "name": "opengraphobjectcomments_order_enum_param",
+        "node": "Comment",
+        "field_or_param": "order",
+        "values": [
+            "chronological",
+            "reverse_chronological"
+        ]
+    },
+    {
         "name": "opengraphobjectreactions_type_enum_param",
         "node": "Profile",
         "field_or_param": "type",
@@ -7830,6 +7876,12 @@
             "PLATFORM_MANAGE_PAGES",
             "PLATFORM_PAGES_MANAGE_INSTANT_ARTICLES",
             "PLATFORM_READ_INSIGHTS",
+            "PROFILE_PLUS_ADVERTISE",
+            "PROFILE_PLUS_ANALYZE",
+            "PROFILE_PLUS_CREATE_CONTENT",
+            "PROFILE_PLUS_MANAGE",
+            "PROFILE_PLUS_MESSAGING",
+            "PROFILE_PLUS_MODERATE",
             "READ_PAGE_MAILBOXES",
             "VIEW_MONETIZATION_INSIGHTS"
         ]
@@ -7852,6 +7904,12 @@
             "PLATFORM_MANAGE_PAGES",
             "PLATFORM_PAGES_MANAGE_INSTANT_ARTICLES",
             "PLATFORM_READ_INSIGHTS",
+            "PROFILE_PLUS_ADVERTISE",
+            "PROFILE_PLUS_ANALYZE",
+            "PROFILE_PLUS_CREATE_CONTENT",
+            "PROFILE_PLUS_MANAGE",
+            "PROFILE_PLUS_MESSAGING",
+            "PROFILE_PLUS_MODERATE",
             "READ_PAGE_MAILBOXES",
             "VIEW_MONETIZATION_INSIGHTS"
         ]
@@ -8338,8 +8396,10 @@
         "field_or_param": "sender_action",
         "values": [
             "MARK_SEEN",
+            "REACT",
             "TYPING_OFF",
-            "TYPING_ON"
+            "TYPING_ON",
+            "UNREACT"
         ]
     },
     {
@@ -8791,6 +8851,7 @@
             "EVENT_COVER_VIDEO",
             "EVENT_TOUR",
             "FACECAST_DVR",
+            "FB_SHORTS",
             "FUNDRAISER_COVER_VIDEO",
             "GAME_CLIP",
             "GAMING_UPDATE_VIDEO",
@@ -10421,62 +10482,12 @@
         ]
     },
     {
-        "name": "unifiedthreadmessages_audio_type_enum_param",
-        "node": "Object",
-        "field_or_param": "audio_type",
-        "values": [
-            "FILE_ATTACHMENT",
-            "VOICE_MESSAGE",
-            "VOICE_MESSAGE_WITH_TRANSCRIPT"
-        ]
-    },
-    {
-        "name": "unifiedthreadmessages_image_type_enum_param",
-        "node": "Object",
-        "field_or_param": "image_type",
-        "values": [
-            "FILE_ATTACHMENT",
-            "MESSENGER_CAM",
-            "TRANSPARENT"
-        ]
-    },
-    {
-        "name": "unifiedthreadmessages_montage_frame_style_enum_param",
-        "node": "Object",
-        "field_or_param": "montage_frame_style",
-        "values": [
-            "no_border"
-        ]
-    },
-    {
-        "name": "unifiedthreadmessages_montage_supported_features_enum_param",
-        "node": "Object",
-        "field_or_param": "montage_supported_features",
-        "values": [
-            "AUTHOR_IN_PRODUCER_QE_FOR_SMART_REPLIES",
-            "LIGHTWEIGHT_REPLY",
-            "SHOW_STORY_IN_MESSENGER_THREAD"
-        ]
-    },
-    {
         "name": "unifiedthreadmessages_source_enum_param",
         "node": "UnifiedMessage",
         "field_or_param": "source",
         "values": [
             "ALL",
             "PARTICIPANTS"
-        ]
-    },
-    {
-        "name": "unifiedthreadmessages_video_type_enum_param",
-        "node": "Object",
-        "field_or_param": "video_type",
-        "values": [
-            "FILE_ATTACHMENT",
-            "RECORDED_STICKER",
-            "RECORDED_VIDEO",
-            "SPEAKING_STICKER",
-            "VIDEO_MAIL"
         ]
     },
     {
@@ -10512,6 +10523,7 @@
         "field_or_param": "type",
         "values": [
             "CONTINUOUS_LIFT_CONFIG",
+            "GEO_LIFT",
             "LIFT",
             "SPLIT_TEST"
         ]
@@ -10675,44 +10687,6 @@
         ]
     },
     {
-        "name": "userinsights_date_preset_enum_param",
-        "node": "InsightsResult",
-        "field_or_param": "date_preset",
-        "values": [
-            "last_14d",
-            "last_28d",
-            "last_30d",
-            "last_3d",
-            "last_7d",
-            "last_90d",
-            "last_month",
-            "last_quarter",
-            "last_week_mon_sun",
-            "last_week_sun_sat",
-            "last_year",
-            "lifetime",
-            "this_month",
-            "this_quarter",
-            "this_week_mon_today",
-            "this_week_sun_today",
-            "this_year",
-            "today",
-            "yesterday"
-        ]
-    },
-    {
-        "name": "userinsights_period_enum_param",
-        "node": "InsightsResult",
-        "field_or_param": "period",
-        "values": [
-            "day",
-            "days_28",
-            "lifetime",
-            "month",
-            "week"
-        ]
-    },
-    {
         "name": "userlive_videos_broadcast_status_enum_param",
         "node": "LiveVideo",
         "field_or_param": "broadcast_status",
@@ -10784,15 +10758,6 @@
         "values": [
             "AMBIENT",
             "REGULAR"
-        ]
-    },
-    {
-        "name": "usermfs_account_pin_reset_resume_type_enum_param",
-        "node": "User",
-        "field_or_param": "resume_type",
-        "values": [
-            "BOT_ACTION",
-            "NATIVE"
         ]
     },
     {
@@ -10873,69 +10838,6 @@
         ]
     },
     {
-        "name": "userposts_with_enum_param",
-        "node": "Post",
-        "field_or_param": "with",
-        "values": [
-            "LOCATION"
-        ]
-    },
-    {
-        "name": "userscreennames_service_type_enum_param",
-        "node": "User",
-        "field_or_param": "service_type",
-        "values": [
-            "AIM",
-            "ASK_FM",
-            "BBM",
-            "BBM_PPID",
-            "CYWORLD",
-            "EBUDDY",
-            "FOURSQUARE",
-            "GADU",
-            "GITHUB",
-            "GROUPWISE",
-            "GTALK",
-            "HYVES",
-            "ICLOUD",
-            "ICQ",
-            "INSTAGRAM",
-            "JABBER",
-            "KAKAOTALK",
-            "KIK",
-            "LINE",
-            "LINKED_IN",
-            "MAILRU",
-            "MEDIUM",
-            "MIXI",
-            "MSN",
-            "MYSPACE",
-            "NATEON",
-            "OCULUS",
-            "OK",
-            "ORKUT",
-            "OTHERS",
-            "PINTEREST",
-            "QIP",
-            "QQ",
-            "REDIFF_BOL",
-            "SKYPE",
-            "SNAPCHAT",
-            "SOUND_CLOUD",
-            "SPOTIFY",
-            "TUMBLR",
-            "TWITCH",
-            "TWITTER",
-            "VIMEO",
-            "VKONTAKTE",
-            "WECHAT",
-            "WHATSAPP",
-            "YAHOO",
-            "YAHOO_JP",
-            "YOU_TUBE"
-        ]
-    },
-    {
         "name": "usertaggablefriendpicture_type_enum_param",
         "node": "ProfilePictureSource",
         "field_or_param": "type",
@@ -10987,6 +10889,7 @@
             "EVENT_COVER_VIDEO",
             "EVENT_TOUR",
             "FACECAST_DVR",
+            "FB_SHORTS",
             "FUNDRAISER_COVER_VIDEO",
             "GAME_CLIP",
             "GAMING_UPDATE_VIDEO",
@@ -11424,6 +11327,7 @@
             "APPROVED",
             "DELETED",
             "DISABLED",
+            "IN_APPEAL",
             "PENDING",
             "PENDING_DELETION",
             "REJECTED"
