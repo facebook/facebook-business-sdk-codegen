@@ -11,7 +11,7 @@ import fs_extra from 'fs-extra';
 import path from 'path';
 import mustache from 'mustache';
 
-const MANUAL_PATH= [/^(.*)\/[sS]erver[_]?[sS]ide\/(.*)$/];
+const PATH_SKIP_AUTOGEN= [/^(.*)\/[sS]erver[_]?[sS]ide\/(.*)$/, /^(.*)\/\.travis.yml$/];
 const Utils = {
   loadTemplates(templateDir: string) {
     // 1. load codegen main templates
@@ -167,8 +167,8 @@ const Utils = {
   },
 
   removeRecursiveSync(dir: string) {
-    for (var i = 0, len = MANUAL_PATH.length; i < len; i++) {
-      let match = dir.match(MANUAL_PATH[i]);
+    for (var i = 0, len = PATH_SKIP_AUTOGEN.length; i < len; i++) {
+      let match = dir.match(PATH_SKIP_AUTOGEN[i]);
       if (match) {
         return false;
       }
