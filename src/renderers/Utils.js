@@ -11,7 +11,12 @@ import fs_extra from 'fs-extra';
 import path from 'path';
 import mustache from 'mustache';
 
-const PATH_SKIP_AUTOGEN= [/^(.*)\/[sS]erver[_]?[sS]ide\/(.*)$/, /^(.*)\/\.travis.yml$/];
+const PATH_SKIP_AUTOGEN= [
+  /^(.*)\/[sS]erver[_]?[sS]ide\/(.*)$/, 
+  /^(.*)\/\.travis.yml$/, 
+  /^(.*)\/\keyring.gpg.enc$/, 
+  /^(.*)\/\.travis.settings.xml$/
+];
 const Utils = {
   loadTemplates(templateDir: string) {
     // 1. load codegen main templates
