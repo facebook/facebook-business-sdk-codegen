@@ -1,18 +1,6 @@
 {
     "apis": [
         {
-            "method": "DELETE",
-            "endpoint": "assigned_users",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "user",
-                    "required": true,
-                    "type": "int"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "assigned_users",
             "return": "AssignedUser",

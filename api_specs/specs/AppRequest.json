@@ -38,7 +38,7 @@
         },
         {
             "name": "from",
-            "type": "User"
+            "type": "Object"
         },
         {
             "name": "id",
@@ -54,7 +54,7 @@
         },
         {
             "name": "to",
-            "type": "User"
+            "type": "Object"
         }
     ]
 }

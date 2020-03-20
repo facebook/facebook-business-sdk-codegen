@@ -3900,6 +3900,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "temporary_status",
+                    "required": false,
+                    "type": "page_temporary_status"
+                },
+                {
                     "name": "website",
                     "required": false,
                     "type": "string"
@@ -4429,6 +4434,10 @@
         {
             "name": "talking_about_count",
             "type": "unsigned int"
+        },
+        {
+            "name": "temporary_status",
+            "type": "string"
         },
         {
             "name": "unread_message_count",

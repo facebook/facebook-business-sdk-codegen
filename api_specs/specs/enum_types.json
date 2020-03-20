@@ -109,9 +109,11 @@
             "update_ad_set_bidding",
             "update_ad_set_budget",
             "update_ad_set_duration",
+            "update_ad_set_min_spend_target",
             "update_ad_set_name",
             "update_ad_set_optimization_goal",
             "update_ad_set_run_status",
+            "update_ad_set_spend_cap",
             "update_ad_set_target_spec",
             "update_ad_targets_spec",
             "update_adgroup_stop_delivery",
@@ -287,7 +289,8 @@
             "SOCIAL_IMPRESSIONS",
             "THRUPLAY",
             "TWO_SECOND_CONTINUOUS_VIDEO_VIEWS",
-            "VALUE"
+            "VALUE",
+            "VISIT_INSTAGRAM_PROFILE"
         ]
     },
     {
@@ -318,7 +321,8 @@
             "SOCIAL_IMPRESSIONS",
             "THRUPLAY",
             "TWO_SECOND_CONTINUOUS_VIDEO_VIEWS",
-            "VALUE"
+            "VALUE",
+            "VISIT_INSTAGRAM_PROFILE"
         ]
     },
     {
@@ -955,7 +959,8 @@
             "SOCIAL_IMPRESSIONS",
             "THRUPLAY",
             "TWO_SECOND_CONTINUOUS_VIDEO_VIEWS",
-            "VALUE"
+            "VALUE",
+            "VISIT_INSTAGRAM_PROFILE"
         ]
     },
     {
@@ -1386,6 +1391,7 @@
         "node": "ProductFeedUpload",
         "field_or_param": "input_method",
         "values": [
+            "Google Sheets Fetch",
             "Manual Upload",
             "Reupload Last File",
             "Server Fetch",
@@ -1753,125 +1759,6 @@
         ]
     },
     {
-        "name": "adaccountadreportschedules_actions_group_by_enum_param",
-        "node": "AdReportSchedule",
-        "field_or_param": "actions_group_by",
-        "values": [
-            "action_brand",
-            "action_canvas_component_id",
-            "action_canvas_component_name",
-            "action_carousel_card_id",
-            "action_carousel_card_name",
-            "action_category",
-            "action_converted_brand_tag_id",
-            "action_converted_category_tag_id",
-            "action_converted_product_id",
-            "action_destination",
-            "action_device",
-            "action_event_channel",
-            "action_target_id",
-            "action_type",
-            "action_video_sound",
-            "action_video_type",
-            "attribution_model_type",
-            "interactive_component_sticker_id",
-            "interactive_component_sticker_response"
-        ]
-    },
-    {
-        "name": "adaccountadreportschedules_builtin_column_set_enum_param",
-        "node": "AdReportSchedule",
-        "field_or_param": "builtin_column_set",
-        "values": [
-            "",
-            "APP_ENGAGEMENT",
-            "AUDIENCE_DIRECT",
-            "BIDDING_AND_OPTIMIZATION",
-            "CAROUSEL_ENGAGEMENT",
-            "CROSS_DEVICE",
-            "DELIVERY",
-            "ENGAGEMENT",
-            "HOUSEHOLD",
-            "MESSAGING_ENGAGEMENT",
-            "MESSENGER",
-            "OFFLINE_CONVERSIONS",
-            "PERFORMANCE",
-            "PERFORMANCE_LEGACY",
-            "TARGETING_AND_CREATIVE",
-            "VALIDATION_VIEW",
-            "VIDEO_ENGAGEMENT"
-        ]
-    },
-    {
-        "name": "adaccountadreportschedules_creation_source_enum_param",
-        "node": "AdReportSchedule",
-        "field_or_param": "creation_source",
-        "values": [
-            "adsExcelAddin",
-            "adsManagerReporting",
-            "newAdsManager"
-        ]
-    },
-    {
-        "name": "adaccountadreportschedules_date_preset_enum_param",
-        "node": "AdReportSchedule",
-        "field_or_param": "date_preset",
-        "values": [
-            "last_14d",
-            "last_28d",
-            "last_30d",
-            "last_3d",
-            "last_7d",
-            "last_90d",
-            "last_month",
-            "last_quarter",
-            "last_week_mon_sun",
-            "last_week_sun_sat",
-            "last_year",
-            "lifetime",
-            "this_month",
-            "this_quarter",
-            "this_week_mon_today",
-            "this_week_sun_today",
-            "this_year",
-            "today",
-            "yesterday"
-        ]
-    },
-    {
-        "name": "adaccountadreportschedules_level_enum_param",
-        "node": "AdReportSchedule",
-        "field_or_param": "level",
-        "values": [
-            "account",
-            "ad",
-            "adgroup",
-            "campaign",
-            "campaign_group",
-            "politicalad"
-        ]
-    },
-    {
-        "name": "adaccountadreportschedules_schedule_frequency_enum_param",
-        "node": "AdReportSchedule",
-        "field_or_param": "schedule_frequency",
-        "values": [
-            "daily",
-            "monthly",
-            "weekly"
-        ]
-    },
-    {
-        "name": "adaccountadreportschedules_status_enum_param",
-        "node": "AdReportSchedule",
-        "field_or_param": "status",
-        "values": [
-            "Active",
-            "Deleted",
-            "Paused"
-        ]
-    },
-    {
         "name": "adaccountadrules_history_action_enum_param",
         "node": "AdAccountAdRulesHistory",
         "field_or_param": "action",
@@ -2095,7 +1982,8 @@
             "SOCIAL_IMPRESSIONS",
             "THRUPLAY",
             "TWO_SECOND_CONTINUOUS_VIDEO_VIEWS",
-            "VALUE"
+            "VALUE",
+            "VISIT_INSTAGRAM_PROFILE"
         ]
     },
     {
@@ -2595,6 +2483,7 @@
             "FLIGHT",
             "HOME_LISTING",
             "HOTEL",
+            "LOCATION_BASED_ITEM",
             "MEDIA_TITLE",
             "OFFLINE_PRODUCT",
             "PRODUCT",
@@ -2688,7 +2577,8 @@
             "SOCIAL_IMPRESSIONS",
             "THRUPLAY",
             "TWO_SECOND_CONTINUOUS_VIDEO_VIEWS",
-            "VALUE"
+            "VALUE",
+            "VISIT_INSTAGRAM_PROFILE"
         ]
     },
     {
@@ -2915,6 +2805,7 @@
             "FLIGHT",
             "HOME_LISTING",
             "HOTEL",
+            "LOCATION_BASED_ITEM",
             "MEDIA_TITLE",
             "OFFLINE_PRODUCT",
             "PRODUCT",
@@ -3107,6 +2998,7 @@
             "id",
             "income",
             "industries",
+            "instagram_hashtags",
             "instagram_positions",
             "instream_video_sponsorship_placements",
             "interest_defaults_source",
@@ -3230,6 +3122,7 @@
             "id",
             "income",
             "industries",
+            "instagram_hashtags",
             "instagram_positions",
             "instream_video_sponsorship_placements",
             "interest_defaults_source",
@@ -3364,6 +3257,7 @@
             "id",
             "income",
             "industries",
+            "instagram_hashtags",
             "instagram_positions",
             "instream_video_sponsorship_placements",
             "interest_defaults_source",
@@ -3643,7 +3537,8 @@
             "SOCIAL_IMPRESSIONS",
             "THRUPLAY",
             "TWO_SECOND_CONTINUOUS_VIDEO_VIEWS",
-            "VALUE"
+            "VALUE",
+            "VISIT_INSTAGRAM_PROFILE"
         ]
     },
     {
@@ -3880,7 +3775,8 @@
             "SOCIAL_IMPRESSIONS",
             "THRUPLAY",
             "TWO_SECOND_CONTINUOUS_VIDEO_VIEWS",
-            "VALUE"
+            "VALUE",
+            "VISIT_INSTAGRAM_PROFILE"
         ]
     },
     {
@@ -5588,6 +5484,7 @@
         "values": [
             "ADVERTISE",
             "ANALYZE",
+            "CASHIER_ROLE",
             "CREATE_CONTENT",
             "MANAGE",
             "MANAGE_JOBS",
@@ -5616,6 +5513,18 @@
         "values": [
             "ANALYZE",
             "EDIT"
+        ]
+    },
+    {
+        "name": "businessattempted_sharing_agreements_request_status_enum_param",
+        "node": "BusinessCreativeFolderSharingAgreement",
+        "field_or_param": "request_status",
+        "values": [
+            "APPROVE",
+            "DECLINE",
+            "EXPIRED",
+            "IN_PROGRESS",
+            "PENDING"
         ]
     },
     {
@@ -5659,6 +5568,7 @@
         "values": [
             "ADVERTISE",
             "ANALYZE",
+            "CASHIER_ROLE",
             "CREATE_CONTENT",
             "MANAGE",
             "MANAGE_JOBS",
@@ -5873,6 +5783,7 @@
         "values": [
             "ADVERTISE",
             "ANALYZE",
+            "CASHIER_ROLE",
             "CREATE_CONTENT",
             "MANAGE",
             "MANAGE_JOBS",
@@ -6553,6 +6464,7 @@
             "FLIGHT",
             "HOME_LISTING",
             "HOTEL",
+            "LOCATION_BASED_ITEM",
             "MEDIA_TITLE",
             "OFFLINE_PRODUCT",
             "PRODUCT",
@@ -6916,16 +6828,12 @@
         "node": "Group",
         "field_or_param": "suggestion_category",
         "values": [
-            "CLOSE_FRIENDS_GENERIC",
             "EVENT",
-            "FAMILY",
-            "LIFE_EVENT",
             "MESSENGER",
             "WORK",
             "WORKPLACE",
             "WORKPLACE_1_1",
-            "WORKPLACE_MANAGER",
-            "WORK_GENERIC"
+            "WORKPLACE_MANAGER"
         ]
     },
     {
@@ -7859,12 +7767,23 @@
         ]
     },
     {
+        "name": "page_temporary_status",
+        "node": "Page",
+        "field_or_param": "temporary_status",
+        "values": [
+            "DIFFERENTLY_OPEN",
+            "OPERATING_AS_USUAL",
+            "TEMPORARILY_CLOSED"
+        ]
+    },
+    {
         "name": "pageagencies_permitted_tasks_enum_param",
         "node": "Page",
         "field_or_param": "permitted_tasks",
         "values": [
             "ADVERTISE",
             "ANALYZE",
+            "CASHIER_ROLE",
             "CREATE_CONTENT",
             "MANAGE",
             "MANAGE_JOBS",
@@ -7893,6 +7812,7 @@
         "values": [
             "ADVERTISE",
             "ANALYZE",
+            "CASHIER_ROLE",
             "CREATE_CONTENT",
             "MANAGE",
             "MANAGE_JOBS",
@@ -7920,6 +7840,7 @@
         "field_or_param": "android_destination_type",
         "values": [
             "APP_DEEPLINK",
+            "BECOME_A_VOLUNTEER",
             "EMAIL",
             "FACEBOOK_APP",
             "MESSENGER",
@@ -7949,6 +7870,7 @@
         "node": "PageCallToAction",
         "field_or_param": "type",
         "values": [
+            "BECOME_A_VOLUNTEER",
             "BOOK_APPOINTMENT",
             "BOOK_NOW",
             "BUY_TICKETS",
@@ -7983,6 +7905,7 @@
         "node": "PageCallToAction",
         "field_or_param": "web_destination_type",
         "values": [
+            "BECOME_A_VOLUNTEER",
             "BECOME_SUPPORTER",
             "EMAIL",
             "MESSENGER",
@@ -9440,14 +9363,6 @@
             "autodetect",
             "off",
             "on"
-        ]
-    },
-    {
-        "name": "productcatalogproduct_sets_batch_standard_enum_param",
-        "node": "ProductCatalog",
-        "field_or_param": "standard",
-        "values": [
-            "google"
         ]
     },
     {
@@ -11276,17 +11191,6 @@
             "DELETE_POLL",
             "SHOW_RESULTS",
             "SHOW_VOTING"
-        ]
-    },
-    {
-        "name": "videopoll_settings_video_poll_www_placement_enum_param",
-        "node": "AdVideo",
-        "field_or_param": "video_poll_www_placement",
-        "values": [
-            "BOTTOM_LEFT",
-            "BOTTOM_RIGHT",
-            "TOP_LEFT",
-            "TOP_RIGHT"
         ]
     },
     {

@@ -177,6 +177,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "limited_data_use",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "migration_bundle",
                     "required": false,
                     "type": "string"
@@ -635,35 +640,6 @@
                     "name": "type",
                     "required": false,
                     "type": "applicationevents_type_enum_param"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "full_app_indexing_infos",
-            "return": "FullAppIndexingInfo",
-            "params": [
-                {
-                    "name": "app_version",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "full_app_indexing_infos",
-            "return": "FullAppIndexingInfo",
-            "params": [
-                {
-                    "name": "app_version",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "full_app_indexing_info_classes",
-                    "required": true,
-                    "type": "list<map>"
                 }
             ]
         },
@@ -1272,6 +1248,11 @@
                     "name": "data",
                     "required": true,
                     "type": "list<Object>"
+                },
+                {
+                    "name": "limited_data_use",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         },

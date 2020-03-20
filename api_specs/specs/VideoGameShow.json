@@ -1,34 +1,6 @@
 {
     "apis": [
         {
-            "method": "GET",
-            "endpoint": "questions",
-            "return": "VideoGameShowQuestion",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "questions",
-            "return": "VideoGameShowQuestion",
-            "params": [
-                {
-                    "name": "correct_option",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "options",
-                    "required": true,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "question",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "name": "#get",
             "method": "GET",
             "return": "VideoGameShow",

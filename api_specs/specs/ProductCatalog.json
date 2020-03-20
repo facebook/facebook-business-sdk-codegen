@@ -773,43 +773,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "product_sets_batch",
-            "return": "ProductCatalog",
-            "params": [
-                {
-                    "name": "file",
-                    "required": false,
-                    "type": "file"
-                },
-                {
-                    "name": "password",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "standard",
-                    "required": true,
-                    "type": "productcatalogproduct_sets_batch_standard_enum_param"
-                },
-                {
-                    "name": "update_only",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "url",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "username",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "products",
             "return": "ProductItem",
@@ -1149,23 +1112,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "store_product_items_batch",
-            "return": "ProductCatalog",
-            "params": [
-                {
-                    "name": "allow_upsert",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "requests",
-                    "required": true,
-                    "type": "list<map>"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "vehicle_offers",
             "return": "VehicleOffer",
@@ -1439,6 +1385,10 @@
         {
             "name": "id",
             "type": "string"
+        },
+        {
+            "name": "is_catalog_segment",
+            "type": "bool"
         },
         {
             "name": "name",

@@ -519,148 +519,6 @@
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "adreportschedules",
-            "return": "AdReportSchedule",
-            "params": [
-                {
-                    "name": "actions_group_by",
-                    "required": false,
-                    "type": "list<adaccountadreportschedules_actions_group_by_enum_param>"
-                },
-                {
-                    "name": "breakdowns",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "builtin_column_set",
-                    "required": false,
-                    "type": "adaccountadreportschedules_builtin_column_set_enum_param"
-                },
-                {
-                    "name": "creation_source",
-                    "required": false,
-                    "type": "adaccountadreportschedules_creation_source_enum_param"
-                },
-                {
-                    "name": "custom_column_set_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "data_columns",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "date_interval",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "date_preset",
-                    "required": false,
-                    "type": "adaccountadreportschedules_date_preset_enum_param"
-                },
-                {
-                    "name": "emails",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "export_columns",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "filters",
-                    "required": false,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "format_version",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "insights_section",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "level",
-                    "required": false,
-                    "type": "adaccountadreportschedules_level_enum_param"
-                },
-                {
-                    "name": "name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "normalized_filter",
-                    "required": false,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "schedule_frequency",
-                    "required": false,
-                    "type": "adaccountadreportschedules_schedule_frequency_enum_param"
-                },
-                {
-                    "name": "sort",
-                    "required": false,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "sort_by",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "sort_dir",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "start_date",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "status",
-                    "required": false,
-                    "type": "adaccountadreportschedules_status_enum_param"
-                },
-                {
-                    "name": "subscribers",
-                    "required": false,
-                    "type": "list<int>"
-                },
-                {
-                    "name": "time_increment",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "user_attribution_windows",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "user_columns",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "user_filter",
-                    "required": false,
-                    "type": "list<Object>"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "adrules_history",
             "return": "AdAccountAdRulesHistory",
@@ -2069,6 +1927,11 @@
                     "name": "end_date",
                     "required": false,
                     "type": "datetime"
+                },
+                {
+                    "name": "page_id",
+                    "required": false,
+                    "type": "unsigned int"
                 },
                 {
                     "name": "platform",

@@ -127,6 +127,10 @@
             "type": "string"
         },
         {
+            "name": "media_library_url",
+            "type": "string"
+        },
+        {
             "name": "name",
             "type": "string"
         },

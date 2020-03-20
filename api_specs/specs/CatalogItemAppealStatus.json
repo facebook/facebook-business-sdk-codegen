@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "handle",
+            "type": "string"
+        },
+        {
+            "name": "item_id",
+            "type": "int"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "use_cases",
+            "type": "map<Object, Object>"
+        }
+    ]
+}

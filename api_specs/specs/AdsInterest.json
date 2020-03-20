@@ -1,0 +1,40 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdsInterest",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "audience_size",
+            "type": "unsigned int"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "disambiguation_category",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "path",
+            "type": "list<string>"
+        },
+        {
+            "name": "topic",
+            "type": "string"
+        }
+    ]
+}

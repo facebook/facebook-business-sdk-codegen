@@ -120,6 +120,11 @@
                     "type": "datetime"
                 },
                 {
+                    "name": "page_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
                     "name": "platform",
                     "required": true,
                     "type": "adcampaigngroupcontent_delivery_report_platform_enum_param"

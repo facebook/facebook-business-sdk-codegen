@@ -173,23 +173,6 @@
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "poll_settings",
-            "return": "AdVideo",
-            "params": [
-                {
-                    "name": "enable_was_live_voting",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "video_poll_www_placement",
-                    "required": false,
-                    "type": "videopoll_settings_video_poll_www_placement_enum_param"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "polls",
             "return": "VideoPoll",
