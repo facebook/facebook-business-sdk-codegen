@@ -15,7 +15,8 @@ const PATH_SKIP_AUTOGEN= [
   /^(.*)\/[sS]erver[_]?[sS]ide\/(.*)$/, 
   /^(.*)\/\.travis.yml$/, 
   /^(.*)\/\keyring.gpg.enc$/, 
-  /^(.*)\/\.travis.settings.xml$/
+  /^(.*)\/\.travis.settings.xml$/,
+  /^(.*)\/facebook_business\/test\/(.*)$/
 ];
 const Utils = {
   loadTemplates(templateDir: string) {
