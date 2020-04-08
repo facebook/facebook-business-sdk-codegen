@@ -121,55 +121,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "bundle_folders",
-            "return": "DynamicItemDisplayBundleFolder",
-            "params": [
-                {
-                    "name": "name",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "bundles",
-            "return": "DynamicItemDisplayBundle",
-            "params": [
-                {
-                    "name": "additional_urls",
-                    "required": false,
-                    "type": "map"
-                },
-                {
-                    "name": "description",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "name",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "product_set",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "text_tokens",
-                    "required": false,
-                    "type": "map"
-                },
-                {
-                    "name": "url",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "categories",
             "return": "ProductCatalogCategory",

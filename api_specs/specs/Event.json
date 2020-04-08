@@ -225,6 +225,10 @@
             "type": "bool"
         },
         {
+            "name": "is_online",
+            "type": "bool"
+        },
+        {
             "name": "is_page_owned",
             "type": "bool"
         },

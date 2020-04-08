@@ -57,6 +57,11 @@
                     "name": "breakdowns",
                     "required": false,
                     "type": "list<adstudyobjective_breakdowns>"
+                },
+                {
+                    "name": "ds",
+                    "required": false,
+                    "type": "string"
                 }
             ]
         },

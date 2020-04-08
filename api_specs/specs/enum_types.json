@@ -214,6 +214,7 @@
         "node": "AdCampaignActivity",
         "field_or_param": "bid_strategy_new",
         "values": [
+            "COST_CAP",
             "LOWEST_COST_WITHOUT_CAP",
             "LOWEST_COST_WITH_BID_CAP",
             "TARGET_COST"
@@ -224,6 +225,7 @@
         "node": "AdCampaignActivity",
         "field_or_param": "bid_strategy_old",
         "values": [
+            "COST_CAP",
             "LOWEST_COST_WITHOUT_CAP",
             "LOWEST_COST_WITH_BID_CAP",
             "TARGET_COST"
@@ -885,6 +887,7 @@
         "node": "AdSet",
         "field_or_param": "bid_strategy",
         "values": [
+            "COST_CAP",
             "LOWEST_COST_WITHOUT_CAP",
             "LOWEST_COST_WITH_BID_CAP",
             "TARGET_COST"
@@ -1100,6 +1103,7 @@
         "node": "Campaign",
         "field_or_param": "bid_strategy",
         "values": [
+            "COST_CAP",
             "LOWEST_COST_WITHOUT_CAP",
             "LOWEST_COST_WITH_BID_CAP",
             "TARGET_COST"
@@ -1750,6 +1754,15 @@
         ]
     },
     {
+        "name": "adaccountadcreatives_instant_checkout_setting_enum_param",
+        "node": "AdCreative",
+        "field_or_param": "instant_checkout_setting",
+        "values": [
+            "off",
+            "on"
+        ]
+    },
+    {
         "name": "adaccountadcreativesbylabels_operator_enum_param",
         "node": "AdCreative",
         "field_or_param": "operator",
@@ -1856,6 +1869,7 @@
         "node": "AdSet",
         "field_or_param": "bid_strategy",
         "values": [
+            "COST_CAP",
             "LOWEST_COST_WITHOUT_CAP",
             "LOWEST_COST_WITH_BID_CAP",
             "TARGET_COST"
@@ -2295,6 +2309,7 @@
         "node": "Campaign",
         "field_or_param": "bid_strategy",
         "values": [
+            "COST_CAP",
             "LOWEST_COST_WITHOUT_CAP",
             "LOWEST_COST_WITH_BID_CAP",
             "TARGET_COST"
@@ -2423,6 +2438,7 @@
         "values": [
             "AUDIENCE_NETWORK",
             "FACEBOOK",
+            "HIDDEN_AAA",
             "INSTAGRAM",
             "MESSENGER",
             "UNKNOWN",
@@ -2440,11 +2456,13 @@
             "FACEBOOK_STORIES",
             "FEED",
             "GROUPS",
+            "HIDDEN_AAA",
             "INSTAGRAM_EXPLORE",
             "INSTAGRAM_IGTV",
             "INSTAGRAM_STORIES",
             "INSTANT_ARTICLE",
             "INSTREAM_VIDEO",
+            "JOBS_BROWSER",
             "MARKETPLACE",
             "MESSENGER_INBOX",
             "MESSENGER_STORIES",
@@ -3430,6 +3448,7 @@
         "node": "AdSet",
         "field_or_param": "bid_strategy",
         "values": [
+            "COST_CAP",
             "LOWEST_COST_WITHOUT_CAP",
             "LOWEST_COST_WITH_BID_CAP",
             "TARGET_COST"
@@ -3657,6 +3676,7 @@
         "values": [
             "AUDIENCE_NETWORK",
             "FACEBOOK",
+            "HIDDEN_AAA",
             "INSTAGRAM",
             "MESSENGER",
             "UNKNOWN",
@@ -3674,11 +3694,13 @@
             "FACEBOOK_STORIES",
             "FEED",
             "GROUPS",
+            "HIDDEN_AAA",
             "INSTAGRAM_EXPLORE",
             "INSTAGRAM_IGTV",
             "INSTAGRAM_STORIES",
             "INSTANT_ARTICLE",
             "INSTREAM_VIDEO",
+            "JOBS_BROWSER",
             "MARKETPLACE",
             "MESSENGER_INBOX",
             "MESSENGER_STORIES",
@@ -3784,6 +3806,7 @@
         "node": "Campaign",
         "field_or_param": "bid_strategy",
         "values": [
+            "COST_CAP",
             "LOWEST_COST_WITHOUT_CAP",
             "LOWEST_COST_WITH_BID_CAP",
             "TARGET_COST"
@@ -3953,6 +3976,7 @@
         "values": [
             "AUDIENCE_NETWORK",
             "FACEBOOK",
+            "HIDDEN_AAA",
             "INSTAGRAM",
             "MESSENGER",
             "UNKNOWN",
@@ -3970,11 +3994,13 @@
             "FACEBOOK_STORIES",
             "FEED",
             "GROUPS",
+            "HIDDEN_AAA",
             "INSTAGRAM_EXPLORE",
             "INSTAGRAM_IGTV",
             "INSTAGRAM_STORIES",
             "INSTANT_ARTICLE",
             "INSTREAM_VIDEO",
+            "JOBS_BROWSER",
             "MARKETPLACE",
             "MESSENGER_INBOX",
             "MESSENGER_STORIES",
@@ -4630,6 +4656,8 @@
             "DISPLAY_FORMAT",
             "FAIL_REASON",
             "GENDER",
+            "INSTANT_ARTICLE_ID",
+            "INSTANT_ARTICLE_PAGE_ID",
             "PLACEMENT",
             "PLACEMENT_NAME",
             "PLATFORM",
@@ -5000,6 +5028,8 @@
             "DISPLAY_FORMAT",
             "FAIL_REASON",
             "GENDER",
+            "INSTANT_ARTICLE_ID",
+            "INSTANT_ARTICLE_PAGE_ID",
             "PLACEMENT",
             "PLACEMENT_NAME",
             "PLATFORM",
@@ -5391,6 +5421,8 @@
             "DISPLAY_FORMAT",
             "FAIL_REASON",
             "GENDER",
+            "INSTANT_ARTICLE_ID",
+            "INSTANT_ARTICLE_PAGE_ID",
             "PLACEMENT",
             "PLACEMENT_NAME",
             "PLATFORM",
@@ -5493,8 +5525,9 @@
             "MODERATE_COMMUNITY",
             "PAGES_MESSAGING",
             "PAGES_MESSAGING_SUBSCRIPTIONS",
-            "PLATFORM_MANAGE_PAGES",
             "PLATFORM_PAGES_MANAGE_INSTANT_ARTICLES",
+            "PLATFORM_PAGE_ADMINISTER",
+            "PLATFORM_PAGE_BASIC_ADMIN",
             "PLATFORM_READ_INSIGHTS",
             "PROFILE_PLUS_ADVERTISE",
             "PROFILE_PLUS_ANALYZE",
@@ -5577,8 +5610,9 @@
             "MODERATE_COMMUNITY",
             "PAGES_MESSAGING",
             "PAGES_MESSAGING_SUBSCRIPTIONS",
-            "PLATFORM_MANAGE_PAGES",
             "PLATFORM_PAGES_MANAGE_INSTANT_ARTICLES",
+            "PLATFORM_PAGE_ADMINISTER",
+            "PLATFORM_PAGE_BASIC_ADMIN",
             "PLATFORM_READ_INSIGHTS",
             "PROFILE_PLUS_ADVERTISE",
             "PROFILE_PLUS_ANALYZE",
@@ -5597,6 +5631,7 @@
         "values": [
             "AUDIENCE_NETWORK",
             "FACEBOOK",
+            "HIDDEN_AAA",
             "INSTAGRAM",
             "MESSENGER",
             "UNKNOWN",
@@ -5614,11 +5649,13 @@
             "FACEBOOK_STORIES",
             "FEED",
             "GROUPS",
+            "HIDDEN_AAA",
             "INSTAGRAM_EXPLORE",
             "INSTAGRAM_IGTV",
             "INSTAGRAM_STORIES",
             "INSTANT_ARTICLE",
             "INSTREAM_VIDEO",
+            "JOBS_BROWSER",
             "MARKETPLACE",
             "MESSENGER_INBOX",
             "MESSENGER_STORIES",
@@ -5792,8 +5829,9 @@
             "MODERATE_COMMUNITY",
             "PAGES_MESSAGING",
             "PAGES_MESSAGING_SUBSCRIPTIONS",
-            "PLATFORM_MANAGE_PAGES",
             "PLATFORM_PAGES_MANAGE_INSTANT_ARTICLES",
+            "PLATFORM_PAGE_ADMINISTER",
+            "PLATFORM_PAGE_BASIC_ADMIN",
             "PLATFORM_READ_INSIGHTS",
             "PROFILE_PLUS_ADVERTISE",
             "PROFILE_PLUS_ANALYZE",
@@ -7772,6 +7810,7 @@
         "field_or_param": "temporary_status",
         "values": [
             "DIFFERENTLY_OPEN",
+            "NO_DATA",
             "OPERATING_AS_USUAL",
             "TEMPORARILY_CLOSED"
         ]
@@ -7792,8 +7831,9 @@
             "MODERATE_COMMUNITY",
             "PAGES_MESSAGING",
             "PAGES_MESSAGING_SUBSCRIPTIONS",
-            "PLATFORM_MANAGE_PAGES",
             "PLATFORM_PAGES_MANAGE_INSTANT_ARTICLES",
+            "PLATFORM_PAGE_ADMINISTER",
+            "PLATFORM_PAGE_BASIC_ADMIN",
             "PLATFORM_READ_INSIGHTS",
             "PROFILE_PLUS_ADVERTISE",
             "PROFILE_PLUS_ANALYZE",
@@ -7821,8 +7861,9 @@
             "MODERATE_COMMUNITY",
             "PAGES_MESSAGING",
             "PAGES_MESSAGING_SUBSCRIPTIONS",
-            "PLATFORM_MANAGE_PAGES",
             "PLATFORM_PAGES_MANAGE_INSTANT_ARTICLES",
+            "PLATFORM_PAGE_ADMINISTER",
+            "PLATFORM_PAGE_BASIC_ADMIN",
             "PLATFORM_READ_INSIGHTS",
             "PROFILE_PLUS_ADVERTISE",
             "PROFILE_PLUS_ANALYZE",
@@ -7856,6 +7897,7 @@
         "field_or_param": "iphone_destination_type",
         "values": [
             "APP_DEEPLINK",
+            "BECOME_A_VOLUNTEER",
             "EMAIL",
             "FACEBOOK_APP",
             "MESSENGER",
@@ -7992,7 +8034,7 @@
     },
     {
         "name": "pagefeed_backdated_time_granularity_enum_param",
-        "node": "PagePost",
+        "node": "Page",
         "field_or_param": "backdated_time_granularity",
         "values": [
             "day",
@@ -8005,7 +8047,7 @@
     },
     {
         "name": "pagefeed_checkin_entry_point_enum_param",
-        "node": "PagePost",
+        "node": "Page",
         "field_or_param": "checkin_entry_point",
         "values": [
             "BRANDING_CHECKIN",
@@ -8016,7 +8058,7 @@
     },
     {
         "name": "pagefeed_formatting_enum_param",
-        "node": "PagePost",
+        "node": "Page",
         "field_or_param": "formatting",
         "values": [
             "MARKDOWN",
@@ -8025,7 +8067,7 @@
     },
     {
         "name": "pagefeed_place_attachment_setting_enum_param",
-        "node": "PagePost",
+        "node": "Page",
         "field_or_param": "place_attachment_setting",
         "values": [
             "1",
@@ -8034,7 +8076,7 @@
     },
     {
         "name": "pagefeed_post_surfaces_blacklist_enum_param",
-        "node": "PagePost",
+        "node": "Page",
         "field_or_param": "post_surfaces_blacklist",
         "values": [
             "1",
@@ -8046,7 +8088,7 @@
     },
     {
         "name": "pagefeed_posting_to_redspace_enum_param",
-        "node": "PagePost",
+        "node": "Page",
         "field_or_param": "posting_to_redspace",
         "values": [
             "disabled",
@@ -8055,7 +8097,7 @@
     },
     {
         "name": "pagefeed_target_surface_enum_param",
-        "node": "PagePost",
+        "node": "Page",
         "field_or_param": "target_surface",
         "values": [
             "STORY",
@@ -8064,7 +8106,7 @@
     },
     {
         "name": "pagefeed_unpublished_content_type_enum_param",
-        "node": "PagePost",
+        "node": "Page",
         "field_or_param": "unpublished_content_type",
         "values": [
             "ADS_POST",
@@ -8272,6 +8314,17 @@
         ]
     },
     {
+        "name": "pagelocations_temporary_status_enum_param",
+        "node": "Page",
+        "field_or_param": "temporary_status",
+        "values": [
+            "DIFFERENTLY_OPEN",
+            "NO_DATA",
+            "OPERATING_AS_USUAL",
+            "TEMPORARILY_CLOSED"
+        ]
+    },
+    {
         "name": "pagemedia_fingerprints_fingerprint_content_type_enum_param",
         "node": "MediaFingerprint",
         "field_or_param": "fingerprint_content_type",
@@ -8281,16 +8334,6 @@
             "MOVIE",
             "OTHER",
             "SONGTRACK"
-        ]
-    },
-    {
-        "name": "pagemedia_fingerprints_fingerprint_validity_enum_param",
-        "node": "MediaFingerprint",
-        "field_or_param": "fingerprint_validity",
-        "values": [
-            "EXPIRED",
-            "EXPIRING",
-            "VALID"
         ]
     },
     {

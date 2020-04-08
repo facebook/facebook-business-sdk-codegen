@@ -119,10 +119,6 @@
             "type": "bool"
         },
         {
-            "name": "reference_file_expired",
-            "type": "bool"
-        },
-        {
             "name": "reference_owner_id",
             "type": "string"
         },

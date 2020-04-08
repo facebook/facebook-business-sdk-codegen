@@ -262,6 +262,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "instant_checkout_setting",
+                    "required": false,
+                    "type": "adaccountadcreatives_instant_checkout_setting_enum_param"
+                },
+                {
                     "name": "interactive_components_spec",
                     "required": false,
                     "type": "map"
@@ -733,7 +738,7 @@
                     "type": "int"
                 },
                 {
-                    "name": "show_ad_limit_by_actor",
+                    "name": "show_breakdown_by_actor",
                     "required": false,
                     "type": "bool"
                 }
@@ -1689,30 +1694,6 @@
                     "name": "session",
                     "required": true,
                     "type": "Object"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "batchreplace",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "payload",
-                    "required": true,
-                    "type": "list<string>"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "batchupload",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "payload",
-                    "required": true,
-                    "type": "list<string>"
                 }
             ]
         },

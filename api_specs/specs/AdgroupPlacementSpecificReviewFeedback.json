@@ -38,6 +38,10 @@
             "type": "map<string, string>"
         },
         {
+            "name": "facebook_pages_live_shopping",
+            "type": "map<string, string>"
+        },
+        {
             "name": "instagram",
             "type": "map<string, string>"
         },

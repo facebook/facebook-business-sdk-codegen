@@ -325,10 +325,6 @@
             "type": "unsigned int"
         },
         {
-            "name": "tv_viewer_cluster_map",
-            "type": "map<unsigned int, Object>"
-        },
-        {
             "name": "video_view_length_constraint",
             "type": "unsigned int"
         },

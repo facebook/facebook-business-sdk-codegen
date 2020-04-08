@@ -18,10 +18,6 @@
             "type": "float"
         },
         {
-            "name": "fingerprint_validity",
-            "type": "string"
-        },
-        {
             "name": "id",
             "type": "string"
         },
