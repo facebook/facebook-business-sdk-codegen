@@ -24,7 +24,7 @@
                 {
                     "name": "locale",
                     "required": false,
-                    "type": "list"
+                    "type": "list<Object>"
                 },
                 {
                     "name": "scopes",

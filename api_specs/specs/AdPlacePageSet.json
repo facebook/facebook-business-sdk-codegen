@@ -5,18 +5,6 @@
             "method": "GET",
             "return": "AdPlacePageSet",
             "params": []
-        },
-        {
-            "name": "#update",
-            "method": "POST",
-            "return": "AdPlacePageSet",
-            "params": [
-                {
-                    "name": "name",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
         }
     ],
     "fields": [

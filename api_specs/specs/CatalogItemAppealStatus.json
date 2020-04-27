@@ -15,7 +15,7 @@
         },
         {
             "name": "use_cases",
-            "type": "map<Object, Object>"
+            "type": "list<Object>"
         }
     ]
 }

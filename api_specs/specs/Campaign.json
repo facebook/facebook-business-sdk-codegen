@@ -41,11 +41,6 @@
             "return": "Ad",
             "params": [
                 {
-                    "name": "ad_draft_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "date_preset",
                     "required": false,
                     "type": "adcampaigngroupads_date_preset_enum_param"
@@ -54,11 +49,6 @@
                     "name": "effective_status",
                     "required": false,
                     "type": "list<string>"
-                },
-                {
-                    "name": "include_drafts",
-                    "required": false,
-                    "type": "bool"
                 },
                 {
                     "name": "time_range",
@@ -78,11 +68,6 @@
             "return": "AdSet",
             "params": [
                 {
-                    "name": "ad_draft_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "date_preset",
                     "required": false,
                     "type": "adcampaigngroupadsets_date_preset_enum_param"
@@ -91,11 +76,6 @@
                     "name": "effective_status",
                     "required": false,
                     "type": "list<adcampaigngroupadsets_effective_status_enum_param>"
-                },
-                {
-                    "name": "include_drafts",
-                    "required": false,
-                    "type": "bool"
                 },
                 {
                     "name": "is_completed",

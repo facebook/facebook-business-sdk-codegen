@@ -22,6 +22,10 @@
             "type": "list<AdCreativeCollectionThumbnailInfo>"
         },
         {
+            "name": "customization_rules_spec",
+            "type": "list<AdCustomizationRuleSpec>"
+        },
+        {
             "name": "image_hash",
             "type": "string"
         },

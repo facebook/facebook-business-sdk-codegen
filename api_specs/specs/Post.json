@@ -554,6 +554,10 @@
             "type": "bool"
         },
         {
+            "name": "is_inline_created",
+            "type": "bool"
+        },
+        {
             "name": "is_instagram_eligible",
             "type": "bool"
         },

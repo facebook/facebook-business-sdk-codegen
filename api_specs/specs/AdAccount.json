@@ -599,11 +599,6 @@
             "return": "Ad",
             "params": [
                 {
-                    "name": "ad_draft_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "date_preset",
                     "required": false,
                     "type": "adaccountads_date_preset_enum_param"
@@ -614,11 +609,6 @@
                     "type": "list<string>"
                 },
                 {
-                    "name": "include_drafts",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "time_range",
                     "required": false,
                     "type": "Object"
@@ -627,11 +617,6 @@
                     "name": "updated_since",
                     "required": false,
                     "type": "int"
-                },
-                {
-                    "name": "use_employee_draft",
-                    "required": false,
-                    "type": "bool"
                 }
             ]
         },
@@ -767,11 +752,6 @@
             "return": "AdSet",
             "params": [
                 {
-                    "name": "ad_draft_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "date_preset",
                     "required": false,
                     "type": "adaccountadsets_date_preset_enum_param"
@@ -782,11 +762,6 @@
                     "type": "list<adaccountadsets_effective_status_enum_param>"
                 },
                 {
-                    "name": "include_drafts",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "is_completed",
                     "required": false,
                     "type": "bool"
@@ -795,11 +770,6 @@
                     "name": "time_range",
                     "required": false,
                     "type": "Object"
-                },
-                {
-                    "name": "use_employee_draft",
-                    "required": false,
-                    "type": "bool"
                 }
             ]
         },
@@ -942,6 +912,11 @@
                     "name": "line_number",
                     "required": false,
                     "type": "unsigned int"
+                },
+                {
+                    "name": "multi_optimization_goal_weight",
+                    "required": false,
+                    "type": "adaccountadsets_multi_optimization_goal_weight_enum_param"
                 },
                 {
                     "name": "name",
@@ -1764,11 +1739,6 @@
                     "type": "list<adaccountcampaigns_effective_status_enum_param>"
                 },
                 {
-                    "name": "include_drafts",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "is_completed",
                     "required": false,
                     "type": "bool"
@@ -1777,11 +1747,6 @@
                     "name": "time_range",
                     "required": false,
                     "type": "Object"
-                },
-                {
-                    "name": "use_employee_draft",
-                    "required": false,
-                    "type": "bool"
                 }
             ]
         },

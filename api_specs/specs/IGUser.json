@@ -180,6 +180,10 @@
             "type": "string"
         },
         {
+            "name": "shopping_review_status",
+            "type": "string"
+        },
+        {
             "name": "username",
             "type": "string"
         },

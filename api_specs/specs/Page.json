@@ -233,12 +233,12 @@
                 {
                     "name": "uid",
                     "required": false,
-                    "type": "list<string>"
+                    "type": "list"
                 },
                 {
                     "name": "user",
                     "required": false,
-                    "type": "list<string>"
+                    "type": "list"
                 }
             ]
         },
@@ -4070,6 +4070,10 @@
         {
             "name": "current_location",
             "type": "string"
+        },
+        {
+            "name": "delivery_and_pickup_option_info",
+            "type": "list<string>"
         },
         {
             "name": "description",

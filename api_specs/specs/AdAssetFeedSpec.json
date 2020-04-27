@@ -26,6 +26,10 @@
             "type": "list<AdAssetFeedSpec_call_to_action_types>"
         },
         {
+            "name": "call_to_actions",
+            "type": "list<Object>"
+        },
+        {
             "name": "captions",
             "type": "list<AdAssetFeedSpecCaption>"
         },
