@@ -14,10 +14,6 @@
             "type": "list<Object>"
         },
         {
-            "name": "home_url",
-            "type": "Object"
-        },
-        {
             "name": "ice_breakers",
             "type": "list<Object>"
         },

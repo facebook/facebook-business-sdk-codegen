@@ -13,6 +13,10 @@
             "type": "string"
         },
         {
+            "name": "applinks",
+            "type": "CatalogItemAppLinks"
+        },
+        {
             "name": "currency",
             "type": "string"
         },

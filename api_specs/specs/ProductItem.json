@@ -360,6 +360,10 @@
             "type": "ProductItem_age_group"
         },
         {
+            "name": "applinks",
+            "type": "CatalogItemAppLinks"
+        },
+        {
             "name": "availability",
             "type": "ProductItem_availability"
         },

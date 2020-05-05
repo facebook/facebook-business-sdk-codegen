@@ -273,18 +273,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "books",
-            "return": "Page",
-            "params": [
-                {
-                    "name": "target_id",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "business_users",
             "return": "BusinessUser",
             "params": []
@@ -1039,18 +1027,6 @@
             ]
         },
         {
-            "method": "GET",
-            "endpoint": "games",
-            "return": "Page",
-            "params": [
-                {
-                    "name": "target_id",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "POST",
             "endpoint": "games_plays",
             "return": "Object",
@@ -1461,18 +1437,6 @@
                 },
                 {
                     "name": "title",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "movies",
-            "return": "Page",
-            "params": [
-                {
-                    "name": "target_id",
                     "required": false,
                     "type": "string"
                 }
@@ -1913,18 +1877,6 @@
             "endpoint": "taggable_friends",
             "return": "UserTaggableFriend",
             "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "television",
-            "return": "Page",
-            "params": [
-                {
-                    "name": "target_id",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
         },
         {
             "method": "GET",

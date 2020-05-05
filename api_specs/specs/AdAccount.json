@@ -1766,11 +1766,6 @@
                     "type": "adaccountcampaigns_bid_strategy_enum_param"
                 },
                 {
-                    "name": "budget_rebalance_flag",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "buying_type",
                     "required": false,
                     "type": "string"
@@ -1821,9 +1816,9 @@
                     "type": "string"
                 },
                 {
-                    "name": "special_ad_category",
+                    "name": "special_ad_categories",
                     "required": true,
-                    "type": "adaccountcampaigns_special_ad_category_enum_param"
+                    "type": "list<adaccountcampaigns_special_ad_categories_enum_param>"
                 },
                 {
                     "name": "spend_cap",

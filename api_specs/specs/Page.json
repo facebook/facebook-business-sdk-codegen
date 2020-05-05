@@ -69,68 +69,6 @@
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "albums",
-            "return": "Album",
-            "params": [
-                {
-                    "name": "contributors",
-                    "required": false,
-                    "type": "list<int>"
-                },
-                {
-                    "name": "description",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "is_default",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "location",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "make_shared_album",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "message",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "place",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "privacy",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "tags",
-                    "required": false,
-                    "type": "list<int>"
-                },
-                {
-                    "name": "visible",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "DELETE",
             "endpoint": "assigned_users",
             "return": "Object",
@@ -561,12 +499,6 @@
                     "type": "pageevents_type_enum_param"
                 }
             ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "featured_videos_collection",
-            "return": "AdVideo",
-            "params": []
         },
         {
             "method": "GET",
@@ -1866,11 +1798,6 @@
                     "type": "list<Object>"
                 },
                 {
-                    "name": "home_url",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
                     "name": "ice_breakers",
                     "required": false,
                     "type": "list<map>"
@@ -3041,18 +2968,6 @@
                     "name": "psid",
                     "required": true,
                     "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "upcoming_changes",
-            "return": "PageUpcomingChange",
-            "params": [
-                {
-                    "name": "include_inactive",
-                    "required": false,
-                    "type": "bool"
                 }
             ]
         },

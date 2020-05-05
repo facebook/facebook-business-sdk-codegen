@@ -92,6 +92,10 @@
             "type": "string"
         },
         {
+            "name": "applinks",
+            "type": "CatalogItemAppLinks"
+        },
+        {
             "name": "brand",
             "type": "string"
         },

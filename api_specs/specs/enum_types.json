@@ -172,6 +172,7 @@
             "ORDER_NOW",
             "PAY_TO_ACCESS",
             "PLAY_GAME",
+            "PURCHASE_GIFT_CARDS",
             "RECORD_NOW",
             "REQUEST_TIME",
             "SAY_THANKS",
@@ -422,6 +423,7 @@
             "ORDER_NOW",
             "PAY_TO_ACCESS",
             "PLAY_GAME",
+            "PURCHASE_GIFT_CARDS",
             "RECORD_NOW",
             "REQUEST_TIME",
             "SAY_THANKS",
@@ -679,6 +681,7 @@
             "ORDER_NOW",
             "PAY_TO_ACCESS",
             "PLAY_GAME",
+            "PURCHASE_GIFT_CARDS",
             "RECORD_NOW",
             "REQUEST_TIME",
             "SAY_THANKS",
@@ -2423,9 +2426,9 @@
         ]
     },
     {
-        "name": "adaccountcampaigns_special_ad_category_enum_param",
+        "name": "adaccountcampaigns_special_ad_categories_enum_param",
         "node": "Campaign",
-        "field_or_param": "special_ad_category",
+        "field_or_param": "special_ad_categories",
         "values": [
             "CREDIT",
             "EMPLOYMENT",
@@ -3902,6 +3905,17 @@
             "PRODUCT_CATALOG_SALES",
             "REACH",
             "VIDEO_VIEWS"
+        ]
+    },
+    {
+        "name": "adcampaigngroup_special_ad_categories",
+        "node": "Campaign",
+        "field_or_param": "special_ad_categories",
+        "values": [
+            "CREDIT",
+            "EMPLOYMENT",
+            "HOUSING",
+            "NONE"
         ]
     },
     {
@@ -5911,6 +5925,7 @@
             "home_listings",
             "hotels",
             "jobs",
+            "local_service_businesses",
             "offer_items",
             "offline_commerce",
             "ticketed_experiences",
@@ -8674,6 +8689,7 @@
             "general_manager",
             "hometown",
             "hours",
+            "inbox_labels",
             "invoice_access_invoice_change",
             "invoice_access_onboarding_status_active",
             "leadgen",
@@ -9270,6 +9286,7 @@
             "ORDER_NOW",
             "PAY_TO_ACCESS",
             "PLAY_GAME",
+            "PURCHASE_GIFT_CARDS",
             "RECORD_NOW",
             "REQUEST_TIME",
             "SAY_THANKS",

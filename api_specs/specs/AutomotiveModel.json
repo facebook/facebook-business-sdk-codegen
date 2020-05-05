@@ -9,6 +9,10 @@
     ],
     "fields": [
         {
+            "name": "applinks",
+            "type": "CatalogItemAppLinks"
+        },
+        {
             "name": "automotive_model_id",
             "type": "string"
         },

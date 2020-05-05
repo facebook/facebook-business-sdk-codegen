@@ -503,6 +503,11 @@
                     "type": "Object"
                 },
                 {
+                    "name": "special_ad_categories",
+                    "required": false,
+                    "type": "list<adcampaigngroup_special_ad_categories>"
+                },
+                {
                     "name": "special_ad_category",
                     "required": false,
                     "type": "adcampaigngroup_special_ad_category"
@@ -625,6 +630,10 @@
         {
             "name": "source_campaign_id",
             "type": "string"
+        },
+        {
+            "name": "special_ad_categories",
+            "type": "list<string>"
         },
         {
             "name": "special_ad_category",

@@ -1,0 +1,37 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "android",
+            "type": "list<AndroidAppLink>"
+        },
+        {
+            "name": "ios",
+            "type": "list<IosAppLink>"
+        },
+        {
+            "name": "ipad",
+            "type": "list<IosAppLink>"
+        },
+        {
+            "name": "iphone",
+            "type": "list<IosAppLink>"
+        },
+        {
+            "name": "web",
+            "type": "WebAppLink"
+        },
+        {
+            "name": "windows",
+            "type": "list<WindowsAppLink>"
+        },
+        {
+            "name": "windows_phone",
+            "type": "list<WindowsPhoneAppLink>"
+        },
+        {
+            "name": "windows_universal",
+            "type": "list<WindowsAppLink>"
+        }
+    ]
+}
