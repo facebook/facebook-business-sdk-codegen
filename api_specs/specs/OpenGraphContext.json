@@ -1,24 +1,6 @@
 {
     "apis": [
         {
-            "method": "GET",
-            "endpoint": "friends_tagged_at",
-            "return": "User",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "music_listen_friends",
-            "return": "User",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "video_watch_friends",
-            "return": "User",
-            "params": []
-        },
-        {
             "name": "#get",
             "method": "GET",
             "return": "OpenGraphContext",

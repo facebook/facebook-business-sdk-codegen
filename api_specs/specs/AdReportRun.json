@@ -7,33 +7,10 @@
             "params": []
         },
         {
-            "name": "#delete",
-            "method": "DELETE",
-            "return": "Object",
-            "params": []
-        },
-        {
             "name": "#get",
             "method": "GET",
             "return": "AdReportRun",
             "params": []
-        },
-        {
-            "name": "#update",
-            "method": "POST",
-            "return": "AdReportRun",
-            "params": [
-                {
-                    "name": "emails",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "is_bookmarked",
-                    "required": false,
-                    "type": "bool"
-                }
-            ]
         }
     ],
     "fields": [

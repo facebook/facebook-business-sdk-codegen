@@ -74,11 +74,11 @@
         },
         {
             "name": "brande_audience_id_new",
-            "type": "string"
+            "type": "BrandAudience"
         },
         {
             "name": "brande_audience_id_old",
-            "type": "string"
+            "type": "BrandAudience"
         },
         {
             "name": "budget_limit_new",

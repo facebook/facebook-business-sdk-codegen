@@ -41,11 +41,6 @@
             "return": "Ad",
             "params": [
                 {
-                    "name": "ad_draft_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "date_preset",
                     "required": false,
                     "type": "adcampaigngroupads_date_preset_enum_param"
@@ -54,11 +49,6 @@
                     "name": "effective_status",
                     "required": false,
                     "type": "list<string>"
-                },
-                {
-                    "name": "include_drafts",
-                    "required": false,
-                    "type": "bool"
                 },
                 {
                     "name": "time_range",
@@ -78,11 +68,6 @@
             "return": "AdSet",
             "params": [
                 {
-                    "name": "ad_draft_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "date_preset",
                     "required": false,
                     "type": "adcampaigngroupadsets_date_preset_enum_param"
@@ -91,11 +76,6 @@
                     "name": "effective_status",
                     "required": false,
                     "type": "list<adcampaigngroupadsets_effective_status_enum_param>"
-                },
-                {
-                    "name": "include_drafts",
-                    "required": false,
-                    "type": "bool"
                 },
                 {
                     "name": "is_completed",
@@ -523,6 +503,11 @@
                     "type": "Object"
                 },
                 {
+                    "name": "special_ad_categories",
+                    "required": false,
+                    "type": "list<adcampaigngroup_special_ad_categories>"
+                },
+                {
                     "name": "special_ad_category",
                     "required": false,
                     "type": "adcampaigngroup_special_ad_category"
@@ -645,6 +630,10 @@
         {
             "name": "source_campaign_id",
             "type": "string"
+        },
+        {
+            "name": "special_ad_categories",
+            "type": "list<string>"
         },
         {
             "name": "special_ad_category",

@@ -2,18 +2,6 @@
     "apis": [
         {
             "method": "GET",
-            "endpoint": "paged_app_publishers",
-            "return": "AppPublisher",
-            "params": [
-                {
-                    "name": "draft_id",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "paged_web_publishers",
             "return": "WebPublisher",
             "params": [

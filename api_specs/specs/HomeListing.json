@@ -124,6 +124,10 @@
             "type": "string"
         },
         {
+            "name": "applinks",
+            "type": "CatalogItemAppLinks"
+        },
+        {
             "name": "area_size",
             "type": "unsigned int"
         },

@@ -69,68 +69,6 @@
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "albums",
-            "return": "Album",
-            "params": [
-                {
-                    "name": "contributors",
-                    "required": false,
-                    "type": "list<int>"
-                },
-                {
-                    "name": "description",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "is_default",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "location",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "make_shared_album",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "message",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "place",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "privacy",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "tags",
-                    "required": false,
-                    "type": "list<int>"
-                },
-                {
-                    "name": "visible",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "DELETE",
             "endpoint": "assigned_users",
             "return": "Object",
@@ -233,12 +171,12 @@
                 {
                     "name": "uid",
                     "required": false,
-                    "type": "list<string>"
+                    "type": "list"
                 },
                 {
                     "name": "user",
                     "required": false,
-                    "type": "list<string>"
+                    "type": "list"
                 }
             ]
         },
@@ -561,12 +499,6 @@
                     "type": "pageevents_type_enum_param"
                 }
             ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "featured_videos_collection",
-            "return": "AdVideo",
-            "params": []
         },
         {
             "method": "GET",
@@ -1866,11 +1798,6 @@
                     "type": "list<Object>"
                 },
                 {
-                    "name": "home_url",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
                     "name": "ice_breakers",
                     "required": false,
                     "type": "list<map>"
@@ -3046,18 +2973,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "upcoming_changes",
-            "return": "PageUpcomingChange",
-            "params": [
-                {
-                    "name": "include_inactive",
-                    "required": false,
-                    "type": "bool"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "video_copyright_rules",
             "return": "VideoCopyrightRule",
             "params": [
@@ -4070,6 +3985,10 @@
         {
             "name": "current_location",
             "type": "string"
+        },
+        {
+            "name": "delivery_and_pickup_option_info",
+            "type": "list<string>"
         },
         {
             "name": "description",

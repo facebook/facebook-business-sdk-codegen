@@ -5,18 +5,6 @@
             "method": "GET",
             "return": "VideoGameShow",
             "params": []
-        },
-        {
-            "name": "#update",
-            "method": "POST",
-            "return": "VideoGameShow",
-            "params": [
-                {
-                    "name": "action",
-                    "required": true,
-                    "type": "videogameshow_action"
-                }
-            ]
         }
     ],
     "fields": [

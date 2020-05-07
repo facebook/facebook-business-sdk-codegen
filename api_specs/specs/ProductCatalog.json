@@ -1314,10 +1314,6 @@
             "type": "Business"
         },
         {
-            "name": "cpas_parent_catalog_settings",
-            "type": "CPASParentCatalogSettings"
-        },
-        {
             "name": "da_display_settings",
             "type": "ProductCatalogImageSettings"
         },

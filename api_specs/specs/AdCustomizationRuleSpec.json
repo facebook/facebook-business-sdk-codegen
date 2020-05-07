@@ -14,6 +14,10 @@
             "type": "string"
         },
         {
+            "name": "image_hash",
+            "type": "string"
+        },
+        {
             "name": "link",
             "type": "string"
         },
@@ -32,6 +36,10 @@
         {
             "name": "template_url_spec",
             "type": "AdCreativeTemplateURLSpec"
+        },
+        {
+            "name": "video_id",
+            "type": "int"
         }
     ]
 }

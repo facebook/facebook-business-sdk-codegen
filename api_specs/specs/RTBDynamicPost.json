@@ -29,12 +29,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "instagram_comments",
-            "return": "InstagramComment",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "likes",
             "return": "Profile",
             "params": []

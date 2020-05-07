@@ -160,6 +160,7 @@
             "FIND_A_GROUP",
             "FIND_YOUR_GROUPS",
             "FOLLOW_NEWS_STORYLINE",
+            "FOLLOW_USER",
             "GET_DIRECTIONS",
             "GET_EVENT_TICKETS",
             "GET_MOBILE_APP",
@@ -191,7 +192,9 @@
             "OPEN_MOVIES",
             "ORDER_NOW",
             "PAY_OR_REQUEST",
+            "PAY_TO_ACCESS",
             "PLAY_GAME",
+            "PURCHASE_GIFT_CARDS",
             "PRE_REGISTER",
             "RECORD_NOW",
             "REGISTER_NOW",
@@ -438,6 +441,7 @@
             "FIND_A_GROUP",
             "FIND_YOUR_GROUPS",
             "FOLLOW_NEWS_STORYLINE",
+            "FOLLOW_USER",
             "GET_DIRECTIONS",
             "GET_OFFER",
             "GET_OFFER_VIEW",
@@ -455,8 +459,11 @@
             "NO_BUTTON",
             "OPEN_LINK",
             "ORDER_NOW",
+            "PAY_TO_ACCESS",
             "PLAY_GAME",
+            "PURCHASE_GIFT_CARDS",
             "RECORD_NOW",
+            "REQUEST_TIME",
             "SAY_THANKS",
             "SEE_MORE",
             "SELL_NOW",
@@ -692,6 +699,7 @@
             "FIND_A_GROUP",
             "FIND_YOUR_GROUPS",
             "FOLLOW_NEWS_STORYLINE",
+            "FOLLOW_USER",
             "GET_DIRECTIONS",
             "GET_OFFER",
             "GET_OFFER_VIEW",
@@ -709,8 +717,11 @@
             "NO_BUTTON",
             "OPEN_LINK",
             "ORDER_NOW",
+            "PAY_TO_ACCESS",
             "PLAY_GAME",
+            "PURCHASE_GIFT_CARDS",
             "RECORD_NOW",
+            "REQUEST_TIME",
             "SAY_THANKS",
             "SEE_MORE",
             "SELL_NOW",
@@ -2008,6 +2019,17 @@
         ]
     },
     {
+        "name": "adaccountadsets_multi_optimization_goal_weight_enum_param",
+        "node": "AdSet",
+        "field_or_param": "multi_optimization_goal_weight",
+        "values": [
+            "BALANCED",
+            "PREFER_EVENT",
+            "PREFER_INSTALL",
+            "UNDEFINED"
+        ]
+    },
+    {
         "name": "adaccountadsets_optimization_goal_enum_param",
         "node": "AdSet",
         "field_or_param": "optimization_goal",
@@ -2167,6 +2189,7 @@
             "LIVE_PHOTO",
             "LOOK_NOW_DEPRECATED",
             "MARKETPLACE_LISTING_VIDEO",
+            "MARKETPLACE_PRE_RECORDED_VIDEO",
             "MOMENTS_VIDEO",
             "NEO_ASYNC_GAME_VIDEO",
             "NO_STORY",
@@ -2194,6 +2217,7 @@
             "SLIDESHOW_SHAKR",
             "SLIDESHOW_VARIATION_VIDEO",
             "SOTTO_CONTENT",
+            "SOUND_PLATFORM_STREAM",
             "STORIES_VIDEO",
             "STORYLINE",
             "STORYLINE_WITH_EXTERNAL_MUSIC",
@@ -2440,9 +2464,9 @@
         ]
     },
     {
-        "name": "adaccountcampaigns_special_ad_category_enum_param",
+        "name": "adaccountcampaigns_special_ad_categories_enum_param",
         "node": "Campaign",
-        "field_or_param": "special_ad_category",
+        "field_or_param": "special_ad_categories",
         "values": [
             "CREDIT",
             "EMPLOYMENT",
@@ -3089,6 +3113,7 @@
             "rtb_flag",
             "site_category",
             "targeting_optimization",
+            "targeting_relaxation_types",
             "timezones",
             "topic",
             "trending",
@@ -3213,6 +3238,7 @@
             "rtb_flag",
             "site_category",
             "targeting_optimization",
+            "targeting_relaxation_types",
             "timezones",
             "topic",
             "trending",
@@ -3348,6 +3374,7 @@
             "rtb_flag",
             "site_category",
             "targeting_optimization",
+            "targeting_relaxation_types",
             "timezones",
             "topic",
             "trending",
@@ -3565,6 +3592,17 @@
             "EXTENDED_EXPLORATION",
             "LIMITED_EXPLORATION",
             "NONE_EXPLORATION"
+        ]
+    },
+    {
+        "name": "adcampaign_multi_optimization_goal_weight",
+        "node": "AdSet",
+        "field_or_param": "multi_optimization_goal_weight",
+        "values": [
+            "BALANCED",
+            "PREFER_EVENT",
+            "PREFER_INSTALL",
+            "UNDEFINED"
         ]
     },
     {
@@ -3905,6 +3943,17 @@
             "PRODUCT_CATALOG_SALES",
             "REACH",
             "VIDEO_VIEWS"
+        ]
+    },
+    {
+        "name": "adcampaigngroup_special_ad_categories",
+        "node": "Campaign",
+        "field_or_param": "special_ad_categories",
+        "values": [
+            "CREDIT",
+            "EMPLOYMENT",
+            "HOUSING",
+            "NONE"
         ]
     },
     {
@@ -5321,14 +5370,6 @@
         ]
     },
     {
-        "name": "applicationmonetization_breakdowns_enum_param",
-        "node": "Object",
-        "field_or_param": "breakdowns",
-        "values": [
-            "COUNTRY"
-        ]
-    },
-    {
         "name": "applicationpage_activities_logging_source_enum_param",
         "node": "Application",
         "field_or_param": "logging_source",
@@ -5564,10 +5605,6 @@
             "MODERATE_COMMUNITY",
             "PAGES_MESSAGING",
             "PAGES_MESSAGING_SUBSCRIPTIONS",
-            "PLATFORM_PAGES_MANAGE_INSTANT_ARTICLES",
-            "PLATFORM_PAGE_ADMINISTER",
-            "PLATFORM_PAGE_BASIC_ADMIN",
-            "PLATFORM_READ_INSIGHTS",
             "PROFILE_PLUS_ADVERTISE",
             "PROFILE_PLUS_ANALYZE",
             "PROFILE_PLUS_CREATE_CONTENT",
@@ -5649,10 +5686,6 @@
             "MODERATE_COMMUNITY",
             "PAGES_MESSAGING",
             "PAGES_MESSAGING_SUBSCRIPTIONS",
-            "PLATFORM_PAGES_MANAGE_INSTANT_ARTICLES",
-            "PLATFORM_PAGE_ADMINISTER",
-            "PLATFORM_PAGE_BASIC_ADMIN",
-            "PLATFORM_READ_INSIGHTS",
             "PROFILE_PLUS_ADVERTISE",
             "PROFILE_PLUS_ANALYZE",
             "PROFILE_PLUS_CREATE_CONTENT",
@@ -5868,10 +5901,6 @@
             "MODERATE_COMMUNITY",
             "PAGES_MESSAGING",
             "PAGES_MESSAGING_SUBSCRIPTIONS",
-            "PLATFORM_PAGES_MANAGE_INSTANT_ARTICLES",
-            "PLATFORM_PAGE_ADMINISTER",
-            "PLATFORM_PAGE_BASIC_ADMIN",
-            "PLATFORM_READ_INSIGHTS",
             "PROFILE_PLUS_ADVERTISE",
             "PROFILE_PLUS_ANALYZE",
             "PROFILE_PLUS_CREATE_CONTENT",
@@ -5933,6 +5962,8 @@
             "flights",
             "home_listings",
             "hotels",
+            "jobs",
+            "local_service_businesses",
             "offer_items",
             "offline_commerce",
             "ticketed_experiences",
@@ -6299,6 +6330,7 @@
             "LIVE_PHOTO",
             "LOOK_NOW_DEPRECATED",
             "MARKETPLACE_LISTING_VIDEO",
+            "MARKETPLACE_PRE_RECORDED_VIDEO",
             "MOMENTS_VIDEO",
             "NEO_ASYNC_GAME_VIDEO",
             "NO_STORY",
@@ -6326,6 +6358,7 @@
             "SLIDESHOW_SHAKR",
             "SLIDESHOW_VARIATION_VIDEO",
             "SOTTO_CONTENT",
+            "SOUND_PLATFORM_STREAM",
             "STORIES_VIDEO",
             "STORYLINE",
             "STORYLINE_WITH_EXTERNAL_MUSIC",
@@ -6736,7 +6769,8 @@
             "WORK_RECRUITING",
             "WORK_SOCIAL",
             "WORK_TEAM",
-            "WORK_TEAMWORK"
+            "WORK_TEAMWORK",
+            "WORK_VC_CALL"
         ]
     },
     {
@@ -6877,7 +6911,8 @@
             "WORK_RECRUITING",
             "WORK_SOCIAL",
             "WORK_TEAM",
-            "WORK_TEAMWORK"
+            "WORK_TEAMWORK",
+            "WORK_VC_CALL"
         ]
     },
     {
@@ -7097,6 +7132,7 @@
             "LIVE_PHOTO",
             "LOOK_NOW_DEPRECATED",
             "MARKETPLACE_LISTING_VIDEO",
+            "MARKETPLACE_PRE_RECORDED_VIDEO",
             "MOMENTS_VIDEO",
             "NEO_ASYNC_GAME_VIDEO",
             "NO_STORY",
@@ -7124,6 +7160,7 @@
             "SLIDESHOW_SHAKR",
             "SLIDESHOW_VARIATION_VIDEO",
             "SOTTO_CONTENT",
+            "SOUND_PLATFORM_STREAM",
             "STORIES_VIDEO",
             "STORYLINE",
             "STORYLINE_WITH_EXTERNAL_MUSIC",
@@ -7870,10 +7907,6 @@
             "MODERATE_COMMUNITY",
             "PAGES_MESSAGING",
             "PAGES_MESSAGING_SUBSCRIPTIONS",
-            "PLATFORM_PAGES_MANAGE_INSTANT_ARTICLES",
-            "PLATFORM_PAGE_ADMINISTER",
-            "PLATFORM_PAGE_BASIC_ADMIN",
-            "PLATFORM_READ_INSIGHTS",
             "PROFILE_PLUS_ADVERTISE",
             "PROFILE_PLUS_ANALYZE",
             "PROFILE_PLUS_CREATE_CONTENT",
@@ -7900,10 +7933,6 @@
             "MODERATE_COMMUNITY",
             "PAGES_MESSAGING",
             "PAGES_MESSAGING_SUBSCRIPTIONS",
-            "PLATFORM_PAGES_MANAGE_INSTANT_ARTICLES",
-            "PLATFORM_PAGE_ADMINISTER",
-            "PLATFORM_PAGE_BASIC_ADMIN",
-            "PLATFORM_READ_INSIGHTS",
             "PROFILE_PLUS_ADVERTISE",
             "PROFILE_PLUS_ANALYZE",
             "PROFILE_PLUS_CREATE_CONTENT",
@@ -7924,6 +7953,7 @@
             "EMAIL",
             "FACEBOOK_APP",
             "MESSENGER",
+            "MINI_SHOP",
             "NONE",
             "PHONE_CALL",
             "SHOP_ON_FACEBOOK",
@@ -7940,6 +7970,7 @@
             "EMAIL",
             "FACEBOOK_APP",
             "MESSENGER",
+            "MINI_SHOP",
             "NONE",
             "PHONE_CALL",
             "SHOP_ON_FACEBOOK",
@@ -7971,11 +8002,13 @@
             "OPEN_APP",
             "PLAY_MUSIC",
             "PLAY_NOW",
+            "PURCHASE_GIFT_CARDS",
             "REQUEST_APPOINTMENT",
             "REQUEST_QUOTE",
             "SHOP_NOW",
             "SHOP_ON_FACEBOOK",
             "SIGN_UP",
+            "VIEW_SHOP",
             "VISIT_GROUP",
             "WATCH_NOW",
             "WOODHENGE_SUPPORT"
@@ -8694,7 +8727,9 @@
             "general_manager",
             "hometown",
             "hours",
+            "inbox_labels",
             "invoice_access_invoice_change",
+            "invoice_access_onboarding_status_active",
             "leadgen",
             "leadgen_fat",
             "live_videos",
@@ -8742,6 +8777,7 @@
             "ratings",
             "registration",
             "standby",
+            "user_action",
             "video_text_question_responses",
             "videos",
             "website"
@@ -8887,6 +8923,7 @@
             "LIVE_PHOTO",
             "LOOK_NOW_DEPRECATED",
             "MARKETPLACE_LISTING_VIDEO",
+            "MARKETPLACE_PRE_RECORDED_VIDEO",
             "MOMENTS_VIDEO",
             "NEO_ASYNC_GAME_VIDEO",
             "NO_STORY",
@@ -8914,6 +8951,7 @@
             "SLIDESHOW_SHAKR",
             "SLIDESHOW_VARIATION_VIDEO",
             "SOTTO_CONTENT",
+            "SOUND_PLATFORM_STREAM",
             "STORIES_VIDEO",
             "STORYLINE",
             "STORYLINE_WITH_EXTERNAL_MUSIC",
@@ -9225,6 +9263,7 @@
             "AUTO_LOOKALIKE",
             "AUTO_PAGE_LOOKALIKE",
             "AUTO_TARGETING",
+            "COUNTRY_AND_INTEREST",
             "CREATE_NEW",
             "CUSTOM_AUDIENCE",
             "DISTRICT",
@@ -9236,6 +9275,7 @@
             "IG_PROMOTED_POST_AUTO",
             "LOCAL",
             "LOOKALIKE",
+            "MARKETPLACE_DEFAULT",
             "MULT_CUSTOM_AUDIENCES",
             "NCPP",
             "SAVED_AUDIENCE",
@@ -9264,6 +9304,7 @@
             "FIND_A_GROUP",
             "FIND_YOUR_GROUPS",
             "FOLLOW_NEWS_STORYLINE",
+            "FOLLOW_USER",
             "GET_DIRECTIONS",
             "GET_OFFER",
             "GET_OFFER_VIEW",
@@ -9281,8 +9322,11 @@
             "NO_BUTTON",
             "OPEN_LINK",
             "ORDER_NOW",
+            "PAY_TO_ACCESS",
             "PLAY_GAME",
+            "PURCHASE_GIFT_CARDS",
             "RECORD_NOW",
+            "REQUEST_TIME",
             "SAY_THANKS",
             "SEE_MORE",
             "SELL_NOW",
@@ -9420,6 +9464,7 @@
             "LOCAL_INVENTORY",
             "MARKET",
             "MEDIA_TITLE",
+            "OFFER",
             "PRODUCTS",
             "VEHICLES",
             "VEHICLE_OFFER"
@@ -10917,6 +10962,7 @@
             "LIVE_PHOTO",
             "LOOK_NOW_DEPRECATED",
             "MARKETPLACE_LISTING_VIDEO",
+            "MARKETPLACE_PRE_RECORDED_VIDEO",
             "MOMENTS_VIDEO",
             "NEO_ASYNC_GAME_VIDEO",
             "NO_STORY",
@@ -10944,6 +10990,7 @@
             "SLIDESHOW_SHAKR",
             "SLIDESHOW_VARIATION_VIDEO",
             "SOTTO_CONTENT",
+            "SOUND_PLATFORM_STREAM",
             "STORIES_VIDEO",
             "STORYLINE",
             "STORYLINE_WITH_EXTERNAL_MUSIC",
@@ -11252,15 +11299,6 @@
             "AUDIO_ONLY",
             "VIDEO_AND_AUDIO",
             "VIDEO_ONLY"
-        ]
-    },
-    {
-        "name": "videogameshow_action",
-        "node": "VideoGameShow",
-        "field_or_param": "action",
-        "values": [
-            "END_GAME",
-            "START_GAME"
         ]
     },
     {

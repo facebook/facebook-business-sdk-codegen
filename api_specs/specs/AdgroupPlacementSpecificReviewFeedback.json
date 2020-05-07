@@ -34,6 +34,10 @@
             "type": "map<string, string>"
         },
         {
+            "name": "dri_counterfeit",
+            "type": "map<string, string>"
+        },
+        {
             "name": "facebook",
             "type": "map<string, string>"
         },

@@ -346,6 +346,10 @@
             "type": "list<AdsActionStats>"
         },
         {
+            "name": "qualifying_question_qualify_answer_rate",
+            "type": "string"
+        },
+        {
             "name": "quality_ranking",
             "type": "string"
         },

@@ -717,7 +717,13 @@
             "method": "GET",
             "endpoint": "extendedcredits",
             "return": "ExtendedCredit",
-            "params": []
+            "params": [
+                {
+                    "name": "order_by_is_owned_credential",
+                    "required": false,
+                    "type": "bool"
+                }
+            ]
         },
         {
             "method": "POST",
@@ -1183,15 +1189,9 @@
             ]
         },
         {
-            "method": "GET",
-            "endpoint": "pixel_tos",
-            "return": "BusinessPixelTOS",
-            "params": []
-        },
-        {
             "method": "POST",
             "endpoint": "pixel_tos",
-            "return": "BusinessPixelTOS",
+            "return": "Object",
             "params": []
         },
         {

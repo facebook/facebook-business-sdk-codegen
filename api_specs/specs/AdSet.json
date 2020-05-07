@@ -106,11 +106,6 @@
             "return": "Ad",
             "params": [
                 {
-                    "name": "ad_draft_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "date_preset",
                     "required": false,
                     "type": "adcampaignads_date_preset_enum_param"
@@ -119,11 +114,6 @@
                     "name": "effective_status",
                     "required": false,
                     "type": "list<string>"
-                },
-                {
-                    "name": "include_drafts",
-                    "required": false,
-                    "type": "bool"
                 },
                 {
                     "name": "time_range",
@@ -651,6 +641,11 @@
                     "type": "unsigned int"
                 },
                 {
+                    "name": "multi_optimization_goal_weight",
+                    "required": false,
+                    "type": "adcampaign_multi_optimization_goal_weight"
+                },
+                {
                     "name": "name",
                     "required": false,
                     "type": "string"
@@ -868,6 +863,10 @@
         },
         {
             "name": "lifetime_spend_cap",
+            "type": "string"
+        },
+        {
+            "name": "multi_optimization_goal_weight",
             "type": "string"
         },
         {

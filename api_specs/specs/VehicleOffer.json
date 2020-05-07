@@ -25,6 +25,10 @@
             "type": "string"
         },
         {
+            "name": "applinks",
+            "type": "CatalogItemAppLinks"
+        },
+        {
             "name": "body_style",
             "type": "string"
         },

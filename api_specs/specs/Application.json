@@ -926,48 +926,6 @@
         },
         {
             "method": "POST",
-            "endpoint": "monetization",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "breakdowns",
-                    "required": false,
-                    "type": "list<applicationmonetization_breakdowns_enum_param>"
-                },
-                {
-                    "name": "campaign_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "device_list",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "query_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "request_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "since",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "until",
-                    "required": false,
-                    "type": "datetime"
-                }
-            ]
-        },
-        {
-            "method": "POST",
             "endpoint": "occludespopups",
             "return": "Object",
             "params": [
