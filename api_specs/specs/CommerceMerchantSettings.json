@@ -1,0 +1,220 @@
+{
+    "apis": [
+        {
+            "method": "POST",
+            "endpoint": "facebook_channel",
+            "return": "CommerceMerchantSettings",
+            "params": [
+                {
+                    "name": "pages",
+                    "required": true,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "instagram_channel",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "instagram_channel",
+            "return": "CommerceMerchantSettings",
+            "params": [
+                {
+                    "name": "instagram_business_accounts",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "instagram_users",
+                    "required": false,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "order_management_apps",
+            "return": "Application",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "order_management_apps",
+            "return": "CommerceMerchantSettings",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "product_catalogs",
+            "return": "ProductCatalog",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "returns",
+            "return": "CommerceReturn",
+            "params": [
+                {
+                    "name": "end_time_created",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "merchant_return_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "start_time_created",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "statuses",
+                    "required": false,
+                    "type": "list<commercemerchantsettingsreturns_statuses_enum_param>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "setup_status",
+            "return": "CommerceMerchantSettingsSetupStatus",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "tax_settings",
+            "return": "CommerceMerchantTaxSettings",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "CommerceMerchantSettings",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "CommerceMerchantSettings",
+            "params": [
+                {
+                    "name": "contact_email",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "merchant_alert_email",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "merchant_status",
+                    "required": false,
+                    "type": "commercemerchantsettings_merchant_status"
+                },
+                {
+                    "name": "onsite_commerce_merchant",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "terms",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "braintree_merchant_id",
+            "type": "string"
+        },
+        {
+            "name": "checkout_message",
+            "type": "string"
+        },
+        {
+            "name": "contact_email",
+            "type": "string"
+        },
+        {
+            "name": "disable_checkout_urls",
+            "type": "bool"
+        },
+        {
+            "name": "display_name",
+            "type": "string"
+        },
+        {
+            "name": "facebook_channel",
+            "type": "Object"
+        },
+        {
+            "name": "has_discount_code",
+            "type": "bool"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "instagram_channel",
+            "type": "Object"
+        },
+        {
+            "name": "merchant_alert_email",
+            "type": "string"
+        },
+        {
+            "name": "merchant_page",
+            "type": "Profile"
+        },
+        {
+            "name": "merchant_status",
+            "type": "string"
+        },
+        {
+            "name": "onsite_commerce_merchant",
+            "type": "Object"
+        },
+        {
+            "name": "payment_provider",
+            "type": "string"
+        },
+        {
+            "name": "privacy_url_by_locale",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "review_rejection_messages",
+            "type": "list<string>"
+        },
+        {
+            "name": "review_rejection_reasons",
+            "type": "list<string>"
+        },
+        {
+            "name": "review_status",
+            "type": "string"
+        },
+        {
+            "name": "supported_card_types",
+            "type": "list<string>"
+        },
+        {
+            "name": "terms",
+            "type": "string"
+        },
+        {
+            "name": "terms_url_by_locale",
+            "type": "map<string, string>"
+        }
+    ]
+}

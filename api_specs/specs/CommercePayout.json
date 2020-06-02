@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "amount",
+            "type": "Object"
+        },
+        {
+            "name": "payout_date",
+            "type": "string"
+        },
+        {
+            "name": "payout_reference_id",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "transfer_id",
+            "type": "string"
+        }
+    ]
+}

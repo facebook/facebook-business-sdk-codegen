@@ -10,11 +10,11 @@
     "fields": [
         {
             "name": "ad_creative_id_new",
-            "type": "string"
+            "type": "AdCreative"
         },
         {
             "name": "ad_creative_id_old",
-            "type": "string"
+            "type": "AdCreative"
         },
         {
             "name": "asset_feed_id_new",
@@ -154,11 +154,11 @@
         },
         {
             "name": "source_adgroup_id_new",
-            "type": "string"
+            "type": "Ad"
         },
         {
             "name": "source_adgroup_id_old",
-            "type": "string"
+            "type": "Ad"
         },
         {
             "name": "start_time_new",

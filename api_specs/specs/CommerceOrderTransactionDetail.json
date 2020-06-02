@@ -1,0 +1,44 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "tax_details",
+            "return": "CommerceOrderTransactionDetailTaxDetail",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "net_payment_amount",
+            "type": "Object"
+        },
+        {
+            "name": "order_details",
+            "type": "CommerceOrder"
+        },
+        {
+            "name": "payout_reference_id",
+            "type": "string"
+        },
+        {
+            "name": "processing_fee",
+            "type": "Object"
+        },
+        {
+            "name": "tax_rate",
+            "type": "string"
+        },
+        {
+            "name": "transaction_date",
+            "type": "string"
+        },
+        {
+            "name": "transaction_type",
+            "type": "string"
+        },
+        {
+            "name": "transfer_id",
+            "type": "string"
+        }
+    ]
+}

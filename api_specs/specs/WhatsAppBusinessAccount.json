@@ -83,6 +83,12 @@
             "params": []
         },
         {
+            "method": "POST",
+            "endpoint": "subscribed_apps",
+            "return": "WhatsAppBusinessAccount",
+            "params": []
+        },
+        {
             "name": "#get",
             "method": "GET",
             "return": "WhatsAppBusinessAccount",

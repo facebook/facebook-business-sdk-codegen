@@ -1277,11 +1277,6 @@
                     "type": "bool"
                 },
                 {
-                    "name": "auth_dialog_data_help_url",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "auth_dialog_headline",
                     "required": false,
                     "type": "string"
@@ -1337,11 +1332,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "category",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "configured_ios_sso",
                     "required": false,
                     "type": "bool"
@@ -1352,22 +1342,7 @@
                     "type": "string"
                 },
                 {
-                    "name": "created_time",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "creator_uid",
-                    "required": false,
-                    "type": "int"
-                },
-                {
                     "name": "deauth_callback_url",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "hosting_url",
                     "required": false,
                     "type": "string"
                 },
@@ -1387,11 +1362,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "migrations",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "mobile_web_url",
                     "required": false,
                     "type": "string"
@@ -1403,11 +1373,6 @@
                 },
                 {
                     "name": "page_tab_default_name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "page_tab_url",
                     "required": false,
                     "type": "string"
                 },
@@ -1435,16 +1400,6 @@
                     "name": "server_ip_whitelist",
                     "required": false,
                     "type": "list<string>"
-                },
-                {
-                    "name": "social_discovery",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "subcategory",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "terms_of_service_url",

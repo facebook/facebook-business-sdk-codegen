@@ -1,6 +1,23 @@
 {
     "apis": [
         {
+            "method": "POST",
+            "endpoint": "acknowledge_orders",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "idempotency_key",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "orders",
+                    "required": true,
+                    "type": "list<map>"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "ads_posts",
             "return": "PagePost",
@@ -335,6 +352,78 @@
                     "name": "url",
                     "required": true,
                     "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "commerce_merchant_settings",
+            "return": "CommerceMerchantSettings",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "commerce_orders",
+            "return": "CommerceOrder",
+            "params": [
+                {
+                    "name": "filters",
+                    "required": false,
+                    "type": "list<pagecommerce_orders_filters_enum_param>"
+                },
+                {
+                    "name": "state",
+                    "required": false,
+                    "type": "list<pagecommerce_orders_state_enum_param>"
+                },
+                {
+                    "name": "updated_after",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "updated_before",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "commerce_payouts",
+            "return": "CommercePayout",
+            "params": [
+                {
+                    "name": "end_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "start_time",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "commerce_transactions",
+            "return": "CommerceOrderTransactionDetail",
+            "params": [
+                {
+                    "name": "end_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "payout_reference_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "start_time",
+                    "required": false,
+                    "type": "datetime"
                 }
             ]
         },
@@ -1563,6 +1652,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "delivery_and_pickup_option_info",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
                     "name": "differently_open_offerings",
                     "required": false,
                     "type": "map"
@@ -2598,48 +2692,6 @@
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "promotions",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "ad_account_id",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "budget",
-                    "required": true,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "duration",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "gender",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "geo_level",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "max_age",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "min_age",
-                    "required": false,
-                    "type": "unsigned int"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "published_posts",
             "return": "PagePost",
@@ -2731,6 +2783,12 @@
                     "type": "Object"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "shop_setup_status",
+            "return": "CommerceMerchantSettingsSetupStatus",
+            "params": []
         },
         {
             "method": "DELETE",
@@ -2985,23 +3043,6 @@
                     "name": "source",
                     "required": false,
                     "type": "pagevideo_copyright_rules_source_enum_param"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "video_copyright_rules",
-            "return": "VideoCopyrightRule",
-            "params": [
-                {
-                    "name": "condition_groups",
-                    "required": true,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "name",
-                    "required": true,
-                    "type": "string"
                 }
             ]
         },
@@ -3650,6 +3691,11 @@
                     "name": "culinary_team",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "delivery_and_pickup_option_info",
+                    "required": false,
+                    "type": "list<string>"
                 },
                 {
                     "name": "description",

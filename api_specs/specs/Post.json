@@ -494,8 +494,16 @@
             "type": "datetime"
         },
         {
+            "name": "delivery_growth_optimizations",
+            "type": "list<string>"
+        },
+        {
             "name": "description",
             "type": "string"
+        },
+        {
+            "name": "entities",
+            "type": "Object"
         },
         {
             "name": "event",
@@ -512,6 +520,10 @@
         {
             "name": "feed_targeting",
             "type": "Object"
+        },
+        {
+            "name": "formatting",
+            "type": "string"
         },
         {
             "name": "from",
@@ -532,6 +544,10 @@
         {
             "name": "id",
             "type": "string"
+        },
+        {
+            "name": "implicit_place",
+            "type": "Place"
         },
         {
             "name": "instagram_eligibility",
@@ -576,6 +592,10 @@
         {
             "name": "link",
             "type": "string"
+        },
+        {
+            "name": "live_video_eligibility",
+            "type": "list<string>"
         },
         {
             "name": "message",
@@ -634,6 +654,10 @@
             "type": "list"
         },
         {
+            "name": "publishing_stats",
+            "type": "unsigned int"
+        },
+        {
             "name": "scheduled_publish_time",
             "type": "float"
         },
@@ -674,6 +698,10 @@
             "type": "string"
         },
         {
+            "name": "translations",
+            "type": "map<string, string>"
+        },
+        {
             "name": "type",
             "type": "string"
         },
@@ -692,6 +720,10 @@
         {
             "name": "width",
             "type": "unsigned int"
+        },
+        {
+            "name": "will_be_autocropped_when_deliver_to_instagram",
+            "type": "bool"
         }
     ]
 }

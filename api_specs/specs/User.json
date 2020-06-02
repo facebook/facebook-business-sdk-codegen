@@ -1189,28 +1189,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "games_stats",
-            "return": "GamesStat",
-            "params": [
-                {
-                    "name": "inc",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "set",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "stat_name",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "groups",
             "return": "Group",
@@ -1841,12 +1819,6 @@
                     "type": "int"
                 }
             ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "request_history",
-            "return": "RequestHistory",
-            "params": []
         },
         {
             "method": "GET",

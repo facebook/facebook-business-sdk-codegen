@@ -211,18 +211,6 @@
         },
         {
             "method": "POST",
-            "endpoint": "users",
-            "return": "OfflineConversionDataSet",
-            "params": [
-                {
-                    "name": "data",
-                    "required": true,
-                    "type": "list<Object>"
-                }
-            ]
-        },
-        {
-            "method": "POST",
             "endpoint": "validate",
             "return": "OfflineConversionDataSet",
             "params": [

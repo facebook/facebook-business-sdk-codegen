@@ -580,10 +580,6 @@
             "type": "string"
         },
         {
-            "name": "is_autobid",
-            "type": "bool"
-        },
-        {
             "name": "issues_info",
             "type": "list<AdgroupIssuesInfo>"
         },

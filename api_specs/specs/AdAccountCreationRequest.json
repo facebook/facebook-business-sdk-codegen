@@ -95,10 +95,6 @@
             "type": "bool"
         },
         {
-            "name": "is_under_authorization",
-            "type": "bool"
-        },
-        {
             "name": "legal_entity_name_in_local_language",
             "type": "string"
         },

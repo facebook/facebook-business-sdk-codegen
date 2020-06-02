@@ -1,0 +1,273 @@
+{
+    "apis": [
+        {
+            "method": "POST",
+            "endpoint": "acknowledge_order",
+            "return": "CommerceOrder",
+            "params": [
+                {
+                    "name": "idempotency_key",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "merchant_order_reference",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "cancellations",
+            "return": "CommerceOrderCancellation",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "cancellations",
+            "return": "CommerceOrder",
+            "params": [
+                {
+                    "name": "cancel_reason",
+                    "required": true,
+                    "type": "map"
+                },
+                {
+                    "name": "idempotency_key",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "items",
+                    "required": false,
+                    "type": "list<map>"
+                },
+                {
+                    "name": "restock_items",
+                    "required": false,
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "items",
+            "return": "CommerceOrderItem",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "payments",
+            "return": "CommerceOrderPayment",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "promotions",
+            "return": "CommerceOrderReimbursement",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "refunds",
+            "return": "CommerceOrderRefund",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "refunds",
+            "return": "CommerceOrder",
+            "params": [
+                {
+                    "name": "deductions",
+                    "required": false,
+                    "type": "list<map>"
+                },
+                {
+                    "name": "idempotency_key",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "items",
+                    "required": false,
+                    "type": "list<map>"
+                },
+                {
+                    "name": "reason_code",
+                    "required": true,
+                    "type": "commerceorderrefunds_reason_code_enum_param"
+                },
+                {
+                    "name": "reason_text",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "return_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "shipping",
+                    "required": false,
+                    "type": "map"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "returns",
+            "return": "CommerceReturn",
+            "params": [
+                {
+                    "name": "merchant_return_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "statuses",
+                    "required": false,
+                    "type": "list<commerceorderreturns_statuses_enum_param>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "shipments",
+            "return": "CommerceOrderShipment",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "shipments",
+            "return": "CommerceOrder",
+            "params": [
+                {
+                    "name": "external_redemption_link",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "external_shipment_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "fulfillment",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "idempotency_key",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "items",
+                    "required": true,
+                    "type": "list<map>"
+                },
+                {
+                    "name": "merchant_order_reference",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "shipment_origin_postal_code",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "shipping_tax_details",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "tracking_info",
+                    "required": false,
+                    "type": "map"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "update_shipment",
+            "return": "CommerceOrder",
+            "params": [
+                {
+                    "name": "fulfillment_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "idempotency_key",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "tracking_info",
+                    "required": true,
+                    "type": "map"
+                }
+            ]
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "CommerceOrder",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "buyer_details",
+            "type": "Object"
+        },
+        {
+            "name": "channel",
+            "type": "string"
+        },
+        {
+            "name": "created",
+            "type": "string"
+        },
+        {
+            "name": "estimated_payment_details",
+            "type": "Object"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_group_buy",
+            "type": "bool"
+        },
+        {
+            "name": "last_updated",
+            "type": "string"
+        },
+        {
+            "name": "merchant_order_id",
+            "type": "string"
+        },
+        {
+            "name": "order_status",
+            "type": "Object"
+        },
+        {
+            "name": "selected_shipping_option",
+            "type": "Object"
+        },
+        {
+            "name": "ship_by_date",
+            "type": "string"
+        },
+        {
+            "name": "shipping_address",
+            "type": "Object"
+        }
+    ]
+}

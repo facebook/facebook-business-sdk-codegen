@@ -120,6 +120,7 @@
             "update_audience",
             "update_campaign_ad_scheduling",
             "update_campaign_budget",
+            "update_campaign_budget_optimization_toggling_status",
             "update_campaign_delivery_type",
             "update_campaign_duration",
             "update_campaign_group_ad_scheduling",
@@ -152,6 +153,7 @@
             "FIND_A_GROUP",
             "FIND_YOUR_GROUPS",
             "FOLLOW_NEWS_STORYLINE",
+            "FOLLOW_PAGE",
             "FOLLOW_USER",
             "GET_DIRECTIONS",
             "GET_OFFER",
@@ -403,6 +405,7 @@
             "FIND_A_GROUP",
             "FIND_YOUR_GROUPS",
             "FOLLOW_NEWS_STORYLINE",
+            "FOLLOW_PAGE",
             "FOLLOW_USER",
             "GET_DIRECTIONS",
             "GET_OFFER",
@@ -661,6 +664,7 @@
             "FIND_A_GROUP",
             "FIND_YOUR_GROUPS",
             "FOLLOW_NEWS_STORYLINE",
+            "FOLLOW_PAGE",
             "FOLLOW_USER",
             "GET_DIRECTIONS",
             "GET_OFFER",
@@ -1258,6 +1262,7 @@
             "CONTENT_VIEW",
             "CUSTOMIZE_PRODUCT",
             "DONATE",
+            "FACEBOOK_SELECTED",
             "FIND_LOCATION",
             "INITIATED_CHECKOUT",
             "LEAD",
@@ -1534,21 +1539,12 @@
         ]
     },
     {
-        "name": "RequestHistory_http_method",
-        "node": "RequestHistory",
-        "field_or_param": "http_method",
-        "values": [
-            "DELETE",
-            "GET",
-            "POST"
-        ]
-    },
-    {
         "name": "StreamingReaction_reaction_type",
         "node": "StreamingReaction",
         "field_or_param": "reaction_type",
         "values": [
             "ANGRY",
+            "CARE",
             "HAHA",
             "LIKE",
             "LOVE",
@@ -2422,6 +2418,7 @@
             "POST_ENGAGEMENT",
             "PRODUCT_CATALOG_SALES",
             "REACH",
+            "STORE_VISITS",
             "VIDEO_VIEWS"
         ]
     },
@@ -2526,6 +2523,7 @@
             "FLIGHT",
             "HOME_LISTING",
             "HOTEL",
+            "LOCAL_SERVICE_BUSINESS",
             "LOCATION_BASED_ITEM",
             "MEDIA_TITLE",
             "OFFLINE_PRODUCT",
@@ -2579,6 +2577,7 @@
             "CONTENT_VIEW",
             "CUSTOMIZE_PRODUCT",
             "DONATE",
+            "FACEBOOK_SELECTED",
             "FIND_LOCATION",
             "INITIATED_CHECKOUT",
             "LEAD",
@@ -2642,6 +2641,7 @@
             "INSTANT_ARTICLE_RECIRCULATION_AD",
             "INSTANT_ARTICLE_STANDARD",
             "INSTREAM_VIDEO_DESKTOP",
+            "INSTREAM_VIDEO_IMAGE",
             "INSTREAM_VIDEO_MOBILE",
             "JOB_BROWSER_DESKTOP",
             "JOB_BROWSER_MOBILE",
@@ -2658,6 +2658,7 @@
             "RIGHT_COLUMN_STANDARD",
             "SUGGESTED_VIDEO_DESKTOP",
             "SUGGESTED_VIDEO_MOBILE",
+            "WATCH_FEED_HOME",
             "WATCH_FEED_MOBILE"
         ]
     },
@@ -2680,6 +2681,7 @@
             "28d_view",
             "7d_click",
             "7d_view",
+            "dda",
             "default"
         ]
     },
@@ -2848,6 +2850,7 @@
             "FLIGHT",
             "HOME_LISTING",
             "HOTEL",
+            "LOCAL_SERVICE_BUSINESS",
             "LOCATION_BASED_ITEM",
             "MEDIA_TITLE",
             "OFFLINE_PRODUCT",
@@ -3043,6 +3046,7 @@
             "industries",
             "instagram_hashtags",
             "instagram_positions",
+            "instream_video_skippable_excluded",
             "instream_video_sponsorship_placements",
             "interest_defaults_source",
             "interested_in",
@@ -3168,6 +3172,7 @@
             "industries",
             "instagram_hashtags",
             "instagram_positions",
+            "instream_video_skippable_excluded",
             "instream_video_sponsorship_placements",
             "interest_defaults_source",
             "interested_in",
@@ -3304,6 +3309,7 @@
             "industries",
             "instagram_hashtags",
             "instagram_positions",
+            "instream_video_skippable_excluded",
             "instream_video_sponsorship_placements",
             "interest_defaults_source",
             "interested_in",
@@ -3406,6 +3412,7 @@
             "POST_ENGAGEMENT",
             "PRODUCT_CATALOG_SALES",
             "REACH",
+            "STORE_VISITS",
             "VIDEO_VIEWS"
         ]
     },
@@ -3904,6 +3911,7 @@
             "POST_ENGAGEMENT",
             "PRODUCT_CATALOG_SALES",
             "REACH",
+            "STORE_VISITS",
             "VIDEO_VIEWS"
         ]
     },
@@ -4130,6 +4138,7 @@
             "28d_view",
             "7d_click",
             "7d_view",
+            "dda",
             "default"
         ]
     },
@@ -4253,6 +4262,7 @@
             "28d_view",
             "7d_click",
             "7d_view",
+            "dda",
             "default"
         ]
     },
@@ -4394,6 +4404,7 @@
             "INSTANT_ARTICLE_RECIRCULATION_AD",
             "INSTANT_ARTICLE_STANDARD",
             "INSTREAM_VIDEO_DESKTOP",
+            "INSTREAM_VIDEO_IMAGE",
             "INSTREAM_VIDEO_MOBILE",
             "JOB_BROWSER_DESKTOP",
             "JOB_BROWSER_MOBILE",
@@ -4410,6 +4421,7 @@
             "RIGHT_COLUMN_STANDARD",
             "SUGGESTED_VIDEO_DESKTOP",
             "SUGGESTED_VIDEO_MOBILE",
+            "WATCH_FEED_HOME",
             "WATCH_FEED_MOBILE"
         ]
     },
@@ -4523,6 +4535,7 @@
             "28d_view",
             "7d_click",
             "7d_view",
+            "dda",
             "default"
         ]
     },
@@ -4653,6 +4666,7 @@
             "INSTANT_ARTICLE_RECIRCULATION_AD",
             "INSTANT_ARTICLE_STANDARD",
             "INSTREAM_VIDEO_DESKTOP",
+            "INSTREAM_VIDEO_IMAGE",
             "INSTREAM_VIDEO_MOBILE",
             "JOB_BROWSER_DESKTOP",
             "JOB_BROWSER_MOBILE",
@@ -4669,6 +4683,7 @@
             "RIGHT_COLUMN_STANDARD",
             "SUGGESTED_VIDEO_DESKTOP",
             "SUGGESTED_VIDEO_MOBILE",
+            "WATCH_FEED_HOME",
             "WATCH_FEED_MOBILE"
         ]
     },
@@ -4694,6 +4709,7 @@
         "node": "AdNetworkAnalyticsSyncQueryResult",
         "field_or_param": "breakdowns",
         "values": [
+            "AD_SERVER_CAMPAIGN_ID",
             "AD_SPACE",
             "AGE",
             "APP",
@@ -5014,6 +5030,23 @@
         ]
     },
     {
+        "name": "albumreactions_type_enum_param",
+        "node": "Profile",
+        "field_or_param": "type",
+        "values": [
+            "ANGRY",
+            "CARE",
+            "HAHA",
+            "LIKE",
+            "LOVE",
+            "NONE",
+            "PRIDE",
+            "SAD",
+            "THANKFUL",
+            "WOW"
+        ]
+    },
+    {
         "name": "application_an_platforms",
         "node": "Application",
         "field_or_param": "an_platforms",
@@ -5066,6 +5099,7 @@
         "node": "AdNetworkAnalyticsSyncQueryResult",
         "field_or_param": "breakdowns",
         "values": [
+            "AD_SERVER_CAMPAIGN_ID",
             "AD_SPACE",
             "AGE",
             "APP",
@@ -5451,6 +5485,7 @@
         "node": "AdNetworkAnalyticsSyncQueryResult",
         "field_or_param": "breakdowns",
         "values": [
+            "AD_SERVER_CAMPAIGN_ID",
             "AD_SPACE",
             "AGE",
             "APP",
@@ -5525,6 +5560,18 @@
         "values": [
             "LAST_FIRED_TIME",
             "NAME"
+        ]
+    },
+    {
+        "name": "businessagreement_request_status",
+        "node": "BusinessAgreement",
+        "field_or_param": "request_status",
+        "values": [
+            "APPROVE",
+            "DECLINE",
+            "EXPIRED",
+            "IN_PROGRESS",
+            "PENDING"
         ]
     },
     {
@@ -5614,6 +5661,7 @@
         "values": [
             "ADMIN",
             "ADS_RIGHTS_REVIEWER",
+            "DEVELOPER",
             "EMPLOYEE",
             "FINANCE_ANALYST",
             "FINANCE_EDITOR"
@@ -5740,6 +5788,7 @@
             "CONTENT_VIEW",
             "CUSTOMIZE_PRODUCT",
             "DONATE",
+            "FACEBOOK_SELECTED",
             "FIND_LOCATION",
             "INITIATED_CHECKOUT",
             "LEAD",
@@ -5783,6 +5832,7 @@
             "INSTAGRAM_STORY",
             "INSTANT_ARTICLE_STANDARD",
             "INSTREAM_VIDEO_DESKTOP",
+            "INSTREAM_VIDEO_IMAGE",
             "INSTREAM_VIDEO_MOBILE",
             "MESSENGER_MOBILE_INBOX_MEDIA",
             "MESSENGER_MOBILE_STORY_MEDIA",
@@ -5798,6 +5848,18 @@
     {
         "name": "businessinitiated_audience_sharing_requests_request_status_enum_param",
         "node": "BusinessAssetSharingAgreement",
+        "field_or_param": "request_status",
+        "values": [
+            "APPROVE",
+            "DECLINE",
+            "EXPIRED",
+            "IN_PROGRESS",
+            "PENDING"
+        ]
+    },
+    {
+        "name": "businessinitiated_sharing_agreements_request_status_enum_param",
+        "node": "BusinessAgreement",
         "field_or_param": "request_status",
         "values": [
             "APPROVE",
@@ -5958,12 +6020,25 @@
         ]
     },
     {
+        "name": "businessreceived_sharing_agreements_request_status_enum_param",
+        "node": "BusinessAgreement",
+        "field_or_param": "request_status",
+        "values": [
+            "APPROVE",
+            "DECLINE",
+            "EXPIRED",
+            "IN_PROGRESS",
+            "PENDING"
+        ]
+    },
+    {
         "name": "businessrolerequest_role",
         "node": "BusinessRoleRequest",
         "field_or_param": "role",
         "values": [
             "ADMIN",
             "ADS_RIGHTS_REVIEWER",
+            "DEVELOPER",
             "EMPLOYEE",
             "FINANCE_ANALYST",
             "FINANCE_EDITOR"
@@ -5976,6 +6051,7 @@
         "values": [
             "ADMIN",
             "ADS_RIGHTS_REVIEWER",
+            "DEVELOPER",
             "EMPLOYEE",
             "FINANCE_ANALYST",
             "FINANCE_EDITOR"
@@ -6216,6 +6292,7 @@
         "values": [
             "ADMIN",
             "ADS_RIGHTS_REVIEWER",
+            "DEVELOPER",
             "EMPLOYEE",
             "FINANCE_ANALYST",
             "FINANCE_EDITOR"
@@ -6428,6 +6505,7 @@
             "INSTAGRAM_STORY",
             "INSTANT_ARTICLE_STANDARD",
             "INSTREAM_VIDEO_DESKTOP",
+            "INSTREAM_VIDEO_IMAGE",
             "INSTREAM_VIDEO_MOBILE",
             "MESSENGER_MOBILE_INBOX_MEDIA",
             "MESSENGER_MOBILE_STORY_MEDIA",
@@ -6487,6 +6565,7 @@
         "field_or_param": "type",
         "values": [
             "ANGRY",
+            "CARE",
             "HAHA",
             "LIKE",
             "LOVE",
@@ -6498,10 +6577,61 @@
         ]
     },
     {
+        "name": "commercemerchantsettings_merchant_status",
+        "node": "CommerceMerchantSettings",
+        "field_or_param": "merchant_status",
+        "values": [
+            "ENABLED",
+            "EXTERNALLY_DISABLED"
+        ]
+    },
+    {
+        "name": "commercemerchantsettingsreturns_statuses_enum_param",
+        "node": "CommerceReturn",
+        "field_or_param": "statuses",
+        "values": [
+            "APPROVED",
+            "DISAPPROVED",
+            "MERCHANT_MARKED_COMPLETED",
+            "REFUNDED",
+            "REQUESTED"
+        ]
+    },
+    {
+        "name": "commerceorderrefunds_reason_code_enum_param",
+        "node": "CommerceOrder",
+        "field_or_param": "reason_code",
+        "values": [
+            "BUYERS_REMORSE",
+            "DAMAGED_GOODS",
+            "NOT_AS_DESCRIBED",
+            "QUALITY_ISSUE",
+            "REFUND_COMPROMISED",
+            "REFUND_FOR_RETURN",
+            "REFUND_REASON_OTHER",
+            "REFUND_SFI_FAKE",
+            "REFUND_SFI_REAL",
+            "WRONG_ITEM"
+        ]
+    },
+    {
+        "name": "commerceorderreturns_statuses_enum_param",
+        "node": "CommerceReturn",
+        "field_or_param": "statuses",
+        "values": [
+            "APPROVED",
+            "DISAPPROVED",
+            "MERCHANT_MARKED_COMPLETED",
+            "REFUNDED",
+            "REQUESTED"
+        ]
+    },
+    {
         "name": "cpasparentcatalogsettings_attribution_windows",
         "node": "CPASParentCatalogSettings",
         "field_or_param": "attribution_windows",
         "values": [
+            "DDA",
             "DEFAULT",
             "X1D_CLICK",
             "X1D_VIEW",
@@ -6536,6 +6666,7 @@
             "FLIGHT",
             "HOME_LISTING",
             "HOTEL",
+            "LOCAL_SERVICE_BUSINESS",
             "LOCATION_BASED_ITEM",
             "MEDIA_TITLE",
             "OFFLINE_PRODUCT",
@@ -7311,6 +7442,7 @@
         "field_or_param": "type",
         "values": [
             "ANGRY",
+            "CARE",
             "HAHA",
             "LIKE",
             "LOVE",
@@ -7440,6 +7572,7 @@
         "field_or_param": "type",
         "values": [
             "ANGRY",
+            "CARE",
             "HAHA",
             "LIKE",
             "LOVE",
@@ -7726,49 +7859,6 @@
         ]
     },
     {
-        "name": "opengraphobjectcomments_filter_enum_param",
-        "node": "Comment",
-        "field_or_param": "filter",
-        "values": [
-            "stream",
-            "toplevel"
-        ]
-    },
-    {
-        "name": "opengraphobjectcomments_live_filter_enum_param",
-        "node": "Comment",
-        "field_or_param": "live_filter",
-        "values": [
-            "filter_low_quality",
-            "no_filter"
-        ]
-    },
-    {
-        "name": "opengraphobjectcomments_order_enum_param",
-        "node": "Comment",
-        "field_or_param": "order",
-        "values": [
-            "chronological",
-            "reverse_chronological"
-        ]
-    },
-    {
-        "name": "opengraphobjectreactions_type_enum_param",
-        "node": "Profile",
-        "field_or_param": "type",
-        "values": [
-            "ANGRY",
-            "HAHA",
-            "LIKE",
-            "LOVE",
-            "NONE",
-            "PRIDE",
-            "SAD",
-            "THANKFUL",
-            "WOW"
-        ]
-    },
-    {
         "name": "page_attire",
         "node": "Page",
         "field_or_param": "attire",
@@ -7914,6 +8004,7 @@
             "BECOME_A_VOLUNTEER",
             "EMAIL",
             "FACEBOOK_APP",
+            "FOLLOW",
             "MESSENGER",
             "MINI_SHOP",
             "NONE",
@@ -7931,6 +8022,7 @@
             "BECOME_A_VOLUNTEER",
             "EMAIL",
             "FACEBOOK_APP",
+            "FOLLOW",
             "MESSENGER",
             "MINI_SHOP",
             "NONE",
@@ -7953,6 +8045,7 @@
             "CONTACT_US",
             "DONATE_NOW",
             "EMAIL",
+            "FOLLOW_PAGE",
             "GET_DIRECTIONS",
             "GET_OFFER",
             "GET_OFFER_VIEW",
@@ -7962,6 +8055,7 @@
             "LOCAL_DEV_PLATFORM",
             "MESSAGE",
             "OPEN_APP",
+            "ORDER_FOOD",
             "PLAY_MUSIC",
             "PLAY_NOW",
             "PURCHASE_GIFT_CARDS",
@@ -7984,10 +8078,35 @@
             "BECOME_A_VOLUNTEER",
             "BECOME_SUPPORTER",
             "EMAIL",
+            "FOLLOW",
             "MESSENGER",
             "NONE",
             "SHOP_ON_FACEBOOK",
             "WEBSITE"
+        ]
+    },
+    {
+        "name": "pagecommerce_orders_filters_enum_param",
+        "node": "CommerceOrder",
+        "field_or_param": "filters",
+        "values": [
+            "HAS_CANCELLATIONS",
+            "HAS_FULFILLMENTS",
+            "HAS_REFUNDS",
+            "NO_CANCELLATIONS",
+            "NO_REFUNDS",
+            "NO_SHIPMENTS"
+        ]
+    },
+    {
+        "name": "pagecommerce_orders_state_enum_param",
+        "node": "CommerceOrder",
+        "field_or_param": "state",
+        "values": [
+            "COMPLETED",
+            "CREATED",
+            "FB_PROCESSING",
+            "IN_PROGRESS"
         ]
     },
     {
@@ -8644,6 +8763,7 @@
         "field_or_param": "type",
         "values": [
             "ANGRY",
+            "CARE",
             "HAHA",
             "LIKE",
             "LOVE",
@@ -8710,6 +8830,7 @@
             "messaging_appointments",
             "messaging_checkout_updates",
             "messaging_direct_sends",
+            "messaging_fblogin_account_linking",
             "messaging_game_plays",
             "messaging_handovers",
             "messaging_optins",
@@ -9266,6 +9387,7 @@
             "FIND_A_GROUP",
             "FIND_YOUR_GROUPS",
             "FOLLOW_NEWS_STORYLINE",
+            "FOLLOW_PAGE",
             "FOLLOW_USER",
             "GET_DIRECTIONS",
             "GET_OFFER",
@@ -9314,6 +9436,7 @@
         "field_or_param": "type",
         "values": [
             "ANGRY",
+            "CARE",
             "HAHA",
             "LIKE",
             "LOVE",

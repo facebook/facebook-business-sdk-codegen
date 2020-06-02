@@ -100,6 +100,12 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "likes",
+            "return": "Profile",
+            "params": []
+        },
+        {
             "method": "POST",
             "endpoint": "likes",
             "return": "Album",
@@ -413,6 +419,18 @@
                     "name": "type",
                     "required": false,
                     "type": "albumpicture_type_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "reactions",
+            "return": "Profile",
+            "params": [
+                {
+                    "name": "type",
+                    "required": false,
+                    "type": "albumreactions_type_enum_param"
                 }
             ]
         },

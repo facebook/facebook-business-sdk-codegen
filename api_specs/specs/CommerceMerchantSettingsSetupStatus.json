@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "deals_setup",
+            "type": "string"
+        },
+        {
+            "name": "marketplace_approval_status",
+            "type": "string"
+        },
+        {
+            "name": "marketplace_approval_status_details",
+            "type": "Object"
+        },
+        {
+            "name": "payment_setup",
+            "type": "string"
+        },
+        {
+            "name": "shop_setup",
+            "type": "string"
+        }
+    ]
+}

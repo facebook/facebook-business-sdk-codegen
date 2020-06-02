@@ -508,6 +508,18 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "onsite_commerce_merchant",
+            "return": "ProductCatalog",
+            "params": [
+                {
+                    "name": "onsite_commerce_merchant",
+                    "required": true,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "pricing_variables_batch",
             "return": "ProductCatalogPricingVariablesBatch",
@@ -1312,6 +1324,10 @@
         {
             "name": "business",
             "type": "Business"
+        },
+        {
+            "name": "commerce_merchant_settings",
+            "type": "CommerceMerchantSettings"
         },
         {
             "name": "da_display_settings",

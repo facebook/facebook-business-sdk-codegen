@@ -567,6 +567,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "commerce_merchant_settings",
+            "return": "CommerceMerchantSettings",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "content_delivery_report",
             "return": "ContentDeliveryReport",
             "params": [
@@ -771,6 +777,23 @@
                     "name": "request_status",
                     "required": false,
                     "type": "businessinitiated_audience_sharing_requests_request_status_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "initiated_sharing_agreements",
+            "return": "BusinessAgreement",
+            "params": [
+                {
+                    "name": "receiving_business_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "request_status",
+                    "required": false,
+                    "type": "businessinitiated_sharing_agreements_request_status_enum_param"
                 }
             ]
         },
@@ -1041,11 +1064,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "ig_password",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "page_id",
                     "required": true,
                     "type": "int"
@@ -1070,6 +1088,11 @@
             "return": "ProductCatalog",
             "params": [
                 {
+                    "name": "commerce_merchant_settings",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
                     "name": "da_display_settings",
                     "required": false,
                     "type": "Object"
@@ -1088,6 +1111,11 @@
                     "name": "name",
                     "required": true,
                     "type": "string"
+                },
+                {
+                    "name": "onsite_commerce_merchant",
+                    "required": false,
+                    "type": "Object"
                 },
                 {
                     "name": "store_catalog_settings",
@@ -1208,6 +1236,23 @@
                     "name": "request_status",
                     "required": false,
                     "type": "businessreceived_audience_sharing_requests_request_status_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "received_sharing_agreements",
+            "return": "BusinessAgreement",
+            "params": [
+                {
+                    "name": "request_status",
+                    "required": false,
+                    "type": "businessreceived_sharing_agreements_request_status_enum_param"
+                },
+                {
+                    "name": "requesting_business_id",
+                    "required": false,
+                    "type": "string"
                 }
             ]
         },

@@ -122,6 +122,22 @@
             "type": "string"
         },
         {
+            "name": "catalog_segment_value",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "catalog_segment_value_mobile_purchase_roas",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "catalog_segment_value_omni_purchase_roas",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "catalog_segment_value_website_purchase_roas",
+            "type": "list<AdsActionStats>"
+        },
+        {
             "name": "clicks",
             "type": "string"
         },

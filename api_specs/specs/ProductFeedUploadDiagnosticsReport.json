@@ -2,7 +2,7 @@
     "apis": [],
     "fields": [
         {
-            "name": "last_modified_time",
+            "name": "last_updated_time",
             "type": "string"
         },
         {

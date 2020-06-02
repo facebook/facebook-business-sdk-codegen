@@ -70,12 +70,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "prefills",
-            "return": "CustomAudiencePrefillState",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "sessions",
             "return": "CustomAudienceSession",
             "params": [

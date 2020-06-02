@@ -1,18 +1,6 @@
 {
     "apis": [
         {
-            "method": "DELETE",
-            "endpoint": "adlabels",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "adlabels",
-                    "required": true,
-                    "type": "list<Object>"
-                }
-            ]
-        },
-        {
             "method": "POST",
             "endpoint": "adlabels",
             "return": "AdCreative",
