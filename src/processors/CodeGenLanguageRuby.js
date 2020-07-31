@@ -170,7 +170,7 @@ const CodeGenLanguageRuby = {
     return APISpecs;
   },
   getTypeForRuby: getTypeForRuby,
-  keywords: ['class', 'begin', 'end', 'rescue', 'when', 'case', 'def', 'until'],
+  keywords: ['class', 'begin', 'end', 'rescue', 'when', 'case', 'def', 'until', 'do'],
 };
 
 export default CodeGenLanguageRuby;

@@ -55,7 +55,7 @@ const CodeGenLanguageNodeJs = {
     return APISpecs;
   },
 
-  keywords: ['try', 'private', 'public', 'new', 'default', 'class'],
+  keywords: ['try', 'private', 'public', 'new', 'default', 'class', 'do'],
 };
 
 export default CodeGenLanguageNodeJs;
