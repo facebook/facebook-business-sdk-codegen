@@ -1,0 +1,92 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdoptablePet",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "address",
+            "type": "Object"
+        },
+        {
+            "name": "adoptable_pet_id",
+            "type": "string"
+        },
+        {
+            "name": "adoption_application_form_url",
+            "type": "string"
+        },
+        {
+            "name": "age_bucket",
+            "type": "string"
+        },
+        {
+            "name": "animal_type",
+            "type": "string"
+        },
+        {
+            "name": "applinks",
+            "type": "CatalogItemAppLinks"
+        },
+        {
+            "name": "availability",
+            "type": "string"
+        },
+        {
+            "name": "breed",
+            "type": "string"
+        },
+        {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "gender",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "images",
+            "type": "list<string>"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "price",
+            "type": "string"
+        },
+        {
+            "name": "sanitized_images",
+            "type": "list<string>"
+        },
+        {
+            "name": "shelter_name",
+            "type": "string"
+        },
+        {
+            "name": "shelter_page_id",
+            "type": "Page"
+        },
+        {
+            "name": "size",
+            "type": "string"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        }
+    ]
+}

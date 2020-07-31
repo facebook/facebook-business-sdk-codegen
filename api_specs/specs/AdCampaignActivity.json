@@ -73,14 +73,6 @@
             "type": "AdCampaignActivity_billing_event_old"
         },
         {
-            "name": "brande_audience_id_new",
-            "type": "BrandAudience"
-        },
-        {
-            "name": "brande_audience_id_old",
-            "type": "BrandAudience"
-        },
-        {
             "name": "budget_limit_new",
             "type": "Object"
         },

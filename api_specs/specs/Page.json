@@ -2042,6 +2042,11 @@
             "return": "Page",
             "params": [
                 {
+                    "name": "api_version",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
                     "name": "custom_token",
                     "required": false,
                     "type": "string"
@@ -2297,11 +2302,6 @@
                     "type": "unsigned int"
                 },
                 {
-                    "name": "instagram_product_tags",
-                    "required": false,
-                    "type": "list<map>"
-                },
-                {
                     "name": "ios_bundle_id",
                     "required": false,
                     "type": "string"
@@ -2498,6 +2498,11 @@
             "endpoint": "picture",
             "return": "ProfilePictureSource",
             "params": [
+                {
+                    "name": "breaking_change",
+                    "required": false,
+                    "type": "pagepicture_breaking_change_enum_param"
+                },
                 {
                     "name": "height",
                     "required": false,
@@ -3237,6 +3242,11 @@
                     "type": "list<string>"
                 },
                 {
+                    "name": "creative_tools",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "crossposted_video_id",
                     "required": false,
                     "type": "string"
@@ -3593,6 +3603,11 @@
                 },
                 {
                     "name": "video_file_chunk",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "video_id_original",
                     "required": false,
                     "type": "string"
                 },

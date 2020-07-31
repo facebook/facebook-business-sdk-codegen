@@ -53,6 +53,11 @@
                     "type": "list<Object>"
                 },
                 {
+                    "name": "product_catalogs",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
                     "name": "product_sets",
                     "required": false,
                     "type": "list<Object>"

@@ -513,6 +513,11 @@
                     "type": "adcampaigngroup_special_ad_category"
                 },
                 {
+                    "name": "special_ad_category_country",
+                    "required": false,
+                    "type": "list<adcampaigngroup_special_ad_category_country>"
+                },
+                {
                     "name": "spend_cap",
                     "required": false,
                     "type": "unsigned int"
@@ -638,6 +643,10 @@
         {
             "name": "special_ad_category",
             "type": "string"
+        },
+        {
+            "name": "special_ad_category_country",
+            "type": "list<string>"
         },
         {
             "name": "spend_cap",

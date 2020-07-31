@@ -142,6 +142,21 @@
                     "type": "file"
                 },
                 {
+                    "name": "data_processing_options",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "data_processing_options_country",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "data_processing_options_state",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
                     "name": "device_token",
                     "required": false,
                     "type": "string"
@@ -1242,11 +1257,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "android_key_hash",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
                     "name": "android_key_hashes",
                     "required": false,
                     "type": "list<string>"
@@ -1332,11 +1342,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "configured_ios_sso",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "contact_email",
                     "required": false,
                     "type": "string"
@@ -1350,16 +1355,6 @@
                     "name": "ios_bundle_id",
                     "required": false,
                     "type": "list<string>"
-                },
-                {
-                    "name": "ipad_app_store_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "iphone_app_store_id",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "mobile_web_url",

@@ -717,6 +717,11 @@
                     "type": "Object"
                 },
                 {
+                    "name": "metadata",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "name",
                     "required": true,
                     "type": "string"
@@ -1275,7 +1280,13 @@
             "name": "#get",
             "method": "GET",
             "return": "ProductCatalog",
-            "params": []
+            "params": [
+                {
+                    "name": "segment_use_cases",
+                    "required": false,
+                    "type": "list<productcatalog_segment_use_cases>"
+                }
+            ]
         },
         {
             "name": "#update",

@@ -238,6 +238,10 @@
             "type": "list<string>"
         },
         {
+            "name": "instream_video_skippable_excluded",
+            "type": "bool"
+        },
+        {
             "name": "interested_in",
             "type": "list<unsigned int>"
         },

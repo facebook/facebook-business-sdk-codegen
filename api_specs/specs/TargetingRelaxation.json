@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "lookalike",
+            "type": "unsigned int"
+        }
+    ]
+}

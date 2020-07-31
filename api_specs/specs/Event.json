@@ -245,6 +245,14 @@
             "type": "int"
         },
         {
+            "name": "online_event_format",
+            "type": "Event_online_event_format"
+        },
+        {
+            "name": "online_event_third_party_url",
+            "type": "string"
+        },
+        {
             "name": "owner",
             "type": "Object"
         },

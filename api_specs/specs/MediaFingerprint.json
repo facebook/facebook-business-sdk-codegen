@@ -11,6 +11,33 @@
             "method": "GET",
             "return": "MediaFingerprint",
             "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "MediaFingerprint",
+            "params": [
+                {
+                    "name": "metadata",
+                    "required": false,
+                    "type": "list"
+                },
+                {
+                    "name": "source",
+                    "required": false,
+                    "type": "file"
+                },
+                {
+                    "name": "title",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "universal_content_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
         }
     ],
     "fields": [

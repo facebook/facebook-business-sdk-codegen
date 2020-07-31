@@ -21,6 +21,10 @@
             "type": "string"
         },
         {
+            "name": "note_label",
+            "type": "string"
+        },
+        {
             "name": "user",
             "type": "User"
         }

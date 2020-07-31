@@ -26,6 +26,11 @@
                     "type": "adaccountactivities_category_enum_param"
                 },
                 {
+                    "name": "data_source",
+                    "required": false,
+                    "type": "adaccountactivities_data_source_enum_param"
+                },
+                {
                     "name": "extra_oids",
                     "required": false,
                     "type": "list<string>"
@@ -1218,6 +1223,11 @@
                     "type": "adaccountadvideos_content_category_enum_param"
                 },
                 {
+                    "name": "creative_tools",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "description",
                     "required": false,
                     "type": "string"
@@ -1479,6 +1489,11 @@
                 },
                 {
                     "name": "video_file_chunk",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "video_id_original",
                     "required": false,
                     "type": "string"
                 },
@@ -1819,6 +1834,11 @@
                     "name": "special_ad_categories",
                     "required": true,
                     "type": "list<adaccountcampaigns_special_ad_categories_enum_param>"
+                },
+                {
+                    "name": "special_ad_category_country",
+                    "required": false,
+                    "type": "list<adaccountcampaigns_special_ad_category_country_enum_param>"
                 },
                 {
                     "name": "spend_cap",

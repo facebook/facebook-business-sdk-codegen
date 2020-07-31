@@ -961,12 +961,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "friendlists",
-            "return": "FriendList",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "friends",
             "return": "User",
             "params": [
@@ -1422,6 +1416,18 @@
         },
         {
             "method": "GET",
+            "endpoint": "meeting_link",
+            "return": "WorkMeetingLink",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "meeting_link",
+            "return": "WorkMeetingLink",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "music",
             "return": "Page",
             "params": [
@@ -1799,6 +1805,11 @@
             "return": "ProfilePictureSource",
             "params": [
                 {
+                    "name": "breaking_change",
+                    "required": false,
+                    "type": "userpicture_breaking_change_enum_param"
+                },
+                {
                     "name": "height",
                     "required": false,
                     "type": "int"
@@ -1941,6 +1952,11 @@
                     "name": "content_category",
                     "required": false,
                     "type": "uservideos_content_category_enum_param"
+                },
+                {
+                    "name": "creative_tools",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "description",
@@ -2229,6 +2245,11 @@
                 },
                 {
                     "name": "video_file_chunk",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "video_id_original",
                     "required": false,
                     "type": "string"
                 },

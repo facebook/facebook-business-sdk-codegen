@@ -1,0 +1,108 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "PaymentSubscription",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "amount",
+            "type": "string"
+        },
+        {
+            "name": "app_param_data",
+            "type": "string"
+        },
+        {
+            "name": "application",
+            "type": "Profile"
+        },
+        {
+            "name": "billing_period",
+            "type": "string"
+        },
+        {
+            "name": "canceled_reason",
+            "type": "string"
+        },
+        {
+            "name": "created_time",
+            "type": "datetime"
+        },
+        {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "last_payment",
+            "type": "string"
+        },
+        {
+            "name": "next_bill_time",
+            "type": "datetime"
+        },
+        {
+            "name": "next_period_amount",
+            "type": "string"
+        },
+        {
+            "name": "next_period_currency",
+            "type": "string"
+        },
+        {
+            "name": "next_period_product",
+            "type": "string"
+        },
+        {
+            "name": "payment_status",
+            "type": "string"
+        },
+        {
+            "name": "pending_cancel",
+            "type": "bool"
+        },
+        {
+            "name": "period_start_time",
+            "type": "datetime"
+        },
+        {
+            "name": "product",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "test",
+            "type": "unsigned int"
+        },
+        {
+            "name": "trial_amount",
+            "type": "string"
+        },
+        {
+            "name": "trial_currency",
+            "type": "string"
+        },
+        {
+            "name": "trial_expiry_time",
+            "type": "datetime"
+        },
+        {
+            "name": "updated_time",
+            "type": "datetime"
+        },
+        {
+            "name": "user",
+            "type": "Profile"
+        }
+    ]
+}

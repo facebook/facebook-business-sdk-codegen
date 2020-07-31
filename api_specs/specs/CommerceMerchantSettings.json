@@ -93,6 +93,23 @@
             "params": []
         },
         {
+            "method": "POST",
+            "endpoint": "whatsapp_channel",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "op",
+                    "required": true,
+                    "type": "commercemerchantsettingswhatsapp_channel_op_enum_param"
+                },
+                {
+                    "name": "whatsapp_business_accounts",
+                    "required": true,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
             "name": "#get",
             "method": "GET",
             "return": "CommerceMerchantSettings",
@@ -215,6 +232,10 @@
         {
             "name": "terms_url_by_locale",
             "type": "map<string, string>"
+        },
+        {
+            "name": "whatsapp_channel",
+            "type": "Object"
         }
     ]
 }

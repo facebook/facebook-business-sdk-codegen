@@ -10,7 +10,15 @@
             "type": "map<string, string>"
         },
         {
+            "name": "ads_conversion_experiences",
+            "type": "map<string, string>"
+        },
+        {
             "name": "b2c",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "b2c_commerce_unified",
             "type": "map<string, string>"
         },
         {
@@ -19,6 +27,10 @@
         },
         {
             "name": "city_community",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "commerce",
             "type": "map<string, string>"
         },
         {
@@ -31,6 +43,10 @@
         },
         {
             "name": "dpa",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "dri_copyright",
             "type": "map<string, string>"
         },
         {

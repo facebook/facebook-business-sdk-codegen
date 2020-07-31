@@ -159,6 +159,11 @@
                     "type": "Object"
                 },
                 {
+                    "name": "metadata",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "name",
                     "required": false,
                     "type": "string"
@@ -178,6 +183,14 @@
         {
             "name": "id",
             "type": "string"
+        },
+        {
+            "name": "latest_metadata",
+            "type": "ProductSetMetadata"
+        },
+        {
+            "name": "live_metadata",
+            "type": "ProductSetMetadata"
         },
         {
             "name": "name",

@@ -1,24 +1,5 @@
 {
-    "apis": [
-        {
-            "name": "#get",
-            "method": "GET",
-            "return": "PageChangeProposal",
-            "params": []
-        },
-        {
-            "name": "#update",
-            "method": "POST",
-            "return": "PageChangeProposal",
-            "params": [
-                {
-                    "name": "accept",
-                    "required": true,
-                    "type": "bool"
-                }
-            ]
-        }
-    ],
+    "apis": [],
     "fields": [
         {
             "name": "acceptance_status",

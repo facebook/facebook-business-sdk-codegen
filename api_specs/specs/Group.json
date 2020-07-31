@@ -1206,6 +1206,11 @@
             "return": "ProfilePictureSource",
             "params": [
                 {
+                    "name": "breaking_change",
+                    "required": false,
+                    "type": "grouppicture_breaking_change_enum_param"
+                },
+                {
                     "name": "height",
                     "required": false,
                     "type": "int"
@@ -1318,6 +1323,11 @@
                     "name": "content_category",
                     "required": false,
                     "type": "groupvideos_content_category_enum_param"
+                },
+                {
+                    "name": "creative_tools",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "description",
@@ -1591,6 +1601,11 @@
                 },
                 {
                     "name": "video_file_chunk",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "video_id_original",
                     "required": false,
                     "type": "string"
                 },

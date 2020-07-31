@@ -2,15 +2,15 @@
     "apis": [],
     "fields": [
         {
-            "name": "id",
+            "name": "cover_image_url",
             "type": "string"
         },
         {
-            "name": "name",
+            "name": "description",
             "type": "string"
         },
         {
-            "name": "source_type",
+            "name": "integrity_review_status",
             "type": "string"
         }
     ]
