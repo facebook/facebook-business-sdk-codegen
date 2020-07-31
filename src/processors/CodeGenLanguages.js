@@ -147,7 +147,7 @@ const CodeGenLanguages = {
       generateFieldEnumReferences(APISpecs, enumMetadataMap);
       return APISpecs;
     },
-    keywords: ['try', 'default', 'class', 'global', 'in', 'from', 'with'],
+    keywords: ['try', 'default', 'class', 'global', 'in', 'from', 'with', 'as', 'is'],
   },
   java: codegenLanguageJava,
   ruby: codegenLanguageRuby,
