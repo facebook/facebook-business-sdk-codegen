@@ -31,12 +31,6 @@
             "params": []
         },
         {
-            "method": "GET",
-            "endpoint": "updated_by",
-            "return": "User",
-            "params": []
-        },
-        {
             "name": "#get",
             "method": "GET",
             "return": "SystemUser",

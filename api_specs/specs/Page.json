@@ -1572,11 +1572,6 @@
                     "type": "bool"
                 },
                 {
-                    "name": "save_vod",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "schedule_custom_profile_image",
                     "required": false,
                     "type": "file"
@@ -1700,6 +1695,11 @@
                     "name": "phone",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "pickup_options",
+                    "required": false,
+                    "type": "list<pagelocations_pickup_options_enum_param>"
                 },
                 {
                     "name": "place_topics",
@@ -2075,38 +2075,6 @@
                     "name": "verbose",
                     "required": false,
                     "type": "bool"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "page_about_story",
-            "return": "Page",
-            "params": [
-                {
-                    "name": "composed_text",
-                    "required": false,
-                    "type": "list<map>"
-                },
-                {
-                    "name": "cover_photo",
-                    "required": false,
-                    "type": "map"
-                },
-                {
-                    "name": "entity_map",
-                    "required": false,
-                    "type": "list<map>"
-                },
-                {
-                    "name": "is_published",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "title",
-                    "required": false,
-                    "type": "string"
                 }
             ]
         },
@@ -2654,12 +2622,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "place_topics",
-            "return": "PlaceTopic",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "posts",
             "return": "PagePost",
             "params": [
@@ -2820,18 +2782,6 @@
             ]
         },
         {
-            "method": "DELETE",
-            "endpoint": "tabs",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "tab",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "tabs",
             "return": "Tab",
@@ -2912,85 +2862,6 @@
                     "name": "recipient",
                     "required": true,
                     "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "DELETE",
-            "endpoint": "thread_settings",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "setting_type",
-                    "required": true,
-                    "type": "pagethread_settings_setting_type_enum_param"
-                },
-                {
-                    "name": "thread_state",
-                    "required": false,
-                    "type": "pagethread_settings_thread_state_enum_param"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "thread_settings",
-            "return": "Page",
-            "params": [
-                {
-                    "name": "account_linking_url",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "call_to_actions",
-                    "required": false,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "domain_action_type",
-                    "required": false,
-                    "type": "pagethread_settings_domain_action_type_enum_param"
-                },
-                {
-                    "name": "greeting",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "payment_dev_mode_action",
-                    "required": false,
-                    "type": "pagethread_settings_payment_dev_mode_action_enum_param"
-                },
-                {
-                    "name": "payment_privacy_url",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "payment_public_key",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "payment_testers",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "setting_type",
-                    "required": true,
-                    "type": "pagethread_settings_setting_type_enum_param"
-                },
-                {
-                    "name": "thread_state",
-                    "required": false,
-                    "type": "pagethread_settings_thread_state_enum_param"
-                },
-                {
-                    "name": "whitelisted_domains",
-                    "required": false,
-                    "type": "list<string>"
                 }
             ]
         },
@@ -3858,6 +3729,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "pickup_options",
+                    "required": false,
+                    "type": "list<page_pickup_options>"
+                },
+                {
                     "name": "plot_outline",
                     "required": false,
                     "type": "string"
@@ -4296,10 +4172,6 @@
             "type": "float"
         },
         {
-            "name": "page_about_story",
-            "type": "PageAboutStory"
-        },
-        {
             "name": "page_token",
             "type": "string"
         },
@@ -4330,6 +4202,10 @@
         {
             "name": "phone",
             "type": "string"
+        },
+        {
+            "name": "pickup_options",
+            "type": "list<string>"
         },
         {
             "name": "place_type",

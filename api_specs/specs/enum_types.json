@@ -1680,6 +1680,15 @@
         ]
     },
     {
+        "name": "adaccountad_place_page_sets_async_category_enum_param",
+        "node": "AdPlacePageSet",
+        "field_or_param": "category",
+        "values": [
+            "BOPUS",
+            "GENERAL"
+        ]
+    },
+    {
         "name": "adaccountad_place_page_sets_async_location_types_enum_param",
         "node": "AdPlacePageSet",
         "field_or_param": "location_types",
@@ -1699,6 +1708,15 @@
         ]
     },
     {
+        "name": "adaccountad_place_page_sets_category_enum_param",
+        "node": "AdPlacePageSet",
+        "field_or_param": "category",
+        "values": [
+            "BOPUS",
+            "GENERAL"
+        ]
+    },
+    {
         "name": "adaccountad_place_page_sets_location_types_enum_param",
         "node": "AdPlacePageSet",
         "field_or_param": "location_types",
@@ -1715,16 +1733,6 @@
             "CUSTOM_RADIUS",
             "MARKETING_AREA",
             "NONE"
-        ]
-    },
-    {
-        "name": "adaccountad_sets_delete_strategy_enum_param",
-        "node": "Object",
-        "field_or_param": "delete_strategy",
-        "values": [
-            "DELETE_ANY",
-            "DELETE_ARCHIVED_BEFORE",
-            "DELETE_OLDEST"
         ]
     },
     {
@@ -7722,23 +7730,6 @@
         ]
     },
     {
-        "name": "linkreactions_type_enum_param",
-        "node": "Profile",
-        "field_or_param": "type",
-        "values": [
-            "ANGRY",
-            "CARE",
-            "HAHA",
-            "LIKE",
-            "LOVE",
-            "NONE",
-            "PRIDE",
-            "SAD",
-            "THANKFUL",
-            "WOW"
-        ]
-    },
-    {
         "name": "liveencoder_cap_audio_codecs",
         "node": "LiveEncoder",
         "field_or_param": "cap_audio_codecs",
@@ -8215,6 +8206,16 @@
             "Vegan",
             "Vegetarian",
             "Vietnamese"
+        ]
+    },
+    {
+        "name": "page_pickup_options",
+        "node": "Page",
+        "field_or_param": "pickup_options",
+        "values": [
+            "CURBSIDE",
+            "IN_STORE",
+            "OTHER"
         ]
     },
     {
@@ -8755,6 +8756,16 @@
         ]
     },
     {
+        "name": "pagelocations_pickup_options_enum_param",
+        "node": "Page",
+        "field_or_param": "pickup_options",
+        "values": [
+            "CURBSIDE",
+            "IN_STORE",
+            "OTHER"
+        ]
+    },
+    {
         "name": "pagelocations_temporary_status_enum_param",
         "node": "Page",
         "field_or_param": "temporary_status",
@@ -9160,45 +9171,6 @@
             "video_text_question_responses",
             "videos",
             "website"
-        ]
-    },
-    {
-        "name": "pagethread_settings_domain_action_type_enum_param",
-        "node": "Page",
-        "field_or_param": "domain_action_type",
-        "values": [
-            "ADD",
-            "REMOVE"
-        ]
-    },
-    {
-        "name": "pagethread_settings_payment_dev_mode_action_enum_param",
-        "node": "Page",
-        "field_or_param": "payment_dev_mode_action",
-        "values": [
-            "ADD",
-            "REMOVE"
-        ]
-    },
-    {
-        "name": "pagethread_settings_setting_type_enum_param",
-        "node": "Page",
-        "field_or_param": "setting_type",
-        "values": [
-            "ACCOUNT_LINKING",
-            "CALL_TO_ACTIONS",
-            "DOMAIN_WHITELISTING",
-            "GREETING",
-            "PAYMENT"
-        ]
-    },
-    {
-        "name": "pagethread_settings_thread_state_enum_param",
-        "node": "Page",
-        "field_or_param": "thread_state",
-        "values": [
-            "EXISTING_THREAD",
-            "NEW_THREAD"
         ]
     },
     {
@@ -9772,7 +9744,8 @@
         "field_or_param": "permitted_tasks",
         "values": [
             "ADVERTISE",
-            "MANAGE"
+            "MANAGE",
+            "MANAGE_AR"
         ]
     },
     {
@@ -9781,7 +9754,8 @@
         "field_or_param": "tasks",
         "values": [
             "ADVERTISE",
-            "MANAGE"
+            "MANAGE",
+            "MANAGE_AR"
         ]
     },
     {
@@ -11281,26 +11255,6 @@
     },
     {
         "name": "userpicture_type_enum_param",
-        "node": "ProfilePictureSource",
-        "field_or_param": "type",
-        "values": [
-            "album",
-            "large",
-            "normal",
-            "small",
-            "square"
-        ]
-    },
-    {
-        "name": "usertaggablefriendpicture_breaking_change_enum_param",
-        "node": "ProfilePictureSource",
-        "field_or_param": "breaking_change",
-        "values": [
-            "PROFILE_PICTURE"
-        ]
-    },
-    {
-        "name": "usertaggablefriendpicture_type_enum_param",
         "node": "ProfilePictureSource",
         "field_or_param": "type",
         "values": [

@@ -65,12 +65,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "likes",
-            "return": "Profile",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "polls",
             "return": "VideoPoll",
             "params": []

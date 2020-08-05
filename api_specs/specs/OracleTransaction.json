@@ -7,18 +7,6 @@
             "params": []
         },
         {
-            "method": "GET",
-            "endpoint": "data",
-            "return": "AtlasURL",
-            "params": [
-                {
-                    "name": "redirect",
-                    "required": false,
-                    "type": "bool"
-                }
-            ]
-        },
-        {
             "name": "#get",
             "method": "GET",
             "return": "OracleTransaction",
@@ -45,10 +33,6 @@
         {
             "name": "billing_period",
             "type": "string"
-        },
-        {
-            "name": "campaign",
-            "type": "AtlasCampaign"
         },
         {
             "name": "cdn_download_uri",

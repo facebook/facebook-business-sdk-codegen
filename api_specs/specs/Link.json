@@ -80,18 +80,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "reactions",
-            "return": "Profile",
-            "params": [
-                {
-                    "name": "type",
-                    "required": false,
-                    "type": "linkreactions_type_enum_param"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "sharedposts",
             "return": "Post",
             "params": []

@@ -53,10 +53,6 @@
             "type": "string"
         },
         {
-            "name": "report_schedule",
-            "type": "Object"
-        },
-        {
             "name": "report_schedule_id",
             "type": "string"
         },

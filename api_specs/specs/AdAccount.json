@@ -74,6 +74,11 @@
             "return": "AdPlacePageSet",
             "params": [
                 {
+                    "name": "category",
+                    "required": false,
+                    "type": "adaccountad_place_page_sets_category_enum_param"
+                },
+                {
                     "name": "location_types",
                     "required": false,
                     "type": "list<adaccountad_place_page_sets_location_types_enum_param>"
@@ -101,6 +106,11 @@
             "return": "AdPlacePageSet",
             "params": [
                 {
+                    "name": "category",
+                    "required": false,
+                    "type": "adaccountad_place_page_sets_async_category_enum_param"
+                },
+                {
                     "name": "location_types",
                     "required": false,
                     "type": "list<adaccountad_place_page_sets_async_location_types_enum_param>"
@@ -119,33 +129,6 @@
                     "name": "targeted_area_type",
                     "required": false,
                     "type": "adaccountad_place_page_sets_async_targeted_area_type_enum_param"
-                }
-            ]
-        },
-        {
-            "method": "DELETE",
-            "endpoint": "ad_sets",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "before_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "delete_offset",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "delete_strategy",
-                    "required": true,
-                    "type": "adaccountad_sets_delete_strategy_enum_param"
-                },
-                {
-                    "name": "object_count",
-                    "required": false,
-                    "type": "int"
                 }
             ]
         },
@@ -521,12 +504,6 @@
                     "type": "file"
                 }
             ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "adreportschedules",
-            "return": "AdReportSchedule",
-            "params": []
         },
         {
             "method": "GET",

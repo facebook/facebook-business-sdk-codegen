@@ -89,11 +89,6 @@
                     "type": "bool"
                 },
                 {
-                    "name": "save_vod",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "schedule_custom_profile_image",
                     "required": false,
                     "type": "file"
