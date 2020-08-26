@@ -1,6 +1,18 @@
 {
     "apis": [
         {
+            "method": "POST",
+            "endpoint": "append_publisher_urls",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "publisher_urls",
+                    "required": true,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "paged_web_publishers",
             "return": "WebPublisher",

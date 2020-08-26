@@ -85,6 +85,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "category_specific_fields",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "checkout_url",
                     "required": false,
                     "type": "string"
@@ -146,6 +151,11 @@
                 },
                 {
                     "name": "expiration_date",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "fb_product_category",
                     "required": false,
                     "type": "string"
                 },
@@ -380,6 +390,10 @@
             "type": "string"
         },
         {
+            "name": "category_specific_fields",
+            "type": "CatalogSubVerticalList"
+        },
+        {
             "name": "color",
             "type": "string"
         },
@@ -425,6 +439,10 @@
         },
         {
             "name": "expiration_date",
+            "type": "string"
+        },
+        {
+            "name": "fb_product_category",
             "type": "string"
         },
         {

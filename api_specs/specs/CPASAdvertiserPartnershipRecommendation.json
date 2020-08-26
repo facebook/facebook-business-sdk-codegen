@@ -1,0 +1,48 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "CPASAdvertiserPartnershipRecommendation",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "advertiser_business_id",
+            "type": "string"
+        },
+        {
+            "name": "brand_business_id",
+            "type": "string"
+        },
+        {
+            "name": "brands",
+            "type": "list<string>"
+        },
+        {
+            "name": "countries",
+            "type": "list<string>"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "merchant_business_id",
+            "type": "string"
+        },
+        {
+            "name": "merchant_categories",
+            "type": "list<string>"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "status_reason",
+            "type": "string"
+        }
+    ]
+}

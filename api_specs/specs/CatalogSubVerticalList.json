@@ -1,0 +1,213 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "appliances",
+            "type": "Object"
+        },
+        {
+            "name": "baby_feeding",
+            "type": "Object"
+        },
+        {
+            "name": "baby_transport",
+            "type": "Object"
+        },
+        {
+            "name": "beauty",
+            "type": "Object"
+        },
+        {
+            "name": "bedding",
+            "type": "Object"
+        },
+        {
+            "name": "cameras",
+            "type": "Object"
+        },
+        {
+            "name": "cameras_and_photos",
+            "type": "Object"
+        },
+        {
+            "name": "cell_phones_and_smart_watches",
+            "type": "Object"
+        },
+        {
+            "name": "cleaning_supplies",
+            "type": "Object"
+        },
+        {
+            "name": "clo_offer",
+            "type": "Object"
+        },
+        {
+            "name": "clothing",
+            "type": "Object"
+        },
+        {
+            "name": "clothing_accessories",
+            "type": "Object"
+        },
+        {
+            "name": "clothing_group",
+            "type": "Object"
+        },
+        {
+            "name": "computer_components",
+            "type": "Object"
+        },
+        {
+            "name": "computers_and_tablets",
+            "type": "Object"
+        },
+        {
+            "name": "computers_laptops_and_tablets",
+            "type": "Object"
+        },
+        {
+            "name": "diapering_and_potty_training",
+            "type": "Object"
+        },
+        {
+            "name": "electronic_accessories_and_cables",
+            "type": "Object"
+        },
+        {
+            "name": "electronics_accessories",
+            "type": "Object"
+        },
+        {
+            "name": "furniture",
+            "type": "Object"
+        },
+        {
+            "name": "health",
+            "type": "Object"
+        },
+        {
+            "name": "home",
+            "type": "Object"
+        },
+        {
+            "name": "home_goods",
+            "type": "Object"
+        },
+        {
+            "name": "household_and_cleaning_supplies",
+            "type": "Object"
+        },
+        {
+            "name": "jewelry",
+            "type": "Object"
+        },
+        {
+            "name": "large_appliances",
+            "type": "Object"
+        },
+        {
+            "name": "loyalty_offer",
+            "type": "Object"
+        },
+        {
+            "name": "meetup_space",
+            "type": "Object"
+        },
+        {
+            "name": "nursery",
+            "type": "Object"
+        },
+        {
+            "name": "printers_and_scanners",
+            "type": "Object"
+        },
+        {
+            "name": "printers_scanners_and_fax_machines",
+            "type": "Object"
+        },
+        {
+            "name": "product_discount",
+            "type": "Object"
+        },
+        {
+            "name": "projectors",
+            "type": "Object"
+        },
+        {
+            "name": "shoes",
+            "type": "Object"
+        },
+        {
+            "name": "shoes_and_footwear",
+            "type": "Object"
+        },
+        {
+            "name": "software",
+            "type": "Object"
+        },
+        {
+            "name": "televisions_and_monitors",
+            "type": "Object"
+        },
+        {
+            "name": "test_child_sub_vertical",
+            "type": "Object"
+        },
+        {
+            "name": "test_grand_child_sub_vertical",
+            "type": "Object"
+        },
+        {
+            "name": "test_sub_vertical",
+            "type": "Object"
+        },
+        {
+            "name": "test_sub_vertical_alias",
+            "type": "Object"
+        },
+        {
+            "name": "test_sub_vertical_data_object",
+            "type": "Object"
+        },
+        {
+            "name": "third_party_electronics",
+            "type": "Object"
+        },
+        {
+            "name": "third_party_toys_and_games",
+            "type": "Object"
+        },
+        {
+            "name": "toys",
+            "type": "Object"
+        },
+        {
+            "name": "toys_and_games",
+            "type": "Object"
+        },
+        {
+            "name": "tvs_and_monitors",
+            "type": "Object"
+        },
+        {
+            "name": "vehicle_manufacturer",
+            "type": "Object"
+        },
+        {
+            "name": "video_game_consoles_and_video_games",
+            "type": "Object"
+        },
+        {
+            "name": "video_games_and_consoles",
+            "type": "Object"
+        },
+        {
+            "name": "video_projectors",
+            "type": "Object"
+        },
+        {
+            "name": "watches",
+            "type": "Object"
+        }
+    ]
+}

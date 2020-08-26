@@ -319,6 +319,10 @@
             "type": "string"
         },
         {
+            "name": "item_sub_type",
+            "type": "string"
+        },
+        {
             "name": "latest_upload",
             "type": "ProductFeedUpload"
         },

@@ -51,7 +51,7 @@
                 {
                     "name": "order_by",
                     "required": false,
-                    "type": "list"
+                    "type": "list<map>"
                 }
             ]
         },

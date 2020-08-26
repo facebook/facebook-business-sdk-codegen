@@ -10,6 +10,10 @@
             "type": "string"
         },
         {
+            "name": "external_url",
+            "type": "string"
+        },
+        {
             "name": "integrity_review_status",
             "type": "string"
         }

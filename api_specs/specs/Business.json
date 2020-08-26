@@ -550,6 +550,71 @@
         },
         {
             "method": "GET",
+            "endpoint": "collaborative_ads_collaboration_requests",
+            "return": "CPASCollaborationRequest",
+            "params": [
+                {
+                    "name": "status",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "collaborative_ads_collaboration_requests",
+            "return": "CPASCollaborationRequest",
+            "params": [
+                {
+                    "name": "brands",
+                    "required": true,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "contact_email",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "contact_first_name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "contact_last_name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "phone_number",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "receiver_business",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "requester_agency_or_brand",
+                    "required": true,
+                    "type": "businesscollaborative_ads_collaboration_requests_requester_agency_or_brand_enum_param"
+                },
+                {
+                    "name": "sender_client_business",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "collaborative_ads_suggested_partners",
+            "return": "CPASAdvertiserPartnershipRecommendation",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "commerce_merchant_settings",
             "return": "CommerceMerchantSettings",
             "params": []
@@ -588,6 +653,28 @@
                     "name": "summary",
                     "required": false,
                     "type": "bool"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "create_and_apply_publisher_block_list",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "is_auto_blocking_on",
+                    "required": true,
+                    "type": "bool"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "publisher_urls",
+                    "required": true,
+                    "type": "list<string>"
                 }
             ]
         },
@@ -737,6 +824,11 @@
             "endpoint": "managed_businesses",
             "return": "Business",
             "params": [
+                {
+                    "name": "child_business_external_id",
+                    "required": false,
+                    "type": "string"
+                },
                 {
                     "name": "existing_client_business_id",
                     "required": false,
@@ -900,6 +992,11 @@
             "return": "Business",
             "params": [
                 {
+                    "name": "child_business_external_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "name",
                     "required": true,
                     "type": "string"
@@ -993,6 +1090,16 @@
             "return": "ProductCatalog",
             "params": [
                 {
+                    "name": "catalog_segment_filter",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "catalog_segment_product_set_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "commerce_merchant_settings",
                     "required": false,
                     "type": "Object"
@@ -1021,6 +1128,11 @@
                     "name": "onsite_commerce_merchant",
                     "required": false,
                     "type": "Object"
+                },
+                {
+                    "name": "parent_catalog_id",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "store_catalog_settings",

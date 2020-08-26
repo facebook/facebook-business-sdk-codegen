@@ -14,6 +14,11 @@
                     "name": "merchant_order_reference",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "return_error_response",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         },
@@ -243,6 +248,10 @@
         },
         {
             "name": "is_group_buy",
+            "type": "bool"
+        },
+        {
+            "name": "is_test_order",
             "type": "bool"
         },
         {

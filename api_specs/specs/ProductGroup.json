@@ -122,6 +122,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "fb_product_category",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "gender",
                     "required": false,
                     "type": "productgroupproducts_gender_enum_param"

@@ -247,6 +247,11 @@
                     "type": "list<string>"
                 },
                 {
+                    "name": "master_ingest_stream_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "og_icon_id",
                     "required": false,
                     "type": "string"

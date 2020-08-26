@@ -367,6 +367,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "android_dialog_configs",
+            "return": "ApplicationDialogConfig",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "app_event_types",
             "return": "ApplicationAppEventTypes",
             "params": []
@@ -832,6 +838,18 @@
                     "name": "score",
                     "required": true,
                     "type": "unsigned int"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "live_videos",
+            "return": "LiveVideo",
+            "params": [
+                {
+                    "name": "broadcast_status",
+                    "required": false,
+                    "type": "applicationlive_videos_broadcast_status_enum_param"
                 }
             ]
         },

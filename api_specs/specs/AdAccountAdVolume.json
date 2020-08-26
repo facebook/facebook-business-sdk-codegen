@@ -6,12 +6,48 @@
             "type": "string"
         },
         {
+            "name": "actor_name",
+            "type": "string"
+        },
+        {
+            "name": "ad_limit_scope_business",
+            "type": "Business"
+        },
+        {
+            "name": "ad_limit_scope_business_manager_id",
+            "type": "string"
+        },
+        {
+            "name": "ad_limit_set_by_page_admin",
+            "type": "unsigned int"
+        },
+        {
             "name": "ads_running_or_in_review_count",
+            "type": "unsigned int"
+        },
+        {
+            "name": "ads_running_or_in_review_count_subject_to_limit_set_by_page",
             "type": "unsigned int"
         },
         {
             "name": "current_account_ads_running_or_in_review_count",
             "type": "unsigned int"
+        },
+        {
+            "name": "future_limit_activation_date",
+            "type": "string"
+        },
+        {
+            "name": "future_limit_on_ads_running_or_in_review",
+            "type": "unsigned int"
+        },
+        {
+            "name": "limit_on_ads_running_or_in_review",
+            "type": "unsigned int"
+        },
+        {
+            "name": "recommendations",
+            "type": "list<Object>"
         }
     ]
 }

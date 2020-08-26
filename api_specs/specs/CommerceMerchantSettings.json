@@ -126,6 +126,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "cta",
+                    "required": false,
+                    "type": "commercemerchantsettings_cta"
+                },
+                {
                     "name": "merchant_alert_email",
                     "required": false,
                     "type": "string"
@@ -159,6 +164,10 @@
         },
         {
             "name": "contact_email",
+            "type": "string"
+        },
+        {
+            "name": "cta",
             "type": "string"
         },
         {

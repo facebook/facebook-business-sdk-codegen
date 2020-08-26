@@ -1,0 +1,52 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "CPASCollaborationRequest",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "brands",
+            "type": "list<string>"
+        },
+        {
+            "name": "contact_email",
+            "type": "string"
+        },
+        {
+            "name": "contact_first_name",
+            "type": "string"
+        },
+        {
+            "name": "contact_last_name",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "phone_number",
+            "type": "string"
+        },
+        {
+            "name": "receiver_business",
+            "type": "Business"
+        },
+        {
+            "name": "requester_agency_or_brand",
+            "type": "string"
+        },
+        {
+            "name": "sender_client_business",
+            "type": "Business"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        }
+    ]
+}

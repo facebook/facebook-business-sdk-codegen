@@ -108,7 +108,7 @@
                 {
                     "name": "date_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 },
                 {
                     "name": "fb_conversion_event_id",

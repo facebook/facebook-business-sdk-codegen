@@ -301,6 +301,11 @@
             "return": "Business",
             "params": [
                 {
+                    "name": "child_business_external_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "email",
                     "required": false,
                     "type": "string"
@@ -1318,6 +1323,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "enable_backup_ingest",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "encoding_settings",
                     "required": false,
                     "type": "string"
@@ -1411,18 +1421,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "meeting_link",
-            "return": "WorkMeetingLink",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "meeting_link",
-            "return": "WorkMeetingLink",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "music",
             "return": "Page",
             "params": [
@@ -1479,6 +1477,12 @@
                     "type": "usernotifications_type_enum_param"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "owned_product_catalogs",
+            "return": "ProductCatalog",
+            "params": []
         },
         {
             "method": "DELETE",
@@ -2335,10 +2339,6 @@
             "type": "string"
         },
         {
-            "name": "can_review_measurement_request",
-            "type": "bool"
-        },
-        {
             "name": "cover",
             "type": "UserCoverPhoto"
         },
@@ -2399,15 +2399,7 @@
             "type": "list<string>"
         },
         {
-            "name": "is_famedeeplinkinguser",
-            "type": "bool"
-        },
-        {
             "name": "is_guest_user",
-            "type": "bool"
-        },
-        {
-            "name": "is_shared_login",
             "type": "bool"
         },
         {
@@ -2487,10 +2479,6 @@
             "type": "string"
         },
         {
-            "name": "security_settings",
-            "type": "SecuritySettings"
-        },
-        {
             "name": "shared_login_upgrade_required_by",
             "type": "datetime"
         },
@@ -2509,10 +2497,6 @@
         {
             "name": "supports_donate_button_in_live_video",
             "type": "bool"
-        },
-        {
-            "name": "test_group",
-            "type": "unsigned int"
         },
         {
             "name": "third_party_id",
@@ -2537,10 +2521,6 @@
         {
             "name": "video_upload_limits",
             "type": "VideoUploadLimits"
-        },
-        {
-            "name": "viewer_can_send_gift",
-            "type": "bool"
         },
         {
             "name": "website",

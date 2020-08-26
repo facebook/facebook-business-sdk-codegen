@@ -782,6 +782,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "enable_backup_ingest",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "encoding_settings",
                     "required": false,
                     "type": "string"

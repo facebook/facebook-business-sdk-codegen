@@ -552,6 +552,10 @@
             "type": "Place"
         },
         {
+            "name": "poll",
+            "type": "Object"
+        },
+        {
             "name": "privacy",
             "type": "Privacy"
         },

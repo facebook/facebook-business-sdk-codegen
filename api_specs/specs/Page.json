@@ -198,6 +198,23 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "business_data",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "data",
+                    "required": true,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "partner_agent",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "call_to_actions",
             "return": "PageCallToAction",
@@ -1510,6 +1527,11 @@
                     "name": "description",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "enable_backup_ingest",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "encoding_settings",

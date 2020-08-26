@@ -17,6 +17,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "denylist",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "hmac",
                     "required": false,
                     "type": "string"

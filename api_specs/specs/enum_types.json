@@ -1216,6 +1216,7 @@
             "PLATFORM",
             "PLATFORM_USERS",
             "SEED_LIST",
+            "SIGNAL_SOURCE",
             "SMART_AUDIENCE",
             "STORE_VISIT_EVENTS",
             "S_EXPR",
@@ -1856,6 +1857,7 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
+            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -1884,6 +1886,24 @@
             "ARCHIVED",
             "DELETED",
             "PAUSED"
+        ]
+    },
+    {
+        "name": "adaccountads_volume_recommendation_type_enum_param",
+        "node": "AdAccountAdVolume",
+        "field_or_param": "recommendation_type",
+        "values": [
+            "AGGREGATED_BID_LIMITED",
+            "AGGREGATED_BUDGET_LIMITED",
+            "AGGREGATED_COST_LIMITED",
+            "AUCTION_OVERLAP",
+            "CREATIVE_FATIGUE",
+            "FRAGMENTATION",
+            "LEARNING_LIMITED",
+            "TOP_ADSETS_WITH_ADS_UNDER_CAP",
+            "TOP_CAMPAIGNS_WITH_ADS_UNDER_CAP",
+            "UNECONOMICAL_ADS_THROTTLING",
+            "ZERO_IMPRESSION"
         ]
     },
     {
@@ -1939,6 +1959,7 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
+            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -2374,6 +2395,7 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
+            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -3037,6 +3059,7 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
+            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -3806,6 +3829,7 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
+            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -3974,6 +3998,7 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
+            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -4063,6 +4088,7 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
+            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -4162,6 +4188,7 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
+            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -4520,6 +4547,7 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
+            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -4546,6 +4574,7 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
+            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -4636,6 +4665,7 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
+            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -4761,6 +4791,7 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
+            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -4885,6 +4916,7 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
+            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -4996,6 +5028,7 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
+            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -5051,6 +5084,7 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
+            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -5157,6 +5191,7 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
+            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -5902,6 +5937,22 @@
         ]
     },
     {
+        "name": "applicationlive_videos_broadcast_status_enum_param",
+        "node": "LiveVideo",
+        "field_or_param": "broadcast_status",
+        "values": [
+            "live",
+            "live_stopped",
+            "processing",
+            "scheduled_canceled",
+            "scheduled_expired",
+            "scheduled_live",
+            "scheduled_unpublished",
+            "unpublished",
+            "vod"
+        ]
+    },
+    {
         "name": "applicationmobile_sdk_gk_platform_enum_param",
         "node": "MobileSdkGk",
         "field_or_param": "platform",
@@ -6198,6 +6249,10 @@
             "EMPLOYEE",
             "FINANCE_ANALYST",
             "FINANCE_EDITOR",
+            "FINANCE_EDIT_TASK",
+            "FINANCE_VIEW_TASK",
+            "MODERATE_TASK",
+            "OPERATE_TASK",
             "PARTNER_CENTER_ADMIN",
             "PARTNER_CENTER_ANALYST",
             "PARTNER_CENTER_EDUCATION",
@@ -6239,6 +6294,16 @@
             "PROFILE_PLUS_MODERATE",
             "READ_PAGE_MAILBOXES",
             "VIEW_MONETIZATION_INSIGHTS"
+        ]
+    },
+    {
+        "name": "businesscollaborative_ads_collaboration_requests_requester_agency_or_brand_enum_param",
+        "node": "CPASCollaborationRequest",
+        "field_or_param": "requester_agency_or_brand",
+        "values": [
+            "AGENCY",
+            "BRAND",
+            "MERCHANT"
         ]
     },
     {
@@ -6519,6 +6584,10 @@
             "EMPLOYEE",
             "FINANCE_ANALYST",
             "FINANCE_EDITOR",
+            "FINANCE_EDIT_TASK",
+            "FINANCE_VIEW_TASK",
+            "MODERATE_TASK",
+            "OPERATE_TASK",
             "PARTNER_CENTER_ADMIN",
             "PARTNER_CENTER_ANALYST",
             "PARTNER_CENTER_EDUCATION",
@@ -6537,6 +6606,10 @@
             "EMPLOYEE",
             "FINANCE_ANALYST",
             "FINANCE_EDITOR",
+            "FINANCE_EDIT_TASK",
+            "FINANCE_VIEW_TASK",
+            "MODERATE_TASK",
+            "OPERATE_TASK",
             "PARTNER_CENTER_ADMIN",
             "PARTNER_CENTER_ANALYST",
             "PARTNER_CENTER_EDUCATION",
@@ -6783,6 +6856,10 @@
             "EMPLOYEE",
             "FINANCE_ANALYST",
             "FINANCE_EDITOR",
+            "FINANCE_EDIT_TASK",
+            "FINANCE_VIEW_TASK",
+            "MODERATE_TASK",
+            "OPERATE_TASK",
             "PARTNER_CENTER_ADMIN",
             "PARTNER_CENTER_ANALYST",
             "PARTNER_CENTER_EDUCATION",
@@ -6846,6 +6923,15 @@
             "SAD",
             "THANKFUL",
             "WOW"
+        ]
+    },
+    {
+        "name": "commercemerchantsettings_cta",
+        "node": "CommerceMerchantSettings",
+        "field_or_param": "cta",
+        "values": [
+            "CONTACT_MERCHANT",
+            "OFFSITE_LINK"
         ]
     },
     {
@@ -7137,6 +7223,7 @@
             "WORK_EPHEMERAL",
             "WORK_FEEDBACK",
             "WORK_FOR_SALE",
+            "WORK_GARDEN",
             "WORK_LEARNING",
             "WORK_MENTORSHIP",
             "WORK_MULTI_COMPANY",
@@ -7280,6 +7367,7 @@
             "WORK_EPHEMERAL",
             "WORK_FEEDBACK",
             "WORK_FOR_SALE",
+            "WORK_GARDEN",
             "WORK_LEARNING",
             "WORK_MENTORSHIP",
             "WORK_MULTI_COMPANY",
@@ -8585,6 +8673,7 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
+            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -9043,6 +9132,7 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
+            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -9465,6 +9555,7 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
+            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -9587,6 +9678,7 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
+            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -9726,6 +9818,7 @@
             "COLLAB_ADS",
             "COLLAB_ADS_FOR_MARKETPLACE_PARTNER",
             "IG_SHOPPING",
+            "MARKETPLACE_SHOPS",
             "TEST"
         ]
     },
@@ -9785,6 +9878,39 @@
         ]
     },
     {
+        "name": "productcatalogitems_batch_item_sub_type_enum_param",
+        "node": "ProductCatalog",
+        "field_or_param": "item_sub_type",
+        "values": [
+            "APPLIANCES",
+            "BABY_FEEDING",
+            "BABY_TRANSPORT",
+            "BEAUTY",
+            "BEDDING",
+            "CAMERAS",
+            "CELL_PHONES_AND_SMART_WATCHES",
+            "CLEANING_SUPPLIES",
+            "CLOTHING",
+            "CLOTHING_ACCESSORIES",
+            "COMPUTERS_AND_TABLETS",
+            "DIAPERING_AND_POTTY_TRAINING",
+            "ELECTRONICS_ACCESSORIES",
+            "FURNITURE",
+            "HEALTH",
+            "HOME_GOODS",
+            "JEWELRY",
+            "NURSERY",
+            "PRINTERS_AND_SCANNERS",
+            "PROJECTORS",
+            "SHOES_AND_FOOTWEAR",
+            "SOFTWARE",
+            "TOYS",
+            "TVS_AND_MONITORS",
+            "VIDEO_GAME_CONSOLES_AND_VIDEO_GAMES",
+            "WATCHES"
+        ]
+    },
+    {
         "name": "productcatalogpricing_variables_batch_standard_enum_param",
         "node": "ProductCatalog",
         "field_or_param": "standard",
@@ -9838,6 +9964,39 @@
             "TRANSACTABLE_ITEMS",
             "VEHICLES",
             "VEHICLE_OFFER"
+        ]
+    },
+    {
+        "name": "productcatalogproduct_feeds_item_sub_type_enum_param",
+        "node": "ProductFeed",
+        "field_or_param": "item_sub_type",
+        "values": [
+            "APPLIANCES",
+            "BABY_FEEDING",
+            "BABY_TRANSPORT",
+            "BEAUTY",
+            "BEDDING",
+            "CAMERAS",
+            "CELL_PHONES_AND_SMART_WATCHES",
+            "CLEANING_SUPPLIES",
+            "CLOTHING",
+            "CLOTHING_ACCESSORIES",
+            "COMPUTERS_AND_TABLETS",
+            "DIAPERING_AND_POTTY_TRAINING",
+            "ELECTRONICS_ACCESSORIES",
+            "FURNITURE",
+            "HEALTH",
+            "HOME_GOODS",
+            "JEWELRY",
+            "NURSERY",
+            "PRINTERS_AND_SCANNERS",
+            "PROJECTORS",
+            "SHOES_AND_FOOTWEAR",
+            "SOFTWARE",
+            "TOYS",
+            "TVS_AND_MONITORS",
+            "VIDEO_GAME_CONSOLES_AND_VIDEO_GAMES",
+            "WATCHES"
         ]
     },
     {
@@ -11699,6 +11858,18 @@
             "lifetime",
             "month",
             "week"
+        ]
+    },
+    {
+        "name": "whatsappbusinessaccountassigned_users_tasks_enum_param",
+        "node": "WhatsAppBusinessAccount",
+        "field_or_param": "tasks",
+        "values": [
+            "DEVELOP",
+            "MANAGE",
+            "MANAGE_PHONE",
+            "MANAGE_TEMPLATES",
+            "VIEW_COST"
         ]
     },
     {

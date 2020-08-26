@@ -705,6 +705,11 @@
                     "type": "int"
                 },
                 {
+                    "name": "recommendation_type",
+                    "required": false,
+                    "type": "adaccountads_volume_recommendation_type_enum_param"
+                },
+                {
                     "name": "show_breakdown_by_actor",
                     "required": false,
                     "type": "bool"
@@ -1890,6 +1895,28 @@
                     "name": "summary",
                     "required": false,
                     "type": "bool"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "create_and_apply_publisher_block_list",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "is_auto_blocking_on",
+                    "required": true,
+                    "type": "bool"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "publisher_urls",
+                    "required": true,
+                    "type": "list<string>"
                 }
             ]
         },
