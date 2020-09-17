@@ -554,6 +554,10 @@
             "type": "string"
         },
         {
+            "name": "instream_eligibility",
+            "type": "string"
+        },
+        {
             "name": "is_app_share",
             "type": "bool"
         },

@@ -607,6 +607,23 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "extend_thread_control",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "duration",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "recipient",
+                    "required": true,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "feed",
             "return": "PagePost",
@@ -2524,6 +2541,11 @@
                     "name": "android_key_hash",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "burn_media_effect",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "caption",

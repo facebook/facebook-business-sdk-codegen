@@ -127,6 +127,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "click_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "consider_views",
                     "required": false,
                     "type": "bool"
@@ -185,6 +190,11 @@
                     "name": "install_referrer",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "install_timestamp",
+                    "required": false,
+                    "type": "unsigned int"
                 },
                 {
                     "name": "installer_package",
@@ -364,6 +374,28 @@
             "endpoint": "agencies",
             "return": "Business",
             "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "aggregate_revenue",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "ecpms",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "query_ids",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "request_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -644,6 +676,11 @@
                     "name": "checks",
                     "required": false,
                     "type": "list<string>"
+                },
+                {
+                    "name": "connection_method",
+                    "required": false,
+                    "type": "applicationda_checks_connection_method_enum_param"
                 }
             ]
         },
@@ -944,6 +981,11 @@
                     "name": "extinfo",
                     "required": false,
                     "type": "Object"
+                },
+                {
+                    "name": "os_version",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "platform",

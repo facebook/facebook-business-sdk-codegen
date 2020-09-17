@@ -13,6 +13,18 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "assigned_users",
+            "return": "AssignedUser",
+            "params": [
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "POST",
             "endpoint": "assigned_users",
             "return": "WhatsAppBusinessAccount",
@@ -148,6 +160,10 @@
         {
             "name": "on_behalf_of_business_info",
             "type": "Object"
+        },
+        {
+            "name": "primary_funding_id",
+            "type": "string"
         },
         {
             "name": "purchase_order_number",

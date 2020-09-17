@@ -131,6 +131,11 @@
                     "name": "thumbnail_width",
                     "required": false,
                     "type": "unsigned int"
+                },
+                {
+                    "name": "with_unified_spec",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         },

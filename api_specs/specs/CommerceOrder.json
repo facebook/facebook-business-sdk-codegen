@@ -69,6 +69,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "promotion_details",
+            "return": "CommercePromotionDetail",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "promotions",
             "return": "CommerceOrderReimbursement",
             "params": []

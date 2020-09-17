@@ -38,6 +38,11 @@
                     "name": "checks",
                     "required": false,
                     "type": "list<string>"
+                },
+                {
+                    "name": "connection_method",
+                    "required": false,
+                    "type": "adspixelda_checks_connection_method_enum_param"
                 }
             ]
         },

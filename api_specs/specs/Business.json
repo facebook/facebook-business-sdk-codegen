@@ -11,6 +11,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "fbe_external_business_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "scope",
                     "required": true,
                     "type": "list<Permission>"
@@ -336,6 +341,28 @@
             "params": []
         },
         {
+            "method": "POST",
+            "endpoint": "aggregate_revenue",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "ecpms",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "query_ids",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "request_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "an_placements",
             "return": "AdPlacement",
@@ -528,6 +555,12 @@
             "method": "GET",
             "endpoint": "client_product_catalogs",
             "return": "ProductCatalog",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "client_whatsapp_business_accounts",
+            "return": "WhatsAppBusinessAccount",
             "params": []
         },
         {
@@ -979,6 +1012,11 @@
             "endpoint": "owned_businesses",
             "return": "Business",
             "params": [
+                {
+                    "name": "child_business_external_id",
+                    "required": false,
+                    "type": "string"
+                },
                 {
                     "name": "client_user_id",
                     "required": false,

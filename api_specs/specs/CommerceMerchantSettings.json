@@ -88,6 +88,50 @@
         },
         {
             "method": "GET",
+            "endpoint": "shipping_profiles",
+            "return": "FixedCostShippingProfile",
+            "params": [
+                {
+                    "name": "reference_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "shipping_profiles",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "handling_time",
+                    "required": true,
+                    "type": "map"
+                },
+                {
+                    "name": "is_default_shipping_profile",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "reference_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "shipping_destinations",
+                    "required": true,
+                    "type": "list<map>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "tax_settings",
             "return": "CommerceMerchantTaxSettings",
             "params": []

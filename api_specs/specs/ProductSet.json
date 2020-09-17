@@ -167,6 +167,11 @@
                     "name": "name",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "retailer_id",
+                    "required": false,
+                    "type": "string"
                 }
             ]
         }
@@ -203,6 +208,10 @@
         {
             "name": "product_count",
             "type": "unsigned int"
+        },
+        {
+            "name": "retailer_id",
+            "type": "string"
         }
     ]
 }

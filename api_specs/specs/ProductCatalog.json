@@ -740,6 +740,11 @@
                     "name": "name",
                     "required": true,
                     "type": "string"
+                },
+                {
+                    "name": "retailer_id",
+                    "required": false,
+                    "type": "string"
                 }
             ]
         },

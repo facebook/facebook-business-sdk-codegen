@@ -1857,7 +1857,6 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
-            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -1959,7 +1958,6 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
-            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -2235,6 +2233,7 @@
             "VIDEO_COMMENT",
             "VIDEO_CREATIVE_EDITOR_AUTOGEN_AD_VIDEO",
             "VIDEO_SUPERRES",
+            "VU_GENERATED_VIDEO",
             "WOODHENGE",
             "WORK_KNOWLEDGE_VIDEO",
             "YOUR_DAY"
@@ -2395,7 +2394,6 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
-            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -3059,7 +3057,6 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
-            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -3829,7 +3826,6 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
-            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -3998,7 +3994,6 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
-            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -4088,7 +4083,6 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
-            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -4188,7 +4182,6 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
-            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -4547,7 +4540,6 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
-            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -4574,7 +4566,6 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
-            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -4665,7 +4656,6 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
-            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -4791,7 +4781,6 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
-            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -4916,7 +4905,6 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
-            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -5028,7 +5016,6 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
-            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -5084,7 +5071,6 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
-            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -5191,7 +5177,6 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
-            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -5304,6 +5289,7 @@
             "GENDER",
             "INSTANT_ARTICLE_ID",
             "INSTANT_ARTICLE_PAGE_ID",
+            "IS_DEAL_BACKFILL",
             "PLACEMENT",
             "PLACEMENT_NAME",
             "PLATFORM",
@@ -5390,7 +5376,9 @@
         "node": "AdsPixel",
         "field_or_param": "automatic_matching_fields",
         "values": [
+            "country",
             "ct",
+            "db",
             "em",
             "fn",
             "ge",
@@ -5430,6 +5418,17 @@
         ]
     },
     {
+        "name": "adspixelda_checks_connection_method_enum_param",
+        "node": "DACheck",
+        "field_or_param": "connection_method",
+        "values": [
+            "ALL",
+            "APP",
+            "BROWSER",
+            "SERVER"
+        ]
+    },
+    {
         "name": "adspixelstats_aggregation_enum_param",
         "node": "AdsPixelStatsResult",
         "field_or_param": "aggregation",
@@ -5460,6 +5459,7 @@
             "CONTINUOUS_LIFT_CONFIG",
             "GEO_LIFT",
             "LIFT",
+            "PRIVATE_LIFT",
             "SPLIT_TEST"
         ]
     },
@@ -5694,6 +5694,7 @@
             "GENDER",
             "INSTANT_ARTICLE_ID",
             "INSTANT_ARTICLE_PAGE_ID",
+            "IS_DEAL_BACKFILL",
             "PLACEMENT",
             "PLACEMENT_NAME",
             "PLATFORM",
@@ -5870,6 +5871,17 @@
         "values": [
             "CODELESS",
             "EYMT"
+        ]
+    },
+    {
+        "name": "applicationda_checks_connection_method_enum_param",
+        "node": "DACheck",
+        "field_or_param": "connection_method",
+        "values": [
+            "ALL",
+            "APP",
+            "BROWSER",
+            "SERVER"
         ]
     },
     {
@@ -6067,6 +6079,7 @@
             "CONTINUOUS_LIFT_CONFIG",
             "GEO_LIFT",
             "LIFT",
+            "PRIVATE_LIFT",
             "SPLIT_TEST"
         ]
     },
@@ -6099,6 +6112,7 @@
             "GENDER",
             "INSTANT_ARTICLE_ID",
             "INSTANT_ARTICLE_PAGE_ID",
+            "IS_DEAL_BACKFILL",
             "PLACEMENT",
             "PLACEMENT_NAME",
             "PLATFORM",
@@ -6206,6 +6220,7 @@
             "MANAGE",
             "MANAGE_JOBS",
             "MANAGE_LEADS",
+            "MESSAGING",
             "MODERATE",
             "MODERATE_COMMUNITY",
             "PAGES_MESSAGING",
@@ -6213,6 +6228,7 @@
             "PROFILE_PLUS_ADVERTISE",
             "PROFILE_PLUS_ANALYZE",
             "PROFILE_PLUS_CREATE_CONTENT",
+            "PROFILE_PLUS_LIVE_STREAM_MODERATION",
             "PROFILE_PLUS_MANAGE",
             "PROFILE_PLUS_MESSAGING",
             "PROFILE_PLUS_MODERATE",
@@ -6282,6 +6298,7 @@
             "MANAGE",
             "MANAGE_JOBS",
             "MANAGE_LEADS",
+            "MESSAGING",
             "MODERATE",
             "MODERATE_COMMUNITY",
             "PAGES_MESSAGING",
@@ -6289,6 +6306,7 @@
             "PROFILE_PLUS_ADVERTISE",
             "PROFILE_PLUS_ANALYZE",
             "PROFILE_PLUS_CREATE_CONTENT",
+            "PROFILE_PLUS_LIVE_STREAM_MODERATION",
             "PROFILE_PLUS_MANAGE",
             "PROFILE_PLUS_MESSAGING",
             "PROFILE_PLUS_MODERATE",
@@ -6454,6 +6472,7 @@
             "MANAGE",
             "MANAGE_JOBS",
             "MANAGE_LEADS",
+            "MESSAGING",
             "MODERATE",
             "MODERATE_COMMUNITY",
             "PAGES_MESSAGING",
@@ -6461,6 +6480,7 @@
             "PROFILE_PLUS_ADVERTISE",
             "PROFILE_PLUS_ANALYZE",
             "PROFILE_PLUS_CREATE_CONTENT",
+            "PROFILE_PLUS_LIVE_STREAM_MODERATION",
             "PROFILE_PLUS_MANAGE",
             "PROFILE_PLUS_MESSAGING",
             "PROFILE_PLUS_MODERATE",
@@ -7216,6 +7236,7 @@
             "STUDY_GROUP",
             "SUPPORT",
             "TEAMMATES",
+            "THEME",
             "TRAVEL_PLANNING",
             "WORK_ANNOUNCEMENT",
             "WORK_DEMO_GROUP",
@@ -7360,6 +7381,7 @@
             "STUDY_GROUP",
             "SUPPORT",
             "TEAMMATES",
+            "THEME",
             "TRAVEL_PLANNING",
             "WORK_ANNOUNCEMENT",
             "WORK_DEMO_GROUP",
@@ -7646,6 +7668,7 @@
             "VIDEO_COMMENT",
             "VIDEO_CREATIVE_EDITOR_AUTOGEN_AD_VIDEO",
             "VIDEO_SUPERRES",
+            "VU_GENERATED_VIDEO",
             "WOODHENGE",
             "WORK_KNOWLEDGE_VIDEO",
             "YOUR_DAY"
@@ -8329,6 +8352,7 @@
             "MANAGE",
             "MANAGE_JOBS",
             "MANAGE_LEADS",
+            "MESSAGING",
             "MODERATE",
             "MODERATE_COMMUNITY",
             "PAGES_MESSAGING",
@@ -8336,6 +8360,7 @@
             "PROFILE_PLUS_ADVERTISE",
             "PROFILE_PLUS_ANALYZE",
             "PROFILE_PLUS_CREATE_CONTENT",
+            "PROFILE_PLUS_LIVE_STREAM_MODERATION",
             "PROFILE_PLUS_MANAGE",
             "PROFILE_PLUS_MESSAGING",
             "PROFILE_PLUS_MODERATE",
@@ -8355,6 +8380,7 @@
             "MANAGE",
             "MANAGE_JOBS",
             "MANAGE_LEADS",
+            "MESSAGING",
             "MODERATE",
             "MODERATE_COMMUNITY",
             "PAGES_MESSAGING",
@@ -8362,6 +8388,7 @@
             "PROFILE_PLUS_ADVERTISE",
             "PROFILE_PLUS_ANALYZE",
             "PROFILE_PLUS_CREATE_CONTENT",
+            "PROFILE_PLUS_LIVE_STREAM_MODERATION",
             "PROFILE_PLUS_MANAGE",
             "PROFILE_PLUS_MESSAGING",
             "PROFILE_PLUS_MODERATE",
@@ -8673,7 +8700,6 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
-            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -8921,6 +8947,7 @@
             "ICE_BREAKERS",
             "PAYMENT_SETTINGS",
             "PERSISTENT_MENU",
+            "PLATFORM",
             "TARGET_AUDIENCE",
             "WHITELISTED_DOMAINS"
         ]
@@ -9132,7 +9159,6 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
-            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -9406,6 +9432,7 @@
             "VIDEO_COMMENT",
             "VIDEO_CREATIVE_EDITOR_AUTOGEN_AD_VIDEO",
             "VIDEO_SUPERRES",
+            "VU_GENERATED_VIDEO",
             "WOODHENGE",
             "WORK_KNOWLEDGE_VIDEO",
             "YOUR_DAY"
@@ -9555,7 +9582,6 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
-            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -9575,6 +9601,23 @@
             "lifetime",
             "month",
             "week"
+        ]
+    },
+    {
+        "name": "photoreactions_type_enum_param",
+        "node": "Profile",
+        "field_or_param": "type",
+        "values": [
+            "ANGRY",
+            "CARE",
+            "HAHA",
+            "LIKE",
+            "LOVE",
+            "NONE",
+            "PRIDE",
+            "SAD",
+            "THANKFUL",
+            "WOW"
         ]
     },
     {
@@ -9678,7 +9721,6 @@
             "last_week_sun_sat",
             "last_year",
             "lifetime",
-            "maximum",
             "this_month",
             "this_quarter",
             "this_week_mon_today",
@@ -9721,6 +9763,8 @@
             "LOCAL",
             "LOOKALIKE",
             "MARKETPLACE_DEFAULT",
+            "MARKETPLACE_NATIONWIDE_AUDIENCE",
+            "MARKETPLACE_SAVED_AUDIENCE",
             "MULT_CUSTOM_AUDIENCES",
             "NCPP",
             "SAVED_AUDIENCE",
@@ -11104,6 +11148,7 @@
             "CONTINUOUS_LIFT_CONFIG",
             "GEO_LIFT",
             "LIFT",
+            "PRIVATE_LIFT",
             "SPLIT_TEST"
         ]
     },
@@ -11537,6 +11582,7 @@
             "VIDEO_COMMENT",
             "VIDEO_CREATIVE_EDITOR_AUTOGEN_AD_VIDEO",
             "VIDEO_SUPERRES",
+            "VU_GENERATED_VIDEO",
             "WOODHENGE",
             "WORK_KNOWLEDGE_VIDEO",
             "YOUR_DAY"
@@ -11846,6 +11892,23 @@
             "DELETE_POLL",
             "SHOW_RESULTS",
             "SHOW_VOTING"
+        ]
+    },
+    {
+        "name": "videoreactions_type_enum_param",
+        "node": "Profile",
+        "field_or_param": "type",
+        "values": [
+            "ANGRY",
+            "CARE",
+            "HAHA",
+            "LIKE",
+            "LOVE",
+            "NONE",
+            "PRIDE",
+            "SAD",
+            "THANKFUL",
+            "WOW"
         ]
     },
     {

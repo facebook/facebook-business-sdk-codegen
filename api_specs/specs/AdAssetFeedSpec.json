@@ -58,6 +58,10 @@
             "type": "string"
         },
         {
+            "name": "posts",
+            "type": "list<Object>"
+        },
+        {
             "name": "titles",
             "type": "list<AdAssetFeedSpecTitle>"
         },

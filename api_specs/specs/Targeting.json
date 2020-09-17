@@ -47,7 +47,7 @@
         },
         {
             "name": "connections",
-            "type": "list<IDName>"
+            "type": "list<ConnectionsTargeting>"
         },
         {
             "name": "contextual_targeting_categories",
@@ -135,7 +135,7 @@
         },
         {
             "name": "excluded_connections",
-            "type": "list<IDName>"
+            "type": "list<ConnectionsTargeting>"
         },
         {
             "name": "excluded_custom_audiences",
@@ -195,7 +195,7 @@
         },
         {
             "name": "friends_of_connections",
-            "type": "list<IDName>"
+            "type": "list<ConnectionsTargeting>"
         },
         {
             "name": "genders",
