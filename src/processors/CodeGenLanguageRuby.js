@@ -111,8 +111,12 @@ const CodeGenLanguageRuby = {
         for (const index2 in APISpec.referred_enums) {
           const enumSpec = APISpec.referred_enums[index2];
           if (enumSpec.metadata.node) {
+            let node_name = enumSpec.metadata.node;
+            if (APISpecs[node_name]) {
+              node_name = APISpecs[node_name]['name:strict_pascal_case'];
+            }
             enumList[enumSpec.metadata.name] =
-              enumSpec.metadata.node +
+              node_name +
               '::' +
               enumSpec.metadata['field_or_param:upper_case'];
           } else {
