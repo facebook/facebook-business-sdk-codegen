@@ -53,6 +53,38 @@ const Utils = {
     const filePath = path.resolve(__dirname, '..', '..', fileName);
     return fs.readFileSync(filePath, 'utf8').trim();
   },
+
+  // keep same as https://fburl.com/diffusion/gicsfwu3
+  loadDefaultSDKVersion(language: string): string {
+    const filePaths = {
+      java: 'sdk/servers/java/release/pom.xml',
+      ruby: 'sdk/servers/ruby/release/lib/facebook_ads/version.rb',
+      python: 'sdk/servers/python/release/setup.py',
+      nodejs: 'sdk/servers/nodejs/release/package.json',
+      php: 'sdk/servers/php/release/src/FacebookAds/ApiConfig.php',
+    };
+    const VERSION_LINE_STARTER = {
+      java: '<version>',
+      ruby: 'VERSION',
+      python: 'PACKAGE_VERSION',
+      nodejs: '"version"',
+      php: 'const SDKVersion',
+    }
+    const fileName = filePaths[language];
+    const filePath = path.resolve(__dirname, '..', '..', '..', fileName);
+    var array = fs.readFileSync(filePath, 'utf8').toString().split("\n");
+
+    for (let line of array) {
+      if (line.trim().startsWith(VERSION_LINE_STARTER[language])) {
+        let match = line.match(/^.*(\d+\.\d+\.\d+).*$/i);
+        if (match) {
+          return match[1];
+        }
+      }
+    }
+
+    return '';
+  },
 };
 
 module.exports = Utils;

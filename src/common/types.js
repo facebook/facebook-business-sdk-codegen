@@ -29,6 +29,7 @@ export interface Renderer {
       SDKConfig: {|
         api_specs?: any[],
         api_version: string,
+        sdk_version: string,
         api_version_num_only: string,
         version: any,
       |},
