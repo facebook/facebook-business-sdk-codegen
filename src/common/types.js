@@ -9,6 +9,7 @@
 
 export type APIInputMetadata = {
   version: string,
+  sdk_version: string,
   language?: string,
   outputDir?: string,
   cleandir?: string[],
@@ -46,5 +47,5 @@ export interface Processor {
 }
 
 export interface Loader {
-  load(version: string): {|specs: APIInputSpecs, metadata: APIInputMetadata|};
+  load(version: string, sdk_version: string): {|specs: APIInputSpecs, metadata: APIInputMetadata|};
 }

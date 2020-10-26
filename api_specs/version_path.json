@@ -1,0 +1,27 @@
+{
+    "java": {
+        "base_path": "sdk/servers/java/release",
+        "file_path": "pom.xml",
+        "line_starter": "<version>"
+    },
+    "ruby": {
+        "base_path": "sdk/servers/ruby/release",
+        "file_path": "lib/facebook_ads/version.rb",
+        "line_starter": "VERSION"
+    },
+    "python": {
+        "base_path": "sdk/servers/python/release",
+        "file_path": "setup.py",
+        "line_starter": "PACKAGE_VERSION"
+    },
+    "nodejs": {
+        "base_path": "sdk/servers/nodejs/release",
+        "file_path": "package.json",
+        "line_starter": "\"version\""
+    },
+    "php": {
+        "base_path": "sdk/servers/php/release",
+        "file_path": "src/FacebookAds/ApiConfig.php",
+        "line_starter": "const SDKVersion"
+    }
+}

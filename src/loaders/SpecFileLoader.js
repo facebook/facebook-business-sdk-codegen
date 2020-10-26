@@ -15,7 +15,7 @@ import CommonUtils from '../common/Utils';
 import type {Loader} from '../common/types';
 
 const SpecFileLoader: Loader = {
-  load(version) {
+  load(version, sdk_version) {
     const APISpecDir = path.resolve(__dirname, '..', '..', 'api_specs');
     const overriddenAPISpecName = 'SDKCodegen';
     const overriddenAPISpecs = Utils.loadJSONFile(
@@ -49,6 +49,7 @@ const SpecFileLoader: Loader = {
       specs: loadedAPISpecs,
       metadata: {
         version: version,
+        sdk_version: sdk_version,
         mergedOverriding: overriddenAPISpecs,
         versionedFeatures: versionedFeatures,
         versionedFeaturesWithDepreciation: versionedFeaturesWithDepreciation,
