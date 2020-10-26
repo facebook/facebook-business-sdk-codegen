@@ -24,7 +24,7 @@ import {{{name:pascal_case}}} from './{{name:hyphen}}';
  * @see {@link https://developers.facebook.com/docs/marketing-api/}
  */
 export default class {{name:pascal_case}} extends AbstractCrudObject {
-  static get Fields () {
+  static get Fields (): Object {
     return Object.freeze({
       {{#fields}}
       {{^is_creation_field}}
