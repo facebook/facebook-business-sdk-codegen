@@ -40,13 +40,13 @@ const MustacheRenderer: Renderer = {
       cleandir.length == 0 ||
       !fs_extra.existsSync(sdkRootPath)
     ) {
-      utils.removeRecursiveSync(sdkRootPath);
+      utils.removeRecursiveSync(sdkRootPath, language);
       utils.mkdirsSync(sdkRootPath);
     } else {
       for (const d of cleandir) {
         const tmp = path.resolve(sdkRootPath, d);
         console.log(tmp);
-        utils.removeRecursiveSync(tmp);
+        utils.removeRecursiveSync(tmp, language);
         utils.mkdirsSync(tmp);
       }
     }

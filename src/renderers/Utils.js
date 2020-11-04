@@ -10,13 +10,15 @@ import fs from 'fs';
 import fs_extra from 'fs-extra';
 import path from 'path';
 import mustache from 'mustache';
+import versionPath from '../../api_specs/version_path.json';
 
 const PATH_SKIP_AUTOGEN= [
-  /^(.*)\/[sS]erver[_]?[sS]ide\/(.*)$/, 
-  /^(.*)\/\.travis.yml$/, 
-  /^(.*)\/\keyring.gpg.enc$/, 
+  /^(.*)\/[sS]erver[_]?[sS]ide\/(.*)$/,
+  /^(.*)\/\.travis.yml$/,
+  /^(.*)\/\keyring.gpg.enc$/,
   /^(.*)\/\.travis.settings.xml$/,
-  /^(.*)\/facebook_business\/test\/(.*)$/
+  /^(.*)\/facebook_business\/test\/(.*)$/,
+  /^(.*)\/CHANGELOG.md$/
 ];
 const Utils = {
   loadTemplates(templateDir: string) {
@@ -172,13 +174,20 @@ const Utils = {
     });
   },
 
-  removeRecursiveSync(dir: string) {
+  removeRecursiveSync(dir: string, language: string) {
     for (var i = 0, len = PATH_SKIP_AUTOGEN.length; i < len; i++) {
       let match = dir.match(PATH_SKIP_AUTOGEN[i]);
       if (match) {
         return false;
       }
     }
+
+    let version_file = versionPath[language]['base_path'] + '/' + versionPath[language]['file_path'];
+    let match = dir.includes(version_file);
+    if (match) {
+      return false;
+    }
+
     let stats;
     try {
       stats = fs.lstatSync(dir);
@@ -192,7 +201,7 @@ const Utils = {
     if (stats.isDirectory()) {
       let delete_all = true;
       fs.readdirSync(dir).forEach(file =>
-        delete_all &= Utils.removeRecursiveSync(path.join(dir, file)),
+        delete_all &= Utils.removeRecursiveSync(path.join(dir, file), language),
       );
       if (delete_all) {
         fs.rmdirSync(dir);
