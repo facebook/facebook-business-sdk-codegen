@@ -1510,6 +1510,10 @@
             "type": "list<string>"
         },
         {
+            "name": "app_events_config",
+            "type": "Object"
+        },
+        {
             "name": "app_events_feature_bitmask",
             "type": "unsigned int"
         },

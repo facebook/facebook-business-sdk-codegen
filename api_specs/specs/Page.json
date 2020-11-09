@@ -361,18 +361,6 @@
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "claimed_urls",
-            "return": "Page",
-            "params": [
-                {
-                    "name": "url",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "commerce_merchant_settings",
             "return": "CommerceMerchantSettings",
@@ -1887,12 +1875,6 @@
             "params": []
         },
         {
-            "method": "GET",
-            "endpoint": "messenger_ads_page_welcome_messages",
-            "return": "MessengerDestinationPageWelcomeMessage",
-            "params": []
-        },
-        {
             "method": "DELETE",
             "endpoint": "messenger_profile",
             "return": "Object",
@@ -2164,6 +2146,28 @@
                 {
                     "name": "target_app_id",
                     "required": false,
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "pass_thread_metadata",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "metadata",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "recipient",
+                    "required": true,
+                    "type": "Object"
+                },
+                {
+                    "name": "target_app_id",
+                    "required": true,
                     "type": "int"
                 }
             ]
@@ -2727,6 +2731,18 @@
         },
         {
             "method": "POST",
+            "endpoint": "release_thread_control",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "recipient",
+                    "required": true,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
+            "method": "POST",
             "endpoint": "request_thread_control",
             "return": "Page",
             "params": [
@@ -2963,6 +2979,23 @@
                     "name": "source",
                     "required": false,
                     "type": "pagevideo_copyright_rules_source_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "video_copyright_rules",
+            "return": "VideoCopyrightRule",
+            "params": [
+                {
+                    "name": "condition_groups",
+                    "required": true,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
                 }
             ]
         },
@@ -3941,6 +3974,10 @@
         },
         {
             "name": "connected_instagram_account",
+            "type": "IGUser"
+        },
+        {
+            "name": "connected_page_backed_instagram_account",
             "type": "IGUser"
         },
         {

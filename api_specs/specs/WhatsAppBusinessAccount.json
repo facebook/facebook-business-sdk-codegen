@@ -124,6 +124,18 @@
             "params": []
         },
         {
+            "method": "DELETE",
+            "endpoint": "subscribed_apps",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "subscribed_apps",
+            "return": "WhatsAppApplication",
+            "params": []
+        },
+        {
             "method": "POST",
             "endpoint": "subscribed_apps",
             "return": "WhatsAppBusinessAccount",
@@ -159,6 +171,10 @@
         },
         {
             "name": "on_behalf_of_business_info",
+            "type": "Object"
+        },
+        {
+            "name": "owner_business_info",
             "type": "Object"
         },
         {

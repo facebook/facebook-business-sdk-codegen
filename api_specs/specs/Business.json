@@ -28,6 +28,18 @@
             ]
         },
         {
+            "method": "DELETE",
+            "endpoint": "ad_accounts",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "adaccount_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "ad_studies",
             "return": "AdStudy",
@@ -1138,11 +1150,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "commerce_merchant_settings",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
                     "name": "da_display_settings",
                     "required": false,
                     "type": "Object"
@@ -1163,11 +1170,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "onsite_commerce_merchant",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
                     "name": "parent_catalog_id",
                     "required": false,
                     "type": "string"
@@ -1183,6 +1185,12 @@
                     "type": "businessowned_product_catalogs_vertical_enum_param"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "owned_whatsapp_business_accounts",
+            "return": "WhatsAppBusinessAccount",
+            "params": []
         },
         {
             "method": "DELETE",

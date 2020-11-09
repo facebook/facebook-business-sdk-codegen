@@ -51,7 +51,13 @@
             "name": "#get",
             "method": "GET",
             "return": "InstagramUser",
-            "params": []
+            "params": [
+                {
+                    "name": "adgroup_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
         }
     ],
     "fields": [

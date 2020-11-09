@@ -398,9 +398,46 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "feed",
+            "return": "Post",
+            "params": [
+                {
+                    "name": "include_hidden",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "q",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "show_expired",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "until",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "with",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "POST",
             "endpoint": "feed",
-            "return": "Object",
+            "return": "Post",
             "params": [
                 {
                     "name": "actions",
@@ -2439,6 +2476,10 @@
             "type": "list<string>"
         },
         {
+            "name": "messenger_join_notifications_enabled",
+            "type": "bool"
+        },
+        {
             "name": "middle_name",
             "type": "string"
         },
@@ -2465,6 +2506,10 @@
         {
             "name": "public_key",
             "type": "string"
+        },
+        {
+            "name": "published_timeline",
+            "type": "bool"
         },
         {
             "name": "quotes",
@@ -2513,6 +2558,14 @@
         {
             "name": "updated_time",
             "type": "datetime"
+        },
+        {
+            "name": "user_storage_key",
+            "type": "string"
+        },
+        {
+            "name": "username",
+            "type": "string"
         },
         {
             "name": "verified",

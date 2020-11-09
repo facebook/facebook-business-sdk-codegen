@@ -48,6 +48,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "privacy_policy_link",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "promotion_text",
                     "required": false,
                     "type": "string"
@@ -64,6 +69,11 @@
                 },
                 {
                     "name": "sender_benefits_text",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "terms_and_condition_link",
                     "required": false,
                     "type": "string"
                 }
@@ -100,6 +110,10 @@
             "type": "string"
         },
         {
+            "name": "privacy_policy_link",
+            "type": "string"
+        },
+        {
             "name": "promotion_text",
             "type": "string"
         },
@@ -113,6 +127,10 @@
         },
         {
             "name": "sender_benefits_text",
+            "type": "string"
+        },
+        {
+            "name": "terms_and_condition_link",
             "type": "string"
         }
     ]

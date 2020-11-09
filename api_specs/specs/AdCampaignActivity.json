@@ -169,6 +169,14 @@
             "type": "int"
         },
         {
+            "name": "promoted_object_id_new",
+            "type": "string"
+        },
+        {
+            "name": "promoted_object_id_old",
+            "type": "string"
+        },
+        {
             "name": "run_status_new",
             "type": "string"
         },

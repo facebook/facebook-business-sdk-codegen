@@ -140,7 +140,13 @@
             "name": "#delete",
             "method": "DELETE",
             "return": "Object",
-            "params": []
+            "params": [
+                {
+                    "name": "allow_live_product_set_deletion",
+                    "required": false,
+                    "type": "bool"
+                }
+            ]
         },
         {
             "name": "#get",

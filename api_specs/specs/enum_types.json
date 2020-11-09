@@ -123,7 +123,6 @@
             "update_campaign_budget",
             "update_campaign_budget_optimization_toggling_status",
             "update_campaign_delivery_type",
-            "update_campaign_duration",
             "update_campaign_group_ad_scheduling",
             "update_campaign_group_delivery_type",
             "update_campaign_group_spend_cap",
@@ -178,6 +177,7 @@
             "PLAY_GAME",
             "PURCHASE_GIFT_CARDS",
             "RECORD_NOW",
+            "REFER_FRIENDS",
             "REQUEST_TIME",
             "SAY_THANKS",
             "SEE_MORE",
@@ -188,6 +188,8 @@
             "SIGN_UP",
             "SOTTO_SUBSCRIBE",
             "SUBSCRIBE",
+            "SWIPE_UP_PRODUCT",
+            "SWIPE_UP_SHOP",
             "UPDATE_APP",
             "USE_APP",
             "USE_MOBILE_APP",
@@ -433,6 +435,7 @@
             "PLAY_GAME",
             "PURCHASE_GIFT_CARDS",
             "RECORD_NOW",
+            "REFER_FRIENDS",
             "REQUEST_TIME",
             "SAY_THANKS",
             "SEE_MORE",
@@ -443,6 +446,8 @@
             "SIGN_UP",
             "SOTTO_SUBSCRIBE",
             "SUBSCRIBE",
+            "SWIPE_UP_PRODUCT",
+            "SWIPE_UP_SHOP",
             "UPDATE_APP",
             "USE_APP",
             "USE_MOBILE_APP",
@@ -693,6 +698,7 @@
             "PLAY_GAME",
             "PURCHASE_GIFT_CARDS",
             "RECORD_NOW",
+            "REFER_FRIENDS",
             "REQUEST_TIME",
             "SAY_THANKS",
             "SEE_MORE",
@@ -703,6 +709,8 @@
             "SIGN_UP",
             "SOTTO_SUBSCRIBE",
             "SUBSCRIBE",
+            "SWIPE_UP_PRODUCT",
+            "SWIPE_UP_SHOP",
             "UPDATE_APP",
             "USE_APP",
             "USE_MOBILE_APP",
@@ -832,15 +840,19 @@
         "node": "AdRuleExecutionSpec",
         "field_or_param": "execution_type",
         "values": [
+            "ADD_INTEREST_RELAXATION",
+            "ADD_QUESTIONNAIRE_INTERESTS",
             "CHANGE_BID",
             "CHANGE_BUDGET",
             "CHANGE_CAMPAIGN_BUDGET",
+            "INCREASE_RADIUS",
             "NOTIFICATION",
             "PAUSE",
             "PING_ENDPOINT",
             "REBALANCE_BUDGET",
             "ROTATE",
-            "UNPAUSE"
+            "UNPAUSE",
+            "UPDATE_CREATIVE"
         ]
     },
     {
@@ -1892,6 +1904,7 @@
         "node": "AdAccountAdVolume",
         "field_or_param": "recommendation_type",
         "values": [
+            "ACO_TOGGLE",
             "AGGREGATED_BID_LIMITED",
             "AGGREGATED_BUDGET_LIMITED",
             "AGGREGATED_COST_LIMITED",
@@ -2141,6 +2154,7 @@
             "CANDIDATE_VIDEOS",
             "CANVAS",
             "CFC_VIDEO",
+            "CMS_MEDIA_MANAGER",
             "CONTAINED_POST_ATTACHMENT",
             "CONTAINED_POST_AUDIO_BROADCAST",
             "CONTAINED_POST_BROADCAST",
@@ -2175,6 +2189,7 @@
             "HEURISTIC_CLUSTER_VIDEO",
             "HEURISTIC_PREVIEW",
             "HIGHLIGHT_CLIP_VIDEO",
+            "IG_REELS_XPV",
             "IG_STORIES_READER",
             "INSPIRATION_VIDEO",
             "INSTAGRAM_VIDEO_COPY",
@@ -2227,6 +2242,7 @@
             "STORYLINE_WITH_EXTERNAL_MUSIC",
             "STORY_ARCHIVE_VIDEO",
             "STORY_CARD_TEMPLATE",
+            "STREAM_HIGHLIGHTS_VIDEO",
             "TAROT_DIGEST",
             "TEMP_MULTIMEDIA_POST",
             "UNLISTED",
@@ -2959,6 +2975,7 @@
             "RIGHT_COLUMN_STANDARD",
             "SUGGESTED_VIDEO_DESKTOP",
             "SUGGESTED_VIDEO_MOBILE",
+            "WATCH_FEED_HOME",
             "WATCH_FEED_MOBILE"
         ]
     },
@@ -3008,7 +3025,8 @@
         "field_or_param": "action_report_time",
         "values": [
             "conversion",
-            "impression"
+            "impression",
+            "mixed"
         ]
     },
     {
@@ -3399,6 +3417,26 @@
         ]
     },
     {
+        "name": "adaccounttargetingsearch_app_store_enum_param",
+        "node": "AdAccountTargetingUnified",
+        "field_or_param": "app_store",
+        "values": [
+            "amazon_app_store",
+            "does_not_exist",
+            "fb_android_store",
+            "fb_canvas",
+            "fb_gameroom",
+            "google_play",
+            "instant_game",
+            "itunes",
+            "itunes_ipad",
+            "oculus_app_store",
+            "roku_channel_store",
+            "windows_10_store",
+            "windows_store"
+        ]
+    },
+    {
         "name": "adaccounttargetingsearch_limit_type_enum_param",
         "node": "AdAccountTargetingUnified",
         "field_or_param": "limit_type",
@@ -3522,6 +3560,28 @@
             "work_employers",
             "work_positions",
             "zips"
+        ]
+    },
+    {
+        "name": "adaccounttargetingsearch_objective_enum_param",
+        "node": "AdAccountTargetingUnified",
+        "field_or_param": "objective",
+        "values": [
+            "APP_INSTALLS",
+            "BRAND_AWARENESS",
+            "CONVERSIONS",
+            "EVENT_RESPONSES",
+            "LEAD_GENERATION",
+            "LINK_CLICKS",
+            "LOCAL_AWARENESS",
+            "MESSAGES",
+            "OFFER_CLAIMS",
+            "PAGE_LIKES",
+            "POST_ENGAGEMENT",
+            "PRODUCT_CATALOG_SALES",
+            "REACH",
+            "STORE_VISITS",
+            "VIDEO_VIEWS"
         ]
     },
     {
@@ -3663,6 +3723,26 @@
         ]
     },
     {
+        "name": "adaccounttargetingsuggestions_app_store_enum_param",
+        "node": "AdAccountTargetingUnified",
+        "field_or_param": "app_store",
+        "values": [
+            "amazon_app_store",
+            "does_not_exist",
+            "fb_android_store",
+            "fb_canvas",
+            "fb_gameroom",
+            "google_play",
+            "instant_game",
+            "itunes",
+            "itunes_ipad",
+            "oculus_app_store",
+            "roku_channel_store",
+            "windows_10_store",
+            "windows_store"
+        ]
+    },
+    {
         "name": "adaccounttargetingsuggestions_limit_type_enum_param",
         "node": "AdAccountTargetingUnified",
         "field_or_param": "limit_type",
@@ -3777,6 +3857,8 @@
             "INITIAL",
             "IN_PROGRESS",
             "PENDING_DEPENDENCY",
+            "PROCESS_BY_AD_ASYNC_ENGINE",
+            "PROCESS_BY_EVENT_PROCESSOR",
             "SUCCESS",
             "USER_CANCELED",
             "USER_CANCELED_DEPENDENCY"
@@ -4016,6 +4098,8 @@
             "INITIAL",
             "IN_PROGRESS",
             "PENDING_DEPENDENCY",
+            "PROCESS_BY_AD_ASYNC_ENGINE",
+            "PROCESS_BY_EVENT_PROCESSOR",
             "SUCCESS",
             "USER_CANCELED",
             "USER_CANCELED_DEPENDENCY"
@@ -4732,7 +4816,8 @@
         "field_or_param": "action_report_time",
         "values": [
             "conversion",
-            "impression"
+            "impression",
+            "mixed"
         ]
     },
     {
@@ -4856,7 +4941,8 @@
         "field_or_param": "action_report_time",
         "values": [
             "conversion",
-            "impression"
+            "impression",
+            "mixed"
         ]
     },
     {
@@ -4988,6 +5074,7 @@
             "RIGHT_COLUMN_STANDARD",
             "SUGGESTED_VIDEO_DESKTOP",
             "SUGGESTED_VIDEO_MOBILE",
+            "WATCH_FEED_HOME",
             "WATCH_FEED_MOBILE"
         ]
     },
@@ -5128,7 +5215,8 @@
         "field_or_param": "action_report_time",
         "values": [
             "conversion",
-            "impression"
+            "impression",
+            "mixed"
         ]
     },
     {
@@ -5249,6 +5337,7 @@
             "RIGHT_COLUMN_STANDARD",
             "SUGGESTED_VIDEO_DESKTOP",
             "SUGGESTED_VIDEO_MOBILE",
+            "WATCH_FEED_HOME",
             "WATCH_FEED_MOBILE"
         ]
     },
@@ -5380,6 +5469,7 @@
             "ct",
             "db",
             "em",
+            "external_id",
             "fn",
             "ge",
             "ln",
@@ -6228,7 +6318,6 @@
             "PROFILE_PLUS_ADVERTISE",
             "PROFILE_PLUS_ANALYZE",
             "PROFILE_PLUS_CREATE_CONTENT",
-            "PROFILE_PLUS_LIVE_STREAM_MODERATION",
             "PROFILE_PLUS_MANAGE",
             "PROFILE_PLUS_MESSAGING",
             "PROFILE_PLUS_MODERATE",
@@ -6261,14 +6350,14 @@
         "values": [
             "ADMIN",
             "ADS_RIGHTS_REVIEWER",
+            "DEFAULT",
             "DEVELOPER",
             "EMPLOYEE",
             "FINANCE_ANALYST",
+            "FINANCE_EDIT",
             "FINANCE_EDITOR",
-            "FINANCE_EDIT_TASK",
-            "FINANCE_VIEW_TASK",
-            "MODERATE_TASK",
-            "OPERATE_TASK",
+            "FINANCE_VIEW",
+            "MANAGE",
             "PARTNER_CENTER_ADMIN",
             "PARTNER_CENTER_ANALYST",
             "PARTNER_CENTER_EDUCATION",
@@ -6306,7 +6395,6 @@
             "PROFILE_PLUS_ADVERTISE",
             "PROFILE_PLUS_ANALYZE",
             "PROFILE_PLUS_CREATE_CONTENT",
-            "PROFILE_PLUS_LIVE_STREAM_MODERATION",
             "PROFILE_PLUS_MANAGE",
             "PROFILE_PLUS_MESSAGING",
             "PROFILE_PLUS_MODERATE",
@@ -6480,7 +6568,6 @@
             "PROFILE_PLUS_ADVERTISE",
             "PROFILE_PLUS_ANALYZE",
             "PROFILE_PLUS_CREATE_CONTENT",
-            "PROFILE_PLUS_LIVE_STREAM_MODERATION",
             "PROFILE_PLUS_MANAGE",
             "PROFILE_PLUS_MESSAGING",
             "PROFILE_PLUS_MODERATE",
@@ -6541,6 +6628,7 @@
             "home_listings",
             "hotels",
             "jobs",
+            "local_delivery_shipping_profiles",
             "local_service_businesses",
             "offer_items",
             "offline_commerce",
@@ -6600,14 +6688,14 @@
         "values": [
             "ADMIN",
             "ADS_RIGHTS_REVIEWER",
+            "DEFAULT",
             "DEVELOPER",
             "EMPLOYEE",
             "FINANCE_ANALYST",
+            "FINANCE_EDIT",
             "FINANCE_EDITOR",
-            "FINANCE_EDIT_TASK",
-            "FINANCE_VIEW_TASK",
-            "MODERATE_TASK",
-            "OPERATE_TASK",
+            "FINANCE_VIEW",
+            "MANAGE",
             "PARTNER_CENTER_ADMIN",
             "PARTNER_CENTER_ANALYST",
             "PARTNER_CENTER_EDUCATION",
@@ -6622,14 +6710,14 @@
         "values": [
             "ADMIN",
             "ADS_RIGHTS_REVIEWER",
+            "DEFAULT",
             "DEVELOPER",
             "EMPLOYEE",
             "FINANCE_ANALYST",
+            "FINANCE_EDIT",
             "FINANCE_EDITOR",
-            "FINANCE_EDIT_TASK",
-            "FINANCE_VIEW_TASK",
-            "MODERATE_TASK",
-            "OPERATE_TASK",
+            "FINANCE_VIEW",
+            "MANAGE",
             "PARTNER_CENTER_ADMIN",
             "PARTNER_CENTER_ANALYST",
             "PARTNER_CENTER_EDUCATION",
@@ -6872,14 +6960,14 @@
         "values": [
             "ADMIN",
             "ADS_RIGHTS_REVIEWER",
+            "DEFAULT",
             "DEVELOPER",
             "EMPLOYEE",
             "FINANCE_ANALYST",
+            "FINANCE_EDIT",
             "FINANCE_EDITOR",
-            "FINANCE_EDIT_TASK",
-            "FINANCE_VIEW_TASK",
-            "MODERATE_TASK",
-            "OPERATE_TASK",
+            "FINANCE_VIEW",
+            "MANAGE",
             "PARTNER_CENTER_ADMIN",
             "PARTNER_CENTER_ANALYST",
             "PARTNER_CENTER_EDUCATION",
@@ -6943,24 +7031,6 @@
             "SAD",
             "THANKFUL",
             "WOW"
-        ]
-    },
-    {
-        "name": "commercemerchantsettings_cta",
-        "node": "CommerceMerchantSettings",
-        "field_or_param": "cta",
-        "values": [
-            "CONTACT_MERCHANT",
-            "OFFSITE_LINK"
-        ]
-    },
-    {
-        "name": "commercemerchantsettings_merchant_status",
-        "node": "CommerceMerchantSettings",
-        "field_or_param": "merchant_status",
-        "values": [
-            "ENABLED",
-            "EXTERNALLY_DISABLED"
         ]
     },
     {
@@ -7233,6 +7303,7 @@
             "SCHOOL_CLASS",
             "SORORITY",
             "SPORTS",
+            "STREAMER",
             "STUDY_GROUP",
             "SUPPORT",
             "TEAMMATES",
@@ -7378,6 +7449,7 @@
             "SCHOOL_CLASS",
             "SORORITY",
             "SPORTS",
+            "STREAMER",
             "STUDY_GROUP",
             "SUPPORT",
             "TEAMMATES",
@@ -7576,6 +7648,7 @@
             "CANDIDATE_VIDEOS",
             "CANVAS",
             "CFC_VIDEO",
+            "CMS_MEDIA_MANAGER",
             "CONTAINED_POST_ATTACHMENT",
             "CONTAINED_POST_AUDIO_BROADCAST",
             "CONTAINED_POST_BROADCAST",
@@ -7610,6 +7683,7 @@
             "HEURISTIC_CLUSTER_VIDEO",
             "HEURISTIC_PREVIEW",
             "HIGHLIGHT_CLIP_VIDEO",
+            "IG_REELS_XPV",
             "IG_STORIES_READER",
             "INSPIRATION_VIDEO",
             "INSTAGRAM_VIDEO_COPY",
@@ -7662,6 +7736,7 @@
             "STORYLINE_WITH_EXTERNAL_MUSIC",
             "STORY_ARCHIVE_VIDEO",
             "STORY_CARD_TEMPLATE",
+            "STREAM_HIGHLIGHTS_VIDEO",
             "TAROT_DIGEST",
             "TEMP_MULTIMEDIA_POST",
             "UNLISTED",
@@ -7838,6 +7913,33 @@
             "OWNER_OR_COMMENTER",
             "SIDE_CONVERSATION",
             "SIDE_CONVERSATION_AND_POST_OWNER"
+        ]
+    },
+    {
+        "name": "linkcomments_filter_enum_param",
+        "node": "Comment",
+        "field_or_param": "filter",
+        "values": [
+            "stream",
+            "toplevel"
+        ]
+    },
+    {
+        "name": "linkcomments_live_filter_enum_param",
+        "node": "Comment",
+        "field_or_param": "live_filter",
+        "values": [
+            "filter_low_quality",
+            "no_filter"
+        ]
+    },
+    {
+        "name": "linkcomments_order_enum_param",
+        "node": "Comment",
+        "field_or_param": "order",
+        "values": [
+            "chronological",
+            "reverse_chronological"
         ]
     },
     {
@@ -8360,7 +8462,6 @@
             "PROFILE_PLUS_ADVERTISE",
             "PROFILE_PLUS_ANALYZE",
             "PROFILE_PLUS_CREATE_CONTENT",
-            "PROFILE_PLUS_LIVE_STREAM_MODERATION",
             "PROFILE_PLUS_MANAGE",
             "PROFILE_PLUS_MESSAGING",
             "PROFILE_PLUS_MODERATE",
@@ -8388,7 +8489,6 @@
             "PROFILE_PLUS_ADVERTISE",
             "PROFILE_PLUS_ANALYZE",
             "PROFILE_PLUS_CREATE_CONTENT",
-            "PROFILE_PLUS_LIVE_STREAM_MODERATION",
             "PROFILE_PLUS_MANAGE",
             "PROFILE_PLUS_MESSAGING",
             "PROFILE_PLUS_MODERATE",
@@ -9237,6 +9337,7 @@
             "leadgen",
             "leadgen_fat",
             "live_videos",
+            "local_delivery",
             "location",
             "mcom_invoice_change",
             "members",
@@ -9340,6 +9441,7 @@
             "CANDIDATE_VIDEOS",
             "CANVAS",
             "CFC_VIDEO",
+            "CMS_MEDIA_MANAGER",
             "CONTAINED_POST_ATTACHMENT",
             "CONTAINED_POST_AUDIO_BROADCAST",
             "CONTAINED_POST_BROADCAST",
@@ -9374,6 +9476,7 @@
             "HEURISTIC_CLUSTER_VIDEO",
             "HEURISTIC_PREVIEW",
             "HIGHLIGHT_CLIP_VIDEO",
+            "IG_REELS_XPV",
             "IG_STORIES_READER",
             "INSPIRATION_VIDEO",
             "INSTAGRAM_VIDEO_COPY",
@@ -9426,6 +9529,7 @@
             "STORYLINE_WITH_EXTERNAL_MUSIC",
             "STORY_ARCHIVE_VIDEO",
             "STORY_CARD_TEMPLATE",
+            "STREAM_HIGHLIGHTS_VIDEO",
             "TAROT_DIGEST",
             "TEMP_MULTIMEDIA_POST",
             "UNLISTED",
@@ -9816,6 +9920,7 @@
             "PLAY_GAME",
             "PURCHASE_GIFT_CARDS",
             "RECORD_NOW",
+            "REFER_FRIENDS",
             "REQUEST_TIME",
             "SAY_THANKS",
             "SEE_MORE",
@@ -9826,6 +9931,8 @@
             "SIGN_UP",
             "SOTTO_SUBSCRIBE",
             "SUBSCRIBE",
+            "SWIPE_UP_PRODUCT",
+            "SWIPE_UP_SHOP",
             "UPDATE_APP",
             "USE_APP",
             "USE_MOBILE_APP",
@@ -9861,7 +9968,9 @@
         "values": [
             "COLLAB_ADS",
             "COLLAB_ADS_FOR_MARKETPLACE_PARTNER",
+            "COLLAB_ADS_SEGMENT_WITHOUT_SEGMENT_SYNCING",
             "IG_SHOPPING",
+            "IG_SHOPPING_SUGGESTED_PRODUCTS",
             "MARKETPLACE_SHOPS",
             "TEST"
         ]
@@ -10327,7 +10436,8 @@
         "field_or_param": "availability",
         "values": [
             "AVAILABLE",
-            "NOT_AVAILABLE"
+            "NOT_AVAILABLE",
+            "PENDING"
         ]
     },
     {
@@ -11206,7 +11316,7 @@
     },
     {
         "name": "userfeed_backdated_time_granularity_enum_param",
-        "node": "Object",
+        "node": "Post",
         "field_or_param": "backdated_time_granularity",
         "values": [
             "day",
@@ -11219,7 +11329,7 @@
     },
     {
         "name": "userfeed_checkin_entry_point_enum_param",
-        "node": "Object",
+        "node": "Post",
         "field_or_param": "checkin_entry_point",
         "values": [
             "BRANDING_CHECKIN",
@@ -11230,7 +11340,7 @@
     },
     {
         "name": "userfeed_formatting_enum_param",
-        "node": "Object",
+        "node": "Post",
         "field_or_param": "formatting",
         "values": [
             "MARKDOWN",
@@ -11239,7 +11349,7 @@
     },
     {
         "name": "userfeed_place_attachment_setting_enum_param",
-        "node": "Object",
+        "node": "Post",
         "field_or_param": "place_attachment_setting",
         "values": [
             "1",
@@ -11248,7 +11358,7 @@
     },
     {
         "name": "userfeed_post_surfaces_blacklist_enum_param",
-        "node": "Object",
+        "node": "Post",
         "field_or_param": "post_surfaces_blacklist",
         "values": [
             "1",
@@ -11260,7 +11370,7 @@
     },
     {
         "name": "userfeed_posting_to_redspace_enum_param",
-        "node": "Object",
+        "node": "Post",
         "field_or_param": "posting_to_redspace",
         "values": [
             "disabled",
@@ -11269,7 +11379,7 @@
     },
     {
         "name": "userfeed_target_surface_enum_param",
-        "node": "Object",
+        "node": "Post",
         "field_or_param": "target_surface",
         "values": [
             "STORY",
@@ -11278,7 +11388,7 @@
     },
     {
         "name": "userfeed_unpublished_content_type_enum_param",
-        "node": "Object",
+        "node": "Post",
         "field_or_param": "unpublished_content_type",
         "values": [
             "ADS_POST",
@@ -11490,6 +11600,7 @@
             "CANDIDATE_VIDEOS",
             "CANVAS",
             "CFC_VIDEO",
+            "CMS_MEDIA_MANAGER",
             "CONTAINED_POST_ATTACHMENT",
             "CONTAINED_POST_AUDIO_BROADCAST",
             "CONTAINED_POST_BROADCAST",
@@ -11524,6 +11635,7 @@
             "HEURISTIC_CLUSTER_VIDEO",
             "HEURISTIC_PREVIEW",
             "HIGHLIGHT_CLIP_VIDEO",
+            "IG_REELS_XPV",
             "IG_STORIES_READER",
             "INSPIRATION_VIDEO",
             "INSTAGRAM_VIDEO_COPY",
@@ -11576,6 +11688,7 @@
             "STORYLINE_WITH_EXTERNAL_MUSIC",
             "STORY_ARCHIVE_VIDEO",
             "STORY_CARD_TEMPLATE",
+            "STREAM_HIGHLIGHTS_VIDEO",
             "TAROT_DIGEST",
             "TEMP_MULTIMEDIA_POST",
             "UNLISTED",
@@ -11680,7 +11793,8 @@
         "field_or_param": "availability",
         "values": [
             "AVAILABLE",
-            "NOT_AVAILABLE"
+            "NOT_AVAILABLE",
+            "PENDING"
         ]
     },
     {

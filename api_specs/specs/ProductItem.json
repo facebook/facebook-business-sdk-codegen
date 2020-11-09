@@ -466,6 +466,10 @@
             "type": "string"
         },
         {
+            "name": "images",
+            "type": "list<string>"
+        },
+        {
             "name": "inventory",
             "type": "int"
         },

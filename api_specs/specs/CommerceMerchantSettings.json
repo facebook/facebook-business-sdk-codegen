@@ -1,41 +1,6 @@
 {
     "apis": [
         {
-            "method": "POST",
-            "endpoint": "facebook_channel",
-            "return": "CommerceMerchantSettings",
-            "params": [
-                {
-                    "name": "pages",
-                    "required": true,
-                    "type": "list<string>"
-                }
-            ]
-        },
-        {
-            "method": "DELETE",
-            "endpoint": "instagram_channel",
-            "return": "Object",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "instagram_channel",
-            "return": "CommerceMerchantSettings",
-            "params": [
-                {
-                    "name": "instagram_business_accounts",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "instagram_users",
-                    "required": false,
-                    "type": "list<string>"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "order_management_apps",
             "return": "Application",
@@ -158,43 +123,6 @@
             "method": "GET",
             "return": "CommerceMerchantSettings",
             "params": []
-        },
-        {
-            "name": "#update",
-            "method": "POST",
-            "return": "CommerceMerchantSettings",
-            "params": [
-                {
-                    "name": "contact_email",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "cta",
-                    "required": false,
-                    "type": "commercemerchantsettings_cta"
-                },
-                {
-                    "name": "merchant_alert_email",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "merchant_status",
-                    "required": false,
-                    "type": "commercemerchantsettings_merchant_status"
-                },
-                {
-                    "name": "onsite_commerce_merchant",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "terms",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
         }
     ],
     "fields": [
@@ -220,6 +148,10 @@
         },
         {
             "name": "display_name",
+            "type": "string"
+        },
+        {
+            "name": "external_merchant_id",
             "type": "string"
         },
         {

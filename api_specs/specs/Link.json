@@ -1,6 +1,33 @@
 {
     "apis": [
         {
+            "method": "GET",
+            "endpoint": "comments",
+            "return": "Comment",
+            "params": [
+                {
+                    "name": "filter",
+                    "required": false,
+                    "type": "linkcomments_filter_enum_param"
+                },
+                {
+                    "name": "live_filter",
+                    "required": false,
+                    "type": "linkcomments_live_filter_enum_param"
+                },
+                {
+                    "name": "order",
+                    "required": false,
+                    "type": "linkcomments_order_enum_param"
+                },
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
             "method": "POST",
             "endpoint": "comments",
             "return": "Comment",

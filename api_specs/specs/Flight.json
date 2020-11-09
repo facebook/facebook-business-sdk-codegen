@@ -27,12 +27,22 @@
                     "type": "string"
                 },
                 {
+                    "name": "destination_city",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "images",
                     "required": false,
                     "type": "list<Object>"
                 },
                 {
                     "name": "origin_airport",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "origin_city",
                     "required": false,
                     "type": "string"
                 },

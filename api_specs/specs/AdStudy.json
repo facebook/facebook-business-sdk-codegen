@@ -48,11 +48,6 @@
                     "type": "list<Object>"
                 },
                 {
-                    "name": "offsitepixels",
-                    "required": false,
-                    "type": "list<Object>"
-                },
-                {
                     "name": "product_catalogs",
                     "required": false,
                     "type": "list<Object>"

@@ -45,12 +45,24 @@
             "type": "CatalogSubVerticalList"
         },
         {
+            "name": "coat_length",
+            "type": "string"
+        },
+        {
+            "name": "color",
+            "type": "string"
+        },
+        {
             "name": "currency",
             "type": "string"
         },
         {
             "name": "description",
             "type": "string"
+        },
+        {
+            "name": "features",
+            "type": "list<string>"
         },
         {
             "name": "gender",
@@ -77,6 +89,14 @@
             "type": "list<string>"
         },
         {
+            "name": "secondary_color",
+            "type": "string"
+        },
+        {
+            "name": "shelter_email",
+            "type": "string"
+        },
+        {
             "name": "shelter_name",
             "type": "string"
         },
@@ -85,7 +105,15 @@
             "type": "Page"
         },
         {
+            "name": "shelter_phone",
+            "type": "string"
+        },
+        {
             "name": "size",
+            "type": "string"
+        },
+        {
+            "name": "tertiary_color",
             "type": "string"
         },
         {

@@ -18,6 +18,10 @@
             "type": "string"
         },
         {
+            "name": "review_status",
+            "type": "Object"
+        },
+        {
             "name": "shop_setup",
             "type": "string"
         }

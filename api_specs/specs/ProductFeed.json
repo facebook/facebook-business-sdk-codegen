@@ -263,6 +263,11 @@
                     "type": "productfeed_encoding"
                 },
                 {
+                    "name": "migrated_from_feed_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "name",
                     "required": false,
                     "type": "string"
@@ -325,6 +330,10 @@
         {
             "name": "latest_upload",
             "type": "ProductFeedUpload"
+        },
+        {
+            "name": "migrated_from_feed_id",
+            "type": "string"
         },
         {
             "name": "name",

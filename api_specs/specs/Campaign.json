@@ -541,6 +541,10 @@
             "type": "string"
         },
         {
+            "name": "ad_strategy_id",
+            "type": "string"
+        },
+        {
             "name": "adlabels",
             "type": "list<AdLabel>"
         },

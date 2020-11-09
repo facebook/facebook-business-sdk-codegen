@@ -518,18 +518,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "onsite_commerce_merchant",
-            "return": "ProductCatalog",
-            "params": [
-                {
-                    "name": "onsite_commerce_merchant",
-                    "required": true,
-                    "type": "Object"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "pricing_variables_batch",
             "return": "ProductCatalogPricingVariablesBatch",
@@ -628,6 +616,11 @@
                     "name": "item_sub_type",
                     "required": false,
                     "type": "productcatalogproduct_feeds_item_sub_type_enum_param"
+                },
+                {
+                    "name": "migrated_from_feed_id",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "name",

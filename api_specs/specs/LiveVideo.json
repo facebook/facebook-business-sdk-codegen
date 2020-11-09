@@ -147,49 +147,9 @@
             "return": "LiveVideo",
             "params": [
                 {
-                    "name": "ad_break_drop_live_stream",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "ad_break_duration",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "ad_break_encoder_drops_live_stream",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "ad_break_intent",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "ad_break_start_now",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "ad_break_time_offset",
-                    "required": false,
-                    "type": "float"
-                },
-                {
                     "name": "allow_bm_crossposting",
                     "required": false,
                     "type": "bool"
-                },
-                {
-                    "name": "attribution_app_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "commercial_break_durations",
-                    "required": false,
-                    "type": "list<unsigned int>"
                 },
                 {
                     "name": "content_tags",

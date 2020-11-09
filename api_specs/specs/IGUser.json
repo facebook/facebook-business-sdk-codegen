@@ -131,7 +131,13 @@
             "name": "#get",
             "method": "GET",
             "return": "IGUser",
-            "params": []
+            "params": [
+                {
+                    "name": "adgroup_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
         }
     ],
     "fields": [

@@ -32,12 +32,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "offsitepixels",
-            "return": "OffsitePixel",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "partnerstudies",
             "return": "PartnerStudy",
             "params": []
@@ -97,11 +91,6 @@
                 },
                 {
                     "name": "offline_conversion_data_sets",
-                    "required": false,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "offsitepixels",
                     "required": false,
                     "type": "list<Object>"
                 },
