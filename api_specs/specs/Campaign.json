@@ -503,6 +503,11 @@
                     "type": "Object"
                 },
                 {
+                    "name": "smart_promotion_type",
+                    "required": false,
+                    "type": "adcampaigngroup_smart_promotion_type"
+                },
+                {
                     "name": "special_ad_categories",
                     "required": false,
                     "type": "list<adcampaigngroup_special_ad_categories>"

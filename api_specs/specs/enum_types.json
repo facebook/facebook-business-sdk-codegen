@@ -2471,12 +2471,22 @@
             "LOCAL_AWARENESS",
             "MESSAGES",
             "OFFER_CLAIMS",
+            "OUTCOME_LEADS",
             "PAGE_LIKES",
             "POST_ENGAGEMENT",
             "PRODUCT_CATALOG_SALES",
             "REACH",
             "STORE_VISITS",
             "VIDEO_VIEWS"
+        ]
+    },
+    {
+        "name": "adaccountcampaigns_smart_promotion_type_enum_param",
+        "node": "Campaign",
+        "field_or_param": "smart_promotion_type",
+        "values": [
+            "GUIDED_CREATION",
+            "SMART_APP_PROMOTION"
         ]
     },
     {
@@ -3576,6 +3586,7 @@
             "LOCAL_AWARENESS",
             "MESSAGES",
             "OFFER_CLAIMS",
+            "OUTCOME_LEADS",
             "PAGE_LIKES",
             "POST_ENGAGEMENT",
             "PRODUCT_CATALOG_SALES",
@@ -3791,6 +3802,7 @@
             "LOCAL_AWARENESS",
             "MESSAGES",
             "OFFER_CLAIMS",
+            "OUTCOME_LEADS",
             "PAGE_LIKES",
             "POST_ENGAGEMENT",
             "PRODUCT_CATALOG_SALES",
@@ -4298,12 +4310,22 @@
             "LOCAL_AWARENESS",
             "MESSAGES",
             "OFFER_CLAIMS",
+            "OUTCOME_LEADS",
             "PAGE_LIKES",
             "POST_ENGAGEMENT",
             "PRODUCT_CATALOG_SALES",
             "REACH",
             "STORE_VISITS",
             "VIDEO_VIEWS"
+        ]
+    },
+    {
+        "name": "adcampaigngroup_smart_promotion_type",
+        "node": "Campaign",
+        "field_or_param": "smart_promotion_type",
+        "values": [
+            "GUIDED_CREATION",
+            "SMART_APP_PROMOTION"
         ]
     },
     {
@@ -6344,28 +6366,6 @@
         ]
     },
     {
-        "name": "businessbusiness_users_role_enum_param",
-        "node": "BusinessUser",
-        "field_or_param": "role",
-        "values": [
-            "ADMIN",
-            "ADS_RIGHTS_REVIEWER",
-            "DEFAULT",
-            "DEVELOPER",
-            "EMPLOYEE",
-            "FINANCE_ANALYST",
-            "FINANCE_EDIT",
-            "FINANCE_EDITOR",
-            "FINANCE_VIEW",
-            "MANAGE",
-            "PARTNER_CENTER_ADMIN",
-            "PARTNER_CENTER_ANALYST",
-            "PARTNER_CENTER_EDUCATION",
-            "PARTNER_CENTER_MARKETING",
-            "PARTNER_CENTER_OPERATIONS"
-        ]
-    },
-    {
         "name": "businessclient_ad_accounts_permitted_tasks_enum_param",
         "node": "Business",
         "field_or_param": "permitted_tasks",
@@ -6684,28 +6684,6 @@
     {
         "name": "businessrolerequest_role",
         "node": "BusinessRoleRequest",
-        "field_or_param": "role",
-        "values": [
-            "ADMIN",
-            "ADS_RIGHTS_REVIEWER",
-            "DEFAULT",
-            "DEVELOPER",
-            "EMPLOYEE",
-            "FINANCE_ANALYST",
-            "FINANCE_EDIT",
-            "FINANCE_EDITOR",
-            "FINANCE_VIEW",
-            "MANAGE",
-            "PARTNER_CENTER_ADMIN",
-            "PARTNER_CENTER_ANALYST",
-            "PARTNER_CENTER_EDUCATION",
-            "PARTNER_CENTER_MARKETING",
-            "PARTNER_CENTER_OPERATIONS"
-        ]
-    },
-    {
-        "name": "businesssystem_users_role_enum_param",
-        "node": "SystemUser",
         "field_or_param": "role",
         "values": [
             "ADMIN",

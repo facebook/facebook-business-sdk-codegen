@@ -185,6 +185,14 @@
             "type": "string"
         },
         {
+            "name": "targets_spec_new",
+            "type": "Object"
+        },
+        {
+            "name": "targets_spec_old",
+            "type": "Object"
+        },
+        {
             "name": "tracking_pixel_ids_new",
             "type": "list<string>"
         },

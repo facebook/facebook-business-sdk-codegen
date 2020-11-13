@@ -121,10 +121,6 @@
             "type": "bool"
         },
         {
-            "name": "last_payment_time",
-            "type": "datetime"
-        },
-        {
             "name": "legal_entity_name",
             "type": "string"
         },

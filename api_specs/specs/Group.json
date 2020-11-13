@@ -1535,6 +1535,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "source_instagram_media_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "spherical",
                     "required": false,
                     "type": "bool"

@@ -791,6 +791,11 @@
                     "type": "list<string>"
                 },
                 {
+                    "name": "additional_uploaded_image_ids",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
                     "name": "additional_variant_attributes",
                     "required": false,
                     "type": "map"

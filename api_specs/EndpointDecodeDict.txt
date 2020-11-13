@@ -74,6 +74,7 @@ codes=1
 commerce=1
 compass=1
 configs=1
+connected=1
 connections=1
 contacts=1
 contained=1

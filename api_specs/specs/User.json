@@ -7,28 +7,6 @@
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "access_tokens",
-            "return": "User",
-            "params": [
-                {
-                    "name": "business_app",
-                    "required": true,
-                    "type": "int"
-                },
-                {
-                    "name": "page_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "scope",
-                    "required": false,
-                    "type": "list<Permission>"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "accounts",
             "return": "Page",
@@ -2200,6 +2178,11 @@
                 },
                 {
                     "name": "source",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "source_instagram_media_id",
                     "required": false,
                     "type": "string"
                 },

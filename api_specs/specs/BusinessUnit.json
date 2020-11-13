@@ -199,11 +199,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "metric_scope",
-                    "required": false,
-                    "type": "map"
-                },
-                {
                     "name": "order_by",
                     "required": false,
                     "type": "string"

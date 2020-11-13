@@ -466,23 +466,6 @@
         },
         {
             "method": "POST",
-            "endpoint": "business_users",
-            "return": "BusinessUser",
-            "params": [
-                {
-                    "name": "email",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "role",
-                    "required": false,
-                    "type": "businessbusiness_users_role_enum_param"
-                }
-            ]
-        },
-        {
-            "method": "POST",
             "endpoint": "claim_custom_conversions",
             "return": "CustomConversion",
             "params": [
@@ -850,6 +833,12 @@
             "method": "GET",
             "endpoint": "instagram_accounts",
             "return": "InstagramUser",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "instagram_business_accounts",
+            "return": "IGUser",
             "params": []
         },
         {
@@ -1323,28 +1312,6 @@
             "endpoint": "system_users",
             "return": "SystemUser",
             "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "system_users",
-            "return": "SystemUser",
-            "params": [
-                {
-                    "name": "name",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "role",
-                    "required": false,
-                    "type": "businesssystem_users_role_enum_param"
-                },
-                {
-                    "name": "system_user_id",
-                    "required": false,
-                    "type": "int"
-                }
-            ]
         },
         {
             "method": "GET",

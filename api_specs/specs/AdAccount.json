@@ -250,6 +250,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "instagram_user_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "instant_checkout_setting",
                     "required": false,
                     "type": "adaccountadcreatives_instant_checkout_setting_enum_param"
@@ -333,6 +338,11 @@
                     "name": "recommender_settings",
                     "required": false,
                     "type": "map"
+                },
+                {
+                    "name": "source_instagram_media_id",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "template_url",
@@ -1410,6 +1420,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "source_instagram_media_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "spherical",
                     "required": false,
                     "type": "bool"
@@ -1813,6 +1828,11 @@
                     "type": "Object"
                 },
                 {
+                    "name": "smart_promotion_type",
+                    "required": false,
+                    "type": "adaccountcampaigns_smart_promotion_type_enum_param"
+                },
+                {
                     "name": "source_campaign_id",
                     "required": false,
                     "type": "string"
@@ -1865,6 +1885,12 @@
                     "type": "adaccountcampaignsbylabels_operator_enum_param"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "connected_instagram_accounts",
+            "return": "IGUser",
+            "params": []
         },
         {
             "method": "GET",

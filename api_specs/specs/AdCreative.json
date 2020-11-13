@@ -276,6 +276,10 @@
             "type": "string"
         },
         {
+            "name": "instagram_user_id",
+            "type": "string"
+        },
+        {
             "name": "interactive_components_spec",
             "type": "AdCreativeInteractiveComponentsSpec"
         },
@@ -350,6 +354,10 @@
         {
             "name": "recommender_settings",
             "type": "AdCreativeRecommenderSettings"
+        },
+        {
+            "name": "source_instagram_media_id",
+            "type": "string"
         },
         {
             "name": "status",
