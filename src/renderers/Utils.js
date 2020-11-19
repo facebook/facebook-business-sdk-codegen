@@ -20,6 +20,7 @@ const PATH_SKIP_AUTOGEN = [
     /^(.*)\/facebook_business\/test\/(.*)$/,
     /^(.*)\/CHANGELOG.md$/,
     /^(.*)\/businessdataapi\/(.*)$/,
+    /^(.*)\/signal\/(.*)$/,
 ];
 const Utils = {
     loadTemplates(templateDir: string) {
