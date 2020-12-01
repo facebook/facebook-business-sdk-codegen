@@ -15,6 +15,7 @@ import versionPath from '../../api_specs/version_path.json';
 const PATH_SKIP_AUTOGEN = [
     /^(.*)\/[sS]erver[_]?[sS]ide\/(.*)$/,
     /^(.*)\/\.travis.yml$/,
+    /^(.*)\/\.github\/workflows\/(.*).yml$/,
     /^(.*)\/\keyring.gpg.enc$/,
     /^(.*)\/\.travis.settings.xml$/,
     /^(.*)\/facebook_business\/test\/(.*)$/,
