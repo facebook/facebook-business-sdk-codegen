@@ -23,6 +23,7 @@ const PATH_SKIP_AUTOGEN = [
     /^(.*)\/businessdataapi\/(.*)$/,
     /^(.*)\/signal\/(.*)$/,
     /^(.*)\/README.md$/,
+    /^(.*)\/release.sh$/,
 ];
 const Utils = {
     loadTemplates(templateDir: string) {
