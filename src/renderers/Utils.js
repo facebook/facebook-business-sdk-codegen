@@ -24,6 +24,7 @@ const PATH_SKIP_AUTOGEN = [
     /^(.*)\/signal\/(.*)$/,
     /^(.*)\/README.md$/,
     /^(.*)\/release.sh$/,
+    /^(.*)\/\.flowconfig$/,
 ];
 const Utils = {
     loadTemplates(templateDir: string) {
