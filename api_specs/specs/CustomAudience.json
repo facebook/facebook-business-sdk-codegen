@@ -131,6 +131,28 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "usersreplace",
+            "return": "CustomAudience",
+            "params": [
+                {
+                    "name": "namespace",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "payload",
+                    "required": true,
+                    "type": "Object"
+                },
+                {
+                    "name": "session",
+                    "required": true,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
             "name": "#delete",
             "method": "DELETE",
             "return": "Object",

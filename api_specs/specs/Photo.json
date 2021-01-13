@@ -166,24 +166,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "reactions",
-            "return": "Profile",
-            "params": [
-                {
-                    "name": "type",
-                    "required": false,
-                    "type": "photoreactions_type_enum_param"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "sharedposts",
-            "return": "Post",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "sponsor_tags",
             "return": "Page",
             "params": []

@@ -879,18 +879,6 @@
             ]
         },
         {
-            "method": "GET",
-            "endpoint": "live_videos",
-            "return": "LiveVideo",
-            "params": [
-                {
-                    "name": "broadcast_status",
-                    "required": false,
-                    "type": "applicationlive_videos_broadcast_status_enum_param"
-                }
-            ]
-        },
-        {
             "method": "POST",
             "endpoint": "mmp_auditing",
             "return": "Object",
@@ -1015,12 +1003,6 @@
                     "type": "bool"
                 }
             ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "ozone_release",
-            "return": "OzoneRelease",
-            "params": []
         },
         {
             "method": "POST",

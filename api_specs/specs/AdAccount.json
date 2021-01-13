@@ -648,6 +648,11 @@
                     "type": "int"
                 },
                 {
+                    "name": "conversion_domain",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "creative",
                     "required": true,
                     "type": "AdCreative"
@@ -1798,6 +1803,11 @@
                     "type": "list<adaccountcampaigns_execution_options_enum_param>"
                 },
                 {
+                    "name": "is_skadnetwork_attribution",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "iterative_split_test_configs",
                     "required": false,
                     "type": "list<Object>"
@@ -2512,6 +2522,11 @@
                     "name": "use_account_attribution_setting",
                     "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "use_unified_attribution_setting",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         },
@@ -2619,6 +2634,11 @@
                     "name": "use_account_attribution_setting",
                     "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "use_unified_attribution_setting",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         },
@@ -2652,6 +2672,16 @@
                     "name": "business_id",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "is_skadnetwork_search",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "only_apps_with_permission",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "query_term",
@@ -3137,33 +3167,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "sponsored_message_ads",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "bid_amount",
-                    "required": true,
-                    "type": "int"
-                },
-                {
-                    "name": "daily_budget",
-                    "required": true,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "message_creative_id",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "targeting",
-                    "required": false,
-                    "type": "Targeting"
-                }
-            ]
-        },
-        {
             "method": "DELETE",
             "endpoint": "subscribed_apps",
             "return": "Object",
@@ -3541,10 +3544,6 @@
         {
             "name": "account_status",
             "type": "unsigned int"
-        },
-        {
-            "name": "ad_account_creation_request",
-            "type": "AdAccountCreationRequest"
         },
         {
             "name": "ad_account_promotable_objects",

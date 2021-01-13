@@ -62,10 +62,6 @@
     ],
     "fields": [
         {
-            "name": "alt_text",
-            "type": "string"
-        },
-        {
             "name": "caption",
             "type": "string"
         },

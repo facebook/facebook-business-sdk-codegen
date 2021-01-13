@@ -1,28 +1,10 @@
 {
     "apis": [
         {
-            "name": "#delete",
-            "method": "DELETE",
-            "return": "Object",
-            "params": []
-        },
-        {
             "name": "#get",
             "method": "GET",
             "return": "ProductFeedSchedule",
             "params": []
-        },
-        {
-            "name": "#update",
-            "method": "POST",
-            "return": "ProductFeedSchedule",
-            "params": [
-                {
-                    "name": "upload_schedule",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
         }
     ],
     "fields": [

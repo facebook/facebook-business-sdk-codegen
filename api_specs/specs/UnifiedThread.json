@@ -41,10 +41,6 @@
             "type": "string"
         },
         {
-            "name": "linked_group",
-            "type": "Group"
-        },
-        {
             "name": "message_count",
             "type": "int"
         },

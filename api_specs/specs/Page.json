@@ -343,18 +343,6 @@
             ]
         },
         {
-            "method": "DELETE",
-            "endpoint": "claimed_urls",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "url",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "claimed_urls",
             "return": "URL",
@@ -1707,11 +1695,6 @@
                     "name": "old_store_number",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "page_username",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "permanently_closed",

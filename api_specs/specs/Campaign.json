@@ -289,6 +289,11 @@
                     "name": "use_account_attribution_setting",
                     "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "use_unified_attribution_setting",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         },
@@ -396,6 +401,11 @@
                     "name": "use_account_attribution_setting",
                     "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "use_unified_attribution_setting",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         },
@@ -471,6 +481,11 @@
                     "name": "execution_options",
                     "required": false,
                     "type": "list<adcampaigngroup_execution_options>"
+                },
+                {
+                    "name": "is_skadnetwork_attribution",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "iterative_split_test_configs",
@@ -606,6 +621,10 @@
             "type": "string"
         },
         {
+            "name": "is_skadnetwork_attribution",
+            "type": "bool"
+        },
+        {
             "name": "issues_info",
             "type": "list<AdCampaignIssuesInfo>"
         },
@@ -636,6 +655,10 @@
         {
             "name": "recommendations",
             "type": "list<AdRecommendation>"
+        },
+        {
+            "name": "smart_promotion_type",
+            "type": "string"
         },
         {
             "name": "source_campaign",

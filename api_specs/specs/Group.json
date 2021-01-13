@@ -105,9 +105,46 @@
             "params": []
         },
         {
+            "method": "GET",
+            "endpoint": "feed",
+            "return": "Post",
+            "params": [
+                {
+                    "name": "include_hidden",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "q",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "show_expired",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "until",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "with",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "POST",
             "endpoint": "feed",
-            "return": "Object",
+            "return": "Post",
             "params": [
                 {
                     "name": "actions",
@@ -670,6 +707,12 @@
                     "type": "unsigned int"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "files",
+            "return": "GroupFile",
+            "params": []
         },
         {
             "method": "GET",
@@ -1770,10 +1813,6 @@
         {
             "name": "name",
             "type": "string"
-        },
-        {
-            "name": "owner",
-            "type": "Object"
         },
         {
             "name": "parent",

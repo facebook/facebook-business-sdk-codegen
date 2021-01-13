@@ -424,14 +424,6 @@
             "type": "datetime"
         },
         {
-            "name": "delivery_growth_optimizations",
-            "type": "list<string>"
-        },
-        {
-            "name": "entities",
-            "type": "Object"
-        },
-        {
             "name": "event",
             "type": "Event"
         },
@@ -446,10 +438,6 @@
         {
             "name": "feed_targeting",
             "type": "Object"
-        },
-        {
-            "name": "formatting",
-            "type": "string"
         },
         {
             "name": "from",
@@ -472,15 +460,7 @@
             "type": "string"
         },
         {
-            "name": "implicit_place",
-            "type": "Place"
-        },
-        {
             "name": "instagram_eligibility",
-            "type": "string"
-        },
-        {
-            "name": "instream_eligibility",
             "type": "string"
         },
         {
@@ -520,10 +500,6 @@
             "type": "bool"
         },
         {
-            "name": "live_video_eligibility",
-            "type": "list<string>"
-        },
-        {
             "name": "message",
             "type": "string"
         },
@@ -556,10 +532,6 @@
             "type": "Place"
         },
         {
-            "name": "poll",
-            "type": "Object"
-        },
-        {
             "name": "privacy",
             "type": "Privacy"
         },
@@ -574,10 +546,6 @@
         {
             "name": "properties",
             "type": "list"
-        },
-        {
-            "name": "publishing_stats",
-            "type": "unsigned int"
         },
         {
             "name": "scheduled_publish_time",
@@ -616,10 +584,6 @@
             "type": "string"
         },
         {
-            "name": "translations",
-            "type": "map<string, string>"
-        },
-        {
             "name": "updated_time",
             "type": "datetime"
         },
@@ -634,10 +598,6 @@
         {
             "name": "width",
             "type": "unsigned int"
-        },
-        {
-            "name": "will_be_autocropped_when_deliver_to_instagram",
-            "type": "bool"
         }
     ]
 }

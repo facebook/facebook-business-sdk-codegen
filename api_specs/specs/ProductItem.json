@@ -1,6 +1,34 @@
 {
     "apis": [
         {
+            "method": "POST",
+            "endpoint": "ar_data",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "container_effect",
+                    "required": true,
+                    "type": "productitemar_data_container_effect_enum_param"
+                },
+                {
+                    "name": "effect_parameters",
+                    "required": true,
+                    "type": "map"
+                },
+                {
+                    "name": "picker_icon",
+                    "required": false,
+                    "type": "file"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "channels_to_integrity_status",
+            "return": "CatalogItemChannelsToIntegrityStatus",
+            "params": []
+        },
+        {
             "method": "GET",
             "endpoint": "product_sets",
             "return": "ProductSet",
@@ -497,6 +525,10 @@
         {
             "name": "ordering_index",
             "type": "int"
+        },
+        {
+            "name": "parent_product_id",
+            "type": "string"
         },
         {
             "name": "pattern",

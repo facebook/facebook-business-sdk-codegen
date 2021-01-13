@@ -195,6 +195,7 @@
             "USE_APP",
             "USE_MOBILE_APP",
             "VIDEO_ANNOTATION",
+            "VIDEO_CALL",
             "VISIT_PAGES_FEED",
             "WATCH_MORE",
             "WATCH_VIDEO",
@@ -228,8 +229,7 @@
         "values": [
             "COST_CAP",
             "LOWEST_COST_WITHOUT_CAP",
-            "LOWEST_COST_WITH_BID_CAP",
-            "TARGET_COST"
+            "LOWEST_COST_WITH_BID_CAP"
         ]
     },
     {
@@ -239,8 +239,7 @@
         "values": [
             "COST_CAP",
             "LOWEST_COST_WITHOUT_CAP",
-            "LOWEST_COST_WITH_BID_CAP",
-            "TARGET_COST"
+            "LOWEST_COST_WITH_BID_CAP"
         ]
     },
     {
@@ -298,6 +297,7 @@
             "PAGE_ENGAGEMENT",
             "PAGE_LIKES",
             "POST_ENGAGEMENT",
+            "QUALITY_CALL",
             "QUALITY_LEAD",
             "REACH",
             "REPLIES",
@@ -331,6 +331,7 @@
             "PAGE_ENGAGEMENT",
             "PAGE_LIKES",
             "POST_ENGAGEMENT",
+            "QUALITY_CALL",
             "QUALITY_LEAD",
             "REACH",
             "REPLIES",
@@ -454,6 +455,7 @@
             "USE_APP",
             "USE_MOBILE_APP",
             "VIDEO_ANNOTATION",
+            "VIDEO_CALL",
             "VISIT_PAGES_FEED",
             "WATCH_MORE",
             "WATCH_VIDEO",
@@ -718,6 +720,7 @@
             "USE_APP",
             "USE_MOBILE_APP",
             "VIDEO_ANNOTATION",
+            "VIDEO_CALL",
             "VISIT_PAGES_FEED",
             "WATCH_MORE",
             "WATCH_VIDEO",
@@ -927,8 +930,7 @@
         "values": [
             "COST_CAP",
             "LOWEST_COST_WITHOUT_CAP",
-            "LOWEST_COST_WITH_BID_CAP",
-            "TARGET_COST"
+            "LOWEST_COST_WITH_BID_CAP"
         ]
     },
     {
@@ -995,6 +997,7 @@
             "PAGE_ENGAGEMENT",
             "PAGE_LIKES",
             "POST_ENGAGEMENT",
+            "QUALITY_CALL",
             "QUALITY_LEAD",
             "REACH",
             "REPLIES",
@@ -1133,6 +1136,7 @@
             "IPHONE",
             "MOBILE_WEB",
             "OCULUS",
+            "SAMSUNG",
             "SUPPLEMENTARY_IMAGES",
             "WEB",
             "WINDOWS"
@@ -1145,8 +1149,7 @@
         "values": [
             "COST_CAP",
             "LOWEST_COST_WITHOUT_CAP",
-            "LOWEST_COST_WITH_BID_CAP",
-            "TARGET_COST"
+            "LOWEST_COST_WITH_BID_CAP"
         ]
     },
     {
@@ -1581,7 +1584,6 @@
         "node": "Targeting",
         "field_or_param": "device_platforms",
         "values": [
-            "connected_tv",
             "desktop",
             "mobile"
         ]
@@ -1591,7 +1593,6 @@
         "node": "Targeting",
         "field_or_param": "effective_device_platforms",
         "values": [
-            "connected_tv",
             "desktop",
             "mobile"
         ]
@@ -1937,8 +1938,7 @@
         "values": [
             "COST_CAP",
             "LOWEST_COST_WITHOUT_CAP",
-            "LOWEST_COST_WITH_BID_CAP",
-            "TARGET_COST"
+            "LOWEST_COST_WITH_BID_CAP"
         ]
     },
     {
@@ -2068,6 +2068,7 @@
             "PAGE_ENGAGEMENT",
             "PAGE_LIKES",
             "POST_ENGAGEMENT",
+            "QUALITY_CALL",
             "QUALITY_LEAD",
             "REACH",
             "REPLIES",
@@ -2178,6 +2179,7 @@
             "EVENT_TOUR",
             "FACECAST_DVR",
             "FB_SHORTS",
+            "FB_SHORTS_POST",
             "FUNDRAISER_COVER_VIDEO",
             "GAME_CLIP",
             "GAMING_UPDATE_VIDEO",
@@ -2342,6 +2344,7 @@
         "values": [
             "ADVERTISE",
             "ANALYZE",
+            "DRAFT",
             "MANAGE"
         ]
     },
@@ -2352,6 +2355,7 @@
         "values": [
             "ADVERTISE",
             "ANALYZE",
+            "DRAFT",
             "MANAGE"
         ]
     },
@@ -2392,8 +2396,7 @@
         "values": [
             "COST_CAP",
             "LOWEST_COST_WITHOUT_CAP",
-            "LOWEST_COST_WITH_BID_CAP",
-            "TARGET_COST"
+            "LOWEST_COST_WITH_BID_CAP"
         ]
     },
     {
@@ -2943,6 +2946,7 @@
             "PAGE_ENGAGEMENT",
             "PAGE_LIKES",
             "POST_ENGAGEMENT",
+            "QUALITY_CALL",
             "QUALITY_LEAD",
             "REACH",
             "REPLIES",
@@ -3135,6 +3139,7 @@
             "FB_ANDROID_STORE",
             "FB_CANVAS",
             "FB_GAMEROOM",
+            "GALAXY_STORE",
             "GOOGLE_PLAY",
             "INSTANT_GAME",
             "ITUNES",
@@ -3439,6 +3444,7 @@
             "fb_android_store",
             "fb_canvas",
             "fb_gameroom",
+            "galaxy_store",
             "google_play",
             "instant_game",
             "itunes",
@@ -3746,6 +3752,7 @@
             "fb_android_store",
             "fb_canvas",
             "fb_gameroom",
+            "galaxy_store",
             "google_play",
             "instant_game",
             "itunes",
@@ -3886,8 +3893,7 @@
         "values": [
             "COST_CAP",
             "LOWEST_COST_WITHOUT_CAP",
-            "LOWEST_COST_WITH_BID_CAP",
-            "TARGET_COST"
+            "LOWEST_COST_WITH_BID_CAP"
         ]
     },
     {
@@ -3998,6 +4004,7 @@
             "PAGE_ENGAGEMENT",
             "PAGE_LIKES",
             "POST_ENGAGEMENT",
+            "QUALITY_CALL",
             "QUALITY_LEAD",
             "REACH",
             "REPLIES",
@@ -4243,6 +4250,7 @@
             "PAGE_ENGAGEMENT",
             "PAGE_LIKES",
             "POST_ENGAGEMENT",
+            "QUALITY_CALL",
             "QUALITY_LEAD",
             "REACH",
             "REPLIES",
@@ -4260,8 +4268,7 @@
         "values": [
             "COST_CAP",
             "LOWEST_COST_WITHOUT_CAP",
-            "LOWEST_COST_WITH_BID_CAP",
-            "TARGET_COST"
+            "LOWEST_COST_WITH_BID_CAP"
         ]
     },
     {
@@ -5725,23 +5732,6 @@
         ]
     },
     {
-        "name": "albumreactions_type_enum_param",
-        "node": "Profile",
-        "field_or_param": "type",
-        "values": [
-            "ANGRY",
-            "CARE",
-            "HAHA",
-            "LIKE",
-            "LOVE",
-            "NONE",
-            "PRIDE",
-            "SAD",
-            "THANKFUL",
-            "WOW"
-        ]
-    },
-    {
         "name": "application_an_platforms",
         "node": "Application",
         "field_or_param": "an_platforms",
@@ -6064,22 +6054,6 @@
         ]
     },
     {
-        "name": "applicationlive_videos_broadcast_status_enum_param",
-        "node": "LiveVideo",
-        "field_or_param": "broadcast_status",
-        "values": [
-            "live",
-            "live_stopped",
-            "processing",
-            "scheduled_canceled",
-            "scheduled_expired",
-            "scheduled_live",
-            "scheduled_unpublished",
-            "unpublished",
-            "vod"
-        ]
-    },
-    {
         "name": "applicationmobile_sdk_gk_platform_enum_param",
         "node": "MobileSdkGk",
         "field_or_param": "platform",
@@ -6309,6 +6283,7 @@
         "values": [
             "ADVERTISE",
             "ANALYZE",
+            "DRAFT",
             "MANAGE"
         ]
     },
@@ -6375,6 +6350,7 @@
         "values": [
             "ADVERTISE",
             "ANALYZE",
+            "DRAFT",
             "MANAGE"
         ]
     },
@@ -7262,6 +7238,7 @@
             "DEALS",
             "EPHEMERAL",
             "EVENT_PLANNING",
+            "FAITH",
             "FAMILY",
             "FITNESS",
             "FOR_SALE",
@@ -7310,7 +7287,7 @@
     },
     {
         "name": "groupfeed_backdated_time_granularity_enum_param",
-        "node": "Object",
+        "node": "Post",
         "field_or_param": "backdated_time_granularity",
         "values": [
             "day",
@@ -7323,7 +7300,7 @@
     },
     {
         "name": "groupfeed_checkin_entry_point_enum_param",
-        "node": "Object",
+        "node": "Post",
         "field_or_param": "checkin_entry_point",
         "values": [
             "BRANDING_CHECKIN",
@@ -7334,7 +7311,7 @@
     },
     {
         "name": "groupfeed_formatting_enum_param",
-        "node": "Object",
+        "node": "Post",
         "field_or_param": "formatting",
         "values": [
             "MARKDOWN",
@@ -7343,7 +7320,7 @@
     },
     {
         "name": "groupfeed_place_attachment_setting_enum_param",
-        "node": "Object",
+        "node": "Post",
         "field_or_param": "place_attachment_setting",
         "values": [
             "1",
@@ -7352,7 +7329,7 @@
     },
     {
         "name": "groupfeed_post_surfaces_blacklist_enum_param",
-        "node": "Object",
+        "node": "Post",
         "field_or_param": "post_surfaces_blacklist",
         "values": [
             "1",
@@ -7364,7 +7341,7 @@
     },
     {
         "name": "groupfeed_posting_to_redspace_enum_param",
-        "node": "Object",
+        "node": "Post",
         "field_or_param": "posting_to_redspace",
         "values": [
             "disabled",
@@ -7373,7 +7350,7 @@
     },
     {
         "name": "groupfeed_target_surface_enum_param",
-        "node": "Object",
+        "node": "Post",
         "field_or_param": "target_surface",
         "values": [
             "STORY",
@@ -7382,7 +7359,7 @@
     },
     {
         "name": "groupfeed_unpublished_content_type_enum_param",
-        "node": "Object",
+        "node": "Post",
         "field_or_param": "unpublished_content_type",
         "values": [
             "ADS_POST",
@@ -7408,6 +7385,7 @@
             "DEALS",
             "EPHEMERAL",
             "EVENT_PLANNING",
+            "FAITH",
             "FAMILY",
             "FITNESS",
             "FOR_SALE",
@@ -7650,6 +7628,7 @@
             "EVENT_TOUR",
             "FACECAST_DVR",
             "FB_SHORTS",
+            "FB_SHORTS_POST",
             "FUNDRAISER_COVER_VIDEO",
             "GAME_CLIP",
             "GAMING_UPDATE_VIDEO",
@@ -7894,33 +7873,6 @@
             "OWNER_OR_COMMENTER",
             "SIDE_CONVERSATION",
             "SIDE_CONVERSATION_AND_POST_OWNER"
-        ]
-    },
-    {
-        "name": "linkcomments_filter_enum_param",
-        "node": "Comment",
-        "field_or_param": "filter",
-        "values": [
-            "stream",
-            "toplevel"
-        ]
-    },
-    {
-        "name": "linkcomments_live_filter_enum_param",
-        "node": "Comment",
-        "field_or_param": "live_filter",
-        "values": [
-            "filter_low_quality",
-            "no_filter"
-        ]
-    },
-    {
-        "name": "linkcomments_order_enum_param",
-        "node": "Comment",
-        "field_or_param": "order",
-        "values": [
-            "chronological",
-            "reverse_chronological"
         ]
     },
     {
@@ -9029,6 +8981,7 @@
             "PAYMENT_SETTINGS",
             "PERSISTENT_MENU",
             "PLATFORM",
+            "SUBJECT_TO_NEW_EU_PRIVACY_RULES",
             "TARGET_AUDIENCE",
             "WHITELISTED_DOMAINS"
         ]
@@ -9443,6 +9396,7 @@
             "EVENT_TOUR",
             "FACECAST_DVR",
             "FB_SHORTS",
+            "FB_SHORTS_POST",
             "FUNDRAISER_COVER_VIDEO",
             "GAME_CLIP",
             "GAMING_UPDATE_VIDEO",
@@ -9610,6 +9564,26 @@
         ]
     },
     {
+        "name": "paymentenginepaymentdispute_reason_enum_param",
+        "node": "PaymentEnginePayment",
+        "field_or_param": "reason",
+        "values": [
+            "BANNED_USER",
+            "DENIED_REFUND",
+            "GRANTED_REPLACEMENT_ITEM"
+        ]
+    },
+    {
+        "name": "paymentenginepaymentrefunds_reason_enum_param",
+        "node": "PaymentEnginePayment",
+        "field_or_param": "reason",
+        "values": [
+            "CUSTOMER_SERVICE",
+            "FRIENDLY_FRAUD",
+            "MALICIOUS_FRAUD"
+        ]
+    },
+    {
         "name": "photocomments_comment_privacy_value_enum_param",
         "node": "Comment",
         "field_or_param": "comment_privacy_value",
@@ -9686,23 +9660,6 @@
             "lifetime",
             "month",
             "week"
-        ]
-    },
-    {
-        "name": "photoreactions_type_enum_param",
-        "node": "Profile",
-        "field_or_param": "type",
-        "values": [
-            "ANGRY",
-            "CARE",
-            "HAHA",
-            "LIKE",
-            "LOVE",
-            "NONE",
-            "PRIDE",
-            "SAD",
-            "THANKFUL",
-            "WOW"
         ]
     },
     {
@@ -9825,105 +9782,6 @@
             "lifetime",
             "month",
             "week"
-        ]
-    },
-    {
-        "name": "postpromotions_audience_enum_param",
-        "node": "Object",
-        "field_or_param": "audience",
-        "values": [
-            "AUTO_LOOKALIKE",
-            "AUTO_PAGE_LOOKALIKE",
-            "AUTO_TARGETING",
-            "COUNTRY_AND_INTEREST",
-            "CREATE_NEW",
-            "CUSTOM_AUDIENCE",
-            "DISTRICT",
-            "EVENT_CUSTOM_AUDIENCES",
-            "EVENT_ENGAGEMENT",
-            "FANS",
-            "GROUPER",
-            "HEC_AUDIENCE",
-            "IG_PROMOTED_POST_AUTO",
-            "LOCAL",
-            "LOOKALIKE",
-            "MARKETPLACE_DEFAULT",
-            "MARKETPLACE_NATIONWIDE_AUDIENCE",
-            "MARKETPLACE_SAVED_AUDIENCE",
-            "MULT_CUSTOM_AUDIENCES",
-            "NCPP",
-            "SAVED_AUDIENCE",
-            "SMART_AUDIENCE"
-        ]
-    },
-    {
-        "name": "postpromotions_cta_type_enum_param",
-        "node": "Object",
-        "field_or_param": "cta_type",
-        "values": [
-            "ADD_TO_CART",
-            "APPLY_NOW",
-            "BOOK_TRAVEL",
-            "BUY",
-            "BUY_NOW",
-            "BUY_TICKETS",
-            "CALL",
-            "CALL_ME",
-            "CONTACT",
-            "CONTACT_US",
-            "DONATE",
-            "DONATE_NOW",
-            "DOWNLOAD",
-            "EVENT_RSVP",
-            "FIND_A_GROUP",
-            "FIND_YOUR_GROUPS",
-            "FOLLOW_NEWS_STORYLINE",
-            "FOLLOW_PAGE",
-            "FOLLOW_USER",
-            "GET_DIRECTIONS",
-            "GET_OFFER",
-            "GET_OFFER_VIEW",
-            "GET_QUOTE",
-            "GET_SHOWTIMES",
-            "INSTALL_APP",
-            "INSTALL_MOBILE_APP",
-            "LEARN_MORE",
-            "LIKE_PAGE",
-            "LISTEN_MUSIC",
-            "LISTEN_NOW",
-            "MESSAGE_PAGE",
-            "MOBILE_DOWNLOAD",
-            "MOMENTS",
-            "NO_BUTTON",
-            "OPEN_LINK",
-            "ORDER_NOW",
-            "PAY_TO_ACCESS",
-            "PLAY_GAME",
-            "PURCHASE_GIFT_CARDS",
-            "RECORD_NOW",
-            "REFER_FRIENDS",
-            "REQUEST_TIME",
-            "SAY_THANKS",
-            "SEE_MORE",
-            "SELL_NOW",
-            "SEND_A_GIFT",
-            "SHARE",
-            "SHOP_NOW",
-            "SIGN_UP",
-            "SOTTO_SUBSCRIBE",
-            "START_ORDER",
-            "SUBSCRIBE",
-            "SWIPE_UP_PRODUCT",
-            "SWIPE_UP_SHOP",
-            "UPDATE_APP",
-            "USE_APP",
-            "USE_MOBILE_APP",
-            "VIDEO_ANNOTATION",
-            "VISIT_PAGES_FEED",
-            "WATCH_MORE",
-            "WATCH_VIDEO",
-            "WHATSAPP_MESSAGE",
-            "WOODHENGE_SUPPORT"
         ]
     },
     {
@@ -10572,6 +10430,27 @@
         ]
     },
     {
+        "name": "productgroupar_data_state_enum_param",
+        "node": "Object",
+        "field_or_param": "state",
+        "values": [
+            "DISABLED",
+            "ENABLED",
+            "TEST"
+        ]
+    },
+    {
+        "name": "productgroupar_data_surfaces_enum_param",
+        "node": "Object",
+        "field_or_param": "surfaces",
+        "values": [
+            "SHOPS",
+            "TEST_CAPABILITY",
+            "UNIVERSAL_CHECKOUT",
+            "US_MARKETPLACE"
+        ]
+    },
+    {
         "name": "productgroupproducts_availability_enum_param",
         "node": "ProductItem",
         "field_or_param": "availability",
@@ -11081,6 +10960,14 @@
         "values": [
             "published",
             "staging"
+        ]
+    },
+    {
+        "name": "productitemar_data_container_effect_enum_param",
+        "node": "Object",
+        "field_or_param": "container_effect",
+        "values": [
+            "MAKEUP"
         ]
     },
     {
@@ -11603,6 +11490,7 @@
             "EVENT_TOUR",
             "FACECAST_DVR",
             "FB_SHORTS",
+            "FB_SHORTS_POST",
             "FUNDRAISER_COVER_VIDEO",
             "GAME_CLIP",
             "GAMING_UPDATE_VIDEO",
@@ -11988,23 +11876,6 @@
             "DELETE_POLL",
             "SHOW_RESULTS",
             "SHOW_VOTING"
-        ]
-    },
-    {
-        "name": "videoreactions_type_enum_param",
-        "node": "Profile",
-        "field_or_param": "type",
-        "values": [
-            "ANGRY",
-            "CARE",
-            "HAHA",
-            "LIKE",
-            "LOVE",
-            "NONE",
-            "PRIDE",
-            "SAD",
-            "THANKFUL",
-            "WOW"
         ]
     },
     {

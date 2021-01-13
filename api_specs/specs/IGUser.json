@@ -166,10 +166,6 @@
             "type": "int"
         },
         {
-            "name": "is_ig_shopping_seller_policy_enabled",
-            "type": "bool"
-        },
-        {
             "name": "media_count",
             "type": "int"
         },

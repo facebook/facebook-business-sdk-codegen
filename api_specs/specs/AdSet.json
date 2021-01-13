@@ -366,6 +366,11 @@
                     "name": "use_account_attribution_setting",
                     "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "use_unified_attribution_setting",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         },
@@ -471,6 +476,11 @@
                 },
                 {
                     "name": "use_account_attribution_setting",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "use_unified_attribution_setting",
                     "required": false,
                     "type": "bool"
                 }

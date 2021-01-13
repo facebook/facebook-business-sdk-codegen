@@ -1,6 +1,28 @@
 {
     "apis": [
         {
+            "method": "POST",
+            "endpoint": "ar_data",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "effect_icon",
+                    "required": false,
+                    "type": "file"
+                },
+                {
+                    "name": "state",
+                    "required": false,
+                    "type": "productgroupar_data_state_enum_param"
+                },
+                {
+                    "name": "surfaces",
+                    "required": false,
+                    "type": "list<productgroupar_data_surfaces_enum_param>"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "products",
             "return": "ProductItem",

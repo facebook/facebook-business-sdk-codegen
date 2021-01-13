@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "channels",
+            "type": "list<string>"
+        },
+        {
+            "name": "rejection_information",
+            "type": "Object"
+        }
+    ]
+}
