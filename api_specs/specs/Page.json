@@ -350,6 +350,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "commerce_eligibility",
+            "return": "PageCommerceEligibility",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "commerce_merchant_settings",
             "return": "CommerceMerchantSettings",
             "params": []
@@ -1206,6 +1212,64 @@
         },
         {
             "method": "GET",
+            "endpoint": "image_copyrights",
+            "return": "ImageCopyright",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "image_copyrights",
+            "return": "ImageCopyright",
+            "params": [
+                {
+                    "name": "artist",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "creator",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "custom_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "filename",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "geo_ownership",
+                    "required": true,
+                    "type": "list<pageimage_copyrights_geo_ownership_enum_param>"
+                },
+                {
+                    "name": "original_content_creation_date",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "reference_photo",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "title",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "indexed_videos",
             "return": "AdVideo",
             "params": []
@@ -1695,6 +1759,11 @@
                     "name": "old_store_number",
                     "required": false,
                     "type": "unsigned int"
+                },
+                {
+                    "name": "page_username",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "permanently_closed",
@@ -3103,11 +3172,6 @@
                     "type": "unsigned int"
                 },
                 {
-                    "name": "attribution_app_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "audio_story_wave_animation_handle",
                     "required": false,
                     "type": "string"
@@ -4039,6 +4103,10 @@
         {
             "name": "features",
             "type": "string"
+        },
+        {
+            "name": "followers_count",
+            "type": "unsigned int"
         },
         {
             "name": "food_styles",

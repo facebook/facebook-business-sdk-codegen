@@ -1,28 +1,6 @@
 {
     "apis": [
         {
-            "method": "POST",
-            "endpoint": "ar_data",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "container_effect",
-                    "required": true,
-                    "type": "productitemar_data_container_effect_enum_param"
-                },
-                {
-                    "name": "effect_parameters",
-                    "required": true,
-                    "type": "map"
-                },
-                {
-                    "name": "picker_icon",
-                    "required": false,
-                    "type": "file"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "channels_to_integrity_status",
             "return": "CatalogItemChannelsToIntegrityStatus",
@@ -62,11 +40,6 @@
             "method": "POST",
             "return": "ProductItem",
             "params": [
-                {
-                    "name": "additional_image_files",
-                    "required": false,
-                    "type": "list<file>"
-                },
                 {
                     "name": "additional_image_urls",
                     "required": false,
@@ -405,6 +378,10 @@
         {
             "name": "applinks",
             "type": "CatalogItemAppLinks"
+        },
+        {
+            "name": "ar_data",
+            "type": "ProductItemARData"
         },
         {
             "name": "availability",

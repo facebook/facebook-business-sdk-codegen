@@ -70,6 +70,10 @@
             "type": "Object"
         },
         {
+            "name": "digital_product_offer",
+            "type": "Object"
+        },
+        {
             "name": "electronic_accessories_and_cables",
             "type": "Object"
         },
@@ -103,6 +107,14 @@
         },
         {
             "name": "large_appliances",
+            "type": "Object"
+        },
+        {
+            "name": "local_service_business_item",
+            "type": "Object"
+        },
+        {
+            "name": "local_service_business_restaurant",
             "type": "Object"
         },
         {

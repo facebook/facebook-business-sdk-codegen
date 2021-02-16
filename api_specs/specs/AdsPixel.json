@@ -94,6 +94,12 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "shadowtraffichelper",
+            "return": "Object",
+            "params": []
+        },
+        {
             "method": "DELETE",
             "endpoint": "shared_accounts",
             "return": "Object",

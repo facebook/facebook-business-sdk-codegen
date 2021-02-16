@@ -26,6 +26,10 @@
             "type": "string"
         },
         {
+            "name": "action_brand",
+            "type": "string"
+        },
+        {
             "name": "action_canvas_component_id",
             "type": "string"
         },
@@ -39,6 +43,10 @@
         },
         {
             "name": "action_carousel_card_name",
+            "type": "string"
+        },
+        {
+            "name": "action_category",
             "type": "string"
         },
         {

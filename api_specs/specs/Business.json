@@ -466,6 +466,23 @@
         },
         {
             "method": "POST",
+            "endpoint": "business_users",
+            "return": "BusinessUser",
+            "params": [
+                {
+                    "name": "email",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "role",
+                    "required": false,
+                    "type": "businessbusiness_users_role_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "POST",
             "endpoint": "claim_custom_conversions",
             "return": "CustomConversion",
             "params": [
@@ -780,6 +797,58 @@
                     "name": "order_by_is_owned_credential",
                     "required": false,
                     "type": "bool"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "franchise_programs",
+            "return": "FranchiseProgram",
+            "params": [
+                {
+                    "name": "business_asset_group",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "creative_folder",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "creative_spec_template_data",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "end_date",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "program_approval_type",
+                    "required": true,
+                    "type": "businessfranchise_programs_program_approval_type_enum_param"
+                },
+                {
+                    "name": "shared_custom_audience",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "start_date",
+                    "required": false,
+                    "type": "datetime"
                 }
             ]
         },
@@ -1312,6 +1381,28 @@
             "endpoint": "system_users",
             "return": "SystemUser",
             "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "system_users",
+            "return": "SystemUser",
+            "params": [
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "role",
+                    "required": false,
+                    "type": "businesssystem_users_role_enum_param"
+                },
+                {
+                    "name": "system_user_id",
+                    "required": false,
+                    "type": "int"
+                }
+            ]
         },
         {
             "method": "GET",

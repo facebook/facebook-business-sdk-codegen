@@ -7,6 +7,28 @@
             "params": []
         },
         {
+            "method": "POST",
+            "endpoint": "access_tokens",
+            "return": "User",
+            "params": [
+                {
+                    "name": "business_app",
+                    "required": true,
+                    "type": "int"
+                },
+                {
+                    "name": "page_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "scope",
+                    "required": false,
+                    "type": "list<Permission>"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "accounts",
             "return": "Page",
@@ -351,6 +373,12 @@
                     "type": "string"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "custom_labels",
+            "return": "PageUserMessageThreadLabel",
+            "params": []
         },
         {
             "method": "GET",
@@ -1936,11 +1964,6 @@
                     "name": "asked_fun_fact_prompt_id",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "attribution_app_id",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "audio_story_wave_animation_handle",

@@ -13,58 +13,6 @@
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "objectives",
-            "return": "AdStudyObjective",
-            "params": [
-                {
-                    "name": "adspixels",
-                    "required": false,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "applications",
-                    "required": false,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "customconversions",
-                    "required": false,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "is_primary",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "offline_conversion_data_sets",
-                    "required": false,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "product_catalogs",
-                    "required": false,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "product_sets",
-                    "required": false,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "type",
-                    "required": false,
-                    "type": "adstudyobjectives_type_enum_param"
-                }
-            ]
-        },
-        {
             "name": "#delete",
             "method": "DELETE",
             "return": "Object",

@@ -2,6 +2,18 @@
     "apis": [
         {
             "method": "GET",
+            "endpoint": "content_publishing_limit",
+            "return": "ContentPublishingLimitResponse",
+            "params": [
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "insights",
             "return": "InstagramInsightsResult",
             "params": [

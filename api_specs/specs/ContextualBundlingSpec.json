@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "status",
+            "type": "string"
+        }
+    ]
+}

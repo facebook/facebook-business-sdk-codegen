@@ -37,12 +37,6 @@
             "params": []
         },
         {
-            "name": "#delete",
-            "method": "DELETE",
-            "return": "Object",
-            "params": []
-        },
-        {
             "name": "#get",
             "method": "GET",
             "return": "AdStudyObjective",

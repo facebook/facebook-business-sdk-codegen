@@ -163,6 +163,10 @@
             "type": "bool"
         },
         {
+            "name": "has_onsite_intent",
+            "type": "bool"
+        },
+        {
             "name": "id",
             "type": "string"
         },

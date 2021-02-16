@@ -90,6 +90,10 @@
             "type": "string"
         },
         {
+            "name": "attribution_setting",
+            "type": "string"
+        },
+        {
             "name": "auction_bid",
             "type": "string"
         },

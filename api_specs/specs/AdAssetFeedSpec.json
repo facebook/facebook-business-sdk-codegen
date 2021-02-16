@@ -54,6 +54,10 @@
             "type": "list<AdAssetFeedSpecLinkURL>"
         },
         {
+            "name": "onsite_destinations",
+            "type": "list<Object>"
+        },
+        {
             "name": "optimization_type",
             "type": "string"
         },

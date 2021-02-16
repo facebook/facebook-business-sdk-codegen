@@ -70,6 +70,10 @@
             "type": "map<string, string>"
         },
         {
+            "name": "job_search",
+            "type": "map<string, string>"
+        },
+        {
             "name": "lead_gen_honeypot",
             "type": "map<string, string>"
         },

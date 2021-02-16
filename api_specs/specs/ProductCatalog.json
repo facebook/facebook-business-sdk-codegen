@@ -105,6 +105,68 @@
         },
         {
             "method": "POST",
+            "endpoint": "automotive_models",
+            "return": "AutomotiveModel",
+            "params": [
+                {
+                    "name": "automotive_model_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "body_style",
+                    "required": false,
+                    "type": "productcatalogautomotive_models_body_style_enum_param"
+                },
+                {
+                    "name": "currency",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "description",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "images",
+                    "required": true,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "make",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "model",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "price",
+                    "required": true,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "title",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "url",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "year",
+                    "required": true,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
+            "method": "POST",
             "endpoint": "batch",
             "return": "ProductCatalog",
             "params": [
@@ -653,14 +715,14 @@
                     "type": "string"
                 },
                 {
+                    "name": "selected_override_fields",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
                     "name": "update_schedule",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "whitelisted_properties",
-                    "required": false,
-                    "type": "list<string>"
                 }
             ]
         },
@@ -780,11 +842,6 @@
             "endpoint": "products",
             "return": "ProductItem",
             "params": [
-                {
-                    "name": "additional_image_files",
-                    "required": false,
-                    "type": "list<file>"
-                },
                 {
                     "name": "additional_image_urls",
                     "required": false,

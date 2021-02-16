@@ -315,6 +315,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "place_page_set_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "platform_customizations",
                     "required": false,
                     "type": "Object"
@@ -1163,11 +1168,6 @@
                     "name": "asked_fun_fact_prompt_id",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "attribution_app_id",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "audio_story_wave_animation_handle",
@@ -3114,33 +3114,6 @@
                     "name": "video_view_length_constraint",
                     "required": false,
                     "type": "unsigned int"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "roas",
-            "return": "AdAccountRoas",
-            "params": [
-                {
-                    "name": "fields",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "filtering",
-                    "required": true,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "time_increment",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "time_range",
-                    "required": true,
-                    "type": "Object"
                 }
             ]
         },
