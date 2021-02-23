@@ -25,6 +25,10 @@ const PATH_SKIP_AUTOGEN = [
     /^(.*)\/README.md$/,
     /^(.*)\/release.sh$/,
     /^(.*)\/\.flowconfig$/,
+    /^(.*)\/facebookbusiness.gemspec$/,
+    /^(.*)\/Gemfile(.*)$/,
+    /^(.*)\/Rakefile$/,
+    /^(.*)\/facebookbusiness.gemspec$/,
 ];
 const Utils = {
     loadTemplates(templateDir: string) {
