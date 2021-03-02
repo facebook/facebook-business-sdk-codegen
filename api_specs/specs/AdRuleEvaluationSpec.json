@@ -1,5 +1,12 @@
 {
-    "apis": [],
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdRuleEvaluationSpec",
+            "params": []
+        }
+    ],
     "fields": [
         {
             "name": "evaluation_type",

@@ -1,18 +1,6 @@
 {
     "apis": [
         {
-            "method": "DELETE",
-            "endpoint": "agencies",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "business",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "agencies",
             "return": "Business",

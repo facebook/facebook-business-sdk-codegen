@@ -181,16 +181,6 @@
             "return": "CustomAudience",
             "params": [
                 {
-                    "name": "accountID",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "additionalMetadata",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "allowed_domains",
                     "required": false,
                     "type": "list<string>"
@@ -221,11 +211,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "details",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "enable_fetch_or_create",
                     "required": false,
                     "type": "bool"
@@ -246,24 +231,9 @@
                     "type": "list<Object>"
                 },
                 {
-                    "name": "expectedSize",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "gender",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "inclusions",
                     "required": false,
                     "type": "list<Object>"
-                },
-                {
-                    "name": "isPrivate",
-                    "required": false,
-                    "type": "bool"
                 },
                 {
                     "name": "is_household",
@@ -281,16 +251,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "maxAge",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "minAge",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
                     "name": "name",
                     "required": false,
                     "type": "string"
@@ -304,16 +264,6 @@
                     "name": "parent_audience_id",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "partnerID",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "partner_reference_key",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "product_set_id",
@@ -344,11 +294,6 @@
                     "name": "seed_audience",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "source",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "tags",
