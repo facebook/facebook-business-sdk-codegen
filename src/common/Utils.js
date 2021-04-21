@@ -62,7 +62,7 @@ const Utils = {
 
     for (let line of array) {
       if (line.trim().startsWith(versionPath[language]['line_starter'])) {
-        let match = line.match(/^.*?(\d+\.\d+\.\d+).*$/i);
+        let match = line.match(/^.*?(\d+\.\d+\.\d+(\.\d+)?).*$/i);
         if (match) {
           return match[1];
         }
