@@ -236,16 +236,6 @@
                     "type": "list<Object>"
                 },
                 {
-                    "name": "is_household",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "is_household_exclusion",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "lookalike_spec",
                     "required": false,
                     "type": "string"
@@ -289,11 +279,6 @@
                     "name": "rule_aggregation",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "seed_audience",
-                    "required": false,
-                    "type": "unsigned int"
                 },
                 {
                     "name": "tags",

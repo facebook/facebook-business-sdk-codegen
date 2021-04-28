@@ -366,6 +366,10 @@
             "type": "string"
         },
         {
+            "name": "optimization_goal",
+            "type": "string"
+        },
+        {
             "name": "outbound_clicks",
             "type": "list<AdsActionStats>"
         },

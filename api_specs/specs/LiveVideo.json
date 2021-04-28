@@ -157,6 +157,11 @@
                     "type": "list<string>"
                 },
                 {
+                    "name": "cross_share_to_group_ids",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
                     "name": "crossposting_actions",
                     "required": false,
                     "type": "list<map>"
@@ -220,6 +225,11 @@
                     "name": "og_phrase",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "persistent_stream_key_status",
+                    "required": false,
+                    "type": "livevideo_persistent_stream_key_status"
                 },
                 {
                     "name": "place",
@@ -360,7 +370,7 @@
         },
         {
             "name": "permalink_url",
-            "type": "string"
+            "type": "Object"
         },
         {
             "name": "planned_start_time",

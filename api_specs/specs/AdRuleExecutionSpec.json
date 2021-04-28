@@ -1,5 +1,12 @@
 {
-    "apis": [],
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdRuleExecutionSpec",
+            "params": []
+        }
+    ],
     "fields": [
         {
             "name": "execution_options",

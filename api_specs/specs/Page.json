@@ -19,6 +19,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "admin_notes",
+            "return": "PageAdminNote",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "ads_posts",
             "return": "PagePost",
             "params": [
@@ -2280,6 +2286,23 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "phone_data",
+            "return": "CallAdsPhoneData",
+            "params": [
+                {
+                    "name": "call_ads_phone_data_use_case",
+                    "required": true,
+                    "type": "pagephone_data_call_ads_phone_data_use_case_enum_param"
+                },
+                {
+                    "name": "phone_number",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "photos",
             "return": "Photo",
@@ -2796,14 +2819,24 @@
             "return": "PagePost",
             "params": [
                 {
-                    "name": "since",
+                    "name": "include_hidden",
                     "required": false,
-                    "type": "datetime"
+                    "type": "bool"
                 },
                 {
-                    "name": "until",
+                    "name": "limit",
                     "required": false,
-                    "type": "datetime"
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "show_expired",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "with",
+                    "required": false,
+                    "type": "pagepublished_posts_with_enum_param"
                 }
             ]
         },
@@ -3042,12 +3075,6 @@
                     "type": "string"
                 }
             ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "tours",
-            "return": "EventTour",
-            "params": []
         },
         {
             "method": "POST",
@@ -4182,6 +4209,10 @@
         },
         {
             "name": "has_added_app",
+            "type": "bool"
+        },
+        {
+            "name": "has_transitioned_to_new_page_experience",
             "type": "bool"
         },
         {

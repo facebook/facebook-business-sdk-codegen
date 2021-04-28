@@ -654,16 +654,6 @@
         ]
     },
     {
-        "name": "AdCreative_applink_treatment",
-        "node": "AdCreative",
-        "field_or_param": "applink_treatment",
-        "values": [
-            "deeplink_with_appstore_fallback",
-            "deeplink_with_web_fallback",
-            "web_only"
-        ]
-    },
-    {
         "name": "AdCreative_call_to_action_type",
         "node": "AdCreative",
         "field_or_param": "call_to_action_type",
@@ -1132,6 +1122,19 @@
         ]
     },
     {
+        "name": "AdoptablePet_image_fetch_status",
+        "node": "AdoptablePet",
+        "field_or_param": "image_fetch_status",
+        "values": [
+            "DIRECT_UPLOAD",
+            "FETCHED",
+            "FETCH_FAILED",
+            "NO_STATUS",
+            "OUTDATED",
+            "PARTIAL_FETCH"
+        ]
+    },
+    {
         "name": "Application_supported_platforms",
         "node": "Application",
         "field_or_param": "supported_platforms",
@@ -1149,6 +1152,19 @@
             "SUPPLEMENTARY_IMAGES",
             "WEB",
             "WINDOWS"
+        ]
+    },
+    {
+        "name": "AutomotiveModel_image_fetch_status",
+        "node": "AutomotiveModel",
+        "field_or_param": "image_fetch_status",
+        "values": [
+            "DIRECT_UPLOAD",
+            "FETCHED",
+            "FETCH_FAILED",
+            "NO_STATUS",
+            "OUTDATED",
+            "PARTIAL_FETCH"
         ]
     },
     {
@@ -1216,6 +1232,7 @@
             "EXPANDED_AUDIENCE",
             "EXTERNAL_IDS",
             "EXTERNAL_IDS_MIX",
+            "FACEBOOK_WIFI_EVENTS",
             "FB_EVENT_SIGNALS",
             "FB_PIXEL_HITS",
             "HASHES",
@@ -1314,6 +1331,19 @@
         ]
     },
     {
+        "name": "Destination_image_fetch_status",
+        "node": "Destination",
+        "field_or_param": "image_fetch_status",
+        "values": [
+            "DIRECT_UPLOAD",
+            "FETCHED",
+            "FETCH_FAILED",
+            "NO_STATUS",
+            "OUTDATED",
+            "PARTIAL_FETCH"
+        ]
+    },
+    {
         "name": "EntityAtTextRange_type",
         "node": "EntityAtTextRange",
         "field_or_param": "type",
@@ -1379,6 +1409,45 @@
             "group",
             "private",
             "public"
+        ]
+    },
+    {
+        "name": "Flight_image_fetch_status",
+        "node": "Flight",
+        "field_or_param": "image_fetch_status",
+        "values": [
+            "DIRECT_UPLOAD",
+            "FETCHED",
+            "FETCH_FAILED",
+            "NO_STATUS",
+            "OUTDATED",
+            "PARTIAL_FETCH"
+        ]
+    },
+    {
+        "name": "HomeListing_image_fetch_status",
+        "node": "HomeListing",
+        "field_or_param": "image_fetch_status",
+        "values": [
+            "DIRECT_UPLOAD",
+            "FETCHED",
+            "FETCH_FAILED",
+            "NO_STATUS",
+            "OUTDATED",
+            "PARTIAL_FETCH"
+        ]
+    },
+    {
+        "name": "Hotel_image_fetch_status",
+        "node": "Hotel",
+        "field_or_param": "image_fetch_status",
+        "values": [
+            "DIRECT_UPLOAD",
+            "FETCHED",
+            "FETCH_FAILED",
+            "NO_STATUS",
+            "OUTDATED",
+            "PARTIAL_FETCH"
         ]
     },
     {
@@ -1508,7 +1577,8 @@
             "MARKETPLACE_SHOPS",
             "OFFLINE_CONVERSIONS",
             "SHOPS",
-            "UNIVERSAL_CHECKOUT"
+            "UNIVERSAL_CHECKOUT",
+            "WHATSAPP"
         ]
     },
     {
@@ -1561,6 +1631,19 @@
             "female",
             "male",
             "unisex"
+        ]
+    },
+    {
+        "name": "ProductItem_image_fetch_status",
+        "node": "ProductItem",
+        "field_or_param": "image_fetch_status",
+        "values": [
+            "DIRECT_UPLOAD",
+            "FETCHED",
+            "FETCH_FAILED",
+            "NO_STATUS",
+            "OUTDATED",
+            "PARTIAL_FETCH"
         ]
     },
     {
@@ -1623,6 +1706,32 @@
         "values": [
             "desktop",
             "mobile"
+        ]
+    },
+    {
+        "name": "VehicleOffer_image_fetch_status",
+        "node": "VehicleOffer",
+        "field_or_param": "image_fetch_status",
+        "values": [
+            "DIRECT_UPLOAD",
+            "FETCHED",
+            "FETCH_FAILED",
+            "NO_STATUS",
+            "OUTDATED",
+            "PARTIAL_FETCH"
+        ]
+    },
+    {
+        "name": "Vehicle_image_fetch_status",
+        "node": "Vehicle",
+        "field_or_param": "image_fetch_status",
+        "values": [
+            "DIRECT_UPLOAD",
+            "FETCHED",
+            "FETCH_FAILED",
+            "NO_STATUS",
+            "OUTDATED",
+            "PARTIAL_FETCH"
         ]
     },
     {
@@ -2183,8 +2292,6 @@
             "APP_REVIEW_SCREENCAST",
             "ATLAS_VIDEO",
             "AUDIO_BROADCAST",
-            "BELL_POLL",
-            "BRAND_EQUITY_POLL_VIDEO",
             "BROADCAST",
             "CANDIDATE_VIDEOS",
             "CANVAS",
@@ -2193,6 +2300,7 @@
             "CONTAINED_POST_ATTACHMENT",
             "CONTAINED_POST_AUDIO_BROADCAST",
             "CONTAINED_POST_BROADCAST",
+            "CONTAINED_POST_COPYRIGHT_REFERENCE_BROADCAST",
             "COPYRIGHT_REFERENCE_BROADCAST",
             "COPYRIGHT_REFERENCE_VIDEO",
             "CULTURAL_MOMENT_DEPRECATED",
@@ -2222,9 +2330,11 @@
             "GOODWILL_VIDEO_SHARE",
             "GOODWILL_VIDEO_TOKEN_REQUIRED",
             "GROUP_POST",
+            "HACK_TV",
             "HEURISTIC_CLUSTER_VIDEO",
             "HEURISTIC_PREVIEW",
             "HIGHLIGHT_CLIP_VIDEO",
+            "HUDDLE_BROADCAST",
             "IG_REELS_XPV",
             "IG_STORIES_READER",
             "INSPIRATION_VIDEO",
@@ -2233,6 +2343,7 @@
             "INSTANT_ARTICLE",
             "INSTANT_GAME_CLIP",
             "ISSUE_MODULE",
+            "JOBS_VISUAL_INTRO_ENTRY",
             "JOB_APPLICATION_VIDEO",
             "JOB_OPENING_VIDEO",
             "KOTOTORO",
@@ -2244,7 +2355,6 @@
             "LOOK_NOW_DEPRECATED",
             "MARKETPLACE_LISTING_VIDEO",
             "MARKETPLACE_PRE_RECORDED_VIDEO",
-            "MOMENTS_VIDEO",
             "NEO_ASYNC_GAME_VIDEO",
             "NO_STORY",
             "NO_STORY_WITH_ENTPOST",
@@ -2254,13 +2364,17 @@
             "PAGES_COVER_VIDEO",
             "PAGE_REVIEW_SCREENCAST",
             "PAGE_SLIDESHOW_VIDEO",
+            "PARTNER_DIRECTORY_BRAND_MEDIA",
             "PIXELCLOUD",
+            "PODCAST_RSS",
+            "PODCAST_VOICES",
             "PREMIERE_SOURCE",
+            "PREMIUM_MUSIC_VIDEO_NO_NEWSFEED_STORY",
+            "PREMIUM_MUSIC_VIDEO_WITH_NEWSFEED_STORY",
             "PRIVATE_GALLERY_VIDEO",
             "PRODUCT_VIDEO",
             "PROFILE_COVER_VIDEO",
             "PROFILE_INTRO_CARD",
-            "PROFILE_TO_PAGE_UPLOADED_VIDEO",
             "PROFILE_VIDEO",
             "PROTON",
             "QUICK_PROMOTION",
@@ -2272,7 +2386,9 @@
             "SLIDESHOW_SHAKR",
             "SLIDESHOW_VARIATION_VIDEO",
             "SOTTO_CONTENT",
+            "SOUNDBITES_VIDEO",
             "SOUND_PLATFORM_STREAM",
+            "SRT_ATTACHMENT",
             "STORIES_VIDEO",
             "STORYLINE",
             "STORYLINE_WITH_EXTERNAL_MUSIC",
@@ -2282,7 +2398,10 @@
             "TAROT_DIGEST",
             "TEMP_MULTIMEDIA_POST",
             "UNLISTED",
+            "UNLISTED_HACK_TV",
+            "UNLISTED_OCULUS",
             "VIDEO_COMMENT",
+            "VIDEO_COMPOSITION_VARIATION",
             "VIDEO_CREATIVE_EDITOR_AUTOGEN_AD_VIDEO",
             "VIDEO_SUPERRES",
             "VU_GENERATED_VIDEO",
@@ -2825,6 +2944,7 @@
             "HIDDEN_AAA",
             "INSTAGRAM",
             "MESSENGER",
+            "OCULUS",
             "UNKNOWN",
             "WHATSAPP"
         ]
@@ -2843,6 +2963,7 @@
             "HIDDEN_AAA",
             "INSTAGRAM_EXPLORE",
             "INSTAGRAM_IGTV",
+            "INSTAGRAM_REELS",
             "INSTAGRAM_STORIES",
             "INSTANT_ARTICLE",
             "INSTREAM_VIDEO",
@@ -2850,11 +2971,13 @@
             "MARKETPLACE",
             "MESSENGER_INBOX",
             "MESSENGER_STORIES",
+            "OCULUS_TWILIGHT_FEED",
             "OTHERS",
             "REWARDED_VIDEO",
             "RIGHT_HAND_COLUMN",
             "SEARCH",
             "STATUS",
+            "STICKERS",
             "SUGGESTED_VIDEO",
             "UNKNOWN",
             "VIDEO_FEEDS"
@@ -2998,6 +3121,7 @@
             "AUDIENCE_NETWORK_REWARDED_VIDEO",
             "DESKTOP_FEED_STANDARD",
             "FACEBOOK_STORY_MOBILE",
+            "FACEBOOK_STORY_STICKER_MOBILE",
             "INSTAGRAM_EXPLORE_CONTEXTUAL",
             "INSTAGRAM_EXPLORE_IMMERSIVE",
             "INSTAGRAM_REELS",
@@ -3377,6 +3501,7 @@
             "effective_facebook_positions",
             "effective_instagram_positions",
             "effective_messenger_positions",
+            "effective_oculus_positions",
             "effective_publisher_platforms",
             "effective_whatsapp_positions",
             "engagement_specs",
@@ -3435,6 +3560,7 @@
             "mobile_device_model",
             "moms",
             "net_worth",
+            "oculus_positions",
             "office_type",
             "page_types",
             "place_page_set_ids",
@@ -3524,6 +3650,7 @@
             "effective_facebook_positions",
             "effective_instagram_positions",
             "effective_messenger_positions",
+            "effective_oculus_positions",
             "effective_publisher_platforms",
             "effective_whatsapp_positions",
             "engagement_specs",
@@ -3582,6 +3709,7 @@
             "mobile_device_model",
             "moms",
             "net_worth",
+            "oculus_positions",
             "office_type",
             "page_types",
             "place_page_set_ids",
@@ -3684,6 +3812,7 @@
             "effective_facebook_positions",
             "effective_instagram_positions",
             "effective_messenger_positions",
+            "effective_oculus_positions",
             "effective_publisher_platforms",
             "effective_whatsapp_positions",
             "engagement_specs",
@@ -3742,6 +3871,7 @@
             "mobile_device_model",
             "moms",
             "net_worth",
+            "oculus_positions",
             "office_type",
             "page_types",
             "place_page_set_ids",
@@ -4170,6 +4300,7 @@
             "HIDDEN_AAA",
             "INSTAGRAM",
             "MESSENGER",
+            "OCULUS",
             "UNKNOWN",
             "WHATSAPP"
         ]
@@ -4188,6 +4319,7 @@
             "HIDDEN_AAA",
             "INSTAGRAM_EXPLORE",
             "INSTAGRAM_IGTV",
+            "INSTAGRAM_REELS",
             "INSTAGRAM_STORIES",
             "INSTANT_ARTICLE",
             "INSTREAM_VIDEO",
@@ -4195,11 +4327,13 @@
             "MARKETPLACE",
             "MESSENGER_INBOX",
             "MESSENGER_STORIES",
+            "OCULUS_TWILIGHT_FEED",
             "OTHERS",
             "REWARDED_VIDEO",
             "RIGHT_HAND_COLUMN",
             "SEARCH",
             "STATUS",
+            "STICKERS",
             "SUGGESTED_VIDEO",
             "UNKNOWN",
             "VIDEO_FEEDS"
@@ -4752,6 +4886,7 @@
             "HIDDEN_AAA",
             "INSTAGRAM",
             "MESSENGER",
+            "OCULUS",
             "UNKNOWN",
             "WHATSAPP"
         ]
@@ -4770,6 +4905,7 @@
             "HIDDEN_AAA",
             "INSTAGRAM_EXPLORE",
             "INSTAGRAM_IGTV",
+            "INSTAGRAM_REELS",
             "INSTAGRAM_STORIES",
             "INSTANT_ARTICLE",
             "INSTREAM_VIDEO",
@@ -4777,11 +4913,13 @@
             "MARKETPLACE",
             "MESSENGER_INBOX",
             "MESSENGER_STORIES",
+            "OCULUS_TWILIGHT_FEED",
             "OTHERS",
             "REWARDED_VIDEO",
             "RIGHT_HAND_COLUMN",
             "SEARCH",
             "STATUS",
+            "STICKERS",
             "SUGGESTED_VIDEO",
             "UNKNOWN",
             "VIDEO_FEEDS"
@@ -5114,6 +5252,7 @@
             "AUDIENCE_NETWORK_REWARDED_VIDEO",
             "DESKTOP_FEED_STANDARD",
             "FACEBOOK_STORY_MOBILE",
+            "FACEBOOK_STORY_STICKER_MOBILE",
             "INSTAGRAM_EXPLORE_CONTEXTUAL",
             "INSTAGRAM_EXPLORE_IMMERSIVE",
             "INSTAGRAM_REELS",
@@ -5380,6 +5519,7 @@
             "AUDIENCE_NETWORK_REWARDED_VIDEO",
             "DESKTOP_FEED_STANDARD",
             "FACEBOOK_STORY_MOBILE",
+            "FACEBOOK_STORY_STICKER_MOBILE",
             "INSTAGRAM_EXPLORE_CONTEXTUAL",
             "INSTAGRAM_EXPLORE_IMMERSIVE",
             "INSTAGRAM_REELS",
@@ -5664,11 +5804,13 @@
         "node": "AdStudyObjective",
         "field_or_param": "type",
         "values": [
+            "AEP_CONVERSION",
             "BRAND",
             "BRANDLIFT",
             "FTL",
             "MAE",
             "MAI",
+            "MPC_CONVERSION",
             "NONSALES",
             "PARTNER",
             "SALES",
@@ -5680,6 +5822,7 @@
         "node": "Comment",
         "field_or_param": "comment_privacy_value",
         "values": [
+            "DECLINED_BY_ADMIN_ASSISTANT",
             "DEFAULT_PRIVACY",
             "FRIENDS_AND_POST_OWNER",
             "FRIENDS_ONLY",
@@ -5764,6 +5907,7 @@
             "INSTANT_ARTICLES",
             "IOS",
             "MOBILE_WEB",
+            "OCULUS",
             "UNKNOWN"
         ]
     },
@@ -6341,6 +6485,7 @@
             "PROFILE_PLUS_ADVERTISE",
             "PROFILE_PLUS_ANALYZE",
             "PROFILE_PLUS_CREATE_CONTENT",
+            "PROFILE_PLUS_FACEBOOK_ACCESS",
             "PROFILE_PLUS_MANAGE",
             "PROFILE_PLUS_MESSAGING",
             "PROFILE_PLUS_MODERATE",
@@ -6359,11 +6504,13 @@
     },
     {
         "name": "businessbusiness_invoices_type_enum_param",
-        "node": "OracleTransaction",
+        "node": "OmegaCustomerTrx",
         "field_or_param": "type",
         "values": [
             "CM",
-            "INV"
+            "DM",
+            "INV",
+            "PRO_FORMA"
         ]
     },
     {
@@ -6419,6 +6566,7 @@
             "PROFILE_PLUS_ADVERTISE",
             "PROFILE_PLUS_ANALYZE",
             "PROFILE_PLUS_CREATE_CONTENT",
+            "PROFILE_PLUS_FACEBOOK_ACCESS",
             "PROFILE_PLUS_MANAGE",
             "PROFILE_PLUS_MESSAGING",
             "PROFILE_PLUS_MODERATE",
@@ -6446,6 +6594,7 @@
             "HIDDEN_AAA",
             "INSTAGRAM",
             "MESSENGER",
+            "OCULUS",
             "UNKNOWN",
             "WHATSAPP"
         ]
@@ -6464,6 +6613,7 @@
             "HIDDEN_AAA",
             "INSTAGRAM_EXPLORE",
             "INSTAGRAM_IGTV",
+            "INSTAGRAM_REELS",
             "INSTAGRAM_STORIES",
             "INSTANT_ARTICLE",
             "INSTREAM_VIDEO",
@@ -6471,11 +6621,13 @@
             "MARKETPLACE",
             "MESSENGER_INBOX",
             "MESSENGER_STORIES",
+            "OCULUS_TWILIGHT_FEED",
             "OTHERS",
             "REWARDED_VIDEO",
             "RIGHT_HAND_COLUMN",
             "SEARCH",
             "STATUS",
+            "STICKERS",
             "SUGGESTED_VIDEO",
             "UNKNOWN",
             "VIDEO_FEEDS"
@@ -6601,6 +6753,7 @@
             "PROFILE_PLUS_ADVERTISE",
             "PROFILE_PLUS_ANALYZE",
             "PROFILE_PLUS_CREATE_CONTENT",
+            "PROFILE_PLUS_FACEBOOK_ACCESS",
             "PROFILE_PLUS_MANAGE",
             "PROFILE_PLUS_MESSAGING",
             "PROFILE_PLUS_MODERATE",
@@ -7013,6 +7166,7 @@
         "node": "Comment",
         "field_or_param": "comment_privacy_value",
         "values": [
+            "DECLINED_BY_ADMIN_ASSISTANT",
             "DEFAULT_PRIVACY",
             "FRIENDS_AND_POST_OWNER",
             "FRIENDS_ONLY",
@@ -7528,6 +7682,16 @@
         ]
     },
     {
+        "name": "groupimportant_posts_button_type_enum_param",
+        "node": "WorkPromotedPostCompanyNotice",
+        "field_or_param": "button_type",
+        "values": [
+            "DISMISS",
+            "DONE",
+            "MARK_AS_READ"
+        ]
+    },
+    {
         "name": "grouplive_videos_broadcast_status_enum_param",
         "node": "LiveVideo",
         "field_or_param": "broadcast_status",
@@ -7664,8 +7828,6 @@
             "APP_REVIEW_SCREENCAST",
             "ATLAS_VIDEO",
             "AUDIO_BROADCAST",
-            "BELL_POLL",
-            "BRAND_EQUITY_POLL_VIDEO",
             "BROADCAST",
             "CANDIDATE_VIDEOS",
             "CANVAS",
@@ -7674,6 +7836,7 @@
             "CONTAINED_POST_ATTACHMENT",
             "CONTAINED_POST_AUDIO_BROADCAST",
             "CONTAINED_POST_BROADCAST",
+            "CONTAINED_POST_COPYRIGHT_REFERENCE_BROADCAST",
             "COPYRIGHT_REFERENCE_BROADCAST",
             "COPYRIGHT_REFERENCE_VIDEO",
             "CULTURAL_MOMENT_DEPRECATED",
@@ -7703,9 +7866,11 @@
             "GOODWILL_VIDEO_SHARE",
             "GOODWILL_VIDEO_TOKEN_REQUIRED",
             "GROUP_POST",
+            "HACK_TV",
             "HEURISTIC_CLUSTER_VIDEO",
             "HEURISTIC_PREVIEW",
             "HIGHLIGHT_CLIP_VIDEO",
+            "HUDDLE_BROADCAST",
             "IG_REELS_XPV",
             "IG_STORIES_READER",
             "INSPIRATION_VIDEO",
@@ -7714,6 +7879,7 @@
             "INSTANT_ARTICLE",
             "INSTANT_GAME_CLIP",
             "ISSUE_MODULE",
+            "JOBS_VISUAL_INTRO_ENTRY",
             "JOB_APPLICATION_VIDEO",
             "JOB_OPENING_VIDEO",
             "KOTOTORO",
@@ -7725,7 +7891,6 @@
             "LOOK_NOW_DEPRECATED",
             "MARKETPLACE_LISTING_VIDEO",
             "MARKETPLACE_PRE_RECORDED_VIDEO",
-            "MOMENTS_VIDEO",
             "NEO_ASYNC_GAME_VIDEO",
             "NO_STORY",
             "NO_STORY_WITH_ENTPOST",
@@ -7735,13 +7900,17 @@
             "PAGES_COVER_VIDEO",
             "PAGE_REVIEW_SCREENCAST",
             "PAGE_SLIDESHOW_VIDEO",
+            "PARTNER_DIRECTORY_BRAND_MEDIA",
             "PIXELCLOUD",
+            "PODCAST_RSS",
+            "PODCAST_VOICES",
             "PREMIERE_SOURCE",
+            "PREMIUM_MUSIC_VIDEO_NO_NEWSFEED_STORY",
+            "PREMIUM_MUSIC_VIDEO_WITH_NEWSFEED_STORY",
             "PRIVATE_GALLERY_VIDEO",
             "PRODUCT_VIDEO",
             "PROFILE_COVER_VIDEO",
             "PROFILE_INTRO_CARD",
-            "PROFILE_TO_PAGE_UPLOADED_VIDEO",
             "PROFILE_VIDEO",
             "PROTON",
             "QUICK_PROMOTION",
@@ -7753,7 +7922,9 @@
             "SLIDESHOW_SHAKR",
             "SLIDESHOW_VARIATION_VIDEO",
             "SOTTO_CONTENT",
+            "SOUNDBITES_VIDEO",
             "SOUND_PLATFORM_STREAM",
+            "SRT_ATTACHMENT",
             "STORIES_VIDEO",
             "STORYLINE",
             "STORYLINE_WITH_EXTERNAL_MUSIC",
@@ -7763,7 +7934,10 @@
             "TAROT_DIGEST",
             "TEMP_MULTIMEDIA_POST",
             "UNLISTED",
+            "UNLISTED_HACK_TV",
+            "UNLISTED_OCULUS",
             "VIDEO_COMMENT",
+            "VIDEO_COMPOSITION_VARIATION",
             "VIDEO_CREATIVE_EDITOR_AUTOGEN_AD_VIDEO",
             "VIDEO_SUPERRES",
             "VU_GENERATED_VIDEO",
@@ -8188,6 +8362,7 @@
         "node": "Comment",
         "field_or_param": "comment_privacy_value",
         "values": [
+            "DECLINED_BY_ADMIN_ASSISTANT",
             "DEFAULT_PRIVACY",
             "FRIENDS_AND_POST_OWNER",
             "FRIENDS_ONLY",
@@ -8255,12 +8430,23 @@
         "node": "LiveVideo",
         "field_or_param": "live_comment_moderation_setting",
         "values": [
+            "DEFAULT",
             "DISCUSSION",
             "FOLLOWER",
             "PROTECTED_MODE",
             "RESTRICTED",
             "SLOW",
             "SUPPORTER"
+        ]
+    },
+    {
+        "name": "livevideo_persistent_stream_key_status",
+        "node": "LiveVideo",
+        "field_or_param": "persistent_stream_key_status",
+        "values": [
+            "DISABLE",
+            "ENABLE",
+            "REGENERATE"
         ]
     },
     {
@@ -8718,6 +8904,7 @@
             "PROFILE_PLUS_ADVERTISE",
             "PROFILE_PLUS_ANALYZE",
             "PROFILE_PLUS_CREATE_CONTENT",
+            "PROFILE_PLUS_FACEBOOK_ACCESS",
             "PROFILE_PLUS_MANAGE",
             "PROFILE_PLUS_MESSAGING",
             "PROFILE_PLUS_MODERATE",
@@ -8745,6 +8932,7 @@
             "PROFILE_PLUS_ADVERTISE",
             "PROFILE_PLUS_ANALYZE",
             "PROFILE_PLUS_CREATE_CONTENT",
+            "PROFILE_PLUS_FACEBOOK_ACCESS",
             "PROFILE_PLUS_MANAGE",
             "PROFILE_PLUS_MESSAGING",
             "PROFILE_PLUS_MODERATE",
@@ -9642,6 +9830,15 @@
         ]
     },
     {
+        "name": "pagephone_data_call_ads_phone_data_use_case_enum_param",
+        "node": "CallAdsPhoneData",
+        "field_or_param": "call_ads_phone_data_use_case",
+        "values": [
+            "CALL_DESTINATION_AD",
+            "CALL_EXTENSION_AD"
+        ]
+    },
+    {
         "name": "pagephotos_backdated_time_granularity_enum_param",
         "node": "Photo",
         "field_or_param": "backdated_time_granularity",
@@ -9735,6 +9932,7 @@
         "node": "Comment",
         "field_or_param": "comment_privacy_value",
         "values": [
+            "DECLINED_BY_ADMIN_ASSISTANT",
             "DEFAULT_PRIVACY",
             "FRIENDS_AND_POST_OWNER",
             "FRIENDS_ONLY",
@@ -9829,6 +10027,14 @@
     },
     {
         "name": "pageposts_with_enum_param",
+        "node": "PagePost",
+        "field_or_param": "with",
+        "values": [
+            "LOCATION"
+        ]
+    },
+    {
+        "name": "pagepublished_posts_with_enum_param",
         "node": "PagePost",
         "field_or_param": "with",
         "values": [
@@ -9966,8 +10172,6 @@
             "APP_REVIEW_SCREENCAST",
             "ATLAS_VIDEO",
             "AUDIO_BROADCAST",
-            "BELL_POLL",
-            "BRAND_EQUITY_POLL_VIDEO",
             "BROADCAST",
             "CANDIDATE_VIDEOS",
             "CANVAS",
@@ -9976,6 +10180,7 @@
             "CONTAINED_POST_ATTACHMENT",
             "CONTAINED_POST_AUDIO_BROADCAST",
             "CONTAINED_POST_BROADCAST",
+            "CONTAINED_POST_COPYRIGHT_REFERENCE_BROADCAST",
             "COPYRIGHT_REFERENCE_BROADCAST",
             "COPYRIGHT_REFERENCE_VIDEO",
             "CULTURAL_MOMENT_DEPRECATED",
@@ -10005,9 +10210,11 @@
             "GOODWILL_VIDEO_SHARE",
             "GOODWILL_VIDEO_TOKEN_REQUIRED",
             "GROUP_POST",
+            "HACK_TV",
             "HEURISTIC_CLUSTER_VIDEO",
             "HEURISTIC_PREVIEW",
             "HIGHLIGHT_CLIP_VIDEO",
+            "HUDDLE_BROADCAST",
             "IG_REELS_XPV",
             "IG_STORIES_READER",
             "INSPIRATION_VIDEO",
@@ -10016,6 +10223,7 @@
             "INSTANT_ARTICLE",
             "INSTANT_GAME_CLIP",
             "ISSUE_MODULE",
+            "JOBS_VISUAL_INTRO_ENTRY",
             "JOB_APPLICATION_VIDEO",
             "JOB_OPENING_VIDEO",
             "KOTOTORO",
@@ -10027,7 +10235,6 @@
             "LOOK_NOW_DEPRECATED",
             "MARKETPLACE_LISTING_VIDEO",
             "MARKETPLACE_PRE_RECORDED_VIDEO",
-            "MOMENTS_VIDEO",
             "NEO_ASYNC_GAME_VIDEO",
             "NO_STORY",
             "NO_STORY_WITH_ENTPOST",
@@ -10037,13 +10244,17 @@
             "PAGES_COVER_VIDEO",
             "PAGE_REVIEW_SCREENCAST",
             "PAGE_SLIDESHOW_VIDEO",
+            "PARTNER_DIRECTORY_BRAND_MEDIA",
             "PIXELCLOUD",
+            "PODCAST_RSS",
+            "PODCAST_VOICES",
             "PREMIERE_SOURCE",
+            "PREMIUM_MUSIC_VIDEO_NO_NEWSFEED_STORY",
+            "PREMIUM_MUSIC_VIDEO_WITH_NEWSFEED_STORY",
             "PRIVATE_GALLERY_VIDEO",
             "PRODUCT_VIDEO",
             "PROFILE_COVER_VIDEO",
             "PROFILE_INTRO_CARD",
-            "PROFILE_TO_PAGE_UPLOADED_VIDEO",
             "PROFILE_VIDEO",
             "PROTON",
             "QUICK_PROMOTION",
@@ -10055,7 +10266,9 @@
             "SLIDESHOW_SHAKR",
             "SLIDESHOW_VARIATION_VIDEO",
             "SOTTO_CONTENT",
+            "SOUNDBITES_VIDEO",
             "SOUND_PLATFORM_STREAM",
+            "SRT_ATTACHMENT",
             "STORIES_VIDEO",
             "STORYLINE",
             "STORYLINE_WITH_EXTERNAL_MUSIC",
@@ -10065,7 +10278,10 @@
             "TAROT_DIGEST",
             "TEMP_MULTIMEDIA_POST",
             "UNLISTED",
+            "UNLISTED_HACK_TV",
+            "UNLISTED_OCULUS",
             "VIDEO_COMMENT",
+            "VIDEO_COMPOSITION_VARIATION",
             "VIDEO_CREATIVE_EDITOR_AUTOGEN_AD_VIDEO",
             "VIDEO_SUPERRES",
             "VU_GENERATED_VIDEO",
@@ -10185,6 +10401,7 @@
         "node": "Comment",
         "field_or_param": "comment_privacy_value",
         "values": [
+            "DECLINED_BY_ADMIN_ASSISTANT",
             "DEFAULT_PRIVACY",
             "FRIENDS_AND_POST_OWNER",
             "FRIENDS_ONLY",
@@ -10308,6 +10525,7 @@
         "node": "Comment",
         "field_or_param": "comment_privacy_value",
         "values": [
+            "DECLINED_BY_ADMIN_ASSISTANT",
             "DEFAULT_PRIVACY",
             "FRIENDS_AND_POST_OWNER",
             "FRIENDS_ONLY",
@@ -10401,6 +10619,17 @@
         ]
     },
     {
+        "name": "privateliftstudyinstance_operation",
+        "node": "PrivateLiftStudyInstance",
+        "field_or_param": "operation",
+        "values": [
+            "AGGREGATE",
+            "COMPUTE",
+            "ID_MATCH",
+            "NONE"
+        ]
+    },
+    {
         "name": "productcatalog_segment_use_cases",
         "node": null,
         "field_or_param": "segment_use_cases",
@@ -10408,6 +10637,7 @@
             "COLLAB_ADS",
             "COLLAB_ADS_FOR_MARKETPLACE_PARTNER",
             "COLLAB_ADS_SEGMENT_WITHOUT_SEGMENT_SYNCING",
+            "CREATORS_AS_SELLERS",
             "IG_SHOPPING",
             "IG_SHOPPING_SUGGESTED_PRODUCTS",
             "MARKETPLACE_SHOPS",
@@ -10572,6 +10802,7 @@
         "field_or_param": "feed_type",
         "values": [
             "AUTO",
+            "AUTOMOTIVE_MODEL",
             "DESTINATION",
             "FLIGHT",
             "HOME_LISTING",
@@ -12066,8 +12297,6 @@
             "APP_REVIEW_SCREENCAST",
             "ATLAS_VIDEO",
             "AUDIO_BROADCAST",
-            "BELL_POLL",
-            "BRAND_EQUITY_POLL_VIDEO",
             "BROADCAST",
             "CANDIDATE_VIDEOS",
             "CANVAS",
@@ -12076,6 +12305,7 @@
             "CONTAINED_POST_ATTACHMENT",
             "CONTAINED_POST_AUDIO_BROADCAST",
             "CONTAINED_POST_BROADCAST",
+            "CONTAINED_POST_COPYRIGHT_REFERENCE_BROADCAST",
             "COPYRIGHT_REFERENCE_BROADCAST",
             "COPYRIGHT_REFERENCE_VIDEO",
             "CULTURAL_MOMENT_DEPRECATED",
@@ -12105,9 +12335,11 @@
             "GOODWILL_VIDEO_SHARE",
             "GOODWILL_VIDEO_TOKEN_REQUIRED",
             "GROUP_POST",
+            "HACK_TV",
             "HEURISTIC_CLUSTER_VIDEO",
             "HEURISTIC_PREVIEW",
             "HIGHLIGHT_CLIP_VIDEO",
+            "HUDDLE_BROADCAST",
             "IG_REELS_XPV",
             "IG_STORIES_READER",
             "INSPIRATION_VIDEO",
@@ -12116,6 +12348,7 @@
             "INSTANT_ARTICLE",
             "INSTANT_GAME_CLIP",
             "ISSUE_MODULE",
+            "JOBS_VISUAL_INTRO_ENTRY",
             "JOB_APPLICATION_VIDEO",
             "JOB_OPENING_VIDEO",
             "KOTOTORO",
@@ -12127,7 +12360,6 @@
             "LOOK_NOW_DEPRECATED",
             "MARKETPLACE_LISTING_VIDEO",
             "MARKETPLACE_PRE_RECORDED_VIDEO",
-            "MOMENTS_VIDEO",
             "NEO_ASYNC_GAME_VIDEO",
             "NO_STORY",
             "NO_STORY_WITH_ENTPOST",
@@ -12137,13 +12369,17 @@
             "PAGES_COVER_VIDEO",
             "PAGE_REVIEW_SCREENCAST",
             "PAGE_SLIDESHOW_VIDEO",
+            "PARTNER_DIRECTORY_BRAND_MEDIA",
             "PIXELCLOUD",
+            "PODCAST_RSS",
+            "PODCAST_VOICES",
             "PREMIERE_SOURCE",
+            "PREMIUM_MUSIC_VIDEO_NO_NEWSFEED_STORY",
+            "PREMIUM_MUSIC_VIDEO_WITH_NEWSFEED_STORY",
             "PRIVATE_GALLERY_VIDEO",
             "PRODUCT_VIDEO",
             "PROFILE_COVER_VIDEO",
             "PROFILE_INTRO_CARD",
-            "PROFILE_TO_PAGE_UPLOADED_VIDEO",
             "PROFILE_VIDEO",
             "PROTON",
             "QUICK_PROMOTION",
@@ -12155,7 +12391,9 @@
             "SLIDESHOW_SHAKR",
             "SLIDESHOW_VARIATION_VIDEO",
             "SOTTO_CONTENT",
+            "SOUNDBITES_VIDEO",
             "SOUND_PLATFORM_STREAM",
+            "SRT_ATTACHMENT",
             "STORIES_VIDEO",
             "STORYLINE",
             "STORYLINE_WITH_EXTERNAL_MUSIC",
@@ -12165,7 +12403,10 @@
             "TAROT_DIGEST",
             "TEMP_MULTIMEDIA_POST",
             "UNLISTED",
+            "UNLISTED_HACK_TV",
+            "UNLISTED_OCULUS",
             "VIDEO_COMMENT",
+            "VIDEO_COMPOSITION_VARIATION",
             "VIDEO_CREATIVE_EDITOR_AUTOGEN_AD_VIDEO",
             "VIDEO_SUPERRES",
             "VU_GENERATED_VIDEO",
@@ -12413,6 +12654,7 @@
         "node": "Comment",
         "field_or_param": "comment_privacy_value",
         "values": [
+            "DECLINED_BY_ADMIN_ASSISTANT",
             "DEFAULT_PRIVACY",
             "FRIENDS_AND_POST_OWNER",
             "FRIENDS_ONLY",
@@ -12503,6 +12745,7 @@
             "MANAGE",
             "MANAGE_PHONE",
             "MANAGE_TEMPLATES",
+            "MESSAGING",
             "VIEW_COST"
         ]
     },

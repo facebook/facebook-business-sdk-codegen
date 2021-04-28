@@ -24,6 +24,11 @@
             "return": "ProductItem",
             "params": [
                 {
+                    "name": "catalog_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "image_height",
                     "required": false,
                     "type": "unsigned int"
@@ -470,6 +475,10 @@
         {
             "name": "image_cdn_urls",
             "type": "map<string, string>"
+        },
+        {
+            "name": "image_fetch_status",
+            "type": "ProductItem_image_fetch_status"
         },
         {
             "name": "image_url",

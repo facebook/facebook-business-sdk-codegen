@@ -9,7 +9,7 @@
         {
             "name": "#get",
             "method": "GET",
-            "return": "OracleTransaction",
+            "return": "OmegaCustomerTrx",
             "params": []
         }
     ],
@@ -33,6 +33,10 @@
         {
             "name": "billing_period",
             "type": "string"
+        },
+        {
+            "name": "campaign",
+            "type": "AtlasCampaign"
         },
         {
             "name": "cdn_download_uri",

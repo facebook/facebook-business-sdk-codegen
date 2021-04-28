@@ -1,0 +1,48 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "PrivateLiftStudyInstance",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "PrivateLiftStudyInstance",
+            "params": [
+                {
+                    "name": "operation",
+                    "required": true,
+                    "type": "privateliftstudyinstance_operation"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "breakdown_key",
+            "type": "string"
+        },
+        {
+            "name": "created_time",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "latest_status_update_time",
+            "type": "datetime"
+        },
+        {
+            "name": "server_ips",
+            "type": "list<string>"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        }
+    ]
+}

@@ -120,38 +120,6 @@
             "type": "datetime"
         },
         {
-            "name": "data_driven_convs",
-            "type": "float"
-        },
-        {
-            "name": "data_driven_convs_per_1k_impress",
-            "type": "float"
-        },
-        {
-            "name": "data_driven_convs_per_click",
-            "type": "float"
-        },
-        {
-            "name": "data_driven_convs_per_visit",
-            "type": "float"
-        },
-        {
-            "name": "data_driven_cpa",
-            "type": "float"
-        },
-        {
-            "name": "data_driven_nullable_convs",
-            "type": "float"
-        },
-        {
-            "name": "data_driven_revenue",
-            "type": "float"
-        },
-        {
-            "name": "data_driven_roas",
-            "type": "float"
-        },
-        {
             "name": "even_credit_convs",
             "type": "float"
         },

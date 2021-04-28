@@ -8,6 +8,24 @@
         },
         {
             "method": "GET",
+            "endpoint": "instances",
+            "return": "PrivateLiftStudyInstance",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "instances",
+            "return": "PrivateLiftStudyInstance",
+            "params": [
+                {
+                    "name": "breakdown_key",
+                    "required": true,
+                    "type": "map"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "objectives",
             "return": "AdStudyObjective",
             "params": []
@@ -112,6 +130,10 @@
         {
             "name": "created_time",
             "type": "datetime"
+        },
+        {
+            "name": "datasets_information",
+            "type": "list<string>"
         },
         {
             "name": "description",

@@ -1679,23 +1679,6 @@
         },
         {
             "method": "POST",
-            "endpoint": "audiencereplace",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "payload",
-                    "required": true,
-                    "type": "Object"
-                },
-                {
-                    "name": "session",
-                    "required": true,
-                    "type": "Object"
-                }
-            ]
-        },
-        {
-            "method": "POST",
             "endpoint": "block_list_drafts",
             "return": "AdAccount",
             "params": [
@@ -1863,9 +1846,19 @@
                     "type": "unsigned int"
                 },
                 {
+                    "name": "start_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
                     "name": "status",
                     "required": false,
                     "type": "adaccountcampaigns_status_enum_param"
+                },
+                {
+                    "name": "stop_time",
+                    "required": false,
+                    "type": "datetime"
                 },
                 {
                     "name": "topline_id",
@@ -2064,16 +2057,6 @@
                     "type": "list<Object>"
                 },
                 {
-                    "name": "is_household",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "is_household_exclusion",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "is_snapshot",
                     "required": false,
                     "type": "bool"
@@ -2159,19 +2142,9 @@
                     "type": "string"
                 },
                 {
-                    "name": "seed_audience",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
                     "name": "subtype",
                     "required": false,
                     "type": "adaccountcustomaudiences_subtype_enum_param"
-                },
-                {
-                    "name": "tags",
-                    "required": false,
-                    "type": "list<string>"
                 },
                 {
                     "name": "video_group_ids",
@@ -2737,16 +2710,6 @@
                     "type": "list<Object>"
                 },
                 {
-                    "name": "is_household",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "is_household_exclusion",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "is_snapshot",
                     "required": false,
                     "type": "bool"
@@ -2782,19 +2745,9 @@
                     "type": "unsigned int"
                 },
                 {
-                    "name": "seed_audience",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
                     "name": "subtype",
                     "required": false,
                     "type": "adaccountproduct_audiences_subtype_enum_param"
-                },
-                {
-                    "name": "tags",
-                    "required": false,
-                    "type": "list<string>"
                 }
             ]
         },

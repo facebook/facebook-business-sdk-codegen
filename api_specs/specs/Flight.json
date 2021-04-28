@@ -1,6 +1,18 @@
 {
     "apis": [
         {
+            "method": "GET",
+            "endpoint": "augmented_realities_metadata",
+            "return": "DynamicARMetadata",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "videos_metadata",
+            "return": "DynamicVideoMetadata",
+            "params": []
+        },
+        {
             "name": "#get",
             "method": "GET",
             "return": "Flight",
@@ -91,6 +103,10 @@
         {
             "name": "id",
             "type": "string"
+        },
+        {
+            "name": "image_fetch_status",
+            "type": "Flight_image_fetch_status"
         },
         {
             "name": "images",

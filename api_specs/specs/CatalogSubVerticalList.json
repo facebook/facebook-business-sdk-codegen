@@ -50,10 +50,6 @@
             "type": "Object"
         },
         {
-            "name": "clothing_group",
-            "type": "Object"
-        },
-        {
             "name": "computer_components",
             "type": "Object"
         },

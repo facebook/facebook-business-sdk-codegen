@@ -2,6 +2,12 @@
     "apis": [
         {
             "method": "GET",
+            "endpoint": "auto_markets",
+            "return": "AutoMarket",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "automotive_models",
             "return": "AutomotiveModel",
             "params": [
@@ -16,6 +22,12 @@
                     "type": "Object"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "autos",
+            "return": "Auto",
+            "params": []
         },
         {
             "method": "GET",
@@ -72,6 +84,23 @@
             "method": "GET",
             "endpoint": "hotels",
             "return": "Hotel",
+            "params": [
+                {
+                    "name": "bulk_pagination",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "filter",
+                    "required": false,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "media_titles",
+            "return": "MediaTitle",
             "params": [
                 {
                     "name": "bulk_pagination",

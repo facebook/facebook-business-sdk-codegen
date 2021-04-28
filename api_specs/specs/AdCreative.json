@@ -177,7 +177,7 @@
         },
         {
             "name": "applink_treatment",
-            "type": "AdCreative_applink_treatment"
+            "type": "string"
         },
         {
             "name": "asset_feed_spec",

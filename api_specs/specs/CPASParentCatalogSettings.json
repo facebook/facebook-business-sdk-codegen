@@ -29,6 +29,10 @@
             "type": "string"
         },
         {
+            "name": "disable_use_as_parent_catalog",
+            "type": "bool"
+        },
+        {
             "name": "id",
             "type": "string"
         }

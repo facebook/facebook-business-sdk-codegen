@@ -193,14 +193,6 @@
             "type": "Object"
         },
         {
-            "name": "tracking_pixel_ids_new",
-            "type": "list<string>"
-        },
-        {
-            "name": "tracking_pixel_ids_old",
-            "type": "list<string>"
-        },
-        {
             "name": "tracking_specs_new",
             "type": "list<Object>"
         },

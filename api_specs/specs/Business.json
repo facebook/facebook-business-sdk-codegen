@@ -328,6 +328,11 @@
             "return": "AdsPixel",
             "params": [
                 {
+                    "name": "is_crm",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "name",
                     "required": true,
                     "type": "string"
@@ -371,6 +376,11 @@
                     "name": "request_id",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "sync_api",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         },
@@ -401,7 +411,7 @@
         {
             "method": "GET",
             "endpoint": "business_invoices",
-            "return": "OracleTransaction",
+            "return": "OmegaCustomerTrx",
             "params": [
                 {
                     "name": "end_date",
@@ -411,7 +421,7 @@
                 {
                     "name": "invoice_id",
                     "required": false,
-                    "type": "unsigned int"
+                    "type": "string"
                 },
                 {
                     "name": "issue_end_date",
@@ -785,6 +795,18 @@
                     "name": "name",
                     "required": true,
                     "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "extendedcreditapplications",
+            "return": "ExtendedCreditApplication",
+            "params": [
+                {
+                    "name": "only_show_pending",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         },
@@ -1375,6 +1397,12 @@
                     "type": "string"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "spaco_dataset_collections",
+            "return": "SpacoDsDataCollection",
+            "params": []
         },
         {
             "method": "GET",

@@ -17,6 +17,10 @@
             "type": "int"
         },
         {
+            "name": "approximate_count_64bit",
+            "type": "int"
+        },
+        {
             "name": "description",
             "type": "string"
         },

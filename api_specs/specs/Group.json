@@ -783,6 +783,28 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "important_posts",
+            "return": "WorkPromotedPostCompanyNotice",
+            "params": [
+                {
+                    "name": "button_type",
+                    "required": false,
+                    "type": "groupimportant_posts_button_type_enum_param"
+                },
+                {
+                    "name": "expiration_time",
+                    "required": true,
+                    "type": "datetime"
+                },
+                {
+                    "name": "post_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "live_videos",
             "return": "LiveVideo",
@@ -1262,6 +1284,30 @@
                     "name": "width",
                     "required": false,
                     "type": "int"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "pinned_posts",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "post_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "pinned_posts",
+            "return": "Post",
+            "params": [
+                {
+                    "name": "post_ids",
+                    "required": true,
+                    "type": "list<string>"
                 }
             ]
         },

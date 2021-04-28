@@ -269,6 +269,10 @@
             "type": "bool"
         },
         {
+            "name": "is_crm",
+            "type": "bool"
+        },
+        {
             "name": "is_unavailable",
             "type": "bool"
         },

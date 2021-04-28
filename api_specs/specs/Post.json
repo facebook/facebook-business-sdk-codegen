@@ -245,6 +245,11 @@
                     "type": "unsigned int"
                 },
                 {
+                    "name": "explicitly_added_mentionee_ids",
+                    "required": false,
+                    "type": "list<unsigned int>"
+                },
+                {
                     "name": "feed_story_visibility",
                     "required": false,
                     "type": "post_feed_story_visibility"

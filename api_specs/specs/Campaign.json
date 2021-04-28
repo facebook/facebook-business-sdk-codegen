@@ -543,9 +543,19 @@
                     "type": "unsigned int"
                 },
                 {
+                    "name": "start_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
                     "name": "status",
                     "required": false,
                     "type": "adcampaigngroup_status"
+                },
+                {
+                    "name": "stop_time",
+                    "required": false,
+                    "type": "datetime"
                 },
                 {
                     "name": "upstream_events",

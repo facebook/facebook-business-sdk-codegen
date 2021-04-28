@@ -21,6 +21,10 @@
         {
             "name": "name_verification",
             "type": "Object"
+        },
+        {
+            "name": "whatsapp_business_api_data",
+            "type": "Object"
         }
     ]
 }

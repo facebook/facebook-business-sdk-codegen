@@ -159,6 +159,10 @@
             "type": "Object"
         },
         {
+            "name": "feature_eligibility",
+            "type": "Object"
+        },
+        {
             "name": "has_discount_code",
             "type": "bool"
         },

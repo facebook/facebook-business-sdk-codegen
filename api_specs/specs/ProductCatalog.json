@@ -88,6 +88,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "auto_markets",
+            "return": "AutoMarket",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "automotive_models",
             "return": "AutomotiveModel",
             "params": [
@@ -164,6 +170,12 @@
                     "type": "unsigned int"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "autos",
+            "return": "Auto",
+            "params": []
         },
         {
             "method": "POST",
@@ -576,6 +588,23 @@
                     "name": "requests",
                     "required": true,
                     "type": "map"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "media_titles",
+            "return": "MediaTitle",
+            "params": [
+                {
+                    "name": "bulk_pagination",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "filter",
+                    "required": false,
+                    "type": "Object"
                 }
             ]
         },
@@ -1359,7 +1388,13 @@
             "name": "#delete",
             "method": "DELETE",
             "return": "Object",
-            "params": []
+            "params": [
+                {
+                    "name": "allow_delete_catalog_with_live_product_set",
+                    "required": false,
+                    "type": "bool"
+                }
+            ]
         },
         {
             "name": "#get",

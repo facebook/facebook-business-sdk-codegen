@@ -86,6 +86,10 @@
             "type": "int"
         },
         {
+            "name": "media_product_type",
+            "type": "string"
+        },
+        {
             "name": "media_type",
             "type": "string"
         },
@@ -115,6 +119,10 @@
         },
         {
             "name": "username",
+            "type": "string"
+        },
+        {
+            "name": "video_title",
             "type": "string"
         }
     ]
