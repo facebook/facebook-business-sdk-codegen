@@ -270,6 +270,33 @@
         },
         {
             "method": "GET",
+            "endpoint": "diagnostics",
+            "return": "ProductCatalogDiagnosticGroup",
+            "params": [
+                {
+                    "name": "affected_channels",
+                    "required": false,
+                    "type": "list<productcatalogdiagnostics_affected_channels_enum_param>"
+                },
+                {
+                    "name": "affected_features",
+                    "required": false,
+                    "type": "list<productcatalogdiagnostics_affected_features_enum_param>"
+                },
+                {
+                    "name": "severities",
+                    "required": false,
+                    "type": "list<productcatalogdiagnostics_severities_enum_param>"
+                },
+                {
+                    "name": "types",
+                    "required": false,
+                    "type": "list<productcatalogdiagnostics_types_enum_param>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "event_stats",
             "return": "ProductEventStat",
             "params": [
@@ -288,7 +315,7 @@
                 {
                     "name": "external_event_sources",
                     "required": false,
-                    "type": "list<string>"
+                    "type": "Object"
                 }
             ]
         },
@@ -306,7 +333,7 @@
                 {
                     "name": "external_event_sources",
                     "required": false,
-                    "type": "list<string>"
+                    "type": "Object"
                 }
             ]
         },
@@ -578,6 +605,28 @@
                     "name": "item_sub_type",
                     "required": false,
                     "type": "productcatalogitems_batch_item_sub_type_enum_param"
+                },
+                {
+                    "name": "item_type",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "requests",
+                    "required": true,
+                    "type": "map"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "localized_items_batch",
+            "return": "ProductCatalog",
+            "params": [
+                {
+                    "name": "allow_upsert",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "item_type",
@@ -1072,6 +1121,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "marked_for_product_launch",
+                    "required": false,
+                    "type": "productcatalogproducts_marked_for_product_launch_enum_param"
+                },
+                {
                     "name": "material",
                     "required": false,
                     "type": "string"
@@ -1120,6 +1174,11 @@
                     "name": "product_type",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "quantity_to_sell_on_facebook",
+                    "required": false,
+                    "type": "unsigned int"
                 },
                 {
                     "name": "retailer_id",
@@ -1442,6 +1501,11 @@
                     "name": "name",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "partner_integration",
+                    "required": false,
+                    "type": "map"
                 },
                 {
                     "name": "store_catalog_settings",

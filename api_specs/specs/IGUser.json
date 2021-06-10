@@ -43,7 +43,18 @@
             "method": "GET",
             "endpoint": "media",
             "return": "IGMedia",
-            "params": []
+            "params": [
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "until",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
         },
         {
             "method": "POST",

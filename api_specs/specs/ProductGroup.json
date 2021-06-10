@@ -9,7 +9,7 @@
         {
             "method": "POST",
             "endpoint": "products",
-            "return": "ProductItem",
+            "return": "Object",
             "params": [
                 {
                     "name": "additional_image_urls",
@@ -202,6 +202,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "marked_for_product_launch",
+                    "required": false,
+                    "type": "productgroupproducts_marked_for_product_launch_enum_param"
+                },
+                {
                     "name": "material",
                     "required": false,
                     "type": "string"
@@ -250,6 +255,11 @@
                     "name": "product_type",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "quantity_to_sell_on_facebook",
+                    "required": false,
+                    "type": "unsigned int"
                 },
                 {
                     "name": "retailer_id",
@@ -322,7 +332,13 @@
             "name": "#delete",
             "method": "DELETE",
             "return": "Object",
-            "params": []
+            "params": [
+                {
+                    "name": "deletion_method",
+                    "required": false,
+                    "type": "productgroup_deletion_method"
+                }
+            ]
         },
         {
             "name": "#get",

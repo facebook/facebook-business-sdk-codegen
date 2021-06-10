@@ -133,6 +133,12 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "audio_isrcs",
+            "return": "AudioIsrc",
+            "params": []
+        },
+        {
             "method": "DELETE",
             "endpoint": "blocked",
             "return": "Object",
@@ -377,6 +383,11 @@
                     "name": "name",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "source_template_id",
+                    "required": false,
+                    "type": "string"
                 }
             ]
         },
@@ -473,6 +484,11 @@
                     "name": "folder",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "platform",
+                    "required": false,
+                    "type": "pageconversations_platform_enum_param"
                 },
                 {
                     "name": "tags",
@@ -1250,6 +1266,23 @@
         },
         {
             "method": "GET",
+            "endpoint": "groups",
+            "return": "Group",
+            "params": [
+                {
+                    "name": "admin_only",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "parent",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "image_copyrights",
             "return": "ImageCopyright",
             "params": []
@@ -1937,6 +1970,11 @@
                     "type": "pagemessages_notification_type_enum_param"
                 },
                 {
+                    "name": "payload",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "persona_id",
                     "required": false,
                     "type": "string"
@@ -1973,6 +2011,11 @@
                     "name": "fields",
                     "required": true,
                     "type": "list<pagemessenger_profile_fields_enum_param>"
+                },
+                {
+                    "name": "platform",
+                    "required": false,
+                    "type": "pagemessenger_profile_platform_enum_param"
                 }
             ]
         },
@@ -1980,7 +2023,13 @@
             "method": "GET",
             "endpoint": "messenger_profile",
             "return": "MessengerProfile",
-            "params": []
+            "params": [
+                {
+                    "name": "platform",
+                    "required": false,
+                    "type": "pagemessenger_profile_platform_enum_param"
+                }
+            ]
         },
         {
             "method": "POST",
@@ -2016,6 +2065,11 @@
                     "name": "persistent_menu",
                     "required": false,
                     "type": "list<Object>"
+                },
+                {
+                    "name": "platform",
+                    "required": false,
+                    "type": "pagemessenger_profile_platform_enum_param"
                 },
                 {
                     "name": "target_audience",
@@ -2280,23 +2334,6 @@
                 },
                 {
                     "name": "profile_picture_url",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "phone_data",
-            "return": "CallAdsPhoneData",
-            "params": [
-                {
-                    "name": "call_ads_phone_data_use_case",
-                    "required": true,
-                    "type": "pagephone_data_call_ads_phone_data_use_case_enum_param"
-                },
-                {
-                    "name": "phone_number",
                     "required": true,
                     "type": "string"
                 }
@@ -2669,6 +2706,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "frame_entrypoint",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "has_umg",
                     "required": false,
                     "type": "bool"
@@ -2908,7 +2950,13 @@
             "method": "GET",
             "endpoint": "secondary_receivers",
             "return": "Application",
-            "params": []
+            "params": [
+                {
+                    "name": "platform",
+                    "required": false,
+                    "type": "pagesecondary_receivers_platform_enum_param"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -3703,6 +3751,53 @@
                     "name": "include_hidden",
                     "required": false,
                     "type": "bool"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "workpagemessages",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "message",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "messaging_type",
+                    "required": false,
+                    "type": "pageworkpagemessages_messaging_type_enum_param"
+                },
+                {
+                    "name": "notification_type",
+                    "required": false,
+                    "type": "pageworkpagemessages_notification_type_enum_param"
+                },
+                {
+                    "name": "payload",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "persona_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "recipient",
+                    "required": true,
+                    "type": "Object"
+                },
+                {
+                    "name": "sender_action",
+                    "required": false,
+                    "type": "pageworkpagemessages_sender_action_enum_param"
+                },
+                {
+                    "name": "tag",
+                    "required": false,
+                    "type": "Object"
                 }
             ]
         },

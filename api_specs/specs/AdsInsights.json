@@ -214,10 +214,6 @@
             "type": "list<AdsActionStats>"
         },
         {
-            "name": "cost_per_store_visit_action",
-            "type": "list<AdsActionStats>"
-        },
-        {
             "name": "cost_per_thruplay",
             "type": "list<AdsActionStats>"
         },
@@ -272,6 +268,10 @@
         {
             "name": "dda_countby_convs",
             "type": "string"
+        },
+        {
+            "name": "dda_results",
+            "type": "list<Object>"
         },
         {
             "name": "engagement_rate_ranking",
@@ -343,7 +343,7 @@
         },
         {
             "name": "instant_experience_outbound_clicks",
-            "type": "string"
+            "type": "list<AdsActionStats>"
         },
         {
             "name": "interactive_component_tap",
@@ -416,10 +416,6 @@
         {
             "name": "spend",
             "type": "string"
-        },
-        {
-            "name": "store_visit_actions",
-            "type": "list<AdsActionStats>"
         },
         {
             "name": "unique_actions",

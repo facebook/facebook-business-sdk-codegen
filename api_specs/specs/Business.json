@@ -510,23 +510,6 @@
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "client_ad_accounts",
-            "return": "Business",
-            "params": [
-                {
-                    "name": "adaccount_id",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "permitted_tasks",
-                    "required": false,
-                    "type": "list<businessclient_ad_accounts_permitted_tasks_enum_param>"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "client_apps",
             "return": "Application",
@@ -819,58 +802,6 @@
                     "name": "order_by_is_owned_credential",
                     "required": false,
                     "type": "bool"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "franchise_programs",
-            "return": "FranchiseProgram",
-            "params": [
-                {
-                    "name": "business_asset_group",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "creative_folder",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "creative_spec_template_data",
-                    "required": false,
-                    "type": "map"
-                },
-                {
-                    "name": "description",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "end_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "name",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "program_approval_type",
-                    "required": true,
-                    "type": "businessfranchise_programs_program_approval_type_enum_param"
-                },
-                {
-                    "name": "shared_custom_audience",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "start_date",
-                    "required": false,
-                    "type": "datetime"
                 }
             ]
         },
@@ -1253,6 +1184,11 @@
                     "name": "parent_catalog_id",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "partner_integration",
+                    "required": false,
+                    "type": "map"
                 },
                 {
                     "name": "store_catalog_settings",

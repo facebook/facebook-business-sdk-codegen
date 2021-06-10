@@ -64,6 +64,11 @@
                     "name": "name",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "source_template_id",
+                    "required": false,
+                    "type": "string"
                 }
             ]
         }
@@ -98,12 +103,20 @@
             "type": "User"
         },
         {
+            "name": "linked_documents",
+            "type": "list<Canvas>"
+        },
+        {
             "name": "name",
             "type": "string"
         },
         {
             "name": "owner",
             "type": "Page"
+        },
+        {
+            "name": "source_template",
+            "type": "CanvasTemplate"
         },
         {
             "name": "update_time",

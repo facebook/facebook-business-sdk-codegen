@@ -3,7 +3,7 @@
         {
             "method": "GET",
             "endpoint": "campaigns",
-            "return": "InvoiceCampaignNew",
+            "return": "InvoiceCampaign",
             "params": []
         },
         {

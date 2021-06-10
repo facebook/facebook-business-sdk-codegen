@@ -156,6 +156,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "ticket_tiers",
+            "return": "EventTicketTier",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "videos",
             "return": "NullNode",
             "params": []

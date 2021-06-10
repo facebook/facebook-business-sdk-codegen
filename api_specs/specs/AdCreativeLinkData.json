@@ -2,6 +2,10 @@
     "apis": [],
     "fields": [
         {
+            "name": "ad_context",
+            "type": "string"
+        },
+        {
             "name": "additional_image_index",
             "type": "int"
         },

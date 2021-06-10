@@ -8,6 +8,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "channels_to_integrity_status",
+            "return": "CatalogItemChannelsToIntegrityStatus",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "videos_metadata",
             "return": "DynamicVideoMetadata",
             "params": []

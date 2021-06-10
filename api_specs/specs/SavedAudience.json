@@ -21,6 +21,10 @@
             "type": "int"
         },
         {
+            "name": "delete_time",
+            "type": "int"
+        },
+        {
             "name": "description",
             "type": "string"
         },
@@ -35,6 +39,10 @@
         {
             "name": "name",
             "type": "string"
+        },
+        {
+            "name": "operation_status",
+            "type": "CustomAudienceStatus"
         },
         {
             "name": "permission_for_actions",

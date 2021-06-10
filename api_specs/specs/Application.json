@@ -433,12 +433,6 @@
             "params": []
         },
         {
-            "method": "GET",
-            "endpoint": "app_event_types",
-            "return": "ApplicationAppEventTypes",
-            "params": []
-        },
-        {
             "method": "POST",
             "endpoint": "app_indexing",
             "return": "Application",
@@ -1177,6 +1171,23 @@
             "endpoint": "roles",
             "return": "ApplicationRoles",
             "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "send_notification",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "payload",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "token_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
         },
         {
             "method": "GET",

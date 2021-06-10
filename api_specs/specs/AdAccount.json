@@ -134,8 +134,26 @@
         },
         {
             "method": "GET",
+            "endpoint": "ad_saved_keywords",
+            "return": "AdSavedKeywords",
+            "params": [
+                {
+                    "name": "fields",
+                    "required": false,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "ad_studies",
             "return": "AdStudy",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "adcloudplayables",
+            "return": "CloudGame",
             "params": []
         },
         {
@@ -1541,23 +1559,6 @@
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "agencies",
-            "return": "AdAccount",
-            "params": [
-                {
-                    "name": "business",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "permitted_tasks",
-                    "required": false,
-                    "type": "list<adaccountagencies_permitted_tasks_enum_param>"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "applications",
             "return": "Application",
@@ -2456,7 +2457,7 @@
         {
             "method": "POST",
             "endpoint": "insights",
-            "return": "AdReportRun",
+            "return": "Object",
             "params": [
                 {
                     "name": "action_attribution_windows",
@@ -2570,6 +2571,18 @@
             "endpoint": "instagram_accounts",
             "return": "InstagramUser",
             "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "ios_fourteen_campaign_limits",
+            "return": "AdAccountIosFourteenCampaignLimits",
+            "params": [
+                {
+                    "name": "app_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
         },
         {
             "method": "GET",

@@ -314,6 +314,10 @@
             "type": "string"
         },
         {
+            "name": "delete_time",
+            "type": "int"
+        },
+        {
             "name": "delivery_status",
             "type": "CustomAudienceStatus"
         },
