@@ -124,6 +124,58 @@
             "params": []
         },
         {
+            "method": "POST",
+            "endpoint": "phone_numbers",
+            "return": "WhatsAppBusinessAccountToNumberCurrentStatus",
+            "params": [
+                {
+                    "name": "cc",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "migrate_phone_number",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "phone_number",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "product_catalogs",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "catalog_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "product_catalogs",
+            "return": "ProductCatalog",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "product_catalogs",
+            "return": "ProductCatalog",
+            "params": [
+                {
+                    "name": "catalog_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "DELETE",
             "endpoint": "subscribed_apps",
             "return": "Object",

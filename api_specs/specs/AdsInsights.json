@@ -22,20 +22,12 @@
             "type": "list<AdsActionStats>"
         },
         {
-            "name": "ad_bid_type",
-            "type": "string"
-        },
-        {
             "name": "ad_bid_value",
             "type": "string"
         },
         {
             "name": "ad_click_actions",
             "type": "list<AdsActionStats>"
-        },
-        {
-            "name": "ad_delivery",
-            "type": "string"
         },
         {
             "name": "ad_id",
@@ -50,23 +42,7 @@
             "type": "string"
         },
         {
-            "name": "adset_bid_type",
-            "type": "string"
-        },
-        {
             "name": "adset_bid_value",
-            "type": "string"
-        },
-        {
-            "name": "adset_budget_type",
-            "type": "string"
-        },
-        {
-            "name": "adset_budget_value",
-            "type": "string"
-        },
-        {
-            "name": "adset_delivery",
             "type": "string"
         },
         {
@@ -415,6 +391,10 @@
         },
         {
             "name": "spend",
+            "type": "string"
+        },
+        {
+            "name": "total_postbacks",
             "type": "string"
         },
         {

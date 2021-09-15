@@ -19,6 +19,18 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "previews",
+            "return": "TextWithEntities",
+            "params": [
+                {
+                    "name": "user_ids",
+                    "required": false,
+                    "type": "list<int>"
+                }
+            ]
+        },
+        {
             "name": "#delete",
             "method": "DELETE",
             "return": "Object",
@@ -83,8 +95,36 @@
             "type": "list<Object>"
         },
         {
+            "name": "business_id",
+            "type": "string"
+        },
+        {
             "name": "canvas_link",
             "type": "string"
+        },
+        {
+            "name": "collection_hero_image",
+            "type": "Photo"
+        },
+        {
+            "name": "collection_hero_video",
+            "type": "AdVideo"
+        },
+        {
+            "name": "collection_thumbnails",
+            "type": "list<CanvasCollectionThumbnail>"
+        },
+        {
+            "name": "element_payload",
+            "type": "string"
+        },
+        {
+            "name": "elements",
+            "type": "list<RichMediaElement>"
+        },
+        {
+            "name": "fb_body_elements",
+            "type": "list<Object>"
         },
         {
             "name": "id",
@@ -115,12 +155,40 @@
             "type": "Page"
         },
         {
+            "name": "property_list",
+            "type": "list<string>"
+        },
+        {
             "name": "source_template",
             "type": "CanvasTemplate"
         },
         {
+            "name": "store_url",
+            "type": "string"
+        },
+        {
+            "name": "style_list",
+            "type": "list<string>"
+        },
+        {
+            "name": "tags",
+            "type": "list<string>"
+        },
+        {
+            "name": "ui_property_list",
+            "type": "list<string>"
+        },
+        {
+            "name": "unused_body_elements",
+            "type": "list<Object>"
+        },
+        {
             "name": "update_time",
             "type": "int"
+        },
+        {
+            "name": "use_retailer_item_ids",
+            "type": "bool"
         }
     ]
 }

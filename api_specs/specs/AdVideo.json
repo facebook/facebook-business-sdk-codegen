@@ -134,6 +134,18 @@
             "params": []
         },
         {
+            "method": "POST",
+            "endpoint": "gaming_clip_create",
+            "return": "AdVideo",
+            "params": [
+                {
+                    "name": "duration_seconds",
+                    "required": false,
+                    "type": "float"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "likes",
             "return": "Profile",
@@ -507,7 +519,7 @@
         },
         {
             "name": "embed_html",
-            "type": "string"
+            "type": "Object"
         },
         {
             "name": "embeddable",
@@ -586,6 +598,10 @@
             "type": "Place"
         },
         {
+            "name": "post_views",
+            "type": "unsigned int"
+        },
+        {
             "name": "premiere_living_room_status",
             "type": "string"
         },
@@ -624,6 +640,10 @@
         {
             "name": "updated_time",
             "type": "datetime"
+        },
+        {
+            "name": "views",
+            "type": "unsigned int"
         }
     ]
 }

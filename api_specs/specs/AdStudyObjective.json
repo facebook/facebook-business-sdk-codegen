@@ -83,6 +83,11 @@
                     "type": "list<Object>"
                 },
                 {
+                    "name": "offsite_datasets",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
                     "name": "product_catalogs",
                     "required": false,
                     "type": "list<Object>"

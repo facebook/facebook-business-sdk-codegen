@@ -74,11 +74,6 @@
             "return": "AdPlacePageSet",
             "params": [
                 {
-                    "name": "category",
-                    "required": false,
-                    "type": "adaccountad_place_page_sets_category_enum_param"
-                },
-                {
                     "name": "location_types",
                     "required": false,
                     "type": "list<adaccountad_place_page_sets_location_types_enum_param>"
@@ -105,11 +100,6 @@
             "endpoint": "ad_place_page_sets_async",
             "return": "AdPlacePageSet",
             "params": [
-                {
-                    "name": "category",
-                    "required": false,
-                    "type": "adaccountad_place_page_sets_async_category_enum_param"
-                },
                 {
                     "name": "location_types",
                     "required": false,
@@ -902,6 +892,11 @@
                     "name": "execution_options",
                     "required": false,
                     "type": "list<adaccountadsets_execution_options_enum_param>"
+                },
+                {
+                    "name": "existing_customer_budget_percentage",
+                    "required": false,
+                    "type": "unsigned int"
                 },
                 {
                     "name": "frequency_control_specs",
@@ -1703,6 +1698,18 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "businessprojects",
+            "return": "BusinessProject",
+            "params": [
+                {
+                    "name": "business",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "DELETE",
             "endpoint": "campaigns",
             "return": "Object",
@@ -2457,7 +2464,7 @@
         {
             "method": "POST",
             "endpoint": "insights",
-            "return": "Object",
+            "return": "AdReportRun",
             "params": [
                 {
                     "name": "action_attribution_windows",
@@ -2581,6 +2588,68 @@
                     "name": "app_id",
                     "required": true,
                     "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "managed_partner_ads",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "campaign_group_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "campaign_group_status",
+                    "required": false,
+                    "type": "adaccountmanaged_partner_ads_campaign_group_status_enum_param"
+                },
+                {
+                    "name": "conversion_domain",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "end_time",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "lifetime_budget",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "override_creative_text",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "override_targeting_countries",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "product_set_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "start_time",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "use_marketplace_template",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "use_seller_template",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         },
@@ -3383,6 +3452,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "existing_customers",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
                     "name": "is_notifications_enabled",
                     "required": false,
                     "type": "bool"
@@ -3519,6 +3593,10 @@
             "type": "string"
         },
         {
+            "name": "existing_customers",
+            "type": "list<string>"
+        },
+        {
             "name": "extended_credit_invoice_group",
             "type": "ExtendedCreditInvoiceGroup"
         },
@@ -3537,6 +3615,10 @@
         {
             "name": "funding_source_details",
             "type": "FundingSourceDetails"
+        },
+        {
+            "name": "has_advertiser_opted_in_odax",
+            "type": "bool"
         },
         {
             "name": "has_migrated_permissions",
@@ -3564,10 +3646,6 @@
         },
         {
             "name": "is_in_3ds_authorization_enabled_market",
-            "type": "bool"
-        },
-        {
-            "name": "is_in_middle_of_local_entity_migration",
             "type": "bool"
         },
         {

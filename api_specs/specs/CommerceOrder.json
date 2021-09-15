@@ -196,6 +196,11 @@
                     "type": "map"
                 },
                 {
+                    "name": "should_use_default_fulfillment_location",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "tracking_info",
                     "required": false,
                     "type": "map"

@@ -143,6 +143,10 @@
             "type": "list<string>"
         },
         {
+            "name": "unit_price",
+            "type": "Object"
+        },
+        {
             "name": "url",
             "type": "string"
         }

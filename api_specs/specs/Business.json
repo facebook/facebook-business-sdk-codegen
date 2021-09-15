@@ -358,33 +358,6 @@
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "aggregate_revenue",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "ecpms",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "query_ids",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "request_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "sync_api",
-                    "required": false,
-                    "type": "bool"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "an_placements",
             "return": "AdPlacement",
@@ -490,6 +463,12 @@
                     "type": "businessbusiness_users_role_enum_param"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "businessprojects",
+            "return": "BusinessProject",
+            "params": []
         },
         {
             "method": "POST",
@@ -924,6 +903,172 @@
                     "name": "vertical",
                     "required": false,
                     "type": "businessmanaged_businesses_vertical_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "managed_partner_business_setup",
+            "return": "Business",
+            "params": [
+                {
+                    "name": "active_ad_account_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "active_page_id",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "partner_facebook_page_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "partner_registration_countries",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "seller_email_address",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "seller_external_website_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "template",
+                    "required": false,
+                    "type": "list<map>"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "managed_partner_businesses",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "ad_account_currency",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "catalog_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "child_business_external_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "credit_limit",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "line_of_credit_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "no_ad_account",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "page_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "page_profile_image_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "partner_facebook_page_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "partner_registration_countries",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "sales_rep_email",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "seller_external_website_url",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "seller_targeting_countries",
+                    "required": true,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "survey_business_type",
+                    "required": false,
+                    "type": "businessmanaged_partner_businesses_survey_business_type_enum_param"
+                },
+                {
+                    "name": "survey_num_assets",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "survey_num_people",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "timezone_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "vertical",
+                    "required": true,
+                    "type": "businessmanaged_partner_businesses_vertical_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "managed_partner_child_business_assets",
+            "return": "Business",
+            "params": [
+                {
+                    "name": "child_business_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "credit_limit",
+                    "required": true,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "line_of_credit_id",
+                    "required": true,
+                    "type": "string"
                 }
             ]
         },
@@ -1375,53 +1520,6 @@
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "upload_event",
-            "return": "MeasurementUploadEvent",
-            "params": [
-                {
-                    "name": "aggregation_level",
-                    "required": false,
-                    "type": "businessupload_event_aggregation_level_enum_param"
-                },
-                {
-                    "name": "conversion_end_date",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "conversion_start_date",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "event_status",
-                    "required": false,
-                    "type": "businessupload_event_event_status_enum_param"
-                },
-                {
-                    "name": "lookback_window",
-                    "required": false,
-                    "type": "businessupload_event_lookback_window_enum_param"
-                },
-                {
-                    "name": "match_universe",
-                    "required": false,
-                    "type": "businessupload_event_match_universe_enum_param"
-                },
-                {
-                    "name": "timezone",
-                    "required": false,
-                    "type": "businessupload_event_timezone_enum_param"
-                },
-                {
-                    "name": "upload_tag",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "name": "#get",
             "method": "GET",
             "return": "Business",
@@ -1466,6 +1564,14 @@
             "type": "bool"
         },
         {
+            "name": "collaborative_ads_managed_partner_business_info",
+            "type": "ManagedPartnerBusiness"
+        },
+        {
+            "name": "collaborative_ads_managed_partner_eligibility",
+            "type": "BusinessManagedPartnerEligibility"
+        },
+        {
             "name": "created_by",
             "type": "Object"
         },
@@ -1483,10 +1589,6 @@
         },
         {
             "name": "is_hidden",
-            "type": "bool"
-        },
-        {
-            "name": "is_instagram_enabled_in_fb_analytics",
             "type": "bool"
         },
         {

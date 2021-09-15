@@ -2,26 +2,14 @@
     "apis": [
         {
             "method": "GET",
-            "endpoint": "augmented_realities_metadata",
-            "return": "DynamicARMetadata",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "channels_to_integrity_status",
             "return": "CatalogItemChannelsToIntegrityStatus",
             "params": []
         },
         {
-            "method": "GET",
-            "endpoint": "videos_metadata",
-            "return": "DynamicVideoMetadata",
-            "params": []
-        },
-        {
             "name": "#get",
             "method": "GET",
-            "return": "AutomotiveModel",
+            "return": "LocalServiceBusiness",
             "params": []
         }
     ],
@@ -31,15 +19,7 @@
             "type": "CatalogItemAppLinks"
         },
         {
-            "name": "automotive_model_id",
-            "type": "string"
-        },
-        {
-            "name": "availability",
-            "type": "string"
-        },
-        {
-            "name": "body_style",
+            "name": "brand",
             "type": "string"
         },
         {
@@ -55,31 +35,23 @@
             "type": "string"
         },
         {
+            "name": "custom_label_1",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_2",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_3",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_4",
+            "type": "string"
+        },
+        {
             "name": "description",
-            "type": "string"
-        },
-        {
-            "name": "drivetrain",
-            "type": "string"
-        },
-        {
-            "name": "exterior_color",
-            "type": "string"
-        },
-        {
-            "name": "finance_description",
-            "type": "string"
-        },
-        {
-            "name": "finance_type",
-            "type": "string"
-        },
-        {
-            "name": "fuel_type",
-            "type": "string"
-        },
-        {
-            "name": "generation",
             "type": "string"
         },
         {
@@ -88,26 +60,14 @@
         },
         {
             "name": "image_fetch_status",
-            "type": "AutomotiveModel_image_fetch_status"
+            "type": "LocalServiceBusiness_image_fetch_status"
         },
         {
             "name": "images",
             "type": "list<string>"
         },
         {
-            "name": "interior_color",
-            "type": "string"
-        },
-        {
-            "name": "interior_upholstery",
-            "type": "string"
-        },
-        {
-            "name": "make",
-            "type": "string"
-        },
-        {
-            "name": "model",
+            "name": "local_service_business_id",
             "type": "string"
         },
         {
@@ -123,24 +83,8 @@
             "type": "string"
         },
         {
-            "name": "transmission",
-            "type": "string"
-        },
-        {
-            "name": "trim",
-            "type": "string"
-        },
-        {
-            "name": "unit_price",
-            "type": "Object"
-        },
-        {
             "name": "url",
             "type": "string"
-        },
-        {
-            "name": "year",
-            "type": "unsigned int"
         }
     ]
 }

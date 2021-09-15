@@ -855,11 +855,6 @@
                     "type": "unsigned int"
                 },
                 {
-                    "name": "planned_start_time",
-                    "required": false,
-                    "type": "int"
-                },
-                {
                     "name": "privacy",
                     "required": false,
                     "type": "string"
@@ -1266,6 +1261,23 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "shift_settings",
+            "return": "WorkShiftManagementSettings",
+            "params": [
+                {
+                    "name": "external_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "shift_feature_setting",
+                    "required": true,
+                    "type": "groupshift_settings_shift_feature_setting_enum_param"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "videos",
             "return": "AdVideo",
@@ -1526,6 +1538,11 @@
                     "name": "publish_event_id",
                     "required": false,
                     "type": "unsigned int"
+                },
+                {
+                    "name": "published",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "react_mode_metadata",

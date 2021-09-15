@@ -106,6 +106,10 @@
             "type": "map<string, string>"
         },
         {
+            "name": "neighborhoods",
+            "type": "map<string, string>"
+        },
+        {
             "name": "page_admin",
             "type": "map<string, string>"
         },

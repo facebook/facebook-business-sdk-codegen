@@ -90,7 +90,7 @@
         },
         {
             "name": "notification_status",
-            "type": "AdAsyncRequestSet_notification_status"
+            "type": "string"
         },
         {
             "name": "notification_uri",

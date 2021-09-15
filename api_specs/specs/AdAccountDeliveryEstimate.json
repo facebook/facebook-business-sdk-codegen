@@ -16,6 +16,10 @@
         {
             "name": "estimate_ready",
             "type": "bool"
+        },
+        {
+            "name": "targeting_optimization_types",
+            "type": "map<string, int>"
         }
     ]
 }

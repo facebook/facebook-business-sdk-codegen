@@ -26,6 +26,10 @@
             "type": "unsigned int"
         },
         {
+            "name": "description",
+            "type": "string"
+        },
+        {
             "name": "impressions",
             "type": "unsigned int"
         },

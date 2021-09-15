@@ -378,6 +378,10 @@
             "type": "string"
         },
         {
+            "name": "page_deletion_marked_delete_time",
+            "type": "int"
+        },
+        {
             "name": "permission_for_actions",
             "type": "AudiencePermissionForActions"
         },

@@ -509,6 +509,10 @@
             "type": "list<string>"
         },
         {
+            "name": "invalidation_errors",
+            "type": "list<Object>"
+        },
+        {
             "name": "inventory",
             "type": "int"
         },

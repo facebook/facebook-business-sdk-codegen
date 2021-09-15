@@ -377,7 +377,7 @@
         {
             "method": "POST",
             "endpoint": "insights",
-            "return": "Object",
+            "return": "AdReportRun",
             "params": [
                 {
                     "name": "action_attribution_windows",
@@ -626,6 +626,11 @@
                     "type": "list<adcampaign_execution_options>"
                 },
                 {
+                    "name": "existing_customer_budget_percentage",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
                     "name": "full_funnel_exploration_mode",
                     "required": false,
                     "type": "adcampaign_full_funnel_exploration_mode"
@@ -832,6 +837,10 @@
             "type": "datetime"
         },
         {
+            "name": "existing_customer_budget_percentage",
+            "type": "unsigned int"
+        },
+        {
             "name": "frequency_control_specs",
             "type": "list<AdCampaignFrequencyControlSpecs>"
         },
@@ -934,6 +943,10 @@
         {
             "name": "targeting",
             "type": "Targeting"
+        },
+        {
+            "name": "targeting_optimization_types",
+            "type": "map<string, int>"
         },
         {
             "name": "time_based_ad_rotation_id_blocks",

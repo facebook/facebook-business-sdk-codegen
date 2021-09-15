@@ -294,10 +294,6 @@
             "type": "list<string>"
         },
         {
-            "name": "review_status",
-            "type": "string"
-        },
-        {
             "name": "supported_card_types",
             "type": "list<string>"
         },

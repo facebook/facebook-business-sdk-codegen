@@ -25,12 +25,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "autos",
-            "return": "Auto",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "destinations",
             "return": "Destination",
             "params": [

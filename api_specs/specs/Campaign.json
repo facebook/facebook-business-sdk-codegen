@@ -300,7 +300,7 @@
         {
             "method": "POST",
             "endpoint": "insights",
-            "return": "AdReportRun",
+            "return": "Object",
             "params": [
                 {
                     "name": "action_attribution_windows",

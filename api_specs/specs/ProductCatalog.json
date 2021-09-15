@@ -46,6 +46,18 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "ar_effects_batch_status",
+            "return": "AREffectsBatchStatus",
+            "params": [
+                {
+                    "name": "handle",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "DELETE",
             "endpoint": "assigned_users",
             "return": "Object",
@@ -170,12 +182,6 @@
                     "type": "unsigned int"
                 }
             ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "autos",
-            "return": "Auto",
-            "params": []
         },
         {
             "method": "POST",
@@ -873,6 +879,11 @@
                     "name": "name",
                     "required": true,
                     "type": "string"
+                },
+                {
+                    "name": "ordering_info",
+                    "required": false,
+                    "type": "list<unsigned int>"
                 },
                 {
                     "name": "retailer_id",

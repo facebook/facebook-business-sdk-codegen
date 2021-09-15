@@ -21,65 +21,49 @@
         {
             "name": "#get",
             "method": "GET",
-            "return": "AutomotiveModel",
+            "return": "JobsJob",
             "params": []
         }
     ],
     "fields": [
         {
+            "name": "address",
+            "type": "Object"
+        },
+        {
             "name": "applinks",
             "type": "CatalogItemAppLinks"
-        },
-        {
-            "name": "automotive_model_id",
-            "type": "string"
-        },
-        {
-            "name": "availability",
-            "type": "string"
-        },
-        {
-            "name": "body_style",
-            "type": "string"
         },
         {
             "name": "category_specific_fields",
             "type": "CatalogSubVerticalList"
         },
         {
-            "name": "currency",
-            "type": "string"
-        },
-        {
             "name": "custom_label_0",
             "type": "string"
         },
         {
-            "name": "description",
+            "name": "custom_label_1",
             "type": "string"
         },
         {
-            "name": "drivetrain",
+            "name": "custom_label_2",
             "type": "string"
         },
         {
-            "name": "exterior_color",
+            "name": "custom_label_3",
             "type": "string"
         },
         {
-            "name": "finance_description",
+            "name": "custom_label_4",
             "type": "string"
         },
         {
-            "name": "finance_type",
+            "name": "custom_label_5",
             "type": "string"
         },
         {
-            "name": "fuel_type",
-            "type": "string"
-        },
-        {
-            "name": "generation",
+            "name": "custom_label_6",
             "type": "string"
         },
         {
@@ -88,47 +72,19 @@
         },
         {
             "name": "image_fetch_status",
-            "type": "AutomotiveModel_image_fetch_status"
+            "type": "JobsJob_image_fetch_status"
         },
         {
             "name": "images",
             "type": "list<string>"
         },
         {
-            "name": "interior_color",
-            "type": "string"
-        },
-        {
-            "name": "interior_upholstery",
-            "type": "string"
-        },
-        {
-            "name": "make",
-            "type": "string"
-        },
-        {
-            "name": "model",
-            "type": "string"
-        },
-        {
-            "name": "price",
+            "name": "jobs_job_id",
             "type": "string"
         },
         {
             "name": "sanitized_images",
             "type": "list<string>"
-        },
-        {
-            "name": "title",
-            "type": "string"
-        },
-        {
-            "name": "transmission",
-            "type": "string"
-        },
-        {
-            "name": "trim",
-            "type": "string"
         },
         {
             "name": "unit_price",
@@ -137,10 +93,6 @@
         {
             "name": "url",
             "type": "string"
-        },
-        {
-            "name": "year",
-            "type": "unsigned int"
         }
     ]
 }

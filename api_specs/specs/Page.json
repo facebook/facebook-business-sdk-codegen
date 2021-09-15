@@ -133,12 +133,6 @@
             ]
         },
         {
-            "method": "GET",
-            "endpoint": "audio_isrcs",
-            "return": "AudioIsrc",
-            "params": []
-        },
-        {
             "method": "DELETE",
             "endpoint": "blocked",
             "return": "Object",
@@ -210,38 +204,6 @@
             ]
         },
         {
-            "method": "DELETE",
-            "endpoint": "business_data",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "email",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "external_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "object_name",
-                    "required": true,
-                    "type": "pagebusiness_data_object_name_enum_param"
-                },
-                {
-                    "name": "order_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "order_item_id",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "POST",
             "endpoint": "business_data",
             "return": "Page",
@@ -254,6 +216,18 @@
                 {
                     "name": "partner_agent",
                     "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "businessprojects",
+            "return": "BusinessProject",
+            "params": [
+                {
+                    "name": "business",
+                    "required": false,
                     "type": "string"
                 }
             ]
@@ -386,6 +360,79 @@
                 },
                 {
                     "name": "source_template_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "chat_plugin",
+            "return": "ChatPlugin",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "chat_plugin",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "alignment",
+                    "required": false,
+                    "type": "pagechat_plugin_alignment_enum_param"
+                },
+                {
+                    "name": "desktop_bottom_spacing",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "desktop_side_spacing",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "entry_point_icon",
+                    "required": false,
+                    "type": "pagechat_plugin_entry_point_icon_enum_param"
+                },
+                {
+                    "name": "entry_point_label",
+                    "required": false,
+                    "type": "pagechat_plugin_entry_point_label_enum_param"
+                },
+                {
+                    "name": "greeting_dialog_display",
+                    "required": false,
+                    "type": "pagechat_plugin_greeting_dialog_display_enum_param"
+                },
+                {
+                    "name": "guest_chat_mode",
+                    "required": false,
+                    "type": "pagechat_plugin_guest_chat_mode_enum_param"
+                },
+                {
+                    "name": "mobile_bottom_spacing",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "mobile_chat_display",
+                    "required": false,
+                    "type": "pagechat_plugin_mobile_chat_display_enum_param"
+                },
+                {
+                    "name": "mobile_side_spacing",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "theme_color",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "welcome_screen_greeting",
                     "required": false,
                     "type": "string"
                 }
@@ -564,6 +611,11 @@
             "params": [
                 {
                     "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "page_label_name",
                     "required": true,
                     "type": "string"
                 }
@@ -1384,6 +1436,23 @@
         },
         {
             "method": "GET",
+            "endpoint": "insights_exports",
+            "return": "PageInsightsAsyncExportRun",
+            "params": [
+                {
+                    "name": "data_level",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "from_creation_date",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "instagram_accounts",
             "return": "InstagramUser",
             "params": []
@@ -1700,11 +1769,6 @@
                     "name": "original_fov",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "planned_start_time",
-                    "required": false,
-                    "type": "int"
                 },
                 {
                     "name": "privacy",
