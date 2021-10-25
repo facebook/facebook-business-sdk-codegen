@@ -3,22 +3,22 @@
         {
             "name": "#get",
             "method": "GET",
-            "return": "PlayableContent",
+            "return": "Shop",
             "params": []
         }
     ],
     "fields": [
         {
+            "name": "fb_sales_channel",
+            "type": "Object"
+        },
+        {
             "name": "id",
             "type": "string"
         },
         {
-            "name": "name",
-            "type": "string"
-        },
-        {
-            "name": "owner",
-            "type": "Profile"
+            "name": "ig_sales_channel",
+            "type": "Object"
         }
     ]
 }

@@ -600,6 +600,11 @@
                     "name": "status",
                     "required": false,
                     "type": "adaccountadrules_library_status_enum_param"
+                },
+                {
+                    "name": "ui_creation_source",
+                    "required": false,
+                    "type": "adaccountadrules_library_ui_creation_source_enum_param"
                 }
             ]
         },
@@ -1067,7 +1072,7 @@
         {
             "method": "POST",
             "endpoint": "adspixels",
-            "return": "AdsPixel",
+            "return": "Object",
             "params": [
                 {
                     "name": "name",

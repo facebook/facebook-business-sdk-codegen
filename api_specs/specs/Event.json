@@ -20,8 +20,8 @@
         },
         {
             "method": "POST",
-            "endpoint": "live_videos",
-            "return": "LiveVideo",
+            "endpoint": "livevideos",
+            "return": "Object",
             "params": [
                 {
                     "name": "content_tags",
@@ -81,7 +81,7 @@
                 {
                     "name": "projection",
                     "required": false,
-                    "type": "eventlive_videos_projection_enum_param"
+                    "type": "eventlivevideos_projection_enum_param"
                 },
                 {
                     "name": "published",
@@ -96,17 +96,17 @@
                 {
                     "name": "spatial_audio_format",
                     "required": false,
-                    "type": "eventlive_videos_spatial_audio_format_enum_param"
+                    "type": "eventlivevideos_spatial_audio_format_enum_param"
                 },
                 {
                     "name": "status",
                     "required": false,
-                    "type": "eventlive_videos_status_enum_param"
+                    "type": "eventlivevideos_status_enum_param"
                 },
                 {
                     "name": "stereoscopic_mode",
                     "required": false,
-                    "type": "eventlive_videos_stereoscopic_mode_enum_param"
+                    "type": "eventlivevideos_stereoscopic_mode_enum_param"
                 },
                 {
                     "name": "stop_on_delete_stream",
@@ -116,7 +116,7 @@
                 {
                     "name": "stream_type",
                     "required": false,
-                    "type": "eventlive_videos_stream_type_enum_param"
+                    "type": "eventlivevideos_stream_type_enum_param"
                 },
                 {
                     "name": "title",
@@ -276,6 +276,10 @@
         {
             "name": "start_time",
             "type": "string"
+        },
+        {
+            "name": "ticket_setting",
+            "type": "Object"
         },
         {
             "name": "ticket_uri",

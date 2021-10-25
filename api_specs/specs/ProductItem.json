@@ -196,6 +196,16 @@
                     "type": "string"
                 },
                 {
+                    "name": "importer_address",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "importer_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "inventory",
                     "required": false,
                     "type": "unsigned int"
@@ -251,6 +261,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "manufacturer_info",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "manufacturer_part_number",
                     "required": false,
                     "type": "string"
@@ -294,6 +309,11 @@
                     "name": "ordering_index",
                     "required": false,
                     "type": "unsigned int"
+                },
+                {
+                    "name": "origin_country",
+                    "required": false,
+                    "type": "productitem_origin_country"
                 },
                 {
                     "name": "pattern",
@@ -509,12 +529,24 @@
             "type": "list<string>"
         },
         {
+            "name": "importer_address",
+            "type": "ProductItemImporterAddress"
+        },
+        {
+            "name": "importer_name",
+            "type": "string"
+        },
+        {
             "name": "invalidation_errors",
             "type": "list<Object>"
         },
         {
             "name": "inventory",
             "type": "int"
+        },
+        {
+            "name": "manufacturer_info",
+            "type": "string"
         },
         {
             "name": "manufacturer_part_number",
@@ -539,6 +571,10 @@
         {
             "name": "ordering_index",
             "type": "int"
+        },
+        {
+            "name": "origin_country",
+            "type": "string"
         },
         {
             "name": "parent_product_id",

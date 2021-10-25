@@ -738,6 +738,18 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "draft_negative_keyword_lists",
+            "return": "DraftNegativeKeywordList",
+            "params": [
+                {
+                    "name": "negative_keyword_list_file",
+                    "required": true,
+                    "type": "file"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "event_source_groups",
             "return": "EventSourceGroup",
@@ -1088,6 +1100,12 @@
                     "type": "string"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "negative_keyword_lists",
+            "return": "NegativeKeywordList",
+            "params": []
         },
         {
             "method": "GET",

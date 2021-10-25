@@ -15,6 +15,10 @@
     ],
     "fields": [
         {
+            "name": "address",
+            "type": "Object"
+        },
+        {
             "name": "applinks",
             "type": "CatalogItemAppLinks"
         },
@@ -81,6 +85,10 @@
         {
             "name": "title",
             "type": "string"
+        },
+        {
+            "name": "unit_price",
+            "type": "Object"
         },
         {
             "name": "url",

@@ -197,6 +197,11 @@
                     "type": "list<unsigned int>"
                 },
                 {
+                    "name": "publish_to_shops",
+                    "required": false,
+                    "type": "list<map>"
+                },
+                {
                     "name": "retailer_id",
                     "required": false,
                     "type": "string"

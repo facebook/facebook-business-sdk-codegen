@@ -26,6 +26,14 @@
             "type": "int"
         },
         {
+            "name": "size_lower_bound",
+            "type": "int"
+        },
+        {
+            "name": "size_upper_bound",
+            "type": "int"
+        },
+        {
             "name": "source",
             "type": "string"
         },

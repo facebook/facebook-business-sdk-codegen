@@ -21,6 +21,14 @@
             "type": "int"
         },
         {
+            "name": "approximate_count_lower_bound",
+            "type": "int"
+        },
+        {
+            "name": "approximate_count_upper_bound",
+            "type": "int"
+        },
+        {
             "name": "delete_time",
             "type": "int"
         },

@@ -6,6 +6,14 @@
             "type": "unsigned int"
         },
         {
+            "name": "audience_size_lower_bound",
+            "type": "unsigned int"
+        },
+        {
+            "name": "audience_size_upper_bound",
+            "type": "unsigned int"
+        },
+        {
             "name": "conversion_lift",
             "type": "float"
         },

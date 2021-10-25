@@ -298,6 +298,14 @@
             "type": "int"
         },
         {
+            "name": "approximate_count_lower_bound",
+            "type": "int"
+        },
+        {
+            "name": "approximate_count_upper_bound",
+            "type": "int"
+        },
+        {
             "name": "customer_file_source",
             "type": "string"
         },

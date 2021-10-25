@@ -8,6 +8,14 @@
         {
             "name": "users",
             "type": "int"
+        },
+        {
+            "name": "users_lower_bound",
+            "type": "int"
+        },
+        {
+            "name": "users_upper_bound",
+            "type": "int"
         }
     ]
 }

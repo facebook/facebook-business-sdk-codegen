@@ -372,6 +372,10 @@
             "type": "datetime"
         },
         {
+            "name": "recommended_encoder_settings",
+            "type": "LiveVideoRecommendedEncoderSettings"
+        },
+        {
             "name": "seconds_left",
             "type": "int"
         },

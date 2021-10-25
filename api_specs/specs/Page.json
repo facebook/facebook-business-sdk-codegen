@@ -206,7 +206,7 @@
         {
             "method": "POST",
             "endpoint": "business_data",
-            "return": "Page",
+            "return": "Object",
             "params": [
                 {
                     "name": "data",
@@ -216,6 +216,11 @@
                 {
                     "name": "partner_agent",
                     "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "processing_type",
+                    "required": false,
                     "type": "string"
                 }
             ]
@@ -4495,6 +4500,10 @@
             "type": "string"
         },
         {
+            "name": "messaging_feature_status",
+            "type": "MessagingFeatureStatus"
+        },
+        {
             "name": "messenger_ads_default_icebreakers",
             "type": "list<string>"
         },
@@ -4509,6 +4518,10 @@
         {
             "name": "messenger_ads_quick_replies_type",
             "type": "string"
+        },
+        {
+            "name": "mini_shop_storefront",
+            "type": "Shop"
         },
         {
             "name": "mission",

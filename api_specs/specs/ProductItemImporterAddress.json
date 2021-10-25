@@ -1,0 +1,29 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "city",
+            "type": "string"
+        },
+        {
+            "name": "country",
+            "type": "string"
+        },
+        {
+            "name": "postal_code",
+            "type": "string"
+        },
+        {
+            "name": "region",
+            "type": "string"
+        },
+        {
+            "name": "street1",
+            "type": "string"
+        },
+        {
+            "name": "street2",
+            "type": "string"
+        }
+    ]
+}

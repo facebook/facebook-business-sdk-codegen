@@ -206,6 +206,18 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "catalog_website_settings",
+            "return": "CatalogWebsiteSettings",
+            "params": [
+                {
+                    "name": "is_allowed_to_crawl",
+                    "required": false,
+                    "type": "bool"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "categories",
             "return": "ProductCatalogCategory",
@@ -759,6 +771,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "ingestion_source_type",
+                    "required": false,
+                    "type": "productcatalogproduct_feeds_ingestion_source_type_enum_param"
+                },
+                {
                     "name": "item_sub_type",
                     "required": false,
                     "type": "productcatalogproduct_feeds_item_sub_type_enum_param"
@@ -782,6 +799,11 @@
                     "name": "override_value",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "primary_feed_ids",
+                    "required": false,
+                    "type": "list<string>"
                 },
                 {
                     "name": "quoted_fields_mode",
@@ -884,6 +906,11 @@
                     "name": "ordering_info",
                     "required": false,
                     "type": "list<unsigned int>"
+                },
+                {
+                    "name": "publish_to_shops",
+                    "required": false,
+                    "type": "list<map>"
                 },
                 {
                     "name": "retailer_id",
@@ -1072,6 +1099,16 @@
                     "type": "string"
                 },
                 {
+                    "name": "importer_address",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "importer_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "inventory",
                     "required": false,
                     "type": "unsigned int"
@@ -1127,6 +1164,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "manufacturer_info",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "manufacturer_part_number",
                     "required": false,
                     "type": "string"
@@ -1170,6 +1212,11 @@
                     "name": "ordering_index",
                     "required": false,
                     "type": "unsigned int"
+                },
+                {
+                    "name": "origin_country",
+                    "required": false,
+                    "type": "productcatalogproducts_origin_country_enum_param"
                 },
                 {
                     "name": "pattern",

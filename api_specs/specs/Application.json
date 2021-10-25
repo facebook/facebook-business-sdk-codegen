@@ -976,18 +976,6 @@
             ]
         },
         {
-            "method": "DELETE",
-            "endpoint": "payment_currencies",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "currency_url",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "POST",
             "endpoint": "payment_currencies",
             "return": "Application",

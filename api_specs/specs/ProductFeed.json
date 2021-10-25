@@ -154,6 +154,18 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "supplementary_feed_assocs",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "assoc_data",
+                    "required": true,
+                    "type": "list<map>"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "upload_schedules",
             "return": "ProductFeedSchedule",
@@ -347,6 +359,10 @@
             "type": "string"
         },
         {
+            "name": "ingestion_source_type",
+            "type": "string"
+        },
+        {
             "name": "item_sub_type",
             "type": "string"
         },
@@ -367,6 +383,10 @@
             "type": "string"
         },
         {
+            "name": "primary_feeds",
+            "type": "list<string>"
+        },
+        {
             "name": "product_count",
             "type": "int"
         },
@@ -377,6 +397,10 @@
         {
             "name": "schedule",
             "type": "ProductFeedSchedule"
+        },
+        {
+            "name": "supplementary_feeds",
+            "type": "list<string>"
         },
         {
             "name": "update_schedule",
