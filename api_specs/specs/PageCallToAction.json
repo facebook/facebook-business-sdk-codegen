@@ -23,11 +23,6 @@
                     "type": "int"
                 },
                 {
-                    "name": "android_deeplink",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "android_destination_type",
                     "required": false,
                     "type": "pagecalltoaction_android_destination_type"
@@ -56,11 +51,6 @@
                     "name": "iphone_app_id",
                     "required": false,
                     "type": "int"
-                },
-                {
-                    "name": "iphone_deeplink",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "iphone_destination_type",

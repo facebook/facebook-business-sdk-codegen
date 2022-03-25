@@ -2,10 +2,6 @@
     "apis": [],
     "fields": [
         {
-            "name": "audience_size",
-            "type": "unsigned int"
-        },
-        {
             "name": "audience_size_lower_bound",
             "type": "unsigned int"
         },

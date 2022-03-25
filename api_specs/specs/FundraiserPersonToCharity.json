@@ -1,0 +1,196 @@
+{
+    "apis": [
+        {
+            "method": "POST",
+            "endpoint": "end_fundraiser",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "external_donations",
+            "return": "ExternalAppDonation",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "external_donations",
+            "return": "ExternalAppDonation",
+            "params": [
+                {
+                    "name": "amount_received",
+                    "required": true,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "currency",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "donation_id_hash",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "donation_time",
+                    "required": true,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "donor_id_hash",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "FundraiserPersonToCharity",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "FundraiserPersonToCharity",
+            "params": [
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "end_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "external_event_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "external_event_start_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "external_event_uri",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "external_fundraiser_uri",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "external_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "goal_amount",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "amount_raised",
+            "type": "int"
+        },
+        {
+            "name": "charity_id",
+            "type": "string"
+        },
+        {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "donations_count",
+            "type": "int"
+        },
+        {
+            "name": "donors_count",
+            "type": "int"
+        },
+        {
+            "name": "end_time",
+            "type": "datetime"
+        },
+        {
+            "name": "external_amount_raised",
+            "type": "int"
+        },
+        {
+            "name": "external_donations_count",
+            "type": "int"
+        },
+        {
+            "name": "external_donors_count",
+            "type": "int"
+        },
+        {
+            "name": "external_event_name",
+            "type": "string"
+        },
+        {
+            "name": "external_event_start_time",
+            "type": "datetime"
+        },
+        {
+            "name": "external_event_uri",
+            "type": "string"
+        },
+        {
+            "name": "external_fundraiser_uri",
+            "type": "string"
+        },
+        {
+            "name": "external_id",
+            "type": "string"
+        },
+        {
+            "name": "goal_amount",
+            "type": "int"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "internal_amount_raised",
+            "type": "int"
+        },
+        {
+            "name": "internal_donations_count",
+            "type": "int"
+        },
+        {
+            "name": "internal_donors_count",
+            "type": "int"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "uri",
+            "type": "string"
+        }
+    ]
+}

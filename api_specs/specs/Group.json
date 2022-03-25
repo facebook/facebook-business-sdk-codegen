@@ -597,11 +597,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "sales_promo_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
                     "name": "scheduled_publish_time",
                     "required": false,
                     "type": "datetime"
@@ -845,14 +840,14 @@
                     "type": "bool"
                 },
                 {
-                    "name": "live_encoders",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
                     "name": "original_fov",
                     "required": false,
                     "type": "unsigned int"
+                },
+                {
+                    "name": "planned_start_time",
+                    "required": false,
+                    "type": "int"
                 },
                 {
                     "name": "privacy",
@@ -1068,11 +1063,6 @@
                 },
                 {
                     "name": "is_explicit_place",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "is_visual_search",
                     "required": false,
                     "type": "bool"
                 },
@@ -1560,11 +1550,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "sales_promo_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
                     "name": "scheduled_publish_time",
                     "required": false,
                     "type": "unsigned int"
@@ -1717,6 +1702,11 @@
                     "name": "group_icon",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "is_official_group",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "join_setting",

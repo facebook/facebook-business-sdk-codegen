@@ -73,6 +73,11 @@
             "return": "CustomAudience",
             "params": [
                 {
+                    "name": "action_source",
+                    "required": false,
+                    "type": "offlineconversiondatasetaudiences_action_source_enum_param"
+                },
+                {
                     "name": "ad_account",
                     "required": false,
                     "type": "string"
@@ -341,7 +346,7 @@
         },
         {
             "name": "usage",
-            "type": "Object"
+            "type": "OfflineConversionDataSetUsage"
         },
         {
             "name": "valid_entries",

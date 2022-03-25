@@ -301,10 +301,6 @@
             "type": "unsigned int"
         },
         {
-            "name": "target_audience_size",
-            "type": "unsigned int"
-        },
-        {
             "name": "target_cpm",
             "type": "unsigned int"
         },

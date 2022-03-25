@@ -394,6 +394,23 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "aem_conversion_filter",
+            "return": "AEMConversionFilter",
+            "params": [
+                {
+                    "name": "catalog_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "fb_content_ids",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "POST",
             "endpoint": "aem_conversions",
             "return": "Object",
@@ -402,6 +419,28 @@
                     "name": "aem_conversions",
                     "required": true,
                     "type": "list<map>"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "aem_skan_readiness",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "app_id",
+                    "required": true,
+                    "type": "int"
+                },
+                {
+                    "name": "is_aem_ready",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_skan_ready",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         },
@@ -442,6 +481,12 @@
             "method": "GET",
             "endpoint": "android_dialog_configs",
             "return": "ApplicationDialogConfig",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "app_event_types",
+            "return": "ApplicationAppEventTypes",
             "params": []
         },
         {
@@ -595,6 +640,12 @@
                     "type": "string"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "cloudbridge_settings",
+            "return": "CloudbridgeSetting",
+            "params": []
         },
         {
             "method": "POST",
@@ -918,6 +969,23 @@
         },
         {
             "method": "POST",
+            "endpoint": "monetized_digital_store_objects",
+            "return": "MonetizedDigitalStoreObject",
+            "params": [
+                {
+                    "name": "content_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "store",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
             "endpoint": "occludespopups",
             "return": "Object",
             "params": [
@@ -1035,53 +1103,13 @@
             "method": "GET",
             "endpoint": "purchases",
             "return": "GamesIAPOrder",
-            "params": [
-                {
-                    "name": "is_premium",
-                    "required": false,
-                    "type": "bool"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "push_token_register",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "device_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "push_token",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
+            "params": []
         },
         {
             "method": "GET",
             "endpoint": "roles",
             "return": "ApplicationRoles",
             "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "send_notification",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "payload",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "token_id",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
         },
         {
             "method": "GET",
@@ -1239,6 +1267,11 @@
             "method": "POST",
             "return": "Application",
             "params": [
+                {
+                    "name": "allow_cycle_app_secret",
+                    "required": false,
+                    "type": "bool"
+                },
                 {
                     "name": "an_platforms",
                     "required": false,

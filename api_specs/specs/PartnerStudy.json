@@ -1,12 +1,6 @@
 {
     "apis": [
         {
-            "method": "GET",
-            "endpoint": "partners",
-            "return": "AdsDataPartner",
-            "params": []
-        },
-        {
             "name": "#get",
             "method": "GET",
             "return": "PartnerStudy",

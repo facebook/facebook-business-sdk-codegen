@@ -10,10 +10,6 @@
             "type": "int"
         },
         {
-            "name": "estimate_mau",
-            "type": "int"
-        },
-        {
             "name": "estimate_mau_lower_bound",
             "type": "int"
         },

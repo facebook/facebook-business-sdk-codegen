@@ -216,6 +216,10 @@
             "type": "string"
         },
         {
+            "name": "collaborative_ads_lsb_image_bank_id",
+            "type": "string"
+        },
+        {
             "name": "destination_set_id",
             "type": "string"
         },
@@ -332,6 +336,10 @@
             "type": "string"
         },
         {
+            "name": "omnichannel_link_spec",
+            "type": "AdCreativeOmnichannelLinkSpec"
+        },
+        {
             "name": "place_page_set_id",
             "type": "string"
         },
@@ -370,6 +378,10 @@
         {
             "name": "template_url_spec",
             "type": "AdCreativeTemplateURLSpec"
+        },
+        {
+            "name": "thumbnail_id",
+            "type": "string"
         },
         {
             "name": "thumbnail_url",

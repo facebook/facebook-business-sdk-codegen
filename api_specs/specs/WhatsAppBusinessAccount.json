@@ -42,6 +42,58 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "conversation_analytics",
+            "return": "WABAConversationAnalytics",
+            "params": [
+                {
+                    "name": "conversation_directions",
+                    "required": false,
+                    "type": "list<whatsappbusinessaccountconversation_analytics_conversation_directions_enum_param>"
+                },
+                {
+                    "name": "conversation_types",
+                    "required": false,
+                    "type": "list<whatsappbusinessaccountconversation_analytics_conversation_types_enum_param>"
+                },
+                {
+                    "name": "country_codes",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "dimensions",
+                    "required": false,
+                    "type": "list<whatsappbusinessaccountconversation_analytics_dimensions_enum_param>"
+                },
+                {
+                    "name": "end",
+                    "required": true,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "granularity",
+                    "required": true,
+                    "type": "whatsappbusinessaccountconversation_analytics_granularity_enum_param"
+                },
+                {
+                    "name": "metric_types",
+                    "required": false,
+                    "type": "list<whatsappbusinessaccountconversation_analytics_metric_types_enum_param>"
+                },
+                {
+                    "name": "phone_numbers",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "start",
+                    "required": true,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
             "method": "DELETE",
             "endpoint": "message_templates",
             "return": "Object",

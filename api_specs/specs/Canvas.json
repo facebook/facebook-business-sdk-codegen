@@ -1,24 +1,6 @@
 {
     "apis": [
         {
-            "method": "POST",
-            "endpoint": "duplicate_canvas",
-            "return": "Canvas",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "preview_notifications",
-            "return": "Canvas",
-            "params": [
-                {
-                    "name": "user_ids",
-                    "required": false,
-                    "type": "list<int>"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "previews",
             "return": "TextWithEntities",
@@ -29,12 +11,6 @@
                     "type": "list<int>"
                 }
             ]
-        },
-        {
-            "name": "#delete",
-            "method": "DELETE",
-            "return": "Object",
-            "params": []
         },
         {
             "name": "#get",

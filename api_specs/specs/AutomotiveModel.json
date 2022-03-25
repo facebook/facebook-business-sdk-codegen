@@ -140,7 +140,7 @@
         },
         {
             "name": "year",
-            "type": "unsigned int"
+            "type": "int"
         }
     ]
 }

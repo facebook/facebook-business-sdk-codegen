@@ -890,11 +890,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "sales_promo_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
                     "name": "scheduled_publish_time",
                     "required": false,
                     "type": "datetime"
@@ -1015,6 +1010,83 @@
         },
         {
             "method": "POST",
+            "endpoint": "fundraisers",
+            "return": "FundraiserPersonToCharity",
+            "params": [
+                {
+                    "name": "charity_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "cover_photo",
+                    "required": false,
+                    "type": "file"
+                },
+                {
+                    "name": "currency",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "description",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "end_time",
+                    "required": true,
+                    "type": "int"
+                },
+                {
+                    "name": "external_event_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "external_event_start_time",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "external_event_uri",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "external_fundraiser_uri",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "external_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "fundraiser_type",
+                    "required": true,
+                    "type": "userfundraisers_fundraiser_type_enum_param"
+                },
+                {
+                    "name": "goal_amount",
+                    "required": true,
+                    "type": "int"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "page_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
             "endpoint": "game_items",
             "return": "GameItem",
             "params": [
@@ -1129,44 +1201,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "live_encoders",
-            "return": "LiveEncoder",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "live_encoders",
-            "return": "LiveEncoder",
-            "params": [
-                {
-                    "name": "brand",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "device_id",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "model",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "name",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "version",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "live_videos",
             "return": "LiveVideo",
             "params": [
@@ -1228,14 +1262,14 @@
                     "type": "bool"
                 },
                 {
-                    "name": "live_encoders",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
                     "name": "original_fov",
                     "required": false,
                     "type": "unsigned int"
+                },
+                {
+                    "name": "planned_start_time",
+                    "required": false,
+                    "type": "int"
                 },
                 {
                     "name": "privacy",
@@ -1508,11 +1542,6 @@
                 },
                 {
                     "name": "is_explicit_place",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "is_visual_search",
                     "required": false,
                     "type": "bool"
                 },
@@ -2054,11 +2083,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "sales_promo_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
                     "name": "slideshow_spec",
                     "required": false,
                     "type": "map"
@@ -2286,15 +2310,7 @@
             "type": "bool"
         },
         {
-            "name": "interested_in",
-            "type": "list<string>"
-        },
-        {
             "name": "is_guest_user",
-            "type": "bool"
-        },
-        {
-            "name": "is_verified",
             "type": "bool"
         },
         {
@@ -2359,10 +2375,6 @@
         },
         {
             "name": "relationship_status",
-            "type": "string"
-        },
-        {
-            "name": "religion",
             "type": "string"
         },
         {

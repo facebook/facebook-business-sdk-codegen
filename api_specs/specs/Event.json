@@ -64,14 +64,14 @@
                     "type": "bool"
                 },
                 {
-                    "name": "live_encoders",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
                     "name": "original_fov",
                     "required": false,
                     "type": "unsigned int"
+                },
+                {
+                    "name": "planned_start_time",
+                    "required": false,
+                    "type": "int"
                 },
                 {
                     "name": "privacy",

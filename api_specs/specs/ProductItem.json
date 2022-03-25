@@ -166,6 +166,31 @@
                     "type": "string"
                 },
                 {
+                    "name": "custom_number_0",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "custom_number_1",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "custom_number_2",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "custom_number_3",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "custom_number_4",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
                     "name": "description",
                     "required": false,
                     "type": "string"
@@ -386,6 +411,11 @@
                     "type": "productitem_visibility"
                 },
                 {
+                    "name": "wa_compliance_category",
+                    "required": false,
+                    "type": "productitem_wa_compliance_category"
+                },
+                {
                     "name": "windows_phone_app_id",
                     "required": false,
                     "type": "string"
@@ -486,6 +516,26 @@
         },
         {
             "name": "custom_label_4",
+            "type": "string"
+        },
+        {
+            "name": "custom_number_0",
+            "type": "string"
+        },
+        {
+            "name": "custom_number_1",
+            "type": "string"
+        },
+        {
+            "name": "custom_number_2",
+            "type": "string"
+        },
+        {
+            "name": "custom_number_3",
+            "type": "string"
+        },
+        {
+            "name": "custom_number_4",
             "type": "string"
         },
         {
@@ -663,6 +713,10 @@
         {
             "name": "visibility",
             "type": "ProductItem_visibility"
+        },
+        {
+            "name": "wa_compliance_category",
+            "type": "string"
         }
     ]
 }

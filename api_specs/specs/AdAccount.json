@@ -124,18 +124,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "ad_saved_keywords",
-            "return": "AdSavedKeywords",
-            "params": [
-                {
-                    "name": "fields",
-                    "required": false,
-                    "type": "list<string>"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "ad_studies",
             "return": "AdStudy",
             "params": []
@@ -321,6 +309,11 @@
                     "name": "object_url",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "omnichannel_link_spec",
+                    "required": false,
+                    "type": "map"
                 },
                 {
                     "name": "place_page_set_id",
@@ -801,7 +794,7 @@
         {
             "method": "POST",
             "endpoint": "adsets",
-            "return": "AdSet",
+            "return": "Object",
             "params": [
                 {
                     "name": "adlabels",
@@ -1428,11 +1421,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "sales_promo_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
                     "name": "slideshow_spec",
                     "required": false,
                     "type": "map"
@@ -1699,18 +1687,6 @@
                     "name": "custom_categories_only",
                     "required": false,
                     "type": "bool"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "businessprojects",
-            "return": "BusinessProject",
-            "params": [
-                {
-                    "name": "business",
-                    "required": false,
-                    "type": "string"
                 }
             ]
         },
@@ -3475,6 +3451,11 @@
                     "name": "name",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "odax_opt_in",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "partner",

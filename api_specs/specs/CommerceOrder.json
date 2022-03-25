@@ -56,6 +56,23 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "fulfill_order",
+            "return": "CommerceOrder",
+            "params": [
+                {
+                    "name": "idempotency_key",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "items",
+                    "required": true,
+                    "type": "list<map>"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "items",
             "return": "CommerceOrderItem",

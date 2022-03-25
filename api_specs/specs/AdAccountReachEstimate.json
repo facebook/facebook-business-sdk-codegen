@@ -6,10 +6,6 @@
             "type": "bool"
         },
         {
-            "name": "users",
-            "type": "int"
-        },
-        {
             "name": "users_lower_bound",
             "type": "int"
         },

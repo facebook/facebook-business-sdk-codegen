@@ -43,6 +43,10 @@
         {
             "name": "status",
             "type": "string"
+        },
+        {
+            "name": "tier",
+            "type": "string"
         }
     ]
 }

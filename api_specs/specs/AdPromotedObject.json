@@ -26,6 +26,10 @@
             "type": "string"
         },
         {
+            "name": "mcme_conversion_id",
+            "type": "string"
+        },
+        {
             "name": "object_store_url",
             "type": "string"
         },

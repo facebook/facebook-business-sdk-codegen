@@ -207,11 +207,6 @@
                     "type": "list<livevideo_live_comment_moderation_setting>"
                 },
                 {
-                    "name": "live_encoders",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
                     "name": "master_ingest_stream_id",
                     "required": false,
                     "type": "string"
@@ -235,6 +230,11 @@
                     "name": "place",
                     "required": false,
                     "type": "Object"
+                },
+                {
+                    "name": "planned_start_time",
+                    "required": false,
+                    "type": "datetime"
                 },
                 {
                     "name": "privacy",
@@ -350,10 +350,6 @@
         {
             "name": "is_reference_only",
             "type": "bool"
-        },
-        {
-            "name": "live_encoders",
-            "type": "list<LiveEncoder>"
         },
         {
             "name": "live_views",

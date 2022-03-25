@@ -294,10 +294,6 @@
             "type": "string"
         },
         {
-            "name": "approximate_count",
-            "type": "int"
-        },
-        {
             "name": "approximate_count_lower_bound",
             "type": "int"
         },

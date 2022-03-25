@@ -1,12 +1,6 @@
 {
     "apis": [
         {
-            "method": "GET",
-            "endpoint": "update_records",
-            "return": "MediaCopyrightUpdateRecord",
-            "params": []
-        },
-        {
             "name": "#get",
             "method": "GET",
             "return": "AudioCopyright",

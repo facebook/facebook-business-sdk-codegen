@@ -1,0 +1,40 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "CPASMerchantConfig",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "accepted_tos",
+            "type": "bool"
+        },
+        {
+            "name": "beta_features",
+            "type": "list<string>"
+        },
+        {
+            "name": "business_outcomes_status",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_test_merchant",
+            "type": "bool"
+        },
+        {
+            "name": "outcomes_compliance_status",
+            "type": "map<string, Object>"
+        },
+        {
+            "name": "qualified_to_onboard",
+            "type": "bool"
+        }
+    ]
+}

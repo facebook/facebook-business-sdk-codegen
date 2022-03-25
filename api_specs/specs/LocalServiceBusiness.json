@@ -23,12 +23,28 @@
             "type": "CatalogItemAppLinks"
         },
         {
+            "name": "availability",
+            "type": "LocalServiceBusiness_availability"
+        },
+        {
             "name": "brand",
+            "type": "string"
+        },
+        {
+            "name": "category",
             "type": "string"
         },
         {
             "name": "category_specific_fields",
             "type": "CatalogSubVerticalList"
+        },
+        {
+            "name": "condition",
+            "type": "LocalServiceBusiness_condition"
+        },
+        {
+            "name": "cuisine_type",
+            "type": "string"
         },
         {
             "name": "currency",
@@ -59,6 +75,14 @@
             "type": "string"
         },
         {
+            "name": "expiration_date",
+            "type": "string"
+        },
+        {
+            "name": "gtin",
+            "type": "string"
+        },
+        {
             "name": "id",
             "type": "string"
         },
@@ -75,12 +99,28 @@
             "type": "string"
         },
         {
+            "name": "phone",
+            "type": "string"
+        },
+        {
             "name": "price",
+            "type": "string"
+        },
+        {
+            "name": "price_range",
+            "type": "string"
+        },
+        {
+            "name": "retailer_category",
             "type": "string"
         },
         {
             "name": "sanitized_images",
             "type": "list<string>"
+        },
+        {
+            "name": "size",
+            "type": "string"
         },
         {
             "name": "title",
@@ -92,6 +132,10 @@
         },
         {
             "name": "url",
+            "type": "string"
+        },
+        {
+            "name": "vendor_id",
             "type": "string"
         }
     ]

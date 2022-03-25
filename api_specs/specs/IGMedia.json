@@ -120,10 +120,6 @@
         {
             "name": "username",
             "type": "string"
-        },
-        {
-            "name": "video_title",
-            "type": "string"
         }
     ]
 }

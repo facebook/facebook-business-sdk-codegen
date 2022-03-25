@@ -1,0 +1,80 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "progress",
+            "return": "SignalsUploadProgress",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "pull_sessions",
+            "return": "PartnerIntegrationPullSession",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "OfflineConversionDataSetUpload",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "api_calls",
+            "type": "int"
+        },
+        {
+            "name": "creation_time",
+            "type": "int"
+        },
+        {
+            "name": "duplicate_entries",
+            "type": "int"
+        },
+        {
+            "name": "event_stats",
+            "type": "string"
+        },
+        {
+            "name": "event_time_max",
+            "type": "int"
+        },
+        {
+            "name": "event_time_min",
+            "type": "int"
+        },
+        {
+            "name": "first_upload_time",
+            "type": "int"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_excluded_for_lift",
+            "type": "bool"
+        },
+        {
+            "name": "last_upload_time",
+            "type": "int"
+        },
+        {
+            "name": "match_rate_approx",
+            "type": "int"
+        },
+        {
+            "name": "matched_entries",
+            "type": "int"
+        },
+        {
+            "name": "upload_tag",
+            "type": "string"
+        },
+        {
+            "name": "valid_entries",
+            "type": "int"
+        }
+    ]
+}

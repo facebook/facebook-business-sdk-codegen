@@ -19,12 +19,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "admin_notes",
-            "return": "PageAdminNote",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "ads_posts",
             "return": "PagePost",
             "params": [
@@ -220,18 +214,6 @@
                 },
                 {
                     "name": "processing_type",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "businessprojects",
-            "return": "BusinessProject",
-            "params": [
-                {
-                    "name": "business",
                     "required": false,
                     "type": "string"
                 }
@@ -746,7 +728,7 @@
         {
             "method": "POST",
             "endpoint": "feed",
-            "return": "Page",
+            "return": "Object",
             "params": [
                 {
                     "name": "actions",
@@ -1204,11 +1186,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "sales_promo_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
                     "name": "scheduled_publish_time",
                     "required": false,
                     "type": "datetime"
@@ -1441,23 +1418,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "insights_exports",
-            "return": "PageInsightsAsyncExportRun",
-            "params": [
-                {
-                    "name": "data_level",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "from_creation_date",
-                    "required": false,
-                    "type": "datetime"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "instagram_accounts",
             "return": "InstagramUser",
             "params": []
@@ -1547,6 +1507,33 @@
                     "name": "publish_status",
                     "required": true,
                     "type": "pageinstant_articles_publish_publish_status_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "instant_articles_stats",
+            "return": "InstantArticlesStats",
+            "params": [
+                {
+                    "name": "metrics_list",
+                    "required": false,
+                    "type": "list<map>"
+                },
+                {
+                    "name": "page_list",
+                    "required": true,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "until",
+                    "required": false,
+                    "type": "datetime"
                 }
             ]
         },
@@ -1652,44 +1639,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "live_encoders",
-            "return": "LiveEncoder",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "live_encoders",
-            "return": "LiveEncoder",
-            "params": [
-                {
-                    "name": "brand",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "device_id",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "model",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "name",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "version",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "live_videos",
             "return": "LiveVideo",
             "params": [
@@ -1766,14 +1715,14 @@
                     "type": "bool"
                 },
                 {
-                    "name": "live_encoders",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
                     "name": "original_fov",
                     "required": false,
                     "type": "unsigned int"
+                },
+                {
+                    "name": "planned_start_time",
+                    "required": false,
+                    "type": "int"
                 },
                 {
                     "name": "privacy",
@@ -2313,6 +2262,23 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "notification_messages_dev_support",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "developer_action",
+                    "required": true,
+                    "type": "pagenotification_messages_dev_support_developer_action_enum_param"
+                },
+                {
+                    "name": "recipient",
+                    "required": true,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "page_backed_instagram_accounts",
             "return": "InstagramUser",
@@ -2537,11 +2503,6 @@
                 },
                 {
                     "name": "is_explicit_place",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "is_visual_search",
                     "required": false,
                     "type": "bool"
                 },
@@ -3225,7 +3186,7 @@
         {
             "method": "POST",
             "endpoint": "video_copyright_rules",
-            "return": "VideoCopyrightRule",
+            "return": "Object",
             "params": [
                 {
                     "name": "condition_groups",
@@ -3242,7 +3203,7 @@
         {
             "method": "POST",
             "endpoint": "video_copyrights",
-            "return": "VideoCopyright",
+            "return": "Object",
             "params": [
                 {
                     "name": "attribution_id",
@@ -3660,11 +3621,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "sales_promo_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
                     "name": "scheduled_publish_time",
                     "required": false,
                     "type": "unsigned int"
@@ -3820,53 +3776,6 @@
                     "name": "include_hidden",
                     "required": false,
                     "type": "bool"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "workpagemessages",
-            "return": "Page",
-            "params": [
-                {
-                    "name": "message",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "messaging_type",
-                    "required": false,
-                    "type": "pageworkpagemessages_messaging_type_enum_param"
-                },
-                {
-                    "name": "notification_type",
-                    "required": false,
-                    "type": "pageworkpagemessages_notification_type_enum_param"
-                },
-                {
-                    "name": "payload",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "persona_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "recipient",
-                    "required": true,
-                    "type": "Object"
-                },
-                {
-                    "name": "sender_action",
-                    "required": false,
-                    "type": "pageworkpagemessages_sender_action_enum_param"
-                },
-                {
-                    "name": "tag",
-                    "required": false,
-                    "type": "Object"
                 }
             ]
         },

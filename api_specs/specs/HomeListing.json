@@ -118,10 +118,6 @@
             "type": "string"
         },
         {
-            "name": "address",
-            "type": "Object"
-        },
-        {
             "name": "agent_company",
             "type": "string"
         },
@@ -162,10 +158,6 @@
             "type": "CatalogSubVerticalList"
         },
         {
-            "name": "co_2_emission_rating_eu",
-            "type": "Object"
-        },
-        {
             "name": "currency",
             "type": "string"
         },
@@ -176,10 +168,6 @@
         {
             "name": "description",
             "type": "string"
-        },
-        {
-            "name": "energy_rating_eu",
-            "type": "Object"
         },
         {
             "name": "furnish_type",
@@ -276,10 +264,6 @@
         {
             "name": "sanitized_images",
             "type": "list<string>"
-        },
-        {
-            "name": "unit_price",
-            "type": "Object"
         },
         {
             "name": "url",

@@ -41,6 +41,23 @@
         },
         {
             "method": "GET",
+            "endpoint": "live_media",
+            "return": "IGMedia",
+            "params": [
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "until",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "media",
             "return": "IGMedia",
             "params": [
@@ -67,9 +84,19 @@
                     "type": "string"
                 },
                 {
+                    "name": "children",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
                     "name": "image_url",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "is_carousel_item",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "location_id",

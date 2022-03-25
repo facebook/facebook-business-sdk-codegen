@@ -32,15 +32,11 @@
         },
         {
             "name": "billed_amount_details",
-            "type": "BilledAmountDetails"
+            "type": "Object"
         },
         {
             "name": "billing_period",
             "type": "string"
-        },
-        {
-            "name": "campaign",
-            "type": "AtlasCampaign"
         },
         {
             "name": "cdn_download_uri",

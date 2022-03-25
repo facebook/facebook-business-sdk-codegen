@@ -3,7 +3,7 @@
         {
             "name": "#get",
             "method": "GET",
-            "return": "Domain",
+            "return": "ProductImage",
             "params": []
         }
     ],
@@ -13,11 +13,7 @@
             "type": "string"
         },
         {
-            "name": "name",
-            "type": "string"
-        },
-        {
-            "name": "url",
+            "name": "image_url",
             "type": "string"
         }
     ]

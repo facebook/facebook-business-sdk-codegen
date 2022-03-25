@@ -58,20 +58,8 @@
             "type": "list<AdAssetFeedSpecLinkURL>"
         },
         {
-            "name": "offer_ids",
-            "type": "list<Object>"
-        },
-        {
-            "name": "onsite_destinations",
-            "type": "list<Object>"
-        },
-        {
             "name": "optimization_type",
             "type": "string"
-        },
-        {
-            "name": "phone_data_ids",
-            "type": "list<Object>"
         },
         {
             "name": "posts",
