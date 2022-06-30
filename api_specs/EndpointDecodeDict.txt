@@ -11,6 +11,7 @@ addraft=1
 addresses=1
 admin=1
 admined=1
+admins=1
 adrules=1
 adsets=1
 advertisable=1
