@@ -2071,6 +2071,7 @@
             "AGGREGATED_BUDGET_LIMITED",
             "AGGREGATED_COST_LIMITED",
             "AUCTION_OVERLAP",
+            "AUCTION_OVERLAP_CONSOLIDATION",
             "AUDIENCE_EXPANSION",
             "AUTOFLOW_OPT_IN",
             "CREATIVE_BADGE",

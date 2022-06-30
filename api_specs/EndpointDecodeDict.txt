@@ -389,3 +389,5 @@ watch=1
 whatsapp=1
 whitelisted=1
 who=1
+admins=1
+
