@@ -138,6 +138,10 @@
             "type": "map<string, string>"
         },
         {
+            "name": "unified_commerce_content",
+            "type": "map<string, string>"
+        },
+        {
             "name": "whatsapp",
             "type": "map<string, string>"
         }

@@ -162,6 +162,33 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "returns",
+            "return": "CommerceOrder",
+            "params": [
+                {
+                    "name": "items",
+                    "required": true,
+                    "type": "list<map>"
+                },
+                {
+                    "name": "merchant_return_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "return_message",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "update",
+                    "required": false,
+                    "type": "map"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "shipments",
             "return": "CommerceOrderShipment",
@@ -230,13 +257,23 @@
             "return": "CommerceOrder",
             "params": [
                 {
+                    "name": "external_shipment_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "fulfillment_id",
-                    "required": true,
+                    "required": false,
                     "type": "string"
                 },
                 {
                     "name": "idempotency_key",
                     "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "shipment_id",
+                    "required": false,
                     "type": "string"
                 },
                 {

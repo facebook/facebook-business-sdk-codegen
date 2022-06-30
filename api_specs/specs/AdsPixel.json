@@ -67,6 +67,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "platforms",
+                    "required": false,
+                    "type": "list<map>"
+                },
+                {
                     "name": "test_event_code",
                     "required": false,
                     "type": "string"

@@ -29,6 +29,10 @@
             "type": "datetime"
         },
         {
+            "name": "feature_list",
+            "type": "list<string>"
+        },
+        {
             "name": "id",
             "type": "string"
         },

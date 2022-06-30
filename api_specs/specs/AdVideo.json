@@ -482,6 +482,10 @@
             "type": "list<int>"
         },
         {
+            "name": "audio_isrc",
+            "type": "Object"
+        },
+        {
             "name": "backdated_time",
             "type": "datetime"
         },

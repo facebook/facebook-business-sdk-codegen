@@ -26,6 +26,10 @@
             "type": "list<float>"
         },
         {
+            "name": "ig_reels",
+            "type": "list<float>"
+        },
+        {
             "name": "ig_story",
             "type": "list<float>"
         },

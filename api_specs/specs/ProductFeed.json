@@ -96,6 +96,16 @@
                     "type": "bool"
                 },
                 {
+                    "name": "error_priority",
+                    "required": false,
+                    "type": "productfeedproducts_error_priority_enum_param"
+                },
+                {
+                    "name": "error_type",
+                    "required": false,
+                    "type": "productfeedproducts_error_type_enum_param"
+                },
+                {
                     "name": "filter",
                     "required": false,
                     "type": "Object"
@@ -111,7 +121,7 @@
         {
             "method": "POST",
             "endpoint": "rules",
-            "return": "Object",
+            "return": "ProductFeedRule",
             "params": [
                 {
                     "name": "attribute",
@@ -337,7 +347,7 @@
         },
         {
             "name": "ingestion_source_type",
-            "type": "string"
+            "type": "ProductFeed_ingestion_source_type"
         },
         {
             "name": "item_sub_type",

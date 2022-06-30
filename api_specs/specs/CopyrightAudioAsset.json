@@ -9,6 +9,10 @@
     ],
     "fields": [
         {
+            "name": "copyright",
+            "type": "AudioCopyright"
+        },
+        {
             "name": "creation_time",
             "type": "datetime"
         },

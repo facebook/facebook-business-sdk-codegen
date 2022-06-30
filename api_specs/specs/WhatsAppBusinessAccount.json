@@ -136,6 +136,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "quality_score",
+                    "required": false,
+                    "type": "list<whatsappbusinessaccountmessage_templates_quality_score_enum_param>"
+                },
+                {
                     "name": "status",
                     "required": false,
                     "type": "list<whatsappbusinessaccountmessage_templates_status_enum_param>"

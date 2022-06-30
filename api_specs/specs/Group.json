@@ -94,6 +94,24 @@
         },
         {
             "method": "GET",
+            "endpoint": "attachment_surfaces",
+            "return": "GroupThirdPartyPostAttachmentSurface",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "attachment_surfaces",
+            "return": "GroupThirdPartyPostAttachmentSurface",
+            "params": [
+                {
+                    "name": "title",
+                    "required": true,
+                    "type": "map"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "docs",
             "return": "Doc",
             "params": []
@@ -103,6 +121,34 @@
             "endpoint": "events",
             "return": "Event",
             "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "featured_cards",
+            "return": "GroupHighlightThirdPartyUnit",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "featured_cards",
+            "return": "GroupHighlightThirdPartyUnit",
+            "params": [
+                {
+                    "name": "body",
+                    "required": true,
+                    "type": "map"
+                },
+                {
+                    "name": "description",
+                    "required": true,
+                    "type": "map"
+                },
+                {
+                    "name": "title",
+                    "required": true,
+                    "type": "map"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -818,6 +864,11 @@
                     "name": "encoding_settings",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "event_params",
+                    "required": false,
+                    "type": "Object"
                 },
                 {
                     "name": "fisheye_video_cropped",
@@ -1784,6 +1835,10 @@
         {
             "name": "id",
             "type": "string"
+        },
+        {
+            "name": "install",
+            "type": "Object"
         },
         {
             "name": "link",

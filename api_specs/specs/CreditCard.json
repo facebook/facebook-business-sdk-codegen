@@ -1,0 +1,96 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "CreditCard",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "billing_address",
+            "type": "Object"
+        },
+        {
+            "name": "card_cobadging",
+            "type": "string"
+        },
+        {
+            "name": "card_holder_name",
+            "type": "string"
+        },
+        {
+            "name": "card_type",
+            "type": "string"
+        },
+        {
+            "name": "credential_id",
+            "type": "int"
+        },
+        {
+            "name": "default_receiving_method_products",
+            "type": "list<string>"
+        },
+        {
+            "name": "expiry_month",
+            "type": "string"
+        },
+        {
+            "name": "expiry_year",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_cvv_tricky_bin",
+            "type": "bool"
+        },
+        {
+            "name": "is_enabled",
+            "type": "bool"
+        },
+        {
+            "name": "is_last_used",
+            "type": "bool"
+        },
+        {
+            "name": "is_network_tokenized_in_india",
+            "type": "bool"
+        },
+        {
+            "name": "is_soft_disabled",
+            "type": "bool"
+        },
+        {
+            "name": "is_user_verified",
+            "type": "bool"
+        },
+        {
+            "name": "is_zip_verified",
+            "type": "bool"
+        },
+        {
+            "name": "last4",
+            "type": "string"
+        },
+        {
+            "name": "readable_card_type",
+            "type": "string"
+        },
+        {
+            "name": "time_created",
+            "type": "datetime"
+        },
+        {
+            "name": "time_created_ts",
+            "type": "int"
+        },
+        {
+            "name": "type",
+            "type": "string"
+        }
+    ]
+}

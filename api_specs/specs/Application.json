@@ -255,6 +255,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "ad_placement_groups",
+            "return": "AdPlacementGroup",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "adnetwork_placements",
             "return": "AdPlacement",
             "params": [
@@ -838,23 +844,6 @@
                     "name": "player_id",
                     "required": true,
                     "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "leaderboards_reset",
-            "return": "Application",
-            "params": [
-                {
-                    "name": "name",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "reset_time",
-                    "required": true,
-                    "type": "datetime"
                 }
             ]
         },

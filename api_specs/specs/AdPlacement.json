@@ -33,6 +33,10 @@
             "type": "string"
         },
         {
+            "name": "placement_group",
+            "type": "Object"
+        },
+        {
             "name": "platform",
             "type": "string"
         },

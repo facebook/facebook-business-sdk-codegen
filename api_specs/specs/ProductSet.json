@@ -96,6 +96,16 @@
                     "type": "bool"
                 },
                 {
+                    "name": "error_priority",
+                    "required": false,
+                    "type": "productsetproducts_error_priority_enum_param"
+                },
+                {
+                    "name": "error_type",
+                    "required": false,
+                    "type": "productsetproducts_error_type_enum_param"
+                },
+                {
                     "name": "filter",
                     "required": false,
                     "type": "Object"

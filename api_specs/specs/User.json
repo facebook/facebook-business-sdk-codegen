@@ -1009,6 +1009,12 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "fundraisers",
+            "return": "FundraiserPersonToCharity",
+            "params": []
+        },
+        {
             "method": "POST",
             "endpoint": "fundraisers",
             "return": "FundraiserPersonToCharity",
@@ -1240,6 +1246,11 @@
                     "name": "encoding_settings",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "event_params",
+                    "required": false,
+                    "type": "Object"
                 },
                 {
                     "name": "fisheye_video_cropped",
@@ -1726,6 +1737,24 @@
                     "name": "width",
                     "required": false,
                     "type": "int"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "pioneer_data",
+            "return": "PioneerRemotePersistence",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "pioneer_data",
+            "return": "PioneerRemotePersistence",
+            "params": [
+                {
+                    "name": "json_data",
+                    "required": false,
+                    "type": "string"
                 }
             ]
         },

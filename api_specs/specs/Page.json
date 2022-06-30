@@ -728,7 +728,7 @@
         {
             "method": "POST",
             "endpoint": "feed",
-            "return": "Object",
+            "return": "Page",
             "params": [
                 {
                     "name": "actions",
@@ -1539,6 +1539,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "invoice_access_bank_account",
+            "return": "McomInvoiceBankAccount",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "leadgen_forms",
             "return": "LeadgenForm",
             "params": []
@@ -1688,6 +1694,11 @@
                     "name": "encoding_settings",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "event_params",
+                    "required": false,
+                    "type": "Object"
                 },
                 {
                     "name": "fisheye_video_cropped",
@@ -2098,124 +2109,6 @@
                     "name": "whitelisted_domains",
                     "required": false,
                     "type": "list<string>"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "nativeoffers",
-            "return": "NativeOffer",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "nativeoffers",
-            "return": "NativeOffer",
-            "params": [
-                {
-                    "name": "barcode_photo",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "barcode_type",
-                    "required": false,
-                    "type": "pagenativeoffers_barcode_type_enum_param"
-                },
-                {
-                    "name": "barcode_value",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "block_reshares",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "commerce_product_item",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "commerce_store",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "commerce_store_collection",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "details",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "disable_location",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "discounts",
-                    "required": true,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "expiration_time",
-                    "required": true,
-                    "type": "datetime"
-                },
-                {
-                    "name": "instore_code",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "location_type",
-                    "required": false,
-                    "type": "pagenativeoffers_location_type_enum_param"
-                },
-                {
-                    "name": "max_save_count",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "online_code",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "page_set_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "redemption_code",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "redemption_link",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "terms",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "unique_barcodes",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "unique_codes",
-                    "required": false,
-                    "type": "unsigned int"
                 }
             ]
         },
@@ -3186,7 +3079,7 @@
         {
             "method": "POST",
             "endpoint": "video_copyright_rules",
-            "return": "Object",
+            "return": "VideoCopyrightRule",
             "params": [
                 {
                     "name": "condition_groups",
@@ -3203,7 +3096,7 @@
         {
             "method": "POST",
             "endpoint": "video_copyrights",
-            "return": "Object",
+            "return": "VideoCopyright",
             "params": [
                 {
                     "name": "attribution_id",
@@ -3776,6 +3669,21 @@
                     "name": "include_hidden",
                     "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "limit",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "show_expired",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "with",
+                    "required": false,
+                    "type": "pagevisitor_posts_with_enum_param"
                 }
             ]
         },

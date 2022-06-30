@@ -253,6 +253,22 @@
             "type": "string"
         },
         {
+            "name": "odax_objective",
+            "type": "unsigned int"
+        },
+        {
+            "name": "odax_objective_name",
+            "type": "string"
+        },
+        {
+            "name": "optimization_goal",
+            "type": "unsigned int"
+        },
+        {
+            "name": "optimization_goal_name",
+            "type": "string"
+        },
+        {
             "name": "pause_periods",
             "type": "list<Object>"
         },

@@ -668,6 +668,12 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "cpas_business_setup_config",
+            "return": "CPASBusinessSetupConfig",
+            "params": []
+        },
+        {
             "method": "POST",
             "endpoint": "cpas_business_setup_config",
             "return": "CPASBusinessSetupConfig",
@@ -721,6 +727,12 @@
                     "type": "list<string>"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "creditcards",
+            "return": "CreditCard",
+            "params": []
         },
         {
             "method": "POST",
@@ -1464,7 +1476,7 @@
         },
         {
             "method": "POST",
-            "endpoint": "pixeltos",
+            "endpoint": "pixel_tos",
             "return": "Object",
             "params": []
         },
@@ -1570,10 +1582,6 @@
         {
             "name": "collaborative_ads_managed_partner_eligibility",
             "type": "BusinessManagedPartnerEligibility"
-        },
-        {
-            "name": "cpas_business_setup_config",
-            "type": "CPASBusinessSetupConfig"
         },
         {
             "name": "created_by",

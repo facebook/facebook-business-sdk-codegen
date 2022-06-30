@@ -543,6 +543,10 @@
             "type": "string"
         },
         {
+            "name": "errors",
+            "type": "list<ProductItemError>"
+        },
+        {
             "name": "expiration_date",
             "type": "string"
         },

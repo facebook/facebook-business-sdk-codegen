@@ -67,6 +67,34 @@
             "type": "string"
         },
         {
+            "name": "custom_number_0",
+            "type": "unsigned int"
+        },
+        {
+            "name": "custom_number_1",
+            "type": "unsigned int"
+        },
+        {
+            "name": "custom_number_2",
+            "type": "unsigned int"
+        },
+        {
+            "name": "custom_number_3",
+            "type": "unsigned int"
+        },
+        {
+            "name": "custom_number_4",
+            "type": "unsigned int"
+        },
+        {
+            "name": "custom_number_5",
+            "type": "unsigned int"
+        },
+        {
+            "name": "custom_number_6",
+            "type": "unsigned int"
+        },
+        {
             "name": "id",
             "type": "string"
         },
