@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "action_type",
+            "type": "string"
+        },
+        {
+            "name": "value",
+            "type": "list<unsigned int>"
+        }
+    ]
+}
