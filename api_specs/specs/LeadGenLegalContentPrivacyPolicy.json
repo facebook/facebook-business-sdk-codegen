@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "url",
+            "type": "string"
+        },
+        {
+            "name": "link_text",
+            "type": "string"
+        }
+    ]
+}

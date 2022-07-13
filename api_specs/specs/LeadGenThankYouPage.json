@@ -1,0 +1,41 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "body",
+            "type": "string"
+        },
+        {
+            "name": "business_phone_number",
+            "type": "string"
+        },
+        {
+            "name": "button_text",
+            "type": "string"
+        },
+        {
+            "name": "button_type",
+            "type": "string"
+        },
+        {
+            "name": "country_code",
+            "type": "string"
+        },
+        {
+            "name": "enable_messenger",
+            "type": "bool"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "website_url",
+            "type": "string"
+        }
+    ]
+}

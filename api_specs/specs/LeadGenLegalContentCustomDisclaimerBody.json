@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "text",
+            "type": "string"
+        },
+        {
+            "name": "url_entities",
+            "type": "list<LeadGenLegalContentCustomDisclaimerBodyUrlEntity>"
+        }
+    ]
+}

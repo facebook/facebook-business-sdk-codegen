@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_required",
+            "type": "bool"
+        },
+        {
+            "name": "is_checked_by_default",
+            "type": "bool"
+        },
+        {
+            "name": "text",
+            "type": "string"
+        },
+        {
+            "name": "key",
+            "type": "string"
+        }
+    ]
+}
