@@ -1,0 +1,37 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "age_max",
+            "type": "unsigned int"
+        },
+        {
+            "name": "age_min",
+            "type": "unsigned int"
+        },
+        {
+            "name": "locales",
+            "type": "list<unsigned int>"
+        },
+        {
+            "name": "publisher_platforms",
+            "type": "list<string>"
+        },
+        {
+            "name": "facebook_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "instagram_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "messenger_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "audience_network_positions",
+            "type": "list<string>"
+        }
+    ]
+}

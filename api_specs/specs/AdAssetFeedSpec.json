@@ -11,7 +11,7 @@
         },
         {
             "name": "asset_customization_rules",
-            "type": "list<Object>"
+            "type": "list<AdAssetFeedSpecAssetCustomizationRule>"
         },
         {
             "name": "autotranslate",

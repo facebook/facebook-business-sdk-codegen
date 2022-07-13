@@ -1,0 +1,57 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "body_label",
+            "type": "AdAssetFeedSpecAssetLabel"
+        },
+        {
+            "name": "call_to_action_label",
+            "type": "AdAssetFeedSpecAssetLabel"
+        },
+        {
+            "name": "call_to_action_type_label",
+            "type": "AdAssetFeedSpecAssetLabel"
+        },
+        {
+            "name": "caption_label",
+            "type": "AdAssetFeedSpecAssetLabel"
+        },
+        {
+            "name": "carousel_label",
+            "type": "AdAssetFeedSpecAssetLabel"
+        },
+        {
+            "name": "customization_spec",
+            "type": "AdAssetCustomizationRuleCustomizationSpec"
+        },
+        {
+            "name": "description_label",
+            "type": "AdAssetFeedSpecAssetLabel"
+        },
+        {
+            "name": "image_label",
+            "type": "AdAssetFeedSpecAssetLabel"
+        },
+        {
+            "name": "is_default",
+            "type": "bool"
+        },
+        {
+            "name": "link_url_label",
+            "type": "AdAssetFeedSpecAssetLabel"
+        },
+        {
+            "name": "priority",
+            "type": "int32"
+        },
+        {
+            "name": "title_label",
+            "type": "AdAssetFeedSpecAssetLabel"
+        },
+        {
+            "name": "video_label",
+            "type": "AdAssetFeedSpecAssetLabel"
+        }
+    ]
+}
