@@ -31,7 +31,7 @@
                 {
                     "name": "content_category",
                     "required": false,
-                    "type": "mediatitle_content_category"
+                    "type": "string"
                 },
                 {
                     "name": "currency",
@@ -125,7 +125,7 @@
         },
         {
             "name": "image_fetch_status",
-            "type": "MediaTitle_image_fetch_status"
+            "type": "string"
         },
         {
             "name": "images",
