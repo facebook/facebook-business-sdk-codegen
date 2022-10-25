@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "enable_basket_insight",
+            "type": "bool"
+        },
+        {
+            "name": "enable_extended_audience_retargeting",
+            "type": "bool"
+        },
+        {
+            "name": "retailer_custom_audience_config",
+            "type": "Object"
+        }
+    ]
+}

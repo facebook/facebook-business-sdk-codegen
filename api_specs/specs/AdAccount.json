@@ -263,11 +263,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "instant_checkout_setting",
-                    "required": false,
-                    "type": "adaccountadcreatives_instant_checkout_setting_enum_param"
-                },
-                {
                     "name": "interactive_components_spec",
                     "required": false,
                     "type": "map"
@@ -457,6 +452,11 @@
                     "name": "name",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "selected_hashes",
+                    "required": false,
+                    "type": "list<string>"
                 }
             ]
         },
@@ -734,6 +734,18 @@
                     "name": "tracking_specs",
                     "required": false,
                     "type": "Object"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "ads_reporting_mmm_reports",
+            "return": "AdsReportBuilderMMMReport",
+            "params": [
+                {
+                    "name": "filtering",
+                    "required": false,
+                    "type": "list<map>"
                 }
             ]
         },
@@ -1898,65 +1910,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "content_delivery_report",
-            "return": "ContentDeliveryReport",
-            "params": [
-                {
-                    "name": "end_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "page_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "platform",
-                    "required": true,
-                    "type": "adaccountcontent_delivery_report_platform_enum_param"
-                },
-                {
-                    "name": "position",
-                    "required": true,
-                    "type": "adaccountcontent_delivery_report_position_enum_param"
-                },
-                {
-                    "name": "start_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "summary",
-                    "required": false,
-                    "type": "bool"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "create_and_apply_publisher_block_list",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "is_auto_blocking_on",
-                    "required": true,
-                    "type": "bool"
-                },
-                {
-                    "name": "name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "publisher_urls",
-                    "required": true,
-                    "type": "list<string>"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "customaudiences",
             "return": "CustomAudience",
             "params": [
@@ -2603,6 +2556,11 @@
                     "name": "conversion_domain",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "custom_event_type",
+                    "required": false,
+                    "type": "adaccountmanaged_partner_ads_custom_event_type_enum_param"
                 },
                 {
                     "name": "end_time",
@@ -3445,6 +3403,11 @@
                     "type": "adaccount_currency"
                 },
                 {
+                    "name": "custom_audience_info",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "end_advertiser",
                     "required": false,
                     "type": "string"
@@ -3584,6 +3547,10 @@
             "type": "string"
         },
         {
+            "name": "custom_audience_info",
+            "type": "AdAccountCustomAudience"
+        },
+        {
             "name": "disable_reason",
             "type": "unsigned int"
         },
@@ -3668,6 +3635,10 @@
             "type": "bool"
         },
         {
+            "name": "liable_address",
+            "type": "CRMAddress"
+        },
+        {
             "name": "line_numbers",
             "type": "list<int>"
         },
@@ -3696,6 +3667,10 @@
             "type": "string"
         },
         {
+            "name": "owner_business",
+            "type": "Business"
+        },
+        {
             "name": "partner",
             "type": "string"
         },
@@ -3704,8 +3679,16 @@
             "type": "ReachFrequencySpec"
         },
         {
+            "name": "send_bill_to_address",
+            "type": "CRMAddress"
+        },
+        {
             "name": "show_checkout_experience",
             "type": "bool"
+        },
+        {
+            "name": "sold_to_address",
+            "type": "CRMAddress"
         },
         {
             "name": "spend_cap",
@@ -3746,6 +3729,10 @@
         {
             "name": "user_tos_accepted",
             "type": "map<string, int>"
+        },
+        {
+            "name": "viewable_business",
+            "type": "Business"
         }
     ]
 }

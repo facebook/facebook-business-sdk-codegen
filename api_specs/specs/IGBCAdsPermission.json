@@ -3,26 +3,22 @@
         {
             "name": "#get",
             "method": "GET",
-            "return": "Shop",
+            "return": "IGBCAdsPermission",
             "params": []
         }
     ],
     "fields": [
         {
-            "name": "fb_sales_channel",
-            "type": "Object"
-        },
-        {
             "name": "id",
             "type": "string"
         },
         {
-            "name": "ig_sales_channel",
-            "type": "Object"
+            "name": "permission_type",
+            "type": "string"
         },
         {
-            "name": "workspace",
-            "type": "Object"
+            "name": "status",
+            "type": "string"
         }
     ]
 }

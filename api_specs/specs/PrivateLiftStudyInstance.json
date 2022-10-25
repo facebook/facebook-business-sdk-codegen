@@ -41,6 +41,10 @@
             "type": "datetime"
         },
         {
+            "name": "run_id",
+            "type": "string"
+        },
+        {
             "name": "server_ips",
             "type": "list<string>"
         },

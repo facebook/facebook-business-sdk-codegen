@@ -134,11 +134,6 @@
             "return": "GroupHighlightThirdPartyUnit",
             "params": [
                 {
-                    "name": "body",
-                    "required": true,
-                    "type": "map"
-                },
-                {
                     "name": "description",
                     "required": true,
                     "type": "map"
@@ -894,11 +889,6 @@
                     "name": "original_fov",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "planned_start_time",
-                    "required": false,
-                    "type": "int"
                 },
                 {
                     "name": "privacy",

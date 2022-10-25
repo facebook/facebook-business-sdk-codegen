@@ -91,6 +91,10 @@
             "type": "Business"
         },
         {
+            "name": "business_role_request",
+            "type": "BusinessRoleRequest"
+        },
+        {
             "name": "email",
             "type": "string"
         },

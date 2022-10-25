@@ -482,6 +482,10 @@
             "type": "list<int>"
         },
         {
+            "name": "admin_creator",
+            "type": "User"
+        },
+        {
             "name": "audio_isrc",
             "type": "Object"
         },

@@ -43,6 +43,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "audiences",
+            "return": "WhatsAppBusinessAudience",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "conversation_analytics",
             "return": "WABAConversationAnalytics",
             "params": [
@@ -248,7 +254,18 @@
             "method": "POST",
             "endpoint": "subscribed_apps",
             "return": "WhatsAppBusinessAccount",
-            "params": []
+            "params": [
+                {
+                    "name": "override_callback_uri",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "verify_token",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
         },
         {
             "name": "#get",
@@ -289,6 +306,10 @@
         {
             "name": "on_behalf_of_business_info",
             "type": "Object"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
         },
         {
             "name": "owner_business_info",

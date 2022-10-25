@@ -398,6 +398,10 @@
             "type": "string"
         },
         {
+            "name": "total_postbacks_detailed",
+            "type": "list<AdsActionStats>"
+        },
+        {
             "name": "unique_actions",
             "type": "list<AdsActionStats>"
         },

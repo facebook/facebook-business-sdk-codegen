@@ -45,6 +45,10 @@
             "type": "CustomAudienceStatus"
         },
         {
+            "name": "owner_business",
+            "type": "Business"
+        },
+        {
             "name": "page_deletion_marked_delete_time",
             "type": "int"
         },

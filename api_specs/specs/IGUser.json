@@ -294,6 +294,10 @@
             "type": "string"
         },
         {
+            "name": "owner_business",
+            "type": "Business"
+        },
+        {
             "name": "profile_picture_url",
             "type": "string"
         },

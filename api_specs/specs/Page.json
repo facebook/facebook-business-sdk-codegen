@@ -86,6 +86,12 @@
             "params": []
         },
         {
+            "method": "GET",
+            "endpoint": "ar_experience",
+            "return": "ArAdsDataContainer",
+            "params": []
+        },
+        {
             "method": "DELETE",
             "endpoint": "assigned_users",
             "return": "Object",
@@ -697,6 +703,12 @@
                     "type": "Object"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "fantasy_games",
+            "return": "FantasyGame",
+            "params": []
         },
         {
             "method": "GET",
@@ -1544,6 +1556,43 @@
             "params": []
         },
         {
+            "method": "POST",
+            "endpoint": "invoice_access_invoice_edit",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "additional_amounts",
+                    "required": false,
+                    "type": "list<map>"
+                },
+                {
+                    "name": "invoice_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "notes",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "paid_amount",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "product_items",
+                    "required": false,
+                    "type": "list<map>"
+                },
+                {
+                    "name": "shipping_address",
+                    "required": false,
+                    "type": "map"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "leadgen_forms",
             "return": "LeadgenForm",
@@ -1729,11 +1778,6 @@
                     "name": "original_fov",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "planned_start_time",
-                    "required": false,
-                    "type": "int"
                 },
                 {
                     "name": "privacy",
@@ -2022,6 +2066,11 @@
                     "name": "tag",
                     "required": false,
                     "type": "Object"
+                },
+                {
+                    "name": "thread_control",
+                    "required": false,
+                    "type": "Object"
                 }
             ]
         },
@@ -2153,6 +2202,12 @@
                     "type": "bool"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "notification_message_tokens",
+            "return": "UserPageOneTimeOptInTokenSettings",
+            "params": []
         },
         {
             "method": "POST",
@@ -2930,18 +2985,6 @@
             ]
         },
         {
-            "method": "DELETE",
-            "endpoint": "tabs",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "tab",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "tabs",
             "return": "Tab",
@@ -2950,43 +2993,6 @@
                     "name": "tab",
                     "required": false,
                     "type": "list<string>"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "tabs",
-            "return": "Page",
-            "params": [
-                {
-                    "name": "app_id",
-                    "required": false,
-                    "type": "int"
-                },
-                {
-                    "name": "custom_image_url",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "custom_name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "is_non_connection_landing_tab",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "position",
-                    "required": false,
-                    "type": "int"
-                },
-                {
-                    "name": "tab",
-                    "required": false,
-                    "type": "string"
                 }
             ]
         },
@@ -3170,6 +3176,59 @@
             "endpoint": "video_lists",
             "return": "VideoList",
             "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "video_reels",
+            "return": "AdVideo",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "video_reels",
+            "return": "AdVideo",
+            "params": [
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "feed_targeting",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "scheduled_publish_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "targeting",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "title",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "upload_phase",
+                    "required": false,
+                    "type": "pagevideo_reels_upload_phase_enum_param"
+                },
+                {
+                    "name": "video_id",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "video_state",
+                    "required": false,
+                    "type": "pagevideo_reels_video_state_enum_param"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -4371,6 +4430,10 @@
         {
             "name": "overall_star_rating",
             "type": "float"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
         },
         {
             "name": "page_token",

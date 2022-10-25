@@ -273,6 +273,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "avatars",
+            "return": "Avatar",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "business_users",
             "return": "BusinessUser",
             "params": []
@@ -1278,11 +1284,6 @@
                     "type": "unsigned int"
                 },
                 {
-                    "name": "planned_start_time",
-                    "required": false,
-                    "type": "int"
-                },
-                {
                     "name": "privacy",
                     "required": false,
                     "type": "string"
@@ -1362,9 +1363,24 @@
                     "type": "Object"
                 },
                 {
+                    "name": "label",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "message",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "notif_ids",
                     "required": false,
                     "type": "list<string>"
+                },
+                {
+                    "name": "payload",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "read",
@@ -1375,6 +1391,11 @@
                     "name": "ref",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "scheduleInterval",
+                    "required": false,
+                    "type": "unsigned int"
                 },
                 {
                     "name": "seen",
@@ -1737,24 +1758,6 @@
                     "name": "width",
                     "required": false,
                     "type": "int"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "pioneer_data",
-            "return": "PioneerRemotePersistence",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "pioneer_data",
-            "return": "PioneerRemotePersistence",
-            "params": [
-                {
-                    "name": "json_data",
-                    "required": false,
-                    "type": "string"
                 }
             ]
         },
@@ -2408,7 +2411,7 @@
         },
         {
             "name": "shared_login_upgrade_required_by",
-            "type": "datetime"
+            "type": "Object"
         },
         {
             "name": "short_name",

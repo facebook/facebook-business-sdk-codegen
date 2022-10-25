@@ -3,26 +3,22 @@
         {
             "name": "#get",
             "method": "GET",
-            "return": "Shop",
+            "return": "WhatsAppBusinessPreVerifiedPhoneNumber",
             "params": []
         }
     ],
     "fields": [
         {
-            "name": "fb_sales_channel",
-            "type": "Object"
+            "name": "code_verification_status",
+            "type": "string"
         },
         {
             "name": "id",
             "type": "string"
         },
         {
-            "name": "ig_sales_channel",
-            "type": "Object"
-        },
-        {
-            "name": "workspace",
-            "type": "Object"
+            "name": "phone_number",
+            "type": "string"
         }
     ]
 }

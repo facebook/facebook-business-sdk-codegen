@@ -641,6 +641,23 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "media_titles",
+            "return": "MediaTitle",
+            "params": [
+                {
+                    "name": "bulk_pagination",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "filter",
+                    "required": false,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
             "method": "POST",
             "endpoint": "media_titles",
             "return": "MediaTitle",
@@ -1656,8 +1673,16 @@
             "type": "Business"
         },
         {
+            "name": "catalog_store",
+            "type": "StoreCatalogSettings"
+        },
+        {
             "name": "commerce_merchant_settings",
             "type": "CommerceMerchantSettings"
+        },
+        {
+            "name": "creator_user",
+            "type": "User"
         },
         {
             "name": "da_display_settings",
@@ -1684,12 +1709,12 @@
             "type": "bool"
         },
         {
-            "name": "latest_feed_upload_session",
-            "type": "ProductFeedUpload"
-        },
-        {
             "name": "name",
             "type": "string"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
         },
         {
             "name": "product_count",

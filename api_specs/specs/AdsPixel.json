@@ -49,7 +49,7 @@
         {
             "method": "POST",
             "endpoint": "events",
-            "return": "AdsPixel",
+            "return": "Object",
             "params": [
                 {
                     "name": "data",
@@ -97,6 +97,12 @@
                     "type": "string"
                 }
             ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "meapitocapiconsolidationhelper",
+            "return": "Object",
+            "params": []
         },
         {
             "method": "POST",

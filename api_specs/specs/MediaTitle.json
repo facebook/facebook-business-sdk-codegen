@@ -2,8 +2,20 @@
     "apis": [
         {
             "method": "GET",
+            "endpoint": "augmented_realities_metadata",
+            "return": "DynamicARMetadata",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "channels_to_integrity_status",
             "return": "CatalogItemChannelsToIntegrityStatus",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "videos_metadata",
+            "return": "DynamicVideoMetadata",
             "params": []
         },
         {
@@ -31,7 +43,7 @@
                 {
                     "name": "content_category",
                     "required": false,
-                    "type": "string"
+                    "type": "mediatitle_content_category"
                 },
                 {
                     "name": "currency",
@@ -125,7 +137,7 @@
         },
         {
             "name": "image_fetch_status",
-            "type": "string"
+            "type": "MediaTitle_image_fetch_status"
         },
         {
             "name": "images",

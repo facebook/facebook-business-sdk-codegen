@@ -639,6 +639,10 @@
             "type": "string"
         },
         {
+            "name": "post_conversion_signal_based_enforcement_appeal_eligibility",
+            "type": "bool"
+        },
+        {
             "name": "price",
             "type": "string"
         },

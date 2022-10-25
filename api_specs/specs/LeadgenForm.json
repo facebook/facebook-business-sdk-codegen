@@ -66,6 +66,10 @@
             "type": "datetime"
         },
         {
+            "name": "creator",
+            "type": "User"
+        },
+        {
             "name": "expired_leads_count",
             "type": "unsigned int"
         },
