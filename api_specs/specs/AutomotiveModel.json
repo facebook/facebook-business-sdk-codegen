@@ -8,6 +8,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "channels_to_integrity_status",
+            "return": "CatalogItemChannelsToIntegrityStatus",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "videos_metadata",
             "return": "DynamicVideoMetadata",
             "params": []
@@ -125,12 +131,16 @@
             "type": "string"
         },
         {
+            "name": "unit_price",
+            "type": "Object"
+        },
+        {
             "name": "url",
             "type": "string"
         },
         {
             "name": "year",
-            "type": "unsigned int"
+            "type": "int"
         }
     ]
 }

@@ -8,6 +8,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "channels_to_integrity_status",
+            "return": "CatalogItemChannelsToIntegrityStatus",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "videos_metadata",
             "return": "DynamicVideoMetadata",
             "params": []
@@ -205,6 +211,10 @@
             "type": "string"
         },
         {
+            "name": "custom_number_0",
+            "type": "unsigned int"
+        },
+        {
             "name": "date_first_on_lot",
             "type": "string"
         },
@@ -327,6 +337,10 @@
         {
             "name": "trim",
             "type": "string"
+        },
+        {
+            "name": "unit_price",
+            "type": "Object"
         },
         {
             "name": "url",

@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "error_priority",
+            "type": "string"
+        },
+        {
+            "name": "error_type",
+            "type": "string"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        }
+    ]
+}

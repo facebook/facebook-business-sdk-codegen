@@ -13,11 +13,15 @@
             "type": "AdAccount"
         },
         {
-            "name": "approximate_count",
+            "name": "approximate_count_lower_bound",
             "type": "int"
         },
         {
-            "name": "approximate_count_64bit",
+            "name": "approximate_count_upper_bound",
+            "type": "int"
+        },
+        {
+            "name": "delete_time",
             "type": "int"
         },
         {
@@ -35,6 +39,18 @@
         {
             "name": "name",
             "type": "string"
+        },
+        {
+            "name": "operation_status",
+            "type": "CustomAudienceStatus"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
+        },
+        {
+            "name": "page_deletion_marked_delete_time",
+            "type": "int"
         },
         {
             "name": "permission_for_actions",

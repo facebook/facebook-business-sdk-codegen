@@ -185,6 +185,18 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "adnetwork_applications",
+            "return": "Application",
+            "params": [
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "adnetworkanalytics",
             "return": "AdNetworkAnalyticsSyncQueryResult",
@@ -302,6 +314,18 @@
         },
         {
             "method": "GET",
+            "endpoint": "ads_reporting_mmm_reports",
+            "return": "AdsReportBuilderMMMReport",
+            "params": [
+                {
+                    "name": "filtering",
+                    "required": false,
+                    "type": "list<map>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "adspixels",
             "return": "AdsPixel",
             "params": [
@@ -356,33 +380,6 @@
             "endpoint": "agencies",
             "return": "Business",
             "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "aggregate_revenue",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "ecpms",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "query_ids",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "request_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "sync_api",
-                    "required": false,
-                    "type": "bool"
-                }
-            ]
         },
         {
             "method": "GET",
@@ -452,24 +449,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "business_units",
-            "return": "BusinessUnit",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "business_units",
-            "return": "BusinessUnit",
-            "params": [
-                {
-                    "name": "business_units",
-                    "required": false,
-                    "type": "list<Object>"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "business_users",
             "return": "BusinessUser",
             "params": []
@@ -507,22 +486,11 @@
             "method": "GET",
             "endpoint": "client_ad_accounts",
             "return": "AdAccount",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "client_ad_accounts",
-            "return": "Business",
             "params": [
                 {
-                    "name": "adaccount_id",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "permitted_tasks",
+                    "name": "search_query",
                     "required": false,
-                    "type": "list<businessclient_ad_accounts_permitted_tasks_enum_param>"
+                    "type": "string"
                 }
             ]
         },
@@ -543,6 +511,12 @@
                     "type": "Object"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "client_offsite_signal_container_business_objects",
+            "return": "OffsiteSignalContainerBusinessObject",
+            "params": []
         },
         {
             "method": "GET",
@@ -676,62 +650,48 @@
         },
         {
             "method": "GET",
-            "endpoint": "content_delivery_report",
-            "return": "ContentDeliveryReport",
+            "endpoint": "cpas_business_setup_config",
+            "return": "CPASBusinessSetupConfig",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "cpas_business_setup_config",
+            "return": "CPASBusinessSetupConfig",
             "params": [
                 {
-                    "name": "end_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "page_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "platform",
-                    "required": true,
-                    "type": "businesscontent_delivery_report_platform_enum_param"
-                },
-                {
-                    "name": "position",
-                    "required": true,
-                    "type": "businesscontent_delivery_report_position_enum_param"
-                },
-                {
-                    "name": "start_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "summary",
+                    "name": "accepted_collab_ads_tos",
                     "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "ad_accounts",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "business_capabilities_status",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "capabilities_compliance_status",
+                    "required": false,
+                    "type": "map"
                 }
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "create_and_apply_publisher_block_list",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "is_auto_blocking_on",
-                    "required": true,
-                    "type": "bool"
-                },
-                {
-                    "name": "name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "publisher_urls",
-                    "required": true,
-                    "type": "list<string>"
-                }
-            ]
+            "method": "GET",
+            "endpoint": "cpas_merchant_config",
+            "return": "CPASMerchantConfig",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "creditcards",
+            "return": "CreditCard",
+            "params": []
         },
         {
             "method": "POST",
@@ -772,6 +732,18 @@
                     "name": "rule",
                     "required": false,
                     "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "draft_negative_keyword_lists",
+            "return": "DraftNegativeKeywordList",
+            "params": [
+                {
+                    "name": "negative_keyword_list_file",
+                    "required": true,
+                    "type": "file"
                 }
             ]
         },
@@ -823,58 +795,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "franchise_programs",
-            "return": "FranchiseProgram",
-            "params": [
-                {
-                    "name": "business_asset_group",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "creative_folder",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "creative_spec_template_data",
-                    "required": false,
-                    "type": "map"
-                },
-                {
-                    "name": "description",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "end_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "name",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "program_approval_type",
-                    "required": true,
-                    "type": "businessfranchise_programs_program_approval_type_enum_param"
-                },
-                {
-                    "name": "shared_custom_audience",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "start_date",
-                    "required": false,
-                    "type": "datetime"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "initiated_audience_sharing_requests",
             "return": "BusinessAssetSharingAgreement",
@@ -888,23 +808,6 @@
                     "name": "request_status",
                     "required": false,
                     "type": "businessinitiated_audience_sharing_requests_request_status_enum_param"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "initiated_sharing_agreements",
-            "return": "BusinessAgreement",
-            "params": [
-                {
-                    "name": "receiving_business_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "request_status",
-                    "required": false,
-                    "type": "businessinitiated_sharing_agreements_request_status_enum_param"
                 }
             ]
         },
@@ -998,20 +901,192 @@
         },
         {
             "method": "POST",
-            "endpoint": "move_asset",
+            "endpoint": "managed_partner_business_setup",
             "return": "Business",
             "params": [
                 {
-                    "name": "asset_id",
+                    "name": "active_ad_account_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "active_page_id",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "partner_facebook_page_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "partner_registration_countries",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "seller_email_address",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "seller_external_website_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "template",
+                    "required": false,
+                    "type": "list<map>"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "managed_partner_businesses",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "child_business_external_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "child_business_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "managed_partner_businesses",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "ad_account_currency",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "catalog_id",
                     "required": true,
                     "type": "string"
                 },
                 {
-                    "name": "client_id",
+                    "name": "child_business_external_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "credit_limit",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "line_of_credit_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "no_ad_account",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "page_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "page_profile_image_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "partner_facebook_page_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "partner_registration_countries",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "sales_rep_email",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "seller_external_website_url",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "seller_targeting_countries",
+                    "required": true,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "survey_business_type",
+                    "required": false,
+                    "type": "businessmanaged_partner_businesses_survey_business_type_enum_param"
+                },
+                {
+                    "name": "survey_num_assets",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "survey_num_people",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "timezone_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "vertical",
+                    "required": true,
+                    "type": "businessmanaged_partner_businesses_vertical_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "managed_partner_child_business_assets",
+            "return": "Business",
+            "params": [
+                {
+                    "name": "child_business_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "credit_limit",
+                    "required": true,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "line_of_credit_id",
                     "required": true,
                     "type": "string"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "negative_keyword_lists",
+            "return": "NegativeKeywordList",
+            "params": []
         },
         {
             "method": "GET",
@@ -1055,7 +1130,13 @@
             "method": "GET",
             "endpoint": "owned_ad_accounts",
             "return": "AdAccount",
-            "params": []
+            "params": [
+                {
+                    "name": "search_query",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
         },
         {
             "method": "POST",
@@ -1181,6 +1262,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "owned_offsite_signal_container_business_objects",
+            "return": "OffsiteSignalContainerBusinessObject",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "owned_pages",
             "return": "Page",
             "params": []
@@ -1255,6 +1342,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "partner_integration",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "store_catalog_settings",
                     "required": false,
                     "type": "map"
@@ -1281,6 +1373,38 @@
                     "name": "page_id",
                     "required": true,
                     "type": "int"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "partner_premium_options",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "catalog_segment_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "enable_basket_insight",
+                    "required": true,
+                    "type": "bool"
+                },
+                {
+                    "name": "enable_extended_audience_retargeting",
+                    "required": true,
+                    "type": "bool"
+                },
+                {
+                    "name": "retailer_custom_audience_config",
+                    "required": true,
+                    "type": "map"
+                },
+                {
+                    "name": "vendor_id",
+                    "required": false,
+                    "type": "string"
                 }
             ]
         },
@@ -1312,6 +1436,12 @@
             "method": "GET",
             "endpoint": "pending_owned_pages",
             "return": "BusinessPageRequest",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "pending_shared_offsite_signal_container_business_objects",
+            "return": "OffsiteSignalContainerBusinessObject",
             "params": []
         },
         {
@@ -1383,29 +1513,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "received_sharing_agreements",
-            "return": "BusinessAgreement",
-            "params": [
-                {
-                    "name": "request_status",
-                    "required": false,
-                    "type": "businessreceived_sharing_agreements_request_status_enum_param"
-                },
-                {
-                    "name": "requesting_business_id",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "spaco_dataset_collections",
-            "return": "SpacoDsDataCollection",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "system_users",
             "return": "SystemUser",
             "params": []
@@ -1429,59 +1536,6 @@
                     "name": "system_user_id",
                     "required": false,
                     "type": "int"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "third_party_measurement_report_dataset",
-            "return": "ThirdPartyMeasurementReportDataset",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "upload_event",
-            "return": "MeasurementUploadEvent",
-            "params": [
-                {
-                    "name": "aggregation_level",
-                    "required": false,
-                    "type": "businessupload_event_aggregation_level_enum_param"
-                },
-                {
-                    "name": "conversion_end_date",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "conversion_start_date",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "event_status",
-                    "required": false,
-                    "type": "businessupload_event_event_status_enum_param"
-                },
-                {
-                    "name": "lookback_window",
-                    "required": false,
-                    "type": "businessupload_event_lookback_window_enum_param"
-                },
-                {
-                    "name": "match_universe",
-                    "required": false,
-                    "type": "businessupload_event_match_universe_enum_param"
-                },
-                {
-                    "name": "timezone",
-                    "required": false,
-                    "type": "businessupload_event_timezone_enum_param"
-                },
-                {
-                    "name": "upload_tag",
-                    "required": true,
-                    "type": "string"
                 }
             ]
         },
@@ -1530,6 +1584,18 @@
             "type": "bool"
         },
         {
+            "name": "collaborative_ads_managed_partner_business_info",
+            "type": "ManagedPartnerBusiness"
+        },
+        {
+            "name": "collaborative_ads_managed_partner_eligibility",
+            "type": "BusinessManagedPartnerEligibility"
+        },
+        {
+            "name": "collaborative_ads_partner_premium_options",
+            "type": "BusinessPartnerPremiumOptions"
+        },
+        {
             "name": "created_by",
             "type": "Object"
         },
@@ -1547,10 +1613,6 @@
         },
         {
             "name": "is_hidden",
-            "type": "bool"
-        },
-        {
-            "name": "is_instagram_enabled_in_fb_analytics",
             "type": "bool"
         },
         {

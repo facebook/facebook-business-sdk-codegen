@@ -22,7 +22,11 @@
             "type": "list<string>"
         },
         {
-            "name": "size",
+            "name": "size_lower_bound",
+            "type": "int"
+        },
+        {
+            "name": "size_upper_bound",
             "type": "int"
         },
         {

@@ -49,6 +49,10 @@
             "type": "unsigned int"
         },
         {
+            "name": "owner_business",
+            "type": "Business"
+        },
+        {
             "name": "permalink_url",
             "type": "string"
         },

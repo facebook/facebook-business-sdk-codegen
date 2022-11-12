@@ -46,6 +46,18 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "ar_effects_batch_status",
+            "return": "AREffectsBatchStatus",
+            "params": [
+                {
+                    "name": "handle",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "DELETE",
             "endpoint": "assigned_users",
             "return": "Object",
@@ -88,12 +100,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "auto_markets",
-            "return": "AutoMarket",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "automotive_models",
             "return": "AutomotiveModel",
             "params": [
@@ -108,74 +114,6 @@
                     "type": "Object"
                 }
             ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "automotive_models",
-            "return": "AutomotiveModel",
-            "params": [
-                {
-                    "name": "automotive_model_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "body_style",
-                    "required": false,
-                    "type": "productcatalogautomotive_models_body_style_enum_param"
-                },
-                {
-                    "name": "currency",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "description",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "images",
-                    "required": true,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "make",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "model",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "price",
-                    "required": true,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "title",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "url",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "year",
-                    "required": true,
-                    "type": "unsigned int"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "autos",
-            "return": "Auto",
-            "params": []
         },
         {
             "method": "POST",
@@ -196,6 +134,18 @@
                     "name": "requests",
                     "required": true,
                     "type": "list<map>"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "catalog_website_settings",
+            "return": "CatalogWebsiteSettings",
+            "params": [
+                {
+                    "name": "is_allowed_to_crawl",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         },
@@ -234,6 +184,11 @@
             "return": "CheckBatchRequestStatus",
             "params": [
                 {
+                    "name": "error_priority",
+                    "required": false,
+                    "type": "productcatalogcheck_batch_request_status_error_priority_enum_param"
+                },
+                {
                     "name": "handle",
                     "required": true,
                     "type": "string"
@@ -247,9 +202,49 @@
         },
         {
             "method": "GET",
+            "endpoint": "collaborative_ads_lsb_image_bank",
+            "return": "CPASLsbImageBank",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "collaborative_ads_share_settings",
             "return": "CollaborativeAdsShareSettings",
             "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "cpas_lsb_image_bank",
+            "return": "CPASLsbImageBank",
+            "params": [
+                {
+                    "name": "ad_group_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "agency_business_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "backup_image_urls",
+                    "required": true,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "data_sources",
+            "return": "ProductCatalogDataSource",
+            "params": [
+                {
+                    "name": "ingestion_source_type",
+                    "required": false,
+                    "type": "productcatalogdata_sources_ingestion_source_type_enum_param"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -265,6 +260,38 @@
                     "name": "filter",
                     "required": false,
                     "type": "Object"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "diagnostics",
+            "return": "ProductCatalogDiagnosticGroup",
+            "params": [
+                {
+                    "name": "affected_channels",
+                    "required": false,
+                    "type": "list<productcatalogdiagnostics_affected_channels_enum_param>"
+                },
+                {
+                    "name": "affected_entities",
+                    "required": false,
+                    "type": "list<productcatalogdiagnostics_affected_entities_enum_param>"
+                },
+                {
+                    "name": "affected_features",
+                    "required": false,
+                    "type": "list<productcatalogdiagnostics_affected_features_enum_param>"
+                },
+                {
+                    "name": "severities",
+                    "required": false,
+                    "type": "list<productcatalogdiagnostics_severities_enum_param>"
+                },
+                {
+                    "name": "types",
+                    "required": false,
+                    "type": "list<productcatalogdiagnostics_types_enum_param>"
                 }
             ]
         },
@@ -288,7 +315,7 @@
                 {
                     "name": "external_event_sources",
                     "required": false,
-                    "type": "list<string>"
+                    "type": "Object"
                 }
             ]
         },
@@ -306,7 +333,7 @@
                 {
                     "name": "external_event_sources",
                     "required": false,
-                    "type": "list<string>"
+                    "type": "Object"
                 }
             ]
         },
@@ -592,6 +619,28 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "localized_items_batch",
+            "return": "ProductCatalog",
+            "params": [
+                {
+                    "name": "allow_upsert",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "item_type",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "requests",
+                    "required": true,
+                    "type": "map"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "media_titles",
             "return": "MediaTitle",
@@ -605,6 +654,78 @@
                     "name": "filter",
                     "required": false,
                     "type": "Object"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "media_titles",
+            "return": "MediaTitle",
+            "params": [
+                {
+                    "name": "applinks",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "content_category",
+                    "required": false,
+                    "type": "productcatalogmedia_titles_content_category_enum_param"
+                },
+                {
+                    "name": "currency",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "fb_page_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "genres",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "images",
+                    "required": true,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "kg_fb_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "media_title_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "price",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "title",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "title_display_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "url",
+                    "required": true,
+                    "type": "string"
                 }
             ]
         },
@@ -704,6 +825,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "ingestion_source_type",
+                    "required": false,
+                    "type": "productcatalogproduct_feeds_ingestion_source_type_enum_param"
+                },
+                {
                     "name": "item_sub_type",
                     "required": false,
                     "type": "productcatalogproduct_feeds_item_sub_type_enum_param"
@@ -727,6 +853,11 @@
                     "name": "override_value",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "primary_feed_ids",
+                    "required": false,
+                    "type": "list<string>"
                 },
                 {
                     "name": "quoted_fields_mode",
@@ -826,6 +957,16 @@
                     "type": "string"
                 },
                 {
+                    "name": "ordering_info",
+                    "required": false,
+                    "type": "list<unsigned int>"
+                },
+                {
+                    "name": "publish_to_shops",
+                    "required": false,
+                    "type": "list<map>"
+                },
+                {
                     "name": "retailer_id",
                     "required": false,
                     "type": "string"
@@ -853,6 +994,16 @@
                     "name": "bulk_pagination",
                     "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "error_priority",
+                    "required": false,
+                    "type": "productcatalogproducts_error_priority_enum_param"
+                },
+                {
+                    "name": "error_type",
+                    "required": false,
+                    "type": "productcatalogproducts_error_type_enum_param"
                 },
                 {
                     "name": "filter",
@@ -982,6 +1133,31 @@
                     "type": "string"
                 },
                 {
+                    "name": "custom_number_0",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "custom_number_1",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "custom_number_2",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "custom_number_3",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "custom_number_4",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
                     "name": "description",
                     "required": false,
                     "type": "string"
@@ -1008,6 +1184,16 @@
                 },
                 {
                     "name": "image_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "importer_address",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "importer_name",
                     "required": false,
                     "type": "string"
                 },
@@ -1067,9 +1253,19 @@
                     "type": "string"
                 },
                 {
+                    "name": "manufacturer_info",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "manufacturer_part_number",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "marked_for_product_launch",
+                    "required": false,
+                    "type": "productcatalogproducts_marked_for_product_launch_enum_param"
                 },
                 {
                     "name": "material",
@@ -1107,6 +1303,11 @@
                     "type": "unsigned int"
                 },
                 {
+                    "name": "origin_country",
+                    "required": false,
+                    "type": "productcatalogproducts_origin_country_enum_param"
+                },
+                {
                     "name": "pattern",
                     "required": false,
                     "type": "string"
@@ -1120,6 +1321,11 @@
                     "name": "product_type",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "quantity_to_sell_on_facebook",
+                    "required": false,
+                    "type": "unsigned int"
                 },
                 {
                     "name": "retailer_id",
@@ -1175,6 +1381,11 @@
                     "name": "visibility",
                     "required": false,
                     "type": "productcatalogproducts_visibility_enum_param"
+                },
+                {
+                    "name": "wa_compliance_category",
+                    "required": false,
+                    "type": "productcatalogproducts_wa_compliance_category_enum_param"
                 },
                 {
                     "name": "windows_phone_app_id",
@@ -1444,6 +1655,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "partner_integration",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "store_catalog_settings",
                     "required": false,
                     "type": "map"
@@ -1457,8 +1673,16 @@
             "type": "Business"
         },
         {
+            "name": "catalog_store",
+            "type": "StoreCatalogSettings"
+        },
+        {
             "name": "commerce_merchant_settings",
             "type": "CommerceMerchantSettings"
+        },
+        {
+            "name": "creator_user",
+            "type": "User"
         },
         {
             "name": "da_display_settings",
@@ -1487,6 +1711,10 @@
         {
             "name": "name",
             "type": "string"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
         },
         {
             "name": "product_count",

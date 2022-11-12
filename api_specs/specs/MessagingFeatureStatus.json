@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "hop_v2",
+            "type": "bool"
+        }
+    ]
+}

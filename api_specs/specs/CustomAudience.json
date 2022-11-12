@@ -294,7 +294,11 @@
             "type": "string"
         },
         {
-            "name": "approximate_count",
+            "name": "approximate_count_lower_bound",
+            "type": "int"
+        },
+        {
+            "name": "approximate_count_upper_bound",
             "type": "int"
         },
         {
@@ -312,6 +316,10 @@
         {
             "name": "datafile_custom_audience_uploading_status",
             "type": "string"
+        },
+        {
+            "name": "delete_time",
+            "type": "int"
         },
         {
             "name": "delivery_status",
@@ -372,6 +380,14 @@
         {
             "name": "opt_out_link",
             "type": "string"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
+        },
+        {
+            "name": "page_deletion_marked_delete_time",
+            "type": "int"
         },
         {
             "name": "permission_for_actions",

@@ -44,6 +44,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "event_params",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
                     "name": "fisheye_video_cropped",
                     "required": false,
                     "type": "bool"
@@ -64,19 +69,9 @@
                     "type": "bool"
                 },
                 {
-                    "name": "live_encoders",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
                     "name": "original_fov",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "planned_start_time",
-                    "required": false,
-                    "type": "int"
                 },
                 {
                     "name": "privacy",
@@ -156,6 +151,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "ticket_tiers",
+            "return": "EventTicketTier",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "videos",
             "return": "NullNode",
             "params": []
@@ -183,6 +184,10 @@
         {
             "name": "cover",
             "type": "CoverPhoto"
+        },
+        {
+            "name": "created_time",
+            "type": "datetime"
         },
         {
             "name": "declined_count",
@@ -271,6 +276,10 @@
         {
             "name": "start_time",
             "type": "string"
+        },
+        {
+            "name": "ticket_setting",
+            "type": "Object"
         },
         {
             "name": "ticket_uri",

@@ -2,12 +2,6 @@
     "apis": [
         {
             "method": "GET",
-            "endpoint": "auto_markets",
-            "return": "AutoMarket",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "automotive_models",
             "return": "AutomotiveModel",
             "params": [
@@ -22,12 +16,6 @@
                     "type": "Object"
                 }
             ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "autos",
-            "return": "Auto",
-            "params": []
         },
         {
             "method": "GET",
@@ -125,6 +113,16 @@
                     "type": "bool"
                 },
                 {
+                    "name": "error_priority",
+                    "required": false,
+                    "type": "productfeedproducts_error_priority_enum_param"
+                },
+                {
+                    "name": "error_type",
+                    "required": false,
+                    "type": "productfeedproducts_error_type_enum_param"
+                },
+                {
                     "name": "filter",
                     "required": false,
                     "type": "Object"
@@ -156,6 +154,18 @@
                     "name": "rule_type",
                     "required": true,
                     "type": "productfeedrules_rule_type_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "supplementary_feed_assocs",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "assoc_data",
+                    "required": true,
+                    "type": "list<map>"
                 }
             ]
         },
@@ -353,6 +363,10 @@
             "type": "string"
         },
         {
+            "name": "ingestion_source_type",
+            "type": "ProductFeed_ingestion_source_type"
+        },
+        {
             "name": "item_sub_type",
             "type": "string"
         },
@@ -373,6 +387,10 @@
             "type": "string"
         },
         {
+            "name": "primary_feeds",
+            "type": "list<string>"
+        },
+        {
             "name": "product_count",
             "type": "int"
         },
@@ -383,6 +401,10 @@
         {
             "name": "schedule",
             "type": "ProductFeedSchedule"
+        },
+        {
+            "name": "supplementary_feeds",
+            "type": "list<string>"
         },
         {
             "name": "update_schedule",

@@ -8,6 +8,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "channels_to_integrity_status",
+            "return": "CatalogItemChannelsToIntegrityStatus",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "videos_metadata",
             "return": "DynamicVideoMetadata",
             "params": []
@@ -270,6 +276,10 @@
         {
             "name": "sanitized_images",
             "type": "list<string>"
+        },
+        {
+            "name": "unit_price",
+            "type": "Object"
         },
         {
             "name": "url",

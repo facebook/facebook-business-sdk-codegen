@@ -62,6 +62,10 @@
             "type": "map<string, string>"
         },
         {
+            "name": "independent_work",
+            "type": "map<string, string>"
+        },
+        {
             "name": "instagram",
             "type": "map<string, string>"
         },
@@ -102,6 +106,10 @@
             "type": "map<string, string>"
         },
         {
+            "name": "neighborhoods",
+            "type": "map<string, string>"
+        },
+        {
             "name": "page_admin",
             "type": "map<string, string>"
         },
@@ -127,6 +135,10 @@
         },
         {
             "name": "traffic_quality",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "unified_commerce_content",
             "type": "map<string, string>"
         },
         {

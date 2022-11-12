@@ -192,6 +192,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "event_params",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
                     "name": "is_audio_only",
                     "required": false,
                     "type": "bool"
@@ -205,11 +210,6 @@
                     "name": "live_comment_moderation_setting",
                     "required": false,
                     "type": "list<livevideo_live_comment_moderation_setting>"
-                },
-                {
-                    "name": "live_encoders",
-                    "required": false,
-                    "type": "list<string>"
                 },
                 {
                     "name": "master_ingest_stream_id",
@@ -239,7 +239,7 @@
                 {
                     "name": "planned_start_time",
                     "required": false,
-                    "type": "int"
+                    "type": "datetime"
                 },
                 {
                     "name": "privacy",
@@ -334,7 +334,7 @@
         },
         {
             "name": "embed_html",
-            "type": "string"
+            "type": "Object"
         },
         {
             "name": "from",
@@ -357,10 +357,6 @@
             "type": "bool"
         },
         {
-            "name": "live_encoders",
-            "type": "list<LiveEncoder>"
-        },
-        {
             "name": "live_views",
             "type": "unsigned int"
         },
@@ -375,6 +371,10 @@
         {
             "name": "planned_start_time",
             "type": "datetime"
+        },
+        {
+            "name": "recommended_encoder_settings",
+            "type": "LiveVideoRecommendedEncoderSettings"
         },
         {
             "name": "seconds_left",

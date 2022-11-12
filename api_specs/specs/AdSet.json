@@ -141,38 +141,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "content_delivery_report",
-            "return": "ContentDeliveryReport",
-            "params": [
-                {
-                    "name": "end_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "platform",
-                    "required": true,
-                    "type": "adcampaigncontent_delivery_report_platform_enum_param"
-                },
-                {
-                    "name": "position",
-                    "required": true,
-                    "type": "adcampaigncontent_delivery_report_position_enum_param"
-                },
-                {
-                    "name": "start_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "summary",
-                    "required": false,
-                    "type": "bool"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "copies",
             "return": "AdSet",
             "params": [
@@ -626,6 +594,11 @@
                     "type": "list<adcampaign_execution_options>"
                 },
                 {
+                    "name": "existing_customer_budget_percentage",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
                     "name": "full_funnel_exploration_mode",
                     "required": false,
                     "type": "adcampaign_full_funnel_exploration_mode"
@@ -832,6 +805,10 @@
             "type": "datetime"
         },
         {
+            "name": "existing_customer_budget_percentage",
+            "type": "unsigned int"
+        },
+        {
             "name": "frequency_control_specs",
             "type": "list<AdCampaignFrequencyControlSpecs>"
         },
@@ -934,6 +911,10 @@
         {
             "name": "targeting",
             "type": "Targeting"
+        },
+        {
+            "name": "targeting_optimization_types",
+            "type": "map<string, int>"
         },
         {
             "name": "time_based_ad_rotation_id_blocks",

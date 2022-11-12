@@ -113,6 +113,16 @@
                     "type": "bool"
                 },
                 {
+                    "name": "error_priority",
+                    "required": false,
+                    "type": "productsetproducts_error_priority_enum_param"
+                },
+                {
+                    "name": "error_type",
+                    "required": false,
+                    "type": "productsetproducts_error_type_enum_param"
+                },
+                {
                     "name": "filter",
                     "required": false,
                     "type": "Object"
@@ -192,6 +202,16 @@
                     "type": "string"
                 },
                 {
+                    "name": "ordering_info",
+                    "required": false,
+                    "type": "list<unsigned int>"
+                },
+                {
+                    "name": "publish_to_shops",
+                    "required": false,
+                    "type": "list<map>"
+                },
+                {
                     "name": "retailer_id",
                     "required": false,
                     "type": "string"
@@ -223,6 +243,10 @@
         {
             "name": "name",
             "type": "string"
+        },
+        {
+            "name": "ordering_info",
+            "type": "list<int>"
         },
         {
             "name": "product_catalog",

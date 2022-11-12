@@ -114,6 +114,14 @@
             "type": "string"
         },
         {
+            "name": "skan_click",
+            "type": "string"
+        },
+        {
+            "name": "skan_view",
+            "type": "string"
+        },
+        {
             "name": "value",
             "type": "string"
         }

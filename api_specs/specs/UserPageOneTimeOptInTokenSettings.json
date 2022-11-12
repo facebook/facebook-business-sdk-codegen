@@ -1,0 +1,48 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "UserPageOneTimeOptInTokenSettings",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "creation_timestamp",
+            "type": "int"
+        },
+        {
+            "name": "notification_messages_frequency",
+            "type": "string"
+        },
+        {
+            "name": "notification_messages_reoptin",
+            "type": "string"
+        },
+        {
+            "name": "notification_messages_timezone",
+            "type": "string"
+        },
+        {
+            "name": "notification_messages_token",
+            "type": "string"
+        },
+        {
+            "name": "recipient_id",
+            "type": "string"
+        },
+        {
+            "name": "token_expiry_timestamp",
+            "type": "int"
+        },
+        {
+            "name": "topic_title",
+            "type": "string"
+        },
+        {
+            "name": "user_token_status",
+            "type": "string"
+        }
+    ]
+}

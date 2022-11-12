@@ -1,6 +1,106 @@
 {
     "apis": [
         {
+            "method": "POST",
+            "endpoint": "acknowledge_orders",
+            "return": "CommerceMerchantSettings",
+            "params": [
+                {
+                    "name": "idempotency_key",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "orders",
+                    "required": true,
+                    "type": "list<map>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "commerce_orders",
+            "return": "CommerceOrder",
+            "params": [
+                {
+                    "name": "filters",
+                    "required": false,
+                    "type": "list<commercemerchantsettingscommerce_orders_filters_enum_param>"
+                },
+                {
+                    "name": "state",
+                    "required": false,
+                    "type": "list<commercemerchantsettingscommerce_orders_state_enum_param>"
+                },
+                {
+                    "name": "updated_after",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "updated_before",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "commerce_payouts",
+            "return": "CommercePayout",
+            "params": [
+                {
+                    "name": "end_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "start_time",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "commerce_transactions",
+            "return": "CommerceOrderTransactionDetail",
+            "params": [
+                {
+                    "name": "end_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "payout_reference_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "start_time",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "onsite_conversion_events",
+            "return": "CommerceOnsiteConversionEvent",
+            "params": [
+                {
+                    "name": "created_after",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "created_before",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "order_management_apps",
             "return": "Application",
@@ -47,6 +147,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "seller_issues",
+            "return": "CommerceAPISellerIssue",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "setup_status",
             "return": "CommerceMerchantSettingsSetupStatus",
             "params": []
@@ -70,8 +176,13 @@
             "params": [
                 {
                     "name": "handling_time",
-                    "required": true,
+                    "required": false,
                     "type": "map"
+                },
+                {
+                    "name": "is_default",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "is_default_shipping_profile",
@@ -94,6 +205,12 @@
                     "type": "list<map>"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "shops",
+            "return": "Shop",
+            "params": []
         },
         {
             "method": "GET",
@@ -133,6 +250,10 @@
         {
             "name": "checkout_message",
             "type": "string"
+        },
+        {
+            "name": "commerce_store",
+            "type": "Object"
         },
         {
             "name": "contact_email",
@@ -209,10 +330,6 @@
         {
             "name": "review_rejection_reasons",
             "type": "list<string>"
-        },
-        {
-            "name": "review_status",
-            "type": "string"
         },
         {
             "name": "supported_card_types",

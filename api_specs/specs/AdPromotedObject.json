@@ -26,6 +26,10 @@
             "type": "string"
         },
         {
+            "name": "mcme_conversion_id",
+            "type": "string"
+        },
+        {
             "name": "object_store_url",
             "type": "string"
         },
@@ -36,6 +40,10 @@
         {
             "name": "offline_conversion_data_set_id",
             "type": "string"
+        },
+        {
+            "name": "omnichannel_object",
+            "type": "Object"
         },
         {
             "name": "page_id",

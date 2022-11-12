@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "can_edit",
+            "type": "bool"
+        },
+        {
+            "name": "can_edit_or_upload",
+            "type": "bool"
+        },
+        {
+            "name": "can_upload",
+            "type": "bool"
+        },
+        {
+            "name": "should_block_vanilla_business_employee_access",
+            "type": "bool"
+        }
+    ]
+}

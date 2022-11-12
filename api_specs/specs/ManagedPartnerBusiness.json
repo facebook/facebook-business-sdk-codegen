@@ -1,0 +1,33 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "ad_account",
+            "type": "AdAccount"
+        },
+        {
+            "name": "catalog_segment",
+            "type": "ProductCatalog"
+        },
+        {
+            "name": "extended_credit",
+            "type": "ExtendedCredit"
+        },
+        {
+            "name": "page",
+            "type": "Page"
+        },
+        {
+            "name": "seller_business_info",
+            "type": "Object"
+        },
+        {
+            "name": "seller_business_status",
+            "type": "string"
+        },
+        {
+            "name": "template",
+            "type": "list<Object>"
+        }
+    ]
+}

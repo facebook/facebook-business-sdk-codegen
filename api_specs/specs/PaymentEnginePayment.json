@@ -95,6 +95,10 @@
             "type": "bool"
         },
         {
+            "name": "platform",
+            "type": "string"
+        },
+        {
             "name": "refundable_amount",
             "type": "CurrencyAmount"
         },

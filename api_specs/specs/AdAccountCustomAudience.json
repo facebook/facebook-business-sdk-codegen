@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "audience_type_param_name",
+            "type": "string"
+        },
+        {
+            "name": "existing_customer_tag",
+            "type": "string"
+        },
+        {
+            "name": "new_customer_tag",
+            "type": "string"
+        }
+    ]
+}

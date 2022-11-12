@@ -239,6 +239,10 @@
         {
             "name": "updated_time_old",
             "type": "datetime"
+        },
+        {
+            "name": "user",
+            "type": "User"
         }
     ]
 }

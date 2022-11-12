@@ -94,6 +94,24 @@
         },
         {
             "method": "GET",
+            "endpoint": "attachment_surfaces",
+            "return": "GroupThirdPartyPostAttachmentSurface",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "attachment_surfaces",
+            "return": "GroupThirdPartyPostAttachmentSurface",
+            "params": [
+                {
+                    "name": "title",
+                    "required": true,
+                    "type": "map"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "docs",
             "return": "Doc",
             "params": []
@@ -103,6 +121,29 @@
             "endpoint": "events",
             "return": "Event",
             "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "featured_cards",
+            "return": "GroupHighlightThirdPartyUnit",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "featured_cards",
+            "return": "GroupHighlightThirdPartyUnit",
+            "params": [
+                {
+                    "name": "description",
+                    "required": true,
+                    "type": "map"
+                },
+                {
+                    "name": "title",
+                    "required": true,
+                    "type": "map"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -597,11 +638,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "sales_promo_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
                     "name": "scheduled_publish_time",
                     "required": false,
                     "type": "datetime"
@@ -783,28 +819,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "important_posts",
-            "return": "WorkPromotedPostCompanyNotice",
-            "params": [
-                {
-                    "name": "button_type",
-                    "required": false,
-                    "type": "groupimportant_posts_button_type_enum_param"
-                },
-                {
-                    "name": "expiration_time",
-                    "required": true,
-                    "type": "datetime"
-                },
-                {
-                    "name": "post_id",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "live_videos",
             "return": "LiveVideo",
@@ -847,6 +861,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "event_params",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
                     "name": "fisheye_video_cropped",
                     "required": false,
                     "type": "bool"
@@ -867,19 +886,9 @@
                     "type": "bool"
                 },
                 {
-                    "name": "live_encoders",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
                     "name": "original_fov",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "planned_start_time",
-                    "required": false,
-                    "type": "int"
                 },
                 {
                     "name": "privacy",
@@ -1099,11 +1108,6 @@
                     "type": "bool"
                 },
                 {
-                    "name": "is_visual_search",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "manual_privacy",
                     "required": false,
                     "type": "bool"
@@ -1288,26 +1292,19 @@
             ]
         },
         {
-            "method": "DELETE",
-            "endpoint": "pinned_posts",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "post_id",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "POST",
-            "endpoint": "pinned_posts",
-            "return": "Post",
+            "endpoint": "shift_settings",
+            "return": "WorkShiftManagementSettings",
             "params": [
                 {
-                    "name": "post_ids",
+                    "name": "external_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "shift_feature_setting",
                     "required": true,
-                    "type": "list<string>"
+                    "type": "groupshift_settings_shift_feature_setting_enum_param"
                 }
             ]
         },
@@ -1574,6 +1571,11 @@
                     "type": "unsigned int"
                 },
                 {
+                    "name": "published",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "react_mode_metadata",
                     "required": false,
                     "type": "string"
@@ -1587,11 +1589,6 @@
                     "name": "replace_video_id",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "sales_promo_id",
-                    "required": false,
-                    "type": "unsigned int"
                 },
                 {
                     "name": "scheduled_publish_time",
@@ -1718,11 +1715,6 @@
             "return": "Group",
             "params": [
                 {
-                    "name": "archive",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "cover",
                     "required": false,
                     "type": "string"
@@ -1751,6 +1743,11 @@
                     "name": "group_icon",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "is_official_group",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "join_setting",
@@ -1828,6 +1825,10 @@
         {
             "name": "id",
             "type": "string"
+        },
+        {
+            "name": "install",
+            "type": "Object"
         },
         {
             "name": "link",

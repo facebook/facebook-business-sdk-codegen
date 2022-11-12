@@ -1,0 +1,162 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "channels_to_integrity_status",
+            "return": "CatalogItemChannelsToIntegrityStatus",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "LocalServiceBusiness",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "address",
+            "type": "Object"
+        },
+        {
+            "name": "applinks",
+            "type": "CatalogItemAppLinks"
+        },
+        {
+            "name": "availability",
+            "type": "LocalServiceBusiness_availability"
+        },
+        {
+            "name": "brand",
+            "type": "string"
+        },
+        {
+            "name": "category",
+            "type": "string"
+        },
+        {
+            "name": "category_specific_fields",
+            "type": "CatalogSubVerticalList"
+        },
+        {
+            "name": "condition",
+            "type": "LocalServiceBusiness_condition"
+        },
+        {
+            "name": "cuisine_type",
+            "type": "string"
+        },
+        {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_0",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_1",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_2",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_3",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_4",
+            "type": "string"
+        },
+        {
+            "name": "custom_number_0",
+            "type": "unsigned int"
+        },
+        {
+            "name": "custom_number_1",
+            "type": "unsigned int"
+        },
+        {
+            "name": "custom_number_2",
+            "type": "unsigned int"
+        },
+        {
+            "name": "custom_number_3",
+            "type": "unsigned int"
+        },
+        {
+            "name": "custom_number_4",
+            "type": "unsigned int"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "expiration_date",
+            "type": "string"
+        },
+        {
+            "name": "gtin",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "image_fetch_status",
+            "type": "LocalServiceBusiness_image_fetch_status"
+        },
+        {
+            "name": "images",
+            "type": "list<string>"
+        },
+        {
+            "name": "local_service_business_id",
+            "type": "string"
+        },
+        {
+            "name": "phone",
+            "type": "string"
+        },
+        {
+            "name": "price",
+            "type": "string"
+        },
+        {
+            "name": "price_range",
+            "type": "string"
+        },
+        {
+            "name": "retailer_category",
+            "type": "string"
+        },
+        {
+            "name": "sanitized_images",
+            "type": "list<string>"
+        },
+        {
+            "name": "size",
+            "type": "string"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "unit_price",
+            "type": "Object"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        },
+        {
+            "name": "vendor_id",
+            "type": "string"
+        }
+    ]
+}

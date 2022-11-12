@@ -1,12 +1,5 @@
 {
-    "apis": [
-        {
-            "name": "#get",
-            "method": "GET",
-            "return": "MessengerDestinationPageWelcomeMessage",
-            "params": []
-        }
-    ],
+    "apis": [],
     "fields": [
         {
             "name": "id",

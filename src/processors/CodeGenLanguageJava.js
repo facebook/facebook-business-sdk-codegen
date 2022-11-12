@@ -162,7 +162,7 @@ const CodeGenLanguageJava = {
       Double: /(float|double)/gi,
       'List<$1>': /list\s*<\s*([a-zA-Z0-9_.<>,\s]*?)\s*>/g,
       '$1Map<String, String>$2': /(^|<)map($|>)/i,
-      'Map<$1, $2>': /map\s*<\s*([a-zA-Z0-9_]*?)\s*,\s*([a-zA-Z0-9_<>]*?)\s*>/g,
+      'Map<$1, $2>': /map\s*<\s*([a-zA-Z0-9_]*?)\s*,\s*([a-zA-Z0-9_<>, ]*?)\s*>/g,
     };
 
     let oldType;

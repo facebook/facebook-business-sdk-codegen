@@ -37,6 +37,16 @@
                     "name": "image_width",
                     "required": false,
                     "type": "unsigned int"
+                },
+                {
+                    "name": "override_country",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "override_language",
+                    "required": false,
+                    "type": "string"
                 }
             ]
         },
@@ -156,6 +166,31 @@
                     "type": "string"
                 },
                 {
+                    "name": "custom_number_0",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "custom_number_1",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "custom_number_2",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "custom_number_3",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "custom_number_4",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
                     "name": "description",
                     "required": false,
                     "type": "string"
@@ -182,6 +217,16 @@
                 },
                 {
                     "name": "image_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "importer_address",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "importer_name",
                     "required": false,
                     "type": "string"
                 },
@@ -241,9 +286,19 @@
                     "type": "string"
                 },
                 {
+                    "name": "manufacturer_info",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "manufacturer_part_number",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "marked_for_product_launch",
+                    "required": false,
+                    "type": "productitem_marked_for_product_launch"
                 },
                 {
                     "name": "material",
@@ -281,6 +336,11 @@
                     "type": "unsigned int"
                 },
                 {
+                    "name": "origin_country",
+                    "required": false,
+                    "type": "productitem_origin_country"
+                },
+                {
                     "name": "pattern",
                     "required": false,
                     "type": "string"
@@ -294,6 +354,11 @@
                     "name": "product_type",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "quantity_to_sell_on_facebook",
+                    "required": false,
+                    "type": "unsigned int"
                 },
                 {
                     "name": "retailer_id",
@@ -344,6 +409,11 @@
                     "name": "visibility",
                     "required": false,
                     "type": "productitem_visibility"
+                },
+                {
+                    "name": "wa_compliance_category",
+                    "required": false,
+                    "type": "productitem_wa_compliance_category"
                 },
                 {
                     "name": "windows_phone_app_id",
@@ -449,8 +519,32 @@
             "type": "string"
         },
         {
+            "name": "custom_number_0",
+            "type": "string"
+        },
+        {
+            "name": "custom_number_1",
+            "type": "string"
+        },
+        {
+            "name": "custom_number_2",
+            "type": "string"
+        },
+        {
+            "name": "custom_number_3",
+            "type": "string"
+        },
+        {
+            "name": "custom_number_4",
+            "type": "string"
+        },
+        {
             "name": "description",
             "type": "string"
+        },
+        {
+            "name": "errors",
+            "type": "list<ProductItemError>"
         },
         {
             "name": "expiration_date",
@@ -489,11 +583,31 @@
             "type": "list<string>"
         },
         {
+            "name": "importer_address",
+            "type": "ProductItemImporterAddress"
+        },
+        {
+            "name": "importer_name",
+            "type": "string"
+        },
+        {
+            "name": "invalidation_errors",
+            "type": "list<Object>"
+        },
+        {
             "name": "inventory",
             "type": "int"
         },
         {
+            "name": "manufacturer_info",
+            "type": "string"
+        },
+        {
             "name": "manufacturer_part_number",
+            "type": "string"
+        },
+        {
+            "name": "marked_for_product_launch",
             "type": "string"
         },
         {
@@ -513,12 +627,20 @@
             "type": "int"
         },
         {
+            "name": "origin_country",
+            "type": "string"
+        },
+        {
             "name": "parent_product_id",
             "type": "string"
         },
         {
             "name": "pattern",
             "type": "string"
+        },
+        {
+            "name": "post_conversion_signal_based_enforcement_appeal_eligibility",
+            "type": "bool"
         },
         {
             "name": "price",
@@ -539,6 +661,10 @@
         {
             "name": "product_type",
             "type": "string"
+        },
+        {
+            "name": "quantity_to_sell_on_facebook",
+            "type": "int"
         },
         {
             "name": "retailer_id",
@@ -595,6 +721,10 @@
         {
             "name": "visibility",
             "type": "ProductItem_visibility"
+        },
+        {
+            "name": "wa_compliance_category",
+            "type": "string"
         }
     ]
 }

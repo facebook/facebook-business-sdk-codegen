@@ -1,0 +1,28 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "Shop",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "fb_sales_channel",
+            "type": "Object"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "ig_sales_channel",
+            "type": "Object"
+        },
+        {
+            "name": "workspace",
+            "type": "Object"
+        }
+    ]
+}

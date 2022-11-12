@@ -2,12 +2,6 @@
     "apis": [
         {
             "method": "GET",
-            "endpoint": "ad_place_page_sets",
-            "return": "AdPlacePageSet",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "adspixels",
             "return": "AdsPixel",
             "params": []
@@ -85,6 +79,11 @@
                 },
                 {
                     "name": "offline_conversion_data_sets",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "offsite_datasets",
                     "required": false,
                     "type": "list<Object>"
                 },

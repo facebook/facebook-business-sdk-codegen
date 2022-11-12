@@ -8,6 +8,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "channels_to_integrity_status",
+            "return": "CatalogItemChannelsToIntegrityStatus",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "hotel_rooms",
             "return": "HotelRoom",
             "params": []
@@ -178,6 +184,10 @@
         {
             "name": "star_rating",
             "type": "float"
+        },
+        {
+            "name": "unit_price",
+            "type": "Object"
         },
         {
             "name": "url",

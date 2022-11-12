@@ -1,0 +1,49 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "affected_channels",
+            "type": "list<ProductCatalogDiagnosticGroup_affected_channels>"
+        },
+        {
+            "name": "affected_entity",
+            "type": "ProductCatalogDiagnosticGroup_affected_entity"
+        },
+        {
+            "name": "affected_features",
+            "type": "list<ProductCatalogDiagnosticGroup_affected_features>"
+        },
+        {
+            "name": "diagnostics",
+            "type": "list<Object>"
+        },
+        {
+            "name": "error_code",
+            "type": "int"
+        },
+        {
+            "name": "number_of_affected_entities",
+            "type": "int"
+        },
+        {
+            "name": "number_of_affected_items",
+            "type": "int"
+        },
+        {
+            "name": "severity",
+            "type": "ProductCatalogDiagnosticGroup_severity"
+        },
+        {
+            "name": "subtitle",
+            "type": "string"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "type",
+            "type": "ProductCatalogDiagnosticGroup_type"
+        }
+    ]
+}

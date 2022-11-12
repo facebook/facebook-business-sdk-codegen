@@ -78,6 +78,14 @@
             "type": "int"
         },
         {
+            "name": "mini_shop_storefront",
+            "type": "Shop"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
+        },
+        {
             "name": "profile_pic",
             "type": "string"
         },
