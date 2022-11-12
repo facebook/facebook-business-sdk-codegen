@@ -3,21 +3,21 @@
         {
             "name": "#get",
             "method": "GET",
-            "return": "DynamicContentSet",
+            "return": "IGBCAdsPermission",
             "params": []
         }
     ],
     "fields": [
         {
-            "name": "business_id",
-            "type": "string"
-        },
-        {
             "name": "id",
             "type": "string"
         },
         {
-            "name": "name",
+            "name": "permission_type",
+            "type": "string"
+        },
+        {
+            "name": "status",
             "type": "string"
         }
     ]

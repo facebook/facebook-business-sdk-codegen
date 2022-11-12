@@ -6,6 +6,10 @@
             "type": "list<ProductCatalogDiagnosticGroup_affected_channels>"
         },
         {
+            "name": "affected_entity",
+            "type": "ProductCatalogDiagnosticGroup_affected_entity"
+        },
+        {
             "name": "affected_features",
             "type": "list<ProductCatalogDiagnosticGroup_affected_features>"
         },
@@ -15,6 +19,10 @@
         },
         {
             "name": "error_code",
+            "type": "int"
+        },
+        {
+            "name": "number_of_affected_entities",
             "type": "int"
         },
         {

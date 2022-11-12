@@ -314,6 +314,18 @@
         },
         {
             "method": "GET",
+            "endpoint": "ads_reporting_mmm_reports",
+            "return": "AdsReportBuilderMMMReport",
+            "params": [
+                {
+                    "name": "filtering",
+                    "required": false,
+                    "type": "list<map>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "adspixels",
             "return": "AdsPixel",
             "params": [
@@ -474,7 +486,13 @@
             "method": "GET",
             "endpoint": "client_ad_accounts",
             "return": "AdAccount",
-            "params": []
+            "params": [
+                {
+                    "name": "search_query",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -632,40 +650,9 @@
         },
         {
             "method": "GET",
-            "endpoint": "content_delivery_report",
-            "return": "ContentDeliveryReport",
-            "params": [
-                {
-                    "name": "end_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "page_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "platform",
-                    "required": true,
-                    "type": "businesscontent_delivery_report_platform_enum_param"
-                },
-                {
-                    "name": "position",
-                    "required": true,
-                    "type": "businesscontent_delivery_report_position_enum_param"
-                },
-                {
-                    "name": "start_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "summary",
-                    "required": false,
-                    "type": "bool"
-                }
-            ]
+            "endpoint": "cpas_business_setup_config",
+            "return": "CPASBusinessSetupConfig",
+            "params": []
         },
         {
             "method": "POST",
@@ -701,26 +688,10 @@
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "create_and_apply_publisher_block_list",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "is_auto_blocking_on",
-                    "required": true,
-                    "type": "bool"
-                },
-                {
-                    "name": "name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "publisher_urls",
-                    "required": true,
-                    "type": "list<string>"
-                }
-            ]
+            "method": "GET",
+            "endpoint": "creditcards",
+            "return": "CreditCard",
+            "params": []
         },
         {
             "method": "POST",
@@ -971,6 +942,23 @@
             ]
         },
         {
+            "method": "DELETE",
+            "endpoint": "managed_partner_businesses",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "child_business_external_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "child_business_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "POST",
             "endpoint": "managed_partner_businesses",
             "return": "Object",
@@ -1142,7 +1130,13 @@
             "method": "GET",
             "endpoint": "owned_ad_accounts",
             "return": "AdAccount",
-            "params": []
+            "params": [
+                {
+                    "name": "search_query",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
         },
         {
             "method": "POST",
@@ -1383,6 +1377,38 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "partner_premium_options",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "catalog_segment_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "enable_basket_insight",
+                    "required": true,
+                    "type": "bool"
+                },
+                {
+                    "name": "enable_extended_audience_retargeting",
+                    "required": true,
+                    "type": "bool"
+                },
+                {
+                    "name": "retailer_custom_audience_config",
+                    "required": true,
+                    "type": "map"
+                },
+                {
+                    "name": "vendor_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "pending_client_ad_accounts",
             "return": "BusinessAdAccountRequest",
@@ -1464,7 +1490,7 @@
         },
         {
             "method": "POST",
-            "endpoint": "pixeltos",
+            "endpoint": "pixel_tos",
             "return": "Object",
             "params": []
         },
@@ -1512,12 +1538,6 @@
                     "type": "int"
                 }
             ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "third_party_measurement_report_dataset",
-            "return": "ThirdPartyMeasurementReportDataset",
-            "params": []
         },
         {
             "name": "#get",
@@ -1572,8 +1592,8 @@
             "type": "BusinessManagedPartnerEligibility"
         },
         {
-            "name": "cpas_business_setup_config",
-            "type": "CPASBusinessSetupConfig"
+            "name": "collaborative_ads_partner_premium_options",
+            "type": "BusinessPartnerPremiumOptions"
         },
         {
             "name": "created_by",

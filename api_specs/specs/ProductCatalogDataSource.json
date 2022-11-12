@@ -2,28 +2,24 @@
     "apis": [],
     "fields": [
         {
-            "name": "currency",
+            "name": "app_id",
             "type": "string"
         },
         {
-            "name": "override",
+            "name": "id",
             "type": "string"
         },
         {
-            "name": "text",
+            "name": "ingestion_source_type",
             "type": "string"
         },
         {
-            "name": "type",
+            "name": "name",
             "type": "string"
         },
         {
-            "name": "value1",
-            "type": "float"
-        },
-        {
-            "name": "value2",
-            "type": "float"
+            "name": "upload_type",
+            "type": "string"
         }
     ]
 }

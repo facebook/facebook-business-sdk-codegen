@@ -1,0 +1,49 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "image_url",
+            "type": "string"
+        },
+        {
+            "name": "is_checkout",
+            "type": "bool"
+        },
+        {
+            "name": "merchant_id",
+            "type": "int"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "price_string",
+            "type": "string"
+        },
+        {
+            "name": "product_id",
+            "type": "int"
+        },
+        {
+            "name": "review_status",
+            "type": "string"
+        },
+        {
+            "name": "stripped_price_string",
+            "type": "string"
+        },
+        {
+            "name": "stripped_sale_price_string",
+            "type": "string"
+        },
+        {
+            "name": "x",
+            "type": "float"
+        },
+        {
+            "name": "y",
+            "type": "float"
+        }
+    ]
+}

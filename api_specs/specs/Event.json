@@ -20,8 +20,8 @@
         },
         {
             "method": "POST",
-            "endpoint": "livevideos",
-            "return": "Object",
+            "endpoint": "live_videos",
+            "return": "LiveVideo",
             "params": [
                 {
                     "name": "content_tags",
@@ -42,6 +42,11 @@
                     "name": "encoding_settings",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "event_params",
+                    "required": false,
+                    "type": "Object"
                 },
                 {
                     "name": "fisheye_video_cropped",
@@ -69,11 +74,6 @@
                     "type": "unsigned int"
                 },
                 {
-                    "name": "planned_start_time",
-                    "required": false,
-                    "type": "int"
-                },
-                {
                     "name": "privacy",
                     "required": false,
                     "type": "string"
@@ -81,7 +81,7 @@
                 {
                     "name": "projection",
                     "required": false,
-                    "type": "eventlivevideos_projection_enum_param"
+                    "type": "eventlive_videos_projection_enum_param"
                 },
                 {
                     "name": "published",
@@ -96,17 +96,17 @@
                 {
                     "name": "spatial_audio_format",
                     "required": false,
-                    "type": "eventlivevideos_spatial_audio_format_enum_param"
+                    "type": "eventlive_videos_spatial_audio_format_enum_param"
                 },
                 {
                     "name": "status",
                     "required": false,
-                    "type": "eventlivevideos_status_enum_param"
+                    "type": "eventlive_videos_status_enum_param"
                 },
                 {
                     "name": "stereoscopic_mode",
                     "required": false,
-                    "type": "eventlivevideos_stereoscopic_mode_enum_param"
+                    "type": "eventlive_videos_stereoscopic_mode_enum_param"
                 },
                 {
                     "name": "stop_on_delete_stream",
@@ -116,7 +116,7 @@
                 {
                     "name": "stream_type",
                     "required": false,
-                    "type": "eventlivevideos_stream_type_enum_param"
+                    "type": "eventlive_videos_stream_type_enum_param"
                 },
                 {
                     "name": "title",

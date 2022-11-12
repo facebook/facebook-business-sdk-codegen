@@ -1,6 +1,12 @@
 {
     "apis": [
         {
+            "method": "GET",
+            "endpoint": "donations",
+            "return": "InternalDonationForApp",
+            "params": []
+        },
+        {
             "method": "POST",
             "endpoint": "end_fundraiser",
             "return": "Object",

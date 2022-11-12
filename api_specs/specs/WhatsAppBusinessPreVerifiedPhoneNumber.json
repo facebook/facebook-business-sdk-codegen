@@ -3,30 +3,22 @@
         {
             "name": "#get",
             "method": "GET",
-            "return": "PageAdminNote",
+            "return": "WhatsAppBusinessPreVerifiedPhoneNumber",
             "params": []
         }
     ],
     "fields": [
         {
-            "name": "body",
+            "name": "code_verification_status",
             "type": "string"
-        },
-        {
-            "name": "from",
-            "type": "Page"
         },
         {
             "name": "id",
             "type": "string"
         },
         {
-            "name": "note_label",
+            "name": "phone_number",
             "type": "string"
-        },
-        {
-            "name": "user",
-            "type": "User"
         }
     ]
 }

@@ -127,6 +127,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "campaign_ids",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "click_id",
                     "required": false,
                     "type": "string"
@@ -252,6 +257,12 @@
                     "type": "string"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "ad_placement_groups",
+            "return": "AdPlacementGroup",
+            "params": []
         },
         {
             "method": "GET",
@@ -434,6 +445,11 @@
                 },
                 {
                     "name": "is_aem_ready",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_aem_v2_ready",
                     "required": false,
                     "type": "bool"
                 },
@@ -843,23 +859,6 @@
         },
         {
             "method": "POST",
-            "endpoint": "leaderboards_reset",
-            "return": "Application",
-            "params": [
-                {
-                    "name": "name",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "reset_time",
-                    "required": true,
-                    "type": "datetime"
-                }
-            ]
-        },
-        {
-            "method": "POST",
             "endpoint": "mmp_auditing",
             "return": "Object",
             "params": [
@@ -929,6 +928,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "used_install_referrer",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "view_attr_window",
                     "required": false,
                     "type": "unsigned int"
@@ -968,6 +972,12 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "monetized_digital_store_objects",
+            "return": "MonetizedDigitalStoreObject",
+            "params": []
+        },
+        {
             "method": "POST",
             "endpoint": "monetized_digital_store_objects",
             "return": "MonetizedDigitalStoreObject",
@@ -983,6 +993,12 @@
                     "type": "string"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "object_types",
+            "return": "NullNode",
+            "params": []
         },
         {
             "method": "POST",
@@ -1278,26 +1294,6 @@
                     "type": "list<application_an_platforms>"
                 },
                 {
-                    "name": "android_class_name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "android_key_hashes",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "android_package_name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "android_sso",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "app_domains",
                     "required": false,
                     "type": "list<string>"
@@ -1376,11 +1372,6 @@
                     "name": "deauth_callback_url",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "ios_bundle_id",
-                    "required": false,
-                    "type": "list<string>"
                 },
                 {
                     "name": "mobile_web_url",
@@ -1550,6 +1541,10 @@
         {
             "name": "auto_event_setup_enabled",
             "type": "bool"
+        },
+        {
+            "name": "business",
+            "type": "Business"
         },
         {
             "name": "canvas_fluid_height",
@@ -1730,6 +1725,10 @@
         {
             "name": "object_store_urls",
             "type": "Object"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
         },
         {
             "name": "page_tab_default_name",

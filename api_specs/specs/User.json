@@ -273,6 +273,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "avatars",
+            "return": "Avatar",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "business_users",
             "return": "BusinessUser",
             "params": []
@@ -1009,6 +1015,12 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "fundraisers",
+            "return": "FundraiserPersonToCharity",
+            "params": []
+        },
+        {
             "method": "POST",
             "endpoint": "fundraisers",
             "return": "FundraiserPersonToCharity",
@@ -1242,6 +1254,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "event_params",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
                     "name": "fisheye_video_cropped",
                     "required": false,
                     "type": "bool"
@@ -1265,11 +1282,6 @@
                     "name": "original_fov",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "planned_start_time",
-                    "required": false,
-                    "type": "int"
                 },
                 {
                     "name": "privacy",
@@ -1351,9 +1363,24 @@
                     "type": "Object"
                 },
                 {
+                    "name": "label",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "message",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "notif_ids",
                     "required": false,
                     "type": "list<string>"
+                },
+                {
+                    "name": "payload",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "read",
@@ -1364,6 +1391,11 @@
                     "name": "ref",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "scheduleInterval",
+                    "required": false,
+                    "type": "unsigned int"
                 },
                 {
                     "name": "seen",
@@ -2379,7 +2411,7 @@
         },
         {
             "name": "shared_login_upgrade_required_by",
-            "type": "datetime"
+            "type": "Object"
         },
         {
             "name": "short_name",

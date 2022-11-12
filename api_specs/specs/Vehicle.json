@@ -211,6 +211,10 @@
             "type": "string"
         },
         {
+            "name": "custom_number_0",
+            "type": "unsigned int"
+        },
+        {
             "name": "date_first_on_lot",
             "type": "string"
         },

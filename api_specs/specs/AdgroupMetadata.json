@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "ad_standard_enhancements_edit_source",
+            "type": "int"
+        },
+        {
+            "name": "adgroup_creation_source",
+            "type": "string"
+        },
+        {
+            "name": "adgroup_edit_source",
+            "type": "string"
+        },
+        {
+            "name": "carousel_style",
+            "type": "string"
+        },
+        {
+            "name": "carousel_with_static_card_style",
+            "type": "string"
+        }
+    ]
+}

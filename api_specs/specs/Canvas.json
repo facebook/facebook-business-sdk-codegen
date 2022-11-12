@@ -91,6 +91,10 @@
             "type": "list<CanvasCollectionThumbnail>"
         },
         {
+            "name": "dynamic_setting",
+            "type": "CanvasDynamicSetting"
+        },
+        {
             "name": "element_payload",
             "type": "string"
         },
@@ -136,7 +140,7 @@
         },
         {
             "name": "source_template",
-            "type": "CanvasTemplate"
+            "type": "Object"
         },
         {
             "name": "store_url",

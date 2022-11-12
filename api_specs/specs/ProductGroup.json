@@ -9,7 +9,7 @@
         {
             "method": "POST",
             "endpoint": "products",
-            "return": "Object",
+            "return": "ProductItem",
             "params": [
                 {
                     "name": "additional_image_urls",

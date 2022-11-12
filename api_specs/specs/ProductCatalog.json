@@ -117,68 +117,6 @@
         },
         {
             "method": "POST",
-            "endpoint": "automotive_models",
-            "return": "AutomotiveModel",
-            "params": [
-                {
-                    "name": "automotive_model_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "body_style",
-                    "required": false,
-                    "type": "productcatalogautomotive_models_body_style_enum_param"
-                },
-                {
-                    "name": "currency",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "description",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "images",
-                    "required": true,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "make",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "model",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "price",
-                    "required": true,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "title",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "url",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "year",
-                    "required": true,
-                    "type": "unsigned int"
-                }
-            ]
-        },
-        {
-            "method": "POST",
             "endpoint": "batch",
             "return": "ProductCatalog",
             "params": [
@@ -246,6 +184,11 @@
             "return": "CheckBatchRequestStatus",
             "params": [
                 {
+                    "name": "error_priority",
+                    "required": false,
+                    "type": "productcatalogcheck_batch_request_status_error_priority_enum_param"
+                },
+                {
                     "name": "handle",
                     "required": true,
                     "type": "string"
@@ -293,6 +236,18 @@
         },
         {
             "method": "GET",
+            "endpoint": "data_sources",
+            "return": "ProductCatalogDataSource",
+            "params": [
+                {
+                    "name": "ingestion_source_type",
+                    "required": false,
+                    "type": "productcatalogdata_sources_ingestion_source_type_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "destinations",
             "return": "Destination",
             "params": [
@@ -317,6 +272,11 @@
                     "name": "affected_channels",
                     "required": false,
                     "type": "list<productcatalogdiagnostics_affected_channels_enum_param>"
+                },
+                {
+                    "name": "affected_entities",
+                    "required": false,
+                    "type": "list<productcatalogdiagnostics_affected_entities_enum_param>"
                 },
                 {
                     "name": "affected_features",
@@ -681,6 +641,23 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "media_titles",
+            "return": "MediaTitle",
+            "params": [
+                {
+                    "name": "bulk_pagination",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "filter",
+                    "required": false,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
             "method": "POST",
             "endpoint": "media_titles",
             "return": "MediaTitle",
@@ -1017,6 +994,16 @@
                     "name": "bulk_pagination",
                     "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "error_priority",
+                    "required": false,
+                    "type": "productcatalogproducts_error_priority_enum_param"
+                },
+                {
+                    "name": "error_type",
+                    "required": false,
+                    "type": "productcatalogproducts_error_type_enum_param"
                 },
                 {
                     "name": "filter",
@@ -1686,8 +1673,16 @@
             "type": "Business"
         },
         {
+            "name": "catalog_store",
+            "type": "StoreCatalogSettings"
+        },
+        {
             "name": "commerce_merchant_settings",
             "type": "CommerceMerchantSettings"
+        },
+        {
+            "name": "creator_user",
+            "type": "User"
         },
         {
             "name": "da_display_settings",
@@ -1716,6 +1711,10 @@
         {
             "name": "name",
             "type": "string"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
         },
         {
             "name": "product_count",

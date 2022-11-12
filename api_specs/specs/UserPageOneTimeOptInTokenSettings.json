@@ -3,45 +3,45 @@
         {
             "name": "#get",
             "method": "GET",
-            "return": "AdPlacement",
+            "return": "UserPageOneTimeOptInTokenSettings",
             "params": []
         }
     ],
     "fields": [
         {
-            "name": "bundle_id",
+            "name": "creation_timestamp",
+            "type": "int"
+        },
+        {
+            "name": "notification_messages_frequency",
             "type": "string"
         },
         {
-            "name": "display_format",
+            "name": "notification_messages_reoptin",
             "type": "string"
         },
         {
-            "name": "external_placement_id",
+            "name": "notification_messages_timezone",
             "type": "string"
         },
         {
-            "name": "google_display_format",
+            "name": "notification_messages_token",
             "type": "string"
         },
         {
-            "name": "id",
+            "name": "recipient_id",
             "type": "string"
         },
         {
-            "name": "name",
+            "name": "token_expiry_timestamp",
+            "type": "int"
+        },
+        {
+            "name": "topic_title",
             "type": "string"
         },
         {
-            "name": "placement_group",
-            "type": "Object"
-        },
-        {
-            "name": "platform",
-            "type": "string"
-        },
-        {
-            "name": "status",
+            "name": "user_token_status",
             "type": "string"
         }
     ]

@@ -29,12 +29,20 @@
             "type": "datetime"
         },
         {
+            "name": "feature_list",
+            "type": "list<string>"
+        },
+        {
             "name": "id",
             "type": "string"
         },
         {
             "name": "latest_status_update_time",
             "type": "datetime"
+        },
+        {
+            "name": "run_id",
+            "type": "string"
         },
         {
             "name": "server_ips",

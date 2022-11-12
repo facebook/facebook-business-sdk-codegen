@@ -1,0 +1,64 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "PagePostExperiment",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "auto_resolve_settings",
+            "type": "Object"
+        },
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "creator",
+            "type": "User"
+        },
+        {
+            "name": "declared_winning_time",
+            "type": "datetime"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "insight_snapshots",
+            "type": "map<datetime, map<int, Object>>"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "optimization_goal",
+            "type": "string"
+        },
+        {
+            "name": "publish_status",
+            "type": "string"
+        },
+        {
+            "name": "publish_time",
+            "type": "datetime"
+        },
+        {
+            "name": "scheduled_experiment_timestamp",
+            "type": "datetime"
+        },
+        {
+            "name": "updated_time",
+            "type": "datetime"
+        }
+    ]
+}

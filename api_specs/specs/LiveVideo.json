@@ -192,6 +192,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "event_params",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
                     "name": "is_audio_only",
                     "required": false,
                     "type": "bool"

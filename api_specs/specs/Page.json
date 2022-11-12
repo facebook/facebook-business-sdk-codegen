@@ -86,6 +86,12 @@
             "params": []
         },
         {
+            "method": "GET",
+            "endpoint": "ar_experience",
+            "return": "ArAdsDataContainer",
+            "params": []
+        },
+        {
             "method": "DELETE",
             "endpoint": "assigned_users",
             "return": "Object",
@@ -700,6 +706,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "fantasy_games",
+            "return": "FantasyGame",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "feed",
             "return": "PagePost",
             "params": [
@@ -728,7 +740,7 @@
         {
             "method": "POST",
             "endpoint": "feed",
-            "return": "Object",
+            "return": "Page",
             "params": [
                 {
                     "name": "actions",
@@ -1539,6 +1551,49 @@
         },
         {
             "method": "GET",
+            "endpoint": "invoice_access_bank_account",
+            "return": "McomInvoiceBankAccount",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "invoice_access_invoice_edit",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "additional_amounts",
+                    "required": false,
+                    "type": "list<map>"
+                },
+                {
+                    "name": "invoice_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "notes",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "paid_amount",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "product_items",
+                    "required": false,
+                    "type": "list<map>"
+                },
+                {
+                    "name": "shipping_address",
+                    "required": false,
+                    "type": "map"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "leadgen_forms",
             "return": "LeadgenForm",
             "params": []
@@ -1690,6 +1745,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "event_params",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
                     "name": "fisheye_video_cropped",
                     "required": false,
                     "type": "bool"
@@ -1718,11 +1778,6 @@
                     "name": "original_fov",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "planned_start_time",
-                    "required": false,
-                    "type": "int"
                 },
                 {
                     "name": "privacy",
@@ -2011,6 +2066,11 @@
                     "name": "tag",
                     "required": false,
                     "type": "Object"
+                },
+                {
+                    "name": "thread_control",
+                    "required": false,
+                    "type": "Object"
                 }
             ]
         },
@@ -2102,124 +2162,6 @@
             ]
         },
         {
-            "method": "GET",
-            "endpoint": "nativeoffers",
-            "return": "NativeOffer",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "nativeoffers",
-            "return": "NativeOffer",
-            "params": [
-                {
-                    "name": "barcode_photo",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "barcode_type",
-                    "required": false,
-                    "type": "pagenativeoffers_barcode_type_enum_param"
-                },
-                {
-                    "name": "barcode_value",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "block_reshares",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "commerce_product_item",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "commerce_store",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "commerce_store_collection",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "details",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "disable_location",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "discounts",
-                    "required": true,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "expiration_time",
-                    "required": true,
-                    "type": "datetime"
-                },
-                {
-                    "name": "instore_code",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "location_type",
-                    "required": false,
-                    "type": "pagenativeoffers_location_type_enum_param"
-                },
-                {
-                    "name": "max_save_count",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "online_code",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "page_set_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "redemption_code",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "redemption_link",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "terms",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "unique_barcodes",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "unique_codes",
-                    "required": false,
-                    "type": "unsigned int"
-                }
-            ]
-        },
-        {
             "method": "POST",
             "endpoint": "nlp_configs",
             "return": "Page",
@@ -2260,6 +2202,12 @@
                     "type": "bool"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "notification_message_tokens",
+            "return": "UserPageOneTimeOptInTokenSettings",
+            "params": []
         },
         {
             "method": "POST",
@@ -3037,18 +2985,6 @@
             ]
         },
         {
-            "method": "DELETE",
-            "endpoint": "tabs",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "tab",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "tabs",
             "return": "Tab",
@@ -3057,43 +2993,6 @@
                     "name": "tab",
                     "required": false,
                     "type": "list<string>"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "tabs",
-            "return": "Page",
-            "params": [
-                {
-                    "name": "app_id",
-                    "required": false,
-                    "type": "int"
-                },
-                {
-                    "name": "custom_image_url",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "custom_name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "is_non_connection_landing_tab",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "position",
-                    "required": false,
-                    "type": "int"
-                },
-                {
-                    "name": "tab",
-                    "required": false,
-                    "type": "string"
                 }
             ]
         },
@@ -3186,7 +3085,7 @@
         {
             "method": "POST",
             "endpoint": "video_copyright_rules",
-            "return": "Object",
+            "return": "VideoCopyrightRule",
             "params": [
                 {
                     "name": "condition_groups",
@@ -3203,7 +3102,7 @@
         {
             "method": "POST",
             "endpoint": "video_copyrights",
-            "return": "Object",
+            "return": "VideoCopyright",
             "params": [
                 {
                     "name": "attribution_id",
@@ -3277,6 +3176,59 @@
             "endpoint": "video_lists",
             "return": "VideoList",
             "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "video_reels",
+            "return": "AdVideo",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "video_reels",
+            "return": "AdVideo",
+            "params": [
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "feed_targeting",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "scheduled_publish_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "targeting",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "title",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "upload_phase",
+                    "required": false,
+                    "type": "pagevideo_reels_upload_phase_enum_param"
+                },
+                {
+                    "name": "video_id",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "video_state",
+                    "required": false,
+                    "type": "pagevideo_reels_video_state_enum_param"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -3776,6 +3728,21 @@
                     "name": "include_hidden",
                     "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "limit",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "show_expired",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "with",
+                    "required": false,
+                    "type": "pagevisitor_posts_with_enum_param"
                 }
             ]
         },
@@ -4463,6 +4430,10 @@
         {
             "name": "overall_star_rating",
             "type": "float"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
         },
         {
             "name": "page_token",

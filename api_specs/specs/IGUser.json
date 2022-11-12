@@ -2,6 +2,29 @@
     "apis": [
         {
             "method": "GET",
+            "endpoint": "available_catalogs",
+            "return": "UserAvailableCatalogs",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "catalog_product_search",
+            "return": "ShadowIGUserCatalogProductSearch",
+            "params": [
+                {
+                    "name": "catalog_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "q",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "content_publishing_limit",
             "return": "ContentPublishingLimitResponse",
             "params": [
@@ -109,6 +132,16 @@
                     "type": "string"
                 },
                 {
+                    "name": "product_tags",
+                    "required": false,
+                    "type": "list<map>"
+                },
+                {
+                    "name": "share_to_feed",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "thumb_offset",
                     "required": false,
                     "type": "string"
@@ -154,6 +187,35 @@
                 },
                 {
                     "name": "message",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "product_appeal",
+            "return": "IGShoppingProductAppeal",
+            "params": [
+                {
+                    "name": "product_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "product_appeal",
+            "return": "IGShoppingProductAppeal",
+            "params": [
+                {
+                    "name": "appeal_reason",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "product_id",
                     "required": true,
                     "type": "string"
                 }
@@ -232,8 +294,16 @@
             "type": "string"
         },
         {
+            "name": "owner_business",
+            "type": "Business"
+        },
+        {
             "name": "profile_picture_url",
             "type": "string"
+        },
+        {
+            "name": "shopping_product_tag_eligibility",
+            "type": "bool"
         },
         {
             "name": "shopping_review_status",

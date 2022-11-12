@@ -10,10 +10,6 @@
             "type": "Object"
         },
         {
-            "name": "store_product_item",
-            "type": "Object"
-        },
-        {
             "name": "vehicle",
             "type": "Object"
         }

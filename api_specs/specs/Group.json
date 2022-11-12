@@ -94,6 +94,24 @@
         },
         {
             "method": "GET",
+            "endpoint": "attachment_surfaces",
+            "return": "GroupThirdPartyPostAttachmentSurface",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "attachment_surfaces",
+            "return": "GroupThirdPartyPostAttachmentSurface",
+            "params": [
+                {
+                    "name": "title",
+                    "required": true,
+                    "type": "map"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "docs",
             "return": "Doc",
             "params": []
@@ -103,6 +121,29 @@
             "endpoint": "events",
             "return": "Event",
             "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "featured_cards",
+            "return": "GroupHighlightThirdPartyUnit",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "featured_cards",
+            "return": "GroupHighlightThirdPartyUnit",
+            "params": [
+                {
+                    "name": "description",
+                    "required": true,
+                    "type": "map"
+                },
+                {
+                    "name": "title",
+                    "required": true,
+                    "type": "map"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -820,6 +861,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "event_params",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
                     "name": "fisheye_video_cropped",
                     "required": false,
                     "type": "bool"
@@ -843,11 +889,6 @@
                     "name": "original_fov",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "planned_start_time",
-                    "required": false,
-                    "type": "int"
                 },
                 {
                     "name": "privacy",
@@ -1784,6 +1825,10 @@
         {
             "name": "id",
             "type": "string"
+        },
+        {
+            "name": "install",
+            "type": "Object"
         },
         {
             "name": "link",

@@ -6,20 +6,16 @@
             "type": "string"
         },
         {
-            "name": "from",
-            "type": "Object"
-        },
-        {
-            "name": "id",
+            "name": "error_priority",
             "type": "string"
         },
         {
-            "name": "name",
+            "name": "error_type",
             "type": "string"
         },
         {
-            "name": "with",
-            "type": "list<User>"
+            "name": "title",
+            "type": "string"
         }
     ]
 }
