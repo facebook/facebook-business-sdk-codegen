@@ -127,6 +127,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "campaign_ids",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "click_id",
                     "required": false,
                     "type": "string"
@@ -255,6 +260,24 @@
         },
         {
             "method": "GET",
+            "endpoint": "ad_placement_groups",
+            "return": "AdPlacementGroup",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "adnetwork_placements",
+            "return": "AdPlacement",
+            "params": [
+                {
+                    "name": "request_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "adnetworkanalytics",
             "return": "AdNetworkAnalyticsSyncQueryResult",
             "params": [
@@ -371,6 +394,74 @@
         },
         {
             "method": "GET",
+            "endpoint": "aem_conversion_configs",
+            "return": "AEMConversionConfig",
+            "params": [
+                {
+                    "name": "advertiser_ids",
+                    "required": false,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "aem_conversion_filter",
+            "return": "AEMConversionFilter",
+            "params": [
+                {
+                    "name": "catalog_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "fb_content_ids",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "aem_conversions",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "aem_conversions",
+                    "required": true,
+                    "type": "list<map>"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "aem_skan_readiness",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "app_id",
+                    "required": true,
+                    "type": "int"
+                },
+                {
+                    "name": "is_aem_ready",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_aem_v2_ready",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_skan_ready",
+                    "required": false,
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "agencies",
             "return": "Business",
             "params": []
@@ -394,6 +485,11 @@
                     "name": "request_id",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "sync_api",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         },
@@ -460,58 +556,6 @@
                     "name": "extinfo",
                     "required": false,
                     "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "app_insights",
-            "return": "InsightsQueryResult",
-            "params": [
-                {
-                    "name": "aggregateBy",
-                    "required": false,
-                    "type": "applicationapp_insights_aggregateBy_enum_param"
-                },
-                {
-                    "name": "breakdowns",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "ecosystem",
-                    "required": false,
-                    "type": "applicationapp_insights_ecosystem_enum_param"
-                },
-                {
-                    "name": "event_name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "intervals_to_aggregate",
-                    "required": false,
-                    "type": "int"
-                },
-                {
-                    "name": "metric_key",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "period",
-                    "required": false,
-                    "type": "applicationapp_insights_period_enum_param"
-                },
-                {
-                    "name": "since",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "until",
-                    "required": false,
-                    "type": "datetime"
                 }
             ]
         },
@@ -614,31 +658,10 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "button_indexing",
-            "return": "Application",
-            "params": [
-                {
-                    "name": "app_version",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "device_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "extinfo",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "indexed_button_list",
-                    "required": true,
-                    "type": "list<map>"
-                }
-            ]
+            "method": "GET",
+            "endpoint": "cloudbridge_settings",
+            "return": "CloudbridgeSetting",
+            "params": []
         },
         {
             "method": "POST",
@@ -836,62 +859,6 @@
         },
         {
             "method": "POST",
-            "endpoint": "leaderboards_reset",
-            "return": "Application",
-            "params": [
-                {
-                    "name": "name",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "reset_time",
-                    "required": true,
-                    "type": "datetime"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "leaderboards_set_score",
-            "return": "Application",
-            "params": [
-                {
-                    "name": "extra_data",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "name",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "player_id",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "score",
-                    "required": true,
-                    "type": "unsigned int"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "live_videos",
-            "return": "LiveVideo",
-            "params": [
-                {
-                    "name": "broadcast_status",
-                    "required": false,
-                    "type": "applicationlive_videos_broadcast_status_enum_param"
-                }
-            ]
-        },
-        {
-            "method": "POST",
             "endpoint": "mmp_auditing",
             "return": "Object",
             "params": [
@@ -961,6 +928,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "used_install_referrer",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "view_attr_window",
                     "required": false,
                     "type": "unsigned int"
@@ -1000,6 +972,35 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "monetized_digital_store_objects",
+            "return": "MonetizedDigitalStoreObject",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "monetized_digital_store_objects",
+            "return": "MonetizedDigitalStoreObject",
+            "params": [
+                {
+                    "name": "content_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "store",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "object_types",
+            "return": "NullNode",
+            "params": []
+        },
+        {
             "method": "POST",
             "endpoint": "occludespopups",
             "return": "Object",
@@ -1015,12 +1016,6 @@
                     "type": "bool"
                 }
             ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "ozone_release",
-            "return": "OzoneRelease",
-            "params": []
         },
         {
             "method": "POST",
@@ -1061,18 +1056,6 @@
                     "name": "page_scoped_user_id",
                     "required": true,
                     "type": "unsigned int"
-                }
-            ]
-        },
-        {
-            "method": "DELETE",
-            "endpoint": "payment_currencies",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "currency_url",
-                    "required": true,
-                    "type": "string"
                 }
             ]
         },
@@ -1136,13 +1119,7 @@
             "method": "GET",
             "endpoint": "purchases",
             "return": "GamesIAPOrder",
-            "params": [
-                {
-                    "name": "is_premium",
-                    "required": false,
-                    "type": "bool"
-                }
-            ]
+            "params": []
         },
         {
             "method": "GET",
@@ -1307,29 +1284,14 @@
             "return": "Application",
             "params": [
                 {
+                    "name": "allow_cycle_app_secret",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "an_platforms",
                     "required": false,
                     "type": "list<application_an_platforms>"
-                },
-                {
-                    "name": "android_class_name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "android_key_hashes",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "android_package_name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "android_sso",
-                    "required": false,
-                    "type": "bool"
                 },
                 {
                     "name": "app_domains",
@@ -1410,11 +1372,6 @@
                     "name": "deauth_callback_url",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "ios_bundle_id",
-                    "required": false,
-                    "type": "list<string>"
                 },
                 {
                     "name": "mobile_web_url",
@@ -1510,6 +1467,10 @@
             "type": "list<string>"
         },
         {
+            "name": "app_events_config",
+            "type": "Object"
+        },
+        {
             "name": "app_events_feature_bitmask",
             "type": "unsigned int"
         },
@@ -1580,6 +1541,10 @@
         {
             "name": "auto_event_setup_enabled",
             "type": "bool"
+        },
+        {
+            "name": "business",
+            "type": "Business"
         },
         {
             "name": "canvas_fluid_height",
@@ -1760,6 +1725,10 @@
         {
             "name": "object_store_urls",
             "type": "Object"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
         },
         {
             "name": "page_tab_default_name",

@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "audio_codec_settings",
+            "type": "Object"
+        },
+        {
+            "name": "streaming_protocol",
+            "type": "string"
+        },
+        {
+            "name": "video_codec_settings",
+            "type": "Object"
+        }
+    ]
+}

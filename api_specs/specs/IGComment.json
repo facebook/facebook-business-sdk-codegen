@@ -45,6 +45,10 @@
     ],
     "fields": [
         {
+            "name": "from",
+            "type": "Object"
+        },
+        {
             "name": "hidden",
             "type": "bool"
         },
@@ -59,6 +63,10 @@
         {
             "name": "media",
             "type": "IGMedia"
+        },
+        {
+            "name": "parent_id",
+            "type": "string"
         },
         {
             "name": "text",

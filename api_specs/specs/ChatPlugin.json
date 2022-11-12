@@ -1,0 +1,53 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "alignment",
+            "type": "string"
+        },
+        {
+            "name": "desktop_bottom_spacing",
+            "type": "string"
+        },
+        {
+            "name": "desktop_side_spacing",
+            "type": "string"
+        },
+        {
+            "name": "entry_point_icon",
+            "type": "string"
+        },
+        {
+            "name": "entry_point_label",
+            "type": "string"
+        },
+        {
+            "name": "greeting_dialog_display",
+            "type": "string"
+        },
+        {
+            "name": "guest_chat_mode",
+            "type": "string"
+        },
+        {
+            "name": "mobile_bottom_spacing",
+            "type": "string"
+        },
+        {
+            "name": "mobile_chat_display",
+            "type": "string"
+        },
+        {
+            "name": "mobile_side_spacing",
+            "type": "string"
+        },
+        {
+            "name": "theme_color",
+            "type": "string"
+        },
+        {
+            "name": "welcome_screen_greeting",
+            "type": "string"
+        }
+    ]
+}

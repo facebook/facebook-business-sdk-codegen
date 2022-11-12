@@ -42,6 +42,46 @@
             ]
         },
         {
+            "method": "DELETE",
+            "endpoint": "product_tags",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "child_index",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "deleted_tags",
+                    "required": true,
+                    "type": "list<map>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "product_tags",
+            "return": "ShadowIGMediaProductTags",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "product_tags",
+            "return": "ShadowIGMediaProductTags",
+            "params": [
+                {
+                    "name": "child_index",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "updated_tags",
+                    "required": true,
+                    "type": "list<map>"
+                }
+            ]
+        },
+        {
             "name": "#get",
             "method": "GET",
             "return": "IGMedia",
@@ -61,10 +101,6 @@
         }
     ],
     "fields": [
-        {
-            "name": "alt_text",
-            "type": "string"
-        },
         {
             "name": "caption",
             "type": "string"
@@ -86,8 +122,16 @@
             "type": "bool"
         },
         {
+            "name": "is_shared_to_feed",
+            "type": "bool"
+        },
+        {
             "name": "like_count",
             "type": "int"
+        },
+        {
+            "name": "media_product_type",
+            "type": "string"
         },
         {
             "name": "media_type",

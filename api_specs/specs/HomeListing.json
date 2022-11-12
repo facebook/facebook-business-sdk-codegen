@@ -1,6 +1,24 @@
 {
     "apis": [
         {
+            "method": "GET",
+            "endpoint": "augmented_realities_metadata",
+            "return": "DynamicARMetadata",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "channels_to_integrity_status",
+            "return": "CatalogItemChannelsToIntegrityStatus",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "videos_metadata",
+            "return": "DynamicVideoMetadata",
+            "params": []
+        },
+        {
             "name": "#delete",
             "method": "DELETE",
             "return": "Object",
@@ -184,6 +202,10 @@
             "type": "string"
         },
         {
+            "name": "image_fetch_status",
+            "type": "HomeListing_image_fetch_status"
+        },
+        {
             "name": "images",
             "type": "list<string>"
         },
@@ -254,6 +276,10 @@
         {
             "name": "sanitized_images",
             "type": "list<string>"
+        },
+        {
+            "name": "unit_price",
+            "type": "Object"
         },
         {
             "name": "url",

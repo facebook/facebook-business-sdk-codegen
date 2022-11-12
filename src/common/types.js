@@ -9,6 +9,7 @@
 
 export type APIInputMetadata = {
   version: string,
+  sdk_version: string,
   language?: string,
   outputDir?: string,
   cleandir?: string[],
@@ -29,6 +30,7 @@ export interface Renderer {
       SDKConfig: {|
         api_specs?: any[],
         api_version: string,
+        sdk_version: string,
         api_version_num_only: string,
         version: any,
       |},
@@ -45,5 +47,5 @@ export interface Processor {
 }
 
 export interface Loader {
-  load(version: string): {|specs: APIInputSpecs, metadata: APIInputMetadata|};
+  load(version: string, sdk_version: string): {|specs: APIInputSpecs, metadata: APIInputMetadata|};
 }

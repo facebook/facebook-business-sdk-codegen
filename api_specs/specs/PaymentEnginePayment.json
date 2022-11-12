@@ -1,0 +1,126 @@
+{
+    "apis": [
+        {
+            "method": "POST",
+            "endpoint": "dispute",
+            "return": "PaymentEnginePayment",
+            "params": [
+                {
+                    "name": "reason",
+                    "required": true,
+                    "type": "paymentenginepaymentdispute_reason_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "refunds",
+            "return": "PaymentEnginePayment",
+            "params": [
+                {
+                    "name": "amount",
+                    "required": true,
+                    "type": "float"
+                },
+                {
+                    "name": "currency",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "reason",
+                    "required": false,
+                    "type": "paymentenginepaymentrefunds_reason_enum_param"
+                }
+            ]
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "PaymentEnginePayment",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "actions",
+            "type": "list<Object>"
+        },
+        {
+            "name": "application",
+            "type": "Application"
+        },
+        {
+            "name": "country",
+            "type": "string"
+        },
+        {
+            "name": "created_time",
+            "type": "datetime"
+        },
+        {
+            "name": "disputes",
+            "type": "list<Object>"
+        },
+        {
+            "name": "fraud_status",
+            "type": "string"
+        },
+        {
+            "name": "fulfillment_status",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_from_ad",
+            "type": "bool"
+        },
+        {
+            "name": "is_from_page_post",
+            "type": "bool"
+        },
+        {
+            "name": "items",
+            "type": "list<Object>"
+        },
+        {
+            "name": "payout_foreign_exchange_rate",
+            "type": "float"
+        },
+        {
+            "name": "phone_support_eligible",
+            "type": "bool"
+        },
+        {
+            "name": "platform",
+            "type": "string"
+        },
+        {
+            "name": "refundable_amount",
+            "type": "CurrencyAmount"
+        },
+        {
+            "name": "request_id",
+            "type": "string"
+        },
+        {
+            "name": "tax",
+            "type": "string"
+        },
+        {
+            "name": "tax_country",
+            "type": "string"
+        },
+        {
+            "name": "test",
+            "type": "unsigned int"
+        },
+        {
+            "name": "user",
+            "type": "User"
+        }
+    ]
+}

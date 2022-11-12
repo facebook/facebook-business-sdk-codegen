@@ -131,6 +131,28 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "usersreplace",
+            "return": "CustomAudience",
+            "params": [
+                {
+                    "name": "namespace",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "payload",
+                    "required": true,
+                    "type": "Object"
+                },
+                {
+                    "name": "session",
+                    "required": true,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
             "name": "#delete",
             "method": "DELETE",
             "return": "Object",
@@ -158,16 +180,6 @@
             "method": "POST",
             "return": "CustomAudience",
             "params": [
-                {
-                    "name": "accountID",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "additionalMetadata",
-                    "required": false,
-                    "type": "string"
-                },
                 {
                     "name": "allowed_domains",
                     "required": false,
@@ -199,11 +211,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "details",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "enable_fetch_or_create",
                     "required": false,
                     "type": "bool"
@@ -224,49 +231,14 @@
                     "type": "list<Object>"
                 },
                 {
-                    "name": "expectedSize",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "gender",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "inclusions",
                     "required": false,
                     "type": "list<Object>"
                 },
                 {
-                    "name": "isPrivate",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "is_household",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "is_household_exclusion",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "lookalike_spec",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "maxAge",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "minAge",
-                    "required": false,
-                    "type": "unsigned int"
                 },
                 {
                     "name": "name",
@@ -282,16 +254,6 @@
                     "name": "parent_audience_id",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "partnerID",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "partner_reference_key",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "product_set_id",
@@ -319,16 +281,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "seed_audience",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "source",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "tags",
                     "required": false,
                     "type": "list<string>"
@@ -342,7 +294,11 @@
             "type": "string"
         },
         {
-            "name": "approximate_count",
+            "name": "approximate_count_lower_bound",
+            "type": "int"
+        },
+        {
+            "name": "approximate_count_upper_bound",
             "type": "int"
         },
         {
@@ -360,6 +316,10 @@
         {
             "name": "datafile_custom_audience_uploading_status",
             "type": "string"
+        },
+        {
+            "name": "delete_time",
+            "type": "int"
         },
         {
             "name": "delivery_status",
@@ -420,6 +380,14 @@
         {
             "name": "opt_out_link",
             "type": "string"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
+        },
+        {
+            "name": "page_deletion_marked_delete_time",
+            "type": "int"
         },
         {
             "name": "permission_for_actions",

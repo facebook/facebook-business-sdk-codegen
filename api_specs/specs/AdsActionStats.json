@@ -26,6 +26,10 @@
             "type": "string"
         },
         {
+            "name": "action_brand",
+            "type": "string"
+        },
+        {
             "name": "action_canvas_component_id",
             "type": "string"
         },
@@ -39,6 +43,10 @@
         },
         {
             "name": "action_carousel_card_name",
+            "type": "string"
+        },
+        {
+            "name": "action_category",
             "type": "string"
         },
         {
@@ -103,6 +111,14 @@
         },
         {
             "name": "interactive_component_sticker_response",
+            "type": "string"
+        },
+        {
+            "name": "skan_click",
+            "type": "string"
+        },
+        {
+            "name": "skan_view",
             "type": "string"
         },
         {

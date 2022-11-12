@@ -1,0 +1,32 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "CopyrightAudioAsset",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "copyright",
+            "type": "AudioCopyright"
+        },
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "update_time",
+            "type": "datetime"
+        }
+    ]
+}

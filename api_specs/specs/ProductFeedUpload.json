@@ -10,7 +10,13 @@
             "method": "GET",
             "endpoint": "errors",
             "return": "ProductFeedUploadError",
-            "params": []
+            "params": [
+                {
+                    "name": "error_priority",
+                    "required": false,
+                    "type": "productfeeduploaderrors_error_priority_enum_param"
+                }
+            ]
         },
         {
             "name": "#get",

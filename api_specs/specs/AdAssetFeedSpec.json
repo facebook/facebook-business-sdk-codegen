@@ -42,6 +42,10 @@
             "type": "list<AdAssetFeedSpecDescription>"
         },
         {
+            "name": "events",
+            "type": "list<Object>"
+        },
+        {
             "name": "groups",
             "type": "list<AdAssetFeedSpecGroupRule>"
         },

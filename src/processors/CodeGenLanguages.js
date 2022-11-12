@@ -125,7 +125,7 @@ const CodeGenLanguages = {
 
       return filenameToCodeMap;
     },
-    keywords: ['try', 'private', 'public', 'new', 'default', 'class', 'global', 'as', 'do'],
+    keywords: ['try', 'private', 'public', 'new', 'default', 'class', 'global', 'as', 'do', 'empty'],
   },
   python: {
     formatFileName(clsName: {[x: string]: string}) {

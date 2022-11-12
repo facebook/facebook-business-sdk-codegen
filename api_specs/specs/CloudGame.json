@@ -1,0 +1,48 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "CloudGame",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "owner",
+            "type": "Profile"
+        },
+        {
+            "name": "playable_ad_file_size",
+            "type": "unsigned int"
+        },
+        {
+            "name": "playable_ad_orientation",
+            "type": "string"
+        },
+        {
+            "name": "playable_ad_package_name",
+            "type": "string"
+        },
+        {
+            "name": "playable_ad_reject_reason",
+            "type": "string"
+        },
+        {
+            "name": "playable_ad_status",
+            "type": "string"
+        },
+        {
+            "name": "playable_ad_upload_time",
+            "type": "datetime"
+        }
+    ]
+}

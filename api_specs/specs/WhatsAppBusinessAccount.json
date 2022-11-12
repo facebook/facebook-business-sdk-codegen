@@ -42,6 +42,64 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "audiences",
+            "return": "WhatsAppBusinessAudience",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "conversation_analytics",
+            "return": "WABAConversationAnalytics",
+            "params": [
+                {
+                    "name": "conversation_directions",
+                    "required": false,
+                    "type": "list<whatsappbusinessaccountconversation_analytics_conversation_directions_enum_param>"
+                },
+                {
+                    "name": "conversation_types",
+                    "required": false,
+                    "type": "list<whatsappbusinessaccountconversation_analytics_conversation_types_enum_param>"
+                },
+                {
+                    "name": "country_codes",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "dimensions",
+                    "required": false,
+                    "type": "list<whatsappbusinessaccountconversation_analytics_dimensions_enum_param>"
+                },
+                {
+                    "name": "end",
+                    "required": true,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "granularity",
+                    "required": true,
+                    "type": "whatsappbusinessaccountconversation_analytics_granularity_enum_param"
+                },
+                {
+                    "name": "metric_types",
+                    "required": false,
+                    "type": "list<whatsappbusinessaccountconversation_analytics_metric_types_enum_param>"
+                },
+                {
+                    "name": "phone_numbers",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "start",
+                    "required": true,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
             "method": "DELETE",
             "endpoint": "message_templates",
             "return": "Object",
@@ -84,6 +142,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "quality_score",
+                    "required": false,
+                    "type": "list<whatsappbusinessaccountmessage_templates_quality_score_enum_param>"
+                },
+                {
                     "name": "status",
                     "required": false,
                     "type": "list<whatsappbusinessaccountmessage_templates_status_enum_param>"
@@ -102,7 +165,7 @@
                 },
                 {
                     "name": "components",
-                    "required": false,
+                    "required": true,
                     "type": "list<map>"
                 },
                 {
@@ -125,9 +188,84 @@
         },
         {
             "method": "POST",
+            "endpoint": "phone_numbers",
+            "return": "WhatsAppBusinessAccountToNumberCurrentStatus",
+            "params": [
+                {
+                    "name": "cc",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "migrate_phone_number",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "phone_number",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "product_catalogs",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "catalog_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "product_catalogs",
+            "return": "ProductCatalog",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "product_catalogs",
+            "return": "ProductCatalog",
+            "params": [
+                {
+                    "name": "catalog_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "subscribed_apps",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "subscribed_apps",
+            "return": "WhatsAppApplication",
+            "params": []
+        },
+        {
+            "method": "POST",
             "endpoint": "subscribed_apps",
             "return": "WhatsAppBusinessAccount",
-            "params": []
+            "params": [
+                {
+                    "name": "override_callback_uri",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "verify_token",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
         },
         {
             "name": "#get",
@@ -138,8 +276,16 @@
     ],
     "fields": [
         {
+            "name": "account_review_status",
+            "type": "string"
+        },
+        {
             "name": "analytics",
             "type": "Object"
+        },
+        {
+            "name": "creation_time",
+            "type": "int"
         },
         {
             "name": "currency",
@@ -159,6 +305,14 @@
         },
         {
             "name": "on_behalf_of_business_info",
+            "type": "Object"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
+        },
+        {
+            "name": "owner_business_info",
             "type": "Object"
         },
         {

@@ -1,0 +1,120 @@
+{
+    "apis": [
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ImageCopyright",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "ImageCopyright",
+            "params": [
+                {
+                    "name": "artist",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "creator",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "custom_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "geo_ownership",
+                    "required": false,
+                    "type": "list<imagecopyright_geo_ownership>"
+                },
+                {
+                    "name": "original_content_creation_date",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "title",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "artist",
+            "type": "string"
+        },
+        {
+            "name": "copyright_monitoring_status",
+            "type": "string"
+        },
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "creator",
+            "type": "string"
+        },
+        {
+            "name": "custom_id",
+            "type": "string"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "filename",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "image",
+            "type": "Photo"
+        },
+        {
+            "name": "matches_count",
+            "type": "unsigned int"
+        },
+        {
+            "name": "original_content_creation_date",
+            "type": "datetime"
+        },
+        {
+            "name": "ownership_countries",
+            "type": "VideoCopyrightGeoGate"
+        },
+        {
+            "name": "tags",
+            "type": "list<string>"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "update_time",
+            "type": "datetime"
+        }
+    ]
+}

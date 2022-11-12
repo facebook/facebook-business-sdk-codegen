@@ -43,7 +43,7 @@
             "type": "string"
         },
         {
-            "name": "name",
+            "name": "page_label_name",
             "type": "string"
         }
     ]

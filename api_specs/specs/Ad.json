@@ -188,6 +188,11 @@
                     "name": "use_account_attribution_setting",
                     "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "use_unified_attribution_setting",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         },
@@ -293,6 +298,11 @@
                 },
                 {
                     "name": "use_account_attribution_setting",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "use_unified_attribution_setting",
                     "required": false,
                     "type": "bool"
                 }
@@ -446,6 +456,11 @@
                     "type": "int"
                 },
                 {
+                    "name": "conversion_domain",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "creative",
                     "required": false,
                     "type": "AdCreative"
@@ -542,6 +557,10 @@
         {
             "name": "configured_status",
             "type": "Ad_configured_status"
+        },
+        {
+            "name": "conversion_domain",
+            "type": "string"
         },
         {
             "name": "conversion_specs",

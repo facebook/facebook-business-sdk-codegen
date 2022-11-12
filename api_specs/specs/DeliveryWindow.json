@@ -1,0 +1,1013 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "ad",
+            "type": "int"
+        },
+        {
+            "name": "ae",
+            "type": "int"
+        },
+        {
+            "name": "af",
+            "type": "int"
+        },
+        {
+            "name": "ag",
+            "type": "int"
+        },
+        {
+            "name": "ai",
+            "type": "int"
+        },
+        {
+            "name": "al",
+            "type": "int"
+        },
+        {
+            "name": "all",
+            "type": "int"
+        },
+        {
+            "name": "am",
+            "type": "int"
+        },
+        {
+            "name": "an",
+            "type": "int"
+        },
+        {
+            "name": "ao",
+            "type": "int"
+        },
+        {
+            "name": "aq",
+            "type": "int"
+        },
+        {
+            "name": "ar",
+            "type": "int"
+        },
+        {
+            "name": "as",
+            "type": "int"
+        },
+        {
+            "name": "at",
+            "type": "int"
+        },
+        {
+            "name": "au",
+            "type": "int"
+        },
+        {
+            "name": "aw",
+            "type": "int"
+        },
+        {
+            "name": "ax",
+            "type": "int"
+        },
+        {
+            "name": "az",
+            "type": "int"
+        },
+        {
+            "name": "ba",
+            "type": "int"
+        },
+        {
+            "name": "bb",
+            "type": "int"
+        },
+        {
+            "name": "bd",
+            "type": "int"
+        },
+        {
+            "name": "be",
+            "type": "int"
+        },
+        {
+            "name": "bf",
+            "type": "int"
+        },
+        {
+            "name": "bg",
+            "type": "int"
+        },
+        {
+            "name": "bh",
+            "type": "int"
+        },
+        {
+            "name": "bi",
+            "type": "int"
+        },
+        {
+            "name": "bj",
+            "type": "int"
+        },
+        {
+            "name": "bl",
+            "type": "int"
+        },
+        {
+            "name": "bm",
+            "type": "int"
+        },
+        {
+            "name": "bn",
+            "type": "int"
+        },
+        {
+            "name": "bo",
+            "type": "int"
+        },
+        {
+            "name": "bq",
+            "type": "int"
+        },
+        {
+            "name": "br",
+            "type": "int"
+        },
+        {
+            "name": "bs",
+            "type": "int"
+        },
+        {
+            "name": "bt",
+            "type": "int"
+        },
+        {
+            "name": "bv",
+            "type": "int"
+        },
+        {
+            "name": "bw",
+            "type": "int"
+        },
+        {
+            "name": "by",
+            "type": "int"
+        },
+        {
+            "name": "bz",
+            "type": "int"
+        },
+        {
+            "name": "ca",
+            "type": "int"
+        },
+        {
+            "name": "cc",
+            "type": "int"
+        },
+        {
+            "name": "cd",
+            "type": "int"
+        },
+        {
+            "name": "cf",
+            "type": "int"
+        },
+        {
+            "name": "cg",
+            "type": "int"
+        },
+        {
+            "name": "ch",
+            "type": "int"
+        },
+        {
+            "name": "ci",
+            "type": "int"
+        },
+        {
+            "name": "ck",
+            "type": "int"
+        },
+        {
+            "name": "cl",
+            "type": "int"
+        },
+        {
+            "name": "cm",
+            "type": "int"
+        },
+        {
+            "name": "cn",
+            "type": "int"
+        },
+        {
+            "name": "co",
+            "type": "int"
+        },
+        {
+            "name": "cr",
+            "type": "int"
+        },
+        {
+            "name": "cu",
+            "type": "int"
+        },
+        {
+            "name": "cv",
+            "type": "int"
+        },
+        {
+            "name": "cw",
+            "type": "int"
+        },
+        {
+            "name": "cx",
+            "type": "int"
+        },
+        {
+            "name": "cy",
+            "type": "int"
+        },
+        {
+            "name": "cz",
+            "type": "int"
+        },
+        {
+            "name": "de",
+            "type": "int"
+        },
+        {
+            "name": "dj",
+            "type": "int"
+        },
+        {
+            "name": "dk",
+            "type": "int"
+        },
+        {
+            "name": "dm",
+            "type": "int"
+        },
+        {
+            "name": "do",
+            "type": "int"
+        },
+        {
+            "name": "dz",
+            "type": "int"
+        },
+        {
+            "name": "ec",
+            "type": "int"
+        },
+        {
+            "name": "ee",
+            "type": "int"
+        },
+        {
+            "name": "eg",
+            "type": "int"
+        },
+        {
+            "name": "eh",
+            "type": "int"
+        },
+        {
+            "name": "er",
+            "type": "int"
+        },
+        {
+            "name": "es",
+            "type": "int"
+        },
+        {
+            "name": "et",
+            "type": "int"
+        },
+        {
+            "name": "fi",
+            "type": "int"
+        },
+        {
+            "name": "fj",
+            "type": "int"
+        },
+        {
+            "name": "fk",
+            "type": "int"
+        },
+        {
+            "name": "fm",
+            "type": "int"
+        },
+        {
+            "name": "fo",
+            "type": "int"
+        },
+        {
+            "name": "fr",
+            "type": "int"
+        },
+        {
+            "name": "ga",
+            "type": "int"
+        },
+        {
+            "name": "gb",
+            "type": "int"
+        },
+        {
+            "name": "gd",
+            "type": "int"
+        },
+        {
+            "name": "ge",
+            "type": "int"
+        },
+        {
+            "name": "gf",
+            "type": "int"
+        },
+        {
+            "name": "gg",
+            "type": "int"
+        },
+        {
+            "name": "gh",
+            "type": "int"
+        },
+        {
+            "name": "gi",
+            "type": "int"
+        },
+        {
+            "name": "gl",
+            "type": "int"
+        },
+        {
+            "name": "gm",
+            "type": "int"
+        },
+        {
+            "name": "gn",
+            "type": "int"
+        },
+        {
+            "name": "gp",
+            "type": "int"
+        },
+        {
+            "name": "gq",
+            "type": "int"
+        },
+        {
+            "name": "gr",
+            "type": "int"
+        },
+        {
+            "name": "gs",
+            "type": "int"
+        },
+        {
+            "name": "gt",
+            "type": "int"
+        },
+        {
+            "name": "gu",
+            "type": "int"
+        },
+        {
+            "name": "gw",
+            "type": "int"
+        },
+        {
+            "name": "gy",
+            "type": "int"
+        },
+        {
+            "name": "hk",
+            "type": "int"
+        },
+        {
+            "name": "hm",
+            "type": "int"
+        },
+        {
+            "name": "hn",
+            "type": "int"
+        },
+        {
+            "name": "hr",
+            "type": "int"
+        },
+        {
+            "name": "ht",
+            "type": "int"
+        },
+        {
+            "name": "hu",
+            "type": "int"
+        },
+        {
+            "name": "id",
+            "type": "int"
+        },
+        {
+            "name": "ie",
+            "type": "int"
+        },
+        {
+            "name": "il",
+            "type": "int"
+        },
+        {
+            "name": "im",
+            "type": "int"
+        },
+        {
+            "name": "in",
+            "type": "int"
+        },
+        {
+            "name": "io",
+            "type": "int"
+        },
+        {
+            "name": "iq",
+            "type": "int"
+        },
+        {
+            "name": "ir",
+            "type": "int"
+        },
+        {
+            "name": "is",
+            "type": "int"
+        },
+        {
+            "name": "it",
+            "type": "int"
+        },
+        {
+            "name": "je",
+            "type": "int"
+        },
+        {
+            "name": "jm",
+            "type": "int"
+        },
+        {
+            "name": "jo",
+            "type": "int"
+        },
+        {
+            "name": "jp",
+            "type": "int"
+        },
+        {
+            "name": "ke",
+            "type": "int"
+        },
+        {
+            "name": "kg",
+            "type": "int"
+        },
+        {
+            "name": "kh",
+            "type": "int"
+        },
+        {
+            "name": "ki",
+            "type": "int"
+        },
+        {
+            "name": "km",
+            "type": "int"
+        },
+        {
+            "name": "kn",
+            "type": "int"
+        },
+        {
+            "name": "kp",
+            "type": "int"
+        },
+        {
+            "name": "kr",
+            "type": "int"
+        },
+        {
+            "name": "kw",
+            "type": "int"
+        },
+        {
+            "name": "ky",
+            "type": "int"
+        },
+        {
+            "name": "kz",
+            "type": "int"
+        },
+        {
+            "name": "la",
+            "type": "int"
+        },
+        {
+            "name": "lb",
+            "type": "int"
+        },
+        {
+            "name": "lc",
+            "type": "int"
+        },
+        {
+            "name": "li",
+            "type": "int"
+        },
+        {
+            "name": "lk",
+            "type": "int"
+        },
+        {
+            "name": "lr",
+            "type": "int"
+        },
+        {
+            "name": "ls",
+            "type": "int"
+        },
+        {
+            "name": "lt",
+            "type": "int"
+        },
+        {
+            "name": "lu",
+            "type": "int"
+        },
+        {
+            "name": "lv",
+            "type": "int"
+        },
+        {
+            "name": "ly",
+            "type": "int"
+        },
+        {
+            "name": "ma",
+            "type": "int"
+        },
+        {
+            "name": "mc",
+            "type": "int"
+        },
+        {
+            "name": "md",
+            "type": "int"
+        },
+        {
+            "name": "me",
+            "type": "int"
+        },
+        {
+            "name": "mf",
+            "type": "int"
+        },
+        {
+            "name": "mg",
+            "type": "int"
+        },
+        {
+            "name": "mh",
+            "type": "int"
+        },
+        {
+            "name": "mk",
+            "type": "int"
+        },
+        {
+            "name": "ml",
+            "type": "int"
+        },
+        {
+            "name": "mm",
+            "type": "int"
+        },
+        {
+            "name": "mn",
+            "type": "int"
+        },
+        {
+            "name": "mo",
+            "type": "int"
+        },
+        {
+            "name": "mp",
+            "type": "int"
+        },
+        {
+            "name": "mq",
+            "type": "int"
+        },
+        {
+            "name": "mr",
+            "type": "int"
+        },
+        {
+            "name": "ms",
+            "type": "int"
+        },
+        {
+            "name": "mt",
+            "type": "int"
+        },
+        {
+            "name": "mu",
+            "type": "int"
+        },
+        {
+            "name": "mv",
+            "type": "int"
+        },
+        {
+            "name": "mw",
+            "type": "int"
+        },
+        {
+            "name": "mx",
+            "type": "int"
+        },
+        {
+            "name": "my",
+            "type": "int"
+        },
+        {
+            "name": "mz",
+            "type": "int"
+        },
+        {
+            "name": "na",
+            "type": "int"
+        },
+        {
+            "name": "nc",
+            "type": "int"
+        },
+        {
+            "name": "ne",
+            "type": "int"
+        },
+        {
+            "name": "nf",
+            "type": "int"
+        },
+        {
+            "name": "ng",
+            "type": "int"
+        },
+        {
+            "name": "ni",
+            "type": "int"
+        },
+        {
+            "name": "nl",
+            "type": "int"
+        },
+        {
+            "name": "no",
+            "type": "int"
+        },
+        {
+            "name": "np",
+            "type": "int"
+        },
+        {
+            "name": "nr",
+            "type": "int"
+        },
+        {
+            "name": "nu",
+            "type": "int"
+        },
+        {
+            "name": "nz",
+            "type": "int"
+        },
+        {
+            "name": "om",
+            "type": "int"
+        },
+        {
+            "name": "pa",
+            "type": "int"
+        },
+        {
+            "name": "pe",
+            "type": "int"
+        },
+        {
+            "name": "pf",
+            "type": "int"
+        },
+        {
+            "name": "pg",
+            "type": "int"
+        },
+        {
+            "name": "ph",
+            "type": "int"
+        },
+        {
+            "name": "pk",
+            "type": "int"
+        },
+        {
+            "name": "pl",
+            "type": "int"
+        },
+        {
+            "name": "pm",
+            "type": "int"
+        },
+        {
+            "name": "pn",
+            "type": "int"
+        },
+        {
+            "name": "pr",
+            "type": "int"
+        },
+        {
+            "name": "ps",
+            "type": "int"
+        },
+        {
+            "name": "pt",
+            "type": "int"
+        },
+        {
+            "name": "pw",
+            "type": "int"
+        },
+        {
+            "name": "py",
+            "type": "int"
+        },
+        {
+            "name": "qa",
+            "type": "int"
+        },
+        {
+            "name": "re",
+            "type": "int"
+        },
+        {
+            "name": "ro",
+            "type": "int"
+        },
+        {
+            "name": "rs",
+            "type": "int"
+        },
+        {
+            "name": "ru",
+            "type": "int"
+        },
+        {
+            "name": "rw",
+            "type": "int"
+        },
+        {
+            "name": "sa",
+            "type": "int"
+        },
+        {
+            "name": "sb",
+            "type": "int"
+        },
+        {
+            "name": "sc",
+            "type": "int"
+        },
+        {
+            "name": "sd",
+            "type": "int"
+        },
+        {
+            "name": "se",
+            "type": "int"
+        },
+        {
+            "name": "sg",
+            "type": "int"
+        },
+        {
+            "name": "sh",
+            "type": "int"
+        },
+        {
+            "name": "si",
+            "type": "int"
+        },
+        {
+            "name": "sj",
+            "type": "int"
+        },
+        {
+            "name": "sk",
+            "type": "int"
+        },
+        {
+            "name": "sl",
+            "type": "int"
+        },
+        {
+            "name": "sm",
+            "type": "int"
+        },
+        {
+            "name": "sn",
+            "type": "int"
+        },
+        {
+            "name": "so",
+            "type": "int"
+        },
+        {
+            "name": "sr",
+            "type": "int"
+        },
+        {
+            "name": "ss",
+            "type": "int"
+        },
+        {
+            "name": "st",
+            "type": "int"
+        },
+        {
+            "name": "sv",
+            "type": "int"
+        },
+        {
+            "name": "sx",
+            "type": "int"
+        },
+        {
+            "name": "sy",
+            "type": "int"
+        },
+        {
+            "name": "sz",
+            "type": "int"
+        },
+        {
+            "name": "tc",
+            "type": "int"
+        },
+        {
+            "name": "td",
+            "type": "int"
+        },
+        {
+            "name": "tf",
+            "type": "int"
+        },
+        {
+            "name": "tg",
+            "type": "int"
+        },
+        {
+            "name": "th",
+            "type": "int"
+        },
+        {
+            "name": "tj",
+            "type": "int"
+        },
+        {
+            "name": "tk",
+            "type": "int"
+        },
+        {
+            "name": "tl",
+            "type": "int"
+        },
+        {
+            "name": "tm",
+            "type": "int"
+        },
+        {
+            "name": "tn",
+            "type": "int"
+        },
+        {
+            "name": "to",
+            "type": "int"
+        },
+        {
+            "name": "tr",
+            "type": "int"
+        },
+        {
+            "name": "tt",
+            "type": "int"
+        },
+        {
+            "name": "tv",
+            "type": "int"
+        },
+        {
+            "name": "tw",
+            "type": "int"
+        },
+        {
+            "name": "tz",
+            "type": "int"
+        },
+        {
+            "name": "ua",
+            "type": "int"
+        },
+        {
+            "name": "ug",
+            "type": "int"
+        },
+        {
+            "name": "um",
+            "type": "int"
+        },
+        {
+            "name": "us",
+            "type": "int"
+        },
+        {
+            "name": "uy",
+            "type": "int"
+        },
+        {
+            "name": "uz",
+            "type": "int"
+        },
+        {
+            "name": "va",
+            "type": "int"
+        },
+        {
+            "name": "vc",
+            "type": "int"
+        },
+        {
+            "name": "ve",
+            "type": "int"
+        },
+        {
+            "name": "vg",
+            "type": "int"
+        },
+        {
+            "name": "vi",
+            "type": "int"
+        },
+        {
+            "name": "vn",
+            "type": "int"
+        },
+        {
+            "name": "vu",
+            "type": "int"
+        },
+        {
+            "name": "wf",
+            "type": "int"
+        },
+        {
+            "name": "ws",
+            "type": "int"
+        },
+        {
+            "name": "xk",
+            "type": "int"
+        },
+        {
+            "name": "ye",
+            "type": "int"
+        },
+        {
+            "name": "yt",
+            "type": "int"
+        },
+        {
+            "name": "za",
+            "type": "int"
+        },
+        {
+            "name": "zm",
+            "type": "int"
+        },
+        {
+            "name": "zw",
+            "type": "int"
+        }
+    ]
+}

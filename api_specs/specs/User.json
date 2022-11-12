@@ -273,6 +273,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "avatars",
+            "return": "Avatar",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "business_users",
             "return": "BusinessUser",
             "params": []
@@ -398,9 +404,46 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "feed",
+            "return": "Post",
+            "params": [
+                {
+                    "name": "include_hidden",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "q",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "show_expired",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "until",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "with",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "POST",
             "endpoint": "feed",
-            "return": "Object",
+            "return": "Post",
             "params": [
                 {
                     "name": "actions",
@@ -853,11 +896,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "sales_promo_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
                     "name": "scheduled_publish_time",
                     "required": false,
                     "type": "datetime"
@@ -977,6 +1015,89 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "fundraisers",
+            "return": "FundraiserPersonToCharity",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "fundraisers",
+            "return": "FundraiserPersonToCharity",
+            "params": [
+                {
+                    "name": "charity_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "cover_photo",
+                    "required": false,
+                    "type": "file"
+                },
+                {
+                    "name": "currency",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "description",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "end_time",
+                    "required": true,
+                    "type": "int"
+                },
+                {
+                    "name": "external_event_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "external_event_start_time",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "external_event_uri",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "external_fundraiser_uri",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "external_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "fundraiser_type",
+                    "required": true,
+                    "type": "userfundraisers_fundraiser_type_enum_param"
+                },
+                {
+                    "name": "goal_amount",
+                    "required": true,
+                    "type": "int"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "page_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "POST",
             "endpoint": "game_items",
             "return": "GameItem",
@@ -1022,168 +1143,6 @@
                     "name": "action",
                     "required": true,
                     "type": "usergame_times_action_enum_param"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "games_plays",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "added",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "alias",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "android_key_hash",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "client_secret",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "created_time",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "end_time",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "expires_in",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "fb:channel",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "fb:explicitly_shared",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "image:height",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "image:secure_url",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "image:type",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "image:url",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "image:user_generated",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "image:width",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "ios_bundle_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "message",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "no_action_link",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "no_feed_story",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "notify",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "place",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "preview",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "privacy",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "proxied_app_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "ref",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "scrape",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "start_time",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "tags",
-                    "required": false,
-                    "type": "list<int>"
-                },
-                {
-                    "name": "to",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "user_selected_place",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "user_selected_tags",
-                    "required": false,
-                    "type": "bool"
                 }
             ]
         },
@@ -1254,44 +1213,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "live_encoders",
-            "return": "LiveEncoder",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "live_encoders",
-            "return": "LiveEncoder",
-            "params": [
-                {
-                    "name": "brand",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "device_id",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "model",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "name",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "version",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "live_videos",
             "return": "LiveVideo",
             "params": [
@@ -1333,6 +1254,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "event_params",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
                     "name": "fisheye_video_cropped",
                     "required": false,
                     "type": "bool"
@@ -1353,19 +1279,9 @@
                     "type": "bool"
                 },
                 {
-                    "name": "live_encoders",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
                     "name": "original_fov",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "planned_start_time",
-                    "required": false,
-                    "type": "int"
                 },
                 {
                     "name": "privacy",
@@ -1447,9 +1363,24 @@
                     "type": "Object"
                 },
                 {
+                    "name": "label",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "message",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "notif_ids",
                     "required": false,
                     "type": "list<string>"
+                },
+                {
+                    "name": "payload",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "read",
@@ -1460,6 +1391,11 @@
                     "name": "ref",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "scheduleInterval",
+                    "required": false,
+                    "type": "unsigned int"
                 },
                 {
                     "name": "seen",
@@ -1480,8 +1416,8 @@
         },
         {
             "method": "GET",
-            "endpoint": "owned_product_catalogs",
-            "return": "ProductCatalog",
+            "endpoint": "payment_transactions",
+            "return": "PaymentEnginePayment",
             "params": []
         },
         {
@@ -1638,11 +1574,6 @@
                 },
                 {
                     "name": "is_explicit_place",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "is_visual_search",
                     "required": false,
                     "type": "bool"
                 },
@@ -1832,6 +1763,43 @@
         },
         {
             "method": "GET",
+            "endpoint": "posts",
+            "return": "Post",
+            "params": [
+                {
+                    "name": "include_hidden",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "q",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "show_expired",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "until",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "with",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "rich_media_documents",
             "return": "Canvas",
             "params": [
@@ -1890,11 +1858,6 @@
                     "name": "asked_fun_fact_prompt_id",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "attribution_app_id",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "audio_story_wave_animation_handle",
@@ -2152,17 +2115,17 @@
                     "type": "string"
                 },
                 {
-                    "name": "sales_promo_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
                     "name": "slideshow_spec",
                     "required": false,
                     "type": "map"
                 },
                 {
                     "name": "source",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "source_instagram_media_id",
                     "required": false,
                     "type": "string"
                 },
@@ -2319,20 +2282,8 @@
             "type": "string"
         },
         {
-            "name": "address",
-            "type": "Location"
-        },
-        {
-            "name": "admin_notes",
-            "type": "list<PageAdminNote>"
-        },
-        {
             "name": "age_range",
             "type": "AgeRange"
-        },
-        {
-            "name": "auth_method",
-            "type": "string"
         },
         {
             "name": "birthday",
@@ -2345,10 +2296,6 @@
         {
             "name": "currency",
             "type": "Currency"
-        },
-        {
-            "name": "devices",
-            "type": "list<UserDevice>"
         },
         {
             "name": "education",
@@ -2395,15 +2342,7 @@
             "type": "bool"
         },
         {
-            "name": "interested_in",
-            "type": "list<string>"
-        },
-        {
             "name": "is_guest_user",
-            "type": "bool"
-        },
-        {
-            "name": "is_verified",
             "type": "bool"
         },
         {
@@ -2463,10 +2402,6 @@
             "type": "string"
         },
         {
-            "name": "public_key",
-            "type": "string"
-        },
-        {
             "name": "quotes",
             "type": "string"
         },
@@ -2475,12 +2410,8 @@
             "type": "string"
         },
         {
-            "name": "religion",
-            "type": "string"
-        },
-        {
             "name": "shared_login_upgrade_required_by",
-            "type": "datetime"
+            "type": "Object"
         },
         {
             "name": "short_name",
@@ -2525,10 +2456,6 @@
         {
             "name": "website",
             "type": "string"
-        },
-        {
-            "name": "work",
-            "type": "list<Object>"
         }
     ]
 }

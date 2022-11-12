@@ -18,7 +18,7 @@
         },
         {
             "name": "application",
-            "type": "Profile"
+            "type": "Application"
         },
         {
             "name": "billing_period",
@@ -42,7 +42,7 @@
         },
         {
             "name": "last_payment",
-            "type": "string"
+            "type": "PaymentEnginePayment"
         },
         {
             "name": "next_bill_time",
@@ -102,7 +102,7 @@
         },
         {
             "name": "user",
-            "type": "Profile"
+            "type": "User"
         }
     ]
 }

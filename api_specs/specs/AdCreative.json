@@ -131,11 +131,6 @@
                     "name": "thumbnail_width",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "with_unified_spec",
-                    "required": false,
-                    "type": "bool"
                 }
             ]
         },
@@ -182,7 +177,7 @@
         },
         {
             "name": "applink_treatment",
-            "type": "AdCreative_applink_treatment"
+            "type": "string"
         },
         {
             "name": "asset_feed_spec",
@@ -218,6 +213,10 @@
         },
         {
             "name": "category_media_source",
+            "type": "string"
+        },
+        {
+            "name": "collaborative_ads_lsb_image_bank_id",
             "type": "string"
         },
         {
@@ -281,6 +280,10 @@
             "type": "string"
         },
         {
+            "name": "instagram_user_id",
+            "type": "string"
+        },
+        {
             "name": "interactive_components_spec",
             "type": "AdCreativeInteractiveComponentsSpec"
         },
@@ -333,6 +336,10 @@
             "type": "string"
         },
         {
+            "name": "omnichannel_link_spec",
+            "type": "AdCreativeOmnichannelLinkSpec"
+        },
+        {
             "name": "place_page_set_id",
             "type": "string"
         },
@@ -357,6 +364,10 @@
             "type": "AdCreativeRecommenderSettings"
         },
         {
+            "name": "source_instagram_media_id",
+            "type": "string"
+        },
+        {
             "name": "status",
             "type": "AdCreative_status"
         },
@@ -367,6 +378,10 @@
         {
             "name": "template_url_spec",
             "type": "AdCreativeTemplateURLSpec"
+        },
+        {
+            "name": "thumbnail_id",
+            "type": "string"
         },
         {
             "name": "thumbnail_url",

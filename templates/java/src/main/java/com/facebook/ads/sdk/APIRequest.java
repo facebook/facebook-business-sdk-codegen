@@ -31,13 +31,13 @@ import java.util.Map;
 import java.net.URL;
 import java.net.URLEncoder;
 import javax.net.ssl.HttpsURLConnection;
-import org.omg.CORBA.Request;
 import java.io.BufferedReader;
 import java.lang.reflect.Modifier;
 import java.lang.StringBuilder;
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.IOException;
 import java.util.Random;
@@ -260,10 +260,13 @@ public class APIRequest<T extends APINode> {
     this.overrideUrl = url;
   }
 
-  protected void requestFieldInternal(String field, boolean value) {
+  protected void requestFieldInternal(String field, boolean addField) {
     if (returnFields == null) returnFields = new ArrayList<String>();
-    if (value == true && !returnFields.contains(field)) returnFields.add(field);
-    else returnFields.remove(field);
+    if (addField) {
+      if(!returnFields.contains(field)) returnFields.add(field);
+    } else {
+      returnFields.remove(field);
+    }
   }
 
   private Map<String, Object> getAllParams(Map<String, Object> extraParams) {
@@ -295,14 +298,16 @@ public class APIRequest<T extends APINode> {
       in.close();
       return new ResponseWrapper(response.toString(), header);
     } catch(Exception e) {
-      BufferedReader in = new BufferedReader(new InputStreamReader(con.getErrorStream()));
-      String inputLine;
+      InputStream errorStream = con.getErrorStream();
       StringBuilder response = new StringBuilder();
-
-      while ((inputLine = in.readLine()) != null) {
-        response.append(inputLine);
+      if (errorStream != null) {
+        BufferedReader in = new BufferedReader(new InputStreamReader(errorStream));
+        String inputLine;
+        while ((inputLine = in.readLine()) != null) {
+          response.append(inputLine);
+        }
+        in.close();
       }
-      in.close();
       throw new APIException.FailedRequestException(
         convertToString(con.getHeaderFields()), response.toString(), e
       );

@@ -10,12 +10,20 @@
             "type": "int"
         },
         {
-            "name": "estimate_mau",
+            "name": "estimate_mau_lower_bound",
+            "type": "int"
+        },
+        {
+            "name": "estimate_mau_upper_bound",
             "type": "int"
         },
         {
             "name": "estimate_ready",
             "type": "bool"
+        },
+        {
+            "name": "targeting_optimization_types",
+            "type": "map<string, int>"
         }
     ]
 }

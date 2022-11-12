@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "campaign_group_limit",
+            "type": "int"
+        },
+        {
+            "name": "campaign_group_limits_details",
+            "type": "list<Object>"
+        },
+        {
+            "name": "campaign_limit",
+            "type": "int"
+        }
+    ]
+}

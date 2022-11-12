@@ -1,6 +1,24 @@
 {
     "apis": [
         {
+            "method": "GET",
+            "endpoint": "augmented_realities_metadata",
+            "return": "DynamicARMetadata",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "channels_to_integrity_status",
+            "return": "CatalogItemChannelsToIntegrityStatus",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "videos_metadata",
+            "return": "DynamicVideoMetadata",
+            "params": []
+        },
+        {
             "name": "#get",
             "method": "GET",
             "return": "Flight",
@@ -27,12 +45,22 @@
                     "type": "string"
                 },
                 {
+                    "name": "destination_city",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "images",
                     "required": false,
                     "type": "list<Object>"
                 },
                 {
                     "name": "origin_airport",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "origin_city",
                     "required": false,
                     "type": "string"
                 },
@@ -83,6 +111,10 @@
             "type": "string"
         },
         {
+            "name": "image_fetch_status",
+            "type": "Flight_image_fetch_status"
+        },
+        {
             "name": "images",
             "type": "list<string>"
         },
@@ -109,6 +141,10 @@
         {
             "name": "sanitized_images",
             "type": "list<string>"
+        },
+        {
+            "name": "unit_price",
+            "type": "Object"
         },
         {
             "name": "url",

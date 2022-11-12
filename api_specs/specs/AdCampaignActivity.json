@@ -169,6 +169,14 @@
             "type": "int"
         },
         {
+            "name": "promoted_object_id_new",
+            "type": "string"
+        },
+        {
+            "name": "promoted_object_id_old",
+            "type": "string"
+        },
+        {
             "name": "run_status_new",
             "type": "string"
         },
@@ -217,12 +225,24 @@
             "type": "Object"
         },
         {
+            "name": "targeting_new",
+            "type": "Object"
+        },
+        {
+            "name": "targeting_old",
+            "type": "Object"
+        },
+        {
             "name": "updated_time_new",
             "type": "datetime"
         },
         {
             "name": "updated_time_old",
             "type": "datetime"
+        },
+        {
+            "name": "user",
+            "type": "User"
         }
     ]
 }

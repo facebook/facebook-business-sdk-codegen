@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "is_eligible",
+            "type": "bool"
+        },
+        {
+            "name": "reason_code",
+            "type": "string"
+        },
+        {
+            "name": "reason_description",
+            "type": "string"
+        }
+    ]
+}

@@ -1,6 +1,24 @@
 {
     "apis": [
         {
+            "method": "GET",
+            "endpoint": "augmented_realities_metadata",
+            "return": "DynamicARMetadata",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "channels_to_integrity_status",
+            "return": "CatalogItemChannelsToIntegrityStatus",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "videos_metadata",
+            "return": "DynamicVideoMetadata",
+            "params": []
+        },
+        {
             "name": "#get",
             "method": "GET",
             "return": "AutomotiveModel",
@@ -69,6 +87,10 @@
             "type": "string"
         },
         {
+            "name": "image_fetch_status",
+            "type": "AutomotiveModel_image_fetch_status"
+        },
+        {
             "name": "images",
             "type": "list<string>"
         },
@@ -109,12 +131,16 @@
             "type": "string"
         },
         {
+            "name": "unit_price",
+            "type": "Object"
+        },
+        {
             "name": "url",
             "type": "string"
         },
         {
             "name": "year",
-            "type": "unsigned int"
+            "type": "int"
         }
     ]
 }

@@ -91,43 +91,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "content_delivery_report",
-            "return": "ContentDeliveryReport",
-            "params": [
-                {
-                    "name": "end_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "page_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "platform",
-                    "required": true,
-                    "type": "adcampaigngroupcontent_delivery_report_platform_enum_param"
-                },
-                {
-                    "name": "position",
-                    "required": true,
-                    "type": "adcampaigngroupcontent_delivery_report_position_enum_param"
-                },
-                {
-                    "name": "start_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "summary",
-                    "required": false,
-                    "type": "bool"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "copies",
             "return": "Campaign",
             "params": [
@@ -289,6 +252,11 @@
                     "name": "use_account_attribution_setting",
                     "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "use_unified_attribution_setting",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         },
@@ -396,6 +364,11 @@
                     "name": "use_account_attribution_setting",
                     "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "use_unified_attribution_setting",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         },
@@ -473,6 +446,11 @@
                     "type": "list<adcampaigngroup_execution_options>"
                 },
                 {
+                    "name": "is_skadnetwork_attribution",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "iterative_split_test_configs",
                     "required": false,
                     "type": "list<Object>"
@@ -503,6 +481,11 @@
                     "type": "Object"
                 },
                 {
+                    "name": "smart_promotion_type",
+                    "required": false,
+                    "type": "adcampaigngroup_smart_promotion_type"
+                },
+                {
                     "name": "special_ad_categories",
                     "required": false,
                     "type": "list<adcampaigngroup_special_ad_categories>"
@@ -523,9 +506,19 @@
                     "type": "unsigned int"
                 },
                 {
+                    "name": "start_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
                     "name": "status",
                     "required": false,
                     "type": "adcampaigngroup_status"
+                },
+                {
+                    "name": "stop_time",
+                    "required": false,
+                    "type": "datetime"
                 },
                 {
                     "name": "upstream_events",
@@ -541,8 +534,20 @@
             "type": "string"
         },
         {
+            "name": "ad_strategy_group_id",
+            "type": "string"
+        },
+        {
+            "name": "ad_strategy_id",
+            "type": "string"
+        },
+        {
             "name": "adlabels",
             "type": "list<AdLabel>"
+        },
+        {
+            "name": "benchmark_report_count",
+            "type": "int"
         },
         {
             "name": "bid_strategy",
@@ -593,8 +598,16 @@
             "type": "Campaign_effective_status"
         },
         {
+            "name": "has_secondary_skadnetwork_reporting",
+            "type": "bool"
+        },
+        {
             "name": "id",
             "type": "string"
+        },
+        {
+            "name": "is_skadnetwork_attribution",
+            "type": "bool"
         },
         {
             "name": "issues_info",
@@ -621,12 +634,20 @@
             "type": "list<string>"
         },
         {
+            "name": "primary_attribution",
+            "type": "string"
+        },
+        {
             "name": "promoted_object",
             "type": "AdPromotedObject"
         },
         {
             "name": "recommendations",
             "type": "list<AdRecommendation>"
+        },
+        {
+            "name": "smart_promotion_type",
+            "type": "string"
         },
         {
             "name": "source_campaign",

@@ -7,67 +7,65 @@
             "params": []
         },
         {
-            "method": "GET",
-            "endpoint": "objectives",
-            "return": "AdStudyObjective",
-            "params": []
-        },
-        {
             "method": "POST",
-            "endpoint": "objectives",
-            "return": "AdStudyObjective",
+            "endpoint": "checkpoint",
+            "return": "AdStudy",
             "params": [
                 {
-                    "name": "adspixels",
-                    "required": false,
-                    "type": "list<Object>"
+                    "name": "checkpoint_data",
+                    "required": true,
+                    "type": "string"
                 },
                 {
-                    "name": "applications",
-                    "required": false,
-                    "type": "list<Object>"
+                    "name": "checkpoint_name",
+                    "required": true,
+                    "type": "string"
                 },
                 {
-                    "name": "customconversions",
-                    "required": false,
-                    "type": "list<Object>"
+                    "name": "component",
+                    "required": true,
+                    "type": "string"
                 },
                 {
-                    "name": "is_primary",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "name",
+                    "name": "instance_id",
                     "required": false,
                     "type": "string"
                 },
                 {
-                    "name": "offline_conversion_data_sets",
+                    "name": "run_id",
                     "required": false,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "offsitepixels",
-                    "required": false,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "product_catalogs",
-                    "required": false,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "product_sets",
-                    "required": false,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "type",
-                    "required": false,
-                    "type": "adstudyobjectives_type_enum_param"
+                    "type": "string"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "instances",
+            "return": "PrivateLiftStudyInstance",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "instances",
+            "return": "PrivateLiftStudyInstance",
+            "params": [
+                {
+                    "name": "breakdown_key",
+                    "required": true,
+                    "type": "map"
+                },
+                {
+                    "name": "run_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "objectives",
+            "return": "AdStudyObjective",
+            "params": []
         },
         {
             "name": "#delete",
@@ -159,6 +157,10 @@
             "type": "datetime"
         },
         {
+            "name": "client_business",
+            "type": "Business"
+        },
+        {
             "name": "cooldown_start_time",
             "type": "datetime"
         },
@@ -183,6 +185,10 @@
             "type": "string"
         },
         {
+            "name": "measurement_contact",
+            "type": "User"
+        },
+        {
             "name": "name",
             "type": "string"
         },
@@ -193,6 +199,10 @@
         {
             "name": "results_first_available_date",
             "type": "string"
+        },
+        {
+            "name": "sales_contact",
+            "type": "User"
         },
         {
             "name": "start_time",

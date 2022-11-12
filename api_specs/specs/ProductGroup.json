@@ -112,6 +112,31 @@
                     "type": "string"
                 },
                 {
+                    "name": "custom_number_0",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "custom_number_1",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "custom_number_2",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "custom_number_3",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "custom_number_4",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
                     "name": "description",
                     "required": false,
                     "type": "string"
@@ -202,6 +227,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "marked_for_product_launch",
+                    "required": false,
+                    "type": "productgroupproducts_marked_for_product_launch_enum_param"
+                },
+                {
                     "name": "material",
                     "required": false,
                     "type": "string"
@@ -250,6 +280,11 @@
                     "name": "product_type",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "quantity_to_sell_on_facebook",
+                    "required": false,
+                    "type": "unsigned int"
                 },
                 {
                     "name": "retailer_id",
@@ -322,7 +357,13 @@
             "name": "#delete",
             "method": "DELETE",
             "return": "Object",
-            "params": []
+            "params": [
+                {
+                    "name": "deletion_method",
+                    "required": false,
+                    "type": "productgroup_deletion_method"
+                }
+            ]
         },
         {
             "name": "#get",

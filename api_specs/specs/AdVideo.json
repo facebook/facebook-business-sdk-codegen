@@ -134,6 +134,18 @@
             "params": []
         },
         {
+            "method": "POST",
+            "endpoint": "gaming_clip_create",
+            "return": "AdVideo",
+            "params": [
+                {
+                    "name": "duration_seconds",
+                    "required": false,
+                    "type": "float"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "likes",
             "return": "Profile",
@@ -219,24 +231,6 @@
                     "type": "bool"
                 }
             ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "reactions",
-            "return": "Profile",
-            "params": [
-                {
-                    "name": "type",
-                    "required": false,
-                    "type": "videoreactions_type_enum_param"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "sharedposts",
-            "return": "Post",
-            "params": []
         },
         {
             "method": "GET",
@@ -488,6 +482,14 @@
             "type": "list<int>"
         },
         {
+            "name": "admin_creator",
+            "type": "User"
+        },
+        {
+            "name": "audio_isrc",
+            "type": "Object"
+        },
+        {
             "name": "backdated_time",
             "type": "datetime"
         },
@@ -525,7 +527,7 @@
         },
         {
             "name": "embed_html",
-            "type": "string"
+            "type": "Object"
         },
         {
             "name": "embeddable",
@@ -593,7 +595,7 @@
         },
         {
             "name": "permalink_url",
-            "type": "string"
+            "type": "Object"
         },
         {
             "name": "picture",
@@ -602,6 +604,10 @@
         {
             "name": "place",
             "type": "Place"
+        },
+        {
+            "name": "post_views",
+            "type": "unsigned int"
         },
         {
             "name": "premiere_living_room_status",
@@ -642,6 +648,10 @@
         {
             "name": "updated_time",
             "type": "datetime"
+        },
+        {
+            "name": "views",
+            "type": "unsigned int"
         }
     ]
 }

@@ -87,6 +87,23 @@
         },
         {
             "method": "GET",
+            "endpoint": "media_titles",
+            "return": "MediaTitle",
+            "params": [
+                {
+                    "name": "bulk_pagination",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "filter",
+                    "required": false,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "products",
             "return": "ProductItem",
             "params": [
@@ -94,6 +111,16 @@
                     "name": "bulk_pagination",
                     "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "error_priority",
+                    "required": false,
+                    "type": "productfeedproducts_error_priority_enum_param"
+                },
+                {
+                    "name": "error_type",
+                    "required": false,
+                    "type": "productfeedproducts_error_type_enum_param"
                 },
                 {
                     "name": "filter",
@@ -127,6 +154,18 @@
                     "name": "rule_type",
                     "required": true,
                     "type": "productfeedrules_rule_type_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "supplementary_feed_assocs",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "assoc_data",
+                    "required": true,
+                    "type": "list<map>"
                 }
             ]
         },
@@ -263,6 +302,11 @@
                     "type": "productfeed_encoding"
                 },
                 {
+                    "name": "migrated_from_feed_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "name",
                     "required": false,
                     "type": "string"
@@ -319,6 +363,10 @@
             "type": "string"
         },
         {
+            "name": "ingestion_source_type",
+            "type": "ProductFeed_ingestion_source_type"
+        },
+        {
             "name": "item_sub_type",
             "type": "string"
         },
@@ -327,12 +375,20 @@
             "type": "ProductFeedUpload"
         },
         {
+            "name": "migrated_from_feed_id",
+            "type": "string"
+        },
+        {
             "name": "name",
             "type": "string"
         },
         {
             "name": "override_type",
             "type": "string"
+        },
+        {
+            "name": "primary_feeds",
+            "type": "list<string>"
         },
         {
             "name": "product_count",
@@ -345,6 +401,10 @@
         {
             "name": "schedule",
             "type": "ProductFeedSchedule"
+        },
+        {
+            "name": "supplementary_feeds",
+            "type": "list<string>"
         },
         {
             "name": "update_schedule",

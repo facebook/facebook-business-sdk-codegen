@@ -26,6 +26,10 @@
             "type": "list<Object>"
         },
         {
+            "name": "subject_to_new_eu_privacy_rules",
+            "type": "bool"
+        },
+        {
             "name": "target_audience",
             "type": "Object"
         },

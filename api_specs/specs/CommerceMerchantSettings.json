@@ -2,36 +2,101 @@
     "apis": [
         {
             "method": "POST",
-            "endpoint": "facebook_channel",
+            "endpoint": "acknowledge_orders",
             "return": "CommerceMerchantSettings",
             "params": [
                 {
-                    "name": "pages",
+                    "name": "idempotency_key",
                     "required": true,
-                    "type": "list<string>"
+                    "type": "string"
+                },
+                {
+                    "name": "orders",
+                    "required": true,
+                    "type": "list<map>"
                 }
             ]
         },
         {
-            "method": "DELETE",
-            "endpoint": "instagram_channel",
-            "return": "Object",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "instagram_channel",
-            "return": "CommerceMerchantSettings",
+            "method": "GET",
+            "endpoint": "commerce_orders",
+            "return": "CommerceOrder",
             "params": [
                 {
-                    "name": "instagram_business_accounts",
+                    "name": "filters",
                     "required": false,
-                    "type": "list<string>"
+                    "type": "list<commercemerchantsettingscommerce_orders_filters_enum_param>"
                 },
                 {
-                    "name": "instagram_users",
+                    "name": "state",
                     "required": false,
-                    "type": "list<string>"
+                    "type": "list<commercemerchantsettingscommerce_orders_state_enum_param>"
+                },
+                {
+                    "name": "updated_after",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "updated_before",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "commerce_payouts",
+            "return": "CommercePayout",
+            "params": [
+                {
+                    "name": "end_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "start_time",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "commerce_transactions",
+            "return": "CommerceOrderTransactionDetail",
+            "params": [
+                {
+                    "name": "end_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "payout_reference_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "start_time",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "onsite_conversion_events",
+            "return": "CommerceOnsiteConversionEvent",
+            "params": [
+                {
+                    "name": "created_after",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "created_before",
+                    "required": false,
+                    "type": "datetime"
                 }
             ]
         },
@@ -82,6 +147,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "seller_issues",
+            "return": "CommerceAPISellerIssue",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "setup_status",
             "return": "CommerceMerchantSettingsSetupStatus",
             "params": []
@@ -105,8 +176,13 @@
             "params": [
                 {
                     "name": "handling_time",
-                    "required": true,
+                    "required": false,
                     "type": "map"
+                },
+                {
+                    "name": "is_default",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "is_default_shipping_profile",
@@ -129,6 +205,12 @@
                     "type": "list<map>"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "shops",
+            "return": "Shop",
+            "params": []
         },
         {
             "method": "GET",
@@ -158,43 +240,6 @@
             "method": "GET",
             "return": "CommerceMerchantSettings",
             "params": []
-        },
-        {
-            "name": "#update",
-            "method": "POST",
-            "return": "CommerceMerchantSettings",
-            "params": [
-                {
-                    "name": "contact_email",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "cta",
-                    "required": false,
-                    "type": "commercemerchantsettings_cta"
-                },
-                {
-                    "name": "merchant_alert_email",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "merchant_status",
-                    "required": false,
-                    "type": "commercemerchantsettings_merchant_status"
-                },
-                {
-                    "name": "onsite_commerce_merchant",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "terms",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
         }
     ],
     "fields": [
@@ -205,6 +250,10 @@
         {
             "name": "checkout_message",
             "type": "string"
+        },
+        {
+            "name": "commerce_store",
+            "type": "Object"
         },
         {
             "name": "contact_email",
@@ -223,11 +272,23 @@
             "type": "string"
         },
         {
+            "name": "external_merchant_id",
+            "type": "string"
+        },
+        {
             "name": "facebook_channel",
             "type": "Object"
         },
         {
+            "name": "feature_eligibility",
+            "type": "Object"
+        },
+        {
             "name": "has_discount_code",
+            "type": "bool"
+        },
+        {
+            "name": "has_onsite_intent",
             "type": "bool"
         },
         {
@@ -269,10 +330,6 @@
         {
             "name": "review_rejection_reasons",
             "type": "list<string>"
-        },
-        {
-            "name": "review_status",
-            "type": "string"
         },
         {
             "name": "supported_card_types",

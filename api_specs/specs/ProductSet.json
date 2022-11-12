@@ -87,6 +87,23 @@
         },
         {
             "method": "GET",
+            "endpoint": "media_titles",
+            "return": "MediaTitle",
+            "params": [
+                {
+                    "name": "bulk_pagination",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "filter",
+                    "required": false,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "products",
             "return": "ProductItem",
             "params": [
@@ -94,6 +111,16 @@
                     "name": "bulk_pagination",
                     "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "error_priority",
+                    "required": false,
+                    "type": "productsetproducts_error_priority_enum_param"
+                },
+                {
+                    "name": "error_type",
+                    "required": false,
+                    "type": "productsetproducts_error_type_enum_param"
                 },
                 {
                     "name": "filter",
@@ -140,7 +167,13 @@
             "name": "#delete",
             "method": "DELETE",
             "return": "Object",
-            "params": []
+            "params": [
+                {
+                    "name": "allow_live_product_set_deletion",
+                    "required": false,
+                    "type": "bool"
+                }
+            ]
         },
         {
             "name": "#get",
@@ -167,6 +200,16 @@
                     "name": "name",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "ordering_info",
+                    "required": false,
+                    "type": "list<unsigned int>"
+                },
+                {
+                    "name": "publish_to_shops",
+                    "required": false,
+                    "type": "list<map>"
                 },
                 {
                     "name": "retailer_id",
@@ -200,6 +243,10 @@
         {
             "name": "name",
             "type": "string"
+        },
+        {
+            "name": "ordering_info",
+            "type": "list<int>"
         },
         {
             "name": "product_catalog",

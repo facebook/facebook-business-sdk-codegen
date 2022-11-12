@@ -22,20 +22,12 @@
             "type": "list<AdsActionStats>"
         },
         {
-            "name": "ad_bid_type",
-            "type": "string"
-        },
-        {
             "name": "ad_bid_value",
             "type": "string"
         },
         {
             "name": "ad_click_actions",
             "type": "list<AdsActionStats>"
-        },
-        {
-            "name": "ad_delivery",
-            "type": "string"
         },
         {
             "name": "ad_id",
@@ -50,23 +42,7 @@
             "type": "string"
         },
         {
-            "name": "adset_bid_type",
-            "type": "string"
-        },
-        {
             "name": "adset_bid_value",
-            "type": "string"
-        },
-        {
-            "name": "adset_budget_type",
-            "type": "string"
-        },
-        {
-            "name": "adset_budget_value",
-            "type": "string"
-        },
-        {
-            "name": "adset_delivery",
             "type": "string"
         },
         {
@@ -87,6 +63,10 @@
         },
         {
             "name": "age_targeting",
+            "type": "string"
+        },
+        {
+            "name": "attribution_setting",
             "type": "string"
         },
         {
@@ -210,10 +190,6 @@
             "type": "list<AdsActionStats>"
         },
         {
-            "name": "cost_per_store_visit_action",
-            "type": "list<AdsActionStats>"
-        },
-        {
             "name": "cost_per_thruplay",
             "type": "list<AdsActionStats>"
         },
@@ -268,6 +244,10 @@
         {
             "name": "dda_countby_convs",
             "type": "string"
+        },
+        {
+            "name": "dda_results",
+            "type": "list<Object>"
         },
         {
             "name": "engagement_rate_ranking",
@@ -339,7 +319,7 @@
         },
         {
             "name": "instant_experience_outbound_clicks",
-            "type": "string"
+            "type": "list<AdsActionStats>"
         },
         {
             "name": "interactive_component_tap",
@@ -359,6 +339,10 @@
         },
         {
             "name": "objective",
+            "type": "string"
+        },
+        {
+            "name": "optimization_goal",
             "type": "string"
         },
         {
@@ -410,7 +394,11 @@
             "type": "string"
         },
         {
-            "name": "store_visit_actions",
+            "name": "total_postbacks",
+            "type": "string"
+        },
+        {
+            "name": "total_postbacks_detailed",
             "type": "list<AdsActionStats>"
         },
         {

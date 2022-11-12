@@ -73,6 +73,11 @@
             "return": "CustomAudience",
             "params": [
                 {
+                    "name": "action_source",
+                    "required": false,
+                    "type": "offlineconversiondatasetaudiences_action_source_enum_param"
+                },
+                {
                     "name": "ad_account",
                     "required": false,
                     "type": "string"
@@ -280,6 +285,10 @@
             "type": "datetime"
         },
         {
+            "name": "creator",
+            "type": "User"
+        },
+        {
             "name": "description",
             "type": "string"
         },
@@ -340,8 +349,12 @@
             "type": "string"
         },
         {
+            "name": "owner_business",
+            "type": "Business"
+        },
+        {
             "name": "usage",
-            "type": "Object"
+            "type": "OfflineConversionDataSetUsage"
         },
         {
             "name": "valid_entries",

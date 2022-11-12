@@ -49,8 +49,9 @@ const language: string = args._[0];
 Utils.validateLanguage(language);
 
 const version: string = args.v || Utils.loadDefaultVersion();
+const sdk_version: string = Utils.loadDefaultSDKVersion(language);
 const outputDir: string = args.o ||
   path.resolve(__dirname,  '../../','./sdk/servers/' + language + '/release');
 const cleandir: string[] = args.c ? args.c.split(',') : [];
 
-procedure.run(version, language, outputDir, cleandir);
+procedure.run(version, sdk_version, language, outputDir, cleandir);

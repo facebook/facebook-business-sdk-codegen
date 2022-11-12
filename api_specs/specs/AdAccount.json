@@ -74,11 +74,6 @@
             "return": "AdPlacePageSet",
             "params": [
                 {
-                    "name": "category",
-                    "required": false,
-                    "type": "adaccountad_place_page_sets_category_enum_param"
-                },
-                {
                     "name": "location_types",
                     "required": false,
                     "type": "list<adaccountad_place_page_sets_location_types_enum_param>"
@@ -106,11 +101,6 @@
             "return": "AdPlacePageSet",
             "params": [
                 {
-                    "name": "category",
-                    "required": false,
-                    "type": "adaccountad_place_page_sets_async_category_enum_param"
-                },
-                {
                     "name": "location_types",
                     "required": false,
                     "type": "list<adaccountad_place_page_sets_async_location_types_enum_param>"
@@ -134,8 +124,26 @@
         },
         {
             "method": "GET",
+            "endpoint": "ad_saved_keywords",
+            "return": "AdSavedKeywords",
+            "params": [
+                {
+                    "name": "fields",
+                    "required": false,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "ad_studies",
             "return": "AdStudy",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "adcloudplayables",
+            "return": "CloudGame",
             "params": []
         },
         {
@@ -250,9 +258,9 @@
                     "type": "string"
                 },
                 {
-                    "name": "instant_checkout_setting",
+                    "name": "instagram_user_id",
                     "required": false,
-                    "type": "adaccountadcreatives_instant_checkout_setting_enum_param"
+                    "type": "string"
                 },
                 {
                     "name": "interactive_components_spec",
@@ -310,6 +318,16 @@
                     "type": "string"
                 },
                 {
+                    "name": "omnichannel_link_spec",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "place_page_set_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "platform_customizations",
                     "required": false,
                     "type": "Object"
@@ -333,6 +351,11 @@
                     "name": "recommender_settings",
                     "required": false,
                     "type": "map"
+                },
+                {
+                    "name": "source_instagram_media_id",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "template_url",
@@ -429,6 +452,11 @@
                     "name": "name",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "selected_hashes",
+                    "required": false,
+                    "type": "list<string>"
                 }
             ]
         },
@@ -486,6 +514,11 @@
                 {
                     "name": "name",
                     "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "session_id",
+                    "required": false,
                     "type": "string"
                 },
                 {
@@ -572,6 +605,11 @@
                     "name": "status",
                     "required": false,
                     "type": "adaccountadrules_library_status_enum_param"
+                },
+                {
+                    "name": "ui_creation_source",
+                    "required": false,
+                    "type": "adaccountadrules_library_ui_creation_source_enum_param"
                 }
             ]
         },
@@ -633,6 +671,11 @@
                     "type": "int"
                 },
                 {
+                    "name": "conversion_domain",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "creative",
                     "required": true,
                     "type": "AdCreative"
@@ -691,6 +734,18 @@
                     "name": "tracking_specs",
                     "required": false,
                     "type": "Object"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "ads_reporting_mmm_reports",
+            "return": "AdsReportBuilderMMMReport",
+            "params": [
+                {
+                    "name": "filtering",
+                    "required": false,
+                    "type": "list<map>"
                 }
             ]
         },
@@ -859,6 +914,11 @@
                     "name": "execution_options",
                     "required": false,
                     "type": "list<adaccountadsets_execution_options_enum_param>"
+                },
+                {
+                    "name": "existing_customer_budget_percentage",
+                    "required": false,
+                    "type": "unsigned int"
                 },
                 {
                     "name": "frequency_control_specs",
@@ -1145,11 +1205,6 @@
                     "type": "unsigned int"
                 },
                 {
-                    "name": "attribution_app_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "audio_story_wave_animation_handle",
                     "required": false,
                     "type": "string"
@@ -1390,17 +1445,17 @@
                     "type": "string"
                 },
                 {
-                    "name": "sales_promo_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
                     "name": "slideshow_spec",
                     "required": false,
                     "type": "map"
                 },
                 {
                     "name": "source",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "source_instagram_media_id",
                     "required": false,
                     "type": "string"
                 },
@@ -1514,23 +1569,6 @@
             "endpoint": "agencies",
             "return": "Business",
             "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "agencies",
-            "return": "AdAccount",
-            "params": [
-                {
-                    "name": "business",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "permitted_tasks",
-                    "required": false,
-                    "type": "list<adaccountagencies_permitted_tasks_enum_param>"
-                }
-            ]
         },
         {
             "method": "GET",
@@ -1654,23 +1692,6 @@
         },
         {
             "method": "POST",
-            "endpoint": "audiencereplace",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "payload",
-                    "required": true,
-                    "type": "Object"
-                },
-                {
-                    "name": "session",
-                    "required": true,
-                    "type": "Object"
-                }
-            ]
-        },
-        {
-            "method": "POST",
             "endpoint": "block_list_drafts",
             "return": "AdAccount",
             "params": [
@@ -1778,6 +1799,11 @@
                     "type": "list<adaccountcampaigns_execution_options_enum_param>"
                 },
                 {
+                    "name": "is_skadnetwork_attribution",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "iterative_split_test_configs",
                     "required": false,
                     "type": "list<Object>"
@@ -1808,6 +1834,11 @@
                     "type": "Object"
                 },
                 {
+                    "name": "smart_promotion_type",
+                    "required": false,
+                    "type": "adaccountcampaigns_smart_promotion_type_enum_param"
+                },
+                {
                     "name": "source_campaign_id",
                     "required": false,
                     "type": "string"
@@ -1828,9 +1859,19 @@
                     "type": "unsigned int"
                 },
                 {
+                    "name": "start_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
                     "name": "status",
                     "required": false,
                     "type": "adaccountcampaigns_status_enum_param"
+                },
+                {
+                    "name": "stop_time",
+                    "required": false,
+                    "type": "datetime"
                 },
                 {
                     "name": "topline_id",
@@ -1863,62 +1904,9 @@
         },
         {
             "method": "GET",
-            "endpoint": "content_delivery_report",
-            "return": "ContentDeliveryReport",
-            "params": [
-                {
-                    "name": "end_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "page_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "platform",
-                    "required": true,
-                    "type": "adaccountcontent_delivery_report_platform_enum_param"
-                },
-                {
-                    "name": "position",
-                    "required": true,
-                    "type": "adaccountcontent_delivery_report_position_enum_param"
-                },
-                {
-                    "name": "start_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "summary",
-                    "required": false,
-                    "type": "bool"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "create_and_apply_publisher_block_list",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "is_auto_blocking_on",
-                    "required": true,
-                    "type": "bool"
-                },
-                {
-                    "name": "name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "publisher_urls",
-                    "required": true,
-                    "type": "list<string>"
-                }
-            ]
+            "endpoint": "connected_instagram_accounts",
+            "return": "IGUser",
+            "params": []
         },
         {
             "method": "GET",
@@ -1952,16 +1940,6 @@
             "endpoint": "customaudiences",
             "return": "CustomAudience",
             "params": [
-                {
-                    "name": "accountID",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "additionalMetadata",
-                    "required": false,
-                    "type": "string"
-                },
                 {
                     "name": "allowed_domains",
                     "required": false,
@@ -2008,11 +1986,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "details",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "enable_fetch_or_create",
                     "required": false,
                     "type": "bool"
@@ -2033,34 +2006,9 @@
                     "type": "list<Object>"
                 },
                 {
-                    "name": "expectedSize",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "gender",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "inclusions",
                     "required": false,
                     "type": "list<Object>"
-                },
-                {
-                    "name": "isPrivate",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "is_household",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "is_household_exclusion",
-                    "required": false,
-                    "type": "bool"
                 },
                 {
                     "name": "is_snapshot",
@@ -2083,16 +2031,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "maxAge",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "minAge",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
                     "name": "name",
                     "required": false,
                     "type": "string"
@@ -2111,11 +2049,6 @@
                     "name": "parent_audience_id",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "partnerID",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "partner_reference_key",
@@ -2163,24 +2096,9 @@
                     "type": "string"
                 },
                 {
-                    "name": "seed_audience",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "source",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "subtype",
                     "required": false,
                     "type": "adaccountcustomaudiences_subtype_enum_param"
-                },
-                {
-                    "name": "tags",
-                    "required": false,
-                    "type": "list<string>"
                 },
                 {
                     "name": "video_group_ids",
@@ -2481,6 +2399,11 @@
                     "name": "use_account_attribution_setting",
                     "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "use_unified_attribution_setting",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         },
@@ -2588,6 +2511,11 @@
                     "name": "use_account_attribution_setting",
                     "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "use_unified_attribution_setting",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         },
@@ -2596,6 +2524,85 @@
             "endpoint": "instagram_accounts",
             "return": "InstagramUser",
             "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "ios_fourteen_campaign_limits",
+            "return": "AdAccountIosFourteenCampaignLimits",
+            "params": [
+                {
+                    "name": "app_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "managed_partner_ads",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "campaign_group_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "campaign_group_status",
+                    "required": false,
+                    "type": "adaccountmanaged_partner_ads_campaign_group_status_enum_param"
+                },
+                {
+                    "name": "conversion_domain",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "custom_event_type",
+                    "required": false,
+                    "type": "adaccountmanaged_partner_ads_custom_event_type_enum_param"
+                },
+                {
+                    "name": "end_time",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "lifetime_budget",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "override_creative_text",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "override_targeting_countries",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "product_set_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "start_time",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "use_marketplace_template",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "use_seller_template",
+                    "required": false,
+                    "type": "bool"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -2621,6 +2628,16 @@
                     "name": "business_id",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "is_skadnetwork_search",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "only_apps_with_permission",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "query_term",
@@ -2726,16 +2743,6 @@
                     "type": "list<Object>"
                 },
                 {
-                    "name": "is_household",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "is_household_exclusion",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "is_snapshot",
                     "required": false,
                     "type": "bool"
@@ -2771,19 +2778,9 @@
                     "type": "unsigned int"
                 },
                 {
-                    "name": "seed_audience",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
                     "name": "subtype",
                     "required": false,
                     "type": "adaccountproduct_audiences_subtype_enum_param"
-                },
-                {
-                    "name": "tags",
-                    "required": false,
-                    "type": "list<string>"
                 }
             ]
         },
@@ -3000,6 +2997,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "optimization_goal",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "prediction_mode",
                     "required": false,
                     "type": "unsigned int"
@@ -3058,33 +3060,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "roas",
-            "return": "AdAccountRoas",
-            "params": [
-                {
-                    "name": "fields",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "filtering",
-                    "required": true,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "time_increment",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "time_range",
-                    "required": true,
-                    "type": "Object"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "saved_audiences",
             "return": "SavedAudience",
             "params": [
@@ -3102,33 +3077,6 @@
                     "name": "filtering",
                     "required": false,
                     "type": "list<Object>"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "sponsored_message_ads",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "bid_amount",
-                    "required": true,
-                    "type": "int"
-                },
-                {
-                    "name": "daily_budget",
-                    "required": true,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "message_creative_id",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "targeting",
-                    "required": false,
-                    "type": "Targeting"
                 }
             ]
         },
@@ -3210,6 +3158,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "app_store",
+                    "required": false,
+                    "type": "adaccounttargetingsearch_app_store_enum_param"
+                },
+                {
                     "name": "countries",
                     "required": false,
                     "type": "list<string>"
@@ -3223,6 +3176,16 @@
                     "name": "limit_type",
                     "required": false,
                     "type": "adaccounttargetingsearch_limit_type_enum_param"
+                },
+                {
+                    "name": "objective",
+                    "required": false,
+                    "type": "adaccounttargetingsearch_objective_enum_param"
+                },
+                {
+                    "name": "promoted_object",
+                    "required": false,
+                    "type": "Object"
                 },
                 {
                     "name": "q",
@@ -3283,6 +3246,11 @@
             "endpoint": "targetingsuggestions",
             "return": "AdAccountTargetingUnified",
             "params": [
+                {
+                    "name": "app_store",
+                    "required": false,
+                    "type": "adaccounttargetingsuggestions_app_store_enum_param"
+                },
                 {
                     "name": "countries",
                     "required": false,
@@ -3354,18 +3322,6 @@
                     "name": "targeting_list",
                     "required": false,
                     "type": "list<Object>"
-                }
-            ]
-        },
-        {
-            "method": "DELETE",
-            "endpoint": "tracking",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "tracking_specs",
-                    "required": true,
-                    "type": "Object"
                 }
             ]
         },
@@ -3447,9 +3403,19 @@
                     "type": "adaccount_currency"
                 },
                 {
+                    "name": "custom_audience_info",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "end_advertiser",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "existing_customers",
+                    "required": false,
+                    "type": "list<string>"
                 },
                 {
                     "name": "is_notifications_enabled",
@@ -3465,6 +3431,11 @@
                     "name": "name",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "odax_opt_in",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "partner",
@@ -3502,10 +3473,6 @@
         {
             "name": "account_status",
             "type": "unsigned int"
-        },
-        {
-            "name": "ad_account_creation_request",
-            "type": "AdAccountCreationRequest"
         },
         {
             "name": "ad_account_promotable_objects",
@@ -3580,6 +3547,10 @@
             "type": "string"
         },
         {
+            "name": "custom_audience_info",
+            "type": "AdAccountCustomAudience"
+        },
+        {
             "name": "disable_reason",
             "type": "unsigned int"
         },
@@ -3590,6 +3561,10 @@
         {
             "name": "end_advertiser_name",
             "type": "string"
+        },
+        {
+            "name": "existing_customers",
+            "type": "list<string>"
         },
         {
             "name": "extended_credit_invoice_group",
@@ -3610,6 +3585,10 @@
         {
             "name": "funding_source_details",
             "type": "FundingSourceDetails"
+        },
+        {
+            "name": "has_advertiser_opted_in_odax",
+            "type": "bool"
         },
         {
             "name": "has_migrated_permissions",
@@ -3640,10 +3619,6 @@
             "type": "bool"
         },
         {
-            "name": "is_in_middle_of_local_entity_migration",
-            "type": "bool"
-        },
-        {
             "name": "is_notifications_enabled",
             "type": "bool"
         },
@@ -3658,6 +3633,10 @@
         {
             "name": "is_tax_id_required",
             "type": "bool"
+        },
+        {
+            "name": "liable_address",
+            "type": "CRMAddress"
         },
         {
             "name": "line_numbers",
@@ -3688,6 +3667,10 @@
             "type": "string"
         },
         {
+            "name": "owner_business",
+            "type": "Business"
+        },
+        {
             "name": "partner",
             "type": "string"
         },
@@ -3696,8 +3679,16 @@
             "type": "ReachFrequencySpec"
         },
         {
+            "name": "send_bill_to_address",
+            "type": "CRMAddress"
+        },
+        {
             "name": "show_checkout_experience",
             "type": "bool"
+        },
+        {
+            "name": "sold_to_address",
+            "type": "CRMAddress"
         },
         {
             "name": "spend_cap",
@@ -3738,6 +3729,10 @@
         {
             "name": "user_tos_accepted",
             "type": "map<string, int>"
+        },
+        {
+            "name": "viewable_business",
+            "type": "Business"
         }
     ]
 }

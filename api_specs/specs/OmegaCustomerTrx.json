@@ -1,0 +1,94 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "campaigns",
+            "return": "InvoiceCampaign",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "OmegaCustomerTrx",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "ad_account_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "advertiser_name",
+            "type": "string"
+        },
+        {
+            "name": "amount",
+            "type": "string"
+        },
+        {
+            "name": "amount_due",
+            "type": "CurrencyAmount"
+        },
+        {
+            "name": "billed_amount_details",
+            "type": "Object"
+        },
+        {
+            "name": "billing_period",
+            "type": "string"
+        },
+        {
+            "name": "cdn_download_uri",
+            "type": "string"
+        },
+        {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "download_uri",
+            "type": "string"
+        },
+        {
+            "name": "due_date",
+            "type": "datetime"
+        },
+        {
+            "name": "entity",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "invoice_date",
+            "type": "datetime"
+        },
+        {
+            "name": "invoice_id",
+            "type": "string"
+        },
+        {
+            "name": "invoice_type",
+            "type": "string"
+        },
+        {
+            "name": "liability_type",
+            "type": "string"
+        },
+        {
+            "name": "payment_status",
+            "type": "string"
+        },
+        {
+            "name": "payment_term",
+            "type": "string"
+        },
+        {
+            "name": "type",
+            "type": "string"
+        }
+    ]
+}

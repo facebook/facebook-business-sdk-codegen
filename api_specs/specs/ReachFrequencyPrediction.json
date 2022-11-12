@@ -25,6 +25,14 @@
             "type": "int"
         },
         {
+            "name": "audience_size_lower_bound",
+            "type": "unsigned int"
+        },
+        {
+            "name": "audience_size_upper_bound",
+            "type": "unsigned int"
+        },
+        {
             "name": "business_id",
             "type": "int"
         },
@@ -245,6 +253,22 @@
             "type": "string"
         },
         {
+            "name": "odax_objective",
+            "type": "unsigned int"
+        },
+        {
+            "name": "odax_objective_name",
+            "type": "string"
+        },
+        {
+            "name": "optimization_goal",
+            "type": "unsigned int"
+        },
+        {
+            "name": "optimization_goal_name",
+            "type": "string"
+        },
+        {
             "name": "pause_periods",
             "type": "list<Object>"
         },
@@ -290,10 +314,6 @@
         },
         {
             "name": "story_event_type",
-            "type": "unsigned int"
-        },
-        {
-            "name": "target_audience_size",
             "type": "unsigned int"
         },
         {

@@ -31,10 +31,6 @@
             "type": "bool"
         },
         {
-            "name": "live_encoder",
-            "type": "LiveEncoder"
-        },
-        {
             "name": "secure_stream_url",
             "type": "string"
         },

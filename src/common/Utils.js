@@ -9,6 +9,7 @@
 
 import fs from 'fs';
 import path from 'path';
+import versionPath from '../../api_specs/version_path.json';
 
 const Utils = {
   // special signature that can mark a codegen file should be removed.
@@ -52,6 +53,23 @@ const Utils = {
     const fileName = 'api_specs/specs/version.txt';
     const filePath = path.resolve(__dirname, '..', '..', fileName);
     return fs.readFileSync(filePath, 'utf8').trim();
+  },
+
+  loadDefaultSDKVersion(language: string): string {
+    const fileName = versionPath[language]['base_path'] + '/' + versionPath[language]['file_path'];
+    const filePath = path.resolve(__dirname, '..', '..', '..', fileName);
+    var array = fs.readFileSync(filePath, 'utf8').toString().split("\n");
+
+    for (let line of array) {
+      if (line.trim().startsWith(versionPath[language]['line_starter'])) {
+        let match = line.match(/^.*?(\d+\.\d+\.\d+(\.\d+)?).*$/i);
+        if (match) {
+          return match[1];
+        }
+      }
+    }
+
+    throw 'Not able to find sdk version.';
   },
 };
 

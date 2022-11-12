@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "errors",
+            "type": "list<string>"
+        },
+        {
+            "name": "product_groups",
+            "type": "list<Object>"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        }
+    ]
+}

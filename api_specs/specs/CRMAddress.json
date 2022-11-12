@@ -1,0 +1,68 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "CRMAddress",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "city",
+            "type": "string"
+        },
+        {
+            "name": "cnpj_tax_id",
+            "type": "string"
+        },
+        {
+            "name": "country",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "postal_code",
+            "type": "string"
+        },
+        {
+            "name": "registration_label",
+            "type": "string"
+        },
+        {
+            "name": "registration_number",
+            "type": "string"
+        },
+        {
+            "name": "state",
+            "type": "string"
+        },
+        {
+            "name": "street1",
+            "type": "string"
+        },
+        {
+            "name": "street2",
+            "type": "string"
+        },
+        {
+            "name": "street3",
+            "type": "string"
+        },
+        {
+            "name": "street4",
+            "type": "string"
+        },
+        {
+            "name": "validation_status",
+            "type": "string"
+        },
+        {
+            "name": "vat_tax_id",
+            "type": "string"
+        }
+    ]
+}

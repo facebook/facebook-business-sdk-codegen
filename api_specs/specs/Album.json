@@ -249,11 +249,6 @@
                     "type": "bool"
                 },
                 {
-                    "name": "is_visual_search",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "manual_privacy",
                     "required": false,
                     "type": "bool"
@@ -421,24 +416,6 @@
                     "type": "albumpicture_type_enum_param"
                 }
             ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "reactions",
-            "return": "Profile",
-            "params": [
-                {
-                    "name": "type",
-                    "required": false,
-                    "type": "albumreactions_type_enum_param"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "sharedposts",
-            "return": "Post",
-            "params": []
         },
         {
             "name": "#get",

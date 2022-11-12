@@ -2,12 +2,6 @@
     "apis": [
         {
             "method": "GET",
-            "endpoint": "ad_place_page_sets",
-            "return": "AdPlacePageSet",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "adspixels",
             "return": "AdsPixel",
             "params": []
@@ -32,20 +26,8 @@
         },
         {
             "method": "GET",
-            "endpoint": "offsitepixels",
-            "return": "OffsitePixel",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "partnerstudies",
             "return": "PartnerStudy",
-            "params": []
-        },
-        {
-            "name": "#delete",
-            "method": "DELETE",
-            "return": "Object",
             "params": []
         },
         {
@@ -101,7 +83,7 @@
                     "type": "list<Object>"
                 },
                 {
-                    "name": "offsitepixels",
+                    "name": "offsite_datasets",
                     "required": false,
                     "type": "list<Object>"
                 },

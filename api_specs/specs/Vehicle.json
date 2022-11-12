@@ -1,6 +1,24 @@
 {
     "apis": [
         {
+            "method": "GET",
+            "endpoint": "augmented_realities_metadata",
+            "return": "DynamicARMetadata",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "channels_to_integrity_status",
+            "return": "CatalogItemChannelsToIntegrityStatus",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "videos_metadata",
+            "return": "DynamicVideoMetadata",
+            "params": []
+        },
+        {
             "name": "#get",
             "method": "GET",
             "return": "Vehicle",
@@ -193,6 +211,10 @@
             "type": "string"
         },
         {
+            "name": "custom_number_0",
+            "type": "unsigned int"
+        },
+        {
             "name": "date_first_on_lot",
             "type": "string"
         },
@@ -247,6 +269,10 @@
         {
             "name": "id",
             "type": "string"
+        },
+        {
+            "name": "image_fetch_status",
+            "type": "Vehicle_image_fetch_status"
         },
         {
             "name": "images",
@@ -311,6 +337,10 @@
         {
             "name": "trim",
             "type": "string"
+        },
+        {
+            "name": "unit_price",
+            "type": "Object"
         },
         {
             "name": "url",

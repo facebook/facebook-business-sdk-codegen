@@ -1,0 +1,44 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "GameItem",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "count",
+            "type": "int"
+        },
+        {
+            "name": "created",
+            "type": "datetime"
+        },
+        {
+            "name": "ext_id",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "item_def",
+            "type": "string"
+        },
+        {
+            "name": "owner",
+            "type": "User"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "updated",
+            "type": "datetime"
+        }
+    ]
+}

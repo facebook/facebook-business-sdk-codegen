@@ -2,6 +2,41 @@
     "apis": [
         {
             "method": "GET",
+            "endpoint": "available_catalogs",
+            "return": "UserAvailableCatalogs",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "catalog_product_search",
+            "return": "ShadowIGUserCatalogProductSearch",
+            "params": [
+                {
+                    "name": "catalog_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "q",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "content_publishing_limit",
+            "return": "ContentPublishingLimitResponse",
+            "params": [
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "insights",
             "return": "InstagramInsightsResult",
             "params": [
@@ -29,9 +64,37 @@
         },
         {
             "method": "GET",
+            "endpoint": "live_media",
+            "return": "IGMedia",
+            "params": [
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "until",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "media",
             "return": "IGMedia",
-            "params": []
+            "params": [
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "until",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
         },
         {
             "method": "POST",
@@ -44,9 +107,19 @@
                     "type": "string"
                 },
                 {
+                    "name": "children",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
                     "name": "image_url",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "is_carousel_item",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "location_id",
@@ -57,6 +130,16 @@
                     "name": "media_type",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "product_tags",
+                    "required": false,
+                    "type": "list<map>"
+                },
+                {
+                    "name": "share_to_feed",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "thumb_offset",
@@ -111,6 +194,35 @@
         },
         {
             "method": "GET",
+            "endpoint": "product_appeal",
+            "return": "IGShoppingProductAppeal",
+            "params": [
+                {
+                    "name": "product_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "product_appeal",
+            "return": "IGShoppingProductAppeal",
+            "params": [
+                {
+                    "name": "appeal_reason",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "product_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "recently_searched_hashtags",
             "return": "ShadowIGHashtag",
             "params": []
@@ -131,7 +243,13 @@
             "name": "#get",
             "method": "GET",
             "return": "IGUser",
-            "params": []
+            "params": [
+                {
+                    "name": "adgroup_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
         }
     ],
     "fields": [
@@ -160,10 +278,6 @@
             "type": "int"
         },
         {
-            "name": "is_ig_shopping_seller_policy_enabled",
-            "type": "bool"
-        },
-        {
             "name": "media_count",
             "type": "int"
         },
@@ -180,8 +294,16 @@
             "type": "string"
         },
         {
+            "name": "owner_business",
+            "type": "Business"
+        },
+        {
             "name": "profile_picture_url",
             "type": "string"
+        },
+        {
+            "name": "shopping_product_tag_eligibility",
+            "type": "bool"
         },
         {
             "name": "shopping_review_status",

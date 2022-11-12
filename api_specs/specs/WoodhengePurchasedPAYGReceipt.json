@@ -1,0 +1,28 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "WoodhengePurchasedPAYGReceipt",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "number_of_subscriptions_purchased",
+            "type": "int"
+        },
+        {
+            "name": "purchase_time",
+            "type": "datetime"
+        },
+        {
+            "name": "user",
+            "type": "User"
+        }
+    ]
+}

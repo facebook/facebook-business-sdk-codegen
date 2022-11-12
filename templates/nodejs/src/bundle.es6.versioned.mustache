@@ -8,6 +8,7 @@
 
 export { default as FacebookAdsApi } from './../src/api';
 export { default as FacebookAdsApiBatch } from './../src/api-batch';
+export { default as AbstractCrudObject } from './abstract-crud-object';
 export { default as APIRequest } from './../src/api-request';
 export { default as APIResponse } from './../src/api-response';
 export { default as CrashReporter } from './../src/crash-reporter';
@@ -22,6 +23,12 @@ export { default as HttpMethod } from './../src/objects/serverside/http-method';
 export { default as HttpServiceClientConfig } from './../src/objects/serverside/http-service-client-config';
 export { default as HttpServiceInterface } from './../src/objects/serverside/http-service-interface';
 export { default as BatchProcessor } from './../src/objects/serverside/batch-processor';
+export { default as ServerSideUtils } from './../src/objects/serverside/utils';
+export { default as SignalUserData } from './../src/objects/signal/user-data';
+export { default as SignalContent } from './../src/objects/signal/content';
+export { default as SignalCustomData } from './../src/objects/signal/custom-data';
+export { default as SignalEvent } from './../src/objects/signal/event';
+export { default as SignalEventRequest } from './../src/objects/signal/event-request';
 
 {{#api_specs}}
 export { default as {{name:pascal_case}} } from './../src/objects/{{name:hyphen}}';

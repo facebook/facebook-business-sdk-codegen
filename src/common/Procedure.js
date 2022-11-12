@@ -28,15 +28,17 @@ class Procedure {
 
   run(
     version: string,
+    sdk_version: string,
     language: string,
     outputDir: string,
     cleandir: string[],
   ) {
-    const inputs = this.loader.load(version);
+    const inputs = this.loader.load(version, sdk_version);
 
     const metadata = inputs.metadata;
     metadata.language = language;
     metadata.version = version;
+    metadata.sdk_version = sdk_version;
     metadata.outputDir = outputDir;
     metadata.cleandir = cleandir;
 
@@ -51,6 +53,7 @@ class Procedure {
           APISpecs: specs.api_specs,
           SDKConfig: {
             api_version: metadata.version,
+            sdk_version: metadata.sdk_version,
             api_version_num_only: metadata.version.replace('v', ''),
             version: metadata.versionedFeaturesWithDepreciation,
           },

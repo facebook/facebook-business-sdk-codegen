@@ -1,18 +1,6 @@
 {
     "apis": [
         {
-            "method": "DELETE",
-            "endpoint": "agencies",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "business",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "agencies",
             "return": "Business",
@@ -51,7 +39,13 @@
             "name": "#get",
             "method": "GET",
             "return": "InstagramUser",
-            "params": []
+            "params": [
+                {
+                    "name": "adgroup_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
         }
     ],
     "fields": [
@@ -82,6 +76,14 @@
         {
             "name": "media_count",
             "type": "int"
+        },
+        {
+            "name": "mini_shop_storefront",
+            "type": "Shop"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
         },
         {
             "name": "profile_pic",

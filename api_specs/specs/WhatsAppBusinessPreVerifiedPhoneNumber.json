@@ -1,0 +1,24 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "WhatsAppBusinessPreVerifiedPhoneNumber",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "code_verification_status",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "phone_number",
+            "type": "string"
+        }
+    ]
+}
