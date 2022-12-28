@@ -31,7 +31,7 @@ npm run build && node lib/CodeGenerator.js <language>
 During debug, if you want to compare with the generated SDK to our current SDK
 code, you can specific the output folder by using `-o` :
 
-```bash
+`` `bash
 npm run build && node lib/CodeGenerator.js <language> -o outputDir
 ```
 
