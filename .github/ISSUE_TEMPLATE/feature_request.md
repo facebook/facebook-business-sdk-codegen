@@ -1,7 +1,10 @@
 ---
 name: Feature Request
 about: Tell us something you want to see in this project
+title: ''
 labels: enhancement
+assignees: ''
+
 ---
 
 ## Checklist

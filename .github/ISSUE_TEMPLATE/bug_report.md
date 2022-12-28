@@ -1,7 +1,10 @@
 ---
 name: Bug Report
 about: Report an issue that you're running into
+title: ''
 labels: bug
+assignees: ''
+
 ---
 
 ## Checklist
