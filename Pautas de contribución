@@ -1,0 +1,30 @@
+Contribuir a Facebook Business SDK Codegen
+Queremos que contribuir a este proyecto sea lo más fácil y transparente posible.
+
+Código de conducta
+El código de conducta se describe enCODE_OF_CONDUCT.md
+
+Nuestro proceso de desarrollo
+Facebook Business SDK Codegen se desarrolla actualmente en los repositorios internos de Facebook y luego un miembro del equipo de Facebook lo exporta a GitHub. Lo invitamos a enviar solicitudes de incorporación de cambios directamente a GitHub y, después de revisarlas, se pueden fusionar en el proyecto.
+
+Solicitudes de extracción
+Damos la bienvenida activamente a sus solicitudes de incorporación de cambios.
+
+Bifurque el repositorio y cree su rama desde main.
+Si ha agregado código que debe probarse, agregue pruebas.
+Si ha cambiado las API, actualice la documentación.
+Asegúrese de que el conjunto de pruebas pase.
+Asegúrate de que tu código se filtre.
+Si aún no lo ha hecho, complete el Acuerdo de licencia de colaborador ("CLA").
+Acuerdo de licencia de colaborador ("CLA")
+Para aceptar su solicitud de extracción, necesitamos que envíe un CLA. Solo necesita hacer esto una vez para trabajar en cualquiera de los proyectos de código abierto de Facebook.
+
+Complete su CLA aquí
+
+Cuestiones
+Usamos problemas de GitHub para rastrear errores públicos. Asegúrese de que su descripción sea clara y tenga suficientes instrucciones para poder reproducir el problema.
+
+Facebook tiene un programa de recompensas por la divulgación segura de errores de seguridad. En esos casos, siga el proceso descrito en esa página y no presente un problema público.
+
+Licencia
+Al contribuir con Facebook Business SDK Codegen, aceptas que tus contribuciones
