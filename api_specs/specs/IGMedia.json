@@ -30,6 +30,11 @@
             "return": "InstagramInsightsResult",
             "params": [
                 {
+                    "name": "breakdown",
+                    "required": false,
+                    "type": "list<shadowigmediainsights_breakdown_enum_param>"
+                },
+                {
                     "name": "metric",
                     "required": true,
                     "type": "list<shadowigmediainsights_metric_enum_param>"

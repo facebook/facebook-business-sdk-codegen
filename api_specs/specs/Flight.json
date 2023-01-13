@@ -149,6 +149,10 @@
         {
             "name": "url",
             "type": "string"
+        },
+        {
+            "name": "visibility",
+            "type": "Flight_visibility"
         }
     ]
 }

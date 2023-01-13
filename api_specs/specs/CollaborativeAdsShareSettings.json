@@ -5,28 +5,6 @@
             "method": "GET",
             "return": "CollaborativeAdsShareSettings",
             "params": []
-        },
-        {
-            "name": "#update",
-            "method": "POST",
-            "return": "CollaborativeAdsShareSettings",
-            "params": [
-                {
-                    "name": "utm_campaign",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "utm_medium",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "utm_source",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
         }
     ],
     "fields": [

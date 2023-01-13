@@ -367,6 +367,10 @@
             "type": "string"
         },
         {
+            "name": "visibility",
+            "type": "Vehicle_visibility"
+        },
+        {
             "name": "year",
             "type": "unsigned int"
         }

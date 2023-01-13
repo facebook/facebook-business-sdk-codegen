@@ -41,9 +41,19 @@
             "return": "InstagramInsightsResult",
             "params": [
                 {
+                    "name": "breakdown",
+                    "required": false,
+                    "type": "list<shadowiguserinsights_breakdown_enum_param>"
+                },
+                {
                     "name": "metric",
                     "required": true,
                     "type": "list<shadowiguserinsights_metric_enum_param>"
+                },
+                {
+                    "name": "metric_type",
+                    "required": false,
+                    "type": "shadowiguserinsights_metric_type_enum_param"
                 },
                 {
                     "name": "period",
@@ -54,6 +64,11 @@
                     "name": "since",
                     "required": false,
                     "type": "datetime"
+                },
+                {
+                    "name": "timeframe",
+                    "required": false,
+                    "type": "shadowiguserinsights_timeframe_enum_param"
                 },
                 {
                     "name": "until",
@@ -110,6 +125,11 @@
                     "name": "children",
                     "required": false,
                     "type": "list<string>"
+                },
+                {
+                    "name": "cover_url",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "image_url",

@@ -5,18 +5,6 @@
             "method": "GET",
             "return": "PageUpcomingChange",
             "params": []
-        },
-        {
-            "name": "#update",
-            "method": "POST",
-            "return": "PageUpcomingChange",
-            "params": [
-                {
-                    "name": "accept",
-                    "required": true,
-                    "type": "bool"
-                }
-            ]
         }
     ],
     "fields": [

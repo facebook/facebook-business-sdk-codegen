@@ -192,6 +192,10 @@
         {
             "name": "url",
             "type": "string"
+        },
+        {
+            "name": "visibility",
+            "type": "Hotel_visibility"
         }
     ]
 }

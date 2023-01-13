@@ -140,6 +140,7 @@
         "values": [
             "ADD_TO_CART",
             "APPLY_NOW",
+            "AUDIO_CALL",
             "BOOK_TRAVEL",
             "BUY",
             "BUY_NOW",
@@ -190,6 +191,7 @@
             "SELL_NOW",
             "SEND_A_GIFT",
             "SEND_GIFT_MONEY",
+            "SEND_UPDATES",
             "SHARE",
             "SHOP_NOW",
             "SIGN_UP",
@@ -220,128 +222,13 @@
         ]
     },
     {
-        "name": "AdCampaignActivity_bid_strategy_new",
-        "node": "AdCampaignActivity",
-        "field_or_param": "bid_strategy_new",
-        "values": [
-            "COST_CAP",
-            "LOWEST_COST_WITHOUT_CAP",
-            "LOWEST_COST_WITH_BID_CAP"
-        ]
-    },
-    {
-        "name": "AdCampaignActivity_bid_strategy_old",
-        "node": "AdCampaignActivity",
-        "field_or_param": "bid_strategy_old",
-        "values": [
-            "COST_CAP",
-            "LOWEST_COST_WITHOUT_CAP",
-            "LOWEST_COST_WITH_BID_CAP"
-        ]
-    },
-    {
-        "name": "AdCampaignActivity_billing_event_new",
-        "node": "AdCampaignActivity",
-        "field_or_param": "billing_event_new",
-        "values": [
-            "APP_INSTALLS",
-            "CLICKS",
-            "IMPRESSIONS",
-            "LINK_CLICKS",
-            "LISTING_INTERACTION",
-            "NONE",
-            "OFFER_CLAIMS",
-            "PAGE_LIKES",
-            "POST_ENGAGEMENT",
-            "PURCHASE",
-            "THRUPLAY"
-        ]
-    },
-    {
-        "name": "AdCampaignActivity_billing_event_old",
-        "node": "AdCampaignActivity",
-        "field_or_param": "billing_event_old",
-        "values": [
-            "APP_INSTALLS",
-            "CLICKS",
-            "IMPRESSIONS",
-            "LINK_CLICKS",
-            "LISTING_INTERACTION",
-            "NONE",
-            "OFFER_CLAIMS",
-            "PAGE_LIKES",
-            "POST_ENGAGEMENT",
-            "PURCHASE",
-            "THRUPLAY"
-        ]
-    },
-    {
-        "name": "AdCampaignActivity_optimization_goal_new",
-        "node": "AdCampaignActivity",
-        "field_or_param": "optimization_goal_new",
-        "values": [
-            "AD_RECALL_LIFT",
-            "APP_INSTALLS",
-            "APP_INSTALLS_AND_OFFSITE_CONVERSIONS",
-            "CONVERSATIONS",
-            "DERIVED_EVENTS",
-            "ENGAGED_USERS",
-            "EVENT_RESPONSES",
-            "IMPRESSIONS",
-            "IN_APP_VALUE",
-            "LANDING_PAGE_VIEWS",
-            "LEAD_GENERATION",
-            "LINK_CLICKS",
-            "MESSAGING_PURCHASE_CONVERSION",
-            "NONE",
-            "OFFSITE_CONVERSIONS",
-            "PAGE_LIKES",
-            "POST_ENGAGEMENT",
-            "QUALITY_CALL",
-            "QUALITY_LEAD",
-            "REACH",
-            "THRUPLAY",
-            "VALUE",
-            "VISIT_INSTAGRAM_PROFILE"
-        ]
-    },
-    {
-        "name": "AdCampaignActivity_optimization_goal_old",
-        "node": "AdCampaignActivity",
-        "field_or_param": "optimization_goal_old",
-        "values": [
-            "AD_RECALL_LIFT",
-            "APP_INSTALLS",
-            "APP_INSTALLS_AND_OFFSITE_CONVERSIONS",
-            "CONVERSATIONS",
-            "DERIVED_EVENTS",
-            "ENGAGED_USERS",
-            "EVENT_RESPONSES",
-            "IMPRESSIONS",
-            "IN_APP_VALUE",
-            "LANDING_PAGE_VIEWS",
-            "LEAD_GENERATION",
-            "LINK_CLICKS",
-            "MESSAGING_PURCHASE_CONVERSION",
-            "NONE",
-            "OFFSITE_CONVERSIONS",
-            "PAGE_LIKES",
-            "POST_ENGAGEMENT",
-            "QUALITY_CALL",
-            "QUALITY_LEAD",
-            "REACH",
-            "THRUPLAY",
-            "VALUE",
-            "VISIT_INSTAGRAM_PROFILE"
-        ]
-    },
-    {
         "name": "AdCreativeLinkDataCallToAction_type",
         "node": "AdCreativeLinkDataCallToAction",
         "field_or_param": "type",
         "values": [
             "ADD_TO_CART",
             "APPLY_NOW",
+            "AUDIO_CALL",
             "BOOK_TRAVEL",
             "BUY",
             "BUY_NOW",
@@ -392,6 +279,7 @@
             "SELL_NOW",
             "SEND_A_GIFT",
             "SEND_GIFT_MONEY",
+            "SEND_UPDATES",
             "SHARE",
             "SHOP_NOW",
             "SIGN_UP",
@@ -606,6 +494,7 @@
         "values": [
             "ADD_TO_CART",
             "APPLY_NOW",
+            "AUDIO_CALL",
             "BOOK_TRAVEL",
             "BUY",
             "BUY_NOW",
@@ -656,6 +545,7 @@
             "SELL_NOW",
             "SEND_A_GIFT",
             "SEND_GIFT_MONEY",
+            "SEND_UPDATES",
             "SHARE",
             "SHOP_NOW",
             "SIGN_UP",
@@ -946,6 +836,7 @@
             "LANDING_PAGE_VIEWS",
             "LEAD_GENERATION",
             "LINK_CLICKS",
+            "MESSAGING_APPOINTMENT_CONVERSION",
             "MESSAGING_PURCHASE_CONVERSION",
             "NONE",
             "OFFSITE_CONVERSIONS",
@@ -1055,6 +946,15 @@
             "NO_STATUS",
             "OUTDATED",
             "PARTIAL_FETCH"
+        ]
+    },
+    {
+        "name": "AutomotiveModel_visibility",
+        "node": "AutomotiveModel",
+        "field_or_param": "visibility",
+        "values": [
+            "PUBLISHED",
+            "STAGING"
         ]
     },
     {
@@ -1236,6 +1136,15 @@
         ]
     },
     {
+        "name": "Destination_visibility",
+        "node": "Destination",
+        "field_or_param": "visibility",
+        "values": [
+            "PUBLISHED",
+            "STAGING"
+        ]
+    },
+    {
         "name": "EntityAtTextRange_type",
         "node": "EntityAtTextRange",
         "field_or_param": "type",
@@ -1315,6 +1224,15 @@
         ]
     },
     {
+        "name": "Flight_visibility",
+        "node": "Flight",
+        "field_or_param": "visibility",
+        "values": [
+            "PUBLISHED",
+            "STAGING"
+        ]
+    },
+    {
         "name": "HomeListing_image_fetch_status",
         "node": "HomeListing",
         "field_or_param": "image_fetch_status",
@@ -1325,6 +1243,15 @@
             "NO_STATUS",
             "OUTDATED",
             "PARTIAL_FETCH"
+        ]
+    },
+    {
+        "name": "HomeListing_visibility",
+        "node": "HomeListing",
+        "field_or_param": "visibility",
+        "values": [
+            "PUBLISHED",
+            "STAGING"
         ]
     },
     {
@@ -1341,6 +1268,15 @@
         ]
     },
     {
+        "name": "Hotel_visibility",
+        "node": "Hotel",
+        "field_or_param": "visibility",
+        "values": [
+            "PUBLISHED",
+            "STAGING"
+        ]
+    },
+    {
         "name": "JobsJob_image_fetch_status",
         "node": "JobsJob",
         "field_or_param": "image_fetch_status",
@@ -1351,6 +1287,15 @@
             "NO_STATUS",
             "OUTDATED",
             "PARTIAL_FETCH"
+        ]
+    },
+    {
+        "name": "JobsJob_visibility",
+        "node": "JobsJob",
+        "field_or_param": "visibility",
+        "values": [
+            "PUBLISHED",
+            "STAGING"
         ]
     },
     {
@@ -1395,6 +1340,15 @@
         ]
     },
     {
+        "name": "LocalServiceBusiness_visibility",
+        "node": "LocalServiceBusiness",
+        "field_or_param": "visibility",
+        "values": [
+            "PUBLISHED",
+            "STAGING"
+        ]
+    },
+    {
         "name": "MediaTitle_image_fetch_status",
         "node": "MediaTitle",
         "field_or_param": "image_fetch_status",
@@ -1405,6 +1359,15 @@
             "NO_STATUS",
             "OUTDATED",
             "PARTIAL_FETCH"
+        ]
+    },
+    {
+        "name": "MediaTitle_visibility",
+        "node": "MediaTitle",
+        "field_or_param": "visibility",
+        "values": [
+            "PUBLISHED",
+            "STAGING"
         ]
     },
     {
@@ -1597,6 +1560,7 @@
             "MARKETPLACE",
             "MARKETPLACE_ADS_DEPRECATED",
             "MARKETPLACE_SHOPS",
+            "MINI_SHOPS",
             "OFFLINE_CONVERSIONS",
             "SHOPS",
             "UNIVERSAL_CHECKOUT",
@@ -1744,6 +1708,15 @@
         ]
     },
     {
+        "name": "VehicleOffer_visibility",
+        "node": "VehicleOffer",
+        "field_or_param": "visibility",
+        "values": [
+            "PUBLISHED",
+            "STAGING"
+        ]
+    },
+    {
         "name": "Vehicle_image_fetch_status",
         "node": "Vehicle",
         "field_or_param": "image_fetch_status",
@@ -1754,6 +1727,15 @@
             "NO_STATUS",
             "OUTDATED",
             "PARTIAL_FETCH"
+        ]
+    },
+    {
+        "name": "Vehicle_visibility",
+        "node": "Vehicle",
+        "field_or_param": "visibility",
+        "values": [
+            "PUBLISHED",
+            "STAGING"
         ]
     },
     {
@@ -2086,6 +2068,9 @@
             "AUTOFLOW_OPT_IN",
             "AUTOMATIC_PLACEMENTS",
             "CAPI",
+            "COST_GOAL",
+            "COST_GOAL_BUDGET_LIMITED",
+            "COST_GOAL_CPA_LIMITED",
             "CREATIVE_BADGE",
             "CREATIVE_FATIGUE",
             "CREATIVE_LIMITED",
@@ -2098,6 +2083,7 @@
             "MUSIC",
             "PREDICTIVE_CREATIVE_LIMITED",
             "REVERT",
+            "SIGNALS_GROWTH_CAPI",
             "SYD_TEST_MODE",
             "TOP_ADSETS_WITH_ADS_UNDER_CAP",
             "TOP_CAMPAIGNS_WITH_ADS_UNDER_CAP",
@@ -2249,6 +2235,7 @@
             "LANDING_PAGE_VIEWS",
             "LEAD_GENERATION",
             "LINK_CLICKS",
+            "MESSAGING_APPOINTMENT_CONVERSION",
             "MESSAGING_PURCHASE_CONVERSION",
             "NONE",
             "OFFSITE_CONVERSIONS",
@@ -2707,6 +2694,12 @@
             "LOCAL_AWARENESS",
             "MESSAGES",
             "OFFER_CLAIMS",
+            "OUTCOME_APP_PROMOTION",
+            "OUTCOME_AWARENESS",
+            "OUTCOME_ENGAGEMENT",
+            "OUTCOME_LEADS",
+            "OUTCOME_SALES",
+            "OUTCOME_TRAFFIC",
             "PAGE_LIKES",
             "POST_ENGAGEMENT",
             "PRODUCT_CATALOG_SALES",
@@ -3126,6 +3119,7 @@
             "LANDING_PAGE_VIEWS",
             "LEAD_GENERATION",
             "LINK_CLICKS",
+            "MESSAGING_APPOINTMENT_CONVERSION",
             "MESSAGING_PURCHASE_CONVERSION",
             "NONE",
             "OFFSITE_CONVERSIONS",
@@ -3408,6 +3402,7 @@
             "EXPIRED",
             "IN_PROGRESS",
             "PENDING",
+            "PENDING_EMAIL_VERIFICATION",
             "PENDING_INTEGRITY_REVIEW"
         ]
     },
@@ -3861,6 +3856,12 @@
             "LOCAL_AWARENESS",
             "MESSAGES",
             "OFFER_CLAIMS",
+            "OUTCOME_APP_PROMOTION",
+            "OUTCOME_AWARENESS",
+            "OUTCOME_ENGAGEMENT",
+            "OUTCOME_LEADS",
+            "OUTCOME_SALES",
+            "OUTCOME_TRAFFIC",
             "PAGE_LIKES",
             "POST_ENGAGEMENT",
             "PRODUCT_CATALOG_SALES",
@@ -4090,6 +4091,12 @@
             "LOCAL_AWARENESS",
             "MESSAGES",
             "OFFER_CLAIMS",
+            "OUTCOME_APP_PROMOTION",
+            "OUTCOME_AWARENESS",
+            "OUTCOME_ENGAGEMENT",
+            "OUTCOME_LEADS",
+            "OUTCOME_SALES",
+            "OUTCOME_TRAFFIC",
             "PAGE_LIKES",
             "POST_ENGAGEMENT",
             "PRODUCT_CATALOG_SALES",
@@ -4279,6 +4286,7 @@
             "LANDING_PAGE_VIEWS",
             "LEAD_GENERATION",
             "LINK_CLICKS",
+            "MESSAGING_APPOINTMENT_CONVERSION",
             "MESSAGING_PURCHASE_CONVERSION",
             "NONE",
             "OFFSITE_CONVERSIONS",
@@ -4479,6 +4487,7 @@
             "LANDING_PAGE_VIEWS",
             "LEAD_GENERATION",
             "LINK_CLICKS",
+            "MESSAGING_APPOINTMENT_CONVERSION",
             "MESSAGING_PURCHASE_CONVERSION",
             "NONE",
             "OFFSITE_CONVERSIONS",
@@ -4552,6 +4561,12 @@
             "LOCAL_AWARENESS",
             "MESSAGES",
             "OFFER_CLAIMS",
+            "OUTCOME_APP_PROMOTION",
+            "OUTCOME_AWARENESS",
+            "OUTCOME_ENGAGEMENT",
+            "OUTCOME_LEADS",
+            "OUTCOME_SALES",
+            "OUTCOME_TRAFFIC",
             "PAGE_LIKES",
             "POST_ENGAGEMENT",
             "PRODUCT_CATALOG_SALES",
@@ -6188,58 +6203,6 @@
         ]
     },
     {
-        "name": "applicationinsights_push_schedule_level_enum_param",
-        "node": "AdsInsightsPushSchedule",
-        "field_or_param": "level",
-        "values": [
-            "ACCOUNT",
-            "AD",
-            "ADSET",
-            "CAMPAIGN"
-        ]
-    },
-    {
-        "name": "applicationinsights_push_schedule_schedule_enum_param",
-        "node": "AdsInsightsPushSchedule",
-        "field_or_param": "schedule",
-        "values": [
-            "DAILY",
-            "FINE_15_MIN",
-            "FINE_5_MIN",
-            "MONTHLY",
-            "WEEKLY"
-        ]
-    },
-    {
-        "name": "applicationinsights_push_schedule_status_enum_param",
-        "node": "AdsInsightsPushSchedule",
-        "field_or_param": "status",
-        "values": [
-            "ACTIVE",
-            "DISABLED",
-            "ERROR"
-        ]
-    },
-    {
-        "name": "applicationleaderboards_create_score_type_enum_param",
-        "node": "Application",
-        "field_or_param": "score_type",
-        "values": [
-            "CUSTOM",
-            "NUMERIC",
-            "TIME"
-        ]
-    },
-    {
-        "name": "applicationleaderboards_create_sort_order_enum_param",
-        "node": "Application",
-        "field_or_param": "sort_order",
-        "values": [
-            "HIGHER_IS_BETTER",
-            "LOWER_IS_BETTER"
-        ]
-    },
-    {
         "name": "applicationmobile_sdk_gk_platform_enum_param",
         "node": "MobileSdkGk",
         "field_or_param": "platform",
@@ -6472,6 +6435,7 @@
             "PROFILE_PLUS_FACEBOOK_ACCESS",
             "PROFILE_PLUS_FULL_CONTROL",
             "PROFILE_PLUS_MANAGE",
+            "PROFILE_PLUS_MANAGE_LEADS",
             "PROFILE_PLUS_MESSAGING",
             "PROFILE_PLUS_MODERATE",
             "PROFILE_PLUS_MODERATE_DELEGATE_COMMUNITY",
@@ -6548,6 +6512,7 @@
             "PROFILE_PLUS_FACEBOOK_ACCESS",
             "PROFILE_PLUS_FULL_CONTROL",
             "PROFILE_PLUS_MANAGE",
+            "PROFILE_PLUS_MANAGE_LEADS",
             "PROFILE_PLUS_MESSAGING",
             "PROFILE_PLUS_MODERATE",
             "PROFILE_PLUS_MODERATE_DELEGATE_COMMUNITY",
@@ -6603,6 +6568,7 @@
             "EXPIRED",
             "IN_PROGRESS",
             "PENDING",
+            "PENDING_EMAIL_VERIFICATION",
             "PENDING_INTEGRITY_REVIEW"
         ]
     },
@@ -6709,6 +6675,7 @@
             "PROFILE_PLUS_FACEBOOK_ACCESS",
             "PROFILE_PLUS_FULL_CONTROL",
             "PROFILE_PLUS_MANAGE",
+            "PROFILE_PLUS_MANAGE_LEADS",
             "PROFILE_PLUS_MESSAGING",
             "PROFILE_PLUS_MODERATE",
             "PROFILE_PLUS_MODERATE_DELEGATE_COMMUNITY",
@@ -6809,6 +6776,7 @@
             "EXPIRED",
             "IN_PROGRESS",
             "PENDING",
+            "PENDING_EMAIL_VERIFICATION",
             "PENDING_INTEGRITY_REVIEW"
         ]
     },
@@ -7203,7 +7171,6 @@
             "LEARNING",
             "NONE",
             "PARENTING",
-            "REAL_WORLD_AT_WORK",
             "STREAMER",
             "WORK_ANNOUNCEMENT",
             "WORK_DEMO_GROUP",
@@ -7325,7 +7292,6 @@
             "LEARNING",
             "NONE",
             "PARENTING",
-            "REAL_WORLD_AT_WORK",
             "STREAMER",
             "WORK_ANNOUNCEMENT",
             "WORK_DEMO_GROUP",
@@ -8045,6 +8011,7 @@
             "days_28",
             "lifetime",
             "month",
+            "total_over_range",
             "week"
         ]
     },
@@ -8372,6 +8339,7 @@
             "PROFILE_PLUS_FACEBOOK_ACCESS",
             "PROFILE_PLUS_FULL_CONTROL",
             "PROFILE_PLUS_MANAGE",
+            "PROFILE_PLUS_MANAGE_LEADS",
             "PROFILE_PLUS_MESSAGING",
             "PROFILE_PLUS_MODERATE",
             "PROFILE_PLUS_MODERATE_DELEGATE_COMMUNITY",
@@ -8403,6 +8371,7 @@
             "PROFILE_PLUS_FACEBOOK_ACCESS",
             "PROFILE_PLUS_FULL_CONTROL",
             "PROFILE_PLUS_MANAGE",
+            "PROFILE_PLUS_MANAGE_LEADS",
             "PROFILE_PLUS_MESSAGING",
             "PROFILE_PLUS_MODERATE",
             "PROFILE_PLUS_MODERATE_DELEGATE_COMMUNITY",
@@ -8599,8 +8568,7 @@
         "field_or_param": "platform",
         "values": [
             "INSTAGRAM",
-            "MESSENGER",
-            "WHATSAPP"
+            "MESSENGER"
         ]
     },
     {
@@ -9069,6 +9037,7 @@
             "days_28",
             "lifetime",
             "month",
+            "total_over_range",
             "week"
         ]
     },
@@ -9097,6 +9066,7 @@
             "days_28",
             "lifetime",
             "month",
+            "total_over_range",
             "week"
         ]
     },
@@ -9118,6 +9088,7 @@
             "CS_CZ",
             "DA_DK",
             "DE_DE",
+            "EL_GR",
             "EN_GB",
             "EN_US",
             "ES_ES",
@@ -9255,6 +9226,15 @@
         ]
     },
     {
+        "name": "pagemessage_attachments_platform_enum_param",
+        "node": "Object",
+        "field_or_param": "platform",
+        "values": [
+            "INSTAGRAM",
+            "MESSENGER"
+        ]
+    },
+    {
         "name": "pagemessages_messaging_type_enum_param",
         "node": "Page",
         "field_or_param": "messaging_type",
@@ -9310,8 +9290,7 @@
         "field_or_param": "platform",
         "values": [
             "INSTAGRAM",
-            "MESSENGER",
-            "WHATSAPP"
+            "MESSENGER"
         ]
     },
     {
@@ -9523,6 +9502,7 @@
             "days_28",
             "lifetime",
             "month",
+            "total_over_range",
             "week"
         ]
     },
@@ -9567,8 +9547,7 @@
         "field_or_param": "platform",
         "values": [
             "INSTAGRAM",
-            "MESSENGER",
-            "WHATSAPP"
+            "MESSENGER"
         ]
     },
     {
@@ -9598,6 +9577,7 @@
             "hours",
             "inbox_labels",
             "invoice_access_invoice_change",
+            "invoice_access_invoice_draft_change",
             "invoice_access_onboarding_status_active",
             "leadgen",
             "leadgen_fat",
@@ -9941,8 +9921,8 @@
         "node": "AdVideo",
         "field_or_param": "type",
         "values": [
-            "tagged",
-            "uploaded"
+            "TAGGED",
+            "UPLOADED"
         ]
     },
     {
@@ -10079,6 +10059,7 @@
             "days_28",
             "lifetime",
             "month",
+            "total_over_range",
             "week"
         ]
     },
@@ -10206,6 +10187,7 @@
             "days_28",
             "lifetime",
             "month",
+            "total_over_range",
             "week"
         ]
     },
@@ -10333,6 +10315,7 @@
             "marketplace",
             "marketplace_ads_deprecated",
             "marketplace_shops",
+            "mini_shops",
             "offline_conversions",
             "shops",
             "universal_checkout",
@@ -12412,6 +12395,17 @@
         ]
     },
     {
+        "name": "shadowigmediainsights_breakdown_enum_param",
+        "node": "InstagramInsightsResult",
+        "field_or_param": "breakdown",
+        "values": [
+            "action_type",
+            "follow_type",
+            "story_navigation_action_type",
+            "surface_type"
+        ]
+    },
+    {
         "name": "shadowigmediainsights_metric_enum_param",
         "node": "InstagramInsightsResult",
         "field_or_param": "metric",
@@ -12450,7 +12444,22 @@
             "days_28",
             "lifetime",
             "month",
+            "total_over_range",
             "week"
+        ]
+    },
+    {
+        "name": "shadowiguserinsights_breakdown_enum_param",
+        "node": "InstagramInsightsResult",
+        "field_or_param": "breakdown",
+        "values": [
+            "age",
+            "city",
+            "contact_button_type",
+            "country",
+            "follow_type",
+            "gender",
+            "media_product_type"
         ]
     },
     {
@@ -12487,6 +12496,16 @@
         ]
     },
     {
+        "name": "shadowiguserinsights_metric_type_enum_param",
+        "node": "InstagramInsightsResult",
+        "field_or_param": "metric_type",
+        "values": [
+            "default",
+            "time_series",
+            "total_value"
+        ]
+    },
+    {
         "name": "shadowiguserinsights_period_enum_param",
         "node": "InstagramInsightsResult",
         "field_or_param": "period",
@@ -12495,7 +12514,21 @@
             "days_28",
             "lifetime",
             "month",
+            "total_over_range",
             "week"
+        ]
+    },
+    {
+        "name": "shadowiguserinsights_timeframe_enum_param",
+        "node": "InstagramInsightsResult",
+        "field_or_param": "timeframe",
+        "values": [
+            "last_14_days",
+            "last_30_days",
+            "last_90_days",
+            "prev_month",
+            "this_month",
+            "this_week"
         ]
     },
     {
@@ -13105,8 +13138,8 @@
         "node": "AdVideo",
         "field_or_param": "type",
         "values": [
-            "tagged",
-            "uploaded"
+            "TAGGED",
+            "UPLOADED"
         ]
     },
     {
@@ -13378,6 +13411,7 @@
             "days_28",
             "lifetime",
             "month",
+            "total_over_range",
             "week"
         ]
     },
@@ -13391,8 +13425,21 @@
             "MANAGE",
             "MANAGE_PHONE",
             "MANAGE_TEMPLATES",
+            "MANAGE_TEMPLATES_AND_PHONE",
             "MESSAGING",
             "VIEW_COST"
+        ]
+    },
+    {
+        "name": "whatsappbusinessaccountconversation_analytics_conversation_categories_enum_param",
+        "node": "WABAConversationAnalytics",
+        "field_or_param": "conversation_categories",
+        "values": [
+            "AUTHENTICATION",
+            "MARKETING",
+            "SERVICE",
+            "UNKNOWN",
+            "UTILITY"
         ]
     },
     {
@@ -13421,6 +13468,7 @@
         "node": "WABAConversationAnalytics",
         "field_or_param": "dimensions",
         "values": [
+            "CONVERSATION_CATEGORY",
             "CONVERSATION_DIRECTION",
             "CONVERSATION_TYPE",
             "COUNTRY",
