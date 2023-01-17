@@ -215,6 +215,7 @@ members=1
 mentions=1
 merchant=1
 messages=1
+messenger_desktop_performance_traces=1
 metadata=1
 mfs=1
 milestones=1
