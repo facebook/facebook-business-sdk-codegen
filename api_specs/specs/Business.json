@@ -326,6 +326,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "ads_reporting_mmm_schedulers",
+            "return": "AdsReportBuilderMMMReportScheduler",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "adspixels",
             "return": "AdsPixel",
             "params": [
@@ -1061,28 +1067,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "managed_partner_child_business_assets",
-            "return": "Business",
-            "params": [
-                {
-                    "name": "child_business_id",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "credit_limit",
-                    "required": true,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "line_of_credit_id",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "negative_keyword_lists",
             "return": "NegativeKeywordList",
@@ -1397,6 +1381,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "partner_business_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
                     "name": "retailer_custom_audience_config",
                     "required": true,
                     "type": "map"
@@ -1538,6 +1527,12 @@
                     "type": "int"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "third_party_measurement_report_dataset",
+            "return": "ThirdPartyMeasurementReportDataset",
+            "params": []
         },
         {
             "name": "#get",

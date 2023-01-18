@@ -263,7 +263,13 @@
             "method": "GET",
             "endpoint": "assigned_pages",
             "return": "Page",
-            "params": []
+            "params": [
+                {
+                    "name": "pages",
+                    "required": false,
+                    "type": "list<unsigned int>"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -1336,6 +1342,12 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "messenger_desktop_performance_traces",
+            "return": "User",
+            "params": []
+        },
+        {
             "method": "GET",
             "endpoint": "music",
             "return": "Page",
@@ -1393,7 +1405,7 @@
                     "type": "string"
                 },
                 {
-                    "name": "scheduleInterval",
+                    "name": "schedule_interval",
                     "required": false,
                     "type": "unsigned int"
                 },
@@ -2327,6 +2339,10 @@
         },
         {
             "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "id_for_avatars",
             "type": "string"
         },
         {

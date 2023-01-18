@@ -139,6 +139,10 @@
             "type": "string"
         },
         {
+            "name": "visibility",
+            "type": "AutomotiveModel_visibility"
+        },
+        {
             "name": "year",
             "type": "int"
         }

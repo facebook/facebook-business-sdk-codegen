@@ -89,6 +89,10 @@
         {
             "name": "url",
             "type": "string"
+        },
+        {
+            "name": "visibility",
+            "type": "Destination_visibility"
         }
     ]
 }

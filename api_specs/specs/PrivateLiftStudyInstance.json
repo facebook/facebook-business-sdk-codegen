@@ -37,12 +37,20 @@
             "type": "string"
         },
         {
+            "name": "issuer_certificate",
+            "type": "string"
+        },
+        {
             "name": "latest_status_update_time",
             "type": "datetime"
         },
         {
             "name": "run_id",
             "type": "string"
+        },
+        {
+            "name": "server_hostnames",
+            "type": "list<string>"
         },
         {
             "name": "server_ips",

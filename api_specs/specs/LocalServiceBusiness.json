@@ -157,6 +157,10 @@
         {
             "name": "vendor_id",
             "type": "string"
+        },
+        {
+            "name": "visibility",
+            "type": "LocalServiceBusiness_visibility"
         }
     ]
 }

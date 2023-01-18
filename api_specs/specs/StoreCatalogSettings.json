@@ -11,18 +11,6 @@
             "method": "GET",
             "return": "StoreCatalogSettings",
             "params": []
-        },
-        {
-            "name": "#update",
-            "method": "POST",
-            "return": "StoreCatalogSettings",
-            "params": [
-                {
-                    "name": "page",
-                    "required": false,
-                    "type": "int"
-                }
-            ]
         }
     ],
     "fields": [
