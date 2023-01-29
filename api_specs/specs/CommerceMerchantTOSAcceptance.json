@@ -3,21 +3,17 @@
         {
             "name": "#get",
             "method": "GET",
-            "return": "WhatsAppBusinessPreVerifiedPhoneNumber",
+            "return": "CommerceMerchantTOSAcceptance",
             "params": []
         }
     ],
     "fields": [
         {
-            "name": "code_verification_status",
-            "type": "string"
+            "name": "business",
+            "type": "Business"
         },
         {
             "name": "id",
-            "type": "string"
-        },
-        {
-            "name": "phone_number",
             "type": "string"
         }
     ]

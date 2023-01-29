@@ -581,12 +581,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "copyright_whitelisted_partners",
-            "return": "Profile",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "crosspost_whitelisted_pages",
             "return": "Page",
             "params": []
@@ -1397,6 +1391,11 @@
             "return": "InsightsResult",
             "params": [
                 {
+                    "name": "breakdown",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
                     "name": "date_preset",
                     "required": false,
                     "type": "pageinsights_date_preset_enum_param"
@@ -1554,43 +1553,6 @@
             "endpoint": "invoice_access_bank_account",
             "return": "McomInvoiceBankAccount",
             "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "invoice_access_invoice_edit",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "additional_amounts",
-                    "required": false,
-                    "type": "list<map>"
-                },
-                {
-                    "name": "invoice_id",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "notes",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "paid_amount",
-                    "required": false,
-                    "type": "map"
-                },
-                {
-                    "name": "product_items",
-                    "required": false,
-                    "type": "list<map>"
-                },
-                {
-                    "name": "shipping_address",
-                    "required": false,
-                    "type": "map"
-                }
-            ]
         },
         {
             "method": "GET",
@@ -2019,6 +1981,11 @@
                     "name": "message",
                     "required": true,
                     "type": "Object"
+                },
+                {
+                    "name": "platform",
+                    "required": false,
+                    "type": "pagemessage_attachments_platform_enum_param"
                 }
             ]
         },

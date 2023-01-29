@@ -1,0 +1,29 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "date_start",
+            "type": "string"
+        },
+        {
+            "name": "date_stop",
+            "type": "string"
+        },
+        {
+            "name": "event",
+            "type": "string"
+        },
+        {
+            "name": "source",
+            "type": "ExternalEventSource"
+        },
+        {
+            "name": "total_matched_content_ids",
+            "type": "int"
+        },
+        {
+            "name": "unique_matched_content_ids",
+            "type": "int"
+        }
+    ]
+}

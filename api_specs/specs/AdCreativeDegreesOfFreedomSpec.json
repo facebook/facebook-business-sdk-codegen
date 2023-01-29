@@ -1,0 +1,37 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "ad_handle_type",
+            "type": "string"
+        },
+        {
+            "name": "creative_features_spec",
+            "type": "Object"
+        },
+        {
+            "name": "degrees_of_freedom_type",
+            "type": "string"
+        },
+        {
+            "name": "image_transformation_types",
+            "type": "list<string>"
+        },
+        {
+            "name": "multi_media_transformation_type",
+            "type": "string"
+        },
+        {
+            "name": "stories_transformation_types",
+            "type": "list<string>"
+        },
+        {
+            "name": "text_transformation_types",
+            "type": "list<string>"
+        },
+        {
+            "name": "video_transformation_types",
+            "type": "list<string>"
+        }
+    ]
+}

@@ -546,10 +546,6 @@
             "type": "list<AdLabel>"
         },
         {
-            "name": "benchmark_report_count",
-            "type": "int"
-        },
-        {
             "name": "bid_strategy",
             "type": "Campaign_bid_strategy"
         },

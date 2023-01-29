@@ -25,6 +25,10 @@
             "type": "bool"
         },
         {
+            "name": "folder",
+            "type": "string"
+        },
+        {
             "name": "former_participants",
             "type": "Object"
         },

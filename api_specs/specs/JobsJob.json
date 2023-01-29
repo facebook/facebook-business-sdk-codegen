@@ -121,6 +121,10 @@
         {
             "name": "url",
             "type": "string"
+        },
+        {
+            "name": "visibility",
+            "type": "JobsJob_visibility"
         }
     ]
 }

@@ -213,6 +213,11 @@
                     "type": "adaccountadcreatives_category_media_source_enum_param"
                 },
                 {
+                    "name": "degrees_of_freedom_spec",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "destination_set_id",
                     "required": false,
                     "type": "string"
@@ -748,6 +753,12 @@
                     "type": "list<map>"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "ads_reporting_mmm_schedulers",
+            "return": "AdsReportBuilderMMMReportScheduler",
+            "params": []
         },
         {
             "method": "GET",

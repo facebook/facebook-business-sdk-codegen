@@ -176,6 +176,10 @@
             "type": "string"
         },
         {
+            "name": "visibility",
+            "type": "MediaTitle_visibility"
+        },
+        {
             "name": "wiki_data_item",
             "type": "string"
         }

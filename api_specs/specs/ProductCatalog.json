@@ -139,13 +139,13 @@
         },
         {
             "method": "POST",
-            "endpoint": "catalog_website_settings",
-            "return": "CatalogWebsiteSettings",
+            "endpoint": "catalog_store",
+            "return": "StoreCatalogSettings",
             "params": [
                 {
-                    "name": "is_allowed_to_crawl",
-                    "required": false,
-                    "type": "bool"
+                    "name": "page",
+                    "required": true,
+                    "type": "int"
                 }
             ]
         },
@@ -199,6 +199,12 @@
                     "type": "bool"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "collaborative_ads_event_stats",
+            "return": "CatalogSegmentAllMatchCountLaser",
+            "params": []
         },
         {
             "method": "GET",
@@ -1668,6 +1674,14 @@
         }
     ],
     "fields": [
+        {
+            "name": "ad_account_to_collaborative_ads_share_settings",
+            "type": "CollaborativeAdsShareSettings"
+        },
+        {
+            "name": "agency_collaborative_ads_share_settings",
+            "type": "CollaborativeAdsShareSettings"
+        },
         {
             "name": "business",
             "type": "Business"

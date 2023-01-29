@@ -167,6 +167,10 @@
             "type": "string"
         },
         {
+            "name": "visibility",
+            "type": "VehicleOffer_visibility"
+        },
+        {
             "name": "year",
             "type": "int"
         }

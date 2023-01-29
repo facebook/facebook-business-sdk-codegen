@@ -53,6 +53,11 @@
             "return": "WABAConversationAnalytics",
             "params": [
                 {
+                    "name": "conversation_categories",
+                    "required": false,
+                    "type": "list<whatsappbusinessaccountconversation_analytics_conversation_categories_enum_param>"
+                },
+                {
                     "name": "conversation_directions",
                     "required": false,
                     "type": "list<whatsappbusinessaccountconversation_analytics_conversation_directions_enum_param>"
@@ -98,6 +103,12 @@
                     "type": "unsigned int"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "extensions",
+            "return": "WhatsAppExtension",
+            "params": []
         },
         {
             "method": "DELETE",
@@ -239,6 +250,12 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "schedules",
+            "return": "WhatsAppBusinessCampaignSchedule",
+            "params": []
+        },
+        {
             "method": "DELETE",
             "endpoint": "subscribed_apps",
             "return": "Object",
@@ -284,6 +301,14 @@
             "type": "Object"
         },
         {
+            "name": "business_verification_status",
+            "type": "string"
+        },
+        {
+            "name": "country",
+            "type": "string"
+        },
+        {
             "name": "creation_time",
             "type": "int"
         },
@@ -314,6 +339,10 @@
         {
             "name": "owner_business_info",
             "type": "Object"
+        },
+        {
+            "name": "ownership_type",
+            "type": "string"
         },
         {
             "name": "primary_funding_id",
