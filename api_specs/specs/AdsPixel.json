@@ -2,6 +2,24 @@
     "apis": [
         {
             "method": "GET",
+            "endpoint": "adaccounts",
+            "return": "AdAccount",
+            "params": [
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "agencies",
+            "return": "Business",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "assigned_users",
             "return": "AssignedUser",
             "params": [
@@ -103,6 +121,38 @@
             "endpoint": "meapitocapiconsolidationhelper",
             "return": "Object",
             "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "offline_event_uploads",
+            "return": "OfflineConversionDataSetUpload",
+            "params": [
+                {
+                    "name": "end_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "order",
+                    "required": false,
+                    "type": "adspixeloffline_event_uploads_order_enum_param"
+                },
+                {
+                    "name": "sort_by",
+                    "required": false,
+                    "type": "adspixeloffline_event_uploads_sort_by_enum_param"
+                },
+                {
+                    "name": "start_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "upload_tag",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
         },
         {
             "method": "POST",
@@ -258,6 +308,10 @@
             "type": "string"
         },
         {
+            "name": "config",
+            "type": "string"
+        },
+        {
             "name": "creation_time",
             "type": "datetime"
         },
@@ -270,8 +324,32 @@
             "type": "string"
         },
         {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "duplicate_entries",
+            "type": "int"
+        },
+        {
+            "name": "enable_auto_assign_to_accounts",
+            "type": "bool"
+        },
+        {
             "name": "enable_automatic_matching",
             "type": "bool"
+        },
+        {
+            "name": "event_stats",
+            "type": "string"
+        },
+        {
+            "name": "event_time_max",
+            "type": "int"
+        },
+        {
+            "name": "event_time_min",
+            "type": "int"
         },
         {
             "name": "first_party_cookie_status",
@@ -282,11 +360,23 @@
             "type": "string"
         },
         {
+            "name": "is_consolidated_container",
+            "type": "bool"
+        },
+        {
             "name": "is_created_by_business",
             "type": "bool"
         },
         {
             "name": "is_crm",
+            "type": "bool"
+        },
+        {
+            "name": "is_mta_use",
+            "type": "bool"
+        },
+        {
+            "name": "is_restricted_use",
             "type": "bool"
         },
         {
@@ -296,6 +386,22 @@
         {
             "name": "last_fired_time",
             "type": "datetime"
+        },
+        {
+            "name": "last_upload_app",
+            "type": "string"
+        },
+        {
+            "name": "last_upload_app_changed_time",
+            "type": "int"
+        },
+        {
+            "name": "match_rate_approx",
+            "type": "int"
+        },
+        {
+            "name": "matched_entries",
+            "type": "int"
         },
         {
             "name": "name",
@@ -308,6 +414,14 @@
         {
             "name": "owner_business",
             "type": "Business"
+        },
+        {
+            "name": "usage",
+            "type": "OfflineConversionDataSetUsage"
+        },
+        {
+            "name": "valid_entries",
+            "type": "int"
         }
     ]
 }

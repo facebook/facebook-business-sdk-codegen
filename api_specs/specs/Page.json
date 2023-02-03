@@ -227,6 +227,18 @@
         },
         {
             "method": "GET",
+            "endpoint": "businessprojects",
+            "return": "BusinessProject",
+            "params": [
+                {
+                    "name": "business",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "call_to_actions",
             "return": "PageCallToAction",
             "params": []

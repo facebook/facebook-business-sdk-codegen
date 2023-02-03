@@ -124,29 +124,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "featured_cards",
-            "return": "GroupHighlightThirdPartyUnit",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "featured_cards",
-            "return": "GroupHighlightThirdPartyUnit",
-            "params": [
-                {
-                    "name": "description",
-                    "required": true,
-                    "type": "map"
-                },
-                {
-                    "name": "title",
-                    "required": true,
-                    "type": "map"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "feed",
             "return": "Post",
             "params": [

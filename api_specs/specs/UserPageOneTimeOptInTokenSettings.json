@@ -13,6 +13,10 @@
             "type": "int"
         },
         {
+            "name": "next_eligible_time",
+            "type": "int"
+        },
+        {
             "name": "notification_messages_frequency",
             "type": "string"
         },

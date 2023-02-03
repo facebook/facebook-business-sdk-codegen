@@ -477,6 +477,12 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "businessprojects",
+            "return": "BusinessProject",
+            "params": []
+        },
+        {
             "method": "POST",
             "endpoint": "claim_custom_conversions",
             "return": "CustomConversion",

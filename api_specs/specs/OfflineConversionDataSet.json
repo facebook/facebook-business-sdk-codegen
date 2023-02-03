@@ -135,6 +135,41 @@
         },
         {
             "method": "GET",
+            "endpoint": "server_events_permitted_business",
+            "return": "Business",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "shared_accounts",
+            "return": "AdAccount",
+            "params": [
+                {
+                    "name": "action_source",
+                    "required": true,
+                    "type": "offlineconversiondatasetshared_accounts_action_source_enum_param"
+                },
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "shared_agencies",
+            "return": "Business",
+            "params": [
+                {
+                    "name": "action_source",
+                    "required": true,
+                    "type": "offlineconversiondatasetshared_agencies_action_source_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "stats",
             "return": "OfflineConversionDataSetStats",
             "params": [
@@ -273,8 +308,16 @@
     ],
     "fields": [
         {
+            "name": "automatic_matching_fields",
+            "type": "list<string>"
+        },
+        {
             "name": "business",
             "type": "Business"
+        },
+        {
+            "name": "can_proxy",
+            "type": "bool"
         },
         {
             "name": "config",
@@ -289,6 +332,10 @@
             "type": "User"
         },
         {
+            "name": "data_use_setting",
+            "type": "string"
+        },
+        {
             "name": "description",
             "type": "string"
         },
@@ -298,6 +345,10 @@
         },
         {
             "name": "enable_auto_assign_to_accounts",
+            "type": "bool"
+        },
+        {
+            "name": "enable_automatic_matching",
             "type": "bool"
         },
         {
@@ -313,8 +364,24 @@
             "type": "int"
         },
         {
+            "name": "first_party_cookie_status",
+            "type": "string"
+        },
+        {
             "name": "id",
             "type": "string"
+        },
+        {
+            "name": "is_consolidated_container",
+            "type": "bool"
+        },
+        {
+            "name": "is_created_by_business",
+            "type": "bool"
+        },
+        {
+            "name": "is_crm",
+            "type": "bool"
         },
         {
             "name": "is_mta_use",
@@ -327,6 +394,10 @@
         {
             "name": "is_unavailable",
             "type": "bool"
+        },
+        {
+            "name": "last_fired_time",
+            "type": "datetime"
         },
         {
             "name": "last_upload_app",
@@ -347,6 +418,10 @@
         {
             "name": "name",
             "type": "string"
+        },
+        {
+            "name": "owner_ad_account",
+            "type": "AdAccount"
         },
         {
             "name": "owner_business",

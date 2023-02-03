@@ -270,6 +270,10 @@
             "type": "Place"
         },
         {
+            "name": "registration_setting",
+            "type": "Object"
+        },
+        {
             "name": "scheduled_publish_time",
             "type": "string"
         },

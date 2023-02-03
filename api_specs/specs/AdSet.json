@@ -765,6 +765,10 @@
             "type": "Campaign"
         },
         {
+            "name": "campaign_attribution",
+            "type": "string"
+        },
+        {
             "name": "campaign_id",
             "type": "string"
         },
