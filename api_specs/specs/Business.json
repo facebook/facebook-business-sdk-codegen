@@ -1507,6 +1507,38 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "setup_managed_partner_adaccounts",
+            "return": "Business",
+            "params": [
+                {
+                    "name": "credit_line_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "marketplace_business_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "subvertical_v2",
+                    "required": true,
+                    "type": "businesssetup_managed_partner_adaccounts_subvertical_v2_enum_param"
+                },
+                {
+                    "name": "vendor_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "vertical_v2",
+                    "required": true,
+                    "type": "businesssetup_managed_partner_adaccounts_vertical_v2_enum_param"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "system_users",
             "return": "SystemUser",
