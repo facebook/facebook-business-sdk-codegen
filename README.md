@@ -44,5 +44,5 @@ npm run build && node lib/CodeGenerator.js php -o ../facebook-php-business-sdk/ 
 
 ## License
 
-Facebook Codegen for Business SDKs is licensed under the LICENSE file in the
+Facebook Codegen for Business SDKs is licensed under the [LICENSE](https://github.com/facebook/facebook-business-sdk-codegen/blob/main/LICENSE) file in the
 root directory of this source tree.
