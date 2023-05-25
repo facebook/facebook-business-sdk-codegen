@@ -134,6 +134,11 @@
                     "name": "requests",
                     "required": true,
                     "type": "list<map>"
+                },
+                {
+                    "name": "version",
+                    "required": false,
+                    "type": "unsigned int"
                 }
             ]
         },
@@ -621,6 +626,11 @@
                     "name": "requests",
                     "required": true,
                     "type": "map"
+                },
+                {
+                    "name": "version",
+                    "required": false,
+                    "type": "unsigned int"
                 }
             ]
         },
@@ -643,6 +653,11 @@
                     "name": "requests",
                     "required": true,
                     "type": "map"
+                },
+                {
+                    "name": "version",
+                    "required": false,
+                    "type": "unsigned int"
                 }
             ]
         },

@@ -2,6 +2,24 @@
     "apis": [
         {
             "method": "GET",
+            "endpoint": "account_controls",
+            "return": "AdAccountBusinessConstraints",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "account_controls",
+            "return": "AdAccountBusinessConstraints",
+            "params": [
+                {
+                    "name": "audience_controls",
+                    "required": false,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "activities",
             "return": "AdActivity",
             "params": [
@@ -188,6 +206,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "branded_content",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "branded_content_sponsor_page_id",
                     "required": false,
                     "type": "string"
@@ -233,6 +256,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "facebook_branded_content",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "image_crops",
                     "required": false,
                     "type": "map"
@@ -256,6 +284,11 @@
                     "name": "instagram_actor_id",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "instagram_branded_content",
+                    "required": false,
+                    "type": "map"
                 },
                 {
                     "name": "instagram_permalink_url",
@@ -716,6 +749,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "meta_reward_adgroup_status",
+                    "required": false,
+                    "type": "adaccountads_meta_reward_adgroup_status_enum_param"
+                },
+                {
                     "name": "name",
                     "required": true,
                     "type": "string"
@@ -739,6 +777,28 @@
                     "name": "tracking_specs",
                     "required": false,
                     "type": "Object"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "ads_conversion_goal",
+            "return": "AdsConversionGoal",
+            "params": [
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "goal_name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "single_channel_conversion_events",
+                    "required": true,
+                    "type": "list<map>"
                 }
             ]
         },
@@ -823,6 +883,11 @@
                     "name": "time_range",
                     "required": false,
                     "type": "Object"
+                },
+                {
+                    "name": "updated_since",
+                    "required": false,
+                    "type": "int"
                 }
             ]
         },
@@ -915,6 +980,16 @@
                     "name": "destination_type",
                     "required": false,
                     "type": "adaccountadsets_destination_type_enum_param"
+                },
+                {
+                    "name": "dsa_beneficiary",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "dsa_payor",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "end_time",
@@ -1060,11 +1135,6 @@
                     "name": "tune_for_category",
                     "required": false,
                     "type": "adaccountadsets_tune_for_category_enum_param"
-                },
-                {
-                    "name": "upstream_events",
-                    "required": false,
-                    "type": "map"
                 }
             ]
         },
@@ -1900,11 +1970,6 @@
                     "name": "topline_id",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "upstream_events",
-                    "required": false,
-                    "type": "map"
                 }
             ]
         },
@@ -1933,6 +1998,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "conversion_goals",
+            "return": "AdsConversionGoal",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "customaudiences",
             "return": "CustomAudience",
             "params": [
@@ -1940,6 +2011,11 @@
                     "name": "business_id",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "fetch_primary_audience",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "fields",
@@ -2124,6 +2200,11 @@
                     "type": "adaccountcustomaudiences_subtype_enum_param"
                 },
                 {
+                    "name": "use_in_campaigns",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "video_group_ids",
                     "required": false,
                     "type": "list<string>"
@@ -2249,6 +2330,11 @@
                     "name": "creative",
                     "required": true,
                     "type": "AdCreative"
+                },
+                {
+                    "name": "creative_feature",
+                    "required": false,
+                    "type": "adaccountgeneratepreviews_creative_feature_enum_param"
                 },
                 {
                     "name": "dynamic_asset_label",
@@ -3164,6 +3250,11 @@
                     "type": "list<adaccounttargetingbrowse_regulated_categories_enum_param>"
                 },
                 {
+                    "name": "regulated_countries",
+                    "required": false,
+                    "type": "list<adaccounttargetingbrowse_regulated_countries_enum_param>"
+                },
+                {
                     "name": "whitelisted_types",
                     "required": false,
                     "type": "list<adaccounttargetingbrowse_whitelisted_types_enum_param>"
@@ -3219,6 +3310,11 @@
                     "name": "regulated_categories",
                     "required": false,
                     "type": "list<adaccounttargetingsearch_regulated_categories_enum_param>"
+                },
+                {
+                    "name": "regulated_countries",
+                    "required": false,
+                    "type": "list<adaccounttargetingsearch_regulated_countries_enum_param>"
                 },
                 {
                     "name": "session_id",
@@ -3303,6 +3399,11 @@
                     "name": "regulated_categories",
                     "required": false,
                     "type": "list<adaccounttargetingsuggestions_regulated_categories_enum_param>"
+                },
+                {
+                    "name": "regulated_countries",
+                    "required": false,
+                    "type": "list<adaccounttargetingsuggestions_regulated_countries_enum_param>"
                 },
                 {
                     "name": "session_id",
@@ -3571,7 +3672,7 @@
         },
         {
             "name": "custom_audience_info",
-            "type": "AdAccountCustomAudience"
+            "type": "CustomAudienceGroup"
         },
         {
             "name": "disable_reason",

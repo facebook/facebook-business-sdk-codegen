@@ -2,15 +2,15 @@
     "apis": [],
     "fields": [
         {
-            "name": "attribute",
+            "name": "shared_to_sponsor_status",
             "type": "string"
         },
         {
-            "name": "params",
-            "type": "list<map<string, string>>"
+            "name": "sponsor_page_id",
+            "type": "string"
         },
         {
-            "name": "type",
+            "name": "sponsor_relationship",
             "type": "string"
         }
     ]

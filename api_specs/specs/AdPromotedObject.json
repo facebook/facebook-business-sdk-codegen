@@ -6,6 +6,10 @@
             "type": "string"
         },
         {
+            "name": "conversion_goal_id",
+            "type": "string"
+        },
+        {
             "name": "custom_conversion_id",
             "type": "string"
         },
@@ -60,6 +64,10 @@
         {
             "name": "pixel_rule",
             "type": "string"
+        },
+        {
+            "name": "place_page_set",
+            "type": "AdPlacePageSet"
         },
         {
             "name": "place_page_set_id",

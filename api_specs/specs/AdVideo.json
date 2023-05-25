@@ -30,6 +30,24 @@
         },
         {
             "method": "GET",
+            "endpoint": "collaborators",
+            "return": "VideoCollaborators",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "collaborators",
+            "return": "AdVideo",
+            "params": [
+                {
+                    "name": "target_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "comments",
             "return": "Comment",
             "params": [

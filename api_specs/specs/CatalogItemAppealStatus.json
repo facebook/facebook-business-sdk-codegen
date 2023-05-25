@@ -11,7 +11,7 @@
         },
         {
             "name": "status",
-            "type": "string"
+            "type": "CatalogItemAppealStatus_status"
         },
         {
             "name": "use_cases",

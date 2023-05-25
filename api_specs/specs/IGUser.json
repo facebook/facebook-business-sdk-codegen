@@ -117,6 +117,11 @@
             "return": "IGMedia",
             "params": [
                 {
+                    "name": "audio_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "caption",
                     "required": false,
                     "type": "string"

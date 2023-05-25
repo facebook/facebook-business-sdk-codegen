@@ -325,6 +325,11 @@
                     "type": "adgrouppreviews_ad_format_enum_param"
                 },
                 {
+                    "name": "creative_feature",
+                    "required": false,
+                    "type": "adgrouppreviews_creative_feature_enum_param"
+                },
+                {
                     "name": "dynamic_asset_label",
                     "required": false,
                     "type": "string"
@@ -491,6 +496,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "meta_reward_adgroup_status",
+                    "required": false,
+                    "type": "adgroup_meta_reward_adgroup_status"
+                },
+                {
                     "name": "name",
                     "required": false,
                     "type": "string"
@@ -604,6 +614,10 @@
         },
         {
             "name": "last_updated_by_app_id",
+            "type": "string"
+        },
+        {
+            "name": "meta_reward_adgroup_status",
             "type": "string"
         },
         {

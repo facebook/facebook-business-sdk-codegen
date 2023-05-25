@@ -519,11 +519,6 @@
                     "name": "stop_time",
                     "required": false,
                     "type": "datetime"
-                },
-                {
-                    "name": "upstream_events",
-                    "required": false,
-                    "type": "map"
                 }
             ]
         }

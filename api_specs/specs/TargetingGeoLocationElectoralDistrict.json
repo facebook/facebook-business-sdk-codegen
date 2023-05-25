@@ -6,6 +6,10 @@
             "type": "string"
         },
         {
+            "name": "deprecation_code",
+            "type": "string"
+        },
+        {
             "name": "electoral_district",
             "type": "string"
         },

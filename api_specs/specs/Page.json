@@ -300,6 +300,11 @@
                     "type": "Object"
                 },
                 {
+                    "name": "canvas_template_video",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
                     "name": "canvas_text",
                     "required": false,
                     "type": "Object"
@@ -2042,6 +2047,11 @@
                     "type": "pagemessages_sender_action_enum_param"
                 },
                 {
+                    "name": "suggestion_action",
+                    "required": false,
+                    "type": "pagemessages_suggestion_action_enum_param"
+                },
+                {
                     "name": "tag",
                     "required": false,
                     "type": "Object"
@@ -3160,7 +3170,18 @@
             "method": "GET",
             "endpoint": "video_reels",
             "return": "AdVideo",
-            "params": []
+            "params": [
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "until",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
         },
         {
             "method": "POST",
@@ -3726,6 +3747,18 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "welcome_message_flows",
+            "return": "CTXPartnerAppWelcomeMessageFlow",
+            "params": [
+                {
+                    "name": "flow_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "name": "#get",
             "method": "GET",
             "return": "Page",
@@ -4160,7 +4193,7 @@
         },
         {
             "name": "differently_open_offerings",
-            "type": "map<string, bool>"
+            "type": "list<map<string, bool>>"
         },
         {
             "name": "directed_by",
