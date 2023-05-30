@@ -9152,35 +9152,6 @@
         ]
     },
     {
-        "name": "instantarticleinsights_breakdown_enum_param",
-        "node": "InstantArticleInsightsQueryResult",
-        "field_or_param": "breakdown",
-        "values": [
-            "age",
-            "country",
-            "gender",
-            "gender_and_age",
-            "is_organic",
-            "is_shared_by_ia_owner",
-            "no_breakdown",
-            "platform",
-            "region"
-        ]
-    },
-    {
-        "name": "instantarticleinsights_period_enum_param",
-        "node": "InstantArticleInsightsQueryResult",
-        "field_or_param": "period",
-        "values": [
-            "day",
-            "days_28",
-            "lifetime",
-            "month",
-            "total_over_range",
-            "week"
-        ]
-    },
-    {
         "name": "leadgendata_status",
         "node": "LeadgenForm",
         "field_or_param": "status",
@@ -10222,44 +10193,6 @@
             "month",
             "total_over_range",
             "week"
-        ]
-    },
-    {
-        "name": "pageinstant_articles_insights_breakdown_enum_param",
-        "node": "InstantArticleInsightsQueryResult",
-        "field_or_param": "breakdown",
-        "values": [
-            "age",
-            "country",
-            "gender",
-            "gender_and_age",
-            "is_organic",
-            "is_shared_by_ia_owner",
-            "no_breakdown",
-            "platform",
-            "region"
-        ]
-    },
-    {
-        "name": "pageinstant_articles_insights_period_enum_param",
-        "node": "InstantArticleInsightsQueryResult",
-        "field_or_param": "period",
-        "values": [
-            "day",
-            "days_28",
-            "lifetime",
-            "month",
-            "total_over_range",
-            "week"
-        ]
-    },
-    {
-        "name": "pageinstant_articles_publish_publish_status_enum_param",
-        "node": "Page",
-        "field_or_param": "publish_status",
-        "values": [
-            "DRAFT",
-            "LIVE"
         ]
     },
     {
@@ -11614,16 +11547,6 @@
             "TVS_AND_MONITORS",
             "VIDEO_GAME_CONSOLES_AND_VIDEO_GAMES",
             "WATCHES"
-        ]
-    },
-    {
-        "name": "productcatalogmedia_titles_content_category_enum_param",
-        "node": "MediaTitle",
-        "field_or_param": "content_category",
-        "values": [
-            "MOVIE",
-            "MUSIC",
-            "TV_SHOW"
         ]
     },
     {

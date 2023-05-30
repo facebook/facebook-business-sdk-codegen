@@ -3557,11 +3557,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "odax_opt_in",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "partner",
                     "required": false,
                     "type": "string"
@@ -3709,10 +3704,6 @@
         {
             "name": "funding_source_details",
             "type": "FundingSourceDetails"
-        },
-        {
-            "name": "has_advertiser_opted_in_odax",
-            "type": "bool"
         },
         {
             "name": "has_migrated_permissions",

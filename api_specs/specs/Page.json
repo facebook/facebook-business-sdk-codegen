@@ -450,12 +450,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "claimed_urls",
-            "return": "URL",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "commerce_eligibility",
             "return": "PageCommerceEligibility",
             "params": []
@@ -1449,94 +1443,6 @@
             "endpoint": "instagram_accounts",
             "return": "InstagramUser",
             "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "instant_articles",
-            "return": "InstantArticle",
-            "params": [
-                {
-                    "name": "development_mode",
-                    "required": false,
-                    "type": "bool"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "instant_articles",
-            "return": "InstantArticle",
-            "params": [
-                {
-                    "name": "development_mode",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "html_source",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "published",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "take_live",
-                    "required": false,
-                    "type": "bool"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "instant_articles_insights",
-            "return": "InstantArticleInsightsQueryResult",
-            "params": [
-                {
-                    "name": "breakdown",
-                    "required": false,
-                    "type": "pageinstant_articles_insights_breakdown_enum_param"
-                },
-                {
-                    "name": "metric",
-                    "required": true,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "period",
-                    "required": true,
-                    "type": "pageinstant_articles_insights_period_enum_param"
-                },
-                {
-                    "name": "since",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "until",
-                    "required": false,
-                    "type": "datetime"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "instant_articles_publish",
-            "return": "Page",
-            "params": [
-                {
-                    "name": "canonical_url",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "publish_status",
-                    "required": true,
-                    "type": "pageinstant_articles_publish_publish_status_enum_param"
-                }
-            ]
         },
         {
             "method": "GET",
@@ -3906,11 +3812,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "instant_articles_submit_for_review",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "is_always_open",
                     "required": false,
                     "type": "bool"
@@ -4300,10 +4201,6 @@
             "type": "IGUser"
         },
         {
-            "name": "instant_articles_review_status",
-            "type": "string"
-        },
-        {
             "name": "is_always_open",
             "type": "bool"
         },
@@ -4593,10 +4490,6 @@
         },
         {
             "name": "supports_donate_button_in_live_video",
-            "type": "bool"
-        },
-        {
-            "name": "supports_instant_articles",
             "type": "bool"
         },
         {

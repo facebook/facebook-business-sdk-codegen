@@ -2312,6 +2312,10 @@
             "type": "string"
         },
         {
+            "name": "community",
+            "type": "Group"
+        },
+        {
             "name": "cover",
             "type": "UserCoverPhoto"
         },
