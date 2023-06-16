@@ -1,0 +1,104 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "JobOpening",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "address",
+            "type": "string"
+        },
+        {
+            "name": "application_callback_url",
+            "type": "string"
+        },
+        {
+            "name": "created_time",
+            "type": "datetime"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "errors",
+            "type": "list<string>"
+        },
+        {
+            "name": "external_company_facebook_url",
+            "type": "string"
+        },
+        {
+            "name": "external_company_full_address",
+            "type": "string"
+        },
+        {
+            "name": "external_company_id",
+            "type": "string"
+        },
+        {
+            "name": "external_company_name",
+            "type": "string"
+        },
+        {
+            "name": "external_id",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "job_status",
+            "type": "JobOpening_job_status"
+        },
+        {
+            "name": "latitude",
+            "type": "float"
+        },
+        {
+            "name": "longitude",
+            "type": "float"
+        },
+        {
+            "name": "offsite_application_url",
+            "type": "string"
+        },
+        {
+            "name": "page",
+            "type": "Page"
+        },
+        {
+            "name": "photo",
+            "type": "Photo"
+        },
+        {
+            "name": "platform_review_status",
+            "type": "JobOpening_platform_review_status"
+        },
+        {
+            "name": "post",
+            "type": "Post"
+        },
+        {
+            "name": "remote_type",
+            "type": "string"
+        },
+        {
+            "name": "review_rejection_reasons",
+            "type": "list<JobOpening_review_rejection_reasons>"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "type",
+            "type": "JobOpening_type"
+        }
+    ]
+}

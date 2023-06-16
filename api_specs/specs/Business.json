@@ -186,6 +186,18 @@
         },
         {
             "method": "POST",
+            "endpoint": "add_phone_numbers",
+            "return": "Business",
+            "params": [
+                {
+                    "name": "phone_number",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
             "endpoint": "adnetwork_applications",
             "return": "Application",
             "params": [
@@ -311,6 +323,24 @@
                     "type": "list<string>"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "ads_reporting_mmm_reports",
+            "return": "AdsReportBuilderMMMReport",
+            "params": [
+                {
+                    "name": "filtering",
+                    "required": false,
+                    "type": "list<map>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "ads_reporting_mmm_schedulers",
+            "return": "AdsReportBuilderMMMReportScheduler",
+            "params": []
         },
         {
             "method": "GET",
@@ -459,6 +489,12 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "businessprojects",
+            "return": "BusinessProject",
+            "params": []
+        },
+        {
             "method": "POST",
             "endpoint": "claim_custom_conversions",
             "return": "CustomConversion",
@@ -474,7 +510,13 @@
             "method": "GET",
             "endpoint": "client_ad_accounts",
             "return": "AdAccount",
-            "params": []
+            "params": [
+                {
+                    "name": "search_query",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -632,43 +674,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "content_delivery_report",
-            "return": "ContentDeliveryReport",
-            "params": [
-                {
-                    "name": "end_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "page_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "platform",
-                    "required": true,
-                    "type": "businesscontent_delivery_report_platform_enum_param"
-                },
-                {
-                    "name": "position",
-                    "required": true,
-                    "type": "businesscontent_delivery_report_position_enum_param"
-                },
-                {
-                    "name": "start_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "summary",
-                    "required": false,
-                    "type": "bool"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "cpas_business_setup_config",
             "return": "CPASBusinessSetupConfig",
             "params": []
@@ -705,28 +710,6 @@
             "endpoint": "cpas_merchant_config",
             "return": "CPASMerchantConfig",
             "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "create_and_apply_publisher_block_list",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "is_auto_blocking_on",
-                    "required": true,
-                    "type": "bool"
-                },
-                {
-                    "name": "name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "publisher_urls",
-                    "required": true,
-                    "type": "list<string>"
-                }
-            ]
         },
         {
             "method": "GET",
@@ -983,6 +966,23 @@
             ]
         },
         {
+            "method": "DELETE",
+            "endpoint": "managed_partner_businesses",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "child_business_external_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "child_business_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "POST",
             "endpoint": "managed_partner_businesses",
             "return": "Object",
@@ -1085,28 +1085,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "managed_partner_child_business_assets",
-            "return": "Business",
-            "params": [
-                {
-                    "name": "child_business_id",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "credit_limit",
-                    "required": true,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "line_of_credit_id",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "negative_keyword_lists",
             "return": "NegativeKeywordList",
@@ -1152,9 +1130,58 @@
         },
         {
             "method": "GET",
+            "endpoint": "openbridge_configurations",
+            "return": "OpenBridgeConfiguration",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "openbridge_configurations",
+            "return": "OpenBridgeConfiguration",
+            "params": [
+                {
+                    "name": "access_key",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "active",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "endpoint",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "host_business_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "host_external_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "pixel_id",
+                    "required": true,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "owned_ad_accounts",
             "return": "AdAccount",
-            "params": []
+            "params": [
+                {
+                    "name": "search_query",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
         },
         {
             "method": "POST",
@@ -1395,6 +1422,43 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "partner_premium_options",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "catalog_segment_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "enable_basket_insight",
+                    "required": true,
+                    "type": "bool"
+                },
+                {
+                    "name": "enable_extended_audience_retargeting",
+                    "required": true,
+                    "type": "bool"
+                },
+                {
+                    "name": "partner_business_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "retailer_custom_audience_config",
+                    "required": true,
+                    "type": "map"
+                },
+                {
+                    "name": "vendor_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "pending_client_ad_accounts",
             "return": "BusinessAdAccountRequest",
@@ -1482,6 +1546,23 @@
         },
         {
             "method": "GET",
+            "endpoint": "preverified_numbers",
+            "return": "WhatsAppBusinessPreVerifiedPhoneNumber",
+            "params": [
+                {
+                    "name": "code_verification_status",
+                    "required": false,
+                    "type": "businesspreverified_numbers_code_verification_status_enum_param"
+                },
+                {
+                    "name": "phone_number",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "received_audience_sharing_requests",
             "return": "BusinessAssetSharingAgreement",
             "params": [
@@ -1494,6 +1575,38 @@
                     "name": "request_status",
                     "required": false,
                     "type": "businessreceived_audience_sharing_requests_request_status_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "setup_managed_partner_adaccounts",
+            "return": "Business",
+            "params": [
+                {
+                    "name": "credit_line_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "marketplace_business_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "subvertical_v2",
+                    "required": true,
+                    "type": "businesssetup_managed_partner_adaccounts_subvertical_v2_enum_param"
+                },
+                {
+                    "name": "vendor_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "vertical_v2",
+                    "required": true,
+                    "type": "businesssetup_managed_partner_adaccounts_vertical_v2_enum_param"
                 }
             ]
         },
@@ -1582,6 +1695,10 @@
         {
             "name": "collaborative_ads_managed_partner_eligibility",
             "type": "BusinessManagedPartnerEligibility"
+        },
+        {
+            "name": "collaborative_ads_partner_premium_options",
+            "type": "BusinessPartnerPremiumOptions"
         },
         {
             "name": "created_by",

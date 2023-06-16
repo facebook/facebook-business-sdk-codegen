@@ -82,6 +82,10 @@
             "type": "Shop"
         },
         {
+            "name": "owner_business",
+            "type": "Business"
+        },
+        {
             "name": "profile_pic",
             "type": "string"
         },

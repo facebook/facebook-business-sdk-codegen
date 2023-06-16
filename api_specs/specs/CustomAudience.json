@@ -284,6 +284,11 @@
                     "name": "tags",
                     "required": false,
                     "type": "list<string>"
+                },
+                {
+                    "name": "use_in_campaigns",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         }
@@ -380,6 +385,10 @@
         {
             "name": "opt_out_link",
             "type": "string"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
         },
         {
             "name": "page_deletion_marked_delete_time",

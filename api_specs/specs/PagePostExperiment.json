@@ -34,7 +34,7 @@
         },
         {
             "name": "insight_snapshots",
-            "type": "map<datetime, map<int, Object>>"
+            "type": "list<map<datetime, list<map<int, Object>>>>"
         },
         {
             "name": "name",

@@ -41,9 +41,19 @@
             "return": "InstagramInsightsResult",
             "params": [
                 {
+                    "name": "breakdown",
+                    "required": false,
+                    "type": "list<shadowiguserinsights_breakdown_enum_param>"
+                },
+                {
                     "name": "metric",
                     "required": true,
                     "type": "list<shadowiguserinsights_metric_enum_param>"
+                },
+                {
+                    "name": "metric_type",
+                    "required": false,
+                    "type": "shadowiguserinsights_metric_type_enum_param"
                 },
                 {
                     "name": "period",
@@ -54,6 +64,11 @@
                     "name": "since",
                     "required": false,
                     "type": "datetime"
+                },
+                {
+                    "name": "timeframe",
+                    "required": false,
+                    "type": "shadowiguserinsights_timeframe_enum_param"
                 },
                 {
                     "name": "until",
@@ -102,6 +117,11 @@
             "return": "IGMedia",
             "params": [
                 {
+                    "name": "audio_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "caption",
                     "required": false,
                     "type": "string"
@@ -110,6 +130,11 @@
                     "name": "children",
                     "required": false,
                     "type": "list<string>"
+                },
+                {
+                    "name": "cover_url",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "image_url",
@@ -191,6 +216,12 @@
                     "type": "string"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "notification_message_tokens",
+            "return": "UserPageOneTimeOptInTokenSettings",
+            "params": []
         },
         {
             "method": "GET",
@@ -292,6 +323,10 @@
         {
             "name": "name",
             "type": "string"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
         },
         {
             "name": "profile_picture_url",

@@ -29,10 +29,6 @@
             "type": "string"
         },
         {
-            "name": "extra_info",
-            "type": "string"
-        },
-        {
             "name": "id",
             "type": "string"
         },
@@ -43,6 +39,10 @@
         {
             "name": "operation_status",
             "type": "CustomAudienceStatus"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
         },
         {
             "name": "page_deletion_marked_delete_time",

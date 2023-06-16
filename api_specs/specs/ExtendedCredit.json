@@ -125,6 +125,10 @@
             "type": "string"
         },
         {
+            "name": "liable_address",
+            "type": "CRMAddress"
+        },
+        {
             "name": "liable_biz_name",
             "type": "string"
         },
@@ -153,8 +157,16 @@
             "type": "ExtendedCreditAllocationConfig"
         },
         {
+            "name": "send_bill_to_address",
+            "type": "CRMAddress"
+        },
+        {
             "name": "send_bill_to_biz_name",
             "type": "string"
+        },
+        {
+            "name": "sold_to_address",
+            "type": "CRMAddress"
         }
     ]
 }

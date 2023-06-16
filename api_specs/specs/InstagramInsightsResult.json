@@ -22,6 +22,10 @@
             "type": "string"
         },
         {
+            "name": "total_value",
+            "type": "Object"
+        },
+        {
             "name": "values",
             "type": "list<InstagramInsightsValue>"
         }

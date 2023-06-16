@@ -326,6 +326,10 @@
             "type": "string"
         },
         {
+            "name": "targeting_relaxation_types",
+            "type": "TargetingRelaxation"
+        },
+        {
             "name": "user_adclusters",
             "type": "list<IDName>"
         },

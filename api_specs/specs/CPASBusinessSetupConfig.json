@@ -11,38 +11,6 @@
             "method": "GET",
             "return": "CPASBusinessSetupConfig",
             "params": []
-        },
-        {
-            "name": "#update",
-            "method": "POST",
-            "return": "CPASBusinessSetupConfig",
-            "params": [
-                {
-                    "name": "accepted_collab_ads_tos",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "ad_accounts",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "business",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "business_capabilities_status",
-                    "required": false,
-                    "type": "map"
-                },
-                {
-                    "name": "capabilities_compliance_status",
-                    "required": false,
-                    "type": "map"
-                }
-            ]
         }
     ],
     "fields": [
@@ -56,11 +24,11 @@
         },
         {
             "name": "business_capabilities_status",
-            "type": "map<string, string>"
+            "type": "list<map<string, string>>"
         },
         {
             "name": "capabilities_compliance_status",
-            "type": "map<string, Object>"
+            "type": "list<map<string, Object>>"
         },
         {
             "name": "id",

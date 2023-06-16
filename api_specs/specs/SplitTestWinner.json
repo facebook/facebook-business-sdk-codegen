@@ -7,7 +7,7 @@
         },
         {
             "name": "confidences",
-            "type": "map<string, float>"
+            "type": "list<map<string, float>>"
         },
         {
             "name": "winner_ad_object_id",

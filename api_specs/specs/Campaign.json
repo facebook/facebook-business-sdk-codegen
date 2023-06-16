@@ -91,43 +91,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "content_delivery_report",
-            "return": "ContentDeliveryReport",
-            "params": [
-                {
-                    "name": "end_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "page_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "platform",
-                    "required": true,
-                    "type": "adcampaigngroupcontent_delivery_report_platform_enum_param"
-                },
-                {
-                    "name": "position",
-                    "required": true,
-                    "type": "adcampaigngroupcontent_delivery_report_position_enum_param"
-                },
-                {
-                    "name": "start_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "summary",
-                    "required": false,
-                    "type": "bool"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "copies",
             "return": "Campaign",
             "params": [
@@ -556,11 +519,6 @@
                     "name": "stop_time",
                     "required": false,
                     "type": "datetime"
-                },
-                {
-                    "name": "upstream_events",
-                    "required": false,
-                    "type": "map"
                 }
             ]
         }
@@ -568,14 +526,6 @@
     "fields": [
         {
             "name": "account_id",
-            "type": "string"
-        },
-        {
-            "name": "ad_strategy_group_id",
-            "type": "string"
-        },
-        {
-            "name": "ad_strategy_id",
             "type": "string"
         },
         {
@@ -631,6 +581,10 @@
             "type": "Campaign_effective_status"
         },
         {
+            "name": "has_secondary_skadnetwork_reporting",
+            "type": "bool"
+        },
+        {
             "name": "id",
             "type": "string"
         },
@@ -661,6 +615,10 @@
         {
             "name": "pacing_type",
             "type": "list<string>"
+        },
+        {
+            "name": "primary_attribution",
+            "type": "string"
         },
         {
             "name": "promoted_object",

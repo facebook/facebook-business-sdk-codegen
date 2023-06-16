@@ -29,6 +29,11 @@
                     "type": "adcreativepreviews_ad_format_enum_param"
                 },
                 {
+                    "name": "creative_feature",
+                    "required": false,
+                    "type": "adcreativepreviews_creative_feature_enum_param"
+                },
+                {
                     "name": "dynamic_asset_label",
                     "required": false,
                     "type": "string"
@@ -196,6 +201,10 @@
             "type": "string"
         },
         {
+            "name": "branded_content",
+            "type": "AdCreativeBrandedContentAds"
+        },
+        {
             "name": "branded_content_sponsor_page_id",
             "type": "string"
         },
@@ -218,6 +227,10 @@
         {
             "name": "collaborative_ads_lsb_image_bank_id",
             "type": "string"
+        },
+        {
+            "name": "degrees_of_freedom_spec",
+            "type": "AdCreativeDegreesOfFreedomSpec"
         },
         {
             "name": "destination_set_id",
@@ -252,6 +265,10 @@
             "type": "bool"
         },
         {
+            "name": "facebook_branded_content",
+            "type": "AdCreativeFacebookBrandedContent"
+        },
+        {
             "name": "id",
             "type": "string"
         },
@@ -270,6 +287,10 @@
         {
             "name": "instagram_actor_id",
             "type": "string"
+        },
+        {
+            "name": "instagram_branded_content",
+            "type": "AdCreativeInstagramBrandedContent"
         },
         {
             "name": "instagram_permalink_url",

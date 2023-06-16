@@ -11,63 +11,6 @@
             "method": "GET",
             "return": "HotelRoom",
             "params": []
-        },
-        {
-            "name": "#update",
-            "method": "POST",
-            "return": "HotelRoom",
-            "params": [
-                {
-                    "name": "applinks",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "base_price",
-                    "required": false,
-                    "type": "float"
-                },
-                {
-                    "name": "currency",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "description",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "images",
-                    "required": false,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "margin_level",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "pricing_variables",
-                    "required": false,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "sale_price",
-                    "required": false,
-                    "type": "float"
-                },
-                {
-                    "name": "url",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
         }
     ],
     "fields": [

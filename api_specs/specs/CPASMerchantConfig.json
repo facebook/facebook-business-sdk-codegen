@@ -18,7 +18,7 @@
         },
         {
             "name": "business_outcomes_status",
-            "type": "map<string, string>"
+            "type": "list<map<string, string>>"
         },
         {
             "name": "id",
@@ -30,7 +30,7 @@
         },
         {
             "name": "outcomes_compliance_status",
-            "type": "map<string, Object>"
+            "type": "list<map<string, Object>>"
         },
         {
             "name": "qualified_to_onboard",

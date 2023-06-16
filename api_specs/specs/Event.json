@@ -74,11 +74,6 @@
                     "type": "unsigned int"
                 },
                 {
-                    "name": "planned_start_time",
-                    "required": false,
-                    "type": "int"
-                },
-                {
                     "name": "privacy",
                     "required": false,
                     "type": "string"
@@ -273,6 +268,10 @@
         {
             "name": "place",
             "type": "Place"
+        },
+        {
+            "name": "registration_setting",
+            "type": "Object"
         },
         {
             "name": "scheduled_publish_time",

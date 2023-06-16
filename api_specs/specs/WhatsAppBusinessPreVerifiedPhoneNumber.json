@@ -1,0 +1,67 @@
+{
+    "apis": [
+        {
+            "method": "POST",
+            "endpoint": "request_code",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "code_method",
+                    "required": true,
+                    "type": "whatsappbusinesspreverifiedphonenumberrequest_code_code_method_enum_param"
+                },
+                {
+                    "name": "language",
+                    "required": true,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "verify_code",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "code",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "WhatsAppBusinessPreVerifiedPhoneNumber",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "code_verification_status",
+            "type": "string"
+        },
+        {
+            "name": "code_verification_time",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "phone_number",
+            "type": "string"
+        },
+        {
+            "name": "verification_expiry_time",
+            "type": "datetime"
+        }
+    ]
+}

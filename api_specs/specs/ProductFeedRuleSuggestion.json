@@ -7,7 +7,7 @@
         },
         {
             "name": "params",
-            "type": "map<string, string>"
+            "type": "list<map<string, string>>"
         },
         {
             "name": "type",

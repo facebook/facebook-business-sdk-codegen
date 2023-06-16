@@ -22,7 +22,13 @@
             "method": "GET",
             "endpoint": "assigned_pages",
             "return": "Page",
-            "params": []
+            "params": [
+                {
+                    "name": "pages",
+                    "required": false,
+                    "type": "list<unsigned int>"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -89,6 +95,10 @@
         {
             "name": "business",
             "type": "Business"
+        },
+        {
+            "name": "business_role_request",
+            "type": "BusinessRoleRequest"
         },
         {
             "name": "email",

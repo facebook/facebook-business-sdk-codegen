@@ -127,6 +127,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "campaign_ids",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "click_id",
                     "required": false,
                     "type": "string"
@@ -389,6 +394,23 @@
         },
         {
             "method": "GET",
+            "endpoint": "aem_attribution",
+            "return": "AEMAttribution",
+            "params": [
+                {
+                    "name": "advertiser_ids",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "fb_content_data",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "aem_conversion_configs",
             "return": "AEMConversionConfig",
             "params": [
@@ -444,9 +466,19 @@
                     "type": "bool"
                 },
                 {
+                    "name": "is_app_aem_ready",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "is_skan_ready",
                     "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "message",
+                    "required": false,
+                    "type": "string"
                 }
             ]
         },
@@ -487,6 +519,12 @@
             "method": "GET",
             "endpoint": "android_dialog_configs",
             "return": "ApplicationDialogConfig",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "app_capi_settings",
+            "return": "ApplicationAppCapiSetting",
             "params": []
         },
         {
@@ -624,18 +662,6 @@
             ]
         },
         {
-            "method": "DELETE",
-            "endpoint": "banned",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "uids",
-                    "required": true,
-                    "type": "list<int>"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "button_auto_detection_device_selection",
             "return": "ButtonAutoDetectionDeviceSelection",
@@ -721,131 +747,16 @@
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "insights_push_schedule",
-            "return": "AdsInsightsPushSchedule",
-            "params": [
-                {
-                    "name": "ad_account_ids",
-                    "required": true,
-                    "type": "list"
-                },
-                {
-                    "name": "breakdowns",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "date_preset",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "level",
-                    "required": false,
-                    "type": "applicationinsights_push_schedule_level_enum_param"
-                },
-                {
-                    "name": "metrics",
-                    "required": true,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "object_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "owner_id",
-                    "required": false,
-                    "type": "int"
-                },
-                {
-                    "name": "schedule",
-                    "required": true,
-                    "type": "applicationinsights_push_schedule_schedule_enum_param"
-                },
-                {
-                    "name": "status",
-                    "required": false,
-                    "type": "applicationinsights_push_schedule_status_enum_param"
-                },
-                {
-                    "name": "time_increment",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "time_start",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "time_stop",
-                    "required": true,
-                    "type": "datetime"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "ios_dialog_configs",
             "return": "ApplicationDialogConfig",
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "leaderboards_create",
-            "return": "Application",
-            "params": [
-                {
-                    "name": "context_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "decimal_offset",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "name",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "score_type",
-                    "required": true,
-                    "type": "applicationleaderboards_create_score_type_enum_param"
-                },
-                {
-                    "name": "sort_order",
-                    "required": true,
-                    "type": "applicationleaderboards_create_sort_order_enum_param"
-                },
-                {
-                    "name": "unit",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "leaderboards_delete_entry",
-            "return": "Application",
-            "params": [
-                {
-                    "name": "name",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "player_id",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
+            "method": "GET",
+            "endpoint": "linked_dataset",
+            "return": "AdsDataset",
+            "params": []
         },
         {
             "method": "POST",
@@ -918,6 +829,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "used_install_referrer",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "view_attr_window",
                     "required": false,
                     "type": "unsigned int"
@@ -957,6 +873,12 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "monetized_digital_store_objects",
+            "return": "MonetizedDigitalStoreObject",
+            "params": []
+        },
+        {
             "method": "POST",
             "endpoint": "monetized_digital_store_objects",
             "return": "MonetizedDigitalStoreObject",
@@ -972,6 +894,12 @@
                     "type": "string"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "object_types",
+            "return": "NullNode",
+            "params": []
         },
         {
             "method": "POST",
@@ -1223,23 +1151,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "user_properties",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "data",
-                    "required": true,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "limited_data_use",
-                    "required": false,
-                    "type": "bool"
-                }
-            ]
-        },
-        {
             "name": "#get",
             "method": "GET",
             "return": "Application",
@@ -1265,26 +1176,6 @@
                     "name": "an_platforms",
                     "required": false,
                     "type": "list<application_an_platforms>"
-                },
-                {
-                    "name": "android_class_name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "android_key_hashes",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "android_package_name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "android_sso",
-                    "required": false,
-                    "type": "bool"
                 },
                 {
                     "name": "app_domains",
@@ -1365,11 +1256,6 @@
                     "name": "deauth_callback_url",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "ios_bundle_id",
-                    "required": false,
-                    "type": "list<string>"
                 },
                 {
                     "name": "mobile_web_url",
@@ -1541,6 +1427,10 @@
             "type": "bool"
         },
         {
+            "name": "business",
+            "type": "Business"
+        },
+        {
             "name": "canvas_fluid_height",
             "type": "bool"
         },
@@ -1681,10 +1571,6 @@
             "type": "string"
         },
         {
-            "name": "login_secret",
-            "type": "string"
-        },
-        {
             "name": "logo_url",
             "type": "string"
         },
@@ -1719,6 +1605,10 @@
         {
             "name": "object_store_urls",
             "type": "Object"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
         },
         {
             "name": "page_tab_default_name",

@@ -97,39 +97,37 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "events",
-            "return": "Object",
+            "method": "GET",
+            "endpoint": "server_events_permitted_business",
+            "return": "Business",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "shared_accounts",
+            "return": "AdAccount",
             "params": [
                 {
-                    "name": "data",
+                    "name": "action_source",
                     "required": true,
-                    "type": "list<string>"
+                    "type": "offlineconversiondatasetshared_accounts_action_source_enum_param"
                 },
                 {
-                    "name": "namespace_id",
-                    "required": false,
+                    "name": "business",
+                    "required": true,
                     "type": "string"
-                },
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "shared_agencies",
+            "return": "Business",
+            "params": [
                 {
-                    "name": "progress",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "upload_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "upload_source",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "upload_tag",
-                    "required": false,
-                    "type": "string"
+                    "name": "action_source",
+                    "required": true,
+                    "type": "offlineconversiondatasetshared_agencies_action_source_enum_param"
                 }
             ]
         },
@@ -273,8 +271,16 @@
     ],
     "fields": [
         {
+            "name": "automatic_matching_fields",
+            "type": "list<string>"
+        },
+        {
             "name": "business",
             "type": "Business"
+        },
+        {
+            "name": "can_proxy",
+            "type": "bool"
         },
         {
             "name": "config",
@@ -283,6 +289,14 @@
         {
             "name": "creation_time",
             "type": "datetime"
+        },
+        {
+            "name": "creator",
+            "type": "User"
+        },
+        {
+            "name": "data_use_setting",
+            "type": "string"
         },
         {
             "name": "description",
@@ -294,6 +308,10 @@
         },
         {
             "name": "enable_auto_assign_to_accounts",
+            "type": "bool"
+        },
+        {
+            "name": "enable_automatic_matching",
             "type": "bool"
         },
         {
@@ -309,8 +327,24 @@
             "type": "int"
         },
         {
+            "name": "first_party_cookie_status",
+            "type": "string"
+        },
+        {
             "name": "id",
             "type": "string"
+        },
+        {
+            "name": "is_consolidated_container",
+            "type": "bool"
+        },
+        {
+            "name": "is_created_by_business",
+            "type": "bool"
+        },
+        {
+            "name": "is_crm",
+            "type": "bool"
         },
         {
             "name": "is_mta_use",
@@ -323,6 +357,10 @@
         {
             "name": "is_unavailable",
             "type": "bool"
+        },
+        {
+            "name": "last_fired_time",
+            "type": "datetime"
         },
         {
             "name": "last_upload_app",
@@ -343,6 +381,14 @@
         {
             "name": "name",
             "type": "string"
+        },
+        {
+            "name": "owner_ad_account",
+            "type": "AdAccount"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
         },
         {
             "name": "usage",

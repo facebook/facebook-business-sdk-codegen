@@ -85,6 +85,23 @@
         },
         {
             "method": "GET",
+            "endpoint": "onsite_conversion_events",
+            "return": "CommerceOnsiteConversionEvent",
+            "params": [
+                {
+                    "name": "created_after",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "created_before",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "order_management_apps",
             "return": "Application",
             "params": []
@@ -127,6 +144,12 @@
                     "type": "list<commercemerchantsettingsreturns_statuses_enum_param>"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "seller_issues",
+            "return": "CommerceAPISellerIssue",
+            "params": []
         },
         {
             "method": "GET",
@@ -298,7 +321,7 @@
         },
         {
             "name": "privacy_url_by_locale",
-            "type": "map<string, string>"
+            "type": "list<map<string, string>>"
         },
         {
             "name": "review_rejection_messages",
@@ -318,7 +341,7 @@
         },
         {
             "name": "terms_url_by_locale",
-            "type": "map<string, string>"
+            "type": "list<map<string, string>>"
         },
         {
             "name": "whatsapp_channel",

@@ -43,9 +43,20 @@
         },
         {
             "method": "GET",
+            "endpoint": "audiences",
+            "return": "WhatsAppBusinessAudience",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "conversation_analytics",
             "return": "WABAConversationAnalytics",
             "params": [
+                {
+                    "name": "conversation_categories",
+                    "required": false,
+                    "type": "list<whatsappbusinessaccountconversation_analytics_conversation_categories_enum_param>"
+                },
                 {
                     "name": "conversation_directions",
                     "required": false,
@@ -94,10 +105,27 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "extensions",
+            "return": "WhatsAppExtension",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "message_campaigns",
+            "return": "WhatsAppBusinessCampaign",
+            "params": []
+        },
+        {
             "method": "DELETE",
             "endpoint": "message_templates",
             "return": "Object",
             "params": [
+                {
+                    "name": "hsm_id",
+                    "required": false,
+                    "type": "string"
+                },
                 {
                     "name": "name",
                     "required": true,
@@ -153,6 +181,11 @@
             "return": "WhatsAppBusinessAccount",
             "params": [
                 {
+                    "name": "allow_category_change",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "category",
                     "required": true,
                     "type": "whatsappbusinessaccountmessage_templates_category_enum_param"
@@ -161,6 +194,11 @@
                     "name": "components",
                     "required": true,
                     "type": "list<map>"
+                },
+                {
+                    "name": "cta_url_link_tracking_opted_out",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "language",
@@ -199,6 +237,11 @@
                     "name": "phone_number",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "verified_name",
+                    "required": false,
+                    "type": "string"
                 }
             ]
         },
@@ -231,6 +274,12 @@
                     "type": "string"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "schedules",
+            "return": "WhatsAppBusinessCampaignSchedule",
+            "params": []
         },
         {
             "method": "DELETE",
@@ -248,7 +297,35 @@
             "method": "POST",
             "endpoint": "subscribed_apps",
             "return": "WhatsAppBusinessAccount",
-            "params": []
+            "params": [
+                {
+                    "name": "override_callback_uri",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "verify_token",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "template_performance_metrics",
+            "return": "WhatsAppBusinessHSMWhatsAppBusinessPerformanceMetrics",
+            "params": [
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "template_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
         },
         {
             "name": "#get",
@@ -265,6 +342,14 @@
         {
             "name": "analytics",
             "type": "Object"
+        },
+        {
+            "name": "business_verification_status",
+            "type": "string"
+        },
+        {
+            "name": "country",
+            "type": "string"
         },
         {
             "name": "creation_time",
@@ -291,8 +376,16 @@
             "type": "Object"
         },
         {
+            "name": "owner_business",
+            "type": "Business"
+        },
+        {
             "name": "owner_business_info",
             "type": "Object"
+        },
+        {
+            "name": "ownership_type",
+            "type": "string"
         },
         {
             "name": "primary_funding_id",

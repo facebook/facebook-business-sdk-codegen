@@ -25,6 +25,11 @@
                     "name": "scope",
                     "required": false,
                     "type": "list<Permission>"
+                },
+                {
+                    "name": "set_token_expires_in_60_days",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         },
@@ -48,7 +53,7 @@
         {
             "method": "POST",
             "endpoint": "accounts",
-            "return": "Page",
+            "return": "Object",
             "params": [
                 {
                     "name": "about",
@@ -263,12 +268,24 @@
             "method": "GET",
             "endpoint": "assigned_pages",
             "return": "Page",
-            "params": []
+            "params": [
+                {
+                    "name": "pages",
+                    "required": false,
+                    "type": "list<unsigned int>"
+                }
+            ]
         },
         {
             "method": "GET",
             "endpoint": "assigned_product_catalogs",
             "return": "ProductCatalog",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "avatars",
+            "return": "Avatar",
             "params": []
         },
         {
@@ -1278,11 +1295,6 @@
                     "type": "unsigned int"
                 },
                 {
-                    "name": "planned_start_time",
-                    "required": false,
-                    "type": "int"
-                },
-                {
                     "name": "privacy",
                     "required": false,
                     "type": "string"
@@ -1335,6 +1347,12 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "messenger_desktop_performance_traces",
+            "return": "User",
+            "params": []
+        },
+        {
             "method": "GET",
             "endpoint": "music",
             "return": "Page",
@@ -1352,6 +1370,11 @@
             "return": "User",
             "params": [
                 {
+                    "name": "bot_message_payload_elements",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "filtering",
                     "required": false,
                     "type": "list<usernotifications_filtering_enum_param>"
@@ -1362,9 +1385,24 @@
                     "type": "Object"
                 },
                 {
+                    "name": "label",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "message",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "notif_ids",
                     "required": false,
                     "type": "list<string>"
+                },
+                {
+                    "name": "payload",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "read",
@@ -1375,6 +1413,11 @@
                     "name": "ref",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "schedule_interval",
+                    "required": false,
+                    "type": "unsigned int"
                 },
                 {
                     "name": "seen",
@@ -1737,24 +1780,6 @@
                     "name": "width",
                     "required": false,
                     "type": "int"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "pioneer_data",
-            "return": "PioneerRemotePersistence",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "pioneer_data",
-            "return": "PioneerRemotePersistence",
-            "params": [
-                {
-                    "name": "json_data",
-                    "required": false,
-                    "type": "string"
                 }
             ]
         },
@@ -2287,6 +2312,10 @@
             "type": "string"
         },
         {
+            "name": "community",
+            "type": "Group"
+        },
+        {
             "name": "cover",
             "type": "UserCoverPhoto"
         },
@@ -2324,6 +2353,10 @@
         },
         {
             "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "id_for_avatars",
             "type": "string"
         },
         {
@@ -2408,7 +2441,7 @@
         },
         {
             "name": "shared_login_upgrade_required_by",
-            "type": "datetime"
+            "type": "Object"
         },
         {
             "name": "short_name",

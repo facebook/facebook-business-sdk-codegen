@@ -66,6 +66,10 @@
             "type": "bool"
         },
         {
+            "name": "bill_to_address",
+            "type": "CRMAddress"
+        },
+        {
             "name": "customer_po_number",
             "type": "string"
         },
@@ -82,8 +86,16 @@
             "type": "string"
         },
         {
+            "name": "liable_address",
+            "type": "CRMAddress"
+        },
+        {
             "name": "name",
             "type": "string"
+        },
+        {
+            "name": "sold_to_address",
+            "type": "CRMAddress"
         }
     ]
 }

@@ -7,6 +7,38 @@
             "params": []
         },
         {
+            "method": "POST",
+            "endpoint": "checkpoint",
+            "return": "AdStudy",
+            "params": [
+                {
+                    "name": "checkpoint_data",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "checkpoint_name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "component",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "instance_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "run_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "instances",
             "return": "PrivateLiftStudyInstance",
@@ -21,6 +53,11 @@
                     "name": "breakdown_key",
                     "required": true,
                     "type": "map"
+                },
+                {
+                    "name": "run_id",
+                    "required": false,
+                    "type": "string"
                 }
             ]
         },
@@ -120,6 +157,10 @@
             "type": "datetime"
         },
         {
+            "name": "client_business",
+            "type": "Business"
+        },
+        {
             "name": "cooldown_start_time",
             "type": "datetime"
         },
@@ -144,6 +185,10 @@
             "type": "string"
         },
         {
+            "name": "measurement_contact",
+            "type": "User"
+        },
+        {
             "name": "name",
             "type": "string"
         },
@@ -154,6 +199,10 @@
         {
             "name": "results_first_available_date",
             "type": "string"
+        },
+        {
+            "name": "sales_contact",
+            "type": "User"
         },
         {
             "name": "start_time",

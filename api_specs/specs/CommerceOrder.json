@@ -35,7 +35,7 @@
             "params": [
                 {
                     "name": "cancel_reason",
-                    "required": true,
+                    "required": false,
                     "type": "map"
                 },
                 {

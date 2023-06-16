@@ -23,7 +23,7 @@
         },
         {
             "name": "targeting_optimization_types",
-            "type": "map<string, int>"
+            "type": "list<map<string, int>>"
         }
     ]
 }

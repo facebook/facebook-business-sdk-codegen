@@ -10,6 +10,10 @@
             "type": "Object"
         },
         {
+            "name": "app_product_page_id",
+            "type": "string"
+        },
+        {
             "name": "asset_customization_rules",
             "type": "list<AdAssetFeedSpecAssetCustomizationRule>"
         },
@@ -60,10 +64,6 @@
         {
             "name": "optimization_type",
             "type": "string"
-        },
-        {
-            "name": "posts",
-            "type": "list<Object>"
         },
         {
             "name": "titles",

@@ -13,6 +13,12 @@
             "params": []
         },
         {
+            "method": "GET",
+            "endpoint": "videos_metadata",
+            "return": "DynamicVideoMetadata",
+            "params": []
+        },
+        {
             "name": "#delete",
             "method": "DELETE",
             "return": "Object",
@@ -436,7 +442,7 @@
     "fields": [
         {
             "name": "additional_image_cdn_urls",
-            "type": "list<map<string, string>>"
+            "type": "list<list<map<string, string>>>"
         },
         {
             "name": "additional_image_urls",
@@ -444,7 +450,7 @@
         },
         {
             "name": "additional_variant_attributes",
-            "type": "map<string, string>"
+            "type": "list<map<string, string>>"
         },
         {
             "name": "age_group",
@@ -468,7 +474,7 @@
         },
         {
             "name": "capability_to_review_status",
-            "type": "map<Object, Object>"
+            "type": "list<map<Object, Object>>"
         },
         {
             "name": "category",
@@ -496,7 +502,7 @@
         },
         {
             "name": "custom_data",
-            "type": "map<string, string>"
+            "type": "list<map<string, string>>"
         },
         {
             "name": "custom_label_0",
@@ -568,7 +574,7 @@
         },
         {
             "name": "image_cdn_urls",
-            "type": "map<string, string>"
+            "type": "list<map<string, string>>"
         },
         {
             "name": "image_fetch_status",
@@ -637,6 +643,10 @@
         {
             "name": "pattern",
             "type": "string"
+        },
+        {
+            "name": "post_conversion_signal_based_enforcement_appeal_eligibility",
+            "type": "bool"
         },
         {
             "name": "price",

@@ -30,6 +30,24 @@
         },
         {
             "method": "GET",
+            "endpoint": "collaborators",
+            "return": "VideoCollaborators",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "collaborators",
+            "return": "AdVideo",
+            "params": [
+                {
+                    "name": "target_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "comments",
             "return": "Comment",
             "params": [
@@ -480,6 +498,10 @@
         {
             "name": "ad_breaks",
             "type": "list<int>"
+        },
+        {
+            "name": "admin_creator",
+            "type": "User"
         },
         {
             "name": "audio_isrc",

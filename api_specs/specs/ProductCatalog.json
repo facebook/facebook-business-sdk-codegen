@@ -134,18 +134,23 @@
                     "name": "requests",
                     "required": true,
                     "type": "list<map>"
+                },
+                {
+                    "name": "version",
+                    "required": false,
+                    "type": "unsigned int"
                 }
             ]
         },
         {
             "method": "POST",
-            "endpoint": "catalog_website_settings",
-            "return": "CatalogWebsiteSettings",
+            "endpoint": "catalog_store",
+            "return": "StoreCatalogSettings",
             "params": [
                 {
-                    "name": "is_allowed_to_crawl",
-                    "required": false,
-                    "type": "bool"
+                    "name": "page",
+                    "required": true,
+                    "type": "int"
                 }
             ]
         },
@@ -199,6 +204,12 @@
                     "type": "bool"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "collaborative_ads_event_stats",
+            "return": "CatalogSegmentAllMatchCountLaser",
+            "params": []
         },
         {
             "method": "GET",
@@ -615,6 +626,11 @@
                     "name": "requests",
                     "required": true,
                     "type": "map"
+                },
+                {
+                    "name": "version",
+                    "required": false,
+                    "type": "unsigned int"
                 }
             ]
         },
@@ -637,78 +653,11 @@
                     "name": "requests",
                     "required": true,
                     "type": "map"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "media_titles",
-            "return": "MediaTitle",
-            "params": [
-                {
-                    "name": "applinks",
-                    "required": false,
-                    "type": "Object"
                 },
                 {
-                    "name": "content_category",
-                    "required": false,
-                    "type": "productcatalogmedia_titles_content_category_enum_param"
-                },
-                {
-                    "name": "currency",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "description",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "fb_page_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "genres",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "images",
-                    "required": true,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "kg_fb_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "media_title_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "price",
+                    "name": "version",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "title",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "title_display_name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "url",
-                    "required": true,
-                    "type": "string"
                 }
             ]
         },
@@ -1652,12 +1601,28 @@
     ],
     "fields": [
         {
+            "name": "ad_account_to_collaborative_ads_share_settings",
+            "type": "CollaborativeAdsShareSettings"
+        },
+        {
+            "name": "agency_collaborative_ads_share_settings",
+            "type": "CollaborativeAdsShareSettings"
+        },
+        {
             "name": "business",
             "type": "Business"
         },
         {
+            "name": "catalog_store",
+            "type": "StoreCatalogSettings"
+        },
+        {
             "name": "commerce_merchant_settings",
             "type": "CommerceMerchantSettings"
+        },
+        {
+            "name": "creator_user",
+            "type": "User"
         },
         {
             "name": "da_display_settings",
@@ -1684,12 +1649,12 @@
             "type": "bool"
         },
         {
-            "name": "latest_feed_upload_session",
-            "type": "ProductFeedUpload"
-        },
-        {
             "name": "name",
             "type": "string"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
         },
         {
             "name": "product_count",

@@ -124,34 +124,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "featured_cards",
-            "return": "GroupHighlightThirdPartyUnit",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "featured_cards",
-            "return": "GroupHighlightThirdPartyUnit",
-            "params": [
-                {
-                    "name": "body",
-                    "required": true,
-                    "type": "map"
-                },
-                {
-                    "name": "description",
-                    "required": true,
-                    "type": "map"
-                },
-                {
-                    "name": "title",
-                    "required": true,
-                    "type": "map"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "feed",
             "return": "Post",
             "params": [
@@ -896,11 +868,6 @@
                     "type": "unsigned int"
                 },
                 {
-                    "name": "planned_start_time",
-                    "required": false,
-                    "type": "int"
-                },
-                {
                     "name": "privacy",
                     "required": false,
                     "type": "string"
@@ -1298,23 +1265,6 @@
                     "name": "width",
                     "required": false,
                     "type": "int"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "shift_settings",
-            "return": "WorkShiftManagementSettings",
-            "params": [
-                {
-                    "name": "external_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "shift_feature_setting",
-                    "required": true,
-                    "type": "groupshift_settings_shift_feature_setting_enum_param"
                 }
             ]
         },

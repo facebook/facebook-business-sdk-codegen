@@ -47,6 +47,10 @@
             "type": "CatalogItemAppLinks"
         },
         {
+            "name": "availability",
+            "type": "string"
+        },
+        {
             "name": "body_style",
             "type": "string"
         },
@@ -83,12 +87,28 @@
             "type": "string"
         },
         {
+            "name": "drivetrain",
+            "type": "string"
+        },
+        {
             "name": "end_date",
             "type": "string"
         },
         {
             "name": "end_time",
             "type": "int"
+        },
+        {
+            "name": "exterior_color",
+            "type": "string"
+        },
+        {
+            "name": "fuel_type",
+            "type": "string"
+        },
+        {
+            "name": "generation",
+            "type": "string"
         },
         {
             "name": "id",
@@ -101,6 +121,14 @@
         {
             "name": "images",
             "type": "list<string>"
+        },
+        {
+            "name": "interior_color",
+            "type": "string"
+        },
+        {
+            "name": "interior_upholstery",
+            "type": "string"
         },
         {
             "name": "make",
@@ -151,6 +179,10 @@
             "type": "string"
         },
         {
+            "name": "transmission",
+            "type": "string"
+        },
+        {
             "name": "trim",
             "type": "string"
         },
@@ -165,6 +197,10 @@
         {
             "name": "vehicle_offer_id",
             "type": "string"
+        },
+        {
+            "name": "visibility",
+            "type": "VehicleOffer_visibility"
         },
         {
             "name": "year",
