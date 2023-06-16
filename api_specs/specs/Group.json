@@ -1269,23 +1269,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "shift_settings",
-            "return": "WorkShiftManagementSettings",
-            "params": [
-                {
-                    "name": "external_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "shift_feature_setting",
-                    "required": true,
-                    "type": "groupshift_settings_shift_feature_setting_enum_param"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "videos",
             "return": "AdVideo",

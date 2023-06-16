@@ -14,6 +14,18 @@
             "type": "list<float>"
         },
         {
+            "name": "facebook_search",
+            "type": "list<float>"
+        },
+        {
+            "name": "fb_reels",
+            "type": "list<float>"
+        },
+        {
+            "name": "fb_reels_overlay",
+            "type": "list<float>"
+        },
+        {
             "name": "ig_android",
             "type": "list<float>"
         },

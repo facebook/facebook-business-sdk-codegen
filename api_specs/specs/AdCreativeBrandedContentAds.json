@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "ad_format",
+            "type": "int"
+        },
+        {
+            "name": "creator_ad_permission_type",
+            "type": "string"
+        },
+        {
+            "name": "instagram_boost_post_access_token",
+            "type": "string"
+        },
+        {
+            "name": "partners",
+            "type": "list<Object>"
+        },
+        {
+            "name": "ui_version",
+            "type": "int"
+        }
+    ]
+}

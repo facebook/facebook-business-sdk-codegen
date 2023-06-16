@@ -24,11 +24,11 @@
         },
         {
             "name": "business_capabilities_status",
-            "type": "map<string, string>"
+            "type": "list<map<string, string>>"
         },
         {
             "name": "capabilities_compliance_status",
-            "type": "map<string, Object>"
+            "type": "list<map<string, Object>>"
         },
         {
             "name": "id",

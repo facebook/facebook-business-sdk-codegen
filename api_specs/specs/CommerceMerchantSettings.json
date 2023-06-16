@@ -321,7 +321,7 @@
         },
         {
             "name": "privacy_url_by_locale",
-            "type": "map<string, string>"
+            "type": "list<map<string, string>>"
         },
         {
             "name": "review_rejection_messages",
@@ -341,7 +341,7 @@
         },
         {
             "name": "terms_url_by_locale",
-            "type": "map<string, string>"
+            "type": "list<map<string, string>>"
         },
         {
             "name": "whatsapp_channel",

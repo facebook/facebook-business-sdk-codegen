@@ -3,7 +3,7 @@
     "fields": [
         {
             "name": "child_metadata",
-            "type": "map<string, Object>"
+            "type": "list<map<string, Object>>"
         },
         {
             "name": "metadata",

@@ -584,6 +584,16 @@
                     "type": "adcampaign_destination_type"
                 },
                 {
+                    "name": "dsa_beneficiary",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "dsa_payor",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "end_time",
                     "required": false,
                     "type": "datetime"
@@ -702,11 +712,6 @@
                     "name": "tune_for_category",
                     "required": false,
                     "type": "adcampaign_tune_for_category"
-                },
-                {
-                    "name": "upstream_events",
-                    "required": false,
-                    "type": "map"
                 }
             ]
         }
@@ -798,6 +803,14 @@
         },
         {
             "name": "destination_type",
+            "type": "string"
+        },
+        {
+            "name": "dsa_beneficiary",
+            "type": "string"
+        },
+        {
+            "name": "dsa_payor",
             "type": "string"
         },
         {
@@ -918,7 +931,7 @@
         },
         {
             "name": "targeting_optimization_types",
-            "type": "map<string, int>"
+            "type": "list<map<string, int>>"
         },
         {
             "name": "time_based_ad_rotation_id_blocks",

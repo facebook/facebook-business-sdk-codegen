@@ -27,7 +27,7 @@
         },
         {
             "name": "tokens",
-            "type": "map<string, string>"
+            "type": "list<map<string, string>>"
         }
     ]
 }

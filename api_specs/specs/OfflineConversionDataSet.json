@@ -97,43 +97,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "events",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "data",
-                    "required": true,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "namespace_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "progress",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
-                    "name": "upload_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "upload_source",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "upload_tag",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "server_events_permitted_business",
             "return": "Business",

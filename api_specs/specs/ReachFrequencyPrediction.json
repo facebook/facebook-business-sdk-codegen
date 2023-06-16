@@ -78,7 +78,7 @@
         },
         {
             "name": "daily_impression_curve_map",
-            "type": "map<unsigned int, list<float>>"
+            "type": "list<map<unsigned int, list<float>>>"
         },
         {
             "name": "day_parting_schedule",
@@ -142,11 +142,11 @@
         },
         {
             "name": "frequency_distribution_map",
-            "type": "map<unsigned int, list<float>>"
+            "type": "list<map<unsigned int, list<float>>>"
         },
         {
             "name": "frequency_distribution_map_agg",
-            "type": "map<unsigned int, list<unsigned int>>"
+            "type": "list<map<unsigned int, list<unsigned int>>>"
         },
         {
             "name": "grp_audience_size",
@@ -278,7 +278,7 @@
         },
         {
             "name": "placement_breakdown_map",
-            "type": "map<unsigned int, ReachFrequencyEstimatesPlacementBreakdown>"
+            "type": "list<map<unsigned int, ReachFrequencyEstimatesPlacementBreakdown>>"
         },
         {
             "name": "plan_name",
