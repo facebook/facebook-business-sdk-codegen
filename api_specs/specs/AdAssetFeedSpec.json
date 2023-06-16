@@ -62,6 +62,10 @@
             "type": "list<AdAssetFeedSpecLinkURL>"
         },
         {
+            "name": "message_extensions",
+            "type": "list<AdAssetFeedSpecMessageExtension>"
+        },
+        {
             "name": "optimization_type",
             "type": "string"
         },
