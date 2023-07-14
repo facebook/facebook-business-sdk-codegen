@@ -63,14 +63,27 @@
         "is_file_param": true
       }
     },
+    "AdAccountDeliveryEstimate": {
+      "$.fields[?(@.name=='targeting_optimization_types')]": {
+        "targeting_optimization_types": true
+      }
+    },
     "AdSet": {
       "$.apis[?(@.method=='POST' && @.endpoint=='insights')]": {
         "return": "AdReportRun"
+      },
+      "$.fields[?(@.name=='targeting_optimization_types')]": {
+        "targeting_optimization_types": true
       }
     },
     "Campaign": {
       "$.apis[?(@.method=='POST' && @.endpoint=='insights')]": {
         "return": "AdReportRun"
+      }
+    },
+    "AdCampaignDeliveryEstimate": {
+      "$.fields[?(@.name=='targeting_optimization_types')]": {
+        "targeting_optimization_types": true
       }
     },
     "Ad": {

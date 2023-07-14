@@ -519,11 +519,6 @@
                     "name": "stop_time",
                     "required": false,
                     "type": "datetime"
-                },
-                {
-                    "name": "upstream_events",
-                    "required": false,
-                    "type": "map"
                 }
             ]
         }
@@ -531,14 +526,6 @@
     "fields": [
         {
             "name": "account_id",
-            "type": "string"
-        },
-        {
-            "name": "ad_strategy_group_id",
-            "type": "string"
-        },
-        {
-            "name": "ad_strategy_id",
             "type": "string"
         },
         {

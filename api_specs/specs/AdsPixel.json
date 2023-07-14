@@ -155,6 +155,12 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "openbridge_configurations",
+            "return": "OpenBridgeConfiguration",
+            "params": []
+        },
+        {
             "method": "POST",
             "endpoint": "shadowtraffichelper",
             "return": "Object",

@@ -284,6 +284,11 @@
                     "name": "tags",
                     "required": false,
                     "type": "list<string>"
+                },
+                {
+                    "name": "use_in_campaigns",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         }

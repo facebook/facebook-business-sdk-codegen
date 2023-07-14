@@ -111,10 +111,21 @@
             "params": []
         },
         {
+            "method": "GET",
+            "endpoint": "message_campaigns",
+            "return": "WhatsAppBusinessCampaign",
+            "params": []
+        },
+        {
             "method": "DELETE",
             "endpoint": "message_templates",
             "return": "Object",
             "params": [
+                {
+                    "name": "hsm_id",
+                    "required": false,
+                    "type": "string"
+                },
                 {
                     "name": "name",
                     "required": true,
@@ -170,6 +181,11 @@
             "return": "WhatsAppBusinessAccount",
             "params": [
                 {
+                    "name": "allow_category_change",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "category",
                     "required": true,
                     "type": "whatsappbusinessaccountmessage_templates_category_enum_param"
@@ -178,6 +194,11 @@
                     "name": "components",
                     "required": true,
                     "type": "list<map>"
+                },
+                {
+                    "name": "cta_url_link_tracking_opted_out",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "language",
@@ -214,6 +235,11 @@
                 },
                 {
                     "name": "phone_number",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "verified_name",
                     "required": false,
                     "type": "string"
                 }
@@ -279,6 +305,23 @@
                 },
                 {
                     "name": "verify_token",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "template_performance_metrics",
+            "return": "WhatsAppBusinessHSMWhatsAppBusinessPerformanceMetrics",
+            "params": [
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "template_id",
                     "required": false,
                     "type": "string"
                 }

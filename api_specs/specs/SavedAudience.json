@@ -29,10 +29,6 @@
             "type": "string"
         },
         {
-            "name": "extra_info",
-            "type": "string"
-        },
-        {
             "name": "id",
             "type": "string"
         },

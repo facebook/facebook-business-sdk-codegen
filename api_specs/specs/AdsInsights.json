@@ -22,10 +22,6 @@
             "type": "list<AdsActionStats>"
         },
         {
-            "name": "ad_bid_value",
-            "type": "string"
-        },
-        {
             "name": "ad_click_actions",
             "type": "list<AdsActionStats>"
         },
@@ -39,10 +35,6 @@
         },
         {
             "name": "ad_name",
-            "type": "string"
-        },
-        {
-            "name": "adset_bid_value",
             "type": "string"
         },
         {
@@ -230,6 +222,10 @@
             "type": "string"
         },
         {
+            "name": "creative_media_type",
+            "type": "string"
+        },
+        {
             "name": "ctr",
             "type": "string"
         },
@@ -307,6 +303,10 @@
         },
         {
             "name": "inline_post_engagement",
+            "type": "string"
+        },
+        {
+            "name": "instagram_upcoming_event_reminders_set",
             "type": "string"
         },
         {
@@ -400,6 +400,10 @@
         {
             "name": "total_postbacks_detailed",
             "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "total_postbacks_detailed_v4",
+            "type": "string"
         },
         {
             "name": "unique_actions",

@@ -14,6 +14,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "brand_requests",
+            "return": "BrandRequest",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "customconversions",
             "return": "CustomConversion",
             "params": []
@@ -22,6 +28,12 @@
             "method": "GET",
             "endpoint": "offline_conversion_data_sets",
             "return": "OfflineConversionDataSet",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "partner_private_studies",
+            "return": "Business",
             "params": []
         },
         {

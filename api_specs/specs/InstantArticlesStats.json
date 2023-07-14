@@ -7,7 +7,7 @@
         },
         {
             "name": "metadata",
-            "type": "map<string, Object>"
+            "type": "list<map<string, Object>>"
         },
         {
             "name": "metric",
@@ -15,11 +15,11 @@
         },
         {
             "name": "totals",
-            "type": "map<string, Object>"
+            "type": "list<map<string, Object>>"
         },
         {
             "name": "x_axis_breakdown",
-            "type": "list<map<string, Object>>"
+            "type": "list<list<map<string, Object>>>"
         }
     ]
 }
