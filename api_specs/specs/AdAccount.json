@@ -3532,6 +3532,16 @@
                     "type": "map"
                 },
                 {
+                    "name": "default_dsa_beneficiary",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "default_dsa_payor",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "end_advertiser",
                     "required": false,
                     "type": "string"
@@ -3668,6 +3678,14 @@
         {
             "name": "custom_audience_info",
             "type": "CustomAudienceGroup"
+        },
+        {
+            "name": "default_dsa_beneficiary",
+            "type": "string"
+        },
+        {
+            "name": "default_dsa_payor",
+            "type": "string"
         },
         {
             "name": "disable_reason",
