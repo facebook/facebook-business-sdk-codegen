@@ -126,9 +126,10 @@ export default class FacebookAdsApi {
     return Http.request(method, strUrl, data, files, useMultipartFormData, this._showHeader)
       .then(response => {
         if (this._showHeader) {
-          response.body['headers'] = response.headers;
-          response = response.body;
+          response.data['headers'] = response.headers;
         }
+
+        response = response.data;
 
         if (this._debug) {
           console.log(`200 ${method} ${url} ${Object.keys(data).length > 0 ? JSON.stringify(data) : ""}`);
