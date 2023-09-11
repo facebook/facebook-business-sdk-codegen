@@ -38,7 +38,7 @@ export default class {{name:pascal_case}} extends AbstractCrudObject {
   static get {{field_or_param:pascal_case}} (): Object {
     return Object.freeze({
       {{#values_with_naming_convention}}
-      {{{value:all_lower_case_excluding_digit_suffix}}}: '{{{value}}}',
+      {{{value:all_lower_case_excluding_digit_suffix}}}: '{{{value:escape_single_quote}}}',
       {{/values_with_naming_convention}}
     });
   }
