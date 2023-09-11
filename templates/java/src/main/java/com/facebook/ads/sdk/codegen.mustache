@@ -75,6 +75,13 @@ public class {{name:pascal_case}} extends APINode {
   @SerializedName("creative_id")
   private String mCreativeId = null;
   {{/cls_is_AdCreative}}
+  {{#breakdowns}}
+  // Breakdowns
+  {{#values_with_naming_convention}}
+  @SerializedName("{{value}}")
+  private String m{{value:pascal_case}} = null;
+  {{/values_with_naming_convention}}
+  {{/breakdowns}}
   protected static Gson gson = null;
 
   {{^has_get}}public {{/has_get}}{{#has_get}}{{#can_be_data_type}}public {{/can_be_data_type}}{{/has_get}}{{name:pascal_case}}() {
@@ -404,6 +411,14 @@ public class {{name:pascal_case}} extends APINode {
   {{/has_get}}
   {{/is_creation_field}}
   {{/fields}}
+  {{#breakdowns}}
+  {{#values_with_naming_convention}}
+  public String getField{{value:pascal_case}}() {
+    return m{{value:pascal_case}};
+  }
+
+  {{/values_with_naming_convention}}
+  {{/breakdowns}}
 
 
   {{#apis}}
@@ -661,6 +676,11 @@ public class {{name:pascal_case}} extends APINode {
     this.m{{name:pascal_case}} = instance.m{{name:pascal_case}};
     {{/is_creation_field}}
     {{/fields}}
+    {{#breakdowns}}
+    {{#values_with_naming_convention}}
+    this.m{{value:pascal_case}} = instance.m{{value:pascal_case}};
+    {{/values_with_naming_convention}}
+    {{/breakdowns}}
     {{#cls_is_AdCreative}}
     this.mCreativeId = this.mId;
     {{/cls_is_AdCreative}}
