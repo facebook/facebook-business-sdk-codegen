@@ -1681,6 +1681,62 @@
                     "type": "business_vertical"
                 }
             ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "creative_folders",
+            "return": "BusinessCreativeFolder",
+            "params": [
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "images",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "creative_folder_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "bytes",
+                    "required": true,
+                    "type": "file"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "videos",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "creative_folder_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "source",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
         }
     ],
     "fields": [
