@@ -15,7 +15,7 @@
         },
         {
             "name": "asset_customization_rules",
-            "type": "list<Object>"
+            "type": "list<AdAssetFeedSpecAssetCustomizationRule>"
         },
         {
             "name": "autotranslate",
@@ -60,6 +60,10 @@
         {
             "name": "link_urls",
             "type": "list<AdAssetFeedSpecLinkURL>"
+        },
+        {
+            "name": "message_extensions",
+            "type": "list<Object>"
         },
         {
             "name": "optimization_type",

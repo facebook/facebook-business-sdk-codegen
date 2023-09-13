@@ -624,6 +624,10 @@
             "type": "Place"
         },
         {
+            "name": "post_id",
+            "type": "string"
+        },
+        {
             "name": "post_views",
             "type": "unsigned int"
         },

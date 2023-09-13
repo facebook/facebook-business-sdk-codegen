@@ -140,6 +140,15 @@
         ]
     },
     {
+        "name": "AdAssetCustomizationRuleCustomizationSpec_device_platforms",
+        "node": "AdAssetCustomizationRuleCustomizationSpec",
+        "field_or_param": "device_platforms",
+        "values": [
+            "desktop",
+            "mobile"
+        ]
+    },
+    {
         "name": "AdAssetFeedSpec_call_to_action_types",
         "node": "AdAssetFeedSpec",
         "field_or_param": "call_to_action_types",
@@ -147,6 +156,7 @@
             "ADD_TO_CART",
             "APPLY_NOW",
             "AUDIO_CALL",
+            "BOOK_NOW",
             "BOOK_TRAVEL",
             "BUY",
             "BUY_NOW",
@@ -221,6 +231,15 @@
         ]
     },
     {
+        "name": "AdAssetTargetRuleTargeting_device_platforms",
+        "node": "AdAssetTargetRuleTargeting",
+        "field_or_param": "device_platforms",
+        "values": [
+            "desktop",
+            "mobile"
+        ]
+    },
+    {
         "name": "AdAsyncRequestSet_notification_mode",
         "node": "AdAsyncRequestSet",
         "field_or_param": "notification_mode",
@@ -237,6 +256,7 @@
             "ADD_TO_CART",
             "APPLY_NOW",
             "AUDIO_CALL",
+            "BOOK_NOW",
             "BOOK_TRAVEL",
             "BUY",
             "BUY_NOW",
@@ -450,7 +470,8 @@
             "percentage_off",
             "price",
             "star_rating",
-            "strikethrough_price"
+            "strikethrough_price",
+            "sustainable"
         ]
     },
     {
@@ -477,15 +498,6 @@
         ]
     },
     {
-        "name": "AdCreativeLinkData_attachment_style",
-        "node": "AdCreativeLinkData",
-        "field_or_param": "attachment_style",
-        "values": [
-            "default",
-            "link"
-        ]
-    },
-    {
         "name": "AdCreativeLinkData_format_option",
         "node": "AdCreativeLinkData",
         "field_or_param": "format_option",
@@ -505,6 +517,7 @@
             "ADD_TO_CART",
             "APPLY_NOW",
             "AUDIO_CALL",
+            "BOOK_NOW",
             "BOOK_TRAVEL",
             "BUY",
             "BUY_NOW",
@@ -857,6 +870,7 @@
             "QUALITY_CALL",
             "QUALITY_LEAD",
             "REACH",
+            "REMINDERS_SET",
             "SUBSCRIBERS",
             "THRUPLAY",
             "VALUE",
@@ -1022,8 +1036,8 @@
         "values": [
             "This item cannot be appealed as it is either approved or already has an appeal",
             "This item is not rejected for any of channels",
-            "Weve encountered unexpected error while processing this request. Please try again later !",
-            "Youve reached the maximum number of item requests you can make this week. Youll be able to request item reviews again within the next 7 days.",
+            "We've encountered unexpected error while processing this request. Please try again later !",
+            "You've reached the maximum number of item requests you can make this week. You'll be able to request item reviews again within the next 7 days.",
             "Your request was received. See information below to learn more."
         ]
     },
@@ -1361,6 +1375,7 @@
             "AVAILABLE_FOR_ORDER",
             "DISCONTINUED",
             "IN_STOCK",
+            "MARK_AS_SOLD",
             "OUT_OF_STOCK",
             "PENDING",
             "PREORDER"
@@ -1588,27 +1603,6 @@
         ]
     },
     {
-        "name": "ProductItemARData_surfaces",
-        "node": "ProductItemARData",
-        "field_or_param": "surfaces",
-        "values": [
-            "B2C_MARKETPLACE",
-            "C2C_MARKETPLACE",
-            "DA",
-            "DAILY_DEALS",
-            "DAILY_DEALS_LEGACY",
-            "IG_PRODUCT_TAGGING",
-            "MARKETPLACE",
-            "MARKETPLACE_ADS_DEPRECATED",
-            "MARKETPLACE_SHOPS",
-            "MINI_SHOPS",
-            "OFFLINE_CONVERSIONS",
-            "SHOPS",
-            "UNIVERSAL_CHECKOUT",
-            "WHATSAPP"
-        ]
-    },
-    {
         "name": "ProductItem_age_group",
         "node": "ProductItem",
         "field_or_param": "age_group",
@@ -1630,6 +1624,7 @@
             "available for order",
             "discontinued",
             "in stock",
+            "mark_as_sold",
             "out of stock",
             "pending",
             "preorder"
@@ -1986,6 +1981,7 @@
             "CHANGED_BID",
             "CHANGED_BUDGET",
             "EMAIL",
+            "ENABLE_ADVANTAGE_PLUS_CREATIVE",
             "ENABLE_AUTOFLOW",
             "ENDPOINT_PINGED",
             "ERROR",
@@ -2048,6 +2044,88 @@
             "RULE_CREATION_SUCCESS_DIALOG",
             "RULE_SYD_REDIRECT",
             "RULE_TEMPLATES_DIALOG"
+        ]
+    },
+    {
+        "name": "adaccountads_conversion_goal_conversion_event_value_source_enum_param",
+        "node": "AdsConversionGoal",
+        "field_or_param": "conversion_event_value_source",
+        "values": [
+            "DATA_SOURCE",
+            "VALUE_RULE"
+        ]
+    },
+    {
+        "name": "adaccountads_conversion_goal_goal_creation_method_enum_param",
+        "node": "AdsConversionGoal",
+        "field_or_param": "goal_creation_method",
+        "values": [
+            "ADVERTISER_CREATED_UI",
+            "AUTO_MIGRATION",
+            "L2_ENHANCE_API_MIGRATION"
+        ]
+    },
+    {
+        "name": "adaccountads_conversion_goal_performance_goal_enum_param",
+        "node": "AdsConversionGoal",
+        "field_or_param": "performance_goal",
+        "values": [
+            "AD_OPTIMIZATION_GOAL_AD_RECALL_LIFT",
+            "AD_OPTIMIZATION_GOAL_APP_DOWNLOADS",
+            "AD_OPTIMIZATION_GOAL_APP_INSTALLS",
+            "AD_OPTIMIZATION_GOAL_APP_INSTALLS_AND_OFFSITE_CONVERSIONS",
+            "AD_OPTIMIZATION_GOAL_BRAND_AWARENESS",
+            "AD_OPTIMIZATION_GOAL_CLICKS",
+            "AD_OPTIMIZATION_GOAL_COMPLETED_VIDEO_VIEWS",
+            "AD_OPTIMIZATION_GOAL_CONVERSATIONS",
+            "AD_OPTIMIZATION_GOAL_DERIVED_EVENTS",
+            "AD_OPTIMIZATION_GOAL_DWELLS",
+            "AD_OPTIMIZATION_GOAL_ENGAGED_REACH",
+            "AD_OPTIMIZATION_GOAL_ENGAGED_USERS",
+            "AD_OPTIMIZATION_GOAL_EVENT_RESPONSES",
+            "AD_OPTIMIZATION_GOAL_EXTERNAL",
+            "AD_OPTIMIZATION_GOAL_IMPRESSIONS",
+            "AD_OPTIMIZATION_GOAL_INCREMENTAL_OFFSITE_CONVERSIONS",
+            "AD_OPTIMIZATION_GOAL_IN_APP_VALUE",
+            "AD_OPTIMIZATION_GOAL_JOB_APPLICATIONS",
+            "AD_OPTIMIZATION_GOAL_LANDING_PAGE_VIEWS",
+            "AD_OPTIMIZATION_GOAL_LEAD_GENERATION",
+            "AD_OPTIMIZATION_GOAL_MEDIA_DOWNLOADS",
+            "AD_OPTIMIZATION_GOAL_MESSAGING_APPOINTMENT_CONVERSION",
+            "AD_OPTIMIZATION_GOAL_MESSAGING_DEEP_CONVERSATION_AND_FOLLOW",
+            "AD_OPTIMIZATION_GOAL_MESSAGING_DEEP_CONVERSATION_AND_REPLY",
+            "AD_OPTIMIZATION_GOAL_MESSAGING_PURCHASE_CONVERSION",
+            "AD_OPTIMIZATION_GOAL_MID_FUNNEL_EVENT",
+            "AD_OPTIMIZATION_GOAL_MRC_VIDEO_VIEWS",
+            "AD_OPTIMIZATION_GOAL_MULTI_CONVERSIONS",
+            "AD_OPTIMIZATION_GOAL_NONE",
+            "AD_OPTIMIZATION_GOAL_OFFER_CLAIMS",
+            "AD_OPTIMIZATION_GOAL_OFFLINE_CONVERSIONS",
+            "AD_OPTIMIZATION_GOAL_OFFSITE_CLICKS",
+            "AD_OPTIMIZATION_GOAL_OFFSITE_CONVERSIONS",
+            "AD_OPTIMIZATION_GOAL_ONSITE_CONVERSIONS",
+            "AD_OPTIMIZATION_GOAL_PAGE_ENGAGEMENT",
+            "AD_OPTIMIZATION_GOAL_PAGE_FOLLOWS",
+            "AD_OPTIMIZATION_GOAL_PAGE_LIKES",
+            "AD_OPTIMIZATION_GOAL_POST_ENGAGEMENT",
+            "AD_OPTIMIZATION_GOAL_QUALITY_CALL",
+            "AD_OPTIMIZATION_GOAL_QUALITY_LEAD",
+            "AD_OPTIMIZATION_GOAL_REACH",
+            "AD_OPTIMIZATION_GOAL_REMINDERS_SET",
+            "AD_OPTIMIZATION_GOAL_REPLIES",
+            "AD_OPTIMIZATION_GOAL_RESEARCH_POLL_RESPONSES",
+            "AD_OPTIMIZATION_GOAL_RETENTION",
+            "AD_OPTIMIZATION_GOAL_RETURN_ON_AD_SPEND",
+            "AD_OPTIMIZATION_GOAL_SOCIAL_IMPRESSIONS",
+            "AD_OPTIMIZATION_GOAL_STORE_VISITS",
+            "AD_OPTIMIZATION_GOAL_SUBSCRIBERS",
+            "AD_OPTIMIZATION_GOAL_TICKET_PURCHASE",
+            "AD_OPTIMIZATION_GOAL_VALUE",
+            "AD_OPTIMIZATION_GOAL_VIDEO_LONG_VIEWS",
+            "AD_OPTIMIZATION_GOAL_VIDEO_VIEWS",
+            "AD_OPTIMIZATION_GOAL_VIDEO_VIEWS_15S",
+            "AD_OPTIMIZATION_GOAL_VISIT_INSTAGRAM_PROFILE",
+            "AD_OPTIMIZATION_GOAL_VISIT_INSTAGRAM_PROFILE_AND_PROFILE_ACTIONS"
         ]
     },
     {
@@ -2115,7 +2193,11 @@
             "AB_TEST",
             "ACO_TOGGLE",
             "ADS_REPORTING",
+            "ADVANCED_CAMPAIGN_BUDGET",
             "ADVANTAGE_PLUS_CREATIVE",
+            "ADVANTAGE_PLUS_CREATIVE_CATALOG",
+            "ADVANTAGE_SHOPPING_CAMPAIGN",
+            "ADVANTAGE_SHOPPING_CAMPAIGN_FRAGMENTATION",
             "AD_OBJECTIVE",
             "AEM_V2_INELIGIBLE",
             "AGGREGATED_BID_LIMITED",
@@ -2125,48 +2207,63 @@
             "AUCTION_OVERLAP_CONSOLIDATION",
             "AUDIENCE_EXPANSION",
             "AUTOFLOW_OPT_IN",
+            "AUTOFLOW_OPT_IN_FALLBACK_DUPLICATION_FLOW",
             "AUTOMATIC_PLACEMENTS",
             "AUTO_BID",
             "BROAD_TARGETING",
             "CAPI",
+            "CAPI_PERFORMANCE_MATCH_KEY",
+            "CASH_REWARDS_OPT_IN",
             "CONNECT_FACEBOOK_PAGE_TO_INSTAGRAM",
             "CONNECT_FACEBOOK_PAGE_TO_WHATSAPP",
             "COST_GOAL",
             "COST_GOAL_BUDGET_LIMITED",
             "COST_GOAL_CPA_LIMITED",
+            "COST_PER_RESULT",
+            "CREATION_PACKAGE_UPGRADE_TO_ASC",
             "CREATIVE_BADGE",
             "CREATIVE_FATIGUE",
             "CREATIVE_FATIGUE_HOURLY",
             "CREATIVE_LIMITED",
             "CREATIVE_LIMITED_HOURLY",
+            "CREATOR_ADS_PA_CONVERSION",
+            "CTA",
             "DEAD_LINK",
+            "DYNAMIC_ADVANTAGE_CAMPAIGN_BUDGET",
             "ECOSYSTEM_BID_REDUCE_L1_CARDINALITY",
             "FRAGMENTATION",
             "GES_TEST",
+            "GUIDANCE_CENTER_CODE_GEN",
             "LEARNING_LIMITED",
             "LOW_OUTCOME",
+            "MERLIN_GUIDANCE",
             "MMT_CAROUSEL_TO_VIDEO",
             "MOBILE_FIRST_VIDEO",
             "MULTI_TEXT",
             "MUSIC",
             "OPTIMAL_SPEND",
             "PAYMENT_METHOD",
+            "PERFORMANT_CREATIVE_REELS_OPT_IN",
             "PFR_L1_INLINE_MMT",
             "PREDICTIVE_CREATIVE_LIMITED",
             "PREDICTIVE_CREATIVE_LIMITED_HOURLY",
+            "RAPID_LEARNING_LIMITED",
             "REVERT",
             "SCALE_GOOD_CAMPAIGN",
             "SEMANTIC_BASED_AUDIENCE_EXPANSION",
             "SETUP_PIXEL",
             "SHOPS_ADS",
             "SIGNALS_GROWTH_CAPI",
+            "SIGNALS_GROWTH_CAPI_TABLE",
             "SIX_PLUS_MANUAL_PLACEMENTS",
             "SPEND_LIMIT",
             "SYD_TEST_MODE",
             "TOP_ADSETS_WITH_ADS_UNDER_CAP",
             "TOP_CAMPAIGNS_WITH_ADS_UNDER_CAP",
+            "UNCROP_IMAGE",
             "UNECONOMICAL_ADS_THROTTLING",
             "UNUSED_BUDGET",
+            "VIDEO_LENGTH",
             "ZERO_IMPRESSION"
         ]
     },
@@ -2322,6 +2419,7 @@
             "QUALITY_CALL",
             "QUALITY_LEAD",
             "REACH",
+            "REMINDERS_SET",
             "SUBSCRIBERS",
             "THRUPLAY",
             "VALUE",
@@ -2411,7 +2509,6 @@
             "AUDIO_COMMENT",
             "BROADCAST",
             "BULLETIN_ARTICLE_AUDIO",
-            "CANDIDATE_VIDEOS_DELETED",
             "CANVAS",
             "CFC_VIDEO",
             "CMS_MEDIA_MANAGER",
@@ -2458,7 +2555,6 @@
             "GROUP_POST",
             "HACK_TV",
             "HEURISTIC_CLUSTER_VIDEO",
-            "HEURISTIC_PREVIEW",
             "HIGHLIGHT_CLIP_VIDEO",
             "HUDDLE_BROADCAST",
             "IG_REELS_XPV",
@@ -2474,7 +2570,6 @@
             "JOBS_VISUAL_INTRO_ENTRY",
             "JOB_APPLICATION_VIDEO",
             "JOB_OPENING_VIDEO",
-            "KOTOTORO",
             "LEARN",
             "LEGACY",
             "LEGACY_CONTAINED_POST_BROADCAST",
@@ -2530,6 +2625,7 @@
             "PROFILE_INTRO_CARD",
             "PROFILE_VIDEO",
             "PROTON",
+            "QUICK_CLIP_WORKPLACE_POST",
             "QUICK_PROMOTION",
             "REPLACE_VIDEO",
             "SALES_CLIENT_INTERACTION",
@@ -2538,7 +2634,6 @@
             "SLIDESHOW_ANIMOTO",
             "SLIDESHOW_SHAKR",
             "SLIDESHOW_VARIATION_VIDEO",
-            "SOTTO_CONTENT",
             "SOUNDBITES_VIDEO",
             "SOUND_PLATFORM_STREAM",
             "SRT_ATTACHMENT",
@@ -3155,6 +3250,7 @@
             "PRIMARY",
             "REGULATED_CATEGORIES_AUDIENCE",
             "STUDY_RULE_AUDIENCE",
+            "SUBSCRIBER_SEGMENT",
             "VIDEO",
             "WEBSITE"
         ]
@@ -3212,6 +3308,7 @@
             "QUALITY_CALL",
             "QUALITY_LEAD",
             "REACH",
+            "REMINDERS_SET",
             "SUBSCRIBERS",
             "THRUPLAY",
             "VALUE",
@@ -3229,6 +3326,8 @@
             "AUDIENCE_NETWORK_REWARDED_VIDEO",
             "BIZ_DISCO_FEED_MOBILE",
             "DESKTOP_FEED_STANDARD",
+            "FACEBOOK_PROFILE_FEED_DESKTOP",
+            "FACEBOOK_PROFILE_FEED_MOBILE",
             "FACEBOOK_REELS_BANNER",
             "FACEBOOK_REELS_BANNER_DESKTOP",
             "FACEBOOK_REELS_MOBILE",
@@ -3242,13 +3341,14 @@
             "INSTAGRAM_FEED_WEB",
             "INSTAGRAM_FEED_WEB_M_SITE",
             "INSTAGRAM_PROFILE_FEED",
+            "INSTAGRAM_PROFILE_REELS",
             "INSTAGRAM_REELS",
             "INSTAGRAM_REELS_OVERLAY",
             "INSTAGRAM_SEARCH_CHAIN",
             "INSTAGRAM_SEARCH_GRID",
             "INSTAGRAM_STANDARD",
             "INSTAGRAM_STORY",
-            "INSTAGRAM_STORY_CAMERA_TRAY",
+            "INSTAGRAM_STORY_EFFECT_TRAY",
             "INSTAGRAM_STORY_WEB",
             "INSTAGRAM_STORY_WEB_M_SITE",
             "INSTANT_ARTICLE_RECIRCULATION_AD",
@@ -3282,7 +3382,8 @@
         "node": "AdPreview",
         "field_or_param": "creative_feature",
         "values": [
-            "profile_card"
+            "profile_card",
+            "standard_enhancements_catalog"
         ]
     },
     {
@@ -3299,6 +3400,7 @@
         "field_or_param": "action_attribution_windows",
         "values": [
             "1d_click",
+            "1d_ev",
             "1d_view",
             "28d_click",
             "28d_view",
@@ -3324,7 +3426,8 @@
             "action_target_id",
             "action_type",
             "action_video_sound",
-            "action_video_type"
+            "action_video_type",
+            "standard_event_content_type"
         ]
     },
     {
@@ -3362,6 +3465,7 @@
             "impression_device",
             "is_conversion_id_modeled",
             "link_url_asset",
+            "marketing_messages_btn_name",
             "mmm",
             "place_page_id",
             "platform_position",
@@ -3372,6 +3476,8 @@
             "region",
             "skan_campaign_id",
             "skan_conversion_id",
+            "skan_version",
+            "standard_event_content_type",
             "title_asset",
             "video_asset"
         ]
@@ -3428,7 +3534,8 @@
             "action_target_id",
             "action_type",
             "action_video_sound",
-            "action_video_type"
+            "action_video_type",
+            "standard_event_content_type"
         ]
     },
     {
@@ -3471,6 +3578,7 @@
             "APK_PURE",
             "APTOIDE_A1_STORE",
             "BEMOBI_MOBILE_STORE",
+            "DIGITAL_TURBINE_STORE",
             "DOES_NOT_EXIST",
             "FB_ANDROID_STORE",
             "FB_CANVAS",
@@ -3561,6 +3669,7 @@
             "PRIMARY",
             "REGULATED_CATEGORIES_AUDIENCE",
             "STUDY_RULE_AUDIENCE",
+            "SUBSCRIBER_SEGMENT",
             "VIDEO",
             "WEBSITE"
         ]
@@ -3973,6 +4082,7 @@
             "excluded_user_adclusters",
             "excluded_user_device",
             "exclusions",
+            "expanded_implicit_custom_audiences",
             "facebook_positions",
             "family_statuses",
             "fb_deal_id",
@@ -4007,6 +4117,7 @@
             "location_categories",
             "location_cluster_ids",
             "location_expansion",
+            "marketing_message_targeting",
             "marketplace_product_categories",
             "messenger_positions",
             "mobile_device_model",
@@ -4027,6 +4138,7 @@
             "relationship_statuses",
             "rtb_flag",
             "site_category",
+            "tafe_ca_mitigation_strategy",
             "targeting_automation",
             "targeting_optimization",
             "targeting_relaxation_types",
@@ -4057,6 +4169,7 @@
             "apk_pure",
             "aptoide_a1_store",
             "bemobi_mobile_store",
+            "digital_turbine_store",
             "does_not_exist",
             "fb_android_store",
             "fb_canvas",
@@ -4137,6 +4250,7 @@
             "excluded_user_adclusters",
             "excluded_user_device",
             "exclusions",
+            "expanded_implicit_custom_audiences",
             "facebook_positions",
             "family_statuses",
             "fb_deal_id",
@@ -4171,6 +4285,7 @@
             "location_categories",
             "location_cluster_ids",
             "location_expansion",
+            "marketing_message_targeting",
             "marketplace_product_categories",
             "messenger_positions",
             "mobile_device_model",
@@ -4191,6 +4306,7 @@
             "relationship_statuses",
             "rtb_flag",
             "site_category",
+            "tafe_ca_mitigation_strategy",
             "targeting_automation",
             "targeting_optimization",
             "targeting_relaxation_types",
@@ -4568,6 +4684,7 @@
             "excluded_user_adclusters",
             "excluded_user_device",
             "exclusions",
+            "expanded_implicit_custom_audiences",
             "facebook_positions",
             "family_statuses",
             "fb_deal_id",
@@ -4602,6 +4719,7 @@
             "location_categories",
             "location_cluster_ids",
             "location_expansion",
+            "marketing_message_targeting",
             "marketplace_product_categories",
             "messenger_positions",
             "mobile_device_model",
@@ -4622,6 +4740,7 @@
             "relationship_statuses",
             "rtb_flag",
             "site_category",
+            "tafe_ca_mitigation_strategy",
             "targeting_automation",
             "targeting_optimization",
             "targeting_relaxation_types",
@@ -4652,6 +4771,7 @@
             "apk_pure",
             "aptoide_a1_store",
             "bemobi_mobile_store",
+            "digital_turbine_store",
             "does_not_exist",
             "fb_android_store",
             "fb_canvas",
@@ -5184,6 +5304,7 @@
             "QUALITY_CALL",
             "QUALITY_LEAD",
             "REACH",
+            "REMINDERS_SET",
             "SUBSCRIBERS",
             "THRUPLAY",
             "VALUE",
@@ -5386,6 +5507,7 @@
             "QUALITY_CALL",
             "QUALITY_LEAD",
             "REACH",
+            "REMINDERS_SET",
             "SUBSCRIBERS",
             "THRUPLAY",
             "VALUE",
@@ -5913,6 +6035,7 @@
         "field_or_param": "action_attribution_windows",
         "values": [
             "1d_click",
+            "1d_ev",
             "1d_view",
             "28d_click",
             "28d_view",
@@ -5938,7 +6061,8 @@
             "action_target_id",
             "action_type",
             "action_video_sound",
-            "action_video_type"
+            "action_video_type",
+            "standard_event_content_type"
         ]
     },
     {
@@ -5976,6 +6100,7 @@
             "impression_device",
             "is_conversion_id_modeled",
             "link_url_asset",
+            "marketing_messages_btn_name",
             "mmm",
             "place_page_id",
             "platform_position",
@@ -5986,6 +6111,8 @@
             "region",
             "skan_campaign_id",
             "skan_conversion_id",
+            "skan_version",
+            "standard_event_content_type",
             "title_asset",
             "video_asset"
         ]
@@ -6042,7 +6169,8 @@
             "action_target_id",
             "action_type",
             "action_video_sound",
-            "action_video_type"
+            "action_video_type",
+            "standard_event_content_type"
         ]
     },
     {
@@ -6051,6 +6179,7 @@
         "field_or_param": "action_attribution_windows",
         "values": [
             "1d_click",
+            "1d_ev",
             "1d_view",
             "28d_click",
             "28d_view",
@@ -6076,7 +6205,8 @@
             "action_target_id",
             "action_type",
             "action_video_sound",
-            "action_video_type"
+            "action_video_type",
+            "standard_event_content_type"
         ]
     },
     {
@@ -6114,6 +6244,7 @@
             "impression_device",
             "is_conversion_id_modeled",
             "link_url_asset",
+            "marketing_messages_btn_name",
             "mmm",
             "place_page_id",
             "platform_position",
@@ -6124,6 +6255,8 @@
             "region",
             "skan_campaign_id",
             "skan_conversion_id",
+            "skan_version",
+            "standard_event_content_type",
             "title_asset",
             "video_asset"
         ]
@@ -6180,7 +6313,8 @@
             "action_target_id",
             "action_type",
             "action_video_sound",
-            "action_video_type"
+            "action_video_type",
+            "standard_event_content_type"
         ]
     },
     {
@@ -6205,6 +6339,8 @@
             "AUDIENCE_NETWORK_REWARDED_VIDEO",
             "BIZ_DISCO_FEED_MOBILE",
             "DESKTOP_FEED_STANDARD",
+            "FACEBOOK_PROFILE_FEED_DESKTOP",
+            "FACEBOOK_PROFILE_FEED_MOBILE",
             "FACEBOOK_REELS_BANNER",
             "FACEBOOK_REELS_BANNER_DESKTOP",
             "FACEBOOK_REELS_MOBILE",
@@ -6218,13 +6354,14 @@
             "INSTAGRAM_FEED_WEB",
             "INSTAGRAM_FEED_WEB_M_SITE",
             "INSTAGRAM_PROFILE_FEED",
+            "INSTAGRAM_PROFILE_REELS",
             "INSTAGRAM_REELS",
             "INSTAGRAM_REELS_OVERLAY",
             "INSTAGRAM_SEARCH_CHAIN",
             "INSTAGRAM_SEARCH_GRID",
             "INSTAGRAM_STANDARD",
             "INSTAGRAM_STORY",
-            "INSTAGRAM_STORY_CAMERA_TRAY",
+            "INSTAGRAM_STORY_EFFECT_TRAY",
             "INSTAGRAM_STORY_WEB",
             "INSTAGRAM_STORY_WEB_M_SITE",
             "INSTANT_ARTICLE_RECIRCULATION_AD",
@@ -6258,7 +6395,8 @@
         "node": "AdPreview",
         "field_or_param": "creative_feature",
         "values": [
-            "profile_card"
+            "profile_card",
+            "standard_enhancements_catalog"
         ]
     },
     {
@@ -6377,6 +6515,7 @@
         "field_or_param": "action_attribution_windows",
         "values": [
             "1d_click",
+            "1d_ev",
             "1d_view",
             "28d_click",
             "28d_view",
@@ -6402,7 +6541,8 @@
             "action_target_id",
             "action_type",
             "action_video_sound",
-            "action_video_type"
+            "action_video_type",
+            "standard_event_content_type"
         ]
     },
     {
@@ -6440,6 +6580,7 @@
             "impression_device",
             "is_conversion_id_modeled",
             "link_url_asset",
+            "marketing_messages_btn_name",
             "mmm",
             "place_page_id",
             "platform_position",
@@ -6450,6 +6591,8 @@
             "region",
             "skan_campaign_id",
             "skan_conversion_id",
+            "skan_version",
+            "standard_event_content_type",
             "title_asset",
             "video_asset"
         ]
@@ -6506,7 +6649,8 @@
             "action_target_id",
             "action_type",
             "action_video_sound",
-            "action_video_type"
+            "action_video_type",
+            "standard_event_content_type"
         ]
     },
     {
@@ -6520,6 +6664,8 @@
             "AUDIENCE_NETWORK_REWARDED_VIDEO",
             "BIZ_DISCO_FEED_MOBILE",
             "DESKTOP_FEED_STANDARD",
+            "FACEBOOK_PROFILE_FEED_DESKTOP",
+            "FACEBOOK_PROFILE_FEED_MOBILE",
             "FACEBOOK_REELS_BANNER",
             "FACEBOOK_REELS_BANNER_DESKTOP",
             "FACEBOOK_REELS_MOBILE",
@@ -6533,13 +6679,14 @@
             "INSTAGRAM_FEED_WEB",
             "INSTAGRAM_FEED_WEB_M_SITE",
             "INSTAGRAM_PROFILE_FEED",
+            "INSTAGRAM_PROFILE_REELS",
             "INSTAGRAM_REELS",
             "INSTAGRAM_REELS_OVERLAY",
             "INSTAGRAM_SEARCH_CHAIN",
             "INSTAGRAM_SEARCH_GRID",
             "INSTAGRAM_STANDARD",
             "INSTAGRAM_STORY",
-            "INSTAGRAM_STORY_CAMERA_TRAY",
+            "INSTAGRAM_STORY_EFFECT_TRAY",
             "INSTAGRAM_STORY_WEB",
             "INSTAGRAM_STORY_WEB_M_SITE",
             "INSTANT_ARTICLE_RECIRCULATION_AD",
@@ -6573,7 +6720,8 @@
         "node": "AdPreview",
         "field_or_param": "creative_feature",
         "values": [
-            "profile_card"
+            "profile_card",
+            "standard_enhancements_catalog"
         ]
     },
     {
@@ -6687,6 +6835,7 @@
             "CHANGED_BID",
             "CHANGED_BUDGET",
             "EMAIL",
+            "ENABLE_ADVANTAGE_PLUS_CREATIVE",
             "ENABLE_AUTOFLOW",
             "ENDPOINT_PINGED",
             "ERROR",
@@ -7568,6 +7717,16 @@
         ]
     },
     {
+        "name": "businessmanaged_partner_businesses_partition_type_enum_param",
+        "node": "Object",
+        "field_or_param": "partition_type",
+        "values": [
+            "AUTH",
+            "FIXED",
+            "FIXED_WITHOUT_PARTITION"
+        ]
+    },
+    {
         "name": "businessmanaged_partner_businesses_survey_business_type_enum_param",
         "node": "Object",
         "field_or_param": "survey_business_type",
@@ -8284,7 +8443,8 @@
         "field_or_param": "partition_type",
         "values": [
             "AUTH",
-            "FIXED"
+            "FIXED",
+            "FIXED_WITHOUT_PARTITION"
         ]
     },
     {
@@ -8374,17 +8534,6 @@
             "month",
             "none",
             "year"
-        ]
-    },
-    {
-        "name": "groupfeed_checkin_entry_point_enum_param",
-        "node": "Post",
-        "field_or_param": "checkin_entry_point",
-        "values": [
-            "BRANDING_CHECKIN",
-            "BRANDING_OTHER",
-            "BRANDING_PHOTO",
-            "BRANDING_STATUS"
         ]
     },
     {
@@ -8649,7 +8798,6 @@
             "AUDIO_COMMENT",
             "BROADCAST",
             "BULLETIN_ARTICLE_AUDIO",
-            "CANDIDATE_VIDEOS_DELETED",
             "CANVAS",
             "CFC_VIDEO",
             "CMS_MEDIA_MANAGER",
@@ -8696,7 +8844,6 @@
             "GROUP_POST",
             "HACK_TV",
             "HEURISTIC_CLUSTER_VIDEO",
-            "HEURISTIC_PREVIEW",
             "HIGHLIGHT_CLIP_VIDEO",
             "HUDDLE_BROADCAST",
             "IG_REELS_XPV",
@@ -8712,7 +8859,6 @@
             "JOBS_VISUAL_INTRO_ENTRY",
             "JOB_APPLICATION_VIDEO",
             "JOB_OPENING_VIDEO",
-            "KOTOTORO",
             "LEARN",
             "LEGACY",
             "LEGACY_CONTAINED_POST_BROADCAST",
@@ -8768,6 +8914,7 @@
             "PROFILE_INTRO_CARD",
             "PROFILE_VIDEO",
             "PROTON",
+            "QUICK_CLIP_WORKPLACE_POST",
             "QUICK_PROMOTION",
             "REPLACE_VIDEO",
             "SALES_CLIENT_INTERACTION",
@@ -8776,7 +8923,6 @@
             "SLIDESHOW_ANIMOTO",
             "SLIDESHOW_SHAKR",
             "SLIDESHOW_VARIATION_VIDEO",
-            "SOTTO_CONTENT",
             "SOUNDBITES_VIDEO",
             "SOUND_PLATFORM_STREAM",
             "SRT_ATTACHMENT",
@@ -8890,6 +9036,15 @@
             "finish",
             "start",
             "transfer"
+        ]
+    },
+    {
+        "name": "highdemandperiod_budget_value_type",
+        "node": "HighDemandPeriod",
+        "field_or_param": "budget_value_type",
+        "values": [
+            "ABSOLUTE",
+            "MULTIPLIER"
         ]
     },
     {
@@ -9816,17 +9971,6 @@
         ]
     },
     {
-        "name": "pagefeed_checkin_entry_point_enum_param",
-        "node": "Page",
-        "field_or_param": "checkin_entry_point",
-        "values": [
-            "BRANDING_CHECKIN",
-            "BRANDING_OTHER",
-            "BRANDING_PHOTO",
-            "BRANDING_STATUS"
-        ]
-    },
-    {
         "name": "pagefeed_formatting_enum_param",
         "node": "Page",
         "field_or_param": "formatting",
@@ -10454,8 +10598,7 @@
         "node": "Page",
         "field_or_param": "developer_action",
         "values": [
-            "ENABLE_FOLLOWUP_MESSAGE",
-            "SEND_RE_OPTIN"
+            "ENABLE_FOLLOWUP_MESSAGE"
         ]
     },
     {
@@ -10702,8 +10845,8 @@
             "group_feed",
             "hometown",
             "hours",
-            "in_thread_lead_form_submit",
             "inbox_labels",
+            "invalid_topic_placeholder",
             "invoice_access_bank_slip_events",
             "invoice_access_invoice_change",
             "invoice_access_invoice_draft_change",
@@ -10733,6 +10876,7 @@
             "messaging_feedback",
             "messaging_game_plays",
             "messaging_handovers",
+            "messaging_in_thread_lead_form_submit",
             "messaging_optins",
             "messaging_optouts",
             "messaging_payments",
@@ -10742,6 +10886,7 @@
             "messaging_referrals",
             "mission",
             "name",
+            "otp_verification",
             "page_about_story",
             "page_change_proposal",
             "page_upcoming_change",
@@ -10764,6 +10909,15 @@
             "video_text_question_responses",
             "videos",
             "website"
+        ]
+    },
+    {
+        "name": "pagethreads_platform_enum_param",
+        "node": "UnifiedThread",
+        "field_or_param": "platform",
+        "values": [
+            "INSTAGRAM",
+            "MESSENGER"
         ]
     },
     {
@@ -10801,15 +10955,32 @@
         "node": "AdVideo",
         "field_or_param": "upload_phase",
         "values": [
-            "cancel",
-            "finish",
-            "start",
-            "transfer"
+            "FINISH",
+            "START"
         ]
     },
     {
         "name": "pagevideo_reels_video_state_enum_param",
         "node": "AdVideo",
+        "field_or_param": "video_state",
+        "values": [
+            "DRAFT",
+            "PUBLISHED",
+            "SCHEDULED"
+        ]
+    },
+    {
+        "name": "pagevideo_stories_upload_phase_enum_param",
+        "node": "Object",
+        "field_or_param": "upload_phase",
+        "values": [
+            "FINISH",
+            "START"
+        ]
+    },
+    {
+        "name": "pagevideo_stories_video_state_enum_param",
+        "node": "Object",
         "field_or_param": "video_state",
         "values": [
             "DRAFT",
@@ -10841,7 +11012,6 @@
             "AUDIO_COMMENT",
             "BROADCAST",
             "BULLETIN_ARTICLE_AUDIO",
-            "CANDIDATE_VIDEOS_DELETED",
             "CANVAS",
             "CFC_VIDEO",
             "CMS_MEDIA_MANAGER",
@@ -10888,7 +11058,6 @@
             "GROUP_POST",
             "HACK_TV",
             "HEURISTIC_CLUSTER_VIDEO",
-            "HEURISTIC_PREVIEW",
             "HIGHLIGHT_CLIP_VIDEO",
             "HUDDLE_BROADCAST",
             "IG_REELS_XPV",
@@ -10904,7 +11073,6 @@
             "JOBS_VISUAL_INTRO_ENTRY",
             "JOB_APPLICATION_VIDEO",
             "JOB_OPENING_VIDEO",
-            "KOTOTORO",
             "LEARN",
             "LEGACY",
             "LEGACY_CONTAINED_POST_BROADCAST",
@@ -10960,6 +11128,7 @@
             "PROFILE_INTRO_CARD",
             "PROFILE_VIDEO",
             "PROTON",
+            "QUICK_CLIP_WORKPLACE_POST",
             "QUICK_PROMOTION",
             "REPLACE_VIDEO",
             "SALES_CLIENT_INTERACTION",
@@ -10968,7 +11137,6 @@
             "SLIDESHOW_ANIMOTO",
             "SLIDESHOW_SHAKR",
             "SLIDESHOW_VARIATION_VIDEO",
-            "SOTTO_CONTENT",
             "SOUNDBITES_VIDEO",
             "SOUND_PLATFORM_STREAM",
             "SRT_ATTACHMENT",
@@ -11390,6 +11558,7 @@
         "node": "ProductCatalog",
         "field_or_param": "permitted_tasks",
         "values": [
+            "AA_ANALYZE",
             "ADVERTISE",
             "MANAGE",
             "MANAGE_AR"
@@ -11400,6 +11569,7 @@
         "node": "ProductCatalog",
         "field_or_param": "tasks",
         "values": [
+            "AA_ANALYZE",
             "ADVERTISE",
             "MANAGE",
             "MANAGE_AR"
@@ -11677,6 +11847,7 @@
             "available for order",
             "discontinued",
             "in stock",
+            "mark_as_sold",
             "out of stock",
             "pending",
             "preorder"
@@ -11930,10 +12101,16 @@
             "BAD_QUALITY_IMAGE",
             "CANNOT_EDIT_SUBSCRIPTION_PRODUCTS",
             "CRAWLED_AVAILABILITY_MISMATCH",
+            "DA_DISABLED_BY_USER",
+            "DA_POLICY_VIOLATION",
             "DIGITAL_GOODS_NOT_AVAILABLE_FOR_CHECKOUT",
             "DUPLICATE_IMAGES",
             "DUPLICATE_TITLE_AND_DESCRIPTION",
+            "EMPTY_AVAILABILITY",
+            "EMPTY_CONDITION",
             "EMPTY_DESCRIPTION",
+            "EMPTY_PRODUCT_URL",
+            "EMPTY_SELLER_DESCRIPTION",
             "GENERIC_INVALID_FIELD",
             "HIDDEN_UNTIL_PRODUCT_LAUNCH",
             "IMAGE_FETCH_FAILED",
@@ -11956,6 +12133,8 @@
             "IN_ANOTHER_PRODUCT_LAUNCH",
             "ITEM_GROUP_NOT_SPECIFIED",
             "ITEM_NOT_SHIPPABLE_FOR_SCA_SHOP",
+            "ITEM_OVERRIDE_EMPTY_AVAILABILITY",
+            "ITEM_OVERRIDE_EMPTY_PRICE",
             "ITEM_OVERRIDE_NOT_VISIBLE",
             "ITEM_STALE_OUT_OF_STOCK",
             "MINI_SHOPS_DISABLED_BY_USER",
@@ -11981,6 +12160,7 @@
             "PROPERTY_PRICE_CURRENCY_NOT_SUPPORTED",
             "PROPERTY_PRICE_TOO_HIGH",
             "PROPERTY_PRICE_TOO_LOW",
+            "PROPERTY_UNIT_PRICE_CURRENCY_MISMATCH_ITEM_PRICE_CURRENCY",
             "PROPERTY_VALUE_CONTAINS_HTML_TAGS",
             "PROPERTY_VALUE_DESCRIPTION_CONTAINS_OFF_PLATFORM_LINK",
             "PROPERTY_VALUE_FORMAT",
@@ -11989,16 +12169,25 @@
             "PROPERTY_VALUE_NON_POSITIVE",
             "PROPERTY_VALUE_STRING_EXCEEDS_LENGTH",
             "PROPERTY_VALUE_STRING_TOO_SHORT",
+            "PROPERTY_VALUE_UPPERCASE",
             "PROPERTY_VALUE_UPPERCASE_WARNING",
             "QUALITY_DUPLICATED_DESCRIPTION",
             "QUALITY_ITEM_LINK_BROKEN",
             "QUALITY_ITEM_LINK_REDIRECTING",
             "RETAILER_ID_NOT_PROVIDED",
             "SHOPIFY_ITEM_MISSING_SHIPPING_PROFILE",
+            "SHOPS_POLICY_VIOLATION",
             "SUBSCRIPTION_INFO_NOT_ENABLED_FOR_FEED",
             "TAX_CATEGORY_NOT_SUPPORTED_IN_UK",
             "UNSUPPORTED_PRODUCT_CATEGORY",
-            "VARIANT_ATTRIBUTE_ISSUE"
+            "VARIANT_ATTRIBUTE_ISSUE",
+            "VIDEO_FETCH_FAILED",
+            "VIDEO_FETCH_FAILED_BAD_GATEWAY",
+            "VIDEO_FETCH_FAILED_FILE_SIZE_EXCEEDED",
+            "VIDEO_FETCH_FAILED_FORBIDDEN",
+            "VIDEO_FETCH_FAILED_LINK_BROKEN",
+            "VIDEO_FETCH_FAILED_TIMED_OUT",
+            "VIDEO_NOT_DOWNLOADABLE"
         ]
     },
     {
@@ -12475,10 +12664,16 @@
             "BAD_QUALITY_IMAGE",
             "CANNOT_EDIT_SUBSCRIPTION_PRODUCTS",
             "CRAWLED_AVAILABILITY_MISMATCH",
+            "DA_DISABLED_BY_USER",
+            "DA_POLICY_VIOLATION",
             "DIGITAL_GOODS_NOT_AVAILABLE_FOR_CHECKOUT",
             "DUPLICATE_IMAGES",
             "DUPLICATE_TITLE_AND_DESCRIPTION",
+            "EMPTY_AVAILABILITY",
+            "EMPTY_CONDITION",
             "EMPTY_DESCRIPTION",
+            "EMPTY_PRODUCT_URL",
+            "EMPTY_SELLER_DESCRIPTION",
             "GENERIC_INVALID_FIELD",
             "HIDDEN_UNTIL_PRODUCT_LAUNCH",
             "IMAGE_FETCH_FAILED",
@@ -12501,6 +12696,8 @@
             "IN_ANOTHER_PRODUCT_LAUNCH",
             "ITEM_GROUP_NOT_SPECIFIED",
             "ITEM_NOT_SHIPPABLE_FOR_SCA_SHOP",
+            "ITEM_OVERRIDE_EMPTY_AVAILABILITY",
+            "ITEM_OVERRIDE_EMPTY_PRICE",
             "ITEM_OVERRIDE_NOT_VISIBLE",
             "ITEM_STALE_OUT_OF_STOCK",
             "MINI_SHOPS_DISABLED_BY_USER",
@@ -12526,6 +12723,7 @@
             "PROPERTY_PRICE_CURRENCY_NOT_SUPPORTED",
             "PROPERTY_PRICE_TOO_HIGH",
             "PROPERTY_PRICE_TOO_LOW",
+            "PROPERTY_UNIT_PRICE_CURRENCY_MISMATCH_ITEM_PRICE_CURRENCY",
             "PROPERTY_VALUE_CONTAINS_HTML_TAGS",
             "PROPERTY_VALUE_DESCRIPTION_CONTAINS_OFF_PLATFORM_LINK",
             "PROPERTY_VALUE_FORMAT",
@@ -12534,16 +12732,25 @@
             "PROPERTY_VALUE_NON_POSITIVE",
             "PROPERTY_VALUE_STRING_EXCEEDS_LENGTH",
             "PROPERTY_VALUE_STRING_TOO_SHORT",
+            "PROPERTY_VALUE_UPPERCASE",
             "PROPERTY_VALUE_UPPERCASE_WARNING",
             "QUALITY_DUPLICATED_DESCRIPTION",
             "QUALITY_ITEM_LINK_BROKEN",
             "QUALITY_ITEM_LINK_REDIRECTING",
             "RETAILER_ID_NOT_PROVIDED",
             "SHOPIFY_ITEM_MISSING_SHIPPING_PROFILE",
+            "SHOPS_POLICY_VIOLATION",
             "SUBSCRIPTION_INFO_NOT_ENABLED_FOR_FEED",
             "TAX_CATEGORY_NOT_SUPPORTED_IN_UK",
             "UNSUPPORTED_PRODUCT_CATEGORY",
-            "VARIANT_ATTRIBUTE_ISSUE"
+            "VARIANT_ATTRIBUTE_ISSUE",
+            "VIDEO_FETCH_FAILED",
+            "VIDEO_FETCH_FAILED_BAD_GATEWAY",
+            "VIDEO_FETCH_FAILED_FILE_SIZE_EXCEEDED",
+            "VIDEO_FETCH_FAILED_FORBIDDEN",
+            "VIDEO_FETCH_FAILED_LINK_BROKEN",
+            "VIDEO_FETCH_FAILED_TIMED_OUT",
+            "VIDEO_NOT_DOWNLOADABLE"
         ]
     },
     {
@@ -12585,6 +12792,7 @@
             "available for order",
             "discontinued",
             "in stock",
+            "mark_as_sold",
             "out of stock",
             "pending",
             "preorder"
@@ -12854,6 +13062,7 @@
             "available for order",
             "discontinued",
             "in stock",
+            "mark_as_sold",
             "out of stock",
             "pending",
             "preorder"
@@ -13403,10 +13612,16 @@
             "BAD_QUALITY_IMAGE",
             "CANNOT_EDIT_SUBSCRIPTION_PRODUCTS",
             "CRAWLED_AVAILABILITY_MISMATCH",
+            "DA_DISABLED_BY_USER",
+            "DA_POLICY_VIOLATION",
             "DIGITAL_GOODS_NOT_AVAILABLE_FOR_CHECKOUT",
             "DUPLICATE_IMAGES",
             "DUPLICATE_TITLE_AND_DESCRIPTION",
+            "EMPTY_AVAILABILITY",
+            "EMPTY_CONDITION",
             "EMPTY_DESCRIPTION",
+            "EMPTY_PRODUCT_URL",
+            "EMPTY_SELLER_DESCRIPTION",
             "GENERIC_INVALID_FIELD",
             "HIDDEN_UNTIL_PRODUCT_LAUNCH",
             "IMAGE_FETCH_FAILED",
@@ -13429,6 +13644,8 @@
             "IN_ANOTHER_PRODUCT_LAUNCH",
             "ITEM_GROUP_NOT_SPECIFIED",
             "ITEM_NOT_SHIPPABLE_FOR_SCA_SHOP",
+            "ITEM_OVERRIDE_EMPTY_AVAILABILITY",
+            "ITEM_OVERRIDE_EMPTY_PRICE",
             "ITEM_OVERRIDE_NOT_VISIBLE",
             "ITEM_STALE_OUT_OF_STOCK",
             "MINI_SHOPS_DISABLED_BY_USER",
@@ -13454,6 +13671,7 @@
             "PROPERTY_PRICE_CURRENCY_NOT_SUPPORTED",
             "PROPERTY_PRICE_TOO_HIGH",
             "PROPERTY_PRICE_TOO_LOW",
+            "PROPERTY_UNIT_PRICE_CURRENCY_MISMATCH_ITEM_PRICE_CURRENCY",
             "PROPERTY_VALUE_CONTAINS_HTML_TAGS",
             "PROPERTY_VALUE_DESCRIPTION_CONTAINS_OFF_PLATFORM_LINK",
             "PROPERTY_VALUE_FORMAT",
@@ -13462,16 +13680,25 @@
             "PROPERTY_VALUE_NON_POSITIVE",
             "PROPERTY_VALUE_STRING_EXCEEDS_LENGTH",
             "PROPERTY_VALUE_STRING_TOO_SHORT",
+            "PROPERTY_VALUE_UPPERCASE",
             "PROPERTY_VALUE_UPPERCASE_WARNING",
             "QUALITY_DUPLICATED_DESCRIPTION",
             "QUALITY_ITEM_LINK_BROKEN",
             "QUALITY_ITEM_LINK_REDIRECTING",
             "RETAILER_ID_NOT_PROVIDED",
             "SHOPIFY_ITEM_MISSING_SHIPPING_PROFILE",
+            "SHOPS_POLICY_VIOLATION",
             "SUBSCRIPTION_INFO_NOT_ENABLED_FOR_FEED",
             "TAX_CATEGORY_NOT_SUPPORTED_IN_UK",
             "UNSUPPORTED_PRODUCT_CATEGORY",
-            "VARIANT_ATTRIBUTE_ISSUE"
+            "VARIANT_ATTRIBUTE_ISSUE",
+            "VIDEO_FETCH_FAILED",
+            "VIDEO_FETCH_FAILED_BAD_GATEWAY",
+            "VIDEO_FETCH_FAILED_FILE_SIZE_EXCEEDED",
+            "VIDEO_FETCH_FAILED_FORBIDDEN",
+            "VIDEO_FETCH_FAILED_LINK_BROKEN",
+            "VIDEO_FETCH_FAILED_TIMED_OUT",
+            "VIDEO_NOT_DOWNLOADABLE"
         ]
     },
     {
@@ -13546,6 +13773,8 @@
             "engagement",
             "exits",
             "follows",
+            "ig_reels_avg_watch_time",
+            "ig_reels_video_view_total_time",
             "impressions",
             "likes",
             "navigation",
@@ -13746,6 +13975,15 @@
         ]
     },
     {
+        "name": "userconversations_platform_enum_param",
+        "node": "UnifiedThread",
+        "field_or_param": "platform",
+        "values": [
+            "INSTAGRAM",
+            "MESSENGER"
+        ]
+    },
+    {
         "name": "userevents_type_enum_param",
         "node": "Event",
         "field_or_param": "type",
@@ -13768,17 +14006,6 @@
             "month",
             "none",
             "year"
-        ]
-    },
-    {
-        "name": "userfeed_checkin_entry_point_enum_param",
-        "node": "Post",
-        "field_or_param": "checkin_entry_point",
-        "values": [
-            "BRANDING_CHECKIN",
-            "BRANDING_OTHER",
-            "BRANDING_PHOTO",
-            "BRANDING_STATUS"
         ]
     },
     {
@@ -14054,7 +14281,6 @@
             "AUDIO_COMMENT",
             "BROADCAST",
             "BULLETIN_ARTICLE_AUDIO",
-            "CANDIDATE_VIDEOS_DELETED",
             "CANVAS",
             "CFC_VIDEO",
             "CMS_MEDIA_MANAGER",
@@ -14101,7 +14327,6 @@
             "GROUP_POST",
             "HACK_TV",
             "HEURISTIC_CLUSTER_VIDEO",
-            "HEURISTIC_PREVIEW",
             "HIGHLIGHT_CLIP_VIDEO",
             "HUDDLE_BROADCAST",
             "IG_REELS_XPV",
@@ -14117,7 +14342,6 @@
             "JOBS_VISUAL_INTRO_ENTRY",
             "JOB_APPLICATION_VIDEO",
             "JOB_OPENING_VIDEO",
-            "KOTOTORO",
             "LEARN",
             "LEGACY",
             "LEGACY_CONTAINED_POST_BROADCAST",
@@ -14173,6 +14397,7 @@
             "PROFILE_INTRO_CARD",
             "PROFILE_VIDEO",
             "PROTON",
+            "QUICK_CLIP_WORKPLACE_POST",
             "QUICK_PROMOTION",
             "REPLACE_VIDEO",
             "SALES_CLIENT_INTERACTION",
@@ -14181,7 +14406,6 @@
             "SLIDESHOW_ANIMOTO",
             "SLIDESHOW_SHAKR",
             "SLIDESHOW_VARIATION_VIDEO",
-            "SOTTO_CONTENT",
             "SOUNDBITES_VIDEO",
             "SOUND_PLATFORM_STREAM",
             "SRT_ATTACHMENT",
@@ -14551,16 +14775,10 @@
         "field_or_param": "tasks",
         "values": [
             "DEVELOP",
-            "FULL_CONTROL",
             "MANAGE",
             "MANAGE_EXTENSIONS",
             "MANAGE_PHONE",
-            "MANAGE_PHONE_ASSETS",
-            "MANAGE_TEMPLATES",
-            "MESSAGING",
-            "VIEW_COST",
-            "VIEW_PHONE_ASSETS",
-            "VIEW_TEMPLATES"
+            "VIEW_COST"
         ]
     },
     {
@@ -14570,6 +14788,7 @@
         "values": [
             "AUTHENTICATION",
             "MARKETING",
+            "MARKETING_OPTIMIZED_DELIVERY",
             "SERVICE",
             "UNKNOWN",
             "UTILITY"
@@ -14630,6 +14849,22 @@
         ]
     },
     {
+        "name": "whatsappbusinessaccountmessage_template_previews_button_types_enum_param",
+        "node": "WhatsAppBusinessAccountMessageTemplatePreview",
+        "field_or_param": "button_types",
+        "values": [
+            "OTP"
+        ]
+    },
+    {
+        "name": "whatsappbusinessaccountmessage_template_previews_category_enum_param",
+        "node": "WhatsAppBusinessAccountMessageTemplatePreview",
+        "field_or_param": "category",
+        "values": [
+            "AUTHENTICATION"
+        ]
+    },
+    {
         "name": "whatsappbusinessaccountmessage_templates_category_enum_param",
         "node": "WhatsAppBusinessAccount",
         "field_or_param": "category",
@@ -14664,6 +14899,33 @@
             "PENDING",
             "PENDING_DELETION",
             "REJECTED"
+        ]
+    },
+    {
+        "name": "whatsappbusinessaccounttemplate_analytics_granularity_enum_param",
+        "node": "WABATemplateAnalytics",
+        "field_or_param": "granularity",
+        "values": [
+            "DAILY"
+        ]
+    },
+    {
+        "name": "whatsappbusinessaccounttemplate_analytics_metric_types_enum_param",
+        "node": "WABATemplateAnalytics",
+        "field_or_param": "metric_types",
+        "values": [
+            "CLICKED",
+            "DELIVERED",
+            "READ",
+            "SENT"
+        ]
+    },
+    {
+        "name": "whatsappbusinessaccountupsert_message_templates_category_enum_param",
+        "node": "WhatsAppBusinessAccount",
+        "field_or_param": "category",
+        "values": [
+            "AUTHENTICATION"
         ]
     },
     {

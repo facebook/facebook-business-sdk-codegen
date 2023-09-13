@@ -589,6 +589,10 @@
             "type": "string"
         },
         {
+            "name": "is_budget_schedule_enabled",
+            "type": "bool"
+        },
+        {
             "name": "is_skadnetwork_attribution",
             "type": "bool"
         },

@@ -2,11 +2,11 @@
     "apis": [],
     "fields": [
         {
-            "name": "errors",
-            "type": "list<string>"
+            "name": "onsite_eligibility",
+            "type": "Object"
         },
         {
-            "name": "product_groups",
+            "name": "reasons",
             "type": "list<Object>"
         },
         {

@@ -441,6 +441,16 @@
             "return": "Ad",
             "params": [
                 {
+                    "name": "ad_schedule_end_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "ad_schedule_start_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
                     "name": "adlabels",
                     "required": false,
                     "type": "list<Object>"
@@ -529,8 +539,20 @@
             "type": "string"
         },
         {
+            "name": "ad_active_time",
+            "type": "string"
+        },
+        {
             "name": "ad_review_feedback",
             "type": "AdgroupReviewFeedback"
+        },
+        {
+            "name": "ad_schedule_end_time",
+            "type": "datetime"
+        },
+        {
+            "name": "ad_schedule_start_time",
+            "type": "datetime"
         },
         {
             "name": "adlabels",

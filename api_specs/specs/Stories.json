@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "archived",
+            "type": "bool"
+        },
+        {
+            "name": "creation_time",
+            "type": "string"
+        },
+        {
+            "name": "media_type",
+            "type": "string"
+        },
+        {
+            "name": "post_id",
+            "type": "string"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        }
+    ]
+}

@@ -1033,6 +1033,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "partition_type",
+                    "required": false,
+                    "type": "businessmanaged_partner_businesses_partition_type_enum_param"
+                },
+                {
                     "name": "partner_facebook_page_url",
                     "required": false,
                     "type": "string"
@@ -1422,6 +1427,12 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "partner_account_linking",
+            "return": "PartnerAccountLinking",
+            "params": []
+        },
+        {
             "method": "POST",
             "endpoint": "partner_premium_options",
             "return": "Object",
@@ -1611,6 +1622,72 @@
             ]
         },
         {
+            "method": "DELETE",
+            "endpoint": "share_preverified_numbers",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "partner_business_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "preverified_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "share_preverified_numbers",
+            "return": "Business",
+            "params": [
+                {
+                    "name": "partner_business_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "preverified_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "system_user_access_tokens",
+            "return": "Business",
+            "params": [
+                {
+                    "name": "asset",
+                    "required": false,
+                    "type": "list<unsigned int>"
+                },
+                {
+                    "name": "fetch_only",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "scope",
+                    "required": false,
+                    "type": "list<Permission>"
+                },
+                {
+                    "name": "set_token_expires_in_60_days",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "system_user_id",
+                    "required": false,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "system_users",
             "return": "SystemUser",
@@ -1754,6 +1831,10 @@
         },
         {
             "name": "updated_time",
+            "type": "datetime"
+        },
+        {
+            "name": "user_access_expire_time",
             "type": "datetime"
         },
         {

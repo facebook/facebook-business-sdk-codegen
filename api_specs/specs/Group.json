@@ -245,11 +245,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "checkin_entry_point",
-                    "required": false,
-                    "type": "groupfeed_checkin_entry_point_enum_param"
-                },
-                {
                     "name": "child_attachments",
                     "required": false,
                     "type": "list<Object>"
@@ -751,7 +746,7 @@
                 {
                     "name": "group_icon_id",
                     "required": false,
-                    "type": "Object"
+                    "type": "string"
                 },
                 {
                     "name": "group_type",
@@ -771,7 +766,7 @@
                 {
                     "name": "parent_id",
                     "required": false,
-                    "type": "Object"
+                    "type": "string"
                 },
                 {
                     "name": "post_permissions",

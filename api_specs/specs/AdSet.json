@@ -544,6 +544,11 @@
                     "type": "adcampaign_billing_event"
                 },
                 {
+                    "name": "campaign_attribution",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
                     "name": "campaign_spec",
                     "required": false,
                     "type": "Object"
@@ -770,6 +775,10 @@
             "type": "Campaign"
         },
         {
+            "name": "campaign_active_time",
+            "type": "string"
+        },
+        {
             "name": "campaign_attribution",
             "type": "string"
         },
@@ -840,6 +849,10 @@
         {
             "name": "instagram_actor_id",
             "type": "string"
+        },
+        {
+            "name": "is_budget_schedule_enabled",
+            "type": "bool"
         },
         {
             "name": "is_dynamic_creative",

@@ -1,0 +1,45 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "age_max",
+            "type": "unsigned int"
+        },
+        {
+            "name": "age_min",
+            "type": "unsigned int"
+        },
+        {
+            "name": "audience_network_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "device_platforms",
+            "type": "list<AdAssetCustomizationRuleCustomizationSpec_device_platforms>"
+        },
+        {
+            "name": "facebook_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "geo_locations",
+            "type": "TargetingGeoLocation"
+        },
+        {
+            "name": "instagram_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "locales",
+            "type": "list<unsigned int>"
+        },
+        {
+            "name": "messenger_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "publisher_platforms",
+            "type": "list<string>"
+        }
+    ]
+}
