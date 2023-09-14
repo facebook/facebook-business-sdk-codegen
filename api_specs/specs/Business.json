@@ -853,7 +853,7 @@
                 {
                     "name": "bytes",
                     "required": false,
-                    "type": "Object"
+                    "type": "string"
                 },
                 {
                     "name": "creative_folder_id",

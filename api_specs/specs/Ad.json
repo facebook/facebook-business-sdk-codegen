@@ -53,7 +53,7 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 },
                 {
                     "name": "updated_since",
@@ -177,12 +177,12 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 },
                 {
                     "name": "time_ranges",
                     "required": false,
-                    "type": "list<Object>"
+                    "type": "list<map>"
                 },
                 {
                     "name": "use_account_attribution_setting",
@@ -289,12 +289,12 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 },
                 {
                     "name": "time_ranges",
                     "required": false,
-                    "type": "list<Object>"
+                    "type": "list<map>"
                 },
                 {
                     "name": "use_account_attribution_setting",
@@ -431,7 +431,7 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 }
             ]
         },

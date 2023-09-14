@@ -2449,7 +2449,7 @@
         },
         {
             "name": "shared_login_upgrade_required_by",
-            "type": "Object"
+            "type": "datetime"
         },
         {
             "name": "short_name",
