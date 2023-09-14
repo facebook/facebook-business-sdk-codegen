@@ -190,7 +190,7 @@
                 {
                     "name": "asid",
                     "required": false,
-                    "type": "list"
+                    "type": "list<string>"
                 },
                 {
                     "name": "psid",
@@ -200,12 +200,12 @@
                 {
                     "name": "uid",
                     "required": false,
-                    "type": "list"
+                    "type": "list<string>"
                 },
                 {
                     "name": "user",
                     "required": false,
-                    "type": "list"
+                    "type": "list<string>"
                 }
             ]
         },
@@ -2304,7 +2304,7 @@
                 {
                     "name": "photo_id",
                     "required": false,
-                    "type": "Object"
+                    "type": "string"
                 }
             ]
         },
@@ -3234,7 +3234,7 @@
                 {
                     "name": "video_id",
                     "required": false,
-                    "type": "Object"
+                    "type": "string"
                 },
                 {
                     "name": "video_state",
@@ -3286,7 +3286,7 @@
                 {
                     "name": "video_id",
                     "required": false,
-                    "type": "Object"
+                    "type": "string"
                 },
                 {
                     "name": "video_state",

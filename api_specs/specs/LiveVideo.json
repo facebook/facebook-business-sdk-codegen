@@ -8,7 +8,7 @@
                 {
                     "name": "uid",
                     "required": false,
-                    "type": "Object"
+                    "type": "string"
                 }
             ]
         },
