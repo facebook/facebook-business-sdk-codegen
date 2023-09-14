@@ -2,23 +2,23 @@
     "apis": [],
     "fields": [
         {
-            "name": "creation_time",
+            "name": "id",
             "type": "string"
         },
         {
-            "name": "media_type",
+            "name": "is_checked_by_default",
+            "type": "bool"
+        },
+        {
+            "name": "is_required",
+            "type": "bool"
+        },
+        {
+            "name": "key",
             "type": "string"
         },
         {
-            "name": "post_id",
-            "type": "string"
-        },
-        {
-            "name": "status",
-            "type": "string"
-        },
-        {
-            "name": "url",
+            "name": "text",
             "type": "string"
         }
     ]

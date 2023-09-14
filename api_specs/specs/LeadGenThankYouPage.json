@@ -1,0 +1,49 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "body",
+            "type": "string"
+        },
+        {
+            "name": "business_phone_number",
+            "type": "string"
+        },
+        {
+            "name": "button_text",
+            "type": "string"
+        },
+        {
+            "name": "button_type",
+            "type": "string"
+        },
+        {
+            "name": "country_code",
+            "type": "string"
+        },
+        {
+            "name": "enable_messenger",
+            "type": "bool"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "lead_gen_use_case",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "website_url",
+            "type": "string"
+        }
+    ]
+}

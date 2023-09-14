@@ -81,6 +81,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "session_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "tags",
                     "required": false,
                     "type": "list<int>"

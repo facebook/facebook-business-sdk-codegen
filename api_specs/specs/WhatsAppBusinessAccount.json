@@ -252,6 +252,11 @@
                     "name": "name",
                     "required": true,
                     "type": "string"
+                },
+                {
+                    "name": "sub_category",
+                    "required": false,
+                    "type": "Object"
                 }
             ]
         },

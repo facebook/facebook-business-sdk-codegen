@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "custom_disclaimer",
+            "type": "LeadGenCustomDisclaimer"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "privacy_policy",
+            "type": "LeadGenPrivacyPolicy"
+        }
+    ]
+}

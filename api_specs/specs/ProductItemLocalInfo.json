@@ -10,7 +10,7 @@
     "fields": [
         {
             "name": "availability_circle_origin",
-            "type": "Object"
+            "type": "ProductItemLocalInfoLatLongShape"
         },
         {
             "name": "availability_circle_radius",
@@ -22,7 +22,7 @@
         },
         {
             "name": "availability_polygon_coordinates",
-            "type": "list<Object>"
+            "type": "list<ProductItemLocalInfoLatLongShape>"
         },
         {
             "name": "availability_postal_codes",
@@ -38,7 +38,7 @@
         },
         {
             "name": "inferred_circle_origin",
-            "type": "Object"
+            "type": "ProductItemLocalInfoLatLongShape"
         },
         {
             "name": "inferred_circle_radius",

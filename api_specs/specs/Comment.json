@@ -289,7 +289,7 @@
         },
         {
             "name": "permalink_url",
-            "type": "Object"
+            "type": "string"
         },
         {
             "name": "private_reply_conversation",

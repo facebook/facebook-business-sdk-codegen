@@ -10,7 +10,7 @@
     "fields": [
         {
             "name": "composed_text",
-            "type": "list<Object>"
+            "type": "list<PageAboutStoryComposedBlock>"
         },
         {
             "name": "cover_photo",

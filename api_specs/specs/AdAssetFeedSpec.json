@@ -63,7 +63,7 @@
         },
         {
             "name": "message_extensions",
-            "type": "list<Object>"
+            "type": "list<AdAssetMessageExtensions>"
         },
         {
             "name": "optimization_type",

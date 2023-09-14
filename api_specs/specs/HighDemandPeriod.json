@@ -71,7 +71,7 @@
         },
         {
             "name": "weekly_schedule",
-            "type": "list<Object>"
+            "type": "list<HighDemandPeriodTimeSuggestionWeeklySegment>"
         }
     ]
 }
