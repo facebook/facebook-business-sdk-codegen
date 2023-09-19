@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "onsite_eligibility",
+            "type": "IGShoppingReviewStatusOnsiteEligibility"
+        },
+        {
+            "name": "reasons",
+            "type": "list<IGShoppingReviewStatusReasonWithHelpMessage>"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        }
+    ]
+}

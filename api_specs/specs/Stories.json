@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "creation_time",
+            "type": "string"
+        },
+        {
+            "name": "media_type",
+            "type": "string"
+        },
+        {
+            "name": "post_id",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        }
+    ]
+}

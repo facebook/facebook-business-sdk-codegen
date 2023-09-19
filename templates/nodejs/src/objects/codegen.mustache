@@ -1,11 +1,13 @@
-/**
- * Copyright (c) 2017-present, Facebook, Inc.
+ /*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
  * All rights reserved.
  *
  * This source code is licensed under the license found in the
  * LICENSE file in the root directory of this source tree.
+ *
  * @flow
  */
+
 import {AbstractCrudObject} from './../abstract-crud-object';
 {{#has_generic_reference}}
 import AbstractObject from './../abstract-object';
@@ -38,7 +40,7 @@ export default class {{name:pascal_case}} extends AbstractCrudObject {
   static get {{field_or_param:pascal_case}} (): Object {
     return Object.freeze({
       {{#values_with_naming_convention}}
-      {{{value:all_lower_case_excluding_digit_suffix}}}: '{{{value}}}',
+      {{{value:all_lower_case_excluding_digit_suffix}}}: '{{{value:escape_single_quote}}}',
       {{/values_with_naming_convention}}
     });
   }

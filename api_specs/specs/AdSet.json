@@ -118,7 +118,7 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 },
                 {
                     "name": "updated_since",
@@ -162,7 +162,7 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 }
             ]
         },
@@ -323,12 +323,12 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 },
                 {
                     "name": "time_ranges",
                     "required": false,
-                    "type": "list<Object>"
+                    "type": "list<map>"
                 },
                 {
                     "name": "use_account_attribution_setting",
@@ -435,12 +435,12 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 },
                 {
                     "name": "time_ranges",
                     "required": false,
-                    "type": "list<Object>"
+                    "type": "list<map>"
                 },
                 {
                     "name": "use_account_attribution_setting",
@@ -489,7 +489,7 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 }
             ]
         },
@@ -542,6 +542,11 @@
                     "name": "billing_event",
                     "required": false,
                     "type": "adcampaign_billing_event"
+                },
+                {
+                    "name": "campaign_attribution",
+                    "required": false,
+                    "type": "Object"
                 },
                 {
                     "name": "campaign_spec",
@@ -770,6 +775,10 @@
             "type": "Campaign"
         },
         {
+            "name": "campaign_active_time",
+            "type": "string"
+        },
+        {
             "name": "campaign_attribution",
             "type": "string"
         },
@@ -840,6 +849,10 @@
         {
             "name": "instagram_actor_id",
             "type": "string"
+        },
+        {
+            "name": "is_budget_schedule_enabled",
+            "type": "bool"
         },
         {
             "name": "is_dynamic_creative",

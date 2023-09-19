@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "appointment_slots",
+            "type": "list<LeadGenAppointmentTimeSlot>"
+        },
+        {
+            "name": "day",
+            "type": "string"
+        }
+    ]
+}

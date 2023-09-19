@@ -4,6 +4,10 @@
         {
             "name": "audience_controls",
             "type": "Object"
+        },
+        {
+            "name": "placement_controls",
+            "type": "Object"
         }
     ]
 }

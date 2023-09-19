@@ -15,7 +15,7 @@
         },
         {
             "name": "attachment_style",
-            "type": "AdCreativeLinkData_attachment_style"
+            "type": "string"
         },
         {
             "name": "branded_content_shared_to_sponsor_status",

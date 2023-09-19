@@ -37,6 +37,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "dataset",
+            "return": "Dataset",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "insights",
             "return": "InstagramInsightsResult",
             "params": [
@@ -128,6 +134,11 @@
                 },
                 {
                     "name": "children",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "collaborators",
                     "required": false,
                     "type": "list<string>"
                 },

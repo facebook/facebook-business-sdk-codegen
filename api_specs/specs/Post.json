@@ -508,7 +508,7 @@
         },
         {
             "name": "link",
-            "type": "Object"
+            "type": "string"
         },
         {
             "name": "message",
@@ -540,7 +540,7 @@
         },
         {
             "name": "permalink_url",
-            "type": "Object"
+            "type": "string"
         },
         {
             "name": "picture",
