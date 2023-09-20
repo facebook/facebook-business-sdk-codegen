@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "length",
+            "type": "unsigned int"
+        },
+        {
+            "name": "offset",
+            "type": "unsigned int"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        }
+    ]
+}

@@ -46,18 +46,6 @@
             ]
         },
         {
-            "method": "GET",
-            "endpoint": "ar_effects_batch_status",
-            "return": "AREffectsBatchStatus",
-            "params": [
-                {
-                    "name": "handle",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "DELETE",
             "endpoint": "assigned_users",
             "return": "Object",
@@ -1663,6 +1651,10 @@
         {
             "name": "store_catalog_settings",
             "type": "StoreCatalogSettings"
+        },
+        {
+            "name": "user_access_expire_time",
+            "type": "datetime"
         },
         {
             "name": "vertical",

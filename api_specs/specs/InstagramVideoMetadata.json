@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "duration",
+            "type": "float"
+        },
+        {
+            "name": "height",
+            "type": "float"
+        },
+        {
+            "name": "width",
+            "type": "float"
+        }
+    ]
+}

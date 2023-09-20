@@ -526,7 +526,7 @@
         },
         {
             "name": "permalink_url",
-            "type": "Object"
+            "type": "string"
         },
         {
             "name": "picture",

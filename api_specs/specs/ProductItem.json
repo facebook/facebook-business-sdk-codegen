@@ -461,10 +461,6 @@
             "type": "CatalogItemAppLinks"
         },
         {
-            "name": "ar_data",
-            "type": "ProductItemARData"
-        },
-        {
             "name": "availability",
             "type": "ProductItem_availability"
         },
@@ -663,6 +659,10 @@
         {
             "name": "product_group",
             "type": "ProductGroup"
+        },
+        {
+            "name": "product_local_info",
+            "type": "ProductItemLocalInfo"
         },
         {
             "name": "product_type",

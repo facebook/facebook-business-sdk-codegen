@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "body",
+            "type": "LeadGenCustomDisclaimerBody"
+        },
+        {
+            "name": "checkboxes",
+            "type": "list<LeadGenLegalContentCheckbox>"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        }
+    ]
+}

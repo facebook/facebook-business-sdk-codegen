@@ -426,6 +426,10 @@
             "type": "OfflineConversionDataSetUsage"
         },
         {
+            "name": "user_access_expire_time",
+            "type": "datetime"
+        },
+        {
             "name": "valid_entries",
             "type": "int"
         }

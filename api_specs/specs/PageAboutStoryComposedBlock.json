@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "depth",
+            "type": "int"
+        },
+        {
+            "name": "entity_ranges",
+            "type": "list<PageAboutStoryComposedBlockEntityRanges>"
+        },
+        {
+            "name": "inline_style_ranges",
+            "type": "list<PageAboutStoryComposedBlockInlineStyle>"
+        },
+        {
+            "name": "text",
+            "type": "string"
+        },
+        {
+            "name": "type",
+            "type": "string"
+        }
+    ]
+}

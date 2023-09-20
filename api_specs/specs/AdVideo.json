@@ -613,7 +613,7 @@
         },
         {
             "name": "permalink_url",
-            "type": "Object"
+            "type": "string"
         },
         {
             "name": "picture",
@@ -622,6 +622,10 @@
         {
             "name": "place",
             "type": "Place"
+        },
+        {
+            "name": "post_id",
+            "type": "string"
         },
         {
             "name": "post_views",

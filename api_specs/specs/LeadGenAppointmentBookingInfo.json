@@ -11,7 +11,7 @@
         },
         {
             "name": "appointment_slots_by_day",
-            "type": "list<Object>"
+            "type": "list<LeadGenAppointmentSlotsByDay>"
         }
     ]
 }
