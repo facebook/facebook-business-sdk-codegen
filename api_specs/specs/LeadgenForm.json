@@ -139,7 +139,7 @@
         },
         {
             "name": "tracking_parameters",
-            "type": "list<map<string, string>>"
+            "type": "list<KeyValue>"
         }
     ]
 }
