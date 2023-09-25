@@ -557,6 +557,10 @@
             "type": "string"
         },
         {
+            "name": "campaign_group_active_time",
+            "type": "string"
+        },
+        {
             "name": "can_create_brand_lift_study",
             "type": "bool"
         },
