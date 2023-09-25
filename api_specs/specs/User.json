@@ -380,6 +380,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "platform",
+                    "required": false,
+                    "type": "userconversations_platform_enum_param"
+                },
+                {
                     "name": "tags",
                     "required": false,
                     "type": "list<string>"
@@ -535,11 +540,6 @@
                     "name": "caption",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "checkin_entry_point",
-                    "required": false,
-                    "type": "userfeed_checkin_entry_point_enum_param"
                 },
                 {
                     "name": "child_attachments",
@@ -2308,6 +2308,10 @@
             "type": "AgeRange"
         },
         {
+            "name": "avatar_2d_profile_picture",
+            "type": "AvatarProfilePicture"
+        },
+        {
             "name": "birthday",
             "type": "string"
         },
@@ -2376,6 +2380,10 @@
             "type": "bool"
         },
         {
+            "name": "is_work_account",
+            "type": "bool"
+        },
+        {
             "name": "languages",
             "type": "list<Experience>"
         },
@@ -2441,7 +2449,7 @@
         },
         {
             "name": "shared_login_upgrade_required_by",
-            "type": "Object"
+            "type": "datetime"
         },
         {
             "name": "short_name",

@@ -8,6 +8,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "ar_effects",
+            "return": "AREffect",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "authorized_adaccounts",
             "return": "AdAccount",
             "params": [

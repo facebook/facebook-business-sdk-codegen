@@ -46,6 +46,10 @@
             "type": "string"
         },
         {
+            "name": "offsite_conversion_event_id",
+            "type": "string"
+        },
+        {
             "name": "omnichannel_object",
             "type": "Object"
         },

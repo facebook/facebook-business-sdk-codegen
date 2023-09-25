@@ -1,0 +1,75 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "comments",
+            "return": "InstagramComment",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "comments",
+            "return": "InstagramComment",
+            "params": [
+                {
+                    "name": "ad_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "message",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "InstagramCarousel",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "caption_text",
+            "type": "string"
+        },
+        {
+            "name": "comment_count",
+            "type": "int"
+        },
+        {
+            "name": "content_type",
+            "type": "int"
+        },
+        {
+            "name": "display_url",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "like_count",
+            "type": "int"
+        },
+        {
+            "name": "owner_instagram_user",
+            "type": "InstagramUser"
+        },
+        {
+            "name": "permalink",
+            "type": "string"
+        },
+        {
+            "name": "taken_at",
+            "type": "datetime"
+        },
+        {
+            "name": "video_url",
+            "type": "string"
+        }
+    ]
+}

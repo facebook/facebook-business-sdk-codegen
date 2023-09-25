@@ -1,0 +1,48 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ProductItemLocalInfo",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "availability_circle_origin",
+            "type": "ProductItemLocalInfoLatLongShape"
+        },
+        {
+            "name": "availability_circle_radius",
+            "type": "float"
+        },
+        {
+            "name": "availability_circle_radius_unit",
+            "type": "string"
+        },
+        {
+            "name": "availability_polygon_coordinates",
+            "type": "list<ProductItemLocalInfoLatLongShape>"
+        },
+        {
+            "name": "availability_postal_codes",
+            "type": "list<string>"
+        },
+        {
+            "name": "availability_source",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "inferred_circle_origin",
+            "type": "ProductItemLocalInfoLatLongShape"
+        },
+        {
+            "name": "inferred_circle_radius",
+            "type": "float"
+        }
+    ]
+}

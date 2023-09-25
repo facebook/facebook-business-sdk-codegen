@@ -8,7 +8,7 @@
                 {
                     "name": "uid",
                     "required": false,
-                    "type": "Object"
+                    "type": "string"
                 }
             ]
         },
@@ -366,7 +366,7 @@
         },
         {
             "name": "permalink_url",
-            "type": "Object"
+            "type": "string"
         },
         {
             "name": "planned_start_time",

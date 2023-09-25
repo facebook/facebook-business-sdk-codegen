@@ -59,7 +59,7 @@
         },
         {
             "name": "context_card",
-            "type": "Object"
+            "type": "LeadGenContextCard"
         },
         {
             "name": "created_time",
@@ -95,7 +95,7 @@
         },
         {
             "name": "legal_content",
-            "type": "Object"
+            "type": "LeadGenLegalContent"
         },
         {
             "name": "locale",
@@ -135,7 +135,7 @@
         },
         {
             "name": "thank_you_page",
-            "type": "Object"
+            "type": "LeadGenThankYouPage"
         },
         {
             "name": "tracking_parameters",

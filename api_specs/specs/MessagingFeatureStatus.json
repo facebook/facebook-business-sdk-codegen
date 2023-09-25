@@ -4,6 +4,14 @@
         {
             "name": "hop_v2",
             "type": "bool"
+        },
+        {
+            "name": "ig_multi_app",
+            "type": "bool"
+        },
+        {
+            "name": "msgr_multi_app",
+            "type": "bool"
         }
     ]
 }

@@ -15,6 +15,11 @@
                     "name": "audience_controls",
                     "required": false,
                     "type": "Object"
+                },
+                {
+                    "name": "placement_controls",
+                    "required": false,
+                    "type": "Object"
                 }
             ]
         },
@@ -403,7 +408,7 @@
                 {
                     "name": "template_url_spec",
                     "required": false,
-                    "type": "Object"
+                    "type": "string"
                 },
                 {
                     "name": "thumbnail_url",
@@ -506,7 +511,7 @@
                 {
                     "name": "bytes",
                     "required": false,
-                    "type": "Object"
+                    "type": "string"
                 },
                 {
                     "name": "copy_from",
@@ -669,7 +674,7 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 },
                 {
                     "name": "updated_since",
@@ -683,6 +688,16 @@
             "endpoint": "ads",
             "return": "Ad",
             "params": [
+                {
+                    "name": "ad_schedule_end_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "ad_schedule_start_time",
+                    "required": false,
+                    "type": "datetime"
+                },
                 {
                     "name": "adlabels",
                     "required": false,
@@ -786,9 +801,19 @@
             "return": "AdsConversionGoal",
             "params": [
                 {
+                    "name": "conversion_event_value_source",
+                    "required": false,
+                    "type": "adaccountads_conversion_goal_conversion_event_value_source_enum_param"
+                },
+                {
                     "name": "description",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "goal_creation_method",
+                    "required": true,
+                    "type": "adaccountads_conversion_goal_goal_creation_method_enum_param"
                 },
                 {
                     "name": "goal_name",
@@ -796,9 +821,19 @@
                     "type": "string"
                 },
                 {
+                    "name": "performance_goal",
+                    "required": true,
+                    "type": "adaccountads_conversion_goal_performance_goal_enum_param"
+                },
+                {
                     "name": "single_channel_conversion_events",
                     "required": true,
                     "type": "list<map>"
+                },
+                {
+                    "name": "value_adjustment_rule",
+                    "required": false,
+                    "type": "map"
                 }
             ]
         },
@@ -882,7 +917,7 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 },
                 {
                     "name": "updated_since",
@@ -935,6 +970,11 @@
                     "name": "billing_event",
                     "required": false,
                     "type": "adaccountadsets_billing_event_enum_param"
+                },
+                {
+                    "name": "campaign_attribution",
+                    "required": false,
+                    "type": "Object"
                 },
                 {
                     "name": "campaign_id",
@@ -1857,7 +1897,7 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 }
             ]
         },
@@ -2318,6 +2358,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "dsa_recommendations",
+            "return": "AdAccountDsaRecommendations",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "generatepreviews",
             "return": "AdPreview",
             "params": [
@@ -2497,12 +2543,12 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 },
                 {
                     "name": "time_ranges",
                     "required": false,
-                    "type": "list<Object>"
+                    "type": "list<map>"
                 },
                 {
                     "name": "use_account_attribution_setting",
@@ -2609,12 +2655,12 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 },
                 {
                     "name": "time_ranges",
                     "required": false,
-                    "type": "list<Object>"
+                    "type": "list<map>"
                 },
                 {
                     "name": "use_account_attribution_setting",
@@ -2670,6 +2716,21 @@
                     "name": "custom_event_type",
                     "required": false,
                     "type": "adaccountmanaged_partner_ads_custom_event_type_enum_param"
+                },
+                {
+                    "name": "daily_budget",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "dsa_beneficiary",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "dsa_payor",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "end_time",
@@ -3066,6 +3127,11 @@
                     "type": "unsigned int"
                 },
                 {
+                    "name": "is_balanced_frequency",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "is_bonus_media",
                     "required": false,
                     "type": "bool"
@@ -3152,6 +3218,16 @@
                 },
                 {
                     "name": "target_cpm",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "target_frequency",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "target_frequency_reset_period",
                     "required": false,
                     "type": "unsigned int"
                 },
@@ -3496,6 +3572,12 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "value_adjustment_rules",
+            "return": "AdsValueAdjustmentRule",
+            "params": []
+        },
+        {
             "name": "#get",
             "method": "GET",
             "return": "AdAccount",
@@ -3614,6 +3696,10 @@
         {
             "name": "agency_client_declaration",
             "type": "AgencyClientDeclaration"
+        },
+        {
+            "name": "all_capabilities",
+            "type": "list<string>"
         },
         {
             "name": "amount_spent",
@@ -3854,6 +3940,10 @@
         {
             "name": "tos_accepted",
             "type": "map<string, int>"
+        },
+        {
+            "name": "user_access_expire_time",
+            "type": "datetime"
         },
         {
             "name": "user_tasks",

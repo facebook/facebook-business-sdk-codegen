@@ -252,6 +252,11 @@
                     "type": "applicationactivities_user_id_type_enum_param"
                 },
                 {
+                    "name": "vendor_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "windows_attribution_id",
                     "required": false,
                     "type": "string"
@@ -466,6 +471,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "is_app_aem_install_ready",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "is_app_aem_ready",
                     "required": false,
                     "type": "bool"
@@ -658,6 +668,18 @@
                     "name": "business",
                     "required": false,
                     "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "banned",
+            "return": "User",
+            "params": [
+                {
+                    "name": "uid",
+                    "required": false,
+                    "type": "int"
                 }
             ]
         },
@@ -1026,6 +1048,12 @@
             "method": "GET",
             "endpoint": "roles",
             "return": "ApplicationRoles",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "server_domain_infos",
+            "return": "ApplicationServerDomainInfos",
             "params": []
         },
         {
@@ -1633,6 +1661,10 @@
         {
             "name": "property_id",
             "type": "string"
+        },
+        {
+            "name": "protected_mode_rules",
+            "type": "Object"
         },
         {
             "name": "real_time_mode_devices",

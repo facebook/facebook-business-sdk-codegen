@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "length",
+            "type": "int"
+        },
+        {
+            "name": "offset",
+            "type": "int"
+        },
+        {
+            "name": "style",
+            "type": "string"
+        }
+    ]
+}
