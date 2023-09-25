@@ -1,0 +1,37 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "image_url",
+            "type": "string"
+        },
+        {
+            "name": "is_checkout_flow",
+            "type": "bool"
+        },
+        {
+            "name": "merchant_id",
+            "type": "int"
+        },
+        {
+            "name": "product_id",
+            "type": "int"
+        },
+        {
+            "name": "product_name",
+            "type": "string"
+        },
+        {
+            "name": "product_variants",
+            "type": "list<ShadowIGUserCatalogProductVariant>"
+        },
+        {
+            "name": "retailer_id",
+            "type": "string"
+        },
+        {
+            "name": "review_status",
+            "type": "string"
+        }
+    ]
+}

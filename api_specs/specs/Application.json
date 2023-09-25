@@ -764,6 +764,18 @@
         },
         {
             "method": "GET",
+            "endpoint": "iap_purchases",
+            "return": "DCPAppStoreOrder",
+            "params": [
+                {
+                    "name": "order_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "insights_push_schedule",
             "return": "AdsInsightsPushSchedule",
             "params": []
@@ -920,6 +932,12 @@
         {
             "method": "GET",
             "endpoint": "object_types",
+            "return": "NullNode",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "objects",
             "return": "NullNode",
             "params": []
         },

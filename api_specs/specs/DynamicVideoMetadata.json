@@ -1,0 +1,28 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "DynamicVideoMetadata",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "tags",
+            "type": "list<string>"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        },
+        {
+            "name": "video",
+            "type": "AdVideo"
+        }
+    ]
+}

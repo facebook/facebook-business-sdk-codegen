@@ -129,10 +129,14 @@
             "update_campaign_ad_scheduling",
             "update_campaign_budget",
             "update_campaign_budget_optimization_toggling_status",
+            "update_campaign_budget_scheduling_state",
             "update_campaign_delivery_type",
             "update_campaign_group_ad_scheduling",
+            "update_campaign_group_budget_scheduling_state",
             "update_campaign_group_delivery_type",
+            "update_campaign_group_high_demand_periods",
             "update_campaign_group_spend_cap",
+            "update_campaign_high_demand_periods",
             "update_campaign_name",
             "update_campaign_run_status",
             "update_campaign_schedule",
@@ -1692,6 +1696,19 @@
         ]
     },
     {
+        "name": "ProductItem_video_fetch_status",
+        "node": "ProductItem",
+        "field_or_param": "video_fetch_status",
+        "values": [
+            "DIRECT_UPLOAD",
+            "FETCHED",
+            "FETCH_FAILED",
+            "NO_STATUS",
+            "OUTDATED",
+            "PARTIAL_FETCH"
+        ]
+    },
+    {
         "name": "ProductItem_visibility",
         "node": "ProductItem",
         "field_or_param": "visibility",
@@ -2031,6 +2048,8 @@
             "AM_RULE_LANDING_PAGE_BANNER",
             "AM_SYD_RESOLUTION_FLOW",
             "AM_SYD_RESOLUTION_FLOW_MODAL",
+            "AM_TABLE_DELIVERY_COLUMN_POPOVER",
+            "AM_TABLE_TOGGLE_POPOVER",
             "AM_TOOLBAR_CREATE_RULE_DROPDOWN",
             "PE_CAMPAIGN_STRUCTURE_MENU",
             "PE_EDITOR_CARD",
@@ -2206,6 +2225,7 @@
             "AUCTION_OVERLAP",
             "AUCTION_OVERLAP_CONSOLIDATION",
             "AUDIENCE_EXPANSION",
+            "AUDIENCE_EXPANSION_RETARGETING",
             "AUTOFLOW_OPT_IN",
             "AUTOFLOW_OPT_IN_FALLBACK_DUPLICATION_FLOW",
             "AUTOMATIC_PLACEMENTS",
@@ -3383,6 +3403,7 @@
         "node": "AdPreview",
         "field_or_param": "creative_feature",
         "values": [
+            "product_metadata_automation",
             "profile_card",
             "standard_enhancements_catalog"
         ]
@@ -3467,6 +3488,12 @@
             "is_conversion_id_modeled",
             "link_url_asset",
             "marketing_messages_btn_name",
+            "media_asset_url",
+            "media_creator",
+            "media_destination_url",
+            "media_format",
+            "media_origin_url",
+            "media_text_content",
             "mmm",
             "place_page_id",
             "platform_position",
@@ -6102,6 +6129,12 @@
             "is_conversion_id_modeled",
             "link_url_asset",
             "marketing_messages_btn_name",
+            "media_asset_url",
+            "media_creator",
+            "media_destination_url",
+            "media_format",
+            "media_origin_url",
+            "media_text_content",
             "mmm",
             "place_page_id",
             "platform_position",
@@ -6246,6 +6279,12 @@
             "is_conversion_id_modeled",
             "link_url_asset",
             "marketing_messages_btn_name",
+            "media_asset_url",
+            "media_creator",
+            "media_destination_url",
+            "media_format",
+            "media_origin_url",
+            "media_text_content",
             "mmm",
             "place_page_id",
             "platform_position",
@@ -6396,6 +6435,7 @@
         "node": "AdPreview",
         "field_or_param": "creative_feature",
         "values": [
+            "product_metadata_automation",
             "profile_card",
             "standard_enhancements_catalog"
         ]
@@ -6582,6 +6622,12 @@
             "is_conversion_id_modeled",
             "link_url_asset",
             "marketing_messages_btn_name",
+            "media_asset_url",
+            "media_creator",
+            "media_destination_url",
+            "media_format",
+            "media_origin_url",
+            "media_text_content",
             "mmm",
             "place_page_id",
             "platform_position",
@@ -6721,6 +6767,7 @@
         "node": "AdPreview",
         "field_or_param": "creative_feature",
         "values": [
+            "product_metadata_automation",
             "profile_card",
             "standard_enhancements_catalog"
         ]
@@ -15215,6 +15262,16 @@
             "PENDING",
             "PENDING_DELETION",
             "REJECTED"
+        ]
+    },
+    {
+        "name": "whatsappbusinessaccountmessage_templates_sub_category_enum_param",
+        "node": "WhatsAppBusinessAccount",
+        "field_or_param": "sub_category",
+        "values": [
+            "CUSTOM",
+            "ORDER_DETAILS",
+            "ORDER_STATUS"
         ]
     },
     {

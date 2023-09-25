@@ -111,10 +111,64 @@
             "params": []
         },
         {
+            "method": "POST",
+            "endpoint": "extensions",
+            "return": "WhatsAppExtension",
+            "params": [
+                {
+                    "name": "clone_extension_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "clone_template",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "data_channel_uri",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "flows",
             "return": "WhatsAppExtension",
             "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "flows",
+            "return": "WhatsAppExtension",
+            "params": [
+                {
+                    "name": "clone_flow_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "clone_template",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "data_channel_uri",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -256,7 +310,7 @@
                 {
                     "name": "sub_category",
                     "required": false,
-                    "type": "Object"
+                    "type": "whatsappbusinessaccountmessage_templates_sub_category_enum_param"
                 }
             ]
         },
