@@ -1,0 +1,113 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "advantage_plus_creative",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "audio",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "carousel_to_video",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "cv_transformation",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "description_automation",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "dha_optimization",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "ig_glados_feed",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "image_auto_crop",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "image_background_gen",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "image_enhancement",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "image_templates",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "image_touchups",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "image_uncrop",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "inline_comment",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "media_liquidity_animated_image",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "media_order",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "media_type_automation",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "product_extensions",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "product_metadata_automation",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "product_tags",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "profile_card",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "standard_enhancements",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "standard_enhancements_catalog",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "text_generation",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "text_optimizations",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "video_auto_crop",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "video_highlight",
+            "type": "AdCreativeFeatureDetails"
+        }
+    ]
+}
