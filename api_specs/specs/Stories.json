@@ -6,6 +6,10 @@
             "type": "string"
         },
         {
+            "name": "media_id",
+            "type": "string"
+        },
+        {
             "name": "media_type",
             "type": "string"
         },

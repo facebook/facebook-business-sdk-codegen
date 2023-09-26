@@ -2950,7 +2950,23 @@
             "method": "GET",
             "endpoint": "stories",
             "return": "Stories",
-            "params": []
+            "params": [
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "status",
+                    "required": false,
+                    "type": "list<pagestories_status_enum_param>"
+                },
+                {
+                    "name": "until",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
         },
         {
             "method": "DELETE",

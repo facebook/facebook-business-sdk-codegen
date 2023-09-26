@@ -11183,6 +11183,15 @@
         ]
     },
     {
+        "name": "pagestories_status_enum_param",
+        "node": "Stories",
+        "field_or_param": "status",
+        "values": [
+            "ARCHIVED",
+            "PUBLISHED"
+        ]
+    },
+    {
         "name": "pagesubscribed_apps_subscribed_fields_enum_param",
         "node": "Page",
         "field_or_param": "subscribed_fields",
