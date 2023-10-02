@@ -68,7 +68,7 @@ class {{name:pascal_case}}(
     {{#api_spec_based_enum_reference}}
     class {{field_or_param:pascal_case}}:
         {{#values_with_naming_convention}}
-        {{#is_irregular_name}}value_{{/is_irregular_name}}{{{value:underscore}}} = '{{{value}}}'
+        {{#is_irregular_name}}value_{{/is_irregular_name}}{{{value:underscore}}} = '{{{value:escape_single_quote}}}'
         {{/values_with_naming_convention}}
 
     {{/api_spec_based_enum_reference}}
