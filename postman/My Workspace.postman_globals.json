@@ -1,0 +1,26 @@
+{
+	"id": "146e52f0-fd32-4814-8e58-8a3c0f4d5eb7",
+	"values": [
+		{
+			"key": "token",
+			"value": "",
+			"type": "secret",
+			"enabled": true
+		},
+		{
+			"key": "base_url",
+			"value": "https://graph.facebook.com/v17.0",
+			"enabled": true
+		},
+		{
+			"key": "account_id",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"name": "My Workspace Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2023-09-20T14:12:47.835Z",
+	"_postman_exported_using": "Postman/10.17.3"
+}
