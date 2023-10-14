@@ -1738,14 +1738,14 @@
             "return": "Object",
             "params": [
                 {
-                    "name": "location_page_id",
+                    "name": "location_page_ids",
                     "required": true,
-                    "type": "string"
+                    "type": "list<string>"
                 },
                 {
-                    "name": "store_number",
-                    "required": false,
-                    "type": "unsigned int"
+                    "name": "store_numbers",
+                    "required": true,
+                    "type": "list<unsigned int>"
                 }
             ]
         },
@@ -4289,6 +4289,10 @@
             "type": "string"
         },
         {
+            "name": "does_viewer_have_page_permission_link_ig",
+            "type": "bool"
+        },
+        {
             "name": "emails",
             "type": "list<string>"
         },
@@ -4401,6 +4405,10 @@
             "type": "bool"
         },
         {
+            "name": "is_eligible_for_disable_connect_ig_btn_for_non_page_admin_am_web",
+            "type": "bool"
+        },
+        {
             "name": "is_messenger_bot_get_started_enabled",
             "type": "bool"
         },
@@ -4475,10 +4483,6 @@
         {
             "name": "messenger_ads_default_icebreakers",
             "type": "list<string>"
-        },
-        {
-            "name": "messenger_ads_default_page_welcome_message",
-            "type": "MessengerDestinationPageWelcomeMessage"
         },
         {
             "name": "messenger_ads_default_quick_replies",

@@ -116,6 +116,11 @@
             "return": "WhatsAppExtension",
             "params": [
                 {
+                    "name": "categories",
+                    "required": true,
+                    "type": "list<whatsappbusinessaccountextensions_categories_enum_param>"
+                },
+                {
                     "name": "clone_extension_id",
                     "required": false,
                     "type": "string"
@@ -148,6 +153,11 @@
             "endpoint": "flows",
             "return": "WhatsAppExtension",
             "params": [
+                {
+                    "name": "categories",
+                    "required": true,
+                    "type": "list<whatsappbusinessaccountflows_categories_enum_param>"
+                },
                 {
                     "name": "clone_flow_id",
                     "required": false,

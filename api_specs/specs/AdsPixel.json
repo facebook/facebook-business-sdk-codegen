@@ -19,6 +19,18 @@
             "params": []
         },
         {
+            "method": "POST",
+            "endpoint": "ahp_configs",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "applink_autosetup",
+                    "required": true,
+                    "type": "bool"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "assigned_users",
             "return": "AssignedUser",

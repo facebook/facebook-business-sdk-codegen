@@ -99,24 +99,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "attachment_surfaces",
-            "return": "GroupThirdPartyPostAttachmentSurface",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "attachment_surfaces",
-            "return": "GroupThirdPartyPostAttachmentSurface",
-            "params": [
-                {
-                    "name": "title",
-                    "required": true,
-                    "type": "map"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "docs",
             "return": "Doc",
             "params": []

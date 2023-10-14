@@ -9,6 +9,10 @@
     ],
     "fields": [
         {
+            "name": "copyright_check_status",
+            "type": "IGVideoCopyrightCheckStatus"
+        },
+        {
             "name": "id",
             "type": "string"
         },

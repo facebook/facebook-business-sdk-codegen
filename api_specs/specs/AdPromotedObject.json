@@ -92,10 +92,6 @@
         {
             "name": "retention_days",
             "type": "string"
-        },
-        {
-            "name": "whats_app_business_phone_number_id",
-            "type": "Object"
         }
     ]
 }

@@ -796,48 +796,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "ads_conversion_goal",
-            "return": "AdsConversionGoal",
-            "params": [
-                {
-                    "name": "conversion_event_value_source",
-                    "required": false,
-                    "type": "adaccountads_conversion_goal_conversion_event_value_source_enum_param"
-                },
-                {
-                    "name": "description",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "goal_creation_method",
-                    "required": true,
-                    "type": "adaccountads_conversion_goal_goal_creation_method_enum_param"
-                },
-                {
-                    "name": "goal_name",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "performance_goal",
-                    "required": true,
-                    "type": "adaccountads_conversion_goal_performance_goal_enum_param"
-                },
-                {
-                    "name": "single_channel_conversion_events",
-                    "required": true,
-                    "type": "list<map>"
-                },
-                {
-                    "name": "value_adjustment_rule",
-                    "required": false,
-                    "type": "map"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "ads_reporting_mmm_reports",
             "return": "AdsReportBuilderMMMReport",
