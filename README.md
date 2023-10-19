@@ -20,6 +20,8 @@ Install [Node.js](https://nodejs.org/en/)
 
 Install all dependencies by [npm](https://www.npmjs.com/) : `npm install`
 
+Make sure to checkout languages SDKs repositories above and update `version_path.json` to match the base paths.
+
 ## Codegen SDK
 
 ```bash
