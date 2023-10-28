@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "brand_page_id",
+            "type": "string"
+        },
+        {
+            "name": "is_click_to_message",
+            "type": "bool"
+        },
+        {
+            "name": "multi_share_end_card",
+            "type": "bool"
+        },
+        {
+            "name": "page_welcome_message",
+            "type": "string"
+        }
+    ]
+}
