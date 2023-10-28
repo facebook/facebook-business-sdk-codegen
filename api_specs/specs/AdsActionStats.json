@@ -6,6 +6,10 @@
             "type": "string"
         },
         {
+            "name": "1d_ev",
+            "type": "string"
+        },
+        {
             "name": "1d_view",
             "type": "string"
         },

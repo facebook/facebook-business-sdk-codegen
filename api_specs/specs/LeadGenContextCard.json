@@ -1,0 +1,29 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "button_text",
+            "type": "string"
+        },
+        {
+            "name": "content",
+            "type": "list<string>"
+        },
+        {
+            "name": "cover_photo",
+            "type": "Photo"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "style",
+            "type": "string"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        }
+    ]
+}

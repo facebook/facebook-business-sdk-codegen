@@ -461,10 +461,6 @@
             "type": "CatalogItemAppLinks"
         },
         {
-            "name": "ar_data",
-            "type": "ProductItemARData"
-        },
-        {
             "name": "availability",
             "type": "ProductItem_availability"
         },
@@ -665,6 +661,10 @@
             "type": "ProductGroup"
         },
         {
+            "name": "product_local_info",
+            "type": "ProductItemLocalInfo"
+        },
+        {
             "name": "product_type",
             "type": "string"
         },
@@ -723,6 +723,10 @@
         {
             "name": "url",
             "type": "string"
+        },
+        {
+            "name": "video_fetch_status",
+            "type": "ProductItem_video_fetch_status"
         },
         {
             "name": "visibility",

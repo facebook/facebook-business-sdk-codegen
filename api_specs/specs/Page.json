@@ -1,6 +1,12 @@
 {
     "apis": [
         {
+            "method": "GET",
+            "endpoint": "ab_tests",
+            "return": "PagePostExperiment",
+            "params": []
+        },
+        {
             "method": "POST",
             "endpoint": "acknowledge_orders",
             "return": "Page",
@@ -184,7 +190,7 @@
                 {
                     "name": "asid",
                     "required": false,
-                    "type": "list"
+                    "type": "list<string>"
                 },
                 {
                     "name": "psid",
@@ -194,12 +200,12 @@
                 {
                     "name": "uid",
                     "required": false,
-                    "type": "list"
+                    "type": "list<string>"
                 },
                 {
                     "name": "user",
                     "required": false,
-                    "type": "list"
+                    "type": "list<string>"
                 }
             ]
         },
@@ -587,6 +593,11 @@
                     "name": "reference_asset_id",
                     "required": true,
                     "type": "string"
+                },
+                {
+                    "name": "selected_segments",
+                    "required": false,
+                    "type": "list<map>"
                 }
             ]
         },
@@ -664,6 +675,12 @@
                     "type": "string"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "dataset",
+            "return": "Dataset",
+            "params": []
         },
         {
             "method": "GET",
@@ -826,11 +843,6 @@
                     "name": "caption",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "checkin_entry_point",
-                    "required": false,
-                    "type": "pagefeed_checkin_entry_point_enum_param"
                 },
                 {
                     "name": "child_attachments",
@@ -1349,6 +1361,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "attribution_link",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "creator",
                     "required": false,
                     "type": "string"
@@ -1470,12 +1487,6 @@
                     "type": "datetime"
                 }
             ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "invoice_access_bank_account",
-            "return": "McomInvoiceBankAccount",
-            "params": []
         },
         {
             "method": "GET",
@@ -1727,14 +1738,14 @@
             "return": "Object",
             "params": [
                 {
-                    "name": "location_page_id",
+                    "name": "location_page_ids",
                     "required": true,
-                    "type": "string"
+                    "type": "list<string>"
                 },
                 {
-                    "name": "store_number",
-                    "required": false,
-                    "type": "unsigned int"
+                    "name": "store_numbers",
+                    "required": true,
+                    "type": "list<unsigned int>"
                 }
             ]
         },
@@ -1976,6 +1987,74 @@
             "params": []
         },
         {
+            "method": "GET",
+            "endpoint": "messenger_lead_forms",
+            "return": "MessengerAdsPartialAutomatedStepList",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "messenger_lead_forms",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "account_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "block_send_api",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "exit_keyphrases",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "handover_app_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "handover_summary",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "privacy_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "reminder_text",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "step_list",
+                    "required": true,
+                    "type": "list<map>"
+                },
+                {
+                    "name": "stop_question_message",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "template_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "tracking_parameters",
+                    "required": false,
+                    "type": "map"
+                }
+            ]
+        },
+        {
             "method": "DELETE",
             "endpoint": "messenger_profile",
             "return": "Object",
@@ -2213,6 +2292,18 @@
                 {
                     "name": "profile_picture_url",
                     "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "photo_stories",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "photo_id",
+                    "required": false,
                     "type": "string"
                 }
             ]
@@ -2856,6 +2947,28 @@
             "params": []
         },
         {
+            "method": "GET",
+            "endpoint": "stories",
+            "return": "Stories",
+            "params": [
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "status",
+                    "required": false,
+                    "type": "list<pagestories_status_enum_param>"
+                },
+                {
+                    "name": "until",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
             "method": "DELETE",
             "endpoint": "subscribed_apps",
             "return": "Object",
@@ -2935,6 +3048,11 @@
                     "name": "folder",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "platform",
+                    "required": false,
+                    "type": "pagethreads_platform_enum_param"
                 },
                 {
                     "name": "tags",
@@ -3105,6 +3223,11 @@
                     "type": "Object"
                 },
                 {
+                    "name": "place",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "scheduled_publish_time",
                     "required": false,
                     "type": "datetime"
@@ -3121,18 +3244,70 @@
                 },
                 {
                     "name": "upload_phase",
-                    "required": false,
+                    "required": true,
                     "type": "pagevideo_reels_upload_phase_enum_param"
                 },
                 {
                     "name": "video_id",
                     "required": false,
-                    "type": "Object"
+                    "type": "string"
                 },
                 {
                     "name": "video_state",
                     "required": false,
                     "type": "pagevideo_reels_video_state_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "video_stories",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "feed_targeting",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "place",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "scheduled_publish_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "targeting",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "title",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "upload_phase",
+                    "required": true,
+                    "type": "pagevideo_stories_upload_phase_enum_param"
+                },
+                {
+                    "name": "video_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "video_state",
+                    "required": false,
+                    "type": "pagevideo_stories_video_state_enum_param"
                 }
             ]
         },
@@ -3658,6 +3833,11 @@
             "return": "CTXPartnerAppWelcomeMessageFlow",
             "params": [
                 {
+                    "name": "app_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "flow_id",
                     "required": false,
                     "type": "string"
@@ -4109,6 +4289,10 @@
             "type": "string"
         },
         {
+            "name": "does_viewer_have_page_permission_link_ig",
+            "type": "bool"
+        },
+        {
             "name": "emails",
             "type": "list<string>"
         },
@@ -4173,6 +4357,10 @@
             "type": "bool"
         },
         {
+            "name": "has_whatsapp_enterprise_number_using_cloud_api",
+            "type": "bool"
+        },
+        {
             "name": "has_whatsapp_number",
             "type": "bool"
         },
@@ -4214,6 +4402,10 @@
         },
         {
             "name": "is_eligible_for_branded_content",
+            "type": "bool"
+        },
+        {
+            "name": "is_eligible_for_disable_connect_ig_btn_for_non_page_admin_am_web",
             "type": "bool"
         },
         {
@@ -4293,10 +4485,6 @@
             "type": "list<string>"
         },
         {
-            "name": "messenger_ads_default_page_welcome_message",
-            "type": "MessengerDestinationPageWelcomeMessage"
-        },
-        {
             "name": "messenger_ads_default_quick_replies",
             "type": "list<string>"
         },
@@ -4343,6 +4531,10 @@
         {
             "name": "owner_business",
             "type": "Business"
+        },
+        {
+            "name": "page_about_story",
+            "type": "PageAboutStory"
         },
         {
             "name": "page_token",
@@ -4511,6 +4703,10 @@
         {
             "name": "unseen_message_count",
             "type": "unsigned int"
+        },
+        {
+            "name": "user_access_expire_time",
+            "type": "datetime"
         },
         {
             "name": "username",

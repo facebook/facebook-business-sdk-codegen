@@ -1,6 +1,12 @@
 {
     "apis": [
         {
+            "method": "GET",
+            "endpoint": "partners",
+            "return": "Business",
+            "params": []
+        },
+        {
             "method": "POST",
             "endpoint": "request_code",
             "return": "Object",
@@ -13,7 +19,7 @@
                 {
                     "name": "language",
                     "required": true,
-                    "type": "Object"
+                    "type": "string"
                 }
             ]
         },
@@ -54,6 +60,10 @@
         {
             "name": "id",
             "type": "string"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
         },
         {
             "name": "phone_number",

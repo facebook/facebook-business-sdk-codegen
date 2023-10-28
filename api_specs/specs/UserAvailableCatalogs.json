@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "catalog_id",
+            "type": "string"
+        },
+        {
+            "name": "catalog_name",
+            "type": "string"
+        },
+        {
+            "name": "product_count",
+            "type": "int"
+        },
+        {
+            "name": "shop_name",
+            "type": "string"
+        }
+    ]
+}

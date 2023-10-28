@@ -1,0 +1,28 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ShadowIGMediaBuilder",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "copyright_check_status",
+            "type": "IGVideoCopyrightCheckStatus"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "status_code",
+            "type": "string"
+        }
+    ]
+}

@@ -33,6 +33,16 @@
                     "type": "string"
                 },
                 {
+                    "name": "fallback_domain",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "fallback_domain_enabled",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "host_business_id",
                     "required": false,
                     "type": "unsigned int"
@@ -57,6 +67,14 @@
         {
             "name": "endpoint",
             "type": "string"
+        },
+        {
+            "name": "fallback_domain",
+            "type": "string"
+        },
+        {
+            "name": "fallback_domain_enabled",
+            "type": "bool"
         },
         {
             "name": "host_business_id",

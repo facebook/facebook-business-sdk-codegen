@@ -8,6 +8,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "collaborators",
+            "return": "ShadowIGMediaCollaborators",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "comments",
             "return": "IGComment",
             "params": []
@@ -113,6 +119,10 @@
         {
             "name": "comments_count",
             "type": "int"
+        },
+        {
+            "name": "copyright_check_information",
+            "type": "IGVideoCopyrightCheckMatchesInformation"
         },
         {
             "name": "id",

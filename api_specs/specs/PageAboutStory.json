@@ -1,0 +1,40 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "PageAboutStory",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "composed_text",
+            "type": "list<PageAboutStoryComposedBlock>"
+        },
+        {
+            "name": "cover_photo",
+            "type": "Photo"
+        },
+        {
+            "name": "entity_map",
+            "type": "list<Object>"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_published",
+            "type": "bool"
+        },
+        {
+            "name": "page_id",
+            "type": "string"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        }
+    ]
+}

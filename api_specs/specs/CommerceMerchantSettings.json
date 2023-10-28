@@ -252,10 +252,6 @@
             "type": "string"
         },
         {
-            "name": "commerce_store",
-            "type": "Object"
-        },
-        {
             "name": "contact_email",
             "type": "string"
         },

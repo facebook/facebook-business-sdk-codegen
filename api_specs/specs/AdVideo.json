@@ -528,6 +528,10 @@
             "type": "VideoCopyright"
         },
         {
+            "name": "copyright_check_information",
+            "type": "Object"
+        },
+        {
             "name": "copyright_monitoring_status",
             "type": "string"
         },
@@ -613,7 +617,7 @@
         },
         {
             "name": "permalink_url",
-            "type": "Object"
+            "type": "string"
         },
         {
             "name": "picture",
@@ -622,6 +626,10 @@
         {
             "name": "place",
             "type": "Place"
+        },
+        {
+            "name": "post_id",
+            "type": "string"
         },
         {
             "name": "post_views",

@@ -334,6 +334,18 @@
             "type": "string"
         },
         {
+            "name": "marketing_messages_cost_per_delivered",
+            "type": "string"
+        },
+        {
+            "name": "marketing_messages_cost_per_link_btn_click",
+            "type": "string"
+        },
+        {
+            "name": "marketing_messages_spend",
+            "type": "string"
+        },
+        {
             "name": "mobile_app_purchase_roas",
             "type": "list<AdsActionStats>"
         },
@@ -370,18 +382,6 @@
             "type": "string"
         },
         {
-            "name": "quality_score_ectr",
-            "type": "string"
-        },
-        {
-            "name": "quality_score_ecvr",
-            "type": "string"
-        },
-        {
-            "name": "quality_score_organic",
-            "type": "string"
-        },
-        {
             "name": "reach",
             "type": "string"
         },
@@ -403,7 +403,7 @@
         },
         {
             "name": "total_postbacks_detailed_v4",
-            "type": "string"
+            "type": "list<AdsActionStats>"
         },
         {
             "name": "unique_actions",
@@ -495,19 +495,19 @@
         },
         {
             "name": "video_play_curve_actions",
-            "type": "list<Object>"
+            "type": "list<AdsHistogramStats>"
         },
         {
             "name": "video_play_retention_0_to_15s_actions",
-            "type": "list<Object>"
+            "type": "list<AdsHistogramStats>"
         },
         {
             "name": "video_play_retention_20_to_60s_actions",
-            "type": "list<Object>"
+            "type": "list<AdsHistogramStats>"
         },
         {
             "name": "video_play_retention_graph_actions",
-            "type": "list<Object>"
+            "type": "list<AdsHistogramStats>"
         },
         {
             "name": "video_thruplay_watched_actions",

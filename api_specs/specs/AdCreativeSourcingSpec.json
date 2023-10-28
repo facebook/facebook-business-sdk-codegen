@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "associated_product_set_id",
+            "type": "string"
+        }
+    ]
+}

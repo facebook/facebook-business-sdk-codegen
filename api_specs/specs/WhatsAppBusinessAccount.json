@@ -111,10 +111,112 @@
             "params": []
         },
         {
+            "method": "POST",
+            "endpoint": "extensions",
+            "return": "WhatsAppExtension",
+            "params": [
+                {
+                    "name": "categories",
+                    "required": true,
+                    "type": "list<whatsappbusinessaccountextensions_categories_enum_param>"
+                },
+                {
+                    "name": "clone_extension_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "clone_template",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "data_channel_uri",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "flows",
+            "return": "WhatsAppExtension",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "flows",
+            "return": "WhatsAppExtension",
+            "params": [
+                {
+                    "name": "categories",
+                    "required": true,
+                    "type": "list<whatsappbusinessaccountflows_categories_enum_param>"
+                },
+                {
+                    "name": "clone_flow_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "clone_template",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "data_channel_uri",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "message_campaigns",
             "return": "WhatsAppBusinessCampaign",
             "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "message_template_previews",
+            "return": "WhatsAppBusinessAccountMessageTemplatePreview",
+            "params": [
+                {
+                    "name": "add_security_recommendation",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "button_types",
+                    "required": false,
+                    "type": "list<whatsappbusinessaccountmessage_template_previews_button_types_enum_param>"
+                },
+                {
+                    "name": "category",
+                    "required": true,
+                    "type": "whatsappbusinessaccountmessage_template_previews_category_enum_param"
+                },
+                {
+                    "name": "code_expiration_minutes",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "languages",
+                    "required": false,
+                    "type": "list<string>"
+                }
+            ]
         },
         {
             "method": "DELETE",
@@ -206,7 +308,34 @@
                     "type": "string"
                 },
                 {
+                    "name": "message_send_ttl_seconds",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
                     "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "sub_category",
+                    "required": false,
+                    "type": "whatsappbusinessaccountmessage_templates_sub_category_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "migrate_message_templates",
+            "return": "WhatsAppBusinessAccount",
+            "params": [
+                {
+                    "name": "page_number",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "source_waba_id",
                     "required": true,
                     "type": "string"
                 }
@@ -235,6 +364,11 @@
                 },
                 {
                     "name": "phone_number",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "preverified_id",
                     "required": false,
                     "type": "string"
                 },
@@ -312,6 +446,38 @@
         },
         {
             "method": "GET",
+            "endpoint": "template_analytics",
+            "return": "WABATemplateAnalytics",
+            "params": [
+                {
+                    "name": "end",
+                    "required": true,
+                    "type": "datetime"
+                },
+                {
+                    "name": "granularity",
+                    "required": true,
+                    "type": "whatsappbusinessaccounttemplate_analytics_granularity_enum_param"
+                },
+                {
+                    "name": "metric_types",
+                    "required": false,
+                    "type": "list<whatsappbusinessaccounttemplate_analytics_metric_types_enum_param>"
+                },
+                {
+                    "name": "start",
+                    "required": true,
+                    "type": "datetime"
+                },
+                {
+                    "name": "template_ids",
+                    "required": true,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "template_performance_metrics",
             "return": "WhatsAppBusinessHSMWhatsAppBusinessPerformanceMetrics",
             "params": [
@@ -328,10 +494,54 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "upsert_message_templates",
+            "return": "WhatsAppBusinessAccount",
+            "params": [
+                {
+                    "name": "category",
+                    "required": true,
+                    "type": "whatsappbusinessaccountupsert_message_templates_category_enum_param"
+                },
+                {
+                    "name": "components",
+                    "required": true,
+                    "type": "list<map>"
+                },
+                {
+                    "name": "languages",
+                    "required": true,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "message_send_ttl_seconds",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "name": "#get",
             "method": "GET",
             "return": "WhatsAppBusinessAccount",
             "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "WhatsAppBusinessAccount",
+            "params": [
+                {
+                    "name": "is_enabled_for_insights",
+                    "required": false,
+                    "type": "bool"
+                }
+            ]
         }
     ],
     "fields": [
@@ -362,6 +572,10 @@
         {
             "name": "id",
             "type": "string"
+        },
+        {
+            "name": "is_enabled_for_insights",
+            "type": "bool"
         },
         {
             "name": "message_template_namespace",
