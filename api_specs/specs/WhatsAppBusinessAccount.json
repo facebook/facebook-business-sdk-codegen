@@ -106,44 +106,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "extensions",
-            "return": "WhatsAppExtension",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "extensions",
-            "return": "WhatsAppExtension",
-            "params": [
-                {
-                    "name": "categories",
-                    "required": true,
-                    "type": "list<whatsappbusinessaccountextensions_categories_enum_param>"
-                },
-                {
-                    "name": "clone_extension_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "clone_template",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "data_channel_uri",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "name",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "flows",
             "return": "WhatsAppExtension",
             "params": []
@@ -568,6 +530,10 @@
         {
             "name": "currency",
             "type": "string"
+        },
+        {
+            "name": "health_status",
+            "type": "Object"
         },
         {
             "name": "id",

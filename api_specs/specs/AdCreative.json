@@ -365,6 +365,10 @@
             "type": "AdCreativeOmnichannelLinkSpec"
         },
         {
+            "name": "photo_album_source_object_story_id",
+            "type": "string"
+        },
+        {
             "name": "place_page_set_id",
             "type": "string"
         },

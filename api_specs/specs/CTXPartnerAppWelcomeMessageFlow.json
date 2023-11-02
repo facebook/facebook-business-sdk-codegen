@@ -1,0 +1,40 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "CTXPartnerAppWelcomeMessageFlow",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "compatible_platforms",
+            "type": "list<string>"
+        },
+        {
+            "name": "eligible_platforms",
+            "type": "list<string>"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_used_in_ad",
+            "type": "bool"
+        },
+        {
+            "name": "last_update_time",
+            "type": "datetime"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "welcome_message_flow",
+            "type": "string"
+        }
+    ]
+}

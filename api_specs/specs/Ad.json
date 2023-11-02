@@ -506,11 +506,6 @@
                     "type": "bool"
                 },
                 {
-                    "name": "meta_reward_adgroup_status",
-                    "required": false,
-                    "type": "adgroup_meta_reward_adgroup_status"
-                },
-                {
                     "name": "name",
                     "required": false,
                     "type": "string"
@@ -636,10 +631,6 @@
         },
         {
             "name": "last_updated_by_app_id",
-            "type": "string"
-        },
-        {
-            "name": "meta_reward_adgroup_status",
             "type": "string"
         },
         {

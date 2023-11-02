@@ -66,8 +66,20 @@
             "type": "list<AdAssetMessageExtensions>"
         },
         {
+            "name": "onsite_destinations",
+            "type": "list<Object>"
+        },
+        {
             "name": "optimization_type",
             "type": "string"
+        },
+        {
+            "name": "reasons_to_shop",
+            "type": "bool"
+        },
+        {
+            "name": "shops_bundle",
+            "type": "bool"
         },
         {
             "name": "titles",

@@ -1,0 +1,41 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "app_has_leads_permission",
+            "type": "bool"
+        },
+        {
+            "name": "can_access_lead",
+            "type": "bool"
+        },
+        {
+            "name": "enabled_lead_access_manager",
+            "type": "bool"
+        },
+        {
+            "name": "failure_reason",
+            "type": "string"
+        },
+        {
+            "name": "failure_resolution",
+            "type": "string"
+        },
+        {
+            "name": "is_page_admin",
+            "type": "bool"
+        },
+        {
+            "name": "page_id",
+            "type": "string"
+        },
+        {
+            "name": "user_has_leads_permission",
+            "type": "bool"
+        },
+        {
+            "name": "user_id",
+            "type": "string"
+        }
+    ]
+}
