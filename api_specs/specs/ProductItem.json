@@ -721,6 +721,10 @@
             "type": "string"
         },
         {
+            "name": "tags",
+            "type": "list<string>"
+        },
+        {
             "name": "url",
             "type": "string"
         },

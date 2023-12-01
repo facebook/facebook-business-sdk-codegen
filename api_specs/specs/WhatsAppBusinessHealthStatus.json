@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "additional_info",
+            "type": "list<string>"
+        },
+        {
+            "name": "can_send_message",
+            "type": "string"
+        },
+        {
+            "name": "entity_type",
+            "type": "string"
+        },
+        {
+            "name": "errors",
+            "type": "list<Object>"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        }
+    ]
+}

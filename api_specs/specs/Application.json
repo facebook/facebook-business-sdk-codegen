@@ -673,18 +673,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "banned",
-            "return": "User",
-            "params": [
-                {
-                    "name": "uid",
-                    "required": false,
-                    "type": "int"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "button_auto_detection_device_selection",
             "return": "ButtonAutoDetectionDeviceSelection",
             "params": [
@@ -1473,6 +1461,14 @@
             "type": "bool"
         },
         {
+            "name": "auto_log_app_events_default",
+            "type": "bool"
+        },
+        {
+            "name": "auto_log_app_events_enabled",
+            "type": "bool"
+        },
+        {
             "name": "business",
             "type": "Business"
         },
@@ -1699,14 +1695,6 @@
         {
             "name": "restrictive_data_filter_rules",
             "type": "string"
-        },
-        {
-            "name": "sdk_auto_logging_default_value",
-            "type": "bool"
-        },
-        {
-            "name": "sdk_auto_logging_override_value",
-            "type": "bool"
         },
         {
             "name": "sdk_update_message",

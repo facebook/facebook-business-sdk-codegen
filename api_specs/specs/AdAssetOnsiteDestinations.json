@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "auto_optimization",
+            "type": "string"
+        },
+        {
+            "name": "details_page_product_id",
+            "type": "string"
+        },
+        {
+            "name": "shop_collection_product_set_id",
+            "type": "string"
+        },
+        {
+            "name": "storefront_shop_id",
+            "type": "string"
+        }
+    ]
+}

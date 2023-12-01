@@ -6,6 +6,10 @@
             "type": "string"
         },
         {
+            "name": "commands",
+            "type": "list<Object>"
+        },
+        {
             "name": "get_started",
             "type": "Object"
         },

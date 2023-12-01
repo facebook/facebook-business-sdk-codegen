@@ -69,10 +69,6 @@
             "type": "string"
         },
         {
-            "name": "post_variant_fields",
-            "type": "list<string>"
-        },
-        {
             "name": "publish_status",
             "type": "string"
         },

@@ -19,7 +19,7 @@
         },
         {
             "name": "partners",
-            "type": "list<Object>"
+            "type": "list<AdCreativeBrandedContentAdsPartners>"
         },
         {
             "name": "ui_version",

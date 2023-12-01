@@ -7,7 +7,7 @@
         },
         {
             "name": "additional_data",
-            "type": "Object"
+            "type": "AdAssetFeedAdditionalData"
         },
         {
             "name": "app_product_page_id",
@@ -31,7 +31,7 @@
         },
         {
             "name": "call_to_actions",
-            "type": "list<Object>"
+            "type": "list<AdAssetFeedSpecCallToAction>"
         },
         {
             "name": "captions",
@@ -39,7 +39,7 @@
         },
         {
             "name": "carousels",
-            "type": "list<Object>"
+            "type": "list<AdAssetFeedSpecCarousel>"
         },
         {
             "name": "descriptions",
@@ -47,7 +47,7 @@
         },
         {
             "name": "events",
-            "type": "list<Object>"
+            "type": "list<AdAssetFeedSpecEvents>"
         },
         {
             "name": "groups",
@@ -67,7 +67,7 @@
         },
         {
             "name": "onsite_destinations",
-            "type": "list<Object>"
+            "type": "list<AdAssetOnsiteDestinations>"
         },
         {
             "name": "optimization_type",
