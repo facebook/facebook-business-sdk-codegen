@@ -106,6 +106,7 @@ crossposted=1
 currencies=1
 custom=1
 data=1
+dcc_config=1
 deactivate=1
 debtor=1
 declined=1
