@@ -92,6 +92,10 @@
         {
             "name": "retention_days",
             "type": "string"
+        },
+        {
+            "name": "whatsapp_phone_number",
+            "type": "string"
         }
     ]
 }
