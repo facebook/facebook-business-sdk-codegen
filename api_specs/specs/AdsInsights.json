@@ -118,6 +118,10 @@
             "type": "string"
         },
         {
+            "name": "conversion_lead_rate",
+            "type": "string"
+        },
+        {
             "name": "conversion_rate_ranking",
             "type": "string"
         },
@@ -156,6 +160,10 @@
         {
             "name": "cost_per_conversion",
             "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "cost_per_conversion_lead",
+            "type": "string"
         },
         {
             "name": "cost_per_dda_countby_convs",

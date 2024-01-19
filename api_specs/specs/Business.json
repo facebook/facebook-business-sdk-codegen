@@ -1117,6 +1117,11 @@
                     "type": "list<string>"
                 },
                 {
+                    "name": "skip_partner_page_creation",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "survey_business_type",
                     "required": false,
                     "type": "businessmanaged_partner_businesses_survey_business_type_enum_param"

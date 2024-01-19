@@ -764,11 +764,6 @@
                     "type": "bool"
                 },
                 {
-                    "name": "meta_reward_adgroup_status",
-                    "required": false,
-                    "type": "adaccountads_meta_reward_adgroup_status_enum_param"
-                },
-                {
                     "name": "name",
                     "required": true,
                     "type": "string"
@@ -2206,6 +2201,11 @@
                     "name": "video_group_ids",
                     "required": false,
                     "type": "list<string>"
+                },
+                {
+                    "name": "whats_app_business_phone_number_id",
+                    "required": false,
+                    "type": "string"
                 }
             ]
         },

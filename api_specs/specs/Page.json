@@ -8,6 +8,48 @@
         },
         {
             "method": "POST",
+            "endpoint": "ab_tests",
+            "return": "PagePostExperiment",
+            "params": [
+                {
+                    "name": "control_video_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "description",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "duration",
+                    "required": true,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "experiment_video_ids",
+                    "required": true,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "optimization_goal",
+                    "required": true,
+                    "type": "pageab_tests_optimization_goal_enum_param"
+                },
+                {
+                    "name": "scheduled_experiment_timestamp",
+                    "required": false,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
+            "method": "POST",
             "endpoint": "acknowledge_orders",
             "return": "Page",
             "params": [
@@ -2094,6 +2136,16 @@
                     "type": "string"
                 },
                 {
+                    "name": "commands",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
                     "name": "get_started",
                     "required": false,
                     "type": "Object"
@@ -2127,6 +2179,11 @@
                     "name": "target_audience",
                     "required": false,
                     "type": "Object"
+                },
+                {
+                    "name": "title",
+                    "required": false,
+                    "type": "list<Object>"
                 },
                 {
                     "name": "whitelisted_domains",
@@ -3828,6 +3885,18 @@
             ]
         },
         {
+            "method": "DELETE",
+            "endpoint": "welcome_message_flows",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "flow_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "welcome_message_flows",
             "return": "CTXPartnerAppWelcomeMessageFlow",
@@ -3841,6 +3910,33 @@
                     "name": "flow_id",
                     "required": false,
                     "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "welcome_message_flows",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "eligible_platforms",
+                    "required": false,
+                    "type": "list<pagewelcome_message_flows_eligible_platforms_enum_param>"
+                },
+                {
+                    "name": "flow_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "welcome_message_flow",
+                    "required": false,
+                    "type": "list<Object>"
                 }
             ]
         },
@@ -4347,6 +4443,10 @@
         {
             "name": "has_added_app",
             "type": "bool"
+        },
+        {
+            "name": "has_lead_access",
+            "type": "HasLeadAccess"
         },
         {
             "name": "has_transitioned_to_new_page_experience",

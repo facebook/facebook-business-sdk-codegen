@@ -14,8 +14,12 @@
             "type": "string"
         },
         {
+            "name": "is_mca_internal",
+            "type": "bool"
+        },
+        {
             "name": "partners",
-            "type": "list<Object>"
+            "type": "list<AdCreativeBrandedContentAdsPartners>"
         },
         {
             "name": "ui_version",

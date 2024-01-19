@@ -1,0 +1,45 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "body_label",
+            "type": "AdAssetFeedSpecAssetLabel"
+        },
+        {
+            "name": "call_to_action_type_label",
+            "type": "AdAssetFeedSpecAssetLabel"
+        },
+        {
+            "name": "caption_label",
+            "type": "AdAssetFeedSpecAssetLabel"
+        },
+        {
+            "name": "description_label",
+            "type": "AdAssetFeedSpecAssetLabel"
+        },
+        {
+            "name": "image_label",
+            "type": "AdAssetFeedSpecAssetLabel"
+        },
+        {
+            "name": "link_url_label",
+            "type": "AdAssetFeedSpecAssetLabel"
+        },
+        {
+            "name": "phone_data_ids_label",
+            "type": "AdAssetFeedSpecAssetLabel"
+        },
+        {
+            "name": "static_card",
+            "type": "bool"
+        },
+        {
+            "name": "title_label",
+            "type": "AdAssetFeedSpecAssetLabel"
+        },
+        {
+            "name": "video_label",
+            "type": "AdAssetFeedSpecAssetLabel"
+        }
+    ]
+}

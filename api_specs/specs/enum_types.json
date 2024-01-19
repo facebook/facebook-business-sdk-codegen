@@ -197,7 +197,6 @@
             "LISTEN_NOW",
             "MESSAGE_PAGE",
             "MOBILE_DOWNLOAD",
-            "MOMENTS",
             "NO_BUTTON",
             "OPEN_INSTANT_APP",
             "OPEN_LINK",
@@ -298,7 +297,6 @@
             "LISTEN_NOW",
             "MESSAGE_PAGE",
             "MOBILE_DOWNLOAD",
-            "MOMENTS",
             "NO_BUTTON",
             "OPEN_INSTANT_APP",
             "OPEN_LINK",
@@ -560,7 +558,6 @@
             "LISTEN_NOW",
             "MESSAGE_PAGE",
             "MOBILE_DOWNLOAD",
-            "MOMENTS",
             "NO_BUTTON",
             "OPEN_INSTANT_APP",
             "OPEN_LINK",
@@ -649,6 +646,7 @@
             "ADD_PAYMENT_INFO",
             "ADD_TO_CART",
             "ADD_TO_WISHLIST",
+            "AD_IMPRESSION",
             "COMPLETE_REGISTRATION",
             "CONTACT",
             "CONTENT_VIEW",
@@ -1083,6 +1081,7 @@
             "INSTANT_ARTICLE_EVENTS",
             "LOOKALIKE_PLATFORM",
             "MAIL_CHIMP_EMAIL_HASHES",
+            "MESSENGER_ONSITE_SUBSCRIPTION",
             "MOBILE_ADVERTISER_IDS",
             "MOBILE_APP_COMBINATION_EVENTS",
             "MOBILE_APP_CUSTOM_AUDIENCE_USERS",
@@ -1498,6 +1497,7 @@
             "ATTRIBUTES_MISSING",
             "CATEGORY",
             "CHECKOUT",
+            "DA_VISIBILITY_ISSUES",
             "IMAGE_QUALITY",
             "LOW_QUALITY_TITLE_AND_DESCRIPTION",
             "POLICY_VIOLATION",
@@ -2107,15 +2107,6 @@
         ]
     },
     {
-        "name": "adaccountads_meta_reward_adgroup_status_enum_param",
-        "node": "Ad",
-        "field_or_param": "meta_reward_adgroup_status",
-        "values": [
-            "ACTIVE",
-            "INACTIVE"
-        ]
-    },
-    {
         "name": "adaccountads_status_enum_param",
         "node": "Ad",
         "field_or_param": "status",
@@ -2132,9 +2123,11 @@
         "field_or_param": "recommendation_type",
         "values": [
             "AB_TEST",
+            "ACCOUNT_SPEND_LIMIT",
             "ACO_TOGGLE",
             "ADS_REPORTING",
             "ADVANCED_CAMPAIGN_BUDGET",
+            "ADVANTAGE_CUSTOM_AUDIENCE",
             "ADVANTAGE_CUSTOM_AUDIENCE_UPSELL",
             "ADVANTAGE_PLUS_AUDIENCE_FRICTION",
             "ADVANTAGE_PLUS_AUDIENCE_TOGGLE",
@@ -2147,10 +2140,16 @@
             "AGGREGATED_BID_LIMITED",
             "AGGREGATED_BUDGET_LIMITED",
             "AGGREGATED_COST_LIMITED",
+            "APP_AEM_V2_INSTALLATION_PROMOTION",
+            "ASC_BUDGET_OPTIMIZATION",
+            "ASC_BUDGET_OPTIMIZATION_PFR",
+            "ASPECT_RATIO",
+            "ATLEAST_6_PLACEMENTS",
             "AUCTION_OVERLAP",
             "AUCTION_OVERLAP_CONSOLIDATION",
             "AUDIENCE_EXPANSION",
             "AUDIENCE_EXPANSION_RETARGETING",
+            "AUDIENCE_LEARNING_LIMITED",
             "AUTOFLOW_OPT_IN",
             "AUTOFLOW_OPT_IN_FALLBACK_DUPLICATION_FLOW",
             "AUTOMATIC_PLACEMENTS",
@@ -2166,7 +2165,9 @@
             "COST_GOAL_CPA_LIMITED",
             "COST_PER_RESULT",
             "CREATION_PACKAGE_UPGRADE_TO_ASC",
+            "CREATION_PACKAGE_UPGRADE_TO_TLA",
             "CREATIVE_BADGE",
+            "CREATIVE_DIVERSITY",
             "CREATIVE_FATIGUE",
             "CREATIVE_FATIGUE_HOURLY",
             "CREATIVE_LIMITED",
@@ -2180,8 +2181,11 @@
             "FRAGMENTATION",
             "GES_TEST",
             "GUIDANCE_CENTER_CODE_GEN",
+            "HIGH_COST",
+            "HISTORICAL_BENCHMARK",
             "LEARNING_LIMITED",
             "LEARNING_PAUSE_FRICTION",
+            "LEARNING_PHASE_BUDGET_EDITS",
             "LOW_OUTCOME",
             "MERLIN_GUIDANCE",
             "MIXED_PA_COMBINE_ADSETS",
@@ -2190,6 +2194,7 @@
             "MR_AEMV2SUB_KCONSOLIDATION",
             "MULTI_TEXT",
             "MUSIC",
+            "NOT_APPLICABLE",
             "OPTIMAL_BAU",
             "PAYMENT_METHOD",
             "PERFORMANT_CREATIVE_REELS_OPT_IN",
@@ -2197,6 +2202,8 @@
             "PREDICTIVE_CREATIVE_LIMITED",
             "PREDICTIVE_CREATIVE_LIMITED_HOURLY",
             "RAPID_LEARNING_LIMITED",
+            "RAPID_LEARNING_PHASE",
+            "REELS_DUPLICATION_UPSELL",
             "REVERT",
             "SCALE_GOOD_CAMPAIGN",
             "SEMANTIC_BASED_AUDIENCE_EXPANSION",
@@ -2209,10 +2216,15 @@
             "SYD_TEST_MODE",
             "TOP_ADSETS_WITH_ADS_UNDER_CAP",
             "TOP_CAMPAIGNS_WITH_ADS_UNDER_CAP",
+            "TWO_P_GUIDANCE_CARD_AAA",
+            "TWO_P_GUIDANCE_CARD_AUTO_PLACEMENT",
+            "TWO_P_GUIDANCE_CARD_CBO_OFF",
+            "TWO_P_GUIDANCE_CARD_CTM_PREFLIGHT",
             "UNCROP_IMAGE",
             "UNECONOMICAL_ADS_THROTTLING",
             "UNUSED_BUDGET",
             "VIDEO_LENGTH",
+            "ZERO_CONVERSION",
             "ZERO_IMPRESSION"
         ]
     },
@@ -2513,6 +2525,7 @@
             "INSTAGRAM_VIDEO_COPY",
             "INSTANT_APPLICATION_PREVIEW",
             "INSTANT_ARTICLE",
+            "INSTANT_GAMES_PROMO",
             "INSTANT_GAME_CLIP",
             "ISSUE_MODULE",
             "JOBS_CAREERS",
@@ -5383,6 +5396,15 @@
         ]
     },
     {
+        "name": "adcampaignbudget_schedules_budget_value_type_enum_param",
+        "node": "HighDemandPeriod",
+        "field_or_param": "budget_value_type",
+        "values": [
+            "ABSOLUTE",
+            "MULTIPLIER"
+        ]
+    },
+    {
         "name": "adcampaigncopies_date_preset_enum_param",
         "node": "AdSet",
         "field_or_param": "date_preset",
@@ -5931,6 +5953,15 @@
         ]
     },
     {
+        "name": "adcampaigngroupbudget_schedules_budget_value_type_enum_param",
+        "node": "HighDemandPeriod",
+        "field_or_param": "budget_value_type",
+        "values": [
+            "ABSOLUTE",
+            "MULTIPLIER"
+        ]
+    },
+    {
         "name": "adcampaigngroupcopies_date_preset_enum_param",
         "node": "Campaign",
         "field_or_param": "date_preset",
@@ -6414,15 +6445,6 @@
             "include_recommendations",
             "synchronous_ad_review",
             "validate_only"
-        ]
-    },
-    {
-        "name": "adgroup_meta_reward_adgroup_status",
-        "node": "Ad",
-        "field_or_param": "meta_reward_adgroup_status",
-        "values": [
-            "ACTIVE",
-            "INACTIVE"
         ]
     },
     {
@@ -8267,6 +8289,7 @@
             "INSTAGRAM_VIDEO_COPY",
             "INSTANT_APPLICATION_PREVIEW",
             "INSTANT_ARTICLE",
+            "INSTANT_GAMES_PROMO",
             "INSTANT_GAME_CLIP",
             "ISSUE_MODULE",
             "JOBS_CAREERS",
@@ -9148,6 +9171,7 @@
             "INSTAGRAM_VIDEO_COPY",
             "INSTANT_APPLICATION_PREVIEW",
             "INSTANT_ARTICLE",
+            "INSTANT_GAMES_PROMO",
             "INSTANT_GAME_CLIP",
             "ISSUE_MODULE",
             "JOBS_CAREERS",
@@ -9918,6 +9942,24 @@
             "NO_DATA",
             "OPERATING_AS_USUAL",
             "TEMPORARILY_CLOSED"
+        ]
+    },
+    {
+        "name": "pageab_tests_optimization_goal_enum_param",
+        "node": "PagePostExperiment",
+        "field_or_param": "optimization_goal",
+        "values": [
+            "AUTO_RESOLVE_TO_CONTROL",
+            "AVG_TIME_WATCHED",
+            "COMMENTS",
+            "IMPRESSIONS",
+            "IMPRESSIONS_UNIQUE",
+            "LINK_CLICKS",
+            "OTHER",
+            "REACTIONS",
+            "REELS_PLAYS",
+            "SHARES",
+            "VIDEO_VIEWS_60S"
         ]
     },
     {
@@ -10837,6 +10879,8 @@
         "field_or_param": "fields",
         "values": [
             "ACCOUNT_LINKING_URL",
+            "COMMANDS",
+            "DESCRIPTION",
             "GET_STARTED",
             "GREETING",
             "HOME_URL",
@@ -10846,6 +10890,7 @@
             "PLATFORM",
             "SUBJECT_TO_NEW_EU_PRIVACY_RULES",
             "TARGET_AUDIENCE",
+            "TITLE",
             "WHITELISTED_DOMAINS"
         ]
     },
@@ -11371,6 +11416,7 @@
             "INSTAGRAM_VIDEO_COPY",
             "INSTANT_APPLICATION_PREVIEW",
             "INSTANT_ARTICLE",
+            "INSTANT_GAMES_PROMO",
             "INSTANT_GAME_CLIP",
             "ISSUE_MODULE",
             "JOBS_CAREERS",
@@ -11562,6 +11608,15 @@
         "field_or_param": "with",
         "values": [
             "LOCATION"
+        ]
+    },
+    {
+        "name": "pagewelcome_message_flows_eligible_platforms_enum_param",
+        "node": "Object",
+        "field_or_param": "eligible_platforms",
+        "values": [
+            "INSTAGRAM",
+            "MESSENGER"
         ]
     },
     {
@@ -11968,6 +12023,7 @@
             "ATTRIBUTES_MISSING",
             "CATEGORY",
             "CHECKOUT",
+            "DA_VISIBILITY_ISSUES",
             "IMAGE_QUALITY",
             "LOW_QUALITY_TITLE_AND_DESCRIPTION",
             "POLICY_VIOLATION",
@@ -12405,6 +12461,8 @@
             "AVAILABLE",
             "BAD_QUALITY_IMAGE",
             "CANNOT_EDIT_SUBSCRIPTION_PRODUCTS",
+            "CHECKOUT_DISABLED_BY_USER",
+            "COMMERCE_ACCOUNT_NOT_LEGALLY_COMPLIANT",
             "CRAWLED_AVAILABILITY_MISMATCH",
             "DA_DISABLED_BY_USER",
             "DA_POLICY_VIOLATION",
@@ -12416,6 +12474,7 @@
             "EMPTY_DESCRIPTION",
             "EMPTY_PRODUCT_URL",
             "EMPTY_SELLER_DESCRIPTION",
+            "EXTERNAL_MERCHANT_ID_MISMATCH",
             "GENERIC_INVALID_FIELD",
             "HIDDEN_UNTIL_PRODUCT_LAUNCH",
             "IMAGE_FETCH_FAILED",
@@ -12442,6 +12501,7 @@
             "ITEM_OVERRIDE_EMPTY_PRICE",
             "ITEM_OVERRIDE_NOT_VISIBLE",
             "ITEM_STALE_OUT_OF_STOCK",
+            "MARKETPLACE_DISABLED_BY_USER",
             "MINI_SHOPS_DISABLED_BY_USER",
             "MISSING_CHECKOUT",
             "MISSING_CHECKOUT_CURRENCY",
@@ -12453,9 +12513,11 @@
             "MISSING_TAX_CATEGORY",
             "NEGATIVE_COMMUNITY_FEEDBACK",
             "NOT_ENOUGH_IMAGES",
+            "NOT_ENOUGH_UNIQUE_PRODUCTS",
             "PART_OF_PRODUCT_LAUNCH",
             "PRODUCT_EXPIRED",
             "PRODUCT_ITEM_HIDDEN_FROM_ALL_SHOPS",
+            "PRODUCT_ITEM_INVALID_PARTNER_TOKENS",
             "PRODUCT_ITEM_NOT_INCLUDED_IN_ANY_SHOP",
             "PRODUCT_ITEM_NOT_VISIBLE",
             "PRODUCT_NOT_APPROVED",
@@ -12480,6 +12542,7 @@
             "QUALITY_ITEM_LINK_BROKEN",
             "QUALITY_ITEM_LINK_REDIRECTING",
             "RETAILER_ID_NOT_PROVIDED",
+            "SHOPIFY_INVALID_RETAILER_ID",
             "SHOPIFY_ITEM_MISSING_SHIPPING_PROFILE",
             "SHOPS_POLICY_VIOLATION",
             "SUBSCRIPTION_INFO_NOT_ENABLED_FOR_FEED",
@@ -12968,6 +13031,8 @@
             "AVAILABLE",
             "BAD_QUALITY_IMAGE",
             "CANNOT_EDIT_SUBSCRIPTION_PRODUCTS",
+            "CHECKOUT_DISABLED_BY_USER",
+            "COMMERCE_ACCOUNT_NOT_LEGALLY_COMPLIANT",
             "CRAWLED_AVAILABILITY_MISMATCH",
             "DA_DISABLED_BY_USER",
             "DA_POLICY_VIOLATION",
@@ -12979,6 +13044,7 @@
             "EMPTY_DESCRIPTION",
             "EMPTY_PRODUCT_URL",
             "EMPTY_SELLER_DESCRIPTION",
+            "EXTERNAL_MERCHANT_ID_MISMATCH",
             "GENERIC_INVALID_FIELD",
             "HIDDEN_UNTIL_PRODUCT_LAUNCH",
             "IMAGE_FETCH_FAILED",
@@ -13005,6 +13071,7 @@
             "ITEM_OVERRIDE_EMPTY_PRICE",
             "ITEM_OVERRIDE_NOT_VISIBLE",
             "ITEM_STALE_OUT_OF_STOCK",
+            "MARKETPLACE_DISABLED_BY_USER",
             "MINI_SHOPS_DISABLED_BY_USER",
             "MISSING_CHECKOUT",
             "MISSING_CHECKOUT_CURRENCY",
@@ -13016,9 +13083,11 @@
             "MISSING_TAX_CATEGORY",
             "NEGATIVE_COMMUNITY_FEEDBACK",
             "NOT_ENOUGH_IMAGES",
+            "NOT_ENOUGH_UNIQUE_PRODUCTS",
             "PART_OF_PRODUCT_LAUNCH",
             "PRODUCT_EXPIRED",
             "PRODUCT_ITEM_HIDDEN_FROM_ALL_SHOPS",
+            "PRODUCT_ITEM_INVALID_PARTNER_TOKENS",
             "PRODUCT_ITEM_NOT_INCLUDED_IN_ANY_SHOP",
             "PRODUCT_ITEM_NOT_VISIBLE",
             "PRODUCT_NOT_APPROVED",
@@ -13043,6 +13112,7 @@
             "QUALITY_ITEM_LINK_BROKEN",
             "QUALITY_ITEM_LINK_REDIRECTING",
             "RETAILER_ID_NOT_PROVIDED",
+            "SHOPIFY_INVALID_RETAILER_ID",
             "SHOPIFY_ITEM_MISSING_SHIPPING_PROFILE",
             "SHOPS_POLICY_VIOLATION",
             "SUBSCRIPTION_INFO_NOT_ENABLED_FOR_FEED",
@@ -13916,6 +13986,8 @@
             "AVAILABLE",
             "BAD_QUALITY_IMAGE",
             "CANNOT_EDIT_SUBSCRIPTION_PRODUCTS",
+            "CHECKOUT_DISABLED_BY_USER",
+            "COMMERCE_ACCOUNT_NOT_LEGALLY_COMPLIANT",
             "CRAWLED_AVAILABILITY_MISMATCH",
             "DA_DISABLED_BY_USER",
             "DA_POLICY_VIOLATION",
@@ -13927,6 +13999,7 @@
             "EMPTY_DESCRIPTION",
             "EMPTY_PRODUCT_URL",
             "EMPTY_SELLER_DESCRIPTION",
+            "EXTERNAL_MERCHANT_ID_MISMATCH",
             "GENERIC_INVALID_FIELD",
             "HIDDEN_UNTIL_PRODUCT_LAUNCH",
             "IMAGE_FETCH_FAILED",
@@ -13953,6 +14026,7 @@
             "ITEM_OVERRIDE_EMPTY_PRICE",
             "ITEM_OVERRIDE_NOT_VISIBLE",
             "ITEM_STALE_OUT_OF_STOCK",
+            "MARKETPLACE_DISABLED_BY_USER",
             "MINI_SHOPS_DISABLED_BY_USER",
             "MISSING_CHECKOUT",
             "MISSING_CHECKOUT_CURRENCY",
@@ -13964,9 +14038,11 @@
             "MISSING_TAX_CATEGORY",
             "NEGATIVE_COMMUNITY_FEEDBACK",
             "NOT_ENOUGH_IMAGES",
+            "NOT_ENOUGH_UNIQUE_PRODUCTS",
             "PART_OF_PRODUCT_LAUNCH",
             "PRODUCT_EXPIRED",
             "PRODUCT_ITEM_HIDDEN_FROM_ALL_SHOPS",
+            "PRODUCT_ITEM_INVALID_PARTNER_TOKENS",
             "PRODUCT_ITEM_NOT_INCLUDED_IN_ANY_SHOP",
             "PRODUCT_ITEM_NOT_VISIBLE",
             "PRODUCT_NOT_APPROVED",
@@ -13991,6 +14067,7 @@
             "QUALITY_ITEM_LINK_BROKEN",
             "QUALITY_ITEM_LINK_REDIRECTING",
             "RETAILER_ID_NOT_PROVIDED",
+            "SHOPIFY_INVALID_RETAILER_ID",
             "SHOPIFY_ITEM_MISSING_SHIPPING_PROFILE",
             "SHOPS_POLICY_VIOLATION",
             "SUBSCRIPTION_INFO_NOT_ENABLED_FOR_FEED",
@@ -14641,6 +14718,7 @@
             "INSTAGRAM_VIDEO_COPY",
             "INSTANT_APPLICATION_PREVIEW",
             "INSTANT_ARTICLE",
+            "INSTANT_GAMES_PROMO",
             "INSTANT_GAME_CLIP",
             "ISSUE_MODULE",
             "JOBS_CAREERS",
@@ -15155,21 +15233,6 @@
             "CONVERSATION",
             "COST",
             "UNKNOWN"
-        ]
-    },
-    {
-        "name": "whatsappbusinessaccountextensions_categories_enum_param",
-        "node": "WhatsAppExtension",
-        "field_or_param": "categories",
-        "values": [
-            "APPOINTMENT_BOOKING",
-            "CONTACT_US",
-            "CUSTOMER_SUPPORT",
-            "LEAD_GENERATION",
-            "OTHER",
-            "SIGN_IN",
-            "SIGN_UP",
-            "SURVEY"
         ]
     },
     {

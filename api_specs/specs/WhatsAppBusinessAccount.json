@@ -106,41 +106,9 @@
         },
         {
             "method": "GET",
-            "endpoint": "extensions",
-            "return": "WhatsAppExtension",
+            "endpoint": "dcc_config",
+            "return": "WhatsAppBusinessDirectConnectionExternalConfig",
             "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "extensions",
-            "return": "WhatsAppExtension",
-            "params": [
-                {
-                    "name": "categories",
-                    "required": true,
-                    "type": "list<whatsappbusinessaccountextensions_categories_enum_param>"
-                },
-                {
-                    "name": "clone_extension_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "clone_template",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "data_channel_uri",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "name",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
         },
         {
             "method": "GET",
@@ -169,7 +137,7 @@
                     "type": "string"
                 },
                 {
-                    "name": "data_channel_uri",
+                    "name": "endpoint_uri",
                     "required": false,
                     "type": "string"
                 },
@@ -568,6 +536,10 @@
         {
             "name": "currency",
             "type": "string"
+        },
+        {
+            "name": "health_status",
+            "type": "WhatsAppBusinessHealthStatusForMessageSend"
         },
         {
             "name": "id",
