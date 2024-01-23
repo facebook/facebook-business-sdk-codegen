@@ -24,7 +24,7 @@ class {{node:pascal_case}}{{field_or_param:pascal_case}}Values extends AbstractE
 
   {{#values_with_naming_convention}}
   {{#.}}
-  const {{#is_irregular_name}}VALUE_{{/is_irregular_name}}{{{value:upper_case}}} = '{{{value}}}';
+  const {{#is_irregular_name}}VALUE_{{/is_irregular_name}}{{{value:upper_case}}} = '{{{value:escape_single_quote}}}';
   {{/.}}
   {{/values_with_naming_convention}}
 }
