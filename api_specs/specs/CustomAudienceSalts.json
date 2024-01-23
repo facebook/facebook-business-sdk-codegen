@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "app_id",
+            "type": "int"
+        },
+        {
+            "name": "public_key",
+            "type": "string"
+        }
+    ]
+}

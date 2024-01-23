@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "bytes_transferred",
+            "type": "unsigned int"
+        },
+        {
+            "name": "errors",
+            "type": "list<VideoStatusError>"
+        },
+        {
+            "name": "source_file_size",
+            "type": "unsigned int"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        }
+    ]
+}

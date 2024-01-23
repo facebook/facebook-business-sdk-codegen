@@ -821,6 +821,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "engagement_type",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "event",
                     "required": true,
                     "type": "string"

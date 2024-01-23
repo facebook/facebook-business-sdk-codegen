@@ -723,6 +723,7 @@
             "CHANGE_BID",
             "CHANGE_BUDGET",
             "CHANGE_CAMPAIGN_BUDGET",
+            "DCO",
             "INCREASE_RADIUS",
             "NOTIFICATION",
             "PAUSE",
@@ -1951,7 +1952,8 @@
         "field_or_param": "authorization_category",
         "values": [
             "NONE",
-            "POLITICAL"
+            "POLITICAL",
+            "POLITICAL_WITH_DIGITALLY_CREATED_MEDIA"
         ]
     },
     {
@@ -2003,7 +2005,9 @@
             "CHANGED_BUDGET",
             "EMAIL",
             "ENABLE_ADVANTAGE_PLUS_CREATIVE",
+            "ENABLE_ADVANTAGE_PLUS_PLACEMENTS",
             "ENABLE_AUTOFLOW",
+            "ENABLE_SEMANTIC_BASED_AUDIENCE_EXPANSION",
             "ENDPOINT_PINGED",
             "ERROR",
             "FACEBOOK_NOTIFICATION_SENT",
@@ -2127,12 +2131,17 @@
             "ACO_TOGGLE",
             "ADS_REPORTING",
             "ADVANCED_CAMPAIGN_BUDGET",
+            "ADVANTAGE_APP_CAMPAIGN",
             "ADVANTAGE_CUSTOM_AUDIENCE",
             "ADVANTAGE_CUSTOM_AUDIENCE_UPSELL",
+            "ADVANTAGE_DETAILED_TARGETING",
+            "ADVANTAGE_LOOKALIKE_AUDIENCE",
+            "ADVANTAGE_PLUS_AUDIENCE",
             "ADVANTAGE_PLUS_AUDIENCE_FRICTION",
             "ADVANTAGE_PLUS_AUDIENCE_TOGGLE",
             "ADVANTAGE_PLUS_CREATIVE",
             "ADVANTAGE_PLUS_CREATIVE_CATALOG",
+            "ADVANTAGE_PLUS_PLACEMENTS_FRICTION",
             "ADVANTAGE_SHOPPING_CAMPAIGN",
             "ADVANTAGE_SHOPPING_CAMPAIGN_FRAGMENTATION",
             "AD_OBJECTIVE",
@@ -2183,6 +2192,7 @@
             "GUIDANCE_CENTER_CODE_GEN",
             "HIGH_COST",
             "HISTORICAL_BENCHMARK",
+            "IG_MULTI_ADS",
             "LEARNING_LIMITED",
             "LEARNING_PAUSE_FRICTION",
             "LEARNING_PHASE_BUDGET_EDITS",
@@ -2214,6 +2224,7 @@
             "SIX_PLUS_MANUAL_PLACEMENTS",
             "SPEND_LIMIT",
             "SYD_TEST_MODE",
+            "TAILORED_LEAD_AD_CAMPAIGN",
             "TOP_ADSETS_WITH_ADS_UNDER_CAP",
             "TOP_CAMPAIGNS_WITH_ADS_UNDER_CAP",
             "TWO_P_GUIDANCE_CARD_AAA",
@@ -2477,6 +2488,7 @@
             "CONTAINED_POST_AUDIO_BROADCAST",
             "CONTAINED_POST_COPYRIGHT_REFERENCE_BROADCAST",
             "COPYRIGHT_REFERENCE_BROADCAST",
+            "COPYRIGHT_REFERENCE_IG_XPOST_VIDEO",
             "COPYRIGHT_REFERENCE_VIDEO",
             "CREATION_ML_PRECREATION",
             "DCO_AD_ASSET_FEED",
@@ -2700,6 +2712,18 @@
             "finish",
             "start",
             "transfer"
+        ]
+    },
+    {
+        "name": "adaccountagencies_permitted_tasks_enum_param",
+        "node": "AdAccount",
+        "field_or_param": "permitted_tasks",
+        "values": [
+            "AA_ANALYZE",
+            "ADVERTISE",
+            "ANALYZE",
+            "DRAFT",
+            "MANAGE"
         ]
     },
     {
@@ -3427,6 +3451,7 @@
             "image_asset",
             "impression_device",
             "is_conversion_id_modeled",
+            "landing_destination",
             "link_url_asset",
             "marketing_messages_btn_name",
             "mdsa_landing_destination",
@@ -6087,6 +6112,7 @@
             "image_asset",
             "impression_device",
             "is_conversion_id_modeled",
+            "landing_destination",
             "link_url_asset",
             "marketing_messages_btn_name",
             "mdsa_landing_destination",
@@ -6238,6 +6264,7 @@
             "image_asset",
             "impression_device",
             "is_conversion_id_modeled",
+            "landing_destination",
             "link_url_asset",
             "marketing_messages_btn_name",
             "mdsa_landing_destination",
@@ -6573,6 +6600,7 @@
             "image_asset",
             "impression_device",
             "is_conversion_id_modeled",
+            "landing_destination",
             "link_url_asset",
             "marketing_messages_btn_name",
             "mdsa_landing_destination",
@@ -6838,7 +6866,9 @@
             "CHANGED_BUDGET",
             "EMAIL",
             "ENABLE_ADVANTAGE_PLUS_CREATIVE",
+            "ENABLE_ADVANTAGE_PLUS_PLACEMENTS",
             "ENABLE_AUTOFLOW",
+            "ENABLE_SEMANTIC_BASED_AUDIENCE_EXPANSION",
             "ENDPOINT_PINGED",
             "ERROR",
             "FACEBOOK_NOTIFICATION_SENT",
@@ -7381,6 +7411,7 @@
             "LUXURY",
             "MARKETING",
             "NON_PROFIT",
+            "NOT_SET",
             "ORGANIZATIONS_AND_ASSOCIATIONS",
             "OTHER",
             "PROFESSIONAL_SERVICES",
@@ -7738,6 +7769,7 @@
             "LUXURY",
             "MARKETING",
             "NON_PROFIT",
+            "NOT_SET",
             "ORGANIZATIONS_AND_ASSOCIATIONS",
             "OTHER",
             "PROFESSIONAL_SERVICES",
@@ -7788,6 +7820,7 @@
             "LUXURY",
             "MARKETING",
             "NON_PROFIT",
+            "NOT_SET",
             "ORGANIZATIONS_AND_ASSOCIATIONS",
             "OTHER",
             "PROFESSIONAL_SERVICES",
@@ -7860,6 +7893,7 @@
             "LUXURY",
             "MARKETING",
             "NON_PROFIT",
+            "NOT_SET",
             "ORGANIZATIONS_AND_ASSOCIATIONS",
             "OTHER",
             "PROFESSIONAL_SERVICES",
@@ -7890,14 +7924,6 @@
             "ticketed_experiences",
             "transactable_items",
             "vehicles"
-        ]
-    },
-    {
-        "name": "businesspicture_breaking_change_enum_param",
-        "node": "ProfilePictureSource",
-        "field_or_param": "breaking_change",
-        "values": [
-            "PROFILE_PICTURE"
         ]
     },
     {
@@ -8241,6 +8267,7 @@
             "CONTAINED_POST_AUDIO_BROADCAST",
             "CONTAINED_POST_COPYRIGHT_REFERENCE_BROADCAST",
             "COPYRIGHT_REFERENCE_BROADCAST",
+            "COPYRIGHT_REFERENCE_IG_XPOST_VIDEO",
             "COPYRIGHT_REFERENCE_VIDEO",
             "CREATION_ML_PRECREATION",
             "DCO_AD_ASSET_FEED",
@@ -9073,14 +9100,6 @@
         ]
     },
     {
-        "name": "grouppicture_breaking_change_enum_param",
-        "node": "ProfilePictureSource",
-        "field_or_param": "breaking_change",
-        "values": [
-            "PROFILE_PICTURE"
-        ]
-    },
-    {
         "name": "grouppicture_type_enum_param",
         "node": "ProfilePictureSource",
         "field_or_param": "type",
@@ -9123,6 +9142,7 @@
             "CONTAINED_POST_AUDIO_BROADCAST",
             "CONTAINED_POST_COPYRIGHT_REFERENCE_BROADCAST",
             "COPYRIGHT_REFERENCE_BROADCAST",
+            "COPYRIGHT_REFERENCE_IG_XPOST_VIDEO",
             "COPYRIGHT_REFERENCE_VIDEO",
             "CREATION_ML_PRECREATION",
             "DCO_AD_ASSET_FEED",
@@ -10979,14 +10999,6 @@
         ]
     },
     {
-        "name": "pagepicture_breaking_change_enum_param",
-        "node": "ProfilePictureSource",
-        "field_or_param": "breaking_change",
-        "values": [
-            "PROFILE_PICTURE"
-        ]
-    },
-    {
         "name": "pagepicture_type_enum_param",
         "node": "ProfilePictureSource",
         "field_or_param": "type",
@@ -11368,6 +11380,7 @@
             "CONTAINED_POST_AUDIO_BROADCAST",
             "CONTAINED_POST_COPYRIGHT_REFERENCE_BROADCAST",
             "COPYRIGHT_REFERENCE_BROADCAST",
+            "COPYRIGHT_REFERENCE_IG_XPOST_VIDEO",
             "COPYRIGHT_REFERENCE_VIDEO",
             "CREATION_ML_PRECREATION",
             "DCO_AD_ASSET_FEED",
@@ -12489,6 +12502,7 @@
             "INVALID_IMAGES",
             "INVALID_MONETIZER_RETURN_POLICY",
             "INVALID_PRE_ORDER_PARAMS",
+            "INVALID_SHELTER_PAGE_ID",
             "INVALID_SHIPPING_PROFILE_PARAMS",
             "INVALID_SUBSCRIPTION_DISABLE_PARAMS",
             "INVALID_SUBSCRIPTION_ENABLE_PARAMS",
@@ -12555,7 +12569,9 @@
             "VIDEO_FETCH_FAILED_FORBIDDEN",
             "VIDEO_FETCH_FAILED_LINK_BROKEN",
             "VIDEO_FETCH_FAILED_TIMED_OUT",
-            "VIDEO_NOT_DOWNLOADABLE"
+            "VIDEO_NOT_DOWNLOADABLE",
+            "WHATSAPP_DISABLED_BY_USER",
+            "WHATSAPP_POLICY_VIOLATION"
         ]
     },
     {
@@ -13059,6 +13075,7 @@
             "INVALID_IMAGES",
             "INVALID_MONETIZER_RETURN_POLICY",
             "INVALID_PRE_ORDER_PARAMS",
+            "INVALID_SHELTER_PAGE_ID",
             "INVALID_SHIPPING_PROFILE_PARAMS",
             "INVALID_SUBSCRIPTION_DISABLE_PARAMS",
             "INVALID_SUBSCRIPTION_ENABLE_PARAMS",
@@ -13125,7 +13142,9 @@
             "VIDEO_FETCH_FAILED_FORBIDDEN",
             "VIDEO_FETCH_FAILED_LINK_BROKEN",
             "VIDEO_FETCH_FAILED_TIMED_OUT",
-            "VIDEO_NOT_DOWNLOADABLE"
+            "VIDEO_NOT_DOWNLOADABLE",
+            "WHATSAPP_DISABLED_BY_USER",
+            "WHATSAPP_POLICY_VIOLATION"
         ]
     },
     {
@@ -14014,6 +14033,7 @@
             "INVALID_IMAGES",
             "INVALID_MONETIZER_RETURN_POLICY",
             "INVALID_PRE_ORDER_PARAMS",
+            "INVALID_SHELTER_PAGE_ID",
             "INVALID_SHIPPING_PROFILE_PARAMS",
             "INVALID_SUBSCRIPTION_DISABLE_PARAMS",
             "INVALID_SUBSCRIPTION_ENABLE_PARAMS",
@@ -14080,15 +14100,9 @@
             "VIDEO_FETCH_FAILED_FORBIDDEN",
             "VIDEO_FETCH_FAILED_LINK_BROKEN",
             "VIDEO_FETCH_FAILED_TIMED_OUT",
-            "VIDEO_NOT_DOWNLOADABLE"
-        ]
-    },
-    {
-        "name": "profilepicture_breaking_change_enum_param",
-        "node": "ProfilePictureSource",
-        "field_or_param": "breaking_change",
-        "values": [
-            "PROFILE_PICTURE"
+            "VIDEO_NOT_DOWNLOADABLE",
+            "WHATSAPP_DISABLED_BY_USER",
+            "WHATSAPP_POLICY_VIOLATION"
         ]
     },
     {
@@ -14151,10 +14165,12 @@
             "carousel_album_reach",
             "carousel_album_saved",
             "carousel_album_video_views",
+            "clips_replays_count",
             "comments",
             "engagement",
             "exits",
             "follows",
+            "ig_reels_aggregated_all_plays_count",
             "ig_reels_avg_watch_time",
             "ig_reels_video_view_total_time",
             "impressions",
@@ -14346,6 +14362,7 @@
             "LUXURY",
             "MARKETING",
             "NON_PROFIT",
+            "NOT_SET",
             "ORGANIZATIONS_AND_ASSOCIATIONS",
             "OTHER",
             "PROFESSIONAL_SERVICES",
@@ -14458,16 +14475,6 @@
         "field_or_param": "fundraiser_type",
         "values": [
             "person_for_charity"
-        ]
-    },
-    {
-        "name": "usergame_items_action_enum_param",
-        "node": "GameItem",
-        "field_or_param": "action",
-        "values": [
-            "CONSUME",
-            "DROP",
-            "MARK"
         ]
     },
     {
@@ -14620,14 +14627,6 @@
         ]
     },
     {
-        "name": "userpicture_breaking_change_enum_param",
-        "node": "ProfilePictureSource",
-        "field_or_param": "breaking_change",
-        "values": [
-            "PROFILE_PICTURE"
-        ]
-    },
-    {
         "name": "userpicture_type_enum_param",
         "node": "ProfilePictureSource",
         "field_or_param": "type",
@@ -14670,6 +14669,7 @@
             "CONTAINED_POST_AUDIO_BROADCAST",
             "CONTAINED_POST_COPYRIGHT_REFERENCE_BROADCAST",
             "COPYRIGHT_REFERENCE_BROADCAST",
+            "COPYRIGHT_REFERENCE_IG_XPOST_VIDEO",
             "COPYRIGHT_REFERENCE_VIDEO",
             "CREATION_ML_PRECREATION",
             "DCO_AD_ASSET_FEED",

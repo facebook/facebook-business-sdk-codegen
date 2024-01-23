@@ -122,7 +122,23 @@
             "type": "string"
         },
         {
+            "name": "skan_click_second_postback",
+            "type": "string"
+        },
+        {
+            "name": "skan_click_third_postback",
+            "type": "string"
+        },
+        {
             "name": "skan_view",
+            "type": "string"
+        },
+        {
+            "name": "skan_view_second_postback",
+            "type": "string"
+        },
+        {
+            "name": "skan_view_third_postback",
             "type": "string"
         },
         {

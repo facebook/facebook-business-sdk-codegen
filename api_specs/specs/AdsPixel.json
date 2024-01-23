@@ -102,6 +102,11 @@
                     "type": "list<map>"
                 },
                 {
+                    "name": "progress",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
                     "name": "test_event_code",
                     "required": false,
                     "type": "string"

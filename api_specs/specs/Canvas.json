@@ -2,6 +2,12 @@
     "apis": [
         {
             "method": "GET",
+            "endpoint": "preview",
+            "return": "CanvasPreview",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "previews",
             "return": "TextWithEntities",
             "params": [

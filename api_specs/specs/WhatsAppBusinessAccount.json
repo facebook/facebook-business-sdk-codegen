@@ -132,11 +132,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "clone_template",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "endpoint_uri",
                     "required": false,
                     "type": "string"

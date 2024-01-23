@@ -22,6 +22,10 @@
             "type": "list<AdCreativeBrandedContentAdsPartners>"
         },
         {
+            "name": "promoted_page_id",
+            "type": "string"
+        },
+        {
             "name": "ui_version",
             "type": "int"
         }

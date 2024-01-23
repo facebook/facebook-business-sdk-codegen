@@ -1505,33 +1505,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "instant_articles_stats",
-            "return": "InstantArticlesStats",
-            "params": [
-                {
-                    "name": "metrics_list",
-                    "required": false,
-                    "type": "list<map>"
-                },
-                {
-                    "name": "page_list",
-                    "required": true,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "since",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "until",
-                    "required": false,
-                    "type": "datetime"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "leadgen_forms",
             "return": "LeadgenForm",
             "params": []
@@ -2674,11 +2647,6 @@
             "endpoint": "picture",
             "return": "ProfilePictureSource",
             "params": [
-                {
-                    "name": "breaking_change",
-                    "required": false,
-                    "type": "pagepicture_breaking_change_enum_param"
-                },
                 {
                     "name": "height",
                     "required": false,

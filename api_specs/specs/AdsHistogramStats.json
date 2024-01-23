@@ -122,7 +122,23 @@
             "type": "list<int>"
         },
         {
+            "name": "skan_click_second_postback",
+            "type": "list<int>"
+        },
+        {
+            "name": "skan_click_third_postback",
+            "type": "list<int>"
+        },
+        {
             "name": "skan_view",
+            "type": "list<int>"
+        },
+        {
+            "name": "skan_view_second_postback",
+            "type": "list<int>"
+        },
+        {
+            "name": "skan_view_third_postback",
             "type": "list<int>"
         },
         {

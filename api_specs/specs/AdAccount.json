@@ -1645,6 +1645,23 @@
             "params": []
         },
         {
+            "method": "POST",
+            "endpoint": "agencies",
+            "return": "AdAccount",
+            "params": [
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "permitted_tasks",
+                    "required": false,
+                    "type": "list<adaccountagencies_permitted_tasks_enum_param>"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "applications",
             "return": "Application",
