@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "advantage_audience",
+            "type": "unsigned int"
+        }
+    ]
+}
