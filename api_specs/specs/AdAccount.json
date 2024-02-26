@@ -2008,6 +2008,18 @@
         },
         {
             "method": "GET",
+            "endpoint": "connected_instagram_accounts_with_iabp",
+            "return": "InstagramUser",
+            "params": [
+                {
+                    "name": "business_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "conversion_goals",
             "return": "AdsConversionGoal",
             "params": []
@@ -3545,6 +3557,12 @@
                     "type": "Object"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "value_adjustment_rule_persona_groups",
+            "return": "AdsValueAdjustmentRulePersonaGroup",
+            "params": []
         },
         {
             "method": "GET",

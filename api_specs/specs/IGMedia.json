@@ -2,6 +2,29 @@
     "apis": [
         {
             "method": "GET",
+            "endpoint": "branded_content_partner_promote",
+            "return": "BrandedContentShadowIGUserID",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "branded_content_partner_promote",
+            "return": "BrandedContentShadowIGUserID",
+            "params": [
+                {
+                    "name": "permission",
+                    "required": true,
+                    "type": "bool"
+                },
+                {
+                    "name": "sponsor_id",
+                    "required": true,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "children",
             "return": "IGMedia",
             "params": []

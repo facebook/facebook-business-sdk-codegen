@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "eligibility_errors",
+            "type": "list<string>"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "owner_id",
+            "type": "string"
+        },
+        {
+            "name": "permalink",
+            "type": "string"
+        }
+    ]
+}

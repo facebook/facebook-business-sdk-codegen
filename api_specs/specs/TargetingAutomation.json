@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "advantage_audience",
+            "type": "unsigned int"
+        },
+        {
+            "name": "shared_audiences",
+            "type": "unsigned int"
+        },
+        {
+            "name": "value_expression",
+            "type": "unsigned int"
+        }
+    ]
+}

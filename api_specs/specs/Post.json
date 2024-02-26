@@ -212,7 +212,18 @@
             "name": "#get",
             "method": "GET",
             "return": "Post",
-            "params": []
+            "params": [
+                {
+                    "name": "primary_fb_page_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "primary_ig_user_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
         },
         {
             "name": "#update",

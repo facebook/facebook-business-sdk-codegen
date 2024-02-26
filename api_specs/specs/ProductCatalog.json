@@ -1203,21 +1203,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "offer_price_amount",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "offer_price_end_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "offer_price_start_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
                     "name": "ordering_index",
                     "required": false,
                     "type": "unsigned int"
@@ -1545,6 +1530,11 @@
             "return": "ProductCatalog",
             "params": [
                 {
+                    "name": "additional_vertical_option",
+                    "required": false,
+                    "type": "productcatalog_additional_vertical_option"
+                },
+                {
                     "name": "da_display_settings",
                     "required": false,
                     "type": "Object"
@@ -1634,6 +1624,10 @@
         },
         {
             "name": "is_catalog_segment",
+            "type": "bool"
+        },
+        {
+            "name": "is_local_catalog",
             "type": "bool"
         },
         {

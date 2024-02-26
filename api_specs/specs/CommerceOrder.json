@@ -108,6 +108,11 @@
             "return": "CommerceOrder",
             "params": [
                 {
+                    "name": "arbitrary_refund_amount",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "deductions",
                     "required": false,
                     "type": "list<map>"

@@ -9,6 +9,10 @@
     ],
     "fields": [
         {
+            "name": "commerce_merchant_settings",
+            "type": "CommerceMerchantSettings"
+        },
+        {
             "name": "fb_sales_channel",
             "type": "Object"
         },

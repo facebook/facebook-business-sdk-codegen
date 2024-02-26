@@ -4233,6 +4233,10 @@
             "type": "string"
         },
         {
+            "name": "available_promo_offer_ids",
+            "type": "list<map<string, list<map<string, string>>>>"
+        },
+        {
             "name": "awards",
             "type": "string"
         },
@@ -4425,10 +4429,6 @@
             "type": "bool"
         },
         {
-            "name": "has_whatsapp_enterprise_number_using_cloud_api",
-            "type": "bool"
-        },
-        {
             "name": "has_whatsapp_number",
             "type": "bool"
         },
@@ -4599,10 +4599,6 @@
         {
             "name": "owner_business",
             "type": "Business"
-        },
-        {
-            "name": "page_about_story",
-            "type": "PageAboutStory"
         },
         {
             "name": "page_token",

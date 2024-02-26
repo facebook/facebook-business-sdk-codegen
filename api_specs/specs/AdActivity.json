@@ -27,7 +27,7 @@
         },
         {
             "name": "event_type",
-            "type": "AdActivity_event_type"
+            "type": "string"
         },
         {
             "name": "extra_data",

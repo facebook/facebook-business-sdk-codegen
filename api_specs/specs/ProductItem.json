@@ -322,21 +322,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "offer_price_amount",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "offer_price_end_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "offer_price_start_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
                     "name": "ordering_index",
                     "required": false,
                     "type": "unsigned int"

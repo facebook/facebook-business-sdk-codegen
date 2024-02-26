@@ -42,6 +42,12 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "upcoming_events",
+            "return": "IGUpcomingEvent",
+            "params": []
+        },
+        {
             "name": "#get",
             "method": "GET",
             "return": "InstagramUser",
