@@ -85,23 +85,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "onsite_conversion_events",
-            "return": "CommerceOnsiteConversionEvent",
-            "params": [
-                {
-                    "name": "created_after",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "created_before",
-                    "required": false,
-                    "type": "datetime"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "order_management_apps",
             "return": "Application",
             "params": []

@@ -1,0 +1,33 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "end_date",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "promotion_source",
+            "type": "string"
+        },
+        {
+            "name": "promotion_type",
+            "type": "string"
+        },
+        {
+            "name": "promotion_value",
+            "type": "float"
+        },
+        {
+            "name": "required_code",
+            "type": "string"
+        },
+        {
+            "name": "start_date",
+            "type": "datetime"
+        }
+    ]
+}

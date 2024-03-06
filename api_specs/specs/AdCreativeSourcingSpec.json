@@ -7,7 +7,11 @@
         },
         {
             "name": "promotion_metadata_spec",
-            "type": "list<Object>"
+            "type": "list<AdCreativePromotionMetadataSpec>"
+        },
+        {
+            "name": "site_links_spec",
+            "type": "list<AdCreativeSiteLinksSpec>"
         }
     ]
 }

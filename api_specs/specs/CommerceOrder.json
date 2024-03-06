@@ -108,7 +108,7 @@
             "return": "CommerceOrder",
             "params": [
                 {
-                    "name": "arbitrary_refund_amount",
+                    "name": "adjustment_amount",
                     "required": false,
                     "type": "map"
                 },

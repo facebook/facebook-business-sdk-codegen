@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "text",
+            "type": "string"
+        },
+        {
+            "name": "url_tags",
+            "type": "string"
+        }
+    ]
+}
