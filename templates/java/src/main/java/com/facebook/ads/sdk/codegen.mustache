@@ -65,7 +65,7 @@ public class {{name:pascal_case}} extends APINode {
   // Breakdowns
   {{#values_with_naming_convention}}
   @SerializedName("{{value}}")
-  private String m{{value:pascal_case}} = null;
+  private {{enum_type}} m{{value:pascal_case}} = null;
   {{/values_with_naming_convention}}
   {{/breakdowns}}
   protected static Gson gson = null;
@@ -399,7 +399,7 @@ public class {{name:pascal_case}} extends APINode {
   {{/fields}}
   {{#breakdowns}}
   {{#values_with_naming_convention}}
-  public String getField{{value:pascal_case}}() {
+  public {{enum_type}} getField{{value:pascal_case}}() {
     return m{{value:pascal_case}};
   }
 
