@@ -6,8 +6,8 @@
             "type": "int"
         },
         {
-              "name": "campaign_ids",
-              "type": "list<string>"
+            "name": "campaign_ids",
+            "type": "list<string>"
         },
         {
             "name": "currency",
