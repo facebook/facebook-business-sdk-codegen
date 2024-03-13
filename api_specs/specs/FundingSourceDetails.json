@@ -6,6 +6,10 @@
             "type": "FundingSourceDetailsCoupon"
         },
         {
+            "name": "coupons",
+            "type": "list<FundingSourceDetailsCoupon>"
+        },
+        {
             "name": "display_string",
             "type": "string"
         },
