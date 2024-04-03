@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "allowed_coupon_code_sources",
+            "type": "list<string>"
+        },
+        {
+            "name": "allowed_promo_offer_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "is_auto_update_allowed",
+            "type": "bool"
+        },
+        {
+            "name": "manual_coupon_codes",
+            "type": "list<string>"
+        }
+    ]
+}
