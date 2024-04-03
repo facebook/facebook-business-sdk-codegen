@@ -877,6 +877,16 @@
                     "type": "pagefeed_backdated_time_granularity_enum_param"
                 },
                 {
+                    "name": "breaking_news",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "breaking_news_expiration",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
                     "name": "call_to_action",
                     "required": false,
                     "type": "Object"
@@ -1000,11 +1010,6 @@
                     "name": "fun_fact_toastee_id",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "has_nickname",
-                    "required": false,
-                    "type": "bool"
                 },
                 {
                     "name": "height",
@@ -3053,6 +3058,28 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "thread_action",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "action",
+                    "required": true,
+                    "type": "pagethread_action_action_enum_param"
+                },
+                {
+                    "name": "action_type",
+                    "required": true,
+                    "type": "pagethread_action_action_type_enum_param"
+                },
+                {
+                    "name": "user_id",
+                    "required": true,
+                    "type": "map"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "thread_owner",
             "return": "PageThreadOwner",
@@ -3540,11 +3567,6 @@
                 },
                 {
                     "name": "guide_enabled",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "has_nickname",
                     "required": false,
                     "type": "bool"
                 },
@@ -4263,6 +4285,10 @@
         {
             "name": "booking_agent",
             "type": "string"
+        },
+        {
+            "name": "breaking_news_usage",
+            "type": "Object"
         },
         {
             "name": "built",

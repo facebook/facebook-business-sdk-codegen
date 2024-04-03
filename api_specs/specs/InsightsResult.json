@@ -27,7 +27,7 @@
         },
         {
             "name": "values",
-            "type": "list<Object>"
+            "type": "list<InsightsValue>"
         }
     ]
 }

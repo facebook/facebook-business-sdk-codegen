@@ -16,6 +16,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "config_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "force_generate",
                     "required": false,
                     "type": "bool"

@@ -1,0 +1,45 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "campaign_id",
+            "type": "string"
+        },
+        {
+            "name": "end_time",
+            "type": "datetime"
+        },
+        {
+            "name": "engagement_source",
+            "type": "string"
+        },
+        {
+            "name": "message_type",
+            "type": "string"
+        },
+        {
+            "name": "messaging_channel",
+            "type": "string"
+        },
+        {
+            "name": "recurring_notifications_entry_point",
+            "type": "string"
+        },
+        {
+            "name": "recurring_notifications_frequency",
+            "type": "string"
+        },
+        {
+            "name": "recurring_notifications_topic",
+            "type": "string"
+        },
+        {
+            "name": "start_time",
+            "type": "datetime"
+        },
+        {
+            "name": "value",
+            "type": "Object"
+        }
+    ]
+}
