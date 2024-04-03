@@ -1973,11 +1973,6 @@
                     "type": "bool"
                 },
                 {
-                    "name": "has_nickname",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "holiday_card",
                     "required": false,
                     "type": "string"

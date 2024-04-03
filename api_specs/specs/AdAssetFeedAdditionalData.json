@@ -20,6 +20,10 @@
         {
             "name": "page_welcome_message",
             "type": "string"
+        },
+        {
+            "name": "partner_app_welcome_message_flow_id",
+            "type": "string"
         }
     ]
 }

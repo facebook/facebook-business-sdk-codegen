@@ -264,6 +264,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "upload_type",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "user_tags",
                     "required": false,
                     "type": "list<map>"
