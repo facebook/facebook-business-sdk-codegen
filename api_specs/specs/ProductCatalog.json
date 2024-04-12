@@ -1501,6 +1501,38 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "version_items_batch",
+            "return": "ProductCatalog",
+            "params": [
+                {
+                    "name": "allow_upsert",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "item_type",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "item_version",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "requests",
+                    "required": true,
+                    "type": "map"
+                },
+                {
+                    "name": "version",
+                    "required": false,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
             "name": "#delete",
             "method": "DELETE",
             "return": "Object",

@@ -942,6 +942,10 @@
             "type": "bool"
         },
         {
+            "name": "regional_regulation_identities",
+            "type": "Object"
+        },
+        {
             "name": "review_feedback",
             "type": "string"
         },

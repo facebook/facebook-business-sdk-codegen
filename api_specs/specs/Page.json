@@ -498,12 +498,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "commerce_eligibility",
-            "return": "PageCommerceEligibility",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "commerce_merchant_settings",
             "return": "CommerceMerchantSettings",
             "params": []
@@ -4500,6 +4494,10 @@
         },
         {
             "name": "is_eligible_for_disable_connect_ig_btn_for_non_page_admin_am_web",
+            "type": "bool"
+        },
+        {
+            "name": "is_eligible_for_live_boosting_expansion",
             "type": "bool"
         },
         {

@@ -34,10 +34,6 @@
             "type": "list<TargetingGeoLocationLocationCluster>"
         },
         {
-            "name": "location_expansion",
-            "type": "TargetingGeoLocationLocationExpansion"
-        },
-        {
             "name": "location_types",
             "type": "list<string>"
         },
