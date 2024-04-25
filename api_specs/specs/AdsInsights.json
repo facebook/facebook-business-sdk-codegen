@@ -354,6 +354,10 @@
             "type": "string"
         },
         {
+            "name": "marketing_messages_website_purchase_values",
+            "type": "string"
+        },
+        {
             "name": "mobile_app_purchase_roas",
             "type": "list<AdsActionStats>"
         },

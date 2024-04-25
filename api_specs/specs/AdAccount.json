@@ -1409,11 +1409,6 @@
                     "type": "bool"
                 },
                 {
-                    "name": "has_nickname",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "holiday_card",
                     "required": false,
                     "type": "string"
@@ -1782,6 +1777,12 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "audience_funnel",
+            "return": "AudienceFunnel",
+            "params": []
+        },
+        {
             "method": "POST",
             "endpoint": "block_list_drafts",
             "return": "AdAccount",
@@ -2022,6 +2023,12 @@
             "method": "GET",
             "endpoint": "conversion_goals",
             "return": "AdsConversionGoal",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "cpa_guidance",
+            "return": "BespokePartnerGuidanceLaser",
             "params": []
         },
         {
@@ -3345,6 +3352,16 @@
                     "type": "list<string>"
                 },
                 {
+                    "name": "is_account_level_brand_safety_exclusion",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_account_level_employer_exclusion",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "is_exclusion",
                     "required": false,
                     "type": "bool"
@@ -3560,8 +3577,8 @@
         },
         {
             "method": "GET",
-            "endpoint": "value_adjustment_rule_persona_groups",
-            "return": "AdsValueAdjustmentRulePersonaGroup",
+            "endpoint": "value_adjustment_rule_collections",
+            "return": "AdsValueAdjustmentRuleCollection",
             "params": []
         },
         {
@@ -3705,6 +3722,10 @@
         {
             "name": "balance",
             "type": "string"
+        },
+        {
+            "name": "brand_safety_content_filter_levels",
+            "type": "list<string>"
         },
         {
             "name": "business",

@@ -262,12 +262,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "telemetry",
-            "return": "Object",
-            "params": []
-        },
-        {
             "name": "#get",
             "method": "GET",
             "return": "AdsPixel",

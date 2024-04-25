@@ -130,12 +130,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "seller_issues",
-            "return": "CommerceAPISellerIssue",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "setup_status",
             "return": "CommerceMerchantSettingsSetupStatus",
             "params": []
@@ -200,23 +194,6 @@
             "endpoint": "tax_settings",
             "return": "CommerceMerchantTaxSettings",
             "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "whatsapp_channel",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "op",
-                    "required": true,
-                    "type": "commercemerchantsettingswhatsapp_channel_op_enum_param"
-                },
-                {
-                    "name": "whatsapp_business_accounts",
-                    "required": true,
-                    "type": "list<string>"
-                }
-            ]
         },
         {
             "name": "#get",
@@ -321,10 +298,6 @@
         {
             "name": "terms_url_by_locale",
             "type": "list<map<string, string>>"
-        },
-        {
-            "name": "whatsapp_channel",
-            "type": "Object"
         }
     ]
 }

@@ -232,6 +232,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "sdk_version",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "ud",
                     "required": false,
                     "type": "map"
@@ -730,23 +735,6 @@
                     "name": "connection_method",
                     "required": false,
                     "type": "applicationda_checks_connection_method_enum_param"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "events",
-            "return": "Event",
-            "params": [
-                {
-                    "name": "include_canceled",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "type",
-                    "required": false,
-                    "type": "applicationevents_type_enum_param"
                 }
             ]
         },

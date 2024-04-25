@@ -11,7 +11,7 @@
         },
         {
             "name": "rejection_reasons",
-            "type": "list<string>"
+            "type": "list<WhatsAppBusinessPartnerClientVerificationSubmission_rejection_reasons>"
         },
         {
             "name": "submitted_info",
@@ -27,7 +27,7 @@
         },
         {
             "name": "verification_status",
-            "type": "string"
+            "type": "WhatsAppBusinessPartnerClientVerificationSubmission_verification_status"
         }
     ]
 }

@@ -74,6 +74,10 @@
             "type": "string"
         },
         {
+            "name": "promotional_metadata",
+            "type": "Object"
+        },
+        {
             "name": "reasons_to_shop",
             "type": "bool"
         },

@@ -389,6 +389,12 @@
             "params": []
         },
         {
+            "method": "POST",
+            "endpoint": "set_obo_mobility_intent",
+            "return": "WhatsAppBusinessAccountOBOMobilityIntent",
+            "params": []
+        },
+        {
             "method": "DELETE",
             "endpoint": "subscribed_apps",
             "return": "Object",

@@ -6,11 +6,23 @@
             "type": "AdCreativeFeatureDetails"
         },
         {
+            "name": "app_highlights",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "audio",
             "type": "AdCreativeFeatureDetails"
         },
         {
             "name": "carousel_to_video",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "catalog_feed_tag",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "customize_product_recommendation",
             "type": "AdCreativeFeatureDetails"
         },
         {
@@ -87,6 +99,10 @@
         },
         {
             "name": "profile_card",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "site_extensions",
             "type": "AdCreativeFeatureDetails"
         },
         {
