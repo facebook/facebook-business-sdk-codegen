@@ -38,6 +38,10 @@
             "type": "AdCreativeFeatureDetails"
         },
         {
+            "name": "image_brightness_and_contrast",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "image_enhancement",
             "type": "AdCreativeFeatureDetails"
         },
