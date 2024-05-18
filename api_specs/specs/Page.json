@@ -4497,10 +4497,6 @@
             "type": "bool"
         },
         {
-            "name": "is_eligible_for_live_boosting_expansion",
-            "type": "bool"
-        },
-        {
             "name": "is_messenger_bot_get_started_enabled",
             "type": "bool"
         },
