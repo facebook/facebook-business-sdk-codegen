@@ -2,6 +2,14 @@
     "apis": [],
     "fields": [
         {
+            "name": "adapt_to_placement",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "ads_with_benefits",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "advantage_plus_creative",
             "type": "AdCreativeFeatureDetails"
         },
@@ -38,6 +46,10 @@
             "type": "AdCreativeFeatureDetails"
         },
         {
+            "name": "feed_caption_optimization",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "ig_glados_feed",
             "type": "AdCreativeFeatureDetails"
         },
@@ -47,6 +59,10 @@
         },
         {
             "name": "image_background_gen",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "image_brightness_and_contrast",
             "type": "AdCreativeFeatureDetails"
         },
         {
@@ -119,6 +135,10 @@
         },
         {
             "name": "video_auto_crop",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "video_filtering",
             "type": "AdCreativeFeatureDetails"
         },
         {

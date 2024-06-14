@@ -271,7 +271,7 @@
         },
         {
             "name": "registration_setting",
-            "type": "Object"
+            "type": "EventRegistrationSetting"
         },
         {
             "name": "scheduled_publish_time",
@@ -283,7 +283,7 @@
         },
         {
             "name": "ticket_setting",
-            "type": "Object"
+            "type": "EventTicketSetting"
         },
         {
             "name": "ticket_uri",

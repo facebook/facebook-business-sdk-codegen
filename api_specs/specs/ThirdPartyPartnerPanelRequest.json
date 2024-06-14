@@ -1,0 +1,64 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ThirdPartyPartnerPanelRequest",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "adentities_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "country",
+            "type": "string"
+        },
+        {
+            "name": "created_time",
+            "type": "datetime"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "modified_time",
+            "type": "datetime"
+        },
+        {
+            "name": "owner_instance_id",
+            "type": "string"
+        },
+        {
+            "name": "owner_panel_id",
+            "type": "string"
+        },
+        {
+            "name": "owner_panel_name",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "ThirdPartyPartnerPanelRequest_status"
+        },
+        {
+            "name": "study_end_time",
+            "type": "datetime"
+        },
+        {
+            "name": "study_start_time",
+            "type": "datetime"
+        },
+        {
+            "name": "study_type",
+            "type": "ThirdPartyPartnerPanelRequest_study_type"
+        }
+    ]
+}

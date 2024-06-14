@@ -1,0 +1,33 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "number_of_orders",
+            "type": "int"
+        },
+        {
+            "name": "order_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "payout_amount",
+            "type": "Object"
+        },
+        {
+            "name": "payout_provider_reference_id",
+            "type": "string"
+        },
+        {
+            "name": "payout_status",
+            "type": "string"
+        },
+        {
+            "name": "payout_time",
+            "type": "int"
+        },
+        {
+            "name": "provider",
+            "type": "string"
+        }
+    ]
+}

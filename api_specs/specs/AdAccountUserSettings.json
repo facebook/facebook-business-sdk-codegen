@@ -1,0 +1,228 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdAccountUserSettings",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "acf_should_opt_out_video_adjustments",
+            "type": "bool"
+        },
+        {
+            "name": "aco_sticky_settings",
+            "type": "list<map<string, string>>"
+        },
+        {
+            "name": "ad_account",
+            "type": "AdAccount"
+        },
+        {
+            "name": "ad_object_export_format",
+            "type": "string"
+        },
+        {
+            "name": "auto_review_video_caption",
+            "type": "bool"
+        },
+        {
+            "name": "campaign_overview_columns",
+            "type": "list<string>"
+        },
+        {
+            "name": "column_suggestion_status",
+            "type": "string"
+        },
+        {
+            "name": "default_account_overview_agegender_metrics",
+            "type": "list<string>"
+        },
+        {
+            "name": "default_account_overview_location_metrics",
+            "type": "list<string>"
+        },
+        {
+            "name": "default_account_overview_metrics",
+            "type": "list<string>"
+        },
+        {
+            "name": "default_account_overview_time_metrics",
+            "type": "list<string>"
+        },
+        {
+            "name": "default_builtin_column_preset",
+            "type": "string"
+        },
+        {
+            "name": "default_nam_time_range",
+            "type": "string"
+        },
+        {
+            "name": "draft_mode_enabled",
+            "type": "bool"
+        },
+        {
+            "name": "export_deleted_items_with_delivery",
+            "type": "bool"
+        },
+        {
+            "name": "export_summary_row",
+            "type": "bool"
+        },
+        {
+            "name": "has_seen_groups_column_flexing_experience",
+            "type": "bool"
+        },
+        {
+            "name": "has_seen_leads_column_flexing_experience",
+            "type": "bool"
+        },
+        {
+            "name": "has_seen_shops_ads_metrics_onboarding_tour",
+            "type": "bool"
+        },
+        {
+            "name": "has_seen_shops_column_flexing_experience",
+            "type": "bool"
+        },
+        {
+            "name": "hidden_optimization_tips",
+            "type": "list<map<string, bool>>"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_3p_auth_setting_set",
+            "type": "bool"
+        },
+        {
+            "name": "is_text_variation_nux_close",
+            "type": "bool"
+        },
+        {
+            "name": "last_used_columns",
+            "type": "Object"
+        },
+        {
+            "name": "last_used_pe_filters",
+            "type": "list<Object>"
+        },
+        {
+            "name": "last_used_website_urls",
+            "type": "list<string>"
+        },
+        {
+            "name": "outlier_preferences",
+            "type": "Object"
+        },
+        {
+            "name": "pinned_ad_object_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "rb_export_format",
+            "type": "string"
+        },
+        {
+            "name": "rb_export_raw_data",
+            "type": "bool"
+        },
+        {
+            "name": "rb_export_summary_row",
+            "type": "bool"
+        },
+        {
+            "name": "saip_advertiser_setup_optimisation_guidance_overall_state",
+            "type": "string"
+        },
+        {
+            "name": "saip_advertiser_setup_optimisation_guidance_state",
+            "type": "list<map<string, string>>"
+        },
+        {
+            "name": "shops_ads_metrics_onboarding_tour_close_count",
+            "type": "int"
+        },
+        {
+            "name": "shops_ads_metrics_onboarding_tour_last_action_time",
+            "type": "datetime"
+        },
+        {
+            "name": "should_default_image_auto_crop",
+            "type": "bool"
+        },
+        {
+            "name": "should_default_image_auto_crop_for_tail",
+            "type": "bool"
+        },
+        {
+            "name": "should_default_image_auto_crop_optimization",
+            "type": "bool"
+        },
+        {
+            "name": "should_default_image_dof_toggle",
+            "type": "bool"
+        },
+        {
+            "name": "should_default_image_lpp_ads_to_square",
+            "type": "bool"
+        },
+        {
+            "name": "should_default_instagram_profile_card_optimization",
+            "type": "bool"
+        },
+        {
+            "name": "should_default_text_swapping_optimization",
+            "type": "bool"
+        },
+        {
+            "name": "should_logout_of_3p_sourcing",
+            "type": "bool"
+        },
+        {
+            "name": "show_archived_data",
+            "type": "bool"
+        },
+        {
+            "name": "show_text_variation_nux_tooltip",
+            "type": "bool"
+        },
+        {
+            "name": "syd_campaign_trends_activemetric",
+            "type": "string"
+        },
+        {
+            "name": "syd_campaign_trends_attribution",
+            "type": "string"
+        },
+        {
+            "name": "syd_campaign_trends_metrics",
+            "type": "list<string>"
+        },
+        {
+            "name": "syd_campaign_trends_objective",
+            "type": "AdAccountUserSettings_syd_campaign_trends_objective"
+        },
+        {
+            "name": "syd_campaign_trends_time_range",
+            "type": "string"
+        },
+        {
+            "name": "syd_landing_page_opt_in_status",
+            "type": "string"
+        },
+        {
+            "name": "text_variations_opt_in_type",
+            "type": "string"
+        },
+        {
+            "name": "user",
+            "type": "User"
+        }
+    ]
+}

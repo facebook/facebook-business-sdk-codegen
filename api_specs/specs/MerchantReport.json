@@ -1,0 +1,65 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "add_to_cart",
+            "type": "int"
+        },
+        {
+            "name": "brand",
+            "type": "string"
+        },
+        {
+            "name": "catalog_segment_id",
+            "type": "string"
+        },
+        {
+            "name": "catalog_segment_purchase_value",
+            "type": "float"
+        },
+        {
+            "name": "category",
+            "type": "string"
+        },
+        {
+            "name": "date",
+            "type": "string"
+        },
+        {
+            "name": "latest_date",
+            "type": "string"
+        },
+        {
+            "name": "link_clicks",
+            "type": "int"
+        },
+        {
+            "name": "merchant_currency",
+            "type": "string"
+        },
+        {
+            "name": "page_id",
+            "type": "string"
+        },
+        {
+            "name": "product_id",
+            "type": "string"
+        },
+        {
+            "name": "product_quantity",
+            "type": "int"
+        },
+        {
+            "name": "product_total_value",
+            "type": "float"
+        },
+        {
+            "name": "purchase",
+            "type": "int"
+        },
+        {
+            "name": "purchase_value",
+            "type": "float"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdsReportBuilderMMMReportScheduler",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "ad_account_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "filtering",
+            "type": "list<Object>"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "report_name",
+            "type": "string"
+        },
+        {
+            "name": "schedule_frequency",
+            "type": "string"
+        }
+    ]
+}

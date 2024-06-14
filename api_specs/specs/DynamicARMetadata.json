@@ -1,0 +1,60 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "DynamicARMetadata",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "anchor_point",
+            "type": "list<float>"
+        },
+        {
+            "name": "container_effect_enum",
+            "type": "int"
+        },
+        {
+            "name": "effect_icon_url",
+            "type": "string"
+        },
+        {
+            "name": "effect_id",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "platforms",
+            "type": "list<string>"
+        },
+        {
+            "name": "scale_factor",
+            "type": "list<float>"
+        },
+        {
+            "name": "shadow_texture_url",
+            "type": "string"
+        },
+        {
+            "name": "source_url",
+            "type": "string"
+        },
+        {
+            "name": "state",
+            "type": "string"
+        },
+        {
+            "name": "tags",
+            "type": "list<string>"
+        },
+        {
+            "name": "variant_picker_url",
+            "type": "string"
+        }
+    ]
+}

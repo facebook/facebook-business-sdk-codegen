@@ -90,6 +90,10 @@
             "type": "list<AdAssetFeedSpecTitle>"
         },
         {
+            "name": "upcoming_events",
+            "type": "list<Object>"
+        },
+        {
             "name": "videos",
             "type": "list<AdAssetFeedSpecVideo>"
         }

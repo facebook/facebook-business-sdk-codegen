@@ -1,0 +1,24 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ExternalMerchantSettings",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "connect_woo",
+            "type": "string"
+        },
+        {
+            "name": "external_platform",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "LeadGenDirectCRMIntegrationConfig",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "auth_id",
+            "type": "string"
+        },
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "lead_gen_data",
+            "type": "LeadgenForm"
+        },
+        {
+            "name": "matched_fields",
+            "type": "list<map<string, string>>"
+        },
+        {
+            "name": "matched_fields_labels",
+            "type": "list<map<string, string>>"
+        },
+        {
+            "name": "resources",
+            "type": "list<map<string, string>>"
+        },
+        {
+            "name": "third_party_app_id",
+            "type": "string"
+        }
+    ]
+}

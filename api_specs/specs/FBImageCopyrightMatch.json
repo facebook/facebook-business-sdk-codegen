@@ -1,0 +1,64 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "FBImageCopyrightMatch",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "added_to_dashboard_time",
+            "type": "datetime"
+        },
+        {
+            "name": "applied_actions",
+            "type": "list<map<string, Object>>"
+        },
+        {
+            "name": "audit_log",
+            "type": "list<Object>"
+        },
+        {
+            "name": "available_ui_actions",
+            "type": "list<string>"
+        },
+        {
+            "name": "expiration_days",
+            "type": "int"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_business_page_match",
+            "type": "bool"
+        },
+        {
+            "name": "last_modified_time",
+            "type": "datetime"
+        },
+        {
+            "name": "match_data",
+            "type": "list<Object>"
+        },
+        {
+            "name": "match_status",
+            "type": "string"
+        },
+        {
+            "name": "ownership_countries",
+            "type": "VideoCopyrightGeoGate"
+        },
+        {
+            "name": "reference_owner",
+            "type": "Profile"
+        },
+        {
+            "name": "time_to_appeal",
+            "type": "int"
+        }
+    ]
+}

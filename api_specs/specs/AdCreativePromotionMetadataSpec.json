@@ -3,7 +3,7 @@
     "fields": [
         {
             "name": "end_date",
-            "type": "datetime"
+            "type": "int"
         },
         {
             "name": "id",
@@ -27,7 +27,7 @@
         },
         {
             "name": "start_date",
-            "type": "datetime"
+            "type": "int"
         }
     ]
 }

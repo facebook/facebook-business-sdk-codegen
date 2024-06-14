@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "active_campaigns",
+            "type": "int"
+        },
+        {
+            "name": "compliance_status",
+            "type": "string"
+        },
+        {
+            "name": "count_down_start_time",
+            "type": "int"
+        },
+        {
+            "name": "purchase",
+            "type": "int"
+        },
+        {
+            "name": "purchase_conversion_value",
+            "type": "float"
+        }
+    ]
+}

@@ -241,6 +241,11 @@
                     "type": "adaccountadcreatives_category_media_source_enum_param"
                 },
                 {
+                    "name": "contextual_multi_ads",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "degrees_of_freedom_spec",
                     "required": false,
                     "type": "map"
@@ -326,11 +331,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "messenger_sponsored_message",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "name",
                     "required": false,
                     "type": "string"
@@ -364,6 +364,11 @@
                     "name": "omnichannel_link_spec",
                     "required": false,
                     "type": "map"
+                },
+                {
+                    "name": "page_welcome_message",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "place_page_set_id",
@@ -734,6 +739,11 @@
                     "type": "AdCreative"
                 },
                 {
+                    "name": "creative_asset_groups_spec",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
                     "name": "date_format",
                     "required": false,
                     "type": "string"
@@ -816,7 +826,7 @@
                 {
                     "name": "page_id",
                     "required": false,
-                    "type": "int"
+                    "type": "string"
                 },
                 {
                     "name": "recommendation_type",
@@ -1075,6 +1085,16 @@
                     "type": "string"
                 },
                 {
+                    "name": "regional_regulated_categories",
+                    "required": false,
+                    "type": "list<adaccountadsets_regional_regulated_categories_enum_param>"
+                },
+                {
+                    "name": "regional_regulation_identities",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "rf_prediction_id",
                     "required": false,
                     "type": "string"
@@ -1258,11 +1278,6 @@
             "endpoint": "advideos",
             "return": "AdVideo",
             "params": [
-                {
-                    "name": "adaptive_type",
-                    "required": false,
-                    "type": "string"
-                },
                 {
                     "name": "animated_effect_id",
                     "required": false,
@@ -1497,11 +1512,6 @@
                     "name": "publish_event_id",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "react_mode_metadata",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "referenced_sticker_id",
@@ -2280,6 +2290,11 @@
             "return": "CustomConversion",
             "params": [
                 {
+                    "name": "action_source_type",
+                    "required": false,
+                    "type": "adaccountcustomconversions_action_source_type_enum_param"
+                },
+                {
                     "name": "advanced_rule",
                     "required": false,
                     "type": "string"
@@ -2827,12 +2842,6 @@
                     "type": "int"
                 }
             ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "offline_conversion_data_sets",
-            "return": "OfflineConversionDataSet",
-            "params": []
         },
         {
             "method": "GET",

@@ -1,0 +1,29 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "access_token",
+            "type": "string"
+        },
+        {
+            "name": "analytics_claim",
+            "type": "string"
+        },
+        {
+            "name": "full_name",
+            "type": "string"
+        },
+        {
+            "name": "profile_picture_url",
+            "type": "string"
+        },
+        {
+            "name": "user_id",
+            "type": "string"
+        },
+        {
+            "name": "user_name",
+            "type": "string"
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "blame_field_spec",
+            "type": "list<string>"
+        },
+        {
+            "name": "error_code",
+            "type": "int"
+        },
+        {
+            "name": "error_description",
+            "type": "string"
+        },
+        {
+            "name": "error_message",
+            "type": "string"
+        },
+        {
+            "name": "error_placement",
+            "type": "string"
+        },
+        {
+            "name": "error_severity",
+            "type": "string"
+        },
+        {
+            "name": "help_center_id",
+            "type": "int"
+        }
+    ]
+}

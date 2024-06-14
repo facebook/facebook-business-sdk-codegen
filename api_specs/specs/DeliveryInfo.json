@@ -1,0 +1,173 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "active_accelerated_campaign_count",
+            "type": "int"
+        },
+        {
+            "name": "active_day_parted_campaign_count",
+            "type": "int"
+        },
+        {
+            "name": "ad_penalty_map",
+            "type": "list<map<string, bool>>"
+        },
+        {
+            "name": "are_all_daily_budgets_spent",
+            "type": "bool"
+        },
+        {
+            "name": "credit_needed_ads_count",
+            "type": "int"
+        },
+        {
+            "name": "eligible_for_delivery_insights",
+            "type": "bool"
+        },
+        {
+            "name": "end_time",
+            "type": "datetime"
+        },
+        {
+            "name": "has_account_hit_spend_limit",
+            "type": "bool"
+        },
+        {
+            "name": "has_campaign_group_hit_spend_limit",
+            "type": "bool"
+        },
+        {
+            "name": "has_no_active_ads",
+            "type": "bool"
+        },
+        {
+            "name": "has_no_ads",
+            "type": "bool"
+        },
+        {
+            "name": "inactive_ads_count",
+            "type": "int"
+        },
+        {
+            "name": "inactive_campaign_count",
+            "type": "int"
+        },
+        {
+            "name": "is_account_closed",
+            "type": "bool"
+        },
+        {
+            "name": "is_account_disabled",
+            "type": "bool"
+        },
+        {
+            "name": "is_ad_uneconomical",
+            "type": "bool"
+        },
+        {
+            "name": "is_adfarm_penalized",
+            "type": "bool"
+        },
+        {
+            "name": "is_adgroup_partially_rejected",
+            "type": "bool"
+        },
+        {
+            "name": "is_campaign_accelerated",
+            "type": "bool"
+        },
+        {
+            "name": "is_campaign_completed",
+            "type": "bool"
+        },
+        {
+            "name": "is_campaign_day_parted",
+            "type": "bool"
+        },
+        {
+            "name": "is_campaign_disabled",
+            "type": "bool"
+        },
+        {
+            "name": "is_campaign_group_disabled",
+            "type": "bool"
+        },
+        {
+            "name": "is_clickbait_penalized",
+            "type": "bool"
+        },
+        {
+            "name": "is_daily_budget_spent",
+            "type": "bool"
+        },
+        {
+            "name": "is_engagement_bait_penalized",
+            "type": "bool"
+        },
+        {
+            "name": "is_lqwe_penalized",
+            "type": "bool"
+        },
+        {
+            "name": "is_reach_and_frequency_misconfigured",
+            "type": "bool"
+        },
+        {
+            "name": "is_sensationalism_penalized",
+            "type": "bool"
+        },
+        {
+            "name": "is_split_test_active",
+            "type": "bool"
+        },
+        {
+            "name": "is_split_test_valid",
+            "type": "bool"
+        },
+        {
+            "name": "lift_study_time_period",
+            "type": "string"
+        },
+        {
+            "name": "needs_credit",
+            "type": "bool"
+        },
+        {
+            "name": "needs_tax_number",
+            "type": "bool"
+        },
+        {
+            "name": "non_deleted_ads_count",
+            "type": "int"
+        },
+        {
+            "name": "not_delivering_campaign_count",
+            "type": "int"
+        },
+        {
+            "name": "pending_ads_count",
+            "type": "int"
+        },
+        {
+            "name": "reach_frequency_campaign_underdelivery_reason",
+            "type": "string"
+        },
+        {
+            "name": "rejected_ads_count",
+            "type": "int"
+        },
+        {
+            "name": "start_time",
+            "type": "datetime"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "text_penalty_level",
+            "type": "string"
+        }
+    ]
+}

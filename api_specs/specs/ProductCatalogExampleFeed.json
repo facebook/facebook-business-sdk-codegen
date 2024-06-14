@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "example_feed",
+            "type": "string"
+        }
+    ]
+}

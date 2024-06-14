@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "similar_campaign_limit",
+            "type": "unsigned int"
+        },
+        {
+            "name": "similar_campaigns_info",
+            "type": "list<map<string, Object>>"
+        },
+        {
+            "name": "used_campaign_slots",
+            "type": "unsigned int"
+        }
+    ]
+}

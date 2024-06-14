@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "online_offer_url",
+            "type": "string"
+        },
+        {
+            "name": "online_promo_code",
+            "type": "string"
+        }
+    ]
+}

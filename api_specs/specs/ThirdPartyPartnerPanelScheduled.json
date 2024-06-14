@@ -1,0 +1,68 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ThirdPartyPartnerPanelScheduled",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "adentities_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "cadence",
+            "type": "string"
+        },
+        {
+            "name": "country",
+            "type": "string"
+        },
+        {
+            "name": "created_time",
+            "type": "datetime"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "end_time",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "modified_time",
+            "type": "datetime"
+        },
+        {
+            "name": "owner_instance_id",
+            "type": "string"
+        },
+        {
+            "name": "owner_panel_id",
+            "type": "string"
+        },
+        {
+            "name": "owner_panel_name",
+            "type": "string"
+        },
+        {
+            "name": "start_time",
+            "type": "datetime"
+        },
+        {
+            "name": "status",
+            "type": "ThirdPartyPartnerPanelScheduled_status"
+        },
+        {
+            "name": "study_type",
+            "type": "ThirdPartyPartnerPanelScheduled_study_type"
+        }
+    ]
+}

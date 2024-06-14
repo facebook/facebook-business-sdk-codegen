@@ -43,6 +43,10 @@
             "type": "list<string>"
         },
         {
+            "name": "ownership_details",
+            "type": "list<map<string, Object>>"
+        },
+        {
             "name": "reference_file_status",
             "type": "string"
         },

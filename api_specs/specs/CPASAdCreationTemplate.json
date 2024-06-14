@@ -1,0 +1,40 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "CPASAdCreationTemplate",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_unused_template",
+            "type": "bool"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "optimization_goal",
+            "type": "string"
+        },
+        {
+            "name": "targeting_type",
+            "type": "string"
+        },
+        {
+            "name": "template_type",
+            "type": "string"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "carousel_ad",
+            "type": "ProductCatalogImageSettingsOperation"
+        },
+        {
+            "name": "shops_pdp",
+            "type": "ProductCatalogImageSettingsOperation"
+        },
+        {
+            "name": "single_ad",
+            "type": "ProductCatalogImageSettingsOperation"
+        }
+    ]
+}

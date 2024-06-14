@@ -1,0 +1,80 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "CopyrightMediaMisuse",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "audio_segments",
+            "type": "list<Object>"
+        },
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "disabled_audio_segments",
+            "type": "list<Object>"
+        },
+        {
+            "name": "disabled_video_segments",
+            "type": "list<Object>"
+        },
+        {
+            "name": "entire_file_issue",
+            "type": "bool"
+        },
+        {
+            "name": "entire_file_issue_reasons",
+            "type": "list<string>"
+        },
+        {
+            "name": "expiration_time",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "media_asset_id",
+            "type": "string"
+        },
+        {
+            "name": "reasons",
+            "type": "list<string>"
+        },
+        {
+            "name": "requested_audio_segments",
+            "type": "list<Object>"
+        },
+        {
+            "name": "requested_video_segments",
+            "type": "list<Object>"
+        },
+        {
+            "name": "resolution_type",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "update_time",
+            "type": "datetime"
+        },
+        {
+            "name": "video_copyright",
+            "type": "VideoCopyright"
+        },
+        {
+            "name": "video_segments",
+            "type": "list<Object>"
+        }
+    ]
+}

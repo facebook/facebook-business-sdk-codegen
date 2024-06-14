@@ -1,0 +1,41 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "health_indicator",
+            "type": "string"
+        },
+        {
+            "name": "impacted_browsers_match_rate",
+            "type": "float"
+        },
+        {
+            "name": "impacted_browsers_match_rate_mom_trend",
+            "type": "float"
+        },
+        {
+            "name": "impacted_browsers_traffic_share",
+            "type": "float"
+        },
+        {
+            "name": "impacted_browsers_traffic_share_mom_trend",
+            "type": "float"
+        },
+        {
+            "name": "match_rate",
+            "type": "float"
+        },
+        {
+            "name": "match_rate_mom_trend",
+            "type": "float"
+        },
+        {
+            "name": "match_rate_vertical_benchmark",
+            "type": "float"
+        },
+        {
+            "name": "match_rate_vs_benchmark_mom_trend",
+            "type": "float"
+        }
+    ]
+}

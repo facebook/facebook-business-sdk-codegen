@@ -2,6 +2,12 @@
     "apis": [
         {
             "method": "GET",
+            "endpoint": "boost_ads_list",
+            "return": "IGBoostMediaAd",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "branded_content_partner_promote",
             "return": "BrandedContentShadowIGUserID",
             "params": []
@@ -156,6 +162,10 @@
         }
     ],
     "fields": [
+        {
+            "name": "boost_eligibility_info",
+            "type": "IGMediaBoostEligibilityInfo"
+        },
         {
             "name": "caption",
             "type": "string"

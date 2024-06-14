@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "event_match_quality",
+            "type": "Object"
+        },
+        {
+            "name": "event_name",
+            "type": "string"
+        }
+    ]
+}

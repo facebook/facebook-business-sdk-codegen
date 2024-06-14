@@ -1,0 +1,88 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AudioAsset",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "all_ddex_featured_artists",
+            "type": "string"
+        },
+        {
+            "name": "all_ddex_main_artists",
+            "type": "string"
+        },
+        {
+            "name": "audio_cluster_id",
+            "type": "string"
+        },
+        {
+            "name": "cover_image_source",
+            "type": "string"
+        },
+        {
+            "name": "display_artist",
+            "type": "string"
+        },
+        {
+            "name": "download_hd_url",
+            "type": "string"
+        },
+        {
+            "name": "download_sd_url",
+            "type": "string"
+        },
+        {
+            "name": "duration_in_ms",
+            "type": "int"
+        },
+        {
+            "name": "freeform_genre",
+            "type": "string"
+        },
+        {
+            "name": "grid",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_test",
+            "type": "bool"
+        },
+        {
+            "name": "original_release_date",
+            "type": "datetime"
+        },
+        {
+            "name": "owner",
+            "type": "Page"
+        },
+        {
+            "name": "parental_warning_type",
+            "type": "string"
+        },
+        {
+            "name": "subtitle",
+            "type": "string"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "title_with_featured_artists",
+            "type": "string"
+        },
+        {
+            "name": "upc",
+            "type": "string"
+        }
+    ]
+}

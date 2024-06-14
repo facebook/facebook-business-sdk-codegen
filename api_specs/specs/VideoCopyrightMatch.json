@@ -1,0 +1,40 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "VideoCopyrightMatch",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "created_date",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "last_modified_user",
+            "type": "User"
+        },
+        {
+            "name": "match_data",
+            "type": "list<Object>"
+        },
+        {
+            "name": "match_status",
+            "type": "string"
+        },
+        {
+            "name": "notes",
+            "type": "string"
+        },
+        {
+            "name": "permalink",
+            "type": "string"
+        }
+    ]
+}

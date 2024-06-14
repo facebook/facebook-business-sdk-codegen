@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "is_already_connected",
+            "type": "bool"
+        },
+        {
+            "name": "pixel_id",
+            "type": "string"
+        }
+    ]
+}

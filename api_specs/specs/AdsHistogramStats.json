@@ -6,7 +6,23 @@
             "type": "list<int>"
         },
         {
+            "name": "1d_click_all_conversions",
+            "type": "list<int>"
+        },
+        {
+            "name": "1d_click_first_conversion",
+            "type": "list<int>"
+        },
+        {
             "name": "1d_ev",
+            "type": "list<int>"
+        },
+        {
+            "name": "1d_ev_all_conversions",
+            "type": "list<int>"
+        },
+        {
+            "name": "1d_ev_first_conversion",
             "type": "list<int>"
         },
         {
@@ -14,7 +30,23 @@
             "type": "list<int>"
         },
         {
+            "name": "1d_view_all_conversions",
+            "type": "list<int>"
+        },
+        {
+            "name": "1d_view_first_conversion",
+            "type": "list<int>"
+        },
+        {
             "name": "28d_click",
+            "type": "list<int>"
+        },
+        {
+            "name": "28d_click_all_conversions",
+            "type": "list<int>"
+        },
+        {
+            "name": "28d_click_first_conversion",
             "type": "list<int>"
         },
         {
@@ -22,11 +54,35 @@
             "type": "list<int>"
         },
         {
+            "name": "28d_view_all_conversions",
+            "type": "list<int>"
+        },
+        {
+            "name": "28d_view_first_conversion",
+            "type": "list<int>"
+        },
+        {
             "name": "7d_click",
             "type": "list<int>"
         },
         {
+            "name": "7d_click_all_conversions",
+            "type": "list<int>"
+        },
+        {
+            "name": "7d_click_first_conversion",
+            "type": "list<int>"
+        },
+        {
             "name": "7d_view",
+            "type": "list<int>"
+        },
+        {
+            "name": "7d_view_all_conversions",
+            "type": "list<int>"
+        },
+        {
+            "name": "7d_view_first_conversion",
             "type": "list<int>"
         },
         {
