@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "ig_media",
+            "type": "IGMedia"
+        },
+        {
+            "name": "ig_media_has_product_tags",
+            "type": "bool"
+        },
+        {
+            "name": "is_ad_code_entry",
+            "type": "bool"
+        }
+    ]
+}

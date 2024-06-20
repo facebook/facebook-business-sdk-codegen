@@ -1,0 +1,76 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdsReportBuilderExportCore",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "async_percent_completion",
+            "type": "int"
+        },
+        {
+            "name": "async_report_url",
+            "type": "string"
+        },
+        {
+            "name": "async_status",
+            "type": "string"
+        },
+        {
+            "name": "client_creation_value",
+            "type": "string"
+        },
+        {
+            "name": "expiry_time",
+            "type": "datetime"
+        },
+        {
+            "name": "export_download_time",
+            "type": "datetime"
+        },
+        {
+            "name": "export_format",
+            "type": "string"
+        },
+        {
+            "name": "export_name",
+            "type": "string"
+        },
+        {
+            "name": "export_type",
+            "type": "string"
+        },
+        {
+            "name": "has_seen",
+            "type": "bool"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_sharing",
+            "type": "bool"
+        },
+        {
+            "name": "link_sharing_expiration_time",
+            "type": "datetime"
+        },
+        {
+            "name": "link_sharing_uri",
+            "type": "string"
+        },
+        {
+            "name": "time_completed",
+            "type": "datetime"
+        },
+        {
+            "name": "time_start",
+            "type": "datetime"
+        }
+    ]
+}

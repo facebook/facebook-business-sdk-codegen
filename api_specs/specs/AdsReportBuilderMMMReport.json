@@ -1,0 +1,44 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdsReportBuilderMMMReport",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "async_status",
+            "type": "string"
+        },
+        {
+            "name": "export_format",
+            "type": "string"
+        },
+        {
+            "name": "export_name",
+            "type": "string"
+        },
+        {
+            "name": "export_type",
+            "type": "string"
+        },
+        {
+            "name": "has_seen",
+            "type": "bool"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "mmm_status",
+            "type": "string"
+        },
+        {
+            "name": "time_start",
+            "type": "datetime"
+        }
+    ]
+}

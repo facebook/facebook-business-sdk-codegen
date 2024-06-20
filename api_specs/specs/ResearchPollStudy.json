@@ -1,0 +1,24 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ResearchPollStudy",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "account",
+            "type": "AdAccount"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        }
+    ]
+}

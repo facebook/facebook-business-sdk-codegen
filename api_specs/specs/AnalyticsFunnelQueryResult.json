@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "data",
+            "type": "Object"
+        },
+        {
+            "name": "error",
+            "type": "Object"
+        },
+        {
+            "name": "query_id",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        }
+    ]
+}

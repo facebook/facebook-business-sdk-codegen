@@ -1,0 +1,28 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdvAInstance",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "instance_type",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
+        }
+    ]
+}

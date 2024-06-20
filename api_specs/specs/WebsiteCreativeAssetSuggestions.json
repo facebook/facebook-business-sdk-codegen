@@ -1,0 +1,28 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "WebsiteCreativeAssetSuggestions",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "ad_account_id",
+            "type": "string"
+        },
+        {
+            "name": "extraction_status",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "link_url",
+            "type": "string"
+        }
+    ]
+}

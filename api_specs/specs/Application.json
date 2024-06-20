@@ -739,6 +739,18 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "domain_reports",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "tracking_domains",
+                    "required": true,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "iap_purchases",
             "return": "DCPAppStoreOrder",
@@ -749,12 +761,6 @@
                     "type": "string"
                 }
             ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "insights_push_schedule",
-            "return": "AdsInsightsPushSchedule",
-            "params": []
         },
         {
             "method": "GET",
@@ -1174,6 +1180,45 @@
                     "name": "session_type",
                     "required": false,
                     "type": "applicationuploads_session_type_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "whatsapp_business_solution",
+            "return": "Application",
+            "params": [
+                {
+                    "name": "owner_permissions",
+                    "required": true,
+                    "type": "list<applicationwhatsapp_business_solution_owner_permissions_enum_param>"
+                },
+                {
+                    "name": "partner_app_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "partner_permissions",
+                    "required": true,
+                    "type": "list<applicationwhatsapp_business_solution_partner_permissions_enum_param>"
+                },
+                {
+                    "name": "solution_name",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "whatsapp_business_solutions",
+            "return": "WhatsAppBusinessSolution",
+            "params": [
+                {
+                    "name": "role",
+                    "required": false,
+                    "type": "applicationwhatsapp_business_solutions_role_enum_param"
                 }
             ]
         },

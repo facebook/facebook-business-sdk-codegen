@@ -254,6 +254,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "assigned_applications",
+            "return": "Application",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "assigned_business_asset_groups",
             "return": "BusinessAssetGroup",
             "params": [
@@ -360,7 +366,7 @@
                 {
                     "name": "timezone_id",
                     "required": false,
-                    "type": "unsigned int"
+                    "type": "userbusinesses_timezone_id_enum_param"
                 },
                 {
                     "name": "vertical",
@@ -465,11 +471,6 @@
                     "name": "actions",
                     "required": false,
                     "type": "Object"
-                },
-                {
-                    "name": "adaptive_type",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "album_id",
@@ -892,11 +893,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "react_mode_metadata",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "ref",
                     "required": false,
                     "type": "list<string>"
@@ -1110,18 +1106,6 @@
                     "name": "page_id",
                     "required": false,
                     "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "game_times",
-            "return": "GameTime",
-            "params": [
-                {
-                    "name": "action",
-                    "required": true,
-                    "type": "usergame_times_action_enum_param"
                 }
             ]
         },
@@ -1820,11 +1804,6 @@
             "return": "AdVideo",
             "params": [
                 {
-                    "name": "adaptive_type",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "animated_effect_id",
                     "required": false,
                     "type": "unsigned int"
@@ -2075,11 +2054,6 @@
                     "type": "unsigned int"
                 },
                 {
-                    "name": "react_mode_metadata",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "referenced_sticker_id",
                     "required": false,
                     "type": "string"
@@ -2282,7 +2256,7 @@
         },
         {
             "name": "education",
-            "type": "list<Object>"
+            "type": "list<EducationExperience>"
         },
         {
             "name": "email",

@@ -1,0 +1,33 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "ad_account_id",
+            "type": "string"
+        },
+        {
+            "name": "bodies",
+            "type": "list<Object>"
+        },
+        {
+            "name": "descriptions",
+            "type": "list<Object>"
+        },
+        {
+            "name": "inactive_session_tally",
+            "type": "int"
+        },
+        {
+            "name": "long",
+            "type": "list<Object>"
+        },
+        {
+            "name": "short",
+            "type": "list<Object>"
+        },
+        {
+            "name": "titles",
+            "type": "list<Object>"
+        }
+    ]
+}

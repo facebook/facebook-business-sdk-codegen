@@ -1,0 +1,45 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "business",
+            "type": "Business"
+        },
+        {
+            "name": "business_persona",
+            "type": "string"
+        },
+        {
+            "name": "created_by",
+            "type": "Profile"
+        },
+        {
+            "name": "created_time",
+            "type": "datetime"
+        },
+        {
+            "name": "email",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "tasks",
+            "type": "list<string>"
+        },
+        {
+            "name": "updated_by",
+            "type": "Profile"
+        },
+        {
+            "name": "updated_time",
+            "type": "datetime"
+        },
+        {
+            "name": "user",
+            "type": "Profile"
+        }
+    ]
+}

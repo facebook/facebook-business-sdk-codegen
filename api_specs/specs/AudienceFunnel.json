@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "audience_type_param_name",
+            "type": "string"
+        },
+        {
+            "name": "audience_type_param_tags",
+            "type": "list<map<string, string>>"
+        },
+        {
+            "name": "custom_audience_groups_info",
+            "type": "list<map<string, list<string>>>"
+        }
+    ]
+}

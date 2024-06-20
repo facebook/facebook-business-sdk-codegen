@@ -1,0 +1,29 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "ad_limit_on_page",
+            "type": "int"
+        },
+        {
+            "name": "ad_limit_on_scope",
+            "type": "int"
+        },
+        {
+            "name": "ad_volume_on_page",
+            "type": "int"
+        },
+        {
+            "name": "ad_volume_on_scope",
+            "type": "int"
+        },
+        {
+            "name": "is_admin",
+            "type": "bool"
+        },
+        {
+            "name": "page_name",
+            "type": "string"
+        }
+    ]
+}

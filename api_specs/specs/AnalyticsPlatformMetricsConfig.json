@@ -1,0 +1,41 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "has_a2u",
+            "type": "bool"
+        },
+        {
+            "name": "has_api_calls",
+            "type": "bool"
+        },
+        {
+            "name": "has_app_invites",
+            "type": "bool"
+        },
+        {
+            "name": "has_fb_login",
+            "type": "bool"
+        },
+        {
+            "name": "has_game_requests",
+            "type": "bool"
+        },
+        {
+            "name": "has_payments",
+            "type": "bool"
+        },
+        {
+            "name": "has_referrals",
+            "type": "bool"
+        },
+        {
+            "name": "has_stories",
+            "type": "bool"
+        },
+        {
+            "name": "has_structured_requests",
+            "type": "bool"
+        }
+    ]
+}

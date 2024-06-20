@@ -1,0 +1,33 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "amount_spent",
+            "type": "string"
+        },
+        {
+            "name": "group_id",
+            "type": "string"
+        },
+        {
+            "name": "limit_id",
+            "type": "string"
+        },
+        {
+            "name": "limit_value",
+            "type": "string"
+        },
+        {
+            "name": "time_created",
+            "type": "unsigned int"
+        },
+        {
+            "name": "time_start",
+            "type": "unsigned int"
+        },
+        {
+            "name": "time_stop",
+            "type": "unsigned int"
+        }
+    ]
+}

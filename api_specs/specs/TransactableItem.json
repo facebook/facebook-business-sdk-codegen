@@ -1,0 +1,98 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "channels_to_integrity_status",
+            "return": "CatalogItemChannelsToIntegrityStatus",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "TransactableItem",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "action_title",
+            "type": "string"
+        },
+        {
+            "name": "applinks",
+            "type": "CatalogItemAppLinks"
+        },
+        {
+            "name": "category_specific_fields",
+            "type": "CatalogSubVerticalList"
+        },
+        {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "duration_time",
+            "type": "unsigned int"
+        },
+        {
+            "name": "duration_type",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "image_fetch_status",
+            "type": "TransactableItem_image_fetch_status"
+        },
+        {
+            "name": "images",
+            "type": "list<string>"
+        },
+        {
+            "name": "order_index",
+            "type": "unsigned int"
+        },
+        {
+            "name": "price",
+            "type": "string"
+        },
+        {
+            "name": "price_type",
+            "type": "string"
+        },
+        {
+            "name": "sanitized_images",
+            "type": "list<string>"
+        },
+        {
+            "name": "session_type",
+            "type": "string"
+        },
+        {
+            "name": "time_padding_after_end",
+            "type": "unsigned int"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "transactable_item_id",
+            "type": "string"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        },
+        {
+            "name": "visibility",
+            "type": "TransactableItem_visibility"
+        }
+    ]
+}

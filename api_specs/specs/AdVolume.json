@@ -1,0 +1,45 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "ad_volume_break_down",
+            "type": "list<Object>"
+        },
+        {
+            "name": "ads_running_or_in_review_count",
+            "type": "unsigned int"
+        },
+        {
+            "name": "future_limit_activation_date",
+            "type": "string"
+        },
+        {
+            "name": "future_limit_on_ads_running_or_in_review",
+            "type": "unsigned int"
+        },
+        {
+            "name": "individual_accounts_ad_volume",
+            "type": "int"
+        },
+        {
+            "name": "is_gpa_page",
+            "type": "bool"
+        },
+        {
+            "name": "limit_on_ads_running_or_in_review",
+            "type": "unsigned int"
+        },
+        {
+            "name": "owning_business_ad_volume",
+            "type": "int"
+        },
+        {
+            "name": "partner_business_ad_volume",
+            "type": "int"
+        },
+        {
+            "name": "user_role",
+            "type": "string"
+        }
+    ]
+}

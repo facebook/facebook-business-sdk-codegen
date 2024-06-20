@@ -1,0 +1,29 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "checkout_setting",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "int"
+        },
+        {
+            "name": "image_uri",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "price_label",
+            "type": "string"
+        },
+        {
+            "name": "sale_price_label",
+            "type": "string"
+        }
+    ]
+}

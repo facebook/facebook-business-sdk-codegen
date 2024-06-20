@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "owner_linked_instagram_user_v1_id",
+            "type": "string"
+        },
+        {
+            "name": "owner_picture",
+            "type": "string"
+        },
+        {
+            "name": "post_id",
+            "type": "string"
+        },
+        {
+            "name": "post_info",
+            "type": "Post"
+        }
+    ]
+}

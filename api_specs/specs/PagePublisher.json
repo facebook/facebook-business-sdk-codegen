@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "global_parent_id",
+            "type": "string"
+        },
+        {
+            "name": "icon",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        }
+    ]
+}

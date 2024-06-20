@@ -1,0 +1,24 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "WifiInformation",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "network_access_type",
+            "type": "string"
+        }
+    ]
+}

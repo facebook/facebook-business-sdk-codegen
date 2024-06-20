@@ -1,0 +1,28 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "VideoTextQuestion",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "question_target_id",
+            "type": "string"
+        },
+        {
+            "name": "question_text",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        }
+    ]
+}

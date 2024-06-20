@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "event",
+            "type": "string"
+        },
+        {
+            "name": "last_fired_time",
+            "type": "int"
+        }
+    ]
+}

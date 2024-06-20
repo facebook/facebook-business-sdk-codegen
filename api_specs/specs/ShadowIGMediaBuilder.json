@@ -23,6 +23,10 @@
         {
             "name": "status_code",
             "type": "string"
+        },
+        {
+            "name": "video_status",
+            "type": "IGResumableVideoUploadStatus"
         }
     ]
 }

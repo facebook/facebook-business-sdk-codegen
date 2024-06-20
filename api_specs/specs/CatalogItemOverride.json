@@ -1,0 +1,28 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "CatalogItemOverride",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "local_info",
+            "type": "ProductItemLocalInfo"
+        },
+        {
+            "name": "override_type",
+            "type": "string"
+        },
+        {
+            "name": "override_value",
+            "type": "string"
+        }
+    ]
+}

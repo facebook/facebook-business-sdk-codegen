@@ -1,0 +1,29 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "count_content_ids",
+            "type": "unsigned int"
+        },
+        {
+            "name": "count_content_ids_match_any_catalog",
+            "type": "unsigned int"
+        },
+        {
+            "name": "count_fires",
+            "type": "unsigned int"
+        },
+        {
+            "name": "count_fires_match_any_catalog",
+            "type": "unsigned int"
+        },
+        {
+            "name": "date",
+            "type": "string"
+        },
+        {
+            "name": "percentage_missed_users",
+            "type": "float"
+        }
+    ]
+}

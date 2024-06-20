@@ -1,0 +1,152 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdTopline",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "account_id",
+            "type": "string"
+        },
+        {
+            "name": "client_approval_date",
+            "type": "datetime"
+        },
+        {
+            "name": "created_by",
+            "type": "string"
+        },
+        {
+            "name": "created_date",
+            "type": "datetime"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "flight_end_date",
+            "type": "datetime"
+        },
+        {
+            "name": "flight_start_date",
+            "type": "datetime"
+        },
+        {
+            "name": "func_cap_amount",
+            "type": "string"
+        },
+        {
+            "name": "func_cap_amount_with_offset",
+            "type": "string"
+        },
+        {
+            "name": "func_line_amount",
+            "type": "string"
+        },
+        {
+            "name": "func_line_amount_with_offset",
+            "type": "string"
+        },
+        {
+            "name": "func_price",
+            "type": "string"
+        },
+        {
+            "name": "func_price_with_offset",
+            "type": "string"
+        },
+        {
+            "name": "gender",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "impressions",
+            "type": "int"
+        },
+        {
+            "name": "io_number",
+            "type": "int"
+        },
+        {
+            "name": "is_bonus_line",
+            "type": "int"
+        },
+        {
+            "name": "keywords",
+            "type": "string"
+        },
+        {
+            "name": "last_updated_by",
+            "type": "string"
+        },
+        {
+            "name": "last_updated_date",
+            "type": "datetime"
+        },
+        {
+            "name": "line_number",
+            "type": "int"
+        },
+        {
+            "name": "line_position",
+            "type": "int"
+        },
+        {
+            "name": "line_type",
+            "type": "string"
+        },
+        {
+            "name": "location",
+            "type": "string"
+        },
+        {
+            "name": "max_age",
+            "type": "string"
+        },
+        {
+            "name": "max_budget",
+            "type": "string"
+        },
+        {
+            "name": "min_age",
+            "type": "string"
+        },
+        {
+            "name": "price_per_trp",
+            "type": "string"
+        },
+        {
+            "name": "product_type",
+            "type": "string"
+        },
+        {
+            "name": "rev_assurance_approval_date",
+            "type": "datetime"
+        },
+        {
+            "name": "targets",
+            "type": "string"
+        },
+        {
+            "name": "trp_updated_time",
+            "type": "int"
+        },
+        {
+            "name": "trp_value",
+            "type": "string"
+        },
+        {
+            "name": "uom",
+            "type": "string"
+        }
+    ]
+}

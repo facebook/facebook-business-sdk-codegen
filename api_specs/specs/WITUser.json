@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "access_token",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        }
+    ]
+}

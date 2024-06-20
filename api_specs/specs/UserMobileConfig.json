@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "section_name",
+            "type": "string"
+        },
+        {
+            "name": "value",
+            "type": "Object"
+        }
+    ]
+}

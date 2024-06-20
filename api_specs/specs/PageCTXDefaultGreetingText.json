@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "ctd",
+            "type": "string"
+        },
+        {
+            "name": "ctm",
+            "type": "string"
+        },
+        {
+            "name": "ctwa",
+            "type": "string"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "amount",
+            "type": "CurrencyAmount"
+        },
+        {
+            "name": "create_date",
+            "type": "int"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "last_action_status",
+            "type": "string"
+        },
+        {
+            "name": "metadata",
+            "type": "Object"
+        },
+        {
+            "name": "payment_details_id",
+            "type": "string"
+        }
+    ]
+}

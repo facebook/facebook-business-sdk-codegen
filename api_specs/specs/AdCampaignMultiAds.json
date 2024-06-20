@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "enroll_status",
+            "type": "string"
+        },
+        {
+            "name": "source_type",
+            "type": "string"
+        }
+    ]
+}

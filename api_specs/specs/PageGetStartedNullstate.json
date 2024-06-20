@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "cta_title",
+            "type": "string"
+        },
+        {
+            "name": "processed_greeting",
+            "type": "string"
+        },
+        {
+            "name": "responsiveness",
+            "type": "string"
+        }
+    ]
+}

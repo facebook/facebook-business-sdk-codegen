@@ -1,0 +1,49 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "duration",
+            "type": "int"
+        },
+        {
+            "name": "hash",
+            "type": "string"
+        },
+        {
+            "name": "height",
+            "type": "int"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "thumbnail",
+            "type": "string"
+        },
+        {
+            "name": "type",
+            "type": "string"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        },
+        {
+            "name": "video_id",
+            "type": "string"
+        },
+        {
+            "name": "width",
+            "type": "int"
+        }
+    ]
+}

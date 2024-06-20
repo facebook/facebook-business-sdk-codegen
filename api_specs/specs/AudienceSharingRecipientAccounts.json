@@ -1,0 +1,33 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "account_id",
+            "type": "string"
+        },
+        {
+            "name": "account_name",
+            "type": "string"
+        },
+        {
+            "name": "account_type",
+            "type": "string"
+        },
+        {
+            "name": "business_id",
+            "type": "string"
+        },
+        {
+            "name": "business_name",
+            "type": "string"
+        },
+        {
+            "name": "can_ad_account_use_lookalike_container",
+            "type": "bool"
+        },
+        {
+            "name": "sharing_agreement_status",
+            "type": "int"
+        }
+    ]
+}

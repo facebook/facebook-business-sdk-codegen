@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "substatuses",
+            "type": "list<string>"
+        }
+    ]
+}

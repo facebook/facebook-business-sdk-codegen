@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "onboarding_status",
+            "type": "string"
+        },
+        {
+            "name": "page_id",
+            "type": "string"
+        }
+    ]
+}

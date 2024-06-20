@@ -13,10 +13,39 @@
             ]
         },
         {
+            "method": "DELETE",
+            "endpoint": "agencies",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "agencies",
             "return": "Business",
             "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "agencies",
+            "return": "AdsPixel",
+            "params": [
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "permitted_tasks",
+                    "required": true,
+                    "type": "list<adspixelagencies_permitted_tasks_enum_param>"
+                }
+            ]
         },
         {
             "method": "POST",
@@ -365,6 +394,10 @@
         {
             "name": "first_party_cookie_status",
             "type": "string"
+        },
+        {
+            "name": "has_1p_pixel_event",
+            "type": "bool"
         },
         {
             "name": "id",

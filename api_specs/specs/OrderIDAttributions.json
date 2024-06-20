@@ -1,0 +1,41 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "app_id",
+            "type": "string"
+        },
+        {
+            "name": "attribution_type",
+            "type": "string"
+        },
+        {
+            "name": "attributions",
+            "type": "list<Object>"
+        },
+        {
+            "name": "conversion_device",
+            "type": "string"
+        },
+        {
+            "name": "dataset_id",
+            "type": "string"
+        },
+        {
+            "name": "holdout_status",
+            "type": "list<Object>"
+        },
+        {
+            "name": "order_id",
+            "type": "string"
+        },
+        {
+            "name": "order_timestamp",
+            "type": "datetime"
+        },
+        {
+            "name": "pixel_id",
+            "type": "string"
+        }
+    ]
+}

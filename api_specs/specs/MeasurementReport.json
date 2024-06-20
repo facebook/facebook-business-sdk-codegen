@@ -1,0 +1,32 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "MeasurementReport",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "download_urls",
+            "type": "list<string>"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "metadata",
+            "type": "map"
+        },
+        {
+            "name": "report_type",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        }
+    ]
+}
