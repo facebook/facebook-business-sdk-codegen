@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "element_id",
+            "type": "string"
+        },
+        {
+            "name": "element_type",
+            "type": "string"
+        },
+        {
+            "name": "x",
+            "type": "float"
+        },
+        {
+            "name": "y",
+            "type": "float"
+        }
+    ]
+}

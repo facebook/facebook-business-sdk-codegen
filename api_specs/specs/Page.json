@@ -292,6 +292,38 @@
             "params": []
         },
         {
+            "method": "POST",
+            "endpoint": "calls",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "action",
+                    "required": true,
+                    "type": "pagecalls_action_enum_param"
+                },
+                {
+                    "name": "call_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "platform",
+                    "required": false,
+                    "type": "pagecalls_platform_enum_param"
+                },
+                {
+                    "name": "session",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "to",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "canvas_elements",
             "return": "CanvasBodyElement",
@@ -715,7 +747,13 @@
         {
             "method": "GET",
             "endpoint": "dataset",
-            "return": "Dataset",
+            "return": "AdsPixel",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "dataset",
+            "return": "AdsPixel",
             "params": []
         },
         {
@@ -804,11 +842,6 @@
                     "name": "actions",
                     "required": false,
                     "type": "Object"
-                },
-                {
-                    "name": "adaptive_type",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "album_id",
@@ -1232,11 +1265,6 @@
                 },
                 {
                     "name": "quote",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "react_mode_metadata",
                     "required": false,
                     "type": "string"
                 },
@@ -1999,6 +2027,24 @@
             "endpoint": "messaging_feature_review",
             "return": "MessagingFeatureReview",
             "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "messenger_call_settings",
+            "return": "MessengerCallSettings",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "messenger_call_settings",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "audio_enabled",
+                    "required": false,
+                    "type": "bool"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -3380,11 +3426,6 @@
                     "type": "list"
                 },
                 {
-                    "name": "adaptive_type",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "animated_effect_id",
                     "required": false,
                     "type": "unsigned int"
@@ -3673,11 +3714,6 @@
                     "name": "published",
                     "required": false,
                     "type": "bool"
-                },
-                {
-                    "name": "react_mode_metadata",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "reference_only",
@@ -4481,6 +4517,10 @@
             "type": "bool"
         },
         {
+            "name": "is_calling_eligible",
+            "type": "bool"
+        },
+        {
             "name": "is_chain",
             "type": "bool"
         },
@@ -4494,10 +4534,6 @@
         },
         {
             "name": "is_eligible_for_disable_connect_ig_btn_for_non_page_admin_am_web",
-            "type": "bool"
-        },
-        {
-            "name": "is_eligible_for_live_boosting_expansion",
             "type": "bool"
         },
         {

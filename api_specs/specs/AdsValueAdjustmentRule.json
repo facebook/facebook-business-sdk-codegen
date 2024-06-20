@@ -1,0 +1,26 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "criterias",
+            "return": "AdsValueAdjustmentCriteria",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdsValueAdjustmentRule",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "base_value",
+            "type": "int"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        }
+    ]
+}

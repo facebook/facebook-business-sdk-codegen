@@ -1,0 +1,41 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "actor_id",
+            "type": "int"
+        },
+        {
+            "name": "actor_name",
+            "type": "string"
+        },
+        {
+            "name": "adaccount_id",
+            "type": "int"
+        },
+        {
+            "name": "adaccount_name",
+            "type": "string"
+        },
+        {
+            "name": "event_time",
+            "type": "datetime"
+        },
+        {
+            "name": "event_type",
+            "type": "string"
+        },
+        {
+            "name": "extra_data",
+            "type": "string"
+        },
+        {
+            "name": "object_id",
+            "type": "int"
+        },
+        {
+            "name": "object_name",
+            "type": "string"
+        }
+    ]
+}

@@ -2,6 +2,14 @@
     "apis": [],
     "fields": [
         {
+            "name": "adapt_to_placement",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "ads_with_benefits",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "advantage_plus_creative",
             "type": "AdCreativeFeatureDetails"
         },
@@ -35,6 +43,10 @@
         },
         {
             "name": "dha_optimization",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "feed_caption_optimization",
             "type": "AdCreativeFeatureDetails"
         },
         {
@@ -123,6 +135,10 @@
         },
         {
             "name": "video_auto_crop",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "video_filtering",
             "type": "AdCreativeFeatureDetails"
         },
         {

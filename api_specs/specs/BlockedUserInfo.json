@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "block_time",
+            "type": "datetime"
+        },
+        {
+            "name": "block_type",
+            "type": "string"
+        },
+        {
+            "name": "fbid",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "username",
+            "type": "string"
+        }
+    ]
+}

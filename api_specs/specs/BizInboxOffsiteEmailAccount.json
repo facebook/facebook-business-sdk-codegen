@@ -1,0 +1,26 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "assigned_users",
+            "return": "AssignedUser",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "BizInboxOffsiteEmailAccount",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "email_address",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        }
+    ]
+}

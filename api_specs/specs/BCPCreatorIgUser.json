@@ -1,0 +1,36 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "BCPCreatorIgUser",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "email",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_paid_partnership_messages_enabled",
+            "type": "bool"
+        },
+        {
+            "name": "messaging_id",
+            "type": "string"
+        },
+        {
+            "name": "portfolio_url",
+            "type": "string"
+        },
+        {
+            "name": "username",
+            "type": "string"
+        }
+    ]
+}

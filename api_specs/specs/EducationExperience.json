@@ -1,0 +1,44 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "EducationExperience",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "classes",
+            "type": "list<Experience>"
+        },
+        {
+            "name": "concentration",
+            "type": "list<Page>"
+        },
+        {
+            "name": "degree",
+            "type": "Page"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "school",
+            "type": "Page"
+        },
+        {
+            "name": "type",
+            "type": "string"
+        },
+        {
+            "name": "with",
+            "type": "list<User>"
+        },
+        {
+            "name": "year",
+            "type": "Page"
+        }
+    ]
+}

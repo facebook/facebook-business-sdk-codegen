@@ -1,0 +1,84 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "EventTicketTier",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "end_sales_time",
+            "type": "datetime"
+        },
+        {
+            "name": "end_show_time",
+            "type": "datetime"
+        },
+        {
+            "name": "fee_settings",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "maximum_quantity",
+            "type": "int"
+        },
+        {
+            "name": "metadata",
+            "type": "string"
+        },
+        {
+            "name": "minimum_quantity",
+            "type": "int"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "price",
+            "type": "int"
+        },
+        {
+            "name": "priority",
+            "type": "int"
+        },
+        {
+            "name": "retailer_id",
+            "type": "string"
+        },
+        {
+            "name": "seating_map_image_url",
+            "type": "string"
+        },
+        {
+            "name": "start_sales_time",
+            "type": "datetime"
+        },
+        {
+            "name": "start_show_time",
+            "type": "datetime"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "total_quantity",
+            "type": "int"
+        }
+    ]
+}

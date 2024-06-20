@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "intent_score",
+            "type": "float"
+        },
+        {
+            "name": "is_ig_media",
+            "type": "bool"
+        },
+        {
+            "name": "post_id",
+            "type": "string"
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "estimated_clicks",
+            "type": "unsigned int"
+        },
+        {
+            "name": "estimated_conversions",
+            "type": "unsigned int"
+        },
+        {
+            "name": "estimated_cost",
+            "type": "float"
+        },
+        {
+            "name": "estimated_cpc",
+            "type": "float"
+        },
+        {
+            "name": "estimated_ctr",
+            "type": "float"
+        },
+        {
+            "name": "estimated_cvr",
+            "type": "float"
+        },
+        {
+            "name": "estimated_impressions",
+            "type": "unsigned int"
+        },
+        {
+            "name": "estimated_returns",
+            "type": "float"
+        },
+        {
+            "name": "keyword",
+            "type": "string"
+        }
+    ]
+}

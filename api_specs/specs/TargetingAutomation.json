@@ -6,6 +6,10 @@
             "type": "unsigned int"
         },
         {
+            "name": "individual_setting",
+            "type": "Object"
+        },
+        {
             "name": "shared_audiences",
             "type": "unsigned int"
         },

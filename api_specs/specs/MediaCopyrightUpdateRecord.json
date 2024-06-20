@@ -1,0 +1,40 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "MediaCopyrightUpdateRecord",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "action_types",
+            "type": "list<string>"
+        },
+        {
+            "name": "actor",
+            "type": "User"
+        },
+        {
+            "name": "actor_type",
+            "type": "string"
+        },
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "ownership_countries",
+            "type": "list<Object>"
+        },
+        {
+            "name": "whitelisted_accounts",
+            "type": "list<Object>"
+        }
+    ]
+}

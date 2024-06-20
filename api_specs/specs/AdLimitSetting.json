@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "limit_allocation_by_page_advertisers",
+            "type": "list<map<string, int>>"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "banks",
+            "type": "list<Object>"
+        }
+    ]
+}

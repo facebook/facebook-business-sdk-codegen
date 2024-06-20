@@ -1,0 +1,29 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "buttons",
+            "type": "list<Object>"
+        },
+        {
+            "name": "footer",
+            "type": "string"
+        },
+        {
+            "name": "greeting",
+            "type": "string"
+        },
+        {
+            "name": "language",
+            "type": "string"
+        },
+        {
+            "name": "referenced_adgroup_id",
+            "type": "string"
+        },
+        {
+            "name": "whats_app_business_phone_number_id",
+            "type": "string"
+        }
+    ]
+}

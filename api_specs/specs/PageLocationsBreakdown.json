@@ -1,0 +1,41 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "location_id",
+            "type": "string"
+        },
+        {
+            "name": "location_name",
+            "type": "string"
+        },
+        {
+            "name": "location_type",
+            "type": "string"
+        },
+        {
+            "name": "num_pages",
+            "type": "int"
+        },
+        {
+            "name": "num_pages_eligible_for_store_visit_reporting",
+            "type": "int"
+        },
+        {
+            "name": "num_unpublished_or_closed_pages",
+            "type": "int"
+        },
+        {
+            "name": "parent_country_code",
+            "type": "string"
+        },
+        {
+            "name": "parent_region_id",
+            "type": "int"
+        },
+        {
+            "name": "parent_region_name",
+            "type": "string"
+        }
+    ]
+}

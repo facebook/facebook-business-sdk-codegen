@@ -14,11 +14,6 @@
                     "name": "merchant_order_reference",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "return_error_response",
-                    "required": false,
-                    "type": "bool"
                 }
             ]
         },
@@ -226,7 +221,7 @@
                 },
                 {
                     "name": "items",
-                    "required": true,
+                    "required": false,
                     "type": "list<map>"
                 },
                 {
@@ -335,6 +330,10 @@
         {
             "name": "channel",
             "type": "string"
+        },
+        {
+            "name": "contains_bopis_items",
+            "type": "bool"
         },
         {
             "name": "created",

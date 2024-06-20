@@ -1,0 +1,40 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "DynamicItemDisplayBundle",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "additional_urls",
+            "type": "list<map<string, string>>"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "product_set",
+            "type": "ProductSet"
+        },
+        {
+            "name": "text_tokens",
+            "type": "list<map<string, string>>"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        }
+    ]
+}

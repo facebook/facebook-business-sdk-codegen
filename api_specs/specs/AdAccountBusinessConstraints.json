@@ -15,7 +15,7 @@
         },
         {
             "name": "status",
-            "type": "string"
+            "type": "AdAccountBusinessConstraints_status"
         }
     ]
 }

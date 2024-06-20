@@ -1,0 +1,44 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "FranchiseProgramMember",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "business",
+            "type": "Business"
+        },
+        {
+            "name": "end_date",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "join_date",
+            "type": "datetime"
+        },
+        {
+            "name": "member_ad_account",
+            "type": "AdAccount"
+        },
+        {
+            "name": "member_user",
+            "type": "User"
+        },
+        {
+            "name": "membership_status",
+            "type": "string"
+        },
+        {
+            "name": "page",
+            "type": "Page"
+        }
+    ]
+}

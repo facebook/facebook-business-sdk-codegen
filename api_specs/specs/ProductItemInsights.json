@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "ad_click_count",
+            "type": "int"
+        },
+        {
+            "name": "ad_impression_count",
+            "type": "int"
+        },
+        {
+            "name": "add_to_cart_count",
+            "type": "int"
+        },
+        {
+            "name": "purchase_count",
+            "type": "int"
+        },
+        {
+            "name": "view_content_count",
+            "type": "int"
+        }
+    ]
+}

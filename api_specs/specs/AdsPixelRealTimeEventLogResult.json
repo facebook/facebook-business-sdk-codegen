@@ -1,0 +1,57 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "data_json",
+            "type": "string"
+        },
+        {
+            "name": "dedup_data",
+            "type": "string"
+        },
+        {
+            "name": "device_type",
+            "type": "string"
+        },
+        {
+            "name": "domain_control_rule_rejection",
+            "type": "string"
+        },
+        {
+            "name": "event",
+            "type": "string"
+        },
+        {
+            "name": "event_detection_method",
+            "type": "string"
+        },
+        {
+            "name": "in_iframe",
+            "type": "bool"
+        },
+        {
+            "name": "matched_rule_conditions",
+            "type": "string"
+        },
+        {
+            "name": "resolved_link",
+            "type": "string"
+        },
+        {
+            "name": "source_rule_condition",
+            "type": "string"
+        },
+        {
+            "name": "timestamp",
+            "type": "string"
+        },
+        {
+            "name": "trace_id",
+            "type": "string"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        }
+    ]
+}

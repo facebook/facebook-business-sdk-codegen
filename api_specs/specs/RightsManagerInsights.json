@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "error",
+            "type": "string"
+        },
+        {
+            "name": "error_message",
+            "type": "string"
+        },
+        {
+            "name": "metadata",
+            "type": "list<map<string, Object>>"
+        },
+        {
+            "name": "totals",
+            "type": "list<map<string, Object>>"
+        },
+        {
+            "name": "x_axis_breakdown",
+            "type": "list<list<map<string, Object>>>"
+        }
+    ]
+}

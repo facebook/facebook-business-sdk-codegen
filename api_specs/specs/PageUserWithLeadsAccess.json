@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "active_on_business",
+            "type": "bool"
+        },
+        {
+            "name": "business_role",
+            "type": "string"
+        },
+        {
+            "name": "can_access_leads",
+            "type": "bool"
+        },
+        {
+            "name": "page_role",
+            "type": "string"
+        }
+    ]
+}

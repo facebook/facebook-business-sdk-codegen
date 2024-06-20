@@ -1,0 +1,72 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "LeadGenDataDraft",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "block_display_for_non_targeted_viewer",
+            "type": "bool"
+        },
+        {
+            "name": "created_time",
+            "type": "datetime"
+        },
+        {
+            "name": "disqualified_end_component",
+            "type": "Object"
+        },
+        {
+            "name": "follow_up_action_url",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_optimized_for_quality",
+            "type": "bool"
+        },
+        {
+            "name": "legal_content",
+            "type": "Object"
+        },
+        {
+            "name": "locale",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "page",
+            "type": "Page"
+        },
+        {
+            "name": "question_page_custom_headline",
+            "type": "string"
+        },
+        {
+            "name": "questions",
+            "type": "list<LeadGenDraftQuestion>"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "thank_you_page",
+            "type": "Object"
+        },
+        {
+            "name": "tracking_parameters",
+            "type": "list<map<string, string>>"
+        }
+    ]
+}

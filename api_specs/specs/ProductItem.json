@@ -579,7 +579,7 @@
         },
         {
             "name": "invalidation_errors",
-            "type": "list<Object>"
+            "type": "list<ProductItemInvalidationError>"
         },
         {
             "name": "inventory",

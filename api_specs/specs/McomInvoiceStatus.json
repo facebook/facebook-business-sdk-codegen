@@ -1,0 +1,53 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "bank_account_number",
+            "type": "string"
+        },
+        {
+            "name": "bank_code",
+            "type": "string"
+        },
+        {
+            "name": "invoice_id",
+            "type": "string"
+        },
+        {
+            "name": "invoice_status",
+            "type": "string"
+        },
+        {
+            "name": "page_id",
+            "type": "string"
+        },
+        {
+            "name": "payment_method",
+            "type": "string"
+        },
+        {
+            "name": "payment_type",
+            "type": "string"
+        },
+        {
+            "name": "payout_amount",
+            "type": "Object"
+        },
+        {
+            "name": "slip_verification_error",
+            "type": "string"
+        },
+        {
+            "name": "slip_verification_status",
+            "type": "string"
+        },
+        {
+            "name": "transaction_fee",
+            "type": "Object"
+        },
+        {
+            "name": "transfer_slip",
+            "type": "string"
+        }
+    ]
+}

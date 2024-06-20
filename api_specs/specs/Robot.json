@@ -1,0 +1,60 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "Robot",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "bringup_vars",
+            "type": "list<map<string, string>>"
+        },
+        {
+            "name": "configurations",
+            "type": "list<map<string, string>>"
+        },
+        {
+            "name": "data_center",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "init_pos",
+            "type": "list<map<string, float>>"
+        },
+        {
+            "name": "last_pos",
+            "type": "list<map<string, float>>"
+        },
+        {
+            "name": "meetup_link_hash",
+            "type": "string"
+        },
+        {
+            "name": "suite",
+            "type": "string"
+        },
+        {
+            "name": "target_map_image_uri",
+            "type": "string"
+        },
+        {
+            "name": "target_os_image_uri",
+            "type": "string"
+        },
+        {
+            "name": "target_sw_image_uri",
+            "type": "string"
+        },
+        {
+            "name": "user",
+            "type": "User"
+        }
+    ]
+}

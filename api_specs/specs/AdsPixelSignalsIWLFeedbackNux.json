@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "should_ask_to_rate",
+            "type": "bool"
+        }
+    ]
+}

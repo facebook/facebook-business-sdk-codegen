@@ -745,6 +745,11 @@
             "return": "CustomConversion",
             "params": [
                 {
+                    "name": "action_source_type",
+                    "required": false,
+                    "type": "businesscustomconversions_action_source_type_enum_param"
+                },
+                {
                     "name": "advanced_rule",
                     "required": false,
                     "type": "string"
@@ -968,7 +973,7 @@
                 {
                     "name": "timezone_id",
                     "required": false,
-                    "type": "unsigned int"
+                    "type": "businessmanaged_businesses_timezone_id_enum_param"
                 },
                 {
                     "name": "vertical",
@@ -1139,7 +1144,7 @@
                 {
                     "name": "timezone_id",
                     "required": false,
-                    "type": "unsigned int"
+                    "type": "businessmanaged_partner_businesses_timezone_id_enum_param"
                 },
                 {
                     "name": "vertical",
@@ -1156,44 +1161,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "offline_conversion_data_sets",
-            "return": "OfflineConversionDataSet",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "offline_conversion_data_sets",
-            "return": "OfflineConversionDataSet",
-            "params": [
-                {
-                    "name": "auto_assign_to_new_accounts_only",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "description",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "enable_auto_assign_to_accounts",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "is_mta_use",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "name",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "openbridge_configurations",
             "return": "OpenBridgeConfiguration",
             "params": []
@@ -1203,11 +1170,6 @@
             "endpoint": "openbridge_configurations",
             "return": "OpenBridgeConfiguration",
             "params": [
-                {
-                    "name": "access_key",
-                    "required": false,
-                    "type": "string"
-                },
                 {
                     "name": "active",
                     "required": false,
@@ -1235,6 +1197,11 @@
                 },
                 {
                     "name": "host_external_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "instance_id",
                     "required": false,
                     "type": "string"
                 },
@@ -1347,6 +1314,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "should_generate_name",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "survey_business_type",
                     "required": false,
                     "type": "businessowned_businesses_survey_business_type_enum_param"
@@ -1364,7 +1336,7 @@
                 {
                     "name": "timezone_id",
                     "required": false,
-                    "type": "unsigned int"
+                    "type": "businessowned_businesses_timezone_id_enum_param"
                 },
                 {
                     "name": "vertical",
@@ -1665,6 +1637,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "reseller_guidances",
+            "return": "ResellerGuidance",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "self_certified_whatsapp_business_submissions",
             "return": "WhatsAppBusinessPartnerClientVerificationSubmission",
             "params": [
@@ -1816,11 +1794,6 @@
                     "name": "ad_placements_validation_only",
                     "required": false,
                     "type": "bool"
-                },
-                {
-                    "name": "adaptive_type",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "animated_effect_id",
@@ -2056,11 +2029,6 @@
                     "name": "publish_event_id",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "react_mode_metadata",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "referenced_sticker_id",

@@ -1,0 +1,44 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "PartnerAccountLinking",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "adaccount",
+            "type": "AdAccount"
+        },
+        {
+            "name": "app",
+            "type": "Application"
+        },
+        {
+            "name": "business",
+            "type": "Business"
+        },
+        {
+            "name": "externalidentifier",
+            "type": "string"
+        },
+        {
+            "name": "externalidentifieruri",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "partnername",
+            "type": "string"
+        },
+        {
+            "name": "pixel",
+            "type": "string"
+        }
+    ]
+}

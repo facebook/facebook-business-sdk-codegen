@@ -1,0 +1,112 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ExtendedCreditApplication",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "billing_country",
+            "type": "string"
+        },
+        {
+            "name": "city",
+            "type": "string"
+        },
+        {
+            "name": "cnpj",
+            "type": "string"
+        },
+        {
+            "name": "country",
+            "type": "string"
+        },
+        {
+            "name": "display_currency",
+            "type": "string"
+        },
+        {
+            "name": "duns_number",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "invoice_email_address",
+            "type": "string"
+        },
+        {
+            "name": "is_umi",
+            "type": "bool"
+        },
+        {
+            "name": "legal_entity_name",
+            "type": "string"
+        },
+        {
+            "name": "original_online_limit",
+            "type": "CurrencyAmount"
+        },
+        {
+            "name": "phone_number",
+            "type": "string"
+        },
+        {
+            "name": "postal_code",
+            "type": "string"
+        },
+        {
+            "name": "product_types",
+            "type": "list<string>"
+        },
+        {
+            "name": "proposed_credit_limit",
+            "type": "CurrencyAmount"
+        },
+        {
+            "name": "registration_number",
+            "type": "string"
+        },
+        {
+            "name": "run_id",
+            "type": "string"
+        },
+        {
+            "name": "state",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "street1",
+            "type": "string"
+        },
+        {
+            "name": "street2",
+            "type": "string"
+        },
+        {
+            "name": "submitter",
+            "type": "User"
+        },
+        {
+            "name": "tax_exempt_status",
+            "type": "string"
+        },
+        {
+            "name": "tax_id",
+            "type": "string"
+        },
+        {
+            "name": "terms",
+            "type": "string"
+        }
+    ]
+}

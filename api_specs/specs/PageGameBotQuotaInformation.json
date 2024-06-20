@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "count",
+            "type": "int"
+        },
+        {
+            "name": "time_window",
+            "type": "int"
+        }
+    ]
+}

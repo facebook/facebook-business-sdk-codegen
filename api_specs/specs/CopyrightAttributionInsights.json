@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "l7_attribution_page_view",
+            "type": "int"
+        },
+        {
+            "name": "l7_attribution_page_view_delta",
+            "type": "float"
+        },
+        {
+            "name": "l7_attribution_video_view",
+            "type": "int"
+        },
+        {
+            "name": "l7_attribution_video_view_delta",
+            "type": "float"
+        },
+        {
+            "name": "metrics_ending_date",
+            "type": "string"
+        }
+    ]
+}

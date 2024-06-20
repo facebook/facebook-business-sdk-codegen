@@ -1,0 +1,49 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "audience_size",
+            "type": "int"
+        },
+        {
+            "name": "clicks",
+            "type": "unsigned int"
+        },
+        {
+            "name": "conversion_cost",
+            "type": "float"
+        },
+        {
+            "name": "conversions",
+            "type": "unsigned int"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "impressions",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "revenue",
+            "type": "float"
+        },
+        {
+            "name": "spend",
+            "type": "float"
+        },
+        {
+            "name": "type",
+            "type": "string"
+        }
+    ]
+}

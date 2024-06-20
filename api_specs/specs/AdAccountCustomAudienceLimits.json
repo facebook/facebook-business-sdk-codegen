@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "audience_update_quota_in_total",
+            "type": "int"
+        },
+        {
+            "name": "audience_update_quota_left",
+            "type": "float"
+        },
+        {
+            "name": "has_hit_audience_update_limit",
+            "type": "bool"
+        },
+        {
+            "name": "next_audience_update_available_time",
+            "type": "string"
+        },
+        {
+            "name": "rate_limit_reset_time",
+            "type": "string"
+        }
+    ]
+}

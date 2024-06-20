@@ -1,0 +1,73 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "ad_account_first_spend_date",
+            "type": "string"
+        },
+        {
+            "name": "ad_account_id",
+            "type": "string"
+        },
+        {
+            "name": "adopted_guidance_l7d",
+            "type": "list<string>"
+        },
+        {
+            "name": "advertiser_name",
+            "type": "string"
+        },
+        {
+            "name": "attributed_to_reseller_l7d",
+            "type": "bool"
+        },
+        {
+            "name": "available_guidance",
+            "type": "list<string>"
+        },
+        {
+            "name": "benchmark_report_link",
+            "type": "string"
+        },
+        {
+            "name": "guidance_adoption_rate_l7d",
+            "type": "float"
+        },
+        {
+            "name": "no_adsets_gte_benchmark",
+            "type": "int"
+        },
+        {
+            "name": "no_adsets_lt_benchmark",
+            "type": "int"
+        },
+        {
+            "name": "nurtured_by_reseller_l7d",
+            "type": "bool"
+        },
+        {
+            "name": "planning_agency_name",
+            "type": "string"
+        },
+        {
+            "name": "recommendation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "reporting_ds",
+            "type": "string"
+        },
+        {
+            "name": "reseller",
+            "type": "Business"
+        },
+        {
+            "name": "revenue_l30d",
+            "type": "float"
+        },
+        {
+            "name": "ultimate_advertiser_name",
+            "type": "string"
+        }
+    ]
+}

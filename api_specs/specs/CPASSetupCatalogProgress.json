@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "child_catalog_count",
+            "type": "int"
+        },
+        {
+            "name": "child_catalog_issues",
+            "type": "list<Object>"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "issues",
+            "type": "list<Object>"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        }
+    ]
+}
