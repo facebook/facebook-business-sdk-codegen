@@ -1,0 +1,40 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "CreatorAssetCreative",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "image_url",
+            "type": "string"
+        },
+        {
+            "name": "moderation_status",
+            "type": "string"
+        },
+        {
+            "name": "product_item_retailer_id",
+            "type": "string"
+        },
+        {
+            "name": "product_url",
+            "type": "string"
+        },
+        {
+            "name": "retailer_id",
+            "type": "string"
+        },
+        {
+            "name": "video_url",
+            "type": "string"
+        }
+    ]
+}

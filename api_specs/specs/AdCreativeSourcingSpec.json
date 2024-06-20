@@ -12,6 +12,10 @@
         {
             "name": "site_links_spec",
             "type": "list<AdCreativeSiteLinksSpec>"
+        },
+        {
+            "name": "source_url",
+            "type": "string"
         }
     ]
 }

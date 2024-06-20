@@ -1,0 +1,32 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ThirdPartyMeasurementReportDataset",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "category",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "partner",
+            "type": "Business"
+        },
+        {
+            "name": "product",
+            "type": "string"
+        },
+        {
+            "name": "schema",
+            "type": "list<Object>"
+        }
+    ]
+}

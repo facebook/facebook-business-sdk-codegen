@@ -1,0 +1,89 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "daily_age_gender_breakdown",
+            "type": "list<map<string, list<map<string, int>>>>"
+        },
+        {
+            "name": "daily_audio_library_values",
+            "type": "list<map<string, int>>"
+        },
+        {
+            "name": "daily_ugc_values",
+            "type": "list<map<string, int>>"
+        },
+        {
+            "name": "daily_values",
+            "type": "list<map<string, int>>"
+        },
+        {
+            "name": "metric",
+            "type": "string"
+        },
+        {
+            "name": "monthly_audio_library_values",
+            "type": "list<map<string, int>>"
+        },
+        {
+            "name": "monthly_ugc_values",
+            "type": "list<map<string, int>>"
+        },
+        {
+            "name": "monthly_values",
+            "type": "list<map<string, int>>"
+        },
+        {
+            "name": "percent_growth",
+            "type": "float"
+        },
+        {
+            "name": "shielded_fields",
+            "type": "list<map<string, list<map<string, bool>>>>"
+        },
+        {
+            "name": "total_age_gender_breakdown",
+            "type": "list<map<string, int>>"
+        },
+        {
+            "name": "total_audio_library_value",
+            "type": "int"
+        },
+        {
+            "name": "total_country_breakdown",
+            "type": "list<map<string, int>>"
+        },
+        {
+            "name": "total_locale_breakdown",
+            "type": "list<map<string, int>>"
+        },
+        {
+            "name": "total_product_breakdown",
+            "type": "list<map<string, int>>"
+        },
+        {
+            "name": "total_ugc_value",
+            "type": "int"
+        },
+        {
+            "name": "total_value",
+            "type": "int"
+        },
+        {
+            "name": "trending_age",
+            "type": "list<map<string, list<map<string, float>>>>"
+        },
+        {
+            "name": "trending_gender",
+            "type": "list<map<string, list<map<string, float>>>>"
+        },
+        {
+            "name": "trending_interest",
+            "type": "list<map<string, list<map<string, float>>>>"
+        },
+        {
+            "name": "trending_territory",
+            "type": "list<map<string, list<map<string, float>>>>"
+        }
+    ]
+}

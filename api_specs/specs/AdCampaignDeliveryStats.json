@@ -1,0 +1,29 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "bid_recommendation",
+            "type": "int"
+        },
+        {
+            "name": "current_average_cost",
+            "type": "float"
+        },
+        {
+            "name": "last_significant_edit_ts",
+            "type": "int"
+        },
+        {
+            "name": "learning_stage_exit_info",
+            "type": "Object"
+        },
+        {
+            "name": "learning_stage_info",
+            "type": "AdCampaignLearningStageInfo"
+        },
+        {
+            "name": "unsupported_features",
+            "type": "list<map<string, AdCampaignDeliveryStatsUnsupportedReasons>>"
+        }
+    ]
+}

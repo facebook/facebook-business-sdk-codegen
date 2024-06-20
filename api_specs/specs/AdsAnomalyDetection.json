@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "anomaly_data",
+            "type": "list<Object>"
+        },
+        {
+            "name": "day",
+            "type": "unsigned int"
+        }
+    ]
+}

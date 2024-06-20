@@ -1,0 +1,29 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "ad_account",
+            "type": "AdAccount"
+        },
+        {
+            "name": "day_of_month",
+            "type": "int"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "next_bill_date",
+            "type": "datetime"
+        },
+        {
+            "name": "time_created",
+            "type": "datetime"
+        },
+        {
+            "name": "time_effective",
+            "type": "datetime"
+        }
+    ]
+}

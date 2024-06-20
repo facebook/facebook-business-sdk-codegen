@@ -1,0 +1,60 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "FranchiseProgram",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "business_asset_group",
+            "type": "BusinessAssetGroup"
+        },
+        {
+            "name": "creator_business",
+            "type": "Business"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "end_date",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "program_access_type",
+            "type": "string"
+        },
+        {
+            "name": "program_approval_type",
+            "type": "string"
+        },
+        {
+            "name": "program_image_link",
+            "type": "string"
+        },
+        {
+            "name": "program_url",
+            "type": "string"
+        },
+        {
+            "name": "shared_custom_audience",
+            "type": "CustomAudience"
+        },
+        {
+            "name": "start_date",
+            "type": "datetime"
+        }
+    ]
+}

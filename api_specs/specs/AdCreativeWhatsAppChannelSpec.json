@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "channel_id",
+            "type": "string"
+        },
+        {
+            "name": "channel_url",
+            "type": "string"
+        }
+    ]
+}

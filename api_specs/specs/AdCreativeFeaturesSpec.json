@@ -2,7 +2,19 @@
     "apis": [],
     "fields": [
         {
+            "name": "adapt_to_placement",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "ads_with_benefits",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "advantage_plus_creative",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "app_highlights",
             "type": "AdCreativeFeatureDetails"
         },
         {
@@ -11,6 +23,14 @@
         },
         {
             "name": "carousel_to_video",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "catalog_feed_tag",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "customize_product_recommendation",
             "type": "AdCreativeFeatureDetails"
         },
         {
@@ -26,6 +46,10 @@
             "type": "AdCreativeFeatureDetails"
         },
         {
+            "name": "feed_caption_optimization",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "ig_glados_feed",
             "type": "AdCreativeFeatureDetails"
         },
@@ -35,6 +59,10 @@
         },
         {
             "name": "image_background_gen",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "image_brightness_and_contrast",
             "type": "AdCreativeFeatureDetails"
         },
         {
@@ -86,6 +114,10 @@
             "type": "AdCreativeFeatureDetails"
         },
         {
+            "name": "site_extensions",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "standard_enhancements",
             "type": "AdCreativeFeatureDetails"
         },
@@ -103,6 +135,10 @@
         },
         {
             "name": "video_auto_crop",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "video_filtering",
             "type": "AdCreativeFeatureDetails"
         },
         {

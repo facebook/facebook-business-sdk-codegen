@@ -38,6 +38,10 @@
             "type": "string"
         },
         {
+            "name": "adjusted_offline_purchase",
+            "type": "list<Object>"
+        },
+        {
             "name": "adset_end",
             "type": "string"
         },
@@ -118,10 +122,6 @@
             "type": "string"
         },
         {
-            "name": "conversion_lead_rate",
-            "type": "string"
-        },
-        {
             "name": "conversion_rate_ranking",
             "type": "string"
         },
@@ -160,10 +160,6 @@
         {
             "name": "cost_per_conversion",
             "type": "list<AdsActionStats>"
-        },
-        {
-            "name": "cost_per_conversion_lead",
-            "type": "string"
         },
         {
             "name": "cost_per_dda_countby_convs",
@@ -366,6 +362,10 @@
             "type": "string"
         },
         {
+            "name": "onsite_conversion_messaging_detected_purchase_deduped",
+            "type": "list<AdsActionStats>"
+        },
+        {
             "name": "optimization_goal",
             "type": "string"
         },
@@ -395,6 +395,10 @@
         },
         {
             "name": "reach",
+            "type": "string"
+        },
+        {
+            "name": "shops_assisted_purchases",
             "type": "string"
         },
         {

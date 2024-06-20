@@ -19,7 +19,12 @@
             "params": [
                 {
                     "name": "creator_instagram_account",
-                    "required": true,
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "creator_instagram_username",
+                    "required": false,
                     "type": "string"
                 },
                 {
@@ -119,7 +124,13 @@
         {
             "method": "GET",
             "endpoint": "dataset",
-            "return": "Dataset",
+            "return": "AdsPixel",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "dataset",
+            "return": "AdsPixel",
             "params": []
         },
         {

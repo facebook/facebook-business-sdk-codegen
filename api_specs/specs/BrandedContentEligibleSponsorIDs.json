@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "fb_page",
+            "type": "Page"
+        },
+        {
+            "name": "ig_account_v2",
+            "type": "IGUser"
+        },
+        {
+            "name": "ig_approval_needed",
+            "type": "bool"
+        }
+    ]
+}

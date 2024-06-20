@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "credit_left",
+            "type": "string"
+        },
+        {
+            "name": "credit_revoked",
+            "type": "bool"
+        },
+        {
+            "name": "credit_used",
+            "type": "string"
+        },
+        {
+            "name": "using_biz_ec",
+            "type": "string"
+        }
+    ]
+}

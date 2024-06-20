@@ -1,0 +1,80 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ImageReferenceMatch",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "conflicting_countries",
+            "type": "list<string>"
+        },
+        {
+            "name": "country_resolution_history",
+            "type": "list<map<string, list<Object>>>"
+        },
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "current_conflict_resolved_countries",
+            "type": "list<map<string, Object>>"
+        },
+        {
+            "name": "displayed_match_state",
+            "type": "string"
+        },
+        {
+            "name": "dispute_form_data_entries_with_translations",
+            "type": "list<Object>"
+        },
+        {
+            "name": "expiration_time",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "match_state",
+            "type": "string"
+        },
+        {
+            "name": "matched_reference_copyright",
+            "type": "ImageCopyright"
+        },
+        {
+            "name": "matched_reference_owner",
+            "type": "Profile"
+        },
+        {
+            "name": "modification_history",
+            "type": "list<Object>"
+        },
+        {
+            "name": "reference_copyright",
+            "type": "ImageCopyright"
+        },
+        {
+            "name": "reference_owner",
+            "type": "Profile"
+        },
+        {
+            "name": "rejection_form_data_entries_with_translations",
+            "type": "list<Object>"
+        },
+        {
+            "name": "resolution_reason",
+            "type": "string"
+        },
+        {
+            "name": "update_time",
+            "type": "datetime"
+        }
+    ]
+}

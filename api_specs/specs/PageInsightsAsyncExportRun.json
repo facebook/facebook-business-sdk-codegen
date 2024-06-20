@@ -1,0 +1,48 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "PageInsightsAsyncExportRun",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "data_level",
+            "type": "string"
+        },
+        {
+            "name": "filters",
+            "type": "list<Object>"
+        },
+        {
+            "name": "format",
+            "type": "string"
+        },
+        {
+            "name": "gen_report_date",
+            "type": "int"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "report_end_date",
+            "type": "int"
+        },
+        {
+            "name": "report_start_date",
+            "type": "int"
+        },
+        {
+            "name": "sorters",
+            "type": "list<Object>"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        }
+    ]
+}

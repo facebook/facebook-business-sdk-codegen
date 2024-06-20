@@ -1,0 +1,24 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AnalyticsUserConfig",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "demo_app_nux_config",
+            "type": "Object"
+        },
+        {
+            "name": "flags",
+            "type": "list<map<string, string>>"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        }
+    ]
+}

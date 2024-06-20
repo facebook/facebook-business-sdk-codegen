@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "page_id",
+            "type": "string"
+        },
+        {
+            "name": "payments",
+            "type": "list<Object>"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "default_funding_amount",
+            "type": "CurrencyAmount"
+        },
+        {
+            "name": "max_acceptable_amount",
+            "type": "CurrencyAmount"
+        },
+        {
+            "name": "min_acceptable_amount",
+            "type": "CurrencyAmount"
+        },
+        {
+            "name": "should_collect_business_details",
+            "type": "bool"
+        }
+    ]
+}

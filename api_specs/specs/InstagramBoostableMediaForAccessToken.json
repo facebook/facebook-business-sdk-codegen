@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "has_product_tags",
+            "type": "bool"
+        },
+        {
+            "name": "media",
+            "type": "IGMedia"
+        }
+    ]
+}

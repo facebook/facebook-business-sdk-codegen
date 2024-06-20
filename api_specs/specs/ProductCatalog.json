@@ -39,6 +39,11 @@
                     "type": "list<productcatalogagencies_permitted_tasks_enum_param>"
                 },
                 {
+                    "name": "skip_default_utms",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "utm_settings",
                     "required": false,
                     "type": "map"
@@ -138,7 +143,7 @@
                 {
                     "name": "page",
                     "required": true,
-                    "type": "int"
+                    "type": "string"
                 }
             ]
         },
@@ -195,12 +200,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "collaborative_ads_event_stats",
-            "return": "CatalogSegmentAllMatchCountLaser",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "collaborative_ads_lsb_image_bank",
             "return": "CPASLsbImageBank",
             "params": []
@@ -230,6 +229,18 @@
                     "name": "backup_image_urls",
                     "required": true,
                     "type": "list<string>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "creator_asset_creatives",
+            "return": "CreatorAssetCreative",
+            "params": [
+                {
+                    "name": "moderation_status",
+                    "required": false,
+                    "type": "productcatalogcreator_asset_creatives_moderation_status_enum_param"
                 }
             ]
         },
@@ -1496,6 +1507,38 @@
                 {
                     "name": "year",
                     "required": true,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "version_items_batch",
+            "return": "ProductCatalog",
+            "params": [
+                {
+                    "name": "allow_upsert",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "item_type",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "item_version",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "requests",
+                    "required": true,
+                    "type": "map"
+                },
+                {
+                    "name": "version",
+                    "required": false,
                     "type": "unsigned int"
                 }
             ]

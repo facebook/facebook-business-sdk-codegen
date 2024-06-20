@@ -1,0 +1,48 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdsNamingTemplate",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "api_fields",
+            "type": "list<list<map<string, list<map<string, string>>>>>"
+        },
+        {
+            "name": "api_version",
+            "type": "string"
+        },
+        {
+            "name": "field_order",
+            "type": "list<string>"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "level",
+            "type": "AdsNamingTemplate_level"
+        },
+        {
+            "name": "separator",
+            "type": "string"
+        },
+        {
+            "name": "template_version",
+            "type": "string"
+        },
+        {
+            "name": "user_defined_fields",
+            "type": "list<list<map<string, list<string>>>>"
+        },
+        {
+            "name": "value_separator",
+            "type": "string"
+        }
+    ]
+}

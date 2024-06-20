@@ -74,6 +74,10 @@
             "type": "string"
         },
         {
+            "name": "promotional_metadata",
+            "type": "Object"
+        },
+        {
             "name": "reasons_to_shop",
             "type": "bool"
         },
@@ -84,6 +88,10 @@
         {
             "name": "titles",
             "type": "list<AdAssetFeedSpecTitle>"
+        },
+        {
+            "name": "upcoming_events",
+            "type": "list<Object>"
         },
         {
             "name": "videos",

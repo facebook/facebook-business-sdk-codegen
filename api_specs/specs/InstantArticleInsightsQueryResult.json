@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "breakdowns",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "time",
+            "type": "datetime"
+        },
+        {
+            "name": "value",
+            "type": "string"
+        }
+    ]
+}

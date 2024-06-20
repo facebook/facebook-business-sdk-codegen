@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "whatsapp",
+            "type": "IDName"
+        }
+    ]
+}

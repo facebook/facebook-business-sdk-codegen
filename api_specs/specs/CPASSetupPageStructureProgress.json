@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "issues",
+            "type": "list<Object>"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        }
+    ]
+}

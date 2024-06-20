@@ -1,0 +1,28 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "EventRegistrationSetting",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "questions",
+            "type": "string"
+        },
+        {
+            "name": "target_type",
+            "type": "string"
+        },
+        {
+            "name": "ticket_tier_ids",
+            "type": "list<string>"
+        }
+    ]
+}

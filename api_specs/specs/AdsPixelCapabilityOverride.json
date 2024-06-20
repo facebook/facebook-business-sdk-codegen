@@ -1,0 +1,28 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdsPixelCapabilityOverride",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "capability",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "override_value",
+            "type": "string"
+        },
+        {
+            "name": "reason",
+            "type": "string"
+        }
+    ]
+}

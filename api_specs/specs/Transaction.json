@@ -1,0 +1,93 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "account_id",
+            "type": "string"
+        },
+        {
+            "name": "app_amount",
+            "type": "Object"
+        },
+        {
+            "name": "billing_end_time",
+            "type": "unsigned int"
+        },
+        {
+            "name": "billing_reason",
+            "type": "string"
+        },
+        {
+            "name": "billing_start_time",
+            "type": "unsigned int"
+        },
+        {
+            "name": "card_charge_mode",
+            "type": "unsigned int"
+        },
+        {
+            "name": "charge_type",
+            "type": "string"
+        },
+        {
+            "name": "checkout_campaign_group_id",
+            "type": "string"
+        },
+        {
+            "name": "credential_id",
+            "type": "string"
+        },
+        {
+            "name": "fatura_id",
+            "type": "unsigned int"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_business_ec_charge",
+            "type": "bool"
+        },
+        {
+            "name": "is_funding_event",
+            "type": "bool"
+        },
+        {
+            "name": "payment_option",
+            "type": "string"
+        },
+        {
+            "name": "product_type",
+            "type": "Transaction_product_type"
+        },
+        {
+            "name": "provider_amount",
+            "type": "Object"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "time",
+            "type": "unsigned int"
+        },
+        {
+            "name": "tracking_id",
+            "type": "string"
+        },
+        {
+            "name": "transaction_type",
+            "type": "string"
+        },
+        {
+            "name": "tx_type",
+            "type": "unsigned int"
+        },
+        {
+            "name": "vat_invoice_id",
+            "type": "string"
+        }
+    ]
+}

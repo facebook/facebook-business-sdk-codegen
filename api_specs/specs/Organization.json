@@ -1,0 +1,32 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "Organization",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "hq_country",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "legal_entity_name",
+            "type": "string"
+        },
+        {
+            "name": "master_bm_id",
+            "type": "string"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
+        }
+    ]
+}

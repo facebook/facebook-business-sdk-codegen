@@ -1,0 +1,40 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdSavedKeywords",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "account",
+            "type": "AdAccount"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "keywords",
+            "type": "AdKeywords"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "run_status",
+            "type": "string"
+        },
+        {
+            "name": "time_created",
+            "type": "datetime"
+        },
+        {
+            "name": "time_updated",
+            "type": "datetime"
+        }
+    ]
+}

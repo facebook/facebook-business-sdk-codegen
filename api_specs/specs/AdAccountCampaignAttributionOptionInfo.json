@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "is_eligible",
+            "type": "bool"
+        },
+        {
+            "name": "value",
+            "type": "string"
+        }
+    ]
+}

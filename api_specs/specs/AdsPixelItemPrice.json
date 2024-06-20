@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "date",
+            "type": "string"
+        },
+        {
+            "name": "item_price_coverage",
+            "type": "string"
+        }
+    ]
+}

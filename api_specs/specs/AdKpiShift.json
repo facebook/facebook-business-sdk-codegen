@@ -1,0 +1,29 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "ad_set",
+            "type": "AdSet"
+        },
+        {
+            "name": "cost_per_result_shift",
+            "type": "float"
+        },
+        {
+            "name": "enough_effective_days",
+            "type": "bool"
+        },
+        {
+            "name": "result_indicator",
+            "type": "string"
+        },
+        {
+            "name": "result_shift",
+            "type": "float"
+        },
+        {
+            "name": "spend_shift",
+            "type": "float"
+        }
+    ]
+}

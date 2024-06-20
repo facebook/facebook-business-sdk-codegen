@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "audience",
+            "type": "CustomAudience"
+        },
+        {
+            "name": "share_account_id",
+            "type": "string"
+        },
+        {
+            "name": "share_account_name",
+            "type": "string"
+        }
+    ]
+}

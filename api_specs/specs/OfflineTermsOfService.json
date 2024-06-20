@@ -1,0 +1,24 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "OfflineTermsOfService",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "accept_time",
+            "type": "int"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "signed_by_user",
+            "type": "User"
+        }
+    ]
+}

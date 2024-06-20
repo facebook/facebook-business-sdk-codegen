@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "collection_id",
+            "type": "string"
+        },
+        {
+            "name": "landing_view",
+            "type": "string"
+        },
+        {
+            "name": "shop_id",
+            "type": "string"
+        }
+    ]
+}

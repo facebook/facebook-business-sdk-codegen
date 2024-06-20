@@ -1,0 +1,36 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "WoodhengeSupporter",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_gifted_subscription",
+            "type": "bool"
+        },
+        {
+            "name": "most_recent_subscription_time",
+            "type": "datetime"
+        },
+        {
+            "name": "number_of_months_subscribed",
+            "type": "unsigned int"
+        },
+        {
+            "name": "user",
+            "type": "User"
+        }
+    ]
+}

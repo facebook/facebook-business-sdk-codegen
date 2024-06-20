@@ -1,0 +1,180 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ChinaBusinessOnboardingVettingRequest",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "ad_account_creation_request_status",
+            "type": "string"
+        },
+        {
+            "name": "ad_account_limit",
+            "type": "int"
+        },
+        {
+            "name": "ad_account_number",
+            "type": "string"
+        },
+        {
+            "name": "ad_accounts_info",
+            "type": "list<Object>"
+        },
+        {
+            "name": "business_manager_id",
+            "type": "string"
+        },
+        {
+            "name": "business_registration",
+            "type": "string"
+        },
+        {
+            "name": "business_registration_id",
+            "type": "string"
+        },
+        {
+            "name": "chinese_address",
+            "type": "string"
+        },
+        {
+            "name": "chinese_legal_entity_name",
+            "type": "string"
+        },
+        {
+            "name": "city",
+            "type": "string"
+        },
+        {
+            "name": "contact",
+            "type": "string"
+        },
+        {
+            "name": "coupon_code",
+            "type": "string"
+        },
+        {
+            "name": "disapprove_reason",
+            "type": "string"
+        },
+        {
+            "name": "english_business_name",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "official_website_url",
+            "type": "string"
+        },
+        {
+            "name": "org_ad_account_count",
+            "type": "int"
+        },
+        {
+            "name": "payment_type",
+            "type": "string"
+        },
+        {
+            "name": "planning_agency_id",
+            "type": "string"
+        },
+        {
+            "name": "planning_agency_name",
+            "type": "string"
+        },
+        {
+            "name": "promotable_app_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "promotable_page_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "promotable_pages",
+            "type": "list<Object>"
+        },
+        {
+            "name": "promotable_urls",
+            "type": "list<string>"
+        },
+        {
+            "name": "request_changes_reason",
+            "type": "string"
+        },
+        {
+            "name": "reviewed_user",
+            "type": "string"
+        },
+        {
+            "name": "spend_limit",
+            "type": "int"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "subvertical",
+            "type": "string"
+        },
+        {
+            "name": "subvertical_v2",
+            "type": "string"
+        },
+        {
+            "name": "supporting_document",
+            "type": "string"
+        },
+        {
+            "name": "time_changes_requested",
+            "type": "datetime"
+        },
+        {
+            "name": "time_created",
+            "type": "datetime"
+        },
+        {
+            "name": "time_updated",
+            "type": "datetime"
+        },
+        {
+            "name": "time_zone",
+            "type": "string"
+        },
+        {
+            "name": "used_reseller_link",
+            "type": "bool"
+        },
+        {
+            "name": "user_id",
+            "type": "string"
+        },
+        {
+            "name": "user_name",
+            "type": "string"
+        },
+        {
+            "name": "vertical",
+            "type": "string"
+        },
+        {
+            "name": "vertical_v2",
+            "type": "string"
+        },
+        {
+            "name": "viewed_by_reseller",
+            "type": "bool"
+        },
+        {
+            "name": "zip_code",
+            "type": "string"
+        }
+    ]
+}

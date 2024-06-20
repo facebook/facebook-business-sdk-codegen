@@ -1,0 +1,32 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdsCreationSavedState",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "ad_account",
+            "type": "AdAccount"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "serialized_store_data",
+            "type": "string"
+        },
+        {
+            "name": "time_updated",
+            "type": "datetime"
+        },
+        {
+            "name": "user",
+            "type": "Object"
+        }
+    ]
+}

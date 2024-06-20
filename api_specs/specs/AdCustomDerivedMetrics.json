@@ -1,0 +1,80 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdCustomDerivedMetrics",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "ad_account_id",
+            "type": "string"
+        },
+        {
+            "name": "business",
+            "type": "Business"
+        },
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "creator",
+            "type": "Profile"
+        },
+        {
+            "name": "custom_derived_metric_type",
+            "type": "string"
+        },
+        {
+            "name": "deletion_time",
+            "type": "datetime"
+        },
+        {
+            "name": "deletor",
+            "type": "Profile"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "format_type",
+            "type": "string"
+        },
+        {
+            "name": "formula",
+            "type": "string"
+        },
+        {
+            "name": "has_attribution_windows",
+            "type": "bool"
+        },
+        {
+            "name": "has_inline_attribution_window",
+            "type": "bool"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "permission",
+            "type": "string"
+        },
+        {
+            "name": "saved_report_id",
+            "type": "string"
+        },
+        {
+            "name": "scope",
+            "type": "string"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AudioIsrc",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "all_kg_featured_artists",
+            "type": "string"
+        },
+        {
+            "name": "all_kg_main_artists",
+            "type": "string"
+        },
+        {
+            "name": "artist_profile_picture_url",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "isrc",
+            "type": "string"
+        },
+        {
+            "name": "publishing_rights_data",
+            "type": "Object"
+        },
+        {
+            "name": "top_searchable_artist_id",
+            "type": "string"
+        },
+        {
+            "name": "top_searchable_artist_name",
+            "type": "string"
+        },
+        {
+            "name": "top_searchable_artist_profile_pic_url",
+            "type": "string"
+        }
+    ]
+}

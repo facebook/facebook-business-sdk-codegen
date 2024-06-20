@@ -1,0 +1,29 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "account_id",
+            "type": "string"
+        },
+        {
+            "name": "created_time",
+            "type": "datetime"
+        },
+        {
+            "name": "multiplier",
+            "type": "unsigned int"
+        },
+        {
+            "name": "requested_threshold_amount",
+            "type": "unsigned int"
+        },
+        {
+            "name": "threshold_amount",
+            "type": "unsigned int"
+        },
+        {
+            "name": "updated_time",
+            "type": "datetime"
+        }
+    ]
+}

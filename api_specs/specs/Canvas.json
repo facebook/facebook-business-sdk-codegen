@@ -146,7 +146,7 @@
         },
         {
             "name": "source_template",
-            "type": "Object"
+            "type": "CanvasTemplate"
         },
         {
             "name": "store_url",

@@ -1,0 +1,37 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "account_id",
+            "type": "string"
+        },
+        {
+            "name": "account_name",
+            "type": "string"
+        },
+        {
+            "name": "adset_excluding_count",
+            "type": "unsigned int"
+        },
+        {
+            "name": "adset_including_count",
+            "type": "unsigned int"
+        },
+        {
+            "name": "campaign_delivery_status",
+            "type": "string"
+        },
+        {
+            "name": "campaign_objective",
+            "type": "string"
+        },
+        {
+            "name": "campaign_pages",
+            "type": "list<Object>"
+        },
+        {
+            "name": "campaign_schedule",
+            "type": "string"
+        }
+    ]
+}

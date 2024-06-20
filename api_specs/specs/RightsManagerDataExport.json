@@ -1,0 +1,40 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "RightsManagerDataExport",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "download_uri",
+            "type": "string"
+        },
+        {
+            "name": "export_scope",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "record_type",
+            "type": "string"
+        },
+        {
+            "name": "time_range_end",
+            "type": "datetime"
+        },
+        {
+            "name": "time_range_start",
+            "type": "datetime"
+        }
+    ]
+}
