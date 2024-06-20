@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "page_whatsapp_number",
+            "type": "string"
+        },
+        {
+            "name": "subscribed_apps",
+            "type": "list<Object>"
+        }
+    ]
+}

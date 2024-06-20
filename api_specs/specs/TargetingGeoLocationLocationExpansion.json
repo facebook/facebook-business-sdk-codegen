@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "allowed",
+            "type": "bool"
+        },
+        {
+            "name": "intent",
+            "type": "string"
+        }
+    ]
+}

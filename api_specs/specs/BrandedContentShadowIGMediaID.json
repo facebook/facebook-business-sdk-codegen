@@ -6,6 +6,10 @@
             "type": "list<string>"
         },
         {
+            "name": "has_permission_for_partnership_ad",
+            "type": "bool"
+        },
+        {
             "name": "id",
             "type": "string"
         },

@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "headers",
+            "type": "Object"
+        },
+        {
+            "name": "rows",
+            "type": "list<Object>"
+        },
+        {
+            "name": "skan_readiness_status",
+            "type": "list<map<string, string>>"
+        }
+    ]
+}

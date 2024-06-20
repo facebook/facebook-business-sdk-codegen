@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "custom_audiences",
+            "type": "list<RawCustomAudience>"
+        },
+        {
+            "name": "custom_audiences_url_param_name",
+            "type": "string"
+        },
+        {
+            "name": "custom_audiences_url_param_type",
+            "type": "string"
+        }
+    ]
+}

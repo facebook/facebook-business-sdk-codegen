@@ -1,0 +1,35 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "RefreshAccessToken",
+            "params": [
+                {
+                    "name": "access_token",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "grant_type",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "access_token",
+            "type": "string"
+        },
+        {
+            "name": "expires_in",
+            "type": "int"
+        },
+        {
+            "name": "token_type",
+            "type": "string"
+        }
+    ]
+}

@@ -75,7 +75,7 @@
         },
         {
             "name": "email",
-            "type": "Object"
+            "type": "ExtendedCreditEmail"
         },
         {
             "name": "emails",

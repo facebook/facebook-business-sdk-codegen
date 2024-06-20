@@ -1,0 +1,52 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "linked_application",
+            "return": "AdsDataset",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "linked_page",
+            "return": "Page",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "OffsiteSignalContainerBusinessObject",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "business",
+            "type": "Business"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_eligible_for_sharing_to_ad_account",
+            "type": "bool"
+        },
+        {
+            "name": "is_eligible_for_sharing_to_business",
+            "type": "bool"
+        },
+        {
+            "name": "is_unavailable",
+            "type": "bool"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "primary_container_id",
+            "type": "string"
+        }
+    ]
+}

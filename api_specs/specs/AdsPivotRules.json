@@ -1,0 +1,52 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdsPivotRules",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "creator",
+            "type": "Profile"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "permission",
+            "type": "string"
+        },
+        {
+            "name": "rules",
+            "type": "list<Object>"
+        },
+        {
+            "name": "scope",
+            "type": "string"
+        },
+        {
+            "name": "update_by",
+            "type": "Profile"
+        },
+        {
+            "name": "update_time",
+            "type": "datetime"
+        }
+    ]
+}

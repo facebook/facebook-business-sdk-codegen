@@ -1,0 +1,40 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ArAdsDataContainer",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "camera_facing_override",
+            "type": "string"
+        },
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "effect",
+            "type": "list<Object>"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_published",
+            "type": "bool"
+        },
+        {
+            "name": "last_modified_time",
+            "type": "datetime"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        }
+    ]
+}

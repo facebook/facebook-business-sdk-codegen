@@ -1,0 +1,64 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "BusinessFranchiseConfig",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "active_partner_count",
+            "type": "int"
+        },
+        {
+            "name": "agency_business",
+            "type": "Business"
+        },
+        {
+            "name": "agency_business_asset_group",
+            "type": "BusinessAssetGroup"
+        },
+        {
+            "name": "brand_name",
+            "type": "string"
+        },
+        {
+            "name": "business",
+            "type": "Business"
+        },
+        {
+            "name": "business_vertical",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "partner_count",
+            "type": "int"
+        },
+        {
+            "name": "pending_agency_business",
+            "type": "string"
+        },
+        {
+            "name": "program_count",
+            "type": "int"
+        },
+        {
+            "name": "shared_business_asset_group",
+            "type": "BusinessAssetGroup"
+        },
+        {
+            "name": "shared_creative_folder_count",
+            "type": "int"
+        },
+        {
+            "name": "shared_custom_audience_count",
+            "type": "int"
+        }
+    ]
+}

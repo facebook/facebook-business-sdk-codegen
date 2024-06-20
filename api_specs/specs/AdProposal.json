@@ -1,0 +1,88 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdProposal",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "ad_proposal_type_name",
+            "type": "string"
+        },
+        {
+            "name": "adaccount",
+            "type": "AdAccount"
+        },
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "creator",
+            "type": "User"
+        },
+        {
+            "name": "delivery_interface",
+            "type": "string"
+        },
+        {
+            "name": "expiration_time",
+            "type": "datetime"
+        },
+        {
+            "name": "has_conflict",
+            "type": "bool"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "kpi_metric",
+            "type": "string"
+        },
+        {
+            "name": "message",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "proposal_dts_template",
+            "type": "string"
+        },
+        {
+            "name": "proposal_template_name",
+            "type": "string"
+        },
+        {
+            "name": "recommendation",
+            "type": "string"
+        },
+        {
+            "name": "review_time",
+            "type": "datetime"
+        },
+        {
+            "name": "reviewed_by",
+            "type": "User"
+        },
+        {
+            "name": "send_time",
+            "type": "datetime"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "use_testing",
+            "type": "bool"
+        }
+    ]
+}

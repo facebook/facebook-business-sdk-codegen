@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "can_access_leads",
+            "type": "bool"
+        },
+        {
+            "name": "partner_business",
+            "type": "Business"
+        },
+        {
+            "name": "permitted_tasks",
+            "type": "list<string>"
+        }
+    ]
+}

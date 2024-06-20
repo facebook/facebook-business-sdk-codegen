@@ -1,0 +1,29 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "app_redacted_event",
+            "type": "list<string>"
+        },
+        {
+            "name": "app_sensitive_params",
+            "type": "list<map<string, list<string>>>"
+        },
+        {
+            "name": "app_unverified_event",
+            "type": "list<string>"
+        },
+        {
+            "name": "has_app_associated",
+            "type": "bool"
+        },
+        {
+            "name": "is_app_prohibited",
+            "type": "bool"
+        },
+        {
+            "name": "is_dataset",
+            "type": "bool"
+        }
+    ]
+}

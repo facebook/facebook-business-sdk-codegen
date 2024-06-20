@@ -1,0 +1,28 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "EventExternalTicketInfo",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "max_sales_price",
+            "type": "CurrencyAmount"
+        },
+        {
+            "name": "min_sales_price",
+            "type": "CurrencyAmount"
+        },
+        {
+            "name": "sales_status",
+            "type": "string"
+        }
+    ]
+}

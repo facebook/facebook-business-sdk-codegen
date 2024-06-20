@@ -1,0 +1,42 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "backup_images",
+            "return": "ProductImage",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "CPASLsbImageBank",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "CPASLsbImageBank",
+            "params": [
+                {
+                    "name": "backup_image_urls",
+                    "required": true,
+                    "type": "list<string>"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "ad_group_id",
+            "type": "string"
+        },
+        {
+            "name": "catalog_segment_proxy_id",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        }
+    ]
+}

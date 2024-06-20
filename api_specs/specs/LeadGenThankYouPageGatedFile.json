@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "file_cdn_url",
+            "type": "string"
+        },
+        {
+            "name": "file_name",
+            "type": "string"
+        },
+        {
+            "name": "file_size_bytes",
+            "type": "int"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        }
+    ]
+}

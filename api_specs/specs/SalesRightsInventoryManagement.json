@@ -1,0 +1,33 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "available_impressions",
+            "type": "int"
+        },
+        {
+            "name": "booked_impressions",
+            "type": "int"
+        },
+        {
+            "name": "overbooked_impressions",
+            "type": "int"
+        },
+        {
+            "name": "supported_countries",
+            "type": "list<string>"
+        },
+        {
+            "name": "total_impressions",
+            "type": "int"
+        },
+        {
+            "name": "unavailable_impressions",
+            "type": "int"
+        },
+        {
+            "name": "warning_messages",
+            "type": "list<string>"
+        }
+    ]
+}

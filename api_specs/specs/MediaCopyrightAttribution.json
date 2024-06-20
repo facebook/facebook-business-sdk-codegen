@@ -1,0 +1,76 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "MediaCopyrightAttribution",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "attribution_ig_target_id",
+            "type": "string"
+        },
+        {
+            "name": "attribution_target_email_address",
+            "type": "string"
+        },
+        {
+            "name": "attribution_target_id",
+            "type": "string"
+        },
+        {
+            "name": "attribution_target_name",
+            "type": "string"
+        },
+        {
+            "name": "attribution_type",
+            "type": "string"
+        },
+        {
+            "name": "attribution_uri",
+            "type": "string"
+        },
+        {
+            "name": "copyright_count",
+            "type": "int"
+        },
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "creator",
+            "type": "Profile"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_enabled",
+            "type": "bool"
+        },
+        {
+            "name": "link_title",
+            "type": "string"
+        },
+        {
+            "name": "match_count",
+            "type": "int"
+        },
+        {
+            "name": "owner",
+            "type": "Page"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "BusinessObjectTransferOwnershipAgreement",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "receiving_business",
+            "type": "Business"
+        },
+        {
+            "name": "requesting_business",
+            "type": "Business"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        }
+    ]
+}

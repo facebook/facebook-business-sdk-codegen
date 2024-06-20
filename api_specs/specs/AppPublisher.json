@@ -1,0 +1,33 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "content_id",
+            "type": "string"
+        },
+        {
+            "name": "icon_url",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "platform",
+            "type": "string"
+        },
+        {
+            "name": "store_name",
+            "type": "string"
+        },
+        {
+            "name": "store_url",
+            "type": "string"
+        }
+    ]
+}

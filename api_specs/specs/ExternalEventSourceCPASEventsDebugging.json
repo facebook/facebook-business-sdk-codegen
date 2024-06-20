@@ -1,0 +1,41 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "actual_event_time",
+            "type": "int"
+        },
+        {
+            "name": "app_version",
+            "type": "string"
+        },
+        {
+            "name": "content_url",
+            "type": "string"
+        },
+        {
+            "name": "device_os",
+            "type": "string"
+        },
+        {
+            "name": "diagnostic",
+            "type": "string"
+        },
+        {
+            "name": "event_name",
+            "type": "string"
+        },
+        {
+            "name": "event_time",
+            "type": "int"
+        },
+        {
+            "name": "missing_ids",
+            "type": "string"
+        },
+        {
+            "name": "severity",
+            "type": "string"
+        }
+    ]
+}

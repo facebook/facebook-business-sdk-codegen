@@ -1,0 +1,33 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "account_id",
+            "type": "string"
+        },
+        {
+            "name": "available_card_types",
+            "type": "list<string>"
+        },
+        {
+            "name": "available_payment_methods",
+            "type": "list<string>"
+        },
+        {
+            "name": "available_payment_methods_details",
+            "type": "list<Object>"
+        },
+        {
+            "name": "country",
+            "type": "string"
+        },
+        {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "existing_payment_methods",
+            "type": "list<Object>"
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "account_id",
+            "type": "string"
+        },
+        {
+            "name": "account_name",
+            "type": "string"
+        },
+        {
+            "name": "ad_id",
+            "type": "string"
+        },
+        {
+            "name": "ad_name",
+            "type": "string"
+        },
+        {
+            "name": "adset_id",
+            "type": "string"
+        },
+        {
+            "name": "adset_name",
+            "type": "string"
+        },
+        {
+            "name": "campaign_id",
+            "type": "string"
+        },
+        {
+            "name": "campaign_name",
+            "type": "string"
+        },
+        {
+            "name": "custom_breakdown",
+            "type": "list<string>"
+        }
+    ]
+}

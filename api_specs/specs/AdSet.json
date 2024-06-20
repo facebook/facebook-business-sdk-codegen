@@ -701,6 +701,16 @@
                     "type": "string"
                 },
                 {
+                    "name": "regional_regulated_categories",
+                    "required": false,
+                    "type": "list<adcampaign_regional_regulated_categories>"
+                },
+                {
+                    "name": "regional_regulation_identities",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "rf_prediction_id",
                     "required": false,
                     "type": "string"
@@ -942,8 +952,12 @@
             "type": "bool"
         },
         {
+            "name": "regional_regulated_categories",
+            "type": "list<string>"
+        },
+        {
             "name": "regional_regulation_identities",
-            "type": "Object"
+            "type": "RegionalRegulationIdentities"
         },
         {
             "name": "review_feedback",

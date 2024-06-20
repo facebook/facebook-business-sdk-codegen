@@ -1,0 +1,65 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "actions",
+            "type": "map<string, int>"
+        },
+        {
+            "name": "campaign_group_id",
+            "type": "string"
+        },
+        {
+            "name": "clicks",
+            "type": "unsigned int"
+        },
+        {
+            "name": "end_time",
+            "type": "datetime"
+        },
+        {
+            "name": "impressions",
+            "type": "unsigned int"
+        },
+        {
+            "name": "inline_actions",
+            "type": "map<string, int>"
+        },
+        {
+            "name": "social_clicks",
+            "type": "unsigned int"
+        },
+        {
+            "name": "social_impressions",
+            "type": "unsigned int"
+        },
+        {
+            "name": "social_spent",
+            "type": "unsigned int"
+        },
+        {
+            "name": "social_unique_clicks",
+            "type": "unsigned int"
+        },
+        {
+            "name": "social_unique_impressions",
+            "type": "unsigned int"
+        },
+        {
+            "name": "spent",
+            "type": "unsigned int"
+        },
+        {
+            "name": "start_time",
+            "type": "datetime"
+        },
+        {
+            "name": "unique_clicks",
+            "type": "unsigned int"
+        },
+        {
+            "name": "unique_impressions",
+            "type": "unsigned int"
+        }
+    ]
+}

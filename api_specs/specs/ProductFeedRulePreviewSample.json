@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "properties_after",
+            "type": "list<map<string, string>>"
+        },
+        {
+            "name": "properties_before",
+            "type": "list<map<string, string>>"
+        }
+    ]
+}

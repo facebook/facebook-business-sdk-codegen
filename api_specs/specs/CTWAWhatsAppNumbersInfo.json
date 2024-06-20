@@ -1,0 +1,29 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "can_manage_wa_flows",
+            "type": "bool"
+        },
+        {
+            "name": "formatted_whatsapp_number",
+            "type": "string"
+        },
+        {
+            "name": "is_business_number",
+            "type": "bool"
+        },
+        {
+            "name": "page_whatsapp_number_id",
+            "type": "string"
+        },
+        {
+            "name": "whatsapp_number",
+            "type": "string"
+        },
+        {
+            "name": "whatsapp_smb_device",
+            "type": "string"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "invoice_details",
+            "type": "list<McomInvoiceDetails>"
+        },
+        {
+            "name": "invoice_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "page_id",
+            "type": "string"
+        }
+    ]
+}

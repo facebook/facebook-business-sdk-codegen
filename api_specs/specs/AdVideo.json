@@ -505,7 +505,7 @@
         },
         {
             "name": "audio_isrc",
-            "type": "Object"
+            "type": "AudioIsrc"
         },
         {
             "name": "backdated_time",

@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "counts",
+            "type": "int"
+        },
+        {
+            "name": "diagnostic",
+            "type": "string"
+        },
+        {
+            "name": "event_name",
+            "type": "string"
+        }
+    ]
+}

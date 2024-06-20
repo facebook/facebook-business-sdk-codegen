@@ -1,0 +1,44 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "WhitehatFBDLRun",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_pinned",
+            "type": "bool"
+        },
+        {
+            "name": "note",
+            "type": "string"
+        },
+        {
+            "name": "result",
+            "type": "list<map<string, string>>"
+        },
+        {
+            "name": "run_code",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "user_type",
+            "type": "string"
+        }
+    ]
+}

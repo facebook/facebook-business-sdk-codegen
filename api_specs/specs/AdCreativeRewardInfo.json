@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "reward_offer_id",
+            "type": "string"
+        },
+        {
+            "name": "reward_program_id",
+            "type": "string"
+        }
+    ]
+}

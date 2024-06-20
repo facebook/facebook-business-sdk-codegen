@@ -1,0 +1,129 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "audio_conflicting_segments",
+            "type": "list<Object>"
+        },
+        {
+            "name": "audio_current_conflict_resolved_segments",
+            "type": "list<Object>"
+        },
+        {
+            "name": "audio_segment_resolution_history",
+            "type": "list<Object>"
+        },
+        {
+            "name": "conflict_type",
+            "type": "string"
+        },
+        {
+            "name": "conflicting_countries",
+            "type": "list<string>"
+        },
+        {
+            "name": "country_resolution_history",
+            "type": "list<map<string, list<Object>>>"
+        },
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "current_conflict_resolved_countries",
+            "type": "list<map<string, Object>>"
+        },
+        {
+            "name": "displayed_match_state",
+            "type": "string"
+        },
+        {
+            "name": "dispute_form_data_entries_with_translations",
+            "type": "list<Object>"
+        },
+        {
+            "name": "expiration_time",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_disputable",
+            "type": "bool"
+        },
+        {
+            "name": "match_state",
+            "type": "string"
+        },
+        {
+            "name": "matched_overlap_percentage",
+            "type": "float"
+        },
+        {
+            "name": "matched_owner_match_duration_in_sec",
+            "type": "float"
+        },
+        {
+            "name": "matched_reference_owner",
+            "type": "Profile"
+        },
+        {
+            "name": "modification_history",
+            "type": "list<Object>"
+        },
+        {
+            "name": "num_matches_on_matched_side",
+            "type": "unsigned int"
+        },
+        {
+            "name": "num_matches_on_ref_side",
+            "type": "unsigned int"
+        },
+        {
+            "name": "ref_owner_match_duration_in_sec",
+            "type": "float"
+        },
+        {
+            "name": "reference_overlap_percentage",
+            "type": "float"
+        },
+        {
+            "name": "reference_owner",
+            "type": "Profile"
+        },
+        {
+            "name": "rejection_form_data_entries_with_translations",
+            "type": "list<Object>"
+        },
+        {
+            "name": "resolution_details",
+            "type": "string"
+        },
+        {
+            "name": "resolution_reason",
+            "type": "string"
+        },
+        {
+            "name": "update_time",
+            "type": "datetime"
+        },
+        {
+            "name": "views_on_matched_side",
+            "type": "unsigned int"
+        },
+        {
+            "name": "visual_conflicting_segments",
+            "type": "list<Object>"
+        },
+        {
+            "name": "visual_current_conflict_resolved_segments",
+            "type": "list<Object>"
+        },
+        {
+            "name": "visual_segment_resolution_history",
+            "type": "list<Object>"
+        }
+    ]
+}

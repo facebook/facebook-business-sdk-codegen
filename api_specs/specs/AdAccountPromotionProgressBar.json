@@ -1,0 +1,37 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "adaccount_permission",
+            "type": "bool"
+        },
+        {
+            "name": "coupon_currency",
+            "type": "string"
+        },
+        {
+            "name": "coupon_value",
+            "type": "int"
+        },
+        {
+            "name": "expiration_time",
+            "type": "datetime"
+        },
+        {
+            "name": "progress_completed",
+            "type": "bool"
+        },
+        {
+            "name": "promotion_type",
+            "type": "string"
+        },
+        {
+            "name": "spend_requirement_in_cent",
+            "type": "int"
+        },
+        {
+            "name": "spend_since_enrollment",
+            "type": "int"
+        }
+    ]
+}

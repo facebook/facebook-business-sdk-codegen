@@ -1,0 +1,45 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "bank_account_last_4",
+            "type": "string"
+        },
+        {
+            "name": "bank_code_last_4",
+            "type": "string"
+        },
+        {
+            "name": "bank_name",
+            "type": "string"
+        },
+        {
+            "name": "default_receiving_method_products",
+            "type": "list<string>"
+        },
+        {
+            "name": "display_string",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "last_four_digits",
+            "type": "string"
+        },
+        {
+            "name": "onboarding_url",
+            "type": "string"
+        },
+        {
+            "name": "owner_name",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "int"
+        }
+    ]
+}

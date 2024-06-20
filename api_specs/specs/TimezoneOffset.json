@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "abbr",
+            "type": "string"
+        },
+        {
+            "name": "isdst",
+            "type": "bool"
+        },
+        {
+            "name": "offset",
+            "type": "int"
+        },
+        {
+            "name": "time",
+            "type": "string"
+        },
+        {
+            "name": "ts",
+            "type": "unsigned int"
+        }
+    ]
+}

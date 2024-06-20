@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "dismissed_notices",
+            "type": "list<string>"
+        }
+    ]
+}

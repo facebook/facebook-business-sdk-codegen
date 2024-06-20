@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "adgroup_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "campaign_group_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "campaign_ids",
+            "type": "list<string>"
+        }
+    ]
+}

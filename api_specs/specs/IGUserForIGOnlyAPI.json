@@ -1,0 +1,57 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "live_media",
+            "return": "Media",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "media",
+            "return": "Media",
+            "params": [
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "until",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "stories",
+            "return": "Media",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "User",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "account_type",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "media_count",
+            "type": "int"
+        },
+        {
+            "name": "username",
+            "type": "string"
+        }
+    ]
+}

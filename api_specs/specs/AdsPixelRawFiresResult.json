@@ -1,0 +1,37 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "data_json",
+            "type": "string"
+        },
+        {
+            "name": "device_type",
+            "type": "string"
+        },
+        {
+            "name": "event",
+            "type": "string"
+        },
+        {
+            "name": "event_detection_method",
+            "type": "string"
+        },
+        {
+            "name": "event_src",
+            "type": "string"
+        },
+        {
+            "name": "placed_url",
+            "type": "string"
+        },
+        {
+            "name": "timestamp",
+            "type": "datetime"
+        },
+        {
+            "name": "user_pii_keys",
+            "type": "string"
+        }
+    ]
+}

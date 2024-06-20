@@ -1,0 +1,37 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "creation_time",
+            "type": "string"
+        },
+        {
+            "name": "cross_post_videos",
+            "type": "list<Object>"
+        },
+        {
+            "name": "eligible_cross_post_pages",
+            "type": "list<Object>"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "preferred_video_thumbnail_image_uri",
+            "type": "string"
+        },
+        {
+            "name": "premium_music_video_metadata",
+            "type": "Object"
+        },
+        {
+            "name": "scheduled_publish_time",
+            "type": "int"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        }
+    ]
+}

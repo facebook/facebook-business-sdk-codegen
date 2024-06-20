@@ -481,6 +481,11 @@
                     "type": "AdCreative"
                 },
                 {
+                    "name": "creative_asset_groups_spec",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
                     "name": "display_sequence",
                     "required": false,
                     "type": "unsigned int"
@@ -600,6 +605,10 @@
         {
             "name": "creative",
             "type": "AdCreative"
+        },
+        {
+            "name": "creative_asset_groups_spec",
+            "type": "AdCreativeAssetGroupsSpec"
         },
         {
             "name": "demolink_hash",

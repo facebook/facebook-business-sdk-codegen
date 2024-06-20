@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "entered_amount",
+            "type": "CurrencyAmount"
+        },
+        {
+            "name": "fee_amount",
+            "type": "CurrencyAmount"
+        },
+        {
+            "name": "total_amount",
+            "type": "CurrencyAmount"
+        }
+    ]
+}
