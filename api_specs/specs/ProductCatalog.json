@@ -39,21 +39,14 @@
                     "type": "list<productcatalogagencies_permitted_tasks_enum_param>"
                 },
                 {
+                    "name": "skip_default_utms",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "utm_settings",
                     "required": false,
                     "type": "map"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "ar_effects_batch_status",
-            "return": "AREffectsBatchStatus",
-            "params": [
-                {
-                    "name": "handle",
-                    "required": true,
-                    "type": "string"
                 }
             ]
         },
@@ -134,18 +127,23 @@
                     "name": "requests",
                     "required": true,
                     "type": "list<map>"
+                },
+                {
+                    "name": "version",
+                    "required": false,
+                    "type": "unsigned int"
                 }
             ]
         },
         {
             "method": "POST",
-            "endpoint": "catalog_website_settings",
-            "return": "CatalogWebsiteSettings",
+            "endpoint": "catalog_store",
+            "return": "StoreCatalogSettings",
             "params": [
                 {
-                    "name": "is_allowed_to_crawl",
-                    "required": false,
-                    "type": "bool"
+                    "name": "page",
+                    "required": true,
+                    "type": "string"
                 }
             ]
         },
@@ -231,6 +229,18 @@
                     "name": "backup_image_urls",
                     "required": true,
                     "type": "list<string>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "creator_asset_creatives",
+            "return": "CreatorAssetCreative",
+            "params": [
+                {
+                    "name": "moderation_status",
+                    "required": false,
+                    "type": "productcatalogcreator_asset_creatives_moderation_status_enum_param"
                 }
             ]
         },
@@ -615,6 +625,11 @@
                     "name": "requests",
                     "required": true,
                     "type": "map"
+                },
+                {
+                    "name": "version",
+                    "required": false,
+                    "type": "unsigned int"
                 }
             ]
         },
@@ -637,78 +652,11 @@
                     "name": "requests",
                     "required": true,
                     "type": "map"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "media_titles",
-            "return": "MediaTitle",
-            "params": [
-                {
-                    "name": "applinks",
-                    "required": false,
-                    "type": "Object"
                 },
                 {
-                    "name": "content_category",
-                    "required": false,
-                    "type": "productcatalogmedia_titles_content_category_enum_param"
-                },
-                {
-                    "name": "currency",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "description",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "fb_page_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "genres",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "images",
-                    "required": true,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "kg_fb_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "media_title_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "price",
+                    "name": "version",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "title",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "title_display_name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "url",
-                    "required": true,
-                    "type": "string"
                 }
             ]
         },
@@ -1266,21 +1214,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "offer_price_amount",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "offer_price_end_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "offer_price_start_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
                     "name": "ordering_index",
                     "required": false,
                     "type": "unsigned int"
@@ -1579,6 +1512,38 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "version_items_batch",
+            "return": "ProductCatalog",
+            "params": [
+                {
+                    "name": "allow_upsert",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "item_type",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "item_version",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "requests",
+                    "required": true,
+                    "type": "map"
+                },
+                {
+                    "name": "version",
+                    "required": false,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
             "name": "#delete",
             "method": "DELETE",
             "return": "Object",
@@ -1607,6 +1572,11 @@
             "method": "POST",
             "return": "ProductCatalog",
             "params": [
+                {
+                    "name": "additional_vertical_option",
+                    "required": false,
+                    "type": "productcatalog_additional_vertical_option"
+                },
                 {
                     "name": "da_display_settings",
                     "required": false,
@@ -1652,12 +1622,28 @@
     ],
     "fields": [
         {
+            "name": "ad_account_to_collaborative_ads_share_settings",
+            "type": "CollaborativeAdsShareSettings"
+        },
+        {
+            "name": "agency_collaborative_ads_share_settings",
+            "type": "CollaborativeAdsShareSettings"
+        },
+        {
             "name": "business",
             "type": "Business"
         },
         {
+            "name": "catalog_store",
+            "type": "StoreCatalogSettings"
+        },
+        {
             "name": "commerce_merchant_settings",
             "type": "CommerceMerchantSettings"
+        },
+        {
+            "name": "creator_user",
+            "type": "User"
         },
         {
             "name": "da_display_settings",
@@ -1684,12 +1670,16 @@
             "type": "bool"
         },
         {
-            "name": "latest_feed_upload_session",
-            "type": "ProductFeedUpload"
+            "name": "is_local_catalog",
+            "type": "bool"
         },
         {
             "name": "name",
             "type": "string"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
         },
         {
             "name": "product_count",
@@ -1698,6 +1688,10 @@
         {
             "name": "store_catalog_settings",
             "type": "StoreCatalogSettings"
+        },
+        {
+            "name": "user_access_expire_time",
+            "type": "datetime"
         },
         {
             "name": "vertical",

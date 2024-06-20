@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "dismissed",
+            "type": "bool"
+        },
+        {
+            "name": "event_type",
+            "type": "string"
+        },
+        {
+            "name": "rule",
+            "type": "string"
+        }
+    ]
+}

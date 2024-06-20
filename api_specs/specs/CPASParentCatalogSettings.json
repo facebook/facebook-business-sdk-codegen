@@ -1,0 +1,28 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "CPASParentCatalogSettings",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "attribution_windows",
+            "type": "list<string>"
+        },
+        {
+            "name": "default_currency",
+            "type": "string"
+        },
+        {
+            "name": "disable_use_as_parent_catalog",
+            "type": "bool"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        }
+    ]
+}

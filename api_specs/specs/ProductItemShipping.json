@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "shipping_country",
+            "type": "string"
+        },
+        {
+            "name": "shipping_price_currency",
+            "type": "string"
+        },
+        {
+            "name": "shipping_price_value",
+            "type": "float"
+        },
+        {
+            "name": "shipping_region",
+            "type": "string"
+        },
+        {
+            "name": "shipping_service",
+            "type": "string"
+        }
+    ]
+}

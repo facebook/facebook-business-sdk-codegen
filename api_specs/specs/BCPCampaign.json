@@ -1,0 +1,80 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "BCPCampaign",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "ads_permission_required",
+            "type": "bool"
+        },
+        {
+            "name": "application_deadline",
+            "type": "string"
+        },
+        {
+            "name": "campaign_goal",
+            "type": "string"
+        },
+        {
+            "name": "campaign_goal_other",
+            "type": "string"
+        },
+        {
+            "name": "content_delivery_deadline",
+            "type": "string"
+        },
+        {
+            "name": "content_delivery_start_date",
+            "type": "string"
+        },
+        {
+            "name": "content_requirements",
+            "type": "list<map<string, unsigned int>>"
+        },
+        {
+            "name": "content_requirements_description",
+            "type": "string"
+        },
+        {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "deal_negotiation_type",
+            "type": "string"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "has_free_product",
+            "type": "bool"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "payment_amount_for_ads",
+            "type": "unsigned int"
+        },
+        {
+            "name": "payment_amount_for_content",
+            "type": "unsigned int"
+        },
+        {
+            "name": "payment_description",
+            "type": "string"
+        }
+    ]
+}

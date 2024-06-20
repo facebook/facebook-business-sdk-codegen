@@ -25,6 +25,10 @@
             "type": "bool"
         },
         {
+            "name": "folder",
+            "type": "string"
+        },
+        {
             "name": "former_participants",
             "type": "Object"
         },
@@ -39,6 +43,10 @@
         {
             "name": "link",
             "type": "string"
+        },
+        {
+            "name": "linked_group",
+            "type": "Group"
         },
         {
             "name": "message_count",

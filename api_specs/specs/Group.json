@@ -81,6 +81,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "session_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "tags",
                     "required": false,
                     "type": "list<int>"
@@ -89,24 +94,6 @@
                     "name": "visible",
                     "required": false,
                     "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "attachment_surfaces",
-            "return": "GroupThirdPartyPostAttachmentSurface",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "attachment_surfaces",
-            "return": "GroupThirdPartyPostAttachmentSurface",
-            "params": [
-                {
-                    "name": "title",
-                    "required": true,
-                    "type": "map"
                 }
             ]
         },
@@ -121,34 +108,6 @@
             "endpoint": "events",
             "return": "Event",
             "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "featured_cards",
-            "return": "GroupHighlightThirdPartyUnit",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "featured_cards",
-            "return": "GroupHighlightThirdPartyUnit",
-            "params": [
-                {
-                    "name": "body",
-                    "required": true,
-                    "type": "map"
-                },
-                {
-                    "name": "description",
-                    "required": true,
-                    "type": "map"
-                },
-                {
-                    "name": "title",
-                    "required": true,
-                    "type": "map"
-                }
-            ]
         },
         {
             "method": "GET",
@@ -196,11 +155,6 @@
                     "name": "actions",
                     "required": false,
                     "type": "Object"
-                },
-                {
-                    "name": "adaptive_type",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "album_id",
@@ -263,6 +217,16 @@
                     "type": "groupfeed_backdated_time_granularity_enum_param"
                 },
                 {
+                    "name": "breaking_news",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "breaking_news_expiration",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
                     "name": "call_to_action",
                     "required": false,
                     "type": "Object"
@@ -271,11 +235,6 @@
                     "name": "caption",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "checkin_entry_point",
-                    "required": false,
-                    "type": "groupfeed_checkin_entry_point_enum_param"
                 },
                 {
                     "name": "child_attachments",
@@ -386,11 +345,6 @@
                     "name": "fun_fact_toastee_id",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "has_nickname",
-                    "required": false,
-                    "type": "bool"
                 },
                 {
                     "name": "height",
@@ -623,11 +577,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "react_mode_metadata",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "ref",
                     "required": false,
                     "type": "list<string>"
@@ -779,7 +728,7 @@
                 {
                     "name": "group_icon_id",
                     "required": false,
-                    "type": "Object"
+                    "type": "string"
                 },
                 {
                     "name": "group_type",
@@ -799,7 +748,7 @@
                 {
                     "name": "parent_id",
                     "required": false,
-                    "type": "Object"
+                    "type": "string"
                 },
                 {
                     "name": "post_permissions",
@@ -894,11 +843,6 @@
                     "name": "original_fov",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "planned_start_time",
-                    "required": false,
-                    "type": "int"
                 },
                 {
                     "name": "privacy",
@@ -1203,11 +1147,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "scheduled_publish_time",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
                     "name": "spherical_metadata",
                     "required": false,
                     "type": "map"
@@ -1275,11 +1214,6 @@
             "return": "ProfilePictureSource",
             "params": [
                 {
-                    "name": "breaking_change",
-                    "required": false,
-                    "type": "grouppicture_breaking_change_enum_param"
-                },
-                {
                     "name": "height",
                     "required": false,
                     "type": "int"
@@ -1302,23 +1236,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "shift_settings",
-            "return": "WorkShiftManagementSettings",
-            "params": [
-                {
-                    "name": "external_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "shift_feature_setting",
-                    "required": true,
-                    "type": "groupshift_settings_shift_feature_setting_enum_param"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "videos",
             "return": "AdVideo",
@@ -1335,11 +1252,6 @@
             "endpoint": "videos",
             "return": "AdVideo",
             "params": [
-                {
-                    "name": "adaptive_type",
-                    "required": false,
-                    "type": "string"
-                },
                 {
                     "name": "animated_effect_id",
                     "required": false,
@@ -1481,11 +1393,6 @@
                     "type": "bool"
                 },
                 {
-                    "name": "has_nickname",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "holiday_card",
                     "required": false,
                     "type": "string"
@@ -1584,11 +1491,6 @@
                     "name": "published",
                     "required": false,
                     "type": "bool"
-                },
-                {
-                    "name": "react_mode_metadata",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "referenced_sticker_id",

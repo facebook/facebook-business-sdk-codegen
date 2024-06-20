@@ -1,0 +1,36 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "SplitTestConfig",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "budget",
+            "type": "int"
+        },
+        {
+            "name": "early_winner_declaration_enabled",
+            "type": "bool"
+        },
+        {
+            "name": "end_time",
+            "type": "datetime"
+        },
+        {
+            "name": "splits",
+            "type": "list<int>"
+        },
+        {
+            "name": "start_time",
+            "type": "datetime"
+        },
+        {
+            "name": "test_variable",
+            "type": "string"
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "steps",
+            "return": "MessengerAdsPartialAutomatedStep",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "MessengerAdsPartialAutomatedStepList",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "fblead_form",
+            "type": "LeadgenForm"
+        },
+        {
+            "name": "first_step_id",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "page",
+            "type": "Page"
+        },
+        {
+            "name": "privacy_url",
+            "type": "string"
+        },
+        {
+            "name": "reminder_text",
+            "type": "string"
+        },
+        {
+            "name": "stop_question_message",
+            "type": "string"
+        }
+    ]
+}

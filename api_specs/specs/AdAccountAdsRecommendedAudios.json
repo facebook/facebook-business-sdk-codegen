@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "audio_assets",
+            "type": "list<int>"
+        }
+    ]
+}

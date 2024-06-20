@@ -53,7 +53,7 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 },
                 {
                     "name": "updated_since",
@@ -177,12 +177,12 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 },
                 {
                     "name": "time_ranges",
                     "required": false,
-                    "type": "list<Object>"
+                    "type": "list<map>"
                 },
                 {
                     "name": "use_account_attribution_setting",
@@ -289,12 +289,12 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 },
                 {
                     "name": "time_ranges",
                     "required": false,
-                    "type": "list<Object>"
+                    "type": "list<map>"
                 },
                 {
                     "name": "use_account_attribution_setting",
@@ -323,6 +323,11 @@
                     "name": "ad_format",
                     "required": true,
                     "type": "adgrouppreviews_ad_format_enum_param"
+                },
+                {
+                    "name": "creative_feature",
+                    "required": false,
+                    "type": "adgrouppreviews_creative_feature_enum_param"
                 },
                 {
                     "name": "dynamic_asset_label",
@@ -426,7 +431,7 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 }
             ]
         },
@@ -435,6 +440,16 @@
             "method": "POST",
             "return": "Ad",
             "params": [
+                {
+                    "name": "ad_schedule_end_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "ad_schedule_start_time",
+                    "required": false,
+                    "type": "datetime"
+                },
                 {
                     "name": "adlabels",
                     "required": false,
@@ -464,6 +479,11 @@
                     "name": "creative",
                     "required": false,
                     "type": "AdCreative"
+                },
+                {
+                    "name": "creative_asset_groups_spec",
+                    "required": false,
+                    "type": "Object"
                 },
                 {
                     "name": "display_sequence",
@@ -519,8 +539,20 @@
             "type": "string"
         },
         {
+            "name": "ad_active_time",
+            "type": "string"
+        },
+        {
             "name": "ad_review_feedback",
             "type": "AdgroupReviewFeedback"
+        },
+        {
+            "name": "ad_schedule_end_time",
+            "type": "datetime"
+        },
+        {
+            "name": "ad_schedule_start_time",
+            "type": "datetime"
         },
         {
             "name": "adlabels",
@@ -573,6 +605,10 @@
         {
             "name": "creative",
             "type": "AdCreative"
+        },
+        {
+            "name": "creative_asset_groups_spec",
+            "type": "AdCreativeAssetGroupsSpec"
         },
         {
             "name": "demolink_hash",

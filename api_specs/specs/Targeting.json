@@ -14,6 +14,10 @@
             "type": "unsigned int"
         },
         {
+            "name": "age_range",
+            "type": "list<unsigned int>"
+        },
+        {
             "name": "alternate_auto_targeting_option",
             "type": "string"
         },
@@ -322,8 +326,16 @@
             "type": "list<string>"
         },
         {
+            "name": "targeting_automation",
+            "type": "TargetingAutomation"
+        },
+        {
             "name": "targeting_optimization",
             "type": "string"
+        },
+        {
+            "name": "targeting_relaxation_types",
+            "type": "TargetingRelaxation"
         },
         {
             "name": "user_adclusters",

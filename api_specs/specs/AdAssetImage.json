@@ -1,0 +1,33 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "hash",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "image_crops",
+            "type": "AdsImageCrops"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "tag",
+            "type": "string"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        },
+        {
+            "name": "url_tags",
+            "type": "string"
+        }
+    ]
+}

@@ -14,7 +14,7 @@
         },
         {
             "name": "day_of_week",
-            "type": "ProductFeedSchedule_day_of_week"
+            "type": "string"
         },
         {
             "name": "hour",

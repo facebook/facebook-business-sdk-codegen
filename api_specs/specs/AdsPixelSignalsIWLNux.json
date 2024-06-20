@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "background_color",
+            "type": "string"
+        },
+        {
+            "name": "content",
+            "type": "string"
+        },
+        {
+            "name": "content_color",
+            "type": "string"
+        },
+        {
+            "name": "content_size",
+            "type": "string"
+        },
+        {
+            "name": "img_url",
+            "type": "string"
+        }
+    ]
+}

@@ -286,6 +286,10 @@
             "type": "string"
         },
         {
+            "name": "visibility",
+            "type": "HomeListing_visibility"
+        },
+        {
             "name": "year_built",
             "type": "int"
         }

@@ -1,0 +1,36 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdExportPreset",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "created_time",
+            "type": "datetime"
+        },
+        {
+            "name": "fields",
+            "type": "list<string>"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "owner",
+            "type": "User"
+        },
+        {
+            "name": "updated_time",
+            "type": "datetime"
+        }
+    ]
+}

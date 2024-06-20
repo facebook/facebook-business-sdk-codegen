@@ -1,6 +1,54 @@
 {
     "apis": [
         {
+            "method": "GET",
+            "endpoint": "ab_tests",
+            "return": "PagePostExperiment",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "ab_tests",
+            "return": "PagePostExperiment",
+            "params": [
+                {
+                    "name": "control_video_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "description",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "duration",
+                    "required": true,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "experiment_video_ids",
+                    "required": true,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "optimization_goal",
+                    "required": true,
+                    "type": "pageab_tests_optimization_goal_enum_param"
+                },
+                {
+                    "name": "scheduled_experiment_timestamp",
+                    "required": false,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
             "method": "POST",
             "endpoint": "acknowledge_orders",
             "return": "Page",
@@ -83,6 +131,12 @@
             "method": "GET",
             "endpoint": "albums",
             "return": "Album",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "ar_experience",
+            "return": "ArAdsDataContainer",
             "params": []
         },
         {
@@ -178,7 +232,7 @@
                 {
                     "name": "asid",
                     "required": false,
-                    "type": "list"
+                    "type": "list<string>"
                 },
                 {
                     "name": "psid",
@@ -188,12 +242,12 @@
                 {
                     "name": "uid",
                     "required": false,
-                    "type": "list"
+                    "type": "list<string>"
                 },
                 {
                     "name": "user",
                     "required": false,
-                    "type": "list"
+                    "type": "list<string>"
                 }
             ]
         },
@@ -221,9 +275,53 @@
         },
         {
             "method": "GET",
+            "endpoint": "businessprojects",
+            "return": "BusinessProject",
+            "params": [
+                {
+                    "name": "business",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "call_to_actions",
             "return": "PageCallToAction",
             "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "calls",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "action",
+                    "required": true,
+                    "type": "pagecalls_action_enum_param"
+                },
+                {
+                    "name": "call_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "platform",
+                    "required": false,
+                    "type": "pagecalls_platform_enum_param"
+                },
+                {
+                    "name": "session",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "to",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -278,6 +376,11 @@
                 },
                 {
                     "name": "canvas_store_locator",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "canvas_template_video",
                     "required": false,
                     "type": "Object"
                 },
@@ -427,18 +530,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "claimed_urls",
-            "return": "URL",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "commerce_eligibility",
-            "return": "PageCommerceEligibility",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "commerce_merchant_settings",
             "return": "CommerceMerchantSettings",
             "params": []
@@ -570,14 +661,13 @@
                     "name": "reference_asset_id",
                     "required": true,
                     "type": "string"
+                },
+                {
+                    "name": "selected_segments",
+                    "required": false,
+                    "type": "list<map>"
                 }
             ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "copyright_whitelisted_partners",
-            "return": "Profile",
-            "params": []
         },
         {
             "method": "GET",
@@ -656,6 +746,18 @@
         },
         {
             "method": "GET",
+            "endpoint": "dataset",
+            "return": "AdsPixel",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "dataset",
+            "return": "AdsPixel",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "events",
             "return": "Event",
             "params": [
@@ -700,6 +802,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "fantasy_games",
+            "return": "FantasyGame",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "feed",
             "return": "PagePost",
             "params": [
@@ -734,11 +842,6 @@
                     "name": "actions",
                     "required": false,
                     "type": "Object"
-                },
-                {
-                    "name": "adaptive_type",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "album_id",
@@ -801,6 +904,16 @@
                     "type": "pagefeed_backdated_time_granularity_enum_param"
                 },
                 {
+                    "name": "breaking_news",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "breaking_news_expiration",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
                     "name": "call_to_action",
                     "required": false,
                     "type": "Object"
@@ -809,11 +922,6 @@
                     "name": "caption",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "checkin_entry_point",
-                    "required": false,
-                    "type": "pagefeed_checkin_entry_point_enum_param"
                 },
                 {
                     "name": "child_attachments",
@@ -929,11 +1037,6 @@
                     "name": "fun_fact_toastee_id",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "has_nickname",
-                    "required": false,
-                    "type": "bool"
                 },
                 {
                     "name": "height",
@@ -1166,11 +1269,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "react_mode_metadata",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "ref",
                     "required": false,
                     "type": "list<string>"
@@ -1332,6 +1430,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "attribution_link",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "creator",
                     "required": false,
                     "type": "string"
@@ -1385,6 +1488,11 @@
             "return": "InsightsResult",
             "params": [
                 {
+                    "name": "breakdown",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
                     "name": "date_preset",
                     "required": false,
                     "type": "pageinsights_date_preset_enum_param"
@@ -1420,127 +1528,6 @@
             "method": "GET",
             "endpoint": "instagram_accounts",
             "return": "InstagramUser",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "instant_articles",
-            "return": "InstantArticle",
-            "params": [
-                {
-                    "name": "development_mode",
-                    "required": false,
-                    "type": "bool"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "instant_articles",
-            "return": "InstantArticle",
-            "params": [
-                {
-                    "name": "development_mode",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "html_source",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "published",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "take_live",
-                    "required": false,
-                    "type": "bool"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "instant_articles_insights",
-            "return": "InstantArticleInsightsQueryResult",
-            "params": [
-                {
-                    "name": "breakdown",
-                    "required": false,
-                    "type": "pageinstant_articles_insights_breakdown_enum_param"
-                },
-                {
-                    "name": "metric",
-                    "required": true,
-                    "type": "list<Object>"
-                },
-                {
-                    "name": "period",
-                    "required": true,
-                    "type": "pageinstant_articles_insights_period_enum_param"
-                },
-                {
-                    "name": "since",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "until",
-                    "required": false,
-                    "type": "datetime"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "instant_articles_publish",
-            "return": "Page",
-            "params": [
-                {
-                    "name": "canonical_url",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "publish_status",
-                    "required": true,
-                    "type": "pageinstant_articles_publish_publish_status_enum_param"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "instant_articles_stats",
-            "return": "InstantArticlesStats",
-            "params": [
-                {
-                    "name": "metrics_list",
-                    "required": false,
-                    "type": "list<map>"
-                },
-                {
-                    "name": "page_list",
-                    "required": true,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "since",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "until",
-                    "required": false,
-                    "type": "datetime"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "invoice_access_bank_account",
-            "return": "McomInvoiceBankAccount",
             "params": []
         },
         {
@@ -1731,11 +1718,6 @@
                     "type": "unsigned int"
                 },
                 {
-                    "name": "planned_start_time",
-                    "required": false,
-                    "type": "int"
-                },
-                {
                     "name": "privacy",
                     "required": false,
                     "type": "string"
@@ -1798,14 +1780,14 @@
             "return": "Object",
             "params": [
                 {
-                    "name": "location_page_id",
+                    "name": "location_page_ids",
                     "required": true,
-                    "type": "string"
+                    "type": "list<string>"
                 },
                 {
-                    "name": "store_number",
-                    "required": false,
-                    "type": "unsigned int"
+                    "name": "store_numbers",
+                    "required": true,
+                    "type": "list<unsigned int>"
                 }
             ]
         },
@@ -1975,6 +1957,11 @@
                     "name": "message",
                     "required": true,
                     "type": "Object"
+                },
+                {
+                    "name": "platform",
+                    "required": false,
+                    "type": "pagemessage_attachments_platform_enum_param"
                 }
             ]
         },
@@ -2019,7 +2006,17 @@
                     "type": "pagemessages_sender_action_enum_param"
                 },
                 {
+                    "name": "suggestion_action",
+                    "required": false,
+                    "type": "pagemessages_suggestion_action_enum_param"
+                },
+                {
                     "name": "tag",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "thread_control",
                     "required": false,
                     "type": "Object"
                 }
@@ -2030,6 +2027,92 @@
             "endpoint": "messaging_feature_review",
             "return": "MessagingFeatureReview",
             "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "messenger_call_settings",
+            "return": "MessengerCallSettings",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "messenger_call_settings",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "audio_enabled",
+                    "required": false,
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "messenger_lead_forms",
+            "return": "MessengerAdsPartialAutomatedStepList",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "messenger_lead_forms",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "account_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "block_send_api",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "exit_keyphrases",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "handover_app_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "handover_summary",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "privacy_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "reminder_text",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "step_list",
+                    "required": true,
+                    "type": "list<map>"
+                },
+                {
+                    "name": "stop_question_message",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "template_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "tracking_parameters",
+                    "required": false,
+                    "type": "map"
+                }
+            ]
         },
         {
             "method": "DELETE",
@@ -2071,6 +2154,16 @@
                     "type": "string"
                 },
                 {
+                    "name": "commands",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
                     "name": "get_started",
                     "required": false,
                     "type": "Object"
@@ -2104,6 +2197,11 @@
                     "name": "target_audience",
                     "required": false,
                     "type": "Object"
+                },
+                {
+                    "name": "title",
+                    "required": false,
+                    "type": "list<Object>"
                 },
                 {
                     "name": "whitelisted_domains",
@@ -2153,6 +2251,12 @@
                     "type": "bool"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "notification_message_tokens",
+            "return": "UserPageOneTimeOptInTokenSettings",
+            "params": []
         },
         {
             "method": "POST",
@@ -2263,6 +2367,18 @@
                 {
                     "name": "profile_picture_url",
                     "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "photo_stories",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "photo_id",
+                    "required": false,
                     "type": "string"
                 }
             ]
@@ -2576,11 +2692,6 @@
             "endpoint": "picture",
             "return": "ProfilePictureSource",
             "params": [
-                {
-                    "name": "breaking_change",
-                    "required": false,
-                    "type": "pagepicture_breaking_change_enum_param"
-                },
                 {
                     "name": "height",
                     "required": false,
@@ -2906,6 +3017,28 @@
             "params": []
         },
         {
+            "method": "GET",
+            "endpoint": "stories",
+            "return": "Stories",
+            "params": [
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "status",
+                    "required": false,
+                    "type": "list<pagestories_status_enum_param>"
+                },
+                {
+                    "name": "until",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
             "method": "DELETE",
             "endpoint": "subscribed_apps",
             "return": "Object",
@@ -2930,18 +3063,6 @@
             ]
         },
         {
-            "method": "DELETE",
-            "endpoint": "tabs",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "tab",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "tabs",
             "return": "Tab",
@@ -2950,43 +3071,6 @@
                     "name": "tab",
                     "required": false,
                     "type": "list<string>"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "tabs",
-            "return": "Page",
-            "params": [
-                {
-                    "name": "app_id",
-                    "required": false,
-                    "type": "int"
-                },
-                {
-                    "name": "custom_image_url",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "custom_name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "is_non_connection_landing_tab",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "position",
-                    "required": false,
-                    "type": "int"
-                },
-                {
-                    "name": "tab",
-                    "required": false,
-                    "type": "string"
                 }
             ]
         },
@@ -3014,6 +3098,28 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "thread_action",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "action",
+                    "required": true,
+                    "type": "pagethread_action_action_enum_param"
+                },
+                {
+                    "name": "action_type",
+                    "required": true,
+                    "type": "pagethread_action_action_type_enum_param"
+                },
+                {
+                    "name": "user_id",
+                    "required": true,
+                    "type": "map"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "thread_owner",
             "return": "PageThreadOwner",
@@ -3034,6 +3140,11 @@
                     "name": "folder",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "platform",
+                    "required": false,
+                    "type": "pagethreads_platform_enum_param"
                 },
                 {
                     "name": "tags",
@@ -3173,6 +3284,127 @@
         },
         {
             "method": "GET",
+            "endpoint": "video_reels",
+            "return": "AdVideo",
+            "params": [
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "until",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "video_reels",
+            "return": "AdVideo",
+            "params": [
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "feed_targeting",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "place",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "scheduled_publish_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "targeting",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "title",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "upload_phase",
+                    "required": true,
+                    "type": "pagevideo_reels_upload_phase_enum_param"
+                },
+                {
+                    "name": "video_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "video_state",
+                    "required": false,
+                    "type": "pagevideo_reels_video_state_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "video_stories",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "feed_targeting",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "place",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "scheduled_publish_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "targeting",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "title",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "upload_phase",
+                    "required": true,
+                    "type": "pagevideo_stories_upload_phase_enum_param"
+                },
+                {
+                    "name": "video_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "video_state",
+                    "required": false,
+                    "type": "pagevideo_stories_video_state_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "videos",
             "return": "AdVideo",
             "params": [
@@ -3192,11 +3424,6 @@
                     "name": "ad_breaks",
                     "required": false,
                     "type": "list"
-                },
-                {
-                    "name": "adaptive_type",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "animated_effect_id",
@@ -3379,11 +3606,6 @@
                     "type": "bool"
                 },
                 {
-                    "name": "has_nickname",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "holiday_card",
                     "required": false,
                     "type": "string"
@@ -3492,11 +3714,6 @@
                     "name": "published",
                     "required": false,
                     "type": "bool"
-                },
-                {
-                    "name": "react_mode_metadata",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "reference_only",
@@ -3688,6 +3905,62 @@
             ]
         },
         {
+            "method": "DELETE",
+            "endpoint": "welcome_message_flows",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "flow_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "welcome_message_flows",
+            "return": "CTXPartnerAppWelcomeMessageFlow",
+            "params": [
+                {
+                    "name": "app_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "flow_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "welcome_message_flows",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "eligible_platforms",
+                    "required": false,
+                    "type": "list<pagewelcome_message_flows_eligible_platforms_enum_param>"
+                },
+                {
+                    "name": "flow_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "welcome_message_flow",
+                    "required": false,
+                    "type": "list<Object>"
+                }
+            ]
+        },
+        {
             "name": "#get",
             "method": "GET",
             "return": "Page",
@@ -3833,11 +4106,6 @@
                     "name": "impressum",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "instant_articles_submit_for_review",
-                    "required": false,
-                    "type": "bool"
                 },
                 {
                     "name": "is_always_open",
@@ -4017,6 +4285,10 @@
             "type": "string"
         },
         {
+            "name": "available_promo_offer_ids",
+            "type": "list<map<string, list<map<string, string>>>>"
+        },
+        {
             "name": "awards",
             "type": "string"
         },
@@ -4043,6 +4315,10 @@
         {
             "name": "booking_agent",
             "type": "string"
+        },
+        {
+            "name": "breaking_news_usage",
+            "type": "Object"
         },
         {
             "name": "built",
@@ -4122,7 +4398,7 @@
         },
         {
             "name": "differently_open_offerings",
-            "type": "map<string, bool>"
+            "type": "list<map<string, bool>>"
         },
         {
             "name": "directed_by",
@@ -4135,6 +4411,10 @@
         {
             "name": "displayed_message_response_time",
             "type": "string"
+        },
+        {
+            "name": "does_viewer_have_page_permission_link_ig",
+            "type": "bool"
         },
         {
             "name": "emails",
@@ -4193,6 +4473,10 @@
             "type": "bool"
         },
         {
+            "name": "has_lead_access",
+            "type": "HasLeadAccess"
+        },
+        {
             "name": "has_transitioned_to_new_page_experience",
             "type": "bool"
         },
@@ -4229,11 +4513,11 @@
             "type": "IGUser"
         },
         {
-            "name": "instant_articles_review_status",
-            "type": "string"
+            "name": "is_always_open",
+            "type": "bool"
         },
         {
-            "name": "is_always_open",
+            "name": "is_calling_eligible",
             "type": "bool"
         },
         {
@@ -4246,6 +4530,10 @@
         },
         {
             "name": "is_eligible_for_branded_content",
+            "type": "bool"
+        },
+        {
+            "name": "is_eligible_for_disable_connect_ig_btn_for_non_page_admin_am_web",
             "type": "bool"
         },
         {
@@ -4325,10 +4613,6 @@
             "type": "list<string>"
         },
         {
-            "name": "messenger_ads_default_page_welcome_message",
-            "type": "MessengerDestinationPageWelcomeMessage"
-        },
-        {
             "name": "messenger_ads_default_quick_replies",
             "type": "list<string>"
         },
@@ -4371,6 +4655,10 @@
         {
             "name": "overall_star_rating",
             "type": "float"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
         },
         {
             "name": "page_token",
@@ -4521,10 +4809,6 @@
             "type": "bool"
         },
         {
-            "name": "supports_instant_articles",
-            "type": "bool"
-        },
-        {
             "name": "talking_about_count",
             "type": "unsigned int"
         },
@@ -4543,6 +4827,10 @@
         {
             "name": "unseen_message_count",
             "type": "unsigned int"
+        },
+        {
+            "name": "user_access_expire_time",
+            "type": "datetime"
         },
         {
             "name": "username",

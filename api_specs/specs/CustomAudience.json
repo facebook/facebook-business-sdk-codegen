@@ -70,6 +70,40 @@
         },
         {
             "method": "GET",
+            "endpoint": "salts",
+            "return": "CustomAudienceSalts",
+            "params": [
+                {
+                    "name": "params",
+                    "required": false,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "salts",
+            "return": "CustomAudience",
+            "params": [
+                {
+                    "name": "salt",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "valid_from",
+                    "required": true,
+                    "type": "datetime"
+                },
+                {
+                    "name": "valid_to",
+                    "required": true,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "sessions",
             "return": "CustomAudienceSession",
             "params": [
@@ -284,6 +318,11 @@
                     "name": "tags",
                     "required": false,
                     "type": "list<string>"
+                },
+                {
+                    "name": "use_in_campaigns",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         }
@@ -380,6 +419,10 @@
         {
             "name": "opt_out_link",
             "type": "string"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
         },
         {
             "name": "page_deletion_marked_delete_time",

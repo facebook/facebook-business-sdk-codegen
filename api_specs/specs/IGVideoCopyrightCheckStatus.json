@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "matches_found",
+            "type": "bool"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        }
+    ]
+}

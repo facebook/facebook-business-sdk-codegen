@@ -1,0 +1,36 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "CallAdsPhoneData",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "call_ads_phone_data_use_case",
+            "type": "string"
+        },
+        {
+            "name": "callback_variant",
+            "type": "string"
+        },
+        {
+            "name": "destination_website_url",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "page",
+            "type": "Page"
+        },
+        {
+            "name": "phone_number",
+            "type": "string"
+        }
+    ]
+}

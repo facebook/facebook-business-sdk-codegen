@@ -1,0 +1,41 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "ad_format",
+            "type": "int"
+        },
+        {
+            "name": "content_search_input",
+            "type": "string"
+        },
+        {
+            "name": "creator_ad_permission_type",
+            "type": "string"
+        },
+        {
+            "name": "facebook_boost_post_access_token",
+            "type": "string"
+        },
+        {
+            "name": "instagram_boost_post_access_token",
+            "type": "string"
+        },
+        {
+            "name": "is_mca_internal",
+            "type": "bool"
+        },
+        {
+            "name": "partners",
+            "type": "list<AdCreativeBrandedContentAdsPartners>"
+        },
+        {
+            "name": "promoted_page_id",
+            "type": "string"
+        },
+        {
+            "name": "ui_version",
+            "type": "int"
+        }
+    ]
+}

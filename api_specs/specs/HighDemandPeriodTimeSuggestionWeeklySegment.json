@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "days",
+            "type": "list<string>"
+        },
+        {
+            "name": "end_minute",
+            "type": "int"
+        },
+        {
+            "name": "start_minute",
+            "type": "int"
+        },
+        {
+            "name": "timezone_type",
+            "type": "string"
+        }
+    ]
+}

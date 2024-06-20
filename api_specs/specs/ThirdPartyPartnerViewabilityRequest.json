@@ -1,0 +1,52 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ThirdPartyPartnerViewabilityRequest",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "created_time",
+            "type": "datetime"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "hour",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "metric",
+            "type": "string"
+        },
+        {
+            "name": "modified_time",
+            "type": "datetime"
+        },
+        {
+            "name": "owner_instance_id",
+            "type": "string"
+        },
+        {
+            "name": "platform",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "ThirdPartyPartnerViewabilityRequest_status"
+        },
+        {
+            "name": "total_file_count",
+            "type": "unsigned int"
+        }
+    ]
+}

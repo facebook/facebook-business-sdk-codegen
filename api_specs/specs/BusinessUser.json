@@ -22,7 +22,13 @@
             "method": "GET",
             "endpoint": "assigned_pages",
             "return": "Page",
-            "params": []
+            "params": [
+                {
+                    "name": "pages",
+                    "required": false,
+                    "type": "list<unsigned int>"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -78,6 +84,11 @@
                     "type": "businessuser_role"
                 },
                 {
+                    "name": "skip_verification_email",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "title",
                     "required": false,
                     "type": "string"
@@ -89,6 +100,10 @@
         {
             "name": "business",
             "type": "Business"
+        },
+        {
+            "name": "business_role_request",
+            "type": "BusinessRoleRequest"
         },
         {
             "name": "email",

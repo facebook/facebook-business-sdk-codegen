@@ -8,6 +8,92 @@
         },
         {
             "method": "GET",
+            "endpoint": "branded_content_ad_permissions",
+            "return": "IGBCAdsPermission",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "branded_content_ad_permissions",
+            "return": "IGBCAdsPermission",
+            "params": [
+                {
+                    "name": "creator_instagram_account",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "creator_instagram_username",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "revoke",
+                    "required": false,
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "branded_content_advertisable_medias",
+            "return": "BrandedContentShadowIGMediaID",
+            "params": [
+                {
+                    "name": "creator_username",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "only_fetch_allowlisted",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "permalinks",
+                    "required": false,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "branded_content_tag_approval",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "user_ids",
+                    "required": true,
+                    "type": "list<unsigned int>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "branded_content_tag_approval",
+            "return": "BrandedContentShadowIGUserID",
+            "params": [
+                {
+                    "name": "user_ids",
+                    "required": true,
+                    "type": "list<unsigned int>"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "branded_content_tag_approval",
+            "return": "BrandedContentShadowIGUserID",
+            "params": [
+                {
+                    "name": "user_ids",
+                    "required": true,
+                    "type": "list<unsigned int>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "catalog_product_search",
             "return": "ShadowIGUserCatalogProductSearch",
             "params": [
@@ -37,13 +123,35 @@
         },
         {
             "method": "GET",
+            "endpoint": "dataset",
+            "return": "AdsPixel",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "dataset",
+            "return": "AdsPixel",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "insights",
             "return": "InstagramInsightsResult",
             "params": [
                 {
+                    "name": "breakdown",
+                    "required": false,
+                    "type": "list<shadowiguserinsights_breakdown_enum_param>"
+                },
+                {
                     "name": "metric",
                     "required": true,
                     "type": "list<shadowiguserinsights_metric_enum_param>"
+                },
+                {
+                    "name": "metric_type",
+                    "required": false,
+                    "type": "shadowiguserinsights_metric_type_enum_param"
                 },
                 {
                     "name": "period",
@@ -54,6 +162,11 @@
                     "name": "since",
                     "required": false,
                     "type": "datetime"
+                },
+                {
+                    "name": "timeframe",
+                    "required": false,
+                    "type": "shadowiguserinsights_timeframe_enum_param"
                 },
                 {
                     "name": "until",
@@ -102,6 +215,11 @@
             "return": "IGMedia",
             "params": [
                 {
+                    "name": "audio_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "caption",
                     "required": false,
                     "type": "string"
@@ -110,6 +228,16 @@
                     "name": "children",
                     "required": false,
                     "type": "list<string>"
+                },
+                {
+                    "name": "collaborators",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "cover_url",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "image_url",
@@ -143,6 +271,11 @@
                 },
                 {
                     "name": "thumb_offset",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "upload_type",
                     "required": false,
                     "type": "string"
                 },
@@ -191,6 +324,12 @@
                     "type": "string"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "notification_message_tokens",
+            "return": "UserPageOneTimeOptInTokenSettings",
+            "params": []
         },
         {
             "method": "GET",
@@ -292,6 +431,10 @@
         {
             "name": "name",
             "type": "string"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
         },
         {
             "name": "profile_picture_url",

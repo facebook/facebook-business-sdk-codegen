@@ -1,0 +1,69 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "age",
+            "type": "string"
+        },
+        {
+            "name": "country",
+            "type": "string"
+        },
+        {
+            "name": "date_end",
+            "type": "string"
+        },
+        {
+            "name": "date_start",
+            "type": "string"
+        },
+        {
+            "name": "device_platform",
+            "type": "string"
+        },
+        {
+            "name": "gender",
+            "type": "string"
+        },
+        {
+            "name": "impressions",
+            "type": "int"
+        },
+        {
+            "name": "inline_link_clicks",
+            "type": "int"
+        },
+        {
+            "name": "objective",
+            "type": "string"
+        },
+        {
+            "name": "optimization_goal",
+            "type": "string"
+        },
+        {
+            "name": "platform_position",
+            "type": "string"
+        },
+        {
+            "name": "publisher_platform",
+            "type": "string"
+        },
+        {
+            "name": "quality_ranking",
+            "type": "string"
+        },
+        {
+            "name": "video_play_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "video_thruplay_watched_actions",
+            "type": "list<AdsActionStats>"
+        }
+    ]
+}

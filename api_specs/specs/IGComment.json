@@ -46,7 +46,7 @@
     "fields": [
         {
             "name": "from",
-            "type": "Object"
+            "type": "IGCommentFromUser"
         },
         {
             "name": "hidden",

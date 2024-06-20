@@ -15,7 +15,11 @@
         },
         {
             "name": "attachment_style",
-            "type": "AdCreativeLinkData_attachment_style"
+            "type": "string"
+        },
+        {
+            "name": "automated_product_tags",
+            "type": "bool"
         },
         {
             "name": "branded_content_shared_to_sponsor_status",

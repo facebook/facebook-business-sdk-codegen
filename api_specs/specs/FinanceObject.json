@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "finance_permission",
+            "type": "string"
+        },
+        {
+            "name": "user",
+            "type": "Object"
+        }
+    ]
+}

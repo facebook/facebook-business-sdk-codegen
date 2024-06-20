@@ -1,0 +1,28 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "SlicedEventSourceGroup",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "event_source_group",
+            "type": "EventSourceGroup"
+        },
+        {
+            "name": "filter",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        }
+    ]
+}

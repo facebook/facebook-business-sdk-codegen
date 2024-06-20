@@ -14,11 +14,6 @@
                     "name": "merchant_order_reference",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "return_error_response",
-                    "required": false,
-                    "type": "bool"
                 }
             ]
         },
@@ -35,7 +30,7 @@
             "params": [
                 {
                     "name": "cancel_reason",
-                    "required": true,
+                    "required": false,
                     "type": "map"
                 },
                 {
@@ -57,18 +52,18 @@
         },
         {
             "method": "POST",
-            "endpoint": "fulfill_order",
+            "endpoint": "item_updates",
             "return": "CommerceOrder",
             "params": [
-                {
-                    "name": "idempotency_key",
-                    "required": true,
-                    "type": "string"
-                },
                 {
                     "name": "items",
                     "required": true,
                     "type": "list<map>"
+                },
+                {
+                    "name": "merchant_order_reference",
+                    "required": true,
+                    "type": "string"
                 }
             ]
         },
@@ -107,6 +102,11 @@
             "endpoint": "refunds",
             "return": "CommerceOrder",
             "params": [
+                {
+                    "name": "adjustment_amount",
+                    "required": false,
+                    "type": "map"
+                },
                 {
                     "name": "deductions",
                     "required": false,
@@ -221,7 +221,7 @@
                 },
                 {
                     "name": "items",
-                    "required": true,
+                    "required": false,
                     "type": "list<map>"
                 },
                 {
@@ -284,6 +284,38 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "updates",
+            "return": "CommerceOrder",
+            "params": [
+                {
+                    "name": "cancel_amount",
+                    "required": true,
+                    "type": "map"
+                },
+                {
+                    "name": "fulfill_amount",
+                    "required": true,
+                    "type": "map"
+                },
+                {
+                    "name": "merchant_order_reference",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "refund_amount",
+                    "required": true,
+                    "type": "map"
+                },
+                {
+                    "name": "total_amount",
+                    "required": true,
+                    "type": "map"
+                }
+            ]
+        },
+        {
             "name": "#get",
             "method": "GET",
             "return": "CommerceOrder",
@@ -298,6 +330,10 @@
         {
             "name": "channel",
             "type": "string"
+        },
+        {
+            "name": "contains_bopis_items",
+            "type": "bool"
         },
         {
             "name": "created",

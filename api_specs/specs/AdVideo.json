@@ -30,6 +30,24 @@
         },
         {
             "method": "GET",
+            "endpoint": "collaborators",
+            "return": "VideoCollaborators",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "collaborators",
+            "return": "AdVideo",
+            "params": [
+                {
+                    "name": "target_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "comments",
             "return": "Comment",
             "params": [
@@ -482,8 +500,12 @@
             "type": "list<int>"
         },
         {
+            "name": "admin_creator",
+            "type": "User"
+        },
+        {
             "name": "audio_isrc",
-            "type": "Object"
+            "type": "AudioIsrc"
         },
         {
             "name": "backdated_time",
@@ -504,6 +526,10 @@
         {
             "name": "copyright",
             "type": "VideoCopyright"
+        },
+        {
+            "name": "copyright_check_information",
+            "type": "Object"
         },
         {
             "name": "copyright_monitoring_status",
@@ -591,7 +617,7 @@
         },
         {
             "name": "permalink_url",
-            "type": "Object"
+            "type": "string"
         },
         {
             "name": "picture",
@@ -600,6 +626,10 @@
         {
             "name": "place",
             "type": "Place"
+        },
+        {
+            "name": "post_id",
+            "type": "string"
         },
         {
             "name": "post_views",
@@ -631,7 +661,7 @@
         },
         {
             "name": "status",
-            "type": "Object"
+            "type": "VideoStatus"
         },
         {
             "name": "title",

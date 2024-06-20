@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "can_send_message",
+            "type": "string"
+        },
+        {
+            "name": "entities",
+            "type": "list<WhatsAppBusinessHealthStatus>"
+        }
+    ]
+}

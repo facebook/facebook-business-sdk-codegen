@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "num_pending_verification_accounts",
+            "type": "int"
+        },
+        {
+            "name": "num_verified_accounts",
+            "type": "int"
+        },
+        {
+            "name": "pending_verification_accounts",
+            "type": "list<Object>"
+        },
+        {
+            "name": "verified_accounts",
+            "type": "list<Object>"
+        }
+    ]
+}

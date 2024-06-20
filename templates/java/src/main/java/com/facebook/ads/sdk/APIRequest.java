@@ -46,9 +46,11 @@ import com.google.common.base.Function;
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
+import com.google.common.util.concurrent.MoreExecutors;
 import com.google.common.util.concurrent.SettableFuture;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import java.nio.charset.StandardCharsets;
 
 public class APIRequest<T extends APINode> {
 
@@ -145,7 +147,8 @@ public class APIRequest<T extends APINode> {
              throw new RuntimeException(e);
            }
          }
-       }
+       },
+       MoreExecutors.directExecutor()
     );
   };
 
@@ -226,7 +229,8 @@ public class APIRequest<T extends APINode> {
           }
           public void onFailure(Throwable t) {
           }
-        }
+        },
+        MoreExecutors.directExecutor()
       );
     } catch(IOException e) {
       throw new APIException.FailedRequestException(e);
@@ -482,7 +486,7 @@ public class APIRequest<T extends APINode> {
 
     private static int getLengthAndLog(APIContext context, String input) throws IOException {
       context.log(input);
-      return input.getBytes("UTF-8").length;
+      return input.getBytes(StandardCharsets.UTF_8).length;
     }
 
     public static String constructUrlString(String apiUrl, Map<String, Object> allParams) throws IOException {
@@ -603,7 +607,7 @@ public class APIRequest<T extends APINode> {
     }
 
     private static void writeStringInUTF8Bytes(DataOutputStream wr, String input) throws IOException {
-      wr.write(input.getBytes("UTF-8"));
+      wr.write(input.getBytes(StandardCharsets.UTF_8));
     }
   }
 

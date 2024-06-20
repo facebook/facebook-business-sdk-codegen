@@ -1,0 +1,29 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "app_id",
+            "type": "string"
+        },
+        {
+            "name": "frequency",
+            "type": "string"
+        },
+        {
+            "name": "image_hash",
+            "type": "string"
+        },
+        {
+            "name": "image_url",
+            "type": "string"
+        },
+        {
+            "name": "subscriber",
+            "type": "int"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        }
+    ]
+}

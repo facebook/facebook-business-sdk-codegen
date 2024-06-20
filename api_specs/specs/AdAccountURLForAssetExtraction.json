@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "source_type",
+            "type": "string"
+        },
+        {
+            "name": "source_url",
+            "type": "string"
+        }
+    ]
+}

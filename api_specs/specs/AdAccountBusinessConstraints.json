@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "audience_controls",
+            "type": "Object"
+        },
+        {
+            "name": "campaigns_with_error",
+            "type": "list<string>"
+        },
+        {
+            "name": "placement_controls",
+            "type": "Object"
+        },
+        {
+            "name": "status",
+            "type": "AdAccountBusinessConstraints_status"
+        }
+    ]
+}

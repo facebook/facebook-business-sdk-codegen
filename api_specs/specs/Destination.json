@@ -79,6 +79,10 @@
             "type": "list<string>"
         },
         {
+            "name": "tags",
+            "type": "list<string>"
+        },
+        {
             "name": "types",
             "type": "list<string>"
         },
@@ -89,6 +93,10 @@
         {
             "name": "url",
             "type": "string"
+        },
+        {
+            "name": "visibility",
+            "type": "Destination_visibility"
         }
     ]
 }

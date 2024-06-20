@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "ad_permissions",
+            "type": "list<string>"
+        },
+        {
+            "name": "bc_permission_status",
+            "type": "string"
+        },
+        {
+            "name": "bc_permissions",
+            "type": "list<map<string, string>>"
+        },
+        {
+            "name": "is_managed",
+            "type": "bool"
+        },
+        {
+            "name": "matched_by",
+            "type": "string"
+        }
+    ]
+}

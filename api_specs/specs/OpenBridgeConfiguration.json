@@ -1,0 +1,96 @@
+{
+    "apis": [
+        {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "OpenBridgeConfiguration",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "OpenBridgeConfiguration",
+            "params": [
+                {
+                    "name": "active",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "endpoint",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "fallback_domain",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "fallback_domain_enabled",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "host_business_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "host_external_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "instance_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "active",
+            "type": "bool"
+        },
+        {
+            "name": "endpoint",
+            "type": "string"
+        },
+        {
+            "name": "fallback_domain",
+            "type": "string"
+        },
+        {
+            "name": "fallback_domain_enabled",
+            "type": "bool"
+        },
+        {
+            "name": "host_business_id",
+            "type": "string"
+        },
+        {
+            "name": "host_external_id",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "instance_id",
+            "type": "string"
+        },
+        {
+            "name": "pixel_id",
+            "type": "string"
+        }
+    ]
+}

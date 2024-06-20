@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "shared_to_sponsor_status",
+            "type": "string"
+        },
+        {
+            "name": "sponsor_page_id",
+            "type": "string"
+        },
+        {
+            "name": "sponsor_relationship",
+            "type": "string"
+        }
+    ]
+}

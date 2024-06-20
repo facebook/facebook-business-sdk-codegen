@@ -1,24 +1,9 @@
-/**
- * Copyright (c) 2015-present, Facebook, Inc. All rights reserved.
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
  *
- * You are hereby granted a non-exclusive, worldwide, royalty-free license to
- * use, copy, modify, and distribute this software in source code or binary
- * form for use in connection with the web services and APIs provided by
- * Facebook.
- *
- * As with any software that integrates with the Facebook platform, your use
- * of this software is subject to the Facebook Developer Principles and
- * Policies [http://developers.facebook.com/policy/]. This copyright notice
- * shall be included in all copies or substantial portions of the software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
- * THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
- * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
- * DEALINGS IN THE SOFTWARE.
- *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
  */
 
 package com.facebook.ads.sdk;
@@ -34,6 +19,7 @@ import java.util.Map;
 import com.google.common.base.Function;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
+import com.google.common.util.concurrent.MoreExecutors;
 import com.google.common.util.concurrent.SettableFuture;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonArray;
@@ -75,6 +61,13 @@ public class {{name:pascal_case}} extends APINode {
   @SerializedName("creative_id")
   private String mCreativeId = null;
   {{/cls_is_AdCreative}}
+  {{#breakdowns}}
+  // Breakdowns
+  {{#values_with_naming_convention}}
+  @SerializedName("{{value}}")
+  private {{enum_type}} m{{value:pascal_case}} = null;
+  {{/values_with_naming_convention}}
+  {{/breakdowns}}
   protected static Gson gson = null;
 
   {{^has_get}}public {{/has_get}}{{#has_get}}{{#can_be_data_type}}public {{/can_be_data_type}}{{/has_get}}{{name:pascal_case}}() {
@@ -404,6 +397,14 @@ public class {{name:pascal_case}} extends APINode {
   {{/has_get}}
   {{/is_creation_field}}
   {{/fields}}
+  {{#breakdowns}}
+  {{#values_with_naming_convention}}
+  public {{enum_type}} getField{{value:pascal_case}}() {
+    return m{{value:pascal_case}};
+  }
+
+  {{/values_with_naming_convention}}
+  {{/breakdowns}}
 
 
   {{#apis}}
@@ -473,7 +474,8 @@ public class {{name:pascal_case}} extends APINode {
                throw new RuntimeException(e);
              }
            }
-         }
+         },
+         MoreExecutors.directExecutor()
       );
     };
     {{/return_single_node}}
@@ -510,7 +512,8 @@ public class {{name:pascal_case}} extends APINode {
                throw new RuntimeException(e);
              }
            }
-         }
+         },
+         MoreExecutors.directExecutor()
       );
     };
     {{/return_single_node}}
@@ -661,6 +664,11 @@ public class {{name:pascal_case}} extends APINode {
     this.m{{name:pascal_case}} = instance.m{{name:pascal_case}};
     {{/is_creation_field}}
     {{/fields}}
+    {{#breakdowns}}
+    {{#values_with_naming_convention}}
+    this.m{{value:pascal_case}} = instance.m{{value:pascal_case}};
+    {{/values_with_naming_convention}}
+    {{/breakdowns}}
     {{#cls_is_AdCreative}}
     this.mCreativeId = this.mId;
     {{/cls_is_AdCreative}}

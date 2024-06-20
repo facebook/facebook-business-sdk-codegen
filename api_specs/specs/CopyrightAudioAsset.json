@@ -1,16 +1,13 @@
 {
-    "apis": [
-        {
-            "name": "#get",
-            "method": "GET",
-            "return": "CopyrightAudioAsset",
-            "params": []
-        }
-    ],
+    "apis": [],
     "fields": [
         {
-            "name": "copyright",
-            "type": "AudioCopyright"
+            "name": "audio_availability_status",
+            "type": "string"
+        },
+        {
+            "name": "audio_library_policy",
+            "type": "list<map<string, list<map<string, Object>>>>"
         },
         {
             "name": "creation_time",
@@ -19,6 +16,10 @@
         {
             "name": "id",
             "type": "string"
+        },
+        {
+            "name": "reference_files",
+            "type": "list<Object>"
         },
         {
             "name": "title",

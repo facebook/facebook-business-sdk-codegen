@@ -2,6 +2,65 @@
     "apis": [
         {
             "method": "GET",
+            "endpoint": "adaccounts",
+            "return": "AdAccount",
+            "params": [
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "agencies",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "agencies",
+            "return": "Business",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "agencies",
+            "return": "AdsPixel",
+            "params": [
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "permitted_tasks",
+                    "required": true,
+                    "type": "list<adspixelagencies_permitted_tasks_enum_param>"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "ahp_configs",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "applink_autosetup",
+                    "required": true,
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "assigned_users",
             "return": "AssignedUser",
             "params": [
@@ -49,7 +108,7 @@
         {
             "method": "POST",
             "endpoint": "events",
-            "return": "AdsPixel",
+            "return": "Object",
             "params": [
                 {
                     "name": "data",
@@ -70,6 +129,11 @@
                     "name": "platforms",
                     "required": false,
                     "type": "list<map>"
+                },
+                {
+                    "name": "progress",
+                    "required": false,
+                    "type": "Object"
                 },
                 {
                     "name": "test_event_code",
@@ -97,6 +161,44 @@
                     "type": "string"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "offline_event_uploads",
+            "return": "OfflineConversionDataSetUpload",
+            "params": [
+                {
+                    "name": "end_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "order",
+                    "required": false,
+                    "type": "adspixeloffline_event_uploads_order_enum_param"
+                },
+                {
+                    "name": "sort_by",
+                    "required": false,
+                    "type": "adspixeloffline_event_uploads_sort_by_enum_param"
+                },
+                {
+                    "name": "start_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "upload_tag",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "openbridge_configurations",
+            "return": "OpenBridgeConfiguration",
+            "params": []
         },
         {
             "method": "POST",
@@ -189,12 +291,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "telemetry",
-            "return": "Object",
-            "params": []
-        },
-        {
             "name": "#get",
             "method": "GET",
             "return": "AdsPixel",
@@ -252,6 +348,10 @@
             "type": "string"
         },
         {
+            "name": "config",
+            "type": "string"
+        },
+        {
             "name": "creation_time",
             "type": "datetime"
         },
@@ -264,16 +364,48 @@
             "type": "string"
         },
         {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "duplicate_entries",
+            "type": "int"
+        },
+        {
+            "name": "enable_auto_assign_to_accounts",
+            "type": "bool"
+        },
+        {
             "name": "enable_automatic_matching",
             "type": "bool"
+        },
+        {
+            "name": "event_stats",
+            "type": "string"
+        },
+        {
+            "name": "event_time_max",
+            "type": "int"
+        },
+        {
+            "name": "event_time_min",
+            "type": "int"
         },
         {
             "name": "first_party_cookie_status",
             "type": "string"
         },
         {
+            "name": "has_1p_pixel_event",
+            "type": "bool"
+        },
+        {
             "name": "id",
             "type": "string"
+        },
+        {
+            "name": "is_consolidated_container",
+            "type": "bool"
         },
         {
             "name": "is_created_by_business",
@@ -284,12 +416,36 @@
             "type": "bool"
         },
         {
+            "name": "is_mta_use",
+            "type": "bool"
+        },
+        {
+            "name": "is_restricted_use",
+            "type": "bool"
+        },
+        {
             "name": "is_unavailable",
             "type": "bool"
         },
         {
             "name": "last_fired_time",
             "type": "datetime"
+        },
+        {
+            "name": "last_upload_app",
+            "type": "string"
+        },
+        {
+            "name": "last_upload_app_changed_time",
+            "type": "int"
+        },
+        {
+            "name": "match_rate_approx",
+            "type": "int"
+        },
+        {
+            "name": "matched_entries",
+            "type": "int"
         },
         {
             "name": "name",
@@ -302,6 +458,18 @@
         {
             "name": "owner_business",
             "type": "Business"
+        },
+        {
+            "name": "usage",
+            "type": "OfflineConversionDataSetUsage"
+        },
+        {
+            "name": "user_access_expire_time",
+            "type": "datetime"
+        },
+        {
+            "name": "valid_entries",
+            "type": "int"
         }
     ]
 }

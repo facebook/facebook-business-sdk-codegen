@@ -1,0 +1,24 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "PlaceTag",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "created_time",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "place",
+            "type": "Page"
+        }
+    ]
+}

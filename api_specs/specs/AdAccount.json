@@ -2,6 +2,29 @@
     "apis": [
         {
             "method": "GET",
+            "endpoint": "account_controls",
+            "return": "AdAccountBusinessConstraints",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "account_controls",
+            "return": "AdAccountBusinessConstraints",
+            "params": [
+                {
+                    "name": "audience_controls",
+                    "required": true,
+                    "type": "Object"
+                },
+                {
+                    "name": "placement_controls",
+                    "required": false,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "activities",
             "return": "AdActivity",
             "params": [
@@ -188,6 +211,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "branded_content",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "branded_content_sponsor_page_id",
                     "required": false,
                     "type": "string"
@@ -213,6 +241,16 @@
                     "type": "adaccountadcreatives_category_media_source_enum_param"
                 },
                 {
+                    "name": "contextual_multi_ads",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "degrees_of_freedom_spec",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "destination_set_id",
                     "required": false,
                     "type": "string"
@@ -226,6 +264,11 @@
                     "name": "enable_launch_instant_app",
                     "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "facebook_branded_content",
+                    "required": false,
+                    "type": "map"
                 },
                 {
                     "name": "image_crops",
@@ -253,6 +296,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "instagram_branded_content",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "instagram_permalink_url",
                     "required": false,
                     "type": "string"
@@ -261,11 +309,6 @@
                     "name": "instagram_user_id",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "instant_checkout_setting",
-                    "required": false,
-                    "type": "adaccountadcreatives_instant_checkout_setting_enum_param"
                 },
                 {
                     "name": "interactive_components_spec",
@@ -284,11 +327,6 @@
                 },
                 {
                     "name": "link_url",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "messenger_sponsored_message",
                     "required": false,
                     "type": "string"
                 },
@@ -326,6 +364,11 @@
                     "name": "omnichannel_link_spec",
                     "required": false,
                     "type": "map"
+                },
+                {
+                    "name": "page_welcome_message",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "place_page_set_id",
@@ -370,7 +413,7 @@
                 {
                     "name": "template_url_spec",
                     "required": false,
-                    "type": "Object"
+                    "type": "string"
                 },
                 {
                     "name": "thumbnail_url",
@@ -457,6 +500,11 @@
                     "name": "name",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "selected_hashes",
+                    "required": false,
+                    "type": "list<string>"
                 }
             ]
         },
@@ -468,7 +516,7 @@
                 {
                     "name": "bytes",
                     "required": false,
-                    "type": "Object"
+                    "type": "string"
                 },
                 {
                     "name": "copy_from",
@@ -631,7 +679,7 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 },
                 {
                     "name": "updated_since",
@@ -645,6 +693,16 @@
             "endpoint": "ads",
             "return": "Ad",
             "params": [
+                {
+                    "name": "ad_schedule_end_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "ad_schedule_start_time",
+                    "required": false,
+                    "type": "datetime"
+                },
                 {
                     "name": "adlabels",
                     "required": false,
@@ -679,6 +737,11 @@
                     "name": "creative",
                     "required": true,
                     "type": "AdCreative"
+                },
+                {
+                    "name": "creative_asset_groups_spec",
+                    "required": false,
+                    "type": "Object"
                 },
                 {
                     "name": "date_format",
@@ -739,13 +802,31 @@
         },
         {
             "method": "GET",
+            "endpoint": "ads_reporting_mmm_reports",
+            "return": "AdsReportBuilderMMMReport",
+            "params": [
+                {
+                    "name": "filtering",
+                    "required": false,
+                    "type": "list<map>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "ads_reporting_mmm_schedulers",
+            "return": "AdsReportBuilderMMMReportScheduler",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "ads_volume",
             "return": "AdAccountAdVolume",
             "params": [
                 {
                     "name": "page_id",
                     "required": false,
-                    "type": "int"
+                    "type": "string"
                 },
                 {
                     "name": "recommendation_type",
@@ -799,7 +880,12 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
+                },
+                {
+                    "name": "updated_since",
+                    "required": false,
+                    "type": "int"
                 }
             ]
         },
@@ -849,6 +935,11 @@
                     "type": "adaccountadsets_billing_event_enum_param"
                 },
                 {
+                    "name": "campaign_attribution",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
                     "name": "campaign_id",
                     "required": false,
                     "type": "string"
@@ -892,6 +983,16 @@
                     "name": "destination_type",
                     "required": false,
                     "type": "adaccountadsets_destination_type_enum_param"
+                },
+                {
+                    "name": "dsa_beneficiary",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "dsa_payor",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "end_time",
@@ -984,6 +1085,16 @@
                     "type": "string"
                 },
                 {
+                    "name": "regional_regulated_categories",
+                    "required": false,
+                    "type": "list<adaccountadsets_regional_regulated_categories_enum_param>"
+                },
+                {
+                    "name": "regional_regulation_identities",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "rf_prediction_id",
                     "required": false,
                     "type": "string"
@@ -1037,11 +1148,6 @@
                     "name": "tune_for_category",
                     "required": false,
                     "type": "adaccountadsets_tune_for_category_enum_param"
-                },
-                {
-                    "name": "upstream_events",
-                    "required": false,
-                    "type": "map"
                 }
             ]
         },
@@ -1172,11 +1278,6 @@
             "endpoint": "advideos",
             "return": "AdVideo",
             "params": [
-                {
-                    "name": "adaptive_type",
-                    "required": false,
-                    "type": "string"
-                },
                 {
                     "name": "animated_effect_id",
                     "required": false,
@@ -1323,11 +1424,6 @@
                     "type": "bool"
                 },
                 {
-                    "name": "has_nickname",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "holiday_card",
                     "required": false,
                     "type": "string"
@@ -1416,11 +1512,6 @@
                     "name": "publish_event_id",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "react_mode_metadata",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "referenced_sticker_id",
@@ -1559,6 +1650,23 @@
             "params": []
         },
         {
+            "method": "POST",
+            "endpoint": "agencies",
+            "return": "AdAccount",
+            "params": [
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "permitted_tasks",
+                    "required": false,
+                    "type": "list<adaccountagencies_permitted_tasks_enum_param>"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "applications",
             "return": "Application",
@@ -1679,6 +1787,12 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "audience_funnel",
+            "return": "AudienceFunnel",
+            "params": []
+        },
+        {
             "method": "POST",
             "endpoint": "block_list_drafts",
             "return": "AdAccount",
@@ -1699,6 +1813,18 @@
                     "name": "custom_categories_only",
                     "required": false,
                     "type": "bool"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "businessprojects",
+            "return": "BusinessProject",
+            "params": [
+                {
+                    "name": "business",
+                    "required": false,
+                    "type": "string"
                 }
             ]
         },
@@ -1752,7 +1878,7 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 }
             ]
         },
@@ -1865,11 +1991,6 @@
                     "name": "topline_id",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "upstream_events",
-                    "required": false,
-                    "type": "map"
                 }
             ]
         },
@@ -1898,62 +2019,27 @@
         },
         {
             "method": "GET",
-            "endpoint": "content_delivery_report",
-            "return": "ContentDeliveryReport",
+            "endpoint": "connected_instagram_accounts_with_iabp",
+            "return": "InstagramUser",
             "params": [
                 {
-                    "name": "end_date",
+                    "name": "business_id",
                     "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "page_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "platform",
-                    "required": true,
-                    "type": "adaccountcontent_delivery_report_platform_enum_param"
-                },
-                {
-                    "name": "position",
-                    "required": true,
-                    "type": "adaccountcontent_delivery_report_position_enum_param"
-                },
-                {
-                    "name": "start_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "summary",
-                    "required": false,
-                    "type": "bool"
+                    "type": "string"
                 }
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "create_and_apply_publisher_block_list",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "is_auto_blocking_on",
-                    "required": true,
-                    "type": "bool"
-                },
-                {
-                    "name": "name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "publisher_urls",
-                    "required": true,
-                    "type": "list<string>"
-                }
-            ]
+            "method": "GET",
+            "endpoint": "conversion_goals",
+            "return": "AdsConversionGoal",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "cpa_guidance",
+            "return": "BespokePartnerGuidanceLaser",
+            "params": []
         },
         {
             "method": "GET",
@@ -1964,6 +2050,11 @@
                     "name": "business_id",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "fetch_primary_audience",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "fields",
@@ -2148,9 +2239,19 @@
                     "type": "adaccountcustomaudiences_subtype_enum_param"
                 },
                 {
+                    "name": "use_in_campaigns",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "video_group_ids",
                     "required": false,
                     "type": "list<string>"
+                },
+                {
+                    "name": "whats_app_business_phone_number_id",
+                    "required": false,
+                    "type": "string"
                 }
             ]
         },
@@ -2188,6 +2289,11 @@
             "endpoint": "customconversions",
             "return": "CustomConversion",
             "params": [
+                {
+                    "name": "action_source_type",
+                    "required": false,
+                    "type": "adaccountcustomconversions_action_source_type_enum_param"
+                },
                 {
                     "name": "advanced_rule",
                     "required": false,
@@ -2261,6 +2367,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "dsa_recommendations",
+            "return": "AdAccountDsaRecommendations",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "generatepreviews",
             "return": "AdPreview",
             "params": [
@@ -2273,6 +2385,11 @@
                     "name": "creative",
                     "required": true,
                     "type": "AdCreative"
+                },
+                {
+                    "name": "creative_feature",
+                    "required": false,
+                    "type": "adaccountgeneratepreviews_creative_feature_enum_param"
                 },
                 {
                     "name": "dynamic_asset_label",
@@ -2435,12 +2552,12 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 },
                 {
                     "name": "time_ranges",
                     "required": false,
-                    "type": "list<Object>"
+                    "type": "list<map>"
                 },
                 {
                     "name": "use_account_attribution_setting",
@@ -2547,12 +2664,12 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 },
                 {
                     "name": "time_ranges",
                     "required": false,
-                    "type": "list<Object>"
+                    "type": "list<map>"
                 },
                 {
                     "name": "use_account_attribution_setting",
@@ -2601,6 +2718,26 @@
                 },
                 {
                     "name": "conversion_domain",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "custom_event_type",
+                    "required": false,
+                    "type": "adaccountmanaged_partner_ads_custom_event_type_enum_param"
+                },
+                {
+                    "name": "daily_budget",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "dsa_beneficiary",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "dsa_payor",
                     "required": false,
                     "type": "string"
                 },
@@ -2705,12 +2842,6 @@
                     "type": "int"
                 }
             ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "offline_conversion_data_sets",
-            "return": "OfflineConversionDataSet",
-            "params": []
         },
         {
             "method": "GET",
@@ -2999,6 +3130,11 @@
                     "type": "unsigned int"
                 },
                 {
+                    "name": "is_balanced_frequency",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "is_bonus_media",
                     "required": false,
                     "type": "bool"
@@ -3085,6 +3221,16 @@
                 },
                 {
                     "name": "target_cpm",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "target_frequency",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "target_frequency_reset_period",
                     "required": false,
                     "type": "unsigned int"
                 },
@@ -3183,6 +3329,11 @@
                     "type": "list<adaccounttargetingbrowse_regulated_categories_enum_param>"
                 },
                 {
+                    "name": "regulated_countries",
+                    "required": false,
+                    "type": "list<adaccounttargetingbrowse_regulated_countries_enum_param>"
+                },
+                {
                     "name": "whitelisted_types",
                     "required": false,
                     "type": "list<adaccounttargetingbrowse_whitelisted_types_enum_param>"
@@ -3208,6 +3359,16 @@
                     "name": "countries",
                     "required": false,
                     "type": "list<string>"
+                },
+                {
+                    "name": "is_account_level_brand_safety_exclusion",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_account_level_employer_exclusion",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "is_exclusion",
@@ -3238,6 +3399,11 @@
                     "name": "regulated_categories",
                     "required": false,
                     "type": "list<adaccounttargetingsearch_regulated_categories_enum_param>"
+                },
+                {
+                    "name": "regulated_countries",
+                    "required": false,
+                    "type": "list<adaccounttargetingsearch_regulated_countries_enum_param>"
                 },
                 {
                     "name": "session_id",
@@ -3322,6 +3488,11 @@
                     "name": "regulated_categories",
                     "required": false,
                     "type": "list<adaccounttargetingsuggestions_regulated_categories_enum_param>"
+                },
+                {
+                    "name": "regulated_countries",
+                    "required": false,
+                    "type": "list<adaccounttargetingsuggestions_regulated_countries_enum_param>"
                 },
                 {
                     "name": "session_id",
@@ -3414,6 +3585,18 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "value_adjustment_rule_collections",
+            "return": "AdsValueAdjustmentRuleCollection",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "value_adjustment_rules",
+            "return": "AdsValueAdjustmentRule",
+            "params": []
+        },
+        {
             "name": "#get",
             "method": "GET",
             "return": "AdAccount",
@@ -3445,6 +3628,21 @@
                     "type": "adaccount_currency"
                 },
                 {
+                    "name": "custom_audience_info",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "default_dsa_beneficiary",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "default_dsa_payor",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "end_advertiser",
                     "required": false,
                     "type": "string"
@@ -3468,11 +3666,6 @@
                     "name": "name",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "odax_opt_in",
-                    "required": false,
-                    "type": "bool"
                 },
                 {
                     "name": "partner",
@@ -3524,6 +3717,10 @@
             "type": "AgencyClientDeclaration"
         },
         {
+            "name": "all_capabilities",
+            "type": "list<string>"
+        },
+        {
             "name": "amount_spent",
             "type": "string"
         },
@@ -3534,6 +3731,10 @@
         {
             "name": "balance",
             "type": "string"
+        },
+        {
+            "name": "brand_safety_content_filter_levels",
+            "type": "list<string>"
         },
         {
             "name": "business",
@@ -3584,6 +3785,18 @@
             "type": "string"
         },
         {
+            "name": "custom_audience_info",
+            "type": "CustomAudienceGroup"
+        },
+        {
+            "name": "default_dsa_beneficiary",
+            "type": "string"
+        },
+        {
+            "name": "default_dsa_payor",
+            "type": "string"
+        },
+        {
             "name": "disable_reason",
             "type": "unsigned int"
         },
@@ -3618,10 +3831,6 @@
         {
             "name": "funding_source_details",
             "type": "FundingSourceDetails"
-        },
-        {
-            "name": "has_advertiser_opted_in_odax",
-            "type": "bool"
         },
         {
             "name": "has_migrated_permissions",
@@ -3668,6 +3877,10 @@
             "type": "bool"
         },
         {
+            "name": "liable_address",
+            "type": "CRMAddress"
+        },
+        {
             "name": "line_numbers",
             "type": "list<int>"
         },
@@ -3696,6 +3909,10 @@
             "type": "string"
         },
         {
+            "name": "owner_business",
+            "type": "Business"
+        },
+        {
             "name": "partner",
             "type": "string"
         },
@@ -3704,8 +3921,16 @@
             "type": "ReachFrequencySpec"
         },
         {
+            "name": "send_bill_to_address",
+            "type": "CRMAddress"
+        },
+        {
             "name": "show_checkout_experience",
             "type": "bool"
+        },
+        {
+            "name": "sold_to_address",
+            "type": "CRMAddress"
         },
         {
             "name": "spend_cap",
@@ -3740,12 +3965,20 @@
             "type": "map<string, int>"
         },
         {
+            "name": "user_access_expire_time",
+            "type": "datetime"
+        },
+        {
             "name": "user_tasks",
             "type": "list<string>"
         },
         {
             "name": "user_tos_accepted",
             "type": "map<string, int>"
+        },
+        {
+            "name": "viewable_business",
+            "type": "Business"
         }
     ]
 }

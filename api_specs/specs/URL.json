@@ -29,7 +29,7 @@
                 {
                     "name": "locale",
                     "required": false,
-                    "type": "list<Object>"
+                    "type": "list<string>"
                 },
                 {
                     "name": "scopes",
@@ -46,20 +46,12 @@
     ],
     "fields": [
         {
-            "name": "development_instant_article",
-            "type": "InstantArticle"
-        },
-        {
             "name": "engagement",
             "type": "Object"
         },
         {
             "name": "id",
             "type": "string"
-        },
-        {
-            "name": "instant_article",
-            "type": "InstantArticle"
         },
         {
             "name": "og_object",

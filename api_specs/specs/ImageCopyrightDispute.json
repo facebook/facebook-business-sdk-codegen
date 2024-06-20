@@ -1,0 +1,48 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ImageCopyrightDispute",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "appeal_form_data",
+            "type": "string"
+        },
+        {
+            "name": "dispute_form_data",
+            "type": "string"
+        },
+        {
+            "name": "expiration_time",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "match_id",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "time_appealed",
+            "type": "datetime"
+        },
+        {
+            "name": "time_created",
+            "type": "datetime"
+        },
+        {
+            "name": "time_updated",
+            "type": "datetime"
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "models",
+            "return": "AvatarModel",
+            "params": [
+                {
+                    "name": "client_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "client_version",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "config_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "force_generate",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "platform",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "profile",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "sdk_version",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "Avatar",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        }
+    ]
+}

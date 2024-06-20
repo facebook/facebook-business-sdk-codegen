@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "is_disabled",
+            "type": "bool"
+        },
+        {
+            "name": "optimization_goal",
+            "type": "AdAccountOptimizationGoalsAEMv2Eligibility_optimization_goal"
+        }
+    ]
+}

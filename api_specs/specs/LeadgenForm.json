@@ -59,11 +59,15 @@
         },
         {
             "name": "context_card",
-            "type": "Object"
+            "type": "LeadGenContextCard"
         },
         {
             "name": "created_time",
             "type": "datetime"
+        },
+        {
+            "name": "creator",
+            "type": "User"
         },
         {
             "name": "expired_leads_count",
@@ -91,7 +95,7 @@
         },
         {
             "name": "legal_content",
-            "type": "Object"
+            "type": "LeadGenLegalContent"
         },
         {
             "name": "locale",
@@ -131,11 +135,11 @@
         },
         {
             "name": "thank_you_page",
-            "type": "Object"
+            "type": "LeadGenThankYouPage"
         },
         {
             "name": "tracking_parameters",
-            "type": "map<string, string>"
+            "type": "list<map<string, string>>"
         }
     ]
 }

@@ -1,0 +1,45 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "action_type",
+            "type": "string"
+        },
+        {
+            "name": "ad_study_end_time",
+            "type": "datetime"
+        },
+        {
+            "name": "ad_study_id",
+            "type": "string"
+        },
+        {
+            "name": "ad_study_name",
+            "type": "string"
+        },
+        {
+            "name": "ad_study_start_time",
+            "type": "datetime"
+        },
+        {
+            "name": "cell_id",
+            "type": "string"
+        },
+        {
+            "name": "cell_name",
+            "type": "string"
+        },
+        {
+            "name": "holdout_size",
+            "type": "float"
+        },
+        {
+            "name": "ico_type",
+            "type": "string"
+        },
+        {
+            "name": "objectives",
+            "type": "list<Object>"
+        }
+    ]
+}

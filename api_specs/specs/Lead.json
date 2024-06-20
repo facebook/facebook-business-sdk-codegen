@@ -75,6 +75,14 @@
             "type": "string"
         },
         {
+            "name": "post",
+            "type": "Link"
+        },
+        {
+            "name": "post_submission_check_result",
+            "type": "LeadGenPostSubmissionCheckResult"
+        },
+        {
             "name": "retailer_item_id",
             "type": "string"
         },

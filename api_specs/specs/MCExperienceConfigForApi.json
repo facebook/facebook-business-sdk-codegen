@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "is_campaign_enabled",
+            "type": "bool"
+        },
+        {
+            "name": "is_terms_signed",
+            "type": "bool"
+        },
+        {
+            "name": "merchant_type",
+            "type": "string"
+        }
+    ]
+}

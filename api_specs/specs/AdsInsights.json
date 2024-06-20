@@ -22,10 +22,6 @@
             "type": "list<AdsActionStats>"
         },
         {
-            "name": "ad_bid_value",
-            "type": "string"
-        },
-        {
             "name": "ad_click_actions",
             "type": "list<AdsActionStats>"
         },
@@ -42,8 +38,8 @@
             "type": "string"
         },
         {
-            "name": "adset_bid_value",
-            "type": "string"
+            "name": "adjusted_offline_purchase",
+            "type": "list<Object>"
         },
         {
             "name": "adset_end",
@@ -230,6 +226,10 @@
             "type": "string"
         },
         {
+            "name": "creative_media_type",
+            "type": "string"
+        },
+        {
             "name": "ctr",
             "type": "string"
         },
@@ -310,6 +310,10 @@
             "type": "string"
         },
         {
+            "name": "instagram_upcoming_event_reminders_set",
+            "type": "string"
+        },
+        {
             "name": "instant_experience_clicks_to_open",
             "type": "string"
         },
@@ -334,12 +338,32 @@
             "type": "string"
         },
         {
+            "name": "marketing_messages_cost_per_delivered",
+            "type": "string"
+        },
+        {
+            "name": "marketing_messages_cost_per_link_btn_click",
+            "type": "string"
+        },
+        {
+            "name": "marketing_messages_spend",
+            "type": "string"
+        },
+        {
+            "name": "marketing_messages_website_purchase_values",
+            "type": "string"
+        },
+        {
             "name": "mobile_app_purchase_roas",
             "type": "list<AdsActionStats>"
         },
         {
             "name": "objective",
             "type": "string"
+        },
+        {
+            "name": "onsite_conversion_messaging_detected_purchase_deduped",
+            "type": "list<AdsActionStats>"
         },
         {
             "name": "optimization_goal",
@@ -370,19 +394,11 @@
             "type": "string"
         },
         {
-            "name": "quality_score_ectr",
-            "type": "string"
-        },
-        {
-            "name": "quality_score_ecvr",
-            "type": "string"
-        },
-        {
-            "name": "quality_score_organic",
-            "type": "string"
-        },
-        {
             "name": "reach",
+            "type": "string"
+        },
+        {
+            "name": "shops_assisted_purchases",
             "type": "string"
         },
         {
@@ -396,6 +412,14 @@
         {
             "name": "total_postbacks",
             "type": "string"
+        },
+        {
+            "name": "total_postbacks_detailed",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "total_postbacks_detailed_v4",
+            "type": "list<AdsActionStats>"
         },
         {
             "name": "unique_actions",
@@ -487,19 +511,19 @@
         },
         {
             "name": "video_play_curve_actions",
-            "type": "list<Object>"
+            "type": "list<AdsHistogramStats>"
         },
         {
             "name": "video_play_retention_0_to_15s_actions",
-            "type": "list<Object>"
+            "type": "list<AdsHistogramStats>"
         },
         {
             "name": "video_play_retention_20_to_60s_actions",
-            "type": "list<Object>"
+            "type": "list<AdsHistogramStats>"
         },
         {
             "name": "video_play_retention_graph_actions",
-            "type": "list<Object>"
+            "type": "list<AdsHistogramStats>"
         },
         {
             "name": "video_thruplay_watched_actions",

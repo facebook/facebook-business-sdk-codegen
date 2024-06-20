@@ -1,0 +1,37 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "7d_volume",
+            "type": "int"
+        },
+        {
+            "name": "dismissed",
+            "type": "bool"
+        },
+        {
+            "name": "end_time",
+            "type": "datetime"
+        },
+        {
+            "name": "event_type",
+            "type": "string"
+        },
+        {
+            "name": "rank",
+            "type": "int"
+        },
+        {
+            "name": "rule",
+            "type": "string"
+        },
+        {
+            "name": "sample_urls",
+            "type": "list<string>"
+        },
+        {
+            "name": "start_time",
+            "type": "datetime"
+        }
+    ]
+}

@@ -8,6 +8,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "ar_effects",
+            "return": "AREffect",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "authorized_adaccounts",
             "return": "AdAccount",
             "params": [
@@ -30,6 +36,34 @@
                 },
                 {
                     "name": "business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "upcoming_events",
+            "return": "IGUpcomingEvent",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "upcoming_events",
+            "return": "IGUpcomingEvent",
+            "params": [
+                {
+                    "name": "end_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "start_time",
+                    "required": true,
+                    "type": "datetime"
+                },
+                {
+                    "name": "title",
                     "required": true,
                     "type": "string"
                 }
@@ -80,6 +114,10 @@
         {
             "name": "mini_shop_storefront",
             "type": "Shop"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
         },
         {
             "name": "profile_pic",

@@ -1,0 +1,40 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "BrandSafetyDownloadable",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "account_context_id",
+            "type": "string"
+        },
+        {
+            "name": "async_job_percent_complete",
+            "type": "int"
+        },
+        {
+            "name": "async_job_status",
+            "type": "string"
+        },
+        {
+            "name": "file_name",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "request_surface",
+            "type": "string"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        }
+    ]
+}

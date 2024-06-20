@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "number",
+            "type": "string"
+        },
+        {
+            "name": "primary",
+            "type": "bool"
+        },
+        {
+            "name": "type",
+            "type": "string"
+        }
+    ]
+}

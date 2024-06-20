@@ -6,11 +6,6 @@
             "return": "ProfilePictureSource",
             "params": [
                 {
-                    "name": "breaking_change",
-                    "required": false,
-                    "type": "profilepicture_breaking_change_enum_param"
-                },
-                {
                     "name": "height",
                     "required": false,
                     "type": "int"

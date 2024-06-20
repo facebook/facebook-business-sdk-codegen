@@ -118,7 +118,7 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 },
                 {
                     "name": "updated_since",
@@ -140,34 +140,29 @@
             ]
         },
         {
-            "method": "GET",
-            "endpoint": "content_delivery_report",
-            "return": "ContentDeliveryReport",
+            "method": "POST",
+            "endpoint": "budget_schedules",
+            "return": "HighDemandPeriod",
             "params": [
                 {
-                    "name": "end_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "platform",
+                    "name": "budget_value",
                     "required": true,
-                    "type": "adcampaigncontent_delivery_report_platform_enum_param"
+                    "type": "unsigned int"
                 },
                 {
-                    "name": "position",
+                    "name": "budget_value_type",
                     "required": true,
-                    "type": "adcampaigncontent_delivery_report_position_enum_param"
+                    "type": "adcampaignbudget_schedules_budget_value_type_enum_param"
                 },
                 {
-                    "name": "start_date",
-                    "required": false,
-                    "type": "datetime"
+                    "name": "time_end",
+                    "required": true,
+                    "type": "unsigned int"
                 },
                 {
-                    "name": "summary",
-                    "required": false,
-                    "type": "bool"
+                    "name": "time_start",
+                    "required": true,
+                    "type": "unsigned int"
                 }
             ]
         },
@@ -194,7 +189,7 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 }
             ]
         },
@@ -355,12 +350,12 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 },
                 {
                     "name": "time_ranges",
                     "required": false,
-                    "type": "list<Object>"
+                    "type": "list<map>"
                 },
                 {
                     "name": "use_account_attribution_setting",
@@ -467,12 +462,12 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 },
                 {
                     "name": "time_ranges",
                     "required": false,
-                    "type": "list<Object>"
+                    "type": "list<map>"
                 },
                 {
                     "name": "use_account_attribution_setting",
@@ -521,7 +516,7 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 }
             ]
         },
@@ -576,6 +571,11 @@
                     "type": "adcampaign_billing_event"
                 },
                 {
+                    "name": "campaign_attribution",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
                     "name": "campaign_spec",
                     "required": false,
                     "type": "Object"
@@ -614,6 +614,16 @@
                     "name": "destination_type",
                     "required": false,
                     "type": "adcampaign_destination_type"
+                },
+                {
+                    "name": "dsa_beneficiary",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "dsa_payor",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "end_time",
@@ -691,6 +701,16 @@
                     "type": "string"
                 },
                 {
+                    "name": "regional_regulated_categories",
+                    "required": false,
+                    "type": "list<adcampaign_regional_regulated_categories>"
+                },
+                {
+                    "name": "regional_regulation_identities",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "rf_prediction_id",
                     "required": false,
                     "type": "string"
@@ -734,11 +754,6 @@
                     "name": "tune_for_category",
                     "required": false,
                     "type": "adcampaign_tune_for_category"
-                },
-                {
-                    "name": "upstream_events",
-                    "required": false,
-                    "type": "map"
                 }
             ]
         }
@@ -797,6 +812,14 @@
             "type": "Campaign"
         },
         {
+            "name": "campaign_active_time",
+            "type": "string"
+        },
+        {
+            "name": "campaign_attribution",
+            "type": "string"
+        },
+        {
             "name": "campaign_id",
             "type": "string"
         },
@@ -829,6 +852,14 @@
             "type": "string"
         },
         {
+            "name": "dsa_beneficiary",
+            "type": "string"
+        },
+        {
+            "name": "dsa_payor",
+            "type": "string"
+        },
+        {
             "name": "effective_status",
             "type": "AdSet_effective_status"
         },
@@ -855,6 +886,10 @@
         {
             "name": "instagram_actor_id",
             "type": "string"
+        },
+        {
+            "name": "is_budget_schedule_enabled",
+            "type": "bool"
         },
         {
             "name": "is_dynamic_creative",
@@ -917,6 +952,14 @@
             "type": "bool"
         },
         {
+            "name": "regional_regulated_categories",
+            "type": "list<string>"
+        },
+        {
+            "name": "regional_regulation_identities",
+            "type": "RegionalRegulationIdentities"
+        },
+        {
             "name": "review_feedback",
             "type": "string"
         },
@@ -946,7 +989,7 @@
         },
         {
             "name": "targeting_optimization_types",
-            "type": "map<string, int>"
+            "type": "list<map<string, int>>"
         },
         {
             "name": "time_based_ad_rotation_id_blocks",

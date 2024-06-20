@@ -1,0 +1,36 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdCreationPackageConfig",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "api_version",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_eligible_for_default_opt_in",
+            "type": "bool"
+        },
+        {
+            "name": "objective",
+            "type": "string"
+        },
+        {
+            "name": "package_id",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        }
+    ]
+}

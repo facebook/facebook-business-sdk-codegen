@@ -143,12 +143,20 @@
             "type": "list<string>"
         },
         {
+            "name": "tags",
+            "type": "list<string>"
+        },
+        {
             "name": "unit_price",
             "type": "Object"
         },
         {
             "name": "url",
             "type": "string"
+        },
+        {
+            "name": "visibility",
+            "type": "Flight_visibility"
         }
     ]
 }

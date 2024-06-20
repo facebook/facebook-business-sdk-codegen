@@ -1,0 +1,28 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "SignalsIWLExtractor",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "domain_uri",
+            "type": "string"
+        },
+        {
+            "name": "event_type",
+            "type": "string"
+        },
+        {
+            "name": "extractor_type",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        }
+    ]
+}

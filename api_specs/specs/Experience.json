@@ -7,7 +7,7 @@
         },
         {
             "name": "from",
-            "type": "User"
+            "type": "Object"
         },
         {
             "name": "id",

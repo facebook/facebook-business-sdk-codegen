@@ -16,10 +16,10 @@
   </licenses>
   <developers>
     <developer>
-      <name>Ellen Tao</name>
-      <email>ellentao@fb.com</email>
-      <organization>Facebook Inc.</organization>
-      <organizationUrl>https://www.facebook.com</organizationUrl>
+      <name>Shuotian Cheng</name>
+      <email>shuotian@meta.com</email>
+      <organization>Meta</organization>
+      <organizationUrl>https://www.meta.com/</organizationUrl>
     </developer>
   </developers>
   <build>
@@ -252,7 +252,7 @@
     <dependency>
       <groupId>com.google.code.gson</groupId>
       <artifactId>gson</artifactId>
-      <version>2.5</version>
+      <version>2.8.9</version>
     </dependency>
     <dependency>
       <groupId>com.squareup.okhttp3</groupId>
@@ -262,7 +262,7 @@
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
-      <version>20.0</version>
+      <version>33.0.0-jre</version>
     </dependency>
 
   </dependencies>

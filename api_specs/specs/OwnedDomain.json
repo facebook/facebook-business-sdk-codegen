@@ -1,0 +1,32 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "OwnedDomain",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "domain_name",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "verification_code",
+            "type": "string"
+        }
+    ]
+}

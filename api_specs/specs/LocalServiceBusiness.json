@@ -115,8 +115,16 @@
             "type": "list<string>"
         },
         {
+            "name": "local_info",
+            "type": "ProductItemLocalInfo"
+        },
+        {
             "name": "local_service_business_id",
             "type": "string"
+        },
+        {
+            "name": "main_local_info",
+            "type": "ProductItemLocalInfo"
         },
         {
             "name": "phone",
@@ -143,6 +151,10 @@
             "type": "string"
         },
         {
+            "name": "tags",
+            "type": "list<string>"
+        },
+        {
             "name": "title",
             "type": "string"
         },
@@ -157,6 +169,10 @@
         {
             "name": "vendor_id",
             "type": "string"
+        },
+        {
+            "name": "visibility",
+            "type": "LocalServiceBusiness_visibility"
         }
     ]
 }

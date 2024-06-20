@@ -10,7 +10,7 @@
     "fields": [
         {
             "name": "channels",
-            "type": "map<string, map<string, string>>"
+            "type": "list<map<string, list<map<string, string>>>>"
         },
         {
             "name": "description",
@@ -38,7 +38,7 @@
         },
         {
             "name": "objectives",
-            "type": "map<Object, Object>"
+            "type": "list<map<Object, Object>>"
         },
         {
             "name": "owner_id",
@@ -62,7 +62,7 @@
         },
         {
             "name": "verticals",
-            "type": "map<string, string>"
+            "type": "list<map<string, string>>"
         }
     ]
 }

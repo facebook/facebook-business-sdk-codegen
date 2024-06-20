@@ -63,14 +63,27 @@
         "is_file_param": true
       }
     },
+    "AdAccountDeliveryEstimate": {
+      "$.fields[?(@.name=='targeting_optimization_types')]": {
+        "targeting_optimization_types": true
+      }
+    },
     "AdSet": {
       "$.apis[?(@.method=='POST' && @.endpoint=='insights')]": {
         "return": "AdReportRun"
+      },
+      "$.fields[?(@.name=='targeting_optimization_types')]": {
+        "targeting_optimization_types": true
       }
     },
     "Campaign": {
       "$.apis[?(@.method=='POST' && @.endpoint=='insights')]": {
         "return": "AdReportRun"
+      }
+    },
+    "AdCampaignDeliveryEstimate": {
+      "$.fields[?(@.name=='targeting_optimization_types')]": {
+        "targeting_optimization_types": true
       }
     },
     "Ad": {
@@ -124,6 +137,26 @@
     "AdAccountUser": ["python_use_mixin"],
     "AdReportRun": ["python_use_mixin"],
     "AdPreview": ["python_use_mixin"]
+  },
+  "enum_overriding": {
+    "ProductCatalogDiagnosticGroup_affected_channels": {
+      "values": [
+        "b2c_marketplace",
+            "c2c_marketplace",
+            "da",
+            "daily_deals",
+            "daily_deals_legacy",
+            "ig_product_tagging",
+            "marketplace",
+            "marketplace_ads_deprecated",
+            "marketplace_shops",
+            "mini_shops",
+            "offline_conversions",
+            "shops",
+            "universal_checkout",
+            "whatsapp"
+      ]
+    }
   },
   "read_endpoints": {
     "Ad": "ads",

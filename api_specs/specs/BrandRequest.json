@@ -1,0 +1,96 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "BrandRequest",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "ad_countries",
+            "type": "list<string>"
+        },
+        {
+            "name": "additional_contacts",
+            "type": "list<string>"
+        },
+        {
+            "name": "approval_level",
+            "type": "unsigned int"
+        },
+        {
+            "name": "cells",
+            "type": "list<Object>"
+        },
+        {
+            "name": "countries",
+            "type": "list<string>"
+        },
+        {
+            "name": "deny_reason",
+            "type": "string"
+        },
+        {
+            "name": "end_time",
+            "type": "datetime"
+        },
+        {
+            "name": "estimated_reach",
+            "type": "unsigned int"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_multicell",
+            "type": "bool"
+        },
+        {
+            "name": "locale",
+            "type": "string"
+        },
+        {
+            "name": "max_age",
+            "type": "unsigned int"
+        },
+        {
+            "name": "min_age",
+            "type": "unsigned int"
+        },
+        {
+            "name": "questions",
+            "type": "list<Object>"
+        },
+        {
+            "name": "region",
+            "type": "string"
+        },
+        {
+            "name": "request_status",
+            "type": "string"
+        },
+        {
+            "name": "review_date",
+            "type": "datetime"
+        },
+        {
+            "name": "start_time",
+            "type": "datetime"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "submit_date",
+            "type": "datetime"
+        },
+        {
+            "name": "total_budget",
+            "type": "unsigned int"
+        }
+    ]
+}

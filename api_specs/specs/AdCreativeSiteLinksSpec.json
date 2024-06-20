@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "site_link_title",
+            "type": "string"
+        },
+        {
+            "name": "site_link_url",
+            "type": "string"
+        }
+    ]
+}

@@ -2,8 +2,43 @@
     "apis": [
         {
             "method": "GET",
+            "endpoint": "boost_ads_list",
+            "return": "IGBoostMediaAd",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "branded_content_partner_promote",
+            "return": "BrandedContentShadowIGUserID",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "branded_content_partner_promote",
+            "return": "BrandedContentShadowIGUserID",
+            "params": [
+                {
+                    "name": "permission",
+                    "required": true,
+                    "type": "bool"
+                },
+                {
+                    "name": "sponsor_id",
+                    "required": true,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "children",
             "return": "IGMedia",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "collaborators",
+            "return": "ShadowIGMediaCollaborators",
             "params": []
         },
         {
@@ -29,6 +64,11 @@
             "endpoint": "insights",
             "return": "InstagramInsightsResult",
             "params": [
+                {
+                    "name": "breakdown",
+                    "required": false,
+                    "type": "list<shadowigmediainsights_breakdown_enum_param>"
+                },
                 {
                     "name": "metric",
                     "required": true,
@@ -85,7 +125,28 @@
             "name": "#get",
             "method": "GET",
             "return": "IGMedia",
-            "params": []
+            "params": [
+                {
+                    "name": "primary_fb_page_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "primary_ig_user_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "secondary_fb_page_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "secondary_ig_user_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
         },
         {
             "name": "#update",
@@ -102,12 +163,20 @@
     ],
     "fields": [
         {
+            "name": "boost_eligibility_info",
+            "type": "IGMediaBoostEligibilityInfo"
+        },
+        {
             "name": "caption",
             "type": "string"
         },
         {
             "name": "comments_count",
             "type": "int"
+        },
+        {
+            "name": "copyright_check_information",
+            "type": "IGVideoCopyrightCheckMatchesInformation"
         },
         {
             "name": "id",

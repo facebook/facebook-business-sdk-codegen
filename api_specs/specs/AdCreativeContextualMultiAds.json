@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "enroll_status",
+            "type": "string"
+        }
+    ]
+}

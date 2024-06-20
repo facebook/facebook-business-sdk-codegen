@@ -1,0 +1,48 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "BusinessRequest",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "accessor",
+            "type": "Business"
+        },
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "object_id",
+            "type": "string"
+        },
+        {
+            "name": "object_type",
+            "type": "string"
+        },
+        {
+            "name": "permitted_tasks",
+            "type": "list<string>"
+        },
+        {
+            "name": "request_status",
+            "type": "string"
+        },
+        {
+            "name": "request_type",
+            "type": "string"
+        },
+        {
+            "name": "requestor",
+            "type": "string"
+        }
+    ]
+}

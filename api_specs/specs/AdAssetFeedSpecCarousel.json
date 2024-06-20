@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "adlabels",
+            "type": "list<AdAssetFeedSpecAssetLabel>"
+        },
+        {
+            "name": "child_attachments",
+            "type": "list<AdAssetFeedSpecCarouselChildAttachment>"
+        },
+        {
+            "name": "multi_share_end_card",
+            "type": "bool"
+        },
+        {
+            "name": "multi_share_optimized",
+            "type": "bool"
+        }
+    ]
+}

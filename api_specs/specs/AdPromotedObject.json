@@ -6,6 +6,10 @@
             "type": "string"
         },
         {
+            "name": "conversion_goal_id",
+            "type": "string"
+        },
+        {
             "name": "custom_conversion_id",
             "type": "string"
         },
@@ -42,6 +46,10 @@
             "type": "string"
         },
         {
+            "name": "offsite_conversion_event_id",
+            "type": "string"
+        },
+        {
             "name": "omnichannel_object",
             "type": "Object"
         },
@@ -62,6 +70,10 @@
             "type": "string"
         },
         {
+            "name": "place_page_set",
+            "type": "AdPlacePageSet"
+        },
+        {
             "name": "place_page_set_id",
             "type": "string"
         },
@@ -74,11 +86,19 @@
             "type": "string"
         },
         {
+            "name": "product_set",
+            "type": "ProductSet"
+        },
+        {
             "name": "product_set_id",
             "type": "string"
         },
         {
             "name": "retention_days",
+            "type": "string"
+        },
+        {
+            "name": "whatsapp_phone_number",
             "type": "string"
         }
     ]

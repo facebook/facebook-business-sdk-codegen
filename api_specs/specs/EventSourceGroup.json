@@ -58,6 +58,10 @@
         {
             "name": "name",
             "type": "string"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
         }
     ]
 }

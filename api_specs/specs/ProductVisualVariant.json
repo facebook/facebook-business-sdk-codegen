@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "items",
+            "type": "list<ProductItem>"
+        },
+        {
+            "name": "unique_key",
+            "type": "string"
+        }
+    ]
+}

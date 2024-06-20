@@ -7,11 +7,15 @@
         },
         {
             "name": "additional_data",
-            "type": "Object"
+            "type": "AdAssetFeedAdditionalData"
+        },
+        {
+            "name": "app_product_page_id",
+            "type": "string"
         },
         {
             "name": "asset_customization_rules",
-            "type": "list<Object>"
+            "type": "list<AdAssetFeedSpecAssetCustomizationRule>"
         },
         {
             "name": "autotranslate",
@@ -27,7 +31,7 @@
         },
         {
             "name": "call_to_actions",
-            "type": "list<Object>"
+            "type": "list<AdAssetFeedSpecCallToAction>"
         },
         {
             "name": "captions",
@@ -35,7 +39,7 @@
         },
         {
             "name": "carousels",
-            "type": "list<Object>"
+            "type": "list<AdAssetFeedSpecCarousel>"
         },
         {
             "name": "descriptions",
@@ -43,7 +47,7 @@
         },
         {
             "name": "events",
-            "type": "list<Object>"
+            "type": "list<AdAssetFeedSpecEvents>"
         },
         {
             "name": "groups",
@@ -58,16 +62,36 @@
             "type": "list<AdAssetFeedSpecLinkURL>"
         },
         {
+            "name": "message_extensions",
+            "type": "list<AdAssetMessageExtensions>"
+        },
+        {
+            "name": "onsite_destinations",
+            "type": "list<AdAssetOnsiteDestinations>"
+        },
+        {
             "name": "optimization_type",
             "type": "string"
         },
         {
-            "name": "posts",
-            "type": "list<Object>"
+            "name": "promotional_metadata",
+            "type": "Object"
+        },
+        {
+            "name": "reasons_to_shop",
+            "type": "bool"
+        },
+        {
+            "name": "shops_bundle",
+            "type": "bool"
         },
         {
             "name": "titles",
             "type": "list<AdAssetFeedSpecTitle>"
+        },
+        {
+            "name": "upcoming_events",
+            "type": "list<Object>"
         },
         {
             "name": "videos",

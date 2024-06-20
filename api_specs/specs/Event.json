@@ -74,11 +74,6 @@
                     "type": "unsigned int"
                 },
                 {
-                    "name": "planned_start_time",
-                    "required": false,
-                    "type": "int"
-                },
-                {
                     "name": "privacy",
                     "required": false,
                     "type": "string"
@@ -275,6 +270,10 @@
             "type": "Place"
         },
         {
+            "name": "registration_setting",
+            "type": "EventRegistrationSetting"
+        },
+        {
             "name": "scheduled_publish_time",
             "type": "string"
         },
@@ -284,7 +283,7 @@
         },
         {
             "name": "ticket_setting",
-            "type": "Object"
+            "type": "EventTicketSetting"
         },
         {
             "name": "ticket_uri",

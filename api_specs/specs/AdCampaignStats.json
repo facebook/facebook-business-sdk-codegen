@@ -1,0 +1,101 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "account_id",
+            "type": "string"
+        },
+        {
+            "name": "actions",
+            "type": "Object"
+        },
+        {
+            "name": "adgroup_id",
+            "type": "string"
+        },
+        {
+            "name": "campaign_id",
+            "type": "string"
+        },
+        {
+            "name": "campaign_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "clicks",
+            "type": "unsigned int"
+        },
+        {
+            "name": "end_time",
+            "type": "Object"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "impressions",
+            "type": "string"
+        },
+        {
+            "name": "inline_actions",
+            "type": "map"
+        },
+        {
+            "name": "io_number",
+            "type": "unsigned int"
+        },
+        {
+            "name": "is_completed",
+            "type": "bool"
+        },
+        {
+            "name": "line_number",
+            "type": "unsigned int"
+        },
+        {
+            "name": "newsfeed_position",
+            "type": "Object"
+        },
+        {
+            "name": "social_clicks",
+            "type": "unsigned int"
+        },
+        {
+            "name": "social_impressions",
+            "type": "string"
+        },
+        {
+            "name": "social_spent",
+            "type": "unsigned int"
+        },
+        {
+            "name": "social_unique_clicks",
+            "type": "unsigned int"
+        },
+        {
+            "name": "social_unique_impressions",
+            "type": "string"
+        },
+        {
+            "name": "spent",
+            "type": "int"
+        },
+        {
+            "name": "start_time",
+            "type": "Object"
+        },
+        {
+            "name": "topline_id",
+            "type": "string"
+        },
+        {
+            "name": "unique_clicks",
+            "type": "unsigned int"
+        },
+        {
+            "name": "unique_impressions",
+            "type": "string"
+        }
+    ]
+}

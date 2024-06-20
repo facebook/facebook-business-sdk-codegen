@@ -7,7 +7,7 @@
         },
         {
             "name": "customization",
-            "type": "map<string, string>"
+            "type": "list<map<string, string>>"
         },
         {
             "name": "template_id",

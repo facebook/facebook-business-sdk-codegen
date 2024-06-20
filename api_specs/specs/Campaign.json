@@ -53,7 +53,7 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 },
                 {
                     "name": "updated_since",
@@ -85,44 +85,34 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 }
             ]
         },
         {
-            "method": "GET",
-            "endpoint": "content_delivery_report",
-            "return": "ContentDeliveryReport",
+            "method": "POST",
+            "endpoint": "budget_schedules",
+            "return": "HighDemandPeriod",
             "params": [
                 {
-                    "name": "end_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "page_id",
-                    "required": false,
+                    "name": "budget_value",
+                    "required": true,
                     "type": "unsigned int"
                 },
                 {
-                    "name": "platform",
+                    "name": "budget_value_type",
                     "required": true,
-                    "type": "adcampaigngroupcontent_delivery_report_platform_enum_param"
+                    "type": "adcampaigngroupbudget_schedules_budget_value_type_enum_param"
                 },
                 {
-                    "name": "position",
+                    "name": "time_end",
                     "required": true,
-                    "type": "adcampaigngroupcontent_delivery_report_position_enum_param"
+                    "type": "unsigned int"
                 },
                 {
-                    "name": "start_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "summary",
-                    "required": false,
-                    "type": "bool"
+                    "name": "time_start",
+                    "required": true,
+                    "type": "unsigned int"
                 }
             ]
         },
@@ -149,7 +139,7 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 }
             ]
         },
@@ -278,12 +268,12 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 },
                 {
                     "name": "time_ranges",
                     "required": false,
-                    "type": "list<Object>"
+                    "type": "list<map>"
                 },
                 {
                     "name": "use_account_attribution_setting",
@@ -390,12 +380,12 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 },
                 {
                     "name": "time_ranges",
                     "required": false,
-                    "type": "list<Object>"
+                    "type": "list<map>"
                 },
                 {
                     "name": "use_account_attribution_setting",
@@ -438,7 +428,7 @@
                 {
                     "name": "time_range",
                     "required": false,
-                    "type": "Object"
+                    "type": "map"
                 }
             ]
         },
@@ -556,11 +546,6 @@
                     "name": "stop_time",
                     "required": false,
                     "type": "datetime"
-                },
-                {
-                    "name": "upstream_events",
-                    "required": false,
-                    "type": "map"
                 }
             ]
         }
@@ -568,14 +553,6 @@
     "fields": [
         {
             "name": "account_id",
-            "type": "string"
-        },
-        {
-            "name": "ad_strategy_group_id",
-            "type": "string"
-        },
-        {
-            "name": "ad_strategy_id",
             "type": "string"
         },
         {
@@ -607,6 +584,10 @@
             "type": "string"
         },
         {
+            "name": "campaign_group_active_time",
+            "type": "string"
+        },
+        {
             "name": "can_create_brand_lift_study",
             "type": "bool"
         },
@@ -631,8 +612,16 @@
             "type": "Campaign_effective_status"
         },
         {
+            "name": "has_secondary_skadnetwork_reporting",
+            "type": "bool"
+        },
+        {
             "name": "id",
             "type": "string"
+        },
+        {
+            "name": "is_budget_schedule_enabled",
+            "type": "bool"
         },
         {
             "name": "is_skadnetwork_attribution",
@@ -661,6 +650,10 @@
         {
             "name": "pacing_type",
             "type": "list<string>"
+        },
+        {
+            "name": "primary_attribution",
+            "type": "string"
         },
         {
             "name": "promoted_object",
