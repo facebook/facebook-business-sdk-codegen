@@ -1,0 +1,82 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "channels_to_integrity_status",
+            "return": "CatalogItemChannelsToIntegrityStatus",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "OfflineProductItem",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "applinks",
+            "type": "CatalogItemAppLinks"
+        },
+        {
+            "name": "brand",
+            "type": "string"
+        },
+        {
+            "name": "category",
+            "type": "string"
+        },
+        {
+            "name": "category_specific_fields",
+            "type": "CatalogSubVerticalList"
+        },
+        {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "image_fetch_status",
+            "type": "OfflineProductItem_image_fetch_status"
+        },
+        {
+            "name": "image_url",
+            "type": "string"
+        },
+        {
+            "name": "images",
+            "type": "list<string>"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "offline_product_item_id",
+            "type": "string"
+        },
+        {
+            "name": "price",
+            "type": "string"
+        },
+        {
+            "name": "sanitized_images",
+            "type": "list<string>"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        },
+        {
+            "name": "visibility",
+            "type": "OfflineProductItem_visibility"
+        }
+    ]
+}

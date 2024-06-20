@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "enabled",
+            "type": "bool"
+        },
+        {
+            "name": "quick_replies",
+            "type": "list<Object>"
+        },
+        {
+            "name": "text",
+            "type": "string"
+        }
+    ]
+}

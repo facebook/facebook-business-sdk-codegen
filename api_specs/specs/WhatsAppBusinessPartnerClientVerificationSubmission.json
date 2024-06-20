@@ -1,0 +1,33 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "client_business_id",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "rejection_reasons",
+            "type": "list<WhatsAppBusinessPartnerClientVerificationSubmission_rejection_reasons>"
+        },
+        {
+            "name": "submitted_info",
+            "type": "Object"
+        },
+        {
+            "name": "submitted_time",
+            "type": "datetime"
+        },
+        {
+            "name": "update_time",
+            "type": "datetime"
+        },
+        {
+            "name": "verification_status",
+            "type": "WhatsAppBusinessPartnerClientVerificationSubmission_verification_status"
+        }
+    ]
+}

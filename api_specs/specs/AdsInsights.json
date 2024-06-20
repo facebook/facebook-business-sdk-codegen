@@ -38,6 +38,10 @@
             "type": "string"
         },
         {
+            "name": "adjusted_offline_purchase",
+            "type": "list<Object>"
+        },
+        {
             "name": "adset_end",
             "type": "string"
         },
@@ -346,12 +350,20 @@
             "type": "string"
         },
         {
+            "name": "marketing_messages_website_purchase_values",
+            "type": "string"
+        },
+        {
             "name": "mobile_app_purchase_roas",
             "type": "list<AdsActionStats>"
         },
         {
             "name": "objective",
             "type": "string"
+        },
+        {
+            "name": "onsite_conversion_messaging_detected_purchase_deduped",
+            "type": "list<AdsActionStats>"
         },
         {
             "name": "optimization_goal",
@@ -383,6 +395,10 @@
         },
         {
             "name": "reach",
+            "type": "string"
+        },
+        {
+            "name": "shops_assisted_purchases",
             "type": "string"
         },
         {

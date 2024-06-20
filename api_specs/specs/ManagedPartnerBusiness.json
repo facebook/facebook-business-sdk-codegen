@@ -11,7 +11,7 @@
         },
         {
             "name": "extended_credit",
-            "type": "ExtendedCredit"
+            "type": "ManagedPartnerExtendedCredit"
         },
         {
             "name": "page",

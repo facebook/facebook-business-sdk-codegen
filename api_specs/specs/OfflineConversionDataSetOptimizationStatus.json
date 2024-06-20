@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "event",
+            "type": "string"
+        },
+        {
+            "name": "last_changed_time",
+            "type": "int"
+        },
+        {
+            "name": "last_detected_time",
+            "type": "int"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        }
+    ]
+}

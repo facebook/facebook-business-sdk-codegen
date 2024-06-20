@@ -659,6 +659,7 @@ class FacebookRequest:
                 api=self._api,
                 node_id=self._node_id,
                 endpoint=self._endpoint,
+                object_parser=self._response_parser,
             )
             cursor.load_next_page()
             return cursor
@@ -835,7 +836,9 @@ class Cursor(object):
         if (
             'paging' in response and
             'cursors' in response['paging'] and
-            'after' in response['paging']['cursors']
+            'after' in response['paging']['cursors'] and
+            # 'after' will always exist even if no more pages are available
+            'next' in response['paging']
         ):
             self.params['after'] = response['paging']['cursors']['after']
         else:

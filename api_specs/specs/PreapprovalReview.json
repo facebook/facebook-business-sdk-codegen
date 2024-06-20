@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "comp_type",
+            "type": "string"
+        },
+        {
+            "name": "crow_component_id",
+            "type": "int"
+        },
+        {
+            "name": "is_human_reviewed",
+            "type": "bool"
+        },
+        {
+            "name": "is_reviewed",
+            "type": "bool"
+        },
+        {
+            "name": "policy_info",
+            "type": "list<map<string, Object>>"
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "android_deeplink_url",
+            "type": "string"
+        },
+        {
+            "name": "carousel_see_more_url",
+            "type": "string"
+        },
+        {
+            "name": "deeplink_url",
+            "type": "string"
+        },
+        {
+            "name": "display_url",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "ipad_deeplink_url",
+            "type": "string"
+        },
+        {
+            "name": "iphone_deeplink_url",
+            "type": "string"
+        },
+        {
+            "name": "url_tags",
+            "type": "string"
+        },
+        {
+            "name": "website_url",
+            "type": "string"
+        }
+    ]
+}

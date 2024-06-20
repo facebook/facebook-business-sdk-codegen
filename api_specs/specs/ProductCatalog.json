@@ -39,6 +39,11 @@
                     "type": "list<productcatalogagencies_permitted_tasks_enum_param>"
                 },
                 {
+                    "name": "skip_default_utms",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "utm_settings",
                     "required": false,
                     "type": "map"
@@ -138,7 +143,7 @@
                 {
                     "name": "page",
                     "required": true,
-                    "type": "int"
+                    "type": "string"
                 }
             ]
         },
@@ -195,12 +200,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "collaborative_ads_event_stats",
-            "return": "CatalogSegmentAllMatchCountLaser",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "collaborative_ads_lsb_image_bank",
             "return": "CPASLsbImageBank",
             "params": []
@@ -230,6 +229,18 @@
                     "name": "backup_image_urls",
                     "required": true,
                     "type": "list<string>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "creator_asset_creatives",
+            "return": "CreatorAssetCreative",
+            "params": [
+                {
+                    "name": "moderation_status",
+                    "required": false,
+                    "type": "productcatalogcreator_asset_creatives_moderation_status_enum_param"
                 }
             ]
         },
@@ -1203,21 +1214,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "offer_price_amount",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "offer_price_end_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "offer_price_start_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
                     "name": "ordering_index",
                     "required": false,
                     "type": "unsigned int"
@@ -1516,6 +1512,38 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "version_items_batch",
+            "return": "ProductCatalog",
+            "params": [
+                {
+                    "name": "allow_upsert",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "item_type",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "item_version",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "requests",
+                    "required": true,
+                    "type": "map"
+                },
+                {
+                    "name": "version",
+                    "required": false,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
             "name": "#delete",
             "method": "DELETE",
             "return": "Object",
@@ -1544,6 +1572,11 @@
             "method": "POST",
             "return": "ProductCatalog",
             "params": [
+                {
+                    "name": "additional_vertical_option",
+                    "required": false,
+                    "type": "productcatalog_additional_vertical_option"
+                },
                 {
                     "name": "da_display_settings",
                     "required": false,
@@ -1634,6 +1667,10 @@
         },
         {
             "name": "is_catalog_segment",
+            "type": "bool"
+        },
+        {
+            "name": "is_local_catalog",
             "type": "bool"
         },
         {

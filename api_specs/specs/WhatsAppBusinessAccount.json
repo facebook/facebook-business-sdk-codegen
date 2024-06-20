@@ -106,8 +106,8 @@
         },
         {
             "method": "GET",
-            "endpoint": "extensions",
-            "return": "WhatsAppExtension",
+            "endpoint": "dcc_config",
+            "return": "WhatsAppBusinessDirectConnectionExternalConfig",
             "params": []
         },
         {
@@ -115,6 +115,33 @@
             "endpoint": "flows",
             "return": "WhatsAppExtension",
             "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "flows",
+            "return": "WhatsAppExtension",
+            "params": [
+                {
+                    "name": "categories",
+                    "required": true,
+                    "type": "list<whatsappbusinessaccountflows_categories_enum_param>"
+                },
+                {
+                    "name": "clone_flow_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "endpoint_uri",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -230,7 +257,7 @@
                 },
                 {
                     "name": "components",
-                    "required": true,
+                    "required": false,
                     "type": "list<map>"
                 },
                 {
@@ -239,8 +266,23 @@
                     "type": "bool"
                 },
                 {
+                    "name": "display_format",
+                    "required": false,
+                    "type": "whatsappbusinessaccountmessage_templates_display_format_enum_param"
+                },
+                {
                     "name": "language",
                     "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "library_template_button_inputs",
+                    "required": false,
+                    "type": "list<map>"
+                },
+                {
+                    "name": "library_template_name",
+                    "required": false,
                     "type": "string"
                 },
                 {
@@ -256,7 +298,7 @@
                 {
                     "name": "sub_category",
                     "required": false,
-                    "type": "Object"
+                    "type": "whatsappbusinessaccountmessage_templates_sub_category_enum_param"
                 }
             ]
         },
@@ -349,6 +391,24 @@
             "method": "GET",
             "endpoint": "schedules",
             "return": "WhatsAppBusinessCampaignSchedule",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "set_obo_mobility_intent",
+            "return": "WhatsAppBusinessAccountOBOMobilityIntent",
+            "params": [
+                {
+                    "name": "solution_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "solutions",
+            "return": "WhatsAppBusinessSolution",
             "params": []
         },
         {
@@ -490,6 +550,10 @@
             "type": "Object"
         },
         {
+            "name": "auth_international_rate_eligibility",
+            "type": "Object"
+        },
+        {
             "name": "business_verification_status",
             "type": "string"
         },
@@ -506,12 +570,20 @@
             "type": "string"
         },
         {
+            "name": "health_status",
+            "type": "WhatsAppBusinessHealthStatusForMessageSend"
+        },
+        {
             "name": "id",
             "type": "string"
         },
         {
             "name": "is_enabled_for_insights",
             "type": "bool"
+        },
+        {
+            "name": "linked_commerce_account",
+            "type": "CommerceMerchantSettings"
         },
         {
             "name": "message_template_namespace",
@@ -535,6 +607,10 @@
         },
         {
             "name": "ownership_type",
+            "type": "string"
+        },
+        {
+            "name": "primary_business_location",
             "type": "string"
         },
         {

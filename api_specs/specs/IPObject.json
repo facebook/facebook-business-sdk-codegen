@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "ip_permission",
+            "type": "string"
+        },
+        {
+            "name": "user",
+            "type": "Object"
+        }
+    ]
+}

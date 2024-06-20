@@ -1,0 +1,29 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "copyright_check_status",
+            "type": "VideoCopyrightCheckStatus"
+        },
+        {
+            "name": "processing_phase",
+            "type": "VideoStatusProcessingPhase"
+        },
+        {
+            "name": "processing_progress",
+            "type": "unsigned int"
+        },
+        {
+            "name": "publishing_phase",
+            "type": "VideoStatusPublishingPhase"
+        },
+        {
+            "name": "uploading_phase",
+            "type": "VideoStatusUploadingPhase"
+        },
+        {
+            "name": "video_status",
+            "type": "string"
+        }
+    ]
+}

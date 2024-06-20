@@ -1,0 +1,88 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "CatalogSmartPixelSettings",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "allowed_domains",
+            "type": "list<string>"
+        },
+        {
+            "name": "available_property_filters",
+            "type": "list<string>"
+        },
+        {
+            "name": "catalog",
+            "type": "ProductCatalog"
+        },
+        {
+            "name": "cbb_custom_override_filters",
+            "type": "list<Object>"
+        },
+        {
+            "name": "cbb_default_filter",
+            "type": "list<map<string, list<string>>>"
+        },
+        {
+            "name": "cbb_default_filter_crawl_params",
+            "type": "string"
+        },
+        {
+            "name": "cbb_override_type_field_mapping",
+            "type": "list<map<string, list<string>>>"
+        },
+        {
+            "name": "defaults",
+            "type": "list<map<string, string>>"
+        },
+        {
+            "name": "filters",
+            "type": "list<map<string, list<string>>>"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_cbb_enabled",
+            "type": "bool"
+        },
+        {
+            "name": "is_create_enabled",
+            "type": "bool"
+        },
+        {
+            "name": "is_delete_enabled",
+            "type": "bool"
+        },
+        {
+            "name": "is_update_enabled",
+            "type": "bool"
+        },
+        {
+            "name": "microdata_format_precedence",
+            "type": "list<string>"
+        },
+        {
+            "name": "pixel",
+            "type": "AdsPixel"
+        },
+        {
+            "name": "property_filter",
+            "type": "list<string>"
+        },
+        {
+            "name": "retention_time_sec",
+            "type": "int"
+        },
+        {
+            "name": "trusted_domains",
+            "type": "list<string>"
+        }
+    ]
+}

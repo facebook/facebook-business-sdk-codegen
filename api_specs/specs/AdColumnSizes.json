@@ -1,0 +1,48 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdColumnSizes",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "admarket_account",
+            "type": "AdAccount"
+        },
+        {
+            "name": "app_id",
+            "type": "string"
+        },
+        {
+            "name": "columns",
+            "type": "list<map<string, string>>"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "owner",
+            "type": "User"
+        },
+        {
+            "name": "page",
+            "type": "string"
+        },
+        {
+            "name": "report",
+            "type": "string"
+        },
+        {
+            "name": "tab",
+            "type": "string"
+        },
+        {
+            "name": "view",
+            "type": "string"
+        }
+    ]
+}

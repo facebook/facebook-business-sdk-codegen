@@ -1,0 +1,3117 @@
+{
+	"info": {
+		"_postman_id": "9071d01f-a7cd-4ad2-aa72-3543ad22e964",
+		"name": "MAPI- Public",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Campaign",
+			"item": [
+				{
+					"name": "CreateCampaign",
+					"item": [
+						{
+							"name": "CreateACampaignObjTrafficOffsiteConversion",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"pm.environment.set(\"campaign_id_traffic\", jsonData[\"id\"]);\r",
+											"pm.test(\"Verify campaign ID is not null\", function () {\r",
+											"    pm.expect(jsonData.id).to.not.eql(\"\");\r",
+											"});\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/act_{{account_id}}/campaigns?objective=OUTCOME_TRAFFIC&status&special_ad_categories=[]&optimization_goal=OFFSITE_CONVERSIONS&daily_budget=500&billing_event=LINK_CLICKS&targeting=targeting={ \n    \"geo_locations\": {\"countries\":[\"US\"]}, \n    \"interests\": [{id: 6003139266461, 'name': 'Movies'}]\n}&promoted_object&status=PAUSED&name=PostManCampaignOT1&bid_strategy=LOWEST_COST_WITHOUT_CAP&REACH=REACH",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"act_{{account_id}}",
+										"campaigns"
+									],
+									"query": [
+										{
+											"key": "objective",
+											"value": "OUTCOME_TRAFFIC"
+										},
+										{
+											"key": "status",
+											"value": null
+										},
+										{
+											"key": "special_ad_categories",
+											"value": "[]"
+										},
+										{
+											"key": "optimization_goal",
+											"value": "OFFSITE_CONVERSIONS"
+										},
+										{
+											"key": "daily_budget",
+											"value": "500"
+										},
+										{
+											"key": "lifetime_budget",
+											"value": "5",
+											"disabled": true
+										},
+										{
+											"key": "billing_event",
+											"value": "LINK_CLICKS"
+										},
+										{
+											"key": "targeting",
+											"value": "targeting={ \n    \"geo_locations\": {\"countries\":[\"US\"]}, \n    \"interests\": [{id: 6003139266461, 'name': 'Movies'}]\n}"
+										},
+										{
+											"key": "promoted_object",
+											"value": null
+										},
+										{
+											"key": "status",
+											"value": "PAUSED"
+										},
+										{
+											"key": "name",
+											"value": "PostManCampaignOT1"
+										},
+										{
+											"key": "bid_strategy",
+											"value": "LOWEST_COST_WITHOUT_CAP"
+										},
+										{
+											"key": "REACH",
+											"value": "REACH"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreateACampaignObjTrafficSpecialAdCategorisCredit",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"pm.environment.set(\"campaign_id_traffic_specialAdCredit\", jsonData[\"id\"]);\r",
+											"pm.test(\"Verify campaign ID is not null\", function () {\r",
+											"    pm.expect(jsonData.id).to.not.eql(\"\");\r",
+											"});\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/act_{{account_id}}/campaigns?objective=OUTCOME_TRAFFIC&status&special_ad_categories=[]&optimization_goal=OFFSITE_CONVERSIONS&daily_budget=500&billing_event=LINK_CLICKS&targeting=targeting={ \n    \"geo_locations\": {\"countries\":[\"US\"]}, \n    \"interests\": [{id: 6003139266461, 'name': 'Movies'}]\n}&promoted_object&status=PAUSED&name=PostManCampaignOT1&bid_strategy=LOWEST_COST_WITHOUT_CAP&REACH=REACH&special_ad_categories=Credit",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"act_{{account_id}}",
+										"campaigns"
+									],
+									"query": [
+										{
+											"key": "objective",
+											"value": "OUTCOME_TRAFFIC"
+										},
+										{
+											"key": "status",
+											"value": null
+										},
+										{
+											"key": "special_ad_categories",
+											"value": "[]"
+										},
+										{
+											"key": "optimization_goal",
+											"value": "OFFSITE_CONVERSIONS"
+										},
+										{
+											"key": "daily_budget",
+											"value": "500"
+										},
+										{
+											"key": "lifetime_budget",
+											"value": "5",
+											"disabled": true
+										},
+										{
+											"key": "billing_event",
+											"value": "LINK_CLICKS"
+										},
+										{
+											"key": "targeting",
+											"value": "targeting={ \n    \"geo_locations\": {\"countries\":[\"US\"]}, \n    \"interests\": [{id: 6003139266461, 'name': 'Movies'}]\n}"
+										},
+										{
+											"key": "promoted_object",
+											"value": null
+										},
+										{
+											"key": "status",
+											"value": "PAUSED"
+										},
+										{
+											"key": "name",
+											"value": "PostManCampaignOT1"
+										},
+										{
+											"key": "bid_strategy",
+											"value": "LOWEST_COST_WITHOUT_CAP"
+										},
+										{
+											"key": "REACH",
+											"value": "REACH"
+										},
+										{
+											"key": "special_ad_categories",
+											"value": "Credit"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreateCampaignObjTrafficReachLinkClickAdvantage+",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"pm.environment.set(\"campaign_id_traffic_bid\", jsonData[\"id\"]);\r",
+											"pm.test(\"Verify campaign ID is not null\", function () {\r",
+											"    pm.expect(jsonData.id).to.not.eql(\"\");\r",
+											"});\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/act_{{account_id}}/campaigns?objective=OUTCOME_TRAFFIC&status&special_ad_categories=[]&optimization_goal=OFFSITE_CONVERSIONS&daily_budget=500&billing_event=LINK_CLICKS&targeting=targeting={ \n    \"geo_locations\": {\"countries\":[\"US\"]}, \n    \"interests\": [{id: 6003139266461, 'name': 'Movies'}]\n}&promoted_object&status=PAUSED&name=PostManCampaignOTReach2&bid_strategy=LOWEST_COST_WITHOUT_CAP",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"act_{{account_id}}",
+										"campaigns"
+									],
+									"query": [
+										{
+											"key": "objective",
+											"value": "OUTCOME_TRAFFIC"
+										},
+										{
+											"key": "status",
+											"value": null
+										},
+										{
+											"key": "special_ad_categories",
+											"value": "[]"
+										},
+										{
+											"key": "optimization_goal",
+											"value": "OFFSITE_CONVERSIONS"
+										},
+										{
+											"key": "daily_budget",
+											"value": "500"
+										},
+										{
+											"key": "lifetime_budget",
+											"value": "5",
+											"disabled": true
+										},
+										{
+											"key": "billing_event",
+											"value": "LINK_CLICKS"
+										},
+										{
+											"key": "targeting",
+											"value": "targeting={ \n    \"geo_locations\": {\"countries\":[\"US\"]}, \n    \"interests\": [{id: 6003139266461, 'name': 'Movies'}]\n}"
+										},
+										{
+											"key": "promoted_object",
+											"value": null
+										},
+										{
+											"key": "status",
+											"value": "PAUSED"
+										},
+										{
+											"key": "name",
+											"value": "PostManCampaignOTReach2"
+										},
+										{
+											"key": "bid_strategy",
+											"value": "LOWEST_COST_WITHOUT_CAP"
+										},
+										{
+											"key": "buying_type",
+											"value": "RESERVED",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreateCampaignObjTrafficReachLinkClickNoDA",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"pm.environment.set(\"campaign_id_traffic_bid\", jsonData[\"id\"]);\r",
+											"pm.test(\"Verify campaign ID is not null\", function () {\r",
+											"    pm.expect(jsonData.id).to.not.eql(\"\");\r",
+											"});\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/act_{{account_id}}/campaigns?objective=OUTCOME_TRAFFIC&status&special_ad_categories=[]&optimization_goal=OFFSITE_CONVERSIONS&lifetime_budget=500&billing_event=LINK_CLICKS&targeting=targeting={ \n    \"geo_locations\": {\"countries\":[\"US\"]}, \n    \"interests\": [{id: 6003139266461, 'name': 'Movies'}]\n}&promoted_object&status=PAUSED&name=PostManCampaignOTReach2&bid_strategy=LOWEST_COST_WITHOUT_CAP&dynamic_creative_optimization_mode=OFF",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"act_{{account_id}}",
+										"campaigns"
+									],
+									"query": [
+										{
+											"key": "objective",
+											"value": "OUTCOME_TRAFFIC"
+										},
+										{
+											"key": "status",
+											"value": null
+										},
+										{
+											"key": "special_ad_categories",
+											"value": "[]"
+										},
+										{
+											"key": "optimization_goal",
+											"value": "OFFSITE_CONVERSIONS"
+										},
+										{
+											"key": "daily_budget",
+											"value": "500",
+											"disabled": true
+										},
+										{
+											"key": "lifetime_budget",
+											"value": "500"
+										},
+										{
+											"key": "billing_event",
+											"value": "LINK_CLICKS"
+										},
+										{
+											"key": "targeting",
+											"value": "targeting={ \n    \"geo_locations\": {\"countries\":[\"US\"]}, \n    \"interests\": [{id: 6003139266461, 'name': 'Movies'}]\n}"
+										},
+										{
+											"key": "promoted_object",
+											"value": null
+										},
+										{
+											"key": "status",
+											"value": "PAUSED"
+										},
+										{
+											"key": "name",
+											"value": "PostManCampaignOTReach2"
+										},
+										{
+											"key": "bid_strategy",
+											"value": "LOWEST_COST_WITHOUT_CAP"
+										},
+										{
+											"key": "buying_type",
+											"value": "RESERVED",
+											"disabled": true
+										},
+										{
+											"key": "dynamic_creative_optimization_mode",
+											"value": "OFF"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreateACampaignOutcomeSales",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"pm.environment.set(\"campaign_id_sales\", jsonData[\"id\"]);\r",
+											"pm.test(\"Verify campaign ID is not null\", function () {\r",
+											"    pm.expect(jsonData.id).to.not.eql(\"\");\r",
+											"});\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/act_{{account_id}}/campaigns?name=PostManCampaignOSImpression&objective=OUTCOME_SALES&status&special_ad_categories=[]&lifetime_budget=100.00&status=PAUSED&targeting&billing_event=IMPRESSIONS&optimization_goal=IMPRESSIONS&bid_strategy=LOWEST_COST_WITH_BID_CAP",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"act_{{account_id}}",
+										"campaigns"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "PostManCampaignOSImpression"
+										},
+										{
+											"key": "objective",
+											"value": "OUTCOME_SALES"
+										},
+										{
+											"key": "status",
+											"value": null
+										},
+										{
+											"key": "special_ad_categories",
+											"value": "[]"
+										},
+										{
+											"key": "lifetime_budget",
+											"value": "100.00"
+										},
+										{
+											"key": "status",
+											"value": "PAUSED"
+										},
+										{
+											"key": "targeting",
+											"value": null
+										},
+										{
+											"key": "billing_event",
+											"value": "IMPRESSIONS"
+										},
+										{
+											"key": "optimization_goal",
+											"value": "IMPRESSIONS"
+										},
+										{
+											"key": "bid_strategy",
+											"value": "LOWEST_COST_WITH_BID_CAP"
+										},
+										{
+											"key": "daily_budget",
+											"value": "100.00",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreateACampaignOutcomeLeads",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"pm.environment.set(\"campaign_id_leads\", jsonData[\"id\"]);\r",
+											"pm.test(\"Verify campaign ID is not null\", function () {\r",
+											"    pm.expect(jsonData.id).to.not.eql(\"\");\r",
+											"});\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/act_{{account_id}}/campaigns?name=PostManCampaignLeads&objective=OUTCOME_LEADS&status=PAUSED&special_ad_categories=[]&bid_strategy=LOWEST_COST_WITH_BID_CAP&daily_budget=100.00&promoted_object",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"act_{{account_id}}",
+										"campaigns"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "PostManCampaignLeads"
+										},
+										{
+											"key": "objective",
+											"value": "OUTCOME_LEADS"
+										},
+										{
+											"key": "status",
+											"value": "PAUSED"
+										},
+										{
+											"key": "special_ad_categories",
+											"value": "[]"
+										},
+										{
+											"key": "bid_strategy",
+											"value": "LOWEST_COST_WITH_BID_CAP"
+										},
+										{
+											"key": "lifetime_budget",
+											"value": "100",
+											"disabled": true
+										},
+										{
+											"key": "daily_budget",
+											"value": "100.00"
+										},
+										{
+											"key": "promoted_object",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreateACampaignOutcomeEngagement",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"pm.environment.set(\"campaign_id_engagement\", jsonData[\"id\"]);\r",
+											"pm.test(\"Verify campaign ID is not null\", function () {\r",
+											"    pm.expect(jsonData.id).to.not.eql(\"\");\r",
+											"});\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/act_{{account_id}}/campaigns?name=PostManCampaignEngagement&objective=OUTCOME_ENGAGEMENT&status&special_ad_categories=[]",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"act_{{account_id}}",
+										"campaigns"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "PostManCampaignEngagement"
+										},
+										{
+											"key": "objective",
+											"value": "OUTCOME_ENGAGEMENT"
+										},
+										{
+											"key": "status",
+											"value": null
+										},
+										{
+											"key": "special_ad_categories",
+											"value": "[]"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreateACampaignOutcomeAwareness",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"pm.environment.set(\"campaign_id_awareness\", jsonData[\"id\"]);\r",
+											"pm.test(\"Verify campaign ID is not null\", function () {\r",
+											"    pm.expect(jsonData.id).to.not.eql(\"\");\r",
+											"});\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/act_{{account_id}}/campaigns?name=PostManCampaignAwareness&objective=OUTCOME_AWARENESS&status&special_ad_categories=[]",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"act_{{account_id}}",
+										"campaigns"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "PostManCampaignAwareness"
+										},
+										{
+											"key": "objective",
+											"value": "OUTCOME_AWARENESS"
+										},
+										{
+											"key": "status",
+											"value": null
+										},
+										{
+											"key": "special_ad_categories",
+											"value": "[]"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreateACampaignOutcomeAppPromotion",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"pm.environment.set(\"campaign_id_awareness\", jsonData[\"id\"]);\r",
+											"pm.test(\"Verify campaign ID is not null\", function () {\r",
+											"    pm.expect(jsonData.id).to.not.eql(\"\");\r",
+											"});\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/act_{{account_id}}/campaigns?name=PostManCampaignAwareness&objective=OUTCOME_APP_PROMOTION&status&special_ad_categories=[]",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"act_{{account_id}}",
+										"campaigns"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "PostManCampaignAwareness"
+										},
+										{
+											"key": "objective",
+											"value": "OUTCOME_APP_PROMOTION"
+										},
+										{
+											"key": "status",
+											"value": null
+										},
+										{
+											"key": "special_ad_categories",
+											"value": "[]"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "EditCampaign",
+					"item": [
+						{
+							"name": "UpdateBudgetBid",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"\r",
+											"pm.test(\"Verify campaign ID is not null\", function () {\r",
+											"    pm.expect(jsonData.success).to.equal(true);\r",
+											"});\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/{{campaign_id_traffic_bid}}?lifetime_budget=100&bid_strategy=COST_CAP&stop_time",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{campaign_id_traffic_bid}}"
+									],
+									"query": [
+										{
+											"key": "lifetime_budget",
+											"value": "100"
+										},
+										{
+											"key": "bid_strategy",
+											"value": "COST_CAP"
+										},
+										{
+											"key": "stop_time",
+											"value": null
+										},
+										{
+											"key": "daily_budget",
+											"value": "200",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "GetCampaign",
+					"item": [
+						{
+							"name": "GetCampaignGroupWithFields",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/?ids={{campaign_id_traffic}},{{campaign_id_awareness}},{{campaign_id_sales}}&fields=id,account_id,objective,name,configured_status,effective_status,buying_type,created_time,updated_time,spend_cap,can_use_spend_cap,issues_info,special_ad_categories",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										""
+									],
+									"query": [
+										{
+											"key": "ids",
+											"value": "{{campaign_id_traffic}},{{campaign_id_awareness}},{{campaign_id_sales}}"
+										},
+										{
+											"key": "fields",
+											"value": "id,account_id,objective,name,configured_status,effective_status,buying_type,created_time,updated_time,spend_cap,can_use_spend_cap,issues_info,special_ad_categories"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetCampaignsDetails",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/act_{{account_id}}/campaigns?fields=id,name,objective,account_id,buying_type,daily_budget,lifetime_budget,spend_cap,bid_strategy,pacing_type,status,effective_status,promoted_object,recommendations,start_time,stop_time,created_time,updated_time,adlabels,issues_info,special_ad_categories,special_ad_category_country,smart_promotion_type,is_skadnetwork_attribution",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"act_{{account_id}}",
+										"campaigns"
+									],
+									"query": [
+										{
+											"key": "fields",
+											"value": "id,name,objective,account_id,buying_type,daily_budget,lifetime_budget,spend_cap,bid_strategy,pacing_type,status,effective_status,promoted_object,recommendations,start_time,stop_time,created_time,updated_time,adlabels,issues_info,special_ad_categories,special_ad_category_country,smart_promotion_type,is_skadnetwork_attribution"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "AddCreative",
+			"item": [
+				{
+					"name": "Create",
+					"item": [
+						{
+							"name": "CreateExistingCreative",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"pm.environment.set(\"psCreatedAdCreativeInvalidLink\", jsonData.id);\r",
+											"\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/act_{{account_id}}/adcreatives?name=postmanCreative&object_story_id={{object_story_id}}_{{page_id}}&post_id={{page_id}}",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"act_{{account_id}}",
+										"adcreatives"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "postmanCreative"
+										},
+										{
+											"key": "object_story_id",
+											"value": "{{object_story_id}}_{{page_id}}"
+										},
+										{
+											"key": "post_id",
+											"value": "{{page_id}}"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "GetExistingCreative",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = pm.response.json();\r",
+									"pm.environment.set(\"adcreatives1\", jsonData.data[0].id);\r",
+									"\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/act_{{account_id}}/adcreatives/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"act_{{account_id}}",
+								"adcreatives",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCreativeDetails",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = pm.response.json();\r",
+									"pm.environment.set(\"object_story_id\", jsonData.id);\r",
+									"pm.environment.set(\"page_id\", jsonData.object_story_spec.page_id);\r",
+									"\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/{{adcreatives1}}/?fields=name,object_story_id,object_story_spec{},object_type,image_hash,video_id,body,title,status",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"{{adcreatives1}}",
+								""
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "name,object_story_id,object_story_spec{},object_type,image_hash,video_id,body,title,status"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AdSets",
+			"item": [
+				{
+					"name": "GetAdsets",
+					"item": [
+						{
+							"name": "GetAdsetsList",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"var jsonData = pm.response.json();\r",
+											"pm.environment.set(\"adset_id1\",jsonData.data[1].id);\r",
+											"pm.environment.set(\"adset_id\",jsonData.data[0].id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/act_{{account_id}}/adsets",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"act_{{account_id}}",
+										"adsets"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetAdsetFields",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"var jsonData = pm.response.json();\r",
+											" pm.expect(jsonData.account_id).to.not.eql(\"\");\r",
+											"pm.test(\"Verify campaign ID is not null\", function () {\r",
+											"    pm.expect(jsonData.campaign_id).to.not.eql(\"\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/{{adset_id}}?fields=account_id,campaign_id,created_time,effective_status,id,name,recommendations,status",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{adset_id}}"
+									],
+									"query": [
+										{
+											"key": "fields",
+											"value": "account_id,campaign_id,created_time,effective_status,id,name,recommendations,status"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetAdsetDetailsForAccount",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"var jsonData = pm.response.json();\r",
+											" pm.expect(jsonData.account_id).to.not.eql(\"\");\r",
+											"pm.test(\"Verify campaign ID is not null\", function () {\r",
+											"    pm.expect(jsonData.campaign_id).to.not.eql(\"\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/act_{{account_id}}/adsets?fields=optimization_goal,updated_time,billing_event,bid_strategy,lifetime_spend_cap,daily_spend_cap,learning_stage_info,effective_status,lifetime_min_spend_target,destination_type,bid_adjustments,bid_amount,id,daily_min_spend_target,campaign_id,pacing_type,created_time,attribution_spec,issues_info,lifetime_budget,creative_sequence,adset_schedule,end_time,daily_budget,is_dynamic_creative,start_time,account_id,adlabels,budget_remaining,promoted_object,name,bid_constraints,targeting{geo_locations,keywords,genders,age_min,age_max,relationship_statuses,countries,locales,device_platforms,effective_device_platforms,publisher_platforms,effective_publisher_platforms,facebook_positions,effective_facebook_positions,instagram_positions,effective_instagram_positions,audience_network_positions,effective_audience_network_positions,messenger_positions,effective_messenger_positions,education_statuses,user_adclusters,excluded_geo_locations,interested_in,interests,behaviors,connections,excluded_connections,friends_of_connections,user_os,user_device,excluded_user_device,app_install_state,wireless_carrier,site_category,college_years,work_employers,work_positions,education_majors,life_events,politics,income,home_type,home_value,ethnic_affinity,generation,household_composition,moms,office_type,family_statuses,net_worth,home_ownership,industries,education_schools,custom_audiences,excluded_custom_audiences,dynamic_audience_ids,product_audience_specs,excluded_product_audience_specs,flexible_spec,exclusions,excluded_publisher_categories,excluded_publisher_list_ids,place_page_set_ids,targeting_optimization,brand_safety_content_filter_levels,is_whatsapp_destination_ad,instream_video_skippable_excluded,targeting_relaxation_types},status,rf_prediction_id,time_based_ad_rotation_id_blocks,time_based_ad_rotation_intervals,frequency_control_specs&limit=300",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"act_{{account_id}}",
+										"adsets"
+									],
+									"query": [
+										{
+											"key": "fields",
+											"value": "optimization_goal,updated_time,billing_event,bid_strategy,lifetime_spend_cap,daily_spend_cap,learning_stage_info,effective_status,lifetime_min_spend_target,destination_type,bid_adjustments,bid_amount,id,daily_min_spend_target,campaign_id,pacing_type,created_time,attribution_spec,issues_info,lifetime_budget,creative_sequence,adset_schedule,end_time,daily_budget,is_dynamic_creative,start_time,account_id,adlabels,budget_remaining,promoted_object,name,bid_constraints,targeting{geo_locations,keywords,genders,age_min,age_max,relationship_statuses,countries,locales,device_platforms,effective_device_platforms,publisher_platforms,effective_publisher_platforms,facebook_positions,effective_facebook_positions,instagram_positions,effective_instagram_positions,audience_network_positions,effective_audience_network_positions,messenger_positions,effective_messenger_positions,education_statuses,user_adclusters,excluded_geo_locations,interested_in,interests,behaviors,connections,excluded_connections,friends_of_connections,user_os,user_device,excluded_user_device,app_install_state,wireless_carrier,site_category,college_years,work_employers,work_positions,education_majors,life_events,politics,income,home_type,home_value,ethnic_affinity,generation,household_composition,moms,office_type,family_statuses,net_worth,home_ownership,industries,education_schools,custom_audiences,excluded_custom_audiences,dynamic_audience_ids,product_audience_specs,excluded_product_audience_specs,flexible_spec,exclusions,excluded_publisher_categories,excluded_publisher_list_ids,place_page_set_ids,targeting_optimization,brand_safety_content_filter_levels,is_whatsapp_destination_ad,instream_video_skippable_excluded,targeting_relaxation_types},status,rf_prediction_id,time_based_ad_rotation_id_blocks,time_based_ad_rotation_intervals,frequency_control_specs"
+										},
+										{
+											"key": "limit",
+											"value": "300"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "CreateAdsets",
+					"item": [
+						{
+							"name": "CreateAdSetTrafficConversionImpressions",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"var jsonData = pm.response.json();\r",
+											"\r",
+											"pm.environment.set(\"ps_adset_id_traffic\", jsonData[\"id\"]);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/act_{{account_id}}/adsets?campaign_id={{campaign_id_traffic}}&name=PostMancAdsetTrafficCampaign&billing_event=LINK_CLICKS&targeting={\n    \"age_max\": 65,\n    \"age_min\": 18,\n    \"geo_locations\": {\n      \"countries\": [\"US\"],\n      \"location_types\": [\"home\"]\n    }\n  }&start_time=2024-06-16T04:45:17+0000&status=PAUSED",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"act_{{account_id}}",
+										"adsets"
+									],
+									"query": [
+										{
+											"key": "campaign_id",
+											"value": "{{campaign_id_traffic}}"
+										},
+										{
+											"key": "name",
+											"value": "PostMancAdsetTrafficCampaign"
+										},
+										{
+											"key": "optimization_goal",
+											"value": "OFFSITE_CONVERSIONS",
+											"disabled": true
+										},
+										{
+											"key": "billing_event",
+											"value": "LINK_CLICKS"
+										},
+										{
+											"key": "bid_amount",
+											"value": "500",
+											"disabled": true
+										},
+										{
+											"key": "daily_budget",
+											"value": "2500",
+											"disabled": true
+										},
+										{
+											"key": "targeting",
+											"value": "{\n    \"age_max\": 65,\n    \"age_min\": 18,\n    \"geo_locations\": {\n      \"countries\": [\"US\"],\n      \"location_types\": [\"home\"]\n    }\n  }"
+										},
+										{
+											"key": "start_time",
+											"value": "2024-06-16T04:45:17+0000"
+										},
+										{
+											"key": "status",
+											"value": "PAUSED"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreateAdSetTrafficSpecialAdCredit",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"var jsonData = pm.response.json();\r",
+											"\r",
+											"pm.environment.set(\"ps_adset_id_traffic_specialAdCredit\", jsonData[\"id\"]);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/act_{{account_id}}/adsets?campaign_id={{campaign_id_traffic_specialAdCredit}}&name=PostMancAdsetTrafficCampaign&billing_event=LINK_CLICKS&targeting={\n    \"age_max\": 65,\n    \"age_min\": 18,\n    \"geo_locations\": {\n      \"countries\": [\"US\"],\n      \"location_types\": [\"home\"]\n    }\n  }&start_time=2024-06-16T04:45:17+0000&status=PAUSED",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"act_{{account_id}}",
+										"adsets"
+									],
+									"query": [
+										{
+											"key": "campaign_id",
+											"value": "{{campaign_id_traffic_specialAdCredit}}"
+										},
+										{
+											"key": "name",
+											"value": "PostMancAdsetTrafficCampaign"
+										},
+										{
+											"key": "optimization_goal",
+											"value": "OFFSITE_CONVERSIONS",
+											"disabled": true
+										},
+										{
+											"key": "billing_event",
+											"value": "LINK_CLICKS"
+										},
+										{
+											"key": "bid_amount",
+											"value": "2",
+											"disabled": true
+										},
+										{
+											"key": "daily_budget",
+											"value": "100",
+											"disabled": true
+										},
+										{
+											"key": "targeting",
+											"value": "{\n    \"age_max\": 65,\n    \"age_min\": 18,\n    \"geo_locations\": {\n      \"countries\": [\"US\"],\n      \"location_types\": [\"home\"]\n    }\n  }"
+										},
+										{
+											"key": "start_time",
+											"value": "2024-06-16T04:45:17+0000"
+										},
+										{
+											"key": "status",
+											"value": "PAUSED"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreateAdSetTrafficTargetPlatform",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"var jsonData = pm.response.json();\r",
+											"\r",
+											"pm.environment.set(\"ps_adset_id_traffictarget\", jsonData[\"id\"]);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/act_{{account_id}}/adsets?campaign_id={{campaign_id_traffic}}&name=PostMancAdsetTrafficCampaignTargetIG&billing_event=LINK_CLICKS&targeting={\n    \"age_max\": 25,\n    \"age_min\": 22,\n    \"geo_locations\": {\n      \"countries\": [\"NP\"],\n      \"location_types\": [\"home\"]\n    },\"genders\":[1],\"publisher_platforms\":[\"instagram\"]\n  }&start_time=2024-06-16T04:45:17+0000&status=PAUSED",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"act_{{account_id}}",
+										"adsets"
+									],
+									"query": [
+										{
+											"key": "campaign_id",
+											"value": "{{campaign_id_traffic}}"
+										},
+										{
+											"key": "name",
+											"value": "PostMancAdsetTrafficCampaignTargetIG"
+										},
+										{
+											"key": "optimization_goal",
+											"value": "OFFSITE_CONVERSIONS",
+											"disabled": true
+										},
+										{
+											"key": "billing_event",
+											"value": "LINK_CLICKS"
+										},
+										{
+											"key": "bid_amount",
+											"value": "2",
+											"disabled": true
+										},
+										{
+											"key": "daily_budget",
+											"value": "500",
+											"disabled": true
+										},
+										{
+											"key": "targeting",
+											"value": "{\n    \"age_max\": 25,\n    \"age_min\": 22,\n    \"geo_locations\": {\n      \"countries\": [\"NP\"],\n      \"location_types\": [\"home\"]\n    },\"genders\":[1],\"publisher_platforms\":[\"instagram\"]\n  }"
+										},
+										{
+											"key": "start_time",
+											"value": "2024-06-16T04:45:17+0000"
+										},
+										{
+											"key": "status",
+											"value": "PAUSED"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreateAdSetTrafficTargetIGDAOff",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"var jsonData = pm.response.json();\r",
+											"\r",
+											"pm.environment.set(\"ps_adset_id_traffictargetDAOff\", jsonData[\"id\"]);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/act_{{account_id}}/adsets?campaign_id={{campaign_id_traffic}}&name=PostMancAdsetTrafficCampaignTargetIG&billing_event=LINK_CLICKS&targeting={\n    \"age_max\": 25,\n    \"age_min\": 22,\n    \"geo_locations\": {\n      \"countries\": [\"NP\"],\n      \"location_types\": [\"home\"]\n    },\"genders\":[1],\"publisher_platforms\":[\"instagram\"]\n  }&start_time=2024-06-16T04:45:17+0000&status=PAUSED&dynamic_creative_optimization_mode=OFF",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"act_{{account_id}}",
+										"adsets"
+									],
+									"query": [
+										{
+											"key": "campaign_id",
+											"value": "{{campaign_id_traffic}}"
+										},
+										{
+											"key": "name",
+											"value": "PostMancAdsetTrafficCampaignTargetIG"
+										},
+										{
+											"key": "optimization_goal",
+											"value": "OFFSITE_CONVERSIONS",
+											"disabled": true
+										},
+										{
+											"key": "billing_event",
+											"value": "LINK_CLICKS"
+										},
+										{
+											"key": "bid_amount",
+											"value": "2",
+											"disabled": true
+										},
+										{
+											"key": "daily_budget",
+											"value": "500",
+											"disabled": true
+										},
+										{
+											"key": "targeting",
+											"value": "{\n    \"age_max\": 25,\n    \"age_min\": 22,\n    \"geo_locations\": {\n      \"countries\": [\"NP\"],\n      \"location_types\": [\"home\"]\n    },\"genders\":[1],\"publisher_platforms\":[\"instagram\"]\n  }"
+										},
+										{
+											"key": "start_time",
+											"value": "2024-06-16T04:45:17+0000"
+										},
+										{
+											"key": "status",
+											"value": "PAUSED"
+										},
+										{
+											"key": "dynamic_creative_optimization_mode",
+											"value": "OFF"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ad",
+			"item": [
+				{
+					"name": "GetAds",
+					"item": [
+						{
+							"name": "GetAdsFromAccountIdWithFields",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"var jsonData = pm.response.json();\r",
+											" pm.environment.set(\"ad_id\", jsonData.data[0].id);\r",
+											"  pm.environment.set(\"adset_id\", jsonData.data[0].adset_id);\r",
+											"   pm.environment.set(\"campaing_id_existing_ad\", jsonData.data[0].campaign_id);\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/act_{{account_id}}/ads?fields=id,name,bid_amount,adset_id,creative{effective_instagram_story_id,effective_instagram_media_id,instagram_permalink_url},status,effective_status,created_time,updated_time,tracking_specs,conversion_specs,ad_review_feedback,adlabels,issues_info,conversion_domain,campaign_id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"act_{{account_id}}",
+										"ads"
+									],
+									"query": [
+										{
+											"key": "fields",
+											"value": "id,name,bid_amount,adset_id,creative{effective_instagram_story_id,effective_instagram_media_id,instagram_permalink_url},status,effective_status,created_time,updated_time,tracking_specs,conversion_specs,ad_review_feedback,adlabels,issues_info,conversion_domain,campaign_id"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetDetailFromAdID",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"\r",
+											"var jsonData = pm.response.json();\r",
+											" pm.environment.set(\"ad_id\", jsonData.data[0].id);\r",
+											"  pm.environment.set(\"adset_id\", jsonData.data[0].adset_id);\r",
+											"   pm.environment.set(\"campaing_id_existing_ad\", jsonData.data[0].campaign_id);\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/{{ad_id}}/?fields=account_id,adset_id,bid_amount,campaign_id,configured_status,conversion_specs,created_time,creative,display_sequence,effective_status,id,last_updated_by_app_id,name,priority,recommendations,source_ad_id,status,targeting,tracking_specs,updated_time&status=PAUSED",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{ad_id}}",
+										""
+									],
+									"query": [
+										{
+											"key": "fields",
+											"value": "account_id,adset_id,bid_amount,campaign_id,configured_status,conversion_specs,created_time,creative,display_sequence,effective_status,id,last_updated_by_app_id,name,priority,recommendations,source_ad_id,status,targeting,tracking_specs,updated_time"
+										},
+										{
+											"key": "status",
+											"value": "PAUSED"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetCampaignWithFields",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/?ids={{campaing_id_existing_ad}}&fields=id,account_id,objective,name,configured_status,effective_status,buying_type,created_time,updated_time,spend_cap,can_use_spend_cap,issues_info,special_ad_categories",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										""
+									],
+									"query": [
+										{
+											"key": "ids",
+											"value": "{{campaing_id_existing_ad}}"
+										},
+										{
+											"key": "fields",
+											"value": "id,account_id,objective,name,configured_status,effective_status,buying_type,created_time,updated_time,spend_cap,can_use_spend_cap,issues_info,special_ad_categories"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetGetCreatives",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"pm.environment.set(\"adcreatives2\", jsonData.data[1].id);\r",
+											"\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/act_{{account_id}}/adcreatives",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"act_{{account_id}}",
+										"adcreatives"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "CreateAd",
+					"item": [
+						{
+							"name": "CreateAdForAwarenessCampaign",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"pm.environment.set(\"ad_id_awareness\", jsonData[\"id\"]);\r",
+											"\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/act_{{account_id}}/ads?name=PostManAdTraffic&adset_id={{ps_adset_id_traffic}}&status=PAUSED&creative={\"creative_id\":{{adcreatives2}}}",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"act_{{account_id}}",
+										"ads"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "PostManAdTraffic"
+										},
+										{
+											"key": "adset_id",
+											"value": "{{ps_adset_id_traffic}}"
+										},
+										{
+											"key": "status",
+											"value": "PAUSED"
+										},
+										{
+											"key": "creative",
+											"value": "{\"creative_id\":{{adcreatives2}}}"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "CopyAds",
+					"item": [
+						{
+							"name": "UpdateAdNameStatus",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"pm.environment.set(\"copied_ad_id\", jsonData.copied_ad_id);\r",
+											"\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/{{ad_id_awareness}}/copies",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{ad_id_awareness}}",
+										"copies"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "UpdateEdit",
+					"item": [
+						{
+							"name": "UpdateAdNameStatus",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"\r",
+											"\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"pm.test(\"Verify success\", function () {\r",
+											"   \r",
+											"    pm.expect(jsonData.success).to.eql(true);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/{{ad_id_awareness}}?name=PostManAdTrafficUpdate&status=PAUSED",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{ad_id_awareness}}"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "PostManAdTrafficUpdate"
+										},
+										{
+											"key": "status",
+											"value": "PAUSED"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Insights API",
+			"item": [
+				{
+					"name": "Report",
+					"item": [
+						{
+							"name": "attribution_setting",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = pm.response.json();\r",
+											"pm.environment.set(\"report_attribution_id2\", jsonData[\"report_run_id\"]);\r",
+											"pm.test(\"Verify ainsight report is not null\", function () {\r",
+											"    pm.expect(jsonData.report_run_id).to.not.eql(\"\");\r",
+											"});\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/act_{{account_id}}/insights?use_unified_attribution_setting=true&async=true&level=ad&date_preset=this_year&breakdowns=product_id&limit=100&action_breakdowns=action_type,action_destination&action_attribution_windows=[\"1d_click\",\"7d_click\",\"28d_click\",\"1d_view\",\"7d_view\",\"28d_view\"]&fields=date_start,date_stop,account_id,account_name,ad_id,ad_name,adset_id,adset_name,campaign_id,campaign_name,actions,unique_actions,action_values,impressions,clicks,unique_clicks,spend,frequency,inline_link_clicks,inline_post_engagement,reach,website_ctr,video_thruplay_watched_actions,video_avg_time_watched_actions,video_p25_watched_actions,video_p50_watched_actions,video_p75_watched_actions,video_p95_watched_actions,video_p100_watched_actions,video_30_sec_watched_actions,video_play_actions,video_continuous_2_sec_watched_actions,unique_video_continuous_2_sec_watched_actions,estimated_ad_recallers,estimated_ad_recall_rate,unique_outbound_clicks,outbound_clicks,conversions,conversion_values,social_spend&time_increment=1&format=json{",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"act_{{account_id}}",
+										"insights"
+									],
+									"query": [
+										{
+											"key": "use_unified_attribution_setting",
+											"value": "true"
+										},
+										{
+											"key": "async",
+											"value": "true"
+										},
+										{
+											"key": "level",
+											"value": "ad"
+										},
+										{
+											"key": "date_preset",
+											"value": "this_year"
+										},
+										{
+											"key": "breakdowns",
+											"value": "product_id"
+										},
+										{
+											"key": "limit",
+											"value": "100"
+										},
+										{
+											"key": "action_breakdowns",
+											"value": "action_type,action_destination"
+										},
+										{
+											"key": "action_attribution_windows",
+											"value": "[\"1d_click\",\"7d_click\",\"28d_click\",\"1d_view\",\"7d_view\",\"28d_view\"]"
+										},
+										{
+											"key": "fields",
+											"value": "date_start,date_stop,account_id,account_name,ad_id,ad_name,adset_id,adset_name,campaign_id,campaign_name,actions,unique_actions,action_values,impressions,clicks,unique_clicks,spend,frequency,inline_link_clicks,inline_post_engagement,reach,website_ctr,video_thruplay_watched_actions,video_avg_time_watched_actions,video_p25_watched_actions,video_p50_watched_actions,video_p75_watched_actions,video_p95_watched_actions,video_p100_watched_actions,video_30_sec_watched_actions,video_play_actions,video_continuous_2_sec_watched_actions,unique_video_continuous_2_sec_watched_actions,estimated_ad_recallers,estimated_ad_recall_rate,unique_outbound_clicks,outbound_clicks,conversions,conversion_values,social_spend"
+										},
+										{
+											"key": "time_increment",
+											"value": "1"
+										},
+										{
+											"key": "format",
+											"value": "json{"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "reportid_breakdown_generate",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = JSON.parse(responseBody);\r",
+											"pm.environment.set(\"report_id_breakdowns\", jsonData[\"report_run_id\"]);\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"level\": \"ad\",\r\n  \"time_range\": {\r\n    \"since\": \"2023-04-26\",\r\n    \"until\": \"2023-05-28\"\r\n  },\r\n  \"breakdowns\": \"hourly_stats_aggregated_by_advertiser_time_zone\",\r\n  \"action_breakdowns\": \"[\\\"action_type\\\"]\",\r\n  \"action_attribution_windows\": \"[\\\"1d_click\\\",\\\"7d_click\\\",\\\"28d_click\\\",\\\"1d_view\\\",\\\"7d_view\\\",\\\"28d_view\\\"]\",\r\n  \"fields\": \"[\\\"actions\\\",\\\"action_values\\\",\\\"ad_id\\\",\\\"clicks\\\",\\\"impressions\\\",\\\"reach\\\",\\\"spend\\\",\\\"account_currency\\\",\\\"unique_clicks\\\",\\\"video_thruplay_watched_actions\\\",\\\"video_30_sec_watched_actions\\\",\\\"video_avg_time_watched_actions\\\",\\\"video_p100_watched_actions\\\",\\\"video_p25_watched_actions\\\",\\\"video_p50_watched_actions\\\",\\\"video_p75_watched_actions\\\",\\\"video_p95_watched_actions\\\"]\",\r\n  \"time_increment\": \"1\",\r\n  \"graphapi_sample\": \"true\",\r\n  \"graphapi_user\": \"511439423\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/act_{{account_id}}/insights?{{report_attribution_id2}}",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"act_{{account_id}}",
+										"insights"
+									],
+									"query": [
+										{
+											"key": "{{report_attribution_id2}}",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "InsightForAdsGroup",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"      \r",
+											"\r",
+											"\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/insights?date_preset=maximum&limit=100&action_breakdowns=action_type&ids={{ad_id}}&fields=date_start,date_stop,account_id,account_name,ad_id,ad_name,adset_id,adset_name,campaign_id,campaign_name,actions,unique_actions,action_values,impressions,clicks,unique_clicks,spend,frequency,inline_link_clicks,inline_post_engagement,reach,website_ctr,video_thruplay_watched_actions,video_avg_time_watched_actions,video_p25_watched_actions,video_p50_watched_actions,video_p75_watched_actions,video_p95_watched_actions,video_p100_watched_actions,video_30_sec_watched_actions,video_play_actions,video_continuous_2_sec_watched_actions,unique_video_continuous_2_sec_watched_actions,estimated_ad_recallers,estimated_ad_recall_rate,unique_outbound_clicks,outbound_clicks,conversions,conversion_values,social_spend&time_increment=all_days",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"insights"
+									],
+									"query": [
+										{
+											"key": "date_preset",
+											"value": "maximum"
+										},
+										{
+											"key": "limit",
+											"value": "100"
+										},
+										{
+											"key": "action_breakdowns",
+											"value": "action_type"
+										},
+										{
+											"key": "ids",
+											"value": "{{ad_id}}"
+										},
+										{
+											"key": "fields",
+											"value": "date_start,date_stop,account_id,account_name,ad_id,ad_name,adset_id,adset_name,campaign_id,campaign_name,actions,unique_actions,action_values,impressions,clicks,unique_clicks,spend,frequency,inline_link_clicks,inline_post_engagement,reach,website_ctr,video_thruplay_watched_actions,video_avg_time_watched_actions,video_p25_watched_actions,video_p50_watched_actions,video_p75_watched_actions,video_p95_watched_actions,video_p100_watched_actions,video_30_sec_watched_actions,video_play_actions,video_continuous_2_sec_watched_actions,unique_video_continuous_2_sec_watched_actions,estimated_ad_recallers,estimated_ad_recall_rate,unique_outbound_clicks,outbound_clicks,conversions,conversion_values,social_spend"
+										},
+										{
+											"key": "time_increment",
+											"value": "all_days"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetReportForInsight2",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/act_{{account_id}}/insights?time_range={\"since\":\"2023-03-13\",\"until\":\"2023-06-11\"}&limit=100&fields=spend, account_currency&time_increment=all_days&format=json",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"act_{{account_id}}",
+										"insights"
+									],
+									"query": [
+										{
+											"key": "time_range",
+											"value": "{\"since\":\"2023-03-13\",\"until\":\"2023-06-11\"}"
+										},
+										{
+											"key": "limit",
+											"value": "100"
+										},
+										{
+											"key": "fields",
+											"value": "spend, account_currency"
+										},
+										{
+											"key": "time_increment",
+											"value": "all_days"
+										},
+										{
+											"key": "format",
+											"value": "json"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetReportForInsightAttribution",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/{{amazon_report_attribution_id2}}/insights",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{amazon_report_attribution_id2}}",
+										"insights"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ReportID_breakdowns_response",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"      \r",
+											"\r",
+											"\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/{{report_id_breakdowns}}/insights",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"{{report_id_breakdowns}}",
+										"insights"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Targeting",
+			"item": [
+				{
+					"name": "SearchInterest",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Verify id is not null\", function () {\r",
+									"    pm.expect(jsonData.data[0].id).to.not.eql(\"\");\r",
+									"});\r",
+									"pm.test(\"Verify audience lower size is not null\", function () {\r",
+									"    pm.expect(jsonData.data[0].audience_size_lower_bound).to.not.eql(\"\");\r",
+									"});\r",
+									"pm.test(\"Verify audience uppser size is not null\", function () {\r",
+									"    pm.expect(jsonData.data[0].audience_size_upper_bound).to.not.eql(\"\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/search?type=adinterest&q=software&locale=nepal",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"search"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "adinterest"
+								},
+								{
+									"key": "q",
+									"value": "software"
+								},
+								{
+									"key": "locale",
+									"value": "nepal"
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetTargetingCategories",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Verify id is not null\", function () {\r",
+									"    pm.expect(jsonData.data[0].id).to.not.eql(\"\");\r",
+									"});\r",
+									"pm.test(\"Verify audience lower size is not null\", function () {\r",
+									"    pm.expect(jsonData.data[0].audience_size_lower_bound).to.not.eql(\"\");\r",
+									"});\r",
+									"pm.test(\"Verify audience uppser size is not null\", function () {\r",
+									"    pm.expect(jsonData.data[0].audience_size_upper_bound).to.not.eql(\"\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/act_{{account_id}}/broadtargetingcategories",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"act_{{account_id}}",
+								"broadtargetingcategories"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AddAccount",
+			"item": [
+				{
+					"name": "GetReachPrediction",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Verify report id is not null\", function () {\r",
+									"    pm.expect(jsonData.id).to.not.eql(\"\");\r",
+									"});\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/act_{{account_id}}/agencies?fields=permitted_tasks\n",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"act_{{account_id}}",
+								"agencies"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "permitted_tasks\n"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetIGAccounts",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Verify report id is not null\", function () {\r",
+									"    pm.expect(jsonData.id).to.not.eql(\"\");\r",
+									"});\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/act_{{account_id}}/instagram_accounts?fields=id,username,profile_pic",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"act_{{account_id}}",
+								"instagram_accounts"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,username,profile_pic"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAgencies",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Verify report id is not null\", function () {\r",
+									"    pm.expect(jsonData.id).to.not.eql(\"\");\r",
+									"});\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/act_{{account_id}}/reachfrequencypredictions?fields=external_maximum_impression,external_budget,time_updated,pause_periods,audience_size_lower_bound,external_maximum_budget,prediction_mode,external_maximum_reach,holdout_percentage,prediction_progress,target_spec,id,story_event_type,audience_size_upper_bound,external_minimum_reach,reservation_status,time_created,external_impression,external_minimum_impression,expiration_time,external_minimum_budget,account_id,interval_frequency_cap_reset_period,campaign_time_stop,destination_id,status,external_reach,frequency_cap,campaign_group_id,campaign_id,campaign_time_start,instagram_destination_id,name",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"act_{{account_id}}",
+								"reachfrequencypredictions"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "external_maximum_impression,external_budget,time_updated,pause_periods,audience_size_lower_bound,external_maximum_budget,prediction_mode,external_maximum_reach,holdout_percentage,prediction_progress,target_spec,id,story_event_type,audience_size_upper_bound,external_minimum_reach,reservation_status,time_created,external_impression,external_minimum_impression,expiration_time,external_minimum_budget,account_id,interval_frequency_cap_reset_period,campaign_time_stop,destination_id,status,external_reach,frequency_cap,campaign_group_id,campaign_id,campaign_time_start,instagram_destination_id,name"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAdvertisableApplications",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Verify report id is not null\", function () {\r",
+									"    pm.expect(jsonData.id).to.not.eql(\"\");\r",
+									"});\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/act_{{account_id}}/advertisable_applications?fields=id,name,app_install_tracked,app_name,app_type,category,icon_url,ipad_app_store_id,iphone_app_store_id,link,mobile_web_url,object_store_urls,supported_platforms,website_url,photo_url,advertisable_app_events",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"act_{{account_id}}",
+								"advertisable_applications"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,name,app_install_tracked,app_name,app_type,category,icon_url,ipad_app_store_id,iphone_app_store_id,link,mobile_web_url,object_store_urls,supported_platforms,website_url,photo_url,advertisable_app_events"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "GetAssginedUsers",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"var jsonData = pm.response.json();\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/act_{{account_id}}/assigned_users?fields=id,tasks,user_type,permitted_tasks \n&business=480324640141261",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"act_{{account_id}}",
+								"assigned_users"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,tasks,user_type,permitted_tasks \n"
+								},
+								{
+									"key": "business",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAssginedUsersTotal",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"var jsonData = pm.response.json();\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/act_{{account_id}}/assigned_users?fields=id,tasks,user_type,permitted_tasks \n&business=480324640141261",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"act_{{account_id}}",
+								"assigned_users"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,tasks,user_type,permitted_tasks \n"
+								},
+								{
+									"key": "business",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Conversion",
+			"item": [
+				{
+					"name": "GetOfflineConversionForAccountId",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/act_{{account_id}}/offline_conversion_data_sets?fields=name,id,description,valid_entries,matched_entries,event_time_min,event_time_max,event_stats,business,is_assigned_to_ad_accounts_in_business,enable_auto_assign_to_accounts,auto_track_for_ads",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"act_{{account_id}}",
+								"offline_conversion_data_sets"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "name,id,description,valid_entries,matched_entries,event_time_min,event_time_max,event_stats,business,is_assigned_to_ad_accounts_in_business,enable_auto_assign_to_accounts,auto_track_for_ads"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCustomConversionfor account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = pm.response.json();\r",
+									"pm.environment.set(\"pixel_id\", jsonData.data[0].pixel[\"id\"]);\r",
+									"pm.test(\"Verify campaign ID is not null\", function () {\r",
+									"    pm.expect(jsonData.id).to.not.eql(\"\");\r",
+									"});\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/act_{{account_id}}/customconversions?fields=account_id,creation_time,custom_event_type,default_conversion_value,description,data_sources,first_fired_time,is_archived,last_fired_time,name,pixel,rule,id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"act_{{account_id}}",
+								"customconversions"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "account_id,creation_time,custom_event_type,default_conversion_value,description,data_sources,first_fired_time,is_archived,last_fired_time,name,pixel,rule,id"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pixel",
+			"item": [
+				{
+					"name": "GetPixelDetails",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/act_{{account_id}}/adspixels?fields=name,id,code,last_fired_time",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"act_{{account_id}}",
+								"adspixels"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "name,id,code,last_fired_time"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAdsPixelStats",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/{{pixel_id}}/stats",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"{{pixel_id}}",
+								"stats"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

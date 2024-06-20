@@ -13,10 +13,51 @@
             ]
         },
         {
+            "method": "DELETE",
+            "endpoint": "agencies",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "agencies",
             "return": "Business",
             "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "agencies",
+            "return": "AdsPixel",
+            "params": [
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "permitted_tasks",
+                    "required": true,
+                    "type": "list<adspixelagencies_permitted_tasks_enum_param>"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "ahp_configs",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "applink_autosetup",
+                    "required": true,
+                    "type": "bool"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -90,6 +131,11 @@
                     "type": "list<map>"
                 },
                 {
+                    "name": "progress",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
                     "name": "test_event_code",
                     "required": false,
                     "type": "string"
@@ -115,12 +161,6 @@
                     "type": "string"
                 }
             ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "meapitocapiconsolidationhelper",
-            "return": "Object",
-            "params": []
         },
         {
             "method": "GET",
@@ -251,12 +291,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "telemetry",
-            "return": "Object",
-            "params": []
-        },
-        {
             "name": "#get",
             "method": "GET",
             "return": "AdsPixel",
@@ -360,6 +394,10 @@
         {
             "name": "first_party_cookie_status",
             "type": "string"
+        },
+        {
+            "name": "has_1p_pixel_event",
+            "type": "bool"
         },
         {
             "name": "id",

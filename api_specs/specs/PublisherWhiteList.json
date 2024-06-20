@@ -1,0 +1,36 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "PublisherWhiteList",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "business_owner_id",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "last_updated_time",
+            "type": "datetime"
+        },
+        {
+            "name": "last_updated_user",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "placement_type",
+            "type": "string"
+        }
+    ]
+}

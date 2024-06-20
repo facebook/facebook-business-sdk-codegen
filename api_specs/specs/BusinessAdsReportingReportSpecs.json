@@ -1,0 +1,161 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "action_report_time",
+            "type": "string"
+        },
+        {
+            "name": "ad_account_id",
+            "type": "string"
+        },
+        {
+            "name": "ad_account_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "ad_accounts",
+            "type": "list<Object>"
+        },
+        {
+            "name": "attribution_windows",
+            "type": "list<string>"
+        },
+        {
+            "name": "business",
+            "type": "Business"
+        },
+        {
+            "name": "business_asset_group",
+            "type": "BusinessAssetGroup"
+        },
+        {
+            "name": "comparison_date_interval",
+            "type": "Object"
+        },
+        {
+            "name": "creation_source",
+            "type": "string"
+        },
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "date_preset",
+            "type": "string"
+        },
+        {
+            "name": "default_attribution_windows",
+            "type": "list<string>"
+        },
+        {
+            "name": "filtering",
+            "type": "list<Object>"
+        },
+        {
+            "name": "formatting",
+            "type": "list<map<string, list<Object>>>"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "last_access_by",
+            "type": "Profile"
+        },
+        {
+            "name": "last_access_time",
+            "type": "datetime"
+        },
+        {
+            "name": "last_report_snapshot_id",
+            "type": "string"
+        },
+        {
+            "name": "last_report_snapshot_time",
+            "type": "datetime"
+        },
+        {
+            "name": "last_shared_report_expiration",
+            "type": "datetime"
+        },
+        {
+            "name": "limit",
+            "type": "int"
+        },
+        {
+            "name": "locked_dimensions",
+            "type": "int"
+        },
+        {
+            "name": "report_name",
+            "type": "string"
+        },
+        {
+            "name": "report_snapshot_async_percent_completion",
+            "type": "int"
+        },
+        {
+            "name": "report_snapshot_async_status",
+            "type": "string"
+        },
+        {
+            "name": "schedule_frequency",
+            "type": "string"
+        },
+        {
+            "name": "scope",
+            "type": "string"
+        },
+        {
+            "name": "show_deprecate_aw_banner",
+            "type": "bool"
+        },
+        {
+            "name": "sorting",
+            "type": "list<Object>"
+        },
+        {
+            "name": "start_date",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "subscribers",
+            "type": "list<string>"
+        },
+        {
+            "name": "update_by",
+            "type": "Profile"
+        },
+        {
+            "name": "update_time",
+            "type": "datetime"
+        },
+        {
+            "name": "user",
+            "type": "Profile"
+        },
+        {
+            "name": "user_dimensions",
+            "type": "list<string>"
+        },
+        {
+            "name": "user_metrics",
+            "type": "list<string>"
+        },
+        {
+            "name": "view_type",
+            "type": "string"
+        }
+    ]
+}

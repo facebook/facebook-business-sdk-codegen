@@ -90,6 +90,33 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "budget_schedules",
+            "return": "HighDemandPeriod",
+            "params": [
+                {
+                    "name": "budget_value",
+                    "required": true,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "budget_value_type",
+                    "required": true,
+                    "type": "adcampaigngroupbudget_schedules_budget_value_type_enum_param"
+                },
+                {
+                    "name": "time_end",
+                    "required": true,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "time_start",
+                    "required": true,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "copies",
             "return": "Campaign",
@@ -554,6 +581,10 @@
         },
         {
             "name": "buying_type",
+            "type": "string"
+        },
+        {
+            "name": "campaign_group_active_time",
             "type": "string"
         },
         {

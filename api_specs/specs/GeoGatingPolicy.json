@@ -1,0 +1,40 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "GeoGatingPolicy",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "after_schedule",
+            "type": "string"
+        },
+        {
+            "name": "exclude_country",
+            "type": "list<string>"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "include_country",
+            "type": "list<string>"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "valid_from",
+            "type": "datetime"
+        },
+        {
+            "name": "valid_until",
+            "type": "datetime"
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "created_time",
+            "type": "string"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "disable_reason",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "ig_profile_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "is_disabled",
+            "type": "bool"
+        },
+        {
+            "name": "is_fb_video_group",
+            "type": "bool"
+        },
+        {
+            "name": "last_used_time",
+            "type": "string"
+        },
+        {
+            "name": "length",
+            "type": "float"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "page_id",
+            "type": "string"
+        },
+        {
+            "name": "page_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "picture",
+            "type": "string"
+        },
+        {
+            "name": "placements",
+            "type": "list<string>"
+        },
+        {
+            "name": "video_group_types",
+            "type": "list<string>"
+        },
+        {
+            "name": "videos",
+            "type": "list<string>"
+        },
+        {
+            "name": "views",
+            "type": "unsigned int"
+        }
+    ]
+}

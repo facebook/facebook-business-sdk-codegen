@@ -2,6 +2,12 @@
     "apis": [
         {
             "method": "GET",
+            "endpoint": "preview",
+            "return": "CanvasPreview",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "previews",
             "return": "TextWithEntities",
             "params": [
@@ -140,7 +146,7 @@
         },
         {
             "name": "source_template",
-            "type": "Object"
+            "type": "CanvasTemplate"
         },
         {
             "name": "store_url",

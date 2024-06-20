@@ -1,0 +1,68 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "CanvasTemplate",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "channels",
+            "type": "list<map<string, list<map<string, string>>>>"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "document",
+            "type": "Canvas"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_multi_tab_supportable",
+            "type": "bool"
+        },
+        {
+            "name": "is_new",
+            "type": "bool"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "objectives",
+            "type": "list<map<Object, Object>>"
+        },
+        {
+            "name": "owner_id",
+            "type": "User"
+        },
+        {
+            "name": "required_capabilities",
+            "type": "list<string>"
+        },
+        {
+            "name": "snapshot_photo",
+            "type": "Photo"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "sub_verticals",
+            "type": "list<string>"
+        },
+        {
+            "name": "verticals",
+            "type": "list<map<string, string>>"
+        }
+    ]
+}

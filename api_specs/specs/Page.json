@@ -8,6 +8,48 @@
         },
         {
             "method": "POST",
+            "endpoint": "ab_tests",
+            "return": "PagePostExperiment",
+            "params": [
+                {
+                    "name": "control_video_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "description",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "duration",
+                    "required": true,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "experiment_video_ids",
+                    "required": true,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "optimization_goal",
+                    "required": true,
+                    "type": "pageab_tests_optimization_goal_enum_param"
+                },
+                {
+                    "name": "scheduled_experiment_timestamp",
+                    "required": false,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
+            "method": "POST",
             "endpoint": "acknowledge_orders",
             "return": "Page",
             "params": [
@@ -250,6 +292,38 @@
             "params": []
         },
         {
+            "method": "POST",
+            "endpoint": "calls",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "action",
+                    "required": true,
+                    "type": "pagecalls_action_enum_param"
+                },
+                {
+                    "name": "call_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "platform",
+                    "required": false,
+                    "type": "pagecalls_platform_enum_param"
+                },
+                {
+                    "name": "session",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "to",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "canvas_elements",
             "return": "CanvasBodyElement",
@@ -453,12 +527,6 @@
                     "type": "string"
                 }
             ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "commerce_eligibility",
-            "return": "PageCommerceEligibility",
-            "params": []
         },
         {
             "method": "GET",
@@ -679,7 +747,13 @@
         {
             "method": "GET",
             "endpoint": "dataset",
-            "return": "Dataset",
+            "return": "AdsPixel",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "dataset",
+            "return": "AdsPixel",
             "params": []
         },
         {
@@ -770,11 +844,6 @@
                     "type": "Object"
                 },
                 {
-                    "name": "adaptive_type",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "album_id",
                     "required": false,
                     "type": "string"
@@ -833,6 +902,16 @@
                     "name": "backdated_time_granularity",
                     "required": false,
                     "type": "pagefeed_backdated_time_granularity_enum_param"
+                },
+                {
+                    "name": "breaking_news",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "breaking_news_expiration",
+                    "required": false,
+                    "type": "unsigned int"
                 },
                 {
                     "name": "call_to_action",
@@ -958,11 +1037,6 @@
                     "name": "fun_fact_toastee_id",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "has_nickname",
-                    "required": false,
-                    "type": "bool"
                 },
                 {
                     "name": "height",
@@ -1191,11 +1265,6 @@
                 },
                 {
                     "name": "quote",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "react_mode_metadata",
                     "required": false,
                     "type": "string"
                 },
@@ -1463,33 +1532,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "instant_articles_stats",
-            "return": "InstantArticlesStats",
-            "params": [
-                {
-                    "name": "metrics_list",
-                    "required": false,
-                    "type": "list<map>"
-                },
-                {
-                    "name": "page_list",
-                    "required": true,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "since",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "until",
-                    "required": false,
-                    "type": "datetime"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "leadgen_forms",
             "return": "LeadgenForm",
             "params": []
@@ -1738,14 +1780,14 @@
             "return": "Object",
             "params": [
                 {
-                    "name": "location_page_id",
+                    "name": "location_page_ids",
                     "required": true,
-                    "type": "string"
+                    "type": "list<string>"
                 },
                 {
-                    "name": "store_number",
-                    "required": false,
-                    "type": "unsigned int"
+                    "name": "store_numbers",
+                    "required": true,
+                    "type": "list<unsigned int>"
                 }
             ]
         },
@@ -1988,6 +2030,24 @@
         },
         {
             "method": "GET",
+            "endpoint": "messenger_call_settings",
+            "return": "MessengerCallSettings",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "messenger_call_settings",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "audio_enabled",
+                    "required": false,
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "messenger_lead_forms",
             "return": "MessengerAdsPartialAutomatedStepList",
             "params": []
@@ -2094,6 +2154,16 @@
                     "type": "string"
                 },
                 {
+                    "name": "commands",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
                     "name": "get_started",
                     "required": false,
                     "type": "Object"
@@ -2127,6 +2197,11 @@
                     "name": "target_audience",
                     "required": false,
                     "type": "Object"
+                },
+                {
+                    "name": "title",
+                    "required": false,
+                    "type": "list<Object>"
                 },
                 {
                     "name": "whitelisted_domains",
@@ -2618,11 +2693,6 @@
             "return": "ProfilePictureSource",
             "params": [
                 {
-                    "name": "breaking_change",
-                    "required": false,
-                    "type": "pagepicture_breaking_change_enum_param"
-                },
-                {
                     "name": "height",
                     "required": false,
                     "type": "int"
@@ -2950,7 +3020,23 @@
             "method": "GET",
             "endpoint": "stories",
             "return": "Stories",
-            "params": []
+            "params": [
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "status",
+                    "required": false,
+                    "type": "list<pagestories_status_enum_param>"
+                },
+                {
+                    "name": "until",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
         },
         {
             "method": "DELETE",
@@ -3008,6 +3094,28 @@
                     "name": "recipient",
                     "required": true,
                     "type": "Object"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "thread_action",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "action",
+                    "required": true,
+                    "type": "pagethread_action_action_enum_param"
+                },
+                {
+                    "name": "action_type",
+                    "required": true,
+                    "type": "pagethread_action_action_type_enum_param"
+                },
+                {
+                    "name": "user_id",
+                    "required": true,
+                    "type": "map"
                 }
             ]
         },
@@ -3318,11 +3426,6 @@
                     "type": "list"
                 },
                 {
-                    "name": "adaptive_type",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "animated_effect_id",
                     "required": false,
                     "type": "unsigned int"
@@ -3503,11 +3606,6 @@
                     "type": "bool"
                 },
                 {
-                    "name": "has_nickname",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "holiday_card",
                     "required": false,
                     "type": "string"
@@ -3616,11 +3714,6 @@
                     "name": "published",
                     "required": false,
                     "type": "bool"
-                },
-                {
-                    "name": "react_mode_metadata",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "reference_only",
@@ -3812,6 +3905,18 @@
             ]
         },
         {
+            "method": "DELETE",
+            "endpoint": "welcome_message_flows",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "flow_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "welcome_message_flows",
             "return": "CTXPartnerAppWelcomeMessageFlow",
@@ -3825,6 +3930,33 @@
                     "name": "flow_id",
                     "required": false,
                     "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "welcome_message_flows",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "eligible_platforms",
+                    "required": false,
+                    "type": "list<pagewelcome_message_flows_eligible_platforms_enum_param>"
+                },
+                {
+                    "name": "flow_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "welcome_message_flow",
+                    "required": false,
+                    "type": "list<Object>"
                 }
             ]
         },
@@ -4153,6 +4285,10 @@
             "type": "string"
         },
         {
+            "name": "available_promo_offer_ids",
+            "type": "list<map<string, list<map<string, string>>>>"
+        },
+        {
             "name": "awards",
             "type": "string"
         },
@@ -4179,6 +4315,10 @@
         {
             "name": "booking_agent",
             "type": "string"
+        },
+        {
+            "name": "breaking_news_usage",
+            "type": "Object"
         },
         {
             "name": "built",
@@ -4273,6 +4413,10 @@
             "type": "string"
         },
         {
+            "name": "does_viewer_have_page_permission_link_ig",
+            "type": "bool"
+        },
+        {
             "name": "emails",
             "type": "list<string>"
         },
@@ -4329,15 +4473,15 @@
             "type": "bool"
         },
         {
+            "name": "has_lead_access",
+            "type": "HasLeadAccess"
+        },
+        {
             "name": "has_transitioned_to_new_page_experience",
             "type": "bool"
         },
         {
             "name": "has_whatsapp_business_number",
-            "type": "bool"
-        },
-        {
-            "name": "has_whatsapp_enterprise_number_using_cloud_api",
             "type": "bool"
         },
         {
@@ -4373,6 +4517,10 @@
             "type": "bool"
         },
         {
+            "name": "is_calling_eligible",
+            "type": "bool"
+        },
+        {
             "name": "is_chain",
             "type": "bool"
         },
@@ -4382,6 +4530,10 @@
         },
         {
             "name": "is_eligible_for_branded_content",
+            "type": "bool"
+        },
+        {
+            "name": "is_eligible_for_disable_connect_ig_btn_for_non_page_admin_am_web",
             "type": "bool"
         },
         {
@@ -4461,10 +4613,6 @@
             "type": "list<string>"
         },
         {
-            "name": "messenger_ads_default_page_welcome_message",
-            "type": "MessengerDestinationPageWelcomeMessage"
-        },
-        {
             "name": "messenger_ads_default_quick_replies",
             "type": "list<string>"
         },
@@ -4511,10 +4659,6 @@
         {
             "name": "owner_business",
             "type": "Business"
-        },
-        {
-            "name": "page_about_story",
-            "type": "PageAboutStory"
         },
         {
             "name": "page_token",

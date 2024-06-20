@@ -1,0 +1,64 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "EventTour",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "dominant_color",
+            "type": "string"
+        },
+        {
+            "name": "end_time",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_past",
+            "type": "bool"
+        },
+        {
+            "name": "last_event_timestamp",
+            "type": "int"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "num_events",
+            "type": "int"
+        },
+        {
+            "name": "photo",
+            "type": "Photo"
+        },
+        {
+            "name": "scheduled_publish_timestamp",
+            "type": "int"
+        },
+        {
+            "name": "start_time",
+            "type": "string"
+        },
+        {
+            "name": "ticketing_uri",
+            "type": "string"
+        },
+        {
+            "name": "video",
+            "type": "AdVideo"
+        }
+    ]
+}

@@ -18,6 +18,10 @@
             "type": "string"
         },
         {
+            "name": "automated_product_tags",
+            "type": "bool"
+        },
+        {
             "name": "branded_content_shared_to_sponsor_status",
             "type": "string"
         },

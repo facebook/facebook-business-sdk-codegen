@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "explanations",
+            "type": "Object"
+        },
+        {
+            "name": "format",
+            "type": "list<string>"
+        },
+        {
+            "name": "objective",
+            "type": "list<string>"
+        },
+        {
+            "name": "optimization_goals",
+            "type": "list<string>"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "camera_make",
+            "type": "string"
+        },
+        {
+            "name": "camera_model",
+            "type": "string"
+        },
+        {
+            "name": "datetime_modified",
+            "type": "datetime"
+        },
+        {
+            "name": "datetime_taken",
+            "type": "datetime"
+        },
+        {
+            "name": "exposure",
+            "type": "string"
+        },
+        {
+            "name": "focal_length",
+            "type": "string"
+        },
+        {
+            "name": "fstop",
+            "type": "string"
+        },
+        {
+            "name": "iso_speed",
+            "type": "int"
+        },
+        {
+            "name": "offline_id",
+            "type": "string"
+        },
+        {
+            "name": "orientation",
+            "type": "string"
+        },
+        {
+            "name": "original_height",
+            "type": "string"
+        },
+        {
+            "name": "original_width",
+            "type": "string"
+        }
+    ]
+}

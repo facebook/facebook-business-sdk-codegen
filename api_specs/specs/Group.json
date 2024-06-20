@@ -99,24 +99,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "attachment_surfaces",
-            "return": "GroupThirdPartyPostAttachmentSurface",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "attachment_surfaces",
-            "return": "GroupThirdPartyPostAttachmentSurface",
-            "params": [
-                {
-                    "name": "title",
-                    "required": true,
-                    "type": "map"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "docs",
             "return": "Doc",
             "params": []
@@ -173,11 +155,6 @@
                     "name": "actions",
                     "required": false,
                     "type": "Object"
-                },
-                {
-                    "name": "adaptive_type",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "album_id",
@@ -238,6 +215,16 @@
                     "name": "backdated_time_granularity",
                     "required": false,
                     "type": "groupfeed_backdated_time_granularity_enum_param"
+                },
+                {
+                    "name": "breaking_news",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "breaking_news_expiration",
+                    "required": false,
+                    "type": "unsigned int"
                 },
                 {
                     "name": "call_to_action",
@@ -358,11 +345,6 @@
                     "name": "fun_fact_toastee_id",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "has_nickname",
-                    "required": false,
-                    "type": "bool"
                 },
                 {
                     "name": "height",
@@ -591,11 +573,6 @@
                 },
                 {
                     "name": "quote",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "react_mode_metadata",
                     "required": false,
                     "type": "string"
                 },
@@ -1170,11 +1147,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "scheduled_publish_time",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
                     "name": "spherical_metadata",
                     "required": false,
                     "type": "map"
@@ -1242,11 +1214,6 @@
             "return": "ProfilePictureSource",
             "params": [
                 {
-                    "name": "breaking_change",
-                    "required": false,
-                    "type": "grouppicture_breaking_change_enum_param"
-                },
-                {
                     "name": "height",
                     "required": false,
                     "type": "int"
@@ -1285,11 +1252,6 @@
             "endpoint": "videos",
             "return": "AdVideo",
             "params": [
-                {
-                    "name": "adaptive_type",
-                    "required": false,
-                    "type": "string"
-                },
                 {
                     "name": "animated_effect_id",
                     "required": false,
@@ -1431,11 +1393,6 @@
                     "type": "bool"
                 },
                 {
-                    "name": "has_nickname",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "holiday_card",
                     "required": false,
                     "type": "string"
@@ -1534,11 +1491,6 @@
                     "name": "published",
                     "required": false,
                     "type": "bool"
-                },
-                {
-                    "name": "react_mode_metadata",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "referenced_sticker_id",

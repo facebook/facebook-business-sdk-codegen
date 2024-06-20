@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "code",
+            "type": "int"
+        },
+        {
+            "name": "message",
+            "type": "string"
+        }
+    ]
+}

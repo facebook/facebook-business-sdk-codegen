@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "availability",
+            "type": "ProductItemLandingPageData_availability"
+        }
+    ]
+}

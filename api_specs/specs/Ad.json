@@ -481,6 +481,11 @@
                     "type": "AdCreative"
                 },
                 {
+                    "name": "creative_asset_groups_spec",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
                     "name": "display_sequence",
                     "required": false,
                     "type": "unsigned int"
@@ -504,11 +509,6 @@
                     "name": "include_demolink_hashes",
                     "required": false,
                     "type": "bool"
-                },
-                {
-                    "name": "meta_reward_adgroup_status",
-                    "required": false,
-                    "type": "adgroup_meta_reward_adgroup_status"
                 },
                 {
                     "name": "name",
@@ -607,6 +607,10 @@
             "type": "AdCreative"
         },
         {
+            "name": "creative_asset_groups_spec",
+            "type": "AdCreativeAssetGroupsSpec"
+        },
+        {
             "name": "demolink_hash",
             "type": "string"
         },
@@ -636,10 +640,6 @@
         },
         {
             "name": "last_updated_by_app_id",
-            "type": "string"
-        },
-        {
-            "name": "meta_reward_adgroup_status",
             "type": "string"
         },
         {

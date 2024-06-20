@@ -6,6 +6,10 @@
             "type": "int"
         },
         {
+            "name": "campaign_ids",
+            "type": "list<int>"
+        },
+        {
             "name": "currency",
             "type": "string"
         },

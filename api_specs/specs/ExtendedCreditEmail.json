@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "email",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        }
+    ]
+}

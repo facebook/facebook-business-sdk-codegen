@@ -1,0 +1,41 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "amount",
+            "type": "Object"
+        },
+        {
+            "name": "creation_time",
+            "type": "int"
+        },
+        {
+            "name": "note",
+            "type": "string"
+        },
+        {
+            "name": "payment_request_id",
+            "type": "string"
+        },
+        {
+            "name": "receiver_id",
+            "type": "string"
+        },
+        {
+            "name": "reference_number",
+            "type": "string"
+        },
+        {
+            "name": "sender_id",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "transaction_time",
+            "type": "int"
+        }
+    ]
+}

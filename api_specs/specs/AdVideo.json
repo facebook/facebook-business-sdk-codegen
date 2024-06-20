@@ -505,7 +505,7 @@
         },
         {
             "name": "audio_isrc",
-            "type": "Object"
+            "type": "AudioIsrc"
         },
         {
             "name": "backdated_time",
@@ -526,6 +526,10 @@
         {
             "name": "copyright",
             "type": "VideoCopyright"
+        },
+        {
+            "name": "copyright_check_information",
+            "type": "Object"
         },
         {
             "name": "copyright_monitoring_status",
@@ -657,7 +661,7 @@
         },
         {
             "name": "status",
-            "type": "Object"
+            "type": "VideoStatus"
         },
         {
             "name": "title",

@@ -1,0 +1,32 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "SiteLink",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "link_image_hash",
+            "type": "string"
+        },
+        {
+            "name": "link_title",
+            "type": "string"
+        },
+        {
+            "name": "link_type",
+            "type": "string"
+        },
+        {
+            "name": "link_url",
+            "type": "string"
+        }
+    ]
+}

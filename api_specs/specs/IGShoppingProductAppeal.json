@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "eligible_for_appeal",
+            "type": "bool"
+        },
+        {
+            "name": "product_appeal_status",
+            "type": "string"
+        },
+        {
+            "name": "product_id",
+            "type": "int"
+        },
+        {
+            "name": "rejection_reasons",
+            "type": "list<string>"
+        },
+        {
+            "name": "review_status",
+            "type": "string"
+        }
+    ]
+}

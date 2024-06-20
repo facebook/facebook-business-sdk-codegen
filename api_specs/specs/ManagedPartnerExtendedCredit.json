@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "max_balance",
+            "type": "CurrencyAmount"
+        },
+        {
+            "name": "receiving_credit_allocation_config",
+            "type": "ExtendedCreditAllocationConfig"
+        }
+    ]
+}

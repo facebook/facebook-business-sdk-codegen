@@ -1,0 +1,36 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AREffect",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "last_modified_time",
+            "type": "datetime"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "surfaces",
+            "type": "list<string>"
+        }
+    ]
+}

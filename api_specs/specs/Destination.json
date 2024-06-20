@@ -79,6 +79,10 @@
             "type": "list<string>"
         },
         {
+            "name": "tags",
+            "type": "list<string>"
+        },
+        {
             "name": "types",
             "type": "list<string>"
         },

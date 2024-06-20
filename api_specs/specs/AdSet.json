@@ -140,6 +140,33 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "budget_schedules",
+            "return": "HighDemandPeriod",
+            "params": [
+                {
+                    "name": "budget_value",
+                    "required": true,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "budget_value_type",
+                    "required": true,
+                    "type": "adcampaignbudget_schedules_budget_value_type_enum_param"
+                },
+                {
+                    "name": "time_end",
+                    "required": true,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "time_start",
+                    "required": true,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "copies",
             "return": "AdSet",
@@ -674,6 +701,16 @@
                     "type": "string"
                 },
                 {
+                    "name": "regional_regulated_categories",
+                    "required": false,
+                    "type": "list<adcampaign_regional_regulated_categories>"
+                },
+                {
+                    "name": "regional_regulation_identities",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "rf_prediction_id",
                     "required": false,
                     "type": "string"
@@ -913,6 +950,14 @@
         {
             "name": "recurring_budget_semantics",
             "type": "bool"
+        },
+        {
+            "name": "regional_regulated_categories",
+            "type": "list<string>"
+        },
+        {
+            "name": "regional_regulation_identities",
+            "type": "RegionalRegulationIdentities"
         },
         {
             "name": "review_feedback",

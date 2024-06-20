@@ -9,6 +9,10 @@
     ],
     "fields": [
         {
+            "name": "commerce_merchant_settings",
+            "type": "CommerceMerchantSettings"
+        },
+        {
             "name": "fb_sales_channel",
             "type": "Object"
         },
@@ -19,6 +23,14 @@
         {
             "name": "ig_sales_channel",
             "type": "Object"
+        },
+        {
+            "name": "is_onsite_enabled",
+            "type": "bool"
+        },
+        {
+            "name": "shop_status",
+            "type": "string"
         },
         {
             "name": "workspace",

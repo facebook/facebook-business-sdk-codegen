@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "is_youth_ads_advertiser",
+            "type": "bool"
+        }
+    ]
+}

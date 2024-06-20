@@ -1,0 +1,85 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "clicks",
+            "type": "unsigned int"
+        },
+        {
+            "name": "cost_per_total_action",
+            "type": "float"
+        },
+        {
+            "name": "cost_per_unique_click",
+            "type": "float"
+        },
+        {
+            "name": "cpc",
+            "type": "float"
+        },
+        {
+            "name": "cpm",
+            "type": "float"
+        },
+        {
+            "name": "cpp",
+            "type": "float"
+        },
+        {
+            "name": "ctr",
+            "type": "float"
+        },
+        {
+            "name": "frequency",
+            "type": "float"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "impressions",
+            "type": "unsigned int"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "reach",
+            "type": "unsigned int"
+        },
+        {
+            "name": "spend",
+            "type": "float"
+        },
+        {
+            "name": "total_actions",
+            "type": "unsigned int"
+        },
+        {
+            "name": "total_unique_actions",
+            "type": "unsigned int"
+        },
+        {
+            "name": "unique_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "unique_clicks",
+            "type": "unsigned int"
+        },
+        {
+            "name": "unique_ctr",
+            "type": "float"
+        },
+        {
+            "name": "unique_impressions",
+            "type": "unsigned int"
+        }
+    ]
+}

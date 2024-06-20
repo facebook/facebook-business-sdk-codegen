@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "children",
+            "type": "list<AdCampaignGroupStructureTree>"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "time_updated",
+            "type": "int"
+        }
+    ]
+}

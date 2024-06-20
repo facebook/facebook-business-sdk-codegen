@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "asset",
+            "type": "Object"
+        },
+        {
+            "name": "asset_type",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "picture",
+            "type": "string"
+        }
+    ]
+}

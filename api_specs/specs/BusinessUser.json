@@ -84,6 +84,11 @@
                     "type": "businessuser_role"
                 },
                 {
+                    "name": "skip_verification_email",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "title",
                     "required": false,
                     "type": "string"

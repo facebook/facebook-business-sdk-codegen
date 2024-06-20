@@ -254,6 +254,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "assigned_applications",
+            "return": "Application",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "assigned_business_asset_groups",
             "return": "BusinessAssetGroup",
             "params": [
@@ -360,7 +366,7 @@
                 {
                     "name": "timezone_id",
                     "required": false,
-                    "type": "unsigned int"
+                    "type": "userbusinesses_timezone_id_enum_param"
                 },
                 {
                     "name": "vertical",
@@ -467,11 +473,6 @@
                     "type": "Object"
                 },
                 {
-                    "name": "adaptive_type",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "album_id",
                     "required": false,
                     "type": "string"
@@ -530,6 +531,16 @@
                     "name": "backdated_time_granularity",
                     "required": false,
                     "type": "userfeed_backdated_time_granularity_enum_param"
+                },
+                {
+                    "name": "breaking_news",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "breaking_news_expiration",
+                    "required": false,
+                    "type": "unsigned int"
                 },
                 {
                     "name": "call_to_action",
@@ -650,11 +661,6 @@
                     "name": "fun_fact_toastee_id",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "has_nickname",
-                    "required": false,
-                    "type": "bool"
                 },
                 {
                     "name": "height",
@@ -887,11 +893,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "react_mode_metadata",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "ref",
                     "required": false,
                     "type": "list<string>"
@@ -1105,55 +1106,6 @@
                     "name": "page_id",
                     "required": false,
                     "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "game_items",
-            "return": "GameItem",
-            "params": [
-                {
-                    "name": "action",
-                    "required": true,
-                    "type": "usergame_items_action_enum_param"
-                },
-                {
-                    "name": "app_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "drop_table_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "ext_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "item_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "quantity",
-                    "required": false,
-                    "type": "unsigned int"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "game_times",
-            "return": "GameTime",
-            "params": [
-                {
-                    "name": "action",
-                    "required": true,
-                    "type": "usergame_times_action_enum_param"
                 }
             ]
         },
@@ -1685,11 +1637,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "scheduled_publish_time",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
                     "name": "spherical_metadata",
                     "required": false,
                     "type": "map"
@@ -1756,11 +1703,6 @@
             "endpoint": "picture",
             "return": "ProfilePictureSource",
             "params": [
-                {
-                    "name": "breaking_change",
-                    "required": false,
-                    "type": "userpicture_breaking_change_enum_param"
-                },
                 {
                     "name": "height",
                     "required": false,
@@ -1861,11 +1803,6 @@
             "endpoint": "videos",
             "return": "AdVideo",
             "params": [
-                {
-                    "name": "adaptive_type",
-                    "required": false,
-                    "type": "string"
-                },
                 {
                     "name": "animated_effect_id",
                     "required": false,
@@ -2012,11 +1949,6 @@
                     "type": "bool"
                 },
                 {
-                    "name": "has_nickname",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "holiday_card",
                     "required": false,
                     "type": "string"
@@ -2120,11 +2052,6 @@
                     "name": "publish_event_id",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "react_mode_metadata",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "referenced_sticker_id",
@@ -2329,7 +2256,7 @@
         },
         {
             "name": "education",
-            "type": "list<Object>"
+            "type": "list<EducationExperience>"
         },
         {
             "name": "email",

@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "source",
+            "type": "string"
+        },
+        {
+            "name": "stats",
+            "type": "list<Object>"
+        }
+    ]
+}

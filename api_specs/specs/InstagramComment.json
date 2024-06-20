@@ -87,6 +87,10 @@
         {
             "name": "message",
             "type": "string"
+        },
+        {
+            "name": "username",
+            "type": "string"
         }
     ]
 }

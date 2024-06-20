@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "ad_creative_spec",
+            "type": "string"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "guidance_spec",
+            "type": "list<string>"
+        },
+        {
+            "name": "thumbnail_url",
+            "type": "string"
+        }
+    ]
+}

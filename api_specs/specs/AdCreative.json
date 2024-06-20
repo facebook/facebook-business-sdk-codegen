@@ -229,6 +229,14 @@
             "type": "string"
         },
         {
+            "name": "contextual_multi_ads",
+            "type": "AdCreativeContextualMultiAds"
+        },
+        {
+            "name": "creative_sourcing_spec",
+            "type": "AdCreativeSourcingSpec"
+        },
+        {
             "name": "degrees_of_freedom_spec",
             "type": "AdCreativeDegreesOfFreedomSpec"
         },
@@ -325,10 +333,6 @@
             "type": "string"
         },
         {
-            "name": "messenger_sponsored_message",
-            "type": "string"
-        },
-        {
             "name": "name",
             "type": "string"
         },
@@ -359,6 +363,14 @@
         {
             "name": "omnichannel_link_spec",
             "type": "AdCreativeOmnichannelLinkSpec"
+        },
+        {
+            "name": "page_welcome_message",
+            "type": "string"
+        },
+        {
+            "name": "photo_album_source_object_story_id",
+            "type": "string"
         },
         {
             "name": "place_page_set_id",

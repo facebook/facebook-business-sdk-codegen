@@ -1,0 +1,64 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ThirdPartyPartnerLiftRequest",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "ad_entities",
+            "type": "list<string>"
+        },
+        {
+            "name": "country",
+            "type": "string"
+        },
+        {
+            "name": "created_time",
+            "type": "datetime"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "holdout_size",
+            "type": "float"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "modified_time",
+            "type": "datetime"
+        },
+        {
+            "name": "owner_instance_id",
+            "type": "string"
+        },
+        {
+            "name": "region",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "ThirdPartyPartnerLiftRequest_status"
+        },
+        {
+            "name": "study_cells",
+            "type": "list<string>"
+        },
+        {
+            "name": "study_end_time",
+            "type": "datetime"
+        },
+        {
+            "name": "study_start_time",
+            "type": "datetime"
+        }
+    ]
+}

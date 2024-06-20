@@ -1,0 +1,50 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "conversion_events",
+            "return": "AdsSingleChannelConversionEvent",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdsConversionGoal",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "ad_account_id",
+            "type": "string"
+        },
+        {
+            "name": "conversion_event_value_source",
+            "type": "string"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "goal_creation_method",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "performance_goal",
+            "type": "string"
+        },
+        {
+            "name": "update_status",
+            "type": "string"
+        }
+    ]
+}

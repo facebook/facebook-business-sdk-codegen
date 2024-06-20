@@ -1,0 +1,29 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "boosted_component_optimization",
+            "type": "list<string>"
+        },
+        {
+            "name": "creation_flow_tips",
+            "type": "list<string>"
+        },
+        {
+            "name": "default_opted_in_placements",
+            "type": "list<Object>"
+        },
+        {
+            "name": "delivery_growth_optimizations",
+            "type": "list<Object>"
+        },
+        {
+            "name": "duplication_flow_tips",
+            "type": "list<string>"
+        },
+        {
+            "name": "edit_flow_tips",
+            "type": "list<string>"
+        }
+    ]
+}

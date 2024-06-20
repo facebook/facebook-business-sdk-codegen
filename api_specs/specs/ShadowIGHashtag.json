@@ -1,0 +1,44 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "recent_media",
+            "return": "IGMedia",
+            "params": [
+                {
+                    "name": "user_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "top_media",
+            "return": "IGMedia",
+            "params": [
+                {
+                    "name": "user_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ShadowIGHashtag",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        }
+    ]
+}

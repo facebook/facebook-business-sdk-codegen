@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "custom_event_type",
+            "type": "string"
+        },
+        {
+            "name": "optimization_goal",
+            "type": "string"
+        }
+    ]
+}

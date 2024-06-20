@@ -232,6 +232,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "sdk_version",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "ud",
                     "required": false,
                     "type": "map"
@@ -673,18 +678,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "banned",
-            "return": "User",
-            "params": [
-                {
-                    "name": "uid",
-                    "required": false,
-                    "type": "int"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "button_auto_detection_device_selection",
             "return": "ButtonAutoDetectionDeviceSelection",
             "params": [
@@ -746,27 +739,28 @@
             ]
         },
         {
-            "method": "GET",
-            "endpoint": "events",
-            "return": "Event",
+            "method": "POST",
+            "endpoint": "domain_reports",
+            "return": "Object",
             "params": [
                 {
-                    "name": "include_canceled",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "type",
-                    "required": false,
-                    "type": "applicationevents_type_enum_param"
+                    "name": "tracking_domains",
+                    "required": true,
+                    "type": "list<string>"
                 }
             ]
         },
         {
             "method": "GET",
-            "endpoint": "insights_push_schedule",
-            "return": "AdsInsightsPushSchedule",
-            "params": []
+            "endpoint": "iap_purchases",
+            "return": "DCPAppStoreOrder",
+            "params": [
+                {
+                    "name": "order_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -817,6 +811,11 @@
                 },
                 {
                     "name": "decline_reason",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "engagement_type",
                     "required": false,
                     "type": "string"
                 },
@@ -920,6 +919,12 @@
         {
             "method": "GET",
             "endpoint": "object_types",
+            "return": "NullNode",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "objects",
             "return": "NullNode",
             "params": []
         },
@@ -1175,6 +1180,45 @@
                     "name": "session_type",
                     "required": false,
                     "type": "applicationuploads_session_type_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "whatsapp_business_solution",
+            "return": "Application",
+            "params": [
+                {
+                    "name": "owner_permissions",
+                    "required": true,
+                    "type": "list<applicationwhatsapp_business_solution_owner_permissions_enum_param>"
+                },
+                {
+                    "name": "partner_app_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "partner_permissions",
+                    "required": true,
+                    "type": "list<applicationwhatsapp_business_solution_partner_permissions_enum_param>"
+                },
+                {
+                    "name": "solution_name",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "whatsapp_business_solutions",
+            "return": "WhatsAppBusinessSolution",
+            "params": [
+                {
+                    "name": "role",
+                    "required": false,
+                    "type": "applicationwhatsapp_business_solutions_role_enum_param"
                 }
             ]
         },
@@ -1452,6 +1496,14 @@
         },
         {
             "name": "auto_event_setup_enabled",
+            "type": "bool"
+        },
+        {
+            "name": "auto_log_app_events_default",
+            "type": "bool"
+        },
+        {
+            "name": "auto_log_app_events_enabled",
             "type": "bool"
         },
         {

@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "capability",
+            "type": "CatalogItemRejectionReasons_capability"
+        },
+        {
+            "name": "rejection_information",
+            "type": "list<Object>"
+        }
+    ]
+}

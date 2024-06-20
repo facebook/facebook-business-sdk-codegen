@@ -1,0 +1,232 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdsUserSettings",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "a_plus_c_survey_seen",
+            "type": "bool"
+        },
+        {
+            "name": "adgroup_name_template",
+            "type": "Object"
+        },
+        {
+            "name": "ads_tool_visits",
+            "type": "list<Object>"
+        },
+        {
+            "name": "aplusc_carousel_cda_opt_in_status",
+            "type": "string"
+        },
+        {
+            "name": "aplusc_carousel_inline_comment_opt_in_status",
+            "type": "string"
+        },
+        {
+            "name": "aplusc_epa_opt_in_status",
+            "type": "string"
+        },
+        {
+            "name": "aplusc_opt_out_friction",
+            "type": "list<string>"
+        },
+        {
+            "name": "autoflow_lite_opt_in_status",
+            "type": "string"
+        },
+        {
+            "name": "autoflow_lite_should_opt_in",
+            "type": "bool"
+        },
+        {
+            "name": "blended_ads_creation_defaulting_opt_in_status",
+            "type": "string"
+        },
+        {
+            "name": "bookmarked_pages",
+            "type": "list<Page>"
+        },
+        {
+            "name": "campaign_group_name_template",
+            "type": "Object"
+        },
+        {
+            "name": "campaign_name_template",
+            "type": "Object"
+        },
+        {
+            "name": "carousel_to_video_opt_in_status",
+            "type": "string"
+        },
+        {
+            "name": "connected_sources_catalog_opt_in_status",
+            "type": "string"
+        },
+        {
+            "name": "default_creation_mode",
+            "type": "string"
+        },
+        {
+            "name": "export_format_default",
+            "type": "string"
+        },
+        {
+            "name": "focus_mode_default",
+            "type": "string"
+        },
+        {
+            "name": "gen_ai_alpha_test_status",
+            "type": "int"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "image_expansion_opt_in_status",
+            "type": "string"
+        },
+        {
+            "name": "is_ads_ai_consented",
+            "type": "bool"
+        },
+        {
+            "name": "is_cbo_default_on",
+            "type": "bool"
+        },
+        {
+            "name": "is_se_removal_guidance_dismissed",
+            "type": "bool"
+        },
+        {
+            "name": "last_used_post_format",
+            "type": "string"
+        },
+        {
+            "name": "last_visited_time",
+            "type": "datetime"
+        },
+        {
+            "name": "multi_ads_settings",
+            "type": "list<map<string, string>>"
+        },
+        {
+            "name": "music_on_reels_opt_in",
+            "type": "list<map<string, string>>"
+        },
+        {
+            "name": "muted_cbo_midflight_education_messages",
+            "type": "list<string>"
+        },
+        {
+            "name": "onsite_destination_optimization_opt_in",
+            "type": "string"
+        },
+        {
+            "name": "open_tabs",
+            "type": "list<string>"
+        },
+        {
+            "name": "previously_seen_recommendations",
+            "type": "list<string>"
+        },
+        {
+            "name": "product_extensions_opt_in",
+            "type": "string"
+        },
+        {
+            "name": "selected_ad_account",
+            "type": "AdAccount"
+        },
+        {
+            "name": "selected_comparison_timerange",
+            "type": "Object"
+        },
+        {
+            "name": "selected_metric_cic",
+            "type": "string"
+        },
+        {
+            "name": "selected_metrics_cic",
+            "type": "list<string>"
+        },
+        {
+            "name": "selected_page",
+            "type": "Page"
+        },
+        {
+            "name": "selected_page_section",
+            "type": "string"
+        },
+        {
+            "name": "selected_power_editor_pane",
+            "type": "string"
+        },
+        {
+            "name": "selected_stat_range",
+            "type": "Object"
+        },
+        {
+            "name": "should_export_filter_empty_cols",
+            "type": "string"
+        },
+        {
+            "name": "should_export_rows_without_unsupported_feature",
+            "type": "string"
+        },
+        {
+            "name": "should_not_auto_expand_tree_table",
+            "type": "bool"
+        },
+        {
+            "name": "should_not_show_cbo_campaign_toggle_off_confirmation_message",
+            "type": "bool"
+        },
+        {
+            "name": "should_not_show_publish_message_on_editor_close",
+            "type": "bool"
+        },
+        {
+            "name": "show_original_videos_opt_in",
+            "type": "string"
+        },
+        {
+            "name": "static_ad_product_extensions_opt_in",
+            "type": "string"
+        },
+        {
+            "name": "sticky_setting_after_default_on",
+            "type": "string"
+        },
+        {
+            "name": "syd_campaign_trends_metric",
+            "type": "string"
+        },
+        {
+            "name": "total_coupon_syd_dismissals",
+            "type": "int"
+        },
+        {
+            "name": "total_coupon_upsell_dismissals",
+            "type": "int"
+        },
+        {
+            "name": "use_pe_create_flow",
+            "type": "bool"
+        },
+        {
+            "name": "use_stepper_primary_entry",
+            "type": "bool"
+        },
+        {
+            "name": "user",
+            "type": "User"
+        }
+    ]
+}

@@ -86,11 +86,19 @@
             "type": "string"
         },
         {
+            "name": "product_set",
+            "type": "ProductSet"
+        },
+        {
             "name": "product_set_id",
             "type": "string"
         },
         {
             "name": "retention_days",
+            "type": "string"
+        },
+        {
+            "name": "whatsapp_phone_number",
             "type": "string"
         }
     ]

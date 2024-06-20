@@ -13,59 +13,10 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "adaccounts",
-            "return": "OfflineConversionDataSet",
-            "params": [
-                {
-                    "name": "account_id",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "auto_track_for_ads",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "business",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "agencies",
             "return": "Business",
             "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "agencies",
-            "return": "OfflineConversionDataSet",
-            "params": [
-                {
-                    "name": "business",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "other_relationship",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "permitted_roles",
-                    "required": false,
-                    "type": "list<offlineconversiondatasetagencies_permitted_roles_enum_param>"
-                },
-                {
-                    "name": "relationship_type",
-                    "required": false,
-                    "type": "list<offlineconversiondatasetagencies_relationship_type_enum_param>"
-                }
-            ]
         },
         {
             "method": "GET",
@@ -201,72 +152,10 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "uploads",
-            "return": "OfflineConversionDataSetUpload",
-            "params": [
-                {
-                    "name": "upload_tag",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "validate",
-            "return": "OfflineConversionDataSet",
-            "params": [
-                {
-                    "name": "data",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "namespace_id",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "name": "#delete",
-            "method": "DELETE",
-            "return": "Object",
-            "params": []
-        },
-        {
             "name": "#get",
             "method": "GET",
             "return": "OfflineConversionDataSet",
             "params": []
-        },
-        {
-            "name": "#update",
-            "method": "POST",
-            "return": "OfflineConversionDataSet",
-            "params": [
-                {
-                    "name": "auto_assign_to_new_accounts_only",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "description",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "enable_auto_assign_to_accounts",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "name",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
         }
     ],
     "fields": [

@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "errors",
+            "type": "list<VideoStatusError>"
+        },
+        {
+            "name": "publish_status",
+            "type": "string"
+        },
+        {
+            "name": "publish_time",
+            "type": "datetime"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        }
+    ]
+}

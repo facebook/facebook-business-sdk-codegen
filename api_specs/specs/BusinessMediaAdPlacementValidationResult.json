@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "ad_placement",
+            "type": "string"
+        },
+        {
+            "name": "ad_placement_label",
+            "type": "string"
+        },
+        {
+            "name": "error_messages",
+            "type": "list<string>"
+        },
+        {
+            "name": "is_valid",
+            "type": "bool"
+        }
+    ]
+}

@@ -1,0 +1,137 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "call_to_action_title",
+            "type": "string"
+        },
+        {
+            "name": "contact_information_text",
+            "type": "string"
+        },
+        {
+            "name": "creatives_overview_default_text",
+            "type": "string"
+        },
+        {
+            "name": "data_privacy_policy_setting_description",
+            "type": "string"
+        },
+        {
+            "name": "default_appointment_scheduling_inline_context",
+            "type": "string"
+        },
+        {
+            "name": "default_disqualified_end_component",
+            "type": "Object"
+        },
+        {
+            "name": "default_thank_you_page",
+            "type": "Object"
+        },
+        {
+            "name": "disqualified_thank_you_card_transparency_info_text",
+            "type": "string"
+        },
+        {
+            "name": "edit_text",
+            "type": "string"
+        },
+        {
+            "name": "email_inline_context_text",
+            "type": "string"
+        },
+        {
+            "name": "email_messenger_push_opt_in_disclaimer",
+            "type": "string"
+        },
+        {
+            "name": "email_messenger_push_opt_in_transparency_text",
+            "type": "string"
+        },
+        {
+            "name": "form_clarity_description_content",
+            "type": "string"
+        },
+        {
+            "name": "form_clarity_description_title",
+            "type": "string"
+        },
+        {
+            "name": "form_clarity_headline",
+            "type": "string"
+        },
+        {
+            "name": "gated_content_locked_description",
+            "type": "string"
+        },
+        {
+            "name": "gated_content_locked_headline",
+            "type": "string"
+        },
+        {
+            "name": "gated_content_unlocked_description",
+            "type": "string"
+        },
+        {
+            "name": "gated_content_unlocked_headline",
+            "type": "string"
+        },
+        {
+            "name": "how_it_works_section_headers",
+            "type": "list<map<string, string>>"
+        },
+        {
+            "name": "next_button_text",
+            "type": "string"
+        },
+        {
+            "name": "optional_question_text",
+            "type": "string"
+        },
+        {
+            "name": "personal_info_text",
+            "type": "string"
+        },
+        {
+            "name": "phone_number_inline_context_text",
+            "type": "string"
+        },
+        {
+            "name": "privacy_policy_title_section_title_text",
+            "type": "string"
+        },
+        {
+            "name": "privacy_setting_description",
+            "type": "string"
+        },
+        {
+            "name": "products_section_headers",
+            "type": "list<map<string, string>>"
+        },
+        {
+            "name": "qualified_thank_you_card_transparency_info_text",
+            "type": "string"
+        },
+        {
+            "name": "review_your_info_text",
+            "type": "string"
+        },
+        {
+            "name": "secure_sharing_text",
+            "type": "string"
+        },
+        {
+            "name": "slide_to_submit_text",
+            "type": "string"
+        },
+        {
+            "name": "social_proof_section_headers",
+            "type": "list<map<string, string>>"
+        },
+        {
+            "name": "submit_button_text",
+            "type": "string"
+        }
+    ]
+}

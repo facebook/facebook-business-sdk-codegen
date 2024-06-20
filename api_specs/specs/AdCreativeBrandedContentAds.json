@@ -6,7 +6,15 @@
             "type": "int"
         },
         {
+            "name": "content_search_input",
+            "type": "string"
+        },
+        {
             "name": "creator_ad_permission_type",
+            "type": "string"
+        },
+        {
+            "name": "facebook_boost_post_access_token",
             "type": "string"
         },
         {
@@ -14,8 +22,16 @@
             "type": "string"
         },
         {
+            "name": "is_mca_internal",
+            "type": "bool"
+        },
+        {
             "name": "partners",
-            "type": "list<Object>"
+            "type": "list<AdCreativeBrandedContentAdsPartners>"
+        },
+        {
+            "name": "promoted_page_id",
+            "type": "string"
         },
         {
             "name": "ui_version",

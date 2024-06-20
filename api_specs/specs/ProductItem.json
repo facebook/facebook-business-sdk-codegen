@@ -322,21 +322,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "offer_price_amount",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "offer_price_end_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "offer_price_start_date",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
                     "name": "ordering_index",
                     "required": false,
                     "type": "unsigned int"
@@ -594,7 +579,7 @@
         },
         {
             "name": "invalidation_errors",
-            "type": "list<Object>"
+            "type": "list<ProductItemInvalidationError>"
         },
         {
             "name": "inventory",
@@ -721,8 +706,16 @@
             "type": "string"
         },
         {
+            "name": "tags",
+            "type": "list<string>"
+        },
+        {
             "name": "url",
             "type": "string"
+        },
+        {
+            "name": "video_fetch_status",
+            "type": "ProductItem_video_fetch_status"
         },
         {
             "name": "visibility",

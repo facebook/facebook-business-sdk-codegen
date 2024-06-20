@@ -1,0 +1,32 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "BusinessProject",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "business",
+            "type": "Business"
+        },
+        {
+            "name": "created_time",
+            "type": "datetime"
+        },
+        {
+            "name": "creator",
+            "type": "Object"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        }
+    ]
+}

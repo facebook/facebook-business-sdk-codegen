@@ -42,6 +42,34 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "upcoming_events",
+            "return": "IGUpcomingEvent",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "upcoming_events",
+            "return": "IGUpcomingEvent",
+            "params": [
+                {
+                    "name": "end_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "start_time",
+                    "required": true,
+                    "type": "datetime"
+                },
+                {
+                    "name": "title",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "name": "#get",
             "method": "GET",
             "return": "InstagramUser",
