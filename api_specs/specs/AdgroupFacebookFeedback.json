@@ -1,0 +1,26 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "comments",
+            "return": "Comment",
+            "params": [
+                {
+                    "name": "order",
+                    "required": false,
+                    "type": "adgroupfacebookfeedbackcomments_order_enum_param"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "preview",
+            "type": "string"
+        }
+    ]
+}

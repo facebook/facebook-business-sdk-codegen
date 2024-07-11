@@ -1,0 +1,44 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "BidSchedule",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "ad_object_id",
+            "type": "string"
+        },
+        {
+            "name": "bid_recurrence_type",
+            "type": "string"
+        },
+        {
+            "name": "bid_timezone",
+            "type": "string"
+        },
+        {
+            "name": "bid_value",
+            "type": "int"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "time_end",
+            "type": "datetime"
+        },
+        {
+            "name": "time_start",
+            "type": "datetime"
+        }
+    ]
+}

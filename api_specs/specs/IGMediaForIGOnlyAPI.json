@@ -1,0 +1,70 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "children",
+            "return": "Media",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "Media",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "caption",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_shared_to_feed",
+            "type": "bool"
+        },
+        {
+            "name": "like_count",
+            "type": "int"
+        },
+        {
+            "name": "media_product_type",
+            "type": "string"
+        },
+        {
+            "name": "media_type",
+            "type": "string"
+        },
+        {
+            "name": "media_url",
+            "type": "string"
+        },
+        {
+            "name": "owner",
+            "type": "User"
+        },
+        {
+            "name": "permalink",
+            "type": "string"
+        },
+        {
+            "name": "shortcode",
+            "type": "string"
+        },
+        {
+            "name": "thumbnail_url",
+            "type": "string"
+        },
+        {
+            "name": "timestamp",
+            "type": "datetime"
+        },
+        {
+            "name": "username",
+            "type": "string"
+        }
+    ]
+}

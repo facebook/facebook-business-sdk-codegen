@@ -1,0 +1,37 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "background_color",
+            "type": "AdCreativeLinkDataCustomOverlaySpec_background_color"
+        },
+        {
+            "name": "float_with_margin",
+            "type": "bool"
+        },
+        {
+            "name": "font",
+            "type": "AdCreativeLinkDataCustomOverlaySpec_font"
+        },
+        {
+            "name": "option",
+            "type": "AdCreativeLinkDataCustomOverlaySpec_option"
+        },
+        {
+            "name": "position",
+            "type": "AdCreativeLinkDataCustomOverlaySpec_position"
+        },
+        {
+            "name": "render_with_icon",
+            "type": "bool"
+        },
+        {
+            "name": "template",
+            "type": "AdCreativeLinkDataCustomOverlaySpec_template"
+        },
+        {
+            "name": "text_color",
+            "type": "AdCreativeLinkDataCustomOverlaySpec_text_color"
+        }
+    ]
+}

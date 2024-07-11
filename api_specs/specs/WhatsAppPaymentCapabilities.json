@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "is_enabled",
+            "type": "bool"
+        },
+        {
+            "name": "payment_capability_details",
+            "type": "list<Object>"
+        }
+    ]
+}

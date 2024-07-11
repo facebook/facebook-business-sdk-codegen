@@ -1,0 +1,213 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "can_proxy",
+            "type": "bool"
+        },
+        {
+            "name": "collection_rate",
+            "type": "float"
+        },
+        {
+            "name": "config",
+            "type": "string"
+        },
+        {
+            "name": "creation_time",
+            "type": "datetime"
+        },
+        {
+            "name": "creator",
+            "type": "User"
+        },
+        {
+            "name": "dataset_id",
+            "type": "string"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "duplicate_entries",
+            "type": "int"
+        },
+        {
+            "name": "enable_auto_assign_to_accounts",
+            "type": "bool"
+        },
+        {
+            "name": "enable_automatic_events",
+            "type": "bool"
+        },
+        {
+            "name": "enable_automatic_matching",
+            "type": "bool"
+        },
+        {
+            "name": "enable_real_time_event_log",
+            "type": "bool"
+        },
+        {
+            "name": "event_stats",
+            "type": "string"
+        },
+        {
+            "name": "event_time_max",
+            "type": "int"
+        },
+        {
+            "name": "event_time_min",
+            "type": "int"
+        },
+        {
+            "name": "first_party_cookie_status",
+            "type": "string"
+        },
+        {
+            "name": "has_bapi_domains",
+            "type": "bool"
+        },
+        {
+            "name": "has_catalog_microdata_activity",
+            "type": "bool"
+        },
+        {
+            "name": "has_ofa_redacted_keys",
+            "type": "bool"
+        },
+        {
+            "name": "has_sent_pii",
+            "type": "bool"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_consolidated_container",
+            "type": "bool"
+        },
+        {
+            "name": "is_created_by_business",
+            "type": "bool"
+        },
+        {
+            "name": "is_crm",
+            "type": "bool"
+        },
+        {
+            "name": "is_eligible_for_sharing_to_ad_account",
+            "type": "bool"
+        },
+        {
+            "name": "is_eligible_for_sharing_to_business",
+            "type": "bool"
+        },
+        {
+            "name": "is_eligible_for_value_optimization",
+            "type": "bool"
+        },
+        {
+            "name": "is_mta_use",
+            "type": "bool"
+        },
+        {
+            "name": "is_restricted_use",
+            "type": "bool"
+        },
+        {
+            "name": "is_unavailable",
+            "type": "bool"
+        },
+        {
+            "name": "last_fired_time",
+            "type": "datetime"
+        },
+        {
+            "name": "last_upload_app",
+            "type": "string"
+        },
+        {
+            "name": "last_upload_app_changed_time",
+            "type": "int"
+        },
+        {
+            "name": "last_upload_time",
+            "type": "int"
+        },
+        {
+            "name": "late_upload_reminder_eligibility",
+            "type": "bool"
+        },
+        {
+            "name": "match_rate_approx",
+            "type": "int"
+        },
+        {
+            "name": "matched_entries",
+            "type": "int"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "no_ads_tracked_for_weekly_uploaded_events_reminder_eligibility",
+            "type": "bool"
+        },
+        {
+            "name": "num_active_ad_set_tracked",
+            "type": "int"
+        },
+        {
+            "name": "num_recent_offline_conversions_uploaded",
+            "type": "int"
+        },
+        {
+            "name": "num_uploads",
+            "type": "int"
+        },
+        {
+            "name": "owner_ad_account",
+            "type": "AdAccount"
+        },
+        {
+            "name": "owner_business",
+            "type": "Business"
+        },
+        {
+            "name": "percentage_of_late_uploads_in_external_suboptimal_window",
+            "type": "int"
+        },
+        {
+            "name": "permissions",
+            "type": "OfflineConversionDataSetPermissions"
+        },
+        {
+            "name": "server_last_fired_time",
+            "type": "datetime"
+        },
+        {
+            "name": "show_automatic_events",
+            "type": "bool"
+        },
+        {
+            "name": "upload_rate",
+            "type": "float"
+        },
+        {
+            "name": "upload_reminder_eligibility",
+            "type": "bool"
+        },
+        {
+            "name": "usage",
+            "type": "OfflineConversionDataSetUsage"
+        },
+        {
+            "name": "valid_entries",
+            "type": "int"
+        }
+    ]
+}

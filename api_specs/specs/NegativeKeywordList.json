@@ -1,0 +1,77 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "NegativeKeywordList",
+            "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "NegativeKeywordList",
+            "params": [
+                {
+                    "name": "business_id",
+                    "required": true,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "list_name",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "applied_active_ad_campaign_groups",
+            "type": "list<map<string, string>>"
+        },
+        {
+            "name": "applied_inactive_ad_campaign_groups",
+            "type": "list<map<string, string>>"
+        },
+        {
+            "name": "creator_id",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_fully_reviewed",
+            "type": "bool"
+        },
+        {
+            "name": "last_update_time",
+            "type": "datetime"
+        },
+        {
+            "name": "last_update_user_id",
+            "type": "string"
+        },
+        {
+            "name": "list_name",
+            "type": "string"
+        },
+        {
+            "name": "total_approved_keyword_count",
+            "type": "int"
+        },
+        {
+            "name": "total_declined_keyword_count",
+            "type": "int"
+        },
+        {
+            "name": "total_negative_keyword_count",
+            "type": "int"
+        },
+        {
+            "name": "total_validated_keyword_count",
+            "type": "int"
+        }
+    ]
+}

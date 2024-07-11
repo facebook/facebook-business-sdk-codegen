@@ -28,6 +28,10 @@
         {
             "name": "title",
             "type": "string"
+        },
+        {
+            "name": "value",
+            "type": "string"
         }
     ]
 }

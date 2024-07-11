@@ -1,0 +1,36 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "DynamicItemDisplayBundleFolder",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "categorization_criteria",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "product_catalog",
+            "type": "ProductCatalog"
+        },
+        {
+            "name": "product_set",
+            "type": "ProductSet"
+        },
+        {
+            "name": "valid_labels",
+            "type": "list<map<string, list<string>>>"
+        }
+    ]
+}

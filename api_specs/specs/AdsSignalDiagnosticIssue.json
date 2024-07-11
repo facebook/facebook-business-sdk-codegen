@@ -1,0 +1,29 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "data_source_id",
+            "type": "AdsPixel"
+        },
+        {
+            "name": "data_source_type",
+            "type": "string"
+        },
+        {
+            "name": "diagnostic_type",
+            "type": "string"
+        },
+        {
+            "name": "event_name",
+            "type": "string"
+        },
+        {
+            "name": "traffic_anomaly_drop_percentage",
+            "type": "float"
+        },
+        {
+            "name": "traffic_anomaly_drop_timestamp",
+            "type": "datetime"
+        }
+    ]
+}

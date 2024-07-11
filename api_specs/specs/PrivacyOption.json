@@ -1,0 +1,29 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "icon_src",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_currently_selected",
+            "type": "bool"
+        },
+        {
+            "name": "type",
+            "type": "string"
+        },
+        {
+            "name": "user_id",
+            "type": "string"
+        }
+    ]
+}

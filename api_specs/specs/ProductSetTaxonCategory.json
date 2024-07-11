@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "category_id",
+            "type": "int"
+        },
+        {
+            "name": "category_name",
+            "type": "string"
+        },
+        {
+            "name": "image_url",
+            "type": "string"
+        }
+    ]
+}

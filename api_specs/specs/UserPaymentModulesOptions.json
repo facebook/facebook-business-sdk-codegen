@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "account_id",
+            "type": "string"
+        },
+        {
+            "name": "available_payment_options",
+            "type": "list<Object>"
+        },
+        {
+            "name": "country",
+            "type": "string"
+        },
+        {
+            "name": "currency",
+            "type": "string"
+        }
+    ]
+}

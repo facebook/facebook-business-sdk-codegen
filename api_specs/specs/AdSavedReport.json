@@ -1,0 +1,84 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdSavedReport",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "app_owner",
+            "type": "Application"
+        },
+        {
+            "name": "breakdowns",
+            "type": "list<string>"
+        },
+        {
+            "name": "builtin_column_set",
+            "type": "string"
+        },
+        {
+            "name": "creation_source",
+            "type": "string"
+        },
+        {
+            "name": "date_interval",
+            "type": "Object"
+        },
+        {
+            "name": "date_preset",
+            "type": "string"
+        },
+        {
+            "name": "format_version",
+            "type": "int"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "insights_section",
+            "type": "Object"
+        },
+        {
+            "name": "is_shared_unread",
+            "type": "bool"
+        },
+        {
+            "name": "level",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "normalized_filter",
+            "type": "list"
+        },
+        {
+            "name": "sort",
+            "type": "list<Object>"
+        },
+        {
+            "name": "user_attribution_windows",
+            "type": "list<string>"
+        },
+        {
+            "name": "user_columns",
+            "type": "list<string>"
+        },
+        {
+            "name": "user_filter",
+            "type": "list"
+        },
+        {
+            "name": "user_owner",
+            "type": "User"
+        }
+    ]
+}

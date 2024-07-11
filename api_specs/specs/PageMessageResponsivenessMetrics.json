@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "is_very_responsive",
+            "type": "bool"
+        },
+        {
+            "name": "response_rate",
+            "type": "float"
+        },
+        {
+            "name": "response_time",
+            "type": "float"
+        }
+    ]
+}

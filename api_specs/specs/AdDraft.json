@@ -1,0 +1,72 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdDraft",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "account_id",
+            "type": "string"
+        },
+        {
+            "name": "api_version",
+            "type": "string"
+        },
+        {
+            "name": "async_request_set",
+            "type": "AdAsyncRequestSet"
+        },
+        {
+            "name": "author_id",
+            "type": "string"
+        },
+        {
+            "name": "created_by",
+            "type": "string"
+        },
+        {
+            "name": "draft_version",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_active",
+            "type": "bool"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "ownership_type",
+            "type": "string"
+        },
+        {
+            "name": "publish_status",
+            "type": "Object"
+        },
+        {
+            "name": "state",
+            "type": "string"
+        },
+        {
+            "name": "summary",
+            "type": "string"
+        },
+        {
+            "name": "time_created",
+            "type": "datetime"
+        },
+        {
+            "name": "time_updated",
+            "type": "datetime"
+        }
+    ]
+}

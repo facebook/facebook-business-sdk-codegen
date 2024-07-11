@@ -1,0 +1,126 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AppEventConfig",
+            "params": [
+                {
+                    "name": "event_name",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": [
+        {
+            "name": "breakdowns_config",
+            "type": "list<Object>"
+        },
+        {
+            "name": "builtin_fields_config",
+            "type": "list<Object>"
+        },
+        {
+            "name": "deprecated_events_config",
+            "type": "list<Object>"
+        },
+        {
+            "name": "events_config",
+            "type": "list<Object>"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "ios_purchase_validation_secret",
+            "type": "string"
+        },
+        {
+            "name": "is_any_role_able_to_see_restricted_insights",
+            "type": "bool"
+        },
+        {
+            "name": "is_implicit_purchase_logging_on_android_supported",
+            "type": "bool"
+        },
+        {
+            "name": "is_implicit_purchase_logging_on_ios_supported",
+            "type": "bool"
+        },
+        {
+            "name": "is_track_android_app_uninstall_supported",
+            "type": "bool"
+        },
+        {
+            "name": "is_track_ios_app_uninstall_supported",
+            "type": "bool"
+        },
+        {
+            "name": "journey_backfill_status",
+            "type": "string"
+        },
+        {
+            "name": "journey_conversion_events",
+            "type": "list<string>"
+        },
+        {
+            "name": "journey_enabled",
+            "type": "bool"
+        },
+        {
+            "name": "journey_timeout",
+            "type": "string"
+        },
+        {
+            "name": "latest_sdk_versions",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "log_android_implicit_purchase_events",
+            "type": "bool"
+        },
+        {
+            "name": "log_automatic_analytics_events",
+            "type": "bool"
+        },
+        {
+            "name": "log_implicit_purchase_events",
+            "type": "bool"
+        },
+        {
+            "name": "prev_journey_conversion_events",
+            "type": "list<string>"
+        },
+        {
+            "name": "query_approximation_accuracy_level",
+            "type": "string"
+        },
+        {
+            "name": "query_currency",
+            "type": "string"
+        },
+        {
+            "name": "query_timezone",
+            "type": "string"
+        },
+        {
+            "name": "recent_events_update_time",
+            "type": "datetime"
+        },
+        {
+            "name": "session_timeout_interval",
+            "type": "unsigned int"
+        },
+        {
+            "name": "track_android_app_uninstall",
+            "type": "bool"
+        },
+        {
+            "name": "track_ios_app_uninstall",
+            "type": "bool"
+        }
+    ]
+}

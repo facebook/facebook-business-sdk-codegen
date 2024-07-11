@@ -1,0 +1,26 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "personas",
+            "return": "AdsValueAdjustmentRulePersona",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdsValueAdjustmentRuleCollection",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        }
+    ]
+}

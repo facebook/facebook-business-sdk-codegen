@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "sample_creative",
+            "type": "AdCreative"
+        },
+        {
+            "name": "visual_hash",
+            "type": "unsigned int"
+        }
+    ]
+}

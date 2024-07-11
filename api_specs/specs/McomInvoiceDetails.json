@@ -1,0 +1,81 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "additional_amounts",
+            "type": "list<Object>"
+        },
+        {
+            "name": "buyer_notes",
+            "type": "string"
+        },
+        {
+            "name": "currency_amount",
+            "type": "Object"
+        },
+        {
+            "name": "external_invoice_id",
+            "type": "string"
+        },
+        {
+            "name": "features",
+            "type": "Object"
+        },
+        {
+            "name": "invoice_created",
+            "type": "int"
+        },
+        {
+            "name": "invoice_id",
+            "type": "string"
+        },
+        {
+            "name": "invoice_instructions",
+            "type": "string"
+        },
+        {
+            "name": "invoice_instructions_image_url",
+            "type": "string"
+        },
+        {
+            "name": "invoice_updated",
+            "type": "int"
+        },
+        {
+            "name": "outstanding_amount",
+            "type": "Object"
+        },
+        {
+            "name": "paid_amount",
+            "type": "Object"
+        },
+        {
+            "name": "payments",
+            "type": "list<Object>"
+        },
+        {
+            "name": "platform_logo_url",
+            "type": "string"
+        },
+        {
+            "name": "platform_name",
+            "type": "string"
+        },
+        {
+            "name": "product_items",
+            "type": "list<Object>"
+        },
+        {
+            "name": "shipping_address",
+            "type": "Object"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "tracking_info",
+            "type": "Object"
+        }
+    ]
+}

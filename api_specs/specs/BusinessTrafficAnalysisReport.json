@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "audience_location",
+            "type": "list<Object>"
+        },
+        {
+            "name": "event_category",
+            "type": "list<Object>"
+        },
+        {
+            "name": "traffic_analysis_impressions",
+            "type": "list<Object>"
+        }
+    ]
+}

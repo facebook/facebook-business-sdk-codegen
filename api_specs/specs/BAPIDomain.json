@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "domain",
+            "type": "string"
+        },
+        {
+            "name": "in_cool_down_until",
+            "type": "int"
+        },
+        {
+            "name": "is_eligible_for_vo",
+            "type": "bool"
+        },
+        {
+            "name": "is_in_cool_down",
+            "type": "bool"
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "daily_audience_size",
+            "type": "int"
+        },
+        {
+            "name": "daily_impressions",
+            "type": "int"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "path",
+            "type": "list<string>"
+        },
+        {
+            "name": "popularity",
+            "type": "float"
+        },
+        {
+            "name": "projected_cpm",
+            "type": "int"
+        },
+        {
+            "name": "projected_daily_revenue",
+            "type": "int"
+        }
+    ]
+}

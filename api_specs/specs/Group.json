@@ -157,11 +157,6 @@
                     "type": "Object"
                 },
                 {
-                    "name": "adaptive_type",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "album_id",
                     "required": false,
                     "type": "string"
@@ -578,11 +573,6 @@
                 },
                 {
                     "name": "quote",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "react_mode_metadata",
                     "required": false,
                     "type": "string"
                 },
@@ -1263,11 +1253,6 @@
             "return": "AdVideo",
             "params": [
                 {
-                    "name": "adaptive_type",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "animated_effect_id",
                     "required": false,
                     "type": "unsigned int"
@@ -1506,11 +1491,6 @@
                     "name": "published",
                     "required": false,
                     "type": "bool"
-                },
-                {
-                    "name": "react_mode_metadata",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "referenced_sticker_id",

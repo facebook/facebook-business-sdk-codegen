@@ -68,7 +68,7 @@
     "fields": [
         {
             "name": "app_publishers",
-            "type": "list<Object>"
+            "type": "list<AppPublisher>"
         },
         {
             "name": "business_owner_id",
@@ -104,7 +104,7 @@
         },
         {
             "name": "web_publishers",
-            "type": "list<Object>"
+            "type": "list<WebPublisher>"
         }
     ]
 }

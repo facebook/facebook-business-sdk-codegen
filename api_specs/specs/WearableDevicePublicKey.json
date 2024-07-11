@@ -1,0 +1,44 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "WearableDevicePublicKey",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "base64_encoded_public_key",
+            "type": "string"
+        },
+        {
+            "name": "creation_time_on_device",
+            "type": "datetime"
+        },
+        {
+            "name": "device_uuid",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "key_type",
+            "type": "string"
+        },
+        {
+            "name": "owner_id",
+            "type": "string"
+        },
+        {
+            "name": "product_use_case",
+            "type": "string"
+        },
+        {
+            "name": "version",
+            "type": "string"
+        }
+    ]
+}

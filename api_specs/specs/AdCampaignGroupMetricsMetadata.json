@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "budget_optimization",
+            "type": "list<string>"
+        },
+        {
+            "name": "duplication_flow_tips",
+            "type": "list<string>"
+        }
+    ]
+}

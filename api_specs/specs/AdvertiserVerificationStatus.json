@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "banner_type",
+            "type": "string"
+        },
+        {
+            "name": "grace_period_ends_at",
+            "type": "datetime"
+        },
+        {
+            "name": "ufac_redirect_uri",
+            "type": "string"
+        },
+        {
+            "name": "verification_status",
+            "type": "string"
+        }
+    ]
+}

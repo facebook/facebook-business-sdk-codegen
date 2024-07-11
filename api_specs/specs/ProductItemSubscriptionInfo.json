@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "is_subscribable",
+            "type": "bool"
+        },
+        {
+            "name": "subscription_billing_period",
+            "type": "unsigned int"
+        },
+        {
+            "name": "subscription_billing_type",
+            "type": "string"
+        }
+    ]
+}

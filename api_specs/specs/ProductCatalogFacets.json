@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "facets",
+            "type": "list<map<string, list<Object>>>"
+        },
+        {
+            "name": "item_count",
+            "type": "int"
+        }
+    ]
+}
