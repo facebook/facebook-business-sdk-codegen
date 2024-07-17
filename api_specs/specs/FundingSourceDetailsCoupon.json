@@ -10,6 +10,10 @@
             "type": "list<int>"
         },
         {
+            "name": "coupon_id",
+            "type": "string"
+        },
+        {
             "name": "currency",
             "type": "string"
         },
@@ -20,6 +24,18 @@
         {
             "name": "expiration",
             "type": "datetime"
+        },
+        {
+            "name": "original_amount",
+            "type": "int"
+        },
+        {
+            "name": "original_display_amount",
+            "type": "string"
+        },
+        {
+            "name": "type",
+            "type": "int"
         }
     ]
 }
