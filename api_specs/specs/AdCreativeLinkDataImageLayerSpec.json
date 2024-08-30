@@ -10,6 +10,10 @@
             "type": "Object"
         },
         {
+            "name": "frame_auto_show_enroll_status",
+            "type": "string"
+        },
+        {
             "name": "frame_image_hash",
             "type": "string"
         },

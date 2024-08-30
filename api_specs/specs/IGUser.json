@@ -40,6 +40,11 @@
             "return": "BrandedContentShadowIGMediaID",
             "params": [
                 {
+                    "name": "ad_code",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "creator_username",
                     "required": false,
                     "type": "string"
@@ -124,14 +129,20 @@
         {
             "method": "GET",
             "endpoint": "dataset",
-            "return": "AdsPixel",
+            "return": "Dataset",
             "params": []
         },
         {
             "method": "POST",
             "endpoint": "dataset",
-            "return": "AdsPixel",
-            "params": []
+            "return": "Dataset",
+            "params": [
+                {
+                    "name": "dataset_name",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
         },
         {
             "method": "GET",

@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "messaging_feature_limit_duration",
+            "type": "int"
+        },
+        {
+            "name": "messaging_feature_limit_type",
+            "type": "string"
+        },
+        {
+            "name": "messaging_violation_type",
+            "type": "string"
+        }
+    ]
+}

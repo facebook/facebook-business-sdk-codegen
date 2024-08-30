@@ -6,6 +6,10 @@
             "type": "AdCreativeFeatureDetails"
         },
         {
+            "name": "add_text_overlay",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "ads_with_benefits",
             "type": "AdCreativeFeatureDetails"
         },
@@ -46,6 +50,10 @@
             "type": "AdCreativeFeatureDetails"
         },
         {
+            "name": "enhance_cta",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "feed_caption_optimization",
             "type": "AdCreativeFeatureDetails"
         },
@@ -83,6 +91,10 @@
         },
         {
             "name": "inline_comment",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "local_store_extension",
             "type": "AdCreativeFeatureDetails"
         },
         {

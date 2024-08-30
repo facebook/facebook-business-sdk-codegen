@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "ad_code",
+            "type": "string"
+        },
+        {
+            "name": "error_codes",
+            "type": "string"
+        },
+        {
+            "name": "errors",
+            "type": "list<string>"
+        },
+        {
+            "name": "permalink",
+            "type": "string"
+        }
+    ]
+}

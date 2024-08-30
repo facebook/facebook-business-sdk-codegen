@@ -18,6 +18,10 @@
             "type": "string"
         },
         {
+            "name": "product_versioning_fallback_strategy",
+            "type": "string"
+        },
+        {
             "name": "showcase_card_display",
             "type": "string"
         },

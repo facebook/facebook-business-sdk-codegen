@@ -368,6 +368,10 @@
             "type": "Object"
         },
         {
+            "name": "pre_order_details",
+            "type": "Object"
+        },
+        {
             "name": "selected_shipping_option",
             "type": "Object"
         },

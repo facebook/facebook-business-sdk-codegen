@@ -26,6 +26,10 @@
             "type": "AdCreativeTextData"
         },
         {
+            "name": "threads_actor_id",
+            "type": "string"
+        },
+        {
             "name": "video_data",
             "type": "AdCreativeVideoData"
         }
