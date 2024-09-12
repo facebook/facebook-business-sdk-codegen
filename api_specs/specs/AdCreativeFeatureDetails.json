@@ -4,6 +4,10 @@
         {
             "name": "enroll_status",
             "type": "string"
+        },
+        {
+            "name": "customizations",
+            "type": "AdCreativeFeatureCustomizations"
         }
     ]
 }
