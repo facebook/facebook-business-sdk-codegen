@@ -122,6 +122,10 @@
             "type": "list<string>"
         },
         {
+            "name": "preferred_video_tags",
+            "type": "list<string>"
+        },
+        {
             "name": "retailer_item_ids",
             "type": "list<string>"
         },

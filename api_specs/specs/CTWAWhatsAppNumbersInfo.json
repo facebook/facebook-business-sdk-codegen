@@ -18,6 +18,10 @@
             "type": "string"
         },
         {
+            "name": "waba_id",
+            "type": "string"
+        },
+        {
             "name": "whatsapp_number",
             "type": "string"
         },

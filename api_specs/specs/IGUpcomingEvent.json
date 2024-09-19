@@ -17,6 +17,16 @@
                     "type": "datetime"
                 },
                 {
+                    "name": "notification_subtypes",
+                    "required": false,
+                    "type": "list<igupcomingevent_notification_subtypes>"
+                },
+                {
+                    "name": "notification_target_time",
+                    "required": false,
+                    "type": "igupcomingevent_notification_target_time"
+                },
+                {
                     "name": "start_time",
                     "required": true,
                     "type": "datetime"
@@ -36,6 +46,14 @@
         },
         {
             "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "notification_subtypes",
+            "type": "list<string>"
+        },
+        {
+            "name": "notification_target_time",
             "type": "string"
         },
         {

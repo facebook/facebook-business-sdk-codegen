@@ -29,14 +29,6 @@
             "type": "list<map<string, list<string>>>"
         },
         {
-            "name": "cbb_default_filter_crawl_params",
-            "type": "string"
-        },
-        {
-            "name": "cbb_override_type_field_mapping",
-            "type": "list<map<string, list<string>>>"
-        },
-        {
             "name": "defaults",
             "type": "list<map<string, string>>"
         },
@@ -75,10 +67,6 @@
         {
             "name": "property_filter",
             "type": "list<string>"
-        },
-        {
-            "name": "retention_time_sec",
-            "type": "int"
         },
         {
             "name": "trusted_domains",

@@ -2,6 +2,10 @@
     "apis": [],
     "fields": [
         {
+            "name": "ctd_support_only_for_ig_app",
+            "type": "bool"
+        },
+        {
             "name": "has_instagram_messaging_permission",
             "type": "bool"
         },

@@ -2,15 +2,15 @@
     "apis": [],
     "fields": [
         {
-            "name": "description",
+            "name": "adjustment_sign",
             "type": "string"
         },
         {
-            "name": "id",
-            "type": "string"
+            "name": "adjustment_weight",
+            "type": "unsigned int"
         },
         {
-            "name": "title",
+            "name": "destination_type",
             "type": "string"
         }
     ]

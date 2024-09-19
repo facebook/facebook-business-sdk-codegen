@@ -39,6 +39,11 @@
             "return": "Page",
             "params": [
                 {
+                    "name": "ad_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "is_place",
                     "required": false,
                     "type": "bool"
@@ -481,11 +486,6 @@
                     "name": "android_key_hash",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "animated_effect_id",
-                    "required": false,
-                    "type": "unsigned int"
                 },
                 {
                     "name": "application_id",
@@ -1803,11 +1803,6 @@
             "endpoint": "videos",
             "return": "AdVideo",
             "params": [
-                {
-                    "name": "animated_effect_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
                 {
                     "name": "application_id",
                     "required": false,

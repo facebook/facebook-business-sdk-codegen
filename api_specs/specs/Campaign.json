@@ -676,6 +676,10 @@
             "type": "string"
         },
         {
+            "name": "source_recommendation_type",
+            "type": "string"
+        },
+        {
             "name": "special_ad_categories",
             "type": "list<string>"
         },

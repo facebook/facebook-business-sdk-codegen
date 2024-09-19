@@ -77,6 +77,10 @@
             "type": "bool"
         },
         {
+            "name": "has_seen_instagram_column_flexing_experience",
+            "type": "bool"
+        },
+        {
             "name": "has_seen_leads_column_flexing_experience",
             "type": "bool"
         },

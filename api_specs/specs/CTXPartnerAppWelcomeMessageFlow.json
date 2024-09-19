@@ -21,6 +21,10 @@
             "type": "string"
         },
         {
+            "name": "is_ig_only_flow",
+            "type": "bool"
+        },
+        {
             "name": "is_used_in_ad",
             "type": "bool"
         },
@@ -34,6 +38,10 @@
         },
         {
             "name": "welcome_message_flow",
+            "type": "string"
+        },
+        {
+            "name": "welcome_message_sequence",
             "type": "string"
         }
     ]

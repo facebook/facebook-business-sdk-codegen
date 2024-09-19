@@ -83,20 +83,15 @@
         },
         {
             "method": "DELETE",
-            "endpoint": "product_tags",
+            "endpoint": "partnership_ad_code",
             "return": "Object",
-            "params": [
-                {
-                    "name": "child_index",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "deleted_tags",
-                    "required": true,
-                    "type": "list<map>"
-                }
-            ]
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "partnership_ad_code",
+            "return": "Object",
+            "params": []
         },
         {
             "method": "GET",

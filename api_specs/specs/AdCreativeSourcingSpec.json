@@ -6,6 +6,10 @@
             "type": "string"
         },
         {
+            "name": "enable_social_feedback_preservation",
+            "type": "bool"
+        },
+        {
             "name": "promotion_metadata_spec",
             "type": "list<AdCreativePromotionMetadataSpec>"
         },

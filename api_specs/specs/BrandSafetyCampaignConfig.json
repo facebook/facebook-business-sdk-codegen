@@ -2,7 +2,7 @@
     "apis": [],
     "fields": [
         {
-            "name": "example_feed",
+            "name": "comment_moderation_filter",
             "type": "string"
         }
     ]

@@ -26,6 +26,10 @@
             "type": "list<AdAssetFeedSpecBody>"
         },
         {
+            "name": "call_ads_configuration",
+            "type": "Object"
+        },
+        {
             "name": "call_to_action_types",
             "type": "list<AdAssetFeedSpec_call_to_action_types>"
         },

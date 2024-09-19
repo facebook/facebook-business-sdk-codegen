@@ -1,0 +1,41 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "estimate_cost",
+            "type": "float"
+        },
+        {
+            "name": "estimate_cost_lower_bound",
+            "type": "float"
+        },
+        {
+            "name": "estimate_cost_upper_bound",
+            "type": "float"
+        },
+        {
+            "name": "estimate_coverage_lower_bound",
+            "type": "int"
+        },
+        {
+            "name": "estimate_coverage_upper_bound",
+            "type": "int"
+        },
+        {
+            "name": "estimate_delivery",
+            "type": "int"
+        },
+        {
+            "name": "estimate_delivery_lower_bound",
+            "type": "int"
+        },
+        {
+            "name": "estimate_delivery_upper_bound",
+            "type": "int"
+        },
+        {
+            "name": "estimate_status",
+            "type": "string"
+        }
+    ]
+}

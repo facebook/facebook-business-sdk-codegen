@@ -3,7 +3,7 @@
         {
             "name": "#get",
             "method": "GET",
-            "return": "BCPCreatorIgUser",
+            "return": "IGUserExportForCAM",
             "params": []
         }
     ],

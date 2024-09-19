@@ -1,0 +1,44 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ALMAdAccountInfo",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "ad_account_id",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "managed_by",
+            "type": "string"
+        },
+        {
+            "name": "parent_advertiser_id",
+            "type": "string"
+        },
+        {
+            "name": "sub_vertical",
+            "type": "string"
+        },
+        {
+            "name": "tag",
+            "type": "list<string>"
+        },
+        {
+            "name": "user_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "vertical",
+            "type": "string"
+        }
+    ]
+}

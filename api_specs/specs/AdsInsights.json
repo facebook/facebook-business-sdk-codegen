@@ -38,10 +38,6 @@
             "type": "string"
         },
         {
-            "name": "adjusted_offline_purchase",
-            "type": "list<Object>"
-        },
-        {
             "name": "adset_end",
             "type": "string"
         },
@@ -334,6 +330,18 @@
             "type": "string"
         },
         {
+            "name": "landing_page_view_actions_per_link_click",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "landing_page_view_per_purchase_rate",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "link_clicks_per_results",
+            "type": "list<AdsActionStats>"
+        },
+        {
             "name": "location",
             "type": "string"
         },
@@ -383,6 +391,10 @@
         },
         {
             "name": "purchase_roas",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "purchases_per_link_click",
             "type": "list<AdsActionStats>"
         },
         {

@@ -2,8 +2,16 @@
     "apis": [],
     "fields": [
         {
+            "name": "ad_id",
+            "type": "string"
+        },
+        {
             "name": "content",
             "type": "list<Object>"
+        },
+        {
+            "name": "impression_id",
+            "type": "string"
         }
     ]
 }
