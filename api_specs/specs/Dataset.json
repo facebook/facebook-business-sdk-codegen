@@ -2,11 +2,11 @@
     "apis": [],
     "fields": [
         {
-            "name": "is_already_connected",
-            "type": "bool"
+            "name": "id",
+            "type": "string"
         },
         {
-            "name": "pixel_id",
+            "name": "name",
             "type": "string"
         }
     ]

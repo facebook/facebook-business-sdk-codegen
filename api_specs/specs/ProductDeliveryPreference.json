@@ -1,0 +1,28 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ProductDeliveryPreference",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "ad_object_id",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "product_priority",
+            "type": "string"
+        },
+        {
+            "name": "product_priority_category",
+            "type": "list<string>"
+        }
+    ]
+}

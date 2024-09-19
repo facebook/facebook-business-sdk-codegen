@@ -1279,11 +1279,6 @@
             "return": "AdVideo",
             "params": [
                 {
-                    "name": "animated_effect_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
                     "name": "application_id",
                     "required": false,
                     "type": "string"
@@ -1801,6 +1796,23 @@
                     "name": "publisher_urls_file",
                     "required": true,
                     "type": "file"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "brand_safety_content_filter_levels",
+            "return": "AdAccount",
+            "params": [
+                {
+                    "name": "brand_safety_content_filter_levels",
+                    "required": true,
+                    "type": "list<adaccountbrand_safety_content_filter_levels_brand_safety_content_filter_levels_enum_param>"
+                },
+                {
+                    "name": "business_id",
+                    "required": false,
+                    "type": "string"
                 }
             ]
         },
@@ -3243,6 +3255,24 @@
                     "name": "video_view_length_constraint",
                     "required": false,
                     "type": "unsigned int"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "recommendations",
+            "return": "AdAccountRecommendations",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "recommendations",
+            "return": "AdAccountRecommendations",
+            "params": [
+                {
+                    "name": "recommendation_signature",
+                    "required": true,
+                    "type": "string"
                 }
             ]
         },

@@ -2,6 +2,18 @@
     "apis": [],
     "fields": [
         {
+            "name": "site_link_image_hash",
+            "type": "string"
+        },
+        {
+            "name": "site_link_image_url",
+            "type": "string"
+        },
+        {
+            "name": "site_link_recommendation_type",
+            "type": "string"
+        },
+        {
             "name": "site_link_title",
             "type": "string"
         },

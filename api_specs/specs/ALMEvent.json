@@ -1,0 +1,60 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ALMEvent",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "ad_account_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "campaign_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "channel",
+            "type": "string"
+        },
+        {
+            "name": "event",
+            "type": "string"
+        },
+        {
+            "name": "event_time",
+            "type": "datetime"
+        },
+        {
+            "name": "guidance",
+            "type": "string"
+        },
+        {
+            "name": "guidance_detail",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "parent_advertiser_ids",
+            "type": "list<string>"
+        },
+        {
+            "name": "reseller_business_id",
+            "type": "string"
+        },
+        {
+            "name": "sub_channel",
+            "type": "string"
+        },
+        {
+            "name": "user_id",
+            "type": "string"
+        }
+    ]
+}

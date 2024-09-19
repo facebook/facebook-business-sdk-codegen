@@ -39,7 +39,7 @@
                     "type": "list<productcatalogagencies_permitted_tasks_enum_param>"
                 },
                 {
-                    "name": "skip_default_utms",
+                    "name": "skip_defaults",
                     "required": false,
                     "type": "bool"
                 },
@@ -959,11 +959,6 @@
                     "type": "list<string>"
                 },
                 {
-                    "name": "additional_uploaded_image_ids",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
                     "name": "additional_variant_attributes",
                     "required": false,
                     "type": "map"
@@ -1232,6 +1227,31 @@
                     "name": "price",
                     "required": true,
                     "type": "unsigned int"
+                },
+                {
+                    "name": "product_priority_0",
+                    "required": false,
+                    "type": "float"
+                },
+                {
+                    "name": "product_priority_1",
+                    "required": false,
+                    "type": "float"
+                },
+                {
+                    "name": "product_priority_2",
+                    "required": false,
+                    "type": "float"
+                },
+                {
+                    "name": "product_priority_3",
+                    "required": false,
+                    "type": "float"
+                },
+                {
+                    "name": "product_priority_4",
+                    "required": false,
+                    "type": "float"
                 },
                 {
                     "name": "product_type",

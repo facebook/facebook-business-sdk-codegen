@@ -28,6 +28,10 @@
             "type": "int"
         },
         {
+            "name": "permissions",
+            "type": "string"
+        },
+        {
             "name": "token_type",
             "type": "string"
         }

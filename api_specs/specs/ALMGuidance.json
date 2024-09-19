@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "ad_account_id",
+            "type": "string"
+        },
+        {
+            "name": "guidances",
+            "type": "list<Object>"
+        },
+        {
+            "name": "parent_advertiser_id",
+            "type": "string"
+        },
+        {
+            "name": "parent_advertiser_name",
+            "type": "string"
+        }
+    ]
+}

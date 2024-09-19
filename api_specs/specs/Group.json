@@ -167,11 +167,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "animated_effect_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
                     "name": "application_id",
                     "required": false,
                     "type": "string"
@@ -1252,11 +1247,6 @@
             "endpoint": "videos",
             "return": "AdVideo",
             "params": [
-                {
-                    "name": "animated_effect_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
                 {
                     "name": "application_id",
                     "required": false,

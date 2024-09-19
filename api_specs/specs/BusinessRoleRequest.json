@@ -59,6 +59,10 @@
             "type": "string"
         },
         {
+            "name": "invited_user_type",
+            "type": "list<string>"
+        },
+        {
             "name": "ip_role",
             "type": "string"
         },

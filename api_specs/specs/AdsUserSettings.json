@@ -17,6 +17,10 @@
             "type": "Object"
         },
         {
+            "name": "ads_cs_catalog_opt_out_timestamp",
+            "type": "list<map<string, int>>"
+        },
+        {
             "name": "ads_tool_visits",
             "type": "list<Object>"
         },
@@ -47,6 +51,10 @@
         {
             "name": "blended_ads_creation_defaulting_opt_in_status",
             "type": "string"
+        },
+        {
+            "name": "blended_ads_creation_defaulting_opt_out_campaign_group_ids",
+            "type": "list<int>"
         },
         {
             "name": "bookmarked_pages",
@@ -111,10 +119,6 @@
         {
             "name": "last_visited_time",
             "type": "datetime"
-        },
-        {
-            "name": "multi_ads_settings",
-            "type": "list<map<string, string>>"
         },
         {
             "name": "music_on_reels_opt_in",
@@ -214,6 +218,10 @@
         },
         {
             "name": "total_coupon_upsell_dismissals",
+            "type": "int"
+        },
+        {
+            "name": "url_prefill_removal_timestamp",
             "type": "int"
         },
         {

@@ -1125,9 +1125,15 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "subscriptions",
+            "return": "ApplicationSubscriptions",
+            "params": []
+        },
+        {
             "method": "POST",
             "endpoint": "subscriptions",
-            "return": "Object",
+            "return": "ApplicationSubscriptions",
             "params": [
                 {
                     "name": "callback_url",

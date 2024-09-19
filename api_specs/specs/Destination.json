@@ -2,15 +2,26 @@
     "apis": [
         {
             "method": "GET",
-            "endpoint": "augmented_realities_metadata",
-            "return": "DynamicARMetadata",
+            "endpoint": "channels_to_integrity_status",
+            "return": "CatalogItemChannelsToIntegrityStatus",
             "params": []
         },
         {
             "method": "GET",
-            "endpoint": "channels_to_integrity_status",
-            "return": "CatalogItemChannelsToIntegrityStatus",
-            "params": []
+            "endpoint": "override_details",
+            "return": "OverrideDetails",
+            "params": [
+                {
+                    "name": "keys",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "type",
+                    "required": false,
+                    "type": "destinationoverride_details_type_enum_param"
+                }
+            ]
         },
         {
             "method": "GET",

@@ -747,14 +747,20 @@
         {
             "method": "GET",
             "endpoint": "dataset",
-            "return": "AdsPixel",
+            "return": "Dataset",
             "params": []
         },
         {
             "method": "POST",
             "endpoint": "dataset",
-            "return": "AdsPixel",
-            "params": []
+            "return": "Dataset",
+            "params": [
+                {
+                    "name": "dataset_name",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -852,11 +858,6 @@
                     "name": "android_key_hash",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "animated_effect_id",
-                    "required": false,
-                    "type": "unsigned int"
                 },
                 {
                     "name": "application_id",
@@ -1395,23 +1396,6 @@
             "endpoint": "global_brand_children",
             "return": "Page",
             "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "groups",
-            "return": "Group",
-            "params": [
-                {
-                    "name": "admin_only",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "parent",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
         },
         {
             "method": "GET",
@@ -2322,7 +2306,7 @@
                 {
                     "name": "target_app_id",
                     "required": false,
-                    "type": "int"
+                    "type": "string"
                 }
             ]
         },
@@ -3424,11 +3408,6 @@
                     "name": "ad_breaks",
                     "required": false,
                     "type": "list"
-                },
-                {
-                    "name": "animated_effect_id",
-                    "required": false,
-                    "type": "unsigned int"
                 },
                 {
                     "name": "application_id",
