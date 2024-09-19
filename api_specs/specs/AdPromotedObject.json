@@ -98,6 +98,10 @@
             "type": "string"
         },
         {
+            "name": "value_semantic_type",
+            "type": "AdPromotedObject_value_semantic_type"
+        },
+        {
             "name": "whatsapp_phone_number",
             "type": "string"
         }

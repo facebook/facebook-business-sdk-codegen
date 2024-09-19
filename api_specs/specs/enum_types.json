@@ -916,6 +916,14 @@
         ]
     },
     {
+        "name": "AdPromotedObject_value_semantic_type",
+        "node": "AdPromotedObject",
+        "field_or_param": "value_semantic_type",
+        "values": [
+            "VALUE"
+        ]
+    },
+    {
         "name": "AdRecommendation_confidence",
         "node": "AdRecommendation",
         "field_or_param": "confidence",
