@@ -18,6 +18,10 @@
             "type": "AdCreativePhotoData"
         },
         {
+            "name": "product_data",
+            "type": "list<AdCreativeProductData>"
+        },
+        {
             "name": "template_data",
             "type": "AdCreativeLinkData"
         },
@@ -26,7 +30,7 @@
             "type": "AdCreativeTextData"
         },
         {
-            "name": "threads_actor_id",
+            "name": "threads_user_id",
             "type": "string"
         },
         {

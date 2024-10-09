@@ -647,6 +647,10 @@
             "type": "string"
         },
         {
+            "name": "placement",
+            "type": "Placement"
+        },
+        {
             "name": "preview_shareable_link",
             "type": "string"
         },

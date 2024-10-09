@@ -372,7 +372,7 @@
                 {
                     "name": "custom_labels",
                     "required": false,
-                    "type": "list<string>"
+                    "type": "string"
                 },
                 {
                     "name": "description",

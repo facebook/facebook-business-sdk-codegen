@@ -13,6 +13,10 @@
             "type": "bool"
         },
         {
+            "name": "add_overlays_opt_in_status",
+            "type": "string"
+        },
+        {
             "name": "adgroup_name_template",
             "type": "Object"
         },
@@ -94,6 +98,10 @@
         },
         {
             "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "image_background_generation_opt_in_status",
             "type": "string"
         },
         {

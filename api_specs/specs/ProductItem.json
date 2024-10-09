@@ -500,7 +500,7 @@
         },
         {
             "name": "capability_to_review_status",
-            "type": "list<map<Object, Object>>"
+            "type": "list<map<string, ProductItem_capability_to_review_status>>"
         },
         {
             "name": "category",

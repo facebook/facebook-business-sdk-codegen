@@ -677,6 +677,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "ctx_optimization_eligibility",
+            "return": "CTXOptimizationEligibility",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "custom_labels",
             "return": "PageUserMessageThreadLabel",
             "params": []
@@ -872,7 +878,7 @@
                 {
                     "name": "asset3d_id",
                     "required": false,
-                    "type": "unsigned int"
+                    "type": "string"
                 },
                 {
                     "name": "associated_id",
@@ -1032,7 +1038,7 @@
                 {
                     "name": "fun_fact_prompt_id",
                     "required": false,
-                    "type": "unsigned int"
+                    "type": "string"
                 },
                 {
                     "name": "fun_fact_toastee_id",
@@ -1043,11 +1049,6 @@
                     "name": "height",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "holiday_card",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "home_checkin_city_id",
@@ -1148,11 +1149,6 @@
                     "name": "object_attachment",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "offer_like_post_id",
-                    "required": false,
-                    "type": "unsigned int"
                 },
                 {
                     "name": "og_action_type_id",
@@ -3567,7 +3563,7 @@
                 {
                     "name": "fun_fact_prompt_id",
                     "required": false,
-                    "type": "unsigned int"
+                    "type": "string"
                 },
                 {
                     "name": "fun_fact_toastee_id",
@@ -3583,11 +3579,6 @@
                     "name": "guide_enabled",
                     "required": false,
                     "type": "bool"
-                },
-                {
-                    "name": "holiday_card",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "initial_heading",
@@ -3643,11 +3634,6 @@
                     "name": "no_story",
                     "required": false,
                     "type": "bool"
-                },
-                {
-                    "name": "offer_like_post_id",
-                    "required": false,
-                    "type": "unsigned int"
                 },
                 {
                     "name": "og_action_type_id",

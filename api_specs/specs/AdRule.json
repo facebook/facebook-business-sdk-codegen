@@ -93,6 +93,10 @@
             "type": "datetime"
         },
         {
+            "name": "disable_error_code",
+            "type": "int"
+        },
+        {
             "name": "evaluation_spec",
             "type": "AdRuleEvaluationSpec"
         },

@@ -321,6 +321,33 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "welcome_message_flows",
+            "return": "IGGraphCTXPartnerAppWelcomeMessageFlow",
+            "params": [
+                {
+                    "name": "eligible_platforms",
+                    "required": false,
+                    "type": "list<iggraphuserwelcome_message_flows_eligible_platforms_enum_param>"
+                },
+                {
+                    "name": "flow_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "welcome_message_flow",
+                    "required": false,
+                    "type": "list<Object>"
+                }
+            ]
+        },
+        {
             "name": "#get",
             "method": "GET",
             "return": "User",

@@ -2,7 +2,7 @@
     "apis": [
         {
             "method": "GET",
-            "endpoint": "personas",
+            "endpoint": "rules",
             "return": "AdsValueAdjustmentRulePersona",
             "params": []
         },

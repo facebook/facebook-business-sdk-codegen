@@ -3,7 +3,7 @@
     "fields": [
         {
             "name": "capability",
-            "type": "CatalogItemRejectionReasons_capability"
+            "type": "string"
         },
         {
             "name": "rejection_information",

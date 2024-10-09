@@ -166,6 +166,26 @@
             "type": "string"
         },
         {
+            "name": "product_priority_0",
+            "type": "float"
+        },
+        {
+            "name": "product_priority_1",
+            "type": "float"
+        },
+        {
+            "name": "product_priority_2",
+            "type": "float"
+        },
+        {
+            "name": "product_priority_3",
+            "type": "float"
+        },
+        {
+            "name": "product_priority_4",
+            "type": "float"
+        },
+        {
             "name": "sanitized_images",
             "type": "list<string>"
         },

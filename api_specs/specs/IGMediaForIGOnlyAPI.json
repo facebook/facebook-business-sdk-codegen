@@ -25,6 +25,28 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "insights",
+            "return": "InsightsResult",
+            "params": [
+                {
+                    "name": "breakdown",
+                    "required": false,
+                    "type": "list<mediainsights_breakdown_enum_param>"
+                },
+                {
+                    "name": "metric",
+                    "required": true,
+                    "type": "list<mediainsights_metric_enum_param>"
+                },
+                {
+                    "name": "period",
+                    "required": false,
+                    "type": "list<mediainsights_period_enum_param>"
+                }
+            ]
+        },
+        {
             "name": "#get",
             "method": "GET",
             "return": "Media",

@@ -661,6 +661,18 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "marketplace_partner_sellers_details",
+            "return": "ProductCatalog",
+            "params": [
+                {
+                    "name": "requests",
+                    "required": true,
+                    "type": "map"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "pricing_variables_batch",
             "return": "ProductCatalogPricingVariablesBatch",

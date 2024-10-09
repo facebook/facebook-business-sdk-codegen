@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "product_id",
+            "type": "string"
+        },
+        {
+            "name": "product_source",
+            "type": "string"
+        }
+    ]
+}

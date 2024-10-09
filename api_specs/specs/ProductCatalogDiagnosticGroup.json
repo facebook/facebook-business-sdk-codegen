@@ -3,7 +3,7 @@
     "fields": [
         {
             "name": "affected_channels",
-            "type": "list<ProductCatalogDiagnosticGroup_affected_channels>"
+            "type": "list<string>"
         },
         {
             "name": "affected_entity",
