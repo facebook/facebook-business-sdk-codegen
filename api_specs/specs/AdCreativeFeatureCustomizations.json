@@ -4,6 +4,10 @@
         {
             "name": "showcase_card_display",
             "type": "string"
+        },
+        {
+            "name": "image_crop_style",
+            "type": "string"
         }
     ]
 }
