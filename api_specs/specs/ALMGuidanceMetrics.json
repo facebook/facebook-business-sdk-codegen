@@ -1,0 +1,57 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "ad_account_id",
+            "type": "string"
+        },
+        {
+            "name": "adopted_objects",
+            "type": "list<Object>"
+        },
+        {
+            "name": "guidance_name",
+            "type": "string"
+        },
+        {
+            "name": "guidance_type",
+            "type": "string"
+        },
+        {
+            "name": "l28_adoption",
+            "type": "int"
+        },
+        {
+            "name": "l28_available",
+            "type": "int"
+        },
+        {
+            "name": "l28_click",
+            "type": "int"
+        },
+        {
+            "name": "l28_conversion",
+            "type": "int"
+        },
+        {
+            "name": "l28_impression",
+            "type": "int"
+        },
+        {
+            "name": "l28_pitch",
+            "type": "int"
+        },
+        {
+            "name": "last_pitch_ds",
+            "type": "string"
+        },
+        {
+            "name": "parent_advertiser_id",
+            "type": "string"
+        },
+        {
+            "name": "report_ds",
+            "type": "string"
+        }
+    ]
+}

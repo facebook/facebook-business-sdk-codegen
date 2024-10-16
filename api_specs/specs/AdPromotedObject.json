@@ -6,6 +6,10 @@
             "type": "string"
         },
         {
+            "name": "boosted_product_set_id",
+            "type": "string"
+        },
+        {
             "name": "conversion_goal_id",
             "type": "string"
         },
@@ -27,6 +31,10 @@
         },
         {
             "name": "fundraiser_campaign_id",
+            "type": "string"
+        },
+        {
+            "name": "lead_ads_form_event_source_type",
             "type": "string"
         },
         {
@@ -95,6 +103,14 @@
         },
         {
             "name": "retention_days",
+            "type": "string"
+        },
+        {
+            "name": "value_semantic_type",
+            "type": "string"
+        },
+        {
+            "name": "variation",
             "type": "string"
         },
         {

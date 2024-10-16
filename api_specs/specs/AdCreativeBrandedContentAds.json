@@ -26,11 +26,27 @@
             "type": "bool"
         },
         {
+            "name": "parent_source_facebook_post_id",
+            "type": "string"
+        },
+        {
+            "name": "parent_source_instagram_media_id",
+            "type": "string"
+        },
+        {
             "name": "partners",
             "type": "list<AdCreativeBrandedContentAdsPartners>"
         },
         {
+            "name": "product_set_partner_selection_status",
+            "type": "string"
+        },
+        {
             "name": "promoted_page_id",
+            "type": "string"
+        },
+        {
+            "name": "testimonial",
             "type": "string"
         },
         {

@@ -38,10 +38,6 @@
             "type": "string"
         },
         {
-            "name": "adjusted_offline_purchase",
-            "type": "list<Object>"
-        },
-        {
             "name": "adset_end",
             "type": "string"
         },
@@ -76,6 +72,10 @@
         {
             "name": "auction_max_competitor_bid",
             "type": "string"
+        },
+        {
+            "name": "average_purchases_conversion_value",
+            "type": "list<AdsActionStats>"
         },
         {
             "name": "buying_type",

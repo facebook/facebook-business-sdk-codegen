@@ -1,0 +1,77 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "audience_network_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "device_platforms",
+            "type": "list<Placement_device_platforms>"
+        },
+        {
+            "name": "effective_audience_network_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "effective_device_platforms",
+            "type": "list<Placement_effective_device_platforms>"
+        },
+        {
+            "name": "effective_facebook_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "effective_instagram_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "effective_messenger_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "effective_oculus_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "effective_publisher_platforms",
+            "type": "list<string>"
+        },
+        {
+            "name": "effective_threads_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "effective_whatsapp_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "facebook_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "instagram_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "messenger_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "oculus_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "publisher_platforms",
+            "type": "list<string>"
+        },
+        {
+            "name": "threads_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "whatsapp_positions",
+            "type": "list<string>"
+        }
+    ]
+}

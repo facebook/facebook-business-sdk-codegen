@@ -483,6 +483,48 @@
         },
         {
             "method": "GET",
+            "endpoint": "message_delivery_estimate",
+            "return": "MessageDeliveryEstimate",
+            "params": [
+                {
+                    "name": "bid_amount",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "lifetime_budget",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "lifetime_in_days",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "optimization_goal",
+                    "required": false,
+                    "type": "adcampaignmessage_delivery_estimate_optimization_goal_enum_param"
+                },
+                {
+                    "name": "pacing_type",
+                    "required": false,
+                    "type": "adcampaignmessage_delivery_estimate_pacing_type_enum_param"
+                },
+                {
+                    "name": "promoted_object",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "targeting_spec",
+                    "required": false,
+                    "type": "Targeting"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "targetingsentencelines",
             "return": "TargetingSentenceLine",
             "params": []
@@ -666,6 +708,16 @@
                     "type": "unsigned int"
                 },
                 {
+                    "name": "max_budget_spend_percentage",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "min_budget_spend_percentage",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
                     "name": "multi_optimization_goal_weight",
                     "required": false,
                     "type": "adcampaign_multi_optimization_goal_weight"
@@ -804,6 +856,10 @@
             "type": "AdSet_billing_event"
         },
         {
+            "name": "brand_safety_config",
+            "type": "BrandSafetyCampaignConfig"
+        },
+        {
             "name": "budget_remaining",
             "type": "string"
         },
@@ -917,6 +973,14 @@
         },
         {
             "name": "lifetime_spend_cap",
+            "type": "string"
+        },
+        {
+            "name": "max_budget_spend_percentage",
+            "type": "string"
+        },
+        {
+            "name": "min_budget_spend_percentage",
             "type": "string"
         },
         {

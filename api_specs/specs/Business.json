@@ -28,6 +28,28 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "ad_account_infos",
+            "return": "ALMAdAccountInfo",
+            "params": [
+                {
+                    "name": "ad_account_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "parent_advertiser_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "user_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "DELETE",
             "endpoint": "ad_accounts",
             "return": "Object",
@@ -36,6 +58,18 @@
                     "name": "adaccount_id",
                     "required": true,
                     "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "ad_review_requests",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "ad_account_ids",
+                    "required": false,
+                    "type": "list<string>"
                 }
             ]
         },
@@ -418,6 +452,18 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "bm_review_requests",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "business_manager_ids",
+                    "required": true,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "business_asset_groups",
             "return": "BusinessAssetGroup",
@@ -480,6 +526,11 @@
                     "name": "email",
                     "required": true,
                     "type": "string"
+                },
+                {
+                    "name": "invited_user_type",
+                    "required": false,
+                    "type": "list<businessbusiness_users_invited_user_type_enum_param>"
                 },
                 {
                     "name": "role",
@@ -1796,11 +1847,6 @@
                     "type": "bool"
                 },
                 {
-                    "name": "animated_effect_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
                     "name": "application_id",
                     "required": false,
                     "type": "string"
@@ -1928,7 +1974,7 @@
                 {
                     "name": "fun_fact_prompt_id",
                     "required": false,
-                    "type": "unsigned int"
+                    "type": "string"
                 },
                 {
                     "name": "fun_fact_toastee_id",
@@ -1944,11 +1990,6 @@
                     "name": "guide_enabled",
                     "required": false,
                     "type": "bool"
-                },
-                {
-                    "name": "holiday_card",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "initial_heading",
@@ -1984,11 +2025,6 @@
                     "name": "location_source_id",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "offer_like_post_id",
-                    "required": false,
-                    "type": "unsigned int"
                 },
                 {
                     "name": "og_action_type_id",

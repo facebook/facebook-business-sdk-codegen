@@ -2,6 +2,45 @@
     "apis": [
         {
             "method": "GET",
+            "endpoint": "content_publishing_limit",
+            "return": "ContentPublishingLimitResponse",
+            "params": [
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "conversations",
+            "return": "UnifiedThread",
+            "params": [
+                {
+                    "name": "folder",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "platform",
+                    "required": false,
+                    "type": "userconversations_platform_enum_param"
+                },
+                {
+                    "name": "tags",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "user_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "live_media",
             "return": "Media",
             "params": []
@@ -24,10 +63,289 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "media",
+            "return": "IGGraphMedia",
+            "params": [
+                {
+                    "name": "audio_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "caption",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "children",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "collaborators",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "cover_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "image_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "is_carousel_item",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "location_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "media_type",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "product_tags",
+                    "required": false,
+                    "type": "list<map>"
+                },
+                {
+                    "name": "share_to_feed",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "thumb_offset",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "upload_type",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "user_tags",
+                    "required": false,
+                    "type": "list<map>"
+                },
+                {
+                    "name": "video_url",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "mediapublish",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "creation_id",
+                    "required": true,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "mentions",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "comment_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "media_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "message",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "messageattachments",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "message",
+                    "required": true,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "messages",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "message",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "messaging_type",
+                    "required": false,
+                    "type": "iggraphusermessages_messaging_type_enum_param"
+                },
+                {
+                    "name": "payload",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "recipient",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "sender_action",
+                    "required": false,
+                    "type": "iggraphusermessages_sender_action_enum_param"
+                },
+                {
+                    "name": "tag",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "thread_control",
+                    "required": false,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "messenger_profile",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "fields",
+                    "required": true,
+                    "type": "list<iggraphusermessenger_profile_fields_enum_param>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "messenger_profile",
+            "return": "UserProfile",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "messenger_profile",
+            "return": "IGGraphUser",
+            "params": [
+                {
+                    "name": "ice_breakers",
+                    "required": false,
+                    "type": "list<map>"
+                },
+                {
+                    "name": "persistent_menu",
+                    "required": false,
+                    "type": "list<Object>"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "stories",
             "return": "Media",
             "params": []
+        },
+        {
+            "method": "DELETE",
+            "endpoint": "subscribed_apps",
+            "return": "Object",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "subscribed_apps",
+            "return": "UserSubscribedAppsData",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "subscribed_apps",
+            "return": "IGGraphUser",
+            "params": [
+                {
+                    "name": "subscribed_fields",
+                    "required": true,
+                    "type": "list<iggraphusersubscribed_apps_subscribed_fields_enum_param>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "tags",
+            "return": "Media",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "welcome_message_flows",
+            "return": "CTXPartnerAppWelcomeMessageFlow",
+            "params": [
+                {
+                    "name": "app_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "flow_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "welcome_message_flows",
+            "return": "IGGraphCTXPartnerAppWelcomeMessageFlow",
+            "params": [
+                {
+                    "name": "eligible_platforms",
+                    "required": false,
+                    "type": "list<iggraphuserwelcome_message_flows_eligible_platforms_enum_param>"
+                },
+                {
+                    "name": "flow_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "welcome_message_flow",
+                    "required": false,
+                    "type": "list<Object>"
+                }
+            ]
         },
         {
             "name": "#get",
@@ -42,6 +360,18 @@
             "type": "string"
         },
         {
+            "name": "biography",
+            "type": "string"
+        },
+        {
+            "name": "followers_count",
+            "type": "int"
+        },
+        {
+            "name": "follows_count",
+            "type": "int"
+        },
+        {
             "name": "id",
             "type": "string"
         },
@@ -50,7 +380,23 @@
             "type": "int"
         },
         {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "profile_picture_url",
+            "type": "string"
+        },
+        {
+            "name": "user_id",
+            "type": "int"
+        },
+        {
             "name": "username",
+            "type": "string"
+        },
+        {
+            "name": "website",
             "type": "string"
         }
     ]

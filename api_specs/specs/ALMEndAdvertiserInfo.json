@@ -1,0 +1,32 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ALMEndAdvertiserInfo",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "estimated_ad_budget",
+            "type": "int"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "parent_advertiser_id",
+            "type": "string"
+        },
+        {
+            "name": "parent_advertiser_name",
+            "type": "string"
+        },
+        {
+            "name": "tag",
+            "type": "list<string>"
+        }
+    ]
+}

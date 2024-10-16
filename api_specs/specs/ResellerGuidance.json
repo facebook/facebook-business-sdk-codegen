@@ -26,20 +26,8 @@
             "type": "list<string>"
         },
         {
-            "name": "benchmark_report_link",
-            "type": "string"
-        },
-        {
             "name": "guidance_adoption_rate_l7d",
             "type": "float"
-        },
-        {
-            "name": "no_adsets_gte_benchmark",
-            "type": "int"
-        },
-        {
-            "name": "no_adsets_lt_benchmark",
-            "type": "int"
         },
         {
             "name": "nurtured_by_reseller_l7d",

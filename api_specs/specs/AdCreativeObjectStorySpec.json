@@ -18,12 +18,20 @@
             "type": "AdCreativePhotoData"
         },
         {
+            "name": "product_data",
+            "type": "list<AdCreativeProductData>"
+        },
+        {
             "name": "template_data",
             "type": "AdCreativeLinkData"
         },
         {
             "name": "text_data",
             "type": "AdCreativeTextData"
+        },
+        {
+            "name": "threads_user_id",
+            "type": "string"
         },
         {
             "name": "video_data",

@@ -1,5 +1,24 @@
 {
-    "apis": [],
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "insights",
+            "return": "InsightsResult",
+            "params": [
+                {
+                    "name": "metric",
+                    "required": false,
+                    "type": "list<storiesinsights_metric_enum_param>"
+                }
+            ]
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "Stories",
+            "params": []
+        }
+    ],
     "fields": [
         {
             "name": "creation_time",

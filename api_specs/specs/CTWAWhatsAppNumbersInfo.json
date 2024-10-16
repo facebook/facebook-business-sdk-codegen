@@ -14,7 +14,15 @@
             "type": "bool"
         },
         {
+            "name": "number_country_prefix",
+            "type": "string"
+        },
+        {
             "name": "page_whatsapp_number_id",
+            "type": "string"
+        },
+        {
+            "name": "waba_id",
             "type": "string"
         },
         {

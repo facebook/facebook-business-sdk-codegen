@@ -6,6 +6,10 @@
             "type": "AdCreativeFeatureDetails"
         },
         {
+            "name": "add_text_overlay",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "ads_with_benefits",
             "type": "AdCreativeFeatureDetails"
         },
@@ -46,11 +50,47 @@
             "type": "AdCreativeFeatureDetails"
         },
         {
+            "name": "dynamic_partner_content",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "enhance_cta",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "fb_feed_tag",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "fb_reels_tag",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "fb_story_tag",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "feed_caption_optimization",
             "type": "AdCreativeFeatureDetails"
         },
         {
+            "name": "ig_feed_tag",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "ig_glados_feed",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "ig_reels_tag",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "ig_stream_tag",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "image_animation",
             "type": "AdCreativeFeatureDetails"
         },
         {
@@ -86,6 +126,10 @@
             "type": "AdCreativeFeatureDetails"
         },
         {
+            "name": "local_store_extension",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "media_liquidity_animated_image",
             "type": "AdCreativeFeatureDetails"
         },
@@ -95,6 +139,10 @@
         },
         {
             "name": "media_type_automation",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "pac_relaxation",
             "type": "AdCreativeFeatureDetails"
         },
         {
@@ -143,6 +191,10 @@
         },
         {
             "name": "video_highlight",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "video_uncrop",
             "type": "AdCreativeFeatureDetails"
         }
     ]

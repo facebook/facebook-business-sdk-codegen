@@ -7,6 +7,23 @@
             "params": []
         },
         {
+            "method": "GET",
+            "endpoint": "override_details",
+            "return": "OverrideDetails",
+            "params": [
+                {
+                    "name": "keys",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "type",
+                    "required": false,
+                    "type": "localservicebusinessoverride_details_type_enum_param"
+                }
+            ]
+        },
+        {
             "name": "#get",
             "method": "GET",
             "return": "LocalServiceBusiness",

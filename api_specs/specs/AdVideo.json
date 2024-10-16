@@ -263,28 +263,6 @@
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "tags",
-            "return": "AdVideo",
-            "params": [
-                {
-                    "name": "tag_uid",
-                    "required": true,
-                    "type": "int"
-                },
-                {
-                    "name": "uid",
-                    "required": false,
-                    "type": "int"
-                },
-                {
-                    "name": "vid",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "thumbnails",
             "return": "VideoThumbnail",
@@ -394,7 +372,7 @@
                 {
                     "name": "custom_labels",
                     "required": false,
-                    "type": "list<string>"
+                    "type": "string"
                 },
                 {
                     "name": "description",

@@ -83,20 +83,15 @@
         },
         {
             "method": "DELETE",
-            "endpoint": "product_tags",
+            "endpoint": "partnership_ad_code",
             "return": "Object",
-            "params": [
-                {
-                    "name": "child_index",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "deleted_tags",
-                    "required": true,
-                    "type": "list<map>"
-                }
-            ]
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "partnership_ad_code",
+            "return": "Object",
+            "params": []
         },
         {
             "method": "GET",
@@ -126,6 +121,16 @@
             "method": "GET",
             "return": "IGMedia",
             "params": [
+                {
+                    "name": "ad_account_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "business_id",
+                    "required": false,
+                    "type": "string"
+                },
                 {
                     "name": "primary_fb_page_id",
                     "required": false,

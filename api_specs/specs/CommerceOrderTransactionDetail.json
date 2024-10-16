@@ -15,20 +15,40 @@
     ],
     "fields": [
         {
+            "name": "merchant_order_id",
+            "type": "string"
+        },
+        {
             "name": "net_payment_amount",
             "type": "Object"
+        },
+        {
+            "name": "order_created",
+            "type": "string"
         },
         {
             "name": "order_details",
             "type": "CommerceOrder"
         },
         {
+            "name": "order_id",
+            "type": "string"
+        },
+        {
             "name": "payout_reference_id",
+            "type": "string"
+        },
+        {
+            "name": "postal_code",
             "type": "string"
         },
         {
             "name": "processing_fee",
             "type": "Object"
+        },
+        {
+            "name": "state",
+            "type": "string"
         },
         {
             "name": "tax_rate",

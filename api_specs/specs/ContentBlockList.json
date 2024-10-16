@@ -1,0 +1,42 @@
+{
+    "apis": [
+        {
+            "method": "GET",
+            "endpoint": "applied_ad_accounts",
+            "return": "AdAccount",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "facebook_content",
+            "return": "Postish",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "instagram_content",
+            "return": "IGMedia",
+            "params": []
+        },
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ContentBlockList",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "business",
+            "type": "Business"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        }
+    ]
+}

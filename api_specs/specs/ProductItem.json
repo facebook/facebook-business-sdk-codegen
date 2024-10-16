@@ -8,6 +8,23 @@
         },
         {
             "method": "GET",
+            "endpoint": "override_details",
+            "return": "OverrideDetails",
+            "params": [
+                {
+                    "name": "keys",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "type",
+                    "required": false,
+                    "type": "productitemoverride_details_type_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "product_sets",
             "return": "ProductSet",
             "params": []
@@ -63,11 +80,6 @@
             "params": [
                 {
                     "name": "additional_image_urls",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "additional_uploaded_image_ids",
                     "required": false,
                     "type": "list<string>"
                 },
@@ -342,6 +354,31 @@
                     "type": "unsigned int"
                 },
                 {
+                    "name": "product_priority_0",
+                    "required": false,
+                    "type": "float"
+                },
+                {
+                    "name": "product_priority_1",
+                    "required": false,
+                    "type": "float"
+                },
+                {
+                    "name": "product_priority_2",
+                    "required": false,
+                    "type": "float"
+                },
+                {
+                    "name": "product_priority_3",
+                    "required": false,
+                    "type": "float"
+                },
+                {
+                    "name": "product_priority_4",
+                    "required": false,
+                    "type": "float"
+                },
+                {
                     "name": "product_type",
                     "required": false,
                     "type": "string"
@@ -454,8 +491,16 @@
             "type": "string"
         },
         {
+            "name": "bundle_items",
+            "type": "list<string>"
+        },
+        {
+            "name": "bundle_retailer_ids",
+            "type": "list<string>"
+        },
+        {
             "name": "capability_to_review_status",
-            "type": "list<map<Object, Object>>"
+            "type": "list<map<string, ProductItem_capability_to_review_status>>"
         },
         {
             "name": "category",
@@ -584,6 +629,10 @@
         {
             "name": "inventory",
             "type": "int"
+        },
+        {
+            "name": "is_bundle_hero",
+            "type": "bool"
         },
         {
             "name": "manufacturer_info",

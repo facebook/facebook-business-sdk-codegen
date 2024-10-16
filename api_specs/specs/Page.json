@@ -677,6 +677,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "ctx_optimization_eligibility",
+            "return": "CTXOptimizationEligibility",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "custom_labels",
             "return": "PageUserMessageThreadLabel",
             "params": []
@@ -747,14 +753,20 @@
         {
             "method": "GET",
             "endpoint": "dataset",
-            "return": "AdsPixel",
+            "return": "Dataset",
             "params": []
         },
         {
             "method": "POST",
             "endpoint": "dataset",
-            "return": "AdsPixel",
-            "params": []
+            "return": "Dataset",
+            "params": [
+                {
+                    "name": "dataset_name",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -854,11 +866,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "animated_effect_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
                     "name": "application_id",
                     "required": false,
                     "type": "string"
@@ -871,7 +878,7 @@
                 {
                     "name": "asset3d_id",
                     "required": false,
-                    "type": "unsigned int"
+                    "type": "string"
                 },
                 {
                     "name": "associated_id",
@@ -1031,7 +1038,7 @@
                 {
                     "name": "fun_fact_prompt_id",
                     "required": false,
-                    "type": "unsigned int"
+                    "type": "string"
                 },
                 {
                     "name": "fun_fact_toastee_id",
@@ -1042,11 +1049,6 @@
                     "name": "height",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "holiday_card",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "home_checkin_city_id",
@@ -1147,11 +1149,6 @@
                     "name": "object_attachment",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "offer_like_post_id",
-                    "required": false,
-                    "type": "unsigned int"
                 },
                 {
                     "name": "og_action_type_id",
@@ -1395,23 +1392,6 @@
             "endpoint": "global_brand_children",
             "return": "Page",
             "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "groups",
-            "return": "Group",
-            "params": [
-                {
-                    "name": "admin_only",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "parent",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
         },
         {
             "method": "GET",
@@ -2322,7 +2302,7 @@
                 {
                     "name": "target_app_id",
                     "required": false,
-                    "type": "int"
+                    "type": "string"
                 }
             ]
         },
@@ -3426,11 +3406,6 @@
                     "type": "list"
                 },
                 {
-                    "name": "animated_effect_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
                     "name": "application_id",
                     "required": false,
                     "type": "string"
@@ -3588,7 +3563,7 @@
                 {
                     "name": "fun_fact_prompt_id",
                     "required": false,
-                    "type": "unsigned int"
+                    "type": "string"
                 },
                 {
                     "name": "fun_fact_toastee_id",
@@ -3604,11 +3579,6 @@
                     "name": "guide_enabled",
                     "required": false,
                     "type": "bool"
-                },
-                {
-                    "name": "holiday_card",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "initial_heading",
@@ -3664,11 +3634,6 @@
                     "name": "no_story",
                     "required": false,
                     "type": "bool"
-                },
-                {
-                    "name": "offer_like_post_id",
-                    "required": false,
-                    "type": "unsigned int"
                 },
                 {
                     "name": "og_action_type_id",

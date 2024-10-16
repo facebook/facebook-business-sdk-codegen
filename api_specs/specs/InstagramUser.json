@@ -58,6 +58,16 @@
                     "type": "datetime"
                 },
                 {
+                    "name": "notification_subtypes",
+                    "required": false,
+                    "type": "list<instagramuserupcoming_events_notification_subtypes_enum_param>"
+                },
+                {
+                    "name": "notification_target_time",
+                    "required": false,
+                    "type": "instagramuserupcoming_events_notification_target_time_enum_param"
+                },
+                {
                     "name": "start_time",
                     "required": true,
                     "type": "datetime"

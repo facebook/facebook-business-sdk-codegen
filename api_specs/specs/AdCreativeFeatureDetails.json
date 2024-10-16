@@ -2,6 +2,10 @@
     "apis": [],
     "fields": [
         {
+            "name": "customizations",
+            "type": "AdCreativeFeatureCustomizations"
+        },
+        {
             "name": "enroll_status",
             "type": "string"
         }

@@ -3,13 +3,13 @@
         {
             "name": "#get",
             "method": "GET",
-            "return": "DogNotificationSettings",
+            "return": "ProductDeliveryPreference",
             "params": []
         }
     ],
     "fields": [
         {
-            "name": "dog_check_key",
+            "name": "ad_object_id",
             "type": "string"
         },
         {
@@ -17,8 +17,12 @@
             "type": "string"
         },
         {
-            "name": "subscription_status_per_channel",
-            "type": "list<map<string, string>>"
+            "name": "product_priority",
+            "type": "string"
+        },
+        {
+            "name": "product_priority_category",
+            "type": "list<string>"
         }
     ]
 }

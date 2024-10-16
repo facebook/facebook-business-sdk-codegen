@@ -1050,6 +1050,16 @@
                     "type": "unsigned int"
                 },
                 {
+                    "name": "max_budget_spend_percentage",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "min_budget_spend_percentage",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
                     "name": "multi_optimization_goal_weight",
                     "required": false,
                     "type": "adaccountadsets_multi_optimization_goal_weight_enum_param"
@@ -1279,11 +1289,6 @@
             "return": "AdVideo",
             "params": [
                 {
-                    "name": "animated_effect_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
                     "name": "application_id",
                     "required": false,
                     "type": "string"
@@ -1406,7 +1411,7 @@
                 {
                     "name": "fun_fact_prompt_id",
                     "required": false,
-                    "type": "unsigned int"
+                    "type": "string"
                 },
                 {
                     "name": "fun_fact_toastee_id",
@@ -1422,11 +1427,6 @@
                     "name": "guide_enabled",
                     "required": false,
                     "type": "bool"
-                },
-                {
-                    "name": "holiday_card",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "initial_heading",
@@ -1467,11 +1467,6 @@
                     "name": "name",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "offer_like_post_id",
-                    "required": false,
-                    "type": "unsigned int"
                 },
                 {
                     "name": "og_action_type_id",
@@ -1801,6 +1796,23 @@
                     "name": "publisher_urls_file",
                     "required": true,
                     "type": "file"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "brand_safety_content_filter_levels",
+            "return": "AdAccount",
+            "params": [
+                {
+                    "name": "brand_safety_content_filter_levels",
+                    "required": true,
+                    "type": "list<adaccountbrand_safety_content_filter_levels_brand_safety_content_filter_levels_enum_param>"
+                },
+                {
+                    "name": "business_id",
+                    "required": false,
+                    "type": "string"
                 }
             ]
         },
@@ -2144,6 +2156,11 @@
                     "type": "list<Object>"
                 },
                 {
+                    "name": "facebook_page_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "inclusions",
                     "required": false,
                     "type": "list<Object>"
@@ -2167,6 +2184,11 @@
                     "name": "lookalike_spec",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "marketing_message_channels",
+                    "required": false,
+                    "type": "Object"
                 },
                 {
                     "name": "name",
@@ -2234,9 +2256,19 @@
                     "type": "string"
                 },
                 {
+                    "name": "subscription_info",
+                    "required": false,
+                    "type": "list<adaccountcustomaudiences_subscription_info_enum_param>"
+                },
+                {
                     "name": "subtype",
                     "required": false,
                     "type": "adaccountcustomaudiences_subtype_enum_param"
+                },
+                {
+                    "name": "use_for_products",
+                    "required": false,
+                    "type": "list<adaccountcustomaudiences_use_for_products_enum_param>"
                 },
                 {
                     "name": "use_in_campaigns",
@@ -3248,6 +3280,24 @@
         },
         {
             "method": "GET",
+            "endpoint": "recommendations",
+            "return": "AdAccountRecommendations",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "recommendations",
+            "return": "AdAccountRecommendations",
+            "params": [
+                {
+                    "name": "recommendation_signature",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "saved_audiences",
             "return": "SavedAudience",
             "params": [
@@ -3586,15 +3636,32 @@
         },
         {
             "method": "GET",
-            "endpoint": "value_adjustment_rule_collections",
+            "endpoint": "value_adjustment_rules",
+            "return": "AdsValueAdjustmentRule",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "value_rule_set",
             "return": "AdsValueAdjustmentRuleCollection",
             "params": []
         },
         {
             "method": "GET",
-            "endpoint": "value_adjustment_rules",
-            "return": "AdsValueAdjustmentRule",
-            "params": []
+            "endpoint": "video_ads",
+            "return": "AdVideo",
+            "params": [
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "until",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
         },
         {
             "name": "#get",

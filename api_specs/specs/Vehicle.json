@@ -2,15 +2,26 @@
     "apis": [
         {
             "method": "GET",
-            "endpoint": "augmented_realities_metadata",
-            "return": "DynamicARMetadata",
+            "endpoint": "channels_to_integrity_status",
+            "return": "CatalogItemChannelsToIntegrityStatus",
             "params": []
         },
         {
             "method": "GET",
-            "endpoint": "channels_to_integrity_status",
-            "return": "CatalogItemChannelsToIntegrityStatus",
-            "params": []
+            "endpoint": "override_details",
+            "return": "OverrideDetails",
+            "params": [
+                {
+                    "name": "keys",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "type",
+                    "required": false,
+                    "type": "vehicleoverride_details_type_enum_param"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -305,6 +316,26 @@
         {
             "name": "price",
             "type": "string"
+        },
+        {
+            "name": "product_priority_0",
+            "type": "float"
+        },
+        {
+            "name": "product_priority_1",
+            "type": "float"
+        },
+        {
+            "name": "product_priority_2",
+            "type": "float"
+        },
+        {
+            "name": "product_priority_3",
+            "type": "float"
+        },
+        {
+            "name": "product_priority_4",
+            "type": "float"
         },
         {
             "name": "sale_currency",
