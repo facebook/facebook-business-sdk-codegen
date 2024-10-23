@@ -32,6 +32,10 @@
         {
             "name": "original_display_amount",
             "type": "string"
+        },
+        {
+            "name": "start_date",
+            "type": "datetime"
         }
     ]
 }
