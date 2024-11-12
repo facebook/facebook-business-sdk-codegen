@@ -22,6 +22,10 @@
             "type": "bool"
         },
         {
+            "name": "boosted_product_set_id",
+            "type": "string"
+        },
+        {
             "name": "branded_content_shared_to_sponsor_status",
             "type": "string"
         },
