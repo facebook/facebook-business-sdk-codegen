@@ -189,6 +189,10 @@
             "type": "bool"
         },
         {
+            "name": "should_show_shops_ads_metrics_onboarding_tour",
+            "type": "bool"
+        },
+        {
             "name": "show_archived_data",
             "type": "bool"
         },

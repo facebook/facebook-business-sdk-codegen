@@ -99,7 +99,7 @@
         {
             "method": "POST",
             "endpoint": "whatsapp_credit_sharing_and_attach",
-            "return": "Object",
+            "return": "ExtendedCreditAllocationConfig",
             "params": [
                 {
                     "name": "waba_currency",

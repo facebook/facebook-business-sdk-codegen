@@ -4,6 +4,10 @@
         {
             "name": "audio_enabled",
             "type": "bool"
+        },
+        {
+            "name": "icon_enabled",
+            "type": "bool"
         }
     ]
 }

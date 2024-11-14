@@ -2,18 +2,6 @@
     "apis": [],
     "fields": [
         {
-            "name": "columns",
-            "type": "Object"
-        },
-        {
-            "name": "datapoints",
-            "type": "list<Object>"
-        },
-        {
-            "name": "error",
-            "type": "Object"
-        },
-        {
             "name": "query_id",
             "type": "string"
         },

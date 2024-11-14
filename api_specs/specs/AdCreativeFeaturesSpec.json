@@ -142,6 +142,10 @@
             "type": "AdCreativeFeatureDetails"
         },
         {
+            "name": "multi_photo_to_video",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "pac_relaxation",
             "type": "AdCreativeFeatureDetails"
         },

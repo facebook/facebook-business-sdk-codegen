@@ -5,6 +5,18 @@
             "method": "GET",
             "return": "MessengerBusinessTemplate",
             "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "MessengerBusinessTemplate",
+            "params": [
+                {
+                    "name": "components",
+                    "required": false,
+                    "type": "list<map>"
+                }
+            ]
         }
     ],
     "fields": [

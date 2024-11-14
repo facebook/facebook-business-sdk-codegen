@@ -303,7 +303,7 @@
                 },
                 {
                     "name": "call_id",
-                    "required": true,
+                    "required": false,
                     "type": "string"
                 },
                 {
@@ -460,73 +460,6 @@
             "endpoint": "chat_plugin",
             "return": "ChatPlugin",
             "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "chat_plugin",
-            "return": "Page",
-            "params": [
-                {
-                    "name": "alignment",
-                    "required": false,
-                    "type": "pagechat_plugin_alignment_enum_param"
-                },
-                {
-                    "name": "desktop_bottom_spacing",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "desktop_side_spacing",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "entry_point_icon",
-                    "required": false,
-                    "type": "pagechat_plugin_entry_point_icon_enum_param"
-                },
-                {
-                    "name": "entry_point_label",
-                    "required": false,
-                    "type": "pagechat_plugin_entry_point_label_enum_param"
-                },
-                {
-                    "name": "greeting_dialog_display",
-                    "required": false,
-                    "type": "pagechat_plugin_greeting_dialog_display_enum_param"
-                },
-                {
-                    "name": "guest_chat_mode",
-                    "required": false,
-                    "type": "pagechat_plugin_guest_chat_mode_enum_param"
-                },
-                {
-                    "name": "mobile_bottom_spacing",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "mobile_chat_display",
-                    "required": false,
-                    "type": "pagechat_plugin_mobile_chat_display_enum_param"
-                },
-                {
-                    "name": "mobile_side_spacing",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "theme_color",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "welcome_screen_greeting",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
         },
         {
             "method": "GET",
@@ -1336,11 +1269,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "throwback_camera_roll_media",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "thumbnail",
                     "required": false,
                     "type": "file"
@@ -1595,6 +1523,11 @@
                     "name": "tracking_parameters",
                     "required": false,
                     "type": "map"
+                },
+                {
+                    "name": "upload_gated_file",
+                    "required": false,
+                    "type": "file"
                 }
             ]
         },
@@ -1946,6 +1879,102 @@
             ]
         },
         {
+            "method": "DELETE",
+            "endpoint": "message_templates",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "template_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "message_templates",
+            "return": "MessengerBusinessTemplate",
+            "params": [
+                {
+                    "name": "category",
+                    "required": false,
+                    "type": "list<pagemessage_templates_category_enum_param>"
+                },
+                {
+                    "name": "content",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "language",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "name_or_content",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "status",
+                    "required": false,
+                    "type": "list<pagemessage_templates_status_enum_param>"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "message_templates",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "category",
+                    "required": true,
+                    "type": "pagemessage_templates_category_enum_param"
+                },
+                {
+                    "name": "components",
+                    "required": false,
+                    "type": "list<map>"
+                },
+                {
+                    "name": "example",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "language",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "library_template_button_inputs",
+                    "required": false,
+                    "type": "list<map>"
+                },
+                {
+                    "name": "library_template_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "POST",
             "endpoint": "messages",
             "return": "Page",
@@ -2021,6 +2050,11 @@
             "params": [
                 {
                     "name": "audio_enabled",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "icon_enabled",
                     "required": false,
                     "type": "bool"
                 }
@@ -3762,11 +3796,6 @@
                 },
                 {
                     "name": "text_format_metadata",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "throwback_camera_roll_media",
                     "required": false,
                     "type": "string"
                 },

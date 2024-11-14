@@ -186,6 +186,11 @@
                     "type": "unsigned int"
                 },
                 {
+                    "name": "ad_disclaimer_spec",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "adlabels",
                     "required": false,
                     "type": "list<Object>"
@@ -242,6 +247,11 @@
                 },
                 {
                     "name": "contextual_multi_ads",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "creative_sourcing_spec",
                     "required": false,
                     "type": "map"
                 },
@@ -1550,11 +1560,6 @@
                 },
                 {
                     "name": "text_format_metadata",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "throwback_camera_roll_media",
                     "required": false,
                     "type": "string"
                 },
@@ -3290,9 +3295,34 @@
             "return": "AdAccountRecommendations",
             "params": [
                 {
+                    "name": "asc_fragmentation_parameters",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "autoflow_parameters",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "fragmentation_parameters",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "music_parameters",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "recommendation_signature",
                     "required": true,
                     "type": "string"
+                },
+                {
+                    "name": "scale_good_campaign_parameters",
+                    "required": false,
+                    "type": "map"
                 }
             ]
         },
@@ -3878,6 +3908,10 @@
         {
             "name": "existing_customers",
             "type": "list<string>"
+        },
+        {
+            "name": "expired_funding_source_details",
+            "type": "FundingSourceDetails"
         },
         {
             "name": "extended_credit_invoice_group",

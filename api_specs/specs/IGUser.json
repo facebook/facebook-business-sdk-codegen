@@ -390,6 +390,33 @@
             "params": []
         },
         {
+            "method": "POST",
+            "endpoint": "upcoming_events",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "end_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "notification_subtypes",
+                    "required": false,
+                    "type": "list<shadowiguserupcoming_events_notification_subtypes_enum_param>"
+                },
+                {
+                    "name": "start_time",
+                    "required": true,
+                    "type": "datetime"
+                },
+                {
+                    "name": "title",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "name": "#get",
             "method": "GET",
             "return": "IGUser",
@@ -426,6 +453,10 @@
         {
             "name": "ig_id",
             "type": "int"
+        },
+        {
+            "name": "legacy_instagram_user_id",
+            "type": "string"
         },
         {
             "name": "media_count",

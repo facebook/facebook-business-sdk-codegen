@@ -177,6 +177,10 @@
             "type": "string"
         },
         {
+            "name": "ad_disclaimer_spec",
+            "type": "AdCreativeAdDisclaimer"
+        },
+        {
             "name": "adlabels",
             "type": "list<AdLabel>"
         },
@@ -391,6 +395,10 @@
         {
             "name": "portrait_customizations",
             "type": "AdCreativePortraitCustomizations"
+        },
+        {
+            "name": "product_data",
+            "type": "list<AdCreativeProductData>"
         },
         {
             "name": "product_set_id",

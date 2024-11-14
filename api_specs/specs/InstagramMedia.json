@@ -56,6 +56,10 @@
             "type": "string"
         },
         {
+            "name": "ig_media_id",
+            "type": "string"
+        },
+        {
             "name": "latitude",
             "type": "float"
         },
