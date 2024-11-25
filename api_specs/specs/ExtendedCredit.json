@@ -69,8 +69,37 @@
         },
         {
             "method": "POST",
-            "endpoint": "whatsapp_credit_sharing_and_attach",
+            "endpoint": "whatsapp_credit_attach",
             "return": "Object",
+            "params": [
+                {
+                    "name": "waba_currency",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "waba_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "whatsapp_credit_sharing",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "receiving_business_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "whatsapp_credit_sharing_and_attach",
+            "return": "ExtendedCreditAllocationConfig",
             "params": [
                 {
                     "name": "waba_currency",

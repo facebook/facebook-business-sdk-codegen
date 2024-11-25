@@ -10,6 +10,14 @@
             "type": "string"
         },
         {
+            "name": "chat_on_messenger_text",
+            "type": "string"
+        },
+        {
+            "name": "chat_on_whatsapp_text",
+            "type": "string"
+        },
+        {
             "name": "contact_information_text",
             "type": "string"
         },

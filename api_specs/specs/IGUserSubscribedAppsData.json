@@ -2,12 +2,12 @@
     "apis": [],
     "fields": [
         {
-            "name": "query_id",
+            "name": "app_id",
             "type": "string"
         },
         {
-            "name": "status",
-            "type": "string"
+            "name": "subscribed_fields",
+            "type": "list<string>"
         }
     ]
 }

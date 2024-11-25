@@ -55,6 +55,53 @@
         },
         {
             "method": "GET",
+            "endpoint": "call_analytics",
+            "return": "WABACallAnalytics",
+            "params": [
+                {
+                    "name": "country_codes",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "dimensions",
+                    "required": false,
+                    "type": "list<whatsappbusinessaccountcall_analytics_dimensions_enum_param>"
+                },
+                {
+                    "name": "directions",
+                    "required": false,
+                    "type": "list<whatsappbusinessaccountcall_analytics_directions_enum_param>"
+                },
+                {
+                    "name": "end",
+                    "required": true,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "granularity",
+                    "required": true,
+                    "type": "whatsappbusinessaccountcall_analytics_granularity_enum_param"
+                },
+                {
+                    "name": "metric_types",
+                    "required": false,
+                    "type": "list<whatsappbusinessaccountcall_analytics_metric_types_enum_param>"
+                },
+                {
+                    "name": "phone_numbers",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "start",
+                    "required": true,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "conversation_analytics",
             "return": "WABAConversationAnalytics",
             "params": [
@@ -317,6 +364,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "library_template_body_inputs",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "library_template_button_inputs",
                     "required": false,
                     "type": "list<map>"
@@ -335,6 +387,11 @@
                     "name": "name",
                     "required": true,
                     "type": "string"
+                },
+                {
+                    "name": "parameter_format",
+                    "required": false,
+                    "type": "whatsappbusinessaccountmessage_templates_parameter_format_enum_param"
                 },
                 {
                     "name": "sub_category",
@@ -719,7 +776,7 @@
         },
         {
             "name": "business_verification_status",
-            "type": "string"
+            "type": "WhatsAppBusinessAccount_business_verification_status"
         },
         {
             "name": "country",

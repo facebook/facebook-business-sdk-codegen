@@ -110,6 +110,10 @@
             "type": "string"
         },
         {
+            "name": "ig_user_id",
+            "type": "string"
+        },
+        {
             "name": "is_private",
             "type": "bool"
         },

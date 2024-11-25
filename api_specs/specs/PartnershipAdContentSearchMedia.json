@@ -2,11 +2,23 @@
     "apis": [],
     "fields": [
         {
+            "name": "ig_ad_code_sponsor_count",
+            "type": "int"
+        },
+        {
+            "name": "ig_ad_code_sponsors",
+            "type": "list<FBPageAndInstagramAccount>"
+        },
+        {
             "name": "ig_media",
             "type": "IGMedia"
         },
         {
             "name": "ig_media_has_product_tags",
+            "type": "bool"
+        },
+        {
+            "name": "is_ad_code_eligible_for_boosting_by_two_sponsors",
             "type": "bool"
         },
         {

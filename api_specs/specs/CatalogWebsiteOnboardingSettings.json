@@ -13,6 +13,10 @@
             "type": "string"
         },
         {
+            "name": "quality_band",
+            "type": "string"
+        },
+        {
             "name": "status",
             "type": "string"
         }

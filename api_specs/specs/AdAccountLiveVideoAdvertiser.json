@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "is_lva_toggle_on",
+            "type": "bool"
+        },
+        {
+            "name": "lva_default_budget",
+            "type": "int"
+        },
+        {
+            "name": "should_show_lva_toggle",
+            "type": "bool"
+        }
+    ]
+}

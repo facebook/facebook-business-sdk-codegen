@@ -73,6 +73,10 @@
             "type": "string"
         },
         {
+            "name": "ig_comment_id",
+            "type": "string"
+        },
+        {
             "name": "instagram_comment_id",
             "type": "string"
         },

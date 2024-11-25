@@ -2,11 +2,11 @@
     "apis": [],
     "fields": [
         {
-            "name": "image_crop_style",
+            "name": "product_id",
             "type": "string"
         },
         {
-            "name": "showcase_card_display",
+            "name": "product_source",
             "type": "string"
         }
     ]

@@ -21,6 +21,10 @@
             "type": "string"
         },
         {
+            "name": "owned_by",
+            "type": "string"
+        },
+        {
             "name": "parent_advertiser_id",
             "type": "string"
         },

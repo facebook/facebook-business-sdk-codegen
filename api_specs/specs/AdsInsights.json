@@ -74,6 +74,10 @@
             "type": "string"
         },
         {
+            "name": "average_purchases_conversion_value",
+            "type": "list<AdsActionStats>"
+        },
+        {
             "name": "buying_type",
             "type": "string"
         },
@@ -330,18 +334,6 @@
             "type": "string"
         },
         {
-            "name": "landing_page_view_actions_per_link_click",
-            "type": "list<AdsActionStats>"
-        },
-        {
-            "name": "landing_page_view_per_purchase_rate",
-            "type": "list<AdsActionStats>"
-        },
-        {
-            "name": "link_clicks_per_results",
-            "type": "list<AdsActionStats>"
-        },
-        {
             "name": "location",
             "type": "string"
         },
@@ -351,6 +343,30 @@
         },
         {
             "name": "marketing_messages_cost_per_link_btn_click",
+            "type": "string"
+        },
+        {
+            "name": "marketing_messages_delivery_rate",
+            "type": "string"
+        },
+        {
+            "name": "marketing_messages_link_btn_click_rate",
+            "type": "string"
+        },
+        {
+            "name": "marketing_messages_media_view_rate",
+            "type": "string"
+        },
+        {
+            "name": "marketing_messages_phone_call_btn_click_rate",
+            "type": "string"
+        },
+        {
+            "name": "marketing_messages_quick_reply_btn_click_rate",
+            "type": "string"
+        },
+        {
+            "name": "marketing_messages_read_rate",
             "type": "string"
         },
         {
@@ -391,10 +407,6 @@
         },
         {
             "name": "purchase_roas",
-            "type": "list<AdsActionStats>"
-        },
-        {
-            "name": "purchases_per_link_click",
             "type": "list<AdsActionStats>"
         },
         {

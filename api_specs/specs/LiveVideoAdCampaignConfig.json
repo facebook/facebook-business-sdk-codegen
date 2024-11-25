@@ -3,22 +3,18 @@
         {
             "name": "#get",
             "method": "GET",
-            "return": "DogNotificationSettings",
+            "return": "LiveVideoAdCampaignConfig",
             "params": []
         }
     ],
     "fields": [
         {
-            "name": "dog_check_key",
-            "type": "string"
-        },
-        {
             "name": "id",
             "type": "string"
         },
         {
-            "name": "subscription_status_per_channel",
-            "type": "list<map<string, string>>"
+            "name": "live_video_ad_type",
+            "type": "string"
         }
     ]
 }

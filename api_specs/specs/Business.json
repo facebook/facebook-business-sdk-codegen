@@ -283,6 +283,11 @@
                     "type": "businessadnetworkanalytics_ordering_type_enum_param"
                 },
                 {
+                    "name": "should_include_until",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "since",
                     "required": false,
                     "type": "datetime"
@@ -1227,6 +1232,21 @@
                     "type": "bool"
                 },
                 {
+                    "name": "cloud_provider",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "cloud_region",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "destination_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "endpoint",
                     "required": false,
                     "type": "string"
@@ -1242,6 +1262,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "first_party_domain",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "host_business_id",
                     "required": false,
                     "type": "unsigned int"
@@ -1253,6 +1278,21 @@
                 },
                 {
                     "name": "instance_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "instance_version",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "is_sgw_instance",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "partner_name",
                     "required": false,
                     "type": "string"
                 },
@@ -1706,6 +1746,58 @@
         },
         {
             "method": "POST",
+            "endpoint": "self_certify_whatsapp_business",
+            "return": "Business",
+            "params": [
+                {
+                    "name": "average_monthly_revenue_spend_with_partner",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "business_documents",
+                    "required": true,
+                    "type": "list<file>"
+                },
+                {
+                    "name": "business_vertical",
+                    "required": false,
+                    "type": "businessself_certify_whatsapp_business_business_vertical_enum_param"
+                },
+                {
+                    "name": "end_business_address",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "end_business_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "end_business_legal_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "end_business_trade_names",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "end_business_website",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "num_billing_cycles_with_partner",
+                    "required": false,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
+            "method": "POST",
             "endpoint": "setup_managed_partner_adaccounts",
             "return": "Business",
             "params": [
@@ -1974,7 +2066,7 @@
                 {
                     "name": "fun_fact_prompt_id",
                     "required": false,
-                    "type": "unsigned int"
+                    "type": "string"
                 },
                 {
                     "name": "fun_fact_toastee_id",
@@ -1990,11 +2082,6 @@
                     "name": "guide_enabled",
                     "required": false,
                     "type": "bool"
-                },
-                {
-                    "name": "holiday_card",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "initial_heading",
@@ -2030,11 +2117,6 @@
                     "name": "location_source_id",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "offer_like_post_id",
-                    "required": false,
-                    "type": "unsigned int"
                 },
                 {
                     "name": "og_action_type_id",
@@ -2118,11 +2200,6 @@
                 },
                 {
                     "name": "text_format_metadata",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "throwback_camera_roll_media",
                     "required": false,
                     "type": "string"
                 },
@@ -2316,7 +2393,7 @@
         },
         {
             "name": "verification_status",
-            "type": "string"
+            "type": "Business_verification_status"
         },
         {
             "name": "vertical",

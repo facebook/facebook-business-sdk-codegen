@@ -284,38 +284,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "updates",
-            "return": "CommerceOrder",
-            "params": [
-                {
-                    "name": "cancel_amount",
-                    "required": true,
-                    "type": "map"
-                },
-                {
-                    "name": "fulfill_amount",
-                    "required": true,
-                    "type": "map"
-                },
-                {
-                    "name": "merchant_order_reference",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "refund_amount",
-                    "required": true,
-                    "type": "map"
-                },
-                {
-                    "name": "total_amount",
-                    "required": true,
-                    "type": "map"
-                }
-            ]
-        },
-        {
             "name": "#get",
             "method": "GET",
             "return": "CommerceOrder",

@@ -13,6 +13,10 @@
             "type": "bool"
         },
         {
+            "name": "add_overlays_opt_in_status",
+            "type": "string"
+        },
+        {
             "name": "adgroup_name_template",
             "type": "Object"
         },
@@ -81,6 +85,10 @@
             "type": "string"
         },
         {
+            "name": "enhance_cta_text_extraction_opt_in_status",
+            "type": "string"
+        },
+        {
             "name": "export_format_default",
             "type": "string"
         },
@@ -94,6 +102,10 @@
         },
         {
             "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "image_background_generation_opt_in_status",
             "type": "string"
         },
         {
@@ -210,6 +222,14 @@
         },
         {
             "name": "syd_campaign_trends_metric",
+            "type": "string"
+        },
+        {
+            "name": "text_optimizations_text_extraction_opt_in_status",
+            "type": "string"
+        },
+        {
+            "name": "text_variations_sticky_opt_in_status",
             "type": "string"
         },
         {

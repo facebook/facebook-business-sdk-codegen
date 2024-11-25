@@ -6,6 +6,10 @@
             "type": "string"
         },
         {
+            "name": "has_create_ads_access",
+            "type": "bool"
+        },
+        {
             "name": "identity_type",
             "type": "string"
         },

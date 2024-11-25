@@ -9,10 +9,6 @@
     ],
     "fields": [
         {
-            "name": "category",
-            "type": "string"
-        },
-        {
             "name": "id",
             "type": "string"
         },

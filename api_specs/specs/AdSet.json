@@ -708,6 +708,16 @@
                     "type": "unsigned int"
                 },
                 {
+                    "name": "max_budget_spend_percentage",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "min_budget_spend_percentage",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
                     "name": "multi_optimization_goal_weight",
                     "required": false,
                     "type": "adcampaign_multi_optimization_goal_weight"
@@ -963,6 +973,14 @@
         },
         {
             "name": "lifetime_spend_cap",
+            "type": "string"
+        },
+        {
+            "name": "max_budget_spend_percentage",
+            "type": "string"
+        },
+        {
+            "name": "min_budget_spend_percentage",
             "type": "string"
         },
         {

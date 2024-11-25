@@ -6,10 +6,6 @@
             "type": "Object"
         },
         {
-            "name": "error",
-            "type": "Object"
-        },
-        {
             "name": "omitted_results",
             "type": "list<Object>"
         },

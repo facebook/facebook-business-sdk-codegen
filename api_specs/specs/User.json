@@ -14,7 +14,7 @@
                 {
                     "name": "business_app",
                     "required": true,
-                    "type": "int"
+                    "type": "string"
                 },
                 {
                     "name": "page_id",
@@ -24,7 +24,7 @@
                 {
                     "name": "scope",
                     "required": false,
-                    "type": "list<Permission>"
+                    "type": "list<string>"
                 },
                 {
                     "name": "set_token_expires_in_60_days",
@@ -500,7 +500,7 @@
                 {
                     "name": "asset3d_id",
                     "required": false,
-                    "type": "unsigned int"
+                    "type": "string"
                 },
                 {
                     "name": "associated_id",
@@ -655,7 +655,7 @@
                 {
                     "name": "fun_fact_prompt_id",
                     "required": false,
-                    "type": "unsigned int"
+                    "type": "string"
                 },
                 {
                     "name": "fun_fact_toastee_id",
@@ -666,11 +666,6 @@
                     "name": "height",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "holiday_card",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "home_checkin_city_id",
@@ -771,11 +766,6 @@
                     "name": "object_attachment",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "offer_like_post_id",
-                    "required": false,
-                    "type": "unsigned int"
                 },
                 {
                     "name": "og_action_type_id",
@@ -959,11 +949,6 @@
                 },
                 {
                     "name": "text_only_place",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "throwback_camera_roll_media",
                     "required": false,
                     "type": "string"
                 },
@@ -1926,7 +1911,7 @@
                 {
                     "name": "fun_fact_prompt_id",
                     "required": false,
-                    "type": "unsigned int"
+                    "type": "string"
                 },
                 {
                     "name": "fun_fact_toastee_id",
@@ -1942,11 +1927,6 @@
                     "name": "guide_enabled",
                     "required": false,
                     "type": "bool"
-                },
-                {
-                    "name": "holiday_card",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "initial_heading",
@@ -1997,11 +1977,6 @@
                     "name": "no_story",
                     "required": false,
                     "type": "bool"
-                },
-                {
-                    "name": "offer_like_post_id",
-                    "required": false,
-                    "type": "unsigned int"
                 },
                 {
                     "name": "og_action_type_id",
@@ -2095,11 +2070,6 @@
                 },
                 {
                     "name": "text_format_metadata",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "throwback_camera_roll_media",
                     "required": false,
                     "type": "string"
                 },
@@ -2290,6 +2260,10 @@
             "type": "list<Experience>"
         },
         {
+            "name": "instagram_user_self_asset",
+            "type": "InstagramUser"
+        },
+        {
             "name": "install_type",
             "type": "string"
         },
@@ -2367,6 +2341,10 @@
         },
         {
             "name": "relationship_status",
+            "type": "string"
+        },
+        {
+            "name": "religion",
             "type": "string"
         },
         {

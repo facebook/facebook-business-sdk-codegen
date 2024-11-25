@@ -34,6 +34,10 @@
             "type": "string"
         },
         {
+            "name": "lead_ads_form_event_source_type",
+            "type": "string"
+        },
+        {
             "name": "mcme_conversion_id",
             "type": "string"
         },
@@ -99,6 +103,14 @@
         },
         {
             "name": "retention_days",
+            "type": "string"
+        },
+        {
+            "name": "value_semantic_type",
+            "type": "string"
+        },
+        {
+            "name": "variation",
             "type": "string"
         },
         {

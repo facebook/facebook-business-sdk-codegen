@@ -2,10 +2,6 @@
     "apis": [],
     "fields": [
         {
-            "name": "error",
-            "type": "Object"
-        },
-        {
             "name": "export_link",
             "type": "string"
         },

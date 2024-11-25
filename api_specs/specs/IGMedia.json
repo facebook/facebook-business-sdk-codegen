@@ -122,6 +122,16 @@
             "return": "IGMedia",
             "params": [
                 {
+                    "name": "ad_account_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "business_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "primary_fb_page_id",
                     "required": false,
                     "type": "string"
@@ -188,6 +198,10 @@
         {
             "name": "is_shared_to_feed",
             "type": "bool"
+        },
+        {
+            "name": "legacy_instagram_media_id",
+            "type": "string"
         },
         {
             "name": "like_count",

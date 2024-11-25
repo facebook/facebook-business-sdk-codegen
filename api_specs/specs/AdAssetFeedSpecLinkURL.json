@@ -18,6 +18,10 @@
             "type": "string"
         },
         {
+            "name": "object_store_urls",
+            "type": "list<string>"
+        },
+        {
             "name": "url_tags",
             "type": "string"
         },

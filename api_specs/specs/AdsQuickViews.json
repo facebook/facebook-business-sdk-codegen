@@ -1,0 +1,44 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdsQuickViews",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "attribution_windows",
+            "type": "list<string>"
+        },
+        {
+            "name": "breakdowns",
+            "type": "list<string>"
+        },
+        {
+            "name": "column_fields",
+            "type": "list<string>"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "permission",
+            "type": "string"
+        },
+        {
+            "name": "sort",
+            "type": "list<Object>"
+        }
+    ]
+}
