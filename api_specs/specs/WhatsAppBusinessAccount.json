@@ -389,6 +389,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "parameter_format",
+                    "required": false,
+                    "type": "whatsappbusinessaccountmessage_templates_parameter_format_enum_param"
+                },
+                {
                     "name": "sub_category",
                     "required": false,
                     "type": "whatsappbusinessaccountmessage_templates_sub_category_enum_param"
@@ -771,7 +776,7 @@
         },
         {
             "name": "business_verification_status",
-            "type": "string"
+            "type": "WhatsAppBusinessAccount_business_verification_status"
         },
         {
             "name": "country",

@@ -1258,6 +1258,23 @@
         ]
     },
     {
+        "name": "Business_verification_status",
+        "node": "Business",
+        "field_or_param": "verification_status",
+        "values": [
+            "expired",
+            "failed",
+            "ineligible",
+            "not_verified",
+            "pending",
+            "pending_need_more_info",
+            "pending_submission",
+            "rejected",
+            "revoked",
+            "verified"
+        ]
+    },
+    {
         "name": "Campaign_bid_strategy",
         "node": "Campaign",
         "field_or_param": "bid_strategy",
@@ -1499,6 +1516,7 @@
         "field_or_param": "online_event_format",
         "values": [
             "fb_live",
+            "horizon_world",
             "messenger_room",
             "none",
             "other",
@@ -2243,6 +2261,23 @@
         ]
     },
     {
+        "name": "WhatsAppBusinessAccount_business_verification_status",
+        "node": "WhatsAppBusinessAccount",
+        "field_or_param": "business_verification_status",
+        "values": [
+            "expired",
+            "failed",
+            "ineligible",
+            "not_verified",
+            "pending",
+            "pending_need_more_info",
+            "pending_submission",
+            "rejected",
+            "revoked",
+            "verified"
+        ]
+    },
+    {
         "name": "WhatsAppBusinessPartnerClientVerificationSubmission_rejection_reasons",
         "node": "WhatsAppBusinessPartnerClientVerificationSubmission",
         "field_or_param": "rejection_reasons",
@@ -2251,6 +2286,7 @@
             "BUSINESS_NOT_ELIGIBLE",
             "LEGAL_NAME_NOT_FOUND_IN_DOCUMENTS",
             "LEGAL_NAME_NOT_MATCHING",
+            "MALFORMED_DOCUMENTS",
             "NONE",
             "WEBSITE_NOT_MATCHING"
         ]
@@ -2525,6 +2561,7 @@
             "AM_SYD_RESOLUTION_FLOW",
             "AM_SYD_RESOLUTION_FLOW_MODAL",
             "AM_TABLE_DELIVERY_COLUMN_POPOVER",
+            "AM_TABLE_MORE_RULES_DROPDOWN",
             "AM_TABLE_TOGGLE_POPOVER",
             "AM_TOOLBAR_CREATE_RULE_DROPDOWN",
             "PE_CAMPAIGN_STRUCTURE_MENU",
@@ -2596,11 +2633,13 @@
         "values": [
             "AAC_CREATION_PACKAGE",
             "AB_TEST",
+            "ACCOUNT_ERROR",
             "ACCOUNT_NEEDS_CREDIT",
             "ACCOUNT_SPEND_LIMIT",
             "ACCOUNT_SPEND_LIMIT_DUPLICATION",
             "ACO_TOGGLE",
             "ADS_REPORTING",
+            "ADS_STATUS",
             "ADVANCED_CAMPAIGN_BUDGET",
             "ADVANTAGE_APP_CAMPAIGN",
             "ADVANTAGE_CAMPAIGN_BUDGET_DUPLICATION",
@@ -2720,6 +2759,7 @@
             "HIGH_COST",
             "HISTORICAL_BENCHMARK",
             "IG_MULTI_ADS",
+            "IG_SURFACES_MANUAL_PLACEMENTS",
             "LANDING_PAGE_VIEW",
             "LANDING_PAGE_VIEW_OPTIMIZATION_GOAL",
             "LANDING_PAGE_VIEW_PRECREATE",
@@ -2793,6 +2833,7 @@
             "SIGNALS_GROWTH_CAPI_TABLE",
             "SIGNALS_GROWTH_CAPI_V2",
             "SIMILAR_ADVERTISER_BUDGET_RECOMMENDATION",
+            "SITE_EXTENSIONS_DUPLICATION",
             "SIX_PLUS_MANUAL_PLACEMENTS",
             "SIX_PLUS_PLACEMENTS_DUPLICATION",
             "SPEND_LIMIT",
@@ -3021,7 +3062,8 @@
         "values": [
             "0",
             "1",
-            "2"
+            "2",
+            "3"
         ]
     },
     {
@@ -4166,6 +4208,11 @@
             "skan_campaign_id",
             "skan_conversion_id",
             "skan_version",
+            "sot_attribution_model_type",
+            "sot_attribution_window",
+            "sot_channel",
+            "sot_event_type",
+            "sot_source",
             "standard_event_content_type",
             "title_asset",
             "user_persona_id",
@@ -6061,7 +6108,8 @@
         "values": [
             "0",
             "1",
-            "2"
+            "2",
+            "3"
         ]
     },
     {
@@ -6893,6 +6941,11 @@
             "skan_campaign_id",
             "skan_conversion_id",
             "skan_version",
+            "sot_attribution_model_type",
+            "sot_attribution_window",
+            "sot_channel",
+            "sot_event_type",
+            "sot_source",
             "standard_event_content_type",
             "title_asset",
             "user_persona_id",
@@ -7064,6 +7117,11 @@
             "skan_campaign_id",
             "skan_conversion_id",
             "skan_version",
+            "sot_attribution_model_type",
+            "sot_attribution_window",
+            "sot_channel",
+            "sot_event_type",
+            "sot_source",
             "standard_event_content_type",
             "title_asset",
             "user_persona_id",
@@ -7485,6 +7543,11 @@
             "skan_campaign_id",
             "skan_conversion_id",
             "skan_version",
+            "sot_attribution_model_type",
+            "sot_attribution_window",
+            "sot_channel",
+            "sot_event_type",
+            "sot_source",
             "standard_event_content_type",
             "title_asset",
             "user_persona_id",
@@ -10417,6 +10480,42 @@
         ]
     },
     {
+        "name": "businessself_certify_whatsapp_business_business_vertical_enum_param",
+        "node": "Business",
+        "field_or_param": "business_vertical",
+        "values": [
+            "ADULT_PRODUCTS_AND_SERVICES",
+            "ALCOHOL_AND_TOBACCO",
+            "AUTOMOTIVE_DEALERS",
+            "BODY_PARTS_FLUIDS",
+            "BUSINESS_AND_UTILITY",
+            "CONTENT_AND_APPS",
+            "CREATORS_AND_CELEBRITIES",
+            "DATING",
+            "DRUGS",
+            "ENDANGERED_SPECIES",
+            "FIREARMS",
+            "FRAUDULENT_MISLEADING_OFFENSIVE",
+            "GAMBLING",
+            "GROCERY_AND_CONVENIENCE_STORE",
+            "HAZARDOUS_GOODS_AND_MATERIALS",
+            "HOME",
+            "HOME_AND_AUTO_MANUFACTURING",
+            "LIFESTYLE",
+            "LIVE_NON_ENDANGERED_SPECIES",
+            "LOANS_DEBT_COLLECTION_BAIL_BONDS",
+            "LOCAL_EVENTS",
+            "MEDICAL_HEALTHCARE",
+            "MULTILEVEL_MARKETING",
+            "NON_PROFIT_AND_RELIGIOUS_ORGS",
+            "PROFESSIONAL",
+            "REAL_VIRTUAL_FAKE_CURRENCY",
+            "RESTAURANTS",
+            "RETAIL",
+            "TRANSPORTATION_AND_ACCOMMODATION"
+        ]
+    },
+    {
         "name": "businesssetup_managed_partner_adaccounts_subvertical_v2_enum_param",
         "node": "Business",
         "field_or_param": "subvertical_v2",
@@ -12718,6 +12817,7 @@
         "field_or_param": "action",
         "values": [
             "ACCEPT",
+            "CONNECT",
             "REJECT",
             "TERMINATE"
         ]
@@ -12829,65 +12929,6 @@
             "NONE",
             "SHOP_ON_FACEBOOK",
             "WEBSITE"
-        ]
-    },
-    {
-        "name": "pagechat_plugin_alignment_enum_param",
-        "node": "Page",
-        "field_or_param": "alignment",
-        "values": [
-            "LEFT",
-            "RIGHT"
-        ]
-    },
-    {
-        "name": "pagechat_plugin_entry_point_icon_enum_param",
-        "node": "Page",
-        "field_or_param": "entry_point_icon",
-        "values": [
-            "CHAT_ANGULAR_ICON",
-            "CHAT_ROUND_ICON",
-            "MESSENGER_ICON",
-            "NONE"
-        ]
-    },
-    {
-        "name": "pagechat_plugin_entry_point_label_enum_param",
-        "node": "Page",
-        "field_or_param": "entry_point_label",
-        "values": [
-            "ASK_US",
-            "CHAT",
-            "HELP",
-            "NONE"
-        ]
-    },
-    {
-        "name": "pagechat_plugin_greeting_dialog_display_enum_param",
-        "node": "Page",
-        "field_or_param": "greeting_dialog_display",
-        "values": [
-            "HIDE",
-            "SHOW",
-            "WELCOME_MESSAGE"
-        ]
-    },
-    {
-        "name": "pagechat_plugin_guest_chat_mode_enum_param",
-        "node": "Page",
-        "field_or_param": "guest_chat_mode",
-        "values": [
-            "DISABLED",
-            "ENABLED"
-        ]
-    },
-    {
-        "name": "pagechat_plugin_mobile_chat_display_enum_param",
-        "node": "Page",
-        "field_or_param": "mobile_chat_display",
-        "values": [
-            "APP_SWITCH",
-            "CHAT_TAB"
         ]
     },
     {
@@ -13538,6 +13579,31 @@
         ]
     },
     {
+        "name": "pagemessage_templates_category_enum_param",
+        "node": "Page",
+        "field_or_param": "category",
+        "values": [
+            "UTILITY"
+        ]
+    },
+    {
+        "name": "pagemessage_templates_status_enum_param",
+        "node": "MessengerBusinessTemplate",
+        "field_or_param": "status",
+        "values": [
+            "APPROVED",
+            "ARCHIVED",
+            "DELETED",
+            "DISABLED",
+            "IN_APPEAL",
+            "LIMIT_EXCEEDED",
+            "PAUSED",
+            "PENDING",
+            "PENDING_DELETION",
+            "REJECTED"
+        ]
+    },
+    {
         "name": "pagemessages_messaging_type_enum_param",
         "node": "Page",
         "field_or_param": "messaging_type",
@@ -13938,7 +14004,6 @@
             "messaging_referrals",
             "mission",
             "name",
-            "otp_verification",
             "page_about_story",
             "page_change_proposal",
             "page_upcoming_change",
@@ -14629,7 +14694,6 @@
             "COLLAB_ADS",
             "COLLAB_ADS_FOR_MARKETPLACE_PARTNER",
             "COLLAB_ADS_SEGMENT_WITHOUT_SEGMENT_SYNCING",
-            "CREATORS_AS_SELLERS",
             "DIGITAL_CIRCULARS",
             "FB_LIVE_SHOPPING",
             "IG_SHOPPING",
@@ -15287,6 +15351,13 @@
             "ITEM_PRICE_NOT_POSITIVE",
             "ITEM_STALE_OUT_OF_STOCK",
             "MARKETPLACE_DISABLED_BY_USER",
+            "MARKETPLACE_PARTNER_LISTING_LIMIT_EXCEEDED",
+            "MARKETPLACE_PARTNER_NOT_LOCAL_ITEM",
+            "MARKETPLACE_PARTNER_NOT_SHIPPED_ITEM",
+            "MARKETPLACE_PARTNER_POLICY_VIOLATION",
+            "MARKETPLACE_PARTNER_RULE_LISTING_LIMIT_EXCEEDED",
+            "MARKETPLACE_PARTNER_SELLER_BANNED",
+            "MARKETPLACE_PARTNER_SELLER_NOT_VALID",
             "MINI_SHOPS_DISABLED_BY_USER",
             "MISSING_CHECKOUT",
             "MISSING_CHECKOUT_CURRENCY",
@@ -15903,6 +15974,13 @@
             "ITEM_PRICE_NOT_POSITIVE",
             "ITEM_STALE_OUT_OF_STOCK",
             "MARKETPLACE_DISABLED_BY_USER",
+            "MARKETPLACE_PARTNER_LISTING_LIMIT_EXCEEDED",
+            "MARKETPLACE_PARTNER_NOT_LOCAL_ITEM",
+            "MARKETPLACE_PARTNER_NOT_SHIPPED_ITEM",
+            "MARKETPLACE_PARTNER_POLICY_VIOLATION",
+            "MARKETPLACE_PARTNER_RULE_LISTING_LIMIT_EXCEEDED",
+            "MARKETPLACE_PARTNER_SELLER_BANNED",
+            "MARKETPLACE_PARTNER_SELLER_NOT_VALID",
             "MINI_SHOPS_DISABLED_BY_USER",
             "MISSING_CHECKOUT",
             "MISSING_CHECKOUT_CURRENCY",
@@ -16914,6 +16992,13 @@
             "ITEM_PRICE_NOT_POSITIVE",
             "ITEM_STALE_OUT_OF_STOCK",
             "MARKETPLACE_DISABLED_BY_USER",
+            "MARKETPLACE_PARTNER_LISTING_LIMIT_EXCEEDED",
+            "MARKETPLACE_PARTNER_NOT_LOCAL_ITEM",
+            "MARKETPLACE_PARTNER_NOT_SHIPPED_ITEM",
+            "MARKETPLACE_PARTNER_POLICY_VIOLATION",
+            "MARKETPLACE_PARTNER_RULE_LISTING_LIMIT_EXCEEDED",
+            "MARKETPLACE_PARTNER_SELLER_BANNED",
+            "MARKETPLACE_PARTNER_SELLER_NOT_VALID",
             "MINI_SHOPS_DISABLED_BY_USER",
             "MISSING_CHECKOUT",
             "MISSING_CHECKOUT_CURRENCY",
@@ -17048,21 +17133,15 @@
             "impressions",
             "likes",
             "navigation",
-            "peak_concurrent_viewers",
             "plays",
             "profile_activity",
             "profile_visits",
-            "quotes",
             "reach",
             "replies",
-            "reposts",
             "saved",
             "shares",
-            "thread_replies",
-            "thread_shares",
             "total_interactions",
-            "video_views",
-            "views"
+            "video_views"
         ]
     },
     {
@@ -17162,6 +17241,26 @@
             "prev_month",
             "this_month",
             "this_week"
+        ]
+    },
+    {
+        "name": "shadowiguserupcoming_events_notification_subtypes_enum_param",
+        "node": "Object",
+        "field_or_param": "notification_subtypes",
+        "values": [
+            "AFTER_EVENT_1DAY",
+            "AFTER_EVENT_2DAY",
+            "AFTER_EVENT_3DAY",
+            "AFTER_EVENT_4DAY",
+            "AFTER_EVENT_5DAY",
+            "AFTER_EVENT_6DAY",
+            "AFTER_EVENT_7DAY",
+            "BEFORE_EVENT_15MIN",
+            "BEFORE_EVENT_1DAY",
+            "BEFORE_EVENT_1HOUR",
+            "BEFORE_EVENT_2DAY",
+            "EVENT_START",
+            "RESCHEDULED"
         ]
     },
     {
@@ -18624,11 +18723,9 @@
             "AUTHENTICATION",
             "AUTHENTICATION_INTERNATIONAL",
             "MARKETING",
-            "MARKETING_OPTIMIZED_DELIVERY",
+            "MARKETING_LITE",
             "SERVICE",
-            "UNKNOWN",
-            "UTILITY",
-            "UTILITY_FIXED_TEMPLATE"
+            "UTILITY"
         ]
     },
     {
@@ -18733,6 +18830,15 @@
         "field_or_param": "display_format",
         "values": [
             "ORDER_DETAILS"
+        ]
+    },
+    {
+        "name": "whatsappbusinessaccountmessage_templates_parameter_format_enum_param",
+        "node": "WhatsAppBusinessAccount",
+        "field_or_param": "parameter_format",
+        "values": [
+            "NAMED",
+            "POSITIONAL"
         ]
     },
     {

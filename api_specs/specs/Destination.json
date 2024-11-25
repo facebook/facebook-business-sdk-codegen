@@ -54,6 +54,30 @@
             "type": "string"
         },
         {
+            "name": "custom_label_0",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_1",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_2",
+            "type": "string"
+        },
+        {
+            "name": "custom_number_0",
+            "type": "unsigned int"
+        },
+        {
+            "name": "custom_number_1",
+            "type": "unsigned int"
+        },
+        {
+            "name": "custom_number_2",
+            "type": "unsigned int"
+        },
+        {
             "name": "description",
             "type": "string"
         },

@@ -2,6 +2,10 @@
     "apis": [],
     "fields": [
         {
+            "name": "is_saved",
+            "type": "bool"
+        },
+        {
             "name": "post_types",
             "type": "list<string>"
         },

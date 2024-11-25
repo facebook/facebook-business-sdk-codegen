@@ -273,6 +273,10 @@
             "type": "list<Object>"
         },
         {
+            "name": "percent_reach_at_target_frequency",
+            "type": "int"
+        },
+        {
             "name": "placement_breakdown",
             "type": "ReachFrequencyEstimatesPlacementBreakdown"
         },

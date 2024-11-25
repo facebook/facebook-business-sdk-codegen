@@ -23,6 +23,10 @@
             "type": "unsigned int"
         },
         {
+            "name": "async_report_url",
+            "type": "string"
+        },
+        {
             "name": "async_status",
             "type": "string"
         },
@@ -45,6 +49,10 @@
         {
             "name": "id",
             "type": "string"
+        },
+        {
+            "name": "is_async_export",
+            "type": "int"
         },
         {
             "name": "is_bookmarked",

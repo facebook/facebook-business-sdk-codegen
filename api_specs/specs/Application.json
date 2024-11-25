@@ -332,6 +332,11 @@
                     "type": "applicationadnetworkanalytics_ordering_type_enum_param"
                 },
                 {
+                    "name": "should_include_until",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "since",
                     "required": false,
                     "type": "datetime"
@@ -1256,11 +1261,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "auth_referral_default_activity_privacy",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "auth_referral_enabled",
                     "required": false,
                     "type": "bool"
@@ -1550,6 +1550,10 @@
         {
             "name": "description",
             "type": "string"
+        },
+        {
+            "name": "enigma_config",
+            "type": "Object"
         },
         {
             "name": "financial_id",

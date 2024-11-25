@@ -41,6 +41,11 @@
                     "type": "admonetizationpropertyadnetworkanalytics_ordering_type_enum_param"
                 },
                 {
+                    "name": "should_include_until",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "since",
                     "required": false,
                     "type": "datetime"

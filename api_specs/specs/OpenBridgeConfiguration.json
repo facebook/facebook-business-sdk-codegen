@@ -23,6 +23,21 @@
                     "type": "bool"
                 },
                 {
+                    "name": "cloud_provider",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "cloud_region",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "destination_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "endpoint",
                     "required": false,
                     "type": "string"
@@ -38,6 +53,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "first_party_domain",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "host_business_id",
                     "required": false,
                     "type": "unsigned int"
@@ -51,6 +71,21 @@
                     "name": "instance_id",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "instance_version",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "is_sgw_instance",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "partner_name",
+                    "required": false,
+                    "type": "string"
                 }
             ]
         }
@@ -59,6 +94,18 @@
         {
             "name": "active",
             "type": "bool"
+        },
+        {
+            "name": "cloud_provider",
+            "type": "string"
+        },
+        {
+            "name": "cloud_region",
+            "type": "string"
+        },
+        {
+            "name": "destination_id",
+            "type": "string"
         },
         {
             "name": "endpoint",
@@ -71,6 +118,10 @@
         {
             "name": "fallback_domain_enabled",
             "type": "bool"
+        },
+        {
+            "name": "first_party_domain",
+            "type": "string"
         },
         {
             "name": "host_business_id",
@@ -86,6 +137,18 @@
         },
         {
             "name": "instance_id",
+            "type": "string"
+        },
+        {
+            "name": "instance_version",
+            "type": "string"
+        },
+        {
+            "name": "is_sgw_instance",
+            "type": "bool"
+        },
+        {
+            "name": "partner_name",
             "type": "string"
         },
         {

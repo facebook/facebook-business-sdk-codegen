@@ -2,11 +2,11 @@
     "apis": [],
     "fields": [
         {
-            "name": "image_crop_style",
+            "name": "category",
             "type": "string"
         },
         {
-            "name": "showcase_card_display",
+            "name": "country",
             "type": "string"
         }
     ]
