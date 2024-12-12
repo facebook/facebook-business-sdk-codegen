@@ -16,6 +16,14 @@
         {
             "name": "taiwan_finserv_payer",
             "type": "string"
+        },
+        {
+            "name": "taiwan_universal_beneficiary",
+            "type": "string"
+        },
+        {
+            "name": "taiwan_universal_payer",
+            "type": "string"
         }
     ]
 }
