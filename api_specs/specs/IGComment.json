@@ -57,6 +57,10 @@
             "type": "string"
         },
         {
+            "name": "legacy_instagram_comment_id",
+            "type": "string"
+        },
+        {
             "name": "like_count",
             "type": "int"
         },

@@ -2,6 +2,14 @@
     "apis": [],
     "fields": [
         {
+            "name": "australia_finserv_beneficiary",
+            "type": "string"
+        },
+        {
+            "name": "australia_finserv_payer",
+            "type": "string"
+        },
+        {
             "name": "taiwan_finserv_beneficiary",
             "type": "string"
         },

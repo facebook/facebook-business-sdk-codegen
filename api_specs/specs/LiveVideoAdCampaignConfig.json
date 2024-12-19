@@ -3,7 +3,7 @@
         {
             "name": "#get",
             "method": "GET",
-            "return": "CatalogWebsiteOnboardingSettings",
+            "return": "LiveVideoAdCampaignConfig",
             "params": []
         }
     ],
@@ -13,11 +13,7 @@
             "type": "string"
         },
         {
-            "name": "quality_band",
-            "type": "string"
-        },
-        {
-            "name": "status",
+            "name": "live_video_ad_type",
             "type": "string"
         }
     ]

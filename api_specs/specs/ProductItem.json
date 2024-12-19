@@ -763,6 +763,10 @@
             "type": "string"
         },
         {
+            "name": "vendor_id",
+            "type": "string"
+        },
+        {
             "name": "video_fetch_status",
             "type": "ProductItem_video_fetch_status"
         },

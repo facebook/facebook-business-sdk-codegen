@@ -953,11 +953,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "throwback_camera_roll_media",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "thumbnail",
                     "required": false,
                     "type": "file"
@@ -2079,11 +2074,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "throwback_camera_roll_media",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "thumb",
                     "required": false,
                     "type": "file"
@@ -2270,6 +2260,10 @@
             "type": "list<Experience>"
         },
         {
+            "name": "instagram_user_self_asset",
+            "type": "InstagramUser"
+        },
+        {
             "name": "install_type",
             "type": "string"
         },
@@ -2347,6 +2341,10 @@
         },
         {
             "name": "relationship_status",
+            "type": "string"
+        },
+        {
+            "name": "religion",
             "type": "string"
         },
         {

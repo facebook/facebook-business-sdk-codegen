@@ -8,6 +8,14 @@
         {
             "name": "public_key",
             "type": "string"
+        },
+        {
+            "name": "salts",
+            "type": "list<Object>"
+        },
+        {
+            "name": "user_id",
+            "type": "int"
         }
     ]
 }

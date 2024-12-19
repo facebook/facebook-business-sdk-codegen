@@ -346,6 +346,30 @@
             "type": "string"
         },
         {
+            "name": "marketing_messages_delivery_rate",
+            "type": "string"
+        },
+        {
+            "name": "marketing_messages_link_btn_click_rate",
+            "type": "string"
+        },
+        {
+            "name": "marketing_messages_media_view_rate",
+            "type": "string"
+        },
+        {
+            "name": "marketing_messages_phone_call_btn_click_rate",
+            "type": "string"
+        },
+        {
+            "name": "marketing_messages_quick_reply_btn_click_rate",
+            "type": "string"
+        },
+        {
+            "name": "marketing_messages_read_rate",
+            "type": "string"
+        },
+        {
             "name": "marketing_messages_spend",
             "type": "string"
         },

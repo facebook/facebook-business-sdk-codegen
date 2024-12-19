@@ -200,6 +200,10 @@
             "type": "bool"
         },
         {
+            "name": "legacy_instagram_media_id",
+            "type": "string"
+        },
+        {
             "name": "like_count",
             "type": "int"
         },

@@ -19,6 +19,10 @@
             "type": "string"
         },
         {
+            "name": "is_default_setting",
+            "type": "bool"
+        },
+        {
             "name": "name",
             "type": "string"
         }

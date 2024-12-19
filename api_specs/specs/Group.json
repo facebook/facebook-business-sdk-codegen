@@ -565,11 +565,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "throwback_camera_roll_media",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "thumbnail",
                     "required": false,
                     "type": "file"
@@ -1442,11 +1437,6 @@
                 },
                 {
                     "name": "text_format_metadata",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "throwback_camera_roll_media",
                     "required": false,
                     "type": "string"
                 },

@@ -75,6 +75,7 @@ card=1
 catalog=1
 catalogs=1
 certified=1
+certify=1
 channel=1
 checkin=1
 checkins=1
