@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "live_shopping",
+            "type": "Object"
+        }
+    ]
+}

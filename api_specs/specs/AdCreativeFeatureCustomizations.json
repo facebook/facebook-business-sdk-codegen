@@ -2,11 +2,31 @@
     "apis": [],
     "fields": [
         {
+            "name": "background_color",
+            "type": "string"
+        },
+        {
+            "name": "catalog_feed_tag_name",
+            "type": "string"
+        },
+        {
+            "name": "font_name",
+            "type": "string"
+        },
+        {
             "name": "image_crop_style",
             "type": "string"
         },
         {
             "name": "showcase_card_display",
+            "type": "string"
+        },
+        {
+            "name": "text_extraction",
+            "type": "Object"
+        },
+        {
+            "name": "text_style",
             "type": "string"
         }
     ]

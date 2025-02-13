@@ -14,6 +14,10 @@
             "type": "string"
         },
         {
+            "name": "coupon_tiering",
+            "type": "FundingSourceDetailsCouponTiering"
+        },
+        {
             "name": "currency",
             "type": "string"
         },

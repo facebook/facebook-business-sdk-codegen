@@ -261,10 +261,6 @@
             "type": "string"
         },
         {
-            "name": "effective_instagram_story_id",
-            "type": "string"
-        },
-        {
             "name": "effective_object_story_id",
             "type": "string"
         },
@@ -297,19 +293,11 @@
             "type": "string"
         },
         {
-            "name": "instagram_actor_id",
-            "type": "string"
-        },
-        {
             "name": "instagram_branded_content",
             "type": "AdCreativeInstagramBrandedContent"
         },
         {
             "name": "instagram_permalink_url",
-            "type": "string"
-        },
-        {
-            "name": "instagram_story_id",
             "type": "string"
         },
         {
@@ -407,6 +395,10 @@
         {
             "name": "recommender_settings",
             "type": "AdCreativeRecommenderSettings"
+        },
+        {
+            "name": "regional_regulation_disclaimer_spec",
+            "type": "AdCreativeRegionalRegulationDisclaimer"
         },
         {
             "name": "source_instagram_media_id",

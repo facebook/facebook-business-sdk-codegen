@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "coupon_tiering_new",
+            "type": "Object"
+        },
+        {
+            "name": "coupon_tiering_reactivation",
+            "type": "Object"
+        }
+    ]
+}

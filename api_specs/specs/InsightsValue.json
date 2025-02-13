@@ -6,6 +6,10 @@
             "type": "string"
         },
         {
+            "name": "earning_source",
+            "type": "string"
+        },
+        {
             "name": "end_time",
             "type": "datetime"
         },

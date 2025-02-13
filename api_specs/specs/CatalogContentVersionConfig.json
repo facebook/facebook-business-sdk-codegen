@@ -3,7 +3,7 @@
         {
             "name": "#get",
             "method": "GET",
-            "return": "AdsDataPartner",
+            "return": "CatalogContentVersionConfig",
             "params": []
         }
     ],
@@ -17,8 +17,8 @@
             "type": "string"
         },
         {
-            "name": "rev_share_policies",
-            "type": "list<RevSharePolicy>"
+            "name": "version",
+            "type": "string"
         }
     ]
 }

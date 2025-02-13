@@ -265,6 +265,7 @@
             "FOLLOW_USER",
             "GET_A_QUOTE",
             "GET_DIRECTIONS",
+            "GET_IN_TOUCH",
             "GET_OFFER",
             "GET_OFFER_VIEW",
             "GET_PROMOTIONS",
@@ -316,6 +317,7 @@
             "VIEW_CHANNEL",
             "VIEW_PRODUCT",
             "VISIT_PAGES_FEED",
+            "WATCH_LIVE_VIDEO",
             "WATCH_MORE",
             "WATCH_VIDEO",
             "WHATSAPP_MESSAGE",
@@ -375,6 +377,7 @@
             "FOLLOW_USER",
             "GET_A_QUOTE",
             "GET_DIRECTIONS",
+            "GET_IN_TOUCH",
             "GET_OFFER",
             "GET_OFFER_VIEW",
             "GET_PROMOTIONS",
@@ -426,6 +429,7 @@
             "VIEW_CHANNEL",
             "VIEW_PRODUCT",
             "VISIT_PAGES_FEED",
+            "WATCH_LIVE_VIDEO",
             "WATCH_MORE",
             "WATCH_VIDEO",
             "WHATSAPP_MESSAGE",
@@ -786,6 +790,7 @@
             "FOLLOW_USER",
             "GET_A_QUOTE",
             "GET_DIRECTIONS",
+            "GET_IN_TOUCH",
             "GET_OFFER",
             "GET_OFFER_VIEW",
             "GET_PROMOTIONS",
@@ -837,6 +842,7 @@
             "VIEW_CHANNEL",
             "VIEW_PRODUCT",
             "VISIT_PAGES_FEED",
+            "WATCH_LIVE_VIDEO",
             "WATCH_MORE",
             "WATCH_VIDEO",
             "WHATSAPP_MESSAGE",
@@ -888,6 +894,42 @@
         "name": "AdPromotedObject_custom_event_type",
         "node": "AdPromotedObject",
         "field_or_param": "custom_event_type",
+        "values": [
+            "ACHIEVEMENT_UNLOCKED",
+            "ADD_PAYMENT_INFO",
+            "ADD_TO_CART",
+            "ADD_TO_WISHLIST",
+            "AD_IMPRESSION",
+            "COMPLETE_REGISTRATION",
+            "CONTACT",
+            "CONTENT_VIEW",
+            "CUSTOMIZE_PRODUCT",
+            "D2_RETENTION",
+            "D7_RETENTION",
+            "DONATE",
+            "FIND_LOCATION",
+            "INITIATED_CHECKOUT",
+            "LEAD",
+            "LEVEL_ACHIEVED",
+            "LISTING_INTERACTION",
+            "MESSAGING_CONVERSATION_STARTED_7D",
+            "OTHER",
+            "PURCHASE",
+            "RATE",
+            "SCHEDULE",
+            "SEARCH",
+            "SERVICE_BOOKING_REQUEST",
+            "SPENT_CREDITS",
+            "START_TRIAL",
+            "SUBMIT_APPLICATION",
+            "SUBSCRIBE",
+            "TUTORIAL_COMPLETION"
+        ]
+    },
+    {
+        "name": "AdPromotedObject_lead_ads_custom_event_type",
+        "node": "AdPromotedObject",
+        "field_or_param": "lead_ads_custom_event_type",
         "values": [
             "ACHIEVEMENT_UNLOCKED",
             "ADD_PAYMENT_INFO",
@@ -2297,6 +2339,7 @@
         "field_or_param": "verification_status",
         "values": [
             "APPROVED",
+            "DISCARDED",
             "FAILED",
             "PENDING",
             "REVOKED"
@@ -2676,6 +2719,7 @@
             "APLUS_C_CATALOG_DUPLICATION",
             "APP_AEM_V2_INSTALLATION_PROMOTION",
             "APP_ENGAGED_VIEW_CONVERSIONS_DUPLICATION",
+            "ASC_AUTOMATION",
             "ASC_BUDGET_OPTIMIZATION",
             "ASC_CREATION_PACKAGE",
             "ASC_FRAGMENTATION_V2",
@@ -2703,6 +2747,7 @@
             "BUDGET_LIMITED",
             "CAPI",
             "CAPI_CRM_GUIDANCE",
+            "CAPI_PENETRATION",
             "CAPI_PERFORMANCE_MATCH_KEY",
             "CAPI_PERFORMANCE_MATCH_KEY_V2",
             "CASH_REWARDS_OPT_IN",
@@ -2712,6 +2757,7 @@
             "CONNECTED_SOURCES_DUPLICATION",
             "CONNECT_FACEBOOK_PAGE_TO_INSTAGRAM",
             "CONNECT_FACEBOOK_PAGE_TO_WHATSAPP",
+            "CONVERSION_LEADS_OPTIMIZATION",
             "CONVERSION_LEAD_ADS",
             "COST_GOAL",
             "COST_GOAL_BUDGET_LIMITED",
@@ -2737,6 +2783,11 @@
             "CTX_CTMPO_UPGRADE",
             "CTX_GUIDANCE",
             "CTX_PRECREATE",
+            "CTX_SABR_CBO",
+            "CTX_SABR_NON_CBO",
+            "CTX_ZO_CBO",
+            "CTX_ZO_NON_CBO",
+            "CUSTOM_AUDIENCE_RELAXATION",
             "DA_ADVANTAGE_PLUS_CREATIVE_INFO_LABELS",
             "DA_DUPLICATION_PRODUCT_TAGS",
             "DEAD_LINK",
@@ -2753,6 +2804,7 @@
             "FRAGMENTATION_RESOLUTION_UPDATE",
             "FRAGMENTATION_V2",
             "GENERATIVE_UNCROP_DUPLICATION",
+            "GEN_AI_MVP",
             "GES_TEST",
             "GUIDANCE_CENTER_CODE_GEN",
             "HEURISTIC_DEFAULT_DURATION",
@@ -2788,7 +2840,9 @@
             "NOT_APPLICABLE",
             "NO_DELIVERY_STATUS",
             "OFFSITE_CONVERSION",
+            "OFFSITE_CONVERSION_BASED_ON_SIGNALS",
             "OPTIMAL_BAU",
+            "OUTCOME_FORECASTER_BUDGET_RECOMMENDATION",
             "OUTCOME_FORECASTER_SHADOW_LOGGING",
             "PAYMENT_METHOD",
             "PERFORMANT_CREATIVE_REELS_OPT_IN",
@@ -2812,11 +2866,13 @@
             "REELS_DUPLICATION_UPSELL",
             "REELS_MUSIC_DUPLICATION",
             "REELS_PC_AND_MOBILE_FIRST_CREATIVE",
+            "REELS_PC_RECOMMENDATION",
             "REELS_PERFORMANT_CREATIVE",
             "REELS_PLACEMENT",
             "REVERT",
             "SABR_DEFAULT_DURATION",
             "SALES_CONVERSION",
+            "SAVED_AUDIENCE",
             "SCALE_GOOD_CAMPAIGN",
             "SCALE_GOOD_CAMPAIGN_DUPLICATION",
             "SCALE_GOOD_CAMPAIGN_SMB",
@@ -2828,6 +2884,7 @@
             "SHOPS_ADS_DUPLICATION",
             "SHOPS_ADS_TRAFFIC_CAP_SETTINGS",
             "SHOP_ADS_V2",
+            "SIGNALS_DOWN_FUNNEL_EVENT_OPTIMIZATION",
             "SIGNALS_GROWTH_CAPI",
             "SIGNALS_GROWTH_CAPI_PRECREATE",
             "SIGNALS_GROWTH_CAPI_TABLE",
@@ -2859,7 +2916,8 @@
             "WA_MESSAGING_PARTNERS_PRECREATE",
             "WEB_ENGAGED_VIEW_CONVERSIONS",
             "ZERO_CONVERSION",
-            "ZERO_IMPRESSION"
+            "ZERO_IMPRESSION",
+            "ZERO_OUTCOME_BUDGET"
         ]
     },
     {
@@ -3063,7 +3121,8 @@
             "0",
             "1",
             "2",
-            "3"
+            "3",
+            "4"
         ]
     },
     {
@@ -3122,17 +3181,14 @@
             "AD_LIBRARY_WATERMARK",
             "AGE_UP",
             "ALBUM_MULTIMEDIA_POST",
-            "ALOHA_CALL_VIDEO",
             "ALOHA_SUPERFRAME",
             "APP_REREVIEW_SCREENCAST",
             "APP_REVIEW_SCREENCAST",
             "ASSET_MANAGER",
             "ATLAS_VIDEO",
-            "AUDIO_BRIEF",
             "AUDIO_BROADCAST",
             "AUDIO_COMMENT",
             "BROADCAST",
-            "BULLETIN_ARTICLE_AUDIO",
             "CANVAS",
             "CFC_VIDEO",
             "CMS_MEDIA_MANAGER",
@@ -3163,7 +3219,6 @@
             "FB_COLLECTIBLE_VIDEO",
             "FB_SHORTS",
             "FB_SHORTS_CONTENT_REMIXABLE",
-            "FB_SHORTS_CROSS_META_POST",
             "FB_SHORTS_GROUP_POST",
             "FB_SHORTS_LINKED_PRODUCT",
             "FB_SHORTS_PMV_POST",
@@ -3172,7 +3227,6 @@
             "FB_SHORTS_REMIX_POST",
             "FUNDRAISER_COVER_VIDEO",
             "GAME_CLIP",
-            "GEMSTONE",
             "GIF_TO_VIDEO",
             "GOODWILL_ANNIVERSARY_DEPRECATED",
             "GOODWILL_ANNIVERSARY_PROMOTION_DEPRECATED",
@@ -3181,7 +3235,6 @@
             "GOODWILL_VIDEO_SHARE",
             "GOODWILL_VIDEO_TOKEN_REQUIRED",
             "GROUP_POST",
-            "HACK_TV",
             "HEURISTIC_CLUSTER_VIDEO",
             "HIGHLIGHT_CLIP_VIDEO",
             "HUDDLE_BROADCAST",
@@ -3192,13 +3245,9 @@
             "INSTAGRAM_VIDEO_COPY",
             "INSTANT_APPLICATION_PREVIEW",
             "INSTANT_ARTICLE",
-            "INSTANT_GAMES_PROMO",
-            "INSTANT_GAME_CLIP",
             "ISSUE_MODULE",
             "JOBS_CAREERS",
             "JOBS_VISUAL_INTRO_ENTRY",
-            "JOB_APPLICATION_VIDEO",
-            "JOB_OPENING_VIDEO",
             "LEARN",
             "LEGACY",
             "LEGACY_CONTAINED_POST_BROADCAST",
@@ -3213,7 +3262,6 @@
             "MESSENGER_WATCH_TOGETHER",
             "MOMENTS_VIDEO",
             "MUSIC_CLIP",
-            "MUSIC_CLIP_IN_AUDIO_DIGEST",
             "MUSIC_CLIP_IN_COMMENT",
             "MUSIC_CLIP_IN_LIGHTWEIGHT_STATUS",
             "MUSIC_CLIP_IN_MSGR_NOTE",
@@ -3923,7 +3971,6 @@
             "PRIMARY",
             "REGULATED_CATEGORIES_AUDIENCE",
             "STUDY_RULE_AUDIENCE",
-            "SUBSCRIBER_SEGMENT",
             "VIDEO",
             "WEBSITE"
         ]
@@ -4167,6 +4214,7 @@
             "age",
             "app_id",
             "body_asset",
+            "breakdown_ad_objective",
             "breakdown_reporting_ad_id",
             "call_to_action_asset",
             "coarse_conversion_value",
@@ -4183,6 +4231,7 @@
             "hsid",
             "image_asset",
             "impression_device",
+            "impression_view_time_advertiser_hour_v2",
             "is_conversion_id_modeled",
             "is_rendered_as_delayed_skip_ad",
             "landing_destination",
@@ -4413,7 +4462,6 @@
             "PRIMARY",
             "REGULATED_CATEGORIES_AUDIENCE",
             "STUDY_RULE_AUDIENCE",
-            "SUBSCRIBER_SEGMENT",
             "VIDEO",
             "WEBSITE"
         ]
@@ -4864,7 +4912,6 @@
             "location_cluster_ids",
             "location_expansion",
             "marketing_message_channels",
-            "marketing_message_targeting",
             "marketplace_product_categories",
             "messenger_positions",
             "mobile_device_model",
@@ -4885,6 +4932,7 @@
             "relationship_statuses",
             "rtb_flag",
             "site_category",
+            "subscriber_universe",
             "tafe_ca_mitigation_strategy",
             "targeting_automation",
             "targeting_optimization",
@@ -5035,7 +5083,6 @@
             "location_cluster_ids",
             "location_expansion",
             "marketing_message_channels",
-            "marketing_message_targeting",
             "marketplace_product_categories",
             "messenger_positions",
             "mobile_device_model",
@@ -5056,6 +5103,7 @@
             "relationship_statuses",
             "rtb_flag",
             "site_category",
+            "subscriber_universe",
             "tafe_ca_mitigation_strategy",
             "targeting_automation",
             "targeting_optimization",
@@ -5473,7 +5521,6 @@
             "location_cluster_ids",
             "location_expansion",
             "marketing_message_channels",
-            "marketing_message_targeting",
             "marketplace_product_categories",
             "messenger_positions",
             "mobile_device_model",
@@ -5494,6 +5541,7 @@
             "relationship_statuses",
             "rtb_flag",
             "site_category",
+            "subscriber_universe",
             "tafe_ca_mitigation_strategy",
             "targeting_automation",
             "targeting_optimization",
@@ -5908,6 +5956,25 @@
         ]
     },
     {
+        "name": "adaccountvideo_ads_upload_phase_enum_param",
+        "node": "AdVideo",
+        "field_or_param": "upload_phase",
+        "values": [
+            "FINISH",
+            "START"
+        ]
+    },
+    {
+        "name": "adaccountvideo_ads_video_state_enum_param",
+        "node": "AdVideo",
+        "field_or_param": "video_state",
+        "values": [
+            "DRAFT",
+            "PUBLISHED",
+            "SCHEDULED"
+        ]
+    },
+    {
         "name": "adasyncrequestset_notification_mode",
         "node": "AdAsyncRequestSet",
         "field_or_param": "notification_mode",
@@ -6109,7 +6176,8 @@
             "0",
             "1",
             "2",
-            "3"
+            "3",
+            "4"
         ]
     },
     {
@@ -6900,6 +6968,7 @@
             "age",
             "app_id",
             "body_asset",
+            "breakdown_ad_objective",
             "breakdown_reporting_ad_id",
             "call_to_action_asset",
             "coarse_conversion_value",
@@ -6916,6 +6985,7 @@
             "hsid",
             "image_asset",
             "impression_device",
+            "impression_view_time_advertiser_hour_v2",
             "is_conversion_id_modeled",
             "is_rendered_as_delayed_skip_ad",
             "landing_destination",
@@ -7076,6 +7146,7 @@
             "age",
             "app_id",
             "body_asset",
+            "breakdown_ad_objective",
             "breakdown_reporting_ad_id",
             "call_to_action_asset",
             "coarse_conversion_value",
@@ -7092,6 +7163,7 @@
             "hsid",
             "image_asset",
             "impression_device",
+            "impression_view_time_advertiser_hour_v2",
             "is_conversion_id_modeled",
             "is_rendered_as_delayed_skip_ad",
             "landing_destination",
@@ -7502,6 +7574,7 @@
             "age",
             "app_id",
             "body_asset",
+            "breakdown_ad_objective",
             "breakdown_reporting_ad_id",
             "call_to_action_asset",
             "coarse_conversion_value",
@@ -7518,6 +7591,7 @@
             "hsid",
             "image_asset",
             "impression_device",
+            "impression_view_time_advertiser_hour_v2",
             "is_conversion_id_modeled",
             "is_rendered_as_delayed_skip_ad",
             "landing_destination",
@@ -10780,17 +10854,14 @@
             "AD_LIBRARY_WATERMARK",
             "AGE_UP",
             "ALBUM_MULTIMEDIA_POST",
-            "ALOHA_CALL_VIDEO",
             "ALOHA_SUPERFRAME",
             "APP_REREVIEW_SCREENCAST",
             "APP_REVIEW_SCREENCAST",
             "ASSET_MANAGER",
             "ATLAS_VIDEO",
-            "AUDIO_BRIEF",
             "AUDIO_BROADCAST",
             "AUDIO_COMMENT",
             "BROADCAST",
-            "BULLETIN_ARTICLE_AUDIO",
             "CANVAS",
             "CFC_VIDEO",
             "CMS_MEDIA_MANAGER",
@@ -10821,7 +10892,6 @@
             "FB_COLLECTIBLE_VIDEO",
             "FB_SHORTS",
             "FB_SHORTS_CONTENT_REMIXABLE",
-            "FB_SHORTS_CROSS_META_POST",
             "FB_SHORTS_GROUP_POST",
             "FB_SHORTS_LINKED_PRODUCT",
             "FB_SHORTS_PMV_POST",
@@ -10830,7 +10900,6 @@
             "FB_SHORTS_REMIX_POST",
             "FUNDRAISER_COVER_VIDEO",
             "GAME_CLIP",
-            "GEMSTONE",
             "GIF_TO_VIDEO",
             "GOODWILL_ANNIVERSARY_DEPRECATED",
             "GOODWILL_ANNIVERSARY_PROMOTION_DEPRECATED",
@@ -10839,7 +10908,6 @@
             "GOODWILL_VIDEO_SHARE",
             "GOODWILL_VIDEO_TOKEN_REQUIRED",
             "GROUP_POST",
-            "HACK_TV",
             "HEURISTIC_CLUSTER_VIDEO",
             "HIGHLIGHT_CLIP_VIDEO",
             "HUDDLE_BROADCAST",
@@ -10850,13 +10918,9 @@
             "INSTAGRAM_VIDEO_COPY",
             "INSTANT_APPLICATION_PREVIEW",
             "INSTANT_ARTICLE",
-            "INSTANT_GAMES_PROMO",
-            "INSTANT_GAME_CLIP",
             "ISSUE_MODULE",
             "JOBS_CAREERS",
             "JOBS_VISUAL_INTRO_ENTRY",
-            "JOB_APPLICATION_VIDEO",
-            "JOB_OPENING_VIDEO",
             "LEARN",
             "LEGACY",
             "LEGACY_CONTAINED_POST_BROADCAST",
@@ -10871,7 +10935,6 @@
             "MESSENGER_WATCH_TOGETHER",
             "MOMENTS_VIDEO",
             "MUSIC_CLIP",
-            "MUSIC_CLIP_IN_AUDIO_DIGEST",
             "MUSIC_CLIP_IN_COMMENT",
             "MUSIC_CLIP_IN_LIGHTWEIGHT_STATUS",
             "MUSIC_CLIP_IN_MSGR_NOTE",
@@ -11669,17 +11732,14 @@
             "AD_LIBRARY_WATERMARK",
             "AGE_UP",
             "ALBUM_MULTIMEDIA_POST",
-            "ALOHA_CALL_VIDEO",
             "ALOHA_SUPERFRAME",
             "APP_REREVIEW_SCREENCAST",
             "APP_REVIEW_SCREENCAST",
             "ASSET_MANAGER",
             "ATLAS_VIDEO",
-            "AUDIO_BRIEF",
             "AUDIO_BROADCAST",
             "AUDIO_COMMENT",
             "BROADCAST",
-            "BULLETIN_ARTICLE_AUDIO",
             "CANVAS",
             "CFC_VIDEO",
             "CMS_MEDIA_MANAGER",
@@ -11710,7 +11770,6 @@
             "FB_COLLECTIBLE_VIDEO",
             "FB_SHORTS",
             "FB_SHORTS_CONTENT_REMIXABLE",
-            "FB_SHORTS_CROSS_META_POST",
             "FB_SHORTS_GROUP_POST",
             "FB_SHORTS_LINKED_PRODUCT",
             "FB_SHORTS_PMV_POST",
@@ -11719,7 +11778,6 @@
             "FB_SHORTS_REMIX_POST",
             "FUNDRAISER_COVER_VIDEO",
             "GAME_CLIP",
-            "GEMSTONE",
             "GIF_TO_VIDEO",
             "GOODWILL_ANNIVERSARY_DEPRECATED",
             "GOODWILL_ANNIVERSARY_PROMOTION_DEPRECATED",
@@ -11728,7 +11786,6 @@
             "GOODWILL_VIDEO_SHARE",
             "GOODWILL_VIDEO_TOKEN_REQUIRED",
             "GROUP_POST",
-            "HACK_TV",
             "HEURISTIC_CLUSTER_VIDEO",
             "HIGHLIGHT_CLIP_VIDEO",
             "HUDDLE_BROADCAST",
@@ -11739,13 +11796,9 @@
             "INSTAGRAM_VIDEO_COPY",
             "INSTANT_APPLICATION_PREVIEW",
             "INSTANT_ARTICLE",
-            "INSTANT_GAMES_PROMO",
-            "INSTANT_GAME_CLIP",
             "ISSUE_MODULE",
             "JOBS_CAREERS",
             "JOBS_VISUAL_INTRO_ENTRY",
-            "JOB_APPLICATION_VIDEO",
-            "JOB_OPENING_VIDEO",
             "LEARN",
             "LEGACY",
             "LEGACY_CONTAINED_POST_BROADCAST",
@@ -11760,7 +11813,6 @@
             "MESSENGER_WATCH_TOGETHER",
             "MOMENTS_VIDEO",
             "MUSIC_CLIP",
-            "MUSIC_CLIP_IN_AUDIO_DIGEST",
             "MUSIC_CLIP_IN_COMMENT",
             "MUSIC_CLIP_IN_LIGHTWEIGHT_STATUS",
             "MUSIC_CLIP_IN_MSGR_NOTE",
@@ -12017,7 +12069,8 @@
             "messaging_referral",
             "messaging_seen",
             "standby",
-            "story_insights"
+            "story_insights",
+            "story_reactions"
         ]
     },
     {
@@ -12498,6 +12551,7 @@
         "values": [
             "clips_replays_count",
             "comments",
+            "content_views",
             "follows",
             "ig_reels_aggregated_all_plays_count",
             "ig_reels_avg_watch_time",
@@ -12517,6 +12571,7 @@
             "shares",
             "thread_replies",
             "thread_shares",
+            "threads_views",
             "total_interactions",
             "video_views",
             "views"
@@ -12706,6 +12761,21 @@
             "Vegan",
             "Vegetarian",
             "Vietnamese"
+        ]
+    },
+    {
+        "name": "page_gen_ai_provenance_type",
+        "node": "Page",
+        "field_or_param": "gen_ai_provenance_type",
+        "values": [
+            "C2PA",
+            "C2PA_METADATA_EDITED",
+            "EXPLICIT",
+            "EXPLICIT_IMAGINE",
+            "EXPLICIT_IMAGINE_ME",
+            "INVISIBLE_WATERMARK",
+            "IPTC",
+            "IPTC_METADATA_EDITED"
         ]
     },
     {
@@ -13972,6 +14042,7 @@
             "live_videos",
             "local_delivery",
             "location",
+            "marketing_message_delivery_failed",
             "mcom_invoice_change",
             "members",
             "mention",
@@ -13983,6 +14054,7 @@
             "message_mention",
             "message_reactions",
             "message_reads",
+            "message_template_status_update",
             "messages",
             "messaging_account_linking",
             "messaging_appointments",
@@ -14028,22 +14100,6 @@
             "video_text_question_responses",
             "videos",
             "website"
-        ]
-    },
-    {
-        "name": "pagethread_action_action_enum_param",
-        "node": "Page",
-        "field_or_param": "action",
-        "values": [
-            "SPAM"
-        ]
-    },
-    {
-        "name": "pagethread_action_action_type_enum_param",
-        "node": "Page",
-        "field_or_param": "action_type",
-        "values": [
-            "REPORT_THREAD"
         ]
     },
     {
@@ -14136,17 +14192,14 @@
             "AD_LIBRARY_WATERMARK",
             "AGE_UP",
             "ALBUM_MULTIMEDIA_POST",
-            "ALOHA_CALL_VIDEO",
             "ALOHA_SUPERFRAME",
             "APP_REREVIEW_SCREENCAST",
             "APP_REVIEW_SCREENCAST",
             "ASSET_MANAGER",
             "ATLAS_VIDEO",
-            "AUDIO_BRIEF",
             "AUDIO_BROADCAST",
             "AUDIO_COMMENT",
             "BROADCAST",
-            "BULLETIN_ARTICLE_AUDIO",
             "CANVAS",
             "CFC_VIDEO",
             "CMS_MEDIA_MANAGER",
@@ -14177,7 +14230,6 @@
             "FB_COLLECTIBLE_VIDEO",
             "FB_SHORTS",
             "FB_SHORTS_CONTENT_REMIXABLE",
-            "FB_SHORTS_CROSS_META_POST",
             "FB_SHORTS_GROUP_POST",
             "FB_SHORTS_LINKED_PRODUCT",
             "FB_SHORTS_PMV_POST",
@@ -14186,7 +14238,6 @@
             "FB_SHORTS_REMIX_POST",
             "FUNDRAISER_COVER_VIDEO",
             "GAME_CLIP",
-            "GEMSTONE",
             "GIF_TO_VIDEO",
             "GOODWILL_ANNIVERSARY_DEPRECATED",
             "GOODWILL_ANNIVERSARY_PROMOTION_DEPRECATED",
@@ -14195,7 +14246,6 @@
             "GOODWILL_VIDEO_SHARE",
             "GOODWILL_VIDEO_TOKEN_REQUIRED",
             "GROUP_POST",
-            "HACK_TV",
             "HEURISTIC_CLUSTER_VIDEO",
             "HIGHLIGHT_CLIP_VIDEO",
             "HUDDLE_BROADCAST",
@@ -14206,13 +14256,9 @@
             "INSTAGRAM_VIDEO_COPY",
             "INSTANT_APPLICATION_PREVIEW",
             "INSTANT_ARTICLE",
-            "INSTANT_GAMES_PROMO",
-            "INSTANT_GAME_CLIP",
             "ISSUE_MODULE",
             "JOBS_CAREERS",
             "JOBS_VISUAL_INTRO_ENTRY",
-            "JOB_APPLICATION_VIDEO",
-            "JOB_OPENING_VIDEO",
             "LEARN",
             "LEGACY",
             "LEGACY_CONTAINED_POST_BROADCAST",
@@ -14227,7 +14273,6 @@
             "MESSENGER_WATCH_TOGETHER",
             "MOMENTS_VIDEO",
             "MUSIC_CLIP",
-            "MUSIC_CLIP_IN_AUDIO_DIGEST",
             "MUSIC_CLIP_IN_COMMENT",
             "MUSIC_CLIP_IN_LIGHTWEIGHT_STATUS",
             "MUSIC_CLIP_IN_MSGR_NOTE",
@@ -17141,7 +17186,8 @@
             "saved",
             "shares",
             "total_interactions",
-            "video_views"
+            "video_views",
+            "views"
         ]
     },
     {
@@ -17178,6 +17224,7 @@
         "values": [
             "accounts_engaged",
             "comments",
+            "content_views",
             "email_contacts",
             "engaged_audience_demographics",
             "follower_count",
@@ -17202,6 +17249,7 @@
             "threads_followers",
             "threads_likes",
             "threads_replies",
+            "threads_views",
             "total_interactions",
             "views",
             "website_clicks"
@@ -17969,6 +18017,94 @@
         ]
     },
     {
+        "name": "userinsights_breakdown_enum_param",
+        "node": "InsightsResult",
+        "field_or_param": "breakdown",
+        "values": [
+            "age",
+            "city",
+            "contact_button_type",
+            "country",
+            "follow_type",
+            "gender",
+            "media_product_type"
+        ]
+    },
+    {
+        "name": "userinsights_metric_enum_param",
+        "node": "InsightsResult",
+        "field_or_param": "metric",
+        "values": [
+            "accounts_engaged",
+            "comments",
+            "content_views",
+            "email_contacts",
+            "engaged_audience_demographics",
+            "follower_count",
+            "follower_demographics",
+            "follows_and_unfollows",
+            "get_directions_clicks",
+            "impressions",
+            "likes",
+            "online_followers",
+            "phone_call_clicks",
+            "profile_links_taps",
+            "profile_views",
+            "quotes",
+            "reach",
+            "reached_audience_demographics",
+            "replies",
+            "reposts",
+            "saves",
+            "shares",
+            "text_message_clicks",
+            "threads_follower_demographics",
+            "threads_followers",
+            "threads_likes",
+            "threads_replies",
+            "threads_views",
+            "total_interactions",
+            "views",
+            "website_clicks"
+        ]
+    },
+    {
+        "name": "userinsights_metric_type_enum_param",
+        "node": "InsightsResult",
+        "field_or_param": "metric_type",
+        "values": [
+            "default",
+            "time_series",
+            "total_value"
+        ]
+    },
+    {
+        "name": "userinsights_period_enum_param",
+        "node": "InsightsResult",
+        "field_or_param": "period",
+        "values": [
+            "day",
+            "days_28",
+            "lifetime",
+            "month",
+            "total_over_range",
+            "week"
+        ]
+    },
+    {
+        "name": "userinsights_timeframe_enum_param",
+        "node": "InsightsResult",
+        "field_or_param": "timeframe",
+        "values": [
+            "last_14_days",
+            "last_30_days",
+            "last_90_days",
+            "prev_month",
+            "this_month",
+            "this_week"
+        ]
+    },
+    {
         "name": "userlive_videos_broadcast_status_enum_param",
         "node": "LiveVideo",
         "field_or_param": "broadcast_status",
@@ -18132,17 +18268,14 @@
             "AD_LIBRARY_WATERMARK",
             "AGE_UP",
             "ALBUM_MULTIMEDIA_POST",
-            "ALOHA_CALL_VIDEO",
             "ALOHA_SUPERFRAME",
             "APP_REREVIEW_SCREENCAST",
             "APP_REVIEW_SCREENCAST",
             "ASSET_MANAGER",
             "ATLAS_VIDEO",
-            "AUDIO_BRIEF",
             "AUDIO_BROADCAST",
             "AUDIO_COMMENT",
             "BROADCAST",
-            "BULLETIN_ARTICLE_AUDIO",
             "CANVAS",
             "CFC_VIDEO",
             "CMS_MEDIA_MANAGER",
@@ -18173,7 +18306,6 @@
             "FB_COLLECTIBLE_VIDEO",
             "FB_SHORTS",
             "FB_SHORTS_CONTENT_REMIXABLE",
-            "FB_SHORTS_CROSS_META_POST",
             "FB_SHORTS_GROUP_POST",
             "FB_SHORTS_LINKED_PRODUCT",
             "FB_SHORTS_PMV_POST",
@@ -18182,7 +18314,6 @@
             "FB_SHORTS_REMIX_POST",
             "FUNDRAISER_COVER_VIDEO",
             "GAME_CLIP",
-            "GEMSTONE",
             "GIF_TO_VIDEO",
             "GOODWILL_ANNIVERSARY_DEPRECATED",
             "GOODWILL_ANNIVERSARY_PROMOTION_DEPRECATED",
@@ -18191,7 +18322,6 @@
             "GOODWILL_VIDEO_SHARE",
             "GOODWILL_VIDEO_TOKEN_REQUIRED",
             "GROUP_POST",
-            "HACK_TV",
             "HEURISTIC_CLUSTER_VIDEO",
             "HIGHLIGHT_CLIP_VIDEO",
             "HUDDLE_BROADCAST",
@@ -18202,13 +18332,9 @@
             "INSTAGRAM_VIDEO_COPY",
             "INSTANT_APPLICATION_PREVIEW",
             "INSTANT_ARTICLE",
-            "INSTANT_GAMES_PROMO",
-            "INSTANT_GAME_CLIP",
             "ISSUE_MODULE",
             "JOBS_CAREERS",
             "JOBS_VISUAL_INTRO_ENTRY",
-            "JOB_APPLICATION_VIDEO",
-            "JOB_OPENING_VIDEO",
             "LEARN",
             "LEGACY",
             "LEGACY_CONTAINED_POST_BROADCAST",
@@ -18223,7 +18349,6 @@
             "MESSENGER_WATCH_TOGETHER",
             "MOMENTS_VIDEO",
             "MUSIC_CLIP",
-            "MUSIC_CLIP_IN_AUDIO_DIGEST",
             "MUSIC_CLIP_IN_COMMENT",
             "MUSIC_CLIP_IN_LIGHTWEIGHT_STATUS",
             "MUSIC_CLIP_IN_MSGR_NOTE",
@@ -18891,6 +19016,59 @@
         ]
     },
     {
+        "name": "whatsappbusinessaccountpricing_analytics_dimensions_enum_param",
+        "node": "WABAPricingAnalytics",
+        "field_or_param": "dimensions",
+        "values": [
+            "COUNTRY",
+            "PHONE",
+            "PRICING_CATEGORY",
+            "PRICING_TYPE"
+        ]
+    },
+    {
+        "name": "whatsappbusinessaccountpricing_analytics_granularity_enum_param",
+        "node": "WABAPricingAnalytics",
+        "field_or_param": "granularity",
+        "values": [
+            "DAILY",
+            "HALF_HOUR",
+            "MONTHLY"
+        ]
+    },
+    {
+        "name": "whatsappbusinessaccountpricing_analytics_metric_types_enum_param",
+        "node": "WABAPricingAnalytics",
+        "field_or_param": "metric_types",
+        "values": [
+            "COST",
+            "VOLUME"
+        ]
+    },
+    {
+        "name": "whatsappbusinessaccountpricing_analytics_pricing_categories_enum_param",
+        "node": "WABAPricingAnalytics",
+        "field_or_param": "pricing_categories",
+        "values": [
+            "AUTHENTICATION",
+            "AUTHENTICATION_INTERNATIONAL",
+            "MARKETING",
+            "MARKETING_LITE",
+            "SERVICE",
+            "UTILITY"
+        ]
+    },
+    {
+        "name": "whatsappbusinessaccountpricing_analytics_pricing_types_enum_param",
+        "node": "WABAPricingAnalytics",
+        "field_or_param": "pricing_types",
+        "values": [
+            "FREE_CUSTOMER_SERVICE",
+            "FREE_ENTRY_POINT",
+            "REGULAR"
+        ]
+    },
+    {
         "name": "whatsappbusinessaccounttemplate_analytics_granularity_enum_param",
         "node": "WABATemplateAnalytics",
         "field_or_param": "granularity",
@@ -18907,6 +19085,7 @@
             "COST",
             "DELIVERED",
             "READ",
+            "REPLIED",
             "SENT"
         ]
     },
@@ -18917,6 +19096,27 @@
         "values": [
             "CLOUD_API",
             "MARKETING_MESSAGES_LITE_API"
+        ]
+    },
+    {
+        "name": "whatsappbusinessaccounttemplate_group_analytics_granularity_enum_param",
+        "node": "WABATemplateGroupAnalytics",
+        "field_or_param": "granularity",
+        "values": [
+            "DAILY"
+        ]
+    },
+    {
+        "name": "whatsappbusinessaccounttemplate_group_analytics_metric_types_enum_param",
+        "node": "WABATemplateGroupAnalytics",
+        "field_or_param": "metric_types",
+        "values": [
+            "CLICKED",
+            "COST",
+            "DELIVERED",
+            "READ",
+            "REPLIED",
+            "SENT"
         ]
     },
     {

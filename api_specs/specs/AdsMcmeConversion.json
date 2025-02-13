@@ -3,41 +3,37 @@
         {
             "name": "#get",
             "method": "GET",
-            "return": "VideoCopyrightMatch",
+            "return": "AdsMcmeConversion",
             "params": []
         }
     ],
     "fields": [
         {
-            "name": "created_date",
+            "name": "creation_time",
             "type": "datetime"
+        },
+        {
+            "name": "description",
+            "type": "string"
         },
         {
             "name": "id",
             "type": "string"
         },
         {
-            "name": "last_modified_user",
-            "type": "User"
+            "name": "is_archived",
+            "type": "bool"
         },
         {
-            "name": "match_data",
-            "type": "list<Object>"
-        },
-        {
-            "name": "match_status",
+            "name": "mcme_conversion_type",
             "type": "string"
         },
         {
-            "name": "notes",
+            "name": "name",
             "type": "string"
         },
         {
-            "name": "permalink",
-            "type": "string"
-        },
-        {
-            "name": "ugc_content_format",
+            "name": "omnichannel_object_id",
             "type": "string"
         }
     ]

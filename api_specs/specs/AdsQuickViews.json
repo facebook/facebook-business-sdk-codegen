@@ -37,6 +37,10 @@
             "type": "string"
         },
         {
+            "name": "quick_view_type",
+            "type": "string"
+        },
+        {
             "name": "sort",
             "type": "list<Object>"
         }

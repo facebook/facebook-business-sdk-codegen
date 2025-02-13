@@ -1,4 +1,17 @@
 {
     "apis": [],
-    "fields": []
+    "fields": [
+        {
+            "name": "australia_finserv",
+            "type": "Object"
+        },
+        {
+            "name": "taiwan_finserv",
+            "type": "Object"
+        },
+        {
+            "name": "taiwan_universal",
+            "type": "Object"
+        }
+    ]
 }

@@ -1948,11 +1948,6 @@
                     "type": "list<map>"
                 },
                 {
-                    "name": "example",
-                    "required": false,
-                    "type": "map"
-                },
-                {
                     "name": "language",
                     "required": true,
                     "type": "string"
@@ -2615,6 +2610,11 @@
                     "type": "int"
                 },
                 {
+                    "name": "provenance_info",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "proxied_app_id",
                     "required": false,
                     "type": "string"
@@ -2931,12 +2931,6 @@
             ]
         },
         {
-            "method": "GET",
-            "endpoint": "ratings",
-            "return": "Recommendation",
-            "params": []
-        },
-        {
             "method": "POST",
             "endpoint": "release_thread_control",
             "return": "Page",
@@ -3108,28 +3102,6 @@
                     "name": "recipient",
                     "required": true,
                     "type": "Object"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "thread_action",
-            "return": "Page",
-            "params": [
-                {
-                    "name": "action",
-                    "required": true,
-                    "type": "pagethread_action_action_enum_param"
-                },
-                {
-                    "name": "action_type",
-                    "required": true,
-                    "type": "pagethread_action_action_type_enum_param"
-                },
-                {
-                    "name": "user_id",
-                    "required": true,
-                    "type": "map"
                 }
             ]
         },
@@ -4070,6 +4042,11 @@
                     "name": "food_styles",
                     "required": false,
                     "type": "list<page_food_styles>"
+                },
+                {
+                    "name": "gen_ai_provenance_type",
+                    "required": false,
+                    "type": "page_gen_ai_provenance_type"
                 },
                 {
                     "name": "general_info",

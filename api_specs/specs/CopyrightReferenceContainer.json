@@ -30,6 +30,10 @@
             "type": "Object"
         },
         {
+            "name": "playable_video_uri",
+            "type": "string"
+        },
+        {
             "name": "published_time",
             "type": "datetime"
         },

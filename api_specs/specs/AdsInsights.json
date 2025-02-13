@@ -122,6 +122,14 @@
             "type": "string"
         },
         {
+            "name": "conversion_lead_rate",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "conversion_leads",
+            "type": "list<AdsActionStats>"
+        },
+        {
             "name": "conversion_rate_ranking",
             "type": "string"
         },
@@ -159,6 +167,10 @@
         },
         {
             "name": "cost_per_conversion",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "cost_per_conversion_lead",
             "type": "list<AdsActionStats>"
         },
         {
@@ -334,6 +346,14 @@
             "type": "string"
         },
         {
+            "name": "landing_page_view_actions_per_link_click",
+            "type": "string"
+        },
+        {
+            "name": "landing_page_view_per_purchase_rate",
+            "type": "string"
+        },
+        {
             "name": "location",
             "type": "string"
         },
@@ -410,6 +430,10 @@
             "type": "list<AdsActionStats>"
         },
         {
+            "name": "purchases_per_link_click",
+            "type": "string"
+        },
+        {
             "name": "qualifying_question_qualify_answer_rate",
             "type": "string"
         },
@@ -419,6 +443,10 @@
         },
         {
             "name": "reach",
+            "type": "string"
+        },
+        {
+            "name": "result_values_performance_indicator",
             "type": "string"
         },
         {
@@ -555,6 +583,10 @@
         },
         {
             "name": "video_time_watched_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "video_view_per_impression",
             "type": "list<AdsActionStats>"
         },
         {

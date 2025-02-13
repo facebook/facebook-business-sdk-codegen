@@ -37,7 +37,15 @@
             "type": "string"
         },
         {
+            "name": "aplusc_enhance_cta_opt_in_status",
+            "type": "string"
+        },
+        {
             "name": "aplusc_epa_opt_in_status",
+            "type": "string"
+        },
+        {
+            "name": "aplusc_local_store_extension_opt_in_status",
             "type": "string"
         },
         {
@@ -82,6 +90,10 @@
         },
         {
             "name": "default_creation_mode",
+            "type": "string"
+        },
+        {
+            "name": "dynamic_partnership_ads_opt_in_status",
             "type": "string"
         },
         {

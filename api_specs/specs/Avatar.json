@@ -3,7 +3,7 @@
         {
             "method": "GET",
             "endpoint": "models",
-            "return": "AvatarModel",
+            "return": "AvatarModelObject",
             "params": [
                 {
                     "name": "client_name",

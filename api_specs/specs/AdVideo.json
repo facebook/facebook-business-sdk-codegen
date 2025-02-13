@@ -2,6 +2,12 @@
     "apis": [
         {
             "method": "GET",
+            "endpoint": "boost_ads_list",
+            "return": "VideoBoostMediaAd",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "captions",
             "return": "VideoCaption",
             "params": []
@@ -372,7 +378,7 @@
                 {
                     "name": "custom_labels",
                     "required": false,
-                    "type": "string"
+                    "type": "list<string>"
                 },
                 {
                     "name": "description",
@@ -492,6 +498,10 @@
         {
             "name": "backdated_time_granularity",
             "type": "string"
+        },
+        {
+            "name": "boost_eligibility_info",
+            "type": "Object"
         },
         {
             "name": "content_category",
