@@ -217,6 +217,10 @@
             "type": "unsigned int"
         },
         {
+            "name": "is_balanced_frequency",
+            "type": "bool"
+        },
+        {
             "name": "is_bonus_media",
             "type": "unsigned int"
         },
@@ -322,6 +326,14 @@
         },
         {
             "name": "target_cpm",
+            "type": "unsigned int"
+        },
+        {
+            "name": "target_frequency",
+            "type": "unsigned int"
+        },
+        {
+            "name": "target_frequency_reset_period",
             "type": "unsigned int"
         },
         {

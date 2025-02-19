@@ -1,41 +1,6 @@
 {
     "apis": [
         {
-            "method": "GET",
-            "endpoint": "replies",
-            "return": "InstagramComment",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "replies",
-            "return": "InstagramComment",
-            "params": [
-                {
-                    "name": "ad_id",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "message",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "name": "#delete",
-            "method": "DELETE",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "ad_id",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "name": "#get",
             "method": "GET",
             "return": "InstagramComment",

@@ -107,6 +107,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "attribution_sources",
+                    "required": false,
+                    "type": "list<map>"
+                },
+                {
                     "name": "auto_publish",
                     "required": false,
                     "type": "bool"
@@ -212,6 +217,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "is_fb",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "limited_data_use",
                     "required": false,
                     "type": "bool"
@@ -220,6 +230,11 @@
                     "name": "migration_bundle",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "operational_parameters",
+                    "required": false,
+                    "type": "list<map>"
                 },
                 {
                     "name": "page_id",
@@ -812,7 +827,17 @@
                     "type": "string"
                 },
                 {
+                    "name": "attribution_method",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "attribution_model",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "attribution_referrer",
                     "required": false,
                     "type": "string"
                 },
@@ -837,6 +862,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "device_os",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "engagement_type",
                     "required": false,
                     "type": "string"
@@ -847,13 +877,23 @@
                     "type": "string"
                 },
                 {
+                    "name": "event_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "event_reported_time",
                     "required": false,
                     "type": "unsigned int"
                 },
                 {
                     "name": "fb_ad_id",
-                    "required": true,
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "fb_adgroup_id",
+                    "required": false,
                     "type": "unsigned int"
                 },
                 {
@@ -867,9 +907,29 @@
                     "type": "unsigned int"
                 },
                 {
+                    "name": "google_install_referrer",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "inactivity_window_hours",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "install_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "is_fb",
                     "required": true,
                     "type": "bool"
+                },
+                {
+                    "name": "meta_install_referrer",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "used_install_referrer",
@@ -964,18 +1024,6 @@
                     "name": "unity",
                     "required": false,
                     "type": "bool"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "payment_currencies",
-            "return": "Application",
-            "params": [
-                {
-                    "name": "currency_url",
-                    "required": true,
-                    "type": "string"
                 }
             ]
         },

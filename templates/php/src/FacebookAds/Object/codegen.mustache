@@ -45,7 +45,7 @@ class {{name:pascal_case}} extends Abstract{{#has_id}}{{#archivable}}Archivable{
   {{/validate_only}}
   {{#cls_is_AdAccountGroup}}
 
-  public function __construct($id = null, $parent_id = 'me', Api $api = null) {
+  public function __construct($id = null, $parent_id = 'me', ?Api $api = null) {
     parent::__construct($id, $parent_id, $api);
   }
   {{/cls_is_AdAccountGroup}}

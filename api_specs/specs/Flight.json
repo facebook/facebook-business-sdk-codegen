@@ -102,6 +102,46 @@
             "type": "string"
         },
         {
+            "name": "custom_label_0",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_1",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_2",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_3",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_4",
+            "type": "string"
+        },
+        {
+            "name": "custom_number_0",
+            "type": "unsigned int"
+        },
+        {
+            "name": "custom_number_1",
+            "type": "unsigned int"
+        },
+        {
+            "name": "custom_number_2",
+            "type": "unsigned int"
+        },
+        {
+            "name": "custom_number_3",
+            "type": "unsigned int"
+        },
+        {
+            "name": "custom_number_4",
+            "type": "unsigned int"
+        },
+        {
             "name": "description",
             "type": "string"
         },
@@ -148,6 +188,26 @@
         {
             "name": "price",
             "type": "string"
+        },
+        {
+            "name": "product_priority_0",
+            "type": "float"
+        },
+        {
+            "name": "product_priority_1",
+            "type": "float"
+        },
+        {
+            "name": "product_priority_2",
+            "type": "float"
+        },
+        {
+            "name": "product_priority_3",
+            "type": "float"
+        },
+        {
+            "name": "product_priority_4",
+            "type": "float"
         },
         {
             "name": "sanitized_images",

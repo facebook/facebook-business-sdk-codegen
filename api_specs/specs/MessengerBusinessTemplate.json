@@ -61,6 +61,14 @@
             "type": "string"
         },
         {
+            "name": "rejection_reasons",
+            "type": "Object"
+        },
+        {
+            "name": "specific_rejection_reasons",
+            "type": "Object"
+        },
+        {
             "name": "status",
             "type": "string"
         }

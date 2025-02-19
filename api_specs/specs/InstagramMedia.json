@@ -1,29 +1,6 @@
 {
     "apis": [
         {
-            "method": "GET",
-            "endpoint": "comments",
-            "return": "InstagramComment",
-            "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "comments",
-            "return": "InstagramComment",
-            "params": [
-                {
-                    "name": "ad_id",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "message",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "name": "#get",
             "method": "GET",
             "return": "InstagramMedia",

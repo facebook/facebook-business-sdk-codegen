@@ -2,6 +2,41 @@
     "apis": [
         {
             "method": "GET",
+            "endpoint": "agencies",
+            "return": "Business",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "authorized_adaccounts",
+            "return": "AdAccount",
+            "params": [
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "authorized_adaccounts",
+            "return": "IGUser",
+            "params": [
+                {
+                    "name": "account_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "business",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "available_catalogs",
             "return": "UserAvailableCatalogs",
             "params": []
@@ -226,6 +261,11 @@
             "return": "IGMedia",
             "params": [
                 {
+                    "name": "alt_text",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "audio_name",
                     "required": false,
                     "type": "string"
@@ -390,6 +430,12 @@
             "params": []
         },
         {
+            "method": "GET",
+            "endpoint": "upcoming_events",
+            "return": "IGUpcomingEvent",
+            "params": []
+        },
+        {
             "method": "POST",
             "endpoint": "upcoming_events",
             "return": "Object",
@@ -447,12 +493,20 @@
             "type": "int"
         },
         {
+            "name": "has_profile_pic",
+            "type": "bool"
+        },
+        {
             "name": "id",
             "type": "string"
         },
         {
             "name": "ig_id",
             "type": "int"
+        },
+        {
+            "name": "is_published",
+            "type": "bool"
         },
         {
             "name": "legacy_instagram_user_id",

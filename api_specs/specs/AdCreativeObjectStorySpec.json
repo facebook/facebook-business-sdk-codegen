@@ -2,7 +2,7 @@
     "apis": [],
     "fields": [
         {
-            "name": "instagram_actor_id",
+            "name": "instagram_user_id",
             "type": "string"
         },
         {

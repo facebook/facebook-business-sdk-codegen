@@ -48,11 +48,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "fallback_domain_enabled",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "first_party_domain",
                     "required": false,
                     "type": "string"
@@ -61,11 +56,6 @@
                     "name": "host_business_id",
                     "required": false,
                     "type": "unsigned int"
-                },
-                {
-                    "name": "host_external_id",
-                    "required": false,
-                    "type": "string"
                 },
                 {
                     "name": "instance_id",
@@ -116,19 +106,11 @@
             "type": "string"
         },
         {
-            "name": "fallback_domain_enabled",
-            "type": "bool"
-        },
-        {
             "name": "first_party_domain",
             "type": "string"
         },
         {
             "name": "host_business_id",
-            "type": "string"
-        },
-        {
-            "name": "host_external_id",
             "type": "string"
         },
         {

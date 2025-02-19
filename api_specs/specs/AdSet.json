@@ -688,6 +688,11 @@
                     "type": "adcampaign_full_funnel_exploration_mode"
                 },
                 {
+                    "name": "is_sac_cfca_terms_certified",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "lifetime_budget",
                     "required": false,
                     "type": "unsigned int"
@@ -940,7 +945,7 @@
             "type": "string"
         },
         {
-            "name": "instagram_actor_id",
+            "name": "instagram_user_id",
             "type": "string"
         },
         {

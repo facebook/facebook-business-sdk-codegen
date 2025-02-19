@@ -141,6 +141,46 @@
             "type": "string"
         },
         {
+            "name": "custom_label_0",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_1",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_2",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_3",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_4",
+            "type": "string"
+        },
+        {
+            "name": "custom_number_0",
+            "type": "int"
+        },
+        {
+            "name": "custom_number_1",
+            "type": "int"
+        },
+        {
+            "name": "custom_number_2",
+            "type": "int"
+        },
+        {
+            "name": "custom_number_3",
+            "type": "int"
+        },
+        {
+            "name": "custom_number_4",
+            "type": "int"
+        },
+        {
             "name": "description",
             "type": "string"
         },

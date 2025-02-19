@@ -17,6 +17,14 @@
             "type": "list<map<string, string>>"
         },
         {
+            "name": "actions_quick_view_created",
+            "type": "bool"
+        },
+        {
+            "name": "active_ads_quick_view_created",
+            "type": "bool"
+        },
+        {
             "name": "ad_account",
             "type": "AdAccount"
         },
@@ -70,6 +78,10 @@
         },
         {
             "name": "export_summary_row",
+            "type": "bool"
+        },
+        {
+            "name": "had_delivery_quick_view_created",
             "type": "bool"
         },
         {

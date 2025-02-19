@@ -203,6 +203,16 @@
                     "type": "string"
                 },
                 {
+                    "name": "special_ad_categories",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "special_ad_category_countries",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
                     "name": "target_countries",
                     "required": false,
                     "type": "list<string>"
@@ -387,6 +397,10 @@
         {
             "name": "included_custom_audiences",
             "type": "list<CustomAudience>"
+        },
+        {
+            "name": "is_eligible_for_sac_campaigns",
+            "type": "bool"
         },
         {
             "name": "is_household",

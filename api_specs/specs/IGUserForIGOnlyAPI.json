@@ -41,6 +41,48 @@
         },
         {
             "method": "GET",
+            "endpoint": "insights",
+            "return": "InsightsResult",
+            "params": [
+                {
+                    "name": "breakdown",
+                    "required": false,
+                    "type": "list<userinsights_breakdown_enum_param>"
+                },
+                {
+                    "name": "metric",
+                    "required": true,
+                    "type": "list<userinsights_metric_enum_param>"
+                },
+                {
+                    "name": "metric_type",
+                    "required": false,
+                    "type": "userinsights_metric_type_enum_param"
+                },
+                {
+                    "name": "period",
+                    "required": true,
+                    "type": "list<userinsights_period_enum_param>"
+                },
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "timeframe",
+                    "required": false,
+                    "type": "userinsights_timeframe_enum_param"
+                },
+                {
+                    "name": "until",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "live_media",
             "return": "Media",
             "params": []
@@ -67,6 +109,11 @@
             "endpoint": "media",
             "return": "IGGraphMedia",
             "params": [
+                {
+                    "name": "alt_text",
+                    "required": false,
+                    "type": "string"
+                },
                 {
                     "name": "audio_name",
                     "required": false,

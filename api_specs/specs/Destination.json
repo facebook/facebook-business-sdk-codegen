@@ -66,6 +66,14 @@
             "type": "string"
         },
         {
+            "name": "custom_label_3",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_4",
+            "type": "string"
+        },
+        {
             "name": "custom_number_0",
             "type": "unsigned int"
         },
@@ -75,6 +83,14 @@
         },
         {
             "name": "custom_number_2",
+            "type": "unsigned int"
+        },
+        {
+            "name": "custom_number_3",
+            "type": "unsigned int"
+        },
+        {
+            "name": "custom_number_4",
             "type": "unsigned int"
         },
         {

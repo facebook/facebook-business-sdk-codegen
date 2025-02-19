@@ -33,11 +33,23 @@
             "type": "string"
         },
         {
+            "name": "legacy_ads_data_partner_id",
+            "type": "string"
+        },
+        {
+            "name": "legacy_ads_data_partner_name",
+            "type": "string"
+        },
+        {
             "name": "modified_time",
             "type": "datetime"
         },
         {
             "name": "owner_instance_id",
+            "type": "string"
+        },
+        {
+            "name": "partner_household_graph_dataset_id",
             "type": "string"
         },
         {

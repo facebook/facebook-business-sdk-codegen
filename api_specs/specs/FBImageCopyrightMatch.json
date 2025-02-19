@@ -29,6 +29,10 @@
             "type": "int"
         },
         {
+            "name": "generic_match_data",
+            "type": "list<Object>"
+        },
+        {
             "name": "id",
             "type": "string"
         },

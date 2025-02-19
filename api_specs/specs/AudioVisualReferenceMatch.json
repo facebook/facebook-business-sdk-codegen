@@ -14,6 +14,10 @@
             "type": "list<Object>"
         },
         {
+            "name": "conflict_status",
+            "type": "string"
+        },
+        {
             "name": "conflict_type",
             "type": "string"
         },

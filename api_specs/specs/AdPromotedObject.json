@@ -34,7 +34,19 @@
             "type": "string"
         },
         {
+            "name": "lead_ads_custom_event_str",
+            "type": "string"
+        },
+        {
+            "name": "lead_ads_custom_event_type",
+            "type": "AdPromotedObject_lead_ads_custom_event_type"
+        },
+        {
             "name": "lead_ads_form_event_source_type",
+            "type": "string"
+        },
+        {
+            "name": "lead_ads_offsite_conversion_type",
             "type": "string"
         },
         {

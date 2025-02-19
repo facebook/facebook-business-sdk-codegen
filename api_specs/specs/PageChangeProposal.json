@@ -10,15 +10,7 @@
             "type": "string"
         },
         {
-            "name": "current_value",
-            "type": "string"
-        },
-        {
             "name": "id",
-            "type": "string"
-        },
-        {
-            "name": "proposed_value",
             "type": "string"
         },
         {
