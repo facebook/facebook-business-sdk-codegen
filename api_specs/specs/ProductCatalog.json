@@ -1544,6 +1544,12 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "version_configs",
+            "return": "CatalogContentVersionConfig",
+            "params": []
+        },
+        {
             "method": "POST",
             "endpoint": "version_items_batch",
             "return": "ProductCatalog",

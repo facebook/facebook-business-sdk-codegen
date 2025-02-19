@@ -4,10 +4,6 @@
         {
             "name": "intent_score",
             "type": "float"
-        },
-        {
-            "name": "media",
-            "type": "InstagramMedia"
         }
     ]
 }

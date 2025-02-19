@@ -301,11 +301,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "instagram_actor_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "instagram_branded_content",
                     "required": false,
                     "type": "map"
@@ -407,6 +402,11 @@
                 },
                 {
                     "name": "recommender_settings",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "regional_regulation_disclaimer_spec",
                     "required": false,
                     "type": "map"
                 },
@@ -1031,6 +1031,11 @@
                 },
                 {
                     "name": "is_dynamic_creative",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_sac_cfca_terms_certified",
                     "required": false,
                     "type": "bool"
                 },
@@ -3380,6 +3385,33 @@
         },
         {
             "method": "GET",
+            "endpoint": "suggested_product_tags",
+            "return": "AdAccountSuggestedTag",
+            "params": [
+                {
+                    "name": "image_hash",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "instagram_actor_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "is_shops_ad",
+                    "required": true,
+                    "type": "bool"
+                },
+                {
+                    "name": "page_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "targetingbrowse",
             "return": "AdAccountTargetingUnified",
             "params": [
@@ -3690,6 +3722,43 @@
                     "name": "until",
                     "required": false,
                     "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "video_ads",
+            "return": "AdVideo",
+            "params": [
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "privacy",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "title",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "upload_phase",
+                    "required": true,
+                    "type": "adaccountvideo_ads_upload_phase_enum_param"
+                },
+                {
+                    "name": "video_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "video_state",
+                    "required": false,
+                    "type": "adaccountvideo_ads_video_state_enum_param"
                 }
             ]
         },

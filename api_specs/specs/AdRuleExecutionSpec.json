@@ -15,6 +15,10 @@
         {
             "name": "execution_type",
             "type": "AdRuleExecutionSpec_execution_type"
+        },
+        {
+            "name": "is_once_off",
+            "type": "bool"
         }
     ]
 }

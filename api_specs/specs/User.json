@@ -1290,6 +1290,18 @@
             "params": []
         },
         {
+            "method": "POST",
+            "endpoint": "messenger_kids_accounts_unread_badge",
+            "return": "User",
+            "params": [
+                {
+                    "name": "proxied_app_id",
+                    "required": true,
+                    "type": "int"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "music",
             "return": "Page",
@@ -1605,6 +1617,11 @@
                     "name": "profile_id",
                     "required": false,
                     "type": "int"
+                },
+                {
+                    "name": "provenance_info",
+                    "required": false,
+                    "type": "map"
                 },
                 {
                     "name": "proxied_app_id",

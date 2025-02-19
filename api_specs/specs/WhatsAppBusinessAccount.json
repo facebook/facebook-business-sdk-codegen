@@ -177,12 +177,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "dcc_config",
-            "return": "WhatsAppBusinessDirectConnectionExternalConfig",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "flows",
             "return": "WhatsAppExtension",
             "params": []
@@ -208,9 +202,19 @@
                     "type": "string"
                 },
                 {
+                    "name": "flow_json",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "name",
                     "required": true,
                     "type": "string"
+                },
+                {
+                    "name": "publish",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         },
@@ -406,18 +410,13 @@
             "return": "WhatsAppBusinessAccount",
             "params": [
                 {
-                    "name": "page_number",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "source_flow_ids",
+                    "name": "source_flow_names",
                     "required": false,
                     "type": "list<string>"
                 },
                 {
                     "name": "source_waba_id",
-                    "required": false,
+                    "required": true,
                     "type": "string"
                 }
             ]
@@ -474,6 +473,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "data_endpoint_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "merchant_category_code",
                     "required": false,
                     "type": "string"
@@ -485,7 +489,7 @@
                 },
                 {
                     "name": "provider_name",
-                    "required": true,
+                    "required": false,
                     "type": "whatsappbusinessaccountpayment_configuration_provider_name_enum_param"
                 },
                 {
@@ -545,6 +549,58 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "pricing_analytics",
+            "return": "WABAPricingAnalytics",
+            "params": [
+                {
+                    "name": "country_codes",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "dimensions",
+                    "required": false,
+                    "type": "list<whatsappbusinessaccountpricing_analytics_dimensions_enum_param>"
+                },
+                {
+                    "name": "end",
+                    "required": true,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "granularity",
+                    "required": true,
+                    "type": "whatsappbusinessaccountpricing_analytics_granularity_enum_param"
+                },
+                {
+                    "name": "metric_types",
+                    "required": false,
+                    "type": "list<whatsappbusinessaccountpricing_analytics_metric_types_enum_param>"
+                },
+                {
+                    "name": "phone_numbers",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "pricing_categories",
+                    "required": false,
+                    "type": "list<whatsappbusinessaccountpricing_analytics_pricing_categories_enum_param>"
+                },
+                {
+                    "name": "pricing_types",
+                    "required": false,
+                    "type": "list<whatsappbusinessaccountpricing_analytics_pricing_types_enum_param>"
+                },
+                {
+                    "name": "start",
+                    "required": true,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
             "method": "DELETE",
             "endpoint": "product_catalogs",
             "return": "Object",
@@ -595,11 +651,16 @@
         {
             "method": "POST",
             "endpoint": "set_solution_migration_intent",
-            "return": "Object",
+            "return": "WhatsAppBusinessAccountMigrationIntent",
             "params": [
                 {
+                    "name": "app_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "solution_id",
-                    "required": true,
+                    "required": false,
                     "type": "string"
                 }
             ]
@@ -671,6 +732,66 @@
                 },
                 {
                     "name": "template_ids",
+                    "required": true,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "template_group_analytics",
+            "return": "WABATemplateGroupAnalytics",
+            "params": [
+                {
+                    "name": "end",
+                    "required": true,
+                    "type": "datetime"
+                },
+                {
+                    "name": "granularity",
+                    "required": true,
+                    "type": "whatsappbusinessaccounttemplate_group_analytics_granularity_enum_param"
+                },
+                {
+                    "name": "metric_types",
+                    "required": false,
+                    "type": "list<whatsappbusinessaccounttemplate_group_analytics_metric_types_enum_param>"
+                },
+                {
+                    "name": "start",
+                    "required": true,
+                    "type": "datetime"
+                },
+                {
+                    "name": "template_group_ids",
+                    "required": true,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "template_groups",
+            "return": "BusinessMessagingTemplateGroup",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "template_groups",
+            "return": "BusinessMessagingTemplateGroup",
+            "params": [
+                {
+                    "name": "description",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "whatsapp_business_templates",
                     "required": true,
                     "type": "list<string>"
                 }
@@ -805,6 +926,10 @@
         {
             "name": "linked_commerce_account",
             "type": "CommerceMerchantSettings"
+        },
+        {
+            "name": "marketing_messages_lite_api_status",
+            "type": "string"
         },
         {
             "name": "message_template_namespace",
