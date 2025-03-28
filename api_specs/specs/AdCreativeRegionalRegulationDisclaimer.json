@@ -6,6 +6,14 @@
             "type": "Object"
         },
         {
+            "name": "india_finserv",
+            "type": "Object"
+        },
+        {
+            "name": "singapore_universal",
+            "type": "Object"
+        },
+        {
             "name": "taiwan_finserv",
             "type": "Object"
         },

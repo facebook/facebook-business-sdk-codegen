@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "threads_user_id",
+            "type": "string"
+        },
+        {
+            "name": "threads_user_profile_pic",
+            "type": "string"
+        }
+    ]
+}

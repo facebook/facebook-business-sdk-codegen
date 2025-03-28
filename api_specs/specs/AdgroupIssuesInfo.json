@@ -20,6 +20,10 @@
         {
             "name": "level",
             "type": "string"
+        },
+        {
+            "name": "mid",
+            "type": "string"
         }
     ]
 }

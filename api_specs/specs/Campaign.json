@@ -560,6 +560,10 @@
             "type": "list<AdLabel>"
         },
         {
+            "name": "advantage_state_info",
+            "type": "AdCampaignGroupAdvantageState"
+        },
+        {
             "name": "bid_strategy",
             "type": "Campaign_bid_strategy"
         },

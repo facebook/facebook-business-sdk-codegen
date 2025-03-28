@@ -53,6 +53,10 @@
             "type": "list<string>"
         },
         {
+            "name": "aplusc_videofilter_opt_in_status",
+            "type": "string"
+        },
+        {
             "name": "autoflow_lite_opt_in_status",
             "type": "string"
         },
@@ -166,6 +170,14 @@
         },
         {
             "name": "product_extensions_opt_in",
+            "type": "string"
+        },
+        {
+            "name": "sa_off_conv_loc_seen",
+            "type": "string"
+        },
+        {
+            "name": "saon_migr_l1_seen_status",
             "type": "string"
         },
         {

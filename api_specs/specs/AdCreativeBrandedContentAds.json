@@ -50,6 +50,10 @@
             "type": "string"
         },
         {
+            "name": "testimonial_locale",
+            "type": "string"
+        },
+        {
             "name": "ui_version",
             "type": "int"
         }

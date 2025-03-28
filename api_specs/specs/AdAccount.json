@@ -1030,6 +1030,11 @@
                     "type": "adaccountadsets_full_funnel_exploration_mode_enum_param"
                 },
                 {
+                    "name": "is_ba_skip_delayed_eligible",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "is_dynamic_creative",
                     "required": false,
                     "type": "bool"
@@ -2875,6 +2880,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "mcmeconversions",
+            "return": "AdsMcmeConversion",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "minimum_budgets",
             "return": "MinimumBudget",
             "params": [
@@ -3706,7 +3717,35 @@
             "method": "GET",
             "endpoint": "value_rule_set",
             "return": "AdsValueAdjustmentRuleCollection",
-            "params": []
+            "params": [
+                {
+                    "name": "product_type",
+                    "required": false,
+                    "type": "adaccountvalue_rule_set_product_type_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "value_rule_set",
+            "return": "AdsValueAdjustmentRuleCollection",
+            "params": [
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "product_type",
+                    "required": false,
+                    "type": "adaccountvalue_rule_set_product_type_enum_param"
+                },
+                {
+                    "name": "rules",
+                    "required": true,
+                    "type": "list<map>"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -3817,6 +3856,11 @@
                     "name": "existing_customers",
                     "required": false,
                     "type": "list<string>"
+                },
+                {
+                    "name": "is_ba_skip_delayed_eligible",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "is_notifications_enabled",
@@ -4020,6 +4064,10 @@
         },
         {
             "name": "is_attribution_spec_system_default",
+            "type": "bool"
+        },
+        {
+            "name": "is_ba_skip_delayed_eligible",
             "type": "bool"
         },
         {

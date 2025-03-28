@@ -107,6 +107,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "attribution_referrer",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "attribution_sources",
                     "required": false,
                     "type": "list<map>"
@@ -192,6 +197,11 @@
                     "type": "Object"
                 },
                 {
+                    "name": "google_install_referrer",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "include_dwell_data",
                     "required": false,
                     "type": "bool"
@@ -200,6 +210,11 @@
                     "name": "include_video_data",
                     "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "install_id",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "install_referrer",
@@ -225,6 +240,11 @@
                     "name": "limited_data_use",
                     "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "meta_install_referrer",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "migration_bundle",

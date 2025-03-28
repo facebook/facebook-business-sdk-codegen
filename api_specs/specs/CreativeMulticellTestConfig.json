@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "daily_budget",
+            "type": "int"
+        },
+        {
+            "name": "lifetime_budget",
+            "type": "int"
+        }
+    ]
+}

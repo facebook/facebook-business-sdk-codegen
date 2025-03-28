@@ -45,6 +45,10 @@
             "type": "string"
         },
         {
+            "name": "conditional_formatting_rules",
+            "type": "list<string>"
+        },
+        {
             "name": "default_account_overview_agegender_metrics",
             "type": "list<string>"
         },
@@ -114,6 +118,14 @@
         },
         {
             "name": "is_3p_auth_setting_set",
+            "type": "bool"
+        },
+        {
+            "name": "is_ads_manager_footer_row_preference_set",
+            "type": "bool"
+        },
+        {
+            "name": "is_ads_manager_footer_row_shown",
             "type": "bool"
         },
         {

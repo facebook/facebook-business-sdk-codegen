@@ -699,6 +699,10 @@
             "type": "ProductItemLocalInfo"
         },
         {
+            "name": "product_relationship",
+            "type": "string"
+        },
+        {
             "name": "product_type",
             "type": "string"
         },

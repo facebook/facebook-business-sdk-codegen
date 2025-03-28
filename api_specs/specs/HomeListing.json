@@ -329,6 +329,10 @@
             "type": "list<string>"
         },
         {
+            "name": "tags",
+            "type": "list<string>"
+        },
+        {
             "name": "unit_price",
             "type": "Object"
         },

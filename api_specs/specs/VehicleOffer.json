@@ -238,6 +238,10 @@
             "type": "int"
         },
         {
+            "name": "tags",
+            "type": "list<string>"
+        },
+        {
             "name": "term_length",
             "type": "unsigned int"
         },

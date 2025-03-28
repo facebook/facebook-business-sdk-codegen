@@ -217,6 +217,10 @@
             "type": "string"
         },
         {
+            "name": "call_to_action",
+            "type": "AdCreativeLinkDataCallToAction"
+        },
+        {
             "name": "call_to_action_type",
             "type": "AdCreative_call_to_action_type"
         },

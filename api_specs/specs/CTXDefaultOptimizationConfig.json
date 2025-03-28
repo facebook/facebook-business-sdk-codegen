@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "objective",
+            "type": "string"
+        },
+        {
+            "name": "optimization_goal",
+            "type": "string"
+        }
+    ]
+}

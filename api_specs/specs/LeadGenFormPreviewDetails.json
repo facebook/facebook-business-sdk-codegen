@@ -26,6 +26,14 @@
             "type": "string"
         },
         {
+            "name": "custom_disclaimer_editor_state",
+            "type": "string"
+        },
+        {
+            "name": "custom_disclaimer_title",
+            "type": "string"
+        },
+        {
             "name": "data_privacy_policy_setting_description",
             "type": "string"
         },
@@ -114,6 +122,10 @@
             "type": "string"
         },
         {
+            "name": "privacy_policy_link_text_for_optional_privacy_policy",
+            "type": "string"
+        },
+        {
             "name": "privacy_policy_title_section_title_text",
             "type": "string"
         },
@@ -143,6 +155,10 @@
         },
         {
             "name": "secure_sharing_text",
+            "type": "string"
+        },
+        {
+            "name": "secure_sharing_text_for_optional_privacy_policy",
             "type": "string"
         },
         {

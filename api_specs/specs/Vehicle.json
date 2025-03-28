@@ -390,6 +390,10 @@
             "type": "string"
         },
         {
+            "name": "tags",
+            "type": "list<string>"
+        },
+        {
             "name": "title",
             "type": "string"
         },

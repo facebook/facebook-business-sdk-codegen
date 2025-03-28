@@ -10,6 +10,14 @@
             "type": "int"
         },
         {
+            "name": "should_default_current_live",
+            "type": "bool"
+        },
+        {
+            "name": "should_default_scheduled_live",
+            "type": "bool"
+        },
+        {
             "name": "should_show_lva_toggle",
             "type": "bool"
         }

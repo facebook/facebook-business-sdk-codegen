@@ -2221,6 +2221,23 @@
         },
         {
             "method": "POST",
+            "endpoint": "moderate_conversations",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "actions",
+                    "required": true,
+                    "type": "list<pagemoderate_conversations_actions_enum_param>"
+                },
+                {
+                    "name": "user_ids",
+                    "required": true,
+                    "type": "list<map>"
+                }
+            ]
+        },
+        {
+            "method": "POST",
             "endpoint": "nlp_configs",
             "return": "Page",
             "params": [
@@ -2332,28 +2349,6 @@
                     "name": "target_app_id",
                     "required": false,
                     "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "pass_thread_metadata",
-            "return": "Page",
-            "params": [
-                {
-                    "name": "metadata",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "recipient",
-                    "required": true,
-                    "type": "Object"
-                },
-                {
-                    "name": "target_app_id",
-                    "required": true,
-                    "type": "int"
                 }
             ]
         },
@@ -3022,6 +3017,12 @@
             "method": "GET",
             "endpoint": "shop_setup_status",
             "return": "CommerceMerchantSettingsSetupStatus",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "store_locations",
+            "return": "StoreLocation",
             "params": []
         },
         {

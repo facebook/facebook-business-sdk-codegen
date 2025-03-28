@@ -26,6 +26,10 @@
             "type": "string"
         },
         {
+            "name": "monetization_tool",
+            "type": "string"
+        },
+        {
             "name": "recurring_notifications_entry_point",
             "type": "string"
         },

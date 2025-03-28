@@ -150,6 +150,14 @@
             "type": "list<AdsActionStats>"
         },
         {
+            "name": "converted_promoted_product_quantity",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "converted_promoted_product_value",
+            "type": "list<AdsActionStats>"
+        },
+        {
             "name": "cost_per_15_sec_video_view",
             "type": "list<AdsActionStats>"
         },
@@ -366,7 +374,15 @@
             "type": "string"
         },
         {
+            "name": "marketing_messages_delivered",
+            "type": "string"
+        },
+        {
             "name": "marketing_messages_delivery_rate",
+            "type": "string"
+        },
+        {
+            "name": "marketing_messages_link_btn_click",
             "type": "string"
         },
         {
@@ -382,7 +398,15 @@
             "type": "string"
         },
         {
+            "name": "marketing_messages_quick_reply_btn_click",
+            "type": "string"
+        },
+        {
             "name": "marketing_messages_quick_reply_btn_click_rate",
+            "type": "string"
+        },
+        {
+            "name": "marketing_messages_read",
             "type": "string"
         },
         {
@@ -390,7 +414,27 @@
             "type": "string"
         },
         {
+            "name": "marketing_messages_sent",
+            "type": "string"
+        },
+        {
             "name": "marketing_messages_spend",
+            "type": "string"
+        },
+        {
+            "name": "marketing_messages_spend_currency",
+            "type": "string"
+        },
+        {
+            "name": "marketing_messages_website_add_to_cart",
+            "type": "string"
+        },
+        {
+            "name": "marketing_messages_website_initiate_checkout",
+            "type": "string"
+        },
+        {
+            "name": "marketing_messages_website_purchase",
             "type": "string"
         },
         {

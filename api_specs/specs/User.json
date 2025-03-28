@@ -1045,7 +1045,7 @@
                 {
                     "name": "end_time",
                     "required": true,
-                    "type": "int"
+                    "type": "datetime"
                 },
                 {
                     "name": "external_event_name",
@@ -1055,7 +1055,7 @@
                 {
                     "name": "external_event_start_time",
                     "required": false,
-                    "type": "int"
+                    "type": "datetime"
                 },
                 {
                     "name": "external_event_uri",
@@ -1080,7 +1080,7 @@
                 {
                     "name": "goal_amount",
                     "required": true,
-                    "type": "int"
+                    "type": "unsigned int"
                 },
                 {
                     "name": "name",

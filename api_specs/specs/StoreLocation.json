@@ -1,0 +1,44 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "StoreLocation",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "full_address",
+            "type": "string"
+        },
+        {
+            "name": "hours",
+            "type": "Object"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "phone_number",
+            "type": "string"
+        },
+        {
+            "name": "pickup_options",
+            "type": "list<string>"
+        },
+        {
+            "name": "price_range",
+            "type": "string"
+        },
+        {
+            "name": "store_code",
+            "type": "string"
+        },
+        {
+            "name": "zip_code",
+            "type": "string"
+        }
+    ]
+}

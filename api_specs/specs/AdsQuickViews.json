@@ -33,6 +33,10 @@
             "type": "string"
         },
         {
+            "name": "owner",
+            "type": "Profile"
+        },
+        {
             "name": "permission",
             "type": "string"
         },

@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "action",
+            "type": "string"
+        },
+        {
+            "name": "spend_cap",
+            "type": "int"
+        },
+        {
+            "name": "time_start",
+            "type": "string"
+        },
+        {
+            "name": "time_stop",
+            "type": "string"
+        }
+    ]
+}

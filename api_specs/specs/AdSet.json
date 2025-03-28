@@ -688,6 +688,11 @@
                     "type": "adcampaign_full_funnel_exploration_mode"
                 },
                 {
+                    "name": "is_ba_skip_delayed_eligible",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "is_sac_cfca_terms_certified",
                     "required": false,
                     "type": "bool"
@@ -947,6 +952,10 @@
         {
             "name": "instagram_user_id",
             "type": "string"
+        },
+        {
+            "name": "is_ba_skip_delayed_eligible",
+            "type": "bool"
         },
         {
             "name": "is_budget_schedule_enabled",

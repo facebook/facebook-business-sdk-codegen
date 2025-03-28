@@ -11,6 +11,28 @@
             "method": "GET",
             "return": "AdsValueAdjustmentRuleCollection",
             "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "AdsValueAdjustmentRuleCollection",
+            "params": [
+                {
+                    "name": "is_default_setting",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "rules",
+                    "required": true,
+                    "type": "list<map>"
+                }
+            ]
         }
     ],
     "fields": [
@@ -24,6 +46,10 @@
         },
         {
             "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "product_type",
             "type": "string"
         }
     ]

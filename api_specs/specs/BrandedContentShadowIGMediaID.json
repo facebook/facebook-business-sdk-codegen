@@ -20,6 +20,10 @@
         {
             "name": "permalink",
             "type": "string"
+        },
+        {
+            "name": "recommended_campaign_objectives",
+            "type": "list<string>"
         }
     ]
 }

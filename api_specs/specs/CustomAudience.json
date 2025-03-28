@@ -70,6 +70,38 @@
         },
         {
             "method": "GET",
+            "endpoint": "health",
+            "return": "CustomAudienceHealth",
+            "params": [
+                {
+                    "name": "calculated_date",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "processed_date",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "value_aggregation_duration",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "value_currency",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "value_version",
+                    "required": false,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "salts",
             "return": "CustomAudienceSalts",
             "params": [

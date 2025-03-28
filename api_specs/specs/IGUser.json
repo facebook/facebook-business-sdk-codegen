@@ -90,6 +90,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "only_fetch_recommended_content",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "permalinks",
                     "required": false,
                     "type": "list<string>"
@@ -148,6 +153,12 @@
                     "type": "string"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "connected_threads_user",
+            "return": "ThreadsUser",
+            "params": []
         },
         {
             "method": "GET",
@@ -220,6 +231,18 @@
                     "type": "datetime"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "instagram_backed_threads_user",
+            "return": "ThreadsUser",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "instagram_backed_threads_user",
+            "return": "ThreadsUser",
+            "params": []
         },
         {
             "method": "GET",

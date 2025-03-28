@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "advantage_audience_state",
+            "type": "string"
+        },
+        {
+            "name": "advantage_budget_state",
+            "type": "string"
+        },
+        {
+            "name": "advantage_placement_state",
+            "type": "string"
+        },
+        {
+            "name": "advantage_state",
+            "type": "string"
+        }
+    ]
+}
