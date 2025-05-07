@@ -167,6 +167,7 @@ games.achieves=1
 games=1
 gaming=1
 generate=1
+geolocated=1
 global=1
 governed=1
 groups=1
