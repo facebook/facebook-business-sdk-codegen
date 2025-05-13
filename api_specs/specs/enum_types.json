@@ -3628,7 +3628,8 @@
         "field_or_param": "smart_promotion_type",
         "values": [
             "GUIDED_CREATION",
-            "SMART_APP_PROMOTION"
+            "SMART_APP_PROMOTION",
+            "AUTOMATED_SHOPPING_ADS"
         ]
     },
     {
