@@ -7,7 +7,7 @@
         },
         {
             "name": "individual_setting",
-            "type": "Object"
+            "type": "TargetingAutomationIndividualSetting"
         },
         {
             "name": "shared_audiences",
