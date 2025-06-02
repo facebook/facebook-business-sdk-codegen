@@ -338,6 +338,10 @@
             "type": "TargetingRelaxation"
         },
         {
+            "name": "threads_positions",
+            "type": "list<string>"
+        },
+        {
             "name": "user_adclusters",
             "type": "list<IDName>"
         },
