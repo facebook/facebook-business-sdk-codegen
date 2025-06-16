@@ -32,6 +32,10 @@
         {
             "name": "publisher_platforms",
             "type": "list<string>"
+        },
+        {
+            "name": "threads_positions",
+            "type": "list<string>"
         }
     ]
 }

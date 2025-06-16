@@ -1336,6 +1336,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "is_partnership_ad",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "is_voice_clip",
                     "required": false,
                     "type": "bool"
@@ -1384,6 +1389,11 @@
                     "name": "original_projection_type",
                     "required": false,
                     "type": "groupvideos_original_projection_type_enum_param"
+                },
+                {
+                    "name": "partnership_ad_ad_code",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "publish_event_id",

@@ -33,6 +33,10 @@
             "type": "string"
         },
         {
+            "name": "ads_manager_footer_row_toast_impressions",
+            "type": "int"
+        },
+        {
             "name": "auto_review_video_caption",
             "type": "bool"
         },
@@ -111,6 +115,10 @@
         {
             "name": "hidden_optimization_tips",
             "type": "list<map<string, bool>>"
+        },
+        {
+            "name": "high_performing_quick_view_created",
+            "type": "bool"
         },
         {
             "name": "id",
@@ -247,6 +255,14 @@
         {
             "name": "syd_landing_page_opt_in_status",
             "type": "string"
+        },
+        {
+            "name": "text_gen_persona_opt_in_type",
+            "type": "string"
+        },
+        {
+            "name": "text_variations_opt_in_out_ts",
+            "type": "datetime"
         },
         {
             "name": "text_variations_opt_in_type",

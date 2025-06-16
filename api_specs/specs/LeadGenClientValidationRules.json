@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "exclude_emoji_and_special_chars_enabled",
+            "type": "bool"
+        },
+        {
+            "name": "max_length_value",
+            "type": "int"
+        },
+        {
+            "name": "min_length_value",
+            "type": "int"
+        }
+    ]
+}

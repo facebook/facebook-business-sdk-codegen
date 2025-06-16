@@ -73,6 +73,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "creative_parameters",
+                    "required": false,
+                    "type": "AdCreative"
+                },
+                {
                     "name": "rename_options",
                     "required": false,
                     "type": "Object"
@@ -148,6 +153,11 @@
                     "name": "level",
                     "required": false,
                     "type": "adgroupinsights_level_enum_param"
+                },
+                {
+                    "name": "limit",
+                    "required": false,
+                    "type": "int"
                 },
                 {
                     "name": "product_id_limit",
@@ -260,6 +270,11 @@
                     "name": "level",
                     "required": false,
                     "type": "adgroupinsights_level_enum_param"
+                },
+                {
+                    "name": "limit",
+                    "required": false,
+                    "type": "int"
                 },
                 {
                     "name": "product_id_limit",

@@ -122,6 +122,10 @@
             "type": "list<string>"
         },
         {
+            "name": "effective_threads_positions",
+            "type": "list<string>"
+        },
+        {
             "name": "engagement_specs",
             "type": "list<TargetingDynamicRule>"
         },
@@ -336,6 +340,10 @@
         {
             "name": "targeting_relaxation_types",
             "type": "TargetingRelaxation"
+        },
+        {
+            "name": "threads_positions",
+            "type": "list<string>"
         },
         {
             "name": "user_adclusters",

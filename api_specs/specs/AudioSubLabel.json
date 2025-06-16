@@ -1,0 +1,40 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AudioSubLabel",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "expiration_timestamp",
+            "type": "datetime"
+        },
+        {
+            "name": "flagged_timestamp",
+            "type": "datetime"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "label_name",
+            "type": "string"
+        },
+        {
+            "name": "last_update_timestamp",
+            "type": "datetime"
+        },
+        {
+            "name": "num_audio_tracks",
+            "type": "int"
+        },
+        {
+            "name": "state",
+            "type": "string"
+        }
+    ]
+}

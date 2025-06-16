@@ -22,6 +22,11 @@
                     "type": "map"
                 },
                 {
+                    "name": "age_group",
+                    "required": false,
+                    "type": "productgroupproducts_age_group_enum_param"
+                },
+                {
                     "name": "android_app_name",
                     "required": false,
                     "type": "string"

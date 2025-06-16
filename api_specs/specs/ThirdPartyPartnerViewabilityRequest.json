@@ -17,6 +17,10 @@
             "type": "string"
         },
         {
+            "name": "ds",
+            "type": "string"
+        },
+        {
             "name": "hour",
             "type": "datetime"
         },

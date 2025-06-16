@@ -2,12 +2,28 @@
     "apis": [],
     "fields": [
         {
+            "name": "budget_percentage",
+            "type": "int"
+        },
+        {
+            "name": "configured_cell_count",
+            "type": "int"
+        },
+        {
             "name": "daily_budget",
             "type": "int"
         },
         {
+            "name": "entry_source",
+            "type": "string"
+        },
+        {
             "name": "lifetime_budget",
             "type": "int"
+        },
+        {
+            "name": "use_existing_daily_budget",
+            "type": "bool"
         }
     ]
 }

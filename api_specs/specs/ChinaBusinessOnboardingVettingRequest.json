@@ -25,6 +25,14 @@
             "type": "list<Object>"
         },
         {
+            "name": "advertiser_business_id",
+            "type": "string"
+        },
+        {
+            "name": "advertiser_business_name",
+            "type": "string"
+        },
+        {
             "name": "business_manager_id",
             "type": "string"
         },
@@ -34,6 +42,10 @@
         },
         {
             "name": "business_registration_id",
+            "type": "string"
+        },
+        {
+            "name": "business_verification_status",
             "type": "string"
         },
         {

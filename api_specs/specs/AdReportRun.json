@@ -43,6 +43,10 @@
             "type": "list<string>"
         },
         {
+            "name": "error_code",
+            "type": "unsigned int"
+        },
+        {
             "name": "friendly_name",
             "type": "string"
         },

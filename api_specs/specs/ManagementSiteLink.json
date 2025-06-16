@@ -1,0 +1,48 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ManagementSiteLink",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "ad_account_id",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "link_domain",
+            "type": "string"
+        },
+        {
+            "name": "link_hash",
+            "type": "string"
+        },
+        {
+            "name": "link_image_hash",
+            "type": "string"
+        },
+        {
+            "name": "link_image_url",
+            "type": "string"
+        },
+        {
+            "name": "link_title",
+            "type": "string"
+        },
+        {
+            "name": "link_type",
+            "type": "string"
+        },
+        {
+            "name": "link_url",
+            "type": "string"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "tags",
+            "type": "list<string>"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        }
+    ]
+}

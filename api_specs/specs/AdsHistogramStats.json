@@ -162,6 +162,18 @@
             "type": "list<int>"
         },
         {
+            "name": "incrementality",
+            "type": "list<int>"
+        },
+        {
+            "name": "incrementality_all_conversions",
+            "type": "list<int>"
+        },
+        {
+            "name": "incrementality_first_conversion",
+            "type": "list<int>"
+        },
+        {
             "name": "inline",
             "type": "list<int>"
         },

@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "closeout_time",
+            "type": "unsigned int"
+        },
+        {
+            "name": "flagged_fields",
+            "type": "list<string>"
+        },
+        {
+            "name": "latest_appeal_requestor",
+            "type": "string"
+        },
+        {
+            "name": "latest_appeal_time",
+            "type": "unsigned int"
+        },
+        {
+            "name": "restriction_status",
+            "type": "string"
+        }
+    ]
+}

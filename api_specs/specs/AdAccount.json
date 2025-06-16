@@ -945,6 +945,16 @@
                     "type": "adaccountadsets_billing_event_enum_param"
                 },
                 {
+                    "name": "budget_source",
+                    "required": false,
+                    "type": "adaccountadsets_budget_source_enum_param"
+                },
+                {
+                    "name": "budget_split_set_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "campaign_attribution",
                     "required": false,
                     "type": "Object"
@@ -963,6 +973,11 @@
                     "name": "creative_sequence",
                     "required": false,
                     "type": "list<string>"
+                },
+                {
+                    "name": "creative_sequence_repetition_pattern",
+                    "required": false,
+                    "type": "adaccountadsets_creative_sequence_repetition_pattern_enum_param"
                 },
                 {
                     "name": "daily_budget",
@@ -1036,6 +1051,11 @@
                 },
                 {
                     "name": "is_dynamic_creative",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_incremental_attribution_enabled",
                     "required": false,
                     "type": "bool"
                 },
@@ -1474,6 +1494,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "is_partnership_ad",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "is_voice_clip",
                     "required": false,
                     "type": "bool"
@@ -1522,6 +1547,11 @@
                     "name": "original_projection_type",
                     "required": false,
                     "type": "adaccountadvideos_original_projection_type_enum_param"
+                },
+                {
+                    "name": "partnership_ad_ad_code",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "publish_event_id",
@@ -1754,6 +1784,45 @@
                     "name": "type",
                     "required": false,
                     "type": "adaccountasync_requests_type_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "asyncadcreatives",
+            "return": "AdAsyncRequestSet",
+            "params": [
+                {
+                    "name": "is_completed",
+                    "required": false,
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "asyncadcreatives",
+            "return": "AdAsyncRequestSet",
+            "params": [
+                {
+                    "name": "creative_spec",
+                    "required": true,
+                    "type": "AdCreative"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "notification_mode",
+                    "required": false,
+                    "type": "adaccountasyncadcreatives_notification_mode_enum_param"
+                },
+                {
+                    "name": "notification_uri",
+                    "required": false,
+                    "type": "string"
                 }
             ]
         },
@@ -2047,7 +2116,7 @@
         {
             "method": "GET",
             "endpoint": "connected_instagram_accounts_with_iabp",
-            "return": "InstagramUser",
+            "return": "IGUser",
             "params": [
                 {
                     "name": "business_id",
@@ -2060,12 +2129,6 @@
             "method": "GET",
             "endpoint": "conversion_goals",
             "return": "AdsConversionGoal",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "cpa_guidance",
-            "return": "BespokePartnerGuidanceLaser",
             "params": []
         },
         {
@@ -2572,6 +2635,11 @@
                     "type": "adaccountinsights_level_enum_param"
                 },
                 {
+                    "name": "limit",
+                    "required": false,
+                    "type": "int"
+                },
+                {
                     "name": "product_id_limit",
                     "required": false,
                     "type": "int"
@@ -2684,6 +2752,11 @@
                     "type": "adaccountinsights_level_enum_param"
                 },
                 {
+                    "name": "limit",
+                    "required": false,
+                    "type": "int"
+                },
+                {
                     "name": "product_id_limit",
                     "required": false,
                     "type": "int"
@@ -2733,7 +2806,7 @@
         {
             "method": "GET",
             "endpoint": "instagram_accounts",
-            "return": "InstagramUser",
+            "return": "IGUser",
             "params": []
         },
         {
@@ -2745,88 +2818,6 @@
                     "name": "app_id",
                     "required": true,
                     "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "POST",
-            "endpoint": "managed_partner_ads",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "campaign_group_id",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "campaign_group_status",
-                    "required": false,
-                    "type": "adaccountmanaged_partner_ads_campaign_group_status_enum_param"
-                },
-                {
-                    "name": "conversion_domain",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "custom_event_type",
-                    "required": false,
-                    "type": "adaccountmanaged_partner_ads_custom_event_type_enum_param"
-                },
-                {
-                    "name": "daily_budget",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "dsa_beneficiary",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "dsa_payor",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "end_time",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "lifetime_budget",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "override_creative_text",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "override_targeting_countries",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "product_set_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "start_time",
-                    "required": false,
-                    "type": "unsigned int"
-                },
-                {
-                    "name": "use_marketplace_template",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "use_seller_template",
-                    "required": false,
-                    "type": "bool"
                 }
             ]
         },
@@ -3396,33 +3387,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "suggested_product_tags",
-            "return": "AdAccountSuggestedTag",
-            "params": [
-                {
-                    "name": "image_hash",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "instagram_actor_id",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "is_shops_ad",
-                    "required": true,
-                    "type": "bool"
-                },
-                {
-                    "name": "page_id",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "targetingbrowse",
             "return": "AdAccountTargetingUnified",
             "params": [
@@ -3709,12 +3673,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "value_adjustment_rules",
-            "return": "AdsValueAdjustmentRule",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "value_rule_set",
             "return": "AdsValueAdjustmentRuleCollection",
             "params": [
@@ -3722,6 +3680,11 @@
                     "name": "product_type",
                     "required": false,
                     "type": "adaccountvalue_rule_set_product_type_enum_param"
+                },
+                {
+                    "name": "status",
+                    "required": false,
+                    "type": "adaccountvalue_rule_set_status_enum_param"
                 }
             ]
         },

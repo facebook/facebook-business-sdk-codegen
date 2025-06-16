@@ -1435,7 +1435,7 @@
         {
             "method": "GET",
             "endpoint": "instagram_accounts",
-            "return": "InstagramUser",
+            "return": "IGUser",
             "params": []
         },
         {
@@ -2005,6 +2005,11 @@
                     "type": "Object"
                 },
                 {
+                    "name": "reply_to",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "sender_action",
                     "required": false,
                     "type": "pagemessages_sender_action_enum_param"
@@ -2047,6 +2052,16 @@
                     "name": "audio_enabled",
                     "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "call_hours",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "call_routing",
+                    "required": false,
+                    "type": "map"
                 },
                 {
                     "name": "icon_enabled",
@@ -2188,11 +2203,6 @@
                     "type": "list<map>"
                 },
                 {
-                    "name": "payment_settings",
-                    "required": false,
-                    "type": "Object"
-                },
-                {
                     "name": "persistent_menu",
                     "required": false,
                     "type": "list<Object>"
@@ -2201,11 +2211,6 @@
                     "name": "platform",
                     "required": false,
                     "type": "pagemessenger_profile_platform_enum_param"
-                },
-                {
-                    "name": "target_audience",
-                    "required": false,
-                    "type": "Object"
                 },
                 {
                     "name": "title",
@@ -2304,13 +2309,13 @@
         {
             "method": "GET",
             "endpoint": "page_backed_instagram_accounts",
-            "return": "InstagramUser",
+            "return": "IGUser",
             "params": []
         },
         {
             "method": "POST",
             "endpoint": "page_backed_instagram_accounts",
-            "return": "InstagramUser",
+            "return": "IGUser",
             "params": []
         },
         {
@@ -3618,6 +3623,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "is_partnership_ad",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "is_voice_clip",
                     "required": false,
                     "type": "bool"
@@ -3676,6 +3686,11 @@
                     "name": "original_projection_type",
                     "required": false,
                     "type": "pagevideos_original_projection_type_enum_param"
+                },
+                {
+                    "name": "partnership_ad_ad_code",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "publish_event_id",

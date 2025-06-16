@@ -1,0 +1,28 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "InstagramThread",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "folder",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "participants",
+            "type": "Object"
+        },
+        {
+            "name": "updated_time",
+            "type": "datetime"
+        }
+    ]
+}

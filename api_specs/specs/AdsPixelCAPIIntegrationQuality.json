@@ -2,12 +2,32 @@
     "apis": [],
     "fields": [
         {
+            "name": "acr",
+            "type": "Object"
+        },
+        {
+            "name": "data_freshness",
+            "type": "Object"
+        },
+        {
+            "name": "dedupe_key_feedback",
+            "type": "list<Object>"
+        },
+        {
+            "name": "event_coverage",
+            "type": "Object"
+        },
+        {
             "name": "event_match_quality",
             "type": "Object"
         },
         {
             "name": "event_name",
             "type": "string"
+        },
+        {
+            "name": "event_potential_aly_acr_increase",
+            "type": "Object"
         }
     ]
 }

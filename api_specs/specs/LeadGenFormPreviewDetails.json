@@ -176,6 +176,14 @@
         {
             "name": "view_file_text",
             "type": "string"
+        },
+        {
+            "name": "whats_app_opt_in_body",
+            "type": "string"
+        },
+        {
+            "name": "whats_app_opt_in_title",
+            "type": "string"
         }
     ]
 }

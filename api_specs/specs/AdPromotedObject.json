@@ -114,6 +114,10 @@
             "type": "string"
         },
         {
+            "name": "product_set_optimization",
+            "type": "string"
+        },
+        {
             "name": "retention_days",
             "type": "string"
         },
@@ -123,6 +127,10 @@
         },
         {
             "name": "variation",
+            "type": "string"
+        },
+        {
+            "name": "whats_app_business_phone_number_id",
             "type": "string"
         },
         {

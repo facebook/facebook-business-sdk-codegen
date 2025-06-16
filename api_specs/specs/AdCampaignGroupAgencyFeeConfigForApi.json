@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "agency_fee_pct",
+            "type": "float"
+        },
+        {
+            "name": "is_agency_fee_disabled",
+            "type": "bool"
+        },
+        {
+            "name": "is_default_agency_fee",
+            "type": "bool"
+        }
+    ]
+}

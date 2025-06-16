@@ -2,6 +2,10 @@
     "apis": [],
     "fields": [
         {
+            "name": "destination_type",
+            "type": "string"
+        },
+        {
             "name": "objective",
             "type": "string"
         },

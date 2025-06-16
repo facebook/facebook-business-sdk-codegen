@@ -202,6 +202,14 @@
             "type": "string"
         },
         {
+            "name": "availability_circle_radius",
+            "type": "float"
+        },
+        {
+            "name": "availability_circle_radius_unit",
+            "type": "string"
+        },
+        {
             "name": "body_style",
             "type": "string"
         },

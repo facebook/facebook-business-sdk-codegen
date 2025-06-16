@@ -162,6 +162,18 @@
             "type": "string"
         },
         {
+            "name": "incrementality",
+            "type": "string"
+        },
+        {
+            "name": "incrementality_all_conversions",
+            "type": "string"
+        },
+        {
+            "name": "incrementality_first_conversion",
+            "type": "string"
+        },
+        {
             "name": "inline",
             "type": "string"
         },

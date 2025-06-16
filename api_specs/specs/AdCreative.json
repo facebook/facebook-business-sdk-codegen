@@ -405,6 +405,10 @@
             "type": "AdCreativeRegionalRegulationDisclaimer"
         },
         {
+            "name": "source_facebook_post_id",
+            "type": "string"
+        },
+        {
             "name": "source_instagram_media_id",
             "type": "string"
         },

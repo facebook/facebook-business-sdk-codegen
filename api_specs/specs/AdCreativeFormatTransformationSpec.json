@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "data_source",
+            "type": "list<string>"
+        },
+        {
+            "name": "format",
+            "type": "string"
+        }
+    ]
+}

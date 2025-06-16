@@ -241,6 +241,11 @@
                     "type": "adcampaigngroupinsights_level_enum_param"
                 },
                 {
+                    "name": "limit",
+                    "required": false,
+                    "type": "int"
+                },
+                {
                     "name": "product_id_limit",
                     "required": false,
                     "type": "int"
@@ -351,6 +356,11 @@
                     "name": "level",
                     "required": false,
                     "type": "adcampaigngroupinsights_level_enum_param"
+                },
+                {
+                    "name": "limit",
+                    "required": false,
+                    "type": "int"
                 },
                 {
                     "name": "product_id_limit",

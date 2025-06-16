@@ -51,7 +51,7 @@
     "fields": [
         {
             "name": "code_verification_status",
-            "type": "string"
+            "type": "WhatsAppBusinessPreVerifiedPhoneNumber_code_verification_status"
         },
         {
             "name": "code_verification_time",

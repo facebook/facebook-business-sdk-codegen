@@ -1,6 +1,45 @@
 {
     "apis": [
         {
+            "method": "GET",
+            "endpoint": "branded_content_media",
+            "return": "IGMediaExportForCAM",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "insights",
+            "return": "IGUserExportForCAMInsightsResult",
+            "params": [
+                {
+                    "name": "breakdown",
+                    "required": false,
+                    "type": "iguserexportforcaminsights_breakdown_enum_param"
+                },
+                {
+                    "name": "metrics",
+                    "required": false,
+                    "type": "list<iguserexportforcaminsights_metrics_enum_param>"
+                },
+                {
+                    "name": "period",
+                    "required": false,
+                    "type": "iguserexportforcaminsights_period_enum_param"
+                },
+                {
+                    "name": "time_range",
+                    "required": false,
+                    "type": "iguserexportforcaminsights_time_range_enum_param"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "recent_media",
+            "return": "IGMediaExportForCAM",
+            "params": []
+        },
+        {
             "name": "#get",
             "method": "GET",
             "return": "IGUserExportForCAM",
@@ -9,12 +48,32 @@
     ],
     "fields": [
         {
+            "name": "age_bucket",
+            "type": "string"
+        },
+        {
+            "name": "biography",
+            "type": "string"
+        },
+        {
+            "name": "country",
+            "type": "string"
+        },
+        {
             "name": "email",
+            "type": "string"
+        },
+        {
+            "name": "gender",
             "type": "string"
         },
         {
             "name": "id",
             "type": "string"
+        },
+        {
+            "name": "is_account_verified",
+            "type": "bool"
         },
         {
             "name": "is_paid_partnership_messages_enabled",
@@ -23,6 +82,10 @@
         {
             "name": "messaging_id",
             "type": "string"
+        },
+        {
+            "name": "onboarded_status",
+            "type": "bool"
         },
         {
             "name": "portfolio_url",

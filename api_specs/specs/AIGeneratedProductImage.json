@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "flagged_for_manual_review",
+            "type": "bool"
+        },
+        {
+            "name": "transformed_image_url",
+            "type": "string"
+        }
+    ]
+}

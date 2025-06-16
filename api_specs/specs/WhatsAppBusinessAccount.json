@@ -358,6 +358,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "degrees_of_freedom_spec",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "display_format",
                     "required": false,
                     "type": "whatsappbusinessaccountmessage_templates_display_format_enum_param"
@@ -597,6 +602,11 @@
                     "name": "start",
                     "required": true,
                     "type": "unsigned int"
+                },
+                {
+                    "name": "tiers",
+                    "required": false,
+                    "type": "list<string>"
                 }
             ]
         },
@@ -921,6 +931,10 @@
         },
         {
             "name": "is_enabled_for_insights",
+            "type": "bool"
+        },
+        {
+            "name": "is_shared_with_partners",
             "type": "bool"
         },
         {

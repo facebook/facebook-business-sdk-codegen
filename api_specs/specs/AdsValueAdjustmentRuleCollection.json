@@ -1,6 +1,12 @@
 {
     "apis": [
         {
+            "method": "POST",
+            "endpoint": "delete_rule_set",
+            "return": "AdsValueAdjustmentRuleCollection",
+            "params": []
+        },
+        {
             "method": "GET",
             "endpoint": "rules",
             "return": "AdsValueAdjustmentRulePersona",
@@ -50,6 +56,10 @@
         },
         {
             "name": "product_type",
+            "type": "string"
+        },
+        {
+            "name": "status",
             "type": "string"
         }
     ]

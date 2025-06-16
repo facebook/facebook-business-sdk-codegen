@@ -364,6 +364,28 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "ads_dataset",
+            "return": "AdsDataset",
+            "params": [
+                {
+                    "name": "id_filter",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "name_filter",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "sort_by",
+                    "required": false,
+                    "type": "businessads_dataset_sort_by_enum_param"
+                }
+            ]
+        },
+        {
             "method": "POST",
             "endpoint": "ads_dataset",
             "return": "Business",
@@ -568,6 +590,11 @@
                     "name": "role",
                     "required": false,
                     "type": "businessbusiness_users_role_enum_param"
+                },
+                {
+                    "name": "tasks",
+                    "required": false,
+                    "type": "list<businessbusiness_users_tasks_enum_param>"
                 }
             ]
         },
@@ -980,7 +1007,7 @@
         {
             "method": "GET",
             "endpoint": "instagram_accounts",
-            "return": "InstagramUser",
+            "return": "IGUser",
             "params": []
         },
         {
@@ -1054,6 +1081,18 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "managed_partner_ads_funding_source_details",
+            "return": "FundingSourceDetailsCoupon",
+            "params": [
+                {
+                    "name": "year_quarter",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "POST",
             "endpoint": "managed_partner_business_setup",
             "return": "Business",
@@ -1115,7 +1154,7 @@
         {
             "method": "POST",
             "endpoint": "managed_partner_businesses",
-            "return": "Object",
+            "return": "ManagedPartnerBusiness",
             "params": [
                 {
                     "name": "ad_account_currency",
@@ -1303,6 +1342,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "is_sgw_pixel_from_meta_pixel",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "partner_name",
                     "required": false,
                     "type": "string"
@@ -1310,6 +1354,21 @@
                 {
                     "name": "pixel_id",
                     "required": true,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "sgw_account_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "sgw_instance_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "sgw_pixel_id",
+                    "required": false,
                     "type": "unsigned int"
                 }
             ]
@@ -1450,7 +1509,7 @@
         {
             "method": "GET",
             "endpoint": "owned_instagram_accounts",
-            "return": "InstagramUser",
+            "return": "IGUser",
             "params": []
         },
         {
@@ -2131,6 +2190,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "is_partnership_ad",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "is_voice_clip",
                     "required": false,
                     "type": "bool"
@@ -2174,6 +2238,11 @@
                     "name": "original_projection_type",
                     "required": false,
                     "type": "businessvideos_original_projection_type_enum_param"
+                },
+                {
+                    "name": "partnership_ad_ad_code",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "publish_event_id",

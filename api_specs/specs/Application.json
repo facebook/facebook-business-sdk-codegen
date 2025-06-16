@@ -768,6 +768,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "connected_client_businesses",
+            "return": "Business",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "da_checks",
             "return": "DACheck",
             "params": [
@@ -1108,6 +1114,35 @@
             "endpoint": "server_domain_infos",
             "return": "ApplicationServerDomainInfos",
             "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "sgw_dataset_status",
+            "return": "ApplicationSgwDatasetStatus",
+            "params": [
+                {
+                    "name": "dataset_id",
+                    "required": true,
+                    "type": "unsigned int"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "sgw_install_deferral_link",
+            "return": "ApplicationSgwInstallDeferralLink",
+            "params": [
+                {
+                    "name": "client_ip",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "dataset_id",
+                    "required": true,
+                    "type": "unsigned int"
+                }
+            ]
         },
         {
             "method": "GET",

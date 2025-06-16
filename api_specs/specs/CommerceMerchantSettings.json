@@ -204,6 +204,10 @@
     ],
     "fields": [
         {
+            "name": "checkout_config",
+            "type": "string"
+        },
+        {
             "name": "checkout_message",
             "type": "string"
         },
@@ -232,6 +236,10 @@
             "type": "Object"
         },
         {
+            "name": "korea_ftc_listing",
+            "type": "string"
+        },
+        {
             "name": "merchant_page",
             "type": "Profile"
         },
@@ -245,6 +253,14 @@
         },
         {
             "name": "payment_provider",
+            "type": "string"
+        },
+        {
+            "name": "privacy_policy_localized",
+            "type": "string"
+        },
+        {
+            "name": "return_policy_localized",
             "type": "string"
         },
         {

@@ -200,6 +200,18 @@
         },
         {
             "method": "GET",
+            "endpoint": "check_marketplace_partner_sellers_status",
+            "return": "ProductCatalogCheckMarketplacePartnerSellersStatus",
+            "params": [
+                {
+                    "name": "session_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "collaborative_ads_lsb_image_bank",
             "return": "CPASLsbImageBank",
             "params": []
@@ -361,6 +373,28 @@
                     "name": "filter",
                     "required": false,
                     "type": "Object"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "geolocated_items_batch",
+            "return": "ProductCatalog",
+            "params": [
+                {
+                    "name": "allow_upsert",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "item_type",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "requests",
+                    "required": true,
+                    "type": "map"
                 }
             ]
         },
@@ -673,6 +707,38 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "marketplace_partner_signals",
+            "return": "ProductCatalog",
+            "params": [
+                {
+                    "name": "event_name",
+                    "required": true,
+                    "type": "productcatalogmarketplace_partner_signals_event_name_enum_param"
+                },
+                {
+                    "name": "event_source_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "event_time",
+                    "required": true,
+                    "type": "datetime"
+                },
+                {
+                    "name": "order_data",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "user_data",
+                    "required": true,
+                    "type": "map"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "pricing_variables_batch",
             "return": "ProductCatalogPricingVariablesBatch",
@@ -974,6 +1040,11 @@
                     "name": "additional_variant_attributes",
                     "required": false,
                     "type": "map"
+                },
+                {
+                    "name": "age_group",
+                    "required": false,
+                    "type": "productcatalogproducts_age_group_enum_param"
                 },
                 {
                     "name": "android_app_name",
@@ -1349,6 +1420,18 @@
                     "name": "windows_phone_url",
                     "required": false,
                     "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "update_generated_image_config",
+            "return": "ProductCatalog",
+            "params": [
+                {
+                    "name": "data",
+                    "required": true,
+                    "type": "list<Object>"
                 }
             ]
         },

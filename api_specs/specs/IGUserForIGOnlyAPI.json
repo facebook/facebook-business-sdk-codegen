@@ -2,6 +2,18 @@
     "apis": [
         {
             "method": "GET",
+            "endpoint": "business_messaging_feature_status",
+            "return": "BusinessMessagingFeatureStatus",
+            "params": [
+                {
+                    "name": "feature",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "content_publishing_limit",
             "return": "ContentPublishingLimitResponse",
             "params": [

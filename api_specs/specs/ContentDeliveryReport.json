@@ -2,11 +2,19 @@
     "apis": [],
     "fields": [
         {
+            "name": "content_id",
+            "type": "string"
+        },
+        {
             "name": "content_name",
             "type": "string"
         },
         {
             "name": "content_url",
+            "type": "string"
+        },
+        {
+            "name": "creator_id",
             "type": "string"
         },
         {

@@ -22,7 +22,13 @@
             "name": "#delete",
             "method": "DELETE",
             "return": "Object",
-            "params": []
+            "params": [
+                {
+                    "name": "ad_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
         },
         {
             "name": "#get",
@@ -35,6 +41,11 @@
             "method": "POST",
             "return": "IGComment",
             "params": [
+                {
+                    "name": "ad_id",
+                    "required": false,
+                    "type": "string"
+                },
                 {
                     "name": "hide",
                     "required": true,

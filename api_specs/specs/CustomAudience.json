@@ -89,6 +89,11 @@
                     "type": "unsigned int"
                 },
                 {
+                    "name": "value_country",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "value_currency",
                     "required": false,
                     "type": "string"

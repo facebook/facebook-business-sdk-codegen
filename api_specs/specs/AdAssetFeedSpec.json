@@ -102,6 +102,10 @@
             "type": "list<AdAssetFeedSpecTitle>"
         },
         {
+            "name": "translations",
+            "type": "list<Object>"
+        },
+        {
             "name": "upcoming_events",
             "type": "list<Object>"
         },

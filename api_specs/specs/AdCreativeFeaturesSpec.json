@@ -26,6 +26,10 @@
             "type": "AdCreativeFeatureDetails"
         },
         {
+            "name": "biz_ai",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "carousel_to_video",
             "type": "AdCreativeFeatureDetails"
         },
@@ -71,6 +75,10 @@
         },
         {
             "name": "feed_caption_optimization",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "hide_price",
             "type": "AdCreativeFeatureDetails"
         },
         {
@@ -146,6 +154,10 @@
             "type": "AdCreativeFeatureDetails"
         },
         {
+            "name": "music_generation",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "pac_relaxation",
             "type": "AdCreativeFeatureDetails"
         },
@@ -163,6 +175,14 @@
         },
         {
             "name": "profile_card",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "profile_extension",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "show_summary",
             "type": "AdCreativeFeatureDetails"
         },
         {
@@ -186,6 +206,10 @@
             "type": "AdCreativeFeatureDetails"
         },
         {
+            "name": "text_translation",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "video_auto_crop",
             "type": "AdCreativeFeatureDetails"
         },
@@ -195,6 +219,10 @@
         },
         {
             "name": "video_highlight",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "video_to_image",
             "type": "AdCreativeFeatureDetails"
         },
         {

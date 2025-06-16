@@ -89,6 +89,11 @@
                     "type": "map"
                 },
                 {
+                    "name": "age_group",
+                    "required": false,
+                    "type": "productitem_age_group"
+                },
+                {
                     "name": "android_app_name",
                     "required": false,
                     "type": "string"
@@ -591,6 +596,14 @@
             "type": "ProductItem_gender"
         },
         {
+            "name": "generated_background_images",
+            "type": "list<AIGeneratedProductImage>"
+        },
+        {
+            "name": "generated_background_images_ad_usage",
+            "type": "bool"
+        },
+        {
             "name": "gtin",
             "type": "string"
         },
@@ -773,6 +786,10 @@
         {
             "name": "video_fetch_status",
             "type": "ProductItem_video_fetch_status"
+        },
+        {
+            "name": "videos",
+            "type": "list<ProductItemVideoData>"
         },
         {
             "name": "visibility",

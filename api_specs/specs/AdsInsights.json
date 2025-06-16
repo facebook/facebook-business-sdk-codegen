@@ -142,6 +142,30 @@
             "type": "list<AdsActionStats>"
         },
         {
+            "name": "converted_product_app_custom_event_fb_mobile_purchase",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "converted_product_app_custom_event_fb_mobile_purchase_value",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "converted_product_offline_purchase",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "converted_product_offline_purchase_value",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "converted_product_omni_purchase",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "converted_product_omni_purchase_values",
+            "type": "list<AdsActionStats>"
+        },
+        {
             "name": "converted_product_quantity",
             "type": "list<AdsActionStats>"
         },
@@ -150,11 +174,51 @@
             "type": "list<AdsActionStats>"
         },
         {
+            "name": "converted_product_website_pixel_purchase",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "converted_product_website_pixel_purchase_value",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "converted_promoted_product_app_custom_event_fb_mobile_purchase",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "converted_promoted_product_app_custom_event_fb_mobile_purchase_value",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "converted_promoted_product_offline_purchase",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "converted_promoted_product_offline_purchase_value",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "converted_promoted_product_omni_purchase",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "converted_promoted_product_omni_purchase_values",
+            "type": "list<AdsActionStats>"
+        },
+        {
             "name": "converted_promoted_product_quantity",
             "type": "list<AdsActionStats>"
         },
         {
             "name": "converted_promoted_product_value",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "converted_promoted_product_website_pixel_purchase",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "converted_promoted_product_website_pixel_purchase_value",
             "type": "list<AdsActionStats>"
         },
         {
@@ -198,12 +262,20 @@
             "type": "string"
         },
         {
+            "name": "cost_per_objective_result",
+            "type": "list<Object>"
+        },
+        {
             "name": "cost_per_one_thousand_ad_impression",
             "type": "list<AdsActionStats>"
         },
         {
             "name": "cost_per_outbound_click",
             "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "cost_per_result",
+            "type": "list<Object>"
         },
         {
             "name": "cost_per_thruplay",
@@ -358,11 +430,19 @@
             "type": "string"
         },
         {
+            "name": "landing_page_view_per_link_click",
+            "type": "string"
+        },
+        {
             "name": "landing_page_view_per_purchase_rate",
             "type": "string"
         },
         {
             "name": "location",
+            "type": "string"
+        },
+        {
+            "name": "marketing_messages_click_rate_benchmark",
             "type": "string"
         },
         {
@@ -414,6 +494,10 @@
             "type": "string"
         },
         {
+            "name": "marketing_messages_read_rate_benchmark",
+            "type": "string"
+        },
+        {
             "name": "marketing_messages_sent",
             "type": "string"
         },
@@ -450,6 +534,14 @@
             "type": "string"
         },
         {
+            "name": "objective_result_rate",
+            "type": "list<Object>"
+        },
+        {
+            "name": "objective_results",
+            "type": "list<Object>"
+        },
+        {
             "name": "onsite_conversion_messaging_detected_purchase_deduped",
             "type": "list<AdsActionStats>"
         },
@@ -467,6 +559,58 @@
         },
         {
             "name": "place_page_name",
+            "type": "string"
+        },
+        {
+            "name": "product_brand",
+            "type": "string"
+        },
+        {
+            "name": "product_category",
+            "type": "string"
+        },
+        {
+            "name": "product_content_id",
+            "type": "string"
+        },
+        {
+            "name": "product_custom_label_0",
+            "type": "string"
+        },
+        {
+            "name": "product_custom_label_1",
+            "type": "string"
+        },
+        {
+            "name": "product_custom_label_2",
+            "type": "string"
+        },
+        {
+            "name": "product_custom_label_3",
+            "type": "string"
+        },
+        {
+            "name": "product_custom_label_4",
+            "type": "string"
+        },
+        {
+            "name": "product_group_content_id",
+            "type": "string"
+        },
+        {
+            "name": "product_group_retailer_id",
+            "type": "string"
+        },
+        {
+            "name": "product_name",
+            "type": "string"
+        },
+        {
+            "name": "product_retailer_id",
+            "type": "string"
+        },
+        {
+            "name": "purchase_per_landing_page_view",
             "type": "string"
         },
         {
@@ -490,8 +634,16 @@
             "type": "string"
         },
         {
+            "name": "result_rate",
+            "type": "list<Object>"
+        },
+        {
             "name": "result_values_performance_indicator",
             "type": "string"
+        },
+        {
+            "name": "results",
+            "type": "list<Object>"
         },
         {
             "name": "shops_assisted_purchases",

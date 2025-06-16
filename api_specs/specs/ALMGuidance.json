@@ -10,6 +10,10 @@
             "type": "list<Object>"
         },
         {
+            "name": "opportunity_score",
+            "type": "float"
+        },
+        {
             "name": "parent_advertiser_id",
             "type": "string"
         },

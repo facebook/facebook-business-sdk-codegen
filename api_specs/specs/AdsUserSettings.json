@@ -57,6 +57,10 @@
             "type": "string"
         },
         {
+            "name": "aplusc_videouncrop_opt_in_status",
+            "type": "string"
+        },
+        {
             "name": "autoflow_lite_opt_in_status",
             "type": "string"
         },
@@ -93,6 +97,14 @@
             "type": "string"
         },
         {
+            "name": "da_add_overlays_opt_in_status",
+            "type": "string"
+        },
+        {
+            "name": "da_hide_price_opt_in_status",
+            "type": "string"
+        },
+        {
             "name": "default_creation_mode",
             "type": "string"
         },
@@ -125,6 +137,10 @@
             "type": "string"
         },
         {
+            "name": "image_brightness_and_contrast_opt_in_status",
+            "type": "string"
+        },
+        {
             "name": "image_expansion_opt_in_status",
             "type": "string"
         },
@@ -149,6 +165,10 @@
             "type": "datetime"
         },
         {
+            "name": "metadata_brand_kit_opt_in_status",
+            "type": "string"
+        },
+        {
             "name": "music_on_reels_opt_in",
             "type": "list<map<string, string>>"
         },
@@ -165,6 +185,18 @@
             "type": "list<string>"
         },
         {
+            "name": "pac_relaxation_opt_in_status",
+            "type": "string"
+        },
+        {
+            "name": "placement_group_square_opt_in_status",
+            "type": "string"
+        },
+        {
+            "name": "placement_group_vertical_opt_in_status",
+            "type": "string"
+        },
+        {
             "name": "previously_seen_recommendations",
             "type": "list<string>"
         },
@@ -174,6 +206,10 @@
         },
         {
             "name": "sa_off_conv_loc_seen",
+            "type": "string"
+        },
+        {
+            "name": "saoff_published_l2_conv_loc_seen",
             "type": "string"
         },
         {
@@ -250,6 +286,10 @@
         },
         {
             "name": "text_optimizations_text_extraction_opt_in_status",
+            "type": "string"
+        },
+        {
+            "name": "text_translation_opt_in_status",
             "type": "string"
         },
         {

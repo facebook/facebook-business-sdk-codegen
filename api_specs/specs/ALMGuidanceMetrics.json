@@ -34,12 +34,48 @@
             "type": "int"
         },
         {
+            "name": "l28_has_click",
+            "type": "bool"
+        },
+        {
+            "name": "l28_has_impression",
+            "type": "bool"
+        },
+        {
             "name": "l28_impression",
             "type": "int"
         },
         {
+            "name": "l28_is_actioned",
+            "type": "bool"
+        },
+        {
+            "name": "l28_is_adopted",
+            "type": "bool"
+        },
+        {
+            "name": "l28_is_available",
+            "type": "bool"
+        },
+        {
+            "name": "l28_is_pitched",
+            "type": "bool"
+        },
+        {
             "name": "l28_pitch",
             "type": "int"
+        },
+        {
+            "name": "l28d_adopted_revenue",
+            "type": "float"
+        },
+        {
+            "name": "last_actioned_ds",
+            "type": "string"
+        },
+        {
+            "name": "last_adopted_ds",
+            "type": "string"
         },
         {
             "name": "last_pitch_ds",

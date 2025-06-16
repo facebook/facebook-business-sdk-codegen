@@ -1,0 +1,32 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "AdAccountAgencyFeeConfig",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "can_add_agency_fee_to_invoice",
+            "type": "bool"
+        },
+        {
+            "name": "default_agency_fee_pct",
+            "type": "float"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "is_agency_fee_disabled",
+            "type": "bool"
+        },
+        {
+            "name": "status",
+            "type": "AdAccountAgencyFeeConfig_status"
+        }
+    ]
+}

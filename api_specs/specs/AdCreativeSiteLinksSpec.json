@@ -2,6 +2,18 @@
     "apis": [],
     "fields": [
         {
+            "name": "is_site_link_sticky",
+            "type": "bool"
+        },
+        {
+            "name": "site_link_hash",
+            "type": "string"
+        },
+        {
+            "name": "site_link_id",
+            "type": "string"
+        },
+        {
             "name": "site_link_image_hash",
             "type": "string"
         },

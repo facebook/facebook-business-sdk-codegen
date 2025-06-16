@@ -89,6 +89,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "tasks",
+                    "required": false,
+                    "type": "list<businessuser_tasks>"
+                },
+                {
                     "name": "title",
                     "required": false,
                     "type": "string"
@@ -144,6 +149,10 @@
         {
             "name": "role",
             "type": "string"
+        },
+        {
+            "name": "tasks",
+            "type": "list<string>"
         },
         {
             "name": "title",

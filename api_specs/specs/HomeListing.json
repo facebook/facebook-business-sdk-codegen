@@ -329,6 +329,14 @@
             "type": "list<string>"
         },
         {
+            "name": "securitydeposit_currency",
+            "type": "string"
+        },
+        {
+            "name": "securitydeposit_price",
+            "type": "string"
+        },
+        {
             "name": "tags",
             "type": "list<string>"
         },

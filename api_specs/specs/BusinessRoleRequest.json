@@ -21,6 +21,11 @@
                     "name": "role",
                     "required": false,
                     "type": "businessrolerequest_role"
+                },
+                {
+                    "name": "tasks",
+                    "required": false,
+                    "type": "list<businessrolerequest_tasks>"
                 }
             ]
         }
@@ -77,6 +82,10 @@
         {
             "name": "status",
             "type": "string"
+        },
+        {
+            "name": "tasks",
+            "type": "list<string>"
         },
         {
             "name": "updated_by",

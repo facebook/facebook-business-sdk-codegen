@@ -73,9 +73,29 @@
                     "type": "bool"
                 },
                 {
+                    "name": "is_sgw_pixel_from_meta_pixel",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "partner_name",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "sgw_account_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "sgw_instance_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "sgw_pixel_id",
+                    "required": false,
+                    "type": "unsigned int"
                 }
             ]
         }
@@ -130,11 +150,27 @@
             "type": "bool"
         },
         {
+            "name": "is_sgw_pixel_from_meta_pixel",
+            "type": "bool"
+        },
+        {
             "name": "partner_name",
             "type": "string"
         },
         {
             "name": "pixel_id",
+            "type": "string"
+        },
+        {
+            "name": "sgw_account_id",
+            "type": "string"
+        },
+        {
+            "name": "sgw_instance_url",
+            "type": "string"
+        },
+        {
+            "name": "sgw_pixel_id",
             "type": "string"
         }
     ]

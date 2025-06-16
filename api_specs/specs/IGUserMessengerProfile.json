@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "ice_breakers",
+            "type": "list<Object>"
+        },
+        {
+            "name": "persistent_menu",
+            "type": "list<Object>"
+        }
+    ]
+}

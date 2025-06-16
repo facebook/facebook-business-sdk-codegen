@@ -1,0 +1,36 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "CopyrightOwnershipTransfer",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "receiving_rights_holder",
+            "type": "Profile"
+        },
+        {
+            "name": "sending_rights_holder",
+            "type": "Profile"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "transfer_territories",
+            "type": "list<string>"
+        },
+        {
+            "name": "transfer_time",
+            "type": "datetime"
+        }
+    ]
+}

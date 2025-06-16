@@ -239,12 +239,6 @@
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "instagram_backed_threads_user",
-            "return": "ThreadsUser",
-            "params": []
-        },
-        {
             "method": "GET",
             "endpoint": "live_media",
             "return": "IGMedia",
@@ -481,6 +475,23 @@
                 {
                     "name": "title",
                     "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "welcome_message_flows",
+            "return": "ShadowIGUserCTXPartnerAppWelcomeMessageFlow",
+            "params": [
+                {
+                    "name": "app_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "flow_id",
+                    "required": false,
                     "type": "string"
                 }
             ]
