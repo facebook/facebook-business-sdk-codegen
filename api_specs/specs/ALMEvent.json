@@ -37,6 +37,10 @@
             "type": "string"
         },
         {
+            "name": "guidance_type",
+            "type": "string"
+        },
+        {
             "name": "id",
             "type": "string"
         },

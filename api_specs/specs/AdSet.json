@@ -608,6 +608,11 @@
                     "type": "list<map>"
                 },
                 {
+                    "name": "automatic_manual_state",
+                    "required": false,
+                    "type": "adcampaign_automatic_manual_state"
+                },
+                {
                     "name": "bid_adjustments",
                     "required": false,
                     "type": "Object"
@@ -870,6 +875,10 @@
         {
             "name": "attribution_spec",
             "type": "list<AttributionSpec>"
+        },
+        {
+            "name": "automatic_manual_state",
+            "type": "string"
         },
         {
             "name": "bid_adjustments",

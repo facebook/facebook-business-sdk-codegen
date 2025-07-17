@@ -248,6 +248,10 @@
             "type": "string"
         },
         {
+            "name": "offsite_iab_checkout_enabled_countries",
+            "type": "list<string>"
+        },
+        {
             "name": "onsite_commerce_merchant",
             "type": "Object"
         },
@@ -270,6 +274,10 @@
         {
             "name": "review_rejection_reasons",
             "type": "list<string>"
+        },
+        {
+            "name": "shops_ads_setup",
+            "type": "Object"
         },
         {
             "name": "terms",

@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "auto_change_budget_to_winner",
+            "type": "int"
+        }
+    ]
+}

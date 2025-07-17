@@ -438,6 +438,10 @@
             "type": "string"
         },
         {
+            "name": "link_clicks_per_results",
+            "type": "list<Object>"
+        },
+        {
             "name": "location",
             "type": "string"
         },
@@ -610,6 +614,10 @@
             "type": "string"
         },
         {
+            "name": "product_views",
+            "type": "string"
+        },
+        {
             "name": "purchase_per_landing_page_view",
             "type": "string"
         },
@@ -655,6 +663,10 @@
         },
         {
             "name": "spend",
+            "type": "string"
+        },
+        {
+            "name": "total_card_view",
             "type": "string"
         },
         {

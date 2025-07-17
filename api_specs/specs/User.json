@@ -295,6 +295,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "assigned_whatsapp_business_accounts",
+            "return": "WhatsAppBusinessAccount",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "avatars",
             "return": "Avatar",
             "params": []

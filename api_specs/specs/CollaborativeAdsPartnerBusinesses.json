@@ -8,6 +8,10 @@
         {
             "name": "dedicated_partner_business_info",
             "type": "Business"
+        },
+        {
+            "name": "dedicated_partners_business_info",
+            "type": "list<Business>"
         }
     ]
 }

@@ -253,6 +253,10 @@
             "type": "string"
         },
         {
+            "name": "destination_spec",
+            "type": "AdCreativeDestinationSpec"
+        },
+        {
             "name": "dynamic_ad_voice",
             "type": "string"
         },
@@ -279,6 +283,10 @@
         {
             "name": "facebook_branded_content",
             "type": "AdCreativeFacebookBrandedContent"
+        },
+        {
+            "name": "format_transformation_spec",
+            "type": "AdCreativeFormatTransformationSpec"
         },
         {
             "name": "id",

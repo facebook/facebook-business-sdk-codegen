@@ -29,6 +29,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "enabled_collab_terms",
+                    "required": false,
+                    "type": "list<productcatalogagencies_enabled_collab_terms_enum_param>"
+                },
+                {
                     "name": "permitted_roles",
                     "required": false,
                     "type": "list<productcatalogagencies_permitted_roles_enum_param>"

@@ -28,6 +28,10 @@
         {
             "name": "source_url",
             "type": "string"
+        },
+        {
+            "name": "website_summary_spec",
+            "type": "Object"
         }
     ]
 }

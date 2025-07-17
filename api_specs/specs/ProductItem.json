@@ -504,6 +504,10 @@
             "type": "list<string>"
         },
         {
+            "name": "capabilities_disabled_by_user",
+            "type": "list<string>"
+        },
+        {
             "name": "capability_to_review_status",
             "type": "list<map<string, ProductItem_capability_to_review_status>>"
         },

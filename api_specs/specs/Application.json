@@ -826,18 +826,6 @@
             "params": []
         },
         {
-            "method": "GET",
-            "endpoint": "message_templates",
-            "return": "BusinessMessagingPartnerTemplate",
-            "params": [
-                {
-                    "name": "template_id",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "POST",
             "endpoint": "mmp_auditing",
             "return": "Object",

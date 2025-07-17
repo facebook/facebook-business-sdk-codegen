@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "delegate_page_for_ads_only_id",
+            "type": "string"
+        },
+        {
+            "name": "is_iabp",
+            "type": "bool"
+        },
+        {
+            "name": "is_managed",
+            "type": "bool"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "profile_picture_url",
+            "type": "string"
+        }
+    ]
+}

@@ -17,6 +17,10 @@
             "type": "int"
         },
         {
+            "name": "next_eligible_time_for_paid_messaging",
+            "type": "int"
+        },
+        {
             "name": "notification_messages_frequency",
             "type": "string"
         },

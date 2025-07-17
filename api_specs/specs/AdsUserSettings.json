@@ -273,6 +273,10 @@
             "type": "string"
         },
         {
+            "name": "show_summary_opt_in_status",
+            "type": "string"
+        },
+        {
             "name": "static_ad_product_extensions_opt_in",
             "type": "string"
         },

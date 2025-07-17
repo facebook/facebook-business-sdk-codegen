@@ -282,14 +282,6 @@
             "type": "string"
         },
         {
-            "name": "sub_categories",
-            "type": "list<string>"
-        },
-        {
-            "name": "ticket_selling_status",
-            "type": "string"
-        },
-        {
             "name": "ticket_setting",
             "type": "EventTicketSetting"
         },

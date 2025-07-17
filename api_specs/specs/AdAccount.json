@@ -266,6 +266,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "destination_spec",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "dynamic_ad_voice",
                     "required": false,
                     "type": "adaccountadcreatives_dynamic_ad_voice_enum_param"
@@ -279,6 +284,11 @@
                     "name": "facebook_branded_content",
                     "required": false,
                     "type": "map"
+                },
+                {
+                    "name": "format_transformation_spec",
+                    "required": false,
+                    "type": "list<map>"
                 },
                 {
                     "name": "image_crops",
@@ -918,6 +928,11 @@
                     "name": "attribution_spec",
                     "required": false,
                     "type": "list<map>"
+                },
+                {
+                    "name": "automatic_manual_state",
+                    "required": false,
+                    "type": "adaccountadsets_automatic_manual_state_enum_param"
                 },
                 {
                     "name": "bid_adjustments",
@@ -3282,6 +3297,11 @@
                     "name": "target_spec",
                     "required": false,
                     "type": "Targeting"
+                },
+                {
+                    "name": "trending_topics_spec",
+                    "required": false,
+                    "type": "map"
                 },
                 {
                     "name": "video_view_length_constraint",

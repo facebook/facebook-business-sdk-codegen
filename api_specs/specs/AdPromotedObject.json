@@ -26,8 +26,16 @@
             "type": "AdPromotedObject_custom_event_type"
         },
         {
+            "name": "dataset_split_id",
+            "type": "string"
+        },
+        {
             "name": "event_id",
             "type": "string"
+        },
+        {
+            "name": "full_funnel_objective",
+            "type": "AdPromotedObject_full_funnel_objective"
         },
         {
             "name": "fundraiser_campaign_id",
@@ -56,6 +64,10 @@
         {
             "name": "object_store_url",
             "type": "string"
+        },
+        {
+            "name": "object_store_urls",
+            "type": "list<string>"
         },
         {
             "name": "offer_id",

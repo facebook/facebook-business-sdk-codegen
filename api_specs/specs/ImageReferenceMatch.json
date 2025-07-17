@@ -9,6 +9,10 @@
     ],
     "fields": [
         {
+            "name": "conflict_status",
+            "type": "string"
+        },
+        {
             "name": "conflicting_countries",
             "type": "list<string>"
         },

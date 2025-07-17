@@ -206,6 +206,10 @@
             "type": "AdCreativeFeatureDetails"
         },
         {
+            "name": "text_overlay_translation",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "text_translation",
             "type": "AdCreativeFeatureDetails"
         },
@@ -227,6 +231,10 @@
         },
         {
             "name": "video_uncrop",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "wa_mm_text_truncation_length",
             "type": "AdCreativeFeatureDetails"
         }
     ]

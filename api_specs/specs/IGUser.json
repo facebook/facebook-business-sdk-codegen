@@ -174,6 +174,83 @@
         },
         {
             "method": "GET",
+            "endpoint": "creator_marketplace_creators",
+            "return": "IGUserExportForCAM",
+            "params": [
+                {
+                    "name": "creator_age_bucket",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "creator_countries",
+                    "required": false,
+                    "type": "list<shadowigusercreator_marketplace_creators_creator_countries_enum_param>"
+                },
+                {
+                    "name": "creator_gender",
+                    "required": false,
+                    "type": "list<shadowigusercreator_marketplace_creators_creator_gender_enum_param>"
+                },
+                {
+                    "name": "creator_interests",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "creator_max_engaged_accounts",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "creator_max_followers",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "creator_min_engaged_accounts",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "creator_min_followers",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "major_audience_age_bucket",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
+                    "name": "major_audience_countries",
+                    "required": false,
+                    "type": "list<shadowigusercreator_marketplace_creators_major_audience_countries_enum_param>"
+                },
+                {
+                    "name": "major_audience_gender",
+                    "required": false,
+                    "type": "list<shadowigusercreator_marketplace_creators_major_audience_gender_enum_param>"
+                },
+                {
+                    "name": "query",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "reels_interaction_rate",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "similar_to_creators",
+                    "required": false,
+                    "type": "list<string>"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "dataset",
             "return": "Dataset",
             "params": []
@@ -234,6 +311,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "instagram_backed_threads_user",
+            "return": "ThreadsUser",
+            "params": []
+        },
+        {
+            "method": "POST",
             "endpoint": "instagram_backed_threads_user",
             "return": "ThreadsUser",
             "params": []

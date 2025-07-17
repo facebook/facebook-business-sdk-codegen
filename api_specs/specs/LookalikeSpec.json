@@ -6,7 +6,15 @@
             "type": "string"
         },
         {
+            "name": "is_created_by_recommended_dfca",
+            "type": "bool"
+        },
+        {
             "name": "is_financial_service",
+            "type": "bool"
+        },
+        {
+            "name": "is_parent_lal",
             "type": "bool"
         },
         {

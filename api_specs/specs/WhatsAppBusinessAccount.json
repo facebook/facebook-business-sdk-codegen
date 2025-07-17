@@ -946,6 +946,10 @@
             "type": "string"
         },
         {
+            "name": "marketing_messages_onboarding_status",
+            "type": "string"
+        },
+        {
             "name": "message_template_namespace",
             "type": "string"
         },

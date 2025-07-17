@@ -37,6 +37,12 @@
             "params": []
         },
         {
+            "method": "GET",
+            "endpoint": "assigned_whatsapp_business_accounts",
+            "return": "WhatsAppBusinessAccount",
+            "params": []
+        },
+        {
             "name": "#get",
             "method": "GET",
             "return": "SystemUser",

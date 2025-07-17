@@ -1,4 +1,9 @@
 {
     "apis": [],
-    "fields": []
+    "fields": [
+        {
+            "name": "structured_messaging_commerce",
+            "type": "Object"
+        }
+    ]
 }

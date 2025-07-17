@@ -113,6 +113,10 @@
             "type": "bool"
         },
         {
+            "name": "has_used_quick_views_panel",
+            "type": "bool"
+        },
+        {
             "name": "hidden_optimization_tips",
             "type": "list<map<string, bool>>"
         },
@@ -171,6 +175,10 @@
         {
             "name": "rb_export_summary_row",
             "type": "bool"
+        },
+        {
+            "name": "recently_used_quick_views",
+            "type": "list<string>"
         },
         {
             "name": "saip_advertiser_setup_optimisation_guidance_overall_state",

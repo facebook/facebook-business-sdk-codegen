@@ -73,10 +73,6 @@
             "type": "string"
         },
         {
-            "name": "subject",
-            "type": "string"
-        },
-        {
             "name": "unread_count",
             "type": "int"
         },

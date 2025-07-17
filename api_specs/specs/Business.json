@@ -529,6 +529,26 @@
             "return": "OmegaCustomerTrx",
             "params": [
                 {
+                    "name": "account_ids",
+                    "required": false,
+                    "type": "list<unsigned int>"
+                },
+                {
+                    "name": "advertiser_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "billing_period_end",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "billing_period_start",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "end_date",
                     "required": false,
                     "type": "string"
@@ -547,6 +567,11 @@
                     "name": "issue_start_date",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "product_types",
+                    "required": false,
+                    "type": "list<businessbusiness_invoices_product_types_enum_param>"
                 },
                 {
                     "name": "root_id",
@@ -645,6 +670,12 @@
                     "type": "Object"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "client_instagram_assets",
+            "return": "InstagramBusinessAsset",
+            "params": []
         },
         {
             "method": "GET",
@@ -1510,6 +1541,12 @@
             "method": "GET",
             "endpoint": "owned_instagram_accounts",
             "return": "IGUser",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "owned_instagram_assets",
+            "return": "InstagramBusinessAsset",
             "params": []
         },
         {

@@ -42,11 +42,23 @@
             "type": "string"
         },
         {
+            "name": "sof_transfer_id",
+            "type": "string"
+        },
+        {
+            "name": "sof_transfer_timestamp",
+            "type": "int"
+        },
+        {
             "name": "transaction_fee",
             "type": "Object"
         },
         {
             "name": "transfer_slip",
+            "type": "string"
+        },
+        {
+            "name": "transfer_slip_qr_code",
             "type": "string"
         }
     ]
