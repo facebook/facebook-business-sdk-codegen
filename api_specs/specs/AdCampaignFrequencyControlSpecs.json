@@ -12,6 +12,10 @@
         {
             "name": "max_frequency",
             "type": "unsigned int"
+        },
+        {
+            "name": "type",
+            "type": "string"
         }
     ]
 }
