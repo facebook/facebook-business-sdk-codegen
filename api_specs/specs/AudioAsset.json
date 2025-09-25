@@ -25,6 +25,10 @@
             "type": "string"
         },
         {
+            "name": "description",
+            "type": "string"
+        },
+        {
             "name": "display_artist",
             "type": "string"
         },

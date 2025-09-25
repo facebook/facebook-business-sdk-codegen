@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "customer_elasticity_study_metrics",
+            "type": "list<Object>"
+        }
+    ]
+}

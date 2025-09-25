@@ -26,6 +26,10 @@
             "type": "string"
         },
         {
+            "name": "1d_passback",
+            "type": "string"
+        },
+        {
             "name": "1d_view",
             "type": "string"
         },
@@ -50,6 +54,10 @@
             "type": "string"
         },
         {
+            "name": "28d_passback",
+            "type": "string"
+        },
+        {
             "name": "28d_view",
             "type": "string"
         },
@@ -71,6 +79,10 @@
         },
         {
             "name": "7d_click_first_conversion",
+            "type": "string"
+        },
+        {
+            "name": "7d_passback",
             "type": "string"
         },
         {

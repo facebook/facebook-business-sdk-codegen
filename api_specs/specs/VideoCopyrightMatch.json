@@ -37,6 +37,10 @@
             "type": "string"
         },
         {
+            "name": "policy_eval_modify_reasons",
+            "type": "list<Object>"
+        },
+        {
             "name": "ugc_content_format",
             "type": "string"
         }

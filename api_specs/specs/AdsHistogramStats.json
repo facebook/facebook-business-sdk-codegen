@@ -26,6 +26,10 @@
             "type": "list<int>"
         },
         {
+            "name": "1d_passback",
+            "type": "list<int>"
+        },
+        {
             "name": "1d_view",
             "type": "list<int>"
         },
@@ -50,6 +54,10 @@
             "type": "list<int>"
         },
         {
+            "name": "28d_passback",
+            "type": "list<int>"
+        },
+        {
             "name": "28d_view",
             "type": "list<int>"
         },
@@ -71,6 +79,10 @@
         },
         {
             "name": "7d_click_first_conversion",
+            "type": "list<int>"
+        },
+        {
+            "name": "7d_passback",
             "type": "list<int>"
         },
         {

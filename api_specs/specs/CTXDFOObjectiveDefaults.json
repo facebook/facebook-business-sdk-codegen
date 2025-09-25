@@ -2,15 +2,15 @@
     "apis": [],
     "fields": [
         {
-            "name": "key",
+            "name": "objective",
             "type": "string"
         },
         {
-            "name": "photo",
-            "type": "Photo"
+            "name": "optimization_goal",
+            "type": "string"
         },
         {
-            "name": "value",
+            "name": "page_id",
             "type": "string"
         }
     ]

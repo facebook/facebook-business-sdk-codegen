@@ -25,8 +25,20 @@
             "type": "list<map<string, int>>"
         },
         {
+            "name": "ads_cs_sitelinks_opt_in_status",
+            "type": "string"
+        },
+        {
+            "name": "ads_cs_sitelinks_opt_out_timestamp",
+            "type": "list<map<string, int>>"
+        },
+        {
             "name": "ads_tool_visits",
             "type": "list<Object>"
+        },
+        {
+            "name": "aplusc_ai_agent_opt_in_status",
+            "type": "string"
         },
         {
             "name": "aplusc_carousel_cda_opt_in_status",
@@ -34,6 +46,10 @@
         },
         {
             "name": "aplusc_carousel_inline_comment_opt_in_status",
+            "type": "string"
+        },
+        {
+            "name": "aplusc_da_opt_in_status",
             "type": "string"
         },
         {
@@ -97,6 +113,14 @@
             "type": "string"
         },
         {
+            "name": "create_cta_sticker_opt_in_status",
+            "type": "string"
+        },
+        {
+            "name": "creative_flex_opt_in_status",
+            "type": "string"
+        },
+        {
             "name": "da_add_overlays_opt_in_status",
             "type": "string"
         },
@@ -129,6 +153,10 @@
             "type": "int"
         },
         {
+            "name": "gen_ai_auto_select_opt_in_status",
+            "type": "string"
+        },
+        {
             "name": "id",
             "type": "string"
         },
@@ -142,6 +170,10 @@
         },
         {
             "name": "image_expansion_opt_in_status",
+            "type": "string"
+        },
+        {
+            "name": "image_templates_text_extraction_opt_in_status",
             "type": "string"
         },
         {
@@ -163,6 +195,10 @@
         {
             "name": "last_visited_time",
             "type": "datetime"
+        },
+        {
+            "name": "metadata_brand_kit_last_opt_out_timestamp",
+            "type": "int"
         },
         {
             "name": "metadata_brand_kit_opt_in_status",
@@ -202,6 +238,14 @@
         },
         {
             "name": "product_extensions_opt_in",
+            "type": "string"
+        },
+        {
+            "name": "reactive_control_settings",
+            "type": "list<Object>"
+        },
+        {
+            "name": "replace_media_text_opt_in_status",
             "type": "string"
         },
         {
@@ -323,6 +367,18 @@
         {
             "name": "user",
             "type": "User"
+        },
+        {
+            "name": "website_media_opt_in_status",
+            "type": "string"
+        },
+        {
+            "name": "website_reviews_data_opt_in_status",
+            "type": "string"
+        },
+        {
+            "name": "website_selling_points_data_opt_in_status",
+            "type": "string"
         }
     ]
 }

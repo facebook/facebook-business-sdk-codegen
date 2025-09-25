@@ -45,6 +45,16 @@
                     "type": "bool"
                 },
                 {
+                    "name": "hero_asset_facebook_post_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "hero_asset_instagram_media_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "is_hidden",
                     "required": false,
                     "type": "bool"
@@ -111,6 +121,14 @@
         {
             "name": "fb_body_elements",
             "type": "list<Object>"
+        },
+        {
+            "name": "hero_asset_facebook_post_id",
+            "type": "string"
+        },
+        {
+            "name": "hero_asset_instagram_media_id",
+            "type": "string"
         },
         {
             "name": "id",

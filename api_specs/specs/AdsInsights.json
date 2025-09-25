@@ -566,47 +566,7 @@
             "type": "string"
         },
         {
-            "name": "product_brand",
-            "type": "string"
-        },
-        {
-            "name": "product_category",
-            "type": "string"
-        },
-        {
-            "name": "product_content_id",
-            "type": "string"
-        },
-        {
-            "name": "product_custom_label_0",
-            "type": "string"
-        },
-        {
-            "name": "product_custom_label_1",
-            "type": "string"
-        },
-        {
-            "name": "product_custom_label_2",
-            "type": "string"
-        },
-        {
-            "name": "product_custom_label_3",
-            "type": "string"
-        },
-        {
-            "name": "product_custom_label_4",
-            "type": "string"
-        },
-        {
-            "name": "product_group_content_id",
-            "type": "string"
-        },
-        {
             "name": "product_group_retailer_id",
-            "type": "string"
-        },
-        {
-            "name": "product_name",
             "type": "string"
         },
         {

@@ -6,6 +6,10 @@
             "type": "bool"
         },
         {
+            "name": "site_link_extra_metadata",
+            "type": "string"
+        },
+        {
             "name": "site_link_hash",
             "type": "string"
         },
@@ -19,6 +23,10 @@
         },
         {
             "name": "site_link_image_url",
+            "type": "string"
+        },
+        {
+            "name": "site_link_language",
             "type": "string"
         },
         {

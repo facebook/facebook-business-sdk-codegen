@@ -301,12 +301,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "avatars",
-            "return": "Avatar",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "business_users",
             "return": "BusinessUser",
             "params": []
@@ -395,6 +389,11 @@
                     "name": "folder",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "is_owner",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "platform",
@@ -2238,10 +2237,6 @@
             "type": "AgeRange"
         },
         {
-            "name": "avatar_2d_profile_picture",
-            "type": "AvatarProfilePicture"
-        },
-        {
             "name": "birthday",
             "type": "string"
         },
@@ -2291,10 +2286,6 @@
         },
         {
             "name": "id",
-            "type": "string"
-        },
-        {
-            "name": "id_for_avatars",
             "type": "string"
         },
         {

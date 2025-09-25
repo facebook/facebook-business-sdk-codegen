@@ -67,6 +67,18 @@
         },
         {
             "method": "GET",
+            "endpoint": "ads_eligibility",
+            "return": "AdsEligibility",
+            "params": [
+                {
+                    "name": "ads_account_id",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "ads_posts",
             "return": "PagePost",
             "params": [
@@ -274,6 +286,18 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "business_messaging_feature_status",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "features",
+                    "required": true,
+                    "type": "list<map>"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "businessprojects",
             "return": "BusinessProject",
@@ -356,6 +380,11 @@
                 },
                 {
                     "name": "canvas_carousel",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "canvas_existing_post",
                     "required": false,
                     "type": "Object"
                 },
@@ -447,6 +476,16 @@
                     "name": "enable_swipe_to_open",
                     "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "hero_asset_facebook_post_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "hero_asset_instagram_media_id",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "is_hidden",
@@ -557,6 +596,11 @@
                     "name": "folder",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "is_owner",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "platform",
@@ -1535,6 +1579,11 @@
                     "type": "list<Object>"
                 },
                 {
+                    "name": "should_enforce_work_email",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "thank_you_page",
                     "required": false,
                     "type": "Object"
@@ -1806,6 +1855,21 @@
                     "type": "string"
                 },
                 {
+                    "name": "recommendation_action",
+                    "required": false,
+                    "type": "pagelocations_recommendation_action_enum_param"
+                },
+                {
+                    "name": "recommendation_ds",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "recommendation_store_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
                     "name": "store_code",
                     "required": false,
                     "type": "string"
@@ -1829,6 +1893,11 @@
                     "name": "temporary_status",
                     "required": false,
                     "type": "pagelocations_temporary_status_enum_param"
+                },
+                {
+                    "name": "type",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "website",
@@ -2087,6 +2156,11 @@
                     "name": "icon_enabled",
                     "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "video",
+                    "required": false,
+                    "type": "map"
                 }
             ]
         },
@@ -2307,7 +2381,13 @@
             "method": "GET",
             "endpoint": "notification_message_tokens",
             "return": "UserPageOneTimeOptInTokenSettings",
-            "params": []
+            "params": [
+                {
+                    "name": "custom_audience_ids",
+                    "required": false,
+                    "type": "list<string>"
+                }
+            ]
         },
         {
             "method": "POST",
@@ -2951,6 +3031,12 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "ratings",
+            "return": "Recommendation",
+            "params": []
+        },
+        {
             "method": "POST",
             "endpoint": "release_thread_control",
             "return": "Page",
@@ -3152,6 +3238,11 @@
                     "name": "folder",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "is_owner",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "platform",
@@ -4370,6 +4461,10 @@
         {
             "name": "contact_address",
             "type": "MailingAddress"
+        },
+        {
+            "name": "copyright_attribution_insights",
+            "type": "CopyrightAttributionInsights"
         },
         {
             "name": "copyright_whitelisted_ig_partners",

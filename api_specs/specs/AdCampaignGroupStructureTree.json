@@ -14,8 +14,8 @@
             "type": "string"
         },
         {
-            "name": "time_updated",
-            "type": "int"
+            "name": "status",
+            "type": "string"
         }
     ]
 }

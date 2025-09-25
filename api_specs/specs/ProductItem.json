@@ -309,6 +309,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "live_special_price",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "manufacturer_info",
                     "required": false,
                     "type": "string"
@@ -402,6 +407,11 @@
                     "name": "return_policy_days",
                     "required": false,
                     "type": "unsigned int"
+                },
+                {
+                    "name": "rich_text_description",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "sale_price",
@@ -652,6 +662,10 @@
             "type": "bool"
         },
         {
+            "name": "live_special_price",
+            "type": "string"
+        },
+        {
             "name": "manufacturer_info",
             "type": "string"
         },
@@ -744,6 +758,10 @@
             "type": "ProductItem_review_status"
         },
         {
+            "name": "rich_text_description",
+            "type": "string"
+        },
+        {
             "name": "sale_price",
             "type": "string"
         },
@@ -774,6 +792,10 @@
         {
             "name": "start_date",
             "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "ProductItem_status"
         },
         {
             "name": "tags",

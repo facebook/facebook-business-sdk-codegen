@@ -38,6 +38,10 @@
             "type": "AdCreativeFeatureDetails"
         },
         {
+            "name": "creative_stickers",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "customize_product_recommendation",
             "type": "AdCreativeFeatureDetails"
         },
@@ -182,6 +186,18 @@
             "type": "AdCreativeFeatureDetails"
         },
         {
+            "name": "replace_media_text",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "reveal_details_over_time",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "show_destination_blurbs",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "show_summary",
             "type": "AdCreativeFeatureDetails"
         },
@@ -226,11 +242,19 @@
             "type": "AdCreativeFeatureDetails"
         },
         {
+            "name": "video_highlights",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "video_to_image",
             "type": "AdCreativeFeatureDetails"
         },
         {
             "name": "video_uncrop",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "wa_mm_image_filtering",
             "type": "AdCreativeFeatureDetails"
         },
         {

@@ -258,6 +258,10 @@
             "type": "string"
         },
         {
+            "name": "video_title",
+            "type": "string"
+        },
+        {
             "name": "view_count",
             "type": "int"
         }

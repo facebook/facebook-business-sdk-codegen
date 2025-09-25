@@ -41,6 +41,10 @@
             "type": "bool"
         },
         {
+            "name": "budget_optimization_quick_view_created",
+            "type": "bool"
+        },
+        {
             "name": "campaign_overview_columns",
             "type": "list<string>"
         },
@@ -269,6 +273,14 @@
             "type": "string"
         },
         {
+            "name": "text_variations_hl_opt_in_out_ts",
+            "type": "datetime"
+        },
+        {
+            "name": "text_variations_hl_opt_in_type",
+            "type": "string"
+        },
+        {
             "name": "text_variations_opt_in_out_ts",
             "type": "datetime"
         },
@@ -279,6 +291,18 @@
         {
             "name": "user",
             "type": "User"
+        },
+        {
+            "name": "value_optimized_qv_created",
+            "type": "bool"
+        },
+        {
+            "name": "value_qv_nux_impressions",
+            "type": "int"
+        },
+        {
+            "name": "value_suggested_column_status",
+            "type": "string"
         }
     ]
 }

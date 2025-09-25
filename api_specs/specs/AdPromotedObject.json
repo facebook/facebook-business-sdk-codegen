@@ -30,6 +30,10 @@
             "type": "string"
         },
         {
+            "name": "dataset_split_ids",
+            "type": "list<string>"
+        },
+        {
             "name": "event_id",
             "type": "string"
         },
@@ -58,7 +62,15 @@
             "type": "string"
         },
         {
+            "name": "lead_ads_selected_pixel_id",
+            "type": "string"
+        },
+        {
             "name": "mcme_conversion_id",
+            "type": "string"
+        },
+        {
+            "name": "multi_event_product",
             "type": "string"
         },
         {
@@ -87,6 +99,14 @@
         },
         {
             "name": "page_id",
+            "type": "string"
+        },
+        {
+            "name": "passback_application_id",
+            "type": "string"
+        },
+        {
+            "name": "passback_pixel_id",
             "type": "string"
         },
         {

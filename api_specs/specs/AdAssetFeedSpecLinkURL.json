@@ -6,6 +6,10 @@
             "type": "list<AdAssetFeedSpecAssetLabel>"
         },
         {
+            "name": "android_url",
+            "type": "string"
+        },
+        {
             "name": "carousel_see_more_url",
             "type": "string"
         },
@@ -15,6 +19,10 @@
         },
         {
             "name": "display_url",
+            "type": "string"
+        },
+        {
+            "name": "ios_url",
             "type": "string"
         },
         {

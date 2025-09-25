@@ -346,6 +346,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "media_sourcing_spec",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "name",
                     "required": false,
                     "type": "string"
@@ -960,6 +965,11 @@
                     "type": "adaccountadsets_billing_event_enum_param"
                 },
                 {
+                    "name": "budget_schedule_specs",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
                     "name": "budget_source",
                     "required": false,
                     "type": "adaccountadsets_budget_source_enum_param"
@@ -1061,6 +1071,11 @@
                 },
                 {
                     "name": "is_ba_skip_delayed_eligible",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_budget_schedule_enabled",
                     "required": false,
                     "type": "bool"
                 },
@@ -1210,9 +1225,24 @@
                     "type": "string"
                 },
                 {
+                    "name": "trending_topics_spec",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "tune_for_category",
                     "required": false,
                     "type": "adaccountadsets_tune_for_category_enum_param"
+                },
+                {
+                    "name": "value_rule_set_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "value_rules_applied",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         },
@@ -2009,6 +2039,11 @@
                     "type": "adaccountcampaigns_bid_strategy_enum_param"
                 },
                 {
+                    "name": "budget_schedule_specs",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
                     "name": "buying_type",
                     "required": false,
                     "type": "string"
@@ -2022,6 +2057,26 @@
                     "name": "execution_options",
                     "required": false,
                     "type": "list<adaccountcampaigns_execution_options_enum_param>"
+                },
+                {
+                    "name": "is_adset_budget_sharing_enabled",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_budget_schedule_enabled",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_direct_send_campaign",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_message_campaign",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "is_skadnetwork_attribution",
@@ -2547,6 +2602,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "message",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
                     "name": "place_page_id",
                     "required": false,
                     "type": "int"
@@ -2643,6 +2703,11 @@
                     "name": "filtering",
                     "required": false,
                     "type": "list<Object>"
+                },
+                {
+                    "name": "graph_cache",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "level",
@@ -2762,6 +2827,11 @@
                     "type": "list<Object>"
                 },
                 {
+                    "name": "graph_cache",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "level",
                     "required": false,
                     "type": "adaccountinsights_level_enum_param"
@@ -2875,6 +2945,11 @@
                     "name": "query_term",
                     "required": true,
                     "type": "string"
+                },
+                {
+                    "name": "stores_to_filter",
+                    "required": false,
+                    "type": "list<adaccountmatched_search_applications_stores_to_filter_enum_param>"
                 }
             ]
         },
@@ -2889,6 +2964,112 @@
             "endpoint": "mcmeconversions",
             "return": "AdsMcmeConversion",
             "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "message_campaign",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "bid_amount",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "daily_budget",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "lifetime_budget",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "page_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "message_delivery_estimate",
+            "return": "MessageDeliveryEstimate",
+            "params": [
+                {
+                    "name": "bid_amount",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "daily_budget",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "is_direct_send_campaign",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "lifetime_budget",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "lifetime_in_days",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "optimization_goal",
+                    "required": false,
+                    "type": "adaccountmessage_delivery_estimate_optimization_goal_enum_param"
+                },
+                {
+                    "name": "pacing_type",
+                    "required": false,
+                    "type": "adaccountmessage_delivery_estimate_pacing_type_enum_param"
+                },
+                {
+                    "name": "promoted_object",
+                    "required": true,
+                    "type": "Object"
+                },
+                {
+                    "name": "targeting_spec",
+                    "required": true,
+                    "type": "Targeting"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "messages",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "message",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "message_id",
+                    "required": true,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "messenger_delivery_data",
+                    "required": true,
+                    "type": "map"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -4104,6 +4285,10 @@
         {
             "name": "offsite_pixels_tos_accepted",
             "type": "bool"
+        },
+        {
+            "name": "opportunity_score",
+            "type": "float"
         },
         {
             "name": "owner",

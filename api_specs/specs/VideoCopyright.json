@@ -81,12 +81,20 @@
             "type": "string"
         },
         {
+            "name": "content_protect_protection_disabled_reason",
+            "type": "string"
+        },
+        {
             "name": "copyright_content_id",
             "type": "string"
         },
         {
             "name": "creator",
             "type": "User"
+        },
+        {
+            "name": "disable_protection_by_content_protect_status",
+            "type": "bool"
         },
         {
             "name": "excluded_ownership_segments",

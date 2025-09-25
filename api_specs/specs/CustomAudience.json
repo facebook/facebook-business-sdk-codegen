@@ -424,6 +424,10 @@
             "type": "AdsPixel"
         },
         {
+            "name": "fields_violating_integrity_policy",
+            "type": "list<string>"
+        },
+        {
             "name": "household_audience",
             "type": "int"
         },

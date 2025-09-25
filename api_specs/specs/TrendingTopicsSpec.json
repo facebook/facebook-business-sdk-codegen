@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "is_all_trending",
+            "type": "bool"
+        },
+        {
+            "name": "is_special_budget_alloc",
+            "type": "bool"
+        },
+        {
+            "name": "trending_topics",
+            "type": "list<string>"
+        }
+    ]
+}

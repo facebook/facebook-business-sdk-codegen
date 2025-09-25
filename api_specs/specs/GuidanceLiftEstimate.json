@@ -1,0 +1,25 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "actual_7d_cpr",
+            "type": "float"
+        },
+        {
+            "name": "adoption_date",
+            "type": "string"
+        },
+        {
+            "name": "guidance_name",
+            "type": "string"
+        },
+        {
+            "name": "lift_estimation",
+            "type": "float"
+        },
+        {
+            "name": "predicted_7d_cpr",
+            "type": "float"
+        }
+    ]
+}

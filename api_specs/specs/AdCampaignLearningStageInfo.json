@@ -10,6 +10,18 @@
             "type": "unsigned int"
         },
         {
+            "name": "dynamic_lp_conversions_threshold",
+            "type": "unsigned int"
+        },
+        {
+            "name": "dynamic_lp_days_threshold",
+            "type": "unsigned int"
+        },
+        {
+            "name": "dynamic_lp_status",
+            "type": "string"
+        },
+        {
             "name": "last_sig_edit_ts",
             "type": "int"
         },

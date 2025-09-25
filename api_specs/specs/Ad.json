@@ -150,6 +150,11 @@
                     "type": "list<Object>"
                 },
                 {
+                    "name": "graph_cache",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "level",
                     "required": false,
                     "type": "adgroupinsights_level_enum_param"
@@ -265,6 +270,11 @@
                     "name": "filtering",
                     "required": false,
                     "type": "list<Object>"
+                },
+                {
+                    "name": "graph_cache",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "level",

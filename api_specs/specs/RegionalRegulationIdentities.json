@@ -40,6 +40,14 @@
         {
             "name": "taiwan_universal_payer",
             "type": "string"
+        },
+        {
+            "name": "universal_beneficiary",
+            "type": "string"
+        },
+        {
+            "name": "universal_payer",
+            "type": "string"
         }
     ]
 }

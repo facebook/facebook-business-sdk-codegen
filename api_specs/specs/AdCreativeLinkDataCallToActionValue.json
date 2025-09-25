@@ -2,6 +2,10 @@
     "apis": [],
     "fields": [
         {
+            "name": "android_url",
+            "type": "string"
+        },
+        {
             "name": "app_destination",
             "type": "string"
         },
@@ -16,6 +20,18 @@
         {
             "name": "event_id",
             "type": "string"
+        },
+        {
+            "name": "ios_url",
+            "type": "string"
+        },
+        {
+            "name": "land_on_whatsapp_catalog",
+            "type": "int"
+        },
+        {
+            "name": "land_on_whatsapp_profile",
+            "type": "int"
         },
         {
             "name": "lead_gen_form_id",

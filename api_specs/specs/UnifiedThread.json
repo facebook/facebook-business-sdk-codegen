@@ -37,6 +37,10 @@
             "type": "string"
         },
         {
+            "name": "is_owner",
+            "type": "bool"
+        },
+        {
             "name": "is_subscribed",
             "type": "bool"
         },

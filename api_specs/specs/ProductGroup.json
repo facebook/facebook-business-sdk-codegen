@@ -227,6 +227,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "live_special_price",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "manufacturer_part_number",
                     "required": false,
                     "type": "string"
@@ -310,6 +315,11 @@
                     "name": "return_policy_days",
                     "required": false,
                     "type": "unsigned int"
+                },
+                {
+                    "name": "rich_text_description",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "sale_price",

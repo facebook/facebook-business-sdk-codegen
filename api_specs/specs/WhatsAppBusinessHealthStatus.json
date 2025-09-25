@@ -6,6 +6,10 @@
             "type": "list<string>"
         },
         {
+            "name": "can_receive_call_sip",
+            "type": "string"
+        },
+        {
             "name": "can_send_message",
             "type": "string"
         },

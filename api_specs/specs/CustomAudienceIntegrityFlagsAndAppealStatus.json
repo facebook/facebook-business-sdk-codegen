@@ -6,8 +6,16 @@
             "type": "unsigned int"
         },
         {
+            "name": "days_until_enforcement",
+            "type": "unsigned int"
+        },
+        {
             "name": "flagged_fields",
             "type": "list<string>"
+        },
+        {
+            "name": "is_enforcement_rolled_out",
+            "type": "bool"
         },
         {
             "name": "latest_appeal_requestor",

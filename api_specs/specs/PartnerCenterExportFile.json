@@ -3,13 +3,17 @@
         {
             "name": "#get",
             "method": "GET",
-            "return": "AvatarProfilePicture",
+            "return": "PartnerCenterExportFile",
             "params": []
         }
     ],
     "fields": [
         {
             "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "report_ds",
             "type": "string"
         },
         {

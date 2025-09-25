@@ -2,7 +2,7 @@
     "apis": [
         {
             "method": "POST",
-            "endpoint": "delete_rule_set",
+            "endpoint": "deleteruleset",
             "return": "AdsValueAdjustmentRuleCollection",
             "params": []
         },
@@ -49,6 +49,10 @@
         {
             "name": "is_default_setting",
             "type": "bool"
+        },
+        {
+            "name": "last_attach_time",
+            "type": "datetime"
         },
         {
             "name": "name",

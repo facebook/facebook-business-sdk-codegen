@@ -90,12 +90,6 @@
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "order_management_apps",
-            "return": "CommerceMerchantSettings",
-            "params": []
-        },
-        {
             "method": "GET",
             "endpoint": "product_catalogs",
             "return": "ProductCatalog",
@@ -266,14 +260,6 @@
         {
             "name": "return_policy_localized",
             "type": "string"
-        },
-        {
-            "name": "review_rejection_messages",
-            "type": "list<string>"
-        },
-        {
-            "name": "review_rejection_reasons",
-            "type": "list<string>"
         },
         {
             "name": "shops_ads_setup",

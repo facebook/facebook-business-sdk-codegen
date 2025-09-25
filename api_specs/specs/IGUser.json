@@ -85,6 +85,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "media_relationship",
+                    "required": false,
+                    "type": "list<shadowiguserbranded_content_advertisable_medias_media_relationship_enum_param>"
+                },
+                {
                     "name": "only_fetch_allowlisted",
                     "required": false,
                     "type": "bool"
@@ -153,6 +158,12 @@
                     "type": "string"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "collaboration_invites",
+            "return": "ShadowIGUserCollaborationInvites",
+            "params": []
         },
         {
             "method": "GET",
@@ -243,9 +254,19 @@
                     "type": "Object"
                 },
                 {
+                    "name": "show_onboarded_creators_only",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "similar_to_creators",
                     "required": false,
                     "type": "list<string>"
+                },
+                {
+                    "name": "username",
+                    "required": false,
+                    "type": "string"
                 }
             ]
         },

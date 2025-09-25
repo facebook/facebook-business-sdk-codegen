@@ -61,10 +61,6 @@
             "type": "int"
         },
         {
-            "name": "owner",
-            "type": "Page"
-        },
-        {
             "name": "status",
             "type": "string"
         },

@@ -286,7 +286,7 @@
         },
         {
             "name": "format_transformation_spec",
-            "type": "AdCreativeFormatTransformationSpec"
+            "type": "list<AdCreativeFormatTransformationSpec>"
         },
         {
             "name": "id",
@@ -335,6 +335,10 @@
         {
             "name": "link_url",
             "type": "string"
+        },
+        {
+            "name": "media_sourcing_spec",
+            "type": "AdCreativeMediaSourcingSpec"
         },
         {
             "name": "messenger_sponsored_message",

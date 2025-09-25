@@ -10,6 +10,10 @@
             "type": "Object"
         },
         {
+            "name": "destination_screenshot_spec",
+            "type": "Object"
+        },
+        {
             "name": "dynamic_site_links_spec",
             "type": "Object"
         },
@@ -18,8 +22,20 @@
             "type": "bool"
         },
         {
+            "name": "intent",
+            "type": "Object"
+        },
+        {
+            "name": "pca_spec",
+            "type": "Object"
+        },
+        {
             "name": "promotion_metadata_spec",
             "type": "list<AdCreativePromotionMetadataSpec>"
+        },
+        {
+            "name": "site_links_data_consented",
+            "type": "Object"
         },
         {
             "name": "site_links_spec",
@@ -28,6 +44,10 @@
         {
             "name": "source_url",
             "type": "string"
+        },
+        {
+            "name": "website_media_spec",
+            "type": "Object"
         },
         {
             "name": "website_summary_spec",

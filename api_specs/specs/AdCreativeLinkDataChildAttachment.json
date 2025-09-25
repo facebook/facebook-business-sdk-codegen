@@ -2,6 +2,10 @@
     "apis": [],
     "fields": [
         {
+            "name": "android_url",
+            "type": "string"
+        },
+        {
             "name": "call_to_action",
             "type": "AdCreativeLinkDataCallToAction"
         },
@@ -22,8 +26,16 @@
             "type": "string"
         },
         {
+            "name": "ios_url",
+            "type": "string"
+        },
+        {
             "name": "link",
             "type": "string"
+        },
+        {
+            "name": "marketing_message_buttons",
+            "type": "list<Object>"
         },
         {
             "name": "name",

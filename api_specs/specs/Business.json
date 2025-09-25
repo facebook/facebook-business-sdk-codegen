@@ -62,6 +62,23 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "ad_custom_derived_metrics",
+            "return": "AdCustomDerivedMetrics",
+            "params": [
+                {
+                    "name": "adhoc_custom_metrics",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "scope",
+                    "required": false,
+                    "type": "businessad_custom_derived_metrics_scope_enum_param"
+                }
+            ]
+        },
+        {
             "method": "POST",
             "endpoint": "ad_review_requests",
             "return": "Object",
@@ -2482,6 +2499,10 @@
         {
             "name": "link",
             "type": "string"
+        },
+        {
+            "name": "marketing_messages_onboarding_status",
+            "type": "MarketingMessagesOnboardingStatus"
         },
         {
             "name": "name",

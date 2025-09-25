@@ -18,6 +18,14 @@
             "type": "string"
         },
         {
+            "name": "is_from_ads",
+            "type": "string"
+        },
+        {
+            "name": "is_from_followers",
+            "type": "string"
+        },
+        {
             "name": "message_type",
             "type": "string"
         },

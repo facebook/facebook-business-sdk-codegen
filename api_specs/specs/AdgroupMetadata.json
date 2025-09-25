@@ -14,6 +14,10 @@
             "type": "string"
         },
         {
+            "name": "adgroup_media_source",
+            "type": "string"
+        },
+        {
             "name": "carousel_style",
             "type": "string"
         },

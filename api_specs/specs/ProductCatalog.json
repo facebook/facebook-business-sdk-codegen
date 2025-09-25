@@ -205,6 +205,18 @@
         },
         {
             "method": "GET",
+            "endpoint": "check_marketplace_partner_deals_status",
+            "return": "ProductCatalogCheckMarketplacePartnerDealsStatus",
+            "params": [
+                {
+                    "name": "session_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "check_marketplace_partner_sellers_status",
             "return": "ProductCatalogCheckMarketplacePartnerSellersStatus",
             "params": [
@@ -696,6 +708,18 @@
                     "name": "version",
                     "required": false,
                     "type": "unsigned int"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "marketplace_partner_deals_details",
+            "return": "ProductCatalog",
+            "params": [
+                {
+                    "name": "requests",
+                    "required": true,
+                    "type": "map"
                 }
             ]
         },
@@ -1267,6 +1291,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "live_special_price",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "manufacturer_info",
                     "required": false,
                     "type": "string"
@@ -1365,6 +1394,11 @@
                     "name": "return_policy_days",
                     "required": false,
                     "type": "unsigned int"
+                },
+                {
+                    "name": "rich_text_description",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "sale_price",

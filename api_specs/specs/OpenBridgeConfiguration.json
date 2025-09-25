@@ -106,6 +106,10 @@
             "type": "bool"
         },
         {
+            "name": "browser_agent",
+            "type": "list<string>"
+        },
+        {
             "name": "cloud_provider",
             "type": "string"
         },

@@ -2,16 +2,16 @@
     "apis": [],
     "fields": [
         {
-            "name": "groups",
+            "name": "errors",
             "type": "list<Object>"
         },
         {
-            "name": "origin",
+            "name": "session_id",
             "type": "string"
         },
         {
-            "name": "origins",
-            "type": "list<string>"
+            "name": "status",
+            "type": "string"
         }
     ]
 }

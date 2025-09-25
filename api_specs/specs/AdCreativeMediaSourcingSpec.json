@@ -1,4 +1,29 @@
 {
     "apis": [],
-    "fields": []
+    "fields": [
+        {
+            "name": "bodies",
+            "type": "list<Object>"
+        },
+        {
+            "name": "descriptions",
+            "type": "list<Object>"
+        },
+        {
+            "name": "images",
+            "type": "list<Object>"
+        },
+        {
+            "name": "related_media",
+            "type": "Object"
+        },
+        {
+            "name": "titles",
+            "type": "list<Object>"
+        },
+        {
+            "name": "videos",
+            "type": "list<Object>"
+        }
+    ]
 }

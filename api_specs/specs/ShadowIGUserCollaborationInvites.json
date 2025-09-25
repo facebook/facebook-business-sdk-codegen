@@ -2,19 +2,19 @@
     "apis": [],
     "fields": [
         {
-            "name": "defaulting_source",
+            "name": "caption",
             "type": "string"
         },
         {
-            "name": "destination_type",
+            "name": "media_id",
             "type": "string"
         },
         {
-            "name": "objective",
+            "name": "media_owner_username",
             "type": "string"
         },
         {
-            "name": "optimization_goal",
+            "name": "media_url",
             "type": "string"
         }
     ]

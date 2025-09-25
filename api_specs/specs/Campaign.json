@@ -90,6 +90,23 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "budget_schedules",
+            "return": "HighDemandPeriod",
+            "params": [
+                {
+                    "name": "time_start",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "time_stop",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
             "method": "POST",
             "endpoint": "budget_schedules",
             "return": "HighDemandPeriod",
@@ -157,6 +174,16 @@
                     "name": "end_time",
                     "required": false,
                     "type": "datetime"
+                },
+                {
+                    "name": "migrate_to_advantage_plus",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "parameter_overrides",
+                    "required": false,
+                    "type": "Object"
                 },
                 {
                     "name": "rename_options",
@@ -234,6 +261,11 @@
                     "name": "filtering",
                     "required": false,
                     "type": "list<Object>"
+                },
+                {
+                    "name": "graph_cache",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "level",
@@ -351,6 +383,11 @@
                     "name": "filtering",
                     "required": false,
                     "type": "list<Object>"
+                },
+                {
+                    "name": "graph_cache",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "level",
@@ -473,6 +510,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "budget_schedule_specs",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
                     "name": "daily_budget",
                     "required": false,
                     "type": "unsigned int"
@@ -481,6 +523,26 @@
                     "name": "execution_options",
                     "required": false,
                     "type": "list<adcampaigngroup_execution_options>"
+                },
+                {
+                    "name": "is_adset_budget_sharing_enabled",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_budget_schedule_enabled",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_direct_send_campaign",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_message_campaign",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "is_skadnetwork_attribution",
@@ -496,6 +558,11 @@
                     "name": "lifetime_budget",
                     "required": false,
                     "type": "unsigned int"
+                },
+                {
+                    "name": "migrate_to_advantage_plus",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "name",
@@ -634,7 +701,19 @@
             "type": "string"
         },
         {
+            "name": "is_adset_budget_sharing_enabled",
+            "type": "bool"
+        },
+        {
             "name": "is_budget_schedule_enabled",
+            "type": "bool"
+        },
+        {
+            "name": "is_direct_send_campaign",
+            "type": "bool"
+        },
+        {
+            "name": "is_message_campaign",
             "type": "bool"
         },
         {

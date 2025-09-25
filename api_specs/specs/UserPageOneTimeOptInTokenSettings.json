@@ -13,6 +13,10 @@
             "type": "int"
         },
         {
+            "name": "custom_audience_ids",
+            "type": "list<string>"
+        },
+        {
             "name": "next_eligible_time",
             "type": "int"
         },

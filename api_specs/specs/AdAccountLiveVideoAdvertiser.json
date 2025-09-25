@@ -10,6 +10,10 @@
             "type": "int"
         },
         {
+            "name": "lva_default_duration_s",
+            "type": "int"
+        },
+        {
             "name": "should_default_current_live",
             "type": "bool"
         },

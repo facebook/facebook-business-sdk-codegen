@@ -2,6 +2,10 @@
     "apis": [],
     "fields": [
         {
+            "name": "acting_business_id",
+            "type": "string"
+        },
+        {
             "name": "ad_format",
             "type": "int"
         },
@@ -12,6 +16,10 @@
         {
             "name": "creator_ad_permission_type",
             "type": "string"
+        },
+        {
+            "name": "deliver_dynamic_partner_content",
+            "type": "bool"
         },
         {
             "name": "facebook_boost_post_access_token",

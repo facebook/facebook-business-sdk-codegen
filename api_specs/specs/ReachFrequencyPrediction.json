@@ -361,6 +361,10 @@
             "type": "unsigned int"
         },
         {
+            "name": "trending_topics_spec",
+            "type": "TrendingTopicsSpec"
+        },
+        {
             "name": "video_view_length_constraint",
             "type": "unsigned int"
         },

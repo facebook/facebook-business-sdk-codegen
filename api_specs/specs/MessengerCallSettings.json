@@ -16,6 +16,10 @@
         {
             "name": "icon_enabled",
             "type": "bool"
+        },
+        {
+            "name": "video",
+            "type": "string"
         }
     ]
 }

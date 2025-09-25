@@ -2,15 +2,11 @@
     "apis": [],
     "fields": [
         {
-            "name": "key",
+            "name": "offer_id",
             "type": "string"
         },
         {
-            "name": "photo",
-            "type": "Photo"
-        },
-        {
-            "name": "value",
+            "name": "offer_name",
             "type": "string"
         }
     ]

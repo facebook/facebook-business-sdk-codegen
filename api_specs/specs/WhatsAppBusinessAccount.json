@@ -97,6 +97,11 @@
                     "name": "start",
                     "required": true,
                     "type": "unsigned int"
+                },
+                {
+                    "name": "tiers",
+                    "required": false,
+                    "type": "list<string>"
                 }
             ]
         },
@@ -237,9 +242,69 @@
         },
         {
             "method": "GET",
+            "endpoint": "group_analytics",
+            "return": "WABAGroupAnalytics",
+            "params": [
+                {
+                    "name": "end",
+                    "required": true,
+                    "type": "datetime"
+                },
+                {
+                    "name": "granularity",
+                    "required": false,
+                    "type": "whatsappbusinessaccountgroup_analytics_granularity_enum_param"
+                },
+                {
+                    "name": "group_ids",
+                    "required": true,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "metric_types",
+                    "required": false,
+                    "type": "list<whatsappbusinessaccountgroup_analytics_metric_types_enum_param>"
+                },
+                {
+                    "name": "start",
+                    "required": true,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "marketing_campaigns",
+            "return": "WhatsAppBusinessMMLiteCampaign",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "message_campaigns",
             "return": "WhatsAppBusinessCampaign",
             "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "message_samples",
+            "return": "WhatsAppBusinessAccount",
+            "params": [
+                {
+                    "name": "interactive",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "text",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "type",
+                    "required": true,
+                    "type": "whatsappbusinessaccountmessage_samples_type_enum_param"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -250,6 +315,11 @@
                     "name": "add_security_recommendation",
                     "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "business_name",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "button_types",
@@ -326,6 +396,11 @@
                     "type": "list<whatsappbusinessaccountmessage_templates_quality_score_enum_param>"
                 },
                 {
+                    "name": "source",
+                    "required": false,
+                    "type": "whatsappbusinessaccountmessage_templates_source_enum_param"
+                },
+                {
                     "name": "status",
                     "required": false,
                     "type": "list<whatsappbusinessaccountmessage_templates_status_enum_param>"
@@ -341,6 +416,11 @@
                     "name": "allow_category_change",
                     "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "bid_spec",
+                    "required": false,
+                    "type": "map"
                 },
                 {
                     "name": "category",
@@ -403,6 +483,11 @@
                     "type": "whatsappbusinessaccountmessage_templates_parameter_format_enum_param"
                 },
                 {
+                    "name": "send_type",
+                    "required": false,
+                    "type": "whatsappbusinessaccountmessage_templates_send_type_enum_param"
+                },
+                {
                     "name": "sub_category",
                     "required": false,
                     "type": "whatsappbusinessaccountmessage_templates_sub_category_enum_param"
@@ -432,6 +517,11 @@
             "return": "WhatsAppBusinessAccount",
             "params": [
                 {
+                    "name": "count",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
                     "name": "page_number",
                     "required": false,
                     "type": "unsigned int"
@@ -440,6 +530,11 @@
                     "name": "source_waba_id",
                     "required": true,
                     "type": "string"
+                },
+                {
+                    "name": "template_ids",
+                    "required": false,
+                    "type": "list<string>"
                 }
             ]
         },
@@ -744,6 +839,11 @@
                     "name": "template_ids",
                     "required": true,
                     "type": "list<string>"
+                },
+                {
+                    "name": "use_waba_timezone",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         },
@@ -857,6 +957,18 @@
             ]
         },
         {
+            "method": "DELETE",
+            "endpoint": "welcome_message_sequences",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "sequence_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "welcome_message_sequences",
             "return": "CTXPartnerAppWelcomeMessageFlow",
@@ -870,6 +982,28 @@
                     "name": "sequence_id",
                     "required": false,
                     "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "welcome_message_sequences",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "sequence_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "welcome_message_sequence",
+                    "required": false,
+                    "type": "Object"
                 }
             ]
         },

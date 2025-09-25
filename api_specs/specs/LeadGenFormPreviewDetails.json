@@ -2,6 +2,10 @@
     "apis": [],
     "fields": [
         {
+            "name": "book_on_website_text",
+            "type": "string"
+        },
+        {
             "name": "call_business_text",
             "type": "string"
         },

@@ -86,6 +86,10 @@
             "type": "AdCreativeLinkDataImageOverlaySpec"
         },
         {
+            "name": "is_local_expansion",
+            "type": "bool"
+        },
+        {
             "name": "link",
             "type": "string"
         },

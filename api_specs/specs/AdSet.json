@@ -140,6 +140,23 @@
             ]
         },
         {
+            "method": "GET",
+            "endpoint": "budget_schedules",
+            "return": "HighDemandPeriod",
+            "params": [
+                {
+                    "name": "time_start",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "time_stop",
+                    "required": false,
+                    "type": "datetime"
+                }
+            ]
+        },
+        {
             "method": "POST",
             "endpoint": "budget_schedules",
             "return": "HighDemandPeriod",
@@ -318,6 +335,11 @@
                     "type": "list<Object>"
                 },
                 {
+                    "name": "graph_cache",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "level",
                     "required": false,
                     "type": "adcampaigninsights_level_enum_param"
@@ -433,6 +455,11 @@
                     "name": "filtering",
                     "required": false,
                     "type": "list<Object>"
+                },
+                {
+                    "name": "graph_cache",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "level",
@@ -638,6 +665,11 @@
                     "type": "adcampaign_billing_event"
                 },
                 {
+                    "name": "budget_schedule_specs",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
                     "name": "campaign_attribution",
                     "required": false,
                     "type": "Object"
@@ -719,6 +751,11 @@
                 },
                 {
                     "name": "is_ba_skip_delayed_eligible",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_budget_schedule_enabled",
                     "required": false,
                     "type": "bool"
                 },
@@ -848,9 +885,24 @@
                     "type": "datetime"
                 },
                 {
+                    "name": "trending_topics_spec",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "tune_for_category",
                     "required": false,
                     "type": "adcampaign_tune_for_category"
+                },
+                {
+                    "name": "value_rule_set_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "value_rules_applied",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         }
@@ -1065,6 +1117,10 @@
             "type": "list<string>"
         },
         {
+            "name": "placement_soft_opt_out",
+            "type": "Placement"
+        },
+        {
             "name": "promoted_object",
             "type": "AdPromotedObject"
         },
@@ -1125,11 +1181,23 @@
             "type": "list<unsigned int>"
         },
         {
+            "name": "trending_topics_spec",
+            "type": "TrendingTopicsSpec"
+        },
+        {
             "name": "updated_time",
             "type": "datetime"
         },
         {
             "name": "use_new_app_click",
+            "type": "bool"
+        },
+        {
+            "name": "value_rule_set_id",
+            "type": "string"
+        },
+        {
+            "name": "value_rules_applied",
             "type": "bool"
         }
     ]

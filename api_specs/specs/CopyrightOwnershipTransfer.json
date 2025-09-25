@@ -9,6 +9,10 @@
     ],
     "fields": [
         {
+            "name": "assets",
+            "type": "list<Object>"
+        },
+        {
             "name": "id",
             "type": "string"
         },

@@ -2,6 +2,10 @@
     "apis": [],
     "fields": [
         {
+            "name": "is_recommended",
+            "type": "bool"
+        },
+        {
             "name": "is_saved",
             "type": "bool"
         },

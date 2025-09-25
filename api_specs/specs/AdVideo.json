@@ -640,6 +640,10 @@
             "type": "datetime"
         },
         {
+            "name": "season",
+            "type": "VideoList"
+        },
+        {
             "name": "source",
             "type": "string"
         },

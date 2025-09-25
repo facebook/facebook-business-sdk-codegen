@@ -57,6 +57,10 @@
             "type": "list<LeadGenDraftQuestion>"
         },
         {
+            "name": "should_enforce_work_email",
+            "type": "bool"
+        },
+        {
             "name": "status",
             "type": "string"
         },

@@ -224,7 +224,7 @@
                 {
                     "name": "install_timestamp",
                     "required": false,
-                    "type": "unsigned int"
+                    "type": "float"
                 },
                 {
                     "name": "installer_package",
