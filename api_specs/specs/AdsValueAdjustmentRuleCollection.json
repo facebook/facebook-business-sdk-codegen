@@ -2,7 +2,7 @@
     "apis": [
         {
             "method": "POST",
-            "endpoint": "deleteruleset",
+            "endpoint": "delete_rule_set",
             "return": "AdsValueAdjustmentRuleCollection",
             "params": []
         },

@@ -10,6 +10,10 @@
             "type": "bool"
         },
         {
+            "name": "is_user_manually_toggle_mc_off",
+            "type": "bool"
+        },
+        {
             "name": "merchant_type",
             "type": "string"
         }

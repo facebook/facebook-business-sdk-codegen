@@ -58,6 +58,10 @@
             "type": "string"
         },
         {
+            "name": "anchor_events_performance_indicator",
+            "type": "string"
+        },
+        {
             "name": "attribution_setting",
             "type": "string"
         },

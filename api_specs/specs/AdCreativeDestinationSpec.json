@@ -4,6 +4,10 @@
         {
             "name": "destination_type",
             "type": "string"
+        },
+        {
+            "name": "website",
+            "type": "Object"
         }
     ]
 }

@@ -598,11 +598,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "is_owner",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "platform",
                     "required": false,
                     "type": "pageconversations_platform_enum_param"
@@ -3240,11 +3235,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "is_owner",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "platform",
                     "required": false,
                     "type": "pagethreads_platform_enum_param"
@@ -4289,6 +4279,11 @@
                     "name": "price_range",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "priority_hours",
+                    "required": false,
+                    "type": "map"
                 },
                 {
                     "name": "public_transit",

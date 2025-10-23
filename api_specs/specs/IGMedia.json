@@ -122,6 +122,12 @@
             ]
         },
         {
+            "name": "#delete",
+            "method": "DELETE",
+            "return": "Object",
+            "params": []
+        },
+        {
             "name": "#get",
             "method": "GET",
             "return": "IGMedia",
@@ -196,6 +202,14 @@
         {
             "name": "copyright_check_information",
             "type": "IGVideoCopyrightCheckMatchesInformation"
+        },
+        {
+            "name": "has_poll",
+            "type": "bool"
+        },
+        {
+            "name": "has_slider",
+            "type": "bool"
         },
         {
             "name": "id",

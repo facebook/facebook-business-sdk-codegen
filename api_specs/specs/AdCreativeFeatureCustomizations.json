@@ -2,6 +2,10 @@
     "apis": [],
     "fields": [
         {
+            "name": "aspect_ratio_config",
+            "type": "Object"
+        },
+        {
             "name": "background_color",
             "type": "string"
         },

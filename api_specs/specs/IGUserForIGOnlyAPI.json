@@ -35,11 +35,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "is_owner",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "platform",
                     "required": false,
                     "type": "userconversations_platform_enum_param"
@@ -190,6 +185,11 @@
                     "name": "thumb_offset",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "trial_params",
+                    "required": false,
+                    "type": "map"
                 },
                 {
                     "name": "upload_type",

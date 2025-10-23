@@ -14,6 +14,10 @@
             "type": "list<list>"
         },
         {
+            "name": "300x400",
+            "type": "list<list>"
+        },
+        {
             "name": "400x150",
             "type": "list<list>"
         },

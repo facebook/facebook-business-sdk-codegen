@@ -13,6 +13,10 @@
             "type": "list<Object>"
         },
         {
+            "name": "has_ownership_been_updated",
+            "type": "bool"
+        },
+        {
             "name": "id",
             "type": "string"
         },

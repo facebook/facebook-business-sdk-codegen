@@ -2,6 +2,10 @@
     "apis": [],
     "fields": [
         {
+            "name": "anchor_event_config",
+            "type": "string"
+        },
+        {
             "name": "application_id",
             "type": "string"
         },

@@ -1,0 +1,33 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "audience_network_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "facebook_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "instagram_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "messenger_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "oculus_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "threads_positions",
+            "type": "list<string>"
+        },
+        {
+            "name": "whatsapp_positions",
+            "type": "list<string>"
+        }
+    ]
+}

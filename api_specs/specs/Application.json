@@ -1139,44 +1139,10 @@
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "subscribed_domains",
-            "return": "Application",
-            "params": [
-                {
-                    "name": "subscribe",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "unsubscribe",
-                    "required": false,
-                    "type": "list<string>"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "subscribed_domains_phishing",
             "return": "CTCertDomain",
             "params": []
-        },
-        {
-            "method": "POST",
-            "endpoint": "subscribed_domains_phishing",
-            "return": "Application",
-            "params": [
-                {
-                    "name": "subscribe",
-                    "required": false,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "unsubscribe",
-                    "required": false,
-                    "type": "list<string>"
-                }
-            ]
         },
         {
             "method": "DELETE",

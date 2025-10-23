@@ -82,6 +82,10 @@
             "type": "AdCreativeFeatureDetails"
         },
         {
+            "name": "generate_cta",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "hide_price",
             "type": "AdCreativeFeatureDetails"
         },
@@ -214,6 +218,14 @@
             "type": "AdCreativeFeatureDetails"
         },
         {
+            "name": "text_extraction_for_headline",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "text_extraction_for_tap_target",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "text_generation",
             "type": "AdCreativeFeatureDetails"
         },
@@ -227,6 +239,10 @@
         },
         {
             "name": "text_translation",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "translate_voiceover",
             "type": "AdCreativeFeatureDetails"
         },
         {

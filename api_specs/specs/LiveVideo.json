@@ -361,10 +361,6 @@
             "type": "unsigned int"
         },
         {
-            "name": "overlay_url",
-            "type": "string"
-        },
-        {
             "name": "permalink_url",
             "type": "string"
         },

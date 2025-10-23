@@ -312,6 +312,11 @@
                     "type": "list<Object>"
                 },
                 {
+                    "name": "inclusionOperator",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "inclusions",
                     "required": false,
                     "type": "list<Object>"

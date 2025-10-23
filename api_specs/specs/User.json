@@ -391,11 +391,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "is_owner",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
                     "name": "platform",
                     "required": false,
                     "type": "userconversations_platform_enum_param"

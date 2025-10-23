@@ -281,6 +281,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "execution_options",
+                    "required": false,
+                    "type": "list<adaccountadcreatives_execution_options_enum_param>"
+                },
+                {
                     "name": "facebook_branded_content",
                     "required": false,
                     "type": "map"
@@ -1153,6 +1158,11 @@
                     "name": "pacing_type",
                     "required": false,
                     "type": "list<string>"
+                },
+                {
+                    "name": "placement_soft_opt_out",
+                    "required": false,
+                    "type": "Object"
                 },
                 {
                     "name": "promoted_object",
@@ -2309,6 +2319,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "inclusionOperator",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "inclusions",
                     "required": false,
                     "type": "list<Object>"
@@ -3149,6 +3164,11 @@
                     "name": "exclusions",
                     "required": false,
                     "type": "list<Object>"
+                },
+                {
+                    "name": "inclusionOperator",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "inclusions",

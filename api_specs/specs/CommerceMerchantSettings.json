@@ -129,18 +129,6 @@
             "params": []
         },
         {
-            "method": "GET",
-            "endpoint": "shipping_profiles",
-            "return": "FixedCostShippingProfile",
-            "params": [
-                {
-                    "name": "reference_id",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "POST",
             "endpoint": "shipping_profiles",
             "return": "Object",
@@ -244,10 +232,6 @@
         {
             "name": "offsite_iab_checkout_enabled_countries",
             "type": "list<string>"
-        },
-        {
-            "name": "onsite_commerce_merchant",
-            "type": "Object"
         },
         {
             "name": "payment_provider",

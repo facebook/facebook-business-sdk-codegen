@@ -25,11 +25,23 @@
             "type": "list<map<string, int>>"
         },
         {
+            "name": "ads_cs_dynamic_se_opt_in_status",
+            "type": "string"
+        },
+        {
+            "name": "ads_cs_dynamic_se_opt_out_timestamp",
+            "type": "list<map<string, int>>"
+        },
+        {
             "name": "ads_cs_sitelinks_opt_in_status",
             "type": "string"
         },
         {
             "name": "ads_cs_sitelinks_opt_out_timestamp",
+            "type": "list<map<string, int>>"
+        },
+        {
+            "name": "ads_destination_optimization_opt_out_timestamp",
             "type": "list<map<string, int>>"
         },
         {
@@ -125,8 +137,16 @@
             "type": "string"
         },
         {
+            "name": "da_creative_flex_opt_in_status",
+            "type": "string"
+        },
+        {
             "name": "da_hide_price_opt_in_status",
             "type": "string"
+        },
+        {
+            "name": "da_manual_media_nux_impressions",
+            "type": "int"
         },
         {
             "name": "default_creation_mode",

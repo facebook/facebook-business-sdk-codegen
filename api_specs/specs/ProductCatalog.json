@@ -921,6 +921,11 @@
                     "name": "update_schedule",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "use_case",
+                    "required": false,
+                    "type": "productcatalogproduct_feeds_use_case_enum_param"
                 }
             ]
         },
@@ -1074,6 +1079,11 @@
                     "name": "age_group",
                     "required": false,
                     "type": "productcatalogproducts_age_group_enum_param"
+                },
+                {
+                    "name": "allow_upsert",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "android_app_name",

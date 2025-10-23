@@ -166,6 +166,23 @@
             "params": []
         },
         {
+            "method": "POST",
+            "endpoint": "collaboration_invites",
+            "return": "ShadowIGUserCollaborationInvites",
+            "params": [
+                {
+                    "name": "accept",
+                    "required": true,
+                    "type": "bool"
+                },
+                {
+                    "name": "media_id",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "connected_threads_user",
             "return": "ThreadsUser",
@@ -227,6 +244,11 @@
                     "name": "creator_min_followers",
                     "required": false,
                     "type": "unsigned int"
+                },
+                {
+                    "name": "has_public_contact_email",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "major_audience_age_bucket",
@@ -447,6 +469,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "trial_params",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "upload_type",
                     "required": false,
                     "type": "string"
@@ -536,6 +563,12 @@
             "method": "GET",
             "endpoint": "recently_searched_hashtags",
             "return": "ShadowIGHashtag",
+            "params": []
+        },
+        {
+            "method": "GET",
+            "endpoint": "scheduled_media",
+            "return": "ShadowIGScheduledMedia",
             "params": []
         },
         {

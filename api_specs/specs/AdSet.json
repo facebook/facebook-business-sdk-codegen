@@ -825,6 +825,11 @@
                     "type": "list<string>"
                 },
                 {
+                    "name": "placement_soft_opt_out",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
                     "name": "promoted_object",
                     "required": false,
                     "type": "Object"
@@ -919,6 +924,10 @@
         {
             "name": "adset_schedule",
             "type": "list<DayPart>"
+        },
+        {
+            "name": "anchor_event_attribution_window_days",
+            "type": "int"
         },
         {
             "name": "asset_feed_id",
@@ -1118,7 +1127,7 @@
         },
         {
             "name": "placement_soft_opt_out",
-            "type": "Placement"
+            "type": "PlacementSoftOptOut"
         },
         {
             "name": "promoted_object",

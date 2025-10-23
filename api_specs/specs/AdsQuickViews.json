@@ -47,6 +47,10 @@
         {
             "name": "sort",
             "type": "list<Object>"
+        },
+        {
+            "name": "time_stamp_last_used_by_owner",
+            "type": "datetime"
         }
     ]
 }

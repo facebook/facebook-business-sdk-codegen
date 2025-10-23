@@ -23,6 +23,16 @@
                     "type": "bool"
                 },
                 {
+                    "name": "blocked_event_types",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "blocked_websites",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
                     "name": "cloud_provider",
                     "required": false,
                     "type": "string"
@@ -41,6 +51,11 @@
                     "name": "endpoint",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "event_enrichment_state",
+                    "required": false,
+                    "type": "openbridgeconfiguration_event_enrichment_state"
                 },
                 {
                     "name": "fallback_domain",
@@ -106,6 +121,14 @@
             "type": "bool"
         },
         {
+            "name": "blocked_event_types",
+            "type": "list<string>"
+        },
+        {
+            "name": "blocked_websites",
+            "type": "list<string>"
+        },
+        {
             "name": "browser_agent",
             "type": "list<string>"
         },
@@ -123,6 +146,10 @@
         },
         {
             "name": "endpoint",
+            "type": "string"
+        },
+        {
+            "name": "event_enrichment_state",
             "type": "string"
         },
         {

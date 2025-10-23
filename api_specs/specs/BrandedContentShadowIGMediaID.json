@@ -14,12 +14,20 @@
             "type": "string"
         },
         {
+            "name": "linked_products",
+            "type": "list<ProductItem>"
+        },
+        {
             "name": "owner_id",
             "type": "string"
         },
         {
             "name": "permalink",
             "type": "string"
+        },
+        {
+            "name": "product_suggestions",
+            "type": "list<ProductItem>"
         },
         {
             "name": "recommended_campaign_objectives",

@@ -546,26 +546,6 @@
             "return": "OmegaCustomerTrx",
             "params": [
                 {
-                    "name": "account_ids",
-                    "required": false,
-                    "type": "list<unsigned int>"
-                },
-                {
-                    "name": "advertiser_name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "billing_period_end",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "billing_period_start",
-                    "required": false,
-                    "type": "string"
-                },
-                {
                     "name": "end_date",
                     "required": false,
                     "type": "string"
@@ -584,11 +564,6 @@
                     "name": "issue_start_date",
                     "required": false,
                     "type": "string"
-                },
-                {
-                    "name": "product_types",
-                    "required": false,
-                    "type": "list<businessbusiness_invoices_product_types_enum_param>"
                 },
                 {
                     "name": "root_id",
@@ -1340,6 +1315,16 @@
                     "type": "bool"
                 },
                 {
+                    "name": "blocked_event_types",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "blocked_websites",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
                     "name": "cloud_provider",
                     "required": false,
                     "type": "string"
@@ -1358,6 +1343,11 @@
                     "name": "endpoint",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "event_enrichment_state",
+                    "required": false,
+                    "type": "businessopenbridge_configurations_event_enrichment_state_enum_param"
                 },
                 {
                     "name": "fallback_domain",
@@ -2551,6 +2541,10 @@
         {
             "name": "vertical_id",
             "type": "unsigned int"
+        },
+        {
+            "name": "whatsapp_business_manager_messaging_limit",
+            "type": "Business_whatsapp_business_manager_messaging_limit"
         }
     ]
 }

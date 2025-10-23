@@ -182,6 +182,12 @@
         },
         {
             "method": "GET",
+            "endpoint": "degrees_of_freedom_spec",
+            "return": "MarketingMessagesCreativeOptimizationsOptIn",
+            "params": []
+        },
+        {
+            "method": "GET",
             "endpoint": "flows",
             "return": "WhatsAppExtension",
             "params": []
@@ -431,6 +437,11 @@
                     "name": "components",
                     "required": false,
                     "type": "list<map>"
+                },
+                {
+                    "name": "creative_sourcing_spec",
+                    "required": false,
+                    "type": "map"
                 },
                 {
                     "name": "cta_url_link_tracking_opted_out",
@@ -876,6 +887,11 @@
                     "name": "template_group_ids",
                     "required": true,
                     "type": "list<string>"
+                },
+                {
+                    "name": "use_waba_timezone",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         },
@@ -1126,6 +1142,10 @@
         {
             "name": "timezone_id",
             "type": "string"
+        },
+        {
+            "name": "whatsapp_business_manager_messaging_limit",
+            "type": "WhatsAppBusinessAccount_whatsapp_business_manager_messaging_limit"
         }
     ]
 }

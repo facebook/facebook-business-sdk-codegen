@@ -1,0 +1,36 @@
+{
+    "apis": [
+        {
+            "name": "#get",
+            "method": "GET",
+            "return": "ShadowIGScheduledMedia",
+            "params": []
+        }
+    ],
+    "fields": [
+        {
+            "name": "caption",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "media_type",
+            "type": "string"
+        },
+        {
+            "name": "media_url",
+            "type": "string"
+        },
+        {
+            "name": "publish_timestamp",
+            "type": "int"
+        },
+        {
+            "name": "thumbnail_url",
+            "type": "string"
+        }
+    ]
+}

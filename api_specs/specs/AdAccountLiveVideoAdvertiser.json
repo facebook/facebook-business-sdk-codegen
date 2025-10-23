@@ -22,6 +22,10 @@
             "type": "bool"
         },
         {
+            "name": "should_default_toggle_on_from_model",
+            "type": "bool"
+        },
+        {
             "name": "should_show_lva_toggle",
             "type": "bool"
         }
