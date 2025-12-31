@@ -41,8 +41,8 @@ namespace Meta.Ads.SDK
         /// Creates a new APIContext
         /// </summary>
         /// <param name="accessToken">The access token for API authentication</param>
-        /// <param name="apiVersion">The API version (default: v18.0)</param>
-        public APIContext(string accessToken, string apiVersion = "v18.0")
+        /// <param name="apiVersion">The API version (default: {{api_version}})</param>
+        public APIContext(string accessToken, string apiVersion = "{{api_version}}")
         {
             AccessToken = accessToken ?? throw new ArgumentNullException(nameof(accessToken));
             ApiVersion = apiVersion;
