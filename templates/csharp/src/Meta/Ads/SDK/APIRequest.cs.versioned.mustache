@@ -1,0 +1,144 @@
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using System.Collections.Generic;
+using System.Net.Http;
+using System.Text;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
+
+namespace Meta.Ads.SDK
+{
+    /// <summary>
+    /// Represents an API request to the Facebook Marketing API
+    /// </summary>
+    public class APIRequest
+    {
+        private readonly APIContext _context;
+        private readonly string _nodeId;
+        private readonly string _endpoint;
+        private readonly string _method;
+        private readonly Dictionary<string, object> _parameters;
+        private readonly Dictionary<string, string> _headers;
+
+        public APIRequest(APIContext context, string nodeId, string endpoint, string method)
+        {
+            _context = context ?? throw new ArgumentNullException(nameof(context));
+            _nodeId = nodeId;
+            _endpoint = endpoint;
+            _method = method;
+            _parameters = new Dictionary<string, object>();
+            _headers = new Dictionary<string, string>();
+
+            AddHeader("Authorization", $"Bearer {_context.AccessToken}");
+        }
+
+        public APIRequest SetParameter(string key, object? value)
+        {
+            if (value != null)
+            {
+                _parameters[key] = value;
+            }
+            return this;
+        }
+
+        public APIRequest AddHeader(string key, string value)
+        {
+            _headers[key] = value;
+            return this;
+        }
+
+        public async Task<T> ExecuteAsync<T>() where T : class
+        {
+            var uri = BuildUri();
+            var request = new HttpRequestMessage(_method.Equals("GET", StringComparison.OrdinalIgnoreCase) ? HttpMethod.Get :
+                                                 _method.Equals("POST", StringComparison.OrdinalIgnoreCase) ? HttpMethod.Post :
+                                                 _method.Equals("PUT", StringComparison.OrdinalIgnoreCase) ? HttpMethod.Put :
+                                                 _method.Equals("DELETE", StringComparison.OrdinalIgnoreCase) ? HttpMethod.Delete :
+                                                 HttpMethod.Get, uri);
+
+            // Add headers
+            foreach (var header in _headers)
+            {
+                request.Headers.Add(header.Key, header.Value);
+            }
+
+            // Add body for POST requests
+            if ((_method.Equals("POST", StringComparison.OrdinalIgnoreCase) ||
+                 _method.Equals("PUT", StringComparison.OrdinalIgnoreCase)) && _parameters.Count > 0)
+            {
+                var json = JsonConvert.SerializeObject(_parameters);
+                request.Content = new StringContent(json, Encoding.UTF8, "application/json");
+            }
+
+            try
+            {
+                var response = await _context.HttpClient.SendAsync(request);
+                response.EnsureSuccessStatusCode();
+
+                var content = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<T>(content)!;
+            }
+            catch (HttpRequestException ex)
+            {
+                throw new APIException($"API request failed: {ex.Message}", ex);
+            }
+            catch (JsonException ex)
+            {
+                throw new APIException($"Failed to deserialize API response: {ex.Message}", ex);
+            }
+        }
+
+        private string BuildUri()
+        {
+            var baseUrl = _context.GetBaseUrl();
+            var url = $"{baseUrl}/{_nodeId}{_endpoint}";
+
+            if (_method.Equals("GET", StringComparison.OrdinalIgnoreCase) && _parameters.Count > 0)
+            {
+                var queryString = new StringBuilder();
+                foreach (var param in _parameters)
+                {
+                    if (queryString.Length > 0)
+                        queryString.Append("&");
+                    queryString.Append($"{Uri.EscapeDataString(param.Key)}={Uri.EscapeDataString(param.Value.ToString() ?? "")}");
+                }
+                url = $"{url}?{queryString}";
+            }
+
+            return url;
+        }
+    }
+
+    /// <summary>
+    /// Specialized GET request
+    /// </summary>
+    public class APIRequestGet : APIRequest
+    {
+        public APIRequestGet(string nodeId, APIContext context)
+            : base(context, nodeId, "", "GET")
+        {
+        }
+
+        public APIRequestGet RequestAllFieldsAsync()
+        {
+            SetParameter("fields", "*");
+            return this;
+        }
+    }
+
+    /// <summary>
+    /// Exception thrown when an API request fails
+    /// </summary>
+    public class APIException : Exception
+    {
+        public APIException(string message) : base(message) { }
+        public APIException(string message, Exception innerException) : base(message, innerException) { }
+    }
+}

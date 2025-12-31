@@ -1,0 +1,82 @@
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using System.Collections.Generic;
+using Newtonsoft.Json;
+
+namespace Meta.Ads.SDK
+{
+    /// <summary>
+    /// Base class for all API resource objects
+    /// </summary>
+    public abstract class APINode
+    {
+        /// <summary>
+        /// The unique identifier of the resource
+        /// </summary>
+        [JsonProperty("id")]
+        public string? Id { get; set; }
+
+        /// <summary>
+        /// The API context for this node
+        /// </summary>
+        [JsonIgnore]
+        public APIContext? Context { get; set; }
+
+        /// <summary>
+        /// Gets the prefixed ID (e.g., "act_" prefix for accounts)
+        /// </summary>
+        public virtual string GetPrefixedId()
+        {
+            return Id ?? throw new InvalidOperationException("ID is not set");
+        }
+
+        /// <summary>
+        /// Copies data from another node into this node
+        /// </summary>
+        public virtual void CopyFrom(APINode source)
+        {
+            if (source == null)
+                throw new ArgumentNullException(nameof(source));
+
+            var properties = this.GetType().GetProperties();
+            foreach (var prop in properties)
+            {
+                if (prop.CanWrite && prop.CanRead)
+                {
+                    try
+                    {
+                        var value = prop.GetValue(source);
+                        prop.SetValue(this, value);
+                    }
+                    catch
+                    {
+                        // Skip properties that can't be copied
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        /// Creates an APINode from an ID and type
+        /// </summary>
+        public static APINode FromId(string id, Type nodeType, APIContext context)
+        {
+            var instance = (APINode)Activator.CreateInstance(nodeType)!;
+            instance.Id = id;
+            instance.Context = context;
+            return instance;
+        }
+
+        public override string ToString()
+        {
+            return JsonConvert.SerializeObject(this, Formatting.Indented);
+        }
+    }
+}

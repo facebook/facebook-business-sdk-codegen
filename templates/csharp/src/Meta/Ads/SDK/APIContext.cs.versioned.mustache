@@ -1,0 +1,61 @@
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using System.Collections.Generic;
+using System.Net.Http;
+
+namespace Meta.Ads.SDK
+{
+    /// <summary>
+    /// APIContext holds the API access token and HTTP client configuration.
+    /// </summary>
+    public class APIContext
+    {
+        /// <summary>
+        /// The access token for API authentication
+        /// </summary>
+        public string AccessToken { get; set; }
+
+        /// <summary>
+        /// The API version to use (e.g., "v18.0")
+        /// </summary>
+        public string ApiVersion { get; set; }
+
+        /// <summary>
+        /// The HTTP client used for making API requests
+        /// </summary>
+        public HttpClient HttpClient { get; set; }
+
+        /// <summary>
+        /// Additional headers to include in API requests
+        /// </summary>
+        public Dictionary<string, string> Headers { get; set; }
+
+        /// <summary>
+        /// Creates a new APIContext
+        /// </summary>
+        /// <param name="accessToken">The access token for API authentication</param>
+        /// <param name="apiVersion">The API version (default: v18.0)</param>
+        public APIContext(string accessToken, string apiVersion = "v18.0")
+        {
+            AccessToken = accessToken ?? throw new ArgumentNullException(nameof(accessToken));
+            ApiVersion = apiVersion;
+            HttpClient = new HttpClient();
+            Headers = new Dictionary<string, string>();
+        }
+
+        /// <summary>
+        /// Gets the base URL for API requests
+        /// </summary>
+        public string GetBaseUrl()
+        {
+            return $"https://graph.facebook.com/{ApiVersion}";
+        }
+    }
+}

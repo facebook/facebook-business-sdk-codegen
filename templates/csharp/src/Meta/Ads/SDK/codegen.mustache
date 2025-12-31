@@ -1,0 +1,134 @@
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
+using Meta.Ads.SDK.Interfaces;
+using Meta.Ads.SDK.Utilities;
+
+namespace Meta.Ads.SDK
+{
+    /// <summary>
+    /// This class is auto-generated.
+    ///
+    /// For any issues or feature requests related to this class, please let us know
+    /// on github and we'll fix in our codegen framework. We'll not be able to accept
+    /// pull request for this class.
+    /// </summary>
+    public class {{name:pascal_case}} : APINode
+    {
+        {{#fields}}
+        {{^is_creation_field}}
+        [JsonProperty("{{api_name}}")]
+        public {{{type:cs}}}{{^type:cs}}object{{/type:cs}}? {{name:pascal_case}} { get; set; }
+
+        {{/is_creation_field}}
+        {{/fields}}
+        {{#creation_allow_file_upload}}
+        [JsonIgnore]
+        public string? Filename { get; set; }
+
+        {{/creation_allow_file_upload}}
+        public {{name:pascal_case}}()
+        {
+        }
+
+        {{#has_get}}
+        public {{name:pascal_case}}(string id, APIContext context)
+        {
+            this.Id = id;
+            this.Context = context;
+        }
+
+        {{/has_get}}
+        {{#api_spec_based_enum_reference}}
+        public class {{field_or_param:pascal_case}}
+        {
+            {{#values_with_naming_convention}}
+            public const string {{value:pascal_case}} = "{{value}}";
+            {{/values_with_naming_convention}}
+        }
+
+        {{/api_spec_based_enum_reference}}
+        {{#creation_endpoint}}
+        public async Task<{{return:pascal_case}}{{^return}}{{name:pascal_case}}{{/return}}> CreateAsync(string parentId, Dictionary<string, object>? fields = null, Dictionary<string, object>? parameters = null)
+        {
+            var endpoint = "{{creation_endpoint}}";
+            return await (({{creation_parent_class:pascal_case}})APINode.FromId(parentId, typeof({{creation_parent_class:pascal_case}}), this.Context)).{{creation_method:pascal_case}}Async(fields, parameters);
+        }
+
+        {{/creation_endpoint}}
+        {{#read_endpoint}}
+        public async Task<{{name:pascal_case}}> FetchAsync()
+        {
+            var newInstance = await FetchByIdAsync(this.GetPrefixedId(), this.Context);
+            this.CopyFrom(newInstance);
+            return this;
+        }
+
+        public static async Task<{{name:pascal_case}}> FetchByIdAsync(string id, APIContext context)
+        {
+            return await new APIRequestGet(id, context)
+                .RequestAllFieldsAsync()
+                .ExecuteAsync<{{name:pascal_case}}>();
+        }
+
+        {{/read_endpoint}}
+        {{#apis}}
+        {{#method:equals_get}}
+        public async Task<{{return:pascal_case}}{{^return}}List<object>{{/return}}> {{api_name:pascal_case}}Async({{#params}}{{type:cs}}{{^type:cs}}object{{/type:cs}} {{param_name:camel_case}}{{#has_next}}, {{/has_next}}{{/params}})
+        {
+            var parameters = new Dictionary<string, object>
+            {
+                {{#params}}
+                { "{{api_name}}", {{param_name:camel_case}} },
+                {{/params}}
+            };
+
+            var request = new APIRequest(this.Context, this.GetPrefixedId(), "/{{endpoint}}", "GET");
+            {{#params}}
+            request.SetParameter("{{api_name}}", {{param_name:camel_case}});
+            {{/params}}
+            return await request.ExecuteAsync<{{return:pascal_case}}{{^return}}object{{/return}}>();
+        }
+
+        {{/method:equals_get}}
+        {{#method:equals_post}}
+        public async Task<{{return:pascal_case}}{{^return}}{{name:pascal_case}}{{/return}}> {{api_name:pascal_case}}Async({{#params}}{{^required}}{{/required}}{{type:cs}}{{^type:cs}}object{{/type:cs}} {{param_name:camel_case}}{{#has_next}}, {{/has_next}}{{/params}})
+        {
+            var parameters = new Dictionary<string, object>();
+            {{#params}}
+            if ({{param_name:camel_case}} != null)
+            {
+                parameters["{{api_name}}"] = {{param_name:camel_case}};
+            }
+            {{/params}}
+
+            var request = new APIRequest(this.Context, this.GetPrefixedId(), "/{{endpoint}}", "POST");
+            {{#params}}
+            request.SetParameter("{{api_name}}", {{param_name:camel_case}});
+            {{/params}}
+            return await request.ExecuteAsync<{{return:pascal_case}}{{^return}}{{name:pascal_case}}{{/return}}>();
+        }
+
+        {{/method:equals_post}}
+        {{#method:equals_delete}}
+        public async Task<bool> {{api_name:pascal_case}}Async()
+        {
+            var request = new APIRequest(this.Context, this.GetPrefixedId(), "/{{endpoint}}", "DELETE");
+            var response = await request.ExecuteAsync<Dictionary<string, object>>();
+            return response != null && response.ContainsKey("success");
+        }
+
+        {{/method:equals_delete}}
+        {{/apis}}
+    }
+}
