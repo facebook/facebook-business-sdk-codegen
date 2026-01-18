@@ -274,7 +274,7 @@
         },
         {
             "name": "pause_periods",
-            "type": "list<Object>"
+            "type": "list<ReachFrequencyPredictionPausePeriod>"
         },
         {
             "name": "percent_reach_at_target_frequency",
