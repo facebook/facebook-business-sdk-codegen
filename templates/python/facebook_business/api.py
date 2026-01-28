@@ -547,6 +547,7 @@ class FacebookRequest:
         node_id,
         method,
         endpoint,
+        base_path=None,
         api=None,
         param_checker=TypeChecker({}, {}),
         target_class=None,
@@ -574,7 +575,10 @@ class FacebookRequest:
         self._node_id = node_id
         self._method = method
         self._endpoint = endpoint.replace('/', '')
-        self._path = (node_id, endpoint.replace('/', ''))
+        if base_path:
+            self._path = (base_path.strip('/'), str(node_id))
+        else:
+            self._path = (node_id, endpoint.replace('/', ''))
         self._param_checker = param_checker
         self._target_class = target_class
         self._api_type = api_type

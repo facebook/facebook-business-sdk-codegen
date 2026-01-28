@@ -135,12 +135,13 @@ class {{name:pascal_case}}(
             node_id=self['id'],
             method='{{method}}',
             endpoint='{{{endpoint}}}',
-            api=self._api,
+            {{#base_path}}base_path='{{{base_path}}}',
+            {{/base_path}}api=self._api,
             param_checker=TypeChecker(param_types, enums),
             target_class={{#return:pascal_case}}{{return:pascal_case}}{{/return:pascal_case}}{{^return:pascal_case}}AbstractCrudObject{{/return:pascal_case}},
-            api_type={{#is_node_api}}'NODE'{{/is_node_api}}{{^is_node_api}}'EDGE'{{/is_node_api}},{{#allow_file_upload}}
+            api_type={{#api_type}}'{{{api_type}}}'{{/api_type}}{{^api_type}}{{#is_node_api}}'NODE'{{/is_node_api}}{{^is_node_api}}'EDGE'{{/is_node_api}}{{/api_type}},{{#allow_file_upload}}
             allow_file_upload=True,{{/allow_file_upload}}
-            response_parser=ObjectParser({{#is_node_api}}reuse_object=self{{/is_node_api}}{{^is_node_api}}target_class={{#return:pascal_case}}{{return:pascal_case}}{{/return:pascal_case}}{{^return:pascal_case}}AbstractCrudObject{{/return:pascal_case}}{{/is_node_api}}),
+            {{#raw_response}}response_parser=None,{{/raw_response}}{{^raw_response}}response_parser=ObjectParser({{#is_node_api}}reuse_object=self{{/is_node_api}}{{^is_node_api}}target_class={{#return:pascal_case}}{{return:pascal_case}}{{/return:pascal_case}}{{^return:pascal_case}}AbstractCrudObject{{/return:pascal_case}}{{/is_node_api}}),{{/raw_response}}
             {{#is_insights}}
             include_summary=False,
             {{/is_insights}}
@@ -195,12 +196,13 @@ class {{name:pascal_case}}(
             node_id=self['id'],
             method='{{method}}',
             endpoint='{{{endpoint}}}',
-            api=self._api,
+            {{#base_path}}base_path='{{{base_path}}}',
+            {{/base_path}}api=self._api,
             param_checker=TypeChecker(param_types, enums),
             target_class={{#return:pascal_case}}{{return:pascal_case}}{{/return:pascal_case}}{{^return:pascal_case}}AbstractCrudObject{{/return:pascal_case}},
-            api_type={{#is_node_api}}'NODE'{{/is_node_api}}{{^is_node_api}}'EDGE'{{/is_node_api}},{{#allow_file_upload}}
+            api_type={{#api_type}}'{{{api_type}}}'{{/api_type}}{{^api_type}}{{#is_node_api}}'NODE'{{/is_node_api}}{{^is_node_api}}'EDGE'{{/is_node_api}}{{/api_type}},{{#allow_file_upload}}
             allow_file_upload=True,{{/allow_file_upload}}
-            response_parser=ObjectParser({{#is_node_api}}reuse_object=self{{/is_node_api}}{{^is_node_api}}target_class={{#return:pascal_case}}{{return:pascal_case}}{{/return:pascal_case}}{{^return:pascal_case}}AbstractCrudObject{{/return:pascal_case}}{{/is_node_api}}, api=self._api),
+            {{#raw_response}}response_parser=None,{{/raw_response}}{{^raw_response}}response_parser=ObjectParser({{#is_node_api}}reuse_object=self{{/is_node_api}}{{^is_node_api}}target_class={{#return:pascal_case}}{{return:pascal_case}}{{/return:pascal_case}}{{^return:pascal_case}}AbstractCrudObject{{/return:pascal_case}}{{/is_node_api}}, api=self._api),{{/raw_response}}
             {{#is_insights}}
             include_summary=False,
             {{/is_insights}}
