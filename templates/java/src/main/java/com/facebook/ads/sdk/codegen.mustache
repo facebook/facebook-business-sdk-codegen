@@ -520,6 +520,9 @@ public class {{name:pascal_case}} extends APINode {
 
     public APIRequest{{name:pascal_case}}(String nodeId, APIContext context) {
       super(context, nodeId, "{{{endpoint}}}", "{{{method}}}", Arrays.asList(PARAMS));
+      {{#base_path}}
+      this.setBasePath("{{{base_path}}}");
+      {{/base_path}}
       {{#use_graph_video_endpoint}}
       this.setUseVideoEndpoint(true);
       {{/use_graph_video_endpoint}}
