@@ -55,6 +55,9 @@ module FacebookAds
       {{#allow_file_upload}}
         api.accepts_files!
       {{/allow_file_upload}}
+      {{#base_path}}
+        api.has_base_path '{{{base_path}}}'
+      {{/base_path}}
       end{{/params.length}}
       {{/end_points}}
     end
