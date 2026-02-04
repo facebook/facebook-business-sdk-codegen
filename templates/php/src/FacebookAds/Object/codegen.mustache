@@ -129,12 +129,18 @@ class {{name:pascal_case}} extends Abstract{{#has_id}}{{#archivable}}Archivable{
       RequestInterface::METHOD_{{method}},
       '{{{endpoint}}}',
       new {{#return:pascal_case}}{{return:pascal_case}}{{/return:pascal_case}}{{^return:pascal_case}}AbstractCrudObject{{/return:pascal_case}}(),
-      {{#is_node_api}}'NODE'{{/is_node_api}}{{^is_node_api}}'EDGE'{{/is_node_api}},
+      {{#api_type}}'{{{api_type}}}'{{/api_type}}{{^api_type}}{{#is_node_api}}'NODE'{{/is_node_api}}{{^is_node_api}}'EDGE'{{/is_node_api}}{{/api_type}},
       {{#return:pascal_case}}{{return:pascal_case}}::getFieldsEnum()->getValues(){{/return:pascal_case}}{{^return:pascal_case}}array(){{/return:pascal_case}},
       new TypeChecker($param_types, $enums){{#allow_file_upload}},
       {{allow_file_upload}}{{/allow_file_upload}}{{#use_graph_video_endpoint}},
       true{{/use_graph_video_endpoint}}
     );
+    {{#base_path}}
+    $request->setBasePath('{{{base_path}}}');
+    {{/base_path}}
+    {{#raw_response}}
+    $request->setRawResponse(true);
+    {{/raw_response}}
     $request->addParams($params);
     $request->addFields($fields);
     return $pending ? $request : $request->execute();
