@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "content",
+            "type": "string"
+        },
+        {
+            "name": "children",
+            "type": "list<string>"
+        }
+    ]
+}
