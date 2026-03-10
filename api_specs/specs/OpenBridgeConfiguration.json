@@ -33,6 +33,11 @@
                     "type": "list<string>"
                 },
                 {
+                    "name": "capi_publishing_state",
+                    "required": false,
+                    "type": "openbridgeconfiguration_capi_publishing_state"
+                },
+                {
                     "name": "cloud_provider",
                     "required": false,
                     "type": "string"
@@ -53,17 +58,22 @@
                     "type": "string"
                 },
                 {
+                    "name": "event_enrichment_advertiser_state",
+                    "required": false,
+                    "type": "openbridgeconfiguration_event_enrichment_advertiser_state"
+                },
+                {
+                    "name": "event_enrichment_meta_state",
+                    "required": false,
+                    "type": "openbridgeconfiguration_event_enrichment_meta_state"
+                },
+                {
                     "name": "event_enrichment_state",
                     "required": false,
                     "type": "openbridgeconfiguration_event_enrichment_state"
                 },
                 {
                     "name": "fallback_domain",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "first_party_domain",
                     "required": false,
                     "type": "string"
                 },
@@ -149,15 +159,19 @@
             "type": "string"
         },
         {
+            "name": "event_enrichment_advertiser_state",
+            "type": "string"
+        },
+        {
+            "name": "event_enrichment_meta_state",
+            "type": "string"
+        },
+        {
             "name": "event_enrichment_state",
             "type": "string"
         },
         {
             "name": "fallback_domain",
-            "type": "string"
-        },
-        {
-            "name": "first_party_domain",
             "type": "string"
         },
         {

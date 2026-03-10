@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "age_max",
+            "type": "int"
+        },
+        {
+            "name": "age_min",
+            "type": "int"
+        },
+        {
+            "name": "genders",
+            "type": "list<unsigned int>"
+        }
+    ]
+}

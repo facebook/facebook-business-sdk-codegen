@@ -24,6 +24,10 @@
         {
             "name": "carousel_with_static_card_style",
             "type": "string"
+        },
+        {
+            "name": "is_pca_unified_format_ad",
+            "type": "bool"
         }
     ]
 }

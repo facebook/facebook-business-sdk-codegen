@@ -10,6 +10,10 @@
             "type": "int"
         },
         {
+            "name": "automated_adgroup_creation",
+            "type": "bool"
+        },
+        {
             "name": "content_search_input",
             "type": "string"
         },

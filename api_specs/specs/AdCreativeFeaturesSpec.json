@@ -26,6 +26,10 @@
             "type": "AdCreativeFeatureDetails"
         },
         {
+            "name": "auto_promotion_tag",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "biz_ai",
             "type": "AdCreativeFeatureDetails"
         },
@@ -59,6 +63,10 @@
         },
         {
             "name": "dynamic_partner_content",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "enable_ncs_testimonials",
             "type": "AdCreativeFeatureDetails"
         },
         {
@@ -106,6 +114,10 @@
             "type": "AdCreativeFeatureDetails"
         },
         {
+            "name": "ig_video_native_subtitle",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "image_animation",
             "type": "AdCreativeFeatureDetails"
         },
@@ -127,6 +139,10 @@
         },
         {
             "name": "image_templates",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "image_text_translation",
             "type": "AdCreativeFeatureDetails"
         },
         {
@@ -223,6 +239,10 @@
         },
         {
             "name": "text_extraction_for_tap_target",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "text_formatting_optimization",
             "type": "AdCreativeFeatureDetails"
         },
         {

@@ -21,6 +21,10 @@
             "type": "string"
         },
         {
+            "name": "num_assets",
+            "type": "int"
+        },
+        {
             "name": "receiving_rights_holder",
             "type": "Profile"
         },

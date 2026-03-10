@@ -40,10 +40,6 @@
             "type": "CatalogItemAppLinks"
         },
         {
-            "name": "category_specific_fields",
-            "type": "CatalogSubVerticalList"
-        },
-        {
             "name": "currency",
             "type": "string"
         },

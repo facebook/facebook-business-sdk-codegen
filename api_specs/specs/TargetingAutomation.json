@@ -6,6 +6,10 @@
             "type": "unsigned int"
         },
         {
+            "name": "creative_audience_pairing",
+            "type": "unsigned int"
+        },
+        {
             "name": "individual_setting",
             "type": "Object"
         },

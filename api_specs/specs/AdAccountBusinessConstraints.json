@@ -10,6 +10,10 @@
             "type": "list<string>"
         },
         {
+            "name": "is_age_restriction_enabled",
+            "type": "bool"
+        },
+        {
             "name": "placement_controls",
             "type": "Object"
         },

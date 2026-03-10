@@ -1,0 +1,28 @@
+{
+    "apis": [
+        {
+            "name": "genGet",
+            "method": "GET",
+            "endpoint": "apps_and_software",
+            "return": "ProductFeedAppsAndSoftwareGet",
+            "params": [
+                {
+                    "name": "after",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "before",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "limit",
+                    "required": false,
+                    "type": "int"
+                }
+            ]
+        }
+    ],
+    "fields": []
+}

@@ -21,6 +21,10 @@
             "type": "string"
         },
         {
+            "name": "lead_filter_settings",
+            "type": "list<map<string, string>>"
+        },
+        {
             "name": "lead_gen_data",
             "type": "LeadgenForm"
         },

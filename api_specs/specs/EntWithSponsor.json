@@ -6,6 +6,10 @@
             "type": "string"
         },
         {
+            "name": "is_branded_content",
+            "type": "bool"
+        },
+        {
             "name": "owner_linked_instagram_user_v1_id",
             "type": "string"
         },

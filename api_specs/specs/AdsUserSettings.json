@@ -89,6 +89,10 @@
             "type": "string"
         },
         {
+            "name": "app_details_data_opt_in_status",
+            "type": "string"
+        },
+        {
             "name": "autoflow_lite_opt_in_status",
             "type": "string"
         },
@@ -133,6 +137,10 @@
             "type": "string"
         },
         {
+            "name": "da_adapt_images_opt_in_status",
+            "type": "string"
+        },
+        {
             "name": "da_add_overlays_opt_in_status",
             "type": "string"
         },
@@ -163,6 +171,10 @@
         {
             "name": "export_format_default",
             "type": "string"
+        },
+        {
+            "name": "feedback_surveys",
+            "type": "list<string>"
         },
         {
             "name": "focus_mode_default",
@@ -222,6 +234,10 @@
         },
         {
             "name": "metadata_brand_kit_opt_in_status",
+            "type": "string"
+        },
+        {
+            "name": "multi_media_opt_out_status",
             "type": "string"
         },
         {
@@ -387,6 +403,10 @@
         {
             "name": "user",
             "type": "User"
+        },
+        {
+            "name": "video_to_image_opt_in_status",
+            "type": "string"
         },
         {
             "name": "website_media_opt_in_status",

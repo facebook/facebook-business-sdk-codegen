@@ -1241,6 +1241,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "edit_description_spec",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "embeddable",
                     "required": false,
                     "type": "bool"

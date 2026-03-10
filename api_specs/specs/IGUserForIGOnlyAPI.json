@@ -260,6 +260,11 @@
             "return": "Object",
             "params": [
                 {
+                    "name": "folder",
+                    "required": false,
+                    "type": "iggraphusermessages_folder_enum_param"
+                },
+                {
                     "name": "message",
                     "required": false,
                     "type": "Object"
@@ -276,6 +281,11 @@
                 },
                 {
                     "name": "recipient",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
+                    "name": "reply_to",
                     "required": false,
                     "type": "Object"
                 },

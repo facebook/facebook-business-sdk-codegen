@@ -1,0 +1,18 @@
+{
+    "apis": [
+        {
+            "name": "genGet",
+            "method": "GET",
+            "endpoint": "errors",
+            "return": "CatalogGenericIngestionSessionErrorsGet",
+            "params": [
+                {
+                    "name": "error_priority",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": []
+}

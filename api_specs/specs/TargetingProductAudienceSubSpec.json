@@ -2,6 +2,10 @@
     "apis": [],
     "fields": [
         {
+            "name": "min_retention_seconds",
+            "type": "string"
+        },
+        {
             "name": "retention_seconds",
             "type": "string"
         },

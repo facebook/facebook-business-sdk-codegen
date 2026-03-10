@@ -741,6 +741,16 @@
             "return": "ProductCatalog",
             "params": [
                 {
+                    "name": "conversion_type",
+                    "required": false,
+                    "type": "productcatalogmarketplace_partner_signals_conversion_type_enum_param"
+                },
+                {
+                    "name": "event_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "event_name",
                     "required": true,
                     "type": "productcatalogmarketplace_partner_signals_event_name_enum_param"
@@ -756,6 +766,11 @@
                     "type": "datetime"
                 },
                 {
+                    "name": "offer_data",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "order_data",
                     "required": false,
                     "type": "map"
@@ -764,6 +779,178 @@
                     "name": "user_data",
                     "required": true,
                     "type": "map"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "media_titles",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "additional_image_urls",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "android_app_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "android_class",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "android_package",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "android_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "awards",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "cast",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "category",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "currency",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "director",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "fb_product_category",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "genre",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "image_url",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "ios_app_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "ios_app_store_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "ios_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "ipad_app_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "ipad_app_store_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "ipad_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "iphone_app_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "iphone_app_store_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "iphone_url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "media_category",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "price",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "rating",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "release_date",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "retailer_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "url",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "windows_phone_app_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "windows_phone_app_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "windows_phone_url",
+                    "required": false,
+                    "type": "string"
                 }
             ]
         },

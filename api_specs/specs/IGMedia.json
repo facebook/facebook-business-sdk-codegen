@@ -204,6 +204,10 @@
             "type": "IGVideoCopyrightCheckMatchesInformation"
         },
         {
+            "name": "current_live_viewer_count",
+            "type": "int"
+        },
+        {
             "name": "has_poll",
             "type": "bool"
         },

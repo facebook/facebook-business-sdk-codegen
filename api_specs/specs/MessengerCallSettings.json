@@ -11,15 +11,15 @@
         },
         {
             "name": "call_routing",
-            "type": "string"
+            "type": "Object"
         },
         {
             "name": "icon_enabled",
             "type": "bool"
         },
         {
-            "name": "video",
-            "type": "string"
+            "name": "video_enabled",
+            "type": "bool"
         }
     ]
 }

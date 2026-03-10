@@ -1,0 +1,84 @@
+{
+    "fields": [
+        {
+            "name": "account_id",
+            "type": "string"
+        },
+        {
+            "name": "advantage_state_info",
+            "type": "object"
+        },
+        {
+            "name": "bid_strategy",
+            "type": "string"
+        },
+        {
+            "name": "budget_remaining",
+            "type": "string"
+        },
+        {
+            "name": "buying_type",
+            "type": "string"
+        },
+        {
+            "name": "configured_status",
+            "type": "string"
+        },
+        {
+            "name": "created_time",
+            "type": "string"
+        },
+        {
+            "name": "daily_budget",
+            "type": "string"
+        },
+        {
+            "name": "effective_status",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "lifetime_budget",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "objective",
+            "type": "string"
+        },
+        {
+            "name": "promoted_object",
+            "type": "object"
+        },
+        {
+            "name": "special_ad_categories",
+            "type": "list<AdCampaignGroupGet_special_ad_categories>"
+        },
+        {
+            "name": "spend_cap",
+            "type": "string"
+        },
+        {
+            "name": "start_time",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "stop_time",
+            "type": "string"
+        },
+        {
+            "name": "updated_time",
+            "type": "string"
+        }
+    ]
+}

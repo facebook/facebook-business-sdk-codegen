@@ -14,10 +14,6 @@
             "type": "Object"
         },
         {
-            "name": "greeting",
-            "type": "list<Object>"
-        },
-        {
             "name": "ice_breakers",
             "type": "list<Object>"
         },

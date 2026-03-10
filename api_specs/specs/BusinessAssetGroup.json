@@ -161,7 +161,7 @@
         {
             "method": "GET",
             "endpoint": "contained_instagram_accounts",
-            "return": "InstagramUser",
+            "return": "IGUser",
             "params": []
         },
         {

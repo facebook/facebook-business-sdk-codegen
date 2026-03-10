@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "recommendation_source",
+            "type": "string"
+        },
+        {
+            "name": "recommended_posts",
+            "type": "list<RecommendedPagePost>"
+        }
+    ]
+}

@@ -122,6 +122,11 @@
                     "type": "int"
                 },
                 {
+                    "name": "creative_test_config",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "description",
                     "required": false,
                     "type": "string"
@@ -747,53 +752,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "collaborative_ads_collaboration_requests",
-            "return": "CPASCollaborationRequest",
-            "params": [
-                {
-                    "name": "brands",
-                    "required": true,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "contact_email",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "contact_first_name",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "contact_last_name",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "phone_number",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "receiver_business",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "requester_agency_or_brand",
-                    "required": true,
-                    "type": "businesscollaborative_ads_collaboration_requests_requester_agency_or_brand_enum_param"
-                },
-                {
-                    "name": "sender_client_business",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "collaborative_ads_suggested_partners",
             "return": "CPASAdvertiserPartnershipRecommendation",
@@ -1325,6 +1283,11 @@
                     "type": "list<string>"
                 },
                 {
+                    "name": "capi_publishing_state",
+                    "required": false,
+                    "type": "businessopenbridge_configurations_capi_publishing_state_enum_param"
+                },
+                {
                     "name": "cloud_provider",
                     "required": false,
                     "type": "string"
@@ -1345,17 +1308,22 @@
                     "type": "string"
                 },
                 {
+                    "name": "event_enrichment_advertiser_state",
+                    "required": false,
+                    "type": "businessopenbridge_configurations_event_enrichment_advertiser_state_enum_param"
+                },
+                {
+                    "name": "event_enrichment_meta_state",
+                    "required": false,
+                    "type": "businessopenbridge_configurations_event_enrichment_meta_state_enum_param"
+                },
+                {
                     "name": "event_enrichment_state",
                     "required": false,
                     "type": "businessopenbridge_configurations_event_enrichment_state_enum_param"
                 },
                 {
                     "name": "fallback_domain",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "first_party_domain",
                     "required": false,
                     "type": "string"
                 },
@@ -1416,6 +1384,11 @@
             "endpoint": "owned_ad_accounts",
             "return": "AdAccount",
             "params": [
+                {
+                    "name": "include_shared_ad_accounts",
+                    "required": false,
+                    "type": "bool"
+                },
                 {
                     "name": "search_query",
                     "required": false,
@@ -2142,6 +2115,11 @@
                     "name": "description",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "edit_description_spec",
+                    "required": false,
+                    "type": "map"
                 },
                 {
                     "name": "embeddable",

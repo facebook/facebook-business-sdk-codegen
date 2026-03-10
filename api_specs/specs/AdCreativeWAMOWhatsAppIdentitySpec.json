@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "wamo_whatsapp_identity_id",
+            "type": "string"
+        }
+    ]
+}

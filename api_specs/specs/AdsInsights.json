@@ -54,7 +54,27 @@
             "type": "string"
         },
         {
+            "name": "advanced_actions_28d_view",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "advanced_reach_1d_lookback",
+            "type": "string"
+        },
+        {
+            "name": "advanced_reach_28d_lookback",
+            "type": "string"
+        },
+        {
+            "name": "advanced_reach_7d_lookback",
+            "type": "string"
+        },
+        {
             "name": "age_targeting",
+            "type": "string"
+        },
+        {
+            "name": "anchor_event_attribution_setting",
             "type": "string"
         },
         {
@@ -406,6 +426,10 @@
             "type": "string"
         },
         {
+            "name": "instagram_profile_visits",
+            "type": "string"
+        },
+        {
             "name": "instagram_upcoming_event_reminders_set",
             "type": "string"
         },
@@ -536,6 +560,10 @@
         {
             "name": "mobile_app_purchase_roas",
             "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "multi_event_conversion_attribution_setting",
+            "type": "string"
         },
         {
             "name": "objective",

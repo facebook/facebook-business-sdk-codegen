@@ -198,6 +198,10 @@
             "type": "string"
         },
         {
+            "name": "promoted_product_set_result",
+            "type": "string"
+        },
+        {
             "name": "skan_click",
             "type": "string"
         },

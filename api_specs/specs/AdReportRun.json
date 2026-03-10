@@ -44,7 +44,23 @@
         },
         {
             "name": "error_code",
+            "type": "int"
+        },
+        {
+            "name": "error_message",
+            "type": "string"
+        },
+        {
+            "name": "error_subcode",
             "type": "unsigned int"
+        },
+        {
+            "name": "error_user_msg",
+            "type": "string"
+        },
+        {
+            "name": "error_user_title",
+            "type": "string"
         },
         {
             "name": "friendly_name",

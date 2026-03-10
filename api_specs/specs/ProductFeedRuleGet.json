@@ -1,0 +1,20 @@
+{
+    "fields": [
+        {
+            "name": "attribute",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "params",
+            "type": "map<string, string>"
+        },
+        {
+            "name": "rule_type",
+            "type": "ProductFeedRuleGet_rule_type"
+        }
+    ]
+}

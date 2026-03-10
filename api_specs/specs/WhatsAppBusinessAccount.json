@@ -54,6 +54,18 @@
             "params": []
         },
         {
+            "method": "POST",
+            "endpoint": "business_messaging_feature_status",
+            "return": "WhatsAppBusinessAccount",
+            "params": [
+                {
+                    "name": "features",
+                    "required": true,
+                    "type": "list<map>"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "call_analytics",
             "return": "WABACallAnalytics",
@@ -280,12 +292,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "marketing_campaigns",
-            "return": "WhatsAppBusinessMMLiteCampaign",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "message_campaigns",
             "return": "WhatsAppBusinessCampaign",
             "params": []
@@ -360,8 +366,13 @@
                     "type": "string"
                 },
                 {
+                    "name": "hsm_ids",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
                     "name": "name",
-                    "required": true,
+                    "required": false,
                     "type": "string"
                 }
             ]
@@ -402,6 +413,11 @@
                     "type": "list<whatsappbusinessaccountmessage_templates_quality_score_enum_param>"
                 },
                 {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
                     "name": "source",
                     "required": false,
                     "type": "whatsappbusinessaccountmessage_templates_source_enum_param"
@@ -410,6 +426,11 @@
                     "name": "status",
                     "required": false,
                     "type": "list<whatsappbusinessaccountmessage_templates_status_enum_param>"
+                },
+                {
+                    "name": "until",
+                    "required": false,
+                    "type": "datetime"
                 }
             ]
         },
@@ -1035,7 +1056,17 @@
             "return": "WhatsAppBusinessAccount",
             "params": [
                 {
+                    "name": "degrees_of_freedom_spec",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "is_enabled_for_insights",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "template_auto_archival_enabled",
                     "required": false,
                     "type": "bool"
                 }
@@ -1138,6 +1169,10 @@
         {
             "name": "status",
             "type": "string"
+        },
+        {
+            "name": "template_auto_archival_enabled",
+            "type": "bool"
         },
         {
             "name": "timezone_id",

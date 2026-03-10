@@ -372,6 +372,11 @@
                     "type": "list<string>"
                 },
                 {
+                    "name": "use_for_products",
+                    "required": false,
+                    "type": "list<customaudience_use_for_products>"
+                },
+                {
                     "name": "use_in_campaigns",
                     "required": false,
                     "type": "bool"
@@ -467,6 +472,10 @@
         {
             "name": "lookalike_spec",
             "type": "LookalikeSpec"
+        },
+        {
+            "name": "messenger_marketing_messages_page",
+            "type": "Page"
         },
         {
             "name": "name",

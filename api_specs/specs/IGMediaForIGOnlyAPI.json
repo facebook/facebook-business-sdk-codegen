@@ -79,6 +79,10 @@
             "type": "int"
         },
         {
+            "name": "current_live_viewer_count",
+            "type": "int"
+        },
+        {
             "name": "id",
             "type": "string"
         },

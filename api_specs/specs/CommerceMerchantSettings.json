@@ -182,15 +182,38 @@
             "method": "GET",
             "return": "CommerceMerchantSettings",
             "params": []
+        },
+        {
+            "name": "#update",
+            "method": "POST",
+            "return": "CommerceMerchantSettings",
+            "params": [
+                {
+                    "name": "checkout_config",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "korea_ftc_listing",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "merchant_status",
+                    "required": false,
+                    "type": "commercemerchantsettings_merchant_status"
+                },
+                {
+                    "name": "privacy_policy_localized",
+                    "required": false,
+                    "type": "map"
+                }
+            ]
         }
     ],
     "fields": [
         {
             "name": "checkout_config",
-            "type": "string"
-        },
-        {
-            "name": "checkout_message",
             "type": "string"
         },
         {
@@ -239,10 +262,6 @@
         },
         {
             "name": "privacy_policy_localized",
-            "type": "string"
-        },
-        {
-            "name": "return_policy_localized",
             "type": "string"
         },
         {

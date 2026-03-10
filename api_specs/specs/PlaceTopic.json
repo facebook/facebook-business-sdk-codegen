@@ -35,10 +35,6 @@
             "type": "string"
         },
         {
-            "name": "parent_ids",
-            "type": "list<string>"
-        },
-        {
             "name": "plural_name",
             "type": "string"
         },

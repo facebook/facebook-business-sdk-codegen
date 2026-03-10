@@ -15,7 +15,7 @@
         },
         {
             "name": "push_metadata_ids",
-            "type": "list<unsigned int>"
+            "type": "list<string>"
         },
         {
             "name": "related_media",

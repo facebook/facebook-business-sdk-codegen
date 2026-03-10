@@ -52,10 +52,6 @@
             "type": "string"
         },
         {
-            "name": "category_specific_fields",
-            "type": "CatalogSubVerticalList"
-        },
-        {
             "name": "condition",
             "type": "LocalServiceBusiness_condition"
         },

@@ -745,6 +745,11 @@
                     "type": "unsigned int"
                 },
                 {
+                    "name": "frequency_control_specs",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
                     "name": "full_funnel_exploration_mode",
                     "required": false,
                     "type": "adcampaign_full_funnel_exploration_mode"
@@ -996,6 +1001,14 @@
         {
             "name": "created_time",
             "type": "datetime"
+        },
+        {
+            "name": "creative_diversity_label",
+            "type": "list<string>"
+        },
+        {
+            "name": "creative_diversity_score",
+            "type": "list<string>"
         },
         {
             "name": "creative_sequence",

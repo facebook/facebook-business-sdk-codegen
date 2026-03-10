@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "whatsapp_activation_status",
+            "type": "string"
+        }
+    ]
+}

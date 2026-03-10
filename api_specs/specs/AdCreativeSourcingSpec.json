@@ -2,6 +2,10 @@
     "apis": [],
     "fields": [
         {
+            "name": "ad_extensions_relevancy_spec",
+            "type": "Object"
+        },
+        {
             "name": "associated_product_set_id",
             "type": "string"
         },
@@ -27,6 +31,10 @@
         },
         {
             "name": "pca_spec",
+            "type": "Object"
+        },
+        {
+            "name": "product_media_metadata_spec",
             "type": "Object"
         },
         {

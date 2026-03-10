@@ -29,6 +29,22 @@
             "type": "string"
         },
         {
+            "name": "is_attribution_windows_disabled",
+            "type": "bool"
+        },
+        {
+            "name": "is_breakdowns_disabled",
+            "type": "bool"
+        },
+        {
+            "name": "is_columns_and_sort_disabled",
+            "type": "bool"
+        },
+        {
+            "name": "is_filters_disabled",
+            "type": "bool"
+        },
+        {
             "name": "name",
             "type": "string"
         },

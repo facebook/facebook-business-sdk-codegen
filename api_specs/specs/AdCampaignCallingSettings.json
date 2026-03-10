@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "call_forwarding",
+            "type": "string"
+        },
+        {
+            "name": "call_transcript",
+            "type": "string"
+        }
+    ]
+}

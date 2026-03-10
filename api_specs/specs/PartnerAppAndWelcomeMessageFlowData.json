@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "flow_data",
+            "type": "list<Object>"
+        }
+    ]
+}

@@ -35,14 +35,14 @@
         },
         {
             "method": "GET",
-            "endpoint": "recent_media",
+            "endpoint": "past_partnership_ads_media",
             "return": "IGMediaExportForCAM",
             "params": []
         },
         {
-            "name": "#get",
             "method": "GET",
-            "return": "IGUserExportForCAM",
+            "endpoint": "recent_media",
+            "return": "IGMediaExportForCAM",
             "params": []
         }
     ],
@@ -97,6 +97,10 @@
         },
         {
             "name": "portfolio_url",
+            "type": "string"
+        },
+        {
+            "name": "profile_picture_url",
             "type": "string"
         },
         {

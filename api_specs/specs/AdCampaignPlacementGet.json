@@ -1,0 +1,40 @@
+{
+    "fields": [
+        {
+            "name": "effective_audience_network_positions",
+            "type": "list<AdCampaignPlacementGet_effective_audience_network_positions>"
+        },
+        {
+            "name": "effective_device_platforms",
+            "type": "list<AdCampaignPlacementGet_effective_device_platforms>"
+        },
+        {
+            "name": "effective_facebook_positions",
+            "type": "list<AdCampaignPlacementGet_effective_facebook_positions>"
+        },
+        {
+            "name": "effective_instagram_positions",
+            "type": "list<AdCampaignPlacementGet_effective_instagram_positions>"
+        },
+        {
+            "name": "effective_messenger_positions",
+            "type": "list<AdCampaignPlacementGet_effective_messenger_positions>"
+        },
+        {
+            "name": "effective_oculus_positions",
+            "type": "list<AdCampaignPlacementGet_effective_oculus_positions>"
+        },
+        {
+            "name": "effective_publisher_platforms",
+            "type": "list<AdCampaignPlacementGet_effective_publisher_platforms>"
+        },
+        {
+            "name": "metadata",
+            "type": "object"
+        },
+        {
+            "name": "recommendations",
+            "type": "list<object>"
+        }
+    ]
+}

@@ -22,6 +22,10 @@
             "type": "list<string>"
         },
         {
+            "name": "dataset_split",
+            "type": "list<string>"
+        },
+        {
             "name": "event",
             "type": "list<string>"
         },

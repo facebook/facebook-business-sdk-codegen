@@ -38,6 +38,10 @@
             "type": "bool"
         },
         {
+            "name": "is_youth_ads_age_gated",
+            "type": "bool"
+        },
+        {
             "name": "key",
             "type": "string"
         },

@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "cpr_lift_estimation",
+            "type": "float"
+        },
+        {
+            "name": "should_display",
+            "type": "bool"
+        }
+    ]
+}

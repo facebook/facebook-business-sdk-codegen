@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "best_catalog_id",
+            "type": "string"
+        },
+        {
+            "name": "is_duplicated_catalog",
+            "type": "bool"
+        }
+    ]
+}

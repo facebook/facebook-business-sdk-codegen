@@ -26,6 +26,14 @@
             "type": "int"
         },
         {
+            "name": "recommended_budget_prediction",
+            "type": "Object"
+        },
+        {
+            "name": "sigedit_removal",
+            "type": "bool"
+        },
+        {
             "name": "status",
             "type": "string"
         }

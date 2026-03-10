@@ -351,6 +351,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "marketing_message_structured_spec",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "media_sourcing_spec",
                     "required": false,
                     "type": "map"
@@ -421,6 +426,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "product_suggestion_settings",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "recommender_settings",
                     "required": false,
                     "type": "map"
@@ -429,6 +439,11 @@
                     "name": "regional_regulation_disclaimer_spec",
                     "required": false,
                     "type": "map"
+                },
+                {
+                    "name": "source_facebook_post_id",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "source_instagram_media_id",
@@ -492,6 +507,11 @@
                 {
                     "name": "hash",
                     "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "image_id",
+                    "required": false,
                     "type": "string"
                 }
             ]
@@ -1457,6 +1477,11 @@
                     "name": "description",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "edit_description_spec",
+                    "required": false,
+                    "type": "map"
                 },
                 {
                     "name": "embeddable",
@@ -2427,6 +2452,11 @@
                     "name": "subtype",
                     "required": false,
                     "type": "adaccountcustomaudiences_subtype_enum_param"
+                },
+                {
+                    "name": "usage_restriction",
+                    "required": false,
+                    "type": "adaccountcustomaudiences_usage_restriction_enum_param"
                 },
                 {
                     "name": "use_for_products",
@@ -3533,6 +3563,11 @@
                     "type": "map"
                 },
                 {
+                    "name": "extra_data",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "fragmentation_parameters",
                     "required": false,
                     "type": "map"
@@ -3932,6 +3967,18 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "value_rule_set_translation",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "source",
+                    "required": false,
+                    "type": "Object"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "video_ads",
             "return": "AdVideo",
@@ -4287,6 +4334,10 @@
             "type": "list<int>"
         },
         {
+            "name": "marketing_messages_settings",
+            "type": "AdAccountMarketingMessagesSettings"
+        },
+        {
             "name": "media_agency",
             "type": "string"
         },
@@ -4301,6 +4352,10 @@
         {
             "name": "name",
             "type": "string"
+        },
+        {
+            "name": "offsite_clo_signal_status",
+            "type": "int"
         },
         {
             "name": "offsite_pixels_tos_accepted",

@@ -337,6 +337,10 @@
             "type": "string"
         },
         {
+            "name": "marketing_message_structured_spec",
+            "type": "AdCreativeMarketingMessageStructuredSpec"
+        },
+        {
             "name": "media_sourcing_spec",
             "type": "AdCreativeMediaSourcingSpec"
         },
@@ -407,6 +411,10 @@
         {
             "name": "product_set_id",
             "type": "string"
+        },
+        {
+            "name": "product_suggestion_settings",
+            "type": "AdCreativeProductSuggestionSettings"
         },
         {
             "name": "recommender_settings",

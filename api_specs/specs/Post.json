@@ -486,6 +486,10 @@
             "type": "bool"
         },
         {
+            "name": "is_eligible_for_dark_post",
+            "type": "bool"
+        },
+        {
             "name": "is_eligible_for_promotion",
             "type": "bool"
         },

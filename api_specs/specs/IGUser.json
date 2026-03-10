@@ -45,7 +45,13 @@
             "method": "GET",
             "endpoint": "branded_content_ad_permissions",
             "return": "IGBCAdsPermission",
-            "params": []
+            "params": [
+                {
+                    "name": "creator_username",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
         },
         {
             "method": "POST",
@@ -143,6 +149,18 @@
             ]
         },
         {
+            "method": "POST",
+            "endpoint": "business_messaging_feature_status",
+            "return": "IGUser",
+            "params": [
+                {
+                    "name": "features",
+                    "required": true,
+                    "type": "list<map>"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "catalog_product_search",
             "return": "ShadowIGUserCatalogProductSearch",
@@ -181,6 +199,12 @@
                     "type": "string"
                 }
             ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "collaborative_media",
+            "return": "ShadowIGUserCollaborativeMedia",
+            "params": []
         },
         {
             "method": "GET",
@@ -289,6 +313,11 @@
                     "name": "username",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "usernames",
+                    "required": false,
+                    "type": "list<string>"
                 }
             ]
         },
@@ -521,6 +550,23 @@
                     "name": "message",
                     "required": true,
                     "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "moderate_conversations",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "actions",
+                    "required": true,
+                    "type": "list<shadowigusermoderate_conversations_actions_enum_param>"
+                },
+                {
+                    "name": "user_ids",
+                    "required": true,
+                    "type": "list<map>"
                 }
             ]
         },

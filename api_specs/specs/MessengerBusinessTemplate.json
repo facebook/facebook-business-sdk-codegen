@@ -15,6 +15,11 @@
                     "name": "components",
                     "required": false,
                     "type": "list<map>"
+                },
+                {
+                    "name": "parameter_format",
+                    "required": false,
+                    "type": "messengerbusinesstemplate_parameter_format"
                 }
             ]
         }
@@ -54,6 +59,10 @@
         },
         {
             "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "parameter_format",
             "type": "string"
         },
         {

@@ -1,0 +1,38 @@
+{
+    "apis": [
+        {
+            "name": "genGet",
+            "method": "GET",
+            "endpoint": "data_sources",
+            "return": "ProductCatalogDataSourcesGet",
+            "params": [
+                {
+                    "name": "after",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "before",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "fields",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "ingestion_source_type",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "limit",
+                    "required": false,
+                    "type": "int"
+                }
+            ]
+        }
+    ],
+    "fields": []
+}

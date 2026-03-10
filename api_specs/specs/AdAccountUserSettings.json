@@ -145,10 +145,6 @@
             "type": "bool"
         },
         {
-            "name": "is_text_variation_nux_close",
-            "type": "bool"
-        },
-        {
             "name": "last_used_columns",
             "type": "Object"
         },
@@ -238,10 +234,6 @@
         },
         {
             "name": "show_archived_data",
-            "type": "bool"
-        },
-        {
-            "name": "show_text_variation_nux_tooltip",
             "type": "bool"
         },
         {

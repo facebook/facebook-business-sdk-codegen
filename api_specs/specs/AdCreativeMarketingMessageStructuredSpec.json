@@ -2,8 +2,20 @@
     "apis": [],
     "fields": [
         {
+            "name": "asset_customization",
+            "type": "Object"
+        },
+        {
+            "name": "autoreply",
+            "type": "Object"
+        },
+        {
             "name": "buttons",
             "type": "list<Object>"
+        },
+        {
+            "name": "conversation_template_id",
+            "type": "string"
         },
         {
             "name": "footer",
@@ -20,6 +32,10 @@
         {
             "name": "language",
             "type": "string"
+        },
+        {
+            "name": "offer",
+            "type": "Object"
         },
         {
             "name": "referenced_adgroup_id",

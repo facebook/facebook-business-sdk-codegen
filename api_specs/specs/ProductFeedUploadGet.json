@@ -1,0 +1,68 @@
+{
+    "fields": [
+        {
+            "name": "end_time",
+            "type": "string"
+        },
+        {
+            "name": "error_count",
+            "type": "int"
+        },
+        {
+            "name": "error_report",
+            "type": "object"
+        },
+        {
+            "name": "errors",
+            "type": "object"
+        },
+        {
+            "name": "filename",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "input_method",
+            "type": "ProductFeedUploadGet_input_method"
+        },
+        {
+            "name": "num_deleted_items",
+            "type": "int"
+        },
+        {
+            "name": "num_detected_items",
+            "type": "int"
+        },
+        {
+            "name": "num_invalid_items",
+            "type": "int"
+        },
+        {
+            "name": "num_persisted_items",
+            "type": "int"
+        },
+        {
+            "name": "progresses",
+            "type": "object"
+        },
+        {
+            "name": "start_time",
+            "type": "string"
+        },
+        {
+            "name": "upload_complete",
+            "type": "bool"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        },
+        {
+            "name": "warning_count",
+            "type": "int"
+        }
+    ]
+}

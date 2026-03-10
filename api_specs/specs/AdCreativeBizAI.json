@@ -1,0 +1,13 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "capabilities",
+            "type": "Object"
+        },
+        {
+            "name": "pills",
+            "type": "list<Object>"
+        }
+    ]
+}

@@ -2,10 +2,6 @@
     "apis": [],
     "fields": [
         {
-            "name": "anchor_event_config",
-            "type": "string"
-        },
-        {
             "name": "application_id",
             "type": "string"
         },
@@ -67,6 +63,10 @@
         },
         {
             "name": "lead_ads_selected_pixel_id",
+            "type": "string"
+        },
+        {
+            "name": "live_video_destination",
             "type": "string"
         },
         {
@@ -155,6 +155,14 @@
         },
         {
             "name": "retention_days",
+            "type": "string"
+        },
+        {
+            "name": "smart_pse_enabled",
+            "type": "bool"
+        },
+        {
+            "name": "smart_pse_setting",
             "type": "string"
         },
         {

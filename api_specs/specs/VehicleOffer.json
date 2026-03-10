@@ -74,8 +74,8 @@
             "type": "string"
         },
         {
-            "name": "category_specific_fields",
-            "type": "CatalogSubVerticalList"
+            "name": "comscore_market_codes",
+            "type": "list<string>"
         },
         {
             "name": "currency",

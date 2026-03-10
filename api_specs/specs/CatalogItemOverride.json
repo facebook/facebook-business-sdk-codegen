@@ -23,6 +23,10 @@
         {
             "name": "override_value",
             "type": "string"
+        },
+        {
+            "name": "upload_expected_method",
+            "type": "string"
         }
     ]
 }

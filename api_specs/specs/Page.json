@@ -265,28 +265,6 @@
         },
         {
             "method": "POST",
-            "endpoint": "business_data",
-            "return": "Object",
-            "params": [
-                {
-                    "name": "data",
-                    "required": true,
-                    "type": "list<string>"
-                },
-                {
-                    "name": "partner_agent",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "processing_type",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "POST",
             "endpoint": "business_messaging_feature_status",
             "return": "Page",
             "params": [
@@ -306,6 +284,58 @@
                     "name": "business",
                     "required": false,
                     "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "POST",
+            "endpoint": "call_metrics",
+            "return": "Object",
+            "params": [
+                {
+                    "name": "audio_stats",
+                    "required": true,
+                    "type": "map"
+                },
+                {
+                    "name": "call_ended_time",
+                    "required": true,
+                    "type": "datetime"
+                },
+                {
+                    "name": "call_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "end_call_reason",
+                    "required": true,
+                    "type": "pagecall_metrics_end_call_reason_enum_param"
+                },
+                {
+                    "name": "end_call_subreason",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "first_audio_packet_received_time",
+                    "required": true,
+                    "type": "datetime"
+                },
+                {
+                    "name": "first_video_packet_received_time",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "platform",
+                    "required": true,
+                    "type": "pagecall_metrics_platform_enum_param"
+                },
+                {
+                    "name": "video_stats",
+                    "required": false,
+                    "type": "map"
                 }
             ]
         },
@@ -2050,6 +2080,11 @@
                     "name": "name",
                     "required": true,
                     "type": "string"
+                },
+                {
+                    "name": "parameter_format",
+                    "required": false,
+                    "type": "pagemessage_templates_parameter_format_enum_param"
                 }
             ]
         },
@@ -2058,6 +2093,11 @@
             "endpoint": "messages",
             "return": "Page",
             "params": [
+                {
+                    "name": "folder",
+                    "required": false,
+                    "type": "pagemessages_folder_enum_param"
+                },
                 {
                     "name": "message",
                     "required": false,
@@ -2123,6 +2163,18 @@
         },
         {
             "method": "GET",
+            "endpoint": "messenger_call_permissions",
+            "return": "MessengerCallPermissions",
+            "params": [
+                {
+                    "name": "psid",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "messenger_call_settings",
             "return": "MessengerCallSettings",
             "params": []
@@ -2153,9 +2205,9 @@
                     "type": "bool"
                 },
                 {
-                    "name": "video",
+                    "name": "video_enabled",
                     "required": false,
-                    "type": "map"
+                    "type": "bool"
                 }
             ]
         },
@@ -2282,11 +2334,6 @@
                     "type": "Object"
                 },
                 {
-                    "name": "greeting",
-                    "required": false,
-                    "type": "list<Object>"
-                },
-                {
                     "name": "ice_breakers",
                     "required": false,
                     "type": "list<map>"
@@ -2300,11 +2347,6 @@
                     "name": "platform",
                     "required": false,
                     "type": "pagemessenger_profile_platform_enum_param"
-                },
-                {
-                    "name": "title",
-                    "required": false,
-                    "type": "list<Object>"
                 },
                 {
                     "name": "whitelisted_domains",
@@ -2381,6 +2423,11 @@
                     "name": "custom_audience_ids",
                     "required": false,
                     "type": "list<string>"
+                },
+                {
+                    "name": "do_not_return_duplicates",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         },
@@ -3127,6 +3174,29 @@
         },
         {
             "method": "GET",
+            "endpoint": "space_participants",
+            "return": "Page",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "space_participants",
+            "return": "Page",
+            "params": [
+                {
+                    "name": "recipient",
+                    "required": true,
+                    "type": "Object"
+                },
+                {
+                    "name": "space_name",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
             "endpoint": "store_locations",
             "return": "StoreLocation",
             "params": []
@@ -3617,6 +3687,11 @@
                     "name": "direct_share_status",
                     "required": false,
                     "type": "unsigned int"
+                },
+                {
+                    "name": "edit_description_spec",
+                    "required": false,
+                    "type": "map"
                 },
                 {
                     "name": "embeddable",
@@ -4812,6 +4887,10 @@
         {
             "name": "price_range",
             "type": "string"
+        },
+        {
+            "name": "priority_hours",
+            "type": "list<map<string, string>>"
         },
         {
             "name": "privacy_info_url",

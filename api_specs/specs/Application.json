@@ -1133,18 +1133,6 @@
             ]
         },
         {
-            "method": "GET",
-            "endpoint": "subscribed_domains",
-            "return": "CTCertDomain",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "subscribed_domains_phishing",
-            "return": "CTCertDomain",
-            "params": []
-        },
-        {
             "method": "DELETE",
             "endpoint": "subscriptions",
             "return": "Object",
@@ -1194,6 +1182,50 @@
                 },
                 {
                     "name": "verify_token",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "threat_privacy_groups_member",
+            "return": "ThreatPrivacyGroup",
+            "params": [
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "group_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "name",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "method": "GET",
+            "endpoint": "threat_privacy_groups_owner",
+            "return": "ThreatPrivacyGroup",
+            "params": [
+                {
+                    "name": "description",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "group_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "name",
                     "required": false,
                     "type": "string"
                 }
@@ -1571,6 +1603,10 @@
         {
             "name": "company",
             "type": "string"
+        },
+        {
+            "name": "config_ids",
+            "type": "list<Object>"
         },
         {
             "name": "configured_ios_sso",

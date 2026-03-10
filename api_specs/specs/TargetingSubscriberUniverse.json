@@ -2,6 +2,10 @@
     "apis": [],
     "fields": [
         {
+            "name": "messenger_subscriber_pool",
+            "type": "IDName"
+        },
+        {
             "name": "messenger_subscriber_source",
             "type": "IDName"
         },

@@ -1,0 +1,45 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "ai_agent_mode",
+            "type": "string"
+        },
+        {
+            "name": "conversation_summary",
+            "type": "string"
+        },
+        {
+            "name": "handoff_reason",
+            "type": "string"
+        },
+        {
+            "name": "lead_interest_level",
+            "type": "string"
+        },
+        {
+            "name": "needed_manual_actions",
+            "type": "list<string>"
+        },
+        {
+            "name": "qualification_details",
+            "type": "string"
+        },
+        {
+            "name": "qualification_status",
+            "type": "string"
+        },
+        {
+            "name": "scheduled_time",
+            "type": "Object"
+        },
+        {
+            "name": "updated_email",
+            "type": "string"
+        },
+        {
+            "name": "updated_phone_number",
+            "type": "string"
+        }
+    ]
+}

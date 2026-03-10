@@ -1,0 +1,59 @@
+{
+    "apis": [
+        {
+            "name": "genGet",
+            "method": "GET",
+            "endpoint": "",
+            "return": "AdCampaignPlacementGet",
+            "params": [
+                {
+                    "name": "account_id",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "billing_event",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "buying_type",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "destination_type",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "has_dynamic_creative",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "metadata",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "objective",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "optimization_goal",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "promoted_object",
+                    "required": false,
+                    "type": "string"
+                }
+            ],
+            "basePath": "ad_campaign_placement"
+        }
+    ],
+    "fields": []
+}

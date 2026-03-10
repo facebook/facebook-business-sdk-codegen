@@ -264,6 +264,11 @@
             "return": "AdsPixelStatsResult",
             "params": [
                 {
+                    "name": "agent",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "aggregation",
                     "required": false,
                     "type": "adspixelstats_aggregation_enum_param"

@@ -48,6 +48,14 @@
         {
             "name": "site_link_url_anchor",
             "type": "string"
+        },
+        {
+            "name": "site_link_url_recommender_type",
+            "type": "string"
+        },
+        {
+            "name": "site_link_website_data_source",
+            "type": "string"
         }
     ]
 }

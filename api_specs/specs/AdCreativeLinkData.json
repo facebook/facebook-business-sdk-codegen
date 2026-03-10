@@ -142,6 +142,10 @@
             "type": "bool"
         },
         {
+            "name": "smart_pse_enabled",
+            "type": "bool"
+        },
+        {
             "name": "static_fallback_spec",
             "type": "AdCreativeStaticFallbackSpec"
         },

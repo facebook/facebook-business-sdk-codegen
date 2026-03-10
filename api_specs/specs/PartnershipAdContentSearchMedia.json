@@ -2,6 +2,14 @@
     "apis": [],
     "fields": [
         {
+            "name": "fb_ad_code_sponsor_count",
+            "type": "int"
+        },
+        {
+            "name": "fb_ad_code_sponsors",
+            "type": "list<FBPageAndInstagramAccount>"
+        },
+        {
             "name": "ig_ad_code_sponsor_count",
             "type": "int"
         },

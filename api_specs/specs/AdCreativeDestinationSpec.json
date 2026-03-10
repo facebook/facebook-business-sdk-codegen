@@ -6,6 +6,10 @@
             "type": "string"
         },
         {
+            "name": "native_commerce_experience",
+            "type": "Object"
+        },
+        {
             "name": "website",
             "type": "Object"
         }

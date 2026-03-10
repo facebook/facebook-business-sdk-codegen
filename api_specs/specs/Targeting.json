@@ -126,6 +126,10 @@
             "type": "list<string>"
         },
         {
+            "name": "effective_whatsapp_positions",
+            "type": "list<string>"
+        },
+        {
             "name": "engagement_specs",
             "type": "list<TargetingDynamicRule>"
         },
@@ -246,6 +250,10 @@
             "type": "list<string>"
         },
         {
+            "name": "install_state_application",
+            "type": "string"
+        },
+        {
             "name": "instream_video_skippable_excluded",
             "type": "bool"
         },
@@ -350,6 +358,10 @@
             "type": "list<IDName>"
         },
         {
+            "name": "user_age_unknown",
+            "type": "bool"
+        },
+        {
             "name": "user_device",
             "type": "list<string>"
         },
@@ -359,6 +371,10 @@
         },
         {
             "name": "user_os",
+            "type": "list<string>"
+        },
+        {
+            "name": "whatsapp_positions",
             "type": "list<string>"
         },
         {
