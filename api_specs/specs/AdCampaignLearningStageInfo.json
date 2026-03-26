@@ -6,8 +6,16 @@
             "type": "list<string>"
         },
         {
+            "name": "cas_segment",
+            "type": "string"
+        },
+        {
             "name": "conversions",
             "type": "unsigned int"
+        },
+        {
+            "name": "current_budget_prediction",
+            "type": "Object"
         },
         {
             "name": "dynamic_lp_conversions_threshold",
@@ -20,6 +28,10 @@
         {
             "name": "dynamic_lp_status",
             "type": "string"
+        },
+        {
+            "name": "is_one_to_one_cbo_budget",
+            "type": "bool"
         },
         {
             "name": "last_sig_edit_ts",

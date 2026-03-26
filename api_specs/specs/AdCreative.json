@@ -281,6 +281,10 @@
             "type": "bool"
         },
         {
+            "name": "existing_post_title",
+            "type": "string"
+        },
+        {
             "name": "facebook_branded_content",
             "type": "AdCreativeFacebookBrandedContent"
         },

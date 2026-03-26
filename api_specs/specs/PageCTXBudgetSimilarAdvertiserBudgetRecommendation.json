@@ -6,7 +6,23 @@
             "type": "string"
         },
         {
+            "name": "budget_new_model",
+            "type": "string"
+        },
+        {
+            "name": "budget_without_threshold",
+            "type": "string"
+        },
+        {
             "name": "reported_conversion",
+            "type": "string"
+        },
+        {
+            "name": "reported_conversions_new_model",
+            "type": "string"
+        },
+        {
+            "name": "reported_conversions_without_threshold",
             "type": "string"
         }
     ]

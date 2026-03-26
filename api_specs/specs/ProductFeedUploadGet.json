@@ -22,7 +22,7 @@
         },
         {
             "name": "id",
-            "type": "string"
+            "type": "int"
         },
         {
             "name": "input_method",

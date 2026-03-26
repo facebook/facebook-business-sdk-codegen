@@ -1,0 +1,12 @@
+{
+    "apis": [
+        {
+            "name": "genPost",
+            "method": "POST",
+            "endpoint": "apps_and_software",
+            "return": "ProductCatalogAppsAndSoftwarePost",
+            "params": []
+        }
+    ],
+    "fields": []
+}

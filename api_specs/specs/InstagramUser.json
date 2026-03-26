@@ -2,30 +2,6 @@
     "apis": [
         {
             "method": "GET",
-            "endpoint": "agencies",
-            "return": "Business",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "ar_effects",
-            "return": "AREffect",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "authorized_adaccounts",
-            "return": "AdAccount",
-            "params": [
-                {
-                    "name": "business",
-                    "required": true,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "upcoming_events",
             "return": "IGUpcomingEvent",
             "params": []

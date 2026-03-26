@@ -35,6 +35,11 @@
                     "type": "list<unsigned int>"
                 },
                 {
+                    "name": "ads",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
                     "name": "adsets",
                     "required": false,
                     "type": "list<string>"
@@ -66,6 +71,10 @@
         {
             "name": "ad_entities_count",
             "type": "unsigned int"
+        },
+        {
+            "name": "ad_ids",
+            "type": "list<string>"
         },
         {
             "name": "control_percentage",

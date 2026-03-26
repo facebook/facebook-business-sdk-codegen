@@ -1061,6 +1061,11 @@
                     "type": "map"
                 },
                 {
+                    "name": "disable_marketing_messages_on_cloud_api",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "is_enabled_for_insights",
                     "required": false,
                     "type": "bool"
@@ -1101,6 +1106,10 @@
         {
             "name": "currency",
             "type": "string"
+        },
+        {
+            "name": "disable_marketing_messages_on_cloud_api",
+            "type": "bool"
         },
         {
             "name": "health_status",

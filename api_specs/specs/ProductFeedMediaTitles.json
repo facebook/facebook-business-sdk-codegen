@@ -17,9 +17,19 @@
                     "type": "string"
                 },
                 {
+                    "name": "display_format",
+                    "required": false,
+                    "type": "ProductFeedMediaTitlesGet_display_format_enum_param"
+                },
+                {
                     "name": "limit",
                     "required": false,
                     "type": "int"
+                },
+                {
+                    "name": "summary",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         }

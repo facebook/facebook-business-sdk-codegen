@@ -18,6 +18,10 @@
             "type": "Object"
         },
         {
+            "name": "duplication_source",
+            "type": "string"
+        },
+        {
             "name": "dynamic_site_links_spec",
             "type": "Object"
         },

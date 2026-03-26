@@ -2,6 +2,10 @@
     "apis": [],
     "fields": [
         {
+            "name": "is_defaulting_eligible",
+            "type": "bool"
+        },
+        {
             "name": "is_site_link_sticky",
             "type": "bool"
         },

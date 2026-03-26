@@ -3,8 +3,8 @@
         {
             "name": "genGet",
             "method": "GET",
-            "endpoint": "apps_and_software",
-            "return": "ProductFeedAppsAndSoftwareGet",
+            "endpoint": "rules",
+            "return": "ProductFeedRulesGet",
             "params": [
                 {
                     "name": "after",
@@ -17,19 +17,9 @@
                     "type": "string"
                 },
                 {
-                    "name": "display_format",
-                    "required": false,
-                    "type": "ProductFeedAppsAndSoftwareGet_display_format_enum_param"
-                },
-                {
                     "name": "limit",
                     "required": false,
                     "type": "int"
-                },
-                {
-                    "name": "summary",
-                    "required": false,
-                    "type": "bool"
                 }
             ]
         }

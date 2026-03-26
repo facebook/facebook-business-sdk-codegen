@@ -3,8 +3,8 @@
         {
             "name": "genGet",
             "method": "GET",
-            "endpoint": "apps_and_software",
-            "return": "ProductFeedAppsAndSoftwareGet",
+            "endpoint": "media_titles",
+            "return": "ProductSetMediaTitlesGet",
             "params": [
                 {
                     "name": "after",
@@ -19,7 +19,7 @@
                 {
                     "name": "display_format",
                     "required": false,
-                    "type": "ProductFeedAppsAndSoftwareGet_display_format_enum_param"
+                    "type": "ProductSetMediaTitlesGet_display_format_enum_param"
                 },
                 {
                     "name": "limit",

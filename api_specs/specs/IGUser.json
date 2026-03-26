@@ -240,6 +240,11 @@
                     "type": "list<shadowigusercreator_marketplace_creators_creator_countries_enum_param>"
                 },
                 {
+                    "name": "creator_follower_growth",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
                     "name": "creator_gender",
                     "required": false,
                     "type": "list<shadowigusercreator_marketplace_creators_creator_gender_enum_param>"
@@ -248,6 +253,11 @@
                     "name": "creator_interests",
                     "required": false,
                     "type": "list<Object>"
+                },
+                {
+                    "name": "creator_latest_post_activity",
+                    "required": false,
+                    "type": "Object"
                 },
                 {
                     "name": "creator_max_engaged_accounts",
@@ -283,6 +293,11 @@
                     "name": "major_audience_countries",
                     "required": false,
                     "type": "list<shadowigusercreator_marketplace_creators_major_audience_countries_enum_param>"
+                },
+                {
+                    "name": "major_audience_device_type",
+                    "required": false,
+                    "type": "list<Object>"
                 },
                 {
                     "name": "major_audience_gender",

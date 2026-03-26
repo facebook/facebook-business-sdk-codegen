@@ -162,6 +162,14 @@
             "type": "string"
         },
         {
+            "name": "secure_sharing_text_for_embedded_booking_calendly",
+            "type": "string"
+        },
+        {
+            "name": "secure_sharing_text_for_embedded_booking_ghl",
+            "type": "string"
+        },
+        {
             "name": "secure_sharing_text_for_optional_privacy_policy",
             "type": "string"
         },

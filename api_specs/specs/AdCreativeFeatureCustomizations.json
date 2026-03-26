@@ -14,7 +14,31 @@
             "type": "string"
         },
         {
+            "name": "fb_feed_tag_name",
+            "type": "string"
+        },
+        {
+            "name": "fb_reels_tag_name",
+            "type": "string"
+        },
+        {
+            "name": "fb_story_tag_name",
+            "type": "string"
+        },
+        {
             "name": "font_name",
+            "type": "string"
+        },
+        {
+            "name": "ig_feed_tag_name",
+            "type": "string"
+        },
+        {
+            "name": "ig_reels_tag_name",
+            "type": "string"
+        },
+        {
+            "name": "ig_stream_tag_name",
             "type": "string"
         },
         {

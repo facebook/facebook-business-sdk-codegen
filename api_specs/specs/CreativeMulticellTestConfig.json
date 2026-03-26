@@ -18,6 +18,10 @@
             "type": "string"
         },
         {
+            "name": "lead_gen_forms",
+            "type": "string"
+        },
+        {
             "name": "lifetime_budget",
             "type": "int"
         },

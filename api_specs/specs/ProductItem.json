@@ -490,6 +490,14 @@
             "type": "list<map<string, string>>"
         },
         {
+            "name": "affiliate_seller_rating",
+            "type": "float"
+        },
+        {
+            "name": "affiliate_seller_rating_count",
+            "type": "int"
+        },
+        {
             "name": "age_group",
             "type": "ProductItem_age_group"
         },
@@ -500,6 +508,10 @@
         {
             "name": "availability",
             "type": "ProductItem_availability"
+        },
+        {
+            "name": "base_commission_rate",
+            "type": "int"
         },
         {
             "name": "brand",
@@ -524,6 +536,10 @@
         {
             "name": "category",
             "type": "string"
+        },
+        {
+            "name": "category_ranking",
+            "type": "int"
         },
         {
             "name": "category_specific_fields",
@@ -696,6 +712,10 @@
         {
             "name": "origin_country",
             "type": "string"
+        },
+        {
+            "name": "overall_ranking",
+            "type": "int"
         },
         {
             "name": "parent_product_id",

@@ -58,7 +58,7 @@
         },
         {
             "name": "special_ad_categories",
-            "type": "list<AdCampaignGroupGet_special_ad_categories>"
+            "type": "list<string>"
         },
         {
             "name": "spend_cap",

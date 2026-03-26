@@ -383,23 +383,6 @@
         ]
     },
     {
-        "name": "AdCampaignGroupGet_special_ad_categories",
-        "node": "AdCampaignGroupGet",
-        "field_or_param": "special_ad_categories",
-        "values": [
-            "CREDIT",
-            "EDUCATION",
-            "ELECTIONS_POLITICS",
-            "EMPLOYMENT",
-            "FINANCIAL_PRODUCTS_SERVICES",
-            "HOUSING",
-            "ISSUES_ELECTIONS_POLITICS",
-            "NONE",
-            "ONLINE_GAMBLING_AND_GAMING",
-            "SOCIAL_ISSUES"
-        ]
-    },
-    {
         "name": "AdCampaignPlacementGet_effective_audience_network_positions",
         "node": "AdCampaignPlacementGet",
         "field_or_param": "effective_audience_network_positions",
@@ -2106,6 +2089,26 @@
         ]
     },
     {
+        "name": "ProductFeedAppsAndSoftwareGet_display_format_enum_param",
+        "node": "ProductFeedAppsAndSoftwareGet",
+        "field_or_param": "display_format",
+        "values": [
+            "CAROUSEL_AD",
+            "SHOPS_PDP",
+            "SINGLE_AD"
+        ]
+    },
+    {
+        "name": "ProductFeedMediaTitlesGet_display_format_enum_param",
+        "node": "ProductFeedMediaTitlesGet",
+        "field_or_param": "display_format",
+        "values": [
+            "CAROUSEL_AD",
+            "SHOPS_PDP",
+            "SINGLE_AD"
+        ]
+    },
+    {
         "name": "ProductFeedRuleGet_rule_type",
         "node": "ProductFeedRuleGet",
         "field_or_param": "rule_type",
@@ -2348,6 +2351,26 @@
         "values": [
             "published",
             "staging"
+        ]
+    },
+    {
+        "name": "ProductSetAppsAndSoftwareGet_display_format_enum_param",
+        "node": "ProductSetAppsAndSoftwareGet",
+        "field_or_param": "display_format",
+        "values": [
+            "CAROUSEL_AD",
+            "SHOPS_PDP",
+            "SINGLE_AD"
+        ]
+    },
+    {
+        "name": "ProductSetMediaTitlesGet_display_format_enum_param",
+        "node": "ProductSetMediaTitlesGet",
+        "field_or_param": "display_format",
+        "values": [
+            "CAROUSEL_AD",
+            "SHOPS_PDP",
+            "SINGLE_AD"
         ]
     },
     {
@@ -2972,6 +2995,7 @@
             "ACCOUNT_SPEND_LIMIT_DUPLICATION",
             "ACO_TOGGLE",
             "ADD_FUNDS_TO_RUN_CAMPAIGN",
+            "ADOPT_CATALOG_TO_RUN_PRODUCT_CENTRIC_ADS",
             "ADOPT_CREATIVE_MEDIA_SOURCING_BUNDLE",
             "ADOPT_CTX_RECOMMENDED_TEMPLATE_BUNDLE",
             "ADOPT_GEN_AI_MVP_CHILD",
@@ -3114,6 +3138,7 @@
             "CREATION_PACKAGE_UPGRADE_TO_CTX",
             "CREATION_PACKAGE_UPGRADE_TO_TLA",
             "CREATION_PACKAGE_UPGRADE_TO_TMC",
+            "CREATIVE_AUDIENCE_PAIRING_DU",
             "CREATIVE_BADGE",
             "CREATIVE_DIVERSITY",
             "CREATIVE_FATIGUE",
@@ -3188,6 +3213,7 @@
             "IAA_ROAS_OPTIMIZATION",
             "IG_MULTI_ADS",
             "IG_SURFACES_MANUAL_PLACEMENTS",
+            "INCREASE_BUDGET_UNDERPOWERED_EXPERIMENTS",
             "INCREMENTAL_ATTRIBUTION",
             "INSTANT_FORMS_LEADS",
             "IN_APP_AD_IMPRESSION_ROAS_ANDROID",
@@ -3313,6 +3339,7 @@
             "SIX_PLUS_PLACEMENTS_DUPLICATION",
             "SMART_DEFAULT_VALUE_RULES",
             "SMB_DUPLICATION",
+            "SMS_OTP_VERIFICATION_UPSELL",
             "SPEND_LIMIT",
             "SUPPORT_CTM_ADS_WITH_CUSTOMER_ACTIONS",
             "SYD_TEST_MODE",
@@ -5431,6 +5458,7 @@
             "age_range",
             "alternate_auto_targeting_option",
             "app_install_state",
+            "audience_concepts",
             "audience_network_positions",
             "behaviors",
             "brand_safety_content_filter_levels",
@@ -5608,6 +5636,7 @@
             "age_range",
             "alternate_auto_targeting_option",
             "app_install_state",
+            "audience_concepts",
             "audience_network_positions",
             "behaviors",
             "brand_safety_content_filter_levels",
@@ -6051,6 +6080,7 @@
             "age_range",
             "alternate_auto_targeting_option",
             "app_install_state",
+            "audience_concepts",
             "audience_network_positions",
             "behaviors",
             "brand_safety_content_filter_levels",
@@ -6593,7 +6623,8 @@
         "field_or_param": "status",
         "values": [
             "ACTIVE",
-            "DELETED"
+            "DELETED",
+            "DRAFT"
         ]
     },
     {
@@ -11725,6 +11756,8 @@
         "field_or_param": "vertical",
         "values": [
             "adoptable_pets",
+            "apps_and_software",
+            "articles_and_publications",
             "commerce",
             "destinations",
             "flights",
@@ -11732,8 +11765,10 @@
             "home_listings",
             "hotels",
             "local_service_businesses",
+            "media_titles",
             "offer_items",
             "offline_commerce",
+            "professional_services",
             "transactable_items",
             "vehicles"
         ]
@@ -12504,24 +12539,6 @@
             "MERCHANT_MARKED_COMPLETED",
             "REFUNDED",
             "REQUESTED"
-        ]
-    },
-    {
-        "name": "commerceorderrefunds_reason_code_enum_param",
-        "node": "CommerceOrder",
-        "field_or_param": "reason_code",
-        "values": [
-            "BUYERS_REMORSE",
-            "DAMAGED_GOODS",
-            "FACEBOOK_INITIATED",
-            "NOT_AS_DESCRIBED",
-            "QUALITY_ISSUE",
-            "REFUND_COMPROMISED",
-            "REFUND_FOR_RETURN",
-            "REFUND_REASON_OTHER",
-            "REFUND_SFI_FAKE",
-            "REFUND_SFI_REAL",
-            "WRONG_ITEM"
         ]
     },
     {
@@ -16418,6 +16435,7 @@
             "ADD_TO_CART",
             "OFFER_SUBMITTED",
             "PURCHASE",
+            "PURCHASE_VIA_OFFER",
             "TEST",
             "VIEW_ITEM"
         ]

@@ -105,11 +105,6 @@
                     "type": "int"
                 },
                 {
-                    "name": "creative_test_config",
-                    "required": false,
-                    "type": "map"
-                },
-                {
                     "name": "description",
                     "required": false,
                     "type": "string"

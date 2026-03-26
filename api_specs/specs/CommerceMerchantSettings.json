@@ -1,23 +1,6 @@
 {
     "apis": [
         {
-            "method": "POST",
-            "endpoint": "acknowledge_orders",
-            "return": "CommerceMerchantSettings",
-            "params": [
-                {
-                    "name": "idempotency_key",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "orders",
-                    "required": true,
-                    "type": "list<map>"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "commerce_orders",
             "return": "CommerceOrder",

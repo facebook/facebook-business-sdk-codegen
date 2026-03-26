@@ -286,6 +286,11 @@
                     "type": "list<adaccountadcreatives_execution_options_enum_param>"
                 },
                 {
+                    "name": "existing_post_title",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "facebook_branded_content",
                     "required": false,
                     "type": "map"
@@ -1151,6 +1156,11 @@
                 },
                 {
                     "name": "min_budget_spend_percentage",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "multi_event_conversion_attribution_window_seconds",
                     "required": false,
                     "type": "unsigned int"
                 },

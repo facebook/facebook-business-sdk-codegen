@@ -261,6 +261,14 @@
             "type": "string"
         },
         {
+            "name": "pcau_cat_optout_survey_impr",
+            "type": "int"
+        },
+        {
+            "name": "pcau_cat_optout_survey_resp_ts",
+            "type": "datetime"
+        },
+        {
             "name": "placement_group_square_opt_in_status",
             "type": "string"
         },

@@ -805,6 +805,11 @@
                     "type": "unsigned int"
                 },
                 {
+                    "name": "multi_event_conversion_attribution_window_seconds",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
                     "name": "multi_optimization_goal_weight",
                     "required": false,
                     "type": "adcampaign_multi_optimization_goal_weight"
@@ -936,6 +941,10 @@
         },
         {
             "name": "asset_feed_id",
+            "type": "string"
+        },
+        {
+            "name": "attribution_count_type",
             "type": "string"
         },
         {
@@ -1111,12 +1120,20 @@
             "type": "string"
         },
         {
+            "name": "low_creative_reach",
+            "type": "list<string>"
+        },
+        {
             "name": "max_budget_spend_percentage",
             "type": "string"
         },
         {
             "name": "min_budget_spend_percentage",
             "type": "string"
+        },
+        {
+            "name": "multi_event_conversion_attribution_window_seconds",
+            "type": "int"
         },
         {
             "name": "multi_optimization_goal_weight",
@@ -1177,6 +1194,10 @@
         {
             "name": "source_adset_id",
             "type": "string"
+        },
+        {
+            "name": "special_ad_categories",
+            "type": "list<string>"
         },
         {
             "name": "start_time",
