@@ -58,7 +58,7 @@
         },
         {
             "name": "sentence_lines",
-            "type": "list"
+            "type": "list<SavedAudienceSentence>"
         },
         {
             "name": "targeting",
