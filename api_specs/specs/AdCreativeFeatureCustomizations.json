@@ -50,6 +50,10 @@
             "type": "Object"
         },
         {
+            "name": "recomposition_type",
+            "type": "Object"
+        },
+        {
             "name": "showcase_card_display",
             "type": "string"
         },

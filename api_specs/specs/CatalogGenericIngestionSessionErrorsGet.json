@@ -1,8 +1,0 @@
-{
-    "fields": [
-        {
-            "name": "data",
-            "type": "list<object>"
-        }
-    ]
-}

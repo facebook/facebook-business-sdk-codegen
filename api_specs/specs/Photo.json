@@ -143,6 +143,11 @@
             "return": "Photo",
             "params": [
                 {
+                    "name": "attribution_id_v2",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "feedback_source",
                     "required": false,
                     "type": "string"

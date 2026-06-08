@@ -13,6 +13,10 @@
             "type": "bool"
         },
         {
+            "name": "adaptive_geo_excl_banner_seen_ts",
+            "type": "list<map<string, int>>"
+        },
+        {
             "name": "add_overlays_opt_in_status",
             "type": "string"
         },
@@ -157,6 +161,10 @@
             "type": "int"
         },
         {
+            "name": "dco_to_mmu_opt_out_status",
+            "type": "string"
+        },
+        {
             "name": "default_creation_mode",
             "type": "string"
         },
@@ -175,6 +183,10 @@
         {
             "name": "feedback_surveys",
             "type": "list<string>"
+        },
+        {
+            "name": "ff_to_mmu_opt_out_status",
+            "type": "string"
         },
         {
             "name": "focus_mode_default",
@@ -206,6 +218,10 @@
         },
         {
             "name": "image_templates_text_extraction_opt_in_status",
+            "type": "string"
+        },
+        {
+            "name": "image_text_translation_opt_in_status",
             "type": "string"
         },
         {
@@ -266,6 +282,18 @@
         },
         {
             "name": "pcau_cat_optout_survey_resp_ts",
+            "type": "datetime"
+        },
+        {
+            "name": "pe_ai_relevancy_opt_out_ts",
+            "type": "datetime"
+        },
+        {
+            "name": "pe_show_products_survey_impr",
+            "type": "int"
+        },
+        {
+            "name": "pe_show_products_survey_resp_ts",
             "type": "datetime"
         },
         {
@@ -385,6 +413,14 @@
             "type": "string"
         },
         {
+            "name": "text_unification_opt_in_status",
+            "type": "string"
+        },
+        {
+            "name": "text_unification_opt_in_status_v2",
+            "type": "string"
+        },
+        {
             "name": "text_variations_sticky_opt_in_status",
             "type": "string"
         },
@@ -414,6 +450,10 @@
         },
         {
             "name": "video_to_image_opt_in_status",
+            "type": "string"
+        },
+        {
+            "name": "voiceover_trans_opt_in_status",
             "type": "string"
         },
         {

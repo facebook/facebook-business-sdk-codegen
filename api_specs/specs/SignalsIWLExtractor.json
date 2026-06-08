@@ -17,6 +17,10 @@
             "type": "string"
         },
         {
+            "name": "extractor_config",
+            "type": "Object"
+        },
+        {
             "name": "extractor_type",
             "type": "string"
         },

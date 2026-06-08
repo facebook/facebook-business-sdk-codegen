@@ -1,0 +1,36 @@
+{
+    "fields": [
+        {
+            "name": "ad_object_id",
+            "type": "string"
+        },
+        {
+            "name": "budget_value",
+            "type": "int"
+        },
+        {
+            "name": "budget_value_type",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "recurrence_type",
+            "type": "string"
+        },
+        {
+            "name": "time_end",
+            "type": "string"
+        },
+        {
+            "name": "time_start",
+            "type": "string"
+        },
+        {
+            "name": "weekly_schedule",
+            "type": "list<object>"
+        }
+    ]
+}

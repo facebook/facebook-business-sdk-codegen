@@ -52,6 +52,10 @@
             "type": "string"
         },
         {
+            "name": "badges",
+            "type": "list<string>"
+        },
+        {
             "name": "biography",
             "type": "string"
         },
@@ -77,6 +81,10 @@
         },
         {
             "name": "is_account_verified",
+            "type": "bool"
+        },
+        {
+            "name": "is_creator_following_brand",
             "type": "bool"
         },
         {

@@ -1,0 +1,292 @@
+{
+    "fields": [
+        {
+            "name": "ac_type",
+            "type": "HomeListingGet_ac_type"
+        },
+        {
+            "name": "additional_fees_description",
+            "type": "string"
+        },
+        {
+            "name": "address",
+            "type": "object"
+        },
+        {
+            "name": "agent_company",
+            "type": "string"
+        },
+        {
+            "name": "agent_email",
+            "type": "string"
+        },
+        {
+            "name": "agent_fb_page_id",
+            "type": "object"
+        },
+        {
+            "name": "agent_name",
+            "type": "string"
+        },
+        {
+            "name": "agent_phone",
+            "type": "string"
+        },
+        {
+            "name": "applinks",
+            "type": "object"
+        },
+        {
+            "name": "area_size",
+            "type": "int"
+        },
+        {
+            "name": "area_unit",
+            "type": "HomeListingGet_area_unit"
+        },
+        {
+            "name": "availability",
+            "type": "HomeListingGet_availability"
+        },
+        {
+            "name": "capabilities",
+            "type": "list<HomeListingGet_capabilities>"
+        },
+        {
+            "name": "capabilities_disabled_by_user",
+            "type": "list<string>"
+        },
+        {
+            "name": "capabilities_rendering_catalog_manager",
+            "type": "list<HomeListingGet_capabilities_rendering_catalog_manager>"
+        },
+        {
+            "name": "capability_to_rejection_reason",
+            "type": "list<object>"
+        },
+        {
+            "name": "catalog_item_overrides",
+            "type": "object"
+        },
+        {
+            "name": "channels_to_integrity_status",
+            "type": "object"
+        },
+        {
+            "name": "co_2_emission_rating_eu",
+            "type": "object"
+        },
+        {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_0",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_1",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_2",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_3",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_4",
+            "type": "string"
+        },
+        {
+            "name": "custom_number_0",
+            "type": "int"
+        },
+        {
+            "name": "custom_number_1",
+            "type": "int"
+        },
+        {
+            "name": "custom_number_2",
+            "type": "int"
+        },
+        {
+            "name": "custom_number_3",
+            "type": "int"
+        },
+        {
+            "name": "custom_number_4",
+            "type": "int"
+        },
+        {
+            "name": "days_on_market",
+            "type": "int"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "enabled_capability_to_review_status",
+            "type": "list<object>"
+        },
+        {
+            "name": "energy_rating_eu",
+            "type": "object"
+        },
+        {
+            "name": "furnish_type",
+            "type": "HomeListingGet_furnish_type"
+        },
+        {
+            "name": "group_id",
+            "type": "string"
+        },
+        {
+            "name": "heating_type",
+            "type": "HomeListingGet_heating_type"
+        },
+        {
+            "name": "home_listing_id",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "int"
+        },
+        {
+            "name": "image_fetch_status",
+            "type": "HomeListingGet_image_fetch_status"
+        },
+        {
+            "name": "images",
+            "type": "list<string>"
+        },
+        {
+            "name": "is_blackholed",
+            "type": "bool"
+        },
+        {
+            "name": "laundry_type",
+            "type": "HomeListingGet_laundry_type"
+        },
+        {
+            "name": "listing_type",
+            "type": "HomeListingGet_listing_type"
+        },
+        {
+            "name": "max_currency",
+            "type": "string"
+        },
+        {
+            "name": "max_price",
+            "type": "string"
+        },
+        {
+            "name": "min_currency",
+            "type": "string"
+        },
+        {
+            "name": "min_price",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "num_baths",
+            "type": "float"
+        },
+        {
+            "name": "num_beds",
+            "type": "float"
+        },
+        {
+            "name": "num_rooms",
+            "type": "float"
+        },
+        {
+            "name": "num_units",
+            "type": "int"
+        },
+        {
+            "name": "override_details",
+            "type": "object"
+        },
+        {
+            "name": "parking_type",
+            "type": "HomeListingGet_parking_type"
+        },
+        {
+            "name": "partner_verification",
+            "type": "HomeListingGet_partner_verification"
+        },
+        {
+            "name": "pet_policy",
+            "type": "string"
+        },
+        {
+            "name": "price",
+            "type": "string"
+        },
+        {
+            "name": "product_feed",
+            "type": "object"
+        },
+        {
+            "name": "property_type",
+            "type": "HomeListingGet_property_type"
+        },
+        {
+            "name": "sanitized_images",
+            "type": "list<string>"
+        },
+        {
+            "name": "sanitized_previews",
+            "type": "list<string>"
+        },
+        {
+            "name": "securitydeposit_currency",
+            "type": "string"
+        },
+        {
+            "name": "securitydeposit_price",
+            "type": "string"
+        },
+        {
+            "name": "tags",
+            "type": "list<string>"
+        },
+        {
+            "name": "unit_price",
+            "type": "object"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        },
+        {
+            "name": "url_shimmed",
+            "type": "string"
+        },
+        {
+            "name": "validation_errors",
+            "type": "object"
+        },
+        {
+            "name": "videos_metadata",
+            "type": "object"
+        },
+        {
+            "name": "visibility",
+            "type": "HomeListingGet_visibility"
+        },
+        {
+            "name": "year_built",
+            "type": "int"
+        }
+    ]
+}

@@ -1426,6 +1426,11 @@
                     "type": "unsigned int"
                 },
                 {
+                    "name": "selected_audio_spec",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "slideshow_spec",
                     "required": false,
                     "type": "map"

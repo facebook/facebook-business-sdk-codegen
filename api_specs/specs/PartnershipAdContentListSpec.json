@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "list_id",
+            "type": "string"
+        }
+    ]
+}

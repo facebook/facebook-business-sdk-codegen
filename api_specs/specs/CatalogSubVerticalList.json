@@ -110,10 +110,6 @@
             "type": "Object"
         },
         {
-            "name": "loyalty_offer",
-            "type": "Object"
-        },
-        {
             "name": "nursery",
             "type": "Object"
         },

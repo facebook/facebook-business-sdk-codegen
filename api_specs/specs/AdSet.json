@@ -680,6 +680,11 @@
                     "type": "Object"
                 },
                 {
+                    "name": "cost_bidding_mode",
+                    "required": false,
+                    "type": "adcampaign_cost_bidding_mode"
+                },
+                {
                     "name": "creative_sequence",
                     "required": false,
                     "type": "list<string>"
@@ -765,6 +770,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "is_dc_follow_optimized",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "is_incremental_attribution_enabled",
                     "required": false,
                     "type": "bool"
@@ -795,9 +805,19 @@
                     "type": "unsigned int"
                 },
                 {
+                    "name": "live_video_ad_campaign_config",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
                     "name": "max_budget_spend_percentage",
                     "required": false,
                     "type": "unsigned int"
+                },
+                {
+                    "name": "meta_moment_maker_spec",
+                    "required": false,
+                    "type": "map"
                 },
                 {
                     "name": "min_budget_spend_percentage",
@@ -858,6 +878,11 @@
                     "name": "regional_regulation_identities",
                     "required": false,
                     "type": "map"
+                },
+                {
+                    "name": "relative_value",
+                    "required": false,
+                    "type": "float"
                 },
                 {
                     "name": "rf_prediction_id",
@@ -936,10 +961,6 @@
             "type": "list<DayPart>"
         },
         {
-            "name": "anchor_event_attribution_window_days",
-            "type": "int"
-        },
-        {
             "name": "asset_feed_id",
             "type": "string"
         },
@@ -1006,6 +1027,10 @@
         {
             "name": "configured_status",
             "type": "AdSet_configured_status"
+        },
+        {
+            "name": "cost_bidding_mode",
+            "type": "string"
         },
         {
             "name": "created_time",
@@ -1088,11 +1113,19 @@
             "type": "bool"
         },
         {
+            "name": "is_dc_follow_optimized",
+            "type": "bool"
+        },
+        {
             "name": "is_dynamic_creative",
             "type": "bool"
         },
         {
             "name": "is_incremental_attribution_enabled",
+            "type": "bool"
+        },
+        {
+            "name": "is_organic_ad_joint_optimized",
             "type": "bool"
         },
         {
@@ -1120,12 +1153,20 @@
             "type": "string"
         },
         {
+            "name": "live_video_ad_campaign_config",
+            "type": "LiveVideoAdCampaignConfig"
+        },
+        {
             "name": "low_creative_reach",
             "type": "list<string>"
         },
         {
             "name": "max_budget_spend_percentage",
             "type": "string"
+        },
+        {
+            "name": "meta_moment_maker_spec",
+            "type": "MetaMomentMakerConfig"
         },
         {
             "name": "min_budget_spend_percentage",
@@ -1178,6 +1219,10 @@
         {
             "name": "regional_regulation_identities",
             "type": "RegionalRegulationIdentities"
+        },
+        {
+            "name": "relative_value",
+            "type": "string"
         },
         {
             "name": "review_feedback",

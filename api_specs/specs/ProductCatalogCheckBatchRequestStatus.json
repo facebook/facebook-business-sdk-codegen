@@ -3,8 +3,8 @@
         {
             "name": "genGet",
             "method": "GET",
-            "endpoint": "apps_and_software",
-            "return": "ProductSetAppsAndSoftwareGet",
+            "endpoint": "check_batch_request_status",
+            "return": "ProductCatalogCheckBatchRequestStatusGet",
             "params": [
                 {
                     "name": "after",
@@ -17,9 +17,19 @@
                     "type": "string"
                 },
                 {
-                    "name": "display_format",
+                    "name": "error_priority",
                     "required": false,
-                    "type": "ProductSetAppsAndSoftwareGet_display_format_enum_param"
+                    "type": "ProductCatalogCheckBatchRequestStatusGet_error_priority_enum_param"
+                },
+                {
+                    "name": "fields",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "handle",
+                    "required": true,
+                    "type": "string"
                 },
                 {
                     "name": "limit",
@@ -27,7 +37,7 @@
                     "type": "int"
                 },
                 {
-                    "name": "summary",
+                    "name": "load_ids_of_invalid_requests",
                     "required": false,
                     "type": "bool"
                 }

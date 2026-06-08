@@ -20,38 +20,9 @@
         },
         {
             "method": "GET",
-            "endpoint": "promotion_details",
-            "return": "CommercePromotionDetail",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "promotions",
-            "return": "CommerceOrderReimbursement",
-            "params": []
-        },
-        {
-            "method": "GET",
             "endpoint": "refunds",
             "return": "CommerceOrderRefund",
             "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "returns",
-            "return": "CommerceReturn",
-            "params": [
-                {
-                    "name": "merchant_return_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "statuses",
-                    "required": false,
-                    "type": "list<commerceorderreturns_statuses_enum_param>"
-                }
-            ]
         },
         {
             "method": "GET",
@@ -166,10 +137,6 @@
         },
         {
             "name": "order_status",
-            "type": "Object"
-        },
-        {
-            "name": "pre_order_details",
             "type": "Object"
         },
         {

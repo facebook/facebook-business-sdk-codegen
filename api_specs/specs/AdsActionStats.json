@@ -170,6 +170,10 @@
             "type": "string"
         },
         {
+            "name": "custom",
+            "type": "string"
+        },
+        {
             "name": "dda",
             "type": "string"
         },

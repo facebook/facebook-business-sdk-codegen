@@ -267,6 +267,11 @@
                     "type": "list<string>"
                 },
                 {
+                    "name": "audience_labels",
+                    "required": false,
+                    "type": "list<customaudience_audience_labels>"
+                },
+                {
                     "name": "claim_objective",
                     "required": false,
                     "type": "customaudience_claim_objective"
@@ -396,6 +401,10 @@
         {
             "name": "approximate_count_upper_bound",
             "type": "int"
+        },
+        {
+            "name": "audience_labels",
+            "type": "list<string>"
         },
         {
             "name": "customer_file_source",

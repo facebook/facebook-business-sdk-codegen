@@ -1,18 +1,5 @@
 {
-    "apis": [
-        {
-            "method": "GET",
-            "endpoint": "items",
-            "return": "CommerceOrderTransactionItemDetail",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "tax_details",
-            "return": "CommerceOrderTransactionDetailTaxDetail",
-            "params": []
-        }
-    ],
+    "apis": [],
     "fields": [
         {
             "name": "merchant_order_id",

@@ -139,6 +139,11 @@
             "return": "Object",
             "params": [
                 {
+                    "name": "attribution_id_v2",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "nectar_module",
                     "required": false,
                     "type": "string"
@@ -155,6 +160,11 @@
             "endpoint": "likes",
             "return": "Post",
             "params": [
+                {
+                    "name": "attribution_id_v2",
+                    "required": false,
+                    "type": "string"
+                },
                 {
                     "name": "feedback_source",
                     "required": false,
@@ -498,6 +508,10 @@
             "type": "bool"
         },
         {
+            "name": "is_fb_live_videos",
+            "type": "bool"
+        },
+        {
             "name": "is_hidden",
             "type": "bool"
         },
@@ -507,6 +521,10 @@
         },
         {
             "name": "is_instagram_eligible",
+            "type": "bool"
+        },
+        {
+            "name": "is_live_clip",
             "type": "bool"
         },
         {
@@ -636,6 +654,10 @@
         {
             "name": "video_buying_eligibility",
             "type": "list<string>"
+        },
+        {
+            "name": "was_fb_live_videos",
+            "type": "bool"
         },
         {
             "name": "width",

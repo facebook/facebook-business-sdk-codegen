@@ -6,11 +6,11 @@
         },
         {
             "name": "id",
-            "type": "string"
+            "type": "int"
         },
         {
             "name": "params",
-            "type": "map<string, string>"
+            "type": "list<object>"
         },
         {
             "name": "rule_type",

@@ -280,7 +280,22 @@
                     "type": "unsigned int"
                 },
                 {
+                    "name": "creator_states",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "custom_audience_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "has_public_contact_email",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_paid_partnership_messages_enabled",
                     "required": false,
                     "type": "bool"
                 },
@@ -305,9 +320,19 @@
                     "type": "list<shadowigusercreator_marketplace_creators_major_audience_gender_enum_param>"
                 },
                 {
+                    "name": "major_audience_states",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
                     "name": "query",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "recommendation_type",
+                    "required": false,
+                    "type": "shadowigusercreator_marketplace_creators_recommendation_type_enum_param"
                 },
                 {
                     "name": "reels_interaction_rate",
@@ -453,9 +478,19 @@
                     "type": "string"
                 },
                 {
+                    "name": "audio_configuration",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "audio_name",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "branded_content_sponsor_ids",
+                    "required": false,
+                    "type": "list<unsigned int>"
                 },
                 {
                     "name": "caption",
@@ -484,6 +519,11 @@
                 },
                 {
                     "name": "is_carousel_item",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_paid_partnership",
                     "required": false,
                     "type": "bool"
                 },
@@ -715,6 +755,10 @@
         {
             "name": "business_discovery",
             "type": "IGUser"
+        },
+        {
+            "name": "collaborative_media_search",
+            "type": "ShadowIGUserCollaborativeMedia"
         },
         {
             "name": "followers_count",

@@ -1,0 +1,9 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "saturation_mode",
+            "type": "string"
+        }
+    ]
+}

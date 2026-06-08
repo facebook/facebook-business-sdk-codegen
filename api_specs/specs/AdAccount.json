@@ -301,6 +301,11 @@
                     "type": "list<map>"
                 },
                 {
+                    "name": "generative_asset_spec",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "image_crops",
                     "required": false,
                     "type": "map"
@@ -484,6 +489,11 @@
                     "name": "use_page_actor_override",
                     "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "wamo_whatsapp_identity_spec",
+                    "required": false,
+                    "type": "map"
                 }
             ]
         },
@@ -799,6 +809,11 @@
                     "type": "Object"
                 },
                 {
+                    "name": "creative_automation_spec",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
                     "name": "date_format",
                     "required": false,
                     "type": "string"
@@ -960,6 +975,11 @@
                     "type": "list<Object>"
                 },
                 {
+                    "name": "attribution_count_type",
+                    "required": false,
+                    "type": "adaccountadsets_attribution_count_type_enum_param"
+                },
+                {
                     "name": "attribution_spec",
                     "required": false,
                     "type": "list<map>"
@@ -1023,6 +1043,11 @@
                     "name": "campaign_spec",
                     "required": false,
                     "type": "Object"
+                },
+                {
+                    "name": "cost_bidding_mode",
+                    "required": false,
+                    "type": "adaccountadsets_cost_bidding_mode_enum_param"
                 },
                 {
                     "name": "creative_sequence",
@@ -1110,6 +1135,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "is_dc_follow_optimized",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "is_dynamic_creative",
                     "required": false,
                     "type": "bool"
@@ -1150,9 +1180,19 @@
                     "type": "unsigned int"
                 },
                 {
+                    "name": "live_video_ad_campaign_config",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
                     "name": "max_budget_spend_percentage",
                     "required": false,
                     "type": "unsigned int"
+                },
+                {
+                    "name": "meta_moment_maker_spec",
+                    "required": false,
+                    "type": "map"
                 },
                 {
                     "name": "min_budget_spend_percentage",
@@ -1213,6 +1253,11 @@
                     "name": "regional_regulation_identities",
                     "required": false,
                     "type": "map"
+                },
+                {
+                    "name": "relative_value",
+                    "required": false,
+                    "type": "float"
                 },
                 {
                     "name": "rf_prediction_id",
@@ -1657,6 +1702,11 @@
                     "name": "replace_video_id",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "selected_audio_spec",
+                    "required": false,
+                    "type": "map"
                 },
                 {
                     "name": "slideshow_spec",
@@ -2104,6 +2154,11 @@
                     "type": "list<adaccountcampaigns_execution_options_enum_param>"
                 },
                 {
+                    "name": "frequency_control_specs",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
                     "name": "is_adset_budget_sharing_enabled",
                     "required": false,
                     "type": "bool"
@@ -2120,6 +2175,16 @@
                 },
                 {
                     "name": "is_message_campaign",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_meta_moment_maker_enabled",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_reels_trending_ads_enabled",
                     "required": false,
                     "type": "bool"
                 },
@@ -2292,6 +2357,11 @@
                     "name": "associated_audience_id",
                     "required": false,
                     "type": "unsigned int"
+                },
+                {
+                    "name": "audience_labels",
+                    "required": false,
+                    "type": "list<adaccountcustomaudiences_audience_labels_enum_param>"
                 },
                 {
                     "name": "claim_objective",
@@ -3036,6 +3106,11 @@
                     "type": "unsigned int"
                 },
                 {
+                    "name": "end_time",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
                     "name": "lifetime_budget",
                     "required": false,
                     "type": "unsigned int"
@@ -3049,6 +3124,16 @@
                     "name": "page_id",
                     "required": true,
                     "type": "string"
+                },
+                {
+                    "name": "pixel_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "start_time",
+                    "required": false,
+                    "type": "unsigned int"
                 }
             ]
         },
@@ -3110,6 +3195,11 @@
             "return": "Object",
             "params": [
                 {
+                    "name": "custom_audience_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "message",
                     "required": false,
                     "type": "Object"
@@ -3121,8 +3211,13 @@
                 },
                 {
                     "name": "messenger_delivery_data",
-                    "required": true,
+                    "required": false,
                     "type": "map"
+                },
+                {
+                    "name": "min_conversation_gap_seconds",
+                    "required": false,
+                    "type": "unsigned int"
                 }
             ]
         },
@@ -3463,6 +3558,11 @@
                     "name": "is_reserved_buying",
                     "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "meta_moment_maker_spec",
+                    "required": false,
+                    "type": "map"
                 },
                 {
                     "name": "num_curve_points",
@@ -3960,6 +4060,11 @@
             "return": "AdsValueAdjustmentRuleCollection",
             "params": [
                 {
+                    "name": "entry_point",
+                    "required": false,
+                    "type": "adaccountvalue_rule_set_entry_point_enum_param"
+                },
+                {
                     "name": "name",
                     "required": true,
                     "type": "string"
@@ -4374,6 +4479,10 @@
         {
             "name": "opportunity_score",
             "type": "float"
+        },
+        {
+            "name": "opportunity_score_weight",
+            "type": "int"
         },
         {
             "name": "owner",

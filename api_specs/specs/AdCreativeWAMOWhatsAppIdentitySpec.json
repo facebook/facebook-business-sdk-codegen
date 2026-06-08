@@ -4,6 +4,10 @@
         {
             "name": "wamo_whatsapp_identity_id",
             "type": "string"
+        },
+        {
+            "name": "whatsapp_phone_number",
+            "type": "string"
         }
     ]
 }

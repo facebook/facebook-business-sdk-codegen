@@ -102,6 +102,10 @@
             "type": "list<string>"
         },
         {
+            "name": "effective_brand_safety_content_filter_levels",
+            "type": "list<string>"
+        },
+        {
             "name": "effective_device_platforms",
             "type": "list<Targeting_effective_device_platforms>"
         },
@@ -336,6 +340,10 @@
         {
             "name": "site_category",
             "type": "list<string>"
+        },
+        {
+            "name": "subscriber_universe",
+            "type": "TargetingSubscriberUniverse"
         },
         {
             "name": "targeting_automation",

@@ -2411,6 +2411,31 @@
                     "name": "do_not_return_duplicates",
                     "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "has_received_marketing_message",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "opt_in_source",
+                    "required": false,
+                    "type": "list<pagenotification_message_tokens_opt_in_source_enum_param>"
+                },
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "subscriber_tag_ids",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "until",
+                    "required": false,
+                    "type": "datetime"
                 }
             ]
         },
@@ -2441,6 +2466,12 @@
             "method": "POST",
             "endpoint": "page_backed_instagram_accounts",
             "return": "IGUser",
+            "params": []
+        },
+        {
+            "method": "POST",
+            "endpoint": "page_backed_threads_accounts",
+            "return": "Object",
             "params": []
         },
         {
@@ -3114,22 +3145,37 @@
             "params": []
         },
         {
+            "method": "POST",
+            "endpoint": "scheduled_live_video",
+            "return": "ScheduledLiveVideo",
+            "params": [
+                {
+                    "name": "end_time",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "start_time",
+                    "required": true,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "state",
+                    "required": true,
+                    "type": "pagescheduled_live_video_state_enum_param"
+                },
+                {
+                    "name": "video",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "method": "GET",
             "endpoint": "scheduled_posts",
             "return": "PagePost",
             "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "secondary_receivers",
-            "return": "Application",
-            "params": [
-                {
-                    "name": "platform",
-                    "required": false,
-                    "type": "pagesecondary_receivers_platform_enum_param"
-                }
-            ]
         },
         {
             "method": "GET",
@@ -3887,6 +3933,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "selected_audio_spec",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "slideshow_spec",
                     "required": false,
                     "type": "map"
@@ -4145,6 +4196,11 @@
                 },
                 {
                     "name": "bio",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "caption",
                     "required": false,
                     "type": "string"
                 },
@@ -4814,6 +4870,10 @@
         {
             "name": "owner_business",
             "type": "Business"
+        },
+        {
+            "name": "page_backed_threads_account_id",
+            "type": "string"
         },
         {
             "name": "page_token",

@@ -2,7 +2,7 @@
     "fields": [
         {
             "name": "end_time",
-            "type": "string"
+            "type": "mixed"
         },
         {
             "name": "error_count",
@@ -50,7 +50,7 @@
         },
         {
             "name": "start_time",
-            "type": "string"
+            "type": "mixed"
         },
         {
             "name": "upload_complete",

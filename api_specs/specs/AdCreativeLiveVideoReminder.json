@@ -2,12 +2,12 @@
     "apis": [],
     "fields": [
         {
-            "name": "source",
+            "name": "enroll_status",
             "type": "string"
         },
         {
-            "name": "stats",
-            "type": "list<Object>"
+            "name": "start_time",
+            "type": "datetime"
         }
     ]
 }

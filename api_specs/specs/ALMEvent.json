@@ -53,6 +53,10 @@
             "type": "string"
         },
         {
+            "name": "solution_id",
+            "type": "string"
+        },
+        {
             "name": "sub_channel",
             "type": "string"
         },

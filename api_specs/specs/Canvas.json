@@ -115,10 +115,6 @@
             "type": "string"
         },
         {
-            "name": "elements",
-            "type": "list<RichMediaElement>"
-        },
-        {
             "name": "fb_body_elements",
             "type": "list<Object>"
         },

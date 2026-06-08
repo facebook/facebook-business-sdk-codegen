@@ -35,6 +35,10 @@
         {
             "name": "name",
             "type": "string"
+        },
+        {
+            "name": "validity_status",
+            "type": "string"
         }
     ]
 }

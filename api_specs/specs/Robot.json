@@ -21,6 +21,10 @@
             "type": "string"
         },
         {
+            "name": "fw_image",
+            "type": "string"
+        },
+        {
             "name": "id",
             "type": "string"
         },
@@ -37,6 +41,10 @@
             "type": "string"
         },
         {
+            "name": "release_image",
+            "type": "string"
+        },
+        {
             "name": "robot_notes",
             "type": "string"
         },
@@ -45,11 +53,23 @@
             "type": "string"
         },
         {
+            "name": "target_fw_image",
+            "type": "string"
+        },
+        {
+            "name": "target_fw_image_uri",
+            "type": "string"
+        },
+        {
             "name": "target_map_image_uri",
             "type": "string"
         },
         {
             "name": "target_os_image_uri",
+            "type": "string"
+        },
+        {
+            "name": "target_release_image",
             "type": "string"
         },
         {

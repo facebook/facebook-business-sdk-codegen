@@ -245,6 +245,10 @@
             "type": "bool"
         },
         {
+            "name": "meta_moment_maker_spec",
+            "type": "MetaMomentMakerConfig"
+        },
+        {
             "name": "name",
             "type": "string"
         },

@@ -293,6 +293,10 @@
             "type": "list<AdCreativeFormatTransformationSpec>"
         },
         {
+            "name": "generative_asset_spec",
+            "type": "AdCreativeGenerativeAssetSpec"
+        },
+        {
             "name": "id",
             "type": "string"
         },
@@ -471,6 +475,10 @@
         {
             "name": "video_id",
             "type": "string"
+        },
+        {
+            "name": "wamo_whatsapp_identity_spec",
+            "type": "AdCreativeWAMOWhatsAppIdentitySpec"
         }
     ]
 }

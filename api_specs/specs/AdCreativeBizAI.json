@@ -8,6 +8,10 @@
         {
             "name": "pills",
             "type": "list<Object>"
+        },
+        {
+            "name": "pills_mbs_version",
+            "type": "int"
         }
     ]
 }

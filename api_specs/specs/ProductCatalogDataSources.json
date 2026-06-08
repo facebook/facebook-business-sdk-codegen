@@ -24,7 +24,7 @@
                 {
                     "name": "ingestion_source_type",
                     "required": false,
-                    "type": "string"
+                    "type": "ProductCatalogDataSourcesGet_ingestion_source_type_enum_param"
                 },
                 {
                     "name": "limit",

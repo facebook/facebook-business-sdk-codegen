@@ -158,18 +158,6 @@
             "params": []
         },
         {
-            "method": "POST",
-            "endpoint": "gaming_clip_create",
-            "return": "AdVideo",
-            "params": [
-                {
-                    "name": "duration_seconds",
-                    "required": false,
-                    "type": "float"
-                }
-            ]
-        },
-        {
             "method": "GET",
             "endpoint": "likes",
             "return": "Profile",
@@ -180,6 +168,11 @@
             "endpoint": "likes",
             "return": "AdVideo",
             "params": [
+                {
+                    "name": "attribution_id_v2",
+                    "required": false,
+                    "type": "string"
+                },
                 {
                     "name": "feedback_source",
                     "required": false,
@@ -636,8 +629,16 @@
             "type": "bool"
         },
         {
+            "name": "replace_audio_status",
+            "type": "string"
+        },
+        {
             "name": "scheduled_publish_time",
             "type": "datetime"
+        },
+        {
+            "name": "selected_audio_spec",
+            "type": "Object"
         },
         {
             "name": "source",

@@ -480,6 +480,11 @@
                     "type": "whatsappbusinessaccountmessage_templates_display_format_enum_param"
                 },
                 {
+                    "name": "is_primary_device_delivery_only",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "language",
                     "required": true,
                     "type": "string"
@@ -510,9 +515,19 @@
                     "type": "string"
                 },
                 {
+                    "name": "optimization_spec",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "parameter_format",
                     "required": false,
                     "type": "whatsappbusinessaccountmessage_templates_parameter_format_enum_param"
+                },
+                {
+                    "name": "product_set_id",
+                    "required": false,
+                    "type": "string"
                 },
                 {
                     "name": "send_type",
@@ -775,18 +790,6 @@
         },
         {
             "method": "POST",
-            "endpoint": "set_obo_mobility_intent",
-            "return": "WhatsAppBusinessAccountOBOMobilityIntent",
-            "params": [
-                {
-                    "name": "solution_id",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "method": "POST",
             "endpoint": "set_solution_migration_intent",
             "return": "WhatsAppBusinessAccountMigrationIntent",
             "params": [
@@ -855,7 +858,7 @@
                 {
                     "name": "metric_types",
                     "required": false,
-                    "type": "list<whatsappbusinessaccounttemplate_analytics_metric_types_enum_param>"
+                    "type": "list<string>"
                 },
                 {
                     "name": "product_type",
@@ -897,7 +900,7 @@
                 {
                     "name": "metric_types",
                     "required": false,
-                    "type": "list<whatsappbusinessaccounttemplate_group_analytics_metric_types_enum_param>"
+                    "type": "list<string>"
                 },
                 {
                     "name": "start",
@@ -941,23 +944,6 @@
                     "name": "whatsapp_business_templates",
                     "required": true,
                     "type": "list<string>"
-                }
-            ]
-        },
-        {
-            "method": "GET",
-            "endpoint": "template_performance_metrics",
-            "return": "WhatsAppBusinessHSMWhatsAppBusinessPerformanceMetrics",
-            "params": [
-                {
-                    "name": "name",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "template_id",
-                    "required": false,
-                    "type": "string"
                 }
             ]
         },
@@ -1056,6 +1042,11 @@
             "return": "WhatsAppBusinessAccount",
             "params": [
                 {
+                    "name": "creative_optimizations_enrollment",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "degrees_of_freedom_spec",
                     "required": false,
                     "type": "map"
@@ -1130,6 +1121,10 @@
         {
             "name": "linked_commerce_account",
             "type": "CommerceMerchantSettings"
+        },
+        {
+            "name": "marketing_messages_ad_account",
+            "type": "Object"
         },
         {
             "name": "marketing_messages_lite_api_status",

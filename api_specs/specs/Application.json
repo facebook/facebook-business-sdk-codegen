@@ -77,6 +77,11 @@
             "return": "Object",
             "params": [
                 {
+                    "name": "add_to_messaging_customer_base_for_whatsapp",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "advertiser_id",
                     "required": false,
                     "type": "string"
@@ -140,6 +145,11 @@
                     "name": "campaign_ids",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "circuit_breaker_timeout_ms",
+                    "required": false,
+                    "type": "unsigned int"
                 },
                 {
                     "name": "click_id",
@@ -230,6 +240,11 @@
                     "name": "installer_package",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "is_circuit_breaker_active",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "is_fb",
@@ -1169,6 +1184,11 @@
                     "name": "fields",
                     "required": false,
                     "type": "list<string>"
+                },
+                {
+                    "name": "include_client_certificate",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "include_values",

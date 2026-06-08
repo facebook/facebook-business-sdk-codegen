@@ -2,6 +2,10 @@
     "apis": [],
     "fields": [
         {
+            "name": "ig_lva_default_duration_s",
+            "type": "int"
+        },
+        {
             "name": "is_lva_toggle_on",
             "type": "bool"
         },

@@ -9,8 +9,20 @@
     ],
     "fields": [
         {
+            "name": "ad_account_id",
+            "type": "string"
+        },
+        {
+            "name": "ad_account_name",
+            "type": "string"
+        },
+        {
             "name": "brands",
             "type": "list<string>"
+        },
+        {
+            "name": "catalog_segment",
+            "type": "ProductCatalog"
         },
         {
             "name": "contact_email",
@@ -23,6 +35,10 @@
         {
             "name": "contact_last_name",
             "type": "string"
+        },
+        {
+            "name": "creation_time",
+            "type": "datetime"
         },
         {
             "name": "id",
@@ -41,8 +57,24 @@
             "type": "string"
         },
         {
+            "name": "seller_id",
+            "type": "string"
+        },
+        {
+            "name": "sender_business",
+            "type": "Business"
+        },
+        {
             "name": "sender_client_business",
             "type": "Business"
+        },
+        {
+            "name": "shop_url",
+            "type": "string"
+        },
+        {
+            "name": "source",
+            "type": "string"
         },
         {
             "name": "status",

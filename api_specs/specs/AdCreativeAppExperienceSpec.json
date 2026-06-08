@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "reveal_details",
+            "type": "Object"
+        },
+        {
+            "name": "show_spotlights",
+            "type": "Object"
+        },
+        {
+            "name": "website_summary",
+            "type": "Object"
+        }
+    ]
+}

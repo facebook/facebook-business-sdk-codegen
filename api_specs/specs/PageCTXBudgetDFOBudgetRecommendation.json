@@ -2,67 +2,67 @@
     "apis": [],
     "fields": [
         {
-            "name": "is_defaulting_eligible",
-            "type": "bool"
-        },
-        {
-            "name": "is_site_link_sticky",
-            "type": "bool"
-        },
-        {
-            "name": "site_link_classification",
+            "name": "budget",
             "type": "string"
         },
         {
-            "name": "site_link_extra_metadata",
+            "name": "budget_leads",
             "type": "string"
         },
         {
-            "name": "site_link_hash",
+            "name": "budget_new_model",
             "type": "string"
         },
         {
-            "name": "site_link_id",
+            "name": "budget_purchases",
             "type": "string"
         },
         {
-            "name": "site_link_image_hash",
+            "name": "budget_value",
             "type": "string"
         },
         {
-            "name": "site_link_image_url",
+            "name": "budget_without_threshold",
             "type": "string"
         },
         {
-            "name": "site_link_language",
+            "name": "reported_conversion",
             "type": "string"
         },
         {
-            "name": "site_link_original_url",
+            "name": "reported_conversion_leads",
             "type": "string"
         },
         {
-            "name": "site_link_recommendation_type",
+            "name": "reported_conversion_purchases",
             "type": "string"
         },
         {
-            "name": "site_link_title",
+            "name": "reported_conversion_value",
             "type": "string"
         },
         {
-            "name": "site_link_url",
+            "name": "reported_conversions_new_model",
             "type": "string"
         },
         {
-            "name": "site_link_url_anchor",
+            "name": "reported_conversions_without_threshold",
             "type": "string"
         },
         {
-            "name": "site_link_url_recommender_type",
+            "name": "zo_budget",
             "type": "string"
         },
         {
-            "name": "site_link_website_data_source",
+            "name": "zo_budget_leads",
+            "type": "string"
+        },
+        {
+            "name": "zo_budget_purchases",
+            "type": "string"
+        },
+        {
+            "name": "zo_budget_value",
             "type": "string"
         }
     ]

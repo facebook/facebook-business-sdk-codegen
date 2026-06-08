@@ -5,23 +5,7 @@
             "method": "GET",
             "endpoint": "rules",
             "return": "ProductFeedRulesGet",
-            "params": [
-                {
-                    "name": "after",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "before",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "limit",
-                    "required": false,
-                    "type": "int"
-                }
-            ]
+            "params": []
         }
     ],
     "fields": []

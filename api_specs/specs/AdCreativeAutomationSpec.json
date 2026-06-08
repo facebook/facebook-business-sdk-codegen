@@ -1,11 +1,12 @@
 {
+    "apis": [],
     "fields": [
         {
-            "name": "id",
+            "name": "decision_type",
             "type": "string"
         },
         {
-            "name": "name",
+            "name": "enrollment_status",
             "type": "string"
         }
     ]

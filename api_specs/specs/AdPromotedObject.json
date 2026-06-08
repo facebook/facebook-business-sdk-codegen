@@ -14,6 +14,10 @@
             "type": "string"
         },
         {
+            "name": "custom_attribution_source_ids",
+            "type": "list<string>"
+        },
+        {
             "name": "custom_conversion_id",
             "type": "string"
         },
@@ -46,6 +50,14 @@
             "type": "string"
         },
         {
+            "name": "instagram_actor_id",
+            "type": "string"
+        },
+        {
+            "name": "job_listing_id",
+            "type": "string"
+        },
+        {
             "name": "lead_ads_custom_event_str",
             "type": "string"
         },
@@ -54,11 +66,19 @@
             "type": "AdPromotedObject_lead_ads_custom_event_type"
         },
         {
+            "name": "lead_ads_follow_up_event",
+            "type": "string"
+        },
+        {
             "name": "lead_ads_form_event_source_type",
             "type": "string"
         },
         {
             "name": "lead_ads_offsite_conversion_type",
+            "type": "string"
+        },
+        {
+            "name": "lead_ads_quality_volume_setting",
             "type": "string"
         },
         {
@@ -75,7 +95,7 @@
         },
         {
             "name": "multi_event_product",
-            "type": "string"
+            "type": "int"
         },
         {
             "name": "object_store_url",

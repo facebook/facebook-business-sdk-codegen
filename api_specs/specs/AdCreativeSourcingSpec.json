@@ -30,6 +30,10 @@
             "type": "bool"
         },
         {
+            "name": "featured_offering_spec",
+            "type": "Object"
+        },
+        {
             "name": "intent",
             "type": "Object"
         },

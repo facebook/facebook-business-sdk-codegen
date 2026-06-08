@@ -1,0 +1,12 @@
+{
+    "fields": [
+        {
+            "name": "__firstOneOf",
+            "type": "object"
+        },
+        {
+            "name": "__secondOneOf",
+            "type": "object"
+        }
+    ]
+}

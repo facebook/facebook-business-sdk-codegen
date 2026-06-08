@@ -1,0 +1,32 @@
+{
+    "fields": [
+        {
+            "name": "id",
+            "type": "int"
+        },
+        {
+            "name": "mini_shops_product_sets_count",
+            "type": "int"
+        },
+        {
+            "name": "product_catalog",
+            "type": "object"
+        },
+        {
+            "name": "products",
+            "type": "object"
+        },
+        {
+            "name": "representative_item_id",
+            "type": "string"
+        },
+        {
+            "name": "retailer_id",
+            "type": "string"
+        },
+        {
+            "name": "variants",
+            "type": "list<object>"
+        }
+    ]
+}

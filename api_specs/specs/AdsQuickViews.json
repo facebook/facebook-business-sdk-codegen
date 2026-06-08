@@ -25,6 +25,10 @@
             "type": "string"
         },
         {
+            "name": "grouping",
+            "type": "string"
+        },
+        {
             "name": "id",
             "type": "string"
         },
@@ -42,6 +46,10 @@
         },
         {
             "name": "is_filters_disabled",
+            "type": "bool"
+        },
+        {
+            "name": "is_grouping_disabled",
             "type": "bool"
         },
         {

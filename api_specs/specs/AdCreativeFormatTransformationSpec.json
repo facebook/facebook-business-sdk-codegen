@@ -2,6 +2,10 @@
     "apis": [],
     "fields": [
         {
+            "name": "customizations",
+            "type": "list<Object>"
+        },
+        {
             "name": "data_source",
             "type": "list<string>"
         },

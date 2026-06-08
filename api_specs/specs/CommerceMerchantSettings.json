@@ -46,28 +46,6 @@
         },
         {
             "method": "GET",
-            "endpoint": "commerce_transactions",
-            "return": "CommerceOrderTransactionDetail",
-            "params": [
-                {
-                    "name": "end_time",
-                    "required": false,
-                    "type": "datetime"
-                },
-                {
-                    "name": "payout_reference_id",
-                    "required": false,
-                    "type": "string"
-                },
-                {
-                    "name": "start_time",
-                    "required": false,
-                    "type": "datetime"
-                }
-            ]
-        },
-        {
-            "method": "GET",
             "endpoint": "order_management_apps",
             "return": "Application",
             "params": []
@@ -201,10 +179,6 @@
         },
         {
             "name": "contact_email",
-            "type": "string"
-        },
-        {
-            "name": "cta",
             "type": "string"
         },
         {

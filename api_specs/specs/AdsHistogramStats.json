@@ -170,6 +170,10 @@
             "type": "string"
         },
         {
+            "name": "custom",
+            "type": "list<int>"
+        },
+        {
             "name": "dda",
             "type": "list<int>"
         },

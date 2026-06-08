@@ -4,7 +4,13 @@
             "method": "POST",
             "endpoint": "delete_rule_set",
             "return": "AdsValueAdjustmentRuleCollection",
-            "params": []
+            "params": [
+                {
+                    "name": "status",
+                    "required": false,
+                    "type": "adsvalueadjustmentrulecollectiondelete_rule_set_status_enum_param"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -23,6 +29,11 @@
             "method": "POST",
             "return": "AdsValueAdjustmentRuleCollection",
             "params": [
+                {
+                    "name": "entry_point",
+                    "required": false,
+                    "type": "adsvalueadjustmentrulecollection_entry_point"
+                },
                 {
                     "name": "is_default_setting",
                     "required": false,

@@ -1,0 +1,37 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "email_quality",
+            "type": "string"
+        },
+        {
+            "name": "email_upload_volume_pct",
+            "type": "float"
+        },
+        {
+            "name": "is_eligible",
+            "type": "bool"
+        },
+        {
+            "name": "madid_quality",
+            "type": "string"
+        },
+        {
+            "name": "madid_upload_volume_pct",
+            "type": "float"
+        },
+        {
+            "name": "match_rate_score",
+            "type": "float"
+        },
+        {
+            "name": "phone_quality",
+            "type": "string"
+        },
+        {
+            "name": "phone_upload_volume_pct",
+            "type": "float"
+        }
+    ]
+}

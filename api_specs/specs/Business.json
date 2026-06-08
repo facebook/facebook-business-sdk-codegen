@@ -122,6 +122,11 @@
                     "type": "int"
                 },
                 {
+                    "name": "creative_test_config",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "description",
                     "required": false,
                     "type": "string"
@@ -740,9 +745,29 @@
             "return": "CPASCollaborationRequest",
             "params": [
                 {
+                    "name": "request_role",
+                    "required": false,
+                    "type": "businesscollaborative_ads_collaboration_requests_request_role_enum_param"
+                },
+                {
+                    "name": "since",
+                    "required": false,
+                    "type": "datetime"
+                },
+                {
+                    "name": "source",
+                    "required": false,
+                    "type": "businesscollaborative_ads_collaboration_requests_source_enum_param"
+                },
+                {
                     "name": "status",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "until",
+                    "required": false,
+                    "type": "datetime"
                 }
             ]
         },
@@ -1890,38 +1915,6 @@
             ]
         },
         {
-            "method": "POST",
-            "endpoint": "setup_managed_partner_adaccounts",
-            "return": "Business",
-            "params": [
-                {
-                    "name": "credit_line_id",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "marketplace_business_id",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "subvertical_v2",
-                    "required": true,
-                    "type": "businesssetup_managed_partner_adaccounts_subvertical_v2_enum_param"
-                },
-                {
-                    "name": "vendor_id",
-                    "required": true,
-                    "type": "string"
-                },
-                {
-                    "name": "vertical_v2",
-                    "required": true,
-                    "type": "businesssetup_managed_partner_adaccounts_vertical_v2_enum_param"
-                }
-            ]
-        },
-        {
             "method": "DELETE",
             "endpoint": "share_preverified_numbers",
             "return": "Object",
@@ -2275,6 +2268,11 @@
                     "name": "replace_video_id",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "selected_audio_spec",
+                    "required": false,
+                    "type": "map"
                 },
                 {
                     "name": "slideshow_spec",

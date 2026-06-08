@@ -706,6 +706,14 @@
             "type": "string"
         },
         {
+            "name": "offer_disclaimer",
+            "type": "string"
+        },
+        {
+            "name": "offer_disclaimer_url",
+            "type": "string"
+        },
+        {
             "name": "ordering_index",
             "type": "int"
         },

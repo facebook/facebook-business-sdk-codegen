@@ -146,6 +146,38 @@
             "type": "string"
         },
         {
+            "name": "configurable_attribution_action",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "configurable_attribution_actionvalue",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "configurable_audience_overlap_reach",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "configurable_reachbyfrequency_action",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "configurable_reachbyfrequency_converters_count",
+            "type": "string"
+        },
+        {
+            "name": "configurable_reachbyfrequency_impressions_cost",
+            "type": "string"
+        },
+        {
+            "name": "configurable_reachbyfrequency_impressions_count",
+            "type": "string"
+        },
+        {
+            "name": "configurable_reachbyfrequency_reach",
+            "type": "string"
+        },
+        {
             "name": "conversion_lead_rate",
             "type": "list<AdsActionStats>"
         },
@@ -254,6 +286,10 @@
             "type": "list<AdsActionStats>"
         },
         {
+            "name": "cost_per_6_sec_video_view",
+            "type": "list<AdsActionStats>"
+        },
+        {
             "name": "cost_per_action_type",
             "type": "list<AdsActionStats>"
         },
@@ -283,6 +319,10 @@
         },
         {
             "name": "cost_per_inline_post_engagement",
+            "type": "string"
+        },
+        {
+            "name": "cost_per_message_delivered",
             "type": "string"
         },
         {
@@ -339,6 +379,18 @@
         },
         {
             "name": "created_time",
+            "type": "string"
+        },
+        {
+            "name": "creative_diversity_data",
+            "type": "list<Object>"
+        },
+        {
+            "name": "creative_diversity_label",
+            "type": "string"
+        },
+        {
+            "name": "creative_diversity_score",
             "type": "string"
         },
         {
@@ -558,6 +610,14 @@
             "type": "string"
         },
         {
+            "name": "messages_delivered",
+            "type": "string"
+        },
+        {
+            "name": "messages_delivered_ctr",
+            "type": "string"
+        },
+        {
             "name": "mobile_app_purchase_roas",
             "type": "list<AdsActionStats>"
         },
@@ -580,6 +640,10 @@
         {
             "name": "onsite_conversion_messaging_detected_purchase_deduped",
             "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "opportunity_score_l4",
+            "type": "string"
         },
         {
             "name": "optimization_goal",
@@ -634,6 +698,10 @@
             "type": "string"
         },
         {
+            "name": "read_rate",
+            "type": "string"
+        },
+        {
             "name": "result_rate",
             "type": "list<Object>"
         },
@@ -644,6 +712,10 @@
         {
             "name": "results",
             "type": "list<Object>"
+        },
+        {
+            "name": "shop_clicks",
+            "type": "string"
         },
         {
             "name": "shops_assisted_purchases",
@@ -727,6 +799,10 @@
         },
         {
             "name": "video_30_sec_watched_actions",
+            "type": "list<AdsActionStats>"
+        },
+        {
+            "name": "video_6_sec_watched_actions",
             "type": "list<AdsActionStats>"
         },
         {

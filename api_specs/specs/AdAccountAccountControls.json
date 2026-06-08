@@ -3,8 +3,8 @@
         {
             "name": "genPost",
             "method": "POST",
-            "endpoint": "apps_and_software",
-            "return": "ProductCatalogAppsAndSoftwarePost",
+            "endpoint": "account_controls",
+            "return": "AdAccountAccountControlsPost",
             "params": []
         }
     ],

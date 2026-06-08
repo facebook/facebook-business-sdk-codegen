@@ -1,0 +1,20 @@
+{
+    "fields": [
+        {
+            "name": "error_code",
+            "type": "int"
+        },
+        {
+            "name": "error_message",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "success",
+            "type": "bool"
+        }
+    ]
+}

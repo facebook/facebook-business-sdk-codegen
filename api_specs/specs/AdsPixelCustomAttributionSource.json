@@ -2,12 +2,12 @@
     "apis": [],
     "fields": [
         {
-            "name": "element",
-            "type": "Object"
+            "name": "id",
+            "type": "string"
         },
         {
-            "name": "element_type",
-            "type": "string"
+            "name": "is_eligible",
+            "type": "bool"
         },
         {
             "name": "name",

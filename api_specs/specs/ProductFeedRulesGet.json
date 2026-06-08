@@ -7,6 +7,10 @@
         {
             "name": "paging",
             "type": "object"
+        },
+        {
+            "name": "summary",
+            "type": "object"
         }
     ]
 }

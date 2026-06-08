@@ -4,7 +4,7 @@
             "name": "genDelete",
             "method": "DELETE",
             "endpoint": "",
-            "return": "ProductCatalogAppsAndSoftwareItemDelete",
+            "return": "AdCampaignDelete",
             "params": []
         }
     ],

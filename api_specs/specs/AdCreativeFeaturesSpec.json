@@ -62,6 +62,10 @@
             "type": "AdCreativeFeatureDetails"
         },
         {
+            "name": "dynamic_cta_text",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "dynamic_partner_content",
             "type": "AdCreativeFeatureDetails"
         },
@@ -98,6 +102,10 @@
             "type": "AdCreativeFeatureDetails"
         },
         {
+            "name": "hyperlink_formatting",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "ig_feed_tag",
             "type": "AdCreativeFeatureDetails"
         },
@@ -130,7 +138,15 @@
             "type": "AdCreativeFeatureDetails"
         },
         {
+            "name": "image_banner",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "image_brightness_and_contrast",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "image_end_card",
             "type": "AdCreativeFeatureDetails"
         },
         {
@@ -174,6 +190,10 @@
             "type": "AdCreativeFeatureDetails"
         },
         {
+            "name": "multi_creative_post_carousel",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "multi_photo_to_video",
             "type": "AdCreativeFeatureDetails"
         },
@@ -182,7 +202,19 @@
             "type": "AdCreativeFeatureDetails"
         },
         {
+            "name": "pac_genai_recomposition",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "pac_recomposition",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "pac_relaxation",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "product_browsing",
             "type": "AdCreativeFeatureDetails"
         },
         {
@@ -287,6 +319,10 @@
         },
         {
             "name": "video_uncrop",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
+            "name": "video_uncrop_9x16_to_9x18",
             "type": "AdCreativeFeatureDetails"
         },
         {

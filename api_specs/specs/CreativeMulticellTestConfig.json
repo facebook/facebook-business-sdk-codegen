@@ -6,6 +6,10 @@
             "type": "int"
         },
         {
+            "name": "budget_source",
+            "type": "string"
+        },
+        {
             "name": "configured_cell_count",
             "type": "int"
         },

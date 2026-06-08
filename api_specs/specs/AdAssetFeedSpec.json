@@ -112,6 +112,10 @@
         {
             "name": "videos",
             "type": "list<AdAssetFeedSpecVideo>"
+        },
+        {
+            "name": "web_destination_spec",
+            "type": "Object"
         }
     ]
 }

@@ -1,17 +1,11 @@
 {
     "apis": [
         {
-            "name": "genGet",
-            "method": "GET",
+            "name": "genDelete",
+            "method": "DELETE",
             "endpoint": "",
-            "return": "AdCampaignGroupGet",
-            "params": [
-                {
-                    "name": "fields",
-                    "required": false,
-                    "type": "string"
-                }
-            ]
+            "return": "AdCampaignGroupDelete",
+            "params": []
         }
     ],
     "fields": []

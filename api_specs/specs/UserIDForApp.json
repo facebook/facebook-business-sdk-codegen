@@ -8,6 +8,10 @@
         {
             "name": "id",
             "type": "string"
+        },
+        {
+            "name": "instant_game_player_id",
+            "type": "string"
         }
     ]
 }

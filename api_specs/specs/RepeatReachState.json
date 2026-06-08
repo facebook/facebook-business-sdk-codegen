@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "current_saturation_level",
+            "type": "float"
+        },
+        {
+            "name": "forecasted_saturation_level",
+            "type": "float"
+        },
+        {
+            "name": "high_saturation_threshold",
+            "type": "float"
+        },
+        {
+            "name": "should_display_cpr",
+            "type": "bool"
+        }
+    ]
+}

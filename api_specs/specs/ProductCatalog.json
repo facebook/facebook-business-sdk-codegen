@@ -2043,6 +2043,10 @@
             "type": "int"
         },
         {
+            "name": "show_assign_permissions",
+            "type": "bool"
+        },
+        {
             "name": "store_catalog_settings",
             "type": "StoreCatalogSettings"
         },

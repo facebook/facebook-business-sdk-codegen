@@ -18,6 +18,10 @@
             "type": "string"
         },
         {
+            "name": "reference_file_isrcs",
+            "type": "list<string>"
+        },
+        {
             "name": "reference_files",
             "type": "list<Object>"
         },

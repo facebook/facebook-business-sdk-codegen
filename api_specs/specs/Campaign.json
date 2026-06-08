@@ -525,6 +525,11 @@
                     "type": "list<adcampaigngroup_execution_options>"
                 },
                 {
+                    "name": "frequency_control_specs",
+                    "required": false,
+                    "type": "list<Object>"
+                },
+                {
                     "name": "is_adset_budget_sharing_enabled",
                     "required": false,
                     "type": "bool"
@@ -541,6 +546,16 @@
                 },
                 {
                     "name": "is_message_campaign",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_meta_moment_maker_enabled",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_reels_trending_ads_enabled",
                     "required": false,
                     "type": "bool"
                 },
@@ -693,6 +708,10 @@
             "type": "Campaign_effective_status"
         },
         {
+            "name": "frequency_control_specs",
+            "type": "list<AdCampaignFrequencyControlSpecs>"
+        },
+        {
             "name": "has_secondary_skadnetwork_reporting",
             "type": "bool"
         },
@@ -714,6 +733,14 @@
         },
         {
             "name": "is_message_campaign",
+            "type": "bool"
+        },
+        {
+            "name": "is_meta_moment_maker_enabled",
+            "type": "bool"
+        },
+        {
+            "name": "is_reels_trending_ads_enabled",
             "type": "bool"
         },
         {

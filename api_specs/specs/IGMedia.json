@@ -240,6 +240,10 @@
             "type": "int"
         },
         {
+            "name": "media_audio_type",
+            "type": "string"
+        },
+        {
             "name": "media_product_type",
             "type": "string"
         },
@@ -260,6 +264,18 @@
             "type": "string"
         },
         {
+            "name": "reposts_count",
+            "type": "int"
+        },
+        {
+            "name": "saved_count",
+            "type": "int"
+        },
+        {
+            "name": "shares_count",
+            "type": "int"
+        },
+        {
             "name": "shortcode",
             "type": "string"
         },
@@ -270,6 +286,18 @@
         {
             "name": "timestamp",
             "type": "datetime"
+        },
+        {
+            "name": "total_comments_count",
+            "type": "int"
+        },
+        {
+            "name": "total_like_count",
+            "type": "int"
+        },
+        {
+            "name": "total_views_count",
+            "type": "int"
         },
         {
             "name": "username",

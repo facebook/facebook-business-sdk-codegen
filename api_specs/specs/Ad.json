@@ -511,6 +511,11 @@
                     "type": "Object"
                 },
                 {
+                    "name": "creative_automation_spec",
+                    "required": false,
+                    "type": "Object"
+                },
+                {
                     "name": "display_sequence",
                     "required": false,
                     "type": "unsigned int"
@@ -634,6 +639,10 @@
         {
             "name": "creative_asset_groups_spec",
             "type": "AdCreativeAssetGroupsSpec"
+        },
+        {
+            "name": "creative_automation_spec",
+            "type": "AdCreativeAutomationSpec"
         },
         {
             "name": "demolink_hash",

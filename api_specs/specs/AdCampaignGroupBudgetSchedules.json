@@ -3,8 +3,8 @@
         {
             "name": "genPost",
             "method": "POST",
-            "endpoint": "media_titles",
-            "return": "ProductCatalogMediaTitlesPost",
+            "endpoint": "budget_schedules",
+            "return": "AdCampaignGroupBudgetSchedulesPost",
             "params": []
         }
     ],

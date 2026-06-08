@@ -2,6 +2,10 @@
     "apis": [],
     "fields": [
         {
+            "name": "has_audio_swapped_fb_copy",
+            "type": "bool"
+        },
+        {
             "name": "id",
             "type": "string"
         },
@@ -24,6 +28,10 @@
         {
             "name": "post_info",
             "type": "Post"
+        },
+        {
+            "name": "promotable_id",
+            "type": "string"
         }
     ]
 }

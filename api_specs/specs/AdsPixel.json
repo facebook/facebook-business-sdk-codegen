@@ -335,6 +335,16 @@
                     "name": "server_events_business_ids",
                     "required": false,
                     "type": "list<string>"
+                },
+                {
+                    "name": "server_events_business_ids_add",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "server_events_business_ids_remove",
+                    "required": false,
+                    "type": "list<string>"
                 }
             ]
         }
