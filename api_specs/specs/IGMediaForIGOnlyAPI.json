@@ -87,6 +87,10 @@
             "type": "string"
         },
         {
+            "name": "is_ai_generated",
+            "type": "bool"
+        },
+        {
             "name": "is_comment_enabled",
             "type": "bool"
         },

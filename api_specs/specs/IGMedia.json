@@ -188,6 +188,10 @@
             "type": "string"
         },
         {
+            "name": "audio_id",
+            "type": "string"
+        },
+        {
             "name": "boost_eligibility_info",
             "type": "IGMediaBoostEligibilityInfo"
         },
@@ -222,6 +226,10 @@
         {
             "name": "ig_id",
             "type": "string"
+        },
+        {
+            "name": "is_ai_generated",
+            "type": "bool"
         },
         {
             "name": "is_comment_enabled",

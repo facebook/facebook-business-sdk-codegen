@@ -38,6 +38,10 @@
             "type": "Object"
         },
         {
+            "name": "ncs_testimonial",
+            "type": "Object"
+        },
+        {
             "name": "pca_spec",
             "type": "Object"
         },

@@ -394,6 +394,14 @@
             "type": "string"
         },
         {
+            "name": "creative_fatigue_summary",
+            "type": "list<Object>"
+        },
+        {
+            "name": "creative_fatigued_ads",
+            "type": "list<Object>"
+        },
+        {
             "name": "creative_media_type",
             "type": "string"
         },
@@ -712,10 +720,6 @@
         {
             "name": "results",
             "type": "list<Object>"
-        },
-        {
-            "name": "shop_clicks",
-            "type": "string"
         },
         {
             "name": "shops_assisted_purchases",

@@ -1,0 +1,12 @@
+{
+    "apis": [
+        {
+            "name": "genPost",
+            "method": "POST",
+            "endpoint": "feature_preferences",
+            "return": "AdAccountFeaturePreferencesPost",
+            "params": []
+        }
+    ],
+    "fields": []
+}

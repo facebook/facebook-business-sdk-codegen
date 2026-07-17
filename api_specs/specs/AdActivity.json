@@ -46,6 +46,10 @@
             "type": "string"
         },
         {
+            "name": "tool",
+            "type": "string"
+        },
+        {
             "name": "translated_event_type",
             "type": "string"
         }

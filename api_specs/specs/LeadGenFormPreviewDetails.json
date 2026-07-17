@@ -158,6 +158,10 @@
             "type": "string"
         },
         {
+            "name": "secure_sharing_text_for_embedded_booking",
+            "type": "string"
+        },
+        {
             "name": "secure_sharing_text_for_embedded_booking_calendly",
             "type": "string"
         },

@@ -10,6 +10,10 @@
             "type": "list<map<string, list<map<string, Object>>>>"
         },
         {
+            "name": "canonical_reference_file",
+            "type": "AudioAsset"
+        },
+        {
             "name": "creation_time",
             "type": "datetime"
         },
@@ -24,6 +28,10 @@
         {
             "name": "reference_files",
             "type": "list<Object>"
+        },
+        {
+            "name": "representative_reference_file",
+            "type": "AudioAsset"
         },
         {
             "name": "title",

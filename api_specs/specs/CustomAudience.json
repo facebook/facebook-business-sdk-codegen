@@ -262,6 +262,11 @@
             "return": "CustomAudience",
             "params": [
                 {
+                    "name": "acting_account_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
                     "name": "allowed_domains",
                     "required": false,
                     "type": "list<string>"

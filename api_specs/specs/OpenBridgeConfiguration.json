@@ -23,6 +23,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "associated_sgw_data_source_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
                     "name": "blocked_event_types",
                     "required": false,
                     "type": "list<string>"
@@ -131,6 +136,10 @@
             "type": "bool"
         },
         {
+            "name": "associated_sgw_data_source_id",
+            "type": "string"
+        },
+        {
             "name": "blocked_event_types",
             "type": "list<string>"
         },
@@ -201,6 +210,10 @@
         {
             "name": "is_sgw_pixel_from_meta_pixel",
             "type": "bool"
+        },
+        {
+            "name": "mpc_fallback_domain",
+            "type": "string"
         },
         {
             "name": "partner_name",

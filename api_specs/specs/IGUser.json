@@ -325,6 +325,11 @@
                     "type": "list<string>"
                 },
                 {
+                    "name": "platform",
+                    "required": false,
+                    "type": "list<shadowigusercreator_marketplace_creators_platform_enum_param>"
+                },
+                {
                     "name": "query",
                     "required": false,
                     "type": "string"
@@ -518,6 +523,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "is_ai_generated",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "is_carousel_item",
                     "required": false,
                     "type": "bool"
@@ -682,7 +692,23 @@
             "method": "GET",
             "endpoint": "tags",
             "return": "IGMedia",
-            "params": []
+            "params": [
+                {
+                    "name": "media_type",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "posted_after",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "posted_before",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -799,6 +825,10 @@
         {
             "name": "mentioned_media",
             "type": "IGMedia"
+        },
+        {
+            "name": "mini_shop_storefront",
+            "type": "Shop"
         },
         {
             "name": "name",

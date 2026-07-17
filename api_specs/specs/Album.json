@@ -329,6 +329,11 @@
                     "type": "map"
                 },
                 {
+                    "name": "provenance_metadata",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "proxied_app_id",
                     "required": false,
                     "type": "string"

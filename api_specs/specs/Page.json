@@ -1552,6 +1552,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "is_lead_capture_ai_agent_enabled",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "is_optimized_for_quality",
                     "required": false,
                     "type": "bool"
@@ -2767,6 +2772,11 @@
                 },
                 {
                     "name": "provenance_info",
+                    "required": false,
+                    "type": "map"
+                },
+                {
+                    "name": "provenance_metadata",
                     "required": false,
                     "type": "map"
                 },

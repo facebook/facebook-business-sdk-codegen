@@ -32,6 +32,10 @@
         {
             "name": "video_data",
             "type": "AdCreativeVideoData"
+        },
+        {
+            "name": "whats_app_business_phone_number",
+            "type": "string"
         }
     ]
 }

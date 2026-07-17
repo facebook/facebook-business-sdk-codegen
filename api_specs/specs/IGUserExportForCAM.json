@@ -27,6 +27,11 @@
                     "type": "iguserexportforcaminsights_period_enum_param"
                 },
                 {
+                    "name": "platform",
+                    "required": false,
+                    "type": "list<iguserexportforcaminsights_platform_enum_param>"
+                },
+                {
                     "name": "time_range",
                     "required": false,
                     "type": "iguserexportforcaminsights_time_range_enum_param"
@@ -100,7 +105,19 @@
             "type": "bool"
         },
         {
+            "name": "page_id",
+            "type": "string"
+        },
+        {
+            "name": "page_name",
+            "type": "string"
+        },
+        {
             "name": "past_brand_partnership_partners",
+            "type": "list<string>"
+        },
+        {
+            "name": "platforms",
             "type": "list<string>"
         },
         {

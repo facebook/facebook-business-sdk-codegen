@@ -1293,6 +1293,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "associated_sgw_data_source_id",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
                     "name": "blocked_event_types",
                     "required": false,
                     "type": "list<string>"

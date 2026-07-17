@@ -15,6 +15,10 @@
     ],
     "fields": [
         {
+            "name": "audio_asset",
+            "type": "AudioAsset"
+        },
+        {
             "name": "creation_time",
             "type": "datetime"
         },

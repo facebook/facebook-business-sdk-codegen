@@ -396,7 +396,7 @@
         {
             "method": "POST",
             "endpoint": "geolocated_items_batch",
-            "return": "ProductCatalog",
+            "return": "Object",
             "params": [
                 {
                     "name": "allow_upsert",

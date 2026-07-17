@@ -45,6 +45,10 @@
             "type": "bool"
         },
         {
+            "name": "budget_pool_qv_created",
+            "type": "bool"
+        },
+        {
             "name": "campaign_overview_columns",
             "type": "list<string>"
         },

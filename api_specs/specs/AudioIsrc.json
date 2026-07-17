@@ -21,6 +21,10 @@
             "type": "string"
         },
         {
+            "name": "canonical_audio_asset",
+            "type": "AudioAsset"
+        },
+        {
             "name": "id",
             "type": "string"
         },

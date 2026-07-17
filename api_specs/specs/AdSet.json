@@ -620,6 +620,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "ad_set_goal",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "adlabels",
                     "required": false,
                     "type": "list<Object>"
@@ -663,6 +668,11 @@
                     "name": "billing_event",
                     "required": false,
                     "type": "adcampaign_billing_event"
+                },
+                {
+                    "name": "brand_safety_config",
+                    "required": false,
+                    "type": "map"
                 },
                 {
                     "name": "budget_schedule_specs",
@@ -781,6 +791,11 @@
                 },
                 {
                     "name": "is_sac_cfca_terms_certified",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_sequenced_conversion_creation",
                     "required": false,
                     "type": "bool"
                 },
@@ -951,6 +966,10 @@
         {
             "name": "account_id",
             "type": "string"
+        },
+        {
+            "name": "ad_set_goal",
+            "type": "AdCampaignGoal"
         },
         {
             "name": "adlabels",
@@ -1126,6 +1145,10 @@
         },
         {
             "name": "is_organic_ad_joint_optimized",
+            "type": "bool"
+        },
+        {
+            "name": "is_sequenced_conversion_creation",
             "type": "bool"
         },
         {

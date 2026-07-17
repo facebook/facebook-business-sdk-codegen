@@ -1,0 +1,53 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "engaged_audiences_audience_label_exclusions",
+            "type": "list<string>"
+        },
+        {
+            "name": "engaged_audiences_audience_label_inclusions",
+            "type": "list<string>"
+        },
+        {
+            "name": "engaged_audiences_exclusions",
+            "type": "list<string>"
+        },
+        {
+            "name": "engaged_audiences_inclusions",
+            "type": "list<string>"
+        },
+        {
+            "name": "existing_customers_audience_label_exclusions",
+            "type": "list<string>"
+        },
+        {
+            "name": "existing_customers_audience_label_inclusions",
+            "type": "list<string>"
+        },
+        {
+            "name": "existing_customers_exclusions",
+            "type": "list<string>"
+        },
+        {
+            "name": "existing_customers_inclusions",
+            "type": "list<string>"
+        },
+        {
+            "name": "is_ca_expansion_enabled",
+            "type": "bool"
+        },
+        {
+            "name": "is_lookalike_inclusion_enabled",
+            "type": "bool"
+        },
+        {
+            "name": "lookalike_inclusions",
+            "type": "list<string>"
+        },
+        {
+            "name": "type",
+            "type": "int"
+        }
+    ]
+}

@@ -965,6 +965,11 @@
             "return": "AdSet",
             "params": [
                 {
+                    "name": "ad_set_goal",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "adlabels",
                     "required": false,
                     "type": "list<Object>"
@@ -1013,6 +1018,11 @@
                     "name": "billing_event",
                     "required": false,
                     "type": "adaccountadsets_billing_event_enum_param"
+                },
+                {
+                    "name": "brand_safety_config",
+                    "required": false,
+                    "type": "map"
                 },
                 {
                     "name": "budget_schedule_specs",
@@ -1151,6 +1161,11 @@
                 },
                 {
                     "name": "is_sac_cfca_terms_certified",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_sequenced_conversion_creation",
                     "required": false,
                     "type": "bool"
                 },
@@ -3108,7 +3123,7 @@
                 {
                     "name": "end_time",
                     "required": false,
-                    "type": "unsigned int"
+                    "type": "datetime"
                 },
                 {
                     "name": "lifetime_budget",
@@ -3133,7 +3148,7 @@
                 {
                     "name": "start_time",
                     "required": false,
-                    "type": "unsigned int"
+                    "type": "datetime"
                 }
             ]
         },
