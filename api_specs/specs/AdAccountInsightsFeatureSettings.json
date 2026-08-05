@@ -1,0 +1,35 @@
+{
+    "apis": [
+        {
+            "name": "genListFeatures",
+            "method": "GET",
+            "endpoint": "insights\/feature-settings\/list-features",
+            "return": "AdAccountInsightsFeatureSettingsListFeatures",
+            "params": [
+                {
+                    "name": "after",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "before",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "limit",
+                    "required": false,
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "name": "genPost",
+            "method": "POST",
+            "endpoint": "insights\/feature-settings",
+            "return": "AdAccountInsightsFeatureSettingsPost",
+            "params": []
+        }
+    ],
+    "fields": []
+}

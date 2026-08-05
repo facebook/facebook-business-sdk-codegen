@@ -15,7 +15,7 @@
         {
             "method": "POST",
             "endpoint": "admins",
-            "return": "Group",
+            "return": "User",
             "params": [
                 {
                     "name": "uid",
@@ -829,7 +829,7 @@
         {
             "method": "POST",
             "endpoint": "members",
-            "return": "Group",
+            "return": "User",
             "params": [
                 {
                     "name": "email",
@@ -1329,6 +1329,11 @@
                     "name": "instant_game_entry_point_data",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "is_ai_generated",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "is_boost_intended",

@@ -3517,6 +3517,11 @@
                     "type": "Object"
                 },
                 {
+                    "name": "is_ai_generated",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "place",
                     "required": false,
                     "type": "string"
@@ -3567,6 +3572,11 @@
                     "name": "feed_targeting",
                     "required": false,
                     "type": "Object"
+                },
+                {
+                    "name": "is_ai_generated",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "place",
@@ -3821,6 +3831,11 @@
                     "name": "instant_game_entry_point_data",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "is_ai_generated",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "is_boost_intended",

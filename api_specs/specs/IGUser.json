@@ -327,7 +327,7 @@
                 {
                     "name": "platform",
                     "required": false,
-                    "type": "list<shadowigusercreator_marketplace_creators_platform_enum_param>"
+                    "type": "shadowigusercreator_marketplace_creators_platform_enum_param"
                 },
                 {
                     "name": "query",
@@ -533,7 +533,17 @@
                     "type": "bool"
                 },
                 {
+                    "name": "is_comment_prompt_used",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "is_paid_partnership",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "is_poll_duration_extended",
                     "required": false,
                     "type": "bool"
                 },
@@ -544,6 +554,11 @@
                 },
                 {
                     "name": "media_type",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "poll_attachment",
                     "required": false,
                     "type": "string"
                 },

@@ -445,13 +445,8 @@
                     "type": "bool"
                 },
                 {
-                    "name": "bid_spec",
-                    "required": false,
-                    "type": "map"
-                },
-                {
                     "name": "category",
-                    "required": true,
+                    "required": false,
                     "type": "whatsappbusinessaccountmessage_templates_category_enum_param"
                 },
                 {
@@ -486,7 +481,7 @@
                 },
                 {
                     "name": "language",
-                    "required": true,
+                    "required": false,
                     "type": "string"
                 },
                 {
@@ -538,6 +533,11 @@
                     "name": "send_type",
                     "required": false,
                     "type": "whatsappbusinessaccountmessage_templates_send_type_enum_param"
+                },
+                {
+                    "name": "source_template_id",
+                    "required": false,
+                    "type": "unsigned int"
                 },
                 {
                     "name": "sub_category",

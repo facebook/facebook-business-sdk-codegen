@@ -4,6 +4,18 @@
         {
             "name": "comment_moderation_filter",
             "type": "string"
+        },
+        {
+            "name": "fb_comment_moderation_filter",
+            "type": "string"
+        },
+        {
+            "name": "ig_comment_moderation_filter",
+            "type": "string"
+        },
+        {
+            "name": "threads_comment_moderation_filter",
+            "type": "string"
         }
     ]
 }

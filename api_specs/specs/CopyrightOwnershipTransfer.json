@@ -25,12 +25,12 @@
             "type": "int"
         },
         {
-            "name": "receiving_rights_holder",
-            "type": "Profile"
+            "name": "receiving_rights_holder_owner",
+            "type": "Object"
         },
         {
-            "name": "sending_rights_holder",
-            "type": "Profile"
+            "name": "sending_rights_holder_owner",
+            "type": "Object"
         },
         {
             "name": "status",

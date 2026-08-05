@@ -529,7 +529,7 @@
         {
             "method": "POST",
             "endpoint": "hotel_rooms_batch",
-            "return": "ProductCatalog",
+            "return": "ProductCatalogHotelRoomsBatch",
             "params": [
                 {
                     "name": "file",

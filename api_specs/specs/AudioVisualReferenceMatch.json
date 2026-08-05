@@ -70,8 +70,8 @@
             "type": "float"
         },
         {
-            "name": "matched_reference_owner",
-            "type": "Profile"
+            "name": "matched_reference_owner_v2",
+            "type": "Object"
         },
         {
             "name": "modification_history",
@@ -94,8 +94,8 @@
             "type": "float"
         },
         {
-            "name": "reference_owner",
-            "type": "Profile"
+            "name": "reference_owner_v2",
+            "type": "Object"
         },
         {
             "name": "rejection_form_data_entries_with_translations",

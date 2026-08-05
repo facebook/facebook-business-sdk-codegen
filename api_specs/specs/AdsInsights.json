@@ -486,6 +486,10 @@
             "type": "string"
         },
         {
+            "name": "instagram_profile_follow",
+            "type": "string"
+        },
+        {
             "name": "instagram_profile_visits",
             "type": "string"
         },
@@ -602,22 +606,6 @@
             "type": "string"
         },
         {
-            "name": "marketing_messages_website_add_to_cart",
-            "type": "string"
-        },
-        {
-            "name": "marketing_messages_website_initiate_checkout",
-            "type": "string"
-        },
-        {
-            "name": "marketing_messages_website_purchase",
-            "type": "string"
-        },
-        {
-            "name": "marketing_messages_website_purchase_values",
-            "type": "string"
-        },
-        {
             "name": "messages_delivered",
             "type": "string"
         },
@@ -667,6 +655,14 @@
         },
         {
             "name": "place_page_name",
+            "type": "string"
+        },
+        {
+            "name": "playable_average_game_length",
+            "type": "string"
+        },
+        {
+            "name": "playable_game_start_rate",
             "type": "string"
         },
         {

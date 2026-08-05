@@ -1,36 +1,6 @@
 {
     "apis": [
         {
-            "method": "GET",
-            "endpoint": "cancellations",
-            "return": "CommerceOrderCancellation",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "items",
-            "return": "CommerceOrderItem",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "payments",
-            "return": "CommerceOrderPayment",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "refunds",
-            "return": "CommerceOrderRefund",
-            "params": []
-        },
-        {
-            "method": "GET",
-            "endpoint": "shipments",
-            "return": "CommerceOrderShipment",
-            "params": []
-        },
-        {
             "method": "POST",
             "endpoint": "shipments",
             "return": "CommerceOrder",

@@ -306,7 +306,6 @@
             "FOLLOW_PAGE",
             "FOLLOW_USER",
             "GET_A_QUOTE",
-            "GET_ACCESS",
             "GET_DETAILS",
             "GET_DIRECTIONS",
             "GET_IN_TOUCH",
@@ -316,7 +315,6 @@
             "GET_QUOTE",
             "GET_SHOWTIMES",
             "GET_STARTED",
-            "GET_UPDATES",
             "INQUIRE_NOW",
             "INSTALL_APP",
             "INSTALL_MOBILE_APP",
@@ -342,8 +340,6 @@
             "REFER_FRIENDS",
             "REQUEST_TIME",
             "SAY_THANKS",
-            "SEE_DETAILS",
-            "SEE_MENU",
             "SEE_MORE",
             "SEE_SHOP",
             "SELL_NOW",
@@ -370,7 +366,6 @@
             "VIEW_CART",
             "VIEW_CHANNEL",
             "VIEW_IN_CART",
-            "VIEW_INSTAGRAM_PROFILE",
             "VIEW_PRODUCT",
             "VISIT_PAGES_FEED",
             "VISIT_WEBSITE",
@@ -549,7 +544,6 @@
             "FOLLOW_PAGE",
             "FOLLOW_USER",
             "GET_A_QUOTE",
-            "GET_ACCESS",
             "GET_DETAILS",
             "GET_DIRECTIONS",
             "GET_IN_TOUCH",
@@ -559,7 +553,6 @@
             "GET_QUOTE",
             "GET_SHOWTIMES",
             "GET_STARTED",
-            "GET_UPDATES",
             "INQUIRE_NOW",
             "INSTALL_APP",
             "INSTALL_MOBILE_APP",
@@ -585,8 +578,6 @@
             "REFER_FRIENDS",
             "REQUEST_TIME",
             "SAY_THANKS",
-            "SEE_DETAILS",
-            "SEE_MENU",
             "SEE_MORE",
             "SEE_SHOP",
             "SELL_NOW",
@@ -613,7 +604,6 @@
             "VIEW_CART",
             "VIEW_CHANNEL",
             "VIEW_IN_CART",
-            "VIEW_INSTAGRAM_PROFILE",
             "VIEW_PRODUCT",
             "VISIT_PAGES_FEED",
             "VISIT_WEBSITE",
@@ -983,7 +973,6 @@
             "FOLLOW_PAGE",
             "FOLLOW_USER",
             "GET_A_QUOTE",
-            "GET_ACCESS",
             "GET_DETAILS",
             "GET_DIRECTIONS",
             "GET_IN_TOUCH",
@@ -993,7 +982,6 @@
             "GET_QUOTE",
             "GET_SHOWTIMES",
             "GET_STARTED",
-            "GET_UPDATES",
             "INQUIRE_NOW",
             "INSTALL_APP",
             "INSTALL_MOBILE_APP",
@@ -1019,8 +1007,6 @@
             "REFER_FRIENDS",
             "REQUEST_TIME",
             "SAY_THANKS",
-            "SEE_DETAILS",
-            "SEE_MENU",
             "SEE_MORE",
             "SEE_SHOP",
             "SELL_NOW",
@@ -1047,7 +1033,6 @@
             "VIEW_CART",
             "VIEW_CHANNEL",
             "VIEW_IN_CART",
-            "VIEW_INSTAGRAM_PROFILE",
             "VIEW_PRODUCT",
             "VISIT_PAGES_FEED",
             "VISIT_WEBSITE",
@@ -3265,6 +3250,7 @@
             "ACO_TOGGLE",
             "ADD_FUNDS_TO_RUN_CAMPAIGN",
             "ADOPT_CATALOG_TO_RUN_PRODUCT_CENTRIC_ADS",
+            "ADOPT_CLICK_TO_FLOWS",
             "ADOPT_CREATIVE_AUDIENCE_PAIRING",
             "ADOPT_CREATIVE_MEDIA_SOURCING_BUNDLE",
             "ADOPT_CTX_RECOMMENDED_TEMPLATE_BUNDLE",
@@ -3407,6 +3393,8 @@
             "CONVERSION_LEADS_OPTIMIZATION_V2",
             "CONVERSION_LEAD_ADS",
             "CONVERT_APP_WEB_FALLBACK_TO_A_DESTINATION",
+            "CONVERT_CTX_REPLIES_TO_CTX_LEADS",
+            "CONVERT_CTX_REPLIES_TO_CTX_PURCHASE",
             "CONVERT_IG_PROFILE_VISIT_TO_PTWA",
             "COST_GOAL",
             "COST_GOAL_BUDGET_LIMITED",
@@ -3553,6 +3541,7 @@
             "OPTIMAL_BAU",
             "OPT_INTO_CHAT_ON_WHATSAPP_POST_LEAD",
             "OPT_INTO_NUDGE_FOLLOW_UP_MESSAGES_CTM",
+            "OPT_INTO_REELS_GEN_AI_VIDEO_EXPANSION",
             "OPT_INTO_SINGLE_MEDIA_TO_COLLECTION_ADS",
             "OUTCOME_FORECASTER_BID_RECOMMENDATION",
             "OUTCOME_FORECASTER_BUDGET_RECOMMENDATION",
@@ -4317,6 +4306,7 @@
             "FEED_DNM",
             "FEED_NESTED_DNM",
             "FEED_RELAXED",
+            "FEED_SELECT",
             "FEED_STANDARD",
             "FEED_STRICT",
             "UNINITIALIZED",
@@ -10145,7 +10135,8 @@
         "values": [
             "EXTERNAL",
             "INTERNAL",
-            "SELF_SERVE"
+            "SELF_SERVE",
+            "SELF_SERVE_CONTACT_FORM"
         ]
     },
     {
@@ -12831,18 +12822,6 @@
         ]
     },
     {
-        "name": "commercemerchantsettingsreturns_statuses_enum_param",
-        "node": "CommerceReturn",
-        "field_or_param": "statuses",
-        "values": [
-            "APPROVED",
-            "DISAPPROVED",
-            "MERCHANT_MARKED_COMPLETED",
-            "REFUNDED",
-            "REQUESTED"
-        ]
-    },
-    {
         "name": "customaudience_audience_labels",
         "node": "CustomAudience",
         "field_or_param": "audience_labels",
@@ -13776,6 +13755,8 @@
         "node": "IGUserExportForCAMInsightsResult",
         "field_or_param": "platform",
         "values": [
+            "ANY",
+            "BOTH",
             "FACEBOOK",
             "INSTAGRAM"
         ]
@@ -14480,16 +14461,29 @@
             "C2PA",
             "C2PA_METADATA_EDITED",
             "EXPLICIT",
+            "EXPLICIT_AI_CUT",
+            "EXPLICIT_AI_EDIT",
+            "EXPLICIT_AI_EDIT_PRESETS_SHEET",
+            "EXPLICIT_AI_EXPANDER",
+            "EXPLICIT_AI_REWRITE_WITH_META_AI_INTENT",
+            "EXPLICIT_AI_TRANSITION",
+            "EXPLICIT_AI_V2V_RESTYLE",
             "EXPLICIT_ANIMATE",
+            "EXPLICIT_CLIPGEN",
+            "EXPLICIT_CUTOUT",
             "EXPLICIT_DROP_IN",
             "EXPLICIT_FACE_SWAP",
             "EXPLICIT_IMAGINE",
             "EXPLICIT_IMAGINE_ME",
+            "EXPLICIT_MAGIC_CUT",
             "EXPLICIT_RESTYLE",
+            "EXPLICIT_RESTYLE_EFFECTS_MERGE",
+            "EXPLICIT_SUBJECT_EFFECT",
             "EXPLICIT_WARDROBE",
             "INVISIBLE_WATERMARK",
             "IPTC",
-            "IPTC_METADATA_EDITED"
+            "IPTC_METADATA_EDITED",
+            "NONE"
         ]
     },
     {
@@ -16726,7 +16720,7 @@
     },
     {
         "name": "productcataloghotel_rooms_batch_standard_enum_param",
-        "node": "ProductCatalog",
+        "node": "ProductCatalogHotelRoomsBatch",
         "field_or_param": "standard",
         "values": [
             "google"
@@ -19751,6 +19745,8 @@
         "node": "IGUserExportForCAM",
         "field_or_param": "platform",
         "values": [
+            "any",
+            "both",
             "facebook",
             "instagram"
         ]

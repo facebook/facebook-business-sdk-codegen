@@ -252,6 +252,21 @@
                     "type": "bool"
                 },
                 {
+                    "name": "is_redownload",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "last_new_install_time",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
+                    "name": "last_session_time",
+                    "required": false,
+                    "type": "unsigned int"
+                },
+                {
                     "name": "limited_data_use",
                     "required": false,
                     "type": "bool"

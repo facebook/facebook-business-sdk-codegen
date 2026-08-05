@@ -137,11 +137,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "branded_content_sponsor_ids",
-                    "required": false,
-                    "type": "list<unsigned int>"
-                },
-                {
                     "name": "caption",
                     "required": false,
                     "type": "string"
@@ -173,11 +168,6 @@
                 },
                 {
                     "name": "is_carousel_item",
-                    "required": false,
-                    "type": "bool"
-                },
-                {
-                    "name": "is_paid_partnership",
                     "required": false,
                     "type": "bool"
                 },

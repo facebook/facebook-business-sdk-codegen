@@ -1991,6 +1991,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "is_ai_generated",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "is_boost_intended",
                     "required": false,
                     "type": "bool"

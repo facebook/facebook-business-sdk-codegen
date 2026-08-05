@@ -980,6 +980,10 @@
             "type": "list<DayPart>"
         },
         {
+            "name": "anchor_event_attribution_window_days",
+            "type": "int"
+        },
+        {
             "name": "asset_feed_id",
             "type": "string"
         },

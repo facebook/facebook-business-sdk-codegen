@@ -20,6 +20,11 @@
                     "name": "placement_controls",
                     "required": false,
                     "type": "Object"
+                },
+                {
+                    "name": "placement_controls_per_objective",
+                    "required": false,
+                    "type": "Object"
                 }
             ]
         },
@@ -812,6 +817,11 @@
                     "name": "creative_automation_spec",
                     "required": false,
                     "type": "Object"
+                },
+                {
+                    "name": "dataset_split_specs",
+                    "required": false,
+                    "type": "list<map>"
                 },
                 {
                     "name": "date_format",
@@ -1632,6 +1642,11 @@
                     "name": "instant_game_entry_point_data",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "is_ai_generated",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "is_boost_intended",
@@ -4134,6 +4149,11 @@
                     "name": "description",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "is_ai_generated",
+                    "required": false,
+                    "type": "bool"
                 },
                 {
                     "name": "privacy",

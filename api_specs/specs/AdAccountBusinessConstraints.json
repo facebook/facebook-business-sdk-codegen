@@ -18,6 +18,10 @@
             "type": "Object"
         },
         {
+            "name": "placement_controls_per_objective",
+            "type": "Object"
+        },
+        {
             "name": "status",
             "type": "AdAccountBusinessConstraints_status"
         }

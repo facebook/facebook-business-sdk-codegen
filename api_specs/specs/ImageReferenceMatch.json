@@ -53,8 +53,8 @@
             "type": "ImageCopyright"
         },
         {
-            "name": "matched_reference_owner",
-            "type": "Profile"
+            "name": "matched_reference_owner_rh_owner",
+            "type": "Object"
         },
         {
             "name": "modification_history",
@@ -65,8 +65,8 @@
             "type": "ImageCopyright"
         },
         {
-            "name": "reference_owner",
-            "type": "Profile"
+            "name": "reference_owner_rh_owner",
+            "type": "Object"
         },
         {
             "name": "rejection_form_data_entries_with_translations",
