@@ -1,0 +1,98 @@
+{
+    "apis": [
+        {
+            "name": "genGet",
+            "method": "GET",
+            "endpoint": "advideos",
+            "return": "AdAccountAdVideosGet",
+            "params": [
+                {
+                    "name": "ad_account_id",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "after",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "before",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "fields",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "has_integrity_violation",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "limit",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "max_aspect_ratio",
+                    "required": false,
+                    "type": "float"
+                },
+                {
+                    "name": "maxheight",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "maxlength",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "maxwidth",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "min_aspect_ratio",
+                    "required": false,
+                    "type": "float"
+                },
+                {
+                    "name": "minheight",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "minlength",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "minwidth",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "originalvideo",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "summary",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "title",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": []
+}

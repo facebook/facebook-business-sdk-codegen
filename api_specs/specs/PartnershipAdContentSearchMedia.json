@@ -10,6 +10,10 @@
             "type": "list<FBPageAndInstagramAccount>"
         },
         {
+            "name": "fb_affiliate_shortened_url",
+            "type": "string"
+        },
+        {
             "name": "ig_ad_code_sponsor_count",
             "type": "int"
         },

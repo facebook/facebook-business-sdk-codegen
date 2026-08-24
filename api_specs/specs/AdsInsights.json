@@ -618,6 +618,10 @@
             "type": "list<AdsActionStats>"
         },
         {
+            "name": "msa_seller_budget",
+            "type": "int"
+        },
+        {
             "name": "multi_event_conversion_attribution_setting",
             "type": "string"
         },
@@ -716,6 +720,10 @@
         {
             "name": "results",
             "type": "list<Object>"
+        },
+        {
+            "name": "shop_clicks",
+            "type": "string"
         },
         {
             "name": "shops_assisted_purchases",

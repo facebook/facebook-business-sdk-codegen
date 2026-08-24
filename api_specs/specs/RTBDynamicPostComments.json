@@ -1,0 +1,12 @@
+{
+    "apis": [
+        {
+            "name": "genPost",
+            "method": "POST",
+            "endpoint": "comments",
+            "return": "RTBDynamicPostCommentsPost",
+            "params": []
+        }
+    ],
+    "fields": []
+}

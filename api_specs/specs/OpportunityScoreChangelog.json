@@ -1,0 +1,28 @@
+{
+    "apis": [
+        {
+            "name": "genGet",
+            "method": "GET",
+            "endpoint": "opportunity_score_history",
+            "return": "OpportunityScoreChangelogGet",
+            "params": [
+                {
+                    "name": "from_date",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "get_reason",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "to_date",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": []
+}

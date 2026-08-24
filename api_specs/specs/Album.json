@@ -199,6 +199,11 @@
                     "type": "string"
                 },
                 {
+                    "name": "composer_entry_point",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "composer_session_id",
                     "required": false,
                     "type": "string"

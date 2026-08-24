@@ -1,0 +1,212 @@
+{
+    "fields": [
+        {
+            "name": "additional_image_urls",
+            "type": "list<string>"
+        },
+        {
+            "name": "address",
+            "type": "string"
+        },
+        {
+            "name": "applink_android_app_name",
+            "type": "string"
+        },
+        {
+            "name": "applink_android_class",
+            "type": "string"
+        },
+        {
+            "name": "applink_android_package",
+            "type": "string"
+        },
+        {
+            "name": "applink_android_url",
+            "type": "string"
+        },
+        {
+            "name": "applink_ios_app_name",
+            "type": "string"
+        },
+        {
+            "name": "applink_ios_app_store_id",
+            "type": "int"
+        },
+        {
+            "name": "applink_ios_url",
+            "type": "string"
+        },
+        {
+            "name": "applinks",
+            "type": "object"
+        },
+        {
+            "name": "brand",
+            "type": "string"
+        },
+        {
+            "name": "category",
+            "type": "string"
+        },
+        {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_0",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_1",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_2",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_3",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_4",
+            "type": "string"
+        },
+        {
+            "name": "custom_number_0",
+            "type": "int"
+        },
+        {
+            "name": "custom_number_1",
+            "type": "int"
+        },
+        {
+            "name": "custom_number_2",
+            "type": "int"
+        },
+        {
+            "name": "custom_number_3",
+            "type": "int"
+        },
+        {
+            "name": "custom_number_4",
+            "type": "int"
+        },
+        {
+            "name": "da_display_preview_url",
+            "type": "string"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "guest_ratings",
+            "type": "string"
+        },
+        {
+            "name": "hotel_id",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "int"
+        },
+        {
+            "name": "image_fetch_status",
+            "type": "string"
+        },
+        {
+            "name": "image_url",
+            "type": "string"
+        },
+        {
+            "name": "images",
+            "type": "list<string>"
+        },
+        {
+            "name": "lowest_base_price",
+            "type": "string"
+        },
+        {
+            "name": "loyalty_program",
+            "type": "string"
+        },
+        {
+            "name": "margin_level",
+            "type": "int"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "number_of_rooms",
+            "type": "int"
+        },
+        {
+            "name": "phone",
+            "type": "string"
+        },
+        {
+            "name": "price",
+            "type": "string"
+        },
+        {
+            "name": "product_priority_0",
+            "type": "float"
+        },
+        {
+            "name": "product_priority_1",
+            "type": "float"
+        },
+        {
+            "name": "product_priority_2",
+            "type": "float"
+        },
+        {
+            "name": "product_priority_3",
+            "type": "float"
+        },
+        {
+            "name": "product_priority_4",
+            "type": "float"
+        },
+        {
+            "name": "retailer_id",
+            "type": "string"
+        },
+        {
+            "name": "sale_price",
+            "type": "string"
+        },
+        {
+            "name": "sanitized_images",
+            "type": "list<string>"
+        },
+        {
+            "name": "star_rating",
+            "type": "float"
+        },
+        {
+            "name": "tags",
+            "type": "list<string>"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        },
+        {
+            "name": "video_urls",
+            "type": "list<string>"
+        },
+        {
+            "name": "videos_metadata",
+            "type": "object"
+        },
+        {
+            "name": "visibility",
+            "type": "string"
+        }
+    ]
+}

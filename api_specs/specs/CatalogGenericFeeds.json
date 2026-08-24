@@ -1,0 +1,12 @@
+{
+    "apis": [
+        {
+            "name": "genGet",
+            "method": "GET",
+            "endpoint": "uploads",
+            "return": "CatalogGenericFeedsGet",
+            "params": []
+        }
+    ],
+    "fields": []
+}

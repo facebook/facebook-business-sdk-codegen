@@ -65,6 +65,10 @@
             "type": "string"
         },
         {
+            "name": "category",
+            "type": "string"
+        },
+        {
             "name": "country",
             "type": "string"
         },

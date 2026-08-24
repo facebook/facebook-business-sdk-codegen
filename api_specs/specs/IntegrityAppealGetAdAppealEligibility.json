@@ -1,0 +1,16 @@
+{
+    "fields": [
+        {
+            "name": "ad_id",
+            "type": "int"
+        },
+        {
+            "name": "ineligibility_reason",
+            "type": "string"
+        },
+        {
+            "name": "is_eligible",
+            "type": "bool"
+        }
+    ]
+}

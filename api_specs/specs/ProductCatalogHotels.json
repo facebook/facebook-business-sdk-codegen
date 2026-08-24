@@ -1,0 +1,43 @@
+{
+    "apis": [
+        {
+            "name": "genGet",
+            "method": "GET",
+            "endpoint": "hotels",
+            "return": "ProductCatalogHotelsGet",
+            "params": [
+                {
+                    "name": "after",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "before",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "display_format",
+                    "required": false,
+                    "type": "ProductCatalogHotelsGet_display_format_enum_param"
+                },
+                {
+                    "name": "filter",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "limit",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "summary",
+                    "required": false,
+                    "type": "bool"
+                }
+            ]
+        }
+    ],
+    "fields": []
+}

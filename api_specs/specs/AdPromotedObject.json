@@ -54,6 +54,10 @@
             "type": "string"
         },
         {
+            "name": "is_catalog_user_acknowledged",
+            "type": "bool"
+        },
+        {
             "name": "job_listing_id",
             "type": "string"
         },

@@ -1,0 +1,1016 @@
+{
+    "fields": [
+        {
+            "name": "account_controls",
+            "type": "object"
+        },
+        {
+            "name": "account_currency_ratio_to_usd",
+            "type": "float"
+        },
+        {
+            "name": "account_id",
+            "type": "string"
+        },
+        {
+            "name": "account_status",
+            "type": "int"
+        },
+        {
+            "name": "active_billing_date_preference",
+            "type": "object"
+        },
+        {
+            "name": "activities",
+            "type": "object"
+        },
+        {
+            "name": "ad_account_promotable_objects",
+            "type": "object"
+        },
+        {
+            "name": "ad_column_sizes",
+            "type": "object"
+        },
+        {
+            "name": "ad_limits_insights",
+            "type": "object"
+        },
+        {
+            "name": "adcreatives",
+            "type": "object"
+        },
+        {
+            "name": "addrafts",
+            "type": "object"
+        },
+        {
+            "name": "adimages",
+            "type": "object"
+        },
+        {
+            "name": "adlabels",
+            "type": "object"
+        },
+        {
+            "name": "adrules_count_by_type",
+            "type": "object"
+        },
+        {
+            "name": "adrules_history",
+            "type": "object"
+        },
+        {
+            "name": "adrules_library",
+            "type": "object"
+        },
+        {
+            "name": "ads",
+            "type": "object"
+        },
+        {
+            "name": "ads_paused",
+            "type": "bool"
+        },
+        {
+            "name": "ads_volume",
+            "type": "object"
+        },
+        {
+            "name": "adsets",
+            "type": "object"
+        },
+        {
+            "name": "adspaymentcycle",
+            "type": "object"
+        },
+        {
+            "name": "adspixels",
+            "type": "object"
+        },
+        {
+            "name": "adtrust_dsl",
+            "type": "float"
+        },
+        {
+            "name": "advertisable_applications",
+            "type": "object"
+        },
+        {
+            "name": "advideos",
+            "type": "object"
+        },
+        {
+            "name": "age",
+            "type": "float"
+        },
+        {
+            "name": "agencies",
+            "type": "object"
+        },
+        {
+            "name": "agency_client_declaration",
+            "type": "object"
+        },
+        {
+            "name": "agency_fee_config",
+            "type": "object"
+        },
+        {
+            "name": "ai_generated_features_test_framework_enrolled",
+            "type": "bool"
+        },
+        {
+            "name": "all_capabilities",
+            "type": "list<string>"
+        },
+        {
+            "name": "all_payment_methods",
+            "type": "object"
+        },
+        {
+            "name": "am_oneshop_settings",
+            "type": "object"
+        },
+        {
+            "name": "amount_spent",
+            "type": "string"
+        },
+        {
+            "name": "amount_spent_history",
+            "type": "list<object>"
+        },
+        {
+            "name": "applications",
+            "type": "object"
+        },
+        {
+            "name": "applied_publisher_block_lists",
+            "type": "object"
+        },
+        {
+            "name": "archived_adgroup_count",
+            "type": "int"
+        },
+        {
+            "name": "archived_campaign_count",
+            "type": "int"
+        },
+        {
+            "name": "archived_campaign_group_count",
+            "type": "int"
+        },
+        {
+            "name": "asset_feed_spec_from_existing_post",
+            "type": "object"
+        },
+        {
+            "name": "asset_feed_spec_from_instagram_media",
+            "type": "object"
+        },
+        {
+            "name": "asset_score",
+            "type": "float"
+        },
+        {
+            "name": "assigned_partners",
+            "type": "object"
+        },
+        {
+            "name": "attr_window_deprecation_group",
+            "type": "string"
+        },
+        {
+            "name": "auth_flow_for_trust_tier_state",
+            "type": "AdAccountGet_auth_flow_for_trust_tier_state"
+        },
+        {
+            "name": "authorized_country_for_political_ads",
+            "type": "AdAccountGet_authorized_country_for_political_ads"
+        },
+        {
+            "name": "automatic_creative_optimization_test_framework_enrolled",
+            "type": "bool"
+        },
+        {
+            "name": "average_daily_campaign_budget",
+            "type": "string"
+        },
+        {
+            "name": "average_daily_campaign_group_budget",
+            "type": "string"
+        },
+        {
+            "name": "average_lifetime_campaign_budget",
+            "type": "string"
+        },
+        {
+            "name": "average_lifetime_campaign_group_budget",
+            "type": "string"
+        },
+        {
+            "name": "balance",
+            "type": "string"
+        },
+        {
+            "name": "brand_safety_content_filter_levels",
+            "type": "list<string>"
+        },
+        {
+            "name": "brand_safety_excluded_topics",
+            "type": "list<AdAccountGet_brand_safety_excluded_topics>"
+        },
+        {
+            "name": "business",
+            "type": "object"
+        },
+        {
+            "name": "business_ad_account_requests",
+            "type": "object"
+        },
+        {
+            "name": "business_city",
+            "type": "string"
+        },
+        {
+            "name": "business_country_code",
+            "type": "string"
+        },
+        {
+            "name": "business_name",
+            "type": "string"
+        },
+        {
+            "name": "business_restriction_reason",
+            "type": "AdAccountGet_business_restriction_reason"
+        },
+        {
+            "name": "business_state",
+            "type": "string"
+        },
+        {
+            "name": "business_street",
+            "type": "string"
+        },
+        {
+            "name": "business_street2",
+            "type": "string"
+        },
+        {
+            "name": "business_verification_status",
+            "type": "AdAccountGet_business_verification_status"
+        },
+        {
+            "name": "business_zip",
+            "type": "string"
+        },
+        {
+            "name": "businessprojects",
+            "type": "object"
+        },
+        {
+            "name": "call_ads_ad_account_similar_advertiser_budget_recommendation",
+            "type": "float"
+        },
+        {
+            "name": "call_ads_similar_advertiser_budget_recommendation",
+            "type": "object"
+        },
+        {
+            "name": "campaign_group_with_cbo",
+            "type": "object"
+        },
+        {
+            "name": "campaigns",
+            "type": "object"
+        },
+        {
+            "name": "can_bypass_fs_check",
+            "type": "bool"
+        },
+        {
+            "name": "can_create_brand_lift_study",
+            "type": "bool"
+        },
+        {
+            "name": "can_pay_now",
+            "type": "bool"
+        },
+        {
+            "name": "can_remove_payment_methods",
+            "type": "bool"
+        },
+        {
+            "name": "can_repay_now",
+            "type": "bool"
+        },
+        {
+            "name": "can_see_collaborative_ads_reporting",
+            "type": "bool"
+        },
+        {
+            "name": "capabilities",
+            "type": "list<string>"
+        },
+        {
+            "name": "connected_instagram_accounts",
+            "type": "object"
+        },
+        {
+            "name": "cpas_campaign_default_budget",
+            "type": "int"
+        },
+        {
+            "name": "cpas_campaign_group_default_budget",
+            "type": "int"
+        },
+        {
+            "name": "created_time",
+            "type": "mixed"
+        },
+        {
+            "name": "creation_packages",
+            "type": "object"
+        },
+        {
+            "name": "ctwa_smb_enforcing_days_left",
+            "type": "int"
+        },
+        {
+            "name": "ctx_advertiser_sabr_lifetime_duration_recommendation",
+            "type": "int"
+        },
+        {
+            "name": "ctx_dfo_objective_defaults",
+            "type": "object"
+        },
+        {
+            "name": "ctx_flexible_format_targeting",
+            "type": "bool"
+        },
+        {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "current_addrafts",
+            "type": "object"
+        },
+        {
+            "name": "current_unbilled_spend",
+            "type": "object"
+        },
+        {
+            "name": "current_unpaid_unrepaid_invoice",
+            "type": "object"
+        },
+        {
+            "name": "custom_audience_info",
+            "type": "object"
+        },
+        {
+            "name": "customaudiences",
+            "type": "object"
+        },
+        {
+            "name": "customconversions",
+            "type": "object"
+        },
+        {
+            "name": "customer_po_number",
+            "type": "string"
+        },
+        {
+            "name": "daily_spend_limit",
+            "type": "object"
+        },
+        {
+            "name": "dcaf",
+            "type": "bool"
+        },
+        {
+            "name": "default_dsa_beneficiary",
+            "type": "string"
+        },
+        {
+            "name": "default_dsa_payor",
+            "type": "string"
+        },
+        {
+            "name": "default_unified_attribution_spec",
+            "type": "list<object>"
+        },
+        {
+            "name": "default_values",
+            "type": "object"
+        },
+        {
+            "name": "disable_reason",
+            "type": "int"
+        },
+        {
+            "name": "domain_and_site_links",
+            "type": "object"
+        },
+        {
+            "name": "dsa_recommendations",
+            "type": "object"
+        },
+        {
+            "name": "dynamic_probation_dsl",
+            "type": "float"
+        },
+        {
+            "name": "end_advertiser",
+            "type": "int"
+        },
+        {
+            "name": "end_advertiser_name",
+            "type": "string"
+        },
+        {
+            "name": "existing_customers",
+            "type": "list<string>"
+        },
+        {
+            "name": "expired_funding_source_details",
+            "type": "object"
+        },
+        {
+            "name": "extended_credit",
+            "type": "object"
+        },
+        {
+            "name": "extended_credit_info",
+            "type": "object"
+        },
+        {
+            "name": "extended_credit_invoice_group",
+            "type": "object"
+        },
+        {
+            "name": "failed_delivery_checks",
+            "type": "list<object>"
+        },
+        {
+            "name": "fb_entity",
+            "type": "int"
+        },
+        {
+            "name": "flex_single_objective",
+            "type": "AdAccountGet_flex_single_objective"
+        },
+        {
+            "name": "funding_source",
+            "type": "int"
+        },
+        {
+            "name": "funding_source_details",
+            "type": "object"
+        },
+        {
+            "name": "generatepreviews",
+            "type": "object"
+        },
+        {
+            "name": "has_active_skan_campaign_groups",
+            "type": "bool"
+        },
+        {
+            "name": "has_combo_cards_on_file",
+            "type": "bool"
+        },
+        {
+            "name": "has_extended_credit",
+            "type": "bool"
+        },
+        {
+            "name": "has_migrated_permissions",
+            "type": "bool"
+        },
+        {
+            "name": "has_page_authorized_adaccount",
+            "type": "bool"
+        },
+        {
+            "name": "has_personal_access",
+            "type": "bool"
+        },
+        {
+            "name": "has_purchase_optimization_eligible_page",
+            "type": "bool"
+        },
+        {
+            "name": "has_repay_processing_invoices",
+            "type": "bool"
+        },
+        {
+            "name": "has_started_purchase_optimized_ctm_ad_within_1d",
+            "type": "bool"
+        },
+        {
+            "name": "has_value_rule_set",
+            "type": "bool"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "if_viewer_has_permission_to_advertise",
+            "type": "bool"
+        },
+        {
+            "name": "incremental_conversion_optimization_ad_studies",
+            "type": "list<object>"
+        },
+        {
+            "name": "instagram_accounts",
+            "type": "object"
+        },
+        {
+            "name": "invoicing_emails",
+            "type": "object"
+        },
+        {
+            "name": "ios_fourteen_campaign_limits",
+            "type": "object"
+        },
+        {
+            "name": "is_attribution_spec_system_default",
+            "type": "bool"
+        },
+        {
+            "name": "is_ba_skip_delayed_eligible",
+            "type": "bool"
+        },
+        {
+            "name": "is_biz_migration_eligible",
+            "type": "bool"
+        },
+        {
+            "name": "is_br_entity_account",
+            "type": "bool"
+        },
+        {
+            "name": "is_business_allowed_to_advertise",
+            "type": "bool"
+        },
+        {
+            "name": "is_business_verification_eligible",
+            "type": "bool"
+        },
+        {
+            "name": "is_closed_by_advertiser_compromise_bot",
+            "type": "bool"
+        },
+        {
+            "name": "is_collaborative_ads_ad_account",
+            "type": "bool"
+        },
+        {
+            "name": "is_ctx_advertiser",
+            "type": "bool"
+        },
+        {
+            "name": "is_direct_deals_enabled",
+            "type": "bool"
+        },
+        {
+            "name": "is_disabled_umbrella",
+            "type": "bool"
+        },
+        {
+            "name": "is_eligible_for_advantage_plus_creative_regulated_category",
+            "type": "bool"
+        },
+        {
+            "name": "is_expanded_shopless_awpt_eligible",
+            "type": "bool"
+        },
+        {
+            "name": "is_in_3ds_authorization_enabled_market",
+            "type": "bool"
+        },
+        {
+            "name": "is_mi_billing_info_updated",
+            "type": "bool"
+        },
+        {
+            "name": "is_mm_lite_api_enabled",
+            "type": "bool"
+        },
+        {
+            "name": "is_new_advertiser",
+            "type": "bool"
+        },
+        {
+            "name": "is_notifications_enabled",
+            "type": "bool"
+        },
+        {
+            "name": "is_oba_opt_out",
+            "type": "bool"
+        },
+        {
+            "name": "is_omnichannel_campaign_eligible",
+            "type": "bool"
+        },
+        {
+            "name": "is_pageless_ctwa_eligible",
+            "type": "bool"
+        },
+        {
+            "name": "is_pending_numbers_exposure_flag_enabled",
+            "type": "bool"
+        },
+        {
+            "name": "is_personal",
+            "type": "int"
+        },
+        {
+            "name": "is_pinless_debit_eligible",
+            "type": "bool"
+        },
+        {
+            "name": "is_placement_soft_opt_out_enabled",
+            "type": "bool"
+        },
+        {
+            "name": "is_prepay_account",
+            "type": "bool"
+        },
+        {
+            "name": "is_retail_media_network",
+            "type": "bool"
+        },
+        {
+            "name": "is_shopless_awpt_eligible",
+            "type": "bool"
+        },
+        {
+            "name": "is_tax_id_required",
+            "type": "bool"
+        },
+        {
+            "name": "is_tier_0",
+            "type": "bool"
+        },
+        {
+            "name": "is_tier_0_full",
+            "type": "bool"
+        },
+        {
+            "name": "is_tier_1",
+            "type": "bool"
+        },
+        {
+            "name": "is_tier_restricted",
+            "type": "bool"
+        },
+        {
+            "name": "is_update_timezone_currency_too_recently",
+            "type": "bool"
+        },
+        {
+            "name": "is_user_allowed_to_advertise",
+            "type": "bool"
+        },
+        {
+            "name": "is_using_higher_daily_flex_rate",
+            "type": "bool"
+        },
+        {
+            "name": "is_value_rules_smart_default_on",
+            "type": "bool"
+        },
+        {
+            "name": "is_wa_cloud_api_user",
+            "type": "bool"
+        },
+        {
+            "name": "is_youth_ads_pao_basic_advertiser",
+            "type": "bool"
+        },
+        {
+            "name": "is_youth_ads_pao_basic_advertiser_announcement_eligible",
+            "type": "bool"
+        },
+        {
+            "name": "last_spend_time",
+            "type": "int"
+        },
+        {
+            "name": "last_used_time",
+            "type": "int"
+        },
+        {
+            "name": "liable_address",
+            "type": "object"
+        },
+        {
+            "name": "liable_addresses",
+            "type": "object"
+        },
+        {
+            "name": "live_video_advertiser_details",
+            "type": "object"
+        },
+        {
+            "name": "marketing_message_enablement_status",
+            "type": "AdAccountGet_marketing_message_enablement_status"
+        },
+        {
+            "name": "marketing_messages_settings",
+            "type": "object"
+        },
+        {
+            "name": "max_bid",
+            "type": "object"
+        },
+        {
+            "name": "max_billing_threshold",
+            "type": "object"
+        },
+        {
+            "name": "maybe_pac_internal_post_from_primary_post",
+            "type": "string"
+        },
+        {
+            "name": "media_agency",
+            "type": "int"
+        },
+        {
+            "name": "min_billing_threshold",
+            "type": "object"
+        },
+        {
+            "name": "min_campaign_group_spend_cap",
+            "type": "string"
+        },
+        {
+            "name": "min_daily_budget",
+            "type": "int"
+        },
+        {
+            "name": "min_live_boosting_budget",
+            "type": "int"
+        },
+        {
+            "name": "min_payment",
+            "type": "object"
+        },
+        {
+            "name": "minimum_budgets",
+            "type": "object"
+        },
+        {
+            "name": "modeled_reporting_type",
+            "type": "AdAccountGet_modeled_reporting_type"
+        },
+        {
+            "name": "moo_default_conversion_bid",
+            "type": "int"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "next_bill_date",
+            "type": "int"
+        },
+        {
+            "name": "offsite_pixels_tos_accepted",
+            "type": "bool"
+        },
+        {
+            "name": "onbehalf_requests",
+            "type": "object"
+        },
+        {
+            "name": "opportunity_score",
+            "type": "float"
+        },
+        {
+            "name": "opportunity_score_weight",
+            "type": "int"
+        },
+        {
+            "name": "owner",
+            "type": "string"
+        },
+        {
+            "name": "owner_business",
+            "type": "object"
+        },
+        {
+            "name": "page_authorized_country_for_political_ads",
+            "type": "list<object>"
+        },
+        {
+            "name": "pages_in_authorizations",
+            "type": "list<object>"
+        },
+        {
+            "name": "partner",
+            "type": "int"
+        },
+        {
+            "name": "payment_options",
+            "type": "object"
+        },
+        {
+            "name": "pending_billing_date_preference",
+            "type": "object"
+        },
+        {
+            "name": "prepay_account_balance",
+            "type": "object"
+        },
+        {
+            "name": "promotion_metadata",
+            "type": "list<object>"
+        },
+        {
+            "name": "promotion_metadata_live_crawl",
+            "type": "list<object>"
+        },
+        {
+            "name": "publisher_block_lists",
+            "type": "object"
+        },
+        {
+            "name": "reachestimate",
+            "type": "object"
+        },
+        {
+            "name": "reachfrequencypredictions",
+            "type": "object"
+        },
+        {
+            "name": "recommendations",
+            "type": "object"
+        },
+        {
+            "name": "rf_spec",
+            "type": "object"
+        },
+        {
+            "name": "sales_segment_v2",
+            "type": "string"
+        },
+        {
+            "name": "saved_audiences",
+            "type": "object"
+        },
+        {
+            "name": "segment",
+            "type": "AdAccountGet_segment"
+        },
+        {
+            "name": "send_bill_to_address",
+            "type": "object"
+        },
+        {
+            "name": "send_bill_to_addresses",
+            "type": "object"
+        },
+        {
+            "name": "show_improved_boleto",
+            "type": "bool"
+        },
+        {
+            "name": "show_sac_campaign_group_input",
+            "type": "bool"
+        },
+        {
+            "name": "site_links_live_crawl",
+            "type": "list<object>"
+        },
+        {
+            "name": "sold_to_address",
+            "type": "object"
+        },
+        {
+            "name": "sold_to_addresses",
+            "type": "object"
+        },
+        {
+            "name": "spend_cap",
+            "type": "string"
+        },
+        {
+            "name": "spend_cap_history",
+            "type": "list<object>"
+        },
+        {
+            "name": "spendlimits",
+            "type": "object"
+        },
+        {
+            "name": "stored_balance_status",
+            "type": "AdAccountGet_stored_balance_status"
+        },
+        {
+            "name": "subscribed_apps",
+            "type": "object"
+        },
+        {
+            "name": "targetingbrowse",
+            "type": "object"
+        },
+        {
+            "name": "targetingsearch",
+            "type": "object"
+        },
+        {
+            "name": "targetingsuggestions",
+            "type": "object"
+        },
+        {
+            "name": "tax_country",
+            "type": "string"
+        },
+        {
+            "name": "tax_exempt",
+            "type": "bool"
+        },
+        {
+            "name": "tax_id",
+            "type": "string"
+        },
+        {
+            "name": "tax_id_status",
+            "type": "int"
+        },
+        {
+            "name": "tax_id_type",
+            "type": "string"
+        },
+        {
+            "name": "timezone_id",
+            "type": "int"
+        },
+        {
+            "name": "timezone_name",
+            "type": "string"
+        },
+        {
+            "name": "timezone_offset_hours_utc",
+            "type": "float"
+        },
+        {
+            "name": "tos_accepted",
+            "type": "map<int, int>"
+        },
+        {
+            "name": "total_prepay_balance",
+            "type": "object"
+        },
+        {
+            "name": "tracking",
+            "type": "object"
+        },
+        {
+            "name": "transactions",
+            "type": "object"
+        },
+        {
+            "name": "user_access_expire_time",
+            "type": "int"
+        },
+        {
+            "name": "user_role",
+            "type": "string"
+        },
+        {
+            "name": "user_settings",
+            "type": "object"
+        },
+        {
+            "name": "user_tasks",
+            "type": "list<string>"
+        },
+        {
+            "name": "user_tos_accepted",
+            "type": "map<int, int>"
+        },
+        {
+            "name": "users",
+            "type": "object"
+        },
+        {
+            "name": "value_rule_set",
+            "type": "object"
+        },
+        {
+            "name": "viewable_business",
+            "type": "object"
+        },
+        {
+            "name": "viewable_businesses",
+            "type": "list<object>"
+        }
+    ]
+}

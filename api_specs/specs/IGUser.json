@@ -325,6 +325,11 @@
                     "type": "list<string>"
                 },
                 {
+                    "name": "page_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "platform",
                     "required": false,
                     "type": "shadowigusercreator_marketplace_creators_platform_enum_param"

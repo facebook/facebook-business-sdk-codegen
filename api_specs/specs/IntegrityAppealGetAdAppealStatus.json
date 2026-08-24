@@ -1,0 +1,12 @@
+{
+    "fields": [
+        {
+            "name": "ad_id",
+            "type": "int"
+        },
+        {
+            "name": "appeal_status",
+            "type": "string"
+        }
+    ]
+}

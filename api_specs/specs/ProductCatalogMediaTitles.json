@@ -1,0 +1,12 @@
+{
+    "apis": [
+        {
+            "name": "genPost",
+            "method": "POST",
+            "endpoint": "media_titles",
+            "return": "ProductCatalogMediaTitlesPost",
+            "params": []
+        }
+    ],
+    "fields": []
+}

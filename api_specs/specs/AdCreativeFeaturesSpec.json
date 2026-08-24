@@ -326,6 +326,10 @@
             "type": "AdCreativeFeatureDetails"
         },
         {
+            "name": "video_voiceover",
+            "type": "AdCreativeFeatureDetails"
+        },
+        {
             "name": "wa_mm_image_filtering",
             "type": "AdCreativeFeatureDetails"
         },

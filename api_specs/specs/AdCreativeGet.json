@@ -1,0 +1,300 @@
+{
+    "fields": [
+        {
+            "name": "account_id",
+            "type": "string"
+        },
+        {
+            "name": "actor_id",
+            "type": "int"
+        },
+        {
+            "name": "actor_type",
+            "type": "AdCreativeGet_actor_type"
+        },
+        {
+            "name": "adlabels",
+            "type": "list<object>"
+        },
+        {
+            "name": "applink_treatment",
+            "type": "AdCreativeGet_applink_treatment"
+        },
+        {
+            "name": "asset_feed_spec",
+            "type": "object"
+        },
+        {
+            "name": "authorization_category",
+            "type": "AdCreativeGet_authorization_category"
+        },
+        {
+            "name": "body",
+            "type": "string"
+        },
+        {
+            "name": "branded_content",
+            "type": "object"
+        },
+        {
+            "name": "branded_content_boosting_type",
+            "type": "AdCreativeGet_branded_content_boosting_type"
+        },
+        {
+            "name": "bundle_folder_id",
+            "type": "int"
+        },
+        {
+            "name": "call_to_action",
+            "type": "object"
+        },
+        {
+            "name": "call_to_action_type",
+            "type": "AdCreativeGet_call_to_action_type"
+        },
+        {
+            "name": "categorization_criteria",
+            "type": "AdCreativeGet_categorization_criteria"
+        },
+        {
+            "name": "category_media_source",
+            "type": "AdCreativeGet_category_media_source"
+        },
+        {
+            "name": "contextual_multi_ads",
+            "type": "object"
+        },
+        {
+            "name": "creative_sourcing_spec",
+            "type": "object"
+        },
+        {
+            "name": "degrees_of_freedom_spec",
+            "type": "object"
+        },
+        {
+            "name": "destination_spec",
+            "type": "object"
+        },
+        {
+            "name": "dynamic_ad_voice",
+            "type": "string"
+        },
+        {
+            "name": "effective_authorization_category",
+            "type": "AdCreativeGet_effective_authorization_category"
+        },
+        {
+            "name": "effective_instagram_media_id",
+            "type": "int"
+        },
+        {
+            "name": "effective_instagram_story_id",
+            "type": "int"
+        },
+        {
+            "name": "effective_object_story_id",
+            "type": "string"
+        },
+        {
+            "name": "enable_direct_install",
+            "type": "bool"
+        },
+        {
+            "name": "enable_launch_instant_app",
+            "type": "bool"
+        },
+        {
+            "name": "existing_post_title",
+            "type": "string"
+        },
+        {
+            "name": "facebook_branded_content",
+            "type": "object"
+        },
+        {
+            "name": "format_transformation_spec",
+            "type": "list<object>"
+        },
+        {
+            "name": "id",
+            "type": "int"
+        },
+        {
+            "name": "image_crops",
+            "type": "object"
+        },
+        {
+            "name": "image_hash",
+            "type": "string"
+        },
+        {
+            "name": "image_url",
+            "type": "string"
+        },
+        {
+            "name": "instagram_branded_content",
+            "type": "object"
+        },
+        {
+            "name": "instagram_permalink_url",
+            "type": "string"
+        },
+        {
+            "name": "instagram_user_id",
+            "type": "int"
+        },
+        {
+            "name": "interactive_components_spec",
+            "type": "object"
+        },
+        {
+            "name": "link_og_id",
+            "type": "int"
+        },
+        {
+            "name": "link_url",
+            "type": "string"
+        },
+        {
+            "name": "media_sourcing_spec",
+            "type": "object"
+        },
+        {
+            "name": "media_type",
+            "type": "AdCreativeGet_media_type"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "object_id",
+            "type": "int"
+        },
+        {
+            "name": "object_store_url",
+            "type": "string"
+        },
+        {
+            "name": "object_story_id",
+            "type": "string"
+        },
+        {
+            "name": "object_story_spec",
+            "type": "object"
+        },
+        {
+            "name": "object_type",
+            "type": "AdCreativeGet_object_type"
+        },
+        {
+            "name": "object_url",
+            "type": "string"
+        },
+        {
+            "name": "omnichannel_link_spec",
+            "type": "object"
+        },
+        {
+            "name": "page_id",
+            "type": "int"
+        },
+        {
+            "name": "page_welcome_message",
+            "type": "string"
+        },
+        {
+            "name": "photo_album_source_object_story_id",
+            "type": "string"
+        },
+        {
+            "name": "place_page_set_id",
+            "type": "int"
+        },
+        {
+            "name": "platform_customizations",
+            "type": "object"
+        },
+        {
+            "name": "playable_asset_id",
+            "type": "int"
+        },
+        {
+            "name": "portrait_customizations",
+            "type": "object"
+        },
+        {
+            "name": "product_set_id",
+            "type": "int"
+        },
+        {
+            "name": "recommender_settings",
+            "type": "object"
+        },
+        {
+            "name": "regional_regulation_disclaimer_spec",
+            "type": "object"
+        },
+        {
+            "name": "source_facebook_post_id",
+            "type": "int"
+        },
+        {
+            "name": "source_instagram_media_id",
+            "type": "int"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "template_url",
+            "type": "string"
+        },
+        {
+            "name": "template_url_spec",
+            "type": "object"
+        },
+        {
+            "name": "threads_media_id",
+            "type": "int"
+        },
+        {
+            "name": "threads_user_id",
+            "type": "int"
+        },
+        {
+            "name": "thumbnail_id",
+            "type": "int"
+        },
+        {
+            "name": "thumbnail_url",
+            "type": "string"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "uca_draft_version",
+            "type": "int"
+        },
+        {
+            "name": "url_tags",
+            "type": "string"
+        },
+        {
+            "name": "use_page_actor_override",
+            "type": "bool"
+        },
+        {
+            "name": "video_id",
+            "type": "int"
+        },
+        {
+            "name": "visual_hash",
+            "type": "int"
+        }
+    ]
+}

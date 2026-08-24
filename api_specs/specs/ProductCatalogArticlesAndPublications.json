@@ -1,0 +1,12 @@
+{
+    "apis": [
+        {
+            "name": "genPost",
+            "method": "POST",
+            "endpoint": "articles_and_publications",
+            "return": "ProductCatalogArticlesAndPublicationsPost",
+            "params": []
+        }
+    ],
+    "fields": []
+}

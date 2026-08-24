@@ -1,0 +1,12 @@
+{
+    "apis": [
+        {
+            "name": "genPost",
+            "method": "POST",
+            "endpoint": "items_batch",
+            "return": "ProductCatalogItemsBatchPost",
+            "params": []
+        }
+    ],
+    "fields": []
+}

@@ -1,0 +1,198 @@
+{
+    "apis": [
+        {
+            "name": "genGet",
+            "method": "GET",
+            "endpoint": "insights",
+            "return": "AdsInsightsCampaignGet",
+            "params": [
+                {
+                    "name": "action_attribution_windows",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "action_breakdowns",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "action_report_time",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "after",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "am_call_tags",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "before",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "breakdowns",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "comparison_fields",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "comparison_time_ranges",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "date_preset",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "debug_enable_trace",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "default_attribution_windows",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "default_summary",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "e2e_scenario_run_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "export_columns",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "export_format",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "export_name",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "fields",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "filtering",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "flog",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "graph_cache",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "include_zeros",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "level",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "limit",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "meta_breakdowns",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "product_id_limit",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "round_up_level",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "run_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "saber_setsuna_perf_request_id",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "sort",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "summary",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "summary_action_breakdowns",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "time_increment",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "time_range",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "time_ranges",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "use_account_attribution_setting",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "use_unified_attribution_setting",
+                    "required": false,
+                    "type": "bool"
+                }
+            ]
+        }
+    ],
+    "fields": []
+}

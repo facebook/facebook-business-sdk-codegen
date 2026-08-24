@@ -1,0 +1,12 @@
+{
+    "apis": [
+        {
+            "name": "genPost",
+            "method": "POST",
+            "endpoint": "products",
+            "return": "ProductCatalogProductsPost",
+            "params": []
+        }
+    ],
+    "fields": []
+}

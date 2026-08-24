@@ -1,0 +1,29 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "content",
+            "type": "string"
+        },
+        {
+            "name": "display_preferences",
+            "type": "Object"
+        },
+        {
+            "name": "jurisdictions",
+            "type": "list<string>"
+        },
+        {
+            "name": "symbol",
+            "type": "Object"
+        },
+        {
+            "name": "taxonomy_public_id",
+            "type": "string"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        }
+    ]
+}

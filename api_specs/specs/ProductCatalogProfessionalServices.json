@@ -1,0 +1,12 @@
+{
+    "apis": [
+        {
+            "name": "genPost",
+            "method": "POST",
+            "endpoint": "professional_services",
+            "return": "ProductCatalogProfessionalServicesPost",
+            "params": []
+        }
+    ],
+    "fields": []
+}

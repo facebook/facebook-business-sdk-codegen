@@ -972,7 +972,7 @@
         {
             "method": "POST",
             "endpoint": "adsets",
-            "return": "AdSet",
+            "return": "Object",
             "params": [
                 {
                     "name": "ad_set_goal",
@@ -3685,7 +3685,18 @@
             "method": "GET",
             "endpoint": "recommendations",
             "return": "AdAccountRecommendations",
-            "params": []
+            "params": [
+                {
+                    "name": "recommendation_names",
+                    "required": false,
+                    "type": "list<adaccountrecommendations_recommendation_names_enum_param>"
+                },
+                {
+                    "name": "recommendation_stages",
+                    "required": false,
+                    "type": "list<adaccountrecommendations_recommendation_stages_enum_param>"
+                }
+            ]
         },
         {
             "method": "POST",
@@ -3802,9 +3813,19 @@
                     "type": "bool"
                 },
                 {
+                    "name": "is_reserved",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "limit_type",
                     "required": false,
                     "type": "adaccounttargetingbrowse_limit_type_enum_param"
+                },
+                {
+                    "name": "optimization_goal",
+                    "required": false,
+                    "type": "adaccounttargetingbrowse_optimization_goal_enum_param"
                 },
                 {
                     "name": "regulated_categories",
@@ -3859,6 +3880,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "is_reserved",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "limit_type",
                     "required": false,
                     "type": "adaccounttargetingsearch_limit_type_enum_param"
@@ -3867,6 +3893,11 @@
                     "name": "objective",
                     "required": false,
                     "type": "adaccounttargetingsearch_objective_enum_param"
+                },
+                {
+                    "name": "optimization_goal",
+                    "required": false,
+                    "type": "adaccounttargetingsearch_optimization_goal_enum_param"
                 },
                 {
                     "name": "promoted_object",

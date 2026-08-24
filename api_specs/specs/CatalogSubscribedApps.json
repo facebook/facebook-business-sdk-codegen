@@ -1,0 +1,12 @@
+{
+    "apis": [
+        {
+            "name": "genDelete",
+            "method": "DELETE",
+            "endpoint": "subscribed_apps",
+            "return": "CatalogSubscribedAppsDelete",
+            "params": []
+        }
+    ],
+    "fields": []
+}

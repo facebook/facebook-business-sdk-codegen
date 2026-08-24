@@ -1,0 +1,28 @@
+{
+    "fields": [
+        {
+            "name": "filter",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "int"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "parent_id",
+            "type": "int"
+        },
+        {
+            "name": "product_count",
+            "type": "int"
+        },
+        {
+            "name": "retailer_id",
+            "type": "string"
+        }
+    ]
+}

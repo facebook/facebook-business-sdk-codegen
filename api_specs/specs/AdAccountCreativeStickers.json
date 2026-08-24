@@ -1,0 +1,12 @@
+{
+    "apis": [
+        {
+            "name": "genPost",
+            "method": "POST",
+            "endpoint": "creative_stickers",
+            "return": "AdAccountCreativeStickersPost",
+            "params": []
+        }
+    ],
+    "fields": []
+}

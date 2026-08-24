@@ -1,0 +1,18 @@
+{
+    "apis": [
+        {
+            "name": "genGet",
+            "method": "GET",
+            "endpoint": "",
+            "return": "ProductCatalogHotelsItemGet",
+            "params": [
+                {
+                    "name": "display_format",
+                    "required": false,
+                    "type": "ProductCatalogHotelsItemGet_display_format_enum_param"
+                }
+            ]
+        }
+    ],
+    "fields": []
+}

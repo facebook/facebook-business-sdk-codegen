@@ -25,6 +25,10 @@
             "type": "ProductCatalog"
         },
         {
+            "name": "collaborative_ads_share_settings",
+            "type": "CollaborativeAdsShareSettings"
+        },
+        {
             "name": "contact_email",
             "type": "string"
         },

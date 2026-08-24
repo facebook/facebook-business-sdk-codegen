@@ -1,0 +1,12 @@
+{
+    "apis": [
+        {
+            "name": "genPost",
+            "method": "POST",
+            "endpoint": "owned_product_catalogs",
+            "return": "PageOwnedProductCatalogPost",
+            "params": []
+        }
+    ],
+    "fields": []
+}

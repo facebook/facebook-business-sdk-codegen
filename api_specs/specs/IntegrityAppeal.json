@@ -1,0 +1,57 @@
+{
+    "apis": [
+        {
+            "name": "genGetAdAppealBulkEligibility",
+            "method": "GET",
+            "endpoint": "",
+            "return": "IntegrityAppealGetAdAppealBulkEligibility",
+            "params": [
+                {
+                    "name": "ad_ids",
+                    "required": true,
+                    "type": "list<int>"
+                }
+            ],
+            "basePath": "integrity\/appeals\/ads\/eligibility"
+        },
+        {
+            "name": "genGetAdAppealBulkStatus",
+            "method": "GET",
+            "endpoint": "",
+            "return": "IntegrityAppealGetAdAppealBulkStatus",
+            "params": [
+                {
+                    "name": "ad_ids",
+                    "required": true,
+                    "type": "list<int>"
+                }
+            ],
+            "basePath": "integrity\/appeals\/ads\/status"
+        },
+        {
+            "name": "genGetAdAppealEligibility",
+            "method": "GET",
+            "endpoint": "eligibility",
+            "return": "IntegrityAppealGetAdAppealEligibility",
+            "params": [],
+            "basePath": "integrity\/appeals\/ads"
+        },
+        {
+            "name": "genGetAdAppealStatus",
+            "method": "GET",
+            "endpoint": "status",
+            "return": "IntegrityAppealGetAdAppealStatus",
+            "params": [],
+            "basePath": "integrity\/appeals\/ads"
+        },
+        {
+            "name": "genPostAdAppealBulk",
+            "method": "POST",
+            "endpoint": "",
+            "return": "IntegrityAppealPostAdAppealBulk",
+            "params": [],
+            "basePath": "integrity\/appeals\/ads"
+        }
+    ],
+    "fields": []
+}

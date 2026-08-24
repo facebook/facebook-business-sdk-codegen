@@ -1,0 +1,12 @@
+{
+    "apis": [
+        {
+            "name": "genDelete",
+            "method": "DELETE",
+            "endpoint": "",
+            "return": "ArticlesAndPublicationsItemDelete",
+            "params": []
+        }
+    ],
+    "fields": []
+}

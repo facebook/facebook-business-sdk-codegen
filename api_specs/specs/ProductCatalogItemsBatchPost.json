@@ -1,0 +1,12 @@
+{
+    "fields": [
+        {
+            "name": "handles",
+            "type": "list<string>"
+        },
+        {
+            "name": "validation_status",
+            "type": "list<object>"
+        }
+    ]
+}

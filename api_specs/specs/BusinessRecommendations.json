@@ -1,0 +1,58 @@
+{
+    "apis": [
+        {
+            "name": "genGet",
+            "method": "GET",
+            "endpoint": "recommendations",
+            "return": "BusinessRecommendationsGet",
+            "params": [
+                {
+                    "name": "ad_account_ids",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "after",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "before",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "fields",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "limit",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "locale",
+                    "required": false,
+                    "type": "BusinessRecommendationsGet_locale_enum_param"
+                },
+                {
+                    "name": "recommendation_names",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "recommendation_stages",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "scopes",
+                    "required": false,
+                    "type": "list<BusinessRecommendationsGet_scopes_enum_param>"
+                }
+            ]
+        }
+    ],
+    "fields": []
+}

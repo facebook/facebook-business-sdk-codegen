@@ -706,6 +706,10 @@
             "type": "string"
         },
         {
+            "name": "native_commerce",
+            "type": "bool"
+        },
+        {
             "name": "offer_disclaimer",
             "type": "string"
         },
@@ -744,6 +748,10 @@
         {
             "name": "product_catalog",
             "type": "ProductCatalog"
+        },
+        {
+            "name": "product_disclosures",
+            "type": "list<ProductItemProductDisclosure>"
         },
         {
             "name": "product_feed",

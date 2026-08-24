@@ -971,6 +971,11 @@
                     "type": "bool"
                 },
                 {
+                    "name": "is_paid",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
                     "name": "meta_install_referrer",
                     "required": false,
                     "type": "string"

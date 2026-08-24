@@ -10,6 +10,10 @@
             "type": "list<int>"
         },
         {
+            "name": "cpm",
+            "type": "list<int>"
+        },
+        {
             "name": "impression",
             "type": "list<int>"
         },

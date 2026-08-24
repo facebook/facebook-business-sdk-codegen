@@ -1,0 +1,12 @@
+{
+    "apis": [
+        {
+            "name": "genPut",
+            "method": "PUT",
+            "endpoint": "",
+            "return": "ProductCatalogProfessionalServicesItemPut",
+            "params": []
+        }
+    ],
+    "fields": []
+}

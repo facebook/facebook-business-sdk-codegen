@@ -1,0 +1,35 @@
+{
+    "apis": [
+        {
+            "name": "genDelete",
+            "method": "DELETE",
+            "endpoint": "subscriptions\/{Dynamic}",
+            "return": "AdsSubscriptionDelete",
+            "params": []
+        },
+        {
+            "name": "genGet",
+            "method": "GET",
+            "endpoint": "subscriptions",
+            "return": "AdsSubscriptionGet",
+            "params": [
+                {
+                    "name": "after",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "before",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "limit",
+                    "required": false,
+                    "type": "int"
+                }
+            ]
+        }
+    ],
+    "fields": []
+}

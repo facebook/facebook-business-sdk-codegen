@@ -1,0 +1,16 @@
+{
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "success",
+            "type": "bool"
+        }
+    ]
+}
