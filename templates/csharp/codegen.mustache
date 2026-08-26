@@ -1,0 +1,734 @@
+/**
+ * Copyright (c) 2015-present, Facebook, Inc. All rights reserved.
+ *
+ * You are hereby granted a non-exclusive, worldwide, royalty-free license to
+ * use, copy, modify, and distribute this software in source code or binary
+ * form for use in connection with the web services and APIs provided by
+ * Facebook.
+ *
+ * As with any software that integrates with the Facebook platform, your use
+ * of this software is subject to the Facebook Developer Principles and
+ * Policies [http://developers.facebook.com/policy/]. This copyright notice
+ * shall be included in all copies or substantial portions of the software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+ * THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ * DEALINGS IN THE SOFTWARE.
+ *
+ */
+
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using IDName = Facebook.Ads.SDK.IdName;
+
+namespace Facebook.Ads.SDK
+{
+
+  sealed public class {{name:pascal_case}} : APINode
+  {
+    {{#fields}}
+    private {{{type:csharp}}} m{{name:pascal_case}};
+    {{/fields}}
+
+    {{#cls_is_ad_creative}}
+    private string mCreativeId;
+    {{/cls_is_ad_creative}}
+
+    {{^has_get}}public {{/has_get}}{{#has_get}}{{#can_be_data_type}}public {{/can_be_data_type}}{{/has_get}}{{name:pascal_case}}() {
+    }
+    {{#has_get}}
+
+    public {{name:pascal_case}}(long id, APIContext context)
+      : this(id.ToString(), context)
+    {
+    }
+
+    public {{name:pascal_case}}(string id, APIContext context)
+    {
+      this.mId = id;
+      {{#cls_is_ad_creative}}
+      mCreativeId = mId.ToString();
+      {{/cls_is_ad_creative}}
+      this.Context = context;
+    }
+
+    public static {{name:pascal_case}} FetchById(long id, APIContext context)
+    {
+      return FetchById(id.ToString(), context);
+    }
+
+    public static {{name:pascal_case}} FetchById(string id, APIContext context)
+    {
+      {{name:pascal_case}} {{name:camel_case}} =
+        new APIRequestGet(id, context)
+        .RequestAllFields()
+        .Execute()
+        .FirstOrDefault();
+      return {{name:camel_case}};
+    }
+
+    private string PrefixedId
+    {
+      get
+      {
+        {{#cls_is_ad_account}}
+        return ("act_" + this.mId.ToString());
+        {{/cls_is_ad_account}}
+        {{^cls_is_ad_account}}
+        return this.mId.ToString();
+        {{/cls_is_ad_account}}
+      }
+    }
+    {{/has_get}}
+    {{#has_id}}
+    public string Id
+    {
+      get { return this.FieldId.ToString(); }
+    }
+    {{/has_id}}
+
+    private static List<object> ConvertToObjects(object input)
+    {
+      var objects = input as IEnumerable<object>;
+      if (objects != null)
+      {
+        return new List<object>(objects);
+      }
+
+      var strings = input as IEnumerable<string>;
+      if (strings != null)
+      {
+        return new List<object>(strings);
+      }
+      return null;
+    }
+
+    private static List<string> ConvertToStrings(object input)
+    {
+      var objects = input as IEnumerable<object>;
+      if (objects != null)
+      {
+        return objects.Select(obj => obj.ToString()).ToList();
+      }
+
+      var strings = input as IEnumerable<string>;
+      if (strings != null)
+      {
+        return new List<string>(strings);
+      }
+      return null;
+    }
+
+    private static List<long> ConvertToLongs(object input)
+    {
+      var objects = input as IEnumerable<object>;
+      if (objects != null)
+      {
+        return objects.Select(obj => Convert.ToInt64(obj)).ToList();
+      }
+      return null;
+    }
+
+    private static List<double> ConvertToDoubles(object input)
+    {
+      var objects = input as IEnumerable<object>;
+      if (objects != null)
+      {
+        return objects.Select(obj => Convert.ToDouble(obj)).ToList();
+      }
+      return null;
+    }
+
+    private static List<bool> ConvertToBooleans(object input)
+    {
+      var objects = input as IEnumerable<object>;
+      if (objects != null)
+      {
+        return objects.Select(obj => Convert.ToBoolean(obj)).ToList();
+      }
+      return null;
+    }
+
+    public static {{name:pascal_case}} LoadFromDictionary(dynamic dict)
+    {
+      if (!(dict is Dictionary<string, object>)) {
+        return null;
+      }
+      {{name:pascal_case}} model = new {{name:pascal_case}}();
+      model.Data = dict;
+      {{#fields}}
+      // BUGBUG: rf_spec has some issue of varying data type (can be string for map)
+      // We can't support it.
+      if (dict.ContainsKey("{{api_name}}") && !"rf_spec".Equals("{{api_name}}"))
+      {
+        {{#is_node}}
+        {{#is_list}}
+        // This field is a list of API Nodes.
+        var nodeList = dict["{{api_name}}"] as IEnumerable<object>;
+        model.m{{name:pascal_case}} = nodeList
+          .Select(obj =>
+            {{{csharp:node_base_type}}}.LoadFromDictionary(obj))
+          .ToList();
+        {{/is_list}}
+        {{^is_list}}
+          // This is an API node
+          model.m{{name:pascal_case}} = {{{type:csharp}}}.LoadFromDictionary(dict["{{api_name}}"]);
+        {{/is_list}}
+        {{/is_node}}
+
+        {{^is_node}}
+        {{#is_list}}
+        {{#is_string_base_type}}
+          model.m{{{name:pascal_case}}} = ConvertToStrings(dict["{{{api_name}}}"]);
+        {{/is_string_base_type}}
+        {{#is_long_base_type}}
+          model.m{{{name:pascal_case}}} = ConvertToLongs(dict["{{{api_name}}}"]);
+        {{/is_long_base_type}}
+        {{#is_double_base_type}}
+          model.m{{{name:pascal_case}}} = ConvertToDoubles(dict["{{{api_name}}}"]);
+        {{/is_double_base_type}}
+        {{#is_bool_base_type}}
+          model.m{{{name:pascal_case}}} = ConvertToBooleans(dict["{{{api_name}}}"]);
+        {{/is_bool_base_type}}
+        {{#is_object_base_type}}
+          model.m{{{name:pascal_case}}} = ConvertToObjects(dict["{{{api_name}}}"]);
+        {{/is_object_base_type}}
+        {{/is_list}}
+        {{#is_map}}
+          // TODO: supporting map
+        {{/is_map}}
+        {{#is_enum}}{{^is_list}}
+          model.m{{{name:pascal_case}}} = {{{type:csharp}}}.CreateFromString((string)dict["{{{api_name}}}"]);
+        {{/is_list}}{{/is_enum}}
+        {{^is_list}}{{^is_map}}{{^is_enum}}
+        {{#is_long_base_type}}
+          model.m{{{name:pascal_case}}} = Convert.ToInt64(dict["{{{api_name}}}"]);
+        {{/is_long_base_type}}
+        {{#is_double_base_type}}
+          model.m{{{name:pascal_case}}} = Convert.ToDouble(dict["{{{api_name}}}"]);
+        {{/is_double_base_type}}
+        {{#is_bool_base_type}}
+          model.m{{{name:pascal_case}}} = Convert.ToBoolean(dict["{{{api_name}}}"]);
+        {{/is_bool_base_type}}
+        {{^is_long_base_type}}{{^is_double_base_type}}{{^is_bool_base_type}}
+          model.m{{{name:pascal_case}}} = dict["{{{api_name}}}"];
+        {{/is_bool_base_type}}{{/is_double_base_type}}{{/is_long_base_type}}
+        {{/is_enum}}{{/is_map}}{{/is_list}}
+        {{/is_node}}
+      }
+      {{/fields}}
+
+      return ({{name:pascal_case}})model;
+    }
+
+    public static {{name:pascal_case}} LoadJSON(string json, APIContext context, bool isCollectionResponse)
+    {
+      dynamic obj = APINode.SerializeJSON(json);
+      return LoadFromDictionary(obj);
+    }
+
+    public static APINodeList<{{name:pascal_case}}> ParseResponse(string json, APIContext context, APIRequest<{{name:pascal_case}}> request)
+    {
+      var modelList = new APINodeList<{{name:pascal_case}}>(request, json);
+      dynamic obj = APINode.SerializeJSON(json);
+      if (request.IsCollectionResponse)
+      {
+        dynamic list = obj["data"];
+        foreach (var o in list)
+        {
+          modelList.Add(LoadFromDictionary(o));
+        }
+      }
+      else
+      {
+        modelList.Add(LoadFromDictionary(obj));
+      }
+      return modelList;
+    }
+
+    public override string ToString()
+    {
+      // TODO: implement
+      return "";
+    }
+
+    #region API Requests
+    {{#apis}}
+    public APIRequest{{name:pascal_case}} {{name:camel_case}}()
+    {
+      return new APIRequest{{name:pascal_case}}(this.PrefixedId.ToString(), this.Context);
+    }
+
+    {{/apis}}
+    #endregion
+
+    #region Fields properties
+    {{#fields}}
+    public {{{type:csharp}}} Field{{name:pascal_case}}
+    {
+      get
+      {
+        {{#is_root_node}}
+        if (m{{name:pascal_case}} != null)
+        {
+          m{{name:pascal_case}}.Context = this.Context;
+        }
+        {{/is_root_node}}
+        return m{{name:pascal_case}};
+      }
+    }
+
+    {{^has_get}}
+    public {{cls:name:pascal_case}} setField{{name:pascal_case}}({{{type:csharp}}} value) {
+      this.m{{name:pascal_case}} = value;
+      return this;
+    }
+
+    {{#is_node}}
+    public {{cls:name:pascal_case}} setField{{name:pascal_case}}(string value) {
+      // TODO:
+      // Type type = new TypeToken<{{{type:csharp}}}>(){}.getType();
+      // this.m{{name:pascal_case}} = {{{csharp:node_base_type}}}.getGson().fromJson(value, type);
+      {{#cls_is_ad_creative}}
+      {{#is_id_field}}
+      // this.mCreativeId = this.mId.ToString();
+      {{/is_id_field}}
+      {{/cls_is_ad_creative}}
+      return this;
+    }
+    {{/is_node}}
+    {{/has_get}}
+
+    {{#has_get}}
+    {{#can_be_data_type}}
+    public {{cls:name:pascal_case}} setField{{name:pascal_case}}({{{type:csharp}}} value) {
+      // TODO: Implement
+      // this.m{{name:pascal_case}} = value;
+      {{#cls_is_ad_creative}}
+      {{#is_id_field}}
+      // this.mCreativeId = this.mId.ToString();
+      {{/is_id_field}}
+      {{/cls_is_ad_creative}}
+      return this;
+    }
+
+    {{#is_node}}
+    public {{cls:name:pascal_case}} setField{{name:pascal_case}}(string value) {
+      // TODO: Implement
+      // Type type = new TypeToken<{{{type:csharp}}}>(){}.getType();
+      // this.m{{name:pascal_case}} = {{{csharp:node_base_type}}}.getGson().fromJson(value, type);
+      return this;
+    }
+    {{/is_node}}
+    {{/can_be_data_type}}
+    {{/has_get}}
+    {{/fields}}
+
+    #endregion
+
+    #region API Request inner classes
+
+    {{#apis}}
+    {{#return_single_node}}
+    public class APIRequest{{name:pascal_case}}
+      : APIRequest<{{{return}}}{{^return}}APINode{{/return}}>
+    {
+      public static string[] PARAMS =
+      {
+        {{#params}}
+        "{{api_name}}",
+        {{/params}}
+        {{#allow_file_upload}}
+        "file",
+        {{/allow_file_upload}}
+      };
+
+      public static string[] FIELDS =
+      {
+        {{#param_fields}}
+        {{^not_visible}}
+        "{{api_name}}",
+        {{/not_visible}}
+        {{/param_fields}}
+      };
+
+      public APIRequest{{name:pascal_case}}(string nodeId, APIContext context)
+        : base(context, nodeId, "{{{endpoint}}}", "{{{method}}}", PARAMS)
+      {
+      }
+
+      protected override APINodeList<{{{return}}}{{^return}}APINode{{/return}}> ParseResponse(string response)
+      {
+        return {{{return}}}{{^return}}APINode{{/return}}.ParseResponse(response, this.Context, this);
+      }
+
+      public override bool IsCollectionResponse
+      {
+        get { return false; }
+      }
+
+      public APIRequest{{api:name:pascal_case}} SetParam(string parameter, object value)
+      {
+        this.SetParamInternal(parameter, value);
+        return this;
+      }
+
+      public APIRequest{{api:name:pascal_case}} SetParams(Dictionary<string, object> parameters)
+      {
+        this.SetParamsInternal(parameters);
+        return this;
+      }
+
+      {{#allow_file_upload}}
+      public APIRequest{{api:name:pascal_case}} AddUploadFile (string uploadName, FileInfo file)
+      {
+        this.SetParam(uploadName, file);
+        return this;
+      }
+      {{/allow_file_upload}}
+
+      {{#params}}
+      public APIRequest{{api:name:pascal_case}} Set{{name:pascal_case}} ({{{type:csharp}}} value)
+      {
+        this.SetParam("{{api_name}}", value);
+        return this;
+      }
+
+      {{^is_string}}
+      public APIRequest{{api:name:pascal_case}} Set{{name:pascal_case}} (string value)
+      {
+        this.SetParam("{{api_name}}", value);
+        return this;
+      }
+      {{/is_string}}
+      {{/params}}
+
+      public APIRequest{{api:name:pascal_case}} RequestAllFields()
+      {
+        return this.RequestAllFields(true);
+      }
+
+      public APIRequest{{api:name:pascal_case}} RequestAllFields(bool value)
+      {
+        foreach (string field in FIELDS)
+        {
+          this.RequestField(field, value);
+        }
+        return this;
+      }
+
+      public APIRequest{{api:name:pascal_case}} RequestFields(IEnumerable<string> fields)
+      {
+        return this.RequestFields(fields, true);
+      }
+
+      public APIRequest{{api:name:pascal_case}} RequestFields (IEnumerable<string> fields, bool value)
+      {
+        foreach (string field in fields)
+        {
+          this.RequestField(field, value);
+        }
+        return this;
+      }
+
+      public APIRequest{{api:name:pascal_case}} RequestField (string field)
+      {
+        this.RequestField(field, true);
+        return this;
+      }
+
+      public APIRequest{{api:name:pascal_case}} RequestField (string field, bool value)
+      {
+        this.RequestFieldInternal(field, value);
+        return this;
+      }
+
+      {{#param_fields}}
+      {{^not_visible}}
+      public APIRequest{{api:name:pascal_case}} Request{{name:pascal_case}}Field()
+      {
+        return this.Request{{name:pascal_case}}Field(true);
+      }
+
+      public APIRequest{{api:name:pascal_case}} Request{{name:pascal_case}}Field(bool value)
+      {
+        this.RequestField("{{api_name}}", value);
+        return this;
+      }
+
+      {{/not_visible}}
+      {{/param_fields}}
+
+      {{#api_referenced_enum_types}}
+      public sealed class {{type:csharp}} {
+        private readonly string value;
+
+        private static readonly Dictionary<string, {{type:csharp}}> instance =
+          new Dictionary<string, {{type:csharp}}>()
+          {
+            {{#values}}
+            {"{{csharp_name}}", new {{type:csharp}}("{{api_value}}")},
+            {{/values}}
+            {"NULL", null},
+          };
+
+        {{#values}}
+        public static readonly {{type:csharp}} VALUE_{{csharp_name}} = instance["{{csharp_name}}"];
+        {{/values}}
+
+        private {{type:csharp}}(string value)
+        {
+          this.value = value;
+        }
+
+        public static {{type:csharp}} CreateFromString(string value)
+        {
+          if (!instance.ContainsKey(value))
+          {
+            throw new ArgumentException(value + " is not a valid {{type:csharp}}", "value");
+          }
+          return new {{type:csharp}}(value);
+        }
+
+        public override string ToString()
+        {
+          return value;
+        }
+      }
+      {{/api_referenced_enum_types}}
+    }
+
+    {{/return_single_node}}
+    {{^return_single_node}}
+    public class APIRequest{{name:pascal_case}}
+      : APIRequest<{{{return}}}{{^return}}APINode{{/return}}>
+    {
+      public static string[] PARAMS =
+      {
+        {{#params}}
+        "{{api_name}}",
+        {{/params}}
+        {{#allow_file_upload}}
+        "file",
+        {{/allow_file_upload}}
+      };
+
+      public static string[] FIELDS =
+      {
+        {{#param_fields}}
+        {{^not_visible}}
+        "{{api_name}}",
+        {{/not_visible}}
+        {{/param_fields}}
+      };
+
+      public APIRequest{{name:pascal_case}}(string nodeId, APIContext context)
+        : base(context, nodeId, "{{{endpoint}}}", "{{{method}}}", PARAMS)
+      {
+      }
+
+      protected override APINodeList<{{{return}}}{{^return}}APINode{{/return}}> ParseResponse(string response)
+      {
+        return {{{return}}}{{^return}}APINode{{/return}}.ParseResponse(response, this.Context, this);
+      }
+
+      public override bool IsCollectionResponse
+      {
+        get { return true; }
+      }
+
+      public APIRequest{{api:name:pascal_case}} SetParam(string parameter, object value)
+      {
+        this.SetParamInternal(parameter, value);
+        return this;
+      }
+
+      public APIRequest{{api:name:pascal_case}} SetParams(Dictionary<string, object> parameters)
+      {
+        this.SetParamsInternal(parameters);
+        return this;
+      }
+
+      {{#allow_file_upload}}
+      public APIRequest{{api:name:pascal_case}} AddUploadFile(string uploadName, FileInfo file)
+      {
+        this.SetParam(uploadName, file);
+        return this;
+      }
+      {{/allow_file_upload}}
+
+      {{#params}}
+      public APIRequest{{api:name:pascal_case}} Set{{name:pascal_case}}({{{type:csharp}}} {{name:camel_case}}Value)
+      {
+        this.SetParam("{{api_name}}", {{name:camel_case}}Value);
+        return this;
+      }
+
+      {{^is_string}}
+      public APIRequest{{api:name:pascal_case}} Set{{name:pascal_case}}(string {{name:camel_case}}Value)
+      {
+        this.SetParam("{{api_name}}", {{name:camel_case}}Value);
+        return this;
+      }
+      {{/is_string}}
+      {{/params}}
+
+      public APIRequest{{api:name:pascal_case}} RequestAllFields()
+      {
+        return this.RequestAllFields(true);
+      }
+
+      public APIRequest{{api:name:pascal_case}} RequestAllFields(bool value)
+      {
+        foreach (string field in FIELDS)
+        {
+          this.RequestField(field, value);
+        }
+        return this;
+      }
+
+      public APIRequest{{api:name:pascal_case}} RequestFields(IEnumerable<string> fields)
+      {
+        return this.RequestFields(fields, true);
+      }
+
+      public APIRequest{{api:name:pascal_case}} RequestFields(IEnumerable<string> fields, bool value)
+      {
+        foreach (string field in fields)
+        {
+          this.RequestField(field, value);
+        }
+        return this;
+      }
+
+      public APIRequest{{api:name:pascal_case}} RequestField(string field)
+      {
+        this.RequestField(field, true);
+        return this;
+      }
+
+      public APIRequest{{api:name:pascal_case}} RequestField(string field, bool value)
+      {
+        this.RequestFieldInternal(field, value);
+        return this;
+      }
+
+      {{#param_fields}}
+      {{^not_visible}}
+      public APIRequest{{api:name:pascal_case}} Request{{name:pascal_case}}Field()
+      {
+        return this.Request{{name:pascal_case}}Field(true);
+      }
+
+      public APIRequest{{api:name:pascal_case}} Request{{name:pascal_case}}Field(bool value)
+      {
+        this.RequestField("{{api_name}}", value);
+        return this;
+      }
+
+      {{/not_visible}}
+      {{/param_fields}}
+
+      {{#api_referenced_enum_types}}
+      public sealed class {{type:csharp}} {
+        private readonly string value;
+
+        private static readonly Dictionary<string, {{type:csharp}}> instance =
+          new Dictionary<string, {{type:csharp}}>()
+          {
+            {{#values}}
+            {"{{csharp_name}}", new {{type:csharp}}("{{api_value}}")},
+            {{/values}}
+            {"NULL", null},
+          };
+
+        {{#values}}
+        public static readonly {{type:csharp}} VALUE_{{csharp_name}} = instance["{{csharp_name}}"];
+        {{/values}}
+
+        private {{type:csharp}}(string value) {
+          this.value = value;
+        }
+
+        public override string ToString() {
+          return value;
+        }
+      }
+      {{/api_referenced_enum_types}}
+    }
+
+    {{/return_single_node}}
+    {{/apis}}
+    #endregion
+
+    #region Referenced Enum types
+
+    {{#cls_referenced_enum_types}}
+    public sealed class {{type:csharp}}
+    {
+      private readonly string value;
+
+      private static readonly Dictionary<string, {{type:csharp}}> instance =
+        new Dictionary<string, {{type:csharp}}>()
+        {
+          {{#values}}
+          {"{{csharp_name}}", new {{type:csharp}}("{{api_value}}")},
+          {{/values}}
+          {"NULL", null},
+        };
+
+      {{#values}}
+      public static readonly {{type:csharp}} VALUE_{{csharp_name}} = instance["{{csharp_name}}"];
+      {{/values}}
+
+      private {{type:csharp}}(string value)
+      {
+        this.value = value;
+      }
+
+      public static {{type:csharp}} CreateFromString(string value)
+      {
+        if (!instance.ContainsKey(value))
+        {
+          throw new ArgumentException(value + " is not a valid {{type:csharp}}", "value");
+        }
+        return new {{type:csharp}}(value);
+      }
+
+      public override string ToString()
+      {
+        return value;
+      }
+    }
+    {{/cls_referenced_enum_types}}
+
+    #endregion
+
+    public {{name:pascal_case}} CopyFrom({{name:pascal_case}} instance)
+    {
+      // TODO: implement
+      return this;
+    }
+
+    public static IResponseParser<{{name:pascal_case}}> GetParser()
+    {
+      return new {{name:pascal_case}}ResponseParser();
+    }
+
+    class {{name:pascal_case}}ResponseParser : IResponseParser<{{name:pascal_case}}>
+    {
+      public APINodeList<{{name:pascal_case}}> ParseResponse(string response, APIContext context, APIRequest<{{name:pascal_case}}> request)
+      {
+        return {{name:pascal_case}}.ParseResponse(response, context, request);
+      }
+    }
+  }
+}
