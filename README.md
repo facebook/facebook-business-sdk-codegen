@@ -7,11 +7,12 @@ This project contains all the code to auto generate Facebook Business SDKs
 [python](https://github.com/facebook/facebook-python-business-sdk),
 [nodejs](https://github.com/facebook/facebook-nodejs-business-sdk),
 [ruby](https://github.com/facebook/facebook-ruby-business-sdk),
-[java](https://github.com/facebook/facebook-java-business-sdk)). There are three
+[java](https://github.com/facebook/facebook-java-business-sdk),
+csharp). There are three
 parts of this project :
 
 - JSON schema representation of the Graph API endpoints.
-- [Mustache](https://mustache.github.io/) template for 5 languages.
+- [Mustache](https://mustache.github.io/) template for 6 languages.
 - Codegen scripts.
 
 ## Pre-requisites

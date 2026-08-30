@@ -1,0 +1,36 @@
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+namespace Meta.Ads.SDK
+{
+    /// <summary>
+    /// APIConfig contains configuration constants for the Facebook Business SDK.
+    /// </summary>
+    public class APIConfig
+    {
+        /// <summary>
+        /// The default API version
+        /// </summary>
+        public const string DefaultApiVersion = "{{api_version}}";
+
+        /// <summary>
+        /// The base URL for the Facebook Graph API
+        /// </summary>
+        public const string DefaultApiBase = "https://graph.facebook.com";
+
+        /// <summary>
+        /// The base URL for video API endpoints
+        /// </summary>
+        public const string DefaultVideoApiBase = "https://graph-video.facebook.com";
+
+        /// <summary>
+        /// The User-Agent string for SDK requests
+        /// </summary>
+        public const string UserAgent = "fbbizsdk-csharp-v{{sdk_version}}";
+    }
+}
