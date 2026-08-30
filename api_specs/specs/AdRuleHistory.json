@@ -26,6 +26,10 @@
             "type": "list<AdRuleHistoryResult>"
         },
         {
+            "name": "rule_id",
+            "type": "string"
+        },
+        {
             "name": "schedule_spec",
             "type": "AdRuleScheduleSpec"
         },
