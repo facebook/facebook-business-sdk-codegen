@@ -1,0 +1,21 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "pauseStartDay",
+            "type": "int"
+        },
+        {
+            "name": "startTimeOffset",
+            "type": "int"
+        },
+        {
+            "name": "pauseEndDay",
+            "type": "int"
+        },
+        {
+            "name": "endTimeOffset",
+            "type": "int"
+        }
+    ]
+}
