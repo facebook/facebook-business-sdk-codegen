@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "geo",
+            "type": "unsigned int"
+        },
+        {
+            "name": "age",
+            "type": "unsigned int"
+        },
+        {
+            "name": "gender",
+            "type": "unsigned int"
+        }
+    ]
+}
