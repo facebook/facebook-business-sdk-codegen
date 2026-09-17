@@ -3,8 +3,8 @@
         {
             "name": "genPost",
             "method": "POST",
-            "endpoint": "items_batch",
-            "return": "ProductCatalogItemsBatchPost",
+            "endpoint": "version_items_batch",
+            "return": "ProductCatalogVersionItemsBatchPost",
             "params": [
                 {
                     "name": "allow_upsert",
@@ -14,7 +14,7 @@
                 {
                     "name": "item_sub_type",
                     "required": false,
-                    "type": "ProductCatalogItemsBatchPost_item_sub_type_enum_param"
+                    "type": "ProductCatalogVersionItemsBatchPost_item_sub_type_enum_param"
                 },
                 {
                     "name": "item_type",
@@ -22,9 +22,9 @@
                     "type": "string"
                 },
                 {
-                    "name": "request_origin",
+                    "name": "item_version",
                     "required": false,
-                    "type": "ProductCatalogItemsBatchPost_request_origin_enum_param"
+                    "type": "string"
                 },
                 {
                     "name": "requests",

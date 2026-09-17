@@ -1,0 +1,17 @@
+{
+    "apis": [],
+    "fields": [
+        {
+            "name": "budget_value",
+            "type": "int"
+        },
+        {
+            "name": "budget_value_type",
+            "type": "string"
+        },
+        {
+            "name": "is_enabled",
+            "type": "bool"
+        }
+    ]
+}

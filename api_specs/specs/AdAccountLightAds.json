@@ -3,11 +3,11 @@
         {
             "name": "genGet",
             "method": "GET",
-            "endpoint": "advideos",
-            "return": "AdAccountAdVideosGet",
+            "endpoint": "lightads",
+            "return": "AdAccountLightAdsGet",
             "params": [
                 {
-                    "name": "ad_account_id",
+                    "name": "ad_draft_id",
                     "required": false,
                     "type": "int"
                 },
@@ -17,14 +17,29 @@
                     "type": "string"
                 },
                 {
+                    "name": "am_call_tags",
+                    "required": false,
+                    "type": "string"
+                },
+                {
                     "name": "before",
                     "required": false,
                     "type": "string"
                 },
                 {
-                    "name": "date_format",
+                    "name": "comparison_time_ranges",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "date_preset",
+                    "required": false,
+                    "type": "AdAccountLightAdsGet_date_preset_enum_param"
+                },
+                {
+                    "name": "effective_status",
+                    "required": false,
+                    "type": "list<string>"
                 },
                 {
                     "name": "fields",
@@ -37,7 +52,17 @@
                     "type": "string"
                 },
                 {
-                    "name": "has_integrity_violation",
+                    "name": "from_adtable",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "include_deleted",
+                    "required": false,
+                    "type": "bool"
+                },
+                {
+                    "name": "include_drafts",
                     "required": false,
                     "type": "bool"
                 },
@@ -47,49 +72,14 @@
                     "type": "int"
                 },
                 {
-                    "name": "max_aspect_ratio",
-                    "required": false,
-                    "type": "float"
-                },
-                {
-                    "name": "maxheight",
+                    "name": "offset",
                     "required": false,
                     "type": "int"
                 },
                 {
-                    "name": "maxlength",
+                    "name": "sort",
                     "required": false,
-                    "type": "int"
-                },
-                {
-                    "name": "maxwidth",
-                    "required": false,
-                    "type": "int"
-                },
-                {
-                    "name": "min_aspect_ratio",
-                    "required": false,
-                    "type": "float"
-                },
-                {
-                    "name": "minheight",
-                    "required": false,
-                    "type": "int"
-                },
-                {
-                    "name": "minlength",
-                    "required": false,
-                    "type": "int"
-                },
-                {
-                    "name": "minwidth",
-                    "required": false,
-                    "type": "int"
-                },
-                {
-                    "name": "originalvideo",
-                    "required": false,
-                    "type": "bool"
+                    "type": "list<string>"
                 },
                 {
                     "name": "summary",
@@ -97,9 +87,19 @@
                     "type": "string"
                 },
                 {
-                    "name": "title",
+                    "name": "time_range",
                     "required": false,
                     "type": "string"
+                },
+                {
+                    "name": "updated_since",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "use_employee_draft",
+                    "required": false,
+                    "type": "bool"
                 }
             ]
         }

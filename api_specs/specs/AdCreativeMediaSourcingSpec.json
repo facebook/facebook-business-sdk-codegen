@@ -18,6 +18,10 @@
             "type": "list<Object>"
         },
         {
+            "name": "posts",
+            "type": "list<Object>"
+        },
+        {
             "name": "push_metadata_ids",
             "type": "list<string>"
         },

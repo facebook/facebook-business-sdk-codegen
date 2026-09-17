@@ -5,7 +5,13 @@
             "method": "POST",
             "endpoint": "products",
             "return": "ProductCatalogProductsPost",
-            "params": []
+            "params": [
+                {
+                    "name": "fields",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
         }
     ],
     "fields": []

@@ -1,0 +1,16 @@
+{
+    "fields": [
+        {
+            "name": "applied_config",
+            "type": "object"
+        },
+        {
+            "name": "creative_strategies",
+            "type": "list<object>"
+        },
+        {
+            "name": "generation_request_id",
+            "type": "string"
+        }
+    ]
+}

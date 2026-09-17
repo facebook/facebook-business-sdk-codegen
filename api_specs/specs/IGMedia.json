@@ -176,8 +176,13 @@
             "params": [
                 {
                     "name": "comment_enabled",
-                    "required": true,
+                    "required": false,
                     "type": "bool"
+                },
+                {
+                    "name": "status",
+                    "required": false,
+                    "type": "shadowigmedia_status"
                 }
             ]
         }
@@ -228,6 +233,38 @@
             "type": "string"
         },
         {
+            "name": "ingest_first_video_received_time",
+            "type": "int"
+        },
+        {
+            "name": "ingest_is_ready_to_start",
+            "type": "bool"
+        },
+        {
+            "name": "ingest_key",
+            "type": "string"
+        },
+        {
+            "name": "ingest_last_heartbeat_time",
+            "type": "int"
+        },
+        {
+            "name": "ingest_state",
+            "type": "string"
+        },
+        {
+            "name": "ingest_url",
+            "type": "string"
+        },
+        {
+            "name": "ingest_video_height",
+            "type": "int"
+        },
+        {
+            "name": "ingest_video_width",
+            "type": "int"
+        },
+        {
             "name": "is_ai_generated",
             "type": "bool"
         },
@@ -246,6 +283,10 @@
         {
             "name": "like_count",
             "type": "int"
+        },
+        {
+            "name": "live_status",
+            "type": "string"
         },
         {
             "name": "media_audio_type",

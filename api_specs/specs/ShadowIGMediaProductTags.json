@@ -26,6 +26,10 @@
             "type": "int"
         },
         {
+            "name": "product_url",
+            "type": "string"
+        },
+        {
             "name": "review_status",
             "type": "string"
         },

@@ -511,6 +511,11 @@
                     "type": "Object"
                 },
                 {
+                    "name": "creative_audience_pairing_persona",
+                    "required": false,
+                    "type": "map"
+                },
+                {
                     "name": "creative_automation_spec",
                     "required": false,
                     "type": "Object"
@@ -639,6 +644,10 @@
         {
             "name": "creative_asset_groups_spec",
             "type": "AdCreativeAssetGroupsSpec"
+        },
+        {
+            "name": "creative_audience_pairing_persona",
+            "type": "CreativeAudiencePairingPersona"
         },
         {
             "name": "creative_automation_spec",

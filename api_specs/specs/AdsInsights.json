@@ -158,6 +158,38 @@
             "type": "list<AdsActionStats>"
         },
         {
+            "name": "configurable_audience_overlap_with_conv_action",
+            "type": "string"
+        },
+        {
+            "name": "configurable_audience_overlap_with_conv_converters",
+            "type": "string"
+        },
+        {
+            "name": "configurable_audience_overlap_with_conv_exposure_cost",
+            "type": "string"
+        },
+        {
+            "name": "configurable_audience_overlap_with_conv_exposure_impressions",
+            "type": "string"
+        },
+        {
+            "name": "configurable_audience_overlap_with_conv_exposure_reach",
+            "type": "string"
+        },
+        {
+            "name": "configurable_placement_ptc_conversions",
+            "type": "string"
+        },
+        {
+            "name": "configurable_placement_ptc_converters",
+            "type": "string"
+        },
+        {
+            "name": "configurable_placement_ptc_reach",
+            "type": "string"
+        },
+        {
             "name": "configurable_reachbyfrequency_action",
             "type": "list<AdsActionStats>"
         },

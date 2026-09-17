@@ -17,6 +17,10 @@
             "type": "int"
         },
         {
+            "name": "product_catalog",
+            "type": "object"
+        },
+        {
             "name": "product_count",
             "type": "int"
         },

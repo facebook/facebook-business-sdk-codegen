@@ -10,7 +10,7 @@
         },
         {
             "name": "account_id",
-            "type": "string"
+            "type": "int"
         },
         {
             "name": "account_status",
@@ -25,6 +25,10 @@
             "type": "object"
         },
         {
+            "name": "ad_account_creation_request",
+            "type": "object"
+        },
+        {
             "name": "ad_account_promotable_objects",
             "type": "object"
         },
@@ -34,6 +38,22 @@
         },
         {
             "name": "ad_limits_insights",
+            "type": "object"
+        },
+        {
+            "name": "ad_place_page_sets",
+            "type": "object"
+        },
+        {
+            "name": "ad_quick_views",
+            "type": "object"
+        },
+        {
+            "name": "ad_report_builder_reports",
+            "type": "object"
+        },
+        {
+            "name": "ad_studies",
             "type": "object"
         },
         {
@@ -66,6 +86,10 @@
         },
         {
             "name": "ads",
+            "type": "object"
+        },
+        {
+            "name": "ads_creation_saved_state",
             "type": "object"
         },
         {
@@ -177,8 +201,16 @@
             "type": "object"
         },
         {
+            "name": "assigned_users",
+            "type": "object"
+        },
+        {
             "name": "attr_window_deprecation_group",
             "type": "string"
+        },
+        {
+            "name": "audiencesharing_recipientaccounts",
+            "type": "object"
         },
         {
             "name": "auth_flow_for_trust_tier_state",
@@ -333,6 +365,10 @@
             "type": "object"
         },
         {
+            "name": "creative_text_suggestions",
+            "type": "object"
+        },
+        {
             "name": "ctwa_smb_enforcing_days_left",
             "type": "int"
         },
@@ -370,6 +406,10 @@
         },
         {
             "name": "customaudiences",
+            "type": "object"
+        },
+        {
+            "name": "customaudiencestos",
             "type": "object"
         },
         {
@@ -521,8 +561,16 @@
             "type": "bool"
         },
         {
+            "name": "impacting_ad_studies",
+            "type": "object"
+        },
+        {
             "name": "incremental_conversion_optimization_ad_studies",
             "type": "list<object>"
+        },
+        {
+            "name": "insights",
+            "type": "object"
         },
         {
             "name": "instagram_accounts",
@@ -649,6 +697,14 @@
             "type": "bool"
         },
         {
+            "name": "is_simplified_creation_only_111_eligible",
+            "type": "bool"
+        },
+        {
+            "name": "is_simplified_creation_segment_eligible",
+            "type": "bool"
+        },
+        {
             "name": "is_tax_id_required",
             "type": "bool"
         },
@@ -710,6 +766,22 @@
         },
         {
             "name": "liable_addresses",
+            "type": "object"
+        },
+        {
+            "name": "liable_to_org",
+            "type": "object"
+        },
+        {
+            "name": "light_adsets",
+            "type": "object"
+        },
+        {
+            "name": "light_campaigns",
+            "type": "object"
+        },
+        {
+            "name": "lightads",
             "type": "object"
         },
         {
@@ -777,8 +849,16 @@
             "type": "string"
         },
         {
+            "name": "naming_templates",
+            "type": "object"
+        },
+        {
             "name": "next_bill_date",
-            "type": "int"
+            "type": "mixed"
+        },
+        {
+            "name": "offline_conversion_data_sets",
+            "type": "object"
         },
         {
             "name": "offsite_pixels_tos_accepted",
@@ -798,7 +878,7 @@
         },
         {
             "name": "owner",
-            "type": "string"
+            "type": "int"
         },
         {
             "name": "owner_business",
@@ -826,6 +906,10 @@
         },
         {
             "name": "prepay_account_balance",
+            "type": "object"
+        },
+        {
+            "name": "promote_pages",
             "type": "object"
         },
         {
@@ -894,6 +978,10 @@
         },
         {
             "name": "sold_to_addresses",
+            "type": "object"
+        },
+        {
+            "name": "sold_to_org",
             "type": "object"
         },
         {
@@ -997,11 +1085,19 @@
             "type": "map<int, int>"
         },
         {
+            "name": "userpermissions",
+            "type": "object"
+        },
+        {
             "name": "users",
             "type": "object"
         },
         {
             "name": "value_rule_set",
+            "type": "object"
+        },
+        {
+            "name": "video_ads",
             "type": "object"
         },
         {

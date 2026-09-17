@@ -1,0 +1,12 @@
+{
+    "fields": [
+        {
+            "name": "data",
+            "type": "list<object>"
+        },
+        {
+            "name": "paging",
+            "type": "object"
+        }
+    ]
+}

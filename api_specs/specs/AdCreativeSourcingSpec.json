@@ -54,6 +54,10 @@
             "type": "list<AdCreativePromotionMetadataSpec>"
         },
         {
+            "name": "selected_video_id",
+            "type": "string"
+        },
+        {
             "name": "site_links_data_consented",
             "type": "Object"
         },

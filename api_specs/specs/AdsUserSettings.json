@@ -325,6 +325,10 @@
             "type": "string"
         },
         {
+            "name": "push_model_opt_in_status",
+            "type": "string"
+        },
+        {
             "name": "reactive_control_settings",
             "type": "list<Object>"
         },

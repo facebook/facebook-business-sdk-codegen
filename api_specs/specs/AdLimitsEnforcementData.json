@@ -24,6 +24,10 @@
         {
             "name": "page_name",
             "type": "string"
+        },
+        {
+            "name": "show_page_limit_removed_notice",
+            "type": "bool"
         }
     ]
 }

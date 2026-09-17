@@ -4,7 +4,13 @@
             "method": "GET",
             "endpoint": "branded_content_media",
             "return": "IGMediaExportForCAM",
-            "params": []
+            "params": [
+                {
+                    "name": "platform",
+                    "required": false,
+                    "type": "list<iguserexportforcambranded_content_media_platform_enum_param>"
+                }
+            ]
         },
         {
             "method": "GET",
@@ -42,13 +48,25 @@
             "method": "GET",
             "endpoint": "past_partnership_ads_media",
             "return": "IGMediaExportForCAM",
-            "params": []
+            "params": [
+                {
+                    "name": "platform",
+                    "required": false,
+                    "type": "list<iguserexportforcampast_partnership_ads_media_platform_enum_param>"
+                }
+            ]
         },
         {
             "method": "GET",
             "endpoint": "recent_media",
             "return": "IGMediaExportForCAM",
-            "params": []
+            "params": [
+                {
+                    "name": "platform",
+                    "required": false,
+                    "type": "list<iguserexportforcamrecent_media_platform_enum_param>"
+                }
+            ]
         }
     ],
     "fields": [
@@ -90,6 +108,10 @@
         },
         {
             "name": "is_account_verified",
+            "type": "bool"
+        },
+        {
+            "name": "is_brand_following_creator",
             "type": "bool"
         },
         {

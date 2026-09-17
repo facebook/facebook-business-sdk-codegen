@@ -2,6 +2,10 @@
     "apis": [],
     "fields": [
         {
+            "name": "ads_signal_source_type",
+            "type": "string"
+        },
+        {
             "name": "application_id",
             "type": "string"
         },

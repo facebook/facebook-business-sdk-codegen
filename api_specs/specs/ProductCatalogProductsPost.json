@@ -1,8 +1,372 @@
 {
     "fields": [
         {
+            "name": "additional_image_cdn_urls",
+            "type": "list<list<object>>"
+        },
+        {
+            "name": "additional_image_urls",
+            "type": "list<string>"
+        },
+        {
+            "name": "additional_variant_attributes",
+            "type": "list<object>"
+        },
+        {
+            "name": "age_group",
+            "type": "ProductCatalogProductsPost_age_group"
+        },
+        {
+            "name": "applinks",
+            "type": "object"
+        },
+        {
+            "name": "availability",
+            "type": "ProductCatalogProductsPost_availability"
+        },
+        {
+            "name": "available_quantity_to_sell_on_facebook",
+            "type": "int"
+        },
+        {
+            "name": "base_commission_rate",
+            "type": "int"
+        },
+        {
+            "name": "brand",
+            "type": "string"
+        },
+        {
+            "name": "capabilities_disabled_by_user",
+            "type": "list<string>"
+        },
+        {
+            "name": "capability_features",
+            "type": "list<string>"
+        },
+        {
+            "name": "capability_to_review_status",
+            "type": "list<object>"
+        },
+        {
+            "name": "category",
+            "type": "string"
+        },
+        {
+            "name": "category_specific_fields",
+            "type": "map<mixed, mixed>"
+        },
+        {
+            "name": "channels_to_integrity_status",
+            "type": "object"
+        },
+        {
+            "name": "color",
+            "type": "string"
+        },
+        {
+            "name": "commerce_insights",
+            "type": "object"
+        },
+        {
+            "name": "condition",
+            "type": "ProductCatalogProductsPost_condition"
+        },
+        {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "custom_data",
+            "type": "list<object>"
+        },
+        {
+            "name": "custom_label_0",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_1",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_2",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_3",
+            "type": "string"
+        },
+        {
+            "name": "custom_label_4",
+            "type": "string"
+        },
+        {
+            "name": "custom_number_0",
+            "type": "string"
+        },
+        {
+            "name": "custom_number_1",
+            "type": "string"
+        },
+        {
+            "name": "custom_number_2",
+            "type": "string"
+        },
+        {
+            "name": "custom_number_3",
+            "type": "string"
+        },
+        {
+            "name": "custom_number_4",
+            "type": "string"
+        },
+        {
+            "name": "da_display_preview_url",
+            "type": "string"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "enabled_capability_to_review_status",
+            "type": "list<object>"
+        },
+        {
+            "name": "errors",
+            "type": "list<object>"
+        },
+        {
+            "name": "expiration_date",
+            "type": "string"
+        },
+        {
+            "name": "fb_product_category",
+            "type": "string"
+        },
+        {
+            "name": "gender",
+            "type": "ProductCatalogProductsPost_gender"
+        },
+        {
+            "name": "gtin",
+            "type": "string"
+        },
+        {
             "name": "id",
             "type": "int"
+        },
+        {
+            "name": "image_cdn_urls",
+            "type": "list<object>"
+        },
+        {
+            "name": "image_fetch_status",
+            "type": "string"
+        },
+        {
+            "name": "image_url",
+            "type": "string"
+        },
+        {
+            "name": "images",
+            "type": "list<string>"
+        },
+        {
+            "name": "importer_name",
+            "type": "string"
+        },
+        {
+            "name": "invalidation_errors",
+            "type": "list<object>"
+        },
+        {
+            "name": "inventory",
+            "type": "int"
+        },
+        {
+            "name": "is_bundle_hero",
+            "type": "bool"
+        },
+        {
+            "name": "manufacturer_info",
+            "type": "string"
+        },
+        {
+            "name": "manufacturer_part_number",
+            "type": "string"
+        },
+        {
+            "name": "material",
+            "type": "string"
+        },
+        {
+            "name": "mobile_link",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "ordering_index",
+            "type": "int"
+        },
+        {
+            "name": "origin_country",
+            "type": "string"
+        },
+        {
+            "name": "override_details",
+            "type": "object"
+        },
+        {
+            "name": "pattern",
+            "type": "string"
+        },
+        {
+            "name": "post_conversion_signal_based_enforcement_appeal_eligibility",
+            "type": "bool"
+        },
+        {
+            "name": "price",
+            "type": "string"
+        },
+        {
+            "name": "product_catalog",
+            "type": "object"
+        },
+        {
+            "name": "product_feed",
+            "type": "object"
+        },
+        {
+            "name": "product_group",
+            "type": "object"
+        },
+        {
+            "name": "product_priority_0",
+            "type": "float"
+        },
+        {
+            "name": "product_priority_1",
+            "type": "float"
+        },
+        {
+            "name": "product_priority_2",
+            "type": "float"
+        },
+        {
+            "name": "product_priority_3",
+            "type": "float"
+        },
+        {
+            "name": "product_priority_4",
+            "type": "float"
+        },
+        {
+            "name": "product_relationship",
+            "type": "string"
+        },
+        {
+            "name": "product_sets",
+            "type": "object"
+        },
+        {
+            "name": "product_type",
+            "type": "string"
+        },
+        {
+            "name": "quantity_to_sell_on_facebook",
+            "type": "int"
+        },
+        {
+            "name": "retailer_id",
+            "type": "string"
+        },
+        {
+            "name": "retailer_product_group_id",
+            "type": "string"
+        },
+        {
+            "name": "review_rejection_reasons",
+            "type": "list<string>"
+        },
+        {
+            "name": "review_status",
+            "type": "string"
+        },
+        {
+            "name": "rich_text_description",
+            "type": "string"
+        },
+        {
+            "name": "sale_price",
+            "type": "string"
+        },
+        {
+            "name": "sale_price_end_date",
+            "type": "string"
+        },
+        {
+            "name": "sale_price_start_date",
+            "type": "string"
+        },
+        {
+            "name": "shipping_weight_unit",
+            "type": "string"
+        },
+        {
+            "name": "shipping_weight_value",
+            "type": "float"
+        },
+        {
+            "name": "short_description",
+            "type": "string"
+        },
+        {
+            "name": "size",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "tags",
+            "type": "list<string>"
+        },
+        {
+            "name": "url",
+            "type": "string"
+        },
+        {
+            "name": "validation_errors",
+            "type": "object"
+        },
+        {
+            "name": "vendor_id",
+            "type": "string"
+        },
+        {
+            "name": "video_fetch_status",
+            "type": "string"
+        },
+        {
+            "name": "videos",
+            "type": "list<object>"
+        },
+        {
+            "name": "videos_metadata",
+            "type": "object"
+        },
+        {
+            "name": "visibility",
+            "type": "string"
+        },
+        {
+            "name": "wa_compliance_category",
+            "type": "string"
         }
     ]
 }

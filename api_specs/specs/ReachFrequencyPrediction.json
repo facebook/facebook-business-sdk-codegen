@@ -313,6 +313,10 @@
             "type": "unsigned int"
         },
         {
+            "name": "product_type",
+            "type": "string"
+        },
+        {
             "name": "reference_id",
             "type": "string"
         },

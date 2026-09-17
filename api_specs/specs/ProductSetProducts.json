@@ -1,0 +1,78 @@
+{
+    "apis": [
+        {
+            "name": "genGet",
+            "method": "GET",
+            "endpoint": "products",
+            "return": "ProductSetProductsGet",
+            "params": [
+                {
+                    "name": "after",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "before",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "dedupe_by_group_id_for_small_catalogs",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "dedupe_items_by_group",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "display_format",
+                    "required": false,
+                    "type": "ProductSetProductsGet_display_format_enum_param"
+                },
+                {
+                    "name": "enable_typeahead",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "error_priority",
+                    "required": false,
+                    "type": "ProductSetProductsGet_error_priority_enum_param"
+                },
+                {
+                    "name": "error_type",
+                    "required": false,
+                    "type": "ProductSetProductsGet_error_type_enum_param"
+                },
+                {
+                    "name": "fields",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "filter",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "limit",
+                    "required": false,
+                    "type": "int"
+                },
+                {
+                    "name": "sort",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "summary",
+                    "required": false,
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "fields": []
+}

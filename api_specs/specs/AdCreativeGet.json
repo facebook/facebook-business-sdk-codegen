@@ -117,6 +117,10 @@
             "type": "list<object>"
         },
         {
+            "name": "generative_asset_spec",
+            "type": "object"
+        },
+        {
             "name": "id",
             "type": "int"
         },

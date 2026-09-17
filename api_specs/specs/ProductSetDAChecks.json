@@ -1,0 +1,48 @@
+{
+    "apis": [
+        {
+            "name": "genGet",
+            "method": "GET",
+            "endpoint": "da_checks",
+            "return": "ProductSetDAChecksGet",
+            "params": [
+                {
+                    "name": "capabilities",
+                    "required": false,
+                    "type": "list<ProductSetDAChecksGet_capabilities_enum_param>"
+                },
+                {
+                    "name": "categories",
+                    "required": false,
+                    "type": "list<ProductSetDAChecksGet_categories_enum_param>"
+                },
+                {
+                    "name": "checks",
+                    "required": false,
+                    "type": "list<string>"
+                },
+                {
+                    "name": "connection_method",
+                    "required": false,
+                    "type": "ProductSetDAChecksGet_connection_method_enum_param"
+                },
+                {
+                    "name": "features",
+                    "required": false,
+                    "type": "list<ProductSetDAChecksGet_features_enum_param>"
+                },
+                {
+                    "name": "fields",
+                    "required": false,
+                    "type": "string"
+                },
+                {
+                    "name": "with_issue_only",
+                    "required": false,
+                    "type": "bool"
+                }
+            ]
+        }
+    ],
+    "fields": []
+}

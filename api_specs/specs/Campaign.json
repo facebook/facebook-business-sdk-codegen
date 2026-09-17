@@ -656,6 +656,10 @@
             "type": "AdCampaignGroupAdvantageState"
         },
         {
+            "name": "bid_constraints",
+            "type": "AdCampaignGroupBidConstraints"
+        },
+        {
             "name": "bid_strategy",
             "type": "Campaign_bid_strategy"
         },

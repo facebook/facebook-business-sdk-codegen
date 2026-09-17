@@ -26,6 +26,14 @@
             "type": "list<string>"
         },
         {
+            "name": "existing_customers_auto_exclusion_retention_days",
+            "type": "int"
+        },
+        {
+            "name": "existing_customers_exclusion_auto_selection_state",
+            "type": "int"
+        },
+        {
             "name": "existing_customers_exclusions",
             "type": "list<string>"
         },

@@ -690,11 +690,6 @@
                     "type": "Object"
                 },
                 {
-                    "name": "cost_bidding_mode",
-                    "required": false,
-                    "type": "adcampaign_cost_bidding_mode"
-                },
-                {
                     "name": "creative_sequence",
                     "required": false,
                     "type": "list<string>"
@@ -1050,10 +1045,6 @@
         {
             "name": "configured_status",
             "type": "AdSet_configured_status"
-        },
-        {
-            "name": "cost_bidding_mode",
-            "type": "string"
         },
         {
             "name": "created_time",
